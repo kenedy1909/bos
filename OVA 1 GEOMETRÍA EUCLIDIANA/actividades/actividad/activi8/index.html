@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/actividad8/completar.css">
+</head>
+<body>
+	<div class="row px-3 pt-3 mb-3" style="">
+	    <div class="col-md-5 d-flex">
+	       <img src="../img/img7/actividad_general.png" class="img-activi">
+	       <div>
+	           <div class="content-text-img-activi-2 w-100">
+	             <b class="text-img-actividad" style="font-size: 15px; font-family: arial;">ACTIVIDAD #7</b>
+	           </div>
+	           <p class="text-center" style="font-size: 15px; font-family: arial;">COMPLETAR ESPACIOS</p>
+	       </div>
+	    </div>
+	    <div class="col-md-7 shadow content-tarjeta">
+	        <p class="pb-2 p_black" style="font-size: 15px; font-family: arial;">En cada una de las escenas complete con la conclusión que corresponde, al finalizar pulse la casilla "<b>Calificar</b>" para conocer su puntuación.</p>
+	        <p class="p_black" style="font-size: 15px; font-family: arial;"><img src="../img/img2/reloj.png" class="max-w-30px">  Tiempo sugerido: 8 minutos.</p>
+	    </div>
+	</div>
+	<form>
+		<div class="col-lg-12 row">
+			<div class="col-md-12">
+				<div class="enunciado">
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">“ x > y  o  y > z ” , “x≤y”	/ ( .  .   .   .   .   . )</p>
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">En el ejemplo anterior se considera x≤y como la negación de x>y:</p>
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">x≤y⇔x ≯y ⇔ ~ (x &glt; y) </p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_0"></label>
+					<select id="op_0" name="op_0">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="correcta">“y mayor que z”</option>
+						<option value="incorrecta">“si hay lluvia entonces hay mayor accidentalidad”</option>
+						<option value="incorrecta">ninguna</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div style="text-align: center;margin-top: 20px;">
+	      <button onclick="calificar();" style="background: #c8ad45;color: white;font-size: 18px;border-radius: 10px;" class="p-2" data-toggle="modal" data-target="#exampleModal">Calificar</button>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	        <div style="" class="cabeza">
+	          
+	        </div>
+	        <div class="d-flex justify-content-center">
+	          <div style="" class="circulo_modal img_res">
+	            
+	          </div>
+	        </div>
+	        <div style="padding: 10px;">
+	          <div style="color: white;font-size: 15px;">
+	            Su puntaje es: <p class="puntaje"></p>
+	          </div>
+	          <div style="color: white;font-size: 15px;">
+	            <p class="mensaje"></p>
+	          </div>
+	        </div>
+	        <div class="row d-flex justify-content-center btns_modal">
+	          
+	          
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/actividad8/completar.js"></script>
+</body>
+</html>
