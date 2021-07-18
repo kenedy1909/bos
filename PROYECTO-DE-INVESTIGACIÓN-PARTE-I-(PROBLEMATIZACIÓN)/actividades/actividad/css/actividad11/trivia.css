@@ -1,0 +1,149 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 0px;
+}
+
+#quiz {
+  margin-top: 20px; 
+  background-color: #C8AD45;
+  height: 324px;
+  padding-bottom: 60px;
+  width: 100%;
+  border-radius: 63px 63px 63px 63px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+}
+
+#quiz > h1 {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+.questions {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: italic;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 20px;
+}
+
+.answers div {
+  padding: 10px 0 0 0;
+  font-size: 16px;
+}
+
+.answers div:hover {
+  cursor: pointer;
+  color: #FBCB43;
+}
+
+.answers {
+  justify-content: center;
+}
+
+.answers div {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+}
+
+.answers div:first-child {
+  /*border: none;*/
+}
+
+.checker {
+  display: inline-block;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.correct, .false {
+  background-color: #109D59;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 4px;
+  float: left;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+
+.false {
+  background-color: #DC4437;
+}
+
+.opcion{
+  border: solid #3E3516;
+  border-radius: 20px;
+}
+
+.img_cont{
+  max-width: 70%;
+}
+
+.optciones{
+  display: inline-block;
+    width: 60%;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+}
+
+.principal{
+  height: 400px;
+  border-radius: 40px;
+  background: #FFE14E;
+}
+
+.cabeza{
+  background: #A48E39;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 125px;
+  width: 125px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
+}
+
+.boton_inc{
+  background: #9b59b6;
+  color: white;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.cantidad{
+  width: 80px;
+  height: 40px;
+  background: #FFC000;
+  margin-top: 10px;
+  z-index: 100;
+  border-radius: 10px;
+}
+.div_quiestion{
+  border-radius: 63px 63px 0px 0px;
+  text-align: center;
+  padding: 10px 80px 0px 80px;
+  position: relative;
+  top: -25px;
+}

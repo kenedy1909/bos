@@ -1,0 +1,99 @@
+.cartas_4{
+	background: #7a3d78;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+}
+.btn_unidad4{
+	background: #7a3d74;
+    font-size: 22px;
+    color: white
+}
+.activado{
+	background: #8B1C64;
+	height: 80px;
+}
+.text_active{
+	color: white;
+}
+
+.opcion{
+	background: #D1D1D1;
+}
+
+.trianguloactivo{
+	width: 0;height: 0;
+	border-left: 30px solid #8b1c64;
+	border-top: 14px solid transparent;
+	border-bottom: 16px solid transparent;
+	transform: rotate(90deg);
+	visibility: hidden;
+}
+.ejemplos{
+	background: #8b1c64;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	border-radius: 20px;
+}
+
+.eje1{
+	background: #8b1c64;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 7px;
+	margin-left: 12px;
+}
+
+.eje2{
+	background: #8b1c64;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.eje3{
+	background: #8b1c64;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 0px;
+}
+.fijadoimg{
+	width: 6%;
+	position: relative;
+	left: 5px;
+	top: -23px;
+	transform: rotate(30deg);
+}
+.bannernota{
+	width: 75%;
+	background: #F4D576;
+	padding: 5px 5px 5px 5px;
+}
+
+.targetap4-1{
+	width: 600px;
+	border: solid #e82c88;
+	padding: 25px;
+	border-radius: 1px 1px 50px 50px;
+}
+.headertarget{
+	background: #8b1c64;
+	height: 60px;
+	margin: 0px;
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+	width: 111%;left: -31px;top: -34px;
+}
+.iconotarget{
+	width: 80px;
+	height: 80px;
+	background: white;
+	border-radius: 50%;
+	text-align: center;
+	float: right;position: relative;
+	top: -34px;left: 38px;
+}
