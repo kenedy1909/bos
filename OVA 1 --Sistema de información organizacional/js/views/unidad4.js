@@ -136,9 +136,9 @@ function scroll6() {
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob6');
-    bar = document.querySelector('.custom-scrollbar__bar6');
-    container = document.querySelector('.custom-scrollbar__inner6');
+    knob = document.querySelector('.custom-scrollbar__knob20');
+    bar = document.querySelector('.custom-scrollbar__bar20');
+    container = document.querySelector('.custom-scrollbar__inner20');
     scroll();
 }
 
