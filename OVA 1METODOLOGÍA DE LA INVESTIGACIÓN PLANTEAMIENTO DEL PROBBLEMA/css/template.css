@@ -901,3 +901,10 @@ card flip*/
   padding-top: 30px;
   padding-left: 29px;
 }
+
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}

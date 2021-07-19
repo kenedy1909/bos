@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -50,7 +50,7 @@ function slide_predeterminado3(){
 function slide_link3(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
 
    
     controlSlides3(num);
@@ -62,7 +62,7 @@ function controlSlides3(num){
         case 0:
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
             $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 2;
+            tema = 3;
             break;
         case 1:
             var pdf = `<div class="col-md-12">
@@ -96,7 +96,7 @@ function controlSlides3(num){
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            $("#content-ova").load("base/unidades/unidad4.html");
+            
             tema = 1;
             break;    
         default:

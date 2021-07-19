@@ -114,7 +114,7 @@ function controlSlides(num){
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            $("#content-ova").load("base/unidades/unidad2.html");
+            
             tema = 1;
             break;
         default:
@@ -833,7 +833,7 @@ function pant13(num){
             break;
         case 9:
             var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Igualmente carece de un método: es decir, no se basa en una disciplina o método que procure la comprobación o desmentir lo que plantea.</p>
+                                <p style="font-size: 20px;">Igualmente carece de un método: es decir, no se basa en una disciplina o método que procure la comprobación o desmentir lo que plantea.</p>
                               </div>`;
             var img = `<div class="col-md-9">
                           <img src="assets/img/img_ova/elemento9.png" style="max-width: 25%;">

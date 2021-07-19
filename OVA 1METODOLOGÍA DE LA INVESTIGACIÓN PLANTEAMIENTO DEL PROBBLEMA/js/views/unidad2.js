@@ -58,7 +58,7 @@ function slide_predeterminado2(){
 function slide_link2(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
 
     
     controlSlides2(num);
@@ -89,7 +89,7 @@ function controlSlides2(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            $("#content-ova").load("base/unidades/unidad3.html");
+            
             tema = 1;
             break;
         
@@ -132,8 +132,9 @@ function pantalla2_1(num){
                         </div>
                       </div>
                       <div class="col-md-12">
+                      <p>click para observar la imagen</p>
                         <div class="banner3_2 text-center mt-2">
-                          <img src="assets/img/img_ova/hechos.png" style="max-width: 100%">
+                          <img data-toggle="modal" data-target="#modalimg_2" src="assets/img/img_ova/hechos.png" style="max-width: 100%" class="cursor">
                         </div>
                       </div>`;
           $('.avance_blanco').removeClass('activa');            

@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -53,7 +53,7 @@ function slide_predeterminado4(){
 function slide_link4(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
 
     
     controlSlides4(num);
@@ -65,7 +65,7 @@ function controlSlides4(num){
         case 0:
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
             $("#content-ova").load("base/unidades/unidad3.html");
-            tema = 6;
+            tema = 7;
             break;
         case 1:
            
