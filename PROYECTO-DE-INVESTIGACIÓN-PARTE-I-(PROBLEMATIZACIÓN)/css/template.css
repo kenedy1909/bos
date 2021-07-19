@@ -667,15 +667,15 @@ card flip*/
 /*actividades*/
 .text-img-activi{
   border-bottom: solid 4px rgb(142 29 102);
-  width: 50%;
+  width: 60%;
   height: 86px;
   margin: 0px;
   padding-top: 30px;
 }
 
 .img_activi{
-  width: 116px;
-  height: 116px;
+  width: 100px;
+  height: 100px;
 }
 .texto_activi{
   font-size: 18px; 
@@ -685,7 +685,7 @@ card flip*/
 .contenedor_indi{
   background: rgb(142 29 102);
   border-radius: 20px;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-left: 30px;
 }
 
@@ -933,4 +933,11 @@ card flip*/
   height: 100px;
   padding: 39px 20px 15px 55px;
   border-radius: 15px;
+}
+
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
 }

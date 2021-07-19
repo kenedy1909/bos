@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    tema = 1;
     console.log(tema);
     /**/
     $('#smartwizard').smartWizard({
@@ -46,13 +46,13 @@ function slide_predeterminado3(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides3(1);
-    $('#smartwizard').smartWizard("goToStep", 1);
+    $('#smartwizard').smartWizard("goToStep", 0);
 }
 
 function slide_link3(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides3(num);
 }
 function controlSlides3(num){
@@ -81,8 +81,7 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            $("#content-ova").load("base/unidades/unidad4.html");
+            setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             tema = 1;
             break;    
         default:

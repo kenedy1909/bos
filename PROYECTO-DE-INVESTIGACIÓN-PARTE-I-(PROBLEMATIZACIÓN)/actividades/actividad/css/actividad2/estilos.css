@@ -45,7 +45,7 @@
 .texto-pregunta {
     background: #8B1C64;
     /*border-radius: 10px;*/
-    font-size: 15px;
+    font-size: 22px;
     /*margin: 10px;*/
     padding: 5px 15px;
     color: #fff;
@@ -72,6 +72,7 @@
     padding: 0px 10px 0px 35px;
     color: #000000;
     width: fit-content;
+    font-size: 15px;
 }
 
 input {
@@ -120,9 +121,10 @@ input {
 }
 
 .info_actividad{
-    background: #FFC000;
+    background: #8b1c64;
     border-radius: 20px;
     padding: 20px;
+    color: white;
 }
 .pt-3{
     padding-top: 1.5em;

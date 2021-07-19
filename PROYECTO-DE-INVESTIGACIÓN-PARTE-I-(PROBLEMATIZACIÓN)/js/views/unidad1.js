@@ -16,7 +16,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    slide_predeterminado();
+    /*slide_predeterminado();*/
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -124,14 +124,9 @@ function controlSlides(num){
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
-            $("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;
             break;
-        case 7:
-            setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
-            $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 1;
-            break;
+        
         default:
             break;
     }

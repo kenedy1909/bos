@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    tema = 1;
     console.log(tema);
     /**/
     $('#smartwizard').smartWizard({
@@ -52,13 +52,13 @@ function slide_predeterminado2(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides2(1);
-    $('#smartwizard').smartWizard("goToStep", 1);
+    $('#smartwizard').smartWizard("goToStep", 0);
 }
 
 function slide_link2(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides2(num);
 }
 $('#mostrar').click(function(){
@@ -94,7 +94,7 @@ function controlSlides2(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
-            $("#content-ova").load("base/unidades/unidad3.html");
+            
             tema = 1;
             break;
         

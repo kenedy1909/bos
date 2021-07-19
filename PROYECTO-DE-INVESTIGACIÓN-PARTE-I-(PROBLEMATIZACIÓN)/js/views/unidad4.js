@@ -45,14 +45,14 @@ function slide_predeterminado4(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides4(1);
-    $('#smartwizard').smartWizard("goToStep", 1);
+    $('#smartwizard').smartWizard("goToStep", 0);
 }
 
 function slide_link4(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
-    controlSlides3(num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
+    controlSlides4(num+1);
 }
 function controlSlides4(num){
     switch (parseInt(num)) {
@@ -62,7 +62,6 @@ function controlSlides4(num){
             tema = 4;
             break;
         case 1:
-           
             $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             break;
@@ -104,7 +103,7 @@ function pantallas4_1(num){
                         <div class="col-md-10">
                           <div class="row">
                             <div class="fijadoimg" style=""><img src="assets/img/img_ova/notas-adhesivas.png" style="max-width: 100%;"></div>
-                            <div class="bannernota" style=""><p>En términos evaluativos, quien lea los resultados de la investigación podrá decir si se alcanzaron o no esos objetivos y, además, si se abordó adecuadamente la pregunta que se formuló.  Haga clic en cada círculo para ver los ejemplos:</p></div>
+                            <div class="bannernota" style=""><p style="font-size: 13px;">En términos evaluativos, quien lea los resultados de la investigación podrá decir si se alcanzaron o no esos objetivos y, además, si se abordó adecuadamente la pregunta que se formuló.  Haga clic en cada círculo para ver los ejemplos:</p></div>
                           </div>
                         </div>
                       </div>`;
@@ -134,16 +133,16 @@ function pantallas4_1(num){
                             </div>
                             <div>
                               <ul>
-                                <li>El objetivo general va conectado directamente con todos los puntos anteriores, pero sobre todo con la pregunta problema. </li>
-                                <li>se suele afirmar que de la pregunta sale directamente este objetivo.</li>
-                                <li>Se formula iniciando con un verbo en infinitivo y se debe cuidar de no incluir más verbos de ese tipo, lo que indica que solo lleva un solo verbo de este tipo.</li>
+                                <li style="font-size: 13px;">El objetivo general va conectado directamente con todos los puntos anteriores, pero sobre todo con la pregunta problema. </li>
+                                <li style="font-size: 13px;">se suele afirmar que de la pregunta sale directamente este objetivo.</li>
+                                <li style="font-size: 13px;">Se formula iniciando con un verbo en infinitivo y se debe cuidar de no incluir más verbos de ese tipo, lo que indica que solo lleva un solo verbo de este tipo.</li>
                               </ul>
                             </div>
                             <div class="row">
                               <div style="width: 9%;">
                                 <img src="assets/img/img_ova/notas-adhesivas.png" style="max-width: 100%;">
                               </div>
-                              <div style="width: 70%;background: #FBD9EA;"><p>Recuérdese: los verbos en infinitivos son aquellos que expresan acciones, no están conjugados y terminan en ar, er, ir.</p></div>
+                              <div style="width: 70%;background: #FBD9EA;"><p style="font-size: 13px;">Recuérdese: los verbos en infinitivos son aquellos que expresan acciones, no están conjugados y terminan en ar, er, ir.</p></div>
                             </div>
                           </div>
                         </div>`;
@@ -162,7 +161,8 @@ function pantallas4_1(num){
     case 3:
         var pantalla = `<div class="row">
                           <div class="col-md-9 text-center">
-                            <img src="assets/img/img_ova/Obj-específicos-uinidad4.png" class="img-fluid" style="max-width: 100%">
+                            <img data-toggle="modal" data-target="#modalimg_1" src="assets/img/img_ova/Obj-específicos-uinidad4.png" class="img-fluid cursor" style="max-width: 100%">
+                            <p>click en la imagen para visualizar la informacion</p>
                           </div>
                           <div class="col-md-3">
                             <img src="assets/img/img_ova/blonde.png" class="img-fluid" style="max-width: 90%;">
@@ -183,7 +183,8 @@ function pantallas4_1(num){
     case 4:
         var pantalla = `<div class="row">
                           <div class="col-md-9 text-center">
-                            <img src="assets/img/img_ova/Ejemplos.png" class="img-fluid" style="max-width: 100%">
+                            <img data-toggle="modal" data-target="#modalimg_2" src="assets/img/img_ova/Ejemplos.png" class="img-fluid cursor" style="max-width: 100%">
+                            <p>click en la imagen para visualizar la informacion</p>
                           </div>
                           <div class="col-md-3">
                             <img src="assets/img/img_ova/pregunta2.png" class="img-fluid" style="max-width: 90%;">

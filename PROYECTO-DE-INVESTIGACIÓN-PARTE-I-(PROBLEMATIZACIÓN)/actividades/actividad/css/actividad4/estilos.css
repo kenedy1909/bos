@@ -188,24 +188,24 @@
     display: inline-block;
 }
 .secundario{
-    width: 35%;display: inline-block;
+    width: 40%;display: inline-block;
 }
 .terciario{
-    width: 65%;display: inline-block;
+    width: 60%;display: inline-block;
 }
 .div-img{
     display: inline-block;max-width: 100%;
 }
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
 .texto_header{
     font-size: 17px;
     display: inline-block;
-    width: 50%;
+    width: 60%;
 }
 .texto_header b{
     color: #ad1d73;
