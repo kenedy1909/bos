@@ -78,6 +78,8 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            $("#content-ova").load("base/unidades/unidad2.html");
+            tema = 10;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");

@@ -13,6 +13,7 @@ $( document ).ready(function() {
 });
 
 $('.init-unidad').off('click').on('click', function(evt){
+    tema = 1;
     var item = $(this).attr('data-id');
     $("#content-ova").load("base/unidades/unidad"+item+".html");
     evt.preventDefault();
