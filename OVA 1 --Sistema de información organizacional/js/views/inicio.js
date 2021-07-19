@@ -9,28 +9,28 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    $(".modal_scroll6").on('click', modal_scroll6);
-    $(".modal_scroll7").on('click', modal_scroll7);
+    $(".modal_scroll_c").on('click', modal_scroll_c);
+    $(".modal_scroll_d").on('click', modal_scroll_d);
 });
 
-function modal_scroll6(){
+function modal_scroll_c(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob6');
-    bar = document.querySelector('.custom-scrollbar__bar6');
-    container = document.querySelector('.custom-scrollbar__inner6');
+    knob = document.querySelector('.custom-scrollbar__knob_c');
+    bar = document.querySelector('.custom-scrollbar__bar_c');
+    container = document.querySelector('.custom-scrollbar__inner_c');
     scroll();
 }
-function modal_scroll7(){
+function modal_scroll_d(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob7');
-    bar = document.querySelector('.custom-scrollbar__bar7');
-    container = document.querySelector('.custom-scrollbar__inner7');
+    knob = document.querySelector('.custom-scrollbar__knob_d');
+    bar = document.querySelector('.custom-scrollbar__bar_d');
+    container = document.querySelector('.custom-scrollbar__inner_d');
     scroll();
 }
 
