@@ -130,7 +130,7 @@ function actualizarprogress(){
             'stroke-dasharray', total,
             'stroke-dashoffset','415'
     );*/
-    $(".up").css({ "stroke": "#375125", 
+    $(".up").css({ "stroke": "#78201A", 
                     "stroke-width": "10px",
                     "stroke-dasharray": pixel,
                     "stroke-dashoffset":"200"

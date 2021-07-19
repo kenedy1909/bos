@@ -27,6 +27,12 @@ window.onload = function () {
   // This function loads all the possible answers of the given question
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
+  if (curr == 0) {
+    $('.cantidad').html("1/2");
+  }
+  if (curr == 1) {
+    $('.cantidad').html("2/2");
+  }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
@@ -83,7 +89,9 @@ window.onload = function () {
         txt       = document.createTextNode(current + 1);
     
     createDiv.appendChild(txt);
-    $('.cantidad').html((current+1)+"/2");
+    if ((current+1) != 3) {
+      $('.cantidad').html((current+1)+"/2");
+    }
     if (bool) {
       
       createDiv.className += 'correct';

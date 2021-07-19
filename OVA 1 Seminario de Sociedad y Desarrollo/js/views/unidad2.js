@@ -424,7 +424,8 @@ function rec() {
                       <p class="justificado">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
                     </div>
                     <div class="col-md-7">
-                      <img src="assets/img/img_ova/comentario2.png" style="max-width: 100%;">
+                       <p class="text-center p_black">clic a la imagen</p>
+                      <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
                     </div>
                   </div>
                 </div>
@@ -435,14 +436,16 @@ function rec() {
                 </div>`
             );
     }else if (rec_num == 2) {
-        $("#rec").html('<img src="assets/img/img_ova/infografia1.png" style="max-width: 100%;">');
+        $("#rec").html('<p class="text-center p_black">clic a la imagen</p><img src="assets/img/img_ova/infografia1.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-2">');
     }else if (rec_num == 3) {
         $("#rec").html(
-                    `<div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-5">
+                    `
+                    <p class="text-center p_black">clic a la imagen</p>
+                    <div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-5">
 
                       <ul class="img-100">
                         <li>
-                          <div class="row">
+                          <div class="row" data-toggle="modal" data-target="#modal-img-3">
                             <div class="col-md-12">
                               <img src="assets/img/img_ova/circulo-1.png" style="max-width: 80%;">
                             </div>
@@ -455,7 +458,7 @@ function rec() {
                           </div>
                         </li>
                         <li>
-                          <div class="row">
+                          <div class="row" data-toggle="modal" data-target="#modal-img-4">
                             <div class="col-md-12">
                               <img src="assets/img/img_ova/circulo-4.png" style="max-width: 80%;">
                             </div>
@@ -468,7 +471,7 @@ function rec() {
                           </div>
                         </li>
                         <li>
-                          <div class="row">
+                          <div class="row" data-toggle="modal" data-target="#modal-img-5">
                             <div class="col-md-12">
                               <img src="assets/img/img_ova/circulo-7.png" style="max-width: 80%;">
                             </div>
@@ -522,7 +525,8 @@ function rec() {
                 <p>6.   Naturalización de la vida social tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
               </div>
               <div class="col-md-7">
-                <img src="assets/img/img_ova/comentario2.png" style="max-width: 100%;">
+              <p class="text-center p_black">clic a la imagen</p>
+                <img src="assets/img/img_ova/comentario.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-6">
               </div>
             </div>`
         );
@@ -537,7 +541,8 @@ function circlerec(num){
               <p class="justificado">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
             </div>
             <div class="col-md-7">
-              <img src="assets/img/img_ova/comentario2.png" style="max-width: 100%;">
+               <p class="text-center p_black">clic a la imagen</p>
+              <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
             </div>`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
