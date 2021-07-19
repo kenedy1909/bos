@@ -65,9 +65,11 @@ function actualizarprogress(){
     if(unidad == 1){
         naveg = 0;
     }else if(unidad == 2){
-        naveg = 15;
+        naveg = 10;
     }else if(unidad == 3){
-        naveg = 23;
+        naveg = 27;
+    }else if(unidad == 4){
+        naveg = 37;
     }
     done = $(".done").length;
     if(unidad == 2){
@@ -76,7 +78,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/30);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/42);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);

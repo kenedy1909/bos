@@ -25,9 +25,9 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    /*slide_predeterminado2();*/
+    slide_predeterminado();
     console.log(tema);
-    /*slide_link3(tema);*/
+    slide_link3(tema);
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*var knob = "";
@@ -74,7 +74,7 @@ function slide_predeterminado(){
 function slide_link3(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num -1);
     controlSlides3(num);
 }
 
@@ -82,6 +82,8 @@ function controlSlides3(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
+            $("#content-ova").load("base/unidades/unidad2.html");
+            tema = 17;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
@@ -112,6 +114,7 @@ function controlSlides3(num){
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
+            tema = 1;
             break;
         default:
             break;

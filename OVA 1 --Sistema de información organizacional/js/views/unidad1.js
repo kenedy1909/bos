@@ -101,6 +101,7 @@ function controlSlides(num){
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            tema=1;
             break;
         default:
             break;
