@@ -86,8 +86,8 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
-            /*$("#content-ova").load("base/unidades/unidad1.html");
-            tema = 10;*/
+            $("#content-ova").load("base/unidades/unidad2.html");
+            tema = 9;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
@@ -206,7 +206,7 @@ function juicio(num) {
     if (num == 1) {
         $("#juicio").html('<p class="justificado p_black">En consecuencia, el ejercicio de la Jurisdicción Universal permite la investigación, enjuiciamiento y sanción de una persona por parte de los tribunales internos de un estado, sin importar el lugar del crimen, la nacionalidad de la víctima o victimario, pues lo jurídicamente relevante es la categoría de la conducta como elemento para determinar el inicio de la acción penal.</p>');
     }else if (num == 2) {
-        $("#juicio").html('<p class="justificado p_black">El principio de Jurisdicción Universal aun cuando no es de amplia aceptación por los estados sí existe un importante número de casos de su ejercicio, al igual que existe legislación nacional y tratados internacionales que reconoce el principio de jurisdicción e incluye las reglas procesales para su aplicación.</p><p class="justificado p_black">Resulta pertinente el análisis que hace la Corte Constitucional de Colombia en sentencia C-1189 del 2000 sobre el principio de Jurisdicción Universal.</p>');
+        $("#juicio").html('<p class="justificado p_black">El principio de Jurisdicción Universal aun cuando no es de amplia aceptación por los estados sí existe un importante número de casos de su ejercicio, al igual que existe legislación nacional y tratados internacionales que reconoce el principio de jurisdicción e incluye las reglas procesales para su aplicación.</p><p class="justificado p_black">Resulta pertinente el análisis que hace la Corte Constitucional de Colombia en sentencia C-1189 del 2000 sobre el principio de Jurisdicción Universal.</p><br><a href="assets/PDF/analisis1.pdf" target="p_black"><button class="p_white ml-auto btn bg-cafe-activi"><img class="img-10 m-auto" src="assets/img/img_ova/pdf-file.png"><b>Ver análisis</b></button></a>');
     }else if (num == 3) {
         $("#juicio").html('<p class="justificado p_black">Por otra parte, el código penal colombiano reconoce el principio de jurisdicción universal de forma expresa en su artículo 16 numeral 6, estableciendo los requisitos para su aplicación. </p><p class="justificado p_black">Para visualizar el artículo, haga clic en Ver imagen.</p><br><div><button class="p_white ml-auto btn bg-cafe-activi" data-toggle="modal" data-target="#modal-juicio"><b>Ver imagen</b></button></div>');
     }else if (num == 4) {
@@ -306,10 +306,6 @@ function pinochet(num) {
                     `;
         $("#pinochet").html(texto);
     }else if (num == 3) {
-        $("#pinochet").html('');
-    }else if (num == 4) {
-        $("#pinochet").html('');
-    }else if (num == 5) {
         var texto = `
                           <div class="d-flex h-100">
                             <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-actividad"><b>VER ACTIVIDAD</b></button>

@@ -63,7 +63,7 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
             $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 10;
+            tema = 16;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");

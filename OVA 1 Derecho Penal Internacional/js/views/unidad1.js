@@ -875,11 +875,15 @@ function yugoslavias(num) {
         $("#tribunal").html(texto);
     }else if (num == 4) {
         var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi">
+                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3">
                       <div class="custom-scrollbar__inner3">
                         <p class="justificado p_black">La competencia temporal del tribunal es a partir de 1991, también se debe destacar que la sede se estableció en la Haya, Países Bajos y el <span class="text-cafe-activi"><b>presupuesto para su funcionamiento</b></span> sale de los recursos del Consejo de Seguridad de la  ONU, aún así el tribunal durante sus primeros años tuvo dificultades para el desarrollo de sus actividades, derivado de la falta de cooperación de los estados que surgieron con el proceso de escisión de la Antigua Yugoslavia, sin embargo, fueron finalmente juzgados cerca de un centenar de personas por el tribunal, desarrollando una abundante jurisprudencia que fortaleció el derecho penal internacional.</p>
                       </div>
-                      
+                      <div class="custom-scrollbar__bar3">
+                        <div class="custom-scrollbar__knob3 cursor">
+                          <p class="text-center linea_scroll3">-</p>
+                        </div>
+                      </div>
                     </div>
                     `;
         $("#tribunal").html(texto);

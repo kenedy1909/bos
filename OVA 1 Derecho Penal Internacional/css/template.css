@@ -883,3 +883,10 @@ svg circle:nth-child(2){
   padding: 39px 20px 15px 55px;
   border-radius: 15px;
 }
+
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}

@@ -1102,7 +1102,7 @@ function card_amarillo_info(){
         var text = `
                    <div class="row">
                         <div class="col-md-6">
-                            <p class="p_white radius-2 bg-btn-a-o w-fit m-auto pr-4"><img src="assets/img/img_ova/transparencia.png" alt="" class="w-h-65px-i">    Tabla de leyes proposicional</p>
+                            <p class="p_white radius-2 bg-btn-a-o w-fit m-auto pr-4"><img src="assets/img/img_ova/diapositivas.png" alt="" class="w-h-65px-i">    Tabla de leyes proposicional</p>
                         </div>
                         <div class="col-md-6 d-flex">
                             <div class="m-0 p-0 x-modal my-auto mover-derecha cursor" id="cerrar-info">

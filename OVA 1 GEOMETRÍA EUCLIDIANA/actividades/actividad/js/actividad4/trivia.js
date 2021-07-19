@@ -31,6 +31,12 @@ window.onload = function () {
   // This function loads all the possible answers of the given question
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
+  if (curr == 0) {
+    $('.cantidad').html('1/4');
+  }
+  if (curr == 3) {
+    $('.cantidad').html('4/4');
+  }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
@@ -82,26 +88,29 @@ window.onload = function () {
   function addChecker(bool) {
   // This function adds a div element to the page
   // Used to see if it was correct or false
-  
-    var createDiv = document.createElement('div'),
-        txt       = document.createTextNode(current + 1);
     
-    createDiv.appendChild(txt);
-    $('.cantidad').html((current+1)+"/"+cantidad);
-    if (bool) {
+      var createDiv = document.createElement('div'),
+          txt       = document.createTextNode(current + 1);
       
-      createDiv.className += 'correct';
-      checker.appendChild(createDiv);
-    } else {
-      createDiv.className += 'false';
-      checker.appendChild(createDiv);
+      createDiv.appendChild(txt);
+      if ((current+2) != 5) {
+        $('.cantidad').html((current+2)+"/"+cantidad);
+      }
+      if (bool) {
+        
+        createDiv.className += 'correct';
+        checker.appendChild(createDiv);
+      } else {
+        createDiv.className += 'false';
+        checker.appendChild(createDiv);
+      }
     }
-  }
-  
-  
-  // Start the quiz right away
-  loadQuestion(current);
-  loadAnswers(current);
+    
+    
+    // Start the quiz right away
+    loadQuestion(current);
+    loadAnswers(current);
+
   
 };
 
