@@ -77,9 +77,9 @@ $( document ).ready(function() {
     var slideHeight = $('#slider3 ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
     
-    $('#slider3').css({ width: '100%', height: '250px' });
+    $('#slider3').css({ width: '100%', height: '190px' });
     
-    $('#slider3 ul').css({ width: '90%'});
+    $('#slider3 ul').css({ width: '75%'});
     
     $('#slider3 ul li:last-child').prependTo('#slider3 ul');
 

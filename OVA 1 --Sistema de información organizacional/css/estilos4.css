@@ -765,3 +765,17 @@ a.control_next {
     background: #143668;
     color: white;
 }
+.triag_cambiaslide2{
+  width: 0;
+  height: 0;
+  border-left: 37px solid #3A3838;
+  border-top: 25px solid transparent;
+  border-bottom: 26px solid transparent;
+}
+.triag_cambiaslide2rigth{
+  width: 0;
+  height: 0;
+  border-right: 37px solid #3A3838;
+  border-top: 25px solid transparent;
+  border-bottom: 26px solid transparent;
+}
