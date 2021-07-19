@@ -171,7 +171,7 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
-            $("#content-ova").load("base/unidades/unidad2.html");
+            $("#content-ova").load("base/unidades/unidad3.html");
             tema = 10;
             break;
         case 1:
@@ -276,4 +276,12 @@ function quitar(num) {
     //     $(".custom-scrollbar__bar2").css('display','none');
     //     $(".custom-scrollbar2").css('height','180px');
     // }
+}
+
+function instrucciones(num) {
+    if (num == 1) {
+        $(".instrucciones-1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".instrucciones-2").removeClass('d-none');
+    }
 }

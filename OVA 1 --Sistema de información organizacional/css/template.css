@@ -452,6 +452,52 @@ iframe{
     top: -32px;
     color: #00414c;
 }
+.custom-scrollbar_a, .custom-scrollbar_b, .custom-scrollbar_c, .custom-scrollbar_d{
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_a, .custom-scrollbar__inner_b, .custom-scrollbar__inner_c, .custom-scrollbar__inner_d {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_a, .custom-scrollbar__bar_b, .custom-scrollbar__bar_c, .custom-scrollbar__bar_d {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+
+}
+
+.custom-scrollbar__knob_a, .custom-scrollbar__knob_b, .custom-scrollbar__knob_c, .custom-scrollbar__knob_d {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+  cursor: pointer;
+}
+
+.linea_scroll_a, .linea_scroll_b, .linea_scroll_c, .linea_scroll_d {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #00414c;
+}
 /*porcentaje*/
 
 .porcentaje{
