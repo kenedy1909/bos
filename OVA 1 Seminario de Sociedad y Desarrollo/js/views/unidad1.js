@@ -97,7 +97,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
             dragging = "";
             diff = "";
             newTop = "";
@@ -108,7 +108,7 @@ function controlSlides(num){
             scroll();
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
             dragging = "";
             diff = "";
             newTop = "";
@@ -133,8 +133,6 @@ function controlSlides(num){
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
-            $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 1;
             break;
         
         default:

@@ -569,7 +569,7 @@ p, button{
   position: relative;
   margin: 0;
   padding: 0;
-  height: 300px;
+  height: 600px;
   list-style: none;
   overflow: hidden;
 }
@@ -581,7 +581,7 @@ p, button{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 300px;
+  height: 600px;
   background: #ffffff;
   text-align: center;
 }

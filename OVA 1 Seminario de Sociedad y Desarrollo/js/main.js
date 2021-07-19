@@ -108,7 +108,7 @@ function actualizarprogress(){
     if(unidad == 1){
         naveg = 0;
     }else if(unidad == 2){
-        naveg = 5;
+        naveg = 6;
     }
     done = $(".done").length;
     if(unidad == 2){

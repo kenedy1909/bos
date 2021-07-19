@@ -143,7 +143,7 @@ function controlSlides(num){
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();
             slider_num = "#slider-4";
-            slider_all();
+            slider_4();
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
@@ -700,6 +700,53 @@ alert();
 }
 
 function slider_5(){
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+    var sliderUlWidth = "";
+    /*var slideCount = $('#slider ul li').length;
+    var slideWidth = $('#slider ul li').width();
+    var slideHeight = $('#slider ul li').height();*/
+    sliderUlWidth = slideCount * slideWidth;
+    
+    $(slider_num).css({ width: '100%', height: '100%' });
+    
+    $(slider_num+' ul').css({ width: '100%'});
+    
+    $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+
+    function moveLeft() {
+        $(slider_num+' ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+        });
+    };
+
+    function moveRight() {
+        $(slider_num+' ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $(slider_num+' ul li:first-child').appendTo(slider_num+' ul');
+            $(slider_num+' ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').off('click').on('click' ,moveLeft);
+    $('a.control_next').off('click').on('click' ,moveRight);
+    /*$('a.control_prev').click(function () {
+        moveLeft();
+    });*/
+
+    /*$('a.control_next').click(function () {
+alert();
+        moveRight();
+    });*/
+}
+
+function slider_4(){
   $('#checkbox').change(function(){
     setInterval(function () {
         moveRight();

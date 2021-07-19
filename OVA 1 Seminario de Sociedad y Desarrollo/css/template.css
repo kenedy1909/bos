@@ -740,3 +740,10 @@ svg circle:nth-child(2){
 .w-60px{
   width: 60px;
 }
+
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}
