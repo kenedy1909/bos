@@ -72,6 +72,91 @@ $( document ).ready(function() {
         moveRight2();
     });
 
+    
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = "";
+    bar = "";
+    container = "";
+    
+});
+var pdf = `<div class="col-md-12">
+                  <p class="p_black">
+                        <a href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                </div>`;
+$('.pdfs').html(pdf);
+
+function slide(){
+    var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
+    controlSlides(stepIndex);
+}
+
+function scroll5() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob5');
+    bar = document.querySelector('.custom-scrollbar__bar5');
+    container = document.querySelector('.custom-scrollbar__inner5');
+    scroll();
+}
+function scroll_siete() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob_siete');
+    bar = document.querySelector('.custom-scrollbar__bar_siete');
+    container = document.querySelector('.custom-scrollbar__inner_siete');
+    scroll();
+}
+function scroll_ocho() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob_ocho');
+    bar = document.querySelector('.custom-scrollbar__bar_ocho');
+    container = document.querySelector('.custom-scrollbar__inner_ocho');
+    scroll();
+}
+function scroll_nueve() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob_nueve');
+    bar = document.querySelector('.custom-scrollbar__bar_nueve');
+    container = document.querySelector('.custom-scrollbar__inner_nueve');
+    scroll();
+}
+function scroll6() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob20');
+    bar = document.querySelector('.custom-scrollbar__bar20');
+    container = document.querySelector('.custom-scrollbar__inner20');
+    scroll();
+}
+
+function modal_scroll10(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob10');
+    bar = document.querySelector('.custom-scrollbar__bar10');
+    container = document.querySelector('.custom-scrollbar__inner10');
+    scroll();
+}
+
+function slide_aparece(){
     var slideCount = $('#slider3 ul li').length;
     var slideWidth = $('#slider3 ul li').width();
     var slideHeight = $('#slider3 ul li').height();
@@ -109,57 +194,6 @@ $( document ).ready(function() {
         moveRight3();
     });
 
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = "";
-    bar = "";
-    container = "";
-    
-});
-var pdf = `<div class="col-md-12">
-                  <p class="p_black">
-                        <a href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
-$('.pdfs').html(pdf);
-
-function slide(){
-    var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
-    controlSlides(stepIndex);
-}
-
-function scroll5() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob5');
-    bar = document.querySelector('.custom-scrollbar__bar5');
-    container = document.querySelector('.custom-scrollbar__inner5');
-    scroll();
-}
-function scroll6() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob20');
-    bar = document.querySelector('.custom-scrollbar__bar20');
-    container = document.querySelector('.custom-scrollbar__inner20');
-    scroll();
-}
-
-function modal_scroll10(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob10');
-    bar = document.querySelector('.custom-scrollbar__bar10');
-    container = document.querySelector('.custom-scrollbar__inner10');
-    scroll();
 }
 
 function slide_predeterminado(){
@@ -387,33 +421,142 @@ function scroll_slide(num) {
                                   </div>
                                 </div>
                                 `);
+        scroll_siete();
     }else if (num == 4) {
-        $(".scroll_slide-4").html('');
+        $(".scroll_slide-4").html('<p class="text-azul">Desarrollo del Sistema y Documentación</p>');
         $(".scroll_slide-4").removeClass('bg-azul');
         $(".scroll_slide-4").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                0
+                                <div class="p-3">
+                                  <h5 class="text-color-activi-o"><b>Fase 4: Desarrollo del Sistema y Documentación</b></h5>
+                                  <div>
+                                    <p class="justificado p_black">El desarrollo de un sistema consiste en la traducción del diseño de dicho sistema a una forma entendible para la computadora. Esto se logra mediante la generación del código fuente, el cual se puede obtener en algunos casos de manera automatizada (usando herramientas CASE) y en todos los casos usando el talento de los ingenieros o programadores que elaboran dicho código para que satisfaga las especificaciones del diseño.</p>
+                                    <br>
+                                    <p class="justificado p_black">Se podría decir que, en esta fase el administrador o gerente no tiene mucha injerencia, o por lo menos no tiene mucho que aportar, a no ser que sea experto o tenga formación en programación de software.</p>
+                                  </div>
+                                </div>
                                 `);
     }else if (num == 5) {
-        $(".scroll_slide-5").html('');
+        $(".scroll_slide-5").html('<p class="text-azul">Pruebas del Sistema</p>');
         $(".scroll_slide-5").removeClass('bg-azul');
         $(".scroll_slide-5").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                0
+                                <div class="p-3">
+                                  <h5 class="text-color-activi-o"><b>Fase 5: Pruebas del Sistema</b></h5>
+                                  <div class="content p_white custom-scrollbar_ocho pr-5">
+                                    <div class="custom-scrollbar__inner_ocho">
+                                      <p class="justificado p_black">Una vez desarrollado un sistema de información se podría esperar que ya estuviese listo para entrar en operación, No obstante, es absolutamente necesario que se le realicen pruebas, pues es inusual que un sistema quede completamente listo y a satisfacción de los usuarios después de finalizada su etapa de desarrollo.</p>
+                                      <br>
+                                      <p class="justificado p_black">Se sugiere que las pruebas de un sistema se realicen por partes, y que involucren a la mayor cantidad posible de usuarios, luego se puede hacer una prueba de funcionamiento del sistema como un todo.</p>
+                                      <br>
+                                      <p class="justificado p_black">Para esto, se puede seleccionar a un usuario o usuarios que sean claves por su conocimiento de los procesos, para que ingrese al sistema módulo por módulo y buscar operarlo, y hacer simulaciones con operaciones reales o ficticias en situaciones normales y anormales; todo esto para ver cómo se comporta cada parte del sistema aún en situaciones no previstas.</p>
+                                      <br>
+                                      <div class="d-flex">
+                                        <img src="assets/img/img_ova/tecnico.png" class="img-100 mt-auto">
+                                      </div>
+                                      <br>
+                                      <p class="justificado p_black">En ese sentido, en los momentos que se estén realizando pruebas, es una buena práctica que el administrador intente usar el software, en los campos de captura de información, incluir datos ilógicos. Por ejemplo: si se pide un valor, incluir alguno que esté por fuera del rango establecido o con signos negativos para verificar que el sistema haga las validaciones respectivas.</p>
+                                      <br>
+                                      <p class="justificado p_black">Finalmente, el administrador o gerente debe verificar en cada módulo hasta el mínimo detalle para que las correcciones se hagan una vez terminada la fase de pruebas y no cuando el sistema esté en operación, pues ya en este caso las correcciones son costosas y generan malestar y desconfianza entre los usuarios finales.</p>
+                                    </div>
+                                    <div class="custom-scrollbar__bar_ocho">
+                                      <div class="custom-scrollbar__knob_ocho cursor"><p class="text-center linea_scroll_ocho">-</p></div>
+                                    </div>
+                                  </div>
+                                </div>
                                 `);
+         scroll_ocho();
     }else if (num == 6) {
-        $(".scroll_slide-6").html('');
+        $(".scroll_slide-6").html('<p class="text-azul">La Implantación del Sistema</p>');
         $(".scroll_slide-6").removeClass('bg-azul');
         $(".scroll_slide-6").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                0
+                                <div class="p-3">
+                                  <h5 class="text-color-activi-o"><b>Fase 6: La Implantación del Sistema</b></h5>
+                                  <div class="content p_white custom-scrollbar_nueve pr-5">
+                                    <div class="custom-scrollbar__inner_nueve">
+                                      <p class="justificado p_black">Una vez se ha definido que el producto está terminado, probado y para entrega, se procede con la fase de implantación, que consiste en ubicar el software en el servidor, efectuando el proceso de instalación. Una vez finalizada la instalación, comenzar con el proceso de preparación de la información que se incluirá inicialmente para que arranque el sistema. </p>
+                                      <br>
+                                      <p class="justificado p_black">Posteriormente, se procede con la capacitación de los usuarios sobre cómo utilizar el sistema, de modo que las dudas sean mínimas cuando el sistema entre en operación.</p>
+                                      <br>
+                                      <p class="justificado p_black">En la fase de implantación, es clave llevar un paralelo con el sistema que funcionaba previamente (esto en los casos donde existiese), pues debe quedar muy claro que es el nuevo sistema por sí mismo el que debe desplazar el sistema anterior. Los usuarios deben percatarse, por su propia cuenta, que ya no es rentable seguir funcionando con el sistema anterior y que el nuevo sistema lo ha desplazado.</p>
+                                      <br>
+                                      <div class="d-flex">
+                                        <img src="assets/img/img_ova/plantacion.png" class="img-100 mt-auto">
+                                      </div>
+                                    </div>
+                                    <div class="custom-scrollbar__bar_nueve">
+                                      <div class="custom-scrollbar__knob_nueve cursor"><p class="text-center linea_scroll_nueve">-</p></div>
+                                    </div>
+                                  </div>
+                                </div>
                                 `);
+         scroll_nueve();
     }else if (num == 7) {
-        $(".scroll_slide-7").html('');
+        $(".scroll_slide-7").html('<p class="text-azul">El mantenimiento del Sistema</p>');
         $(".scroll_slide-7").removeClass('bg-azul');
         $(".scroll_slide-7").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                0
+                                <div class="pt-3">
+                                  <h3 class="color-text">Fase 7: el mantenimiento del Sistema</h3>
+                                  <div class="pt-3 custom-scrollbar20">
+                                    <div class="row custom-scrollbar__inner20 padding_scroll" style="padding: 0px 70px 1px 25px;">
+                                      
+                                      <p class="justificado">Esta es la fase que más tiempo toma, además es la más costosa para la organización, incluso más costosa que el mismo diseño y desarrollo. Se puede decir que la fase de mantenimiento existirá mientras el sistema tenga vida. Implica la dedicación de capacidad profesional o del área a cargo de los sistemas (TICs, Informática, sistemas, etc), durante todo el tiempo de vida del software, pues requiere hacer correcciones, modificaciones o incluso actualizaciones de acuerdos con los cambios de la tecnología y de los cambios en los de la empresa, esto también se conoce como soporte técnico al sistema.</p>
+                                      
+                                      <div class="col-md-12 d-flex" style="margin-left: 5px;z-index: 100;">
+                                        <div class="img-15 d-flex">
+                                            <a href="#" class="control_prev3 m-auto"><div style="" class="triag_cambiaslide2rigth"></div></a>
+                                        </div>
+                                        <div class="img-70 d-flex">
+                                          <div id="slider3" style="" class="m-auto d-flex justify-content-center">
+                                            <ul>
+                                              
+                                              <li>
+                                                <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
+                                                  
+                                                  <div style="width: 70%;">
+                                                    <p class="justificado" style="font-size: 13px;">Errores o requerimientos que se dejaron pasar en las fases iniciales.</p>
+                                                  </div>
+                                                  <div style="width: 25%;"><img src="assets/img/img_ova/error.png" style="max-width: 100%;"></div>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
+                                                  
+                                                  <div style="width: 70%;">
+                                                    <p class="justificado" style="font-size: 11px;">Cambios en los requerimientos de los usuarios originados por cambios en los procesos de la organización, cambios en las normas y leyes existentes, o nuevas inquietudes de los usuarios propias de la evolución misma del negocio. </p>
+                                                  </div>
+                                                  <div style="width: 25%;"><img src="assets/img/img_ova/exchange.png" style="max-width: 100%;"></div>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
+                                                  
+                                                  <div style="width: 70%;">
+                                                    <p class="justificado" style="font-size: 11px;">Cambios tecnológicos, como por ejemplo la instalación de un nuevo hardware, nuevos sistemas operativos, nuevas tecnologías de redes, migración de los sistemas a otros. </p>
+                                                  </div>
+                                                  <div style="width: 25%;"><img src="assets/img/img_ova/proceso.png" style="max-width: 100%;"></div>
+                                                </div>
+                                              </li>
+                                              
+                                            </ul>  
+                                          </div>
+                                        </div>
+                                        <div class="img-15 d-flex">
+                                          <a href="#" class="control_next3 m-auto"><div style="" class="triag_cambiaslide2"></div></a>
+                                        </div>
+                                      </div>
+                                      
+                                      
+                                    </div>
+                                    <div class="custom-scrollbar__bar20">
+                                      <div class="custom-scrollbar__knob20 cursor"><p class="text-white text-center linea_scroll20">-</p></div>
+                                    </div>
+                                  </div>
+                                </div>
                                 `);
+         scroll6();
+         slide_aparece();
     }
 }
