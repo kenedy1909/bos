@@ -84,6 +84,18 @@ function controlSlides(num){
             // bar = document.querySelector('.custom-scrollbar__bar');
             // container = document.querySelector('.custom-scrollbar__inner');
             // /*scroll();*/
+            var pdf = `<div class="col-md-12">
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Los pueblos indígenas en América Latina. pdf</a>
+                              </p>
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> El Marxismo en América Latina.pdf</a>
+                              </p>
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf</a>
+                              </p>
+                            </div>`;
+            $('.pdfs').html(pdf);
             break;
         case 2:
             $('.pasos').removeClass('efectos');

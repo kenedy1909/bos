@@ -1,0 +1,258 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--foldDur: 0.7s;
+	font-size: calc(24px + (30 - 24)*(100vw - 320px)/(1280 - 320));
+}
+
+body {
+	
+	background-position: 50% 0;
+	background-size: 1.5em 1.5em;
+}
+form, .select__button, .select__options {
+	width: 100%;
+}
+form {
+	margin: auto;
+	/*padding: 3em 1.5em 6em 1.5em;*/
+	
+}
+label {
+	display: block;
+	font-weight: bold;
+}
+.select, .select__button {
+	position: relative;
+}
+.select {
+	margin-bottom: 1.5em;
+	perspective: 20em;
+}
+.select select {
+	display: none;
+}
+.select__button, .select__option {
+	background: #f1f1f1;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.375em;
+}
+.select__button {
+	animation-duration: var(--foldDur);
+	animation-timing-function: ease-in-out;
+	animation-direction: reverse;
+	border-radius: 0;
+	box-shadow:
+		-0.05em 0 0 #fff inset,
+		0.05em 0 0 #ccc inset,
+		0 -0.05em 0 #d9d9d9 inset;
+	transform-origin: 50% 100%;
+	-webkit-appearance: none;
+	appearance: none;
+	z-index: 1;
+	background: #fbe4d4;
+}
+.select__button:focus, .select__option:focus {
+	outline: transparent;
+}
+.select__button:focus {
+	color: #2762f3;
+}
+.select__button:after, .select__option:first-child:after {
+	border-left: 0.25em solid transparent;
+	border-right: 0.25em solid transparent;
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+}
+.select__button:after {
+	border-top: 0.25em solid;
+}
+.select__button--pristine {
+	animation: none;
+}
+.select__options {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	transition: visibility 0s var(--foldDur) steps(1);
+}
+.select__option {
+	box-shadow:
+		-0.05em -0.1em 0.2em 0 #0001 inset,
+		0.05em 0 0 #ccc inset,
+		-0.05em 0.1em 0.2em 0 #fff inset,
+		-0.05em 0 0 #fff inset;
+	color: inherit;
+	opacity: 0;
+	text-decoration: none;
+	transition: opacity 0s var(--foldDur) steps(1);
+}
+.select__option:first-child {
+	box-shadow:
+		-0.05em -0.1em 0.2em 0 #0001 inset,
+		0.05em 0 0 #ccc inset,
+		-0.05em 0 0 #fff inset;
+}
+.select__option:first-child:after {
+	border-bottom: 0.25em solid;
+}
+.select__option:hover, .select__option:focus {
+	background: #b8ccf9;
+	box-shadow:
+		-0.05em -0.1em 0.2em 0 #0001 inset,
+		0.05em 0 0 #a9bbe5 inset,
+		-0.05em 0 0 #c1d4ff inset;
+}
+.select__option[aria-selected="true"]:not(:first-child):after {
+	content: "\2713";
+}
+
+/* Animation */
+.select__button[aria-expanded="true"] {
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	box-shadow:
+		-0.05em -0.1em 0.2em 0 #fff inset,
+		-0.05em 0 0 #fff inset;
+	cursor: default;
+	pointer-events: none;
+}
+.select__button--fold4 {
+	animation-name: fold4;
+}
+.select__button--fold5 {
+	animation-name: fold5;
+}
+.select__button[aria-expanded="true"] + .select__options,
+.select__button[aria-expanded="true"] + .select__options .select__option {
+	transition-delay: 0s;
+}
+.select__button--fold4[aria-expanded="true"] + .select__options,
+.select__button--fold5[aria-expanded="true"] + .select__options {
+	visibility: visible;
+}
+.select__button--fold4[aria-expanded="true"] + .select__options .select__option,
+.select__button--fold5[aria-expanded="true"] + .select__options .select__option {
+	opacity: 1;
+}
+
+.select__button--fold4 + .select__options .select__option:nth-child(4),
+.select__button--fold4[aria-expanded="true"] + .select__options .select__option:nth-child(2) {
+	transition-delay: calc(var(--foldDur) * 0.25);
+}
+.select__button--fold4 + .select__options .select__option:nth-child(3),
+.select__button--fold4[aria-expanded="true"] + .select__options .select__option:nth-child(3) {
+	transition-delay: calc(var(--foldDur) * 0.5);
+}
+.select__button--fold4 + .select__options .select__option:nth-child(2),
+.select__button--fold4[aria-expanded="true"] + .select__options .select__option:nth-child(4) {
+	transition-delay: calc(var(--foldDur) * 0.75);
+}
+
+.select__button--fold5 + .select__options .select__option:nth-child(5),
+.select__button--fold5[aria-expanded="true"] + .select__options .select__option:nth-child(2) {
+	transition-delay: calc(var(--foldDur) * 0.2);
+}
+.select__button--fold5 + .select__options .select__option:nth-child(4),
+.select__button--fold5[aria-expanded="true"] + .select__options .select__option:nth-child(3) {
+	transition-delay: calc(var(--foldDur) * 0.4);
+}
+.select__button--fold5 + .select__options .select__option:nth-child(3),
+.select__button--fold5[aria-expanded="true"] + .select__options .select__option:nth-child(4) {
+	transition-delay: calc(var(--foldDur) * 0.6);
+}
+.select__button--fold5 + .select__options .select__option:nth-child(2),
+.select__button--fold5[aria-expanded="true"] + .select__options .select__option:nth-child(5) {
+	transition-delay: calc(var(--foldDur) * 0.8);
+}
+
+@keyframes appear {
+	from { opacity: 0 }
+	to { opacity: 1 }
+}
+@keyframes fold4 {
+	from { color: #171717; transform: translateY(0) rotateX(0deg) }
+	12.5% { color: #171717; transform: translateY(0) rotateX(-90deg) }
+	12.51% { color: transparent; transform: translateY(0) rotateX(-90deg) }
+	25% { color: transparent; transform: translateY(0) rotateX(-180deg) }
+	25.01% { color: transparent; transform: translateY(100%) rotateX(0deg) }
+	50% { color: transparent; transform: translateY(100%) rotateX(-180deg) }
+	50.01% { color: transparent; transform: translateY(200%) rotateX(0deg) }
+	75% { color: transparent; transform: translateY(200%) rotateX(-180deg) }
+	75.01% { color: transparent; transform: translateY(300%) rotateX(0deg) }
+	to { color: transparent; transform: translateY(300%) rotateX(-100deg) }
+}
+@keyframes fold5 {
+	from { color: #171717; transform: translateY(0) rotateX(0deg) }
+	10% { color: #171717; transform: translateY(0) rotateX(-90deg) }
+	10.01% { color: transparent; transform: translateY(0) rotateX(-90deg) }
+	20% { color: transparent; transform: translateY(0) rotateX(-180deg) }
+	20.01% { color: transparent; transform: translateY(100%) rotateX(0deg) }
+	40% { color: transparent; transform: translateY(100%) rotateX(-180deg) }
+	40.01% { color: transparent; transform: translateY(200%) rotateX(0deg) }
+	60% { color: transparent; transform: translateY(200%) rotateX(-180deg) }
+	60.01% { color: transparent; transform: translateY(300%) rotateX(0deg) }
+	80% { color: transparent; transform: translateY(300%) rotateX(-180deg) }
+	80.01% { color: transparent; transform: translateY(400%) rotateX(0deg) }
+	to { color: transparent; transform: translateY(400%) rotateX(-100deg) }
+}
+
+.enunciado{
+	border: solid #4F737C;
+    border-radius: 25px 25px 0px 0px;
+    padding: 12px 20px 10px 20px;
+    height: 200px;
+}
+
+.seleccionable{
+	background: #fbe4d4;
+    position: relative;
+    top: -18px;
+}
+
+.optciones{
+  display: inline-block;
+    width: 60%;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+}
+
+.principal{
+  height: 400px;
+  border-radius: 40px;
+  background: #e3464f;
+}
+
+.cabeza{
+  background: #540f23;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 125px;
+  width: 125px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
+}
+
+.info_actividad{
+    background: rgba(255, 192, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
