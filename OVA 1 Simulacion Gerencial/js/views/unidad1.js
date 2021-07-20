@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    slide_predeterminado();
+    
     // console.log(tema);
 
     $('#smartwizard').smartWizard({
@@ -16,6 +16,8 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+
+    slide_predeterminado();
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -84,13 +86,13 @@ function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
-    window.location.href ="#unidad1-1";
+    $('#smartwizard').smartWizard("goToStep", 0);
 }
 
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    window.location.href ="#unidad1-"+num;
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
 
