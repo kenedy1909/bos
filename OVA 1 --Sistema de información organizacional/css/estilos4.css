@@ -779,3 +779,10 @@ a.control_next {
   border-top: 25px solid transparent;
   border-bottom: 26px solid transparent;
 }
+
+.bg-border{
+  border: solid #143668;
+}
+.text-azul{
+  color: #143668;
+}

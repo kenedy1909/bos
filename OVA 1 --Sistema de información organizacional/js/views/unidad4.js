@@ -113,10 +113,9 @@ $( document ).ready(function() {
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob5');
-    bar = document.querySelector('.custom-scrollbar__bar5');
-    container = document.querySelector('.custom-scrollbar__inner5');
-    scroll();
+    knob = "";
+    bar = "";
+    container = "";
     
 });
 var pdf = `<div class="col-md-12">
@@ -131,6 +130,16 @@ function slide(){
     controlSlides(stepIndex);
 }
 
+function scroll5() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob5');
+    bar = document.querySelector('.custom-scrollbar__bar5');
+    container = document.querySelector('.custom-scrollbar__inner5');
+    scroll();
+}
 function scroll6() {
     dragging = "";
     diff = "";
@@ -283,5 +292,128 @@ function instrucciones(num) {
         $(".instrucciones-1").removeClass('d-none');
     }else if (num == 2) {
         $(".instrucciones-2").removeClass('d-none');
+    }
+}
+
+function scroll_slide(num) {
+    if (num == 1) {
+        $(".scroll_slide-1").html('<p class="text-azul">Planeación del Proyecto o Sistema</p>');
+        $(".scroll_slide-1").removeClass('bg-azul');
+        $(".scroll_slide-1").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                <div class="pt-3">
+                                  <h3 class="color-text">Fase 1: Planeación del Proyecto o Sistema</h3>
+                                  <div class="pt-3 custom-scrollbar5">
+                                    <div class="row custom-scrollbar__inner5 padding_scroll" style="padding: 0px 70px 1px 25px;">
+                                      
+                                      <p class="justificado">Es la etapa más determinante desde la perspectiva gerencial en el diseño de un sistema de información puesto que en ella se identifica la problemática que tiene la organización y cuya solución es claramente un sistema de información como tal. En esta fase se identifican las necesidades de los usuarios con respecto al sistema a fin de definir sus objetivos, alcances y justificación. La planeación del proyecto debe ser consistente con el plan estratégico de la empresa, por lo que es recomendable que involucre una muy buena parte del equipo directivo, así como representantes de diferentes áreas de la empresa, entre mayor sea el alcance.</p>
+                                      <p class="justificado">Una vez definidos los objetivos, alcances y la justificación del sistema, se procede a hacer un diagrama funcional del sistema, que consiste en una gráfica que debe mostrar de manera clara cómo operará el sistema y cuáles son sus funciones.  <br>
+                                      El cronograma define las actividades o etapas que se deben seguir para la elaboración del proyecto, así como las fechas de inicio y terminación de cada una de las actividades, identificando quiénes son sus responsables (de gerencia, de sistemas y por parte de los usuarios) y los indicadores que se usarán para medir el cumplimiento de los resultados. <br>
+                                      Finalmente, en el presupuesto se debe especificar la asignación de recursos en donde se cuantifican y valoran monetariamente los recursos</p>
+                                      
+                                    </div>
+                                    <div class="custom-scrollbar__bar5">
+                                      <div class="custom-scrollbar__knob5 cursor"><p class="text-white text-center linea_scroll5">-</p></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12"><b>haga clic en cada botón azul para desplegar la información.</b></div>
+
+                                  <div class="row mt-2">
+                                    <div class="col-md-4">
+                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-objetivos">Objetivos</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-alcance">Alcance</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-justificacion">Justificación</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+        scroll5();
+    }else if (num == 2) {
+        $(".scroll_slide-2").html('<p class="text-azul">Análisis del Sistema</p>');
+        $(".scroll_slide-2").removeClass('bg-azul');
+        $(".scroll_slide-2").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                <div class="pt-3">
+                                  <div>
+                                    <h3 class="color-text">Fase 2: Análisis del Sistema</h3><br>
+                                    <p class="justificado">Una vez desarrollada la planeación del sistema (proyecto) en donde se definió qué es lo que se quiere hacer, la programación y el presupuesto, se puede proceder con la etapa de análisis del sistema. En esta fase se <b>analiza la viabilidad o factibilidad</b> del sistema, además, se <b>definen los requerimientos técnicos</b> para el desarrollo de este, <b>se estructura el flujo de los datos</b> y se determina <b>el método de almacenamiento</b> de los datos y la información generada.</p><br>
+                                    <b>haga clic en cada botón azul para desplegar la información.</b>
+                                  </div>
+                                  
+                                  <div class="row mt-2">
+                                    <div class="col-md-4">
+                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-analisis">Análisis de viabilidad o factibilidad.</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-Definición">Definición de requerimientos técnicos.</button>
+                                    </div>
+                                    <div class="col-md-4">
+                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-Determinación">Determinación del método de almacenamiento</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+    }else if (num == 3) {
+        $(".scroll_slide-3").html('<p class="text-azul">Diseño del Sistema</p>');
+        $(".scroll_slide-3").removeClass('bg-azul');
+        $(".scroll_slide-3").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                <div class="p-3">
+                                  <h5 class="text-color-activi-o"><b>Fase 3: Diseño del Sistema</b></h5>
+                                  <div class="content p_white custom-scrollbar_siete pr-5">
+                                    <div class="custom-scrollbar__inner_siete">
+                                      <p class="justificado p_black">El diseño de un sistema de información consiste en construir o esbozar el plan o modelo general de ese sistema. Al igual que los planos que usa el arquitecto para diagramar una edificación, el diseño contiene todas las especificaciones que dan al sistema su forma y estructura.</p>
+                                      <br>
+                                      <p class="justificado p_black">El diseñador del sistema (también conocido como analista o ingeniero informático), es el encargado de elaborar el diagrama o esquema funcional con el flujo de los datos. Este esquema permitirá ilustrar la interacción del sistema con los distintos ambientes internos y externos, los roles y niveles de los usuarios, la jerarquía de la estructura. En otras palabras, se debe elaborar un diagrama o ilustración que describa cómo fluyen los datos a través del sistema mediante el esquema de:</p>
+                                    </div>
+                                    <div class="custom-scrollbar__bar_siete">
+                                      <div class="custom-scrollbar__knob_siete cursor"><p class="text-center linea_scroll_siete">-</p></div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12 d-flex">
+                                    <div class="img-20">
+                                      <img src="assets/img/img_ova/entrar.png" class="img-100">
+                                    </div>
+                                    <div class="img-80 d-flex">
+                                      <h5 class="text-color-activi-o m-auto"><b>Entrada- Proceso - Salida</b></h5>
+                                    </div>
+                                    <div class="img-20">
+                                      <img src="assets/img/img_ova/sign-out.png" class="img-100">
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+    }else if (num == 4) {
+        $(".scroll_slide-4").html('');
+        $(".scroll_slide-4").removeClass('bg-azul');
+        $(".scroll_slide-4").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                0
+                                `);
+    }else if (num == 5) {
+        $(".scroll_slide-5").html('');
+        $(".scroll_slide-5").removeClass('bg-azul');
+        $(".scroll_slide-5").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                0
+                                `);
+    }else if (num == 6) {
+        $(".scroll_slide-6").html('');
+        $(".scroll_slide-6").removeClass('bg-azul');
+        $(".scroll_slide-6").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                0
+                                `);
+    }else if (num == 7) {
+        $(".scroll_slide-7").html('');
+        $(".scroll_slide-7").removeClass('bg-azul');
+        $(".scroll_slide-7").addClass('bg-blanco');
+        $("#scroll-slide").html(`
+                                0
+                                `);
     }
 }
