@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drag and drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/actividad10/drag.css">
+</head>
+<body>
+	<div class="holder row p-5">
+		
+		<header>
+		          <div class="" style="">
+		              <div class="" style="width: 35%;display: inline-block;margin-top: -50px;">
+		                  <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
+		                    <div style="display: inline-block;width: 25%;"><img src="../img/img10/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
+		                    <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
+		                      <b class="" style="color: #963445;">ACTIVIDAD INTERACTIVA</b>
+		                      <div style="height: 5px;background: #994c91;"></div>
+		                      <i><p class="text-muted">ARRASTRAR Y SOLTAR</p></i>
+		                    </div>
+		                  </div>
+		              </div>
+		              <div class="" style="display: inline-block;width: 60%;">
+		                  <p class="info_actividad shadow" style="color: #FFFFFF; background: #393a72;font-family: arial;font-size: 15px;">
+		                      Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según correponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+		                  </p>
+		              </div>
+		          </div>
+		</header>
+	  	<ul class="optciones col-md-7">
+		    <li><a draggable="true" href="" id="one" class="row" style="margin-top: 50px; height: 120px;">
+			    	<div style="" class="col-md-9">
+			    		<p style="font-size: 13px;">En la prospectiva empresarial, los gerentes están en constante búsqueda del desarrollo de planes, programas y proyectos, que sean acordes a la dinámica de los entornos.</p>
+			    	</div>
+			    	<div style="" class="col-md-3">
+			    		<img src="../img/img10/etico_1.png" style="max-width: 40%;">
+			    	</div>
+		    	</a>
+			</li>
+		    <li>
+		    	<a draggable="true" href="" id="two" class="row " style="margin-top: 50px; height: 120px;">
+		    		<div style="" class="col-md-9">
+		    			<p style="font-size: 13px;">En la prospectiva, las empresas no deben de contemplar el futuro como la prolongación del pasado, se debe de entender que los futuros son diversos y múltiples.</p>
+		    		</div>
+		    		<div style="" class="col-md-3">
+		    			<img src="../img/img10/etico_3.png" style="max-width: 40%;">
+		    		</div>
+		    	</a>
+			</li>
+		    <li>
+		    	<a draggable="true" href="" id="three" class="row" style="margin-top: 50px; height: 100px;">
+		    		<div style="" class="col-md-9">
+		    			<p style="font-size: 13px;">En la prospectiva, las tecnologías no logran tener un papel importante en satisfacer las necesidades organizacionales.</p>
+		    		</div>
+		    		<div style="" class="col-md-3">
+		    			<img src="../img/img10/etico_4.png" style="max-width: 40%;">
+		    		</div>
+		    	</a>
+		    </li>
+		    <li>
+		    	<a draggable="true" href="" id="four" class="row" style="margin-top: 50px; height: 100px;">
+		    		<div style="" class="col-md-9">
+		    			<p style="font-size: 13px;">La prospectiva busca proyectar de manera exponencial a la empresa generando proyectos que impacten</p>
+		    		</div>
+		    		<div style="" class="col-md-3">
+		    			<img src="../img/img10/etico_5.png" style="max-width: 40%;">
+		    		</div>
+		    	</a>
+			</li>
+	  	</ul>
+	  <div id="bin" class="col-md-4">
+		<img alt="" src="../img/img10/etico_2.png" class="img_cont" />
+	  </div>
+	</div>
+	<div class="col-md-12 d-flex justify-content-center">
+		<button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="">Calificar</button>
+	</div>
+	
+	
+
+	
+	
+	<!-- Button trigger modal -->
+	
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	      	<div style="" class="cabeza">
+	      		
+	      	</div>
+	      	<div class="d-flex justify-content-center">
+	      		<div style="" class="circulo_modal img_res">
+	      			
+	      		</div>
+	      	</div>
+	      	<div style="padding: 10px;">
+	      		<div style="color: white;">
+	      			Su puntaje es: <p class="puntaje"></p>
+	      		</div>
+	      		<div style="color: white;">
+	      			<p class="mensaje"></p>
+	      		</div>
+	      	</div>
+	      	<div class="row d-flex justify-content-center btns_modal">
+	      		
+	      		
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/actividad10/drop.js">
+	</script>
+</body>
+</html>

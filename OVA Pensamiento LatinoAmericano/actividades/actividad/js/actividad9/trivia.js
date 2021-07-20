@@ -33,7 +33,14 @@ window.onload = function () {
   // This function loads all the possible answers of the given question
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
-  
+  if (curr == 0) {
+    $('.cantidad').html("1/2");
+  }
+  if (curr == 1) {
+    $('.cantidad').html("2/2");
+  }
+
+
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
     answerArea.innerHTML = '';
@@ -64,7 +71,7 @@ window.onload = function () {
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/Indigena2.png" style="width: 100%;">
+                    <img src="../img/img9/colonialismo.png" style="width: 300%; margin-left:-30px">
                   </div>
                 </div>`;
 

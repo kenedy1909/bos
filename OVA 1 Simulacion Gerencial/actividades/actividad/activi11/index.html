@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/actividad11/trivia.css">
+  <title>JS Bin</title>
+</head>
+<body>
+  <header>
+              <div class="" style="margin-top: 30px;">
+                  <div class="" style="width: 35%;display: inline-block;margin-top: -50px;">
+                      <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
+                        <div style="display: inline-block;width: 25%;"><img src="../img/img10/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
+                        <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
+                          <b class="" style="color: #963445;">ACTIVIDAD INTERACTIVA</b>
+                          <div style="height: 5px;background: #994c91;"></div>
+                          <i><p class="text-muted">OPCIÓN CORRECTA</p></i>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="" style="display: inline-block;width: 60%;">
+                      <p class="info_actividad shadow" style="color: #FFFFFF; background: #393a72;font-family: arial;font-size: 15px; padding: 15px; border-radius: 10px;">
+                          Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según correponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+                      </p>
+                  </div>
+              </div>
+    </header>
+  <div class="wrapper mt-5">
+    <div id="quiz">
+      <div class="row">
+        <div class="col-lg-4">
+          
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div style="width: 80px;height: 40px;background: #963445;margin-top: 10px;z-index: 100;border-radius: 10px;" class="cantidad">
+            
+          </div>
+        </div>
+        <div class="col-lg-4">
+          
+        </div>
+      </div>
+      <div style="border-radius: 63px 63px 0px 0px;text-align: center;padding: 10px 80px 0px 80px;position: relative;top: -25px;">
+        <p class="questions" style="background: #e9464f;width: 100%;border-radius: 20px; color: #FFFFFF;">¿Cuales son los términos profesionales y académicos de la educación contable?</p>
+      </div>
+      
+      
+      <div class="answers row">
+        
+      </div>         
+      
+      <div class="checkAnswers" style="visibility: hidden;">
+        <h3>Correct?</h3>
+        <div class="checker">
+
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center;margin-top: 20px;">
+      <button onclick="calificar();" style="background: #008F3E;color: white;font-size: 18px;border-radius: 10px;" data-toggle="modal" data-target="#exampleModal">Calificar</button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content tranparente" style="">
+        <div style="" class="principal">
+          <div style="" class="cabeza">
+            
+          </div>
+          <div class="d-flex justify-content-center">
+            <div style="" class="circulo_modal img_res">
+              
+            </div>
+          </div>
+          <div style="padding: 10px;">
+            <div style="color: white;">
+              Su puntaje es: <p class="puntaje"></p>
+            </div>
+            <div style="color: white;">
+              <p class="mensaje"></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center btns_modal">
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="../js/actividad11/trivia.js"></script>
+</body>
+</html>

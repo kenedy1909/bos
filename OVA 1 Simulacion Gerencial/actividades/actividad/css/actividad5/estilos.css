@@ -1,0 +1,222 @@
+.preguntas {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.pregunta-cuestionario {
+    background: rgba(255, 255, 255, 0.7);
+    border: 3px solid rgba(0,52,66);
+    border-radius: 15px 15px 45px 45px;
+    color: inherit;
+    margin: 10px;
+    width: 100%;
+    height: auto !important;
+}
+
+@media (max-width: 767px) {
+    .pregunta-cuestionario {
+        width: 100%;
+        height: auto !important;
+        margin: 10px 0;
+    }
+}
+
+.respuestas-cuestionario {
+    /* background: rgba(255, 255, 255, .8); */
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .respuestas-cuestionario {
+        font-size: 18px;
+    }
+}
+
+.texto-pregunta {
+    background: rgba(0,52,66);
+    border-radius: 10px 10px 0px 0px;
+    font-size: 18px;
+    margin: 0px;
+    padding: 10px 15px;
+    color: #fff;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .texto-pregunta {
+        margin: 5px;
+        font-size: 18px;
+    }
+}
+
+.btnCalificar {
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.radio {
+    display: inline-block;
+    width: 50%;
+    padding: 0px 10px 0px 35px;
+    color: black;
+    font-size: 18px;
+}
+
+input {
+    width: 16px;
+    height: 21px;
+    margin-left: -25px !important;
+    cursor: pointer;
+}
+
+/*encabezado*/
+.info_actividad{
+    background: rgba(255, 192, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+.pt-3{
+    padding-top: 1.5em;
+}
+.pt-5{
+    padding-top: 2.5em;
+}
+.pl-3{
+    padding-left: 1.5em;
+}
+.pr-3{
+    padding-right: 1.5em;
+}
+.pl-1{
+    padding-left: 0.5em;
+}
+.pr-1{
+    padding-right: 0.5em;
+}
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+/*encabezado*/
+.principal{
+    display: inline-block;
+}
+.secundario{
+    width: 35%;display: inline-block;
+}
+.terciario{
+    width: 65%;display: inline-block;
+}
+.div-img{
+    display: inline-block;max-width: 100%;
+}
+.imagen{
+    width: 116px;
+    height: 116px;
+    display: inline-block;
+}
+
+.texto_header{
+    font-size: 17px;
+    display: inline-block;
+    width: 50%;
+}
+.texto_header b{
+    color: #004c6d;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.linea_blue{
+    height: 5px; 
+    background: #004c6d;
+}
+
+/*slide*/
+
+.slider {
+    border-radius: 5px;
+    position: relative;
+}
+
+.slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+}
+
+.slider ul li  {
+    position: relative;
+    display: none;
+    height:350px;
+}
+
+.slider ul li img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.slider ul li span {
+    position: absolute;
+    bottom: 0;
+    background: hsl(0, 1%, 72%, .1);
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+/* buttons */
+.slider .buttons  {
+    display: inline-block;
+    width: 10%;
+    position: fixed;
+    margin-top: 20%;
+}
+.slider .buttons .next {
+    
+    /*right: 0;
+    position: absolute;*/
+    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    border-left: 35px solid #003442;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    margin-left: 15px
+}    
+.slider .buttons .prev {
+    font-size: 2rem;
+    /*left: 0;
+    position: absolute;*/
+    cursor: pointer;
+    width: 50px;
+    text-align: center;
+}   
+/*.slider .buttons .next:hover {
+    background: hsl(0, 0%, 25%);
+}
+.slider .buttons .prev:hover {
+    background: hsl(0, 0%, 25%);
+    color: hsl(0, 0%, 93%);
+}*/
+
+/* slider animation */
+.slider ul li {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+}
+
+.size_15{
+    font-size: 15px;
+}
