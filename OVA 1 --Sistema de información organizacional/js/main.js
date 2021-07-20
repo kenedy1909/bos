@@ -30,29 +30,29 @@ $( document ).ready(function() {
     knob = "";
     bar = "";
     container = "";
-    $(".modal_scroll4").on('click', modal_scroll4);
-    $(".modal_scroll5").on('click', modal_scroll5);
+    $(".modal_scroll_a").on('click', modal_scroll_a);
+    $(".modal_scroll_b").on('click', modal_scroll_b);
 
 });
 
-function modal_scroll4(){
+function modal_scroll_a(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob4');
-    bar = document.querySelector('.custom-scrollbar__bar4');
-    container = document.querySelector('.custom-scrollbar__inner4');
+    knob = document.querySelector('.custom-scrollbar__knob_a');
+    bar = document.querySelector('.custom-scrollbar__bar_a');
+    container = document.querySelector('.custom-scrollbar__inner_a');
     scroll();
 }
-function modal_scroll5(){
+function modal_scroll_b(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob5');
-    bar = document.querySelector('.custom-scrollbar__bar5');
-    container = document.querySelector('.custom-scrollbar__inner5');
+    knob = document.querySelector('.custom-scrollbar__knob_b');
+    bar = document.querySelector('.custom-scrollbar__bar_b');
+    container = document.querySelector('.custom-scrollbar__inner_b');
     scroll();
 }
 
@@ -65,9 +65,11 @@ function actualizarprogress(){
     if(unidad == 1){
         naveg = 0;
     }else if(unidad == 2){
-        naveg = 15;
+        naveg = 10;
     }else if(unidad == 3){
-        naveg = 23;
+        naveg = 27;
+    }else if(unidad == 4){
+        naveg = 37;
     }
     done = $(".done").length;
     if(unidad == 2){
@@ -76,7 +78,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/30);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/43);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);

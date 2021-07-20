@@ -622,3 +622,167 @@ p, button{
     top: -32px;
     color: #FFFFFF;
 }
+
+#slider2 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider2 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider2 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+a.control_prev2, a.control_next2 {
+  
+  width: auto;
+  height: auto;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider2_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+#slider3 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider3 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider3 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+a.control_prev3, a.control_next3 {
+  
+  width: auto;
+  height: auto;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider3_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.inactivo{
+  background: #ffffff;
+  height: 4px;
+}
+
+.activo{
+  background: #ae1c16;
+  height: 4px;
+}
+
+.bg-blue{
+  background: #143668;
+}
+.bg-border{
+  border: solid #143668;
+}
+
+.btn_fases{
+    background: #143668;
+    color: white;
+}
+.triag_cambiaslide2{
+  width: 0;
+  height: 0;
+  border-left: 37px solid #3A3838;
+  border-top: 25px solid transparent;
+  border-bottom: 26px solid transparent;
+}
+.triag_cambiaslide2rigth{
+  width: 0;
+  height: 0;
+  border-right: 37px solid #3A3838;
+  border-top: 25px solid transparent;
+  border-bottom: 26px solid transparent;
+}
+
+.bg-border{
+  border: solid #143668;
+}
+.text-azul{
+  color: #143668;
+}
