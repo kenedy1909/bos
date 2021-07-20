@@ -57,12 +57,12 @@ function calificar(){
 	
 
 	if (puntaje >= 75) {
-	    $('.img_res').html('<img src="../img/img9/bien.png" style="max-width: 90%;">');
+	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
 	    $('.puntaje').text(Math.round(puntaje)+"%");
 	    $('.mensaje').text("¡Felicitaciones!");
 	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
 	}else{
-	    $('.img_res').html('<img src="../img/img9/mal.png" style="max-width: 90%;">');
+	    $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
 	    $('.mensaje').text("¡Puedes hacerlo mejor!");
 	    $('.puntaje').text(Math.round(puntaje)+"%");
 	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
