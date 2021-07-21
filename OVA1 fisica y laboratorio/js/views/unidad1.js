@@ -900,16 +900,23 @@ function aviones(num) {
             $("#avion").addClass('fondo-5');
             $("#avion").attr('onclick','aviones(5)');
             $(".avion-content").html(`
-                                        <p class="p_black justificado"></p>
-                                        </p>
-                                        <p class="p_black justificado"></p>
+                                        <p class="p_black justificado">Cuando una cantidad física se describe con un solo número, se dice que es una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>escalar.</b></span> En cambio, una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>vectorial</b></span> incluye tanto una magnitud (la cual indica “qué tanto” o “qué tan grande”) como una dirección en el espacio. </p>
+                                        <br>
+                                        <p class="p_black justificado">Los cálculos que combinan cantidades escalares usan las operaciones aritméticas ordinarias. Por ejemplo, 6 kg + 3 kg = 9 kg, o 4 * 2 s = 8 s. No obstante, la combinación de vectores requiere un conjunto diferente de operaciones.</p>
                                     `);
             break;
         case 5:
             $("#avion").removeClass('fondo-1');
             $("#avion").addClass('fondo-6');
             $("#avion").attr('onclick','aviones(6)');
-            $(".avion-content").html(`<p class="p_black justificado"></p>`);
+            $(".avion-content").html(`
+                                        <div class="d-flex">
+                                          <img src="assets/img/img_ova/profesor (3).png" class="img-80 m-auto">
+                                        </div>
+                                        <p class="p_black justificado">Para entender mejor los vectores y su combinación, se comienza con la cantidad vectorial más sencilla, el desplazamiento, que simplemente es un cambio en la posición de un objeto. El desplazamiento es una cantidad vectorial porque se debe establecer no solo qué tan lejos se mueve el objeto, sino también en qué dirección.</p>
+                                        <br>
+                                        <p class="p_black justificado">Caminar 3 km al norte desde una casa no lleva al mismo sitio que caminar 3 km al sureste; ambos desplazamientos tienen la misma magnitud, pero diferente dirección.</p>
+                                    `);
             break;
         case 6:
             $("#avion").removeClass('fondo-1');
