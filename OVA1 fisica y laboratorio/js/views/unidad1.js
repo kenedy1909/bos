@@ -933,3 +933,15 @@ function aviones(num) {
             break;
     }
 }
+
+function actividadrecogible(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.bg-recogible').css({'width': '12%'});
+            $('.img_recogible1').css({'max-width': '125%'})
+            break;
+        default:
+            
+            break;
+    }
+}

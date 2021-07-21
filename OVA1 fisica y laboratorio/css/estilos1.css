@@ -117,6 +117,7 @@
 
 .bg-azul-mo{
 	background-color: #003442;
+	position: absolute;
 }
 
 .text-azul-c{
@@ -339,4 +340,20 @@
 
 .bg-otro-azul-o{
 	background-color: #1F4E79;
+}
+.recogible{
+	width: 50%;
+	height: 300px;
+	background: #BBD6EE;
+	border-radius: 30px;
+
+}
+
+.textorecogible{
+	padding: 15px 15px 0px 130px;
+}
+
+.bg-recogible{
+	width: 48%;
+   height: 300px;
 }
