@@ -62,6 +62,36 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.fondo-2{
+	background-image: url(../assets/img/img_ova/avion-2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-3{
+	background-image: url(../assets/img/img_ova/avion-3.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-4{
+	background-image: url(../assets/img/img_ova/avion-4.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-5{
+	background-image: url(../assets/img/img_ova/avion-5.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-6{
+	background-image: url(../assets/img/img_ova/avion-6.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .bg-cafe-c{
 	background-color: #965B0C;
@@ -294,4 +324,19 @@
 
 .bg-otro-azul-o{
     background-color: #1F4E79;
+}
+.bg-otro-azul-mc{
+	background-color: #BDD7EE;
+}
+
+.bg-un-azul-mas{
+	background-color: #8FAADC;
+}
+
+.bg-gris-c{
+	background-color: #C9C9C9;
+}
+
+.bg-otro-azul-o{
+	background-color: #1F4E79;
 }
