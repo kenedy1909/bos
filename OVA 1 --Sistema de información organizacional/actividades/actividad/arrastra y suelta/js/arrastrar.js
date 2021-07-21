@@ -41,7 +41,7 @@ function calificar(){
 
 	if (puntaje >= 75) {
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
-	    $('.puntaje').text(Math.round(puntaje)+"%");
+	    $('.puntaje').text("100%");
 	    $('.mensaje').text("¡Felicitaciones!");
 	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
 	}else{

@@ -1,0 +1,239 @@
+.cursor{
+	cursor: pointer;
+}
+
+.border-left-azul{
+	border-left: solid #006092 2px;
+}
+
+.border-right-azul{
+	border-right: solid #006092 2px;
+}
+
+.border-top-azul{
+	border-top: solid #006092 2px;
+}
+
+.border-bottom-azul{
+	border-bottom: solid #006092 2px;
+}
+
+.border-left-blanco{
+	border-left: solid #FFFFFF 2px;
+}
+
+.border-right-blanco{
+	border-right: solid #FFFFFF 2px;
+}
+
+.border-top-blanco{
+	border-top: solid #FFFFFF 2px;
+}
+
+.border-bottom-blanco{
+	border-bottom: solid #FFFFFF 2px;
+}
+
+.bg-amarillo-o{
+	background-color: #E39D40;
+}
+
+.bg-azul-c{
+	background-color: #8DA9DB;
+}
+
+.triangulo-derecha{
+	border-top: solid 15px transparent;
+	border-left: solid 25px #003442;
+	border-bottom: solid 15px transparent;
+}
+
+.w-0px{
+	width: 0px;
+}
+
+.h-0px{
+	height: 0px;
+}
+
+.fondo-1{
+	background-image: url(../assets/img/img_ova/avion-1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.bg-cafe-c{
+	background-color: #965B0C;
+}
+
+.w-h-50px{
+	width: 50px;
+	height: 50px;
+}
+
+.w-h-90px{
+	width: 90px;
+	height: 90px;
+}
+
+.bg-azul{
+	background-color: #4472C4;
+}
+
+.bg-azul-o{
+	background-color: #1F3864;
+}
+
+.bg-azul-mo{
+	background-color: #003442;
+}
+
+.text-azul-c{
+	color: #8DA9DB;
+}
+
+.bg-azul-n{
+	background-color: #1E4E79;
+}
+
+.bg-gris{
+	background-color: #D0CECE;
+}
+
+.triagulo_abajo{
+	border-right: solid 15px transparent;
+	border-top: solid 25px #FFFFFF;
+	border-left: solid 15px transparent;
+}
+
+.h-6px{
+	height: 6px;
+}
+.h-80px{
+	height: 80px;
+}
+.justify-content-evenly{
+	justify-content: space-evenly;
+}
+.top-n40px{
+	top: -40px;
+}
+.w-80px{
+	width: 80px;
+}
+
+.triangulo-abajo{
+  border-left: solid 15px transparent;
+  border-top: solid 40px #FFFFFF;
+  border-right: solid 15px transparent;
+}
+
+.subir-triangulo{
+  position: relative;
+  top: -4px;
+  width: 0px;
+}
+
+.bg-azul-mc{
+	background-color: #B3C6E7;
+}
+
+.bg-a-c{
+	background-color: #8CA7DA;
+}
+
+.bg-amarillo{
+	background-color: #FFC000;
+}
+
+
+.border-verde-o{
+	border: solid #548235 2px;
+}
+.bg-verde-c{
+	background-color: #70AD47;
+}
+.border-otro-azul-o{
+	border: solid #2F5597 2px;
+}
+.bg-otro-azul-c{
+	background-color: #5B9BD5;
+}
+.border-verde-mo{
+	border: solid #385723 2px;
+}
+.bg-verde-mc{
+	background-color: #4DC58D;
+}
+
+.opacity-7{
+	opacity: 0.7;
+}
+
+.x-modal-verde{
+  background: #548235;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+.x-modal-azul{
+  background: #2F5597;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+.x-modal-verde-o{
+  background: #385723;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+
+.custom-scrollbar_uno {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_uno {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_uno {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 30px;
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob_uno {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.linea_scroll_uno {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #548235;
+}

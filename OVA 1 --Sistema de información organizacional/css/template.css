@@ -381,7 +381,6 @@ iframe{
   top: -20px;
   left: 12px;
 }*/
-
 .btn{
   cursor: pointer;
 }
@@ -402,7 +401,7 @@ iframe{
 
 .custom-scrollbar5, .custom-scrollbar6, .custom-scrollbar20{
   position: relative;
-  height: 350px;
+  height: 400px;
   overflow: hidden;
 }
 

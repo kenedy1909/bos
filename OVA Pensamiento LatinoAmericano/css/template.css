@@ -2,6 +2,17 @@
   max-width: 100%;
 }
 
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}
+
+#smartwizard .nav{
+    display: none;
+}
+
 .img-80{
     width: 80%;
 }
@@ -110,7 +121,7 @@ iframe{
 }
 
 .titulo-ova{
-  background-image: url(../assets/img/img_ova/Metodologia-de-la-investigación-03.png);
+  background-image: url(../assets/img/img_ova/pensamiento_latinoamericano-01.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 400px;
