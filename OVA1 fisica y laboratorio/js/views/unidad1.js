@@ -446,7 +446,7 @@ function quitar(num) {
     }
 }
 
-function scroll_horizontal(num){
+/*function scroll_horizontal(num){
     $('.scroll-img').removeClass('bg-piel');
     $('.scroll-img').addClass('bg-amarillo');
     $('.scroll-flecha').removeClass('d-block');
@@ -599,4 +599,67 @@ function cajas(num){
       default:
           break;
   }
+}*/
+
+function funcionalidad_1(num) {
+    $(".dimensional").removeClass('bg-azul-mc');
+    $(".dimensional").addClass('bg-azul');
+    $(".dimensional-"+num).removeClass('bg-azul');
+    $(".dimensional-"+num).addClass('bg-azul-mc');
+    switch(parseInt(num)){
+        case 1:
+            $("#dimensional").html(`
+                                    <div class="pt-3 px-5 pb-5" style="background-image: url('assets/img/img_ova/sala-de-laboratorio.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+                                      <div class="bg-azul-mc radius-2 p-3">
+                                        <p class="p_black justificado">Las unidades fundamentales o básicas son aquellas que se convienen cómo independientes desde el punto de vista dimensional (por ejemplo, metro, kilo, segundo). (Estela, 2021)</p>
+                                      </div>
+                                    </div>
+                                    `);
+            break;
+        case 2:
+
+            $("#dimensional").html(`
+                                    <div class="p-3" style="background-image: url('assets/img/img_ova/dibujando.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+                                      <div class="bg-a-c radius-2 p-3">
+                                        <div id="dimensional_info">
+                                            <p class="p_black justificado">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según</p>
+                                        </div>
+                                        <div class="img-100 mt-4 d-flex">
+                                          <div class="justify-content-evenly img-50 d-flex m-auto">
+                                            <div class="radius-50 bg-amarillo cursor dimensional_opcion dimensional_opcion-1" onclick="dimensional_opcion(1)" style="width: 15px; height: 15px;"></div>
+                                            <div class="radius-50 bg-cafe-c cursor dimensional_opcion dimensional_opcion-2" onclick="dimensional_opcion(2)" style="width: 15px; height: 15px;"></div>
+                                            <div class="radius-50 bg-cafe-c cursor dimensional_opcion dimensional_opcion-3" onclick="dimensional_opcion(3)" style="width: 15px; height: 15px;"></div>
+                                            <div class="radius-50 bg-cafe-c cursor dimensional_opcion dimensional_opcion-4" onclick="dimensional_opcion(4)" style="width: 15px; height: 15px;"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    `);
+            break;
+        default:
+            break;
+    }
+}
+
+function dimensional_opcion(num) {
+    $(".dimensional_opcion").removeClass('bg-amarillo');
+    $(".dimensional_opcion").addClass('bg-cafe-c');
+    $(".dimensional_opcion-"+num).removeClass('bg-cafe-c');
+    $(".dimensional_opcion-"+num).addClass('bg-amarillo');
+    switch(parseInt(num)){
+        case 1:
+            $("#dimensional_info").html(`<p class="p_black justificado">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según</p>`);
+            break;
+        case 2:
+            $("#dimensional_info").html(`<p class="p_black justificado">Como se menciona anteriormente, existen magnitudes fundamentales las cuales se establecieron por medio de un estándar (Sistema Internacional) de los cuales surgieron diferentes sistemas a nivel mundial.</p>`);
+            break;
+        case 3:
+            $("#dimensional_info").html(`<p class="p_black justificado">En total hay unidades fundamentales: el kilogramo, el segundo, el metro y los grados Kelvin, que corresponden a la masa, el tiempo, la longitud y la temperatura respectivamente y que no depende de ninguna otra y la Mol, la Candela y el Ampere para la cantidad de sustancia, la intensidad luminosa y la cantidad de corriente eléctrica; las cuales dependen de las anteriores.</p>`);
+            break;
+        case 4:
+            $("#dimensional_info").html(`<p class="p_black justificado"><b>Por ejemplo</b>, un Ampere o Amperio equivale a la intensidad de una corriente constante que, manteniéndose en dos conductores paralelos, rectilíneos, de longitud infinita, de sección circular despreciable y situados a una distancia de un metro uno de otro en el vacío, produciría una fuerza igual a 2×10–7 Newton por metro de longitud</p>`);
+            break;
+        default:
+            break;
+    }
 }
