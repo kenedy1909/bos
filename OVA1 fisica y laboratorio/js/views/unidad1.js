@@ -37,10 +37,10 @@ $( document ).ready(function() {
     var dragging = "";
     var diff = "";
     var newTop = "";
-    var scrollOffset = "";
+    var scrollOffset = "";/*
     $(".modal_scroll2").on('click', modal_scroll2);
     $(".modal_scroll3").on('click', modal_scroll3);
-    $(".modal_scroll4").on('click', modal_scroll4);
+    $(".modal_scroll4").on('click', modal_scroll4);*/
     /*$(".unidad1-1").on('click', slide_link);
     $(".unidad1-5").on('click', slide_link);
     $(".unidad1-6_paso1").on('mouseover', unidad1_pantalla6_accion1);
@@ -172,38 +172,17 @@ function controlSlides(num){
     }
 }
 
-function modal_scroll2(){
+function modal_scroll_uno(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob3');
-    bar = document.querySelector('.custom-scrollbar__bar3');
-    container = document.querySelector('.custom-scrollbar__inner3');
+    knob = document.querySelector('.custom-scrollbar__knob_uno');
+    bar = document.querySelector('.custom-scrollbar__bar_uno');
+    container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
-function modal_scroll3(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob4');
-    bar = document.querySelector('.custom-scrollbar__bar4');
-    container = document.querySelector('.custom-scrollbar__inner4');
-    scroll();
-}
-function modal_scroll4(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob5');
-    bar = document.querySelector('.custom-scrollbar__bar5');
-    container = document.querySelector('.custom-scrollbar__inner5');
-    scroll();
-}
-
-function funcion_vanvas() {
+/*function funcion_vanvas() {
     var canvas = new fabric.Canvas('id_canvas');
     var imgElement = 'assets/img/uno.png';
     var imgElement2 = 'assets/img/dos.png'; 
@@ -273,7 +252,7 @@ function funcion_vanvas() {
           console.log('hover a circle');
         });
     });
-}
+}*/
 
 /*function unidad1_pantalla6_accion1(){
     var info = '<p class="text-white">Se verifica que la proposición es cierta para el primer caso (si se desea se verifica para algunos casos siguientes al primero).</p>';
@@ -662,4 +641,110 @@ function dimensional_opcion(num) {
         default:
             break;
     }
+}
+
+function svg_img(num) {
+            $("#svg-info").addClass('d-none');
+    switch(parseInt(num)){
+        case 1:
+            $("#svg-info").html(`
+                                <div class="radius-2 img-100 border-verde-o bg-verde-c opacity-7">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-verde">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="m-3 img-100" style="opacity: initial;">
+                                    <div class="custom-scrollbar_uno pr-3">
+                                      <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black justificado"><b><i>Longitud.</i></b></p>
+                                        <br>
+                                        <p class="p_black justificado">Su unidad es el metro (m). En 1960, la longitud del metro se definió como la distancia entre dos líneas en una específica barra de platino–iridio que se almacena bajo condiciones controladas en Francia.</p>
+                                        <br>
+                                        <p class="p_black justificado">Sin embargo, los requerimientos actuales de la ciencia y la tecnología necesitaban más precisión que la dada por la separación entre las líneas en la barra. En las décadas de los sesenta y setenta del milenio pasado, el metro se definió como 1.650.763,73 longitudes de onda de la luz naranja–rojo, emitida de una lámpara de criptón 86.</p>
+                                        <br>
+                                        <p class="p_black justificado">No obstante, en octubre de 1983, el metro se redefinió como la distancia recorrida por la luz en el vacío durante un tiempo de 1/299.792.458 segundos. En efecto, esta última definición establece que la rapidez de la luz en el vacío es precisamente 299.792.458 metros por segundo. Esta definición del metro es válida a través del Universo respecto a la suposición de que la luz es la misma en todas partes. (J., 2008)</p>
+                                      </div>
+                                      <div class="custom-scrollbar__bar_uno">
+                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#svg-info").removeClass('d-none');
+            $("#svg-info").attr('style', "left: 0px; bottom: 0px;");
+            $(".cerrar-svg").on('click', cerrar_svg);
+            modal_scroll_uno();
+            break;
+        case 2:
+            $("#svg-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c opacity-7">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-azul">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="m-3 img-100" style="opacity: initial;">
+                                    <div class="custom-scrollbar_uno pr-3">
+                                      <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black justificado"><b>Masa.</b> Su unidad es el kilogramo (kg)</p>
+                                        <br>
+                                        <p class="p_black justificado">La unidad fundamental del SI de masa, el kilogramo (kg), estaba definido como la masa de un cilindro de aleación platino–iridio específico que se conserva en la Oficina Internacional de Pesos y Medidas en Sèvres, Francia. (J., 2008) Esta masa estándar fue establecida en 1887 y no había cambiado hasta el 20 de mayo de 2019 cuando su definición pasó a estar ligada con la constante de Planck, una constante natural que describe los paquetes de energía emitidos en forma de radiación</p>
+                                        <br>
+                                        <p class="p_black justificado">Esto permite que un laboratorio de metrología debidamente equipado calibre un instrumento de medición de masa como una balanza de potencia. El kilogramo se define al fijar el valor numérico de la constante de Planck, un kilogramo seria h / 6,62607015 x 10-34 expresado en J·s (Julios por segundo), por·m²·s-1, donde el metro y el segundo se definen en función de c (velocidad de la luz en el vacío).</p>
+                                        <br>
+                                      </div>
+                                      <div class="custom-scrollbar__bar_uno">
+                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#svg-info").removeClass('d-none');
+            $("#svg-info").attr('style', "right: 40px; bottom: 0px;");
+            $(".cerrar-svg").on('click', cerrar_svg);
+            modal_scroll_uno();
+            break;
+        case 3:
+            $("#svg-info").html(`
+                                <div class="radius-2 img-100 border-verde-mo bg-verde-mc opacity-7">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-verde-o">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="m-3 img-100" style="opacity: initial;">
+                                    <div class="custom-scrollbar_uno pr-3">
+                                      <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black justificado"><b><i>Tiempo.</i></b> Su unidad es el segundo (s)</p>
+                                        <br>
+                                        <p class="p_black justificado">Antes de 1960 el estándar de tiempo fue definido en términos del día solar medio hacia el año 1900. (Un día solar es el intervalo de tiempo entre apariciones sucesivas del Sol en el punto más alto que alcanza en el cielo cada día.) La unidad fundamental de un segundo(s) fue definida como (1/60) (1/60) (1/24) de un día solar medio. Ahora se sabe que la rotación de la Tierra varía ligeramente con el tiempo.</p>
+                                      </div>
+                                      <div class="custom-scrollbar__bar_uno">
+                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#svg-info").removeClass('d-none');
+            $("#svg-info").attr('style', "left: 0px; bottom: 0px;");
+            $(".cerrar-svg").on('click', cerrar_svg);
+            modal_scroll_uno();
+            break;
+        default:
+            break;
+    }
+}
+
+function cerrar_svg() {
+    $('#svg-info').addClass('d-none');
 }
