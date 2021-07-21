@@ -19,6 +19,11 @@ $(document).ready(function() {
 					<h2 style="color: #000; margin: auto; width: 90%;">4</h2>			
 				</div>
 				`;
+	var img5 = `
+				<div class="img_questionario d-flex">
+					<h2 style="color: #000; margin: auto; width: 90%;">5</h2>			
+				</div>
+				`;
 	$(".img_questionario1").html(img1);
 	$(".img_questionario2").html(img2);
 	$(".img_questionario3").html(img3);
@@ -27,6 +32,7 @@ $(document).ready(function() {
 	$("#cuestionario-2").css('display','none');
 	$("#cuestionario-3").css('display','none');
 	$("#cuestionario-4").css('display','none');
+
 
 	/*$(".siguente1").data('slide', 2);
 	$(".siguente2").data('slide', 3);
@@ -46,17 +52,22 @@ function siguente(){
 		$("#atras").removeData('slide');*/
 	if (slide == 1) {
 		$("#siguente").data('slide', 2);
+		
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
 		$("#siguente").data('slide', 3);
+		
 		/*$("#atras").data('slide', 1);*/
 	}else if (slide == 3) {
 		$("#siguente").data('slide', 4);
+		
 		/*$("#atras").data('slide', 2);*/
 	}else if (slide == 4) {
 		$("#siguente").data('slide', 1);
+		
 		/*$("#atras").data('slide', 2);*/
 	}
+	
 }
 /*function atras(){
 	var slide = $(this).data('slide');

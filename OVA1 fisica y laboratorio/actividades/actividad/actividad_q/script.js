@@ -96,6 +96,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
                     texto: "Milímetro",
                     correcta: false
                 }]
+
             }]);
         };
     $scope.preguntas = getPreguntas();

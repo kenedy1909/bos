@@ -748,3 +748,39 @@ function svg_img(num) {
 function cerrar_svg() {
     $('#svg-info').addClass('d-none');
 }
+
+function pant9(num){
+    switch (parseInt(num)) {
+        case 1:
+            var texto = `<p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L2 y que eso en el sistema SI corresponda a m2 y en el norteamericano a ft2.</p>`;
+            $('.bannerp-9').html(texto);
+
+            $('.circulop_9').removeClass('activo');
+            $('.circulop_9').addClass('inactivo');
+
+            $('.circulo1').removeClass('inactivo');
+            $('.circulo1').addClass('activo');
+            break;
+        case 2:
+            var texto = `<p class="justificado" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m2/s2) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s2) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s2 por m se obtiene kg m2/s2 por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
+            $('.bannerp-9').html(texto);
+            $('.circulop_9').removeClass('activo');
+            $('.circulop_9').addClass('inactivo');
+
+            $('.circulo2').removeClass('inactivo');
+            $('.circulo2').addClass('activo');
+            break;
+        case 3:
+            var texto = `<p class="justificado" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv2, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)2 finalmente kg m2/s2 que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
+            $('.bannerp-9').html(texto);
+            $('.circulop_9').removeClass('activo');
+            $('.circulop_9').addClass('inactivo');
+
+            $('.circulo3').removeClass('inactivo');
+            $('.circulo3').addClass('activo');
+            break;
+        default:
+            
+            break;
+    }
+}
