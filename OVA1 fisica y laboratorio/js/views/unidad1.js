@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     // console.log(tema);
+    $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -69,7 +70,7 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
 

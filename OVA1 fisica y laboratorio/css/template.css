@@ -1,4 +1,5 @@
 .icons-menu{
+    width: 70px;
 }
 iframe{
     width: 100%;
@@ -552,14 +553,14 @@ svg circle:nth-child(2){
 
 .title-portada{
   font-size: 38px;
-  color: #771e18;
+  color: var(--bg-color);
   font-weight: bold;
   text-align: center;
 }
 
 .subtitle-portada{
   font-size: 30px;
-  color: #771e18;
+  color: var(--bg-color);
   text-align: center;
 }
 

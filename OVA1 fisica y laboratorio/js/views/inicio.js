@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    
     setMigaja("Inicio","","");
     $( ".c-sidebar-nav > li").show();
     $( ".c-sidebar-nav > .ov-inicio").show();
