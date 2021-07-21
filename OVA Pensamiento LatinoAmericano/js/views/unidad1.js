@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -150,9 +150,8 @@ function controlSlides(num){
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            $("#content-ova").load("base/unidades/unidad2.html");
             break;
-            tema = 6;
+            tema = 1;
         default:
             break;
     }

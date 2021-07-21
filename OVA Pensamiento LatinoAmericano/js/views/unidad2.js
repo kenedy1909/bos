@@ -1,7 +1,9 @@
 $( document ).ready(function() {
+    tema = 1;
     slide_predeterminado2();
     console.log(tema);
     /*slide_link(tema);*/
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
