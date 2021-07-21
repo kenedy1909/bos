@@ -784,3 +784,145 @@ function pant9(num){
             break;
     }
 }
+
+function equivalencias(num) {
+    switch(parseInt(num)){
+        case 1:
+            $("#equivalencia-1").removeClass('col-md-6');
+            $("#equivalencia-1").addClass('col-md-1');
+            $(".equivalencia-1").addClass('d-none');
+            $(".equivalencia-1").removeClass('d-flex');
+            $(".equivalencia-content-1").removeClass('px-5');
+            $(".img-equivalencia-flecha-1").removeClass('d-flex');
+            $(".img-equivalencia-flecha-1").addClass('d-none');
+            $(".img-equivalencia-1").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-2").removeClass('col-md-1');
+            $("#equivalencia-2").addClass('col-md-6');
+            $("#equivalencia-2").removeClass('d-none');
+            $(".equivalencia-2").removeClass('d-none');
+            $(".img-equivalencia-2").removeClass('d-none');
+            $("#equivalencia-3, #equivalencia-4, #equivalencia-5").addClass('d-none');
+            $(".equivalencia-3, .equivalencia-4, .equivalencia-5").addClass('d-none');
+            $(".img-equivalencia-1, .img-equivalencia-3, .img-equivalencia-4, .img-equivalencia-5").addClass('d-none');
+            break;
+        case 2:
+            $("#equivalencia-2").removeClass('col-md-6');
+            $("#equivalencia-2").addClass('col-md-1');
+            $(".equivalencia-2").addClass('d-none');
+            $(".equivalencia-2").removeClass('d-flex');
+            $(".equivalencia-content-2").removeClass('px-5');
+            $(".img-equivalencia-flecha-2").removeClass('d-flex');
+            $(".img-equivalencia-flecha-2").addClass('d-none');
+            $(".img-equivalencia-2").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-3").removeClass('col-md-1');
+            $("#equivalencia-3").addClass('col-md-6');
+            $("#equivalencia-3").removeClass('d-none');
+            $(".equivalencia-3").removeClass('d-none');
+            $(".img-equivalencia-3").removeClass('d-none');
+            $("#equivalencia-4, #equivalencia-5").addClass('d-none');
+            $(".equivalencia-4, .equivalencia-5").addClass('d-none');
+            $(".img-equivalencia-1").attr('style', 'top: 75px;');
+            $(".img-equivalencia-1").removeClass('d-flex');
+            $(".img-equivalencia-1").addClass('d-none');
+            break;
+        case 3:
+            $("#equivalencia-3").removeClass('col-md-6');
+            $("#equivalencia-3").addClass('col-md-1');
+            $(".equivalencia-3").addClass('d-none');
+            $(".equivalencia-3").removeClass('d-flex');
+            $(".equivalencia-content-3").removeClass('px-5');
+            $(".img-equivalencia-flecha-3").removeClass('d-flex');
+            $(".img-equivalencia-flecha-3").addClass('d-none');
+            $(".img-equivalencia-3").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-4").removeClass('col-md-1');
+            $("#equivalencia-4").addClass('col-md-6');
+            $("#equivalencia-4").removeClass('d-none');
+            $(".equivalencia-4").removeClass('d-none');
+            $(".img-equivalencia-4").removeClass('d-none');
+            $("#equivalencia-5").addClass('d-none');
+            $(".equivalencia-5").addClass('d-none');
+            $(".img-equivalencia-2").attr('style', 'top: 75px;');
+            $(".img-equivalencia-2").removeClass('d-flex');
+            $(".img-equivalencia-2").addClass('d-none');
+            break;
+        case 4:
+            $("#equivalencia-4").removeClass('col-md-6');
+            $("#equivalencia-4").addClass('col-md-1');
+            $(".equivalencia-4").addClass('d-none');
+            $(".equivalencia-4").removeClass('d-flex');
+            $(".equivalencia-content-4").removeClass('px-5');
+            $(".img-equivalencia-flecha-4").removeClass('d-flex');
+            $(".img-equivalencia-flecha-4").addClass('d-none');
+            $(".img-equivalencia-4").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-5").removeClass('col-md-1');
+            $("#equivalencia-5").addClass('col-md-6');
+            $("#equivalencia-5").removeClass('d-none');
+            $(".equivalencia-5").removeClass('d-none');
+            $(".img-equivalencia-5").removeClass('d-none');
+            $(".img-equivalencia-3").attr('style', 'top: 75px;');
+            $(".img-equivalencia-3").removeClass('d-flex');
+            $(".img-equivalencia-3").addClass('d-none');
+            break;
+        default:
+            break;
+    }
+}
+
+function aviones(num) {
+    $("#avion").removeClass('fondo-1');
+    $("#avion").removeClass('fondo-2');
+    $("#avion").removeClass('fondo-3');
+    $("#avion").removeClass('fondo-4');
+    $("#avion").removeClass('fondo-5');
+    $("#avion").removeClass('fondo-6');
+    $("#avion").addClass('fondo-1');
+    switch(parseInt(num)){
+        case 1:
+            $("#avion").removeClass('fondo-1');
+            $("#avion").addClass('fondo-2');
+            $("#avion").attr('onclick','aviones(2)');
+            $(".avion-content").html(`<p class="p_black justificado">Algunas cantidades físicas, como el tiempo, la temperatura, la masa y la densidad se pueden describir completamente con un solo número y una unidad. No obstante, en física muchas otras cantidades importantes están asociadas con una dirección y no pueden describirse con un solo número.</p>`);
+            break;
+        case 2:
+            $("#avion").removeClass('fondo-1');
+            $("#avion").addClass('fondo-3');
+            $("#avion").attr('onclick','aviones(3)');
+            $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
+            break;
+        case 3:
+            $("#avion").removeClass('fondo-1');
+            $("#avion").addClass('fondo-4');
+            $("#avion").attr('onclick','aviones(4)');
+            $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
+            break;
+        case 4:
+            $("#avion").removeClass('fondo-1');
+            $("#avion").addClass('fondo-5');
+            $("#avion").attr('onclick','aviones(5)');
+            $(".avion-content").html(`
+                                        <p class="p_black justificado"></p>
+                                        </p>
+                                        <p class="p_black justificado"></p>
+                                    `);
+            break;
+        case 5:
+            $("#avion").removeClass('fondo-1');
+            $("#avion").addClass('fondo-6');
+            $("#avion").attr('onclick','aviones(6)');
+            $(".avion-content").html(`<p class="p_black justificado"></p>`);
+            break;
+        case 6:
+            $("#avion").removeClass('fondo-1');
+            $("#avion").addClass('fondo-1');
+            $("#avion").attr('onclick','aviones(1)');
+            $(".avion-content").html(`
+                                    <div class="d-flex">
+                                      <img src="assets/img/img_ova/profesor (2).png" class="img-80 m-auto">
+                                    </div>
+                                    <p class="border-top-azul text-azul-c text-center my-3"><b>Cantidad escalares y vectoriales </b></p>
+                                    `);
+            break;
+        default:
+            break;
+    }
+}
