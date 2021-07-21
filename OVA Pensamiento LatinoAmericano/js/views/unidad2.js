@@ -16,6 +16,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");

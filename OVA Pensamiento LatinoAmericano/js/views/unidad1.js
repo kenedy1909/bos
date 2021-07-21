@@ -15,7 +15,7 @@ $( document ).ready(function() {
         }
     });
 
-    $('#zoom_01').elevateZoom({zoomWindowPosition: 10});  
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
