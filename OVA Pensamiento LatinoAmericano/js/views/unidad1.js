@@ -15,6 +15,8 @@ $( document ).ready(function() {
         }
     });
 
+    $('#zoom_01').elevateZoom({zoomWindowPosition: 10});  
+
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
