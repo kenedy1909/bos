@@ -232,7 +232,7 @@ iframe{
   background: #006092;
 }
 .card .cover{
-  height: 105px;
+  height: 115px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
   background: #003442;
@@ -806,3 +806,11 @@ svg circle:nth-child(2){
     position: relative;
     top: -30px;
 }*/
+
+.text-img-activi{
+  border-bottom: solid 4px rgb(200 173 69);
+  width: 45%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 30px;
+}
