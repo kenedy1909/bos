@@ -37,11 +37,51 @@ li a {
   cursor: move;
 }
 
-ul li:first-child a{ background: #963445;width: 70%;border-radius: 20px;height: 80px;}
-ul li:nth-child(2) a{ background: #963445;width: 70%;border-radius: 20px;height: 80px; }
-ul li:nth-child(3) a{ background: #963445;width: 70%;border-radius: 20px;height: 80px; }
-ul li:nth-child(4) a{ background: #963445;width: 70%;border-radius: 20px;height: 80px; }
-ul li:last-child a{ background: #963445 }
+ul li:first-child a{     
+  background: #ffffff00;
+  border: 1px solid #393a72;
+  width: 70%;
+  border-radius: 20px;
+  height: 80px;
+  color: black;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+ul li:nth-child(2) a{ 
+  background: #ffffff00;
+  border: 1px solid #393a72;
+  width: 70%;
+  border-radius: 20px;
+  height: 80px;
+  color: black;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+ul li:nth-child(3) a{ 
+  background: #ffffff00;
+  border: 1px solid #393a72;
+  width: 70%;
+  border-radius: 20px;
+  height: 80px;
+  color: black;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+ul li:nth-child(4) a{ 
+  background: #ffffff00;
+  border: 1px solid #393a72;
+  width: 70%;
+  border-radius: 20px;
+  height: 80px;
+  color: black;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+ul li:last-child a{ background: #ffffff00 }
 
 *[draggable=true] {
   -moz-user-select:none;

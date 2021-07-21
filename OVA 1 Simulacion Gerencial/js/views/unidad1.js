@@ -75,6 +75,17 @@ $( document ).ready(function() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
+function scroll_set(num) {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob'+num);
+    bar = document.querySelector('.custom-scrollbar__bar'+num);
+    container = document.querySelector('.custom-scrollbar__inner'+num);
+    scroll();
+}
+
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
@@ -154,13 +165,13 @@ function controlSlides(num){
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob33');
-            bar = document.querySelector('.custom-scrollbar__bar33');
-            container = document.querySelector('.custom-scrollbar__inner33');
+            // dragging = "";
+            // diff = "";
+            // newTop = "";
+            // scrollOffset = "";
+            // knob = document.querySelector('.custom-scrollbar__knob33');
+            // bar = document.querySelector('.custom-scrollbar__bar33');
+            // container = document.querySelector('.custom-scrollbar__inner33');
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
@@ -573,7 +584,8 @@ function acordeon(num,estado) {
             
             $('.ocultarAcordeon1').attr('onclick',"acordeon(1,'ocultar')");
         }else if (num==2) {
-            
+            scroll_set(5);
+
             $('.acordeon2').addClass('ocultarAcordeon2');
             $('.acordeon2').removeClass('acordeon2');
             

@@ -543,14 +543,18 @@ p, button{
     color: #00414c;
 }
 
-.custom-scrollbar3, .custom-scrollbar4, .custom-scrollbar5 {
+.custom-scrollbar3, .custom-scrollbar4 {
   position: relative;
   height: 400px;
 }
+.custom-scrollbar5 {
+	position: relative;
+	height: 180px;
+  }
 
 .custom-scrollbar__inner3, .custom-scrollbar__inner4, .custom-scrollbar__inner5 {
   height: 100%;
-  width: calc(100% + 40px);
+  width: calc(100% + 20px);
   padding-right: 55px;
   overflow-y: auto;
   overflow: hidden;
