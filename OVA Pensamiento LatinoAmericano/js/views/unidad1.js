@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -14,6 +14,8 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -148,9 +150,8 @@ function controlSlides(num){
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            $("#content-ova").load("base/unidades/unidad2.html");
             break;
-            tema = 6;
+            tema = 1;
         default:
             break;
     }
