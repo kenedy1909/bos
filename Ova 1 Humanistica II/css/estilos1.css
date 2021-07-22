@@ -1291,3 +1291,52 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
+
+.w-h-30px{
+    width: 50px;
+    height: 50px;
+}
+
+.w-220px{
+  width: 220px;
+}
+
+.rec-1{
+  top: 40px;
+}
+
+.rec-2{
+  top: 5px;
+  left: 88px;
+}
+
+.rec-3{
+  top: 38px;
+  left: 163px;
+}
+
+.rec-4{
+  top: 120px;
+  left: 194px;
+}
+
+.rec-5{
+  top: 196px;
+  left: 147px;
+}
+
+.rec-6{
+  top: 203px;
+  left: 45px;
+}
+
+
+.bg-rec-morado{
+  background: #896BF3;
+}
+.rec{
+  border-radius: 50%;
+}
+.bg-azul-c{
+  background: #ffc61b;
+}
