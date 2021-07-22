@@ -106,7 +106,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
