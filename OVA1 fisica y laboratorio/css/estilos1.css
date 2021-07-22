@@ -534,3 +534,55 @@
 .card-inactiva-c{
   background: #484848 !important;
 }
+
+.bg-celeste{
+	background-color: #2ECADA;
+}
+
+.bg-roja{
+	background-color: #C00000;
+}
+.x-modal-amarillo{
+  background: #FFC000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+
+}
+
+
+.bg-amarillo-c{
+	background-color: #FFE699;
+}
+.border-bottom-actividad{
+	border-bottom: solid 3px #005B8B;
+}
+
+.img-activi{
+	width: 116px;height: 116px;
+}
+
+.text-img-actividad{
+	font-size: 20px;
+	color: #005B8B;
+}
+
+.content-text-img-activi{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
