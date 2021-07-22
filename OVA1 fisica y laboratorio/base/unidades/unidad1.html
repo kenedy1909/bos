@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="smartwizard">
-                    <ul class="nav">
+                    <ul class="nav d-none">
                         <li>
                            <a class="nav-link" href="#unidad1-1">
                            </a>
@@ -74,6 +74,14 @@
                         </li>
                         <li>
                             <a class="nav-link" href="#unidad1-18">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-19">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-20">
                             </a>
                         </li>
                     </ul>
@@ -578,12 +586,12 @@
                                   </div>
                                   <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(5)" style="left: 10px; top: 280px;">
                                     <div class="radius-50 d-flex bg-celeste" style="width: 80px; height: 80px;">
-                                      <img src="assets/img/img_ova/Fisica y laboratorio-02.png" class="m-auto img-35">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-10.png" class="m-auto img-75">
                                     </div>
                                   </div>
                                   <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(6)" style="left: 210px; top: 280px;">
                                     <div class="radius-50 d-flex bg-roja" style="width: 80px; height: 80px;">
-                                      <img src="assets/img/img_ova/Fisica y laboratorio-08.png" class="m-auto img-75">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-05.png" class="m-auto img-75">
                                     </div>
                                   </div>
                                   <div class="position-absolute img-100 d-none" id="ruta-info" style="left: 0px; bottom: -45px;">
@@ -608,53 +616,93 @@
                               <div class="col-md-12">
                                   <p class="p_black justificado">Como se acaba de observar en el ejercicio anterior, las magnitudes de estas componentes son las longitudes de los dos lados de un triángulo rectángulo con una hipotenusa de longitud D. Debido a esto, la magnitud y la dirección de D se relacionan con sus componentes mediante las expresiones. Pase el mouse por las tarjetas para ampliar la información</p>
                               </div>
-                              <div class="col-md-12 row p-3">
-                                <div class="col-md-6 pb-2">
-                                  <div class="row target_3-4 mr-5 ml-1 fondo-blue-targeta" style="">
-                                    <div class="creciente row cursor" style="" onmouseover="efect(1);" onmouseout="removeefect(1);">
-                                      <div class="div_textonum" style="">
-                                        <img src="assets/img/img_ova/pensar.png" style="max-width: 100%;">
-                                      </div>
-                                      <div class="div_texto"style="">
-                                        <img src="assets/img/img_ova/D2.png" style="max-width: 90%;">
-                                      </div>
-                                    </div>
-                                    <div class="text-center textotema" style="">
-                                      <center>Expresión</center>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-md-6 p-0">
-                                  <div class="row target_3-4 mr-5 ml-1 fondo-blue-targeta" style="">
-                                    <div class="creciente2 row cursor" style="" onmouseover="efect(2);" onmouseout="removeefect(2);">
-                                      <div class="div_textonum" style="">
-                                        <img src="assets/img/img_ova/calculos.png" style="max-width: 100%;">
-                                      </div>
-                                      <div class="div_texto2"style="">
-                                        <p class="justificado" style="color: #000;font-size: 10px;">Es de Se observa que al utilizar el teorema de Pitágoras se obtiene nuevamente la magnitud original del vector 3.00 m, para el caso del ángulo es un poco más difícil, ya que al evaluar en la calculadora el sen-1(-1) se obtiene -45° y es su responsabilidad interpretar este resultado, es decir, se debe dar cuenta de que el ángulo entregado por la calculadora equivale al ángulo de referencia buscado que es de 315°.</p>
-                                      </div>
-                                    </div>
-                                    
-                                  </div>
-                                </div>
-                                <div class="d-flex justify-content-center col-md-12 mt-2">
-                                  <div class="col-md-6">
-                                    <div class="row target_3-4 mr-5 ml-1 fondo-blue-targeta" style="">
-                                      <div class="creciente3 row cursor" style="" onmouseover="efect(3);" onmouseout="removeefect(3);">
-                                        <div class="div_textonum" style="">
-                                          <img src="assets/img/img_ova/matematicas.png" style="max-width: 100%;">
+                              <div class="acordeon mt-3">
+                                  <div class="acordeon__item">
+                                    <input type="radio" name="acordeon" id="item1">
+                                    <label for="item1" class="acordeon__titulo">
+                                      <div class="row">
+                                        <div class="col-md-2">
+                                          <div class="imagen_acordeon" style="">
+                                            <img src="assets/img/img_ova/neuromarketing.png" style="max-width: 90%;">
+                                          </div>
                                         </div>
-                                        <div class="div_texto3"style="">
-                                          <p class="justificado" style="color: #000;font-size: 13px;">En general, se puede calcular la magnitud de un vector si se conocen sus componentes rectangulares; en el caso de un vector tridimensional A, su magnitud se calcula:</p>
-                                          <img src="assets/img/img_ova/a2.png">
+                                        <div class="col-md-1 pt-3">
+                                          <div class="triangulocordeon" style="">
+                                            
+                                          </div>
+                                        </div>
+                                        <div class="col-md-8 pt-4">
+                                          
                                         </div>
                                       </div>
-                                      <div class="text-center textotema" style="">
-                                        <center>Calcular la magnitud</center>
+                                      
+                                    </label>
+                                    <div class="row acordeon__contenido" >
+                                        <div style="padding: 15px 15px 15px 15px;">
+                                          <p class="justificado">Los vectores unitarios proporcionan una notación conveniente para muchas expresiones que implican componentes de vectores. Para diferenciar estos vectores unitarios de los demás en los libros se usan diferentes notaciones para evitar confusiones.</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="acordeon__item">
+                                    <input type="radio" name="acordeon" id="item2">
+                                    <label for="item2" class="acordeon__titulo">
+                                      <div class="row">
+                                        <div class="col-md-2">
+                                          <div class="imagen_acordeon" style="">
+                                            <img src="assets/img/img_ova/flecha-correcta.png" style="max-width: 90%;">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-1 pt-3">
+                                          <div class="triangulocordeon" style="">
+                                            
+                                          </div>
+                                        </div>
+                                        <div class="col-md-8 pt-4">
+                                        </div>
+                                      </div>
+                                    </label>
+                                    <div class="acordeon__contenido">
+                                      <div style="padding: 15px 15px 15px 15px;">
+                                        <p class="justificado">por ejemplo en algunos libros se usa el ascento circunflejo o "sombrero" (^), en otros puntos sobre el nombre en otros simplemente los vectores <b>i, j y k</b></p>
+                                        <div class="text-center">
+                                          <img src="assets/img/img_ova/nota33.png" style="max-width: 70%;">
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                  <div class="acordeon__item">
+                                    <input type="radio" name="acordeon" id="item3">
+                                    <label for="item3" class="acordeon__titulo">
+                                      <div class="row">
+                                        <div class="col-md-2">
+                                          <div class="imagen_acordeon" style="">
+                                            <p style="color: #FFD966;font-size: 55px;">^</p>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-1 pt-3">
+                                          <div class="triangulocordeon" style="">
+                                            
+                                          </div>
+                                        </div>
+                                        <div class="col-md-8 pt-4">
+                                          
+                                        </div>
+                                      </div>
+                                    </label>
+                                    <div class="acordeon__contenido">
+                                      <div class="row" style="padding: 15px 15px 15px 15px;">
+                                        <div class="col-md-6">
+                                          <img src="assets/img/img_ova/texto2.png" style="max-width: 100%;">
+                                        </div>
+                                        <div class="col-md-6">
+                                          <img src="assets/img/img_ova/nota34.png" style="max-width: 70%;">
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
+                              </div>
+                              <div style="height: 300px;">
                                 
                               </div>
                           </div>
@@ -754,8 +802,8 @@
                                   </div>
                               </div>
                             </div>
-                            <div class="col-md-12 p-0 my-1">
-                              <div class="w-100 py-5 d-flex" style="min-height: 300px;">
+                            <div class="col-md-12 p-0 my-1" id="teoria">
+                              <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                                   <div class="bg-azul-o h-6px m-auto">
                                       <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
                                           <div class="bg-blanco radius-2 my-auto mx-3 p-3">
@@ -806,6 +854,55 @@
                                 <p class="text-center"><img src="assets/img/img_ova/regla-y-lapiz.png" class="img-70"></p>
                               </div>
                             </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-19" class="tab-pane" role="tabpanel">
+                          <div class="row px-3">
+                              <div class="col-md-5">
+                                  <div class="d-flex">
+                                    <img src="assets/img/img_ova/actividad_complementaria.png" class="img-activi">
+                                    <div class="content-text-img-activi-2">
+                                      <b class="text-img-actividad">ACTIVIDADES COMPLEMENTARIAS</b>
+                                    </div>
+                                  </div>
+                                  <div class="px-4 pt-2">
+                                    <p class="p_black justificado">Ingrese al botón “<b>Descargar</b>” y conozca las actividades complementarias para finalizar con éxito el contenido digital <b>Conceptos fundamentales</b></p>
+                                    <br>
+                                    <p class="p_black justificado">Este archivo se descargará automáticamente en formato pdf.</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-7 border-left-azul">
+                                  <div class="row">
+                                    <div class="col-md-3 pt-135px">
+                                      <a href="assets/PDF/Actividades complementarias.pdf" target="_blank"><button class="btn bg-azul-o p_white radius-2 p-3"><h2><b>Descargar</b></h2></button></a>
+                                    </div>
+                                    <div class="col-md-9">
+                                      <img src="assets/img/img_ova/descarga_actividades.png" alt="" width="100%">
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-20" class="tab-pane" role="tabpanel">
+                          <div class="row px-3">
+                              <div class="col-md-6 offset-md-3">
+                                  <h1 class="text-center">¡FELICITACIONES! <img src="assets/img/img_ova/felicitaciones.png" alt="" class="img-15"></h1>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <img src="assets/img/img_ova/personaje.png" alt="" width="90%">
+                                    </div>
+                                    <div class="col-md-8 pt-9p">
+                                      <p class="p_black justificado"><b>Ha llegado al final del curso matemática lógica.</b></p>
+                                      <br>
+                                      <p class="p_black justificado"><b>Continúe haciendo clic en evaluación para finalizar.</b></p>
+                                      <div class="h-100 d-flex justify-content-center align-items-center">
+                                        <a href="assets/PDF/pdf-1.pdf" target="_blank"><button class="btn bg-azul-o p_white radius-2"><h2><b>Evaluación</b></h2></button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
                           </div>
                        </div>
                     </div>
@@ -1201,6 +1298,55 @@
                     </div>
                     <div class="col-md-4 d-flex">
                       <p class="p_black justificado m-auto">Se puede notar que como se está multiplicando por 1.609 m / milla esto equivale a 1, lo mismo para 1 hora / 3.600 s, por lo que no se ha alterado el valor inicial, los valores en los extremos son equivalentes en la respectiva unidad expresada.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="teoria-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-xl d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="p_white mr-auto my-auto"><b>Suma vectorial</b></h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="border-white">
+                      <div class="radius-gray">
+                          <img class="img-circle menu_superior" src="assets/img/img_ova/profesor (1).png" style="top: 5px;">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row text-center">
+                    <div class="col-md-6">
+                      <div class="d-flex">
+                        <img src="assets/img/img_ova/grafica 6.png" class="img-100 m-auto bg-blanco">
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex" style="border-left: solid #fff 3px;">
+                      <p class="p_white justificado m-auto">El método recomendado en este curso para sumar vectores será descomposición en componentes rectangulares. Si se conocen las componentes de dos vectores y cualesquiera, se podría calcular las componentes de la resultante. Luego, si se necesita la magnitud y la dirección se obtendrán según lo visto en el subtema 3, cambiando las D por las R.</p>
                     </div>
                   </div>
               </div>
