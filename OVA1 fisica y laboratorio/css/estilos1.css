@@ -357,3 +357,96 @@
 	width: 48%;
    height: 300px;
 }
+
+.creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
+	background: #ffffff;
+    height: 180px;
+    border-radius: 20px 20px 20px 20px;
+    
+    top: 0px;
+    left: 15px;
+    z-index: 100;
+    width: 40%;
+}
+
+.div_textonum, .div_textonum2, .div_textonum3, .div_textonum4, .div_textonum5, .div_textonum6{
+	  width: 108px;
+    padding: 36px 0px 15px 29px;
+    text-align: center;
+}
+.div_textonum p{
+	color: white;font-size: 30px;
+}
+.div_texto, .div_texto2, .div_texto3, .div_texto4, .div_texto5, .div_texto6{
+	width: 60%;
+	padding: 25px 1px 25px 0px;
+	visibility: hidden;
+}
+
+
+@keyframes ascend {
+  from {
+    background: #ffffff;
+    height: 180px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    z-index: 100;
+    width: 60%;
+
+    
+  }
+
+  to {
+  	background: #ffffff;
+    height: 180px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    z-index: 100;
+    width: 90%;
+
+    
+  }
+}
+
+@keyframes vis {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+  	visibility: visible;
+  }
+}
+
+
+.crece{
+	animation-duration: 2s;
+    animation-name:ascend;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+
+.visibilidad{
+	animation-duration: 2s;
+    animation-name:vis;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.fondo-blue-targeta{
+	background: #1E4E79;
+	border-radius: 20px;
+	height: 180px;
+}
+
+.textotema{
+	padding-top: 25%;
+	font-size: 20px;
+	padding-left: 50px;
+}
