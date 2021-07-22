@@ -99,7 +99,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Actividad");
             dragging = "";
             diff = "";
             newTop = "";

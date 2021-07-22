@@ -2,6 +2,10 @@
   max-width: 100%;
 }
 
+#smartwizard .nav{
+    display: none;
+}
+
 .h1{
   color: #c8ad45;
 }

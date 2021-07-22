@@ -411,7 +411,7 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
-        ahorcado.reiniciar();
+        location.reload();
     });
 
 }
