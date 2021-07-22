@@ -476,12 +476,15 @@ function informacion(num) {
         $(".zoomContainer" ).remove();
         $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     }else if (num == 2) {
+        $(".zoomContainer" ).remove();
         $("#informacion_num").html('<h1 class="m-auto"><b>2</b></h1>');
         $("#informacion_img").html('<img src="assets/img/img_ova/Almacenamiento.png" class="img-100 m-auto">');
     }else if (num == 3) {
+        $(".zoomContainer" ).remove();
         $("#informacion_num").html('<h1 class="m-auto"><b>3</b></h1>');
         $("#informacion_img").html('<img src="assets/img/img_ova/Procesamiento.png" class="img-100 m-auto">');
     }else if (num == 4) {
+        $(".zoomContainer" ).remove();
         $("#informacion_num").html('<h1 class="m-auto"><b>4</b></h1>');
         $("#informacion_img").html('<img src="assets/img/img_ova/Salida .png" class="img-100 m-auto">');
     }
