@@ -29,7 +29,7 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     slide_predeterminado();
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    /*setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");*/
 
     var knob = "";
     var bar = "";
@@ -114,11 +114,11 @@ function controlSlides(num){
             }  
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 5:
             
@@ -129,11 +129,11 @@ function controlSlides(num){
             // tema = 1;
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 9:
             
