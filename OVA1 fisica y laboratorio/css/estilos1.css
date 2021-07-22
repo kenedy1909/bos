@@ -119,6 +119,9 @@
 	background-color: #003442;
 	position: absolute;
 }
+.bg-azul-mo2{
+	background-color: #003442;
+}
 
 .text-azul-c{
 	color: #8DA9DB;
@@ -358,7 +361,6 @@
    height: 300px;
 }
 
-<<<<<<< Updated upstream
 .creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
 	background: #ffffff;
     height: 180px;
@@ -452,59 +454,8 @@
 	padding-left: 50px;
 }
 
-.bg-celeste{
-	background-color: #2ECADA;
-}
-
-.bg-roja{
-	background-color: #C00000;
-}
-.x-modal-amarillo{
-  background: #FFC000;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-
-}
-
-
-.bg-amarillo-c{
-	background-color: #FFE699;
-}
-.border-bottom-actividad{
-	border-bottom: solid 3px #005B8B;
-}
-
-.img-activi{
-	width: 116px;height: 116px;
-}
-
-.text-img-actividad{
-	font-size: 20px;
-	color: #005B8B;
-}
-
-.content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
-  width: 50%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 45px;
-  text-align: center;
-}
-
-.content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
-  width: 50%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-
-{
+/*dropdown*/
+* {
   box-sizing: border-box;
 }
 
@@ -522,7 +473,7 @@
   border-bottom: 1px solid #fff;
 }
 .acordeon__titulo:hover {
-      background: #e39d40;
+  background: #e39d40;
 }
 
 .acordeon__contenido {
@@ -586,3 +537,55 @@
 .card-inactiva-c{
   background: #484848 !important;
 }
+
+.bg-celeste{
+	background-color: #2ECADA;
+}
+
+.bg-roja{
+	background-color: #C00000;
+}
+.x-modal-amarillo{
+  background: #FFC000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+
+}
+
+
+.bg-amarillo-c{
+	background-color: #FFE699;
+}
+.border-bottom-actividad{
+	border-bottom: solid 3px #005B8B;
+}
+
+.img-activi{
+	width: 116px;height: 116px;
+}
+
+.text-img-actividad{
+	font-size: 20px;
+	color: #005B8B;
+}
+
+.content-text-img-activi{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
