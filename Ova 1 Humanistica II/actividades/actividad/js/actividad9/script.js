@@ -150,14 +150,14 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['formacion-humanistica', ''];
-            this.palabras[1] = ['formacion-humanistica', ''];
-            this.palabras[2] = ['formacion-humanistica', ''];
-            this.palabras[4] = ['formacion-humanistica', ''];
-            this.palabras[5] = ['formacion-humanistica', ''];
-            this.palabras[6] = ['formacion-humanistica', ''];
-            this.palabras[7] = ['formacion-humanistica', ''];
-            this.palabras[8] = ['formacion-humanistica', ''];
+            this.palabras[0] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[1] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[2] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[4] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[5] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[6] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[7] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
+            this.palabras[8] = ['formacion-humanistica', 'Conocida como el proceso central del desarrollo del ser humano'];
 
             return this.palabras;
 
@@ -399,6 +399,7 @@ function init_recurso_1() {
 
 
     Ahorcado.prototype.reiniciar = function () {
+        /*location.reload();*/
         this.intento = 0;
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
@@ -411,7 +412,8 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
-        ahorcado.reiniciar();
+        location.reload();
+        /*ahorcado.reiniciar();*/
     });
 
 }
