@@ -37,7 +37,9 @@ $( document ).ready(function() {
     var dragging = "";
     var diff = "";
     var newTop = "";
-    var scrollOffset = "";/*
+    var scrollOffset = "";
+    $(".teoria").on('click' , teorias);
+    /*
     $(".modal_scroll2").on('click', modal_scroll2);
     $(".modal_scroll3").on('click', modal_scroll3);
     $(".modal_scroll4").on('click', modal_scroll4);*/
@@ -588,17 +590,15 @@ function funcionalidad_1(num) {
     switch(parseInt(num)){
         case 1:
             $("#dimensional").html(`
-                                    <div class="pt-3 px-5 pb-5" style="background-image: url('assets/img/img_ova/sala-de-laboratorio.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
-                                      <div class="bg-azul-mc radius-2 p-3">
-                                        <p class="p_black justificado">Las unidades fundamentales o básicas son aquellas que se convienen cómo independientes desde el punto de vista dimensional (por ejemplo, metro, kilo, segundo). (Estela, 2021)</p>
-                                      </div>
+                                    <div class="p-3 d-flex">
+                                      <img src="assets/img/img_ova/laboratoriotexto.png" class="img-100 m-auto">
                                     </div>
                                     `);
             break;
         case 2:
 
             $("#dimensional").html(`
-                                    <div class="p-3" style="background-image: url('assets/img/img_ova/dibujando.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+                                    <div class="p-3" style="background-image: url('assets/img/img_ova/dibujado.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
                                       <div class="bg-a-c radius-2 p-3">
                                         <div id="dimensional_info">
                                             <p class="p_black justificado">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según</p>
@@ -964,6 +964,7 @@ function actividadrecogible(num) {
     }
 }
 
+
 function efect(num) {
     switch (parseInt(num)) {
         case 1:
@@ -1026,5 +1027,279 @@ function removeefect(num){
         default:
             break;
     } 
-    
+}  
+
+function ruta(num) {
+    $("#ruta-info").addClass('d-none');
+    switch(parseInt(num)){
+        case 1:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Frecuentemente se representa la magnitud de una cantidad vectorial (su longitud, en el caso de un vector desplazamiento) con la misma letra que se usa para el vector, pero sin la flecha arriba. Una notación alternativa es el símbolo vectorial encerrado entre barras verticales en ambos lados:</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/magnitud.png" class="m-auto img-100">
+                                      </div>
+                                      <div>
+                                        <p class="p_black justificado">La magnitud de una cantidad vectorial es una cantidad escalar (un número) y siempre es positiva.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 2:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Para definir las componentes de un vector se parte de un sistema rectangular de ejes de coordenadas (cartesiano) y luego se dibuja el vector con su cola en O, el origen del sistema coordenado. Se puede representar cualquier vector en el plano xy como la suma de un vector paralelo al eje x y un vector paralelo al eje y.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/componentes.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 3:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Estos dos vectores se identifican como <b>A</b>x y <b>A</b>y; son los vectores componentes del vector y su suma vectorial es simbólicamente igual a:</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/A FLECHA.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 4:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Se puede calcular las componentes del vector si se conoce la magnitud <b>A</b> y su dirección. Se describirá la dirección de un vector por su ángulo en relación con una dirección de referencia, medido entre el eje x positivo y el vector.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/cos y sen.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 5:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_white justificado p-3 bg-azul w-fit"><b><i>Ejemplo:</i></b></p>
+                                      </div>
+                                      <div>
+                                        <p class="p_black justificado">¿Cuáles son las componentes x y y del vector en la figura? La magnitud del vector es D = 3.00 m y el ángulo es α = 45°.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 6:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Primero note que el ángulo α no es el de referencia, sino que es 360° – α, es decir, 315°, con esto aclarado vemos que <b>D</b>x = D * cos 315° = 3 * (√2)⁄2 = 2,12 m, mientras que <b>D</b>y = D * sen 315° = 3 * (−√2)⁄2 = -2,12 m. </p>
+                                        <br>
+                                        <p class="p_black justificado">Note que la componente en x apunta a la derecha (sentido positivo) pero que la componente en y apunta hacia abajo (sentido negativo) porque el sen (315°) es negativo y eso concuerda con las direcciones del plano coordenado.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        default:
+            break;
+    }
+}
+function cerrar_ruta() {
+    $('#ruta-info').addClass('d-none');
+
+}
+
+function teorias() {
+    var teorias_num = $(this).data('teoria');
+    $(".teoria-flecha").removeClass('d-block');
+    $(".teoria-flecha").addClass('d-none');
+    $(".teoria-flecha-"+teorias_num).removeClass('d-none');
+    $(".teoria-flecha-"+teorias_num).addClass('d-block');
+
+    if (teorias_num == 1) {
+        var texto = `
+                        <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+                            <div class="bg-azul-o h-6px m-auto">
+                                <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
+                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                        <p class="p_black justificado">En primer lugar, se tiene la <b>multiplicación por un escalar.</b> Este tipo de operación se da cuando se multiplica un vector por un número escalar, el resultado es un nuevo vector con la misma dirección del vector original, pero con una magnitud modificada y la cual dependerá del valor del escalar, si el escalar es menor de 1, el vector se acorta, si es mayor de 1 se alarga, si es negativo además de lo anterior cambia el sentido del vector y si es 1 pues no cambia.</p>
+                                    </div>
+                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                        <img src="assets/img/img_ova/grafica 5.png" class="m-auto img-100" data-teoria="2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+        $("#teoria").html(texto);
+    }else if (teorias_num == 2) {
+        var texto = `
+                    <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+                        <div class="bg-azul-o h-6px m-auto">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
+                                <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                    <p class="p_black justificado">Otra operación habitual en el producto escalar, este se realiza entre dos vectores y recibe este nombre porque el resultado no es un vector sino un numero escalar.  En términos geométricos debe entenderse como la proyección de un vector sobre el otro.</p>
+                                </div>
+                                <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                    <p class="p_black justificado">El producto escalar de dos vectores 𝐴 ⃗ y 𝐵 ⃗ se denota como 𝐴 ⃗∙𝐵 ⃗  = 𝐴_𝑥 𝐵_𝑥+𝐴_𝑦 𝐵_𝑦  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴 ⃗ y 𝐵 ⃗ en el plano que los contiene.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        $("#teoria").html(texto);
+    }else if (teorias_num == 3) {
+        var texto = `
+                    <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+                        <div class="bg-azul-o h-6px m-auto">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
+                                <div class="bg-blanco radius-2 my-auto mx-3 p-3 d-flex">
+                                    <div class="img-40">
+                                        <img src="assets/img/img_ova/opinion.png" class="m-auto img-100" data-teoria="3">
+                                    </div>
+                                    <p class="p_black justificado">Existe otro producto entre los vectores 𝐴 ⃗ y 𝐵 ⃗ denotado como 𝐴 ⃗  × 𝐵 ⃗  ,  denominado producto cruz. No se entrará en detalles sobre esta operación solo se dirá que da como resultado otro vector que es perpendicular al plano que los contiene los vectores 𝐴 ⃗ y 𝐵 ⃗  cuya magnitud es 𝐴𝐵𝑠𝑒𝑛∅.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        $("#teoria").html(texto);
+    }else if (teorias_num == 4) {
+        var texto = `
+                    <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+                        <div class="bg-azul-o h-6px m-auto">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
+                                <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3">
+                                    <img src="assets/img/img_ova/calculadora.png" class="m-auto img-100" data-teoria="4">
+                                </div>
+                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                    <p class="p_black justificado">La suma (o resta) de vectores es muy común en física.  Se supone que una partícula experimenta un desplazamiento seguido por un segundo desplazamiento. El resultado final es el mismo como si la partícula hubiera partido del mismo punto y experimentado un solo desplazamiento).</p>
+                                </div>
+                                <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3">
+                                    <p class="p_black justificado">Se llama a suma vectorial, o resultante, de los desplazamientos. Si se efectúan los desplazamientos y en orden inverso, primero y luego el resultado será el mismo ya que se cumple la propiedad conmutativa.</p>
+                                    <button class="btn bg-amarillo-c p-3 p_black" data-toggle="modal" data-target="#teoria-modal">Ver + información</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        $("#teoria").html(texto);
+    }else if (teorias_num == 5) {
+        var texto = `
+                    <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+                        <div class="bg-azul-o h-6px m-auto">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
+                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                    <div class="d-flex">
+                                        <img src="assets/img/img_ova/pensar.png" class="m-auto img-70" data-teoria="4">
+                                    </div>
+                                    <p class="p_black justificado">En el caso de dos vectores 𝐴 ⃗ y 𝐵 ⃗ la suma o resultante seria 𝑅 ⃗.</p>
+                                    <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
+                                </div>
+                                <div class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
+                                    <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80" data-teoria="5">
+                                </div>
+                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                    <p class="p_black justificado">Se puede ampliar este procedimiento para calcular la suma de cualquier cantidad de vectores. Si es la suma vectorial de entonces, las componentes son:</p>
+                                    <img src="assets/img/img_ova/formula-r.png" class="m-auto img-100" data-teoria="5">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        $("#teoria").html(texto);
+    }
 }

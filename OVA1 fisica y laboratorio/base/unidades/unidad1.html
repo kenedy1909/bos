@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div id="smartwizard">
-                    <ul class="nav">
+                    <ul class="nav d-none">
                         <li>
                            <a class="nav-link" href="#unidad1-1">
                            </a>
@@ -74,6 +74,14 @@
                         </li>
                         <li>
                             <a class="nav-link" href="#unidad1-18">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-19">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-20">
                             </a>
                         </li>
                     </ul>
@@ -553,8 +561,43 @@
                                   <p class="p_black justificado">Haga clic en cada icono para ampliar la información sobre vectores</p>
                                 </div>
                               </div>
-                              <div class="col-md-6 p-3 d-flex border-left-blanco">
-                                  <img src="assets/img/img_ova/ruta.png" class="img-90 m-auto">
+                              <div class="col-md-6 p-3 border-left-blanco">
+                                <div class="position-relative d-flex">
+                                  <img src="assets/img/img_ova/ruta.png" class="m-auto" style="width: 360px;">
+                                  <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(1)" style="left: 75px; top: 40px;">
+                                    <div class="radius-50 d-flex bg-celeste" style="width: 80px; height: 80px;">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-02.png" class="m-auto img-35">
+                                    </div>
+                                  </div>
+                                  <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(2)" style="left: 275px; top: 40px;">
+                                    <div class="radius-50 d-flex bg-roja" style="width: 80px; height: 80px;">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-08.png" class="m-auto img-75">
+                                    </div>
+                                  </div>
+                                  <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(3)" style="left: 275px; top: 160px;">
+                                    <div class="radius-50 d-flex bg-roja" style="width: 80px; height: 80px;">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-07.png" class="m-auto img-75">
+                                    </div>
+                                  </div>
+                                  <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(4)" style="left: 10px; top: 160px;">
+                                    <div class="radius-50 d-flex bg-celeste" style="width: 80px; height: 80px;">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-06.png" class="m-auto img-75">
+                                    </div>
+                                  </div>
+                                  <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(5)" style="left: 10px; top: 280px;">
+                                    <div class="radius-50 d-flex bg-celeste" style="width: 80px; height: 80px;">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-10.png" class="m-auto img-75">
+                                    </div>
+                                  </div>
+                                  <div class="radius-50 p-2 position-absolute cursor bg-blanco" onclick="ruta(6)" style="left: 210px; top: 280px;">
+                                    <div class="radius-50 d-flex bg-roja" style="width: 80px; height: 80px;">
+                                      <img src="assets/img/img_ova/Fisica y laboratorio-05.png" class="m-auto img-75">
+                                    </div>
+                                  </div>
+                                  <div class="position-absolute img-100 d-none" id="ruta-info" style="left: 0px; bottom: -45px;">
+                                    
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -636,6 +679,13 @@
                                           <div class="imagen_acordeon" style="">
                                             <p style="color: #FFD966;font-size: 55px;">^</p>
                                           </div>
+
+                                        </div>
+                                        <div class="col-md-1 pt-3">
+                                          <div class="triangulocordeon" style="">
+                                            
+                                          </div>
+                                        </div>
                                         </div>
                                         <div class="col-md-1 pt-3">
                                           <div class="triangulocordeon" style="">
@@ -759,8 +809,8 @@
                                   </div>
                               </div>
                             </div>
-                            <div class="col-md-12 p-0 my-1">
-                              <div class="w-100 py-5 d-flex" style="min-height: 300px;">
+                            <div class="col-md-12 p-0 my-1" id="teoria">
+                              <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                                   <div class="bg-azul-o h-6px m-auto">
                                       <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
                                           <div class="bg-blanco radius-2 my-auto mx-3 p-3">
@@ -811,6 +861,55 @@
                                 <p class="text-center"><img src="assets/img/img_ova/regla-y-lapiz.png" class="img-70"></p>
                               </div>
                             </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-19" class="tab-pane" role="tabpanel">
+                          <div class="row px-3">
+                              <div class="col-md-5">
+                                  <div class="d-flex">
+                                    <img src="assets/img/img_ova/actividad_complementaria.png" class="img-activi">
+                                    <div class="content-text-img-activi-2">
+                                      <b class="text-img-actividad">ACTIVIDADES COMPLEMENTARIAS</b>
+                                    </div>
+                                  </div>
+                                  <div class="px-4 pt-2">
+                                    <p class="p_black justificado">Ingrese al botón “<b>Descargar</b>” y conozca las actividades complementarias para finalizar con éxito el contenido digital <b>Conceptos fundamentales</b></p>
+                                    <br>
+                                    <p class="p_black justificado">Este archivo se descargará automáticamente en formato pdf.</p>
+                                  </div>
+                              </div>
+                              <div class="col-md-7 border-left-azul">
+                                  <div class="row">
+                                    <div class="col-md-3 pt-135px">
+                                      <a href="assets/PDF/Actividades complementarias.pdf" target="_blank"><button class="btn bg-azul-o p_white radius-2 p-3"><h2><b>Descargar</b></h2></button></a>
+                                    </div>
+                                    <div class="col-md-9">
+                                      <img src="assets/img/img_ova/descarga_actividades.png" alt="" width="100%">
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-20" class="tab-pane" role="tabpanel">
+                          <div class="row px-3">
+                              <div class="col-md-6 offset-md-3">
+                                  <h1 class="text-center">¡FELICITACIONES! <img src="assets/img/img_ova/felicitaciones.png" alt="" class="img-15"></h1>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <img src="assets/img/img_ova/personaje.png" alt="" width="90%">
+                                    </div>
+                                    <div class="col-md-8 pt-9p">
+                                      <p class="p_black justificado"><b>Ha llegado al final del curso matemática lógica.</b></p>
+                                      <br>
+                                      <p class="p_black justificado"><b>Continúe haciendo clic en evaluación para finalizar.</b></p>
+                                      <div class="h-100 d-flex justify-content-center align-items-center">
+                                        <a href="http://unaulavirtual.unaula.edu.co/moodle/mod/assign/view.php?id=38543" target="_blank"><button class="btn bg-azul-o p_white radius-2"><h2><b>Evaluación</b></h2></button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
                           </div>
                        </div>
                     </div>
@@ -1206,6 +1305,55 @@
                     </div>
                     <div class="col-md-4 d-flex">
                       <p class="p_black justificado m-auto">Se puede notar que como se está multiplicando por 1.609 m / milla esto equivale a 1, lo mismo para 1 hora / 3.600 s, por lo que no se ha alterado el valor inicial, los valores en los extremos son equivalentes en la respectiva unidad expresada.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="teoria-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-xl d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="p_white mr-auto my-auto"><b>Suma vectorial</b></h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user">
+                    <div class="border-white">
+                      <div class="radius-gray">
+                          <img class="img-circle menu_superior" src="assets/img/img_ova/profesor (1).png" style="top: 5px;">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row text-center">
+                    <div class="col-md-6">
+                      <div class="d-flex">
+                        <img src="assets/img/img_ova/grafica 6.png" class="img-100 m-auto bg-blanco">
+                      </div>
+                    </div>
+                    <div class="col-md-6 d-flex" style="border-left: solid #fff 3px;">
+                      <p class="p_white justificado m-auto">El método recomendado en este curso para sumar vectores será descomposición en componentes rectangulares. Si se conocen las componentes de dos vectores y cualesquiera, se podría calcular las componentes de la resultante. Luego, si se necesita la magnitud y la dirección se obtendrán según lo visto en el subtema 3, cambiando las D por las R.</p>
                     </div>
                   </div>
               </div>
