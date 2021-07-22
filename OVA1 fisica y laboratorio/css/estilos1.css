@@ -58,37 +58,37 @@
 
 .fondo-1{
 	background-image: url(../assets/img/img_ova/avion-1.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .fondo-2{
 	background-image: url(../assets/img/img_ova/avion-2.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .fondo-3{
 	background-image: url(../assets/img/img_ova/avion-3.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .fondo-4{
 	background-image: url(../assets/img/img_ova/avion-4.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .fondo-5{
 	background-image: url(../assets/img/img_ova/avion-5.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .fondo-6{
 	background-image: url(../assets/img/img_ova/avion-6.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
