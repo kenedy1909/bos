@@ -45,6 +45,12 @@
 .bg-color-dark{
 	background: var(--bg-color-dark-2);
 }
+.bg-color-second{
+	background: var(--bg-color-second);
+}
+.bg-color-second-dark{
+	background: var(--bg-color-second-dark);
+}
 .bg-second{
 	background: var(--bg-color-second);
 }
@@ -97,6 +103,12 @@
 }
 .menos-margin-l-100{
 	margin-left: -100px;
+}
+.menos-margin-l-50{
+	margin-left: -50px;
+}
+.menos-margin-l-25{
+	margin-left: -25px;
 }
 .p-small{
 	font-size: 19px!important;
@@ -1006,3 +1018,187 @@ p, button{
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
+
+/*Deslizador*/
+
+.inputDiv,.inputDiv2 {
+	width: 100%;
+	display:block;
+	color:#aaa;
+	position:relative;
+  }
+  .output{display:none; width:40px; text-align:center;}
+  
+  input[type='range'] {
+	display: inline-block;
+	width: 100%;
+  }
+  
+  input[type='range']:focus {
+	outline: none;
+  }
+  
+  input[type='range'],
+  input[type='range']::-webkit-slider-runnable-track,
+  input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+	background-color: #771E18;
+	width: 30px;
+	height: 30px;
+	border: 3px solid #771E18;
+	border-radius: 50%;
+	margin-top: -15px;
+	cursor: pointer;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+	background-color: #771E18;
+	width: 25px;
+	height: 25px;
+	border: 3px solid #771E18;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  input[type=range]::-ms-thumb {
+	background-color: #771E18;
+	width: 30px;
+	height: 30px;
+	border: 3px solid #771E18;
+	border-radius: 50%;
+	cursor: pointer;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+	background-color: #771E18;
+	height: 3px;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+	outline: none;
+  }
+  
+  input[type=range]::-moz-range-track {
+	background-color: #771E18;
+	height: 3px;
+  }
+  
+  input[type=range]::-ms-track {
+	background-color: #771E18;
+	height: 3px;
+	cursor: pointer;
+  }
+  
+  input[type=range]::-ms-fill-lower {
+	background-color: #771E18;
+	cursor: pointer;
+  }
+  
+  input[type=range]::-ms-fill-upper {
+	background-color: #771E18;
+	cursor: pointer;
+  }
+  
+  .bg-amarillo{
+	  background-color: #FF9900;
+  }
+  .bg-piel{
+	  background-color: #F3C8C5;
+  }
+  
+  a.animated-button:link, a.animated-button:visited {
+	  position: relative;
+	  display: block;
+	  margin: 30px auto 0;
+	  padding: 14px 15px;
+	  color: #fff;
+	  font-size:14px;
+	  font-weight: bold;
+	  text-align: center;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  overflow: hidden;
+	  letter-spacing: .08em;
+	  border-radius: 0;
+	  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	  -webkit-transition: all 1s ease;
+	  -moz-transition: all 1s ease;
+	  -o-transition: all 1s ease;
+	  transition: all 1s ease;
+  }
+  a.animated-button:link:after, a.animated-button:visited:after {
+	  content: "";
+	  position: absolute;
+	  height: 0%;
+	  left: 50%;
+	  top: 50%;
+	  width: 150%;
+	  z-index: -1;
+	  -webkit-transition: all 0.75s ease 0s;
+	  -moz-transition: all 0.75s ease 0s;
+	  -o-transition: all 0.75s ease 0s;
+	  transition: all 0.75s ease 0s;
+  }
+  a.animated-button:link:hover, a.animated-button:visited:hover {
+	  color: #FFF;
+	  text-shadow: none;
+  }
+  a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	  height: 450%;
+  }
+  a.animated-button:link, a.animated-button:visited {
+	  position: relative;
+	  display: block;
+	  margin: 30px auto 0;
+	  padding: 14px 15px;
+	  color: #fff;
+	  font-size:14px;
+	  border-radius: 0;
+	  font-weight: bold;
+	  text-align: center;
+	  text-decoration: none;
+	  text-transform: uppercase;
+	  overflow: hidden;
+	  letter-spacing: .08em;
+	  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	  -webkit-transition: all 1s ease;
+	  -moz-transition: all 1s ease;
+	  -o-transition: all 1s ease;
+	  transition: all 1s ease;
+  }
+  
+  a.animated-button.thar-two {
+	  color: #fff;
+	  cursor: pointer;
+	  display: block;
+	  position: relative;
+	  border: 2px solid #FF9900;
+	  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  a.animated-button.thar-two:hover {
+	  color: #000 !important;
+	  background-color: #F3C8C5;
+	  text-shadow: ntwo;
+  }
+  a.animated-button.thar-two:hover:before {
+	  top: 0%;
+	  bottom: auto;
+	  height: 100%;
+  }
+  a.animated-button.thar-two:before {
+	  display: block;
+	  position: absolute;
+	  left: 0px;
+	  bottom: 0px;
+	  height: 0px;
+	  width: 100%;
+	  z-index: -1;
+	  content: '';
+	  color: #000 !important;
+	  background: #FF9900;
+	  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  

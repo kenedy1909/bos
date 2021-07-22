@@ -140,6 +140,28 @@ function controlSlides(num){
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
+            $(".i1").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv.i1");
+            var elementoPadre2 = document.querySelector(".inputDiv.i2");
+            var inputsRy = [];  
+            var i = new Input(5);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(5);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar2();
+                }, false)
+              }(n));
+            }  
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
@@ -158,6 +180,30 @@ function controlSlides(num){
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            $(".i3").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];  
+            var i = new Input(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
+
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
@@ -243,6 +289,58 @@ function conjuntos(num){
         $("#info_unidad2").html(conjunto)
     }
 }
+
+
+function Input(num) {
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
+  
+    this.crear = function(elementoPadre) {
+      // crea un nuevo elemento input
+      this.input = document.createElement("input");
+      //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+      for (var name in this.att) {
+        if (this.att.hasOwnProperty(name)) {
+          this.input.setAttribute(name, this.att[name]);
+        }
+      }
+      // crea un nuevo elemento div
+      this.output = document.createElement("div");
+      // establece el valor del atributo class del nuevo div
+      this.output.setAttribute("class", "output");
+      // y el contenido (innerHTML) de este
+      this.output.innerHTML = this.att.value;
+  
+      // inserta los dos elementos creados al final  del elemento Padre 
+      elementoPadre.appendChild(this.input);
+      elementoPadre.appendChild(this.output);
+    }
+  
+    this.actualizar = function() {
+      scroll_horizontal(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+      scroll_horizontal2(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+  }
 
 function modal_scroll2(){
     dragging = "";
@@ -749,5 +847,118 @@ function cambiarContenido(num){
                         </div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+    }
+}
+
+function scroll_horizontal(num){
+    switch (parseInt(num)) {
+        case 0:
+            var img_scroll = `
+                            <h3>1</h1>
+                             `;
+            var info_scroll = `
+                            <img src="assets/img/img_ova/scrol1.png" width="70%">
+                            <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
+                            `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 1:
+            var img_scroll = `
+                            <h3>2</h1>
+                             `;
+            var info_scroll = `
+                            <img src="assets/img/img_ova/scrol2.png" width="70%">
+                            <p class="pl-3 text-justify">Durante esta segunda etapa, el punto es reconstituir y describir la red de relaciones entre las variables / factores.</p>
+                            `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 2:
+            var img_scroll = `
+                            <h3>3</h3>
+                             `;
+            var info_scroll = `
+                            <img src="assets/img/img_ova/scrol3.png" width="70%">
+                            <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+                            `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        default:
+            break;
+    }
+}
+
+function scroll_horizontal2(num){
+    switch (parseInt(num)) {
+        case 0:
+            var img_scroll = `
+                            <img src="assets/img/img_ova/tutor.png" width="70%">
+                            `;
+            var info_scroll = `
+                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>1</b></a>
+                            <p class="pl-3 text-justify">La prospectiva empresarial es una disciplina que cada día toma más relevancia por parte de los estrategas empresariales donde las empresas deben centrar la preocupación de <span class="text-danger"> diseñar un futuro </span> y los gerentes están en constante búsqueda del desarrollo de planes, programas y proyectos, que sean acordes a la dinámica de los entornos, externos e internos de las empresas.</p>
+                            `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 1:
+            var img_scroll = `
+                    <img src="assets/img/img_ova/prospectiva_empresarial.png" width="70%">
+                    `;
+            var info_scroll = `
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
+                    <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
+                    `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 2:
+            var img_scroll = `
+                    <img src="assets/img/img_ova/satellite.png" width="70%">
+                    `;
+            var info_scroll = `
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>3</b></a>
+                    <p class="pl-3 text-justify p-3">La prospectiva induce a la identificación de necesidades o problemáticas de la población y de las empresas en la sociedad futura, donde las <span class="text-danger"> tecnologías logran tener un papel importante en satisfacer dichas necesidades, </span> los diferentes programas de investigación y desarrollo de nuevas tecnologías, en caso que no exista una tecnología emergente en el momento.</p>
+                    `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 3:
+            var img_scroll = `
+                    <img src="assets/img/img_ova/future2.png" width="70%">
+                    `;
+            var info_scroll = `
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>4</b></a>
+                    <p class="pl-3 text-justify">Las empresas no deben de contemplar el futuro como la prolongación del pasado, se debe de entender que los <span class="text-danger"> futuros son diversos y múltiples,  </span> para lo cual Godet afirma:  “El futuro no está escrito, está por hacer” y que es el momento de desarrollar actividades para la construcción de este.</p>
+                    `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 4:
+            var img_scroll = `
+                    <img src="assets/img/img_ova/inversor.png" width="70%">
+                    `;
+            var info_scroll = `
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>5</b></a>
+                    <p class="pl-3 text-justify">La prospectiva empresarial se desarrolla implícitamente cuando la organización empieza a <span class="text-danger"> proyectar y buscar cuáles son los cambios en el sector, </span> cuál es la evolución de la cultura de consumo y cómo puede intervenir para lograr beneficios, mejorando su posición a  mediano y largo plazo.</p>
+                    `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 5:
+            var img_scroll = `
+                    <img src="assets/img/img_ova/exito.png" width="70%">
+                    `;
+            var info_scroll = `
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>6</b></a>
+                    <p class="pl-3 text-justify">Cuando hablamos de las ventajas o lo que busca la prospectiva organizacional, podemos concluir que esta busca proyectar de manera exponencial a la empresa <span class="text-danger"> generando proyectos que impacten</span> en todas sus áreas y permitan el crecimiento económico y financiero como el desarrollo del conocimiento, previniendo los futuros tropiezos que puedan generarse y la mejor manera de afrontarlos desde diferentes puntos de vista.</p>
+                    `;
+            $('#img-scroll').html(img_scroll);
+            $('#info-scroll').html(info_scroll);
+            break;
+        default:
+            break;
     }
 }

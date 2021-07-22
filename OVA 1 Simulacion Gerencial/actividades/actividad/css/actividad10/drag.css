@@ -154,7 +154,8 @@ li.over {
 }
 
 .img_cont{
-	max-width: 70%;
+	max-width: 200%;
+  margin-left: -120px;
 }
 
 .optciones{
