@@ -8,30 +8,35 @@
     <title>Actividad</title>
     <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/actividad2-1/backdrop.css">
-    <link rel="stylesheet" type="text/css" href="../css/actividad2-1/estilos.css">
+    <link rel="stylesheet" href="backdrop.css">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 
 <body>
     <div class="backdrop in">
         <div class="fondo">
-            <div class="row" style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em;">
-              <div class="col-md-4 row d-flex">
-                 <img src="../img/img2/actividad_general.png" class="img-activi">
-                 <div>
-                     <div class="content-text-img-activi">
-                       <b class="text-img-actividad">ACTIVIDAD # 2</b>
-                     </div>
-                     <p class="text-center">FALSO/VERDADERO</p>
-                 </div>
-              </div>
-              <div class="col-md-8 shadow content-tarjeta">
-                  <p class="pb-2 p_black">Seleccione falso o verdadero según corresponda, al finalizar toda la actividad “2, pulse la opción "<b>Calificar</b>" para conocer su puntuación.</p>
-              </div>
-              <div class="col-md-12">
-                <p class="p_black justificado pt-3">Teniendo en cuenta la explicación anterior, resuelva los siguientes ejercicios con los valores de verdad de las proposiciones compuestas dadas.</p>
-              </div>
-            </div>
+            <header style="padding: 0px;">
+                <div class="row">
+                    <div class="col-md-4" style="display: inline-block;width: 47s%;">
+                        <div class="" style="display: inline-block;">
+                          <img src="img/actividad_interactiva.png" alt="" style="width: 100px;height: 100px;">
+                          <div class="text-center pt-0" style="font-size: 20px;display: inline-block;">
+                            <b class="">ACTIVIDAD INTERACTIVA</b>
+                            <div style="height: 5px; background: #004c6d;"></div>
+                            <p class="text-muted">FALSO/VERDADERO</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 row" style="display: inline-block;width: 50%;">
+                        <p class="info_actividad shadow" style="font-size: 20px;">
+                            Selecciona falso o verdadero, al finalizar pulsa la opción <b>"Calificar"</b> para conocer tu puntuación.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- <h1>Reducción y aprovechamiento de empaques y envases</h1> -->
+                
+            </header>
             <div class="contenido">
                 
                 <div id="cuestionario-actividad2"></div>
@@ -60,10 +65,10 @@
     <!-- Incluisión de scripts -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/actividad2-1/swig.min.js"></script>
-    <script src="../js/actividad2-1/questions_same_answers-actividad2.js"></script>
+    <script src="swig.min.js"></script>
+    <script src="questions_same_answers-actividad2.js"></script>
     <script src="../js/actividades.js"></script>
-    <script src="../js/actividad2-1/script.js"></script>
+    <script src="script.js"></script>
     <!-- Fin de scripts -->
 </body>
 
