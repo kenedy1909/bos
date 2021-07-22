@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

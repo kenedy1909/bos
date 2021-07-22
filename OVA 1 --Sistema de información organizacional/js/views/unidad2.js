@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -13,7 +14,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-
+    $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -471,14 +472,19 @@ function cajas(num){
 function informacion(num) {
     if (num == 1) {
         $("#informacion_num").html('<h1 class="m-auto"><b>1</b></h1>');
-        $("#informacion_img").html('<img src="assets/img/img_ova/Entrada.png" class="img-100 m-auto">');
+        $("#informacion_img").html('<img id="zoom_img1" src="assets/img/img_ova/Entrada.png" data-zoom-image="assets/img/img_ova/Entrada.png" class="img-100 m-auto ">');
+        $(".zoomContainer" ).remove();
+        $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     }else if (num == 2) {
+        $(".zoomContainer" ).remove();
         $("#informacion_num").html('<h1 class="m-auto"><b>2</b></h1>');
         $("#informacion_img").html('<img src="assets/img/img_ova/Almacenamiento.png" class="img-100 m-auto">');
     }else if (num == 3) {
+        $(".zoomContainer" ).remove();
         $("#informacion_num").html('<h1 class="m-auto"><b>3</b></h1>');
         $("#informacion_img").html('<img src="assets/img/img_ova/Procesamiento.png" class="img-100 m-auto">');
     }else if (num == 4) {
+        $(".zoomContainer" ).remove();
         $("#informacion_num").html('<h1 class="m-auto"><b>4</b></h1>');
         $("#informacion_img").html('<img src="assets/img/img_ova/Salida .png" class="img-100 m-auto">');
     }
