@@ -964,6 +964,7 @@ function actividadrecogible(num) {
     }
 }
 
+<<<<<<< Updated upstream
 function efect(num) {
     switch (parseInt(num)) {
         case 1:
@@ -1027,4 +1028,176 @@ function removeefect(num){
             break;
     } 
     
+=======
+function ruta(num) {
+    $("#ruta-info").addClass('d-none');
+    switch(parseInt(num)){
+        case 1:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Frecuentemente se representa la magnitud de una cantidad vectorial (su longitud, en el caso de un vector desplazamiento) con la misma letra que se usa para el vector, pero sin la flecha arriba. Una notación alternativa es el símbolo vectorial encerrado entre barras verticales en ambos lados:</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/magnitud.png" class="m-auto img-100">
+                                      </div>
+                                      <div>
+                                        <p class="p_black justificado">La magnitud de una cantidad vectorial es una cantidad escalar (un número) y siempre es positiva.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 2:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Para definir las componentes de un vector se parte de un sistema rectangular de ejes de coordenadas (cartesiano) y luego se dibuja el vector con su cola en O, el origen del sistema coordenado. Se puede representar cualquier vector en el plano xy como la suma de un vector paralelo al eje x y un vector paralelo al eje y.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/componentes.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 3:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Estos dos vectores se identifican como <b>A</b>x y <b>A</b>y; son los vectores componentes del vector y su suma vectorial es simbólicamente igual a:</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/A FLECHA.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 4:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Se puede calcular las componentes del vector si se conoce la magnitud <b>A</b> y su dirección. Se describirá la dirección de un vector por su ángulo en relación con una dirección de referencia, medido entre el eje x positivo y el vector.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/cos y sen.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 5:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_white justificado p-3 bg-azul w-fit"><b><i>Ejemplo:</i></b></p>
+                                      </div>
+                                      <div>
+                                        <p class="p_black justificado">¿Cuáles son las componentes x y y del vector en la figura? La magnitud del vector es D = 3.00 m y el ángulo es α = 45°.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 6:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Primero note que el ángulo α no es el de referencia, sino que es 360° – α, es decir, 315°, con esto aclarado vemos que <b>D</b>x = D * cos 315° = 3 * (√2)⁄2 = 2,12 m, mientras que <b>D</b>y = D * sen 315° = 3 * (−√2)⁄2 = -2,12 m. </p>
+                                        <br>
+                                        <p class="p_black justificado">Note que la componente en x apunta a la derecha (sentido positivo) pero que la componente en y apunta hacia abajo (sentido negativo) porque el sen (315°) es negativo y eso concuerda con las direcciones del plano coordenado.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        default:
+            break;
+    }
+}
+function cerrar_ruta() {
+    $('#ruta-info').addClass('d-none');
+>>>>>>> Stashed changes
 }

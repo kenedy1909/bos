@@ -358,6 +358,7 @@
    height: 300px;
 }
 
+<<<<<<< Updated upstream
 .creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
 	background: #ffffff;
     height: 180px;
@@ -449,4 +450,21 @@
 	padding-top: 25%;
 	font-size: 20px;
 	padding-left: 50px;
+=======
+
+
+.bg-celeste{
+	background-color: #2ECADA;
+}
+
+.bg-roja{
+	background-color: #C00000;
+}
+.x-modal-amarillo{
+  background: #FFC000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+>>>>>>> Stashed changes
 }
