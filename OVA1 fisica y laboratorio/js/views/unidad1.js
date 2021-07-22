@@ -79,95 +79,64 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística");
-            // dragging = "";
-            // diff = "";
-            // newTop = "";
-            // scrollOffset = "";
-            // knob = document.querySelector('.custom-scrollbar__knob8');
-            // bar = document.querySelector('.custom-scrollbar__bar8');
-            // container = document.querySelector('.custom-scrollbar__inner8');
-            // scroll();
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");       
-            var elementoPadre1 = document.querySelector(".inputDiv.i1");
-            var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
-            var i = new Input();
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input();
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");   
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
-            
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 5:
-            
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
-            
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 9:
-            
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
-            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
-            var inputsRy = [];  
-            var i = new Input();
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input();
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
             break;
         default:
             break;
@@ -995,6 +964,38 @@ function efect(num) {
         default:
             break;
     }           
+    
+}
+
+function removeefect(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').removeClass('crece');
+            $('.div_texto').removeClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').removeClass('crece');
+            $('.div_texto2').removeClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').removeClass('crece');
+            $('.div_texto3').removeClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').removeClass('crece');
+            $('.div_texto4').removeClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').removeClass('crece');
+            $('.div_texto5').removeClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').removeClass('crece');
+            $('.div_texto6').removeClass('visibilidad');
+            break;
+        default:
+            break;
+    } 
     
 }
 
