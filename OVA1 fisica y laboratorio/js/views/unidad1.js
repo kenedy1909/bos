@@ -590,17 +590,15 @@ function funcionalidad_1(num) {
     switch(parseInt(num)){
         case 1:
             $("#dimensional").html(`
-                                    <div class="pt-3 px-5 pb-5" style="background-image: url('assets/img/img_ova/sala-de-laboratorio.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
-                                      <div class="bg-azul-mc radius-2 p-3">
-                                        <p class="p_black justificado">Las unidades fundamentales o básicas son aquellas que se convienen cómo independientes desde el punto de vista dimensional (por ejemplo, metro, kilo, segundo). (Estela, 2021)</p>
-                                      </div>
+                                    <div class="p-3 d-flex">
+                                      <img src="assets/img/img_ova/laboratoriotexto.png" class="img-100 m-auto">
                                     </div>
                                     `);
             break;
         case 2:
 
             $("#dimensional").html(`
-                                    <div class="p-3" style="background-image: url('assets/img/img_ova/dibujando.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+                                    <div class="p-3" style="background-image: url('assets/img/img_ova/dibujado.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
                                       <div class="bg-a-c radius-2 p-3">
                                         <div id="dimensional_info">
                                             <p class="p_black justificado">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según</p>
