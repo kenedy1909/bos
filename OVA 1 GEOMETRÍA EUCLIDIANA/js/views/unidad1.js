@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     
+    $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -440,25 +441,25 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");            
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");            
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
@@ -503,40 +504,25 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
             break;
         case 34:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             break;
         case 35:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             break;
         case 36:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             break;
         case 37:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Argumentos");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             break;
         case 38:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
-            break;
-        case 40:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
-            break;
-        case 41:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
-            break;
-        case 41:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
-            break;
-        case 41:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             break;
         case 39:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             break;
-        case 42:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Métodos de Demostración de Teoremas");
             /*$("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;*/
-            break;
         default:
             break;
     }

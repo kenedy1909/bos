@@ -16,8 +16,8 @@
     <div class="backdrop in">
         <div class="row px-3">
           <div class="col-md-12 p-2">
-            <div class="row border-bottom-actividad" style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em;">
-              <div class="col-md-4 row d-flex">
+            <div class="d-flex" style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em;">
+              <div class="col-md-4 row d-flex" style="width: 45%;">
                  <img src="../img/img2/actividad_general.png" class="img-activi">
                  <div>
                      <div class="content-text-img-activi">
@@ -26,10 +26,11 @@
                      <p class="text-center">CUESTIONARIO</p>
                  </div>
               </div>
-              <div class="col-md-8 shadow content-tarjeta">
+              <div class="col-md-8 shadow content-tarjeta" style="width: 55%;margin-left: 1em;">
                   <p class="pb-2 p_black">Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
               </div>
 
+            </div>
               <div class="col-md-12">
                   <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                       <div class="preguntas">
@@ -65,7 +66,6 @@
                       </div>
                   </div>
               </div>
-            </div>
           </div>
         </div>
 
