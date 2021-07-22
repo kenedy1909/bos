@@ -744,16 +744,16 @@ svg circle:nth-child(2){
 }
 .titulo_sub{
   height: 85px;
-  border-bottom: solid 4px #811111;
+  border-bottom: solid 4px #003442;
   padding-top: 20px;padding-left: 25px;
   text-align: center;
 }
 .titulo_sub p{
   font-size: 20px;
-  color: #811111;
+  color: #003442;
 }
 .banner_activi{
-  background: #811111;
+  background: #003442;
   margin-left: 10px;
   border-radius: 30px;
   padding: 25px 1px 25px 25px;
