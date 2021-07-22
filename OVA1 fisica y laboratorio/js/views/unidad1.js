@@ -1304,3 +1304,23 @@ function teorias() {
         $("#teoria").html(texto);
     }
 }
+
+function activi3(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.contraer1').css({'height': '20%'});
+            $('.imagenactivi1').css({'visibility':'hidden'});
+            break;
+        case 2:
+            $('.contraer2').css({'height': '20%'});
+            $('.imagenactivi2').css({'visibility':'hidden'});
+            break;
+        case 3:
+            $('.contraer3').css({'height': '20%'});
+            $('.imagenactivi3').css({'visibility':'hidden'});
+            break;
+        default:
+            
+            break;
+    }
+}

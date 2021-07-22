@@ -590,3 +590,44 @@
   text-align: center;
 }
 
+.banner_gris{
+	  background: #E7E6E6;
+    box-shadow: 1px 1px 4px 0px;
+    border-radius: 20px;
+    min-height: 190px;
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+.fondoazulo{
+	background: #1e4e79;
+	color: white;
+	font-size: 13px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 25px;
+	margin: 1px;
+}
+
+.numero{
+	width: 19%;
+	padding-top: 25%;
+	font-size: 80px;
+}
+.textonumero{
+	width: 80%;
+}
+
+.targeta_naranja{
+	background: #E39D40;
+  padding: 15px 15px 15px 15px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 7px 1px;
+}
+
+.atras{
+	background: #FFD966;
+	border-radius: 20px;
+}
+.cont_indi{
+	padding: 70px 15px 15px 15px;
+}
