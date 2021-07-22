@@ -964,7 +964,7 @@ function actividadrecogible(num) {
     }
 }
 
-<<<<<<< Updated upstream
+
 function efect(num) {
     switch (parseInt(num)) {
         case 1:
@@ -1027,8 +1027,8 @@ function removeefect(num){
         default:
             break;
     } 
-    
-=======
+}  
+
 function ruta(num) {
     $("#ruta-info").addClass('d-none');
     switch(parseInt(num)){
@@ -1199,5 +1199,5 @@ function ruta(num) {
 }
 function cerrar_ruta() {
     $('#ruta-info').addClass('d-none');
->>>>>>> Stashed changes
+
 }
