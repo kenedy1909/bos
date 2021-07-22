@@ -463,14 +463,14 @@
 .acordeon__titulo {
   display: block;
   padding: 15px;
-  background: #F389BE;
+  background: #4472C4;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   border-bottom: 1px solid #fff;
 }
 .acordeon__titulo:hover {
-  background: #e82c88;
+  background: #e39d40;
 }
 
 .acordeon__contenido {
