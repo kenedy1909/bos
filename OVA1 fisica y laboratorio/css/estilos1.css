@@ -58,7 +58,37 @@
 
 .fondo-1{
 	background-image: url(../assets/img/img_ova/avion-1.png);
-	background-size: contain;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-2{
+	background-image: url(../assets/img/img_ova/avion-2.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-3{
+	background-image: url(../assets/img/img_ova/avion-3.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-4{
+	background-image: url(../assets/img/img_ova/avion-4.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-5{
+	background-image: url(../assets/img/img_ova/avion-5.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-6{
+	background-image: url(../assets/img/img_ova/avion-6.png);
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -87,6 +117,7 @@
 
 .bg-azul-mo{
 	background-color: #003442;
+	position: absolute;
 }
 
 .text-azul-c{
@@ -236,4 +267,203 @@
     position: relative;
     top: -32px;
     color: #548235;
+}
+
+.contenedorp1_9{
+	width: 300px;
+	height: 200px;
+}
+.circulop_9{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	position: relative;
+	font-weight: bold;
+	text-align: center;
+	font-size: 25px;
+}
+
+.circulo1{
+	top: -227px;
+	left: 8px;
+}
+.circulo2{
+	top: -128px;
+	left: 50px;
+}
+.circulo3{
+	top: -231px;
+	left: 232px;
+}
+.inactivo{
+	background: #1f3864;
+	color: white;
+}
+.activo{
+	background: wheat;
+	color: #000;
+}
+.bannerp-9{
+	background: #E39D40;
+	padding: 15px 15px 15px 15px;
+	border-radius: 30px;
+	box-shadow: 1px 1px 4px 0px;
+}
+
+
+.bg-otro-azul-mc{
+    background-color: #BDD7EE;
+}
+
+.bg-un-azul-mas{
+    background-color: #8FAADC;
+}
+
+.bg-gris-c{
+    background-color: #C9C9C9;
+}
+
+.bg-otro-azul-o{
+    background-color: #1F4E79;
+}
+.bg-otro-azul-mc{
+	background-color: #BDD7EE;
+}
+
+.bg-un-azul-mas{
+	background-color: #8FAADC;
+}
+
+.bg-gris-c{
+	background-color: #C9C9C9;
+}
+
+.bg-otro-azul-o{
+	background-color: #1F4E79;
+}
+.recogible{
+	width: 50%;
+	height: 300px;
+	background: #BBD6EE;
+	border-radius: 30px;
+
+}
+
+.textorecogible{
+	padding: 15px 15px 0px 130px;
+}
+
+.bg-recogible{
+	width: 48%;
+   height: 300px;
+}
+
+<<<<<<< Updated upstream
+.creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
+	background: #ffffff;
+    height: 180px;
+    border-radius: 20px 20px 20px 20px;
+    
+    top: 0px;
+    left: 15px;
+    z-index: 100;
+    width: 40%;
+}
+
+.div_textonum, .div_textonum2, .div_textonum3, .div_textonum4, .div_textonum5, .div_textonum6{
+	  width: 108px;
+    padding: 36px 0px 15px 29px;
+    text-align: center;
+}
+.div_textonum p{
+	color: white;font-size: 30px;
+}
+.div_texto, .div_texto2, .div_texto3, .div_texto4, .div_texto5, .div_texto6{
+	width: 60%;
+	padding: 25px 1px 25px 0px;
+	visibility: hidden;
+}
+
+
+@keyframes ascend {
+  from {
+    background: #ffffff;
+    height: 180px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    z-index: 100;
+    width: 60%;
+
+    
+  }
+
+  to {
+  	background: #ffffff;
+    height: 180px;
+    border-radius: 0px 20px 20px 0px;
+    position: absolute;
+    top: 0px;
+    left: 21px;
+    z-index: 100;
+    width: 90%;
+
+    
+  }
+}
+
+@keyframes vis {
+  from {
+    visibility: hidden;
+  }
+
+  to {
+  	visibility: visible;
+  }
+}
+
+
+.crece{
+	animation-duration: 2s;
+    animation-name:ascend;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-fill-mode: forwards;
+}
+
+.visibilidad{
+	animation-duration: 2s;
+    animation-name:vis;
+	animation-iteration-count: 1;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+.fondo-blue-targeta{
+	background: #1E4E79;
+	border-radius: 20px;
+	height: 180px;
+}
+
+.textotema{
+	padding-top: 25%;
+	font-size: 20px;
+	padding-left: 50px;
+}
+
+.bg-celeste{
+	background-color: #2ECADA;
+}
+
+.bg-roja{
+	background-color: #C00000;
+}
+.x-modal-amarillo{
+  background: #FFC000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+
 }

@@ -28,13 +28,32 @@
                         <div style="display: inline-flex;width: 56%;height: 100%">
                             <div class="respuestas-cuestionario">
                                 <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                    
                                     <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
                                     {{respuesta.texto}}
+                                    
                                 </div>
                             </div>
                         </div>
                         
+
+                        
                     </div>
+                    <!-- <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-5">
+                        <div style="display: inline-flex;width: 40%;height: 100%" id="">
+                            <p class="texto-pregunta"><spam style="width: -webkit-fill-available; text-align: center;"><b>¿Cuál es la diferencia entre magnitud y cantidad?</b>
+                            </p>
+                        </div>
+                        <div style="display: inline-flex;width: 56%;height: 100%">
+                            <div class="respuestas-cuestionario">
+                                <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                    
+                                    <a href="http://unaulavirtual.unaula.edu.co/moodle/course/view.php?id=2690" ng-model="respuesta.input">responder aqui</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    
                     <div class="content_triangulo_der">
                         <div class="triangulo_der" id="siguente"  data-slide="2">
                             

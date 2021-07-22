@@ -748,3 +748,456 @@ function svg_img(num) {
 function cerrar_svg() {
     $('#svg-info').addClass('d-none');
 }
+
+function pant9(num){
+    switch (parseInt(num)) {
+        case 1:
+            var texto = `<p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L2 y que eso en el sistema SI corresponda a m2 y en el norteamericano a ft2.</p>`;
+            $('.bannerp-9').html(texto);
+
+            $('.circulop_9').removeClass('activo');
+            $('.circulop_9').addClass('inactivo');
+
+            $('.circulo1').removeClass('inactivo');
+            $('.circulo1').addClass('activo');
+            break;
+        case 2:
+            var texto = `<p class="justificado" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m2/s2) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s2) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s2 por m se obtiene kg m2/s2 por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
+            $('.bannerp-9').html(texto);
+            $('.circulop_9').removeClass('activo');
+            $('.circulop_9').addClass('inactivo');
+
+            $('.circulo2').removeClass('inactivo');
+            $('.circulo2').addClass('activo');
+            break;
+        case 3:
+            var texto = `<p class="justificado" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv2, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)2 finalmente kg m2/s2 que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
+            $('.bannerp-9').html(texto);
+            $('.circulop_9').removeClass('activo');
+            $('.circulop_9').addClass('inactivo');
+
+            $('.circulo3').removeClass('inactivo');
+            $('.circulo3').addClass('activo');
+            break;
+        default:
+            
+            break;
+    }
+}
+
+function equivalencias(num) {
+    switch(parseInt(num)){
+        case 1:
+            $("#equivalencia-1").removeClass('col-md-6');
+            $("#equivalencia-1").addClass('col-md-1');
+            $(".equivalencia-1").addClass('d-none');
+            $(".equivalencia-1").removeClass('d-flex');
+            $(".equivalencia-content-1").removeClass('px-5');
+            $(".img-equivalencia-flecha-1").removeClass('d-flex');
+            $(".img-equivalencia-flecha-1").addClass('d-none');
+            $(".img-equivalencia-1").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-2").removeClass('col-md-1');
+            $("#equivalencia-2").addClass('col-md-6');
+            $("#equivalencia-2").removeClass('d-none');
+            $(".equivalencia-2").removeClass('d-none');
+            $(".img-equivalencia-2").removeClass('d-none');
+            $("#equivalencia-3, #equivalencia-4, #equivalencia-5").addClass('d-none');
+            $(".equivalencia-3, .equivalencia-4, .equivalencia-5").addClass('d-none');
+            $(".img-equivalencia-1, .img-equivalencia-3, .img-equivalencia-4, .img-equivalencia-5").addClass('d-none');
+            break;
+        case 2:
+            $("#equivalencia-2").removeClass('col-md-6');
+            $("#equivalencia-2").addClass('col-md-1');
+            $(".equivalencia-2").addClass('d-none');
+            $(".equivalencia-2").removeClass('d-flex');
+            $(".equivalencia-content-2").removeClass('px-5');
+            $(".img-equivalencia-flecha-2").removeClass('d-flex');
+            $(".img-equivalencia-flecha-2").addClass('d-none');
+            $(".img-equivalencia-2").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-3").removeClass('col-md-1');
+            $("#equivalencia-3").addClass('col-md-6');
+            $("#equivalencia-3").removeClass('d-none');
+            $(".equivalencia-3").removeClass('d-none');
+            $(".img-equivalencia-3").removeClass('d-none');
+            $("#equivalencia-4, #equivalencia-5").addClass('d-none');
+            $(".equivalencia-4, .equivalencia-5").addClass('d-none');
+            $(".img-equivalencia-1").attr('style', 'top: 75px;');
+            $(".img-equivalencia-1").removeClass('d-flex');
+            $(".img-equivalencia-1").addClass('d-none');
+            break;
+        case 3:
+            $("#equivalencia-3").removeClass('col-md-6');
+            $("#equivalencia-3").addClass('col-md-1');
+            $(".equivalencia-3").addClass('d-none');
+            $(".equivalencia-3").removeClass('d-flex');
+            $(".equivalencia-content-3").removeClass('px-5');
+            $(".img-equivalencia-flecha-3").removeClass('d-flex');
+            $(".img-equivalencia-flecha-3").addClass('d-none');
+            $(".img-equivalencia-3").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-4").removeClass('col-md-1');
+            $("#equivalencia-4").addClass('col-md-6');
+            $("#equivalencia-4").removeClass('d-none');
+            $(".equivalencia-4").removeClass('d-none');
+            $(".img-equivalencia-4").removeClass('d-none');
+            $("#equivalencia-5").addClass('d-none');
+            $(".equivalencia-5").addClass('d-none');
+            $(".img-equivalencia-2").attr('style', 'top: 75px;');
+            $(".img-equivalencia-2").removeClass('d-flex');
+            $(".img-equivalencia-2").addClass('d-none');
+            break;
+        case 4:
+            $("#equivalencia-4").removeClass('col-md-6');
+            $("#equivalencia-4").addClass('col-md-1');
+            $(".equivalencia-4").addClass('d-none');
+            $(".equivalencia-4").removeClass('d-flex');
+            $(".equivalencia-content-4").removeClass('px-5');
+            $(".img-equivalencia-flecha-4").removeClass('d-flex');
+            $(".img-equivalencia-flecha-4").addClass('d-none');
+            $(".img-equivalencia-4").attr('style', 'z-index: 1;left: 25px;');
+            $("#equivalencia-5").removeClass('col-md-1');
+            $("#equivalencia-5").addClass('col-md-6');
+            $("#equivalencia-5").removeClass('d-none');
+            $(".equivalencia-5").removeClass('d-none');
+            $(".img-equivalencia-5").removeClass('d-none');
+            $(".img-equivalencia-3").attr('style', 'top: 75px;');
+            $(".img-equivalencia-3").removeClass('d-flex');
+            $(".img-equivalencia-3").addClass('d-none');
+            break;
+        default:
+            break;
+    }
+}
+
+function aviones(num) {
+    $("#avion").removeClass('fondo-1');
+    $("#avion").removeClass('fondo-2');
+    $("#avion").removeClass('fondo-3');
+    $("#avion").removeClass('fondo-4');
+    $("#avion").removeClass('fondo-5');
+    $("#avion").removeClass('fondo-6');
+    $("#avion").addClass('fondo-1');
+    switch(parseInt(num)){
+        case 1:
+            $("#avion").removeClass('fondo-1');
+            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").addClass('m-auto');
+            $("#avion").addClass('fondo-2');
+            $("#avion").attr('onclick','aviones(2)');
+            $("#avion").attr('style','width: 700px; height: 475px;');
+            $(".avion-content").html(`<p class="p_black justificado">Algunas cantidades físicas, como el tiempo, la temperatura, la masa y la densidad se pueden describir completamente con un solo número y una unidad. No obstante, en física muchas otras cantidades importantes están asociadas con una dirección y no pueden describirse con un solo número.</p>`);
+            break;
+        case 2:
+            $("#avion").removeClass('fondo-1');
+            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").addClass('m-auto');
+            $("#avion").addClass('fondo-3');
+            $("#avion").attr('onclick','aviones(3)');
+            $("#avion").attr('style','width: 700px; height: 475px;');
+            $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
+            break;
+        case 3:
+            $("#avion").removeClass('fondo-1');
+            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").addClass('m-auto');
+            $("#avion").addClass('fondo-4');
+            $("#avion").attr('onclick','aviones(4)');
+            $("#avion").attr('style','width: 700px; height: 475px;');
+            $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
+            break;
+        case 4:
+            $("#avion").removeClass('fondo-1');
+            $(".avion-content").removeClass('m-auto');
+            $(".avion-content").addClass('mx-auto mt-auto');
+            $("#avion").addClass('fondo-5');
+            $("#avion").attr('onclick','aviones(5)');
+            $("#avion").attr('style','width: 700px; height: 475px;');
+            $(".avion-content").html(`
+                                        <p class="p_black justificado">Cuando una cantidad física se describe con un solo número, se dice que es una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>escalar.</b></span> En cambio, una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>vectorial</b></span> incluye tanto una magnitud (la cual indica “qué tanto” o “qué tan grande”) como una dirección en el espacio. </p>
+                                        <br>
+                                        <p class="p_black justificado">Los cálculos que combinan cantidades escalares usan las operaciones aritméticas ordinarias. Por ejemplo, 6 kg + 3 kg = 9 kg, o 4 * 2 s = 8 s. No obstante, la combinación de vectores requiere un conjunto diferente de operaciones.</p>
+                                    `);
+            break;
+        case 5:
+            $("#avion").removeClass('fondo-1');
+            $(".avion-content").removeClass('m-auto');
+            $(".avion-content").addClass('mx-auto mt-auto');
+            $("#avion").addClass('fondo-6');
+            $("#avion").attr('onclick','aviones(6)');
+            $("#avion").attr('style','width: 780px; height: 475px;');
+            $(".avion-content").html(`
+                                        <div class="d-flex">
+                                          <img src="assets/img/img_ova/profesor (3).png" class="img-45 m-auto">
+                                        </div>
+                                        <p class="p_black justificado">Para entender mejor los vectores y su combinación, se comienza con la cantidad vectorial más sencilla, el desplazamiento, que simplemente es un cambio en la posición de un objeto. El desplazamiento es una cantidad vectorial porque se debe establecer no solo qué tan lejos se mueve el objeto, sino también en qué dirección.</p>
+                                        <br>
+                                        <p class="p_black justificado">Caminar 3 km al norte desde una casa no lleva al mismo sitio que caminar 3 km al sureste; ambos desplazamientos tienen la misma magnitud, pero diferente dirección.</p>
+                                    `);
+            break;
+        case 6:
+            $("#avion").removeClass('fondo-1');
+            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").addClass('m-auto');
+            $("#avion").addClass('fondo-1');
+            $("#avion").attr('onclick','aviones(1)');
+            $("#avion").attr('style','width: 700px; height: 475px;');
+            $(".avion-content").html(`
+                                    <div class="d-flex">
+                                      <img src="assets/img/img_ova/profesor (2).png" class="img-45 m-auto">
+                                    </div>
+                                    <p class="border-top-azul text-azul-c text-center my-3"><b>Cantidad escalares y vectoriales </b></p>
+                                    `);
+            break;
+        default:
+            break;
+    }
+}
+
+function actividadrecogible(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.bg-recogible').css({'width': '12%'});
+            $('.img_recogible1').css({'max-width': '125%'})
+            break;
+        default:
+            
+            break;
+    }
+}
+
+
+function efect(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').addClass('crece');
+            $('.div_texto').addClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').addClass('crece');
+            $('.div_texto2').addClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').addClass('crece');
+            $('.div_texto3').addClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').addClass('crece');
+            $('.div_texto4').addClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').addClass('crece');
+            $('.div_texto5').addClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').addClass('crece');
+            $('.div_texto6').addClass('visibilidad');
+            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #7a3d74;color: white;font-size: 18px;">Ver aquí ejemplo de preguntas de investigación</button>');
+            break;
+        default:
+            break;
+    }           
+    
+}
+
+function removeefect(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').removeClass('crece');
+            $('.div_texto').removeClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').removeClass('crece');
+            $('.div_texto2').removeClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').removeClass('crece');
+            $('.div_texto3').removeClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').removeClass('crece');
+            $('.div_texto4').removeClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').removeClass('crece');
+            $('.div_texto5').removeClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').removeClass('crece');
+            $('.div_texto6').removeClass('visibilidad');
+            break;
+        default:
+            break;
+    } 
+}  
+
+function ruta(num) {
+    $("#ruta-info").addClass('d-none');
+    switch(parseInt(num)){
+        case 1:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Frecuentemente se representa la magnitud de una cantidad vectorial (su longitud, en el caso de un vector desplazamiento) con la misma letra que se usa para el vector, pero sin la flecha arriba. Una notación alternativa es el símbolo vectorial encerrado entre barras verticales en ambos lados:</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/magnitud.png" class="m-auto img-100">
+                                      </div>
+                                      <div>
+                                        <p class="p_black justificado">La magnitud de una cantidad vectorial es una cantidad escalar (un número) y siempre es positiva.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 2:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Para definir las componentes de un vector se parte de un sistema rectangular de ejes de coordenadas (cartesiano) y luego se dibuja el vector con su cola en O, el origen del sistema coordenado. Se puede representar cualquier vector en el plano xy como la suma de un vector paralelo al eje x y un vector paralelo al eje y.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/componentes.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 3:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Estos dos vectores se identifican como <b>A</b>x y <b>A</b>y; son los vectores componentes del vector y su suma vectorial es simbólicamente igual a:</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/A FLECHA.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 4:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Se puede calcular las componentes del vector si se conoce la magnitud <b>A</b> y su dirección. Se describirá la dirección de un vector por su ángulo en relación con una dirección de referencia, medido entre el eje x positivo y el vector.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/cos y sen.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 5:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_white justificado p-3 bg-azul w-fit"><b><i>Ejemplo:</i></b></p>
+                                      </div>
+                                      <div>
+                                        <p class="p_black justificado">¿Cuáles son las componentes x y y del vector en la figura? La magnitud del vector es D = 3.00 m y el ángulo es α = 45°.</p>
+                                      </div>
+                                      <div>
+                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto img-100">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        case 6:
+            $("#ruta-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-amarillo">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="img-100" style="opacity: initial;">
+                                    <div>
+                                      <div>
+                                        <p class="p_black justificado">Primero note que el ángulo α no es el de referencia, sino que es 360° – α, es decir, 315°, con esto aclarado vemos que <b>D</b>x = D * cos 315° = 3 * (√2)⁄2 = 2,12 m, mientras que <b>D</b>y = D * sen 315° = 3 * (−√2)⁄2 = -2,12 m. </p>
+                                        <br>
+                                        <p class="p_black justificado">Note que la componente en x apunta a la derecha (sentido positivo) pero que la componente en y apunta hacia abajo (sentido negativo) porque el sen (315°) es negativo y eso concuerda con las direcciones del plano coordenado.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#ruta-info").removeClass('d-none');
+            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
+            $(".cerrar-ruta").on('click', cerrar_ruta);
+            break;
+        default:
+            break;
+    }
+}
+function cerrar_ruta() {
+    $('#ruta-info').addClass('d-none');
+
+}
