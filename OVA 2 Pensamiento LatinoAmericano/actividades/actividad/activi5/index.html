@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"><!-- 
+    <link rel="stylesheet" href="../css/animate.css"> -->
+    <link rel="stylesheet" href="../css/actividad5/backdrop.css">
+    <link rel="stylesheet" type="text/css" href="../css/actividad5/estilos.css">
+</head>
+
+<body>
+    <div class="backdrop in">
+        <div class="fondo">
+            <div class="row" style="padding: 20px;">
+                <div class="col-md-4 col-sm-4 d-flex">
+                   <img src="../img/img5/actividad_interactiva.png" class="img-activi">
+                   <div>
+                       <div class="content-text-img-activi-2" style="width: 100%;">
+                         <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
+                       </div>
+                       <p class="text-center">CUESTIONARIO</p>
+                   </div>
+                </div>
+                <div class="col-md-8 col-sm-8 terciario">
+                    <p class="info_actividad shadow" style="color: #000;"><img src="../img/img5/reloj.png" class="max-w-30px">  Tiempo sugerido: 10 mins.
+                    </p>
+                </div>
+            </div>
+            <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
+                <div class="preguntas">
+
+
+
+                    <!-- <div style="width: 50px; display: flex; align-items: center;">
+                        <div style="width: 100%; height: 50px; background: cyan; border-radius: 50%; cursor: pointer;" id="atras" data-slide="2">
+                            
+                        </div>
+                    </div> -->
+                    <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}" style="width: 90%;">
+                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: center;"><b>¿Qué considera usted que es cuidar de sí?</b></spam>
+                            <spam style="height: 50px;"><img class="img_questionario" src="../img/img5/head.png"></spam>
+                        </p>
+                        <div class="respuestas-cuestionario">
+                                <textarea name="" class="w-100"></textarea>
+                        </div>
+                    </div>
+                    <div class="content_triangulo_der">
+                        <div class="triangulo_der">
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="btnCalificar">
+                    <button class="btn btn-primary" type="button" ng-click="calificar()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Incluisión de scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script><!-- 
+    <script src="../js/actividad3/angular.min.js"></script>
+    <script src="../js/actividades.js"></script>
+    <script src="../js/actividad3/script.js"></script>
+    <script src="../js/actividad3/actividad2.js"></script> -->
+    <!-- Fin de scripts -->
+</body>
+
+</html>
