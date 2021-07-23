@@ -27,8 +27,46 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     slide_predeterminado();
+
+
+    var slideCount = $('#slider2 ul li').length;
+    var slideWidth = $('#slider2 ul li').width();
+    var slideHeight = $('#slider2 ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+    
+    $('#slider2').css({ width: '100%', height: '250px' });
+    
+    $('#slider2 ul').css({ width: '90%'});
+    
+    $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+    function moveLeft2() {
+        $('#slider2 ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+            $('#slider2 ul').css('left', '');
+        });
+    };
+
+    function moveRight2() {
+        $('#slider2 ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+            $('#slider2 ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev2').click(function () {
+        moveLeft2();
+    });
+
+    $('a.control_next2').click(function () {
+        moveRight2();
+    });
     console.log(tema);
-    slide_link3(tema);
+    slide_link(tema);
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*var knob = "";
@@ -50,7 +88,7 @@ $('.pdfs').html(pdf);
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     
-    controlSlides3(stepIndex);
+    controlSlides(stepIndex);
 
 }
 
@@ -68,18 +106,18 @@ function modal_scroll10(){
 function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    controlSlides3(1);
+    controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link3(num){
+function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num -1);
-    controlSlides3(num);
+    controlSlides(num);
 }
 
-function controlSlides3(num){
+function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
@@ -122,41 +160,6 @@ function controlSlides3(num){
     }
 }
 
-function letras(num){
-    switch (parseInt(num)) {
-        case 1:
-            $('.letra1').css({'visibility': 'visible'});
-            break;
-        case 2:
-            $('.letra2').css({'visibility': 'visible'});
-            break;
-        default:
-            break;
-    }
-}
-
-
-function infoactivi3(num) {
-    switch (parseInt(num)) {
-        
-        case 1:
-            $('.info3_1').css({'visibility': 'visible'});
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob6');
-            bar = document.querySelector('.custom-scrollbar__bar6');
-            container = document.querySelector('.custom-scrollbar__inner6');
-            scroll();
-            break;
-        case 2:
-            $('.info3_2').css({'visibility': 'visible'});
-            break;
-        default:
-            break;
-    }
-}
 function scroll(){
     // When the container is scrolled
     container.addEventListener('scroll', () => {
