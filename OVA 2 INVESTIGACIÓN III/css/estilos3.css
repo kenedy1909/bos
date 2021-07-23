@@ -1,0 +1,416 @@
+
+.img_nav{
+	width: 50px;
+}
+
+.cont_nav{
+	padding: 5px;
+}
+
+.text_morado{
+	color: #45073d;
+}
+
+.justificado{
+	text-align: justify;
+}
+
+.banner{
+	background-image: url(../assets/img/img_ova/banner_azul.png);
+  padding: 12px;
+  background-size: 180px;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 180px;
+  background-position-x: center;
+  display: flex;
+
+}
+
+.content-banner{
+  width:50%;
+  display: block;
+  margin: auto;
+}
+
+.text-banner{
+  width: min-content;
+  text-align: center;
+  margin: auto;
+}
+
+.carta_azul{
+	width: 18rem;
+	border-right: solid 1px #0075a2;
+	border-radius: 10%;
+}
+
+.cards_blue{
+	border: solid 1px #0075b0;
+	max-width: 18em;
+}
+.card_body_blue{
+	background: #0075b0;
+}
+
+/*.size_13{
+	font-size: 14px;
+}*/
+.fondo_canvas{
+	background-image: url('../assets/img/img_ova/clasificacion_conjuntos_fondo.png');
+	width: 1122px;
+    height: 479px;
+    background-size: cover;
+}
+.radius_modal{
+	border-radius: 30px;
+}
+
+.transparente{
+	background: #fff0;
+}
+
+.btn_claro{
+	background-image: url('../assets/img/img_ova/btn_claro.png');
+	max-width: 100%;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+}
+.btn_oscuro{
+	background-image: url('../assets/img/img_ova/btn_oscuro.png');
+	max-width: 100%;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+}
+.div_claro{
+	background: #c4e2ff;
+}
+
+.content_aqua{
+	border: none;
+  	border-radius: 40px 10px;
+  	background: #89d8ff;
+  	height: 190px;
+}
+.circulo_blue{
+	background-image: url('../assets/img/img_ova/circulo_fondo.png');
+	width: 50%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.triangulo{
+	background-image: url(../assets/img/img_ova/triangulo1.png);
+    height: 26%;
+    width: 39%;
+    background-size: 100%;
+    margin-top: 48px;
+    position: absolute;
+    cursor: pointer;
+}
+.t_1{
+
+}
+.t_2{
+	background-image: url(../assets/img/img_ova/triangulo2.png);
+	margin-left: 27px;
+    margin-top: 78px;
+}
+.t_3{
+	background-image: url(../assets/img/img_ova/triangulo3.png);
+	margin-left: 51px;
+}
+.celda_clara{
+	background: #c6d2d4;
+}
+.celda_azul{
+	background: #98bec4;
+}
+.celda_clarascura{
+	background: #8ca6aa;
+}
+.celda_oscura{
+	background: #47747c;
+}
+#hexagono3 {
+  height: 20em;
+  margin: -6.5em 0;
+  overflow: hidden;
+  transform: rotate(120deg);
+  visibility: hidden;
+  width: 10em;
+  
+}
+#hexagono3-1 {
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(-60deg);
+  width: 100%;
+  
+}
+#hexagono3-2 {
+  height: 100%;
+  transform: rotate(-60deg); 
+  visibility: visible ;
+
+  width: 100%;
+  
+}
+.color-example{
+	background: #c6d2d4;
+	
+}
+
+.text_panal{
+	/*font-size: 12px;*/
+	/*margin-top: 25px;
+	margin-left: 9px;*/
+	color: #ffffff;
+	width: 75%;
+}
+
+.panal{
+	background-size: cover;
+  width: 195px;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+p, button{
+	font-size: 15px;
+}
+
+.rueda1{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 12%;
+    top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.rueda2{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 23%;
+    top: 51%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.rueda3{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 72%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.rueda4{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.cursor{
+	cursor: pointer;
+}
+
+.blanco{
+  background: #ffffff;
+}
+.header_card{
+  background: #0075b0;
+  max-height: 25px;
+    font-size: 10px;
+    border-radius: 3px;
+}
+.close{
+  cursor: pointer;
+}
+
+.size_16{
+  font-size: 16px;
+}
+
+.borde_azul{
+  border: solid 1px #321fdb;
+}
+.borde_azul_left{
+  border-left: solid 1px #321fdb;
+}
+
+.card1-2{
+  padding: 0px;
+  border-radius: 45px;
+  border: solid rgba(0, 117, 168, 1);
+  min-height: 380px;
+}
+
+.card_top2{
+  margin: 0px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  min-height: 190px;
+  border-bottom-right-radius: 42px;
+  border-bottom-left-radius: 42px;
+}
+
+.card1_bottom2{
+  margin: 0px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  min-height: 190px;
+  border-bottom-right-radius: 42px;
+  border-bottom-left-radius: 42px;
+  background-color: rgba(0, 117, 168, 1);
+}
+
+.azul_card{
+  background: #0075b0;
+}
+
+.text-img-activi{
+  border-bottom: solid 3px rgba(0, 91, 139);
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 45px;
+}
+
+.content-img-actividad{
+  z-index: 100;
+  padding-top: 32px;
+  width: 100%;
+}
+
+.img-activi{
+    max-width: 100%;
+    z-index: 100;
+}
+
+.back-green{
+  background-color: #6fb14d;
+  padding: 30px;
+  border-radius: 30px;
+  
+}
+
+.titulo_decorado{
+  margin: 0px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background: linear-gradient(215deg, #6fb14d, #6fb14d);
+  width: 120%;
+  position: absolute;
+  left: -10%;
+}
+
+.contenido_decorado{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  height: 15em;
+  width: 70%;
+  left: 42px;
+  /* border: solid 2px green; */
+  /*margin-left: -30em;*/
+  bottom: -6vh;
+  -webkit-transition: height 1s;
+  transition: height 1s;
+  background: linear-gradient(278deg, #e9ec70, #e9ec70);;
+}
+.contenido_decorado:hover{
+  height: 30em;
+  color: #000000;
+  /*display: block;*/
+}
+
+.margin-auto{
+  margin: auto;
+}
+
+.button-green{
+  background-color: #6fb14d;
+  color: #FFFFFF;
+  padding: 8px 0 ;
+  margin: 12px 0;
+}
+
+.img-font{
+  background-image: url("assets/img/img_ova/industria.png");
+  width: 10px;
+}
+
+.img-circle{
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.div-circle{
+  padding: 10px;
+  background-color: #6fb14d;
+  border-radius: 10%;
+}
+
+.btn-2{
+  padding: 5px 0;
+  background-color: #8e1d66;
+  border-radius: 50px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.caja-texto-m{
+  background-color: #8e1d66;
+  border-radius: 50px;
+  color: #FFFFFF;
+  padding: 20px;
+}  
+
+
+.rec{
+  background-image: url(../assets/img/img_ova/rec.png);
+  height: 200%;
+  width: 120%;
+  position: relative;
+  background-repeat: no-repeat;
+}
