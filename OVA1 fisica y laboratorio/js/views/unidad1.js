@@ -1316,7 +1316,7 @@ function teorias() {
                                     <p class="p_black justificado">Otra operación habitual en el producto escalar, este se realiza entre dos vectores y recibe este nombre porque el resultado no es un vector sino un numero escalar.  En términos geométricos debe entenderse como la proyección de un vector sobre el otro.</p>
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">El producto escalar de dos vectores 𝐴 ⃗ y 𝐵 ⃗ se denota como 𝐴 ⃗∙𝐵 ⃗  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴 ⃗ y 𝐵 ⃗ en el plano que los contiene.</p>
+                                    <p class="p_black justificado">El producto escalar de dos vectores A&#8407 y 𝐵&#8407 se denota como 𝐴&#8407 ∙𝐵&#8407  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴&#8407 y 𝐵&#8407 en el plano que los contiene.</p>
                                 </div>
                             </div>
                         </div>
@@ -1332,7 +1332,7 @@ function teorias() {
                                     <div class="img-40">
                                         <img src="assets/img/img_ova/opinion.png" class="m-auto img-100" data-teoria="3">
                                     </div>
-                                    <p class="p_black justificado">Existe otro producto entre los vectores 𝐴 ⃗ y 𝐵 ⃗ denotado como 𝐴 ⃗  × 𝐵 ⃗  ,  denominado producto cruz. No se entrará en detalles sobre esta operación solo se dirá que da como resultado otro vector que es perpendicular al plano que los contiene los vectores 𝐴 ⃗ y 𝐵 ⃗  cuya magnitud es 𝐴𝐵𝑠𝑒𝑛∅.</p>
+                                    <p class="p_black justificado">Existe otro producto entre los vectores 𝐴&#8407 y 𝐵&#8407 denotado como 𝐴&#8407 × 𝐵&#8407,  denominado producto cruz. No se entrará en detalles sobre esta operación solo se dirá que da como resultado otro vector que es perpendicular al plano que los contiene los vectores 𝐴&#8407 y 𝐵&#8407 cuya magnitud es 𝐴𝐵𝑠𝑒𝑛∅.</p>
                                 </div>
                             </div>
                         </div>
@@ -1368,7 +1368,7 @@ function teorias() {
                                     <div class="d-flex">
                                         <img src="assets/img/img_ova/pensar.png" class="m-auto img-70" data-teoria="4">
                                     </div>
-                                    <p class="p_black justificado">En el caso de dos vectores 𝐴 ⃗ y 𝐵 ⃗ la suma o resultante seria 𝑅 ⃗.</p>
+                                    <p class="p_black justificado">En el caso de dos vectores 𝐴&#8407 y 𝐵&#8407 la suma o resultante seria 𝑅&#8407.</p>
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
                                 <div class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
