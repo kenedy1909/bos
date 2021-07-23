@@ -570,7 +570,7 @@ function funcionalidad_1(num) {
                                     <div class="p-3" style="background-image: url('assets/img/img_ova/dibujado.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
                                       <div class="bg-a-c radius-2 p-3">
                                         <div id="dimensional_info">
-                                            <p class="p_black justificado">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según</p>
+                                            <p class="p_black justificado" style="font-size: 13px;">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según relaciones algebraicas escogidas que liguen las magnitudes correspondientes, como, por ejemplo: velocidad, aceleración, fuerza, potencia, volumen. (S., 2015)</p>
                                         </div>
                                         <div class="img-100 mt-4 d-flex">
                                           <div class="justify-content-evenly img-50 d-flex m-auto">
@@ -596,7 +596,7 @@ function dimensional_opcion(num) {
     $(".dimensional_opcion-"+num).addClass('bg-amarillo');
     switch(parseInt(num)){
         case 1:
-            $("#dimensional_info").html(`<p class="p_black justificado">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según</p>`);
+            $("#dimensional_info").html(`<p class="p_black justificado" style="font-size: 13px;">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según relaciones algebraicas escogidas que liguen las magnitudes correspondientes, como, por ejemplo: velocidad, aceleración, fuerza, potencia, volumen. (S., 2015)</p>`);
             break;
         case 2:
             $("#dimensional_info").html(`<p class="p_black justificado">Como se menciona anteriormente, existen magnitudes fundamentales las cuales se establecieron por medio de un estándar (Sistema Internacional) de los cuales surgieron diferentes sistemas a nivel mundial.</p>`);
@@ -721,8 +721,11 @@ function cerrar_svg() {
 function pant9(num){
     switch (parseInt(num)) {
         case 1:
-            var texto = `<p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L2 y que eso en el sistema SI corresponda a m2 y en el norteamericano a ft2.</p>`;
-            $('.bannerp-9').html(texto);
+            var texto = `
+            <div class="bannerp-9" style="">
+              <p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L2 y que eso en el sistema SI corresponda a m2 y en el norteamericano a ft2.</p>
+            </div>`;
+            $('.orange_cont').html(texto);
 
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -831,6 +834,79 @@ function equivalencias(num) {
             $(".img-equivalencia-3").attr('style', 'top: 75px;');
             $(".img-equivalencia-3").removeClass('d-flex');
             $(".img-equivalencia-3").addClass('d-none');
+            break;
+        case 5:
+            $("#info-equivalencia").html(`
+                                        <div class="col-md-12">
+                                            <p class="justificado p_black">Dado la misma evolución de las diferentes estrategias de estandarización en diversas partes del mundo hasta los sistemas de unidades modernos, existe numerosas unidades para referirse a la misma cantidad física, para medir una longitud se puede usar metros, pulgadas, yardas o años luz. </p>
+                                            <br>
+                                            <p class="justificado p_black">Haga clic en las flechas para avanzar en la información:</p>
+                                        </div>
+                                        <div class="col-md-6" id="equivalencia-1">
+                                          <div class="radius-2 bg-amarillo-o py-3 px-5 h-100 equivalencia-content-1">
+                                            <div class="d-flex">
+                                              <p class="justificado p_black equivalencia-1">Es por eso por lo que se hace necesario contar con tablas que contengan tales equivalencias entre los diferentes sistemas de medidas y poder realizar los cálculos en unidades homogéneas. También ocurre con mucha frecuencia que la unidad misma en un sistema dado sea inadecuada ya sea por grande o por pequeña, es ahí donde entra los múltiplos y submúltiplos de la unidad, normalmente usando potencias de 10, como se muestra en las siguientes tablas.</p>
+                                              <div class="position-relative my-auto">
+                                                <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-1" style="left: 25px;"><img src="assets/img/img_ova/altura.png" class="img-100 m-auto"></div>
+                                                <div class="position-absolute w-h-50px d-flex img-equivalencia-flecha-1" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto" onclick="equivalencias(1)"></div>
+                                              </div>
+                                            </div>
+                                            <div class="d-flex equivalencia-1">
+                                              <button class="p_white bg-azul btn ml-auto" data-toggle="modal" data-target="#equivalencia-modal">Ver tabla</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-1 d-none" id="equivalencia-2">
+                                          <div class="radius-2 bg-cafe-c py-3 px-5 h-100 equivalencia-content-2">
+                                            <div class="d-flex">
+                                              <p class="justificado p_white equivalencia-2">En el SI, por ejemplo, el metro en la unidad de longitud, pero resulta pequeño para medir el diámetro del Sol, pues seria 1.392.680.000 m, que sería lo mismo que 1.392.680 km o mejor 1,39268 Gm. En el otro sentido de la tabla de tamaños también es aplicable, por ejemplo, si algo mide 0,0000000015 m sería mejor expresarlo como 1,5 nm (que es lo mismos que 1,5x10-9 m).</p>
+                                              <div class="position-relative my-auto">
+                                                <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="left: 25px;"><img src="assets/img/img_ova/cientifico.png" class="img-100 m-auto"></div>
+                                                <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-2" onclick="equivalencias(2)"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-1 d-none" id="equivalencia-3">
+                                          <div class="radius-2 bg-otro-azul-mc py-3 px-5 h-100 equivalencia-content-3">
+                                            <div class="d-flex">
+                                              <p class="justificado p_black equivalencia-3">Como se había comentado en muchas ocasiones se debe resolver problemas en los que interviene las mismas cantidades físicas pero expresadas en diferentes sistemas de unidades y para facilitar los cálculos se requiere homogenizarlos. Para conseguir esto se puede utilizar los denominados factores de conversión. Un factor de conversión es una fracción que es igual a 1, por lo que al multiplicarlo (por eso se llama factor) por la cantidad original está en realidad no cambia físicamente solo la forma de representarla.</p>
+                                              <div class="position-relative my-auto">
+                                                <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-3" style="left: 25px;"><img src="assets/img/img_ova/codigo-binario.png" class="img-100 m-auto"></div>
+                                                <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-3" onclick="equivalencias(3)"></div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-1 d-none" id="equivalencia-4">
+                                          <div class="radius-2 bg-un-azul-mas py-3 px-5 h-100 equivalencia-content-4">
+                                            <div class="d-flex">
+                                              <p class="justificado p_black equivalencia-4">De la siguiente tabla se puede ver que 1 m es igual a 3,281 pies, lo que quiere decir que (1 m / 3,281 pies) = 1. Entonces si se tiene 425,78 pies y se requiere en metros se podría simplemente multiplicar este valor por el factor adecuado en este caso (1 m / 3,281 pies) así las cosas 425,78 pies x (1 m / 3,281 pies) = 129,77 m (nótese que los pies se cancelan y solo queda en el denominador m).</p>
+                                              <div class="position-relative my-auto">
+                                                <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-4" style="left: 25px;"><img src="assets/img/img_ova/regla-y-lapiz.png" class="img-100 m-auto"></div>
+                                                <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-4" onclick="equivalencias(4)"></div>
+                                              </div>
+                                            </div>
+                                            <div class="d-flex equivalencia-4">
+                                              <button class="p_white bg-azul btn ml-auto" data-toggle="modal" data-target="#equivalencia-modal-2">Ver tabla</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-1 d-none" id="equivalencia-5">
+                                          <div class="radius-2 bg-gris-c py-3 px-5 h-100 equivalencia-content-5">
+                                            <div class="d-flex">
+                                              <p class="justificado p_black equivalencia-5">Con la información de esta tabla se puede encontrar con facilidad a cuantos m/s equivale una velocidad de 225 millas/hora, se muestra:</p>
+                                              <div class="position-relative my-auto">
+                                                <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-5" style="left: 25px;"><img src="assets/img/img_ova/deberes.png" class="img-100 m-auto"></div>
+                                                <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-5" onclick="equivalencias(5)"></div>
+                                              </div>
+                                            </div>
+                                            <div class="d-flex equivalencia-5">
+                                              <button class="p_white bg-azul btn ml-auto" data-toggle="modal" data-target="#equivalencia-modal-3">Ver tabla</button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        `);
             break;
         default:
             break;
@@ -1235,7 +1311,7 @@ function teorias() {
                                     <p class="p_black justificado">Otra operación habitual en el producto escalar, este se realiza entre dos vectores y recibe este nombre porque el resultado no es un vector sino un numero escalar.  En términos geométricos debe entenderse como la proyección de un vector sobre el otro.</p>
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">El producto escalar de dos vectores 𝐴 ⃗ y 𝐵 ⃗ se denota como 𝐴 ⃗∙𝐵 ⃗  = 𝐴_𝑥 𝐵_𝑥+𝐴_𝑦 𝐵_𝑦  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴 ⃗ y 𝐵 ⃗ en el plano que los contiene.</p>
+                                    <p class="p_black justificado">El producto escalar de dos vectores 𝐴 ⃗ y 𝐵 ⃗ se denota como 𝐴 ⃗∙𝐵 ⃗  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴 ⃗ y 𝐵 ⃗ en el plano que los contiene.</p>
                                 </div>
                             </div>
                         </div>

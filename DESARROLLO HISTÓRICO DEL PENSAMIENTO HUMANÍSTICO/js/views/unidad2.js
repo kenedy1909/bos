@@ -510,11 +510,11 @@ function cerebro(num){
                         </div>
                       </div>
                       <div class="">
-                        <div class="mensaje" style="width: 466px;height: 364px;position: absolute;top: 192px;">
+                        <div class="mensaje" style="width: 466px;height: 364px;position: absolute;top: 235px;">
                           <p class="justificado" style="font-size: 12px;position: relative;top: 113px;padding: 7px 82px 1px 85px;">Todos los progresos de la cultura a través de los cuales se educa al hombre tienen el fin de aplicar los conocimientos y habilidades adquiridas para emplearlos en el mundo; pero el objeto más importante del mundo a que el hombre puede aplicarlos es el hombre mismo, porque él es su propio fin último.</p>
                         </div>
                       </div>
-                      <div style="margin-top: 30%;"><p>Lo anterior implica que la función del conocimiento humano debe ser aplicar tales saberes sobre el mismo ser humano, para con ello ayudarlo a superar su condición</p></div>`;
+                      <div style="margin-top: 35%;"><p>Lo anterior implica que la función del conocimiento humano debe ser aplicar tales saberes sobre el mismo ser humano, para con ello ayudarlo a superar su condición</p></div>`;
             $('.p2-2').html(cont);
             break;
         case 4:
@@ -624,7 +624,7 @@ function cambiatexto2(num) {
             $('.cambia2_3').removeClass('apagado');
             $('.cambia2_3').addClass('prendido');
 
-            $('.aparece_proximo').html('<div onclick="pantallazo(2);" class="triasiguiente cursor" style="margin-top: 170px;margin-left: 10px;"></div>');
+            $('.aparece_proximo').html('<div onclick="pantallazo(3);" class="triasiguiente cursor" style="margin-top: 170px;margin-left: 10px;"></div>');
             break;
         default:
             break;
@@ -668,10 +668,29 @@ function pantallazo(num){
             $('.cambia2_2').addClass('prendido');
             break;
         case 3:
-            var cont = `<p class="justificado font14">Es pertinente pensar por un momento en la felicidad y la libertad como conceptos relativos, el primero puede hacer referencia a un estado interno del sujeto, que depende de factores externos, específicamente de la existencia o no del deseo; el segundo, puede ser un factor interno o externo, es decir, de sensibilidad o de acción.</p>
-                                <p class="justificado font14">De este modo, ambos conceptos pueden manifestarse en todos los seres humanos; los hombres, las mujeres, los pobres, los ricos, los blancos, los afrodescendientes, los jóvenes, los adultos y los ancianos. Esto depende, en primera medida, de la concepción que cada sujeto tenga sobre tales conceptos, pues ello determina su sentido de felicidad o libertad.</p>
-                                <i><p class="justificado font14">Haga clic en la flecha para continuar con la información</p></i>`;
-            $('.textobanewhite').html(cont);
+            var cont = `<div class="col-md-12">
+                          <p class="justificado">
+                            Sin embargo, la concepción que la mayoría de los hombres tienen sobre tales conceptos les es dada a través de ideologías sociales e históricas, y así, el ser humano ha sido domado por la historia, negando a través de la razón, como esencia de la moralidad, su verdadera posibilidad de sentirse vivo en términos no biológicos, es decir, escapar de su resignación por medio de la aceptación del deseo.
+                          </p>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center row">
+                          <div class="circuloabnner prendido text-center cursor circuloabnner1" onclick="contfinal(1);" style="margin-right: 15px;">
+                            <img src="assets/img/img_ova/libro3.png" style="max-width: 90%;">
+                          </div>
+                          <div class="circuloabnner apagado text-center cursor circuloabnner2" onclick="contfinal(2);" style="margin-right: 15px;">
+                            <img src="assets/img/img_ova/autismo.png" style="max-width: 90%;">
+                          </div>
+                          <div class="circuloabnner apagado text-center cursor circuloabnner3" onclick="contfinal(3);" style="margin-right: 15px;">
+                            <img src="assets/img/img_ova/felicidad.png" style="max-width: 90%;">
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="contendiocirculos">
+                            <p class="justificado">Se tiene pues, que la felicidad, como producto del deseo, implica la saciedad momentánea de tal pulsión: de ahí que no sea posible concebir esa dicha como eterna, sino parcial, y, por tanto, una presente felicidad será siempre una futura tristeza. Tales estados del hombre son siempre complementarios, pues la humanidad es maestra creando movimientos internos que los llevan de la pena a la gracia, de la sonrisa al llanto; todos actos de egoísmo e intentos de liberación.</p>
+                            
+                          </div>
+                        </div>`;
+            $('.bannerverde').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
 
@@ -686,7 +705,8 @@ function pantallazo(num){
 }
 
 function primero(){
-    var cont = `<div class="row p-0 bannerboder" style="">
+    var cont = `<div class="col-md-5 seleccionable">
+                  <div class="row p-0 bannerboder" style="">
                     <div class="col-md-8 m-0" style="padding: 25px 10px 16px 10px;">
                       <p class="justificado font14">
                         De tal modo, surge la idea de preservación, la cual implica la supervivencia como un medio esencial para la manifestación del Yo; sin embargo, tal conservación de la vida es asumida legalmente como un derecho irrevocable, con lo que se tiene entonces que las sociedades defienden la vida, pero ¿Hasta qué punto es verdad tal afirmación? 
@@ -706,9 +726,63 @@ function primero(){
                         <img src="assets/img/img_ova/libertad.png" style="max-width: 90%;">
                       </div>
                     </div>
-                  </div>`;
-    $('.seleccionable').html(cont);
+                  </div>
+
+                </div>
+                <div class="col-md-7 d-flex justify-content-center">
+                  <div class="textobanewhite" style="">
+                    <p class="justificado font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>
+                  </div>
+                  <div class="aparece_proximo">
+                    
+                  </div>
+                </div>`;
+    $('.bannerverde').html(cont);
     $('.aparece_proximo').html('');
     var cont = `<p class="justificado font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
     $('.textobanewhite').html(cont);
+}
+
+function contfinal(num){
+    switch (parseInt(num)) {
+        case 1:
+            var cont = `<p class="justificado">Se tiene pues, que la felicidad, como producto del deseo, implica la saciedad momentánea de tal pulsión: de ahí que no sea posible concebir esa dicha como eterna, sino parcial, y, por tanto, una presente felicidad será siempre una futura tristeza. Tales estados del hombre son siempre complementarios, pues la humanidad es maestra creando movimientos internos que los llevan de la pena a la gracia, de la sonrisa al llanto; todos actos de egoísmo e intentos de liberación.</p>`;
+            $('.contendiocirculos').html(cont);
+
+            $('.circuloabnner').removeClass('prendido');
+            $('.circuloabnner').addClass('apagado');
+
+            $('.circuloabnner1').removeClass('apagado');
+            $('.circuloabnner1').addClass('prendido');
+            break;
+        case 2:
+            var cont = `<p class="justificado">La humanidad será siempre un mendigo de su propio placer, pues al no aceptarlos, recibe las migajas que la sociedad le otorga: alimento, placer monogámico, un coche, un móvil, un trabajo, y un lugar donde vivir. <br>
+                        Es posible entonces que la razón no sea el fin, es decir, la felicidad misma, sino un medio para explayar y saciar los deseos del hombre; sin embargo, sólo hay un camino posible hacia sí mismo, el autoconocimiento, el cual implica, esencialmente la aceptación de la animalidad y la conjunción con los elementos de orden social.</p>`;
+            $('.contendiocirculos').html(cont);
+            $('.circuloabnner').removeClass('prendido');
+            $('.circuloabnner').addClass('apagado');
+
+            $('.circuloabnner2').removeClass('apagado');
+            $('.circuloabnner2').addClass('prendido');
+            break;
+        case 3:
+            var cont = `
+            <div class="row">
+              <div class="col-md-10">
+                <p class="justificado">Cada persona lleva un monstruo en su interior, pero también lleva en su historia la carga de la cultura, cada persona tiene algo de locura, pero también la razón como elemento organizador y dador de sentido. El hombre, en muchos casos, no acepta sus pasiones y deseos, por temor a ser rechazado, pero al negarlos, se rechaza a sí mismo, es decir, se niega su propia vida, y se resigna a vivir tras la aceptación de la moralidad ajena.</p>
+              </div>
+              <div class="col-md-2">
+                <button data-toggle="modal" data-target="#modal-esclavo" class="btn" style="background: #963900;width: 100%;color: wheat;font-weight: bold;">¿Soy libre o esclavo?<img src="assets/img/img_ova/buscar.png" style="max-width: 41%;position: absolute;margin-left: -108px;top: 56px;" >Clic para ver</button>
+              </div>
+            </div>`;
+            $('.contendiocirculos').html(cont);
+            $('.circuloabnner').removeClass('prendido');
+            $('.circuloabnner').addClass('apagado');
+
+            $('.circuloabnner3').removeClass('apagado');
+            $('.circuloabnner3').addClass('prendido');
+            break;
+        default:
+            break;
+    }
 }

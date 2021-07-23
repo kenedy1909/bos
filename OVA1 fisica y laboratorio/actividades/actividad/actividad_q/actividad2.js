@@ -64,7 +64,11 @@ function siguente(){
 		/*$("#atras").data('slide', 2);*/
 	}else if (slide == 4) {
 		$("#siguente").data('slide', 1);
-		
+		$('.calificar').css({
+								'visibility': 'visible',
+								'color': '#FFF',
+								'background': '#003442'
+							});
 		/*$("#atras").data('slide', 2);*/
 	}
 	

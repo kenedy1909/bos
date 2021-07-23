@@ -128,6 +128,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, $scope.reset);
     };
     $scope.reset = function() {
+        location.reload();
         $scope.$apply(function() {
             var i = 0,
                 pregunta = null;

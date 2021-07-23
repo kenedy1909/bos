@@ -888,3 +888,9 @@ card flip*/
   padding-top: 4px;
   border-radius: 50%;
 }
+
+.subrayado{
+    background: #BF9000;
+    border-radius: 7px;
+    color: white;
+}

@@ -1499,7 +1499,7 @@ function revolucion(num){
                 <div class="col-md-5" style="height: 50px;">
                     <div class="row dna1" style="">
                         <div style="width: 25%;"><img src="assets/img/img_ova/dinamica.png" style="max-width: 70%;"></div>
-                        <div style="width: 75%;padding: 10px 0px 10px 2px;"><p class="color-text"><b>Dinámica laboral y social</b></p></div>
+                        <div style="width: 75%;padding: 0px 0px 10px 2px;"><p class="color-text"><b>Dinámica laboral y social</b></p></div>
                     </div>
                 </div>
                 <div class="col-md-7 row" style="height: 50px;">
@@ -1521,7 +1521,7 @@ function revolucion(num){
                 </div>
             </div>
             <div class="col-md-12 dinacircles">
-                <p class="justificado">
+                <p class="justificado" style="font-size: 14px;">
                     De la misma manera La Revolución Industrial implicó cambios en la dinámica laboral y social, pues para  para generar acción en las fábricas se requería que las personas permanecieran allí gran parte de su jornada.
                 </p>
             </div>`;
@@ -1556,7 +1556,7 @@ function revolucion(num){
                 </div>
             </div>
             <div class="col-md-12 burgecircles">
-                <p class="justificado">
+                <p class="justificado" style="font-size: 14px;">
                     No obstante, era un aspecto que mostraba grandes desventajas, principalmente en la clase obrera que se sometía al trabajo por jornadas realmente extensas.
                 </p>
             </div>`;
@@ -1572,7 +1572,7 @@ function dinacircles(num){
     switch (parseInt(num)) {
         case 1:
             var pantalla = `
-            <p class="justificado">
+            <p class="justificado"bstyle="font-size: 14px;">
                 De la misma manera La Revolución Industrial implicó cambios en la dinámica laboral y social, pues para  para generar acción en las fábricas se requería que las personas permanecieran allí gran parte de su jornada.
             </p>`;
             
@@ -1580,7 +1580,7 @@ function dinacircles(num){
             break;
         case 2:
             var pantalla = `
-            <p class="justificado">
+            <p class="justificado" style="font-size: 14px;">
                 Se inicia entonces el surgimiento de nuevos grupos sociales como por ejemplo la clase <b>obrera </b>que recibía el sustento del salario pagado por su trabajo en la fábrica.
             </p>`;
             
@@ -1588,7 +1588,7 @@ function dinacircles(num){
             break;
         case 3:
             var pantalla = `
-            <p class="justificado">
+            <p class="justificado" style="font-size: 14px;">
                 Otro grupo sería una modificación del ya existente burguesía, aquí se conocerían como la <b>burguesía industrial</b>, que se constituía por los dueños de las fábricas y máquinas y eran quienes determinaban las formas de trabajo para sus empleados, los pagos, el costo de sus productos y demás, sin necesidad de consultarlo con otros.
             </p>`;
             
