@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/actividad6/backdrop.css">
+    <link rel="stylesheet" type="text/css" href="../css/actividad6/estilos.css">
+</head>
+
+<body>
+    <div class="backdrop in">
+        <div class="fondo">
+            <header>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="d-flex">
+                          <img src="../img/img6/actividad_interactiva.png" alt="" style="width: 116px; height: 116px;">
+                          <div class="text-center pt-3" style="font-size: 20px;">
+                            <b class="pl-1 pr-1" style="color: #004c6d;">ACTIVIDAD INTERACTIVA</b>
+                            <div style="height: 5px; background: #004c6d;"></div>
+                            <p class="text-center text-muted">CUESTIONARIO</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 row">
+                        <p class="info_actividad shadow">
+                            Seleccione la respuesta correcta y presione la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
+                <div class="preguntas">
+
+
+
+                    <!-- <div style="width: 50px; display: flex; align-items: center;">
+                        <div style="width: 100%; height: 50px; background: cyan; border-radius: 50%; cursor: pointer;" id="atras" data-slide="2">
+                            
+                        </div>
+                    </div> -->
+                    <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
+                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available;">{{pregunta.texto}} </spam>
+                            <spam class="img_questionario{{$index+1}}"></spam>
+                        </p>
+                        <div class="respuestas-cuestionario" style="display: inline-block;">
+                            <div class="radio" style="display: inline-block; width: 50%;" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
+                                <img src="{{respuesta.texto}}" alt="" style="width: 116px; height: 116px;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_triangulo_der">
+                        <div class="triangulo_der" id="siguente"  data-slide="2">
+                            
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="btnCalificar">
+                    <button class="btn btn-primary" type="button" ng-click="calificar()">Calificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body center-block">
+                    <div class="mensaje text-center">
+                        Tu puntaje es: <span class="puntaje">40%</span>
+                        <span class="texto-puntaje"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
+                        intentar</button>
+                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Incluisión de scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/actividad6/angular.min.js"></script>
+    <script src="../js/actividades.js"></script>
+    <script src="../js/actividad6/script.js"></script>
+    <script src="../js/actividad6/actividad6.js"></script>
+    <!-- Fin de scripts -->
+</body>
+
+</html>
