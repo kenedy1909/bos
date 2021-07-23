@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     // console.log(tema);
+    $( ".zoomContainer" ).remove();
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -15,6 +16,8 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -560,9 +563,11 @@ function funcionalidad_1(num) {
         case 1:
             $("#dimensional").html(`
                                     <div class="p-3 d-flex">
-                                      <img src="assets/img/img_ova/laboratoriotexto.png" class="img-100 m-auto">
+                                      <img src="assets/img/img_ova/laboratoriotexto.png" class="img-100 m-auto zoom_img" data-zoom-image="assets/img/img_ova/laboratoriotexto.png">
                                     </div>
                                     `);
+            $( ".zoomContainer" ).remove();
+            $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
             break;
         case 2:
 
@@ -1367,7 +1372,7 @@ function teorias() {
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
                                 <div class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
-                                    <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80" data-teoria="5">
+                                    <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80 zoom_img" data-teoria="5" data-zoom-image="assets/img/img_ova/grafica 7.png">
                                 </div>
                                 <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se puede ampliar este procedimiento para calcular la suma de cualquier cantidad de vectores. Si es la suma vectorial de entonces, las componentes son:</p>
@@ -1378,6 +1383,8 @@ function teorias() {
                     </div>
                     `;
         $("#teoria").html(texto);
+        $( ".zoomContainer" ).remove();
+        $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
     }
 }
 

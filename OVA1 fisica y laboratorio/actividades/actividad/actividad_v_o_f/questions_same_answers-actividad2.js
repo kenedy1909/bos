@@ -209,7 +209,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th>Valores de verdad</th>\
+                    <th>Ítem</th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
@@ -222,9 +222,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\
-                            <label class="label-container">\
+                            <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radio-elegant">{% if conta==1 %} '+svg_elem1+' {% else %} '+svg_elem2+'{% endif %}{% set conta=conta+1 %}</span>\
+                                <span class="radiobtn"></span>\
                             </label>\
                         </td>\
                     {% endfor %}\
