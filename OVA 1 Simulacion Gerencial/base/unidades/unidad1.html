@@ -719,14 +719,14 @@
                                     </div>
                                     <div class="col-12">
                                       <div class="row">
-                                        <div class="col-md-12 offfset-md-1 d-flex justify-content-center" id="img-scroll">
+                                        <div class="col-md-12 offfset-md-1 d-flex justify-content-center" id="img-scroll1">
                                           <h3>1</h3>
                                         </div>
                                         <div class="col-md-12 px-5 py-3">
                                           <div class="inputDiv2 i3"></div>
                                           <div class="inputDiv2 i4" style="display: none;"></div>
                                         </div>
-                                        <div class="col-md-12 px-4 d-flex justify-content-center align-items-center" id="info-scroll">
+                                        <div class="col-md-12 px-4 d-flex justify-content-center align-items-center" id="info-scroll1">
                                           <img src="assets/img/img_ova/scrol1.png" width="70%">
                                           <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
                                         </div>
@@ -911,7 +911,19 @@
                                     <p class="d-block text-justify">Se basa en el análisis de juego de actores buscando establecer las relaciones de fuerza existentes entre ellos estudiando la convergencia y divergencias con respecto a un cierto número de posturas y de objetivos que se encuentran asociados, entre ellos se pueden encontrar unas fases que explicaremos a continuación: </p>
                                 </div>
                                 <div class="col-4 boder-right boder-left">
-                                    
+                                    <div class="w-100 text-center text-danger" id="moverArriba" onclick="mover(1,'arriba')"><i class="fas fa-chevron-up h4"></i></div>
+                                    <div class="w-100 h-75 p-4 mt-4" id="contenedorSlideN">
+                                      <div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                          <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class=" mt-5">
+                                      </div>
+                                      <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                          <p class="text-justify text-black pt-5 zindex">Identificar los actores que controlan o influyen sobre las variables clave del análisis estructural: listado de actores.</p>
+                                      </div>
+                                      <div class="w-100 text-center bg-second py-3 text-white">
+                                          <p class="h5">FASE 1</p>
+                                      </div>
+                                    </div>
+                                    <div class="w-100 text-center text-danger" id="moverAbajo" onclick="mover(1,'abajo')"><i class="fas fa-chevron-down h4"></i></div>
                                 </div>
                                 <div class="col-4 px-3">
                                     <p class="d-block text-justify">El análisis de estas fases puede arrojar datos relacionados con nuevas dependencias que apoyen a un desarrollo óptimo de las actividades de la empresa o identificación de actores que estén trabajando aislados de los procesos, también se puede encontrar con tendencias o ideas diferentes de las que se están trabajando actualmente en la empresa entre otros aspectos como que los cambios no son significativos para los proceso que se encuentran activos.
@@ -942,25 +954,26 @@
                                 <div class="col-6">
                                   <div class="row">
                                     <div class="col-2">
-                                      <div id="img-map1">
-                                        <img src="assets/img/img_ova/mesa_trabajo_bn.png" height="17%" width="120%" class="my-1">
+                                      <div id="img-map1" class="d-flex align-items-center justify-content-center" style="height: 20%; width: 100%;">
+                                        <img onclick="slideVertical(1)" src="assets/img/img_ova/mesa_trabajo_bn.png" height="70%" width="100%" class="my-2 imgMapHijaG" id="imgMapHijaG-1">
+                                        <img onclick="slideVertical(1)" src="assets/img/img_ova/mesa_trabajo.png" height="70%" width="100%" class="my-2 imgMapHijaC d-none" id="imgMapHija-1">
                                       </div>
-                                      <div id="img-map2">
-                                        <img src="assets/img/img_ova/relaciones_bn.png" height="17%" width="120%" class="my-2">
+                                      <div id="img-map2" class="d-flex align-items-center justify-content-center"  style="height: 20%; width: 100%;">
+                                        <img onclick="slideVertical(2)" src="assets/img/img_ova/relaciones_bn.png" height="70%" width="100%" class="my-3 imgMapHijaG" id="imgMapHijaG-2">
+                                        <img onclick="slideVertical(2)" src="assets/img/img_ova/relaciones.png" height="70%" width="100%" class="my-3 imgMapHijaC d-none" id="imgMapHija-2">
                                       </div>
-                                      <div id="img-map3">
-                                        <img src="assets/img/img_ova/objetivos_bn.png" height="17%" width="120%" class="my-2">
+                                      <div id="img-map3" class="d-flex align-items-center justify-content-center"  style="height: 20%; width: 100%;">
+                                        <img onclick="slideVertical(3)" src="assets/img/img_ova/objetivos_bn.png" height="70%" width="100%" class="my-3 imgMapHijaG" id="imgMapHijaG-3">
+                                        <img onclick="slideVertical(3)" src="assets/img/img_ova/objetivos.png" height="70%" width="100%" class="my-3 imgMapHijaC d-none" id="imgMapHija-3">
                                       </div>
-                                      <div id="img-map4">
-                                        <img src="assets/img/img_ova/similar_bn.png" height="17%" width="120%" class="my-2">
+                                      <div id="img-map4" class="d-flex align-items-center justify-content-center"  style="height: 20%; width: 100%;">
+                                        <img onclick="slideVertical(4)" src="assets/img/img_ova/similar_bn.png" height="70%" width="100%" class="my-3 imgMapHijaG" id="imgMapHijaG-4">
+                                        <img onclick="slideVertical(4)" src="assets/img/img_ova/similar.png" height="70%" width="100%" class="my-3 imgMapHijaC d-none" id="imgMapHija-4">
                                       </div>
-                                      <div id="img-map5">
-                                        <img src="assets/img/img_ova/recomendaciones_bn.png" height="17%" width="120%" class="my-1">
+                                      <div id="img-map5" class="d-flex align-items-center justify-content-center"  style="height: 20%; width: 100%;">
+                                        <img onclick="slideVertical(5)" src="assets/img/img_ova/recomendaciones_bn.png" height="70%" width="100%" class="my-2 imgMapHijaG" id="imgMapHijaG-5">
+                                        <img onclick="slideVertical(5)" src="assets/img/img_ova/recomendaciones.png" height="70%" width="100%" class="my-2 imgMapHijaC d-none" id="imgMapHija-5">
                                       </div>
-                                      
-                                      
-                                      
-                                      
                                     </div>
                                     <div class="col-2" style="max-height: 500px;">
                                       <img src="assets/img/img_ova/regla-slide.png" height="100%" width="100%" usemap="#mapa-regla-tiempo">
@@ -972,8 +985,57 @@
                                         <area shape="circle" coords="20,460,20" alt="5" class="cursor">
                                       </map>
                                     </div>
-                                    <div class="col-8">
-
+                                    <div class="col-8" id="contenidoSlideVertical">
+                                      <div class="contentHijo-1 w-100 pr-3 hidden" style="height: 20%;">
+                                          <div class="row my-1">
+                                            <div class="col-2 border-tl-10 border-bl-10 bg-color pt-5 d-flex align-items-center">
+                                              <p class="h5 w-100 text-white" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); ">FASE&nbsp;1</p>
+                                            </div>
+                                            <div class="col-10 border-tr-10 border-tr-10 bg-white p-3">
+                                              <p class="text-justify text-black">Definir los actores y comprender su estrategia.</p>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="contentHijo-2 w-100 pr-3 hidden" style="height: 20%;">
+                                          <div class="row my-1">
+                                            <div class="col-2 border-tl-10 border-bl-10 bg-color pt-5 d-flex align-items-center">
+                                              <p class="h5 w-100 text-white" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); ">FASE&nbsp;2</p>
+                                            </div>
+                                            <div class="col-10 border-tr-10 border-tr-10 bg-white p-2">
+                                              <p class="text-justify text-black">Analizar las influencias entre actores y evaluar las relaciones de fuerza determinados en la matriz MIDI.</p>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="contentHijo-3 w-100 pr-3 hidden" style="height: 20%;">
+                                          <div class="row my-1">
+                                            <div class="col-2 border-tl-10 border-bl-10 bg-color pt-5 d-flex align-items-center">
+                                              <p class="h5 w-100 text-white" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); ">FASE&nbsp;3</p>
+                                            </div>
+                                            <div class="col-10 border-tr-10 border-tr-10 bg-white p-2">
+                                              <p class="text-justify text-black">Identificar los retos estratégicos y los objetivos asociados y posicionar a cada actor con respecto a cada objetivo (matriz Mao).</p>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="contentHijo-4 w-100 pr-3 hidden" style="height: 20%;">
+                                          <div class="row my-1">
+                                            <div class="col-2 border-tl-10 border-bl-10 bg-color pt-5 d-flex align-items-center">
+                                              <p class="h5 w-100 text-white" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); ">FASE&nbsp;4</p>
+                                            </div>
+                                            <div class="col-10 border-tr-10 border-tr-10 bg-white p-3">
+                                              <p class="text-justify text-black">Reconocer las convergencias / divergencias (posiciones simples)</p>
+                                            </div>
+                                          </div>
+                                      </div>
+                                      <div class="contentHijo-5 w-100 pr-3 hidden" style="height: 20%;">
+                                          <div class="row my-1">
+                                            <div class="col-2 border-tl-10 border-bl-10 bg-color pt-5 d-flex align-items-center">
+                                              <p class="h5 w-100 text-white" style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); transform: rotate(-90deg); ">FASE&nbsp;5</p>
+                                            </div>
+                                            <div class="col-10 border-tr-10 border-tr-10 bg-white p-2">
+                                              <p class="text-justify text-black">Formular las recomendaciones y estrategias coherentes y formar preguntas clave para el futuro.</p>
+                                            </div>
+                                          </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -1327,7 +1389,15 @@
                       <p class="justificado p_black">El análisis estructural, además del método de escenarios, es una de las herramientas más usadas en el estudio de futuros. El análisis estructural, inspirado en el enfoque sistémico, experimentó un verdadero impulso recién a fines de la década de los sesenta. (Cruzat, 2014)</p> <br>
 
                       <p class="justificado p_black">El aplicativo se puede descargar del siguiente enlace, con versiones en diferentes idiomas</p> <br>
-
+                      
+                      <div class="w-100 d-flex justify-content-end">
+                        <div class="border-10 bg-color shadow p-1 d-flex justify-content-center cursor">
+                          <a href="" target="_blank" class="d-flex pr-5" >
+                              <h6 class="text-white py-1 pl-4 pr-5 text-center">DESCARGAR</h6>
+                              <img src="assets/img/img_ova/descarga-en-la-nube.png" width="100px" style="position: absolute; right: 0px; top: 70px;">
+                          </a>
+                        </div>
+                      </div>
                       <p class="justificado font13">
                         Haga uso de las flechas (<) y (>) para continuar con la lectura:
 
