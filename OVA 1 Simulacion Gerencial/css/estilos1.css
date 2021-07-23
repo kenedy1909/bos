@@ -1069,35 +1069,35 @@ p, button{
   }
   
   input[type=range]::-webkit-slider-thumb {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	width: 30px;
 	height: 30px;
-	border: 3px solid #771E18;
+	border: 3px solid var(--bg-color-dark);
 	border-radius: 50%;
 	margin-top: -15px;
 	cursor: pointer;
   }
   
   input[type=range]::-moz-range-thumb {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	width: 25px;
 	height: 25px;
-	border: 3px solid #771E18;
+	border: 3px solid var(--bg-color-dark);
 	border-radius: 50%;
 	cursor: pointer;
   }
   
   input[type=range]::-ms-thumb {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	width: 30px;
 	height: 30px;
-	border: 3px solid #771E18;
+	border: 3px solid var(--bg-color-dark);
 	border-radius: 50%;
 	cursor: pointer;
   }
   
   input[type=range]::-webkit-slider-runnable-track {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	height: 3px;
   }
   
@@ -1106,23 +1106,23 @@ p, button{
   }
   
   input[type=range]::-moz-range-track {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	height: 3px;
   }
   
   input[type=range]::-ms-track {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	height: 3px;
 	cursor: pointer;
   }
   
   input[type=range]::-ms-fill-lower {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	cursor: pointer;
   }
   
   input[type=range]::-ms-fill-upper {
-	background-color: #771E18;
+	background-color: var(--bg-color-dark);
 	cursor: pointer;
   }
   

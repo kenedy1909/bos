@@ -57,17 +57,17 @@ var contenedorCR1 = ".contenedorC";
 var arrOrigenR1 = [
     {
         code : '<div  data-order-origen="contenedorA">\n'+
-                    '<img src="../img/img3/respuesta_1.png" style="max-whidth: 50%;">\n'+
+                    '<img src="../img/img3/respuesta_1.png" style="width:100%;">\n'+
                 '</div>\n'
     },
     {
         code : '<div  data-order-origen="contenedorB">\n'+
-                    '<img src="../img/img3/respuesta_2.png" style="max-whidth: 50%;">\n'+
+                    '<img src="../img/img3/respuesta_2.png" style="width:100%;">\n'+
                 '</div>\n'
     },
     {
         code : '<div  data-order-origen="contenedorC">\n'+
-                    '<img src="../img/img3/respuesta_3.png" style="max-whidth: 50%;">\n'+
+                    '<img src="../img/img3/respuesta_3.png" style="width:100%;">\n'+
                 '</div>'
     }
 ];
