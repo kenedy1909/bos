@@ -860,8 +860,8 @@ function scroll_horizontal(num){
                             <img src="assets/img/img_ova/scrol1.png" width="70%">
                             <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
                             `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
+            $('#img-scroll1').html(img_scroll);
+            $('#info-scroll1').html(info_scroll);
             break;
         case 1:
             var img_scroll = `
@@ -871,8 +871,8 @@ function scroll_horizontal(num){
                             <img src="assets/img/img_ova/scrol2.png" width="70%">
                             <p class="pl-3 text-justify">Durante esta segunda etapa, el punto es reconstituir y describir la red de relaciones entre las variables / factores.</p>
                             `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
+            $('#img-scroll1').html(img_scroll);
+            $('#info-scroll1').html(info_scroll);
             break;
         case 2:
             var img_scroll = `
@@ -882,8 +882,8 @@ function scroll_horizontal(num){
                             <img src="assets/img/img_ova/scrol3.png" width="70%">
                             <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
                             `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
+            $('#img-scroll1').html(img_scroll);
+            $('#info-scroll1').html(info_scroll);
             break;
         default:
             break;
@@ -960,5 +960,219 @@ function scroll_horizontal2(num){
             break;
         default:
             break;
+    }
+}
+
+function slideVertical(num) {
+
+    $('.contentHijo-1, .contentHijo-2, .contentHijo-3, .contentHijo-4, .contentHijo-5').addClass('hidden');
+    
+    $('.imgMapHijaG').addClass('d-flex');
+    $('.imgMapHijaC').addClass('d-none');
+    $('.imgMapHijaG').removeClass('d-none');
+    $('.imgMapHijaC').removeClass('d-flex');
+
+    if (num==1) {
+        $('#imgMapHijaG-1').addClass('d-none');
+        $('#imgMapHijaG-1').removeClass('d-flex');
+        $('.contentHijo-1').removeClass('hidden');
+        $('#imgMpaHija-1').removeClass('d-none');
+        $('#imgMapHija-1').addClass('d-flex');
+
+    }else if (num==2) {
+        $('#imgMapHijaG-2').addClass('d-none');
+        $('#imgMapHijaG-2').removeClass('d-flex');
+        $('.contentHijo-2').removeClass('hidden');
+        $('#imgMpaHija-2').removeClass('d-none');
+        $('#imgMapHija-2').addClass('d-flex');
+    }else if (num==3) {
+        $('#imgMapHijaG-3').addClass('d-none');
+        $('#imgMapHijaG-3').removeClass('d-flex');
+        $('.contentHijo-3').removeClass('hidden');
+        $('#imgMpaHija-3').removeClass('hidden');
+        $('#imgMapHija-3').addClass('d-flex');
+    }else if (num==4) {
+        $('#imgMapHijaG-4').addClass('d-none');
+        $('#imgMapHijaG-4').removeClass('d-flex');
+        $('.contentHijo-4').removeClass('hidden');
+        $('#imgMpaHija-4').removeClass('d-none');
+        $('#imgMapHija-4').addClass('d-flex');
+    }else if (num==5) {
+        $('#imgMapHijaG-5').addClass('d-none');
+        $('#imgMapHijaG-5').removeClass('d-flex');
+        $('.contentHijo-5').removeClass('hidden');
+        $('#imgMpaHija-5').removeClass('d-none');
+        $('#imgMapHija-5').addClass('d-flex');
+    }
+
+}
+
+function mover(num,estado) {
+
+
+    if (estado=='arriba') {
+        if (num==1) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/similar.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Conocer el grado de convergencia y de divergencia entre los actores y el plano de la distancia que existe entre los diferentes objetivos del sistema.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 5</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(5,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(5,'abajo')");
+        }else if (num==2) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Identificar los actores que controlan o influyen sobre las variables clave del análisis estructural: listado de actores.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 1</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(1,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(1,'abajo')");
+        }else if (num==3) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/objetivos.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Identificar los objetivos estratégicos de los actores respecto a las variables clave: listado de objetivos.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 2</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(2,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(2,'abajo')");
+        }else if (num==4) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/jerarquia.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Evaluar las influencias directas entre los actores: jerarquización de actores mediante un cuadro de influencias entre actores (MAA o Matriz de Actores x Actores).</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 3</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(3,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(3,'abajo')");
+        }else if (num==5) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/emociones.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Conocer el posicionamiento de los actores respecto a los objetivos. Describir la actitud actual de cada actor respecto a cada objetivo (opuesto, neutro, indiferente o favorable). Representación matricial Actores x Objetivos.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 4</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(4,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(4,'abajo')");
+        }
+    }else if(estado=='abajo'){
+        if (num==1) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/objetivos.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Identificar los objetivos estratégicos de los actores respecto a las variables clave: listado de objetivos.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 2</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(2,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(2,'abajo')");
+        }else if (num==2) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/jerarquia.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Evaluar las influencias directas entre los actores: jerarquización de actores mediante un cuadro de influencias entre actores (MAA o Matriz de Actores x Actores).</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 3</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(3,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(3,'abajo')");
+        }else if (num==3) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/emociones.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Conocer el posicionamiento de los actores respecto a los objetivos. Describir la actitud actual de cada actor respecto a cada objetivo (opuesto, neutro, indiferente o favorable). Representación matricial Actores x Objetivos.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 4</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(4,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(4,'abajo')");
+        }else if (num==4) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/similar.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Conocer el grado de convergencia y de divergencia entre los actores y el plano de la distancia que existe entre los diferentes objetivos del sistema.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 5</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(5,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(5,'abajo')");
+        }else if (num==5) {
+            $('#contenedorSlideN').html(``);
+            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class=" mt-5">
+                            </div>
+                            <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
+                                <p class="text-justify text-black pt-5 zindex">Identificar los actores que controlan o influyen sobre las variables clave del análisis estructural: listado de actores.</p>
+                            </div>
+                            <div class="w-100 text-center bg-second py-3 text-white">
+                                <p class="h5">FASE 1</p>
+                            </div>`;
+
+            $('#contenedorSlideN').html(contenido);
+
+            $('#moverArriba').attr('onclick',"mover(1,'arriba')");
+            $('#moverAbajo').attr('onclick',"mover(1,'abajo')");
+        }
     }
 }

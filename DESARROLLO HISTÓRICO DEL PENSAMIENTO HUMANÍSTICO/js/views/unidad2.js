@@ -91,6 +91,7 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 5:
+            slideactivi9();
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             inicio();
             break;
@@ -785,4 +786,46 @@ function contfinal(num){
         default:
             break;
     }
+}
+
+function slideactivi9(){
+    if (permiteslide) {
+       var slideCount = $('#slider5 ul li').length;
+       var slideWidth = $('#slider5 ul li').width();
+       var slideHeight = $('#slider5 ul li').height();
+       var sliderUlWidth = slideCount * slideWidth;
+       
+       $('#slider5').css({ width: '100%', height: '400px' });
+       
+       $('#slider5 ul').css({ width: '90%'});
+       
+       $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+
+       function moveLeft5() {
+           $('#slider5 ul').animate({
+               left: + slideWidth
+           }, 200, function () {
+               $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+               $('#slider5 ul').css('left', '');
+           });
+       };
+
+       function moveRight5() {
+           $('#slider5 ul').animate({
+               left: - slideWidth
+           }, 200, function () {
+               $('#slider5 ul li:first-child').appendTo('#slider5 ul');
+               $('#slider5 ul').css('left', '');
+           });
+       };
+
+       $('a.control_prev5').click(function () {
+           moveLeft5();
+       });
+
+       $('a.control_next5').click(function () {
+           moveRight5();
+       }); 
+    }
+    
 }

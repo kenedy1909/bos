@@ -814,3 +814,7 @@ svg circle:nth-child(2){
   margin: 0px;
   padding-top: 30px;
 }
+
+.w-50{
+  max-width: 50%;
+}

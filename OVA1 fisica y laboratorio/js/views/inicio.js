@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     
     setMigaja("Inicio","","");
+    $( ".ov-personaje").hide();
     $( ".c-sidebar-nav > li").show();
     $( ".c-sidebar-nav > .ov-inicio").show();
     var knob = "";

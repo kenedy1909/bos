@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[1] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[2] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[3] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[4] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[5] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[6] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[7] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[8] = ['entreprise-resource-planning-', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[0] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[1] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[2] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[3] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[4] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[5] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[6] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[7] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[8] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
 
             return this.palabras;
 
@@ -304,8 +304,9 @@ function init_recurso_1() {
             this.palabraMostrar = "";
             espacios = (this.palabraSelect[0].match(/-/g) || []).length;
             console.log('cantidad de espacios ', espacios);
+            console.log(this.underscoreOrLetter);
             var length_container = this.palabraSelect[0].length;
-
+            console.log(this.palabraMostrar);
             for (var i = 0; i < length_container; i++) {
 
                 if (typeof this.underscoreOrLetter[i] != 'undefined') {
@@ -376,6 +377,7 @@ function init_recurso_1() {
         mostrarCalificacion(modalID, mensaje, exito, function () {
             self.reset(form);
         });*/
+        console.log(this.underscoreOrLetter.length);
 
         if (!flag) {
             ahorcado.trazar();
@@ -395,19 +397,21 @@ function init_recurso_1() {
         } else {
             ahorcado.dibujarTodo();
             if (this.gano()) {
-                /*$('#texto-modal').html('Correcto, los movimientos de activos en la operación de un restaurante se pueden dar por esta circunstancia.<br> Descubre en que otras circunstancias se pueden dar.');
-                $('#modal-ahorcado').removeClass("intentar");
-                $('#modal-ahorcado').modal("show");
-                for (var b = 0; b < btn.length; b++) {
-                    btn[b].setAttribute("disabled", "disabled");
-                }*/
-                var modalID = "#calificacionModal";
-                var exito = true;
-                var mensaje = "¡Felicitaciones";
-                // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
-                    
-                });
+                if (document.querySelectorAll('.letra-palabra').length == 26) {
+                    /*$('#texto-modal').html('Correcto, los movimientos de activos en la operación de un restaurante se pueden dar por esta circunstancia.<br> Descubre en que otras circunstancias se pueden dar.');
+                    $('#modal-ahorcado').removeClass("intentar");
+                    $('#modal-ahorcado').modal("show");
+                    for (var b = 0; b < btn.length; b++) {
+                        btn[b].setAttribute("disabled", "disabled");
+                    }*/
+                    var modalID = "#calificacionModal";
+                    var exito = true;
+                    var mensaje = "¡Felicitaciones";
+                    // registrarActividad(puntaje);
+                    mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
+                        
+                    });
+                } 
             }
         }
     };
@@ -420,6 +424,7 @@ function init_recurso_1() {
                 flag = false;
             }
         }
+
 
         return flag;
     }

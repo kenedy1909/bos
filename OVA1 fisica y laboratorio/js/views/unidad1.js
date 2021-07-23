@@ -728,7 +728,7 @@ function pant9(num){
         case 1:
             var texto = `
             <div class="bannerp-9" style="">
-              <p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L2 y que eso en el sistema SI corresponda a m2 y en el norteamericano a ft2.</p>
+              <p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L<sup>2</sup> y que eso en el sistema SI corresponda a m<sup>2</sup> y en el norteamericano a ft<sup>2</sup>.</p>
             </div>`;
             $('.orange_cont').html(texto);
 
@@ -739,7 +739,7 @@ function pant9(num){
             $('.circulo1').addClass('activo');
             break;
         case 2:
-            var texto = `<p class="justificado" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m2/s2) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s2) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s2 por m se obtiene kg m2/s2 por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
+            var texto = `<p class="justificado" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m<sup>2</sup>/s<sup>2</sup>) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s<sup>2</sup>) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s<sup>2</sup> por m se obtiene kg m<sup>2</sup>/s<sup>2</sup> por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -748,7 +748,7 @@ function pant9(num){
             $('.circulo2').addClass('activo');
             break;
         case 3:
-            var texto = `<p class="justificado" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv2, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)2 finalmente kg m2/s2 que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
+            var texto = `<p class="justificado" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv<sup>2</sup>, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)<sup>2</sup> finalmente kg m<sup>2</sup>/s<sup>2</sup> que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -1316,7 +1316,7 @@ function teorias() {
                                     <p class="p_black justificado">Otra operación habitual en el producto escalar, este se realiza entre dos vectores y recibe este nombre porque el resultado no es un vector sino un numero escalar.  En términos geométricos debe entenderse como la proyección de un vector sobre el otro.</p>
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">El producto escalar de dos vectores 𝐴 ⃗ y 𝐵 ⃗ se denota como 𝐴 ⃗∙𝐵 ⃗  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴 ⃗ y 𝐵 ⃗ en el plano que los contiene.</p>
+                                    <p class="p_black justificado">El producto escalar de dos vectores A&#8407 y 𝐵&#8407 se denota como 𝐴&#8407 ∙𝐵&#8407  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴&#8407 y 𝐵&#8407 en el plano que los contiene.</p>
                                 </div>
                             </div>
                         </div>
@@ -1332,7 +1332,7 @@ function teorias() {
                                     <div class="img-40">
                                         <img src="assets/img/img_ova/opinion.png" class="m-auto img-100" data-teoria="3">
                                     </div>
-                                    <p class="p_black justificado">Existe otro producto entre los vectores 𝐴 ⃗ y 𝐵 ⃗ denotado como 𝐴 ⃗  × 𝐵 ⃗  ,  denominado producto cruz. No se entrará en detalles sobre esta operación solo se dirá que da como resultado otro vector que es perpendicular al plano que los contiene los vectores 𝐴 ⃗ y 𝐵 ⃗  cuya magnitud es 𝐴𝐵𝑠𝑒𝑛∅.</p>
+                                    <p class="p_black justificado">Existe otro producto entre los vectores 𝐴&#8407 y 𝐵&#8407 denotado como 𝐴&#8407 × 𝐵&#8407,  denominado producto cruz. No se entrará en detalles sobre esta operación solo se dirá que da como resultado otro vector que es perpendicular al plano que los contiene los vectores 𝐴&#8407 y 𝐵&#8407 cuya magnitud es 𝐴𝐵𝑠𝑒𝑛∅.</p>
                                 </div>
                             </div>
                         </div>
@@ -1348,7 +1348,7 @@ function teorias() {
                                     <img src="assets/img/img_ova/calculadora.png" class="m-auto img-100" data-teoria="4">
                                 </div>
                                 <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">La suma (o resta) de vectores es muy común en física.  Se supone que una partícula experimenta un desplazamiento seguido por un segundo desplazamiento. El resultado final es el mismo como si la partícula hubiera partido del mismo punto y experimentado un solo desplazamiento).</p>
+                                    <p class="p_black justificado" style="font-size: 14px;">La suma (o resta) de vectores es muy común en física.  Se supone que una partícula experimenta un desplazamiento seguido por un segundo desplazamiento. El resultado final es el mismo como si la partícula hubiera partido del mismo punto y experimentado un solo desplazamiento).</p>
                                 </div>
                                 <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se llama a suma vectorial, o resultante, de los desplazamientos. Si se efectúan los desplazamientos y en orden inverso, primero y luego el resultado será el mismo ya que se cumple la propiedad conmutativa.</p>
@@ -1368,7 +1368,7 @@ function teorias() {
                                     <div class="d-flex">
                                         <img src="assets/img/img_ova/pensar.png" class="m-auto img-70" data-teoria="4">
                                     </div>
-                                    <p class="p_black justificado">En el caso de dos vectores 𝐴 ⃗ y 𝐵 ⃗ la suma o resultante seria 𝑅 ⃗.</p>
+                                    <p class="p_black justificado">En el caso de dos vectores 𝐴&#8407 y 𝐵&#8407 la suma o resultante seria 𝑅&#8407.</p>
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
                                 <div class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
