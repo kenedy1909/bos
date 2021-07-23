@@ -1348,7 +1348,7 @@ function teorias() {
                                     <img src="assets/img/img_ova/calculadora.png" class="m-auto img-100" data-teoria="4">
                                 </div>
                                 <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">La suma (o resta) de vectores es muy común en física.  Se supone que una partícula experimenta un desplazamiento seguido por un segundo desplazamiento. El resultado final es el mismo como si la partícula hubiera partido del mismo punto y experimentado un solo desplazamiento).</p>
+                                    <p class="p_black justificado" style="font-size: 14px;">La suma (o resta) de vectores es muy común en física.  Se supone que una partícula experimenta un desplazamiento seguido por un segundo desplazamiento. El resultado final es el mismo como si la partícula hubiera partido del mismo punto y experimentado un solo desplazamiento).</p>
                                 </div>
                                 <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se llama a suma vectorial, o resultante, de los desplazamientos. Si se efectúan los desplazamientos y en orden inverso, primero y luego el resultado será el mismo ya que se cumple la propiedad conmutativa.</p>
