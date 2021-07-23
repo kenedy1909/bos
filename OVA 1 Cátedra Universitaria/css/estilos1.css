@@ -1,0 +1,33 @@
+.cafe-c-1{
+	background: #B01A33;
+}
+
+.bg-rojo-1{
+	background: #E32242;
+}
+
+.border-rojo-1{
+	border: solid #E32242 1px;
+}
+
+.triangulo-abajo{
+	border-right: solid transparent 25px;
+	border-top: solid #97182F 25px;
+	border-left: solid transparent 25px;
+}
+
+.triangulo-abajo-blanco{
+	border-right: solid transparent 30px;
+	border-top: solid #FFFFFF 25px;
+	border-left: solid transparent 30px;
+}
+
+.triangulo-arriba{
+	border-right: solid transparent 25px;
+	border-bottom: solid #97182F 25px;
+	border-left: solid transparent 25px;
+}
+
+.bg-morado{
+	background: #632D36;
+}
