@@ -62,6 +62,8 @@ function slide_link2(num){
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides2(num);
 }
+
+i = 0;
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 1:
@@ -83,6 +85,7 @@ function controlSlides2(num){
             
             break;
         case 4:
+            
             $("#cont_imp").html('');
             $('.triangulo_indica').css({ "visibility": "hidden"
                             
@@ -91,11 +94,13 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 5:
-            slideactivi9();
+            i++;
+            slideactivi9(i);
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             inicio();
             break;
         case 6:
+            
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 7:
@@ -511,11 +516,11 @@ function cerebro(num){
                         </div>
                       </div>
                       <div class="">
-                        <div class="mensaje" style="width: 466px;height: 364px;position: absolute;top: 235px;">
-                          <p class="justificado" style="font-size: 12px;position: relative;top: 113px;padding: 7px 82px 1px 85px;">Todos los progresos de la cultura a través de los cuales se educa al hombre tienen el fin de aplicar los conocimientos y habilidades adquiridas para emplearlos en el mundo; pero el objeto más importante del mundo a que el hombre puede aplicarlos es el hombre mismo, porque él es su propio fin último.</p>
+                        <div class="mensaje" style="width: 440px;height: 201px;">
+                          <p class="justificado" style="font-size: 12px;position: relative;top: 32px;padding: 0px 82px 1px 85px;">Todos los progresos de la cultura a través de los cuales se educa al hombre tienen el fin de aplicar los conocimientos y habilidades adquiridas para emplearlos en el mundo; pero el objeto más importante del mundo a que el hombre puede aplicarlos es el hombre mismo, porque él es su propio fin último.</p>
                         </div>
                       </div>
-                      <div style="margin-top: 35%;"><p>Lo anterior implica que la función del conocimiento humano debe ser aplicar tales saberes sobre el mismo ser humano, para con ello ayudarlo a superar su condición</p></div>`;
+                      <div style=""><p>Lo anterior implica que la función del conocimiento humano debe ser aplicar tales saberes sobre el mismo ser humano, para con ello ayudarlo a superar su condición</p></div>`;
             $('.p2-2').html(cont);
             break;
         case 4:
@@ -526,8 +531,8 @@ function cerebro(num){
                 </div>
               </div>
               <div class="">
-                <div class="mensaje" style="width: 466px;height: 485px;position: absolute;top: 238px;">
-                  <p class="justificado" style="font-size: 12px;position: relative;top: 130px;padding: 25px 87px 1px 86px;">El énfasis en la subjetividad humana es un principio básico de la pedagogía universal actual. En virtud de tal principio, se define como sujetos a los implicados en los procesos educativos y formativos, que no pueden instrumentalizarse recíprocamente. La tesis de que todos los hombres son sujetos que no deben utilizarse unos a otros como medios está considerada como la quintaesencia de la filosofía de Kant (pág. 3).</p>
+                <div class="mensaje" style="width: 466px;height: 200px;">
+                  <p class="justificado" style="font-size: 12px;padding: 25px 87px 1px 86px;">El énfasis en la subjetividad humana es un principio básico de la pedagogía universal actual. En virtud de tal principio, se define como sujetos a los implicados en los procesos educativos y formativos, que no pueden instrumentalizarse recíprocamente. La tesis de que todos los hombres son sujetos que no deben utilizarse unos a otros como medios está considerada como la quintaesencia de la filosofía de Kant (pág. 3).</p>
                 </div>
               </div>`;
             $('.p2-2').html(cont);
@@ -788,44 +793,381 @@ function contfinal(num){
     }
 }
 
-function slideactivi9(){
-    if (permiteslide) {
-       var slideCount = $('#slider5 ul li').length;
-       var slideWidth = $('#slider5 ul li').width();
-       var slideHeight = $('#slider5 ul li').height();
-       var sliderUlWidth = slideCount * slideWidth;
-       
-       $('#slider5').css({ width: '100%', height: '400px' });
-       
-       $('#slider5 ul').css({ width: '90%'});
-       
-       $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+function slideactivi9(num){
+    if ( num <= 1) {
+        var slideCount = $('#slider5 ul li').length;
+        var slideWidth = $('#slider5 ul li').width();
+        var slideHeight = $('#slider5 ul li').height();
+        var sliderUlWidth = slideCount * slideWidth;
+        
+        $('#slider5').css({ width: '100%', height: '450px' });
+        
+        $('#slider5 ul').css({ width: '90%'});
+        
+        $('#slider5 ul li:last-child').prependTo('#slider5 ul');
 
-       function moveLeft5() {
-           $('#slider5 ul').animate({
-               left: + slideWidth
-           }, 200, function () {
-               $('#slider5 ul li:last-child').prependTo('#slider5 ul');
-               $('#slider5 ul').css('left', '');
-           });
-       };
+        function moveLeft5() {
+            $('#slider5 ul').animate({
+                left: + slideWidth
+            }, 200, function () {
+                $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+                $('#slider5 ul').css('left', '');
+            });
+        };
 
-       function moveRight5() {
-           $('#slider5 ul').animate({
-               left: - slideWidth
-           }, 200, function () {
-               $('#slider5 ul li:first-child').appendTo('#slider5 ul');
-               $('#slider5 ul').css('left', '');
-           });
-       };
+        function moveRight5() {
+            $('#slider5 ul').animate({
+                left: - slideWidth
+            }, 200, function () {
+                $('#slider5 ul li:first-child').appendTo('#slider5 ul');
+                $('#slider5 ul').css('left', '');
+            });
+        };
 
-       $('a.control_prev5').click(function () {
-           moveLeft5();
-       });
+        $('a.control_prev5').click(function () {
+            moveLeft5();
+        });
 
-       $('a.control_next5').click(function () {
-           moveRight5();
-       }); 
+        $('a.control_next5').click(function () {
+            moveRight5();
+        });
     }
+        
+    
     
 }
+
+function mitos(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.desplegar').removeClass('desplegado');
+            $('.desplegar').addClass('contraido');
+
+            $('.contraer1').removeClass('contraido');
+            $('.contraer1').addClass('desplegado');
+
+            $('.cont_textomito').removeClass('visible');
+            $('.cont_textomito').addClass('escondido');
+
+            $('.mito1').removeClass('escondido');
+            $('.mito1').addClass('visible');
+
+            
+            break;
+        case 2:
+            $('.desplegar').removeClass('desplegado');
+            $('.desplegar').addClass('contraido');
+
+            $('.contraer2').removeClass('contraido');
+            $('.contraer2').addClass('desplegado');
+
+            $('.cont_textomito').removeClass('visible');
+            $('.cont_textomito').addClass('escondido');
+            
+            $('.mito2').removeClass('escondido');
+            $('.mito2').addClass('visible');
+
+            
+            scrollUno();
+
+            
+            break;
+        case 3:
+            $('.desplegar').removeClass('desplegado');
+            $('.desplegar').addClass('contraido');
+
+            $('.contraer3').removeClass('contraido');
+            $('.contraer3').addClass('desplegado');
+
+            $('.cont_textomito').removeClass('visible');
+            $('.cont_textomito').addClass('escondido');
+            
+            $('.mito3').removeClass('escondido');
+            $('.mito3').addClass('visible');
+
+            
+            scrollDos();
+            break;
+        case 4:
+            $('.desplegar').removeClass('desplegado');
+            $('.desplegar').addClass('contraido');
+
+            $('.contraer4').removeClass('contraido');
+            $('.contraer4').addClass('desplegado');
+
+            $('.cont_textomito').removeClass('visible');
+            $('.cont_textomito').addClass('escondido');
+            
+            $('.mito4').removeClass('escondido');
+            $('.mito4').addClass('visible');
+
+            
+            scrollTres();
+            break;
+        case 5:
+            $('.desplegar').removeClass('desplegado');
+            $('.desplegar').addClass('contraido');
+
+            $('.contraer5').removeClass('contraido');
+            $('.contraer5').addClass('desplegado');
+
+            $('.cont_textomito').removeClass('visible');
+            $('.cont_textomito').addClass('escondido');
+            
+            $('.mito5').removeClass('escondido');
+            $('.mito5').addClass('visible');
+
+            
+            scrollCuatro();
+            break;
+        case 6:
+            $('.desplegar').removeClass('desplegado');
+            $('.desplegar').addClass('contraido');
+
+            $('.contraer6').removeClass('contraido');
+            $('.contraer6').addClass('desplegado');
+
+            $('.cont_textomito').removeClass('visible');
+            $('.cont_textomito').addClass('escondido');
+            
+            $('.mito6').removeClass('escondido');
+            $('.mito6').addClass('visible');
+
+            
+            scrollCinco();           
+            break;
+        default:
+            break;
+    }
+}
+
+function scrollUno(num){
+    
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knobUno');
+        bar = document.querySelector('.custom-scrollbar__barUno');
+        container = document.querySelector('.custom-scrollbar__innerUno');
+        scroll();
+    
+}
+function scrollDos(num){
+    
+
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knobDos');
+        bar = document.querySelector('.custom-scrollbar__barDos');
+        container = document.querySelector('.custom-scrollbar__innerDos');
+        scroll();
+
+    
+}
+function scrollTres(num){
+    
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knobTres');
+        bar = document.querySelector('.custom-scrollbar__barTres');
+        container = document.querySelector('.custom-scrollbar__innerTres');
+        scroll();
+
+    
+}
+function scrollCuatro(num){
+    
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knobCuatro');
+        bar = document.querySelector('.custom-scrollbar__barCuatro');
+        container = document.querySelector('.custom-scrollbar__innerCuatro');
+        scroll();
+
+    
+}
+function scrollCinco(num){
+    
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knobCinco');
+        bar = document.querySelector('.custom-scrollbar__barCinco');
+        container = document.querySelector('.custom-scrollbar__innerCinco');
+        scroll();
+
+    
+}
+
+function saberes(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.contenidoSaberes').removeClass('visible');
+            $('.contenidoSaberes').addClass('escondido');
+            $('.saber1').removeClass('escondido');
+            $('.saber1').addClass('visible');
+
+            $('.imgSaberes').addClass('visible');
+            $('.imgsabe1').removeClass('visible');
+            $('.imgsabe1').addClass('escondido');
+
+            
+
+            $('.cartas4').removeClass('activada');
+            for (var i = 1; i < 5; i++) {
+                $('.cartas4-'+i).addClass('normal'+i);
+            }
+            $('.cartas4-1').removeClass('normal1');
+            $('.cartas4-1').addClass('activada');
+
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knobB1');
+            bar = document.querySelector('.custom-scrollbar__barB1');
+            container = document.querySelector('.custom-scrollbar__innerB1');
+            scroll();
+            break;
+        case 2:
+            $('.contenidoSaberes').removeClass('visible');
+            $('.contenidoSaberes').addClass('escondido');
+            $('.saber2').removeClass('escondido');
+            $('.saber2').addClass('visible');
+
+            $('.imgSaberes').addClass('visible');
+            $('.imgsabe2').removeClass('visible');
+            $('.imgsabe2').addClass('escondido');
+
+            $('.cartas4').removeClass('activada');
+            for (var i = 1; i < 5; i++) {
+                $('.cartas4-'+i).addClass('normal'+i);
+            }
+            $('.cartas4-2').removeClass('normal2');
+            $('.cartas4-2').addClass('activada');
+
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knobB2');
+            bar = document.querySelector('.custom-scrollbar__barB2');
+            container = document.querySelector('.custom-scrollbar__innerB2');
+            scroll();
+            break;
+        case 3:
+            $('.contenidoSaberes').removeClass('visible');
+            $('.contenidoSaberes').addClass('escondido');
+            $('.saber3').removeClass('escondido');
+            $('.saber3').addClass('visible');
+
+            $('.imgSaberes').addClass('visible');
+            $('.imgsabe3').removeClass('visible');
+            $('.imgsabe3').addClass('escondido');
+
+            $('.cartas4').removeClass('activada');
+            for (var i = 1; i < 5; i++) {
+                $('.cartas4-'+i).addClass('normal'+i);
+            }
+            $('.cartas4-3').removeClass('normal3');
+            $('.cartas4-3').addClass('activada');
+
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knobB3');
+            bar = document.querySelector('.custom-scrollbar__barB3');
+            container = document.querySelector('.custom-scrollbar__innerB3');
+            scroll();
+            break;
+        case 4:
+            $('.contenidoSaberes').removeClass('visible');
+            $('.contenidoSaberes').addClass('escondido');
+            $('.saber4').removeClass('escondido');
+            $('.saber4').addClass('visible');
+
+            $('.imgSaberes').addClass('visible');
+            $('.imgsabe4').removeClass('visible');
+            $('.imgsabe4').addClass('escondido');
+
+            $('.cartas4').removeClass('activada');
+            for (var i = 1; i < 5; i++) {
+                $('.cartas4-'+i).addClass('normal'+i);
+            }
+            $('.cartas4-4').removeClass('normal4');
+            $('.cartas4-4').addClass('activada');
+
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knobB4');
+            bar = document.querySelector('.custom-scrollbar__barB4');
+            container = document.querySelector('.custom-scrollbar__innerB4');
+            scroll();
+            break;
+        default:
+            break;
+    }
+}
+
+
+function scroll(){
+    // When the container is scrolled
+    container.addEventListener('scroll', () => {
+      // If we are dragging the knob, do nothing
+      if (dragging) return;
+
+      // Otherwise, set the knob position based on the scroll position
+      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+    });
+
+    dragging = false;
+
+    knob.addEventListener('mousedown', event => {
+        
+    console.log(knob+" "+bar+" "+container);
+      dragging = {
+        x: event.clientX,
+        y: event.clientY };
+
+    });
+    window.addEventListener('mousemove', event => {
+      if (dragging) {
+        // When dragging
+        event.preventDefault();
+        diff = {
+          x: event.clientX - dragging.x,
+          y: event.clientY - dragging.y };
+
+
+        // Clamp the position of the knob to be a maximum of 
+        // the knobs container, and a minimum of 0
+        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+        knob.style.top = newTop + 'px';
+
+        // Base the scroll offset on the knobs position
+        // in relation to the knobs container
+        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+        container.scrollTop = scrollOffset;
+
+        dragging = {
+          x: event.clientX,
+          y: event.clientY };
+
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      dragging = false;
+    });
+}
+

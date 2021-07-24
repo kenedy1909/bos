@@ -894,3 +894,19 @@ card flip*/
     border-radius: 7px;
     color: white;
 }
+
+.bannerrosa{
+  background: #F7CAAC;
+  min-height: 300px;
+  padding: 25px 25px 25px 25px;
+  border-radius: 50px;
+  box-shadow: 1px 2px 6px 0px;
+}
+
+.size_14{
+  font-size: 14px;
+}
+
+.size_13{
+  font-size: 13px;
+}
