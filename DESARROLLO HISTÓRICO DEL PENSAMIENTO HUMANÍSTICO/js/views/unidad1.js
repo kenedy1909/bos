@@ -48,83 +48,6 @@ $( document ).ready(function() {
     funcion_vanvas();
 
     
-    
-    var slideCount = $('#slider2 ul li').length;
-    var slideWidth = $('#slider2 ul li').width();
-    var slideHeight = $('#slider2 ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
-    
-    $('#slider2').css({ width: '100%', height: '400px' });
-    
-    $('#slider2 ul').css({ width: '90%'});
-    
-    $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-
-    function moveLeft2() {
-        $('#slider2 ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-            $('#slider2 ul').css('left', '');
-        });
-    };
-
-    function moveRight2() {
-        $('#slider2 ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider2 ul li:first-child').appendTo('#slider2 ul');
-            $('#slider2 ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev2').click(function () {
-        moveLeft2();
-    });
-
-    $('a.control_next2').click(function () {
-        moveRight2();
-    });
-
-
-    var slideCount = $('#slider3 ul li').length;
-    var slideWidth = $('#slider3 ul li').width();
-    var slideHeight = $('#slider3 ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
-    
-    $('#slider3').css({ width: '100%', height: '400px' });
-    
-    $('#slider3 ul').css({ width: '90%'});
-    
-    $('#slider3 ul li:last-child').prependTo('#slider3 ul');
-
-    function moveLeft3() {
-        $('#slider3 ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider3 ul li:last-child').prependTo('#slider3 ul');
-            $('#slider3 ul').css('left', '');
-        });
-    };
-
-    function moveRight3() {
-        $('#slider3 ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider3 ul li:first-child').appendTo('#slider3 ul');
-            $('#slider3 ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev3').click(function () {
-        moveLeft3();
-    });
-
-    $('a.control_next3').click(function () {
-        moveRight3();
-    });
-
-    
     var slideCount2 = $('#slider4 ul li').length;
     var slideWidth2 = $('#slider4 ul li').width();
     var slideHeight2 = $('#slider4 ul li').height();
@@ -184,6 +107,8 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
 }
+var sumaslide = 0;
+var sumaslide2 = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
@@ -245,11 +170,90 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 11:
+            sumaslide++;
+            if (sumaslide < 2) {
+                var slideCount = $('#slider2 ul li').length;
+                var slideWidth = $('#slider2 ul li').width();
+                var slideHeight = $('#slider2 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider2').css({ width: '100%', height: '400px' });
+                
+                $('#slider2 ul').css({ width: '90%'});
+                
+                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
 
+                function moveLeft2() {
+                    $('#slider2 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                function moveRight2() {
+                    $('#slider2 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev2').click(function () {
+                    moveLeft2();
+                });
+
+                $('a.control_next2').click(function () {
+                    moveRight2();
+                });
+            }
+            
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 12:
-             carruselimagenes();
+            sumaslide2++;
+            if (sumaslide2 < 2) {
+                var slideCount = $('#slider3 ul li').length;
+                var slideWidth = $('#slider3 ul li').width();
+                var slideHeight = $('#slider3 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider3').css({ width: '100%', height: '400px' });
+                
+                $('#slider3 ul').css({ width: '90%'});
+                
+                $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+
+                function moveLeft3() {
+                    $('#slider3 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+                        $('#slider3 ul').css('left', '');
+                    });
+                };
+
+                function moveRight3() {
+                    $('#slider3 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider3 ul li:first-child').appendTo('#slider3 ul');
+                        $('#slider3 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev3').click(function () {
+                    moveLeft3();
+                });
+
+                $('a.control_next3').click(function () {
+                    moveRight3();
+                });
+            }
+            
+            carruselimagenes();
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 13:
@@ -304,6 +308,12 @@ function controlSlides(num){
            break;
         default:
             break;
+    }
+}
+
+function slidep11(num){
+    if (num <= 1) {
+        
     }
 }
 
@@ -1424,7 +1434,7 @@ function renasentismo(num){
             </div>`;
             
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif2').css({'visibility': 'visible'});
             break;
         case 2:
@@ -1434,7 +1444,7 @@ function renasentismo(num){
             </div>`;
             
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif3').css({'visibility': 'visible'});
             break;
         case 3:
@@ -1444,7 +1454,7 @@ function renasentismo(num){
             </div>`;
             
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif4').css({'visibility': 'visible'});
             break;
         case 4:
@@ -1454,7 +1464,7 @@ function renasentismo(num){
             </div>`;
             
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif5').css({'visibility': 'visible'});
             break;
         case 5:
@@ -1464,7 +1474,7 @@ function renasentismo(num){
             </div>`;
             
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif6').css({'visibility': 'visible'});
             break;
         case 6:
@@ -1474,7 +1484,7 @@ function renasentismo(num){
             </div>`;
             
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif7').css({'visibility': 'visible'});
             break;
         case 7:
@@ -1483,7 +1493,7 @@ function renasentismo(num){
                 <img src="assets/img/img_ova/humanismo-renacentista.png" style="max-width: 60%;">
             </div>`;
             $('.circulop-19').html(pantalla);
-            $('.escondido').css({'visibility': 'hidden'});
+            $('.escondido1').css({'visibility': 'hidden'});
             $('.gif1').css({'visibility': 'visible'});
             break;
         default:

@@ -503,7 +503,7 @@ p, button{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 400px;
+  height: 450px;
   background: #eaeaea;
   text-align: center;
 }
@@ -539,4 +539,189 @@ a.control_next {
   margin: 10px auto;
   width: 160px;
   font-size: 18px;
+}
+
+.btn_video2{
+    background: #FFD966;
+    height: 30px;
+    width: 40px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 0px black;
+    border-radius: 10px;
+    margin-right: 25px;
+    position: relative;
+    top: 25px;
+    color: black;
+    z-index: 100;
+}
+
+.nota{
+  background-image: url('../assets/img/img_ova/nota2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 240px;
+  padding: 30px 15px 45px 15px;
+}
+
+.contraido{
+  height: 250px;
+  width: 10%;
+  background: #FFC000;
+  box-shadow: 3px 2px 9px -2px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.desplegado{
+  height: 250px;
+  width: 40%;
+  background: #F4B081;
+  box-shadow: 3px 2px 9px -2px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.imagen_mito{
+  position: absolute;
+  margin-top: 10%;
+}
+
+.cont_textomito{
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 13%;
+}
+
+.escondido{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+
+/*scroll*/
+.custom-scrollbarUno, .custom-scrollbarDos, .custom-scrollbarTres, .custom-scrollbarCuatro, .custom-scrollbarCinco{
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+.custom-scrollbarB1, .custom-scrollbarB2, .custom-scrollbarB3, .custom-scrollbarB4{
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__innerUno, .custom-scrollbar__innerDos, .custom-scrollbar__innerTres, .custom-scrollbar__innerCuatro, .custom-scrollbar__innerCinco{
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.custom-scrollbar__innerB1, .custom-scrollbar__innerB2, .custom-scrollbar__innerB3, .custom-scrollbar__innerB4{
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.custom-scrollbar__barUno,  .custom-scrollbar__barDos, .custom-scrollbar__barTres, .custom-scrollbar__barCuatro, .custom-scrollbar__barCinco{
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+}
+.custom-scrollbar__barB1, .custom-scrollbar__barB2, .custom-scrollbar__barB3, .custom-scrollbar__barB4{
+  position: absolute;
+    top: 18px;
+    bottom: 20px;
+    background: #dd9d37;
+    width: 3px;
+    right: 15px;
+    /* right: 8px; */
+    border-radius: 4px;
+}
+.custom-scrollbar__knobUno, .custom-scrollbar__knobDos, .custom-scrollbar__knobTres, .custom-scrollbar__knobCuatro, .custom-scrollbar__knobCinco{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.custom-scrollbar__knobB1, .custom-scrollbar__knobB2, .custom-scrollbar__knobB3, .custom-scrollbar__knobB4{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #dd9d37;
+    transform: translate(-50%, -50%);
+    will-change: top;
+}
+
+.linea_scrollUno, .linea_scrollDos, .linea_scrollTres, .linea_scrollCuatro, .linea_scrollCinco{
+  font-size: 50px;
+  margin: 0px;
+  position: relative;
+  top: -32px;
+  color: #00414c;
+}
+
+.linea_scrollB1, .linea_scrollB2, .linea_scrollB3, .linea_scrollB4{
+  font-size: 50px;
+  margin: 0px;
+  position: relative;
+  top: -32px;
+  color: #ffffff;
+}
+
+.normal1{
+  background: #8DA9DB;
+  height: 200px;
+  border: solid 1px;
+}
+.normal2{
+  background: #A8D08C;
+  height: 200px;
+  border: solid 1px;
+}
+.normal3{
+  background: #F4B081;
+  height: 200px;
+  border: solid 1px;
+}
+
+.normal4{
+  background: #FFD966;
+  height: 200px;
+  border: solid 1px;
+}
+
+.activada{
+  background: #ffffff;
+  border: solid 1px;
+}
+
+.imgSaberes{
+  max-width: 40%;
+  margin-top: 25px;
+  margin-left: 25%;
+}
+
+.oculta{
+  display: none;
 }
