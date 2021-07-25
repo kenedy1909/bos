@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     // console.log(tema);
-
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -891,6 +891,7 @@ function scroll_horizontal(num){
 }
 
 function scroll_horizontal2(num){
+    $(".zoomContainer" ).remove();
     switch (parseInt(num)) {
         case 0:
             var img_scroll = `
@@ -905,14 +906,15 @@ function scroll_horizontal2(num){
             break;
         case 1:
             var img_scroll = `
-                    <img src="assets/img/img_ova/prospectiva_empresarial.png" width="70%">
-                    `;
+                    <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">`;
             var info_scroll = `
                     <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
                     <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
                     `;
+                
             $('#img-scroll').html(img_scroll);
             $('#info-scroll').html(info_scroll);
+            $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
             break;
         case 2:
             var img_scroll = `
