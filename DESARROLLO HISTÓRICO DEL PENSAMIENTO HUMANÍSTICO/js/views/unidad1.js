@@ -264,17 +264,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 14:
-            var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
-                              <a href="assets/PDF/Humanismo-en-la-antigua-grecia.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Humanismo en la antigua Grecia.pdf</a>
-                          </p>
-                        </div>
-                        <div class="col-md-12">
-                          <p class="p_white size_20">
-                              <a href="assets/PDF/Formación-humanística-para-el-desarrollo-humano.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Formación humanística para el desarrollo humano PDF</a>
-                          </p>
-                        </div>`;
-            $('.contpdf').html(pdf);
+            
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 15:
@@ -301,11 +291,9 @@ function controlSlides(num){
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            tema = 1;
             break;
-        case 21:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-           tema = 1;
-           break;
+        
         default:
             break;
     }

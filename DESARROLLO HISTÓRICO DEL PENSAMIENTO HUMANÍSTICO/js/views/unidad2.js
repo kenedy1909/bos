@@ -47,7 +47,7 @@ $(function () {
 })
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides2(stepIndex);
+    controlSlides2(stepIndex+1);
 }
 function slide_predeterminado2(){
     $(".nav-link").removeClass('done');
@@ -67,7 +67,7 @@ i = 0;
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "La pregunta por el sentido de lo humano");
             dragging = "";
             diff = "";
             newTop = "";
@@ -78,10 +78,10 @@ function controlSlides2(num){
             /*scroll();*/
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "La pregunta por el sentido de lo humano");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "La pregunta por el sentido de lo humano");
             
             break;
         case 4:
@@ -91,17 +91,17 @@ function controlSlides2(num){
                             
                         });
             primero();
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "La pregunta por el sentido de lo humano");
             break;
         case 5:
             i++;
             slideactivi9(i);
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "La pregunta por el sentido de lo humano");
             inicio();
             break;
         case 6:
             
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Mito e identidad humana");
             break;
         case 7:
             /*dragging = "";
@@ -112,81 +112,53 @@ function controlSlides2(num){
             bar = document.querySelector('.custom-scrollbar__bar19');
             container = document.querySelector('.custom-scrollbar__inner19');
             scroll();*/
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Mito e identidad humana");
             break;
         case 8:
             var contenido = `<p class="color-text">Clic en el ícono para visualizar información</p>`;
             $('.imprime_heare').html(contenido);
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Mito e identidad humana");
             break;
         case 9:
             $('.p_9c').html('<p>Clic en cada círculo para visualizar la información</p>');
             $('.indicap9').css({ "visibility": "hidden"
                     
                 });
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Mito e identidad humana");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes tipos de saber en diferentes momentos históricos y su función en la configuración de identidad colectiva");
             break;
         case 11:
 
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes tipos de saber en diferentes momentos históricos y su función en la configuración de identidad colectiva");
             break;
         case 12:
-             carruselimagenes();
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            carruselimagenes();
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
             break;
         case 13:
             $('.wite_ban_13').css({ "background": "transparent"
                     
                 });
             $('.pant13').html('');
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
             break;
         case 14:
-            var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
-                              <a href="assets/PDF/Humanismo-en-la-antigua-grecia.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Humanismo en la antigua Grecia.pdf</a>
-                          </p>
-                        </div>
-                        <div class="col-md-12">
-                          <p class="p_white size_20">
-                              <a href="assets/PDF/Formación-humanística-para-el-desarrollo-humano.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Formación humanística para el desarrollo humano PDF</a>
-                          </p>
-                        </div>`;
-            $('.contpdf').html(pdf);
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
             break;
         case 15:
             cambiatargeta(3);
             cambiatargeta2(3);
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
             break;
         case 16:
             $('.pantallas16').html('');
             $('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-            /*$("#content-ova").load("base/unidades/unidad2.html");
-            tema = 1;*/
+            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
+            tema = 1;
             break;
-        case 17:
-            
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-            break;
-        case 18:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-            break;
-        case 19:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-            break;
-        case 20:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-            break;
-        case 21:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-           tema = 1;
-           break;
         default:
             break;
     }

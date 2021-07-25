@@ -802,3 +802,15 @@ a.control_next {
   border-radius: 20px 20px 20px 20px;
   position: absolute;
 }
+.text-img-actividad{
+  font-size: 20px;
+  color: #005B8B;
+}
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}

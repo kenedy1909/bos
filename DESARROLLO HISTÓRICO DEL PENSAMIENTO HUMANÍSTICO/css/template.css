@@ -910,3 +910,10 @@ card flip*/
 .size_13{
   font-size: 13px;
 }
+
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}
