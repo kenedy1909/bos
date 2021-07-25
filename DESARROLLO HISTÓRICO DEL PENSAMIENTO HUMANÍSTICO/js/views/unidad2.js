@@ -516,8 +516,8 @@ function cerebro(num){
                         </div>
                       </div>
                       <div class="">
-                        <div class="mensaje" style="width: 440px;height: 201px;">
-                          <p class="justificado" style="font-size: 12px;position: relative;top: 32px;padding: 0px 82px 1px 85px;">Todos los progresos de la cultura a través de los cuales se educa al hombre tienen el fin de aplicar los conocimientos y habilidades adquiridas para emplearlos en el mundo; pero el objeto más importante del mundo a que el hombre puede aplicarlos es el hombre mismo, porque él es su propio fin último.</p>
+                        <div class="mensaje" style="width: 370px;height: 201px;position: relative;top: -28px;">
+                          <p class="justificado" style="font-size: 12px;position: relative;top: 32px;padding: 0px 50px 1px 60px;">Todos los progresos de la cultura a través de los cuales se educa al hombre tienen el fin de aplicar los conocimientos y habilidades adquiridas para emplearlos en el mundo; pero el objeto más importante del mundo a que el hombre puede aplicarlos es el hombre mismo, porque él es su propio fin último.</p>
                         </div>
                       </div>
                       <div style=""><p>Lo anterior implica que la función del conocimiento humano debe ser aplicar tales saberes sobre el mismo ser humano, para con ello ayudarlo a superar su condición</p></div>`;
@@ -531,8 +531,8 @@ function cerebro(num){
                 </div>
               </div>
               <div class="">
-                <div class="mensaje" style="width: 466px;height: 200px;">
-                  <p class="justificado" style="font-size: 12px;padding: 25px 87px 1px 86px;">El énfasis en la subjetividad humana es un principio básico de la pedagogía universal actual. En virtud de tal principio, se define como sujetos a los implicados en los procesos educativos y formativos, que no pueden instrumentalizarse recíprocamente. La tesis de que todos los hombres son sujetos que no deben utilizarse unos a otros como medios está considerada como la quintaesencia de la filosofía de Kant (pág. 3).</p>
+                <div class="mensaje" style="width: 380px;height: 215px;    position: relative;top: -28px;">
+                  <p class="justificado" style="font-size: 12px;padding: 23px 55px 1px 30px;">El énfasis en la subjetividad humana es un principio básico de la pedagogía universal actual. En virtud de tal principio, se define como sujetos a los implicados en los procesos educativos y formativos, que no pueden instrumentalizarse recíprocamente. La tesis de que todos los hombres son sujetos que no deben utilizarse unos a otros como medios está considerada como la quintaesencia de la filosofía de Kant (pág. 3).</p>
                 </div>
               </div>`;
             $('.p2-2').html(cont);
@@ -563,7 +563,7 @@ function cerebro(num){
 function cambiatexto(num){
     switch (parseInt(num)) {
         case 1:
-            var cont = `<p class="justificado font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
+            var cont = `<p class="justificado size_13">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
             $('.textobanewhite').html(cont);
             $('.circuloabnner').removeClass('prendido');
             $('.circuloabnner').addClass('apagado');
@@ -610,8 +610,8 @@ function cambiatexto2(num) {
             $('.cambia2_1').addClass('prendido');
             break;
         case 2:
-            var cont = `<p class="justificado font14">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
-                        <p class="justificado font14">La moral es el sometimiento a la razón, y ésta, es la que nos permite abandonar la animalidad del cuerpo ¿Acaso no somos cuerpo, acaso no somos animales, acaso el deseo no es propio de nuestra naturaleza?</p>`;
+            var cont = `<p class="justificado size_13">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
+                        <p class="justificado size_13">La moral es el sometimiento a la razón, y ésta, es la que nos permite abandonar la animalidad del cuerpo ¿Acaso no somos cuerpo, acaso no somos animales, acaso el deseo no es propio de nuestra naturaleza?</p>`;
             $('.textobanewhite').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
@@ -620,9 +620,9 @@ function cambiatexto2(num) {
             $('.cambia2_2').addClass('prendido');
             break;
         case 3:
-            var cont = `<p class="justificado font14">Es pertinente pensar por un momento en la felicidad y la libertad como conceptos relativos, el primero puede hacer referencia a un estado interno del sujeto, que depende de factores externos, específicamente de la existencia o no del deseo; el segundo, puede ser un factor interno o externo, es decir, de sensibilidad o de acción.</p>
-                                <p class="justificado font14">De este modo, ambos conceptos pueden manifestarse en todos los seres humanos; los hombres, las mujeres, los pobres, los ricos, los blancos, los afrodescendientes, los jóvenes, los adultos y los ancianos. Esto depende, en primera medida, de la concepción que cada sujeto tenga sobre tales conceptos, pues ello determina su sentido de felicidad o libertad.</p>
-                                <i><p class="justificado font14">Haga clic en la flecha para continuar con la información</p></i>`;
+            var cont = `<p class="justificado size_13">Es pertinente pensar por un momento en la felicidad y la libertad como conceptos relativos, el primero puede hacer referencia a un estado interno del sujeto, que depende de factores externos, específicamente de la existencia o no del deseo; el segundo, puede ser un factor interno o externo, es decir, de sensibilidad o de acción.</p>
+                                <p class="justificado size_13">De este modo, ambos conceptos pueden manifestarse en todos los seres humanos; los hombres, las mujeres, los pobres, los ricos, los blancos, los afrodescendientes, los jóvenes, los adultos y los ancianos. Esto depende, en primera medida, de la concepción que cada sujeto tenga sobre tales conceptos, pues ello determina su sentido de felicidad o libertad.</p>
+                                <i><p class="justificado size_13">Haga clic en la flecha para continuar con la información</p></i>`;
             $('.textobanewhite').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
@@ -714,10 +714,10 @@ function primero(){
     var cont = `<div class="col-md-5 seleccionable">
                   <div class="row p-0 bannerboder" style="">
                     <div class="col-md-8 m-0" style="padding: 25px 10px 16px 10px;">
-                      <p class="justificado font14">
+                      <p class="justificado size_13">
                         De tal modo, surge la idea de preservación, la cual implica la supervivencia como un medio esencial para la manifestación del Yo; sin embargo, tal conservación de la vida es asumida legalmente como un derecho irrevocable, con lo que se tiene entonces que las sociedades defienden la vida, pero ¿Hasta qué punto es verdad tal afirmación? 
                       </p>
-                      <i><p class="justificado font14">
+                      <i><p class="justificado size_13">
                         Haga clic en las imágenes para continuar con la información sobre el sentido de la vida.  
                       </p></i>
                     </div>
@@ -800,7 +800,7 @@ function slideactivi9(num){
         var slideHeight = $('#slider5 ul li').height();
         var sliderUlWidth = slideCount * slideWidth;
         
-        $('#slider5').css({ width: '100%', height: '450px' });
+        $('#slider5').css({ width: '100%', height: '500px' });
         
         $('#slider5 ul').css({ width: '90%'});
         
@@ -1120,6 +1120,181 @@ function saberes(num){
     }
 }
 
+function posturas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra1').removeClass('btn_letrainactive');
+            $('.btn_letra1').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP1').removeClass('escondido');
+            $('.imgP1').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP1').removeClass('escondido');
+            $('.textP1').addClass('visible');
+            break;
+        case 2:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra2').removeClass('btn_letrainactive');
+            $('.btn_letra2').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP2').removeClass('escondido');
+            $('.imgP2').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP2').removeClass('escondido');
+            $('.textP2').addClass('visible');
+            break;
+        case 3:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra3').removeClass('btn_letrainactive');
+            $('.btn_letra3').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP3').removeClass('escondido');
+            $('.imgP3').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP3').removeClass('escondido');
+            $('.textP3').addClass('visible');
+            break;
+        case 4:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra4').removeClass('btn_letrainactive');
+            $('.btn_letra4').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP4').removeClass('escondido');
+            $('.imgP4').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP4').removeClass('escondido');
+            $('.textP4').addClass('visible');
+            break;
+        case 5:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra5').removeClass('btn_letrainactive');
+            $('.btn_letra5').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP5').removeClass('escondido');
+            $('.imgP5').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP5').removeClass('escondido');
+            $('.textP5').addClass('visible');
+            break;
+        case 6:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra6').removeClass('btn_letrainactive');
+            $('.btn_letra6').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP6').removeClass('escondido');
+            $('.imgP6').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP6').removeClass('escondido');
+            $('.textP6').addClass('visible');
+            break;
+        case 7:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra7').removeClass('btn_letrainactive');
+            $('.btn_letra7').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP7').removeClass('escondido');
+            $('.imgP7').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP7').removeClass('escondido');
+            $('.textP7').addClass('visible');
+            break;
+        case 8:
+            $('.btn_letra').addClass('btn_letrainactive');
+            $('.btn_letra').removeClass('btn_letraactive');
+            $('.btn_letra8').removeClass('btn_letrainactive');
+            $('.btn_letra8').addClass('btn_letraactive');
+
+            $('.img_posturas').addClass('escondido');
+            $('.img_posturas').removeClass('visible');
+            $('.imgP8').removeClass('escondido');
+            $('.imgP8').addClass('visible');
+
+            $('.texto_posturas').addClass('escondido');
+            $('.texto_posturas').removeClass('visible');
+            $('.textP8').removeClass('escondido');
+            $('.textP8').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function infografia(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.btnmodalredondo').addClass('btnmodalInactive');
+            $('.btnmodalredondo').removeClass('btnmodalActive');
+            $('.btnMF1').removeClass('btnmodalInactive');
+            $('.btnMF1').addClass('btnmodalActive');
+
+            $('.imginfografia').addClass('escondido');
+            $('.imginfografia').removeClass('visible');
+            $('.imgF1').removeClass('escondido');
+            $('.imgF1').addClass('visible');
+            break;
+        case 2:
+            $('.btnmodalredondo').addClass('btnmodalInactive');
+            $('.btnmodalredondo').removeClass('btnmodalActive');
+            $('.btnMF2').removeClass('btnmodalInactive');
+            $('.btnMF2').addClass('btnmodalActive');
+
+            $('.imginfografia').addClass('escondido');
+            $('.imginfografia').removeClass('visible');
+            $('.imgF2').removeClass('escondido');
+            $('.imgF2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function actividadrecogible(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.bg-recogible').css({'width': '12%'});
+            $('.img_recogible1').css({'max-width': '125%'})
+            break;
+        default:
+            
+            break;
+    }
+}
 
 function scroll(){
     // When the container is scrolled

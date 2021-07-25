@@ -177,7 +177,7 @@ function controlSlides(num){
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
                 
-                $('#slider2').css({ width: '100%', height: '400px' });
+                $('#slider2').css({ width: '100%', height: '480px' });
                 
                 $('#slider2 ul').css({ width: '90%'});
                 
@@ -1258,6 +1258,7 @@ function p15(num){
             </div>
             <div class="col-md-9 ">
                 <div style="background: #833c0b;height: 4px;"></div>
+                <div class="cursor" style="background: #833c0b;height: 30px;width: 30px;color: #ffffff;text-align: center;padding: 3px;font-weight: bold;border-radius: 50%;" onclick="inicio();">x</div>
                 <div style="z-index: 1000;">
                   <a href="#" class="control_next" style="float: right;position: relative;top: 100px;z-index: 1000;"><div style="" class="triag_cambiaslide"></div></a>
                 </div>
@@ -1391,7 +1392,7 @@ function carrusel(){
     var slideHeight = $('#slider ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
     
-    $('#slider').css({ width: '100%', height: '270px' });
+    $('#slider').css({ width: '100%', height: '300px' });
     
     $('#slider ul').css({ width: '70%'});
     
