@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'Barmeno';
+    src: url('../../fonts/barmeno.woff2') format('woff2'),
+        url('../../fonts/barmeno.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Barmeno';
+    src: url('../../fonts/barmeno_medium.woff2') format('woff2'),
+        url('../../fonts/barmeno_medium.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Barmeno';
+    src: url('../../fonts/barmeno_bold.woff2') format('woff2'),
+        url('../../fonts/barmeno_bold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../../fonts/PTS55F-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-style: italic;
+    src: url('../../fonts/PTS56F-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-weight: 800;
+    font-style: normal;
+    src: url('../../fonts/PTS75F-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'PT Sans';
+    font-weight: 800;
+    font-style: italic;
+    src: url('../../fonts/PTS76F-webfont.woff') format('woff');
+}
+a {
+    color: #49a5aa;
+    outline: none;
+}
+a:hover {
+    color: #49a5aa;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: #666;
+    height: 100%;
+}
+button.close{
+    background: #ad123c;
+    border-radius: 50%;
+    color: #fff;
+    height: 30px;
+    opacity: 1;
+    outline: 0;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    -webkit-transition: background .2s;
+    transition: background .2s;
+    width: 30px;
+    z-index: 1000;
+}
+button.close:focus, button.close:hover{
+    background: #ffd200;
+    opacity: 1;
+}
+button.cerrar-leccion{
+    position: fixed;
+}
+figure{
+    margin:0 2em;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Barmeno', sans-serif;
+    font-weight: 600;
+}
+h1{
+    color: #ad123c;
+}
+h3{
+    color: #FFD200;
+}
+html{ 
+    height: 100%; 
+}
+.backdrop {
+    bottom: 0;
+    left: -100%;
+    overflow: auto;
+    padding: 15px;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+    z-index: 1002;
+}
+@media (max-width: 767px) {
+    .backdrop {
+        padding: 5px;
+    }
+}
+.backdrop.actividad{
+    background: #ffffff;
+}
+.backdrop.recurso{
+    background: #49a5aa;
+}
+.backdrop.in {
+    left: 0;
+    right: 0;
+}
+.backdrop header{
+    font-size: 1.3em;
+    padding: 20px 40px;
+}
+.backdrop.actividad header{
+    background: rgba(255,210,0,.4);
+}
+.backdrop.recurso header{
+    background: rgba(73,165,170,.4);
+}
+.backdrop header h1, .backdrop header h2{
+    font-family: 'Barmeno', sans-serif;
+    margin-top: 10px;
+}
+.backdrop header h1{
+    color: #fff;
+    font-size: 46px;
+    font-weight: 600;
+}
+.backdrop.actividad header h1{
+    text-shadow: 4px 3px 0 #ffd200;
+}
+.backdrop.recurso header h1{
+    text-shadow: 4px 3px 0 #49a5aa;
+}
+.backdrop header h2{
+    background: #fff;
+    border-radius: 2em;
+    display: inline-block;
+    font-size: 26px;
+    padding: 2px 25px;
+}
+.backdrop.actividad header h2{
+    color: #ffd200;
+}
+.backdrop.recurso header h2{
+    color: #49a5aa;
+}
+.backdrop .contenido {
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+    overflow: auto;
+}
+.backdrop .fondo {
+    background-image: url(../img/logo-footer.png), url(../img/patron-fondo.png);
+    background-color: #fff;
+    position: relative;
+    background-repeat: no-repeat, repeat;
+    background-position: right 15px bottom 10px, top left;
+    padding-bottom: 65px;
+}
+.btn-primary{
+    background: #003442;
+    border: none;
+    border-radius: 0;
+    font-family: 'Barmeno', sans-serif;
+    font-size: 1.15em;
+    padding: 6px 30px;
+    border-radius: 20px;
+}
+.btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
+    background: #ffd200;
+    border: none;
+    outline: 0;
+}
+.btn-secundary{
+    background: #ffd200;
+    border: none;
+    border-radius: 0;
+    color: #ad123c;
+    font-family: 'Barmeno', sans-serif;
+    font-size: 1.15em;
+    font-weight: 600;
+    padding: 6px 30px;
+}
+.btn-secundary:active, .btn-secundary:active:focus, .btn-secundary:focus, .btn-secundary:hover{
+    background: #49a5aa;
+    border: none;
+    color: #fff;
+    outline: 0;
+}
+.calificacion .modal-content{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.calificacion .modal-body{
+    background-size: cover;
+    height: 386px;
+    width: 300px;
+}
+.calificacion .modal-body.exito{
+    background: url('./img/bien.png') center no-repeat;
+}
+.calificacion .modal-body.parcial{
+    background: url('./img/mal.png') center no-repeat;
+}
+.calificacion .modal-body .mensaje{
+    background: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: normal;
+    margin: 0 25px;
+    padding: 5px;
+    position: relative;
+}
+.calificacion .modal-body .mensaje:after{
+    bottom: -30px;
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    content: "";
+    left: calc(50% - 15px);
+    position: absolute;
+}
+.calificacion .modal-body .mensaje .texto-puntaje{
+    display: block;
+}
+.calificacion .modal-body .mensaje .puntaje{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.calificacion .modal-body.exito .mensaje .puntaje{
+    color: #8eb936;
+}
+.calificacion .modal-body.parcial .mensaje .puntaje{
+    color: #ad123c;
+}
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+} 
+.calificacion .modal-footer {
+    border: none;
+    text-align: center;
+}

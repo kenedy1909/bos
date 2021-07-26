@@ -8,11 +8,11 @@ window.onload = function () {
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
-        '¿Cuales son los términos profesionales y académicos de la educación contable?' : ['La ética, la responsabilidad para los usuarios y para el trabajo a ejercer, y tener un buen juicio. ', 'Los términos son solo hacer un buen trabajo', 0],
+        'La condición humana tiene por base dos esferas que dan la condición de desarrollo de las dimensiones de lo humano ¿Cuáles son? ' : ['Biológica y social', 'Espiritual y emocional', 0],
         
-        '¿Cuál es la función principal de la educación?' : ['E hacer personas las cuales acepten lo que las sociedad les da y no participen ni transformen su entorno', 'Es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola', 1],
+        '¿Cómo se puede comprender la esfera de la cultura del ser humano?' : ['Por medio del campo de la jerarquización social de las agrupaciones', 'Como un campo común que se ha construido por medio del vinculo', 1],
         
-        '¿A qué se orienta los perfiles profesionales y ocupacionales de un contador publico? ' : ['Responder con suficientes demandas empresariales mas que sociales por lo cual se considera fundamental revisar las interacciones formativas y los fines de los usuarios.', 'Transformar la sociedad y no revisar oficialmente las cuentas', 0]
+        'Según lo aprendido ¿Se nace siendo humano o es la humanidad una condición adquirida?' : ['Es una condición a la que se llega por medio del proceso de enculturación', 'Se nace siendo humano, ya que son las características otorgadas por Dios en su proceso creador', 0]
       };
       
   function loadQuestion(curr) {
@@ -29,7 +29,13 @@ window.onload = function () {
   // This function loads all the possible answers of the given question
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
-  
+    if (curr == 0) {
+      $('.cantidad').html('1/3');
+    }
+    if (curr == 1) {
+      $('.cantidad').html('2/3');
+    }
+
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
     answerArea.innerHTML = '';
@@ -85,7 +91,9 @@ window.onload = function () {
         txt       = document.createTextNode(current + 1);
     
     createDiv.appendChild(txt);
-    $('.cantidad').html((current+1)+"/"+cantidad);
+    if ((current+2) != 4) {
+      $('.cantidad').html((current+2)+"/"+cantidad);
+    }
     if (bool) {
       
       createDiv.className += 'correct';

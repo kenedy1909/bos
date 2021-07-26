@@ -342,28 +342,28 @@ p, button{
   background: #c55a1152;
   min-height: 90px;
   font-size: 13px;
-  width: 50%;
+  width: 43%;
   visibility: hidden;
   padding: 5px;
 }
 
 .cordenada1{
-  top: -575px;left: -182px;
+  top: -575px;left: -145px;
 }
 .cordenada2{
-  top: -684px;left: -181px;
+  top: -684px;left: -145px;
 }
 .cordenada3{
-  top: -873px;left: -181px;
+  top: -873px;left: -145px;
 }
 .cordenada4{
-  top: -1273px;left: 424px;
+  top: -1248px;left: 424px;
 }
 .cordenada5{
-  top: -1495px;left: 424px;
+  top: -1462px;left: 424px;
 }
 .cordenada6{
-  top: -1844px;left: 423px;
+  top: -1745px;left: 423px;
 }
 .btn_cerebro{
   height: 20px;
@@ -395,7 +395,7 @@ p, button{
 
 .bannerverde{
   background: #D1E3BE;
-  height: 400px;
+  height: 450px;
 }
 
 .bannerboder{
@@ -503,7 +503,7 @@ p, button{
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 450px;
+  height: 500px;
   background: #eaeaea;
   text-align: center;
 }
@@ -724,4 +724,93 @@ a.control_next {
 
 .oculta{
   display: none;
+}
+.hoja{
+  background-image: url('../assets/img/img_ova/hoja2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 407px;
+  height: 399px;
+  padding-top: 20px;
+}
+
+.hoja3{
+  background-image: url('../assets/img/img_ova/hoja2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 150px;
+  padding: 1px 38px 1px 46px;
+}
+
+.btn_letra{
+  
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  color: #A07D38;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px;
+  padding-top: 5px;
+}
+.btn_letraactive{
+  background: #F4B081;
+}
+.btn_letrainactive{
+  background: #FFD966;
+}
+
+.cont_posturas{
+  background: #EDD9CB;
+  padding: 10px;
+  min-height: 341px;
+}
+
+.btnmodalredondo{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.btnmodalActive{
+  background: #7F6000;
+}
+.btnmodalInactive{
+  background: #BF9000;
+}
+
+.imginfografia{
+  max-width: 100%;
+}
+
+.recogible{
+  width: 50%;
+  height: 300px;
+  background: #FEE599;
+  border-radius: 30px;
+}
+
+.textorecogible{
+  padding: 100px 15px 0px 120px;
+  width: 90%;
+}
+
+.bg-recogible{
+  width: 48%;
+  height: 300px;
+  background: #B86008;
+  border-radius: 20px 20px 20px 20px;
+  position: absolute;
+}
+.text-img-actividad{
+  font-size: 20px;
+  color: #005B8B;
+}
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
 }

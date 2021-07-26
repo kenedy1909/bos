@@ -177,7 +177,7 @@ function controlSlides(num){
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
                 
-                $('#slider2').css({ width: '100%', height: '400px' });
+                $('#slider2').css({ width: '100%', height: '480px' });
                 
                 $('#slider2 ul').css({ width: '90%'});
                 
@@ -264,17 +264,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 14:
-            var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
-                              <a href="assets/PDF/Humanismo-en-la-antigua-grecia.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Humanismo en la antigua Grecia.pdf</a>
-                          </p>
-                        </div>
-                        <div class="col-md-12">
-                          <p class="p_white size_20">
-                              <a href="assets/PDF/Formación-humanística-para-el-desarrollo-humano.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Formación humanística para el desarrollo humano PDF</a>
-                          </p>
-                        </div>`;
-            $('.contpdf').html(pdf);
+            
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 15:
@@ -301,11 +291,9 @@ function controlSlides(num){
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            tema = 1;
             break;
-        case 21:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
-           tema = 1;
-           break;
+        
         default:
             break;
     }
@@ -1258,6 +1246,7 @@ function p15(num){
             </div>
             <div class="col-md-9 ">
                 <div style="background: #833c0b;height: 4px;"></div>
+                <div class="cursor" style="background: #833c0b;height: 30px;width: 30px;color: #ffffff;text-align: center;padding: 3px;font-weight: bold;border-radius: 50%;" onclick="inicio();">x</div>
                 <div style="z-index: 1000;">
                   <a href="#" class="control_next" style="float: right;position: relative;top: 100px;z-index: 1000;"><div style="" class="triag_cambiaslide"></div></a>
                 </div>
@@ -1391,7 +1380,7 @@ function carrusel(){
     var slideHeight = $('#slider ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
     
-    $('#slider').css({ width: '100%', height: '270px' });
+    $('#slider').css({ width: '100%', height: '300px' });
     
     $('#slider ul').css({ width: '70%'});
     

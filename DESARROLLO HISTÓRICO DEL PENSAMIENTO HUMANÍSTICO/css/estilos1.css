@@ -1348,7 +1348,7 @@ input[type=range]::-ms-fill-upper {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 200px;
+  height: 400px;
   list-style: none;
 }
 
@@ -1467,7 +1467,7 @@ a.control_next {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 200px;
+  height: 480px;
   list-style: none;
 }
 
@@ -1478,7 +1478,7 @@ a.control_next {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 400px;
+  height: 480px;
   background: #eaeaea;
   text-align: center;
 }

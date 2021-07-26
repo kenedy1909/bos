@@ -193,12 +193,14 @@ function slide_aparece(){
         });
     };
 
-    $('a.control_prev3').click(function () {
+    $('a.control_prev3').click(function (e) {
         moveLeft3();
+        e.preventDefault();
     });
 
-    $('a.control_next3').click(function () {
+    $('a.control_next3').click(function (e) {
         moveRight3();
+        e.preventDefault();
     });
 
 }

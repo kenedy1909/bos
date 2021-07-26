@@ -187,10 +187,10 @@
     display: inline-block;
 }
 .secundario{
-    width: 35%;display: inline-block;
+    width: 45%;display: inline-block;
 }
 .terciario{
-    width: 65%;display: inline-block;
+    width: 55%;display: inline-block;
 }
 .div-img{
     display: inline-block;max-width: 100%;
@@ -204,7 +204,7 @@
 .texto_header{
     font-size: 17px;
     display: inline-block;
-    width: 50%;
+    width: 60%;
 }
 .texto_header b{
     color: #b17e30;
