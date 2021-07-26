@@ -32,6 +32,18 @@
 	border-left: solid transparent 25px;
 }
 
+.triangulo-derecha{
+  border-top: solid transparent 25px;
+  border-right: solid #97182F 25px;
+  border-bottom: solid transparent 25px;
+}
+
+.triangulo-izquierda{
+  border-top: solid transparent 25px;
+  border-left: solid #97182F 25px;
+  border-bottom: solid transparent 25px;
+}
+
 .bg-morado{
 	background: #632D36;
 }

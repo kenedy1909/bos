@@ -906,18 +906,44 @@ function funcionalidad_2(num) {
 }
 
 function funcionalidad_3(num) {
-    $("#info_funcionalidad_3").html(`
-                                    <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
-                                        <div class="p_white p-3 text-center img-50">
-                                          <p>Con el fin de ampliar la temática del manifiesto de córdoba, realice  la lectura del documento PDF “Manifiesto de córdoba”. Lo anterior permitirá realizar un paralelo de lo que veremos en la unidad 3.</p>
-                                          <br>
-                                          <p>Haga clic en el botón PDF.</p>
+    if (num == 1) {
+        $("#info_funcionalidad_3").html(`
+                                        <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
+                                            <div class="p_white p-3 text-center img-50">
+                                              <p>Con el fin de ampliar la temática del manifiesto de córdoba, realice  la lectura del documento PDF “Manifiesto de córdoba”. Lo anterior permitirá realizar un paralelo de lo que veremos en la unidad 3.</p>
+                                              <br>
+                                              <p>Haga clic en el botón PDF.</p>
+                                            </div>
+                                            <div class="img-50 d-flex">
+                                                <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                            </div>
                                         </div>
-                                        <div class="img-50 d-flex">
-                                            <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                        `);
+    }else if (num == 2) {
+        $("#info_funcionalidad_3_2").html(`
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto d-flex">
+                                            <div class="p_white p-3 text-center img-65">
+                                              <p>Para ampliar el tema tratado realizar la lectura del (Art. 6º, inc. 2º) del PDF <b>“Estatutos UNAULA 2018”</b> el cual servirá para complementar el tema y desarrollar la actividad evaluativa que se encuentra al final de este contenido digital.</p>
+                                              <br>
+                                              <p>Haga clic en el botón PDF.</p>
+                                            </div>
+                                            <div class="img-35 d-flex">
+                                                <a href="assets/PDF/UNIDAD 1/pdf-2.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    `);
+                                        `);
+    }else if (num == 3) {
+        $("#info_funcionalidad_3_3").html(`
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row">
+                                            <div class="col-md-12 d-flex">
+                                                <img src="assets/img/img_ova/grupo-personas.png" class="position-relative img-40 m-auto" style="top: -40px;">
+                                            </div>
+                                            <div class="p_white text-center col-md-12">
+                                              <p>Con el fin de exponer sus percepciones y puntos de vista acerca del proceso de fundación de la universidad Autónoma Latinoamericana. Visite y participe en el foro <b>“Fundación de la Universidad Autónoma Latinoamericana. UNAULA”.</b></p>
+                                            </div>
+                                        </div>
+                                        `);
+    }
 }
 
 function funcionalidad_4(num) {
@@ -1011,6 +1037,32 @@ function funcionalidad_6(num) {
         case 3:
             $(".funcionalidad_6_3").removeClass('d-none');
             $(".funcionalidad_6_3").removeClass('d-flex');
+            break;
+        default:
+            break;
+    }
+}
+
+function funcionalidad_7(num) {
+     $(".funcionalidad_7_1, .funcionalidad_7_2, .funcionalidad_7_3, .funcionalidad_7_4, .funcionalidad_7_5, .funcionalidad_7_6").addClass('d-none');
+    switch(parseInt(num)){
+        case 1:
+            $(".funcionalidad_7_1").removeClass('d-none');
+            break;
+        case 2:
+            $(".funcionalidad_7_2").removeClass('d-none');
+            break;
+        case 3:
+            $(".funcionalidad_7_3").removeClass('d-none');
+            break;
+        case 4:
+            $(".funcionalidad_7_4").removeClass('d-none');
+            break;
+        case 5:
+            $(".funcionalidad_7_5").removeClass('d-none');
+            break;
+        case 6:
+            $(".funcionalidad_7_6").removeClass('d-none');
             break;
         default:
             break;
