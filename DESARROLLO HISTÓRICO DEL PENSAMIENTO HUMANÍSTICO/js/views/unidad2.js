@@ -47,7 +47,7 @@ $(function () {
 })
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides2(stepIndex+1);
+    controlSlides2(stepIndex);
 }
 function slide_predeterminado2(){
     $(".nav-link").removeClass('done');
@@ -66,6 +66,10 @@ function slide_link2(num){
 i = 0;
 function controlSlides2(num){
     switch (parseInt(num)) {
+        case 0:
+            $("#content-ova").load("base/unidades/unidad1.html");
+            tema = 20;
+            break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "La pregunta por el sentido de lo humano");
             dragging = "";
@@ -152,13 +156,9 @@ function controlSlides2(num){
             cambiatargeta(3);
             cambiatargeta2(3);
             setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
-            break;
-        case 16:
-            $('.pantallas16').html('');
-            $('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');
-            setMigaja("Unidades de aprendizaje","2. Aspectos relevantes de la formación humanística", "Diferentes posturas sobre la naturaleza humana");
             tema = 1;
             break;
+        
         default:
             break;
     }
