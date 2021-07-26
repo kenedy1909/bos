@@ -14,6 +14,7 @@ $( document ).ready(function() {
 
 $('.init-unidad').off('click').on('click', function(evt){
     var item = $(this).attr('data-id');
+    tema = 1;
     $("#content-ova").load("base/unidades/unidad"+item+".html");
     evt.preventDefault();
 });
