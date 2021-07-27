@@ -61,12 +61,26 @@
 .bg-color-verde4{
 	background: #385623;
 }
+.bg-color-verde5{
+	background: #20d4aa;
+}
+.bg-color-verde6{
+	background: #2feba9;
+}
 .bg-color-rojo1{
 	background: #eb3c2f;
 }
 .bg-color-rojo2{
 	background: #c00000;
 }
+.bg-color-rojo2-trasparente{
+	background: #c00000bb;
+}
+.bg-trasparente{
+	background: rgba(255, 255, 255, 0.4);
+}
+
+
 .border-45{
 	border-radius: 45px;
 }
@@ -75,6 +89,12 @@
 }
 .border-10{
 	border-radius: 10px;
+}
+.border-rb-25{
+	border-radius: 0 0 25px 25px;
+}
+.border-rt-25{
+	border-radius: 25px 25px 0 0;
 }
 
 .border-r{
@@ -195,11 +215,11 @@
 }
 
 .btnU1:hover{
-	color: white;
+	color: white!important;
 }
 .fondoU1{
 	width: 100%;
-	height: 100%;
+	height: 570px;
 	background: url(../assets/img/img_ova/diversidad.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -243,6 +263,9 @@
 }
 .h-200{
 	height: 200px;
+}
+.transition-on{
+	transition: all 0.4s;
 }
 /* .divDirU9{
 	width: 0px;

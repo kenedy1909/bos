@@ -151,6 +151,9 @@ function controlSlides(num){
         case 18:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
             break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            break;
             tema = 1;
         default:
             break;
@@ -1069,4 +1072,116 @@ function removeefect(num){
             break;
     } 
     
+}
+
+function agregarContenido(num,estado) {
+
+    $('.contenidoAgregar1, .contenidoAgregar2').addClass('d-none');
+
+
+    if (estado=='agregar') {
+        if (num==1) {
+            $('.agregar1').addClass('ocultarAgregar1');
+            $('.agregar1').removeClass('agregar1');
+            
+            $('.contenidoAgregar1').removeClass('d-none');
+            
+            $('.ocultarAgregar1').attr('onclick',"agregarContenido(1,'ocultar')");
+        }else if (num==2) {            
+            $('.agregar2').addClass('ocultarAgregar2');
+            $('.agregar2').removeClass('agregar2');
+            
+            $('.contenidoAgregar2').removeClass('d-none');
+            
+            $('.ocultarAgregar2').attr('onclick',"agregarContenido(2,'ocultar')");
+        }
+
+    }else if(estado=='ocultar'){
+
+        if (num==1) {
+            $('.ocultarAgregar1').addClass('agregar1');
+            $('.ocultarAgregar1').removeClass('ocultarAgregar1');
+            
+            $('.contenidoAgregar1').addClass('d-none');
+            
+            $('.agregar1').attr('onclick',"agregarContenido(1,'agregar')");
+        }else if (num==2) {            
+            $('.ocultarAgregar2').addClass('agregar2');
+            $('.ocultarAgregar2').removeClass('ocultarAgregar2');
+            
+            $('.contenidoAgregar2').addClass('d-none');
+            
+            $('.agregar2').attr('onclick',"agregarContenido(2,'agregar')");
+        }
+    }
+}
+
+function agregarTarjeta(num,estado) {
+
+    $('.contenidoAgregar1, .contenidoAgregar2, .contenidoAgregar3, .contenidoAgregar4').addClass('hidden');
+
+
+    if (estado=='agregar') {
+        if (num==1) {
+            $('.agregar1').addClass('ocultarAgregar1');
+            $('.agregar1').removeClass('agregar1');
+            
+            $('.contenidoAgregar1').removeClass('hidden');
+            
+            $('.ocultarAgregar1').attr('onclick',"agregarTarjeta(1,'ocultar')");
+        }else if (num==2) {            
+            $('.agregar2').addClass('ocultarAgregar2');
+            $('.agregar2').removeClass('agregar2');
+            
+            $('.contenidoAgregar2').removeClass('hidden');
+            
+            $('.ocultarAgregar2').attr('onclick',"agregarTarjeta(2,'ocultar')");
+        }else if (num==3) {            
+            $('.agregar3').addClass('ocultarAgregar3');
+            $('.agregar3').removeClass('agregar3');
+            
+            $('.contenidoAgregar3').removeClass('hidden');
+            
+            $('.ocultarAgregar3').attr('onclick',"agregarTarjeta(3,'ocultar')");
+        }else if (num==4) {            
+            $('.agregar4').addClass('ocultarAgregar4');
+            $('.agregar4').removeClass('agregar4');
+            
+            $('.contenidoAgregar4').removeClass('hidden');
+            
+            $('.ocultarAgregar4').attr('onclick',"agregarTarjeta(4,'ocultar')");
+        }
+
+    }else if(estado=='ocultar'){
+
+        if (num==1) {
+            $('.ocultarAgregar1').addClass('agregar1');
+            $('.ocultarAgregar1').removeClass('ocultarAgregar1');
+            
+            $('.contenidoAgregar1').addClass('hidden');
+            
+            $('.agregar1').attr('onclick',"agregarTarjeta(1,'agregar')");
+        }else if (num==2) {            
+            $('.ocultarAgregar2').addClass('agregar2');
+            $('.ocultarAgregar2').removeClass('ocultarAgregar2');
+            
+            $('.contenidoAgregar2').addClass('hidden');
+            
+            $('.agregar2').attr('onclick',"agregarTarjeta(2,'agregar')");
+        }else if (num==3) {            
+            $('.ocultarAgregar3').addClass('agregar3');
+            $('.ocultarAgregar3').removeClass('ocultarAgregar3');
+            
+            $('.contenidoAgregar3').addClass('hidden');
+            
+            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
+        }else if (num==4) {            
+            $('.ocultarAgregar4').addClass('agregar4');
+            $('.ocultarAgregar4').removeClass('ocultarAgregar4');
+            
+            $('.contenidoAgregar4').addClass('hidden');
+            
+            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+        }
+    }
 }
