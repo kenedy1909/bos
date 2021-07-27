@@ -124,3 +124,25 @@
 .inactive{
 	visibility: hidden;
 }
+.circle_activi{
+	height: 125px;
+	width: 125px;
+	background: #EDCC66;
+	border-radius: 50%;
+	text-align: center;
+	border: solid #C69D18;
+	box-shadow: 3px 2px 5px -1px;
+}
+
+.banner_info_activi{
+	background: #5355A7;
+	color: white;
+	padding: 50px 10px 10px 10px;
+	border-radius: 20px;
+	position: relative;
+	top: -50px;
+}
+.btn_verpdf{
+	background: #393A72;
+	color: white;
+}

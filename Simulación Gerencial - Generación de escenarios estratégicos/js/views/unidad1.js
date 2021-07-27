@@ -136,6 +136,34 @@ function vinetas(num){
     }
 }
 
+function infoactivi(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.banner_info_activi').addClass('inactive');
+            $('.banner_info_activi').removeClass('active');
+
+            $('.infoblue1').removeClass('inactive');
+            $('.infoblue1').addclass('active');
+            break;
+        case 2:
+            $('.banner_info_activi').addClass('inactive');
+            $('.banner_info_activi').removeClass('active');
+
+            $('.infoblue2').removeClass('inactive');
+            $('.infoblue2').addclass('active');
+            break;
+        case 3:
+            $('.banner_info_activi').addClass('inactive');
+            $('.banner_info_activi').removeClass('active');
+
+            $('.infoblue3').removeClass('inactive');
+            $('.infoblue3').addclass('active');
+            break;
+        default:
+            break;
+    }
+}
+
 function objetivos(num){
     switch (parseInt(num)) {
         
@@ -147,21 +175,6 @@ function objetivos(num){
             break;
         case 3:
             $('.visible3').css({'visibility': 'visible'});
-            break;
-        default:
-            break;
-    }
-}
-
-function infoactivi(num) {
-    switch (parseInt(num)) {
-        
-        case 1:
-            $('.info1').css({'visibility': 'visible'});
-            
-            break;
-        case 2:
-            $('.info2').css({'visibility': 'visible'});
             break;
         default:
             break;
