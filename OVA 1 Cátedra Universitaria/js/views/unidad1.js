@@ -77,7 +77,16 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
-            
+            var pdf = `<p class="p_white">
+                            <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Manifiesto de Córdoba <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>
+                      <p class="p_white">
+                          <a href="assets/PDF/UNIDAD 1/pdf-2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Estatutos UNAULA 2018 <b class="text-cafe"><u>Ver</u></b></a>
+                    </p>
+                        <p class="p_white">
+                          <a href="assets/PDF/UNIDAD 1/Reforma-estatutos-UNAULA-2020.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Reforma-estatutos-UNAULA-2020.pdf<b class="text-cafe"><u>Ver</u></b></a>
+                    </p>`;
+            $('.pdfs').html(pdf);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
