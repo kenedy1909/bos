@@ -20,6 +20,10 @@
 	text-align: justify;
 }
 
+.bg-principal{
+  background: var(--bg-color);
+}
+
 .banner{
 	background-image: url(../assets/img/img_ova/banner_azul.png);
   padding: 12px;

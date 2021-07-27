@@ -360,6 +360,7 @@
 .bg-recogible{
 	width: 48%;
    height: 300px;
+   z-index: 100;
 }
 
 .creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
