@@ -6,6 +6,7 @@
 	background: #E32242;
 }
 
+
 .bg-rojo-2{
   background: #E8687D;
 }
@@ -189,3 +190,4 @@ input[type=range]::-ms-fill-upper {
   border-bottom-right-radius: 1.5em;
   border-bottom-left-radius: 1.5em;
 }
+
