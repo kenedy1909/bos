@@ -55,68 +55,41 @@ function slide_predeterminado2(){
 function slide_link2(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num -1);
+    $('#smartwizard').smartWizard("goToStep", num);
     controlSlides2(num);
 }
 
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 10;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            var pdf = `<p class="p_white">
+                            <a href="assets/PDF/UNIDAD 2/Sentencia-C-337_96.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Sentencia-C-337_96.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>`;
+            $('.pdfs').html(pdf);
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Normas constitucionales y legales");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 9:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 11:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 12:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 13:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 14:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            scroll_uno();
-            break;
-        case 15:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 16:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 17:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             tema = 1;
             break;
         default:
@@ -404,6 +377,35 @@ function aparece_arriba(num) {
 }
 function cerrar(){
     $('.bane_blanco').addClass('inactive');
+}
+
+function funcionalidad_U2(num) {
+    if (num == 1) {
+        $("#info_funcionalidad_3U2").html(`
+                                        <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
+                                            <div class="p_white p-3 text-center img-50">
+                                              <p>Realice la lectura de la sentencia C-337/96 del PDF “sentencia C-337/96” con el fin de ampliar el contenido. Haga clic en el botón PDF:</p>
+                                              <br>
+                                              <p>Haga clic en el botón PDF.</p>
+                                            </div>
+                                            <div class="img-50 d-flex">
+                                                <a href="assets/PDF/UNIDAD 2/Sentencia-C-337_96.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                            </div>
+                                        </div>
+                                        `);
+    }else if (num == 2) {
+        $("#info_funcionalidad_3U2_1").html(`
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row">
+                                            <div class="col-md-12 d-flex">
+                                                <img src="assets/img/img_ova/enlace.png" class="position-relative img-40 m-auto" style="top: -40px;">
+                                            </div>
+                                            <div class="p_white text-center col-md-12">
+                                              <p>Al mismo tiempo realizar la lectura de “la sentencia T-1127/2003” como lectura complementaria siguiendo el link:</b></p>
+                                                <a href="https://www.corteconstitucional.gov.co/relatoria/2003/T-1127-03.htm" target="_blank"><button class="btn" style="background: #540F23;color: white;">Clic aquí</button></a>
+                                            </div>
+                                        </div>
+                                        `);
+    }
 }
 function scroll(){
     // When the container is scrolled

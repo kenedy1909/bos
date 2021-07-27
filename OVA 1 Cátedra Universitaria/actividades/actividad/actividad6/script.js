@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[1] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[2] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[3] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[4] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[5] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[6] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[7] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
-            this.palabras[8] = ['entreprise-resource-planning', 'Es el tipo de sistema de información que se encarga de la Planificación de los Recursos Empresariales'];
+            this.palabras[0] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[1] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[2] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[3] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[4] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[5] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[6] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[7] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
+            this.palabras[8] = ['educacion-superior', 'Se encuentra dentro del marco legal del sistema de Educación en Colombia'];
 
             return this.palabras;
 
