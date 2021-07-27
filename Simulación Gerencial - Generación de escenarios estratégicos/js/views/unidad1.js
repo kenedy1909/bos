@@ -115,6 +115,27 @@ function controlSlides(num){
     }
 }
 
+function vinetas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.vineta').addClass('inactive');
+            $('.vineta').removeClass('active');
+
+            $('.vineta1').removeClass('inactive');
+            $('.vineta1').addclass('active');
+            break;
+        case 2:
+            $('.vineta').addClass('inactive');
+            $('.vineta').removeClass('active');
+
+            $('.vineta2').removeClass('inactive');
+            $('.vineta2').addclass('active');
+            break;
+        default:
+            break;
+    }
+}
+
 function objetivos(num){
     switch (parseInt(num)) {
         

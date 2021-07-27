@@ -21,3 +21,106 @@
 	background: #DEEBF7;
 	padding: 5px 5px 5px 5px;
 }
+
+.bannerindica{
+	background: #5355A7;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.imgesquema{
+	position: relative;
+}
+
+.opcion1{
+	background: #b03a49;
+	width: 247px;
+	height: 142px;
+	position: relative;
+	top: -187px;
+	left: 57px;
+	padding: 30px;
+	border-radius: 157px 162px 0px 0px
+}
+.opcion2{
+	position: relative;
+	top: -449px;
+	left: 7px;
+	width: 73px;
+	height: 73px;
+	background: #473ab0;
+	border-radius: 50%;
+	color: white;
+	padding: 5px;
+}
+
+.opcion3{
+	position: relative;
+	top: -558px;
+	left: 142px;
+	width: 73px;
+	height: 73px;
+	background: #53edc9;
+	border-radius: 50%;
+	color: white;
+	padding: 5px;
+}
+
+.opcion4{
+	position: relative;
+	top: -594px;
+	left: 275px;
+	width: 73px;
+	height: 73px;
+	background: #b9d640;
+	border-radius: 50%;
+	color: white;
+	padding: 5px;
+}
+.barraAzul{
+	background: #393A72;
+	height: 80px;
+}
+.lineaWhite{
+	background: white;
+	height: 4px;
+	position: relative;
+	top: 40px;
+}
+
+.contcirculos{
+	position: relative;
+	top: -115px;
+}
+
+.circulosBorder{
+	height: 150px;
+	width: 150px;
+	border: solid #393a72 4px;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 25px;
+	background: white;
+}
+
+.vineta{
+	background-image: url('../assets/img/img_ova/vineta.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	top: -115px;
+    height: 215px;
+    padding: 60px 10px 1px 10px;
+}
+
+.font14{
+	font-size: 14px;
+}
+
+.active{
+	visibility: visible;
+}
+
+.inactive{
+	visibility: hidden;
+}
