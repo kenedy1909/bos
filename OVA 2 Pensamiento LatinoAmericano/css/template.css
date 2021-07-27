@@ -119,6 +119,9 @@ iframe{
 .color-title{
   color: var(--bg-color-dark);
 }
+.color-verde{
+  color: rgb(56, 86, 35);
+}
 
 .titulo-ova{
   background-image: url(../assets/img/img_ova/pensamiento-latinoamericano-03.png);
