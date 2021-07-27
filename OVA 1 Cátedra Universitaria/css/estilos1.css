@@ -6,6 +6,11 @@
 	background: #E32242;
 }
 
+
+.bg-rojo-2{
+  background: #E8687D;
+}
+
 .border-rojo-1{
 	border: solid #E32242 1px;
 }
@@ -28,8 +33,24 @@
 	border-left: solid transparent 25px;
 }
 
+.triangulo-derecha{
+  border-top: solid transparent 25px;
+  border-right: solid #97182F 25px;
+  border-bottom: solid transparent 25px;
+}
+
+.triangulo-izquierda{
+  border-top: solid transparent 25px;
+  border-left: solid #97182F 25px;
+  border-bottom: solid transparent 25px;
+}
+
 .bg-morado{
 	background: #632D36;
+}
+
+.border-morado{
+  border: solid #632D36 3px;
 }
 
 .custom-scrollbar_uno{
@@ -163,3 +184,22 @@ input[type=range]::-ms-fill-upper {
 .bg-gris{
 	background: #A6A6A6;
 }
+
+.border-left-rojo-c{
+  border-left: solid #E8687D 2px;
+}
+.border-right-rojo-c{
+  border-right: solid #E8687D 2px;
+}
+.border-top-rojo-c{
+  border-top: solid #E8687D 2px;
+}
+.border-bottom-rojo-c{
+  border-bottom: solid #E8687D 2px;
+}
+
+.border-abajo-radius{
+  border-bottom-right-radius: 1.5em;
+  border-bottom-left-radius: 1.5em;
+}
+

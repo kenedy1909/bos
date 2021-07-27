@@ -26,7 +26,7 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    slide_predeterminado();
+    slide_predeterminado2();
     var knob = "";
     var bar = "";
     var container = "";
@@ -35,102 +35,61 @@ $( document ).ready(function() {
     var newTop = "";
     var scrollOffset = "";
     var scroll_control = 0;
-
-    $(".transacciones-superior-1").on('mouseenter', transaccion_1);
-    $(".transacciones-superior-2").on('mouseenter', transaccion_2);
-    $(".transacciones-superior-3").on('mouseenter', transaccion_3);
-    $(".transacciones-superior-4").on('mouseenter', transaccion_4);
-    $(".transacciones-superior-5").on('mouseenter', transaccion_5);
-    $(".transacciones-superior-6").on('mouseenter', transaccion_6);
-    $(".transacciones-superior-1").on('mouseleave', transaccion_n1);
-    $(".transacciones-superior-2").on('mouseleave', transaccion_n2);
-    $(".transacciones-superior-3").on('mouseleave', transaccion_n3);
-    $(".transacciones-superior-4").on('mouseleave', transaccion_n4);
-    $(".transacciones-superior-5").on('mouseleave', transaccion_n5);
-    $(".transacciones-superior-6").on('mouseleave', transaccion_n6);
-    $(".primer_scroll").on('mouseover', scroll_uno);
     
     console.log(tema);
-    slide_link(tema);
+    slide_link2(tema);
 });
 
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
-    controlSlides(stepIndex);
+    controlSlides2(stepIndex);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado2(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    controlSlides(1);
+    controlSlides2(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link(num){
+function slide_link2(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num -1);
-    controlSlides(num);
+    $('#smartwizard').smartWizard("goToStep", num);
+    controlSlides2(num);
 }
 
-function controlSlides(num){
+function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 10;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            var pdf = `<p class="p_white">
+                            <a href="assets/PDF/UNIDAD 2/Sentencia-C-337_96.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Sentencia-C-337_96.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>`;
+            $('.pdfs').html(pdf);
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Normas constitucionales y legales");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 9:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 11:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 12:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 13:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 14:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            scroll_uno();
-            break;
-        case 15:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 16:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 17:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             tema = 1;
             break;
         default:
@@ -149,156 +108,305 @@ function scroll_uno() {
     scroll();
 }
 
-function scroll_dos() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_dos');
-    bar = document.querySelector('.custom-scrollbar__bar_dos');
-    container = document.querySelector('.custom-scrollbar__inner_dos');
-    scroll();
+function normativas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.bg-normativas').addClass('bg-rojo-inactive');
+            $('.bg-normativas').removeClass('bg-blanco-1');
+
+            $('.normativas1').removeClass('bg-rojo-inactive');
+            $('.normativas1').addClass('bg-blanco-1');
+
+            $('.text-normativas').addClass('inactive');
+            $('.text-normativas').removeClass('active');
+
+            $('.textN1').removeClass('inactive');
+            $('.textN1').addClass('active');
+            break;
+        case 2:
+            $('.bg-normativas').addClass('bg-rojo-inactive');
+            $('.bg-normativas').removeClass('bg-blanco-1');
+
+            $('.normativas2').removeClass('bg-rojo-inactive');
+            $('.normativas2').addClass('bg-blanco-1');
+
+            $('.text-normativas').addClass('inactive');
+            $('.text-normativas').removeClass('active');
+
+            $('.textN2').removeClass('inactive');
+            $('.textN2').addClass('active');
+            break;
+        default:
+
+            break;
+    }
 }
 
-function scroll_tres() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_tres');
-    bar = document.querySelector('.custom-scrollbar__bar_tres');
-    container = document.querySelector('.custom-scrollbar__inner_tres');
-    scroll();
+function aparece_abajo(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Ley 30 de 1992: Servicio Público de Educación Superior. Expresa normas por medio de las cuales se reglamenta la organización del servicio público de la Educación Superior. (El Congreso de Colombia, 28 de Diciembre de 1992).</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC1').addClass('inactive');
+            break;
+        case 2:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `<div class="custom-scrollbar_U2_1">
+                            <div class="custom-scrollbar__inner_U2_1">
+                              <p class="justificado font14">Ley 115 de 1994: Ley General de Educación. Ordena la organización del Sistema Educativo General Colombiano. Esto es, establece normas generales para regular el Servicio Público de la Educación que cumple una función social acorde con las necesidades e intereses de las personas, de la familia y de la sociedad. Respecto a la Educación Superior, señala que ésta es regulada por ley especial, excepto lo dispuesto en la presente Ley. "Excepto en lo dispuesto en la Ley 115 de 1994, sobre Educación Tecnológica que había sido omitida en la Ley 30 de 1992”. Ver Artículo 213 de la Ley 115.</p>
+                            </div>
+                            <div class="custom-scrollbar__bar_U2_1">
+                              <div class="custom-scrollbar__knob_U2_1 cursor"><p class="text-center linea_scroll_U2_1">-</p></div>
+                            </div>
+                          </div>`;
+            $('.imprimetext1').html(text);
+            knob = document.querySelector('.custom-scrollbar__knob_U2_1');
+            bar = document.querySelector('.custom-scrollbar__bar_U2_1');
+            container = document.querySelector('.custom-scrollbar__inner_U2_1');
+            scroll();
+            $('.imgC1').addClass('inactive');
+            break;
+        case 3:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Ley 489 de diciembre 29 de 1998: Por la cual se dictan normas sobre la organización y funcionamiento de las entidades del orden nacional.</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC1').addClass('inactive');
+            break;
+        case 4:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Decreto 2230 de 2003: Modificación Estructura Ministerio de Educación Nacional. Sanciona normas por las cuales se modifica la estructura del Ministerio de Educación Nacional, y se dictan otras disposiciones. Dado en Bogotá, D. C., a 8 de agosto de 2003.</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC2').addClass('inactive');
+            break;
+        case 5:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Decreto 644 de 2001: Reglamentación sobre puntajes altos en Exámenes de Estado</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC2').addClass('inactive');
+            break;
+        case 6:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Acuerdo No. 01 de Junio 23 de 2005: Consejo Nacional de Educación Superior, CESU, por el cual se expide el reglamento interno de funcionamiento.</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC2').addClass('inactive');
+            break;
+        case 7:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Decreto 4729 de 2007: Por el cual se otorga la Orden a la Educación Superior y a la Fe Pública "Luis López de Mesa".</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC4').addClass('inactive');
+            break;
+        case 8:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Decreto 128 de enero 26 de 1976: Por el cual se dicta el estatuto de inhabilidades, incompatibilidades y responsabilidades de los miembros de las juntas directivas de las entidades descentralizadas y de los representantes legales de estas.</p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC4').addClass('inactive');
+            break;
+        case 9:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW1').removeClass('inactive');
+            $('.baneW1').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Ley 29 de 1990: "Por la cual se dictan disposiciones para el fomento de la investigación científica y el desarrollo tecnológico y se otorgan facultades extraordinarias".</p>
+                        <p class="justificado font14">Tomado de <b class="color-text">mineducación.gov.co </b></p>
+                        `;
+            $('.imprimetext1').html(text);
+            $('.imgC5').addClass('inactive');
+            break;
+        default:
+            break;
+    }
 }
 
-function scroll_cuatro() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_cuatro');
-    bar = document.querySelector('.custom-scrollbar__bar_cuatro');
-    container = document.querySelector('.custom-scrollbar__inner_cuatro');
-    scroll();
+function aparece_arriba(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `<div class="custom-scrollbar_U2_1">
+                            <div class="custom-scrollbar__inner_U2_1">
+                              <p class="justificado font14">Decreto 1403 de 1993: Reglamentación de Ley 30 de 1992. Establece que mientras se dictaminan los requisitos para la creación y funcionamiento de los programas académicos de pregrado que puedan ofrecer las instituciones de educación superior, estas deberán presentar al Ministerio de Educación Nacional por conducto del Instituto Colombiano para el Fomento de la Educación Superior (ICFES), con el fin de garantizar el cumplimiento de los fines de la educación, la información referida al correspondiente programa. Así también regula lo referido a la autorización de la oferta de programas de Maestría, Doctorado y Postdoctorado, de conformidad con la referida Ley. (Dado el 21 de Julio de 1993 y Publicado en el Diario Oficial N° 41.476 del 5 de agosto de 1994).</p>
+                            </div>
+                            <div class="custom-scrollbar__bar_U2_1">
+                              <div class="custom-scrollbar__knob_U2_1 cursor"><p class="text-center linea_scroll_U2_1">-</p></div>
+                            </div>
+                          </div>`;
+            $('.imprimetext2').html(text);
+            knob = document.querySelector('.custom-scrollbar__knob_U2_1');
+            bar = document.querySelector('.custom-scrollbar__bar_U2_1');
+            container = document.querySelector('.custom-scrollbar__inner_U2_1');
+            $('.imgC1').addClass('inactive');
+            scroll();
+            break;
+        case 2:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `<div class="custom-scrollbar_U2_1">
+                            <div class="custom-scrollbar__inner_U2_1">
+                              <p class="justificado font14">Acuerdo No. 02 de Junio 23 de 2005: Consejo Nacional de Educación Superior, CESU, por el cual se subroga el Acuerdo 001 de 2000 del Consejo Nacional de Educación Superior, CESU, y con el cual se expide el reglamento, se determina la integración y las funciones del Consejo Nacional de Acreditación.</p>
+                            </div>
+                            <div class="custom-scrollbar__bar_U2_1">
+                              <div class="custom-scrollbar__knob_U2_1 cursor"><p class="text-center linea_scroll_U2_1">-</p></div>
+                            </div>
+                          </div>`;
+            $('.imprimetext2').html(text);
+            knob = document.querySelector('.custom-scrollbar__knob_U2_1');
+            bar = document.querySelector('.custom-scrollbar__bar_U2_1');
+            container = document.querySelector('.custom-scrollbar__inner_U2_1');
+            scroll();
+            $('.imgC2').addClass('inactive');
+            break;
+        case 3:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Resolución Nº 000167 del 31 de Mayo de 2006: Icfes, por la cual se formaliza una delegación</p>
+                        `;
+            $('.imprimetext2').html(text);
+            $('.imgC3').addClass('inactive');
+            break;
+        case 4:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Resolución N° 183 de Febrero 2 de 2004: Por la cual se define la organización de la Comisión Nacional Intersectorial de Aseguramiento de la Calidad de la Educación Superior, CONACES.</p>
+                        `;
+            $('.imprimetext2').html(text);
+            $('.imgC3').addClass('inactive');
+            break;
+        case 5:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Decreto 4675 de 2006: Por el cual se Modifica la Estructura del Ministerio de Educación Nacional</p>
+                        `;
+            $('.imprimetext2').html(text);
+            $('.imgC3').addClass('inactive');
+            break;
+        case 6:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Decreto 4674 de 2006: Por el cual se modifica la Planta Global del Ministerio de Educación Nacional.</p>
+                        `;
+            $('.imprimetext2').html(text);
+            $('.imgC3').addClass('inactive');
+            break;
+        case 7:
+            $('.bane_blanco').addClass('inactive');
+            $('.bane_blanco').removeClass('active');
+            $('.baneW2').removeClass('inactive');
+            $('.baneW2').addClass('active');
+
+            var text = `
+                        <p class="justificado font14">Ley 1286 de 2009: "Por la cual se modifica la ley 29 de 1990, se transforma a Colciencias en departamento administrativo, se fortalece el sistema nacional de ciencia, tecnología e innovación en Colombia y se dictan otras disposiciones".</p>
+                        `;
+            $('.imprimetext2').html(text);
+            $('.imgC5').addClass('inactive');
+            break;
+        default:
+            break;
+    }
+}
+function cerrar(){
+    $('.bane_blanco').addClass('inactive');
 }
 
-function scroll_cinco() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_cinco');
-    bar = document.querySelector('.custom-scrollbar__bar_cinco');
-    container = document.querySelector('.custom-scrollbar__inner_cinco');
-    scroll();
-}
-
-function scroll_seis() {
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_seis');
-    bar = document.querySelector('.custom-scrollbar__bar_seis');
-    container = document.querySelector('.custom-scrollbar__inner_seis');
-    scroll();
-}
-
-
-function poner(num) {
-    
-    $(".texto_efecto"+num).css({
-        position: 'relative',
-        top: '2px',
-        display: 'block',
-        height: '100%',
-        'z-index': '100'
-    });
-    // if (num == 3) {
-    //     $(".custom-scrollbar__bar2").css('display','block');
-    //     $(".custom-scrollbar2").css('height','250');
-    // }
-}
-function quitar(num) {
-    $(".texto_efecto"+num).css({
-        position: 'relative',
-        top: '2px',
-        height: '100%',
-        display: 'none',
-        'z-index': '100'
-    });
-    // if (num == 3) {
-    //     $(".custom-scrollbar__bar2").css('display','none');
-    //     $(".custom-scrollbar2").css('height','180px');
-    // }
-}
-
-/*function camboyas(num) {
-    $(".camboya-btn").removeClass('bg-amarillo');
-    $(".camboya-btn").addClass('bg-cafe-mo');
-    $(".camboya-btn-"+num).removeClass('bg-cafe-mo');
-    $(".camboya-btn-"+num).addClass('bg-amarillo');   
+function funcionalidad_U2(num) {
     if (num == 1) {
-        var texto = `
-                    <p class="p_black justificado m-auto">En 2003 se dio vida a las salas especiales de Camboya, mediante un acuerdo suscrito entre el gobierno de Camboya y la ONU. Se trata en este caso no del establecimiento de un nuevo tribunal, sino de la conformación de salas especiales dentro de los tribunales ya existentes, para juzgar a los responsables de los crímenes cometidos en Kampuchea democrática.</p>
-                    <br>
-                    <p class="p_black justificado m-auto">Las salas tienen competencia para juzgar los crímenes cometidos en la Kampuchea democrática entre el 17 de abril de 1975 y el 6 de enero de 1979, aplicando tanto la legislación penal interna como el derecho internacional humanitario, y con la posibilidad de aplicar penas incluso de prisión perpetua.</p>
-                    `;
-        $("#camboya").html(texto);
+        $("#info_funcionalidad_3U2").html(`
+                                        <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
+                                            <div class="p_white p-3 text-center img-50">
+                                              <p>Realice la lectura de la sentencia C-337/96 del PDF “sentencia C-337/96” con el fin de ampliar el contenido. Haga clic en el botón PDF:</p>
+                                              <br>
+                                              <p>Haga clic en el botón PDF.</p>
+                                            </div>
+                                            <div class="img-50 d-flex">
+                                                <a href="assets/PDF/UNIDAD 2/Sentencia-C-337_96.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                            </div>
+                                        </div>
+                                        `);
     }else if (num == 2) {
-        var texto = `
-                    <p class="p_black justificado m-auto">Se debe  recordar que durante el periodo de tiempo que tiene competencia temporal la sala, Camboya se encontró bajo el régimen de los jemeres rojos, liderado por Pol Pot, quien finalmente fallece en 1998, periodo durante el cual se calculan que fueron asesinados cerca de 1.6 millones de personas, en lo que algunos historiadores han denominado un auto genocidio, pues se trataba de un sistema político basado en un “comunismo agrario” en el que los jemeres centraron sus ataques contra intelectuales, líderes políticos opositores, monjes budistas, profesionales, entre otros.</p>
-                    `;
-        $("#camboya").html(texto);
-    }else if (num == 3) {
-        var texto = `
-                    <p class="p_black justificado m-auto">Aunque las salas especiales aún se encuentran en funcionamiento, son pocos los juicios que ha podido culminar, en parte por la avanzada edad de los presuntos responsables.</p>
-                    `;
-        $("#camboya").html(texto);
+        $("#info_funcionalidad_3U2_1").html(`
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row">
+                                            <div class="col-md-12 d-flex">
+                                                <img src="assets/img/img_ova/enlace.png" class="position-relative img-40 m-auto" style="top: -40px;">
+                                            </div>
+                                            <div class="p_white text-center col-md-12">
+                                              <p>Al mismo tiempo realizar la lectura de “la sentencia T-1127/2003” como lectura complementaria siguiendo el link:</b></p>
+                                                <a href="https://www.corteconstitucional.gov.co/relatoria/2003/T-1127-03.htm" target="_blank"><button class="btn" style="background: #540F23;color: white;">Clic aquí</button></a>
+                                            </div>
+                                        </div>
+                                        `);
     }
 }
-
-function cardPara4(num) {
-    $("#card4-1, #card4-2, #card4-3, #card4-4").removeClass('bg-blanco');
-    $("#card4-1").addClass('bg-cafe-activi');
-    $("#card4-2").addClass('bg-cafe-mo');
-    $("#card4-3").addClass('bg-piel');
-    $("#card4-4").addClass('bg-piel-mo');
-    $("#card4-1").html('<img src="assets/img/img_ova/tribune.png" class="img-50 p-3">');
-    $("#card4-2").html('<img src="assets/img/img_ova/juzgando.png" class="img-50 p-4">');
-    $("#card4-3").html('<img src="assets/img/img_ova/Derecho penal internacional-06.png" class="img-50 p-4">');
-    $("#card4-4").html('<img src="assets/img/img_ova/Derecho penal internacional-02.png" class="img-50 p-4">');
-    if (num == 1) {
-        var texto = `
-                    <p class="justificado p_black p-4">Se trata en consecuencia, de unas salas especiales (también conocida como paneles) que no fueron creadas propiamente por un Estado, sino por un órgano internacional que para el momento tenía asignada la tarea de administrar Timor Leste.</p>
-                    `;
-        $("#card4-1").removeClass('bg-cafe-activi');
-        $("#card4-1").addClass('bg-blanco');
-        $("#card4-1").html(texto);
-    }if (num == 2) {
-        var texto = `
-                    <p class="justificado p_black p-4">A estas salas especiales les fue asignado el mandato de juzgar a los responsables de los crímenes cometidos entre el 1 de enero de 1999 al 25 de octubre del mismo año, aplicando tanto el derecho penal de Timor Leste, como el derecho internacional humanitario. Estas salas empezaron a funcionar en el año 2000 y culminaron en el 2005, siendo su primera sentencia en el 2001 y teniendo como resultado final la condena de 84 personas y 3 absueltas.</p>
-                    `;
-        $("#card4-2").removeClass('bg-cafe-mo');
-        $("#card4-2").addClass('bg-blanco');
-        $("#card4-2").html(texto);
-    }if (num == 3) {
-        var texto = `
-                    <p class="justificado p_black p-4">Debe destacarse que en Timor Leste se trata de una situación que se originó porque luego de 24 años bajo el control de las fuerzas militares de Indonesia, Timor votó por constituirse como un estado independiente, lo que desató los enfrentamientos entre militares indonesios y grupos de milicias que se oponían al resultado, aun cuando el proceso fue llevado a cabo por la misma ONU.</p>
-                    `;
-        $("#card4-3").removeClass('bg-piel');
-        $("#card4-3").addClass('bg-blanco');
-        $("#card4-3").html(texto);
-    }if (num == 4) {
-        var texto = `
-                    <p class="justificado p_black p-4">La jurisdicción de las salas especiales fue exclusiva, es decir que solo esa instancia podía conocer de los hechos ocurridos durante ese periodo de tiempo, a diferencia del resto de los tribunales y salas especiales donde su competencia era concurrente.</p>
-                    `;
-        $("#card4-4").removeClass('bg-piel-mo');
-        $("#card4-4").addClass('bg-blanco');
-        $("#card4-4").html(texto);
-    }
-}*/
-
 function scroll(){
     // When the container is scrolled
     container.addEventListener('scroll', () => {
@@ -349,533 +457,7 @@ function scroll(){
     });
 }
 
-function comprensiones(num) {
-    $(".comprension-circulo-2, .comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").removeClass('bg-azul');
-    $(".comprension-circulo-2, .comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").addClass('bg-blanco');
-    if (num == 1) {
-        $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2, .comprension-btn-3, .comprension-btn-4, .comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
-        $(".comprension-text-2, .comprension-text-3, .comprension-text-4, .comprension-text-4").addClass('d-none');
-        $(".comprension-circulo-2, .comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").removeClass('bg-blanco');
-        $(".comprension-circulo-2, .comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").addClass('bg-azul');
-    }else if (num == 2) {
-        $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3, .comprension-btn-4, .comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
-        $(".comprension-text-2").removeClass('d-none');
-        $(".comprension-text-3, .comprension-text-4, .comprension-text-4").addClass('d-none');
-        $(".comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").removeClass('bg-blanco');
-        $(".comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").addClass('bg-azul');
-    }else if (num == 3) {
-        $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto"><b>S</b></h1>');
-        $(".comprension-btn-4, .comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
-        $(".comprension-text-2, .comprension-text-3").removeClass('d-none');
-        $(".comprension-text-4, .comprension-text-5").addClass('d-none');
-        $(".comprension-circulo-4, .comprension-circulo-5").removeClass('bg-blanco');
-        $(".comprension-circulo-4, .comprension-circulo-5").addClass('bg-azul');
-    }else if (num == 4) {
-        $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto"><b>S</b></h1>');
-        $(".comprension-btn-4").html('<h1 class="text-color-activi-o m-auto"><b>M</b></h1>');
-        $(".comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
-        $(".comprension-text-2, .comprension-text-3, .comprension-text-4").removeClass('d-none');
-        $(".comprension-text-5").addClass('d-none');
-        $(".comprension-circulo-5").removeClass('bg-blanco');
-        $(".comprension-circulo-5").addClass('bg-azul');
-    }else if (num == 5) {
-        $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto"><b>S</b></h1>');
-        $(".comprension-btn-4").html('<h1 class="text-color-activi-o m-auto"><b>M</b></h1>');
-        $(".comprension-btn-5").html('<h1 class="text-color-activi-o m-auto"><b>U</b></h1>');
-        $(".comprension-text-2, .comprension-text-3, .comprension-text-4, .comprension-text-5").removeClass('d-none');
-    }
-}
 
-function cajas(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `
-                     <div class="d-flex img-30">
-                       <img src="assets/img/img_ova/cloud.png" class="m-auto img-70">
-                     </div>
-                     <div class="d-flex img-70">
-                       <div class="m-auto">
-                         <p class="p_black justificado">Son quienes alimentan el sistema y los que intervienen en la transformación de los datos.</p>
-                       </div>
-                     </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav1').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na1').removeClass('inactivo');           
-          $('.na1').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 2:
-          var text = `
-                     <div class="d-flex img-30">
-                       <img src="assets/img/img_ova/people.png" class="m-auto img-70">
-                     </div>
-                     <div class="d-flex img-70">
-                       <div class="m-auto">
-                         <p class="p_black justificado">Son aquellos usuarios que no interactúan directamente con los resultados, pero sí se benefician de ellos. Por ejemplo, en el sistema de información de una EPS, el usuario podrá la Superintendencia de Salud, quienes deben supervisar y monitorear de manera permanente a los afiliados.</p>
-                       </div>
-                     </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2').removeClass('inactivo');           
-          $('.na2').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 3:
-          var text = `
-                     <div class="d-flex img-30">
-                       <img src="assets/img/img_ova/administracion.png" class="m-auto img-70">
-                     </div>
-                     <div class="d-flex img-70">
-                       <div class="m-auto">
-                         <p class="p_black justificado">Son los usuarios que generalmente tienen la responsabilidad de tomar decisiones, con base a la información que contiene o genera el sistema. Ejemplo: el gerente de una gran empresa, que debe tomar decisiones de la empresa, tomando como insumos los datos e información generado por diferentes niveles y/o procesos de la empresa.</p>
-                       </div>
-                     </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav3').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na3').removeClass('inactivo');           
-          $('.na3').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      
-      default:
-          break;
-  }
-}
-
-function informacion(num) {
-    if (num == 1) {
-        $("#informacion_num").html('<h1 class="m-auto"><b>1</b></h1>');
-        $("#informacion_img").html('<img id="zoom_img1" src="assets/img/img_ova/Entrada.png" data-zoom-image="assets/img/img_ova/Entrada.png" class="img-100 m-auto ">');
-        $(".zoomContainer" ).remove();
-        $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
-    }else if (num == 2) {
-        $(".zoomContainer" ).remove();
-        $("#informacion_num").html('<h1 class="m-auto"><b>2</b></h1>');
-        $("#informacion_img").html('<img src="assets/img/img_ova/Almacenamiento.png" class="img-100 m-auto">');
-    }else if (num == 3) {
-        $(".zoomContainer" ).remove();
-        $("#informacion_num").html('<h1 class="m-auto"><b>3</b></h1>');
-        $("#informacion_img").html('<img src="assets/img/img_ova/Procesamiento.png" class="img-100 m-auto">');
-    }else if (num == 4) {
-        $(".zoomContainer" ).remove();
-        $("#informacion_num").html('<h1 class="m-auto"><b>4</b></h1>');
-        $("#informacion_img").html('<img src="assets/img/img_ova/Salida .png" class="img-100 m-auto">');
-    }
-}
-
-function transaccion_1() {
-    $(".transacciones-info").removeClass('img-100');
-    $(".transacciones-info-1").html('<h1 class="m-auto p_white">1</h1>');
-    $(".transacciones-info-2").html('<h1 class="m-auto p_white">2</h1>');
-    $(".transacciones-info-3").html('<h1 class="m-auto p_white">3</h1>');
-    $(".transacciones-info-4").html('<h1 class="m-auto p_white">4</h1>');
-    $(".transacciones-info-5").html('<h1 class="m-auto p_white">5</h1>');
-    $(".transacciones-info-6").html('<h1 class="m-auto p_white">6</h1>');
-    $(".transacciones-inferior").removeClass('d-none');
-    $(".transacciones-inferior").addClass('d-flex');
-    $(".transacciones-info-1").addClass('img-100');
-    $(".transacciones-info-1").html(`
-                                    <div class="d-flex">
-                                        <div class="img-80 m-auto" data-toggle="modal" data-target="#modal-tps">
-                                          <p class="justificado p_white"><b>Diseño de un TPS</b></p>
-                                          <p class="justificado p_white">(Haz clic aquí para desplegar más información)</p>
-                                        </div>
-                                    </div>
-                                    `);
-    $(".transacciones-inferior-1").removeClass('d-flex');
-    $(".transacciones-inferior-1").addClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_2() {
-    $(".transacciones-info").removeClass('img-100');
-    $(".transacciones-info-1").html('<h1 class="m-auto p_white">1</h1>');
-    $(".transacciones-info-2").html('<h1 class="m-auto p_white">2</h1>');
-    $(".transacciones-info-3").html('<h1 class="m-auto p_white">3</h1>');
-    $(".transacciones-info-4").html('<h1 class="m-auto p_white">4</h1>');
-    $(".transacciones-info-5").html('<h1 class="m-auto p_white">5</h1>');
-    $(".transacciones-info-6").html('<h1 class="m-auto p_white">6</h1>');
-    $(".transacciones-inferior").removeClass('d-none');
-    $(".transacciones-inferior").addClass('d-flex');
-    $(".transacciones-info-2").addClass('img-100');
-    $(".transacciones-info-2").html(`
-                                    <div class="d-flex">
-                                        <div class="img-80">
-                                          <p class="justificado p_white"><b>Identificar Propósito y Funcionalidad</b></p>
-                                          <p class="justificado p_white">Esto implica tener certeza de la situación, intención y contexto. Ejemplo: base de datos de clientes para diseñar la estrategia de fidelización de acuerdo con su comportamiento en compras.</p>
-                                        </div>
-                                    </div>
-                                    `);
-    $(".transacciones-inferior-2").removeClass('d-flex');
-    $(".transacciones-inferior-2").addClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_3() {
-    $(".transacciones-info").removeClass('img-100');
-    $(".transacciones-info-1").html('<h1 class="m-auto p_white">1</h1>');
-    $(".transacciones-info-2").html('<h1 class="m-auto p_white">2</h1>');
-    $(".transacciones-info-3").html('<h1 class="m-auto p_white">3</h1>');
-    $(".transacciones-info-4").html('<h1 class="m-auto p_white">4</h1>');
-    $(".transacciones-info-5").html('<h1 class="m-auto p_white">5</h1>');
-    $(".transacciones-info-6").html('<h1 class="m-auto p_white">6</h1>');
-    $(".transacciones-inferior").removeClass('d-none');
-    $(".transacciones-inferior").addClass('d-flex');
-    $(".transacciones-info-3").addClass('img-100');
-    $(".transacciones-info-3").html(`
-                                    <div class="d-flex">
-                                        <div class="img-80">
-                                          <p class="justificado p_white"><b>Definir Las Entidades</b></p>
-                                          <p class="justificado p_white">Implica identificar los grupos de variables con los que contará la base de datos. Ejemplo: 1. Datos Personales Cliente; 2. Ubicación o localización del cliente. 3.  Histórico de compras cliente.</p>
-                                        </div>
-                                    </div>
-                                    `);
-    $(".transacciones-inferior-3").removeClass('d-flex');
-    $(".transacciones-inferior-3").addClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_4() {
-    $(".transacciones-info").removeClass('img-100');
-    $(".transacciones-info-1").html('<h1 class="m-auto p_white">1</h1>');
-    $(".transacciones-info-2").html('<h1 class="m-auto p_white">2</h1>');
-    $(".transacciones-info-3").html('<h1 class="m-auto p_white">3</h1>');
-    $(".transacciones-info-4").html('<h1 class="m-auto p_white">4</h1>');
-    $(".transacciones-info-5").html('<h1 class="m-auto p_white">5</h1>');
-    $(".transacciones-info-6").html('<h1 class="m-auto p_white">6</h1>');
-    $(".transacciones-inferior").removeClass('d-none');
-    $(".transacciones-inferior").addClass('d-flex');
-    $(".transacciones-info-4").addClass('img-100');
-    $(".transacciones-info-4").html(`
-                                    <div class="d-flex">
-                                        <div class="img-80">
-                                          <p class="justificado p_white"><b>Definir Las Variables</b></p>
-                                          <p class="justificado p_white">Se definen los atributos o variables con los que contará cada entidad, y que será objeto de alimentación de la base de datos: Ejemplo: Nombre, Apellido, teléfono, Dirección.</p>
-                                        </div>
-                                    </div>
-                                    `);
-    $(".transacciones-inferior-4").removeClass('d-flex');
-    $(".transacciones-inferior-4").addClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_5() {
-    $(".transacciones-info").removeClass('img-100');
-    $(".transacciones-info-1").html('<h1 class="m-auto p_white">1</h1>');
-    $(".transacciones-info-2").html('<h1 class="m-auto p_white">2</h1>');
-    $(".transacciones-info-3").html('<h1 class="m-auto p_white">3</h1>');
-    $(".transacciones-info-4").html('<h1 class="m-auto p_white">4</h1>');
-    $(".transacciones-info-5").html('<h1 class="m-auto p_white">5</h1>');
-    $(".transacciones-info-6").html('<h1 class="m-auto p_white">6</h1>');
-    $(".transacciones-inferior").removeClass('d-none');
-    $(".transacciones-inferior").addClass('d-flex');
-    scroll_control++;
-    $(".transacciones-info-5").addClass('img-100');
-    $(".transacciones-info-5").html(`
-                                    <div class="custom-scrollbar_dos">
-                                      <div class="custom-scrollbar__inner_dos">
-                                        <div class="d-flex">
-                                            <div class="img-80">
-                                              <p class="justificado p_white"><b>Definir El Esquema De Recopilación De Datos</b></p>
-                                              <p class="justificado p_white">En este paso se deben definir las técnicas sobre las cuales se recopilarán los datos, de acuerdo con el propósito o funcionalidad. Ejemplo: proceso transaccional, captura de imagen, captura de texto. Etc.</p>
-                                              <p class="justificado p_white">Es ideal que un TPS cuente con una política de gobernanza de datos donde se determinen las premisas de calidad de los datos, para su recolección, además donde se asegure que se cuenten con bases de datos estructuradas. (más adelante veremos el tema ESTRUCTURACIÓN DE BASES DE DATOS).</p>
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="custom-scrollbar__bar_dos">
-                                        <div class="custom-scrollbar__knob_dos cursor"><p class="text-center linea_scroll_dos">-</p></div>
-                                      </div>
-                                    </div>
-                                    `);
-    $(".transacciones-inferior-5").removeClass('d-flex');
-    $(".transacciones-inferior-5").addClass('d-none');
-    if (scroll_control == 1) {
-        scroll_dos();
-    }
-}
-
-function transaccion_6() {
-    $(".transacciones-info").removeClass('img-100');
-    $(".transacciones-info-1").html('<h1 class="m-auto p_white">1</h1>');
-    $(".transacciones-info-2").html('<h1 class="m-auto p_white">2</h1>');
-    $(".transacciones-info-3").html('<h1 class="m-auto p_white">3</h1>');
-    $(".transacciones-info-4").html('<h1 class="m-auto p_white">4</h1>');
-    $(".transacciones-info-5").html('<h1 class="m-auto p_white">5</h1>');
-    $(".transacciones-info-6").html('<h1 class="m-auto p_white">6</h1>');
-    $(".transacciones-inferior").removeClass('d-none');
-    $(".transacciones-inferior").addClass('d-flex');
-    $(".transacciones-info-6").addClass('img-100');
-    $(".transacciones-info-6").html(`
-                                    <div class="d-flex">
-                                        <div class="img-80">
-                                          <p class="justificado p_white"><b>Definir El Esquema De Almacenamiento De Los Datos</b></p>
-                                          <p class="justificado p_white">En este último paso, se debe determinar la forma y la fuente de almacenamiento de los datos que se recopilen. Ejemplo: software, datamart, la nube, cubos, etc.</p>
-                                        </div>
-                                    </div>
-                                    `);
-    $(".transacciones-inferior-6").removeClass('d-flex');
-    $(".transacciones-inferior-6").addClass('d-none');
-    scroll_control= 0;
-}
-
-function transaccion_n1() {
-    $(".transacciones-info-1").removeClass('img-100');
-    $(".transacciones-info-1").html(`
-                                    <h1 class="m-auto p_white">1</h1>
-                                    `);
-    $(".transacciones-inferior-1").addClass('d-flex');
-    $(".transacciones-inferior-1").removeClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_n2() {
-    $(".transacciones-info-2").removeClass('img-100');
-    $(".transacciones-info-2").html(`
-                                    <h1 class="m-auto p_white">2</h1>
-                                    `);
-    $(".transacciones-inferior-2").addClass('d-flex');
-    $(".transacciones-inferior-2").removeClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_n3() {
-    $(".transacciones-info-3").removeClass('img-100');
-    $(".transacciones-info-3").html(`
-                                    <h1 class="m-auto p_white">3</h1>
-                                    `);
-    $(".transacciones-inferior-3").addClass('d-flex');
-    $(".transacciones-inferior-3").removeClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_n4() {
-    $(".transacciones-info-4").removeClass('img-100');
-    $(".transacciones-info-4").html(`
-                                    <h1 class="m-auto p_white">4</h1>
-                                    `);
-    $(".transacciones-inferior-4").addClass('d-flex');
-    $(".transacciones-inferior-4").removeClass('d-none');
-    scroll_control = 0;
-}
-
-function transaccion_n5() {
-    scroll_control++;
-    $(".transacciones-info-5").removeClass('img-100');
-    $(".transacciones-info-5").html(`
-                                    <h1 class="m-auto p_white">5</h1>
-                                    `);
-    $(".transacciones-inferior-5").addClass('d-flex');
-    $(".transacciones-inferior-5").removeClass('d-none');
-    if (scroll_control == 1) {
-        scroll_dos();
-    }
-}
-
-function transaccion_n6() {
-    $(".transacciones-info-6").removeClass('img-100');
-    $(".transacciones-info-6").html(`
-                                    <h1 class="m-auto p_white">6</h1>
-                                    `);
-    $(".transacciones-inferior-6").addClass('d-flex');
-    $(".transacciones-inferior-6").removeClass('d-none');
-    scroll_control= 0;
-}
-
-function circulos(num) {
-    $(".opcion-circulo").removeClass('bg-blanco');
-    $(".opcion-circulo").addClass('bg-azul');
-    $(".opcion-circulo-"+num).removeClass('bg-azul');
-    $(".opcion-circulo-"+num).addClass('bg-blanco');
-    if (num == 1) {
-        var texto = `
-                    <div class="col-md-7 p-3">
-                      <div>
-                         <h5 class="text-color-activi-o"><b>Sistemas de Información para la Gestión (MIS)</b></h5>
-                         <br>
-                         <p class="p_black justificado">También conocidos por sus siglas en inglés como <i>Management Information Systems (MIS)</i>, son sistemas de nivel táctico, encargados del procesamiento que normalmente requiere un mayor esfuerzo de procesamiento de los datos para facilitar la labor de gestión y planificación.  Generalmente procesan datos recolectados en el nivel operativo, para elaborar informes a los niveles directivos que les sean útiles en la toma de decisiones.  En los MIS, la capacidad de procesamiento del hardware es fundamental, puesto que de ésta depende la calidad y velocidad del procesamiento y por ende de los informes.</p>
-                       </div> 
-                    </div>
-                    <div class="col-md-5 p-3">
-                      <div>
-                         <img src="assets/img/img_ova/hardware.png" class="img-100">
-                       </div> 
-                    </div>
-                    `;
-        $("#circulos-info").html(texto);
-    }else if (num == 2) {
-        var texto = `
-                    <div class="col-md-12 p-3 custom-scrollbar_tres">
-                        <h5 class="text-color-activi-o"><b>Sistemas de Soporte a la Decisión (DSS)</b></h5>
-                        <div class="img-100 radius-2 bg-blanco py-3 pl-3 pr-5 custom-scrollbar__inner_tres">
-                            <div class="mr-5">
-                                <p class="p_black justificado">También conocidos por sus siglas en inglés como Decision Support Systems (DSS), son niveles que responden adecuadamente, tanto para el nivel táctico como para el nivel estratégico. Son sistemas capaces de combinar modelos para intentar resolver problemas de nivel medio-alto, utilizando una interfaz amigable para el usuario. Según LAPIEDRA, 2011, este tipo de sistemas, surgen como respuesta a mayores necesidades de información para tomar decisiones ante entornos más adversos.  Con un DDS, los directivos logran que las tecnologías les ayuden a tratar mucha más información para realizar sus análisis de modo más rápido. (LAPIEDRA, 2011).</p>
-                                <div class="img-100 d-flex">
-                                    <img src="assets/img/img_ova/Tabla 1.png" class="img-80 m-auto">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="custom-scrollbar__bar_tres">
-                          <div class="custom-scrollbar__knob_tres cursor"><p class="text-center linea_scroll_tres">-</p></div>
-                        </div>
-                    </div>
-                    `;
-        $("#circulos-info").html(texto);
-        scroll_tres();
-    }else if (num == 3) {
-        var texto = `
-                    <div class="col-md-12 p-3 custom-scrollbar_cuatro">
-                        <h5 class="text-color-activi-o"><b>Sistemas de Información para Ejecutivos</b></h5>
-                        <div class="img-100 radius-2 bg-blanco py-3 pl-3 pr-5 custom-scrollbar__inner_cuatro">
-                            <div class="mr-5 row">
-                                <div class="col-md-6 p-4">
-                                    <p class="p_black justificado">También conocidos por sus siglas en inglés como Executive Information Systems (EIS), son similares a los DSS, pero con el objetivo de que los directivos de más alto nivel puedan monitorear permanentemente la compañía en su totalidad. Suelen ser aplicativos que permiten acceder de manera muy rápida a indicadores consolidados o informes ya elaborados por otros sistemas (no a los datos concretos). Las herramientas visuales son claves en este tipo de sistemas de información, usualmente se relacionan con otras herramientas como los cuadros de mando integral. (LAPIEDRA, 2011).</p>
-                                </div>
-                                <div class="col-md-6 p-4 border-left-color-o">
-                                    <p class="p_black justificado">Los sistemas de información para Ejecutivos (EIS), a medida que han ido apareciendo nuevas funcionalidades, tipologías e incluso necesidades, en la gerencia e incluso en la tecnología, también han ido surgiendo nuevas formas de concebirlos desde de las organizaciones; hoy día también son conocidos como sistemas de información estratégicos.</p>
-                                </div>
-                            </div>
-                            <div class="row pt-4 mr-5">
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/1.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado p-3">Cambian significativamente el desempeño de un negocio al medirse por uno o más indicadores clave.</p>
-                              </div>
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/2.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado p-3">Contribuyen al logro de una meta estratégica.</p>
-                              </div>
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/3.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado p-3">Apoyan el proceso de innovación de productos dentro de la empresa.</p>
-                              </div>
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/4.png'); background-size: 100% 100%; background-repeat: no-repeat;">
-                                <p class="p_black justificado p-3">Generan cambios en la forma de dirigir una compañía, como compite o interactúa con clientes y proveedores al facilitar información integral.</p>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="custom-scrollbar__bar_cuatro">
-                          <div class="custom-scrollbar__knob_cuatro cursor"><p class="text-center linea_scroll_cuatro">-</p></div>
-                        </div>
-                    </div>
-                    `;
-        $("#circulos-info").html(texto);
-        scroll_cuatro();
-    }else if (num == 4) {
-        var texto = `
-                    <div class="col-md-12 p-3 custom-scrollbar_cinco">
-                        <h5 class="text-color-activi-o"><b>Sistemas de Información Geográfica (SIG)</b></h5>
-                        <div class="img-100 radius-2 bg-blanco py-3 pl-3 pr-5 custom-scrollbar__inner_cinco">
-                            <div class="mr-5 row">
-                                <div class="col-md-6 p-4">
-                                    <p class="p_black justificado">Es un sistema que permite relacionar e integrar un conjunto de datos vinculados en torno a un espacio y procesarlos basados en su ubicación o referenciación geográfica, facilitando la incorporación de aspectos sociales-culturales, económicos y ambientales que conducen a la toma de decisiones de una manera más eficaz. También son conocidos como SIG por sus siglas en inglés.</p>
-                                </div>
-                                <div class="col-md-6 p-4 border-left-color-o">
-                                    <p class="p_black justificado">La mejor forma de utilizar este tipo de sistemas, especialmente para el uso empresarial, es a través de mapas, en diferentes formatos.  Estos sistemas han ido evolucionando notoriamente a través del tiempo, sobre todo, en la medida que surgen tecnologías satelitales que permiten el reconocimiento de la posición exacta de elementos en un espacio geográfico, por ejemplo, ahora muchos SIG ahora son usables a través de tecnologías 3D y 4D, que facilitan la experiencia de usuario, a la vez que arrojan datos más precisos.</p>
-                                </div>
-                            </div>
-                            <div class="row pt-4 mr-5">
-                              <div class="col-md-4 p-3"> 
-                                <img src="assets/img/img_ova/geo1.png" class="img-100">
-                              </div>
-                              <div class="col-md-4 p-3"> 
-                                <img src="assets/img/img_ova/geo2.png" class="img-100">
-                              </div>
-                              <div class="col-md-4 p-3"> 
-                                <img src="assets/img/img_ova/geo3.png" class="img-100">
-                              </div>
-                            </div>
-                        </div>
-                        <div class="custom-scrollbar__bar_cinco">
-                          <div class="custom-scrollbar__knob_cinco cursor"><p class="text-center linea_scroll_cinco">-</p></div>
-                        </div>
-                    </div>
-                    `;
-        $("#circulos-info").html(texto);
-        scroll_cinco();
-    }else if (num == 5) {
-        var texto = `
-                    <div class="col-md-7 p-3">
-                      <div>
-                         <h5 class="text-color-activi-o"><b>Sistemas de Información Biométricos</b></h5>
-                         <br>
-                         <p class="p_black justificado">Es un tipo de sistema de información, que funciona a través de la biometría, es decir, funciona mediante el reconocimiento de una característica personal, en este caso del ser humano, y que puede ser identificada o verificada de manera automatizada a través de los parámetros con los cuales se configuró el sistema.</p>
-                         <br>
-                         <p class="p_black justificado">Este tipo de sistemas es muy usado principalmente para suplir condiciones de seguridad, es por esto que los sistemas de información biométricos se han ido perfeccionando y posicionando como respuesta a la creciente demanda de seguridad existente en la actualidad en los sistemas operativos. Sin embargo, a pesar de eso, y aunque algunos de ellos son altamente fiables, ningún sistema de información biométrico es efectivo al 100%, puesto que también son susceptibles de ser intervenidos.</p>
-                       </div> 
-                    </div>
-                    <div class="col-md-5 p-3">
-                      <div>
-                         <img src="assets/img/img_ova/biometria.png" class="img-100">
-                       </div> 
-                    </div>
-                    `;
-        $("#circulos-info").html(texto);
-        scroll_cinco();
-    }else if (num == 6) {
-        var texto = `
-                    <div class="col-md-12 p-3 custom-scrollbar_seis">
-                        <h5 class="text-color-activi-o"><b>Sistemas de Información Geográfica (SIG)</b></h5>
-                        <div class="img-100 radius-2 bg-blanco py-3 pl-3 pr-5 custom-scrollbar__inner_seis">
-                            <div class="mr-5 row">
-                                <div class="col-md-6 p-4">
-                                    <p class="p_black justificado">El concepto biometría proviene de las palabras bio que significa vida y metría que significa medida o métrica, por lo tanto, podemos decir que el concepto de biometría hace referencia a la medición sobre elementos con vida, pero a través de las herramientas tecnológicas. es decir, mide e identifica características propias de una persona. Por lo tanto, en los sistemas de información, la biometría es la ciencia que evalúa y mide a través de características fisiológicas y de comportamiento que pueden ser utilizadas para verificar la identidad del individuo.</p>
-                                </div>
-                                <div class="col-md-6 p-4 border-left-color-o">
-                                    <p class="p_black justificado">Todos los seres humanos tienen características morfológicas únicas que los hacen diferentes y difícilmente irrepetibles.  Las métricas o elementos más comunes en la biometría son las huellas digitales, el reconocimiento facial, la lectura del iris, la morfología de la mano, reconocimiento visual y otras técnicas, que han ido evolucionando a medida que avanzan los descubrimientos tecnológicos.</p>
-                                </div>
-                            </div>
-                            <div class="row pt-4 mr-5">
-                              <div class="col-md-12 p-3"> 
-                                <p class="p_black justificado">Cuando se define un elemento o indicador para utilizarlo en un sistema biométrico, se debe asegurar que cumpla los siguientes principios:</p>
-                              </div>
-                              <div class="col-md-12 p-3 row ml-3"> 
-                                  <div class="col-md-3 p-0 d-flex" style="min-height: 200px"> 
-                                    <img src="assets/img/img_ova/Universalidad.png" class="img-100 mt-auto">
-                                  </div>
-                                  <div class="col-md-3 p-0 d-flex" style="min-height: 200px"> 
-                                    <img src="assets/img/img_ova/Unicidad.png" class="img-100 mt-auto">
-                                  </div>
-                                  <div class="col-md-3 p-0 d-flex" style="min-height: 200px"> 
-                                    <img src="assets/img/img_ova/Permanencia.png" class="img-100 mt-auto">
-                                  </div>
-                                  <div class="col-md-3 p-0 d-flex" style="min-height: 200px"> 
-                                    <img src="assets/img/img_ova/Cuantificación.png" class="img-100 mt-auto">
-                                  </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="custom-scrollbar__bar_seis">
-                          <div class="custom-scrollbar__knob_seis cursor"><p class="text-center linea_scroll_seis">-</p></div>
-                        </div>
-                    </div>
-                    `;
-        $("#circulos-info").html(texto);
-        scroll_seis();
-    }
-}
 
 function instrucciones(num) {
     if (num == 1) {
