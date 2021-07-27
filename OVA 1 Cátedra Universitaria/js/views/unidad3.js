@@ -131,39 +131,33 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
-            /*$("#content-ova").load("base/unidades/unidad2.html");
-            tema = 17;*/
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
+            $("#content-ova").load("base/unidades/unidad2.html");
+            tema = 7;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","El sistema para la administración de las relaciones con los clientes (CRM)");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","El sistema para la administración de las relaciones con los clientes (CRM)");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","El sistema para la administración de las relaciones con los clientes (CRM)");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","El sistema para la administración de las relaciones con los clientes (CRM)");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","El sistema para la administración de las relaciones con los clientes (CRM)");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
-            break;
-        case 9:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
+            setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
             tema = 1;
             break;
         default:
