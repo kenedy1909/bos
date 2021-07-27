@@ -1318,6 +1318,9 @@ function teorias() {
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">El producto escalar de dos vectores A&#8407 y 𝐵&#8407 se denota como 𝐴&#8407 ∙𝐵&#8407  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴&#8407 y 𝐵&#8407 en el plano que los contiene.</p>
                                 </div>
+                                <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                    <img src="assets/img/img_ova/imagen322.png" style="width:230px;">
+                                </div>
                             </div>
                         </div>
                     </div>

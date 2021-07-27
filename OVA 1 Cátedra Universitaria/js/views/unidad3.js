@@ -58,12 +58,14 @@ $( document ).ready(function() {
         });
     };
 
-    $('a.control_prev2').click(function () {
+    $('a.control_prev2').click(function (e) {
         moveLeft2();
+        e.preventDefault();
     });
 
-    $('a.control_next2').click(function () {
+    $('a.control_next2').click(function (e) {
         moveRight2();
+        e.preventDefault();
     });
     console.log(tema);
     slide_link(tema);
