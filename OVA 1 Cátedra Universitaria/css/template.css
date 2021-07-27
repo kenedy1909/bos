@@ -1010,7 +1010,11 @@ svg circle:nth-child(2){
 }
 .texto_activi{
   font-size: 18px; 
-  color: rgb(174 28 22);;
+  color: rgb(174 28 22);
+}
+.texto_activi-o{
+  font-size: 18px; 
+  color: #540F23;
 }
 
 .contenedor_indi{
