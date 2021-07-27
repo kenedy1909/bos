@@ -121,12 +121,12 @@ iframe{
 }
 
 .titulo-ova{
-  background-image: url(../assets/img/img_ova/pensamiento_latinoamericano-01.png);
+  background-image: url(../assets/img/img_ova/pensamiento-latinoamericano-03.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 400px;
   height: 115px;
-  padding: 38px 110px 0px 100px;
+  padding: 38px 95px 0px 110px;
 }
 
 .c-body{
@@ -159,6 +159,10 @@ iframe{
     font-size: 40px;
 }
 
+.hidden{
+	visibility: hidden;
+	opacity: 0;
+}
 
 /* entire container, keeps perspective */
 .card-container {
@@ -253,11 +257,9 @@ iframe{
   height: 105px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
-  background: var(--bg-color-dark);
+  background: var(--bg-color);
 }
-.card .cover img{
-  width: 100%;
-}
+
 .card .user{
   border-radius: 50%;
   display: block;

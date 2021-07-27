@@ -49,6 +49,24 @@
 .bg-color-celeste{
 	background: #b4c6e7!important;
 }
+.bg-color-verde{
+	background: #2fe17d;
+}
+.bg-color-verde2{
+	background: #49af73;
+}
+.bg-color-verde3{
+	background: #5fdabd;
+}
+.bg-color-verde4{
+	background: #385623;
+}
+.bg-color-rojo1{
+	background: #eb3c2f;
+}
+.bg-color-rojo2{
+	background: #c00000;
+}
 .border-45{
 	border-radius: 45px;
 }
@@ -168,6 +186,70 @@
 }
 .hr-verde-oscuro{
 	border-top: 7px solid var(--bg-color-dark)!important;
+}
+
+.btnU1:hover{
+	color: white;
+}
+.fondoU1{
+	width: 100%;
+	height: 100%;
+	background: url(../assets/img/img_ova/diversidad.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.mapaBG1{
+	background: url(../assets/img/img_ova/fondo1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+}
+.mapaBG2{
+	background: url(../assets/img/img_ova/fondo2.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+}
+.mapaBG3{
+	background: url(../assets/img/img_ova/fondo3.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+}
+.fondoCaractU9{
+	background: url(../assets/img/img_ova/caracteristicas.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+	min-height: 400px;
+}
+.h-200{
+	height: 200px;
+}
+/* .divDirU9{
+	width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid var(--bg-color-claro);
+} */
+.text-black{
+  color: black!important;
+}
+.text-white{
+  color: white!important;
 }
 
 .card1{
