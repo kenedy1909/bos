@@ -278,3 +278,58 @@ function Input(num) {
   });
 }
 
+function funcionalidad_1(num) {
+    switch (parseInt(num)) {
+        
+        case 1:
+            $('#info_funcionalidad_1_1').html(`
+                                                <img src="assets/img/img_ova/DIAGNOSTICO1.png" class="img-75 m-auto">
+                                                `);
+            $('#info_funcionalidad_1_2').html(`
+                                                <p class="p_black justificado">Cuando se define la intencionalidad es necesario empezar por definir los intereses que se tienen; como el análisis de problemáticas que no son aisladas de las dificultades que no fueron identificadas con anterioridad denominadas “pandillas” al referirnos a esas  problemáticas. Para atenderlas será mucho más fácil y efectivo si se han identificado plenamente la confluencia de problemas que las integran y para esto es necesario:</p>
+                                                `);
+            break;
+        case 2:
+            $('#info_funcionalidad_1_1').html(`
+                                                <img src="assets/img/img_ova/INVENTARIO.png" class="img-75 m-auto">
+                                                `);
+            $('#info_funcionalidad_1_2').html(`
+                                                <ul class="p_black">
+                                                    <li>Realizar un inventario ordenado de problemas o situaciones desfavorables identificadas.</li>
+                                                    <li>Agrupar o separar las problemáticas identificadas para lograr la clasificación de las situaciones, teniendo en cuenta la disponibilidad y la calidad de la información relacionada con sus intereses. (Valdez.2010).</li>
+                                                </ul>
+                                                `);
+            break;
+        case 3:
+            $('#info_funcionalidad_1_1').html(`
+                                                <img src="assets/img/img_ova/problema.png" class="img-75 m-auto">
+                                                `);
+            $('#info_funcionalidad_1_2').html(`
+                                                <ul class="p_black">
+                                                    <li>Priorizar los problemas encontrados que implica ordenar jerárquicamente las diferentes categorías de los problemas según la importancia que se les asigne.</li>
+                                                    <li>Integrar los análisis al identificar cada una de las causas del problema seleccionado de tal forma que se tenga una comprensión integral del problema.</li>
+                                                </ul>
+                                                `);
+            break;
+        case 4:
+            $('#info_funcionalidad_1_1').html(`
+                                                <img src="assets/img/img_ova/DIAGRAMA(1).png" class="img-75 m-auto">
+                                                `);
+            $('#info_funcionalidad_1_2').html(`
+                                                <p class="p_black justificado">Para la elaboración de un diagnóstico estratégico, se tienen en cuenta una serie de estrategias que se refieren a cómo lograr los objetivos. Se debe realizar un estudio y un análisis, tanto interno como externo de la organización que permita conocer a fondo, tanto las debilidades como las fortalezas, las oportunidades y las amenazas (Valdez.2010), por medio de una Matriz DOFA donde por la asociación de estas variables se obtendrán una serie de resultados aplicables a la empresa.</p>
+                                                `);
+            break;
+        case 5:
+            $('#info_funcionalidad_1_1').html(`
+                                                <img src="assets/img/img_ova/VALORES.png" class="img-75 m-auto">
+                                                `);
+            $('#info_funcionalidad_1_2').html(`
+                                                <p class="p_black justificado">El diagnóstico empresarial debe de ser el análisis integral de todas las variables que influyen en el posicionamiento de la empresa y las variables que le generan afectación también.</p>
+                                                <br>
+                                                <p class="p_black justificado">Los diagnósticos deben contener la integración funcional de todas las áreas, que permita obtener una visión del sistema para poder tener un acercamiento a la posible solución. Con la inclusión de un  análisis financiero hasta el estudio del entorno interno y externo de la organización, haciendo uso de las múltiples herramientas existentes.</p>
+                                                `);
+            break;
+        default:
+            break;
+    }
+}
