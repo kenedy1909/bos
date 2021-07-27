@@ -37,40 +37,28 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "Para Carmen de Pablos Heredero un sistema de información es:",
+                texto: "El objetivo del análisis externo es…",
                 respuestas: [{
-                    texto: "“Es un conjunto de recursos técnicos, humanos, y económicos, interrelacionados dinámicamente, y organizados en torno al objetivo de satisfacer las necesidades de información de una organización para la gestión y correcta toma de decisiones”.",
-                    correcta: true
-                }, {
-                    texto: "«El conjunto formal de procesos que operando sobre una colección de datos estructurada de acuerdo con las necesidades de una empresa, recopila, elabora y distribuye la información”",
+                    texto: "Identificar la cantidad de recursos con los cuales se cuenta una empresa.",
                     correcta: false
                 }, {
-                    texto: "“para las actividades de dirección y control correspondientes, apoyando, al menos en parte, los procesos de toma de decisiones necesarios para desempeñar las funciones de negocio de la empresa de acuerdo con su estrategia»",
+                    texto: "Identificar las oportunidades y amenazas estratégicas en el ambiente operativo de la organización.",
+                    correcta: true
+                }, {
+                    texto: "Desarrollo del plan estratégico para el mejoramiento de los procesos en una empresa.",
                     correcta: false
                 }]
             }, {
-                texto: "Para Andreu, Ricart y Valor un sistema de información es:",
+                texto: "La función principal del análisis del entorno empresarial consiste en…",
                 respuestas: [{
-                    texto: "“Es un conjunto de recursos técnicos, humanos, y económicos, interrelacionados dinámicamente, y organizados en torno al objetivo de satisfacer las necesidades de información de una organización para la gestión y correcta toma de decisiones”.",
+                    texto: "Determinar objetivos estratégicos claros.",
                     correcta: false
                 }, {
-                    texto: "«El conjunto formal de procesos que operando sobre una colección de datos estructurada de acuerdo con las necesidades de una empresa, recopila, elabora y distribuye la información…”",
+                    texto: "Resumir la información que permita tener un panorama claro de lo que se busca ",
+                    correcta: false
+                }, {
+                    texto: "Aprovechar al máximo las oportunidades y controlar o mitigar las amenazas.",
                     correcta: true
-                }, {
-                    texto: "Los sistemas de información tienen múltiples propósitos dentro de las organizaciones, pero sin duda lo más importante es facilitar la toma de decisiones de una manera eficiente, confiable y oportuna, además aportan soluciones a corto, mediano y a largo plazo",
-                    correcta: false
-                }]
-            }, {
-                texto: "Los sistemas de información tienen múltiples propósitos dentro de las organizaciones, pero sin duda lo más importante es",
-                respuestas: [{
-                    texto: "Otorgar permisos a terceros para revisar si la información de la organización es válida y precisa",
-                    correcta: false
-                }, {
-                    texto: "Facilitar la toma de decisiones de una manera eficiente, confiable y oportuna, además aportan soluciones a corto, mediano y a largo plazo.",
-                    correcta: true
-                }, {
-                    texto: "Generar mayor oportunidad de empleo y oportuna respuestas en los canales de la organización",
-                    correcta: false
                 }]
             }]);
         };

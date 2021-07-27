@@ -8,7 +8,7 @@
 
 .pregunta-cuestionario {
     background: rgba(255, 255, 255, 0.7);
-    border: 4px solid #282F9F;
+    border: 4px solid #540F23;
     border-radius: 15px;
     color: inherit;
     margin: 10px;
@@ -43,7 +43,7 @@
 }
 
 .texto-pregunta {
-    background: #282F9F;
+    background: #540F23;
     /*border-radius: 10px;*/
     font-size: 15px;
     /*margin: 10px;*/
@@ -86,10 +86,10 @@ input {
     position: relative;
     top: -35px;
     right: -65px;
-    background: #FFFFFF;
-    border-radius: 50%;
+    /*background: #FFFFFF;
+    border-radius: 50%;*/
     padding: 12px;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%)
+    /*box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%)*/
 }
 
 .d-flex{
@@ -120,7 +120,7 @@ input {
 }
 
 .info_actividad{
-    background: #282F9F;
+    background: #393A72;
     border-radius: 20px;
     padding: 20px;
 }
@@ -147,7 +147,7 @@ input {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #811111;
+    border-bottom: solid 3px #540F23;
 }
 
 .img-activi{
@@ -156,11 +156,11 @@ input {
 
 .text-img-actividad{
     font-size: 20px;
-    color: #811111;
+    color: #540F23;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #540F23;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -168,7 +168,7 @@ input {
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #540F23;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -177,7 +177,7 @@ input {
 }
 
 .content-tarjeta{
-  background: #282F9F;
+  background: #540F23;
   border-radius: 20px;
   padding: 15px;
 }
