@@ -117,6 +117,29 @@ function controlSlides(num){
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            $(".i1").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv.i1");
+            var elementoPadre2 = document.querySelector(".inputDiv.i2");
+            var inputsRy = [];  
+            var i = new Input(5);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(5);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
+
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
@@ -170,7 +193,59 @@ function scroll_set(num) {
   container = document.querySelector('.custom-scrollbar__inner'+num);
   scroll();
 }
+//dezlizador
 
+
+function Input(num) {
+  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+  this.att = {};
+  this.att.type = "range";
+  this.att.value = 0;
+  this.att.min = 0;
+  this.att.max = num;
+  this.att.autocomplete = "off";
+  this.att.step = "1";
+  this.input;
+  this.output;
+
+  this.crear = function(elementoPadre) {
+    // crea un nuevo elemento input
+    this.input = document.createElement("input");
+    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+    for (var name in this.att) {
+      if (this.att.hasOwnProperty(name)) {
+        this.input.setAttribute(name, this.att[name]);
+      }
+    }
+    // crea un nuevo elemento div
+    this.output = document.createElement("div");
+    // establece el valor del atributo class del nuevo div
+    this.output.setAttribute("class", "output");
+    // y el contenido (innerHTML) de este
+    this.output.innerHTML = this.att.value;
+
+    // inserta los dos elementos creados al final  del elemento Padre 
+    elementoPadre.appendChild(this.input);
+    elementoPadre.appendChild(this.output);
+  }
+
+  this.actualizar = function() {
+    scroll_horizontal(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
+  this.actualizar2 = function() {
+    scroll_horizontal2(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
+}
 function scroll_p10(){
     dragging = "";
     diff = "";
@@ -677,69 +752,59 @@ function quitar(num) {
 }
 
 //dezlizador
-var elementoPadre1 = document.querySelector(".inputDiv.i1");
-var elementoPadre2 = document.querySelector(".inputDiv.i2");
-var inputsRy = [];
 
-function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = 6;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
+function Input(num) {
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
+  
+    this.crear = function(elementoPadre) {
+      // crea un nuevo elemento input
+      this.input = document.createElement("input");
+      //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+      for (var name in this.att) {
+        if (this.att.hasOwnProperty(name)) {
+          this.input.setAttribute(name, this.att[name]);
+        }
       }
+      // crea un nuevo elemento div
+      this.output = document.createElement("div");
+      // establece el valor del atributo class del nuevo div
+      this.output.setAttribute("class", "output");
+      // y el contenido (innerHTML) de este
+      this.output.innerHTML = this.att.value;
+  
+      // inserta los dos elementos creados al final  del elemento Padre 
+      elementoPadre.appendChild(this.input);
+      elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
-
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
+  
+    this.actualizar = function() {
+      scroll_horizontal(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+      scroll_horizontal2(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
   }
 
-  this.actualizar = function() {
-    pantallas16(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-}
-
-// setup
-var i = new Input();
-i.crear(elementoPadre1);
-inputsRy.push(i);
-
-var i2 = new Input();
-i2.att.value = 70;
-i2.att.min = 20;
-i2.att.max = 120;
-i2.crear(elementoPadre2);
-inputsRy.push(i2);
-
-for (var n = 0; n < inputsRy.length; n++) {
-  (function(n) {
-    inputsRy[n].input.addEventListener("input", function() {
-      inputsRy[n].actualizar();
-    }, false)
-  }(n));
-}
 
 /* Draw
 function Draw(){
@@ -1303,4 +1368,180 @@ function pasarTarjetas(num) {
         $('.fa-caret-right').removeClass('d-none');
     }
     
+}
+
+function mapaU6(num,estado) {
+
+    
+    
+    if (estado==1) {
+        if (num==1) {
+            $('#contenedorMapa1U6').html(``);
+
+            var data = `
+                        <div class="border-25 bg-color-claro p-2 shadow ">
+                            <div class="w-25 py-2">
+                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial1 cursor" onclick="mapaU6(1,2)">1</h5>
+                            </div>
+                            <div class="w-100 text-center">
+                            <p class="px-2 text-justify w-100">Lea el libro “De las dualidades a las ecologías” De Sousa</p>
+                            <img src="assets/img/img_template/Botonera-106.png" width="20%">
+                            </div>
+                        </div>
+                        `;
+
+            $('#contenedorMapa1U6').html(data);
+        }else if (num==2) {
+            $('#contenedorMapa2U6').html(``);
+
+            var data = `
+                        <div class="border-25 bg-color-claro px-2 pt-2 pb-4 shadow">
+                            <div class="w-25 py-2">
+                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial2 cursor" onclick="mapaU6(2,2)">2</h5>
+                            </div>
+                            <div class="w-100 text-center pt-2">
+                            <p class="px-2 text-justify w-100">Realice un cuadro sinóptico del libro.</p>
+                            </div>
+                        </div>
+                        `;
+            
+            $('#contenedorMapa2U6').html(data);
+        }else if (num==3) {            
+            $('#contenedorMapa3U6').html(``);
+
+            var data = `
+                        <div class="border-25 bg-color-claro px-2 pt-2 pb-4 shadow">
+                            <div class="w-25 py-2">
+                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial3 cursor" onclick="mapaU6(3,2)">3</h5>
+                            </div>
+                            <div class="w-100 text-center">
+                            <p class="px-2 text-justify w-100 mb-4 "><b>Ayuda pedagógica </b></p>
+                            <div class="d-flex justify-content-center">
+                                <a data-toggle="modal" data-target="#modal-verU6" class="btn btn-block w-75 text-white bg-color-rojo1">Ver</a>
+                            </div>
+                            </div>
+                        </div>
+                        `;
+            
+            $('#contenedorMapa3U6').html(data);
+        }
+    }else if (estado == 2) {
+        if (num==1) {
+            $('#contenedorMapa1U6').html(``);
+
+            var data = `
+                        <div class="border-25 bg-color-verde5 d-flex justify-content-center align-items-center py-4 shadow inicialP1">
+                            <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial1 cursor" onclick="mapaU6(1,1)">1</h1>
+                        </div>
+                        `;
+
+            $('#contenedorMapa1U6').html(data);
+        }else if (num==2) {
+            $('#contenedorMapa2U6').html(``);
+
+            var data = `
+                        <div class="border-25 bg-color-verde5 d-flex justify-content-center align-items-center py-4 shadow inicialP3">
+                            <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial2 cursor" onclick="mapaU6(2,1)">2</h1>
+                        </div>
+                        `;
+            
+            $('#contenedorMapa2U6').html(data);
+        }else if (num==3) {            
+            $('#contenedorMapa3U6').html(``);
+
+            var data = `
+                        <div class="border-25 bg-color-verde5 d-flex justify-content-center align-items-center mt-5 py-4 shadow inicialP2">
+                            <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial3 cursor" onclick="mapaU6(3,1)">3</h1>
+                        </div>
+                        `;
+            
+            $('#contenedorMapa3U6').html(data);
+        }
+    }
+}
+
+
+// deslizador
+
+function scroll_horizontal(num){
+    
+    $('.scroll-flecha').removeClass('d-block');
+    $('.scroll-flecha').addClass('d-none');
+    switch (parseInt(num)) {
+        case 0:
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/comunidad1.png" width="100%" height="100%">`;
+            $('#scroll-img').html(pantalla);
+            $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">Es un concepto que reafirma la importancia de la razón en la vida en tanto comunidad y cosmos y busca llevar a los hombres a un bienestar superior a los alcances del desarrollo capitalista (Gómez, 2018, 6).</p>');
+            
+            $('.scroll-flecha-0').removeClass('d-none');
+            $('.scroll-flecha-0').addClass('d-block');
+            break;
+        case 1:
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/comunidad2.png" width="100%" height="100%">`;
+            $('#scroll-img').html(pantalla);
+            $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">Desde los estudios más recientes en el ámbito latinoamericano el buen vivir refiere a una descolonización con mirada indigenista como proyecto de progreso diferente al capitalismo.</p>');
+            $('.scroll-flecha-0').removeClass('d-none');
+            $('.scroll-flecha-0').addClass('d-block');
+            $('.scroll-flecha-1').removeClass('d-none');
+            $('.scroll-flecha-1').addClass('d-block');
+            break;
+        case 2:
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/comunidad3.png" width="100%" height="100%">`;
+            $('#scroll-img').html(pantalla);
+            $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">Buen vivir y con ello, el vivir bien, es una alternativa nueva a la lógica del cuidado que se desarrolla al margen de la lógica del patriarcado; esta concepción sobre la vida desea superar el contrato social capitalista para dar sustento a la producción y a la vida social. </p>');
+            $('.scroll-flecha-0').removeClass('d-none');
+            $('.scroll-flecha-0').addClass('d-block');
+            $('.scroll-flecha-1').removeClass('d-none');
+            $('.scroll-flecha-1').addClass('d-block');
+            $('.scroll-flecha-2').removeClass('d-none');
+            $('.scroll-flecha-2').addClass('d-block');
+            break;
+        case 3:
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/capitalismo1.png" width="80%" height="80%">`;
+            $('#scroll-img').html(pantalla);
+            $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">No existe una igualdad en el marco del capitalismo, porque se ve al hombre como sujeto incorpóreo donde lo único que importa es la lógica de la acumulación que solo propone una solución individual a las contradicciones sistémicas. </p>');
+            $('.scroll-flecha-0').removeClass('d-none');
+            $('.scroll-flecha-0').addClass('d-block');
+            $('.scroll-flecha-1').removeClass('d-none');
+            $('.scroll-flecha-1').addClass('d-block');
+            $('.scroll-flecha-2').removeClass('d-none');
+            $('.scroll-flecha-2').addClass('d-block');
+            $('.scroll-flecha-3').removeClass('d-none');
+            $('.scroll-flecha-3').addClass('d-block');
+            break;
+        case 4:
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/capitalismo2.png"  width="100%" height="100%">`;
+            $('#scroll-img').html(pantalla);
+            $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">Es por ello que, el buen vivir es un paradigma alternativo del siglo XXI, el cual hace frente a la proliferación del ‘post’ que ha sido el inicio más contundente de la crisis y agotamiento de la economía y la sociedad actual; </p>');
+            $('.scroll-flecha-0').removeClass('d-none');
+            $('.scroll-flecha-0').addClass('d-block');
+            $('.scroll-flecha-1').removeClass('d-none');
+            $('.scroll-flecha-1').addClass('d-block');
+            $('.scroll-flecha-2').removeClass('d-none');
+            $('.scroll-flecha-2').addClass('d-block');
+            $('.scroll-flecha-3').removeClass('d-none');
+            $('.scroll-flecha-3').addClass('d-block');
+            $('.scroll-flecha-4').removeClass('d-none');
+            $('.scroll-flecha-4').addClass('d-block');
+            break;
+        case 5:
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/capitalismo3.png" width="100%" height="100%">`;
+            $('#scroll-img').html(pantalla);
+            $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">los problemas han suscitado la importancia de nuevos planteamientos sobre otros modos de producir, consumir y organizar la vida y es allí donde se hace necesaria la intervención de la reflexión filosófica.</p>');
+            $('.scroll-flecha-0').removeClass('d-none');
+            $('.scroll-flecha-0').addClass('d-block');
+            $('.scroll-flecha-1').removeClass('d-none');
+            $('.scroll-flecha-1').addClass('d-block');
+            $('.scroll-flecha-2').removeClass('d-none');
+            $('.scroll-flecha-2').addClass('d-block');
+            $('.scroll-flecha-3').removeClass('d-none');
+            $('.scroll-flecha-3').addClass('d-block');
+            $('.scroll-flecha-4').removeClass('d-none');
+            $('.scroll-flecha-4').addClass('d-block');
+            $('.scroll-flecha-5').removeClass('d-none');
+            $('.scroll-flecha-5').addClass('d-block');
+            break;
+        default:
+            break;
+    }
 }

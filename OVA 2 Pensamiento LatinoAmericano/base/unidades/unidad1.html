@@ -416,34 +416,60 @@
                         </div>
                         <div class="row">
                           <div class="col-12">
-                            <p>Haga clic en los números para conocer las indicaciones para realizar la actividad</p>
+                            <p>Haga clic en los números para conocer las indicaciones para realizar la actividad:</p>
                           </div>
                         </div>
-                        <div class="row d-flex justify-content-center">
-                          <div class="col-12 d-flex justify-content-center">
-                            <div class="col-3 mx-5 card3 border-25 p-3 d-flex justify-content-center align-items-center text-center cursor" data-toggle="modal" data-target="#modal-indigenas1">
-                              <img src="assets/img/img_ova/indigena1.png" width="150px">
-                            </div>
-                            <div class="col-3 mx-5 card3 border-25 p-3 d-flex justify-content-center align-items-center text-center cursor" data-toggle="modal" data-target="#modal-indigenas2">
-                              <img src="assets/img/img_ova/indigena3.png" width="250px">
-                            </div>
-                            <div class="col-3 mx-5 card3 border-25 p-3 d-flex justify-content-center align-items-center text-center cursor" data-toggle="modal" data-target="#modal-indigenas3" onclick="scroll_set(9)">
-                              <img src="assets/img/img_ova/indigena6.png" class="menos-margin-50" width="250px">
+                        <div class="row">
+                          <div class="col-2 h-100 mt-5 pt-5">
+                            <div class="border-25 bg-color-verde5 text-center py-4 shadow">
+                              <img src="assets/img/img_ova/leer.png" width="60%" class="mx-4">
+                              <p>Instrucciones</p>
                             </div>
                           </div>
-                          <div class="col-12 d-flex justify-content-center">
-                            <hr class=" my-5 w-75 hr-verde-claro">
+                          <div class="col-1 h-100">
                           </div>
-                          <div class="col-12 d-flex justify-content-center">
-                            <div class="col-3 mx-5 card3 border-25 p-3 d-flex justify-content-center align-items-center text-center cursor" data-toggle="modal" data-target="#modal-indigenas4">
-                              <img src="assets/img/img_ova/indigena5.png" width="250px">
+                          <div class="col-3 h-100" id="contenedorMapa1U6">
+                            <div class="border-25 bg-color-verde5 d-flex justify-content-center align-items-center py-4 shadow inicialP1">
+                              <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial1 cursor" onclick="mapaU6(1,1)">1</h1>
                             </div>
-                            <div class="col-3 mx-5 card3 border-25 p-3 d-flex justify-content-center align-items-center text-center cursor" data-toggle="modal" data-target="#modal-indigenas5">
-                              <img src="assets/img/img_ova/indigena8.png" width="250px">
+                            <!-- <div class="border-25 bg-color-claro p-2 shadow ">
+                              <div class="w-25 py-2">
+                                <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial1 cursor">1</h5>
+                              </div>
+                              <div class="w-100 text-center">
+                                <p class="px-2 text-justify w-100">Lea el libro “De las dualidades a las ecologías” De Sousa</p>
+                                <img src="assets/img/img_template/Botonera-106.png" width="20%">
+                              </div>
+                            </div> -->
+                          </div>
+                          <div class="col-3 h-100 mt-5 pt-5 mb-2" id="contenedorMapa3U6">
+                            <div class="border-25 bg-color-verde5 d-flex justify-content-center align-items-center mt-5 py-4 shadow inicialP2">
+                              <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial3 cursor" onclick="mapaU6(3,1)">3</h1>
                             </div>
-                            <div class="col-3 mx-5 card3 border-25 p-3 d-flex justify-content-center align-items-center text-center cursor" data-toggle="modal" data-target="#modal-indigenas6" onclick="scroll_set(10)">
-                              <img src="assets/img/img_ova/indigena4.png" width="250px">
+                            <!-- <div class="border-25 bg-color-claro px-2 pt-2 pb-4 shadow">
+                              <div class="w-25 py-2">
+                                <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial3 cursor">3</h5>
+                              </div>
+                              <div class="w-100 text-center">
+                                <p class="px-2 text-justify w-100 mb-4 "><b>Ayuda pedagógica </b></p>
+                                <div class="d-flex justify-content-center">
+                                  <a data-toggle="modal" data-target="#modal-verU6" class="btn btn-block w-75 text-white bg-color-rojo1">Ver</a>
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                          <div class="col-3 h-100" id="contenedorMapa2U6">
+                            <div class="border-25 bg-color-verde5 d-flex justify-content-center align-items-center py-4 shadow inicialP3">
+                              <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial2 cursor" onclick="mapaU6(2,1)">2</h1>
                             </div>
+                            <!-- <div class="border-25 bg-color-claro px-2 pt-2 pb-4 shadow">
+                              <div class="w-25 py-2">
+                                <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial2 cursor">2</h5>
+                              </div>
+                              <div class="w-100 text-center pt-2">
+                                <p class="px-2 text-justify w-100">Realice un cuadro sinóptico del libro.</p>
+                              </div>
+                            </div> -->
                           </div>
                         </div>
                        </div>
@@ -458,20 +484,49 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-12 pt-4">
+                          <div class="col-12 pt-4" >
                             <p class="text-justify">El buen vivir es un concepto que ubica al ser humano como parte de un entorno natural y social, su protagonismo ha resurgido en los últimos años en Latinoamérica como resultado de una propuesta de progreso indígena enmarcada en la búsqueda de una mejor condición de vida desde una deontología de la existencia que supera cualquier supuesto de vida buena como cualidad situacional.</p>
                             <p class="mt-4">Desplácese con el mouse por la línea y observe los diferentes conceptos sobre el buen vivir</p>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-6 ml-5">
-                            <div class="bg-color-verde border-25 p-3 text-black">
-                              <img src="assets/img/img_ova/nativo-americano.png" width="20%" class="menos-margin-50 menos-marginB-300">
+                        <div class="row mt-4">
+                          <div class="col-6">
+                            <div class="bg-color-verde border-25 p-3 text-black" id="scroll-text">
                               <p class="text-justify pl-5 pr-3 pt-0">Es un concepto que reafirma la importancia de la razón en la vida en tanto comunidad y cosmos y busca llevar a los hombres a un bienestar superior a los alcances del desarrollo capitalista (Gómez, 2018, 6).</p>
                             </div>
+                            <div >
+                              <p class="linea font13" style="color: #008F3E;">a</p>
+                                <img style="margin-top: -60px;" class="img10" width="15%" src="assets/img/img_ova/nativo-americano.png">
+                            </div>
                           </div>
-                          <div class="col-5">
+                          <div class="col-6" id="scroll-img">
                             <img src="assets/img/img_ova/comunidad1.png" width="100%" height="100%">
+                          </div>
+                        </div>
+                        <div class="col-md-11">
+                          <div class="inputDiv i1"></div>
+                          <div class="inputDiv i2" style="display: none;"></div>
+                        </div>
+                        <div class="col-md-11 pt-5">
+                          <div class="row">
+                            <div class="col-md-2 px-0 h-30px scroll-flecha d-block scroll-flecha-0">
+                              <img class="img-100" src="assets/img/img_ova/flecha_cafe_base.png">
+                            </div>
+                            <div class="col-md-2 px-1 h-30px scroll-flecha d-none scroll-flecha-1">
+                              <img class="img-100" src="assets/img/img_ova/flecha_cafe.png">
+                            </div>
+                            <div class="col-md-2 px-1 h-30px scroll-flecha d-none scroll-flecha-2">
+                              <img class="img-100" src="assets/img/img_ova/flecha_cafe.png">
+                            </div>
+                            <div class="col-md-2 px-1 h-30px scroll-flecha d-none scroll-flecha-3">
+                              <img class="img-100" src="assets/img/img_ova/flecha_cafe.png">
+                            </div>
+                            <div class="col-md-2 px-1 h-30px scroll-flecha d-none scroll-flecha-4">
+                              <img class="img-100" src="assets/img/img_ova/flecha_cafe.png">
+                            </div>
+                            <div class="col-md-2 px-1 h-30px scroll-flecha d-none scroll-flecha-5">
+                              <img class="img-100" src="assets/img/img_ova/flecha_cafe.png">
+                            </div>
                           </div>
                         </div>
                        </div>
@@ -1053,6 +1108,43 @@
                   <div class="content row" style="padding: 30px 30px 30px 30px;">
                     <div class="col-12 p5">
                       <img src="assets/img/img_ova/infografia1.png" width="100%">
+                    </div>          
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal-verU6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio modal-xl" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card" style="border-radius: 22px;">
+              <div class="frontwhite">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 d-flex align-items-center justify-content-center py-4">
+                        <img src="assets/img/img_ova/leer.png" class="" width="20%">
+                        <h3 class="p_white text-center margin-top50">Ayuda pedagógica </h3>
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="content row" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-12 py-5 pl-5">
+                      <img src="assets/img/img_ova/notas.png" width="100%">
                     </div>          
                   </div>
               </div> <!-- end front panel -->
