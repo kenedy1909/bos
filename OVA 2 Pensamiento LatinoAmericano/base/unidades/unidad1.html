@@ -273,50 +273,124 @@
                           </div>
                         </div>
                         <div class="row text-white mt-3">
-                          <div class="col-11 row" id="diapositiva1U5">
-                            <div class="col-4 px-2">
-                              <div class="p-5 border-45 bg-color-rojo2 text-center">
+                          <div class="col-11 row transition-on" id="diapositiva1U5">
+                            <div class="col-4 px-2 padreMostrar1"  onclick="mostrarTarjeta(1,'mostrar')">
+                              <div class="p-5 border-45 bg-color-rojo2 text-center mostrar1 shadow">
                                 <div class="bg-color-claro p-4 rounded-circle m-2">
                                   <img src="assets/img/img_ova/proceso-creativo.png" width="100%">
                                 </div>
                                 <p>La ecología de los saberes</p>
                               </div>
+                              <div class="p-3 border-45 bg-color-claro text-center text-black contenidoMostrar1 transition-on shadow d-none">
+                                <div class="bg-color-claro m-2 d-flex align-items-center w-100">
+                                  <img src="assets/img/img_ova/proceso-creativo.png" width="40%" class="rounded-circle p-1 bg-color-rojo2">
+                                  <p>La ecología de los saberes </p>
+                                </div>
+                                <div class="content custom-scrollbar11">
+                                  <div class="custom-scrollbar__inner11">
+                                    <p class="text-justify">Frente a la lógica de la monocultura del saber y del rigor científico, cabe la posibilidad de una ecología más amplia de saberes, donde el saber científico pueda dialogar con el saber laico, con el saber popular, con el saber de los indígenas, con el saber de las poblaciones urbanas marginales, con el saber campesino, con el saber tradicional. </p>
+                                    <br>
+                                    <p class="text-justify">La ecología de los saberes propone que no hay ignorancia ni saber en general o en abstracto. Toda ignorancia es ignorante de un cierto saber y todo saber es la superación de una ignorancia particular, en un diálogo de saberes y conocimientos, incluidos los científicos.</p>
+                                  </div>
+                                  <div class="custom-scrollbar__bar11">
+                                    <div class="custom-scrollbar__knob11 cursor">
+                                      <p class="text-center linea_scroll11">-</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-4 px-2">
-                              <div class="p-5 border-45 bg-color-rojo2 text-center">
+                            <div class="col-4 px-2 padreMostrar2"  onclick="mostrarTarjeta(2,'mostrar')">
+                              <div class="p-5 border-45 bg-color-rojo2 text-center mostrar2 shadow">
                                 <div class="bg-color-claro p-4 rounded-circle m-2">
                                   <img src="assets/img/img_ova/conciencia-de-si-mismo.png" width="100%">
                                 </div>
                                 <p>La ecología de las temporalidades</p>
                               </div>
+                              <div class="p-3 border-45 bg-color-claro text-center text-black contenidoMostrar2 transition-on shadow hidden">
+                                <div class="bg-color-claro m-2 d-flex align-items-center w-100">
+                                  <img src="assets/img/img_ova/conciencia-de-si-mismo.png" width="40%" class="rounded-circle p-1 bg-color-rojo2">
+                                  <p>La ecología de las temporalidades </p>
+                                </div>
+                                <div class="m-2">
+                                  <p class="text-justify">Frente a la lógica de la monocultura del tiempo lineal, hija de la secularización de la escatología judeo-cristiana en la modernidad occidental, la ecología de temporalidades asume la posibilidad de ampliar la contemporaneidad, porque a veces se producen encuentros simultáneos que son al mismo tiempo contemporáneos y extemporáneos.</p>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-4 px-2">
-                              <div class="p-5 border-45 bg-color-rojo2 text-center">
+                            <div class="col-4 px-2 padreMostrar3"  onclick="mostrarTarjeta(3,'mostrar')">
+                              <div class="p-5 border-45 bg-color-rojo2 text-center mostrar3 shadow">
                                 <div class="bg-color-claro p-4 rounded-circle m-2">
                                   <img src="assets/img/img_ova/orgullo.png" width="100%">
                                 </div>
                                 <p>La ecología de los reconocimientos</p>
                               </div>
+                              <div class="p-3 border-45 bg-color-claro text-center text-black contenidoMostrar3 transition-on shadow d-none">
+                                <div class="bg-color-claro m-2 d-flex align-items-center w-100">
+                                  <img src="assets/img/img_ova/orgullo.png" width="40%" class="rounded-circle p-1 bg-color-rojo2">
+                                  <p>La ecología de los reconocimientos</p>
+                                </div>
+                                <div class="m-2">
+                                  <p class="text-justify">Frente a la lógica de la monocultura de la naturalización hegemónica de las diferencias, la ecología de los reconocimientos procura una nueva articulación entre el principio de igualdad y el principio de diferencia, abre la posibilidad de diferencias iguales a partir de reconocimientos recíprocos, esto es, la posibilidad de aceptar las diferencias razonables que cuestionan las jerarquías sociales naturalizadas en un contexto de problematización y diálogo. </p>
+                                  <p>Haga clic en <i class="fas fa-caret-right text-danger h5"></i> para continuar: </p>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-1 d-flex justify-content-center align-items-center" id="flechaDispositiva1U5">
-                            <i class="fas fa-chevron-right text-danger h1 cursor"></i>
+                          <div class="col-1 d-flex justify-content-center mt-5 pt-5" id="flechaDispositiva1U5">
+                            <i class="fas fa-caret-right text-danger h1 cursor" onclick="pasarTarjetas(1)"></i>
+                            <i class="fas fa-caret-left text-danger h1 cursor d-none" onclick="pasarTarjetas(2)"></i>
                           </div>
-                          <div class="col-11 row d-none"  id="diapositiva2U5">
-                            <div class="col-4 px-2">
-                              <div class="p-5 border-45 bg-color-rojo2 text-center">
+                          <div class="col-11 row d-none transition-on" id="diapositiva2U5">
+                            <div class="col-4 px-2 padreMostrar4"  onclick="mostrarTarjeta(4,'mostrar')">
+                              <div class="p-5 border-45 bg-color-rojo2 text-center mostrar4 shadow">
                                 <div class="bg-color-claro p-4 rounded-circle m-2">
                                   <img src="assets/img/img_ova/red.png" width="100%">
                                 </div>
                                 <p>La ecología de las trans-escalas</p>
                               </div>
+                              <div class="p-3 border-45 bg-color-claro text-center text-black contenidoMostrar4 transition-on shadow d-none">
+                                <div class="bg-color-claro m-2 d-flex align-items-center w-100">
+                                  <img src="assets/img/img_ova/red.png" width="40%" class="rounded-circle p-1 bg-color-rojo2">
+                                  <p>La ecología de las trans-escalas </p>
+                                </div>
+                                <div class="content custom-scrollbar12">
+                                  <div class="custom-scrollbar__inner12">
+                                    <p class="text-justify">Frente a la lógica de la monocultura de la escala dominante global, cabe la posibilidad de articular diferentes análisis de escalas locales, nacionales y globales, las escalas y las cartografías de los fenómenos no coinciden necesariamente en un mismo plano epistémico y fenoménico,</p>
+                                    <br>
+                                    <p class="text-justify">se abre así la posibilidad de superar la ceguera epistémica por medio de topologías diferentes que nos permiten explicar y comprender fenómenos diversos y eventos complejos.</p>
+                                  </div>
+                                  <div class="custom-scrollbar__bar12">
+                                    <div class="custom-scrollbar__knob12 cursor">
+                                      <p class="text-center linea_scroll12">-</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-4 px-2">
-                              <div class="p-5 border-45 bg-color-rojo2 text-center">
+                            <div class="col-4 px-2 padreMostrar5"  onclick="mostrarTarjeta(5,'mostrar')">
+                              <div class="p-5 border-45 bg-color-rojo2 text-center mostrar5 shadow">
                                 <div class="bg-color-claro p-4 rounded-circle m-2">
                                   <img src="assets/img/img_ova/fabrica.png" width="100%">
                                 </div>
                                 <p>La ecología de las producciones</p>
+                              </div>
+                              <div class="p-3 border-45 bg-color-claro text-center text-black contenidoMostrar5 transition-on shadow d-none">
+                                <div class="bg-color-claro m-2 d-flex align-items-center w-100">
+                                  <img src="assets/img/img_ova/fabrica.png" width="40%" class="rounded-circle p-1 bg-color-rojo2">
+                                  <p>La ecología de las producciones </p>
+                                </div>
+                                <div class="content custom-scrollbar13">
+                                  <div class="custom-scrollbar__inner13">
+                                    <p class="text-justify">Frente a la lógica de la monocultura productivista, cabe la posibilidad de recuperar y valorar otros sistemas alternativos de producción, ya tradicionales, ya modernos que la ortodoxia productivista capitalista ha ocultado o desacreditado para subordinarlos.</p>
+                                    <br>
+                                    <p class="text-justify">Esta ecología pone en cuestión el paradigma del desarrollo y del crecimiento económico infinito y la lógica de la primacía de los objetivos de acumulación y distribución predominantes en los flujos actuales de las economías del mercado global. (p. 13).</p>
+                                  </div>
+                                  <div class="custom-scrollbar__bar13">
+                                    <div class="custom-scrollbar__knob13 cursor">
+                                      <p class="text-center linea_scroll13">-</p>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -491,7 +565,7 @@
                             <p class="text-justify">
                               La “Filosofía de la Liberación Latinoamericana” inicia impregnada de algunos temas de la Ilustración, pero sobretodo se deriva de la opresión de los criollos, se trata entonces de una filosofía de la emancipación y no de dependencia de estándares industriales del progreso capitalista europeo.
                               <br><br>
-                              Al aspecto Enrique Dussel sostiene que esta irrupción de una nueva generación contra, justamente, la dependencia española, no todavía contra la dependencia de los países capitalistas 36 centrales, deber ser estudiada como una filosofía que piensa desde su contexto, la educación. Haga clic en el botón para ver el ejemplo.
+                              Al aspecto Enrique Dussel sostiene que esta irrupción de una nueva generación contra, justamente, la dependencia española, no todavía contra la dependencia de los países capitalistas 8 centrales, deber ser estudiada como una filosofía que piensa desde su contexto, la educación. Haga clic en el botón para ver el ejemplo.
                             </p>
                             <div class="w-100 d-flex justify-content-center align-items-center mt-4">
                               <img src="assets/img/img_ova/ejemplo.png" width="30%" class="menos-marginR-50 zindex cursor" data-toggle="modal" data-target="#modal-ejemploU12">
