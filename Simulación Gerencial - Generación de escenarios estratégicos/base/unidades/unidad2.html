@@ -1,3 +1,51 @@
+<style>
+    .custom-scrollbar_uno{
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .custom-scrollbar__inner_uno {
+      height: 100%;
+      width: calc(100% + 40px);
+      padding-right: 75px;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-scrollbar__bar_uno {
+      position: absolute;
+      top: 18px;
+      bottom: 20px;
+      background:#811111;
+      width: 3px;
+      right: 30px;
+      /*right: 8px;*/
+      border-radius: 4px;
+
+    }
+
+    .custom-scrollbar__knob_uno {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #811111;
+      transform: translate(-50%, -50%);
+      will-change: top;
+      cursor: pointer;
+    }
+
+    .linea_scroll_uno {
+      font-size: 50px;
+        margin: 0px;
+        position: relative;
+        top: -32px;
+        color: #FFFFFF;
+    }
+</style>
 <div class="container-fluid" data-unidad="2">
     <div class="fade-in">
         <div class="row">
@@ -161,6 +209,75 @@
                                             <h1 class="p_white text-center mx-auto" style="color: #7C00CC;">5</h1>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-4" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3 class="color-text">Síntesis del entorno empresarial</h3>
+                              <br>
+                              <p class="p_black justificado">Para la buena apropiación de este aspecto es importante que la cantidad de información pueda ser depurada y simplemente encontrar el enfoque que impacta a la empresa. Para ello es fundamental priorizar y resumir la información que nos aclare el panorama en las acciones al desarrollo del plan estratégico. La priorización y el otorgarle el nivel de importancia es importante debido  que en ningún momento los recursos serán suficientes para todas las estrategias, objetivos, metas y planes que en un momento se pretendan desarrollar.</p>
+                              <br>
+                              <p class="p_black justificado">La implementación de la planeación estratégica en una empresa obliga a la organización a realizar un diagnóstico interno y externo de los factores que interactúan en el medio, fijar el tiempo para la identificación de estos y también los recursos que puedan estar asociados a dichos factores.</p>
+                              <br>
+                              <p class="radius-2 p_white justificado p-3" style="background: #393A72;"><b>De clic en la imagen para conocer los objetivos y la función principal del análisis del entorno empresarial:</b></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <img src="assets/img/img_ova/DOFA.png" class="img-100" data-toggle="modal" data-target="#modal_info_6">
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-5" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h3 class="color-text">Matriz de Perfil Competitivo MPC</h3>
+                              <br>
+                              <p class="p_black justificado">Esta identifica a los principales competidores de la empresa, así como sus fortalezas y debilidades particulares, en relación con una muestra de la posición estratégica de la empresa. Los factores de una MPC incluyen cuestiones internas y externas; las calificaciones se refieren a las fuerzas y a las debilidades (María de los Ángeles Pérez Cepeda, n.d.).</p>
+                              <br>
+                              <p class="p_black justificado">Para asignar el peso en la Matriz, cada factor crítico de éxito debe tener un peso relativo que oscila entre 0,0 (poca importancia) a 1.0 (alta importancia). El número indica la importancia que tiene el factor en la industria (María de los Ángeles Pérez Cepeda, n.d.).</p>
+                              <br>
+                              <p class="radius-2 p_white justificado p-3" style="background: #393A72;"><b>De clic en los íconos para conocer en qué consiste el rating y el puntaje de una empresa:</b></p>
+                              <br>
+                            </div>
+                            <div class="col-md-12" onmouseenter="scroll_uno()">
+                                <div>
+                                  <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="assets/img/img_ova/romboide-1.png" class="img-100" data-toggle="modal" data-target="#modal_info_7">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/img/img_ova/romboide-2.png" class="img-100" data-toggle="modal" data-target="#modal_info_8">
+                                    </div>
+                                    <div class="col-md-6 custom-scrollbar_uno">
+                                        <div class="custom-scrollbar__inner_uno">
+                                            <p class="justificado">La importancia de la Matriz de Perfil Competitivo es que esta nos permite colocar la competencia de la empresa e iniciar una evaluación de los mismos aspectos, identificando posibles acciones de mejora para mi empresa en comparación con las otras. La finalidad no es competir, es fortalecer los factores de la empresa que están por debajo de las demás.</p>
+                                            <br>
+                                            <p class="justificado">La matriz de perfil competitivo identifica a los principales competidores de la empresa, así como sus fortalezas y debilidades particulares, en relación con una muestra de la posición estratégica de la empresa. Los valores y los puntajes de valor total tanto en la MPC como en la matriz MEFE tienen el mismo significado.</p>
+                                        </div>
+                                        <div class="custom-scrollbar__bar_uno">
+                                            <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                        </div>
+                                    </div>
+
+                                  </div>
                                 </div>
                             </div>
                           </div>
@@ -559,6 +676,141 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-6" id="info_funcionalidad_2_4">
+                        <div class="img-20 d-flex">
+                            <img src="assets/img/img_ova/ESTRATEGIA 3.png" class="position-relative m-auto img-100" style="top: -30px;">
+                        </div>
+                        <div>
+                          <p class="p_black justificado">Para la buena apropiación de este aspecto es importante que la <b>cantidad de información</b> pueda ser <b>depurada</b> y simplemente <b>encontrar el enfoque</b> que impacta a la empresa. Para ello es fundamental <b>priorizar</b> y <b>resumir</b> la información que nos aclare el panorama en las acciones al desarrollo del plan estratégico.</p>
+                        </div>
+                        <p class="radius-2 p_white justificado p-3 my-3 text-center" style="background: #393A72;">Visualice el siguiente video para ampliar la información:</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-100 h-100 p-3 radius-2" style="border: solid #393A72 4px;">
+                            
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h3 class="p_white m-auto text-center"><b>El Rating</b></h3>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12">
+                        <div class="position-relative radius-50 d-flex" style="background: #393A72; top: -100px; left: -80px; width: 100px; height: 100px;">
+                            <img src="assets/img/img_ova/rank.png" class="m-auto img-70">
+                        </div>
+                        <p class="p_black justificado">Se refiere a lo bien que lo están haciendo las empresas en cada área. Van desde 4 en donde cada valor significa:</p>
+                    </div>
+                    <div class="col-md-12 p-3">
+                        <img src="assets/img/img_ova/infografia2.png" class="m-auto img-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h3 class="p_white m-auto text-center"><b>Puntaje</b></h3>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12">
+                        <div class="position-relative radius-50 d-flex" style="background: #393A72; top: -100px; left: -80px; width: 100px; height: 100px;">
+                            <img src="assets/img/img_ova/clasificacion.png" class="m-auto img-70">
+                        </div>
+                        <p class="p_black justificado">Es el resultado de la multiplicación del peso por el rating. Cada empresa recibe una puntuación en cada factor (María de los Ángeles Pérez Cepeda, n.d.).</p>
+                    </div>
+                    <div class="col-md-12 p-3">
+                        <img src="assets/img/img_ova/matriz-perfil-competitivo.png" class="m-auto img-100">
+                        <p class="p_black text-center">Fuente: María de los Ángeles Pérez Cepeda "Matriz de Perfil Competitivo"</p>
                     </div>
                   </div>
               </div>

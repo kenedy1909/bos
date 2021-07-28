@@ -33,10 +33,9 @@ $( document ).ready(function() {
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob4');
-    bar = document.querySelector('.custom-scrollbar__bar4');
-    container = document.querySelector('.custom-scrollbar__inner4');
-    scroll();
+    knob = "";
+    bar = "";
+    container = "";
 
     slide_link(tema);
 });
@@ -468,4 +467,10 @@ function funcionalidad_2(num) {
         default:
             break;
     }
+}
+function scroll_uno() {
+    knob = document.querySelector('.custom-scrollbar__knob_uno');
+    bar = document.querySelector('.custom-scrollbar__bar_uno');
+    container = document.querySelector('.custom-scrollbar__inner_uno');
+    scroll();
 }
