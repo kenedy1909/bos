@@ -1,3 +1,97 @@
+<style>
+    .custom-scrollbar_uno{
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .custom-scrollbar__inner_uno {
+      height: 100%;
+      width: calc(100% + 40px);
+      padding-right: 75px;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-scrollbar__bar_uno {
+      position: absolute;
+      top: 18px;
+      bottom: 20px;
+      background:#811111;
+      width: 3px;
+      right: 30px;
+      /*right: 8px;*/
+      border-radius: 4px;
+
+    }
+
+    .custom-scrollbar__knob_uno {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #811111;
+      transform: translate(-50%, -50%);
+      will-change: top;
+      cursor: pointer;
+    }
+
+    .linea_scroll_uno {
+      font-size: 50px;
+        margin: 0px;
+        position: relative;
+        top: -32px;
+        color: #FFFFFF;
+    }
+    .custom-scrollbar_dos, .custom-scrollbar_tres{
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    .custom-scrollbar__inner_dos, .custom-scrollbar__inner_tres {
+      height: 100%;
+      width: calc(100% + 40px);
+      padding-right: 75px;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-scrollbar__bar_dos, .custom-scrollbar__bar_tres {
+      position: absolute;
+      top: 18px;
+      bottom: 20px;
+      background:#FFFFFF;
+      width: 3px;
+      right: 30px;
+      /*right: 8px;*/
+      border-radius: 4px;
+
+    }
+
+    .custom-scrollbar__knob_dos, .custom-scrollbar__knob_tres {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      transform: translate(-50%, -50%);
+      will-change: top;
+      cursor: pointer;
+    }
+
+    .linea-scroll_dos, .linea-scroll_tres {
+      font-size: 50px;
+        margin: 0px;
+        position: relative;
+        top: -32px;
+        color: #393A72;
+    }
+</style>
 <div class="container-fluid" data-unidad="2">
     <div class="fade-in">
         <div class="row">
@@ -69,6 +163,290 @@
                                 </div>
                                 <p class="p_black justificado">La comprensión de la cadena de valor, el comportamiento de las debilidades y amenazas que rondan a la organización generan la necesidad de las empresas de identificar su propuesta de valor ante las demás, que le permita ser sostenibles en el tiempo. Es por esto importante realizar un diagnóstico estratégico.</p>
                             </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-2" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row pl-5">
+                            <div class="col-md-6" style="min-height: 550px;">
+                              <p class="radius-2 p_white justificado p-3" style="background: #5355A7;">De clic en los diferentes íconos para ampliar la información sobre diagnóstico estratégico:</p>
+                              <br>
+                              <div class="position-relative mt-5 bg-blanco radius-2 p-3" style="border: solid #393A72 4px;">
+                                  <div class="position-absolute radius-50 bg-blanco d-flex" id="info_funcionalidad_1_1" style="width: 80px; height: 80px; top: -40px; left: -40px; border: solid #393A72 4px;">
+                                      <img src="assets/img/img_ova/DIAGNOSTICO1.png" class="img-75 m-auto">
+                                  </div>
+                                  <div class="py-3">
+                                      <h2 class="text-center" style="color: #E9464F;"><b>Diagnóstico estratégico</b></h2>
+                                      <div id="info_funcionalidad_1_2">
+                                          <p class="p_black justificado">Cuando se define la intencionalidad es necesario empezar por definir los intereses que se tienen; como el análisis de problemáticas que no son aisladas de las dificultades que no fueron identificadas con anterioridad denominadas “pandillas” al referirnos a esas  problemáticas. Para atenderlas será mucho más fácil y efectivo si se han identificado plenamente la confluencia de problemas que las integran y para esto es necesario:</p>
+                                      </div>
+                                  </div>
+                                  <div class="d-flex">
+                                      <div class="img-50 m-auto d-flex">
+                                          <div class="img-20 d-flex">
+                                              <div class="radius-50" onclick="funcionalidad_1(1)" style="background: #393A72; width: 15px; height: 15px; cursor: pointer;"></div>
+                                          </div>
+                                          <div class="img-20 d-flex">
+                                              <div class="radius-50" onclick="funcionalidad_1(2)" style="background: #393A72; width: 15px; height: 15px; cursor: pointer;"></div>
+                                          </div>
+                                          <div class="img-20 d-flex">
+                                              <div class="radius-50" onclick="funcionalidad_1(3)" style="background: #393A72; width: 15px; height: 15px; cursor: pointer;"></div>
+                                          </div>
+                                          <div class="img-20 d-flex">
+                                              <div class="radius-50" onclick="funcionalidad_1(4)" style="background: #393A72; width: 15px; height: 15px; cursor: pointer;"></div>
+                                          </div>
+                                          <div class="img-20 d-flex">
+                                              <div class="radius-50" onclick="funcionalidad_1(5)" style="background: #393A72; width: 15px; height: 15px; cursor: pointer;"></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 p-0">
+                                <div class="d-flex h-100">
+                                    <img src="assets/img/img_ova/fondo7.png" class="img-100 mt-auto" style="transform: rotateY(180deg);">
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-3" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <h3 class="color-text">Matriz DOFA – FODA</h3>
+                              <br>
+                              <p class="p_black justificado">Brindaremos una definición a la matriz debilidades, oportunidades, fortalezas y amenazas. Es un instrumento de apoyo para los gerentes que les permite desarrollar cuatro tipos de estrategias: estrategias de fortalezas y debilidades, estrategias de debilidades y oportunidades, estrategias de fortalezas y amenazas y estrategias de debilidades y amenazas.</p>
+                              <br>
+                              <p class="p_black justificado">Al momento de adaptarla a la empresa se puede manifestar dificultades al lograr observar los factores internos y externos, debido a que se requiere de juicios sólidos y objetivos identificados. La acertada aplicación de esta es de gran apoyo para la planificación estratégica. Algunos de los pasos para la realización de la Matriz DOFA, podrían resumirse de la siguiente manera:</p>
+                              <br>
+                              <p class="radius-2 p_white justificado p-3" style="background: #5355A7;">De clic en los íconos para ampliar la información:</p>
+                            </div>
+                            <div class="border-left-color-o" style="width: 400px;">
+                                <div class="d-flex h-100">
+                                    <div class="position-relative m-auto">
+                                        <img src="assets/img/img_ova/ESQUEMA3.png" class="img-100 m-auto">
+                                        <div class="position-absolute" data-toggle="modal" data-target="#modal_info_1" style="width: 130px; top: 175px; left: 130px; height: 40px;">
+                                        </div>
+                                        <div class="position-absolute d-flex" data-toggle="modal" data-target="#modal_info_1" style="width: 40px; top: 130px; left: 175px; height: 130px;">
+                                            <h1 class="p_white text-center m-auto">1</h1>
+                                        </div>
+                                        <div class="position-absolute d-flex radius-6" data-toggle="modal" data-target="#modal_info_2" style="width: 176px; top: 7px; left: 7px; height: 176px;">
+                                            <h1 class="p_white text-center mx-auto" style="color: #FFB526;">2</h1>
+                                        </div>
+                                        <div class="position-absolute d-flex radius-6" data-toggle="modal" data-target="#modal_info_3" style="width: 176px; top: 7px; left: 210px; height: 176px;">
+                                            <h1 class="p_white text-center mx-auto" style="color: #FF6261;">3</h1>
+                                        </div>
+                                        <div class="position-absolute d-flex radius-6" data-toggle="modal" data-target="#modal_info_4" style="width: 176px; top: 210px; left: 7px; height: 176px;">
+                                            <h1 class="p_white text-center mx-auto" style="color: #FF0E88;">4</h1>
+                                        </div>
+                                        <div class="position-absolute d-flex radius-6" data-toggle="modal" data-target="#modal_info_5" style="width: 176px; top: 210px; left: 210px; height: 176px;">
+                                            <h1 class="p_white text-center mx-auto" style="color: #7C00CC;">5</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-4" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3 class="color-text">Síntesis del entorno empresarial</h3>
+                              <br>
+                              <p class="p_black justificado">Para la buena apropiación de este aspecto es importante que la cantidad de información pueda ser depurada y simplemente encontrar el enfoque que impacta a la empresa. Para ello es fundamental priorizar y resumir la información que nos aclare el panorama en las acciones al desarrollo del plan estratégico. La priorización y el otorgarle el nivel de importancia es importante debido  que en ningún momento los recursos serán suficientes para todas las estrategias, objetivos, metas y planes que en un momento se pretendan desarrollar.</p>
+                              <br>
+                              <p class="p_black justificado">La implementación de la planeación estratégica en una empresa obliga a la organización a realizar un diagnóstico interno y externo de los factores que interactúan en el medio, fijar el tiempo para la identificación de estos y también los recursos que puedan estar asociados a dichos factores.</p>
+                              <br>
+                              <p class="radius-2 p_white justificado p-3" style="background: #393A72;"><b>De clic en la imagen para conocer los objetivos y la función principal del análisis del entorno empresarial:</b></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div>
+                                    <img src="assets/img/img_ova/DOFA.png" class="img-100" data-toggle="modal" data-target="#modal_info_6">
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-5" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h3 class="color-text">Matriz de Perfil Competitivo MPC</h3>
+                              <br>
+                              <p class="p_black justificado">Esta identifica a los principales competidores de la empresa, así como sus fortalezas y debilidades particulares, en relación con una muestra de la posición estratégica de la empresa. Los factores de una MPC incluyen cuestiones internas y externas; las calificaciones se refieren a las fuerzas y a las debilidades (María de los Ángeles Pérez Cepeda, n.d.).</p>
+                              <br>
+                              <p class="p_black justificado">Para asignar el peso en la Matriz, cada factor crítico de éxito debe tener un peso relativo que oscila entre 0,0 (poca importancia) a 1.0 (alta importancia). El número indica la importancia que tiene el factor en la industria (María de los Ángeles Pérez Cepeda, n.d.).</p>
+                              <br>
+                              <p class="radius-2 p_white justificado p-3" style="background: #393A72;"><b>De clic en los íconos para conocer en qué consiste el rating y el puntaje de una empresa:</b></p>
+                              <br>
+                            </div>
+                            <div class="col-md-12" onmouseenter="scroll_uno()">
+                                <div>
+                                  <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="assets/img/img_ova/romboide-1.png" class="img-100" data-toggle="modal" data-target="#modal_info_7">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="assets/img/img_ova/romboide-2.png" class="img-100" data-toggle="modal" data-target="#modal_info_8">
+                                    </div>
+                                    <div class="col-md-6 custom-scrollbar_uno">
+                                        <div class="custom-scrollbar__inner_uno">
+                                            <p class="justificado">La importancia de la Matriz de Perfil Competitivo es que esta nos permite colocar la competencia de la empresa e iniciar una evaluación de los mismos aspectos, identificando posibles acciones de mejora para mi empresa en comparación con las otras. La finalidad no es competir, es fortalecer los factores de la empresa que están por debajo de las demás.</p>
+                                            <br>
+                                            <p class="justificado">La matriz de perfil competitivo identifica a los principales competidores de la empresa, así como sus fortalezas y debilidades particulares, en relación con una muestra de la posición estratégica de la empresa. Los valores y los puntajes de valor total tanto en la MPC como en la matriz MEFE tienen el mismo significado.</p>
+                                        </div>
+                                        <div class="custom-scrollbar__bar_uno">
+                                            <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-6" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 d-flex">
+                              <h3 class="color-text img-45 mr-auto">Matriz de vulnerabilidad (McKinsey –GE) y otras</h3>
+                              <p class="radius-2 p_white justificado p-3 img-45 ml-auto" style="background: #811111;"><b>Realizar la lectura siguiendo el orden que dan los números</b></p>
+                            </div>
+                            <div class="position-relative col-md-11 m-4 d-flex" style="min-height: 450px;">
+                                <img src="assets/img/img_ova/matriz4.png" class="m-auto img-35" style="z-index: 2;">
+                                <div class="position-absolute img-40 p-3 radius-2" onmouseenter="scroll_dos()" style="background: #393A72; z-index: 1; left: 0px; top: 0px;">
+                                    <div class="img-100 custom-scrollbar_dos px-3">
+                                        <div class="custom-scrollbar__inner_dos">
+                                            <p class="p_white justificado">Esta la definimos como una matriz utilizada para el análisis de la vulnerabilidad del negocio u oportunidades, es una matriz que permite mejor análisis y que ubica en un punto determinado, las unidades de negocio de la organización.</p>
+                                            <br>
+                                            <p class="p_white justificado">Cada oportunidad del negocio se analizará en término de dos dimensiones; atractividad del mercado y posición competitiva; donde a cada uno de los factores se le dará una importancia porcentual y se calificará de 1 a 5, donde 1 es la calificación más baja y 5 es la más alta. (Porter.2009).</p>
+                                        </div>
+                                        <div class="custom-scrollbar__bar_dos">
+                                            <div class="custom-scrollbar__knob_dos cursor"><p class="text-center linea-scroll_dos">-</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute img-40 p-3 radius-2" onmouseenter="scroll_tres()" style="background: #393A72; z-index: 1; right: 0px; top: 0px;">
+                                    <div class="img-100 custom-scrollbar_tres px-3">
+                                        <div class="custom-scrollbar__inner_tres">
+                                            <p class="p_white justificado">Dicha matriz arroja como resultado una ubicación en un plano de 9 cuadrantes, donde se indica la posición competitiva de la organización y la futura estrategia a continuar. Esta  estructura de la matriz de Mc Kinsey-GE, con las variables de entrada y las variables de salida.</p>
+                                            <br>
+                                            <p class="p_white justificado">Obsérvese que en el mapa de salida nos muestra la posición competitiva y lo atractivo de las unidades de negocio de las empresas en la ponderación de cada uno de los factores de la empresa se debe ser muy objetiva para evitar sesgos en el proceso.</p>
+                                        </div>
+                                        <div class="custom-scrollbar__bar_tres">
+                                            <div class="custom-scrollbar__knob_tres cursor"><p class="text-center linea-scroll_tres">-</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute img-40 p-3 radius-2" style="background: #393A72; z-index: 1; left: 0px; bottom: 0px;">
+                                    <div class="img-100">
+                                        <div class="px-3">
+                                            <p class="p_white justificado">Podemos visualizar la estrategia a seguir, de acuerdo con las calificaciones realizadas y la ubicación en los cuadrantes de competitividad y atracción de las unidades de negocio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute img-40 p-3 radius-2" style="background: #393A72; z-index: 1; right: 0px; bottom: 0px;">
+                                    <div class="img-100">
+                                        <div class="d-flex">
+                                            <img src="assets/img/img_ova/LINEAS ESTRATEGICAS.png" data-toggle="modal" data-target="#modal_info_9" class="m-auto img-60">
+                                        </div>
+                                        <p class="p_white text-center"><b>Clic para ampliar la imagen</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-7" class="tab-pane" role="tabpanel">
+                          <div class="row px-3">
+                            <div class="col-md-12 col-sm-12 p-2">
+                              <div class="row">
+                                <div class="col-md-5 row">
+                                   <img src="assets/img/img_ova/cerebro-engranaje.png" class="img-activi">
+                                   <div class="content-text-img-activi-2 mt-3 d-flex">
+                                     <h3 class=" m-auto"><b class="text-img-actividad" style="color: #561E27 !important; border-bottom: solid #561E27 4px;">ESTUDIO DE CASO</b></h3>
+                                   </div>
+                                </div>
+                                <div class="col-md-7 shadow contenedor_indi" style=" background: #5355A7;">
+                                    <div class="">
+                                       <p class="row"><img src="assets/img/img_ova/copiar.png" class="logo_copiar" style=""><b style="color: white;">Actividad de indagación y profundización.</b></p> 
+                                    </div>
+                                    <div class="">
+                                        <p class="row"><img src="assets/img/img_ova/reloj.png" style="max-width: 33px;"><b style="color: white;font-size: 15px;width: 70%;">Tiempo sugerido: 10 horas.</b></p>
+                                    </div>
+                                </div>
+
+                                <div class="row pt-5 w-100">
+                                  <div class="col-md-10 col-sm-10 offset-md-1 radius-2 p-3" style="background: #393A72;">
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <p class="p_white justificado">Realice la propuesta de un plan estratégico de la empresa o proyecto que empezaron a desarrollar en la <b>OVA 1</b>, de acuerdo con los resultados obtenidos y respetándose la tendencia del análisis MICMAC y Mactor .</p>
+                                            <br>
+                                            <p class="p_white justificado">El desarrollo del caso propone trabajo en equipo, consultas investigativa y creatividad por parte del estudiante. Se realizará toda la propuesta estratégica y se hará una propuesta crítica.</p>
+                                            <br>
+                                            <p class="p_white justificado">Se proporcionará las herramientas o aplicativos para que desarrolle el caso.</p>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-3 offset-md-3 d-flex">
+                                    <div class="m-auto d-flex">
+                                      <div>
+                                        <img src="assets/img/img_ova/Sistema-de-información-organizacional.png" class="img-100 m-auto">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-8" class="tab-pane" role="tabpanel">
+                            <div class="row px-3">
+                              <div class="col-md-6 offset-md-3">
+                                  <h1 class="text-center color-text">¡FELICITACIONES! <img src="assets/img/img_ova/felicitaciones.png" alt="" style="width: 14%;"></h1>
+                              </div>
+                              <div class="col-md-12">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                      <img src="assets/img/img_ova/Sistema-de-información-organizacional.png" alt="" width="90%">
+                                    </div>
+                                    <div class="col-md-8" style="padding-top: 9%;">
+                                      <p class="text-center"><b>Ha llegado al final del contenido digital <span style="color: #811111;">Generación de escenarios estratégicos.</span></b></p>
+                                      <p class="text-center"><b>Continúe haciendo clic en evaluación para finalizar.</b></p>
+                                      <div class="h-100 d-flex justify-content-center align-items-center">
+                                        <a href="assets/PDF/Cuestionario Ova 2.docx" target="_blank"><button class="btn text-white" style="background: #811111;"><h2><b>Evaluación</b></h2></button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
                           </div>
                        </div>
                        <!-- <div id="unidad2-1" class="tab-pane" role="tabpanel">
@@ -191,6 +569,460 @@
             <span id="prev"><i class="fad fa-chevron-circle-left fa-3x"></i></span>
         </div>
     </div>
+</div>
+<div class="modal fade" id="modal_info_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 row" id="info_funcionalidad_2_1">
+                        <div class="col-md-2 p-0 d-flex">
+                            <img src="assets/img/img_ova/ACTIVIDAD 4.png" class="m-auto img-100">
+                        </div>
+                        <div class="col-md-10">
+                          <ul class="p_black">
+                              <li>Hacer una lista de las fortalezas internas claves.</li>
+                              <li>Hacer una lista de las debilidades internas decisivas.</li>
+                              <li>Hacer una lista de las oportunidades externas importantes.</li>
+                              <li>Hacer una lista de las amenazas externas claves.</li>
+                              <li>Las fortalezas internas con las oportunidades externas conforman las estrategias FO resultantes en la casilla apropiada.</li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="radius-2 p_white justificado p-3 my-3 text-center" style="background: #5355A7;">De clic en los botones para ampliar la información:</p>
+                        <div class="d-flex">
+                            <div class="img-25 m-auto d-flex">
+                                <div class="img-50 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(1)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-50 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(2)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 row" id="info_funcionalidad_2_2">
+                        <div class="col-md-10">
+                          <p class="p_black justificado">Las cifras no son mágicas y el objetivo no es obtener una sola cifra, sino más bien asimilar y evaluar la información de manera significativa con la finalidad de apoyar la toma de decisiones. Debemos tener en cuenta la incertidumbre, mediante la identificación de las oportunidades y amenazas en el entorno, y se puede anticipar lo que otros actores pueden hacer y que puedan afectar la empresa.</p>
+                        </div>
+                        <div class="col-md-2 p-0 d-flex">
+                            <img src="assets/img/img_ova/LISTA.png" class="m-auto img-100">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="radius-2 p_white justificado p-3 my-3 text-center" style="background: #5355A7;">De clic en los botones para ampliar la información</p>
+                        <div class="d-flex">
+                            <div class="img-25 m-auto d-flex">
+                                <div class="img-50 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(3)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-50 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(4)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 row">
+                        <div class="col-md-4 d-flex">
+                            <img src="assets/img/img_ova/DIAGRAMA1.png" class="m-auto img-100">
+                        </div>
+                        <div class="col-md-8 d-flex">
+                          <p class="p_black justificado m-auto">Para la identificación de estas variables las empresas deben conocer que Las oportunidades y amenazas se identifican teniendo en mente los objetivos de la empresa y las fortalezas y debilidades, por su parte, se identifican teniendo en mente las oportunidades y amenazas. Determinadas características de una empresa pueden ser fortalezas o debilidades, dependiendo de las oportunidades y amenazas.</p>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 row" id="info_funcionalidad_2_3">
+                        <div class="col-md-10">
+                          <p class="p_black justificado">La Matriz DOFA puede emplear tipología de estrategias las cuales se describen a continuación, así:</p>
+                          <ul class="p_black">
+                              <li>Las oportunidades que se aprovechan con las fortalezas originan estrategias ofensivas.</li>
+                              <li>Las que se deben de enfrentar teniendo debilidades generan estrategias adaptativas.</li>
+                              <li>Las amenazas que se enfrentan con fortalezas originan estrategias reactivas.</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 p-0 d-flex">
+                            <img src="assets/img/img_ova/matriz 1.png" class="m-auto img-100">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="radius-2 p_white justificado p-3 my-3 text-center" style="background: #5355A7;">De clic en los botones para ampliar la información</p>
+                        <div class="d-flex">
+                            <div class="img-25 m-auto d-flex">
+                                <div class="img-50 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(5)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-50 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(6)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 row" id="info_funcionalidad_2_4">
+                        <div class="col-md-10">
+                          <p class="p_black justificado">Ahora para formular estrategias a raíz de la Matriz DOFA se describirán cada una de las posibilidades, lo que define cada una de ellas y cuál es el campo de aplicación. enfocándose solo en los factores claves de éxito para la organización, así:</p>
+                        </div>
+                        <div class="col-md-2 p-0 d-flex">
+                            <img src="assets/img/img_ova/matriz3.png" class="m-auto img-100">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="radius-2 p_white justificado p-3 my-3 text-center" style="background: #5355A7;">De clic en los botones para ampliar la información:</p>
+                        <div class="d-flex">
+                            <div class="img-50 m-auto d-flex">
+                                <div class="img-20 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(7)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-20 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(8)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-20 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(9)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-20 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(10)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                                <div class="img-20 d-flex">
+                                    <div class="radius-50 m-auto" onclick="funcionalidad_2(11)" style="background: #75A1DE; width: 15px; height: 15px; cursor: pointer;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <!-- <h3 class="p_white m-auto text-center"><b>1. Diseño de un TPS</b></h3>
+ -->                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-6" id="info_funcionalidad_2_4">
+                        <div class="img-20 d-flex">
+                            <img src="assets/img/img_ova/ESTRATEGIA 3.png" class="position-relative m-auto img-100" style="top: -30px;">
+                        </div>
+                        <div>
+                          <p class="p_black justificado">Para la buena apropiación de este aspecto es importante que la <b>cantidad de información</b> pueda ser <b>depurada</b> y simplemente <b>encontrar el enfoque</b> que impacta a la empresa. Para ello es fundamental <b>priorizar</b> y <b>resumir</b> la información que nos aclare el panorama en las acciones al desarrollo del plan estratégico.</p>
+                        </div>
+                        <p class="radius-2 p_white justificado p-3 my-3 text-center" style="background: #393A72;">Visualice el siguiente video para ampliar la información:</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-100 h-100 p-3 radius-2" style="border: solid #393A72 4px;">
+                            
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h3 class="p_white m-auto text-center"><b>El Rating</b></h3>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12">
+                        <div class="position-relative radius-50 d-flex" style="background: #393A72; top: -100px; left: -80px; width: 100px; height: 100px;">
+                            <img src="assets/img/img_ova/rank.png" class="m-auto img-70">
+                        </div>
+                        <p class="p_black justificado">Se refiere a lo bien que lo están haciendo las empresas en cada área. Van desde 4 en donde cada valor significa:</p>
+                    </div>
+                    <div class="col-md-12 p-3">
+                        <img src="assets/img/img_ova/infografia2.png" class="m-auto img-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h3 class="p_white m-auto text-center"><b>Puntaje</b></h3>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12">
+                        <div class="position-relative radius-50 d-flex" style="background: #393A72; top: -100px; left: -80px; width: 100px; height: 100px;">
+                            <img src="assets/img/img_ova/clasificacion.png" class="m-auto img-70">
+                        </div>
+                        <p class="p_black justificado">Es el resultado de la multiplicación del peso por el rating. Cada empresa recibe una puntuación en cada factor (María de los Ángeles Pérez Cepeda, n.d.).</p>
+                    </div>
+                    <div class="col-md-12 p-3">
+                        <img src="assets/img/img_ova/matriz-perfil-competitivo.png" class="m-auto img-100">
+                        <p class="p_black text-center">Fuente: María de los Ángeles Pérez Cepeda "Matriz de Perfil Competitivo"</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 p-3">
+                        <img src="assets/img/img_ova/LINEAS ESTRATEGICAS.png" class="m-auto img-100">
+                        <p class="p_black text-center">Fuente: Elaboración propia</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 

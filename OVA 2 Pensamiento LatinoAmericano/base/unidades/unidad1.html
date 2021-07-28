@@ -76,6 +76,10 @@
                             <a class="nav-link" href="#unidad1-18">
                             </a>
                         </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-19">
+                            </a>
+                        </li>
                     </ul>
                     <div class="tab-content">
 
@@ -89,31 +93,50 @@
                           </div>
                         </div>
                         <div class="row mt-3">
-                          <div class="col-6 border-r p-4">
+                          <div class="col-5 border-r p-4">
                             <p class="text-justify">
                               La realidad actual latinoamericana tiene condiciones singulares de las luchas emancipadoras de sus habitantes, como lo son la búsqueda del reconocimiento de los derechos asociados a la diversidad de género y al pluralismo étnico y cultural. Los procesos de reconocimiento de sus derechos son más complejos cuando convergen dichas realidades.
                             </p>
-                            <p class="color-title"><b>
+                            <p class="color-title mt-4"><b>
                               Haga clic sobre las imágenes para ampliar la información sobre las condiciones singulares de la sociedad latinoamericana:
                             </b></p>
-                            <div class="row mt-2">
+                            <div class="row mt-5 pt-3">
                               <div class="col-6 text-center">
                                 <div class="rounded-circle bg-color-claro text-center p-3">
-                                  <img src="assets/img/img_ova/ejemplo.png" width="65%">
+                                  <img src="assets/img/img_ova/ejemplo.png" width="65%" class="agregar1" onclick="agregarContenido(1,'agregar')">
                                 </div>
-                                <a class="btn btn-lg bg-color btnU1 text-black h4 menos-marginT-10"><b>Ejemplo</b></a>
+                                <a class="btn btn-lg bg-color btnU1 text-black h4 menos-marginT-10 agregar1" onclick="agregarContenido(1,'agregar')"><b>Ejemplo</b></a>
                               </div>
                               <div class="col-6 text-center">
                                 <div class="rounded-circle bg-color-claro text-center p-3">
-                                  <img src="assets/img/img_ova/amigo.png" width="65%">
+                                  <img src="assets/img/img_ova/amigo.png" width="65%" class="agregar2" onclick="agregarContenido(2,'agregar')">
                                 </div>
-                                <a class="btn btn-lg bg-color btnU1 text-black h4 menos-marginT-10"><b>Recordar</b></a>
+                                <a class="btn btn-lg bg-color btnU1 text-black h4 menos-marginT-10 agregar2" onclick="agregarContenido(2,'agregar')"><b>Recordar</b></a>
                               </div>
                             </div>
                           </div>
-                          <div class="col-6">
-                            <div class="fondoU1">
-
+                          <div class="col-7">
+                            <div class="fondoU1" id="contenidoAgregar d-flex justify-content-center align-items-center">
+                              <div class="contenidoAgregar1 w-100 h-100 bg-trasparente px-3 d-none">
+                                <div class="rounded-circle bg-color-rojo2-trasparente p-5">
+                                  <p class="text-justify my-5 text-white">
+                                    Por ejemplo, la pertenencia a una minoría étnica en condiciones de pobreza y con una elección sexual diversa. 
+                                    <br><br>
+                                    La articulación de estas realidades minoritarias implica que la tarea del     Estado Social de Derecho es garantizar que las minorías gocen de todos sus derechos constitucionales, aunque parezca contradictoria o incomprensible sus elecciones.
+                                    <br><br>
+                                    Las garantías de sus derechos no deben reducirse a la inclusión selectiva, sino completa de todos y cada uno de sus derechos fundamentales.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="contenidoAgregar2 w-100 h-100 bg-trasparente px-3 d-none">
+                                <div class="rounded-circle bg-color-rojo2-trasparente p-5">
+                                  <p class="text-center mt-5 h5 w-100 text-white">Para no olvidar</p>
+                                  <p class="text-justify mb-5 text-white">
+                                    Todo ello sirve para insistir en que aquellas identidades históricas coloniales –“indio”, “negro”, “blanco” y “mestizo”– y el complejo “raza” / “etnia” y sus consecuencias en el poder contemporáneo, son hechos que ocurrieron y ocurren en la cultura, en las relaciones intersubjetivas que forman la otra cara y el otro fundamento del poder, son igualmente originados y fundados en esa misma dimensión de la existencia social y están todo el tiempo asociados e implicados en las relaciones sociales materiales, ante todo en las formas de relacionadas con la producción que se modulan y se condicionan recíprocamente con estas relaciones; pero no son sus consecuencias, derivaciones, reflejos o superestructuras. 
+                                  </p>
+                                  <p class="text-center h5 w-100 text-white">(Quijano, 1993).</p>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -139,34 +162,63 @@
                           <div class="row">
                             <div class="col-3 py-3">
                               <div class="text-center">
-                                <img src="assets/img/img_ova/leer.png" width="50%" class="menos-marginB-25 zindex">
+                                <img src="assets/img/img_ova/leer.png" width="50%" class="menos-marginB-25 zindex cursor agregar1" onclick="agregarTarjeta(1,'agregar')">
                               </div>
-                              <div class="bg-color-celeste border-10 w-100 p-2 text-center">
-                                <p class="mt-4 mb-2" style="color: black!important;">Instrucción</p>
+                              <div class="bg-color-verde5 border-10 w-100 p-2 text-center cursor agregar1" onclick="agregarTarjeta(1,'agregar')">
+                                <p class="mt-4 mb-2 text-black h5"><b>Instrucción</b></p>
+                              </div>
+                              <div class="bg-color-verde6 border-rb-25 py-5 text-center mx-3 px-4 shadow transition-on hidden contenidoAgregar1">
+                                <p class="mt-4 mb-2 text-black h5 text-justify">Lea el siguiente texto y realice un informe de dos paginas sobre lo leído. </p>
+                              </div>
+
+                            </div>
+                            <div class="col-3 py-3">
+                              <div class="text-center">
+                                <img src="assets/img/img_ova/manuscrito.png" width="50%" class="menos-marginB-25 zindex cursor agregar2" onclick="agregarTarjeta(2,'agregar')">
+                              </div>
+                              <div class="bg-color-verde5 border-10 w-100 p-2 text-center cursor agregar2" onclick="agregarTarjeta(2,'agregar')">
+                                <p class="mt-4 mb-2 text-black h5"><b>Texto</b></p>
+                              </div>
+                              <div class="bg-color-verde6 border-rb-25 p-3 text-center mx-3  shadow transition-on hidden contenidoAgregar2">
+                                <p class="mt-4 mb-2 text-black h5 text-justify">¿Pueblo, Etnia o Nación? Hacía una clarificación antropológica de conceptos corporativos aplicables a las comunidades indígenas.  
+                                  <br> Haga clic en el símbolo para descargar el archivo.
+                                </p>
+                                <div class="w-100 text-center">
+                                  <a href="assets/PDF/pueblo,etniaonación.pdf" target="_blank"><img src="assets/img/img_template/Botonera-106.png" width="40%" class="cursor"></a>
+                                </div>
                               </div>
                             </div>
                             <div class="col-3 py-3">
                               <div class="text-center">
-                                <img src="assets/img/img_ova/manuscrito.png" width="50%" class="menos-marginB-25 zindex">
+                                <img src="assets/img/img_ova/Libro.png" width="50%" class="menos-marginB-25 zindex cursor agregar3" onclick="agregarTarjeta(3,'agregar')">
                               </div>
-                              <div class="bg-color-celeste border-10 w-100 p-2 text-center">
-                                <p class="mt-4 mb-2" style="color: black!important;">Instrucción</p>
+                              <div class="bg-color-verde5 border-10 w-100 p-2 text-center cursor agregar3" onclick="agregarTarjeta(3,'agregar')">
+                                <p class="mt-4 mb-2 text-black h5"><b>Ayuda pedagógica 1</b></p>
                               </div>
-                            </div>
-                            <div class="col-3 py-3">
-                              <div class="text-center">
-                                <img src="assets/img/img_ova/Libro.png" width="50%" class="menos-marginB-25 zindex">
-                              </div>
-                              <div class="bg-color-celeste border-10 w-100 p-2 text-center">
-                                <p class="mt-4 mb-2" style="color: black!important;">Instrucción</p>
+                              <div class="bg-color-verde6 border-rb-25 p-4 text-center mx-3  shadow transition-on hidden contenidoAgregar3">
+                                <div class="w-100 text-center">
+                                  <img src="assets/img/img_ova/peru.jpg" width="90%" class="cursor">
+                                </div>
+                                <p class="mt-4 mb-2 text-black h5 text-justify">Pase el mouse  sobre la imagen para ampliarla</p>
                               </div>
                             </div>
                             <div class="col-3 py-3">
                               <div class="text-center">
-                                <img src="assets/img/img_ova/idea.png" width="50%" class="menos-marginB-25 zindex">
+                                <img src="assets/img/img_ova/idea.png" width="50%" class="menos-marginB-25 zindex cursor agregar4" onclick="agregarTarjeta(4,'agregar')">
                               </div>
-                              <div class="bg-color-celeste border-10 w-100 p-2 text-center">
-                                <p class="mt-4 mb-2" style="color: black!important;">Instrucción</p>
+                              <div class="bg-color-verde5 border-10 w-100 p-2 text-center cursor agregar4" onclick="agregarTarjeta(4,'agregar')">
+                                <p class="mt-4 mb-2 text-black h5"><b>Ayuda pedagógica 2</b></p>
+                              </div>
+                              <div class="bg-color-verde6 border-rb-25 p-4 text-center mx-2 shadow transition-on hidden contenidoAgregar4">
+                                <p class="mt-4 mb-2 text-black h5 text-center border-10 bg-white p-3">Nación, etnia, clase y género</p>
+                                <div class="w-100 text-center mt-2">
+                                  <i class="fas fa-long-arrow-alt-down text-danger" style="font-size: 50px; font-weight: 900;"></i>
+                                </div>
+                                <p class="mb-2 text-black h5 text-center border-10 bg-white p-3">Relación interseccional</p>
+                                <div class="w-100 text-center mt-2">
+                                  <i class="fas fa-long-arrow-alt-down text-danger" style="font-size: 50px; font-weight: 900;"></i>
+                                </div>
+                                <p class="mb-2 text-black h5 text-center border-10 bg-white p-3">Exigencia de Derechos e inclusión diversa</p>
                               </div>
                             </div>
                           </div>
@@ -677,7 +729,11 @@
                       </div>
                       
                       <div id="unidad1-18" class="tab-pane" role="tabpanel">
-                         <!-- actividad interactiva -->
+                         <!-- actividad interactiva completar espacios-->
+                         <iframe src="actividades/actividad/activi4/index.html" frameborder="0" allowfullscreen></iframe>
+                      </div>
+                      <div id="unidad1-19" class="tab-pane" role="tabpanel">
+                         <!-- actividad interactiva falso o verdadero-->
                          <iframe src="actividades/actividad/activi4/index.html" frameborder="0" allowfullscreen></iframe>
                       </div>
                     </div>
