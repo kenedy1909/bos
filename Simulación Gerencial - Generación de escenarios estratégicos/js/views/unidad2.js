@@ -474,3 +474,15 @@ function scroll_uno() {
     container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
+function scroll_dos() {
+    knob = document.querySelector('.custom-scrollbar__knob_dos');
+    bar = document.querySelector('.custom-scrollbar__bar_dos');
+    container = document.querySelector('.custom-scrollbar__inner_dos');
+    scroll();
+}
+function scroll_tres() {
+    knob = document.querySelector('.custom-scrollbar__knob_tres');
+    bar = document.querySelector('.custom-scrollbar__bar_tres');
+    container = document.querySelector('.custom-scrollbar__inner_tres');
+    scroll();
+}

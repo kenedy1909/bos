@@ -45,6 +45,52 @@
         top: -32px;
         color: #FFFFFF;
     }
+    .custom-scrollbar_dos, .custom-scrollbar_tres{
+      position: relative;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    .custom-scrollbar__inner_dos, .custom-scrollbar__inner_tres {
+      height: 100%;
+      width: calc(100% + 40px);
+      padding-right: 75px;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .custom-scrollbar__bar_dos, .custom-scrollbar__bar_tres {
+      position: absolute;
+      top: 18px;
+      bottom: 20px;
+      background:#FFFFFF;
+      width: 3px;
+      right: 30px;
+      /*right: 8px;*/
+      border-radius: 4px;
+
+    }
+
+    .custom-scrollbar__knob_dos, .custom-scrollbar__knob_tres {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      transform: translate(-50%, -50%);
+      will-change: top;
+      cursor: pointer;
+    }
+
+    .linea-scroll_dos, .linea-scroll_tres {
+      font-size: 50px;
+        margin: 0px;
+        position: relative;
+        top: -32px;
+        color: #393A72;
+    }
 </style>
 <div class="container-fluid" data-unidad="2">
     <div class="fade-in">
@@ -278,6 +324,63 @@
                                     </div>
 
                                   </div>
+                                </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad2-6" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3>Generación de escenarios estratégicos</h3>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 d-flex">
+                              <h3 class="color-text img-45 mr-auto">Matriz de vulnerabilidad (McKinsey –GE) y otras</h3>
+                              <p class="radius-2 p_white justificado p-3 img-45 ml-auto" style="background: #811111;"><b>Realizar la lectura siguiendo el orden que dan los números</b></p>
+                            </div>
+                            <div class="position-relative col-md-11 m-4 d-flex" style="min-height: 450px;">
+                                <img src="assets/img/img_ova/matriz4.png" class="m-auto img-35" style="z-index: 2;">
+                                <div class="position-absolute img-40 p-3 radius-2" onmouseenter="scroll_dos()" style="background: #393A72; z-index: 1; left: 0px; top: 0px;">
+                                    <div class="img-100 custom-scrollbar_dos px-3">
+                                        <div class="custom-scrollbar__inner_dos">
+                                            <p class="p_white justificado">Esta la definimos como una matriz utilizada para el análisis de la vulnerabilidad del negocio u oportunidades, es una matriz que permite mejor análisis y que ubica en un punto determinado, las unidades de negocio de la organización.</p>
+                                            <br>
+                                            <p class="p_white justificado">Cada oportunidad del negocio se analizará en término de dos dimensiones; atractividad del mercado y posición competitiva; donde a cada uno de los factores se le dará una importancia porcentual y se calificará de 1 a 5, donde 1 es la calificación más baja y 5 es la más alta. (Porter.2009).</p>
+                                        </div>
+                                        <div class="custom-scrollbar__bar_dos">
+                                            <div class="custom-scrollbar__knob_dos cursor"><p class="text-center linea-scroll_dos">-</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute img-40 p-3 radius-2" onmouseenter="scroll_tres()" style="background: #393A72; z-index: 1; right: 0px; top: 0px;">
+                                    <div class="img-100 custom-scrollbar_tres px-3">
+                                        <div class="custom-scrollbar__inner_tres">
+                                            <p class="p_white justificado">Dicha matriz arroja como resultado una ubicación en un plano de 9 cuadrantes, donde se indica la posición competitiva de la organización y la futura estrategia a continuar. Esta  estructura de la matriz de Mc Kinsey-GE, con las variables de entrada y las variables de salida.</p>
+                                            <br>
+                                            <p class="p_white justificado">Obsérvese que en el mapa de salida nos muestra la posición competitiva y lo atractivo de las unidades de negocio de las empresas en la ponderación de cada uno de los factores de la empresa se debe ser muy objetiva para evitar sesgos en el proceso.</p>
+                                        </div>
+                                        <div class="custom-scrollbar__bar_tres">
+                                            <div class="custom-scrollbar__knob_tres cursor"><p class="text-center linea-scroll_tres">-</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute img-40 p-3 radius-2" style="background: #393A72; z-index: 1; left: 0px; bottom: 0px;">
+                                    <div class="img-100">
+                                        <div class="px-3">
+                                            <p class="p_white justificado">Podemos visualizar la estrategia a seguir, de acuerdo con las calificaciones realizadas y la ubicación en los cuadrantes de competitividad y atracción de las unidades de negocio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="position-absolute img-40 p-3 radius-2" style="background: #393A72; z-index: 1; right: 0px; bottom: 0px;">
+                                    <div class="img-100">
+                                        <div class="d-flex">
+                                            <img src="assets/img/img_ova/LINEAS ESTRATEGICAS.png" data-toggle="modal" data-target="#modal_info_9" class="m-auto img-60">
+                                        </div>
+                                        <p class="p_white text-center"><b>Clic para ampliar la imagen</b></p>
+                                    </div>
                                 </div>
                             </div>
                           </div>
@@ -811,6 +914,43 @@
                     <div class="col-md-12 p-3">
                         <img src="assets/img/img_ova/matriz-perfil-competitivo.png" class="m-auto img-100">
                         <p class="p_black text-center">Fuente: María de los Ángeles Pérez Cepeda "Matriz de Perfil Competitivo"</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info_9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-12 p-3">
+                        <img src="assets/img/img_ova/LINEAS ESTRATEGICAS.png" class="m-auto img-100">
+                        <p class="p_black text-center">Fuente: Elaboración propia</p>
                     </div>
                   </div>
               </div>
