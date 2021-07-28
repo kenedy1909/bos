@@ -864,7 +864,7 @@ function equivalencias(num) {
                                         <div class="col-md-1 d-none" id="equivalencia-2">
                                           <div class="radius-2 bg-cafe-c py-3 px-5 h-100 equivalencia-content-2">
                                             <div class="d-flex">
-                                              <p class="justificado p_white equivalencia-2">En el SI, por ejemplo, el metro en la unidad de longitud, pero resulta pequeño para medir el diámetro del Sol, pues seria 1.392.680.000 m, que sería lo mismo que 1.392.680 km o mejor 1,39268 Gm. En el otro sentido de la tabla de tamaños también es aplicable, por ejemplo, si algo mide 0,0000000015 m sería mejor expresarlo como 1,5 nm (que es lo mismos que 1,5x10-9 m).</p>
+                                              <p class="justificado p_white equivalencia-2">En el SI, por ejemplo, el metro en la unidad de longitud, pero resulta pequeño para medir el diámetro del Sol, pues seria 1.392.680.000 m, que sería lo mismo que 1.392.680 km o mejor 1,39268 Gm. En el otro sentido de la tabla de tamaños también es aplicable, por ejemplo, si algo mide 0,0000000015 m sería mejor expresarlo como 1,5 nm (que es lo mismos que 1,5x10<sup>-9</sup> m).</p>
                                               <div class="position-relative my-auto">
                                                 <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="left: 25px;"><img src="assets/img/img_ova/cientifico.png" class="img-100 m-auto"></div>
                                                 <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-2" onclick="equivalencias(2)"></div>
@@ -1313,10 +1313,10 @@ function teorias() {
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">Otra operación habitual en el producto escalar, este se realiza entre dos vectores y recibe este nombre porque el resultado no es un vector sino un numero escalar.  En términos geométricos debe entenderse como la proyección de un vector sobre el otro.</p>
+                                    <img src="assets/img/img_ova/imagen423.png" style="width:230px;">
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <p class="p_black justificado">El producto escalar de dos vectores A&#8407 y 𝐵&#8407 se denota como 𝐴&#8407 ∙𝐵&#8407  = 𝐴<sub>𝑥</sub> 𝐵<sub>𝑥</sub> + 𝐴<sub>𝑦</sub> 𝐵<sub>𝑦</sub>  =𝐴𝐵𝑐𝑜𝑠∅,  debido a esta notación, el producto escalar también se denomina producto punto. El ángulo ∅ en a la ecuación corresponde a el ángulo que forman los vectores 𝐴&#8407 y 𝐵&#8407 en el plano que los contiene.</p>
+                                    <img src="assets/img/img_ova/imagen422.png" style="width:230px;">
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
                                     <img src="assets/img/img_ova/imagen322.png" style="width:230px;">
