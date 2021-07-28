@@ -36,18 +36,7 @@ $( document ).ready(function() {
 
     slide_link(tema);
 });
-var pdf = `<div class="col-md-12">
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2. Introducción a los Conceptos Básicos de la TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 2. Introducción a los Conceptos Básicos de la TGS.pdf.pdf  <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
-$('.pdfs').html(pdf);
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -73,38 +62,79 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
             
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Desarrollo de las etapas de la Planeación Estratégica");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Desarrollo de las etapas de la Planeación Estratégica");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Desarrollo de las etapas de la Planeación Estratégica");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Planeación estratégica");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Planeación estratégica");
              
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
-            tema=1;
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Planeación estratégica");
+            
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Planeación estratégica");
+            
+            break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Planeación estratégica");
+            
+            break;
+
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
+            break;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
+            
             break;
         default:
             break;
@@ -489,6 +519,57 @@ function scroll_tres() {
     bar = document.querySelector('.custom-scrollbar__bar_tres');
     container = document.querySelector('.custom-scrollbar__inner_tres');
     scroll();
+}
+
+function globos(num){
+    switch (parseInt(num)) {
+        
+        case 1:
+            $('.globo').addClass('inactive');
+            $('.globo').removeClass('active');
+
+            $('.globo1').removeClass('inactive');
+            $('.globo1').addclass('active');
+            break;
+        case 2:
+            $('.globo').addClass('inactive');
+            $('.globo').removeClass('active');
+
+            $('.globo2').removeClass('inactive');
+            $('.globo2').addclass('active');
+            break;
+        case 3:
+            $('.globo').addClass('inactive');
+            $('.globo').removeClass('active');
+
+            $('.globo3').removeClass('inactive');
+            $('.globo3').addclass('active');
+            break;
+        case 4:
+            $('.globo').addClass('inactive');
+            $('.globo').removeClass('active');
+
+            $('.globo4').removeClass('inactive');
+            $('.globo4').addclass('active');
+            break;
+        default:
+            break;
+    }
+}
+
+function flecha_abajo(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.triangulocordeon').removeClass('abajo');
+            $('.triangulo1').addClass('abajo');
+            break;
+        case 2:
+            $('.triangulocordeon').removeClass('abajo');
+            $('.triangulo2').addClass('abajo');
+            break;
+        default:
+            break;
+    }
 }
 
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
