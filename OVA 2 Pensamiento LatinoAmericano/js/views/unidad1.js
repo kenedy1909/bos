@@ -1185,3 +1185,122 @@ function agregarTarjeta(num,estado) {
         }
     }
 }
+
+function mostrarTarjeta(num,estado) {
+
+    $('.contenidoMostrar1, .contenidoMostrar3, .contenidoMostrar4').addClass('d-none');
+    $('.contenidoMostrar2').addClass('hidden');
+    $('.mostrar1, .mostrar2, .mostrar3, .mostrar4').removeClass('d-none');
+
+
+    if (estado=='mostrar') {
+        if (num==1) {
+            scroll_set(11);
+            $('.padreMostrar1').addClass('ocultarMostrar1');
+            $('.padreMostrar1').removeClass('padreMostrar1');
+            
+            $('.contenidoMostrar1').removeClass('d-none');
+            $('.mostrar1').addClass('d-none');
+            
+            $('.ocultarMostrar1').attr('onclick',"mostrarTarjeta(1,'ocultar')");
+        }else if (num==2) {            
+            $('.padreMostrar2').addClass('ocultarMostrar2');
+            $('.padreMostrar2').removeClass('padreMostrar2');
+            
+            $('.contenidoMostrar2').removeClass('hidden');
+            $('.mostrar2').addClass('d-none');
+            
+            $('.ocultarMostrar2').attr('onclick',"mostrarTarjeta(2,'ocultar')");
+        }else if (num==3) {            
+            $('.padreMostrar3').addClass('ocultarMostrar3');
+            $('.padreMostrar3').removeClass('padreMostrar3');
+            
+            $('.contenidoMostrar3').removeClass('d-none');
+            $('.mostrar3').addClass('d-none');
+            
+            $('.ocultarMostrar3').attr('onclick',"mostrarTarjeta(3,'ocultar')");
+        }else if (num==4) {  
+            scroll_set(12);          
+            $('.padreMostrar4').addClass('ocultarMostrar4');
+            $('.padreMostrar4').removeClass('padreMostrar4');
+            
+            $('.contenidoMostrar4').removeClass('d-none');
+            $('.mostrar4').addClass('d-none');
+            
+            $('.ocultarMostrar4').attr('onclick',"mostrarTarjeta(4,'ocultar')");
+        }else if (num==5) { 
+            scroll_set(13);           
+            $('.padreMostrar5').addClass('ocultarMostrar5');
+            $('.padreMostrar5').removeClass('padreMostrar5');
+            
+            $('.contenidoMostrar5').removeClass('d-none');
+            $('.mostrar5').addClass('d-none');
+            
+            $('.ocultarMostrar5').attr('onclick',"mostrarTarjeta(5,'ocultar')");
+        }
+
+    }else if(estado=='ocultar'){
+
+        if (num==1) {
+            $('.ocultarMostrar1').addClass('padreMostrar1');
+            $('.ocultarMostrar1').removeClass('ocultarMostrar1');
+            
+            $('.contenidoMostrar1').addClass('d-none');
+            $('.mostrar1').removeClass('d-none');
+
+            
+            $('.padreMostrar1').attr('onclick',"mostrarTarjeta(1,'mostrar')");
+        }else if (num==2) {            
+            $('.ocultarMostrar2').addClass('padreMostrar2');
+            $('.ocultarMostrar2').removeClass('ocultarMostrar2');
+            
+            $('.contenidoMostrar2').addClass('hidden');
+            $('.mostrar2').removeClass('d-none');
+
+            
+            $('.padreMostrar2').attr('onclick',"mostrarTarjeta(2,'mostrar')");
+        }else if (num==3) {            
+            $('.ocultarMostrar3').addClass('padreMostrar3');
+            $('.ocultarMostrar3').removeClass('ocultarMostrar3');
+            
+            $('.contenidoMostrar3').addClass('d-none');
+            $('.mostrar3').removeClass('d-none');
+
+            
+            $('.padreMostrar3').attr('onclick',"mostrarTarjeta(3,'mostrar')");
+        }else if (num==4) {            
+            $('.ocultarMostrar4').addClass('padreMostrar4');
+            $('.ocultarMostrar4').removeClass('ocultarMostrar4');
+            
+            $('.contenidoMostrar4').addClass('d-none');
+            $('.mostrar4').removeClass('d-none');
+
+            
+            $('.padreMostrar4').attr('onclick',"mostrarTarjeta(4,'mostrar')");
+        }else if (num==5) {            
+            $('.ocultarMostrar5').addClass('padreMostrar5');
+            $('.ocultarMostrar5').removeClass('ocultarMostrar5');
+            
+            $('.contenidoMostrar5').addClass('d-none');
+            $('.mostrar5').removeClass('d-none');
+
+            
+            $('.padreMostrar5').attr('onclick',"mostrarTarjeta(5,'mostrar')");
+        }
+    }
+}
+function pasarTarjetas(num) {
+
+    if (num==1) {
+        $('#diapositiva1U5').addClass('d-none');
+        $('#diapositiva2U5').removeClass('d-none');
+        $('.fa-caret-right').addClass('d-none');
+        $('.fa-caret-left').removeClass('d-none');
+    }else if (num==2) {
+        $('#diapositiva2U5').addClass('d-none');
+        $('#diapositiva1U5').removeClass('d-none');
+        $('.fa-caret-left').addClass('d-none');
+        $('.fa-caret-right').removeClass('d-none');
+    }
+    
+}
