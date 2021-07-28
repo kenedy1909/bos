@@ -1545,3 +1545,172 @@ function scroll_horizontal(num){
             break;
     }
 }
+
+
+function pestanias(num) {
+    
+    $('.pesta1, .pesta2, .pesta3, .pesta4, .pesta5, .pesta6').addClass('bg-color-claro');
+    $('.pesta1, .pesta2, .pesta3, .pesta4, .pesta5, .pesta6').removeClass('bg-color-rojo1');
+    
+    if (num == 1) {
+        $('.pesta1').removeClass('bg-color-claro');
+        $('.pesta1').addClass('bg-color-rojo1');
+
+        $('#contenidoCaractU9').html(``);
+
+        var data = `
+                    <p class="text-justify pb-3"><b>Así por ejemplo,</b> se hace necesario revisar cómo “El lenguaje empleado por las comunidades indígenas que destaquen hoy el buen vivir debe ser objeto de observación, análisis y atención” (Rojas Quiceno, 2013, p.33), especialmente en el contexto de las comunidades indígenas latinoamericanas.</p>
+                    <img src="assets/img/img_ova/americano1.png" width="60%">
+                    `;
+        $('#contenidoCaractU9').html(data);
+    }else if (num == 2) {
+        $('.pesta2').removeClass('bg-color-claro');
+        $('.pesta2').addClass('bg-color-rojo1');
+
+        $('#contenidoCaractU9').html(``);
+
+        var data = `
+                    <p class="text-justify pb-3">El buen vivir se ha elaborado a partir del encuentro de prácticas ancestrales y que, por tanto, se encuentra asociado a una comprensión de vida dentro de cada comunidad indígena, por lo que no existe una definición exacta del concepto de buen vivir en el idioma español.
+                        <br><br>
+                        “Cada cultura le ha dado sus propios significados de acuerdo a su cosmovisión, sin embargo, es posible identificar elementos comunes entre las distintas acepciones” (Alimonda 2012, 34), y esa es precisamente la tarea de la presente investigación, a saber, dar cuenta de esos puntos comunes desde el marco conceptual de la filosofía orteguiana. 
+                    </p>
+                    `;
+        $('#contenidoCaractU9').html(data);
+    }else if (num == 3) {
+        $('.pesta3').removeClass('bg-color-claro');
+        $('.pesta3').addClass('bg-color-rojo1');
+
+        $('#contenidoCaractU9').html(``);
+
+        var data = `
+                    <p class="text-justify pb-3">“Cuando el Buen Vivir es tomado como objetivo, representante del interés general y punto de partida del Estado, como sucede en Ecuador y Bolivia, las diferentes concepciones deben articularse y devolverse a las comunidades a través de políticas públicas generales, con matices particulares según el imaginario de cada pueblo del que fue tomado”   (Alimonda 2012, 35). </p>
+                    <img src="assets/img/img_ova/orgullo1.png" width="60%">
+                    `;
+        $('#contenidoCaractU9').html(data);
+    }else if (num == 4) {
+        $('.pesta4').removeClass('bg-color-claro');
+        $('.pesta4').addClass('bg-color-rojo1');
+
+        $('#contenidoCaractU9').html(``);
+
+        var data = `
+                    <p class="text-justify pb-3">Desde este punto de vista, el buen vivir no solo debe articularse por vía del Estado, sino como necesidad teórica, en tanto permite llevar con mayor facilidad el buen vivir a su relevancia desde distintas cosmovisiones.</p>
+                    <img src="assets/img/img_ova/ansiedad.png" width="60%">                            
+                    <p class="text-justify pb-3">El bien es algo subjetivo. “En lo que respecta a la conceptualización de las áreas morales, el bien se halla incorporado en realidades concretas y lo bueno es lo conveniente, lo honesto, lo correcto o útil para la vida” (Rojas Quiceno 2013, 35). </p>
+                    `;
+        $('#contenidoCaractU9').html(data);
+    }else if (num == 5) {
+        $('.pesta5').removeClass('bg-color-claro');
+        $('.pesta5').addClass('bg-color-rojo1');
+
+        $('#contenidoCaractU9').html(``);
+
+        var data = `
+                    <p class="text-justify pb-3">>El bien también puede entenderse como algo convencional. En la ontología moderna, la concepción semántica del bien, da a entender que se trata de “un término que fácilmente puede sustituir el término bueno, en es muy bueno” (Ferrater Mora 1979,10). Lo bueno es la ejecución de un valor positivo. </p>
+                    <img src="assets/img/img_ova/pensamiento-positivo.png" width="60%">
+                    `;
+        $('#contenidoCaractU9').html(data);
+    }else if (num == 6) {
+        $('.pesta6').removeClass('bg-color-claro');
+        $('.pesta6').addClass('bg-color-rojo1');
+
+        $('#contenidoCaractU9').html(``);
+
+        var data = `
+                    <p class="text-justify pb-3">Desde la fundamentación Kantiana, lo bueno refiere a “la buena voluntad, pero no es buena por lo que efectúe o realice, sino por el querer, es decir, es buena en sí misma, como un valor absoluto” (citado por Urdanoz 1991, 86), pero el bien y el mal no son principios de orden moral sino objetos de la voluntad.</p>
+                    <img src="assets/img/img_ova/conciencia-de-si-mismo.png" width="60%">
+                    `;
+        $('#contenidoCaractU9').html(data);
+    }
+}
+
+function tarjetasU14(num,posicion) {
+    if (posicion == 'p') {
+        if (num == 1) {
+            $('#tarjeta1U14').html(``);
+            var data = `
+                    <div class="fondo1U14 w-100">
+                        <div class="row px-5 h-200 w-100 bg-trasparente cursor"  onclick="tarjetasU14(1,'s')">
+                        <div class="col-12 mb-5 pb-3">
+                            <div class="w-75 p-4">
+                            <p class="color-title text-justify text-black"> Más adelante, en los inicios del siglo XX, la Alianza Popular Revolucionaria Americana (APRA) marcará el pensamiento "populista" de esta generación y el tema de las negritudes reaparecerá, se trata de una generación      “  anti positivista” y espiritualista influida por Ortega y Gasset, vive un fenómeno parecido al de algún antiimperialismo anglosajón como el sucedido en la España de la generación del año 1998 haciendo uso de categorías   "ambiguas" (Dussel 1994: 43,44).</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    `;
+            $('#tarjeta1U14').html(data);
+        }else if (num == 2) {
+            $('#tarjeta2U14').html(``);
+            var data = `
+                    <div class="row bg-white px-5 h-200 w-100 cursor">
+                        <div class="col-12 mb-5 pb-3">
+                        <div class="w-100"  onclick="tarjetasU14(2,'s')">
+                            <p class="text-justify">La “Filosofía de la liberación” fue una ruptura de la praxis y del pueblo. La filosofía de la liberación se adelantó a su época impostando geopolíticamente la posibilidad de un pensar filosófico crítico desde la periferia del capitalismo…El movimiento se ocupa en el presente en la impostación intercultural de la filosofía y en la cuestión de la “descolonización”, y es por eso que, la filosofía de la liberación es sin duda la raíz crítica de una filosofía del buen vivir en Latinoamérica; en esa medida, el buen vivir no corresponde en principio, a un concepto político sino a un asunto ético y filosófico que ha alcanzado protagonismo social, económico y jurídico y no es más que un desarrollo de la filosofía de la liberación. </p>
+                            <p class="color-title">Haga clic en la flecha para continuar con la información</p>
+                        </div>
+                        <div class="w-100 d-flex justify-content-end menos-marginT-25">
+                            <i class="fas fa-caret-right color-text h1 cursor" onclick="tarjetasU14(2,'t')"></i>
+                        </div>
+                        </div>
+                    </div>
+                        `;
+            $('#tarjeta2U14').html(data);
+        }
+    }else if (posicion == 's') {
+        if (num == 1) {
+            $('#tarjeta1U14').html(``);
+            var data = `
+                <div class="row bg-color-verde2 px-5 h-200 w-100 cursor" onclick="tarjetasU14(1,'p')">
+                    <div class="col-7 d-flex align-items-end mb-5 pb-3">
+                    <div class="w-100">
+                        <p class="color-title h5"> Alianza Popular Revolucionaria Americana </p>
+                        <a class="btn btn-lg px-4 h4 text-white bg-color-verde4">APRA</a>
+                    </div>
+                    </div>
+                    <div class="col-4">
+                    <img src="assets/img/img_ova/apra.jpg" width="90%" height="80%" class="py-2">
+                    </div>
+                </div>
+                    `;
+            $('#tarjeta1U14').html(data);
+        }else if (num == 2) {
+            $('#tarjeta2U14').html(``);
+            var data = `
+                    <div class="row bg-color-verde3 px-5 h-200 w-100 cursor" onclick="tarjetasU14(2,'p')">
+                        <div class="col-7 d-flex align-items-end mb-5 pb-3">
+                        <div class="w-100">
+                            <p class="color-title h5"> Filosofia de la liberación </p>
+                            <a class="btn btn-lg px-4 h4 text-white bg-color-verde4">"Buen vivir"</a>
+                        </div>
+                        </div>
+                        <div class="col-4">
+                        <img src="assets/img/img_ova/apra.jpg" width="90%" height="80%" class="py-2">
+                        </div>
+                    </div>
+                        `;
+            $('#tarjeta2U14').html(data);
+        }
+    }else if (posicion == 't') {
+        if (num == 2) {
+            $('#tarjeta2U14').html(``);
+            var data = `
+                    <div class="row bg-white px-5 h-200 w-100">
+                        <div class="col-7 mb-5 pb-3">
+                        <div class="w-100">
+                            <p class="text-justify">“El Buen Vivir” se ha elaborado a partir del encuentro de prácticas ancestrales y que, por tanto, se encuentra asociado a una comprensión de vida dentro de cada comunidad indígena, por lo que no existe una definición exacta del concepto de “Buen Vivir”, en el idioma español. “Cada cultura le ha dado sus propios significados de acuerdo a su cosmovisión. Sin embargo, es posible identificar elementos comunes entre las distintas acepciones” (Alimonda 2012, 34).</p>
+                        </div>
+                        </div>
+                        <div class="col-5 mb-5 pb-3">
+                        <img src="assets/img/img_ova/ancestro.png" width="70%" height="70%" class="py-2 px-3">
+                        <div class="col-12 d-flex justify-content-end menos-marginT-50">
+                            <i class="fas fa-caret-left color-text h1 cursor"  onclick="tarjetasU14(2,'p')"></i>
+                        </div>
+                        </div>
+                    </div>
+                    `;
+            $('#tarjeta2U14').html(data);
+        }
+    }
+}
+

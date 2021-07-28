@@ -217,6 +217,12 @@
 .btnU1:hover{
 	color: white!important;
 }
+.fondo1U14{
+	background: url(../assets/img/img_ova/apra2.jpg);
+	background-repeat: no-repeat;
+	background-size: 45% 90%;
+	background-position: right;
+}
 .fondoU1{
 	width: 100%;
 	height: 570px;
