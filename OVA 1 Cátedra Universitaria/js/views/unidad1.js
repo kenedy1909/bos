@@ -861,7 +861,10 @@ function funcionalidad_2(num) {
     $("#info_funcionalidad").addClass('d-none');
     switch(parseInt(num)){
         case 1:
-            $("#info_funcionalidad").css("margin-top", "0px");
+            $("#info_funcionalidad").css({
+                                            'margin-top': '0px',
+                                            'top':'0px' 
+                                        });
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">El derecho de los estudiantes a darse un gobierno propio. Autonomía administrativa y académica.</p>
@@ -870,7 +873,10 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-1").addClass('bg-color-activi-o');
             break;
         case 2:
-            $("#info_funcionalidad").css("margin-top", "138px");
+            $("#info_funcionalidad").css({
+                                            'margin-top': '138px',
+                                            'top':'0px'
+                                        });
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">El reclamo de un principio de autoridad fundamentado en el vínculo espiritual del amor de los profesores a los estudiantes, más que en reglamentos, estatutos o disciplinas impositivas.</p>
@@ -879,7 +885,10 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-2").addClass('bg-color-activi-o');
             break;
         case 3:
-            $("#info_funcionalidad").css("margin-top", "290px");
+            $("#info_funcionalidad").css({
+                                            'margin-top': '269px',
+                                            'top':'0px'
+                                        });
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">El imperio de la ciencia sobre los intereses burocráticos y personalistas.</p>
@@ -888,7 +897,10 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-3").addClass('bg-color-activi-o');
             break;
         case 4:
-            $("#info_funcionalidad").css("margin-top", "435px");
+            $("#info_funcionalidad").css({
+                                            'margin-top': '406px',
+                                            'top':'0px'
+                                        });
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">Ejercicio de la insurrección y la violencia, para asegurar el respeto a la dignidad, a la verdad, a la democracia y a la reivindicación de los derechos estudiantiles.</p>
@@ -897,7 +909,10 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-4").addClass('bg-color-activi-o');
             break;
         case 5:
-            $("#info_funcionalidad").css("margin-top", "590px");
+            $("#info_funcionalidad").css({
+                                            'margin-top': '539px',
+                                            'top':'0px'
+                                        });
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">Rechazo a la hipocresía, falsa moral y clericalismo imperantes en los claustros universitarios.</p>
@@ -906,7 +921,11 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-5").addClass('bg-color-activi-o');
             break;
         case 6:
-            $("#info_funcionalidad").css("margin-top", "630px");
+            $("#info_funcionalidad").css({
+                                            'margin-top': '630px',
+                                            'top':'97px'
+
+                                        });
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">Invitación a las juventudes de América a defender sus derechos en el ámbito universitario, conforme a los postulados de este Manifiesto.</p>

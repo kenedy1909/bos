@@ -206,9 +206,9 @@ input[type=range]::-ms-fill-upper {
 .bocadillo{
     position: relative;
     background: #540F23;
-    color:#FFF;
+    color: #FFF;
     font-weight: normal;
-    font-size:14px;
+    font-size: 14px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -218,7 +218,7 @@ input[type=range]::-ms-fill-upper {
     min-height: 60px;
     height: fit-content;
     margin-left: 15%;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     word-wrap: break-word;
 }
 
@@ -231,9 +231,9 @@ input[type=range]::-ms-fill-upper {
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-left: 10px solid transparent;
-    border-top: 10px solid  #540F23;
-    border-right: 10px solid #540F23;
-    border-bottom: 10px solid transparent;
+    border-left: 62px solid transparent;
+    border-top: 10px solid #540F23;
+    border-right: 82px solid #540F23;
+    border-bottom: 19px solid transparent;
 }
 
