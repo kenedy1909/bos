@@ -1316,9 +1316,6 @@ function teorias() {
                                     <img src="assets/img/img_ova/imagen423.png" style="width:230px;">
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <img src="assets/img/img_ova/imagen422.png" style="width:230px;">
-                                </div>
-                                <div class="bg-blanco radius-2 my-auto mx-3 p-3">
                                     <img src="assets/img/img_ova/imagen322.png" style="width:230px;">
                                 </div>
                             </div>
@@ -1335,7 +1332,7 @@ function teorias() {
                                     <div class="img-40">
                                         <img src="assets/img/img_ova/opinion.png" class="m-auto img-100" data-teoria="3">
                                     </div>
-                                    <p class="p_black justificado">Existe otro producto entre los vectores 𝐴&#8407 y 𝐵&#8407 denotado como 𝐴&#8407 × 𝐵&#8407,  denominado producto cruz. No se entrará en detalles sobre esta operación solo se dirá que da como resultado otro vector que es perpendicular al plano que los contiene los vectores 𝐴&#8407 y 𝐵&#8407 cuya magnitud es 𝐴𝐵𝑠𝑒𝑛∅.</p>
+                                    <p class="p_black justificado"><img src="assets/img/img_ova/imagen522.png" style="width:100%"></p>
                                 </div>
                             </div>
                         </div>
