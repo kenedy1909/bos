@@ -203,3 +203,37 @@ input[type=range]::-ms-fill-upper {
   border-bottom-left-radius: 1.5em;
 }
 
+.bocadillo{
+    position: relative;
+    background: #540F23;
+    color:#FFF;
+    font-weight: normal;
+    font-size:14px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    text-align: left;
+    width: 80%;
+    min-height: 60px;
+    height: fit-content;
+    margin-left: 15%;
+    margin-bottom:15px;
+    word-wrap: break-word;
+}
+
+.bocadillo:after{
+    right: 100%;
+    top: 0%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left: 10px solid transparent;
+    border-top: 10px solid  #540F23;
+    border-right: 10px solid #540F23;
+    border-bottom: 10px solid transparent;
+}
+

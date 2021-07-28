@@ -481,7 +481,7 @@ function scroll_horizontal(num){
             $('#funcionalidad_1_2').html(`
                                 <div class="bg-blanco radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
-                                        <p class="justificado p_black">El 28 de julio de 1966, la asamblea General de la Universidad de Medellín, decreta paro indefinido, en solidaridad con la Universidad de Antioquia y por los problemas propios (comunicado antes mencionado).</p>
+                                        <p class="justificado p_black">Creación de la Universidad de Medellín del comité pro-defensa como grupo de choque, aliado con la defensa civil y la fuerza pública en contra de los estudiantes huelguistas.</p>
                                     </div>
                                     <div class="img-30">
                                         <img src="assets/img/img_ova/Imagen12.png" class="img-100 m-auto">
@@ -861,6 +861,7 @@ function funcionalidad_2(num) {
     $("#info_funcionalidad").addClass('d-none');
     switch(parseInt(num)){
         case 1:
+            $("#info_funcionalidad").css("margin-top", "0px");
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">El derecho de los estudiantes a darse un gobierno propio. Autonomía administrativa y académica.</p>
@@ -869,6 +870,7 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-1").addClass('bg-color-activi-o');
             break;
         case 2:
+            $("#info_funcionalidad").css("margin-top", "138px");
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">El reclamo de un principio de autoridad fundamentado en el vínculo espiritual del amor de los profesores a los estudiantes, más que en reglamentos, estatutos o disciplinas impositivas.</p>
@@ -877,6 +879,7 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-2").addClass('bg-color-activi-o');
             break;
         case 3:
+            $("#info_funcionalidad").css("margin-top", "290px");
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">El imperio de la ciencia sobre los intereses burocráticos y personalistas.</p>
@@ -885,6 +888,7 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-3").addClass('bg-color-activi-o');
             break;
         case 4:
+            $("#info_funcionalidad").css("margin-top", "435px");
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">Ejercicio de la insurrección y la violencia, para asegurar el respeto a la dignidad, a la verdad, a la democracia y a la reivindicación de los derechos estudiantiles.</p>
@@ -893,6 +897,7 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-4").addClass('bg-color-activi-o');
             break;
         case 5:
+            $("#info_funcionalidad").css("margin-top", "590px");
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">Rechazo a la hipocresía, falsa moral y clericalismo imperantes en los claustros universitarios.</p>
@@ -901,6 +906,7 @@ function funcionalidad_2(num) {
             $(".comprension-circulo-5").addClass('bg-color-activi-o');
             break;
         case 6:
+            $("#info_funcionalidad").css("margin-top", "630px");
             $("#info_funcionalidad").removeClass('d-none');
             $("#info_funcionalidad").html(`
                                         <p class="justificado p_white">Invitación a las juventudes de América a defender sus derechos en el ámbito universitario, conforme a los postulados de este Manifiesto.</p>

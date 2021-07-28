@@ -15,6 +15,11 @@ $( document ).ready(function() {
         }
     });
     $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
+    $('#zoom_img2').elevateZoom({
+          zoomType: "lens",
+          lensShape: "round",
+          lensSize: 200
+        });
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
