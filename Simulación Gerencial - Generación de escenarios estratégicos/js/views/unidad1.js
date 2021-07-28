@@ -29,13 +29,9 @@ $( document ).ready(function() {
     });
     slide_predeterminado();
 
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob4');
-    bar = document.querySelector('.custom-scrollbar__bar4');
-    container = document.querySelector('.custom-scrollbar__inner4');
+    knob = document.querySelector('.custom-scrollbar__knob_U2_1');
+    bar = document.querySelector('.custom-scrollbar__bar_U2_1');
+    container = document.querySelector('.custom-scrollbar__inner_U2_1');
     scroll();
 
     slide_link(tema);
@@ -184,25 +180,106 @@ function infoactivi2(num) {
     switch (parseInt(num)) {
         
         case 1:
-            $('.info1_1').css({'visibility': 'visible'});
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob5');
-            bar = document.querySelector('.custom-scrollbar__bar5');
-            container = document.querySelector('.custom-scrollbar__inner5');
-            scroll();
+            $('.banner_info_activi').addClass('inactive');
+            $('.banner_info_activi').removeClass('active');
+
+            $('.infoblue1').removeClass('inactive');
+            $('.infoblue1').addclass('active');
             break;
         case 2:
-            $('.info2_1').css({'visibility': 'visible'});
+            $('.banner_info_activi').addClass('inactive');
+            $('.banner_info_activi').removeClass('active');
+
+            $('.infoblue2').removeClass('inactive');
+            $('.infoblue2').addclass('active');
+            break;
+        case 3:
+            $('.banner_info_activi').addClass('inactive');
+            $('.banner_info_activi').removeClass('active');
+
+            $('.infoblue3').removeClass('inactive');
+            $('.infoblue3').addclass('active');
             break;
         default:
             break;
     }
 }
 
+function planeasion(num){
+    switch (parseInt(num)) {
+        
+        case 1:
+            $('.targetasFondo').addClass('escondido');
+            $('.targetasFondo').removeClass('mostrado');
 
+            $('.targetaF1').removeClass('escondido');
+            $('.targetaF1').addclass('mostrado');
+            break;
+        case 2:
+            $('.targetasFondo').addClass('escondido');
+            $('.targetasFondo').removeClass('mostrado');
+
+            $('.targetaF2').removeClass('escondido');
+            $('.targetaF2').addclass('mostrado');
+            break;
+        case 3:
+            $('.targetasFondo').addClass('escondido');
+            $('.targetasFondo').removeClass('mostrado');
+
+            $('.targetaF3').removeClass('escondido');
+            $('.targetaF3').addclass('mostrado');
+            break;
+        default:
+            break;
+    }
+}
+
+function recoger(num){
+    switch (parseInt(num)) {
+        
+        case 1:
+            $('.reco1').addClass('recogido');
+            $('.reco1').removeClass('abierto');
+
+            var text = `<div class="row">
+                            <div style="width: 20%;">
+                                <img src="assets/img/img_ova/ACTIVIDAD4.png" style="max-width: 90%;">
+                            </div>
+                            <div style="padding: 12px 0px 3px 30px;"><b style="color: white;">ACTIVIDAD 1</b></div>
+                        </div> `;
+
+            $('.reco1').html(text);
+            break;
+        case 2:
+            $('.reco2').addClass('recogido');
+            $('.reco2').removeClass('abierto');
+
+            var text = `<div class="row">
+                            <div style="width: 20%;">
+                                <img src="assets/img/img_ova/ACTIVIDAD2.png" style="max-width: 90%;">
+                            </div>
+                            <div style="padding: 12px 0px 3px 30px;"><b style="color: white;">ACTIVIDAD 2</b></div>
+                        </div> `;
+
+            $('.reco2').html(text);
+            break;
+        case 3:
+            $('.reco3').addClass('recogido');
+            $('.reco3').removeClass('abierto');
+
+            var text = `<div class="row">
+                            <div style="width: 20%;">
+                                <img src="assets/img/img_ova/ACTIVIDAD3.png" style="max-width: 90%;">
+                            </div>
+                            <div style="padding: 12px 0px 3px 30px;"><b style="color: white;">ACTIVIDAD 3</b></div>
+                        </div>`;
+
+            $('.reco3').html(text);
+            break;
+        default:
+            break;
+    }
+}
 
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
 var bar = document.querySelector('.custom-scrollbar__bar2');

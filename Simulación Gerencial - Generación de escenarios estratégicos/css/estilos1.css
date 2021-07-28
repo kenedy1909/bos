@@ -25,7 +25,7 @@
 .bannerindica{
 	background: #5355A7;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .imgesquema{
@@ -145,4 +145,174 @@
 .btn_verpdf{
 	background: #393A72;
 	color: white;
+}
+
+.custom-scrollbar_U2_1{
+  position: relative;
+  height: 90px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_U2_1 {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_U2_1 {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#5355a7;
+  width: 3px;
+  right: 15px;
+  border-radius: 4px;
+  height: 60px;
+
+}
+
+.custom-scrollbar__knob_U2_1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #5355a7;
+  transform: translate(-50%, -50%);
+  will-change: top;
+  cursor: pointer;
+}
+
+.linea_scroll_U2_1 {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #ffffff;
+}
+
+.borderblue{
+	border: solid #5355A7;
+	border-radius: 20px;
+}
+
+.triangulo_flecha_der{
+	width: 0;
+    height: 0;
+    border-left: 10px solid #ffffff;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    margin-left: 2px;
+}
+
+.triangulo_flecha_izq{
+	width: 0;
+    height: 0;
+    border-right: 10px solid #ffffff;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+.iconorojo{
+	width: 25px;
+	height: 25px;
+	background: #da2316;
+	border-radius: 50%;
+	padding: 7px 0px 2px 1px;
+}
+
+.punta_targeta{
+	width: 0;
+    height: 0;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-top: 22px solid #da2316;
+    position: relative;
+    left: -14px;
+}
+
+.cuadrorojo{
+	width: 22px;
+    background: #da2316;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: -14px;
+}
+.fondo1{
+	background-image: url('../assets/img/img_ova/FONDO4.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 200px;
+	width: 552px;
+}
+.fondo2{
+	background-image: url('../assets/img/img_ova/FONDO5.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 200px;
+	width: 552px;
+}
+.fondo3{
+	background-image: url('../assets/img/img_ova/FONDO6.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 200px;
+	width: 552px;
+}
+
+.numerador{
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #5355a7;
+	text-align: center;
+	padding-top: 5px;
+	position: relative;
+	top: 142px;
+	left: -13px;
+}
+
+.titulofondo{
+	position: relative;
+	top: 12px;
+	left: 12px;
+}
+.textofondo{
+	position: relative;
+	top: 50px;
+	padding: 22px;
+}
+
+.mostrado{
+	display: block;
+}
+
+.escondido{
+	display: none;
+}
+
+.recogible{
+	background: #B13D50;
+	
+	border-radius: 20px;
+	position: absolute;
+}
+.fondo_gris{
+	background: #D5DBE5;
+	height: 250px;
+	border-radius: 20px;
+	width: 106%;
+	box-shadow: 1px 1px 5px 0px;
+}
+.abierto{
+	height: 250px;
+}
+.recogido{
+	height: 50px;
+}
+.contenidorecogible{
+	padding: 70px 10px 10px 10px;
 }
