@@ -316,3 +316,96 @@
 .contenidorecogible{
 	padding: 70px 10px 10px 10px;
 }
+
+.custom-scrollbar_uno{
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_uno {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_uno {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#811111;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+
+}
+
+.custom-scrollbar__knob_uno {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #811111;
+  transform: translate(-50%, -50%);
+  will-change: top;
+  cursor: pointer;
+}
+
+.linea_scroll_uno {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #FFFFFF;
+}
+.custom-scrollbar_dos, .custom-scrollbar_tres{
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_dos, .custom-scrollbar__inner_tres {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_dos, .custom-scrollbar__bar_tres {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+
+}
+
+.custom-scrollbar__knob_dos, .custom-scrollbar__knob_tres {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+  cursor: pointer;
+}
+
+.linea-scroll_dos, .linea-scroll_tres {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #393A72;
+}
