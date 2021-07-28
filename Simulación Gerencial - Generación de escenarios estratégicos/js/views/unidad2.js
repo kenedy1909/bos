@@ -333,3 +333,139 @@ function funcionalidad_1(num) {
             break;
     }
 }
+
+function funcionalidad_2(num) {
+    switch (parseInt(num)) {
+        
+        case 1:
+            $('#info_funcionalidad_2_1').html(`
+                                                <div class="col-md-2 p-0 d-flex">
+                                                    <img src="assets/img/img_ova/ACTIVIDAD 4.png" class="m-auto img-100">
+                                                </div>
+                                                <div class="col-md-10">
+                                                  <ul class="p_black">
+                                                      <li>Hacer una lista de las fortalezas internas claves.</li>
+                                                      <li>Hacer una lista de las debilidades internas decisivas.</li>
+                                                      <li>Hacer una lista de las oportunidades externas importantes.</li>
+                                                      <li>Hacer una lista de las amenazas externas claves.</li>
+                                                      <li>Las fortalezas internas con las oportunidades externas conforman las estrategias FO resultantes en la casilla apropiada.</li>
+                                                  </ul>
+                                                </div>
+                                                `);
+            break;
+        case 2:
+            $('#info_funcionalidad_2_1').html(`
+                                                <div class="col-md-10">
+                                                  <p class="p_black justificado"">Básicamente, este instrumento se utiliza con el fin de formular estrategias, resumir y evaluar las fortalezas y debilidades más importantes dentro de las áreas más funcionales de la organización. Además, ofrece una base para identificar y evaluar las relaciones entre dichas áreas (Gomez.2009).</p>
+                                                  <br>
+                                                  <p class="p_black justificado"">Este es el proceso que se le puede llamar desarrollo de auditoría interna y representa una oportunidad para todos los agentes y empleados de participar en la determinación del futuro de la empresa.</p>
+                                                </div>
+                                                <div class="col-md-2 p-0 d-flex">
+                                                    <img src="assets/img/img_ova/ESTRATEGIA2.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        case 3:
+            $('#info_funcionalidad_2_2').html(`
+                                                <div class="col-md-10">
+                                                  <p class="p_black justificado">Las cifras no son mágicas y el objetivo no es obtener una sola cifra, sino más bien asimilar y evaluar la información de manera significativa con la finalidad de apoyar la toma de decisiones. Debemos tener en cuenta la incertidumbre, mediante la identificación de las oportunidades y amenazas en el entorno, y se puede anticipar lo que otros actores pueden hacer y que puedan afectar la empresa.</p>
+                                                </div>
+                                                <div class="col-md-2 p-0 d-flex">
+                                                    <img src="assets/img/img_ova/LISTA.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        case 4:
+            $('#info_funcionalidad_2_2').html(`
+                                                <div class="col-md-12">
+                                                    <img src="assets/img/img_ova/Imagen3.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        case 5:
+            $('#info_funcionalidad_2_3').html(`
+                                                <div class="col-md-10">
+                                                  <p class="p_black justificado">La Matriz DOFA puede emplear tipología de estrategias las cuales se describen a continuación, así:</p>
+                                                  <ul class="p_black">
+                                                      <li>Las oportunidades que se aprovechan con las fortalezas originan estrategias ofensivas.</li>
+                                                      <li>Las que se deben de enfrentar teniendo debilidades generan estrategias adaptativas.</li>
+                                                      <li>Las amenazas que se enfrentan con fortalezas originan estrategias reactivas.</li>
+                                                  </ul>
+                                                </div>
+                                                <div class="col-md-2 p-0 d-flex">
+                                                    <img src="assets/img/img_ova/matriz 1.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        case 6:
+            $('#info_funcionalidad_2_3').html(`
+                                                <div class="col-md-2 p-0 d-flex">
+                                                    <img src="assets/img/img_ova/matriz2.png" class="m-auto img-100">
+                                                </div>
+                                                <div class="col-md-10">
+                                                  <ul class="p_black">
+                                                      <li>Mientras que las enfrentadas con debilidades generan estrategias defensivas.</li>
+                                                      <li>Al momento de cotejar las debilidades internas con las oportunidades externas y registrar las estrategias DO resultantes.</li>
+                                                      <li>Comparar las fortalezas internas con las amenazas externas y registrar las estrategias FA resultantes.</li>
+                                                  </ul>
+                                                </div>
+                                                `);
+            break;
+        case 7:
+            $('#info_funcionalidad_2_4').html(`
+                                                <div class="col-md-10">
+                                                  <p class="p_black justificado">Ahora para formular estrategias a raíz de la Matriz DOFA se describirán cada una de las posibilidades, lo que define cada una de ellas y cuál es el campo de aplicación. enfocándose solo en los factores claves de éxito para la organización, así:</p>
+                                                </div>
+                                                <div class="col-md-2 p-0 d-flex">
+                                                    <img src="assets/img/img_ova/matriz3.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        case 8:
+            $('#info_funcionalidad_2_4').html(`
+                                                <div class="col-md-2 p-0">
+                                                    <p class="justificado py-3" style="color: #1458BF;">ESTRATEGIAS</p>
+                                                    <img src="assets/img/img_ova/FO.png" class="m-auto img-100">
+                                                </div>
+                                                <div class="col-md-10 d-flex">
+                                                  <p class="p_black justificado m-auto">En ellas se usan las fuerzas o fortalezas internas de la empresa para aprovechar la ventaja de las oportunidades externas. Por regla general, las organizaciones siguen a las estrategias de DO, FA o DA para colocarse en una situación donde puedan aplicar estrategias FO. (Porter.2009).</p>
+                                                </div>
+                                                `);
+            break;
+        case 9:
+            $('#info_funcionalidad_2_4').html(`
+                                                <div class="col-md-10 d-flex">
+                                                  <p class="p_black justificado m-auto">Pretenden superar las debilidades internas aprovechando las oportunidades externas. (Porter.2009).</p>
+                                                </div>
+                                                <div class="col-md-2 p-0">
+                                                    <p class="justificado py-3" style="color: #1458BF;">ESTRATEGIAS</p>
+                                                    <img src="assets/img/img_ova/DO.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        case 10:
+            $('#info_funcionalidad_2_4').html(`
+                                                <div class="col-md-2 p-0">
+                                                    <p class="justificado py-3" style="color: #1458BF;">ESTRATEGIAS</p>
+                                                    <img src="assets/img/img_ova/FA.png" class="m-auto img-100">
+                                                </div>
+                                                <div class="col-md-10 d-flex">
+                                                  <p class="p_black justificado m-auto">Aprovechan las fortalezas de la empresa para evitar o disminuir las repercusiones de las amenazas externas. (Porter.2009).</p>
+                                                </div>
+                                                `);
+            break;
+        case 11:
+            $('#info_funcionalidad_2_4').html(`
+                                                <div class="col-md-10 d-flex">
+                                                  <p class="p_black justificado m-auto">Son tácticas defensivas que pretenden disminuir las debilidades internas y evitar las amenazas del entorno. (Porter.2009).</p>
+                                                </div>
+                                                <div class="col-md-2 p-0">
+                                                    <p class="justificado py-3" style="color: #1458BF;">ESTRATEGIAS</p>
+                                                    <img src="assets/img/img_ova/DA.png" class="m-auto img-100">
+                                                </div>
+                                                `);
+            break;
+        default:
+            break;
+    }
+}
