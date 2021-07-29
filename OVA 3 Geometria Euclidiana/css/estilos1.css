@@ -1,0 +1,369 @@
+/*Deslizador*/
+
+.inputDiv,.inputDiv2 {
+  width: 100%;
+  display:block;
+  color:#aaa;
+  position:relative;
+}
+.output{display:none; width:40px; text-align:center;}
+
+input[type='range'] {
+  display: inline-block;
+  width: 100%;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #771E18;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #771E18;
+  border-radius: 50%;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #771E18;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #771E18;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: #771E18;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #771E18;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #771E18;
+  height: 3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #771E18;
+  height: 3px;
+}
+
+input[type=range]::-ms-track {
+  background-color: #771E18;
+  height: 3px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: #771E18;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: #771E18;
+  cursor: pointer;
+}
+.cursor{
+	cursor: pointer;
+}
+
+
+/*.bg-amarillo{
+	background-color: #FF9900;
+}
+.bg-piel{
+	background-color: #F3C8C5;
+}
+.bg-cafe-o{
+	background-color: #420F05;
+}
+
+.base-triangulo{
+	border-top: solid #420F05 16px;
+  border-left: solid transparent 25px;
+  border-bottom: solid #420F05 14px;
+}
+
+.punta-triangulo{
+	border-top: 15px solid transparent;
+  border-left: 25px solid #420F05;
+  border-bottom: 15px solid transparent;
+}
+
+.h-30px{
+	height: 30px;
+}
+
+.fondo-1{
+	background-image: url(../assets/img/img_ova/portada-libro.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-2{
+	background-image: url(../assets/img/img_ova/fondo_curuba.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo-3{
+	background-image: url(../assets/img/img_ova/fondo_guerra2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.fondo-4{
+	background-image: url(../assets/img/img_ova/fondo_tribunal.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-height: 300px;
+}
+.fondo-9{
+	background-image: url(../assets/img/img_ova/libro abierto.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.border-left-cafe{
+	border-left: solid #420F05 2px;
+}
+.border-bottom-cafe{
+	border-bottom: solid #420F05 2px;
+}
+
+.min-h-400px{
+	min-height: 400px;
+}
+
+.t-150px{
+	top: 150px;
+}
+
+.bg-amarillo-c{
+	background-color: #FFD966;
+}
+
+.bg-piel-o{
+	background-color: #F4B081;
+}
+
+.bg-piel-mc{
+	background-color: #F7CAAC;
+}
+
+.triagulo_abajo{
+  border-left: 15px solid transparent;
+	border-top: 25px solid #420F05;
+  border-right: 15px solid transparent;
+}
+
+.w-60px{
+	width: 60px;
+}
+
+.bg-gris-o{
+	background-color: #D1D1D1;
+}
+.h-6px{
+	height: 6px;
+}
+.h-80px{
+	height: 80px;
+}
+.top-n40px{
+	top: -40px;
+}
+.w-80px{
+	width: 80px;
+}
+
+.justify-content-evenly{
+	justify-content: space-evenly;
+}
+
+.border-amarillo{
+	border: solid #FF9900 3px;
+}
+
+.w-h-50px{
+	width: 50px;
+	height: 50px;
+}
+
+.bg-cafe-mo{
+	background-color: #420F05;
+}
+
+.w-580px{
+	width: 580px;
+}
+
+.Yugoslavia-1{
+	top: -25px;
+  left: 82px;
+}
+
+.Yugoslavia-2{
+  top: -45px;
+  left: 200px;
+}
+
+.Yugoslavia-3{
+	top: -25px;
+  left: 410px;	
+}
+
+.Yugoslavia-4{
+	top: 150px;
+  left: 420px;
+}
+*/
+
+.navegation{
+    border-top: solid #420F05;
+    border-left: solid #420F05;
+    border-right: solid #420F05;
+    height: 50px;
+    padding: 5px 0px 1px 10px;
+}
+
+.activas{
+  height: 4px;
+  background: #420F05;
+}
+.font20{
+  font-size: 20px;
+}
+.encendido{
+  color: #420F05;
+}
+.inactivo{
+  color: #BFBFBF;
+}
+
+.avance_blanco{
+  background: #ffffff;
+  height: 4px;
+}
+
+.activa{
+  background: #420F05;
+}
+
+
+/*
+#slider-5 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  list-style: none;
+  overflow: hidden;
+}
+
+#slider-5 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 500px;
+  background: #ffffff;
+  text-align: center;
+}
+
+a.control_prev, a.control_next {
+  
+  width: auto;
+  height: auto;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}*/
+
+/*scroll*/
+/*.custom-scrollbar1, .custom-scrollbar2, .custom-scrollbar3 {
+  position: relative;
+  height: 219px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3 {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3 {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#811111;
+  width: 3px;
+  right: 30px;
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #811111;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.linea_scroll1, .linea_scroll2, .linea_scroll3 {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #FFFFFF;
+}*/
