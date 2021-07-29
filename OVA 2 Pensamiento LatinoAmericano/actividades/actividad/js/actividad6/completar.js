@@ -1,7 +1,14 @@
 document.addEventListener("DOMContentLoaded",() => {
 	const op_0 = new SelectDropdown({ id: "op_0" }),
 		op_1 = new SelectDropdown({ id: "op_1" }),
-		op_2 = new SelectDropdown({ id: "op_2" });
+		op_2 = new SelectDropdown({ id: "op_2" }),
+		op_3 = new SelectDropdown({ id: "op_3" }),
+		op_4 = new SelectDropdown({ id: "op_4" }),
+		op_5 = new SelectDropdown({ id: "op_5" }),
+		op_6 = new SelectDropdown({ id: "op_6" }),
+		op_7 = new SelectDropdown({ id: "op_7" }),
+		op_8 = new SelectDropdown({ id: "op_8" }),
+		op_9 = new SelectDropdown({ id: "op_9" });	
 });
 
 class SelectDropdown {

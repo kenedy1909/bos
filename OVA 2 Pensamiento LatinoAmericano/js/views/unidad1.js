@@ -77,7 +77,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", ">");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", ">");
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -104,22 +104,22 @@ function controlSlides(num){
             break;
         case 2:
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -145,42 +145,44 @@ function controlSlides(num){
 
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
-            tema = 1;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            break;
         default:
             break;
     }
