@@ -378,8 +378,16 @@ a.control_next {
 	border-bottom: solid 40px transparent;
 	border-right: solid 25px transparent;
 }
+.triangulo-abajo{
+	border-left: solid 25px transparent;
+	border-top: solid 40px transparent;
+	border-right: solid 25px transparent;
+}
 .border-bottom-color-verde-1{
 	border-bottom-color: #09B68B;
+}
+.border-top-color-verde-2{
+	border-top-color: #0AB8BF;
 }
 .border-bottom-color-azul-1{
 	border-bottom-color: #0A57BF;
@@ -390,4 +398,8 @@ a.control_next {
 
 .bg-amarillo-1{
 	background-color: #FF9900;
+}
+
+.bg-verde-2{
+	background-color: #0AB8BF;
 }
