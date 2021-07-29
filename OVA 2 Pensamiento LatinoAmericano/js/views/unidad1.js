@@ -87,16 +87,19 @@ function controlSlides(num){
             // container = document.querySelector('.custom-scrollbar__inner');
             // /*scroll();*/
             var pdf = `<div class="col-md-12">
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Los pueblos indígenas en América Latina. pdf</a>
-                              </p>
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> El Marxismo en América Latina.pdf</a>
-                              </p>
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf</a>
-                              </p>
-                            </div>`;
+                            <p class="p_white size_20">
+                                <a href="assets/PDF/pueblo,etniaonación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>¿Etnia, pueblo o nación?.pdf</a>
+                            </p>
+                            <p class="p_white size_20">
+                                <a href="assets/PDF/De las dualidades a las ecologias.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>De las dualidades a las ecologías” De Sousa.pdf</a>
+                            </p>
+                            <p class="p_white size_20">
+                                <a href="assets/PDF/El buen vivir como paradigma societal alternativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> buen vivir como paradigma societal alernativo.pdf </a>
+                            </p>
+                            <p class="p_white size_20">
+                                <a href="assets/PDF/.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Actividad complementaria. Pdf </a>
+                            </p>
+                        </div>`;
             $('.pdfs').html(pdf);
             break;
         case 2:
@@ -1385,7 +1388,7 @@ function mapaU6(num,estado) {
                             </div>
                             <div class="w-100 text-center">
                             <p class="px-2 text-justify w-100">Lea el libro “De las dualidades a las ecologías” De Sousa</p>
-                            <img src="assets/img/img_template/Botonera-106.png" width="20%">
+                            <a href="assets/PDF/De las dualidades a las ecologias.pdf" target="_blank"><img src="assets/img/img_template/Botonera-106.png" width="20%"></a>
                             </div>
                         </div>
                         `;
@@ -1714,3 +1717,57 @@ function tarjetasU14(num,posicion) {
     }
 }
 
+function cambiarImgU16(num) {
+    if (num==1) {
+        $('#img1U16').removeClass('bg-color');
+        $('#img1U16').html(``);
+        var data = `
+                    <img src="assets/img/img_ova/nota3.png" width="100%" height="100%">
+                    `;
+        $('#img1U16').html(data);
+        $('#img1U16').attr('onclick',"cambiarImgU16(2)");
+    }else if (num==2) {
+        $('#img1U16').addClass('bg-color');
+        $('#img1U16').html(``);
+        var data = `
+                    <img src="assets/img/img_ova/medioAmbiente.png" width="100%">
+                    `;
+        $('#img1U16').html(data);
+        $('#img1U16').attr('onclick',"cambiarImgU16(1)");
+    }
+}
+
+function abrirMapa(num) {
+    $('.mapaConc').addClass('d-none');
+    if (num == 1) {
+        $('.mapaConc-1, .mapaConc-2').removeClass('d-none');
+    }else if (num == 2) {
+        $('.mapaConc-1, .mapaConc-2, .mapaConc-3').removeClass('d-none'); 
+    }else if (num == 3) {
+        $('.mapaConc-1, .mapaConc-2, .mapaConc-3, .mapaConc-4').removeClass('d-none'); 
+    }else if (num == 4) {
+        $('.mapaConc-1, .mapaConc-2, .mapaConc-3, .mapaConc-4, .mapaConc-5').removeClass('d-none'); 
+    }else if (num == 5) {
+        $('#contentMapaBG').removeClass('mapaBG1') ;
+        $('#contentMapaBG').addClass('mapaBG2') ;
+        $('.mapaConc-6').removeClass('d-none');
+    }else if (num == 6) {
+        $('.mapaConc-6, .mapaConc-7').removeClass('d-none'); 
+    }else if (num == 7) {
+        $('.mapaConc-6, .mapaConc-7, .mapaConc-8').removeClass('d-none'); 
+    }else if (num == 8) {
+        $('.mapaConc-6, .mapaConc-7, .mapaConc-9').removeClass('d-none'); 
+    }else if (num == 9) {
+        $('#contentMapaBG').removeClass('mapaBG2') ;
+        $('#contentMapaBG').addClass('mapaBG3') ;
+        $('.mapaConc-10').removeClass('d-none');
+    }else if (num == 10) {
+        $('.mapaConc-10, .mapaConc-11').removeClass('d-none'); 
+    }else if (num == 11) {
+        $('.mapaConc-10, .mapaConc-11, .mapaConc-12').removeClass('d-none'); 
+    }else if (num == 12) {
+        $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13').removeClass('d-none'); 
+    }else if (num == 13) {
+        $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13, .mapaConc-14').removeClass('d-none'); 
+    }
+}

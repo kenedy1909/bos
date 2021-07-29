@@ -8,15 +8,11 @@ window.onload = function () {
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
-        'Una de las ventajas de la superación del eurocentrismo es:' : ['La visibilidad social de los pueblos indígenas.', 'La inclusión del colonialismo intelectual', 0],
+        '¿Cuál es le paradigma que se adquiere para el termino “el buen vivir” según Francesca Belotti?' : ['Paradigma regulador del conjunto total de la vida', 'Paradigma de control político y cultural', 0],
         
-        'La crítica más fuerte al Eurocentrismo, llegó en:' : ['1988', '1960', 1],
+        '¿Qué nombre recibe  la filosofía del siglo XVIII, donde se dio la lucha de los jesuitas con los franceses y borbones?' : ['Filosofía de la emancipación', 'Filosofía de la liberación', 1],
 
-        'El Eurocentrismo ubica a Europa desde una concepción:' : ['Ideológica', 'Antropológica', 0],
-        
-        'El Eurocentrismo establece que Europa es una civilización:' : ['Racional e inmadura', 'Madura y racional', 1],
-        
-        'El  Etnocentrismo consiste en:' : ['Creer que su propia cultura es superior', 'Creer que todas las culturas son iguales', 0]
+        '¿Qué temas motivaron la creación de la filosofía de la liberación?' : ['La ilustración y la opresión de los criollos.', 'La unión a los estándares industriales del progreso capitalista europeo', 0]
       };
       
   function loadQuestion(curr) {
@@ -64,14 +60,14 @@ window.onload = function () {
   function Imag() {
     var texto1 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/Indigena3.png" style="width: 100%;">
+                    <img src="../img/img9/mujer.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/colonialismo.png" style="width: 300%; margin-left:-30px">
+                    <img src="../img/img9/superpoblacion.png" style="width: 100%;">
                   </div>
                 </div>`;
 
@@ -80,14 +76,14 @@ window.onload = function () {
 // ------------------------ pregunta 2
     var texto3 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/calendario.png" style="width: 100%;">
+                    <img src="../img/img9/proceso-creativo.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
     var texto4 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/calendario.png" style="width: 100%;">
+                    <img src="../img/img9/protesta.png" style="width: 100%;">
                   </div>
                 </div>`;
 
@@ -96,51 +92,18 @@ window.onload = function () {
 
     var texto5 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/continente.png" style="width: 100%;">
+                    <img src="../img/img9/red.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_0').prepend(texto5);
     var texto6 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/continente.png" style="width: 100%;">
+                    <img src="../img/img9/fabrica.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_1').prepend(texto6);
-
-// ------------------------ pregunta 4
-    var texto7 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/BanderaEuropa.png" style="width: 100%;">
-                  </div>
-                </div>`;
-
-    $('.img_option_3_0').prepend(texto7);
-    var texto8 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/BanderaEuropa.png" style="width: 100%;">
-                  </div>
-                </div>`;
-
-    $('.img_option_3_1').prepend(texto8);
-
-// ------------------------ pregunta 5
-
-    var texto9 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/Desigual.png" style="width: 100%;">
-                  </div>
-                </div>`;
-
-    $('.img_option_4_0').prepend(texto9);
-    var texto10 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="../img/img9/Igualdad.png" style="width: 100%;">
-                  </div>
-                </div>`;
-
-    $('.img_option_4_1').prepend(texto10);
   }
 
   function checkAnswer(i, arr) {
@@ -180,7 +143,7 @@ window.onload = function () {
         txt       = document.createTextNode(current + 1);
     
     createDiv.appendChild(txt);
-    $('.cantidad').html((current+1)+"/"+5);
+    $('.cantidad').html((current+1)+"/"+3);
     if (bool) {
       
       createDiv.className += 'correct';
