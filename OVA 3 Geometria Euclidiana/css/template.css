@@ -109,12 +109,12 @@ iframe{
 }
 
 .titulo-ova{
-  background-image: url(../assets/img/img_ova/titulo-ova.png);
+  background-image: url(../assets/img/img_ova/titulo_ova.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 380px;
   height: 100px;
-  padding: 31px 105px 20px 101px;
+  padding: 40px 105px 20px 140px;
 }
 
 .titulo-ova h3{

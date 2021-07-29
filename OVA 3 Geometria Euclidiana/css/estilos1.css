@@ -237,22 +237,22 @@ input[type=range]::-ms-fill-upper {
 */
 
 .navegation{
-    border-top: solid #420F05;
-    border-left: solid #420F05;
-    border-right: solid #420F05;
-    height: 50px;
+    border-top: solid #0A57BF;
+    border-left: solid #0A57BF;
+    border-right: solid #0A57BF;
+    height: 100%;
     padding: 5px 0px 1px 10px;
 }
 
 .activas{
   height: 4px;
-  background: #420F05;
+  background: #0A57BF;
 }
 .font20{
   font-size: 20px;
 }
 .encendido{
-  color: #420F05;
+  color: #0A57BF;
 }
 .inactivo{
   color: #BFBFBF;
@@ -264,7 +264,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 .activa{
-  background: #420F05;
+  background: #0A57BF;
 }
 
 
@@ -324,46 +324,66 @@ a.control_next {
 }*/
 
 /*scroll*/
-/*.custom-scrollbar1, .custom-scrollbar2, .custom-scrollbar3 {
+.custom-scrollbar_uno {
   position: relative;
-  height: 219px;
+  height: 300px;
   overflow: hidden;
 }
 
-.custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3 {
+.custom-scrollbar__inner_uno {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
   overflow-y: auto;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
-.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3 {
+.custom-scrollbar__bar_uno {
   position: absolute;
   top: 18px;
   bottom: 20px;
-  background:#811111;
+  background:#003442;
   width: 3px;
   right: 30px;
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3 {
+.custom-scrollbar__knob_uno {
   position: absolute;
   top: 0;
   left: 50%;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #811111;
+  background: #003442;
   transform: translate(-50%, -50%);
   will-change: top;
 }
 
-.linea_scroll1, .linea_scroll2, .linea_scroll3 {
+.linea-scroll_uno {
   font-size: 50px;
     margin: 0px;
     position: relative;
     top: -32px;
     color: #FFFFFF;
-}*/
+}
+
+.bg-verde-1{
+	background-color: #09B68B;
+}
+
+.triangulo-arriba{
+	border-left: solid 25px transparent;
+	border-bottom: solid 40px transparent;
+	border-right: solid 25px transparent;
+}
+.border-bottom-color-verde-1{
+	border-bottom-color: #09B68B;
+}
+.border-bottom-color-azul-1{
+	border-bottom-color: #0A57BF;
+}
+.bg-azul-1{
+	background-color: #0A57BF;
+}

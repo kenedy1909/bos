@@ -27,7 +27,7 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
-    slide_predeterminado();
+    /*slide_predeterminado();*/
 
     var knob = "";
     var bar = "";
@@ -38,7 +38,7 @@ $( document ).ready(function() {
     var scrollOffset = "";
     /*$(".modal_scroll1").on('click', modal_scroll1);
     $(".modal_scroll3").on('click', modal_scroll2);*/
-    $(".ruanda-img").on('click', ruandas);
+    /*$(".ruanda-img").on('click', ruandas);*/
 
 
     /*$(".unidad1-1").on('click', slide_link);
@@ -85,23 +85,10 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
-            // dragging = "";
-            // diff = "";
-            // newTop = "";
-            // scrollOffset = "";
-            // knob = document.querySelector('.custom-scrollbar__knob8');
-            // bar = document.querySelector('.custom-scrollbar__bar8');
-            // container = document.querySelector('.custom-scrollbar__inner8');
-            // scroll();
-            /*slideCount = $('#slider-5 ul li').length;
-            slideWidth = $('#slider-5 ul li').width();
-            slideHeight = $('#slider-5 ul li').height();
-            slider_num = "#slider-5";
-            slider_all();*/
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
-            $(".i1").html('')    
+            /*$(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
             var inputsRy = [];  
@@ -122,7 +109,7 @@ function controlSlides(num){
                   inputsRy[n].actualizar();
                 }, false)
               }(n));
-            }  
+            }  */
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
@@ -132,12 +119,10 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             break;
         case 5:
-            
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
@@ -152,14 +137,10 @@ function controlSlides(num){
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
-            $(".i3").html('')    
+            /*$(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
             var inputsRy = [];  
@@ -180,7 +161,7 @@ function controlSlides(num){
                   inputsRy[n].actualizar2();
                 }, false)
               }(n));
-            }  
+            }  */
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
@@ -199,14 +180,14 @@ function controlSlides(num){
     }
 }
 
-function modal_scroll1(){
+function scroll_uno(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob1');
-    bar = document.querySelector('.custom-scrollbar__bar1');
-    container = document.querySelector('.custom-scrollbar__inner1');
+    knob = document.querySelector('.custom-scrollbar__knob_uno');
+    bar = document.querySelector('.custom-scrollbar__bar_uno');
+    container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
 function modal_scroll2(){
@@ -229,109 +210,6 @@ function modal_scroll3(){
     container = document.querySelector('.custom-scrollbar__inner3');
     scroll();
 }
-
-/*function funcion_vanvas() {
-    var canvas = new fabric.Canvas('id_canvas');
-    var imgElement = 'assets/img/uno.png';
-    var imgElement2 = 'assets/img/dos.png'; 
-    var imgElement3 = 'assets/img/tres.png';
-    var imgElement4 = 'assets/img/cuatro.png';
-    fabric.Image.fromURL(imgElement, function(oImg) {
-        oImg.left=40;
-        oImg.top=10;
-        oImg.scaleToHeight(40);
-        oImg.scaleToWidth(40);
-        oImg.selectable = false;
-        canvas.add(oImg);
-
-        oImg.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito1").modal("show");            
-        });
-        oImg.on('mousemove', function() {
-          console.log('hover a circle');
-        });
-    });
-    fabric.Image.fromURL(imgElement2, function(oImg2) {
-        oImg2.left=260;
-        oImg2.top=50;
-        oImg2.scaleToHeight(40);
-        oImg2.scaleToWidth(40);
-        oImg2.selectable = false;
-        canvas.add(oImg2);
-
-        oImg2.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito2").modal("show");            
-        });
-        oImg2.on('mousemove', function() {
-          console.log('hover a circle');
-        });
-    });
-    fabric.Image.fromURL(imgElement3, function(oImg3) {
-        oImg3.left=240;
-        oImg3.top=230;
-        oImg3.scaleToHeight(40);
-        oImg3.scaleToWidth(40);
-        oImg3.selectable = false;
-        canvas.add(oImg3);
-
-        oImg3.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito3").modal("show");            
-        });
-        oImg3.on('mousemove', function() {
-          console.log('hover a circle');
-        });
-    });
-    fabric.Image.fromURL(imgElement4, function(oImg4) {
-        oImg4.left=10;
-        oImg4.top=230;
-        oImg4.scaleToHeight(40);
-        oImg4.scaleToWidth(40);
-        oImg4.selectable = false;
-        canvas.add(oImg4);
-
-        oImg4.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito4").modal("show");            
-        });
-        oImg4.on('mousemove', function() {
-          console.log('hover a circle');
-        });
-    });
-}*/
-
-/*function unidad1_pantalla6_accion1(){
-    var info = '<p class="text-white">Se verifica que la proposición es cierta para el primer caso (si se desea se verifica para algunos casos siguientes al primero).</p>';
-    $("#unidad1-6_paso1").html(info);
-}
-
-function unidad1_pantalla6_accion2(){
-    var info = '<p class="text-white">Se <u>supone cierta</u> la proposición para un caso 𝑛=𝒌. Siendo 𝒌 cualquier natural.</p>';
-    $("#unidad1-6_paso2").html(info);
-}
-
-function unidad1_pantalla6_accion3(){
-    var info = `
-                <p class="text-white">Se <u>demuestra que es cierta</u> para el caso siguiente; n=k+1) Se apoya en la premisa 2) que recibe el nombre de <u>hipótesis de inducción</u>.</p>
-                <p class="text-white">El enunciado del paso 3) recibe el nombre de tesis de Inducción</p>
-                <p class="text-white">Para probar que la afirmación (∀n) (n∈N) (Pn) es falsa se recurre al CONTRAEJEMPLO.</p>
-                `;
-
-    $("#unidad1-6_paso3").html(info);
-    $(".custom-scrollbar__bar2").css('display','block');
-    $(".custom-scrollbar2").css('height','240px');
-}
-
-function unidad1_pantalla6_accion4(){
-    $(".limpiar_pasos").html('');
-    $(".custom-scrollbar__bar2").css('display','none');
-    $(".custom-scrollbar2").css('height','88px');
-}*/
-
-//scroll
-
 
 
 //scroll2
@@ -446,7 +324,7 @@ function Input(num) {
 
 // setup
 
-
+/*
 function poner(num) {
     
     $(".texto_efecto"+num).css({
@@ -480,7 +358,7 @@ function quitar(num) {
         $(".custom-scrollbar2").css('height','180px');
     }
 }
-
+*/
 function scroll_horizontal(num){
     $('.scroll-img').removeClass('bg-piel');
     $('.scroll-img').addClass('bg-amarillo');
@@ -739,7 +617,7 @@ function scroll_horizontal2(num){
 function cajas(num){
   switch (parseInt(num)) {
       case 1:
-          var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/infografia.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav1').addClass('activa');
 
@@ -752,7 +630,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 2:
-          var text = `<img src="assets/img/img_ova/Ruanda-2.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/infografia2.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav2').addClass('activa');
 
@@ -764,38 +642,12 @@ function cajas(num){
           
           $('#infografia').html(text);
           break;
-      case 3:
-          var text = `<img src="assets/img/img_ova/Ruanda-3.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav3').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na3').removeClass('inactivo');           
-          $('.na3').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 4:
-          var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav4').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na4').removeClass('inactivo');           
-          $('.na4').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
       
       default:
           break;
   }
 }
-
+/*
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
     $(".ruanda-img").removeClass('bg-cafe-activi');
@@ -888,5 +740,15 @@ function yugoslavias(num) {
                     `;
         $("#tribunal").html(texto);
         modal_scroll3();
+    }
+}*/
+
+function funcionalidad_1(num) {
+    $(".info_funcionalidad_1_1, .info_funcionalidad_1_2").addClass('d-none');
+
+    if (num == 1) {
+        $(".info_funcionalidad_1_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".info_funcionalidad_1_2").removeClass('d-none');
     }
 }
