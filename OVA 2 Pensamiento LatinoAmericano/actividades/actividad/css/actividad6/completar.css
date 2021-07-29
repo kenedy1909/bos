@@ -60,7 +60,7 @@ label {
 	-webkit-appearance: none;
 	appearance: none;
 	z-index: 1;
-	background: #E9CD4A;
+	background: #a9d18e;
 }
 .select__button:focus, .select__option:focus {
 	outline: transparent;
@@ -218,7 +218,7 @@ label {
 }
 
 .seleccionable{
-	background: #E9CD4A;
+	background: #a9d18e;
     position: relative;
     top: -18px;
 }
@@ -236,11 +236,11 @@ label {
 .principal{
   height: 400px;
   border-radius: 40px;
-  background: #FFE14E;
+  background: #008f3e;
 }
 
 .cabeza{
-  background: #A48E39;
+  background:#00441B;
   height: 100px;
   border-radius: 40px 40px 0px 0px;
 }
@@ -255,7 +255,7 @@ label {
 }
 
 .info_actividad{
-    background: rgba(255, 192, 0);
+    background: #ddeaf6;
     border-radius: 20px;
     padding: 20px;
 }
@@ -438,7 +438,7 @@ label {
 }
 
 .info_actividad{
-    background: rgba(255, 192, 0);
+    background: #ddeaf6;
     border-radius: 20px;
     padding: 20px;
 }
