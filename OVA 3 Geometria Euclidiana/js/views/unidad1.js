@@ -933,3 +933,20 @@ function funcionalidad_5(num) {
         $(".btn_funcionalidad_5_6").addClass('bg-verde-2');
     }
 }
+
+function funcionalidad_6(num) {
+    $(".funcionalidad_6_1, .funcionalidad_6_2").removeClass('bg-verde-2');
+    $(".funcionalidad_6_1, .funcionalidad_6_2").addClass('bg-color-activi-c');
+    $(".info_funcionalidad_6_1, .info_funcionalidad_6_2").addClass('d-none');
+    $(".p_funcionalidad_6").removeClass('bg-verde-2');
+    if (num == 1) {
+        $(".funcionalidad_6_1").removeClass('bg-color-activi-c');
+        $(".funcionalidad_6_1").addClass('bg-verde-2');
+        $(".info_funcionalidad_6_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".funcionalidad_6_2").removeClass('bg-color-activi-c');
+        $(".funcionalidad_6_2").addClass('bg-verde-2');
+        $(".info_funcionalidad_6_2").removeClass('d-none');
+        $(".p_funcionalidad_6").addClass('bg-verde-2');
+    }
+}
