@@ -383,6 +383,16 @@ a.control_next {
 	border-top: solid 40px transparent;
 	border-right: solid 25px transparent;
 }
+.triangulo-derecha{
+	border-top: solid 25px transparent;
+	border-left: solid 40px transparent;
+	border-bottom: solid 25px transparent;
+}
+.triangulo-izquierda{
+	border-top: solid 25px transparent;
+	border-right: solid 40px transparent;
+	border-bottom: solid 25px transparent;
+}
 .border-bottom-color-verde-1{
 	border-bottom-color: #09B68B;
 }
@@ -391,6 +401,12 @@ a.control_next {
 }
 .border-bottom-color-azul-1{
 	border-bottom-color: #0A57BF;
+}
+.border-left-color-azul-2{
+	border-left-color: #006092;
+}
+.border-right-color-azul-2{
+	border-right-color: #006092;
 }
 .bg-azul-1{
 	background-color: #0A57BF;
@@ -491,4 +507,8 @@ a.control_next {
 	animation-iteration-count: 1;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
+}
+
+.border-right-verde-2{
+	border-right: solid #0AB8BF 3px;
 }
