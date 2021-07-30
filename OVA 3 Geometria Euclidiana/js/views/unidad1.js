@@ -797,3 +797,68 @@ function funcionalidad_4(num) {
         $(".info_funcionalidad_3_2_2").removeClass('d-none');
     }
 }
+
+function efect(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').addClass('crece');
+            $('.div_texto').addClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').addClass('crece');
+            $('.div_texto2').addClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').addClass('crece');
+            $('.div_texto3').addClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').addClass('crece');
+            $('.div_texto4').addClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').addClass('crece');
+            $('.div_texto5').addClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').addClass('crece');
+            $('.div_texto6').addClass('visibilidad');
+            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #7a3d74;color: white;font-size: 18px;">Ver aquí ejemplo de preguntas de investigación</button>');
+            break;
+        default:
+            break;
+    }           
+    
+}
+
+function removeefect(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.creciente').removeClass('crece');
+            $('.div_texto').removeClass('visibilidad');
+            break;
+        case 2:
+            $('.creciente2').removeClass('crece');
+            $('.div_texto2').removeClass('visibilidad');
+            break;
+        case 3:
+            $('.creciente3').removeClass('crece');
+            $('.div_texto3').removeClass('visibilidad');
+            break;
+        case 4:
+            $('.creciente4').removeClass('crece');
+            $('.div_texto4').removeClass('visibilidad');
+            break;
+        case 5:
+            $('.creciente5').removeClass('crece');
+            $('.div_texto5').removeClass('visibilidad');
+            break;
+        case 6:
+            $('.creciente6').removeClass('crece');
+            $('.div_texto6').removeClass('visibilidad');
+            break;
+        default:
+            break;
+    } 
+    
+}
