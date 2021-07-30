@@ -29,6 +29,45 @@ $( document ).ready(function() {
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     /*slide_predeterminado();*/
 
+    var slideCount = $('#slider2 ul li').length;
+    var slideWidth = $('#slider2 ul li').width();
+    var slideHeight = $('#slider2 ul li').height();
+    var sliderUlWidth = slideCount * slideWidth;
+    
+    $('#slider2').css({ width: '100%', height: '500px' });
+    
+    $('#slider2 ul').css({ width: '90%'});
+    
+    $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+    function moveLeft2() {
+        $('#slider2 ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+            $('#slider2 ul').css('left', '');
+        });
+    };
+
+    function moveRight2() {
+        $('#slider2 ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+            $('#slider2 ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev2').click(function (e) {
+        moveLeft2();
+        e.preventDefault();
+    });
+
+    $('a.control_next2').click(function (e) {
+        moveRight2();
+        e.preventDefault();
+    });
+
     var knob = "";
     var bar = "";
     var container = "";
@@ -190,14 +229,14 @@ function scroll_uno(){
     container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
-function modal_scroll2(){
+function scroll_dos(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob2');
-    bar = document.querySelector('.custom-scrollbar__bar2');
-    container = document.querySelector('.custom-scrollbar__inner2');
+    knob = document.querySelector('.custom-scrollbar__knob_dos');
+    bar = document.querySelector('.custom-scrollbar__bar_dos');
+    container = document.querySelector('.custom-scrollbar__inner_dos');
     scroll();
 }
 function modal_scroll3(){
@@ -861,4 +900,36 @@ function removeefect(num){
             break;
     } 
     
+}
+
+function funcionalidad_5(num) {
+    $(".info_funcionalidad_5_1, .info_funcionalidad_5_2, .info_funcionalidad_5_3, .info_funcionalidad_5_4, .info_funcionalidad_5_5, .info_funcionalidad_5_6").addClass('d-none');
+    $(".btn_funcionalidad_5_1, .btn_funcionalidad_5_2, .btn_funcionalidad_5_3, .btn_funcionalidad_5_4, .btn_funcionalidad_5_5, .btn_funcionalidad_5_6").removeClass('bg-verde-2');
+    $(".btn_funcionalidad_5_1, .btn_funcionalidad_5_2, .btn_funcionalidad_5_3, .btn_funcionalidad_5_4, .btn_funcionalidad_5_5, .btn_funcionalidad_5_6").addClass('bg-color-activi-o');
+
+    if (num == 1) {
+        $(".info_funcionalidad_5_1").removeClass('d-none');
+        $(".btn_funcionalidad_5_1").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_5_1").addClass('bg-verde-2');
+    }else if (num == 2) {
+        $(".info_funcionalidad_5_2").removeClass('d-none');
+        $(".btn_funcionalidad_5_2").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_5_2").addClass('bg-verde-2');
+    }else if (num == 3) {
+        $(".info_funcionalidad_5_3").removeClass('d-none');
+        $(".btn_funcionalidad_5_3").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_5_3").addClass('bg-verde-2');
+    }else if (num == 4) {
+        $(".info_funcionalidad_5_4").removeClass('d-none');
+        $(".btn_funcionalidad_5_4").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_5_4").addClass('bg-verde-2');
+    }else if (num == 5) {
+        $(".info_funcionalidad_5_5").removeClass('d-none');
+        $(".btn_funcionalidad_5_5").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_5_5").addClass('bg-verde-2');
+    }else if (num == 6) {
+        $(".info_funcionalidad_5_6").removeClass('d-none');
+        $(".btn_funcionalidad_5_6").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_5_6").addClass('bg-verde-2');
+    }
 }
