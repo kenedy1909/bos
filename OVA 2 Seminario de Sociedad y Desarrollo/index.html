@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Template OVA UNAULA">
+    <meta name="author" content="Bos Developer">
+    <meta name="keyword" content="UNAULA">
+    <title>UNAULA</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://ghcdn.rawgit.org/miguel8888888/iconos/main/css/all.min.css">
+    <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet">  -->
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
+    <link href="css/template-geometria.css" rel="stylesheet"> 
+    <link href="css/template.css" rel="stylesheet"> 
+    <link href="css/estilos1.css" rel="stylesheet"> 
+    <link href="css/estilos2.css" rel="stylesheet"> 
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none">
+        <h4>MENU</h4>
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
+          <i class="fad fa-home"></i> Inicio</a>
+        </li>
+        <li class="c-sidebar-nav-title">Contenido</li>
+        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
+          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>1. Visiones frente al desarrollo</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Capitalismo y desarrollo</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="5" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Otras visiones frente al desarrollo</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>2. Subjetividad e identidad</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span>Ser o tener</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> El sujeto neoliberal</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <i class="fas fa-bars"> </i>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="c-header-nav d-md-down-none">
+          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+          <li class="c-header-nav-item ">
+            <div class="box">
+                <div class="porcent">
+                    <svg class="svg_porcent">
+                        <circle cx="40" cy="60" r="25" style ="stroke: #78201A;stroke-width: 5px;"/>
+                        <circle class="up" cx="40" cy="60" r="25" style="stroke: #78201A;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
+                    </svg>
+                    <div class="number">
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-79.png" alt="" class="icons-menu w-60px"></a></li>
+          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-78.png" alt="" class="icons-menu w-60px modal_scroll10"></a></li>
+          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px modal_scroll11"></a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto">
+          <li class="c-header-nav-item d-md-down-none">
+            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Menú</li>
+            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread3"></li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main" id="content-ova">
+          
+        </main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-106.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content pdfs">
+                              <p class="p_white">
+                                    <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>
+                              <p class="p_white">
+                                    <a href="assets/PDF/Unidad 2/La creación de la modernidad.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">La creación de la modernidad.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="menu_superior img-75" src="assets/img/img_template/Botonera-105.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content custom-scrollbar10 p_black">
+                            <div class="custom-scrollbar__inner10">
+                              <p class="justificado"> <b class="font-weight-bold">
+                              1.  Consumo:</b> La adquisición de bienes o cosas para satisfacer las necesidades y los deseos. Hace referencia no solo a lo tangible, también puede hablarse de consumo de servicios.
+
+
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              2.  Consumo inducido:</b> Manipulación de los consumidores por parte del mercado que promueven la compra de bienes y servicios, mediante técnicas de persuasión como las redes sociales, la televisión, la radio y la ubicación de los productos en el establecimiento comercial. 
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              3.  Contemporaneidad:</b> Se trata del período actual o que acontece recientemente.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              4.  Crecimiento económico:</b> Es la medida de los bienes y servicios producidos en un país, cuyo principal indicador es el producto interno bruto (PIB)
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              5.  Desarrollo:</b> Es la medida del mejoramiento de la calidad de vida de una población. Algunos de sus indicadores son: índice de alfabetismo, empleabilidad, igualdad, salud, recreación y vivienda.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              6.  Desarrollo sostenible:</b> Desarrollo económico que, cubriendo las necesidades del presente, preserva la posibilidad de que las generaciones futuras satisfagan las suyas (Pujadas, 2011.)
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              7.  Lógica rentista:</b> Racionalidad bajo la cual se busca la utilidad económica o la creación de dinero (crematística), es la dinámica propia del sistema capitalista en la que los medios (empleados y recursos naturales) son utilizados para la generación y acumulación de capital.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              8.  Modelo hegemónico:</b> Se refiere al modelo económico dominante o prevaleciente, explícitamente el sistema capitalista. Este sistema privilegia la generación y acumulación de capital sin importar los medios empleados, en la mayoría de los casos, los medios son los obreros y los recursos naturales.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              9.  Modelos alternativos:</b> Propuestas de desarrollo social, político y económico diferentes al modelo imperante: el sistema capitalista.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              10. Modernidad:</b> Período histórico caracterizado por el desarrollo de un conjunto de ideas y cambios profundos en la sociedad occidental, que se manifestó en los ámbitos de la filosofía, la ciencia, la política y el arte y en los modos de vida en general. Debe distinguirse de modernismo y modernización.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              11. Modernismo:</b> Corriente de renovación artística que se desarrolla en Europa. Se incorporaron formas libres y fluidas inspiradas en la naturaleza. Este movimiento prendió liberar y democratizar el arte.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              12. Neoliberalismo:</b> Modelo de estado caracterizado por la baja regulación de las actividades, por parte del Estado, permitiendo que los agentes negocien en condiciones asimétricas, especialmente en el contexto internacional, donde los países subdesarrollados y paupérrimos se someten a las condiciones de los países desarrollados. Es un modelo propio del sistema capitalista y tiene como fundamento primordial las exigencias del mercado. 
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              13. Obsolescencia percibida:</b> Ilusión por la cual los consumidores o usuarios sienten el deseo de adquirir nueva mercancía porque considera que el que posee es viejo y/o obsoleto.    
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              14. Obsolescencia programada:</b> El desgaste intencionado con el que se fabrican los productos con el fin de que el consumidor deba comprarlo con mayor frecuencia.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              15. Pensamiento crítico:</b> Pensamiento reflexivo que cuestiona el trasfondo de los mensajes recibidos, independientemente la fuente de la información.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              16. Posmodernidad:</b> Algunos autores refieren a este período histórico posterior a la modernidad, incluso derivada de esta en reclamo de sus promesas idealizadas y desmentidas. Otros autores objetan la existencia de la posmodernidad, argumentando que la humanidad aún no ha trascendido la modernidad y sigue vivenciando sus manifestaciones.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              17. Progreso:</b> Se refiere al avance de una población en sus diferentes escenarios, entre ellos el de infraestructura y el ambiental, aunque en la contemporaneidad el avance en el primero ha ido en menoscabo de lo ambiental.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              18. Sociedad de consumo:</b> Se refiere a la sociedad propia del sistema capitalista donde la lógica de consumo se sobrepone a la satisfacción de necesidades primarias.  Se caracteriza por el dominio del deseo de las personas con el fin de promover el consumo desaforado.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              19. Subdesarrollo económico:</b> Estado de los países caracterizado por un sistema de educación precario del que se deriva una economía sustentada en la agricultura, la ganadería, la pesca, la explotación y expropiación de sus materias primas, así como la pobreza generalizada la mayor parte de la población.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              20. Sustentabilidad:</b> Entiéndase sostenible, en inglés la palabra “sustainable” denota tanto sustentabilidad como sostenibilidad, por lo que ante la disyuntiva muchas organizaciones optan por invocar ambas “desarrollo sostenible y sustentable”. 
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              1.  Consumo:</b> La adquisición de bienes o cosas para satisfacer las necesidades y los deseos. Hace referencia no solo a lo tangible, también puede hablarse de consumo de servicios.
+                              </p>
+                              <p class="justificado"> <b class="font-weight-bold">
+                              2.  Consumo inducido:</b> Manipulación de los consumidores por parte del mercado que promueven la compra de bienes y servicios, mediante técnicas de persuasión como las redes sociales, la televisión, la radio y la ubic
+                              </p>
+                            </div>
+                            <div class="custom-scrollbar__bar10">
+                              <div class="custom-scrollbar__knob10 cursor">
+                                <p class="text-center linea_scroll10">-</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="menu_superior img-75" src="assets/img/img_template/bibliografia.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content custom-scrollbar11 p_black">
+                            <div class="custom-scrollbar__inner11">
+                              <p class="justificado">Abad, E. (diciembre 28, 2013). El espantoso mundo en que vivimos. Periódico El Espectador. https://www.elespectador.com/opinion/el-espantoso-mundo-en-que-vivimos-columna-466312/</p>
+                              <p class="justificado">Ávila, F. (2010). Crítica a la modernidad: el eclipse de la razón. Maracaibo Venezuela. Universidad Católica Cecilio Acosta. Revista de artes y humanidades UNICA, vol. 11, núm. 2. Pag. 167-185</p>
+                              <p class="justificado">Bauman, Z. (2004). La Modernidad Líquida. El Salvador. Buenos Aires, Argentina: Fondo de Cultura Económica.</p>
+                              <p class="justificado">Chul Han , B. (2007). La sociedad del cansancio. Argentina: Herder. Pag. 252-263</p>
+                              <p class="justificado">Daros, W. (2015). La creación de la Modernidad: Nuevos deseos e intereses de la humanidad. Invenio 18. Pag. 51-65</p>
+                              <p class="justificado">Geli, C. (febrero 7, 2018). “Ahora uno se explota a sí mismo y cree que está realizándose”. Periódico El País. https://elpais.com/cultura/2018/02/07/actualidad/1517989873_086219.html</p>
+                              <p class="justificado">Lozano, A. (13 de 09 de 2013). Entrevista a Marha C. Nussbaum: Las humanidades son necesarias para mantener viva la democracia'. La Vanguardia, pág. Sección 4.</p>
+                              <p class="justificado">Lyotard, J. (1987). La condición postmoderna: informe sobre el saber. Buenos Aires, Argentina. Ediciones Cátedra S.A.</p>
+                              <p class="justificado">Ministerio de Educación de la Nación. (2015). Historia mundial contemporanea. República Argentina: Pizzurno, 935, CABA </p>
+                              <p class="justificado">Nussbaum, M. (2010). Si fines de lucro: ¡por qué las democracias necesitan de las humanidades? Katz Editores.</p>
+                              <p class="justificado">Oropeza, T. (2004). Kant y su proyecto de una paz perpetua (en el bicentenario de su muerte). Departamento de filosofía, división de ciencias sociales y Humanidades, UAM-I. Revista digital universitaria. Vol. 5, núm 11. ISSN: 1067-6079</p>
+                              <p class="justificado">Ospina, W. (enero 4, 2014). Ciego toda la vida a todo eso. Periódico El Espectador. https://www.elespectador.com/opinion/ciego-toda-la-vida-todo-eso-columna-466914/</p>
+                              <p class="justificado">Revueltas, A. (1990). Modernidad y Mundialidad. Estudios 23. Pag. 119-133</p>
+                              <p class="justificado">Reyes, R. (2016). Modernidad, Modernismo y Tecnología: concepciones y valoraciones. Revista Comunicación. Vol. 25, núm. 2. Instituto tecnológico de Costa Rica </p>
+                              <p class="justificado">Toffler, A. (1980). La tercera ola. Bogotá, Colombia: Plaza & Janes. S.A. Editores. Pag. 8-33</p>
+                            </div>
+                            <div class="custom-scrollbar__bar11">
+                              <div class="custom-scrollbar__knob11 cursor">
+                                <p class="text-center linea_scroll11">-</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="c-footer">
+          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+        </footer>
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="js/coreiu.bundle.min.js"></script>
+    <script src="js/coreiu-utils.js"></script>
+    <script src="js/jquery3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js" type="text/javascript"></script>
+    <script src="js/SCORM_API_wrapper.js"></script>
+    <script src="assets/componentes/flipster/jquery.flipster.min.js"></script>
+    <script src="assets/componentes/percircle/percircle.js"></script>
+    <script src="assets/componentes/jquery-smartwizard-master/src/js/jquery.smartWizard.min.js"></script>
+    <!--[if IE]><!-->
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
