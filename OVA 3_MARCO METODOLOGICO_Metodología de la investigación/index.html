@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Template OVA UNAULA">
+    <meta name="author" content="Bos Developer">
+    <meta name="keyword" content="UNAULA">
+    <title>UNAULA</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="https://ghcdn.rawgit.org/miguel8888888/iconos/main/css/all.min.css">
+    <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet"> --> 
+
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
+    <link href="css/template-geometria.css" rel="stylesheet"> 
+    <link href="css/template.css" rel="stylesheet"> 
+    <link href="css/estilos1.css" rel="stylesheet"> 
+    <link href="css/estilos2.css" rel="stylesheet">
+    <link href="css/estilos3.css" rel="stylesheet"> 
+    <link href="css/estilos4.css" rel="stylesheet"> 
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none">
+        <h4>MENU</h4>
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
+          <i class="fad fa-home"></i> Inicio</a>
+        </li>
+        <li class="c-sidebar-nav-title">Contenido</li>
+        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
+          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>1. La ciencia: concepto y definición</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Método hipotético-deductivo (MHD)</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="3" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Tipos de conocimiento.</a></li>
+            
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>2. Acercamiento epistemológico a la economía como ciencia</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> El método en la economía.</a></li>
+            
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>3. Definición del problema</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span> El problema en la investigación.</a></li>
+            
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>4. Objetivos de la investigación</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad4"><span class="c-sidebar-nav-icon"></span> Los objetivos.</a></li>
+            
+          </ul>
+        </li>
+        
+      </ul>
+      <div class="text-center ov-personaje">
+          <img src="assets/img/img_ova/personaje.png" style="width:70%">
+      </div>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <i class="fas fa-bars"> </i>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="c-header-nav d-md-down-none ul_buttons">
+          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+          <li class="c-header-nav-item ">
+            <div class="box">
+                <div class="porcent">
+                    <svg class="svg_porcent">
+                        <circle cx="40" cy="60" r="25" style ="stroke: #994c91;stroke-width: 5px;"/>
+                        <circle class="up" cx="40" cy="60" r="25" style="stroke: #7a3d78;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
+                    </svg>
+                    <div class="number">
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-79.png" alt="" class="icons-menu"></a></li>
+          <li class="c-header-nav-item"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-78.png" alt="" class="icons-menu modal_scroll8"></a></li>
+          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu modal_scroll9" style="max-width: 30%;"></a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto">
+          <li class="c-header-nav-item d-md-down-none">
+            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Menú</li>
+            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread3"></li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main" id="content-ova">
+          
+        </main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio modal-xl" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-79.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content pdfs" style="margin-left: 25%;">
+
+                            <!-- UNIDAD2 -->
+                            
+                            <!-- UNIDAD3 -->
+                            <!-- <div class="col-md-12">
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD3/Elementos_fundamentales_para_plantear_un_problema.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Elementos_fundamentales_para_plantear_un_problema.pdf </a>
+                              </p>s
+                            </div> -->
+                            <!-- <div class="col-md-12">
+                              <p class="p_white size_20">
+                                <a href="assets/PDF/UNIDAD3/La_idea_en_la_investigación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La_idea_en_la_investigación.pdf</a>
+                              </p>
+                            </div> -->
+                            
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio modal-xl" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-78.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content custom-scrollbar8">
+                            <div class="custom-scrollbar__inner8">
+                              <p class="justificado text-white"> <b class="font-weight-bold">Análisis:</b> descomposición de elementos que conforman la totalidad de datos, para clasificar y reclasificar el material recogido desde diferentes puntos de vista para optar por el más preciso y representativo.</p>
+                              
+                              <p class="justificado text-white"> <b class="font-weight-bold">Bibliografía:</b> conjunto de títulos de obras referente al tema de Investigación.</p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Bivariado:</b>
+                                 dos variables expuestas por algún tipo de relación mutua.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Ciencia:</b>
+                                 conjunto sistemático de conocimientos, con los cuales, mediante el establecimiento de principios y leyes universales, el hombre explica, describe y transforma el mundo que lo rodea. 
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Concepto: </b>
+                                 símbolo que representa las semejanzas de fenómenos por demás diversos.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Descripción:</b>
+                                 declaración de las características que presentan los fenómenos.
+                              </p>
+
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Esquema:</b>
+                                 representación de las relaciones y funcionamiento del objeto o problema de la investigación.
+                              </p>
+
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Fidedigno:</b>
+                                 un término es fidedigno cuando cualquier investigador o estudiante lo entiende de la misma manera en que es definido en nuestro trabajo de investigación.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Hipótesis:</b>
+                                 respuesta tentativa a un problema; es una proposición que se pone a prueba para determinar su validez.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Hipótesis alternativa:</b>
+                                 hipótesis que se plantea con variables independientes, distintas a la hipótesis del trabajo.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Hipótesis de trabajo:</b>
+                                 es la que se utiliza para realizar la investigación, es decir, la respuesta tentativa al problema.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Hipótesis nula:</b>
+                                 es aquella que se formula para ser rechazada al realizar una prueba de hipótesis para inferir las características de una población investigada; sirve para probar la hipótesis de trabajo.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Índice:</b> 
+                                presentación ordenada de la estructura y contenido del trabajo, destacando los temas y subtemas. 
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Introducción:</b>
+                                sirve para iniciar y motivar al lector en el estudio del informe. En la introducción se indica cuál es el tema, su enfoque e importancia.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Método:</b>
+                                proceso lógico a través del cual se obtiene el conocimiento.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Método analítico:</b>
+                                se distinguen los elementos de un fenómeno y se revisan ordenadamente cada uno de los elementos por separado.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Método deductivo:</b>
+                                consiste en obtener conclusiones particulares a partir de una ley universal.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Método dialéctico:</b>
+                                estudia los fenómenos en sus relaciones con otros y en su estado de continuo cambio, ya que nada existe como un objeto aislado.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Método inductivo:</b>
+                                proceso por medio del cual, a partir del estudio de casos particulares, se obtienen conclusiones o leyes universales que explican o relacionan los fenómenos estudiados.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Método sintético:</b>
+                                se relacionan hechos aparentemente aislados y se formula una teoría que unifica los diversos elementos.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Modelo:</b>
+                                representación o abstracción de la realidad.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Neopositivismo:</b>
+                                movimiento filosófico que resalta la importancia de la comprobación científica de los conceptos filosóficos.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Procedimiento:</b>
+                                secuencia cronológica de operaciones para realizar una actividad.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Proceso</b>
+                                conjuntos de etapas o pasos realizados para llevar a cabo una función.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Prueba empírica:</b>
+                                factibilidad de observarse o medirse en la realidad.
+                              </p>
+                              <p class="justificado text-white">
+                                <b class="font-weight-bold">Técnica:</b>
+                                conjunto de instrumentos y medios a través de los cuales se efectúa el método.
+                              </p>
+                              </p>
+                            </div>
+                            <div class="custom-scrollbar__bar8">
+                              <div class="custom-scrollbar__knob8 cursor">
+                                <p class="text-center linea_scroll8">-</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio modal-xl" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="max-width: 70%;top: 16px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content custom-scrollbar9">
+                            <div class="custom-scrollbar__inner9">
+                              <p class="justificado text-white">Alvarado, Sara Victoria, 1993, La construcción de categorías teóricas a partir de los datos empíricos, como base del acercamiento metodológico en la investigación cualitativa, En: investigación cualitativa. Confrontación y prospectiva, Medellín, Universidad de Antioquia.</p><br>
+                              <p class="justificado text-white"> Baker, R. (2009). ¿Cuál es el significado del «interés público»? Examinando la ideología de la profesión de la Contaduría Pública Americana. En M. Gómez y C. M. Ospina (comp.). Avances interdisciplinarios para una comprensión crítica de la Contabilidad. Bogotá: Universidad de Antioquía / Universidad Nacional, 222-243. Original publicado en 2005. B.</p><br>
+                              <p class="justificado text-white">
+                                Bonilla, Elsy y Rodríguez, Penélope, l997, Más Allá del dilema de los métodos. La investigación en Ciencias Sociales, Bogotá, Norma.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Dussel, E. (2016). 14 tesis de ética. Hacia la esencia del pensamiento crítico. Editorial Trotta.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Bryman A. y Burguess R. (eds), 1994, Analysing Qualitative data. London, New York, Routledge.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Delgado, Juan Manuel y Gutiérrez, Juan, 1995, Métodos y técnicas cualitativas de investigación en ciencias sociales,Madrid, Síntesis, S.A.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Denzin, Norman y Lincoln, Yvonna, 1994, Handbook of qualitative research (editors), London, Sage Publications.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Eco, Umberto, 1987, Cómo se hace una tesis. Técnicas y procedimientos de investigación, estudio y escritura, Barcelona, Gedisa S.A.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Folguera, Pilar, 1994, Cómo se hace Historia oral, Madrid, Eudema.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Galeano, Eumelia y Vélez, Olga Lucía, 2000, Investigación cualitativa. Estados del arte, Medellín, Digital Express.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Guba, Egon G., 1989, Criterios de credibilidad en la investigación naturalítica, En: Sacristán, Jimeno y A., Pérez, La enseñanza: su teoría y su práctica, 3ª, edición, Madrid, Akal S.A., p. 148-165.  
+                              </p><br>
+                              <p class="justificado text-white">
+                                Hernández, Rudy. (3 de octubre del 2015). Universidad de Oriente. Cátedra Investigación educativa. https://www.slideshare.net/CarmenFB/planteamiento-del-problema-57385954
+                              </p><br>
+                              <p class="justificado text-white">
+                                Hernández, N. (12 de mayo de 2018) Planteamiento cuantitativo del problema. Capítulo 3. Recuperado de, https://www.slideshare.net/mayumiccorisapraquintana/capitulo-3-y-4-105815860
+                              </p><br>
+                              <p class="justificado text-white">
+                                Juarez, J. (25 de marzo de 2019) Preguntas de investigación. Metodología de la investigación. Recuperado de  https://jacqueline-juarez-metodos.blogspot.com/2019/03/preguntas-de-investigacion.html
+                              </p><br>
+                              <p class="justificado text-white">
+                                Miles, M.B. y Huberman, M.A., 1994, Qualitative data analysis: An sapanded sourcebook, Thousand Oaks, California, Sage Publications.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Roda, C. (22 de marzo de 2020) La mente es maravillosa. Karl Popper y su propuesta para diferenciar ciencia de lo que no lo es. https://lamenteesmaravillosa.com/karl-popper-y-su-propuesta-para-diferenciar-ciencia-de-lo-que-no-lo-es/
+                              </p><br>
+                              <p class="justificado text-white">
+                                Sandoval, Carlos, 1997, Enfoques cualitativos de investigación social. Módulo 4. Programa de especialización en teoría, métodos y técnicas e investigación social. Iner-Icfes.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Serna, Ciro & López, F.  (2005).  Ciencia, Método e Investigación.  Universidad de Manizales, Facultad de Economía. ISBN 958-9314-25-2
+                              </p><br>
+                              <p class="justificado text-white">
+                                Schwartz y Jacobs, 1984, Sociología cualitativa, Método para la reconstrucción de la realidad, México, Trillas.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Silverman, David, 1963, Interpreting cualitative data:Methods for analysing talk, text and interaction, London, Sage Publications.
+                              </p><br>
+                              <p class="justificado text-white">
+                                Taylor S.J., y Bodgan, R.  1994, Introducción a los métodos cualitativos de investigación social.La búsqueda de significados, Barcelona, Paidós.
+                              </p><br>
+                            </div>
+                            <div class="custom-scrollbar__bar9">
+                              <div class="custom-scrollbar__knob9 cursor">
+                                <p class="text-center linea_scroll9">-</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="c-footer">
+          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+        </footer>
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="js/coreiu.bundle.min.js"></script>
+    <script src="js/coreiu-utils.js"></script>
+    <script src="js/jquery3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js" type="text/javascript"></script>
+    <script src="js/SCORM_API_wrapper.js"></script>
+    <script src="assets/componentes/flipster/jquery.flipster.min.js"></script>
+    <script src="assets/componentes/percircle/percircle.js"></script>
+    <script src="assets/componentes/jquery-smartwizard-master/src/js/jquery.smartWizard.min.js"></script>
+    <!--[if IE]><!-->
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
