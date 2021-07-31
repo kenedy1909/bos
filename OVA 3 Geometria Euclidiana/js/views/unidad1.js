@@ -686,6 +686,161 @@ function cajas(num){
           break;
   }
 }
+function cajas2(num){
+  switch (parseInt(num)) {
+      case 1:
+          var text = `
+                        <div class="row pl-3">
+                          <div class="col-md-6">
+                            <div class="radius-2 bg-verde-1 p-3">
+                              <p class="p_white justificado">También denominado equiángulo.</p>
+                              <br>
+                              <p class="p_white justificado">Tiene sus tres lados iguales y sus tres ángulos.</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <img src="assets/img/img_ova/triagulo_2.png" class="m-auto img-70">
+                          </div>
+                        </div>
+                     `;
+          $('.avance_blanco').removeClass('activa');            
+          $('.nav2_1').addClass('activa');
+
+          $('.opcion_p2_2').removeClass('encendido');
+          $('.opcion_p2_2').addClass('inactivo');
+
+          $('.na2_1').removeClass('inactivo');           
+          $('.na2_1').addClass('encendido');
+          
+          $('#infografia2').html(text);
+          break;
+      case 2:
+          var text = `
+                        <div class="row pl-3">
+                          <div class="col-md-6">
+                            <div class="radius-2 bg-verde-1 p-3">
+                              <p class="p_white justificado">Tiene dos lados iguales (los ángulos a los que se oponen son también iguales).  Se llama vértice al compartido por los lados iguales, base al lado opuesto al vértice.</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <img src="assets/img/img_ova/triagulo_3.png" class="m-auto img-70">
+                          </div>
+                        </div>
+                     `;
+          $('.avance_blanco').removeClass('activa');            
+          $('.nav2_2').addClass('activa');
+
+          $('.opcion_p2_2').removeClass('encendido');
+          $('.opcion_p2_2').addClass('inactivo');
+
+          $('.na2_2').removeClass('inactivo');           
+          $('.na2_2').addClass('encendido');
+          
+          $('#infografia2').html(text);
+          break;
+      case 3:
+          var text = `
+                        <div class="row pl-3">
+                          <div class="col-md-6">
+                            <div class="radius-2 bg-verde-1 p-3">
+                              <p class="p_white justificado">Tiene sus tres lados desiguales</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <img src="assets/img/img_ova/triagulo_4.png" class="m-auto img-70">
+                          </div>
+                        </div>
+                     `;
+          $('.avance_blanco').removeClass('activa');            
+          $('.nav2_3').addClass('activa');
+
+          $('.opcion_p2_2').removeClass('encendido');
+          $('.opcion_p2_2').addClass('inactivo');
+
+          $('.na2_3').removeClass('inactivo');           
+          $('.na2_3').addClass('encendido');
+          
+          $('#infografia2').html(text);
+          break;
+      case 4:
+          var text = `
+                        <div class="row pl-3">
+                          <div class="col-md-6">
+                            <div class="radius-2 bg-verde-1 p-3">
+                              <p class="p_white justificado">Tiene sus tres ángulos agudos.</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <img src="assets/img/img_ova/triagulo_5.png" class="m-auto img-70">
+                          </div>
+                        </div>
+                     `;
+          $('.avance_blanco').removeClass('activa');            
+          $('.nav2_4').addClass('activa');
+
+          $('.opcion_p2_2').removeClass('encendido');
+          $('.opcion_p2_2').addClass('inactivo');
+
+          $('.na2_4').removeClass('inactivo');           
+          $('.na2_4').addClass('encendido');
+          
+          $('#infografia2').html(text);
+          break;
+      case 5:
+          var text = `
+                        <div class="row pl-3">
+                          <div class="col-md-6">
+                            <div class="radius-2 bg-verde-1 p-3">
+                              <p class="p_white justificado">Tiene un ángulo obtuso.</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <img src="assets/img/img_ova/triagulo_6.png" class="m-auto img-70">
+                          </div>
+                        </div>
+                     `;
+          $('.avance_blanco').removeClass('activa');            
+          $('.nav2_5').addClass('activa');
+
+          $('.opcion_p2_2').removeClass('encendido');
+          $('.opcion_p2_2').addClass('inactivo');
+
+          $('.na2_5').removeClass('inactivo');           
+          $('.na2_5').addClass('encendido');
+          
+          $('#infografia2').html(text);
+          break;
+      case 6:
+          var text = `
+                        <div class="row pl-3">
+                          <div class="col-md-6">
+                            <div class="radius-2 bg-verde-1 p-3">
+                              <p class="p_white justificado">Tiene un ángulo recto.</p>
+                              <br>
+                              <p class="p_white justificado">Se llama hipotenusa al lado que se opone al ángulo recto (es el mayor) y a los otros dos, catetos..</p>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <img src="assets/img/img_ova/triagulo_7.png" class="m-auto img-70">
+                          </div>
+                        </div>
+                     `;
+          $('.avance_blanco').removeClass('activa');            
+          $('.nav2_6').addClass('activa');
+
+          $('.opcion_p2_2').removeClass('encendido');
+          $('.opcion_p2_2').addClass('inactivo');
+
+          $('.na2_6').removeClass('inactivo');           
+          $('.na2_6').addClass('encendido');
+          
+          $('#infografia2').html(text);
+          break;
+      
+      default:
+          break;
+  }
+}
 /*
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
