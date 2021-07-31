@@ -239,14 +239,14 @@ function scroll_dos(){
     container = document.querySelector('.custom-scrollbar__inner_dos');
     scroll();
 }
-function modal_scroll3(){
+function scroll_tres(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob3');
-    bar = document.querySelector('.custom-scrollbar__bar3');
-    container = document.querySelector('.custom-scrollbar__inner3');
+    knob = document.querySelector('.custom-scrollbar__knob_tres');
+    bar = document.querySelector('.custom-scrollbar__bar_tres');
+    container = document.querySelector('.custom-scrollbar__inner_tres');
     scroll();
 }
 
@@ -950,3 +950,36 @@ function funcionalidad_6(num) {
         $(".p_funcionalidad_6").addClass('bg-verde-2');
     }
 }
+
+function enter_hover_1(num) {
+    $(".text_hover_1_1, .text_hover_1_2").removeClass('img-100');
+    $(".content_hover_1_1, .content_hover_1_2").removeClass('img-100');
+    $(".text_hover_1_1, .text_hover_1_2").addClass('img-50');
+    $(".content_hover_1_1, .content_hover_1_2").addClass('img-25');
+    $(".info_hover_1_1, .info_hover_1_2").removeClass('d-flex');
+    $(".info_hover_1_1, .info_hover_1_2").addClass('d-none');
+    $(".ocultar_hover_1_1, .ocultar_hover_1_2").removeClass('d-none');
+    $(".ocultar_hover_1_1, .ocultar_hover_1_2").addClass('d-flex');
+    if (num == 1) {
+        $(".info_hover_1_1").removeClass('d-none');
+        $(".info_hover_1_1").addClass('d-flex');
+        $(".text_hover_1_1").removeClass('img-50');
+        $(".text_hover_1_1").addClass('img-100');
+        $(".content_hover_1_1").removeClass('img-25');
+        $(".content_hover_1_1").addClass('img-100');
+        $(".ocultar_hover_1_1").removeClass('d-flex');
+        $(".ocultar_hover_1_1").addClass('d-none');
+    }else if (num == 2) {
+        $(".info_hover_1_2").removeClass('d-none');
+        $(".info_hover_1_2").addClass('d-flex');
+        $(".text_hover_1_2").removeClass('img-50');
+        $(".text_hover_1_2").addClass('img-100');
+        $(".content_hover_1_2").removeClass('img-25');
+        $(".content_hover_1_2").addClass('img-100');
+        $(".ocultar_hover_1_2").removeClass('d-flex');
+        $(".ocultar_hover_1_2").addClass('d-none');
+    }
+}
+function leave_hover_1(num) {
+    /*if (num == 1) {}
+*/}
