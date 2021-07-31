@@ -413,12 +413,25 @@ a.control_next {
 .border-right-color-azul-2{
 	border-right-color: #006092;
 }
+.border-left-color-verde-2{
+  border-left-color: #0AB8BF;
+}
+.border-right-color-verde-2{
+  border-right-color: #0AB8BF;
+}
 .bg-azul-1{
 	background-color: #0A57BF;
+}
+.text-azul-1{
+  color: #0A57BF;
 }
 
 .bg-amarillo-1{
 	background-color: #FF9900;
+}
+
+.bg-amarillo-2{
+  background-color: #FFE28B;
 }
 
 .bg-verde-2{
