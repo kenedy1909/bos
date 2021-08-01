@@ -433,6 +433,9 @@ a.control_next {
 .bg-amarillo-2{
   background-color: #FFE28B;
 }
+.text-amarillo-2{
+  color: #FFE28B;
+}
 
 .bg-verde-2{
 	background-color: #0AB8BF;
@@ -529,6 +532,9 @@ a.control_next {
 
 .border-right-verde-2{
 	border-right: solid #0AB8BF 3px;
+}
+.border-left-azul-1{
+  border-left: solid #0A57BF 3px;
 }
 
 

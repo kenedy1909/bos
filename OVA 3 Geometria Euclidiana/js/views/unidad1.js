@@ -1265,3 +1265,21 @@ function instrucciones(num) {
         $(".instrucciones-4").removeClass('d-none');
     }
 }
+
+function enter_hover_2(num) {
+    $(".enter_hover_2_1, .enter_hover_2_2, .enter_hover_2_3, .enter_hover_2_4").removeClass('bg-color-activi-o');
+    $(".enter_hover_2_1, .enter_hover_2_2, .enter_hover_2_3, .enter_hover_2_4").addClass('bg-azul-1');
+    if (num == 1) {
+        $(".enter_hover_2_1").addClass('bg-color-activi-o');
+        $(".enter_hover_2_1").removeClass('bg-azul-1');
+    }else if (num == 2) {
+        $(".enter_hover_2_2").addClass('bg-color-activi-o');
+        $(".enter_hover_2_2").removeClass('bg-azul-1');
+    }else if (num == 3) {
+        $(".enter_hover_2_3").addClass('bg-color-activi-o');
+        $(".enter_hover_2_3").removeClass('bg-azul-1');
+    }else if (num == 4) {
+        $(".enter_hover_2_4").addClass('bg-color-activi-o');
+        $(".enter_hover_2_4").removeClass('bg-azul-1');
+    }
+}
