@@ -128,28 +128,6 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
-            /*$(".i1").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv.i1");
-            var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
-            var i = new Input(5);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input(5);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  */
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
@@ -214,6 +192,31 @@ function controlSlides(num){
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 33:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            $(".i1").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv.i1");
+            var elementoPadre2 = document.querySelector(".inputDiv.i2");
+            var inputsRy = [];  
+            var i = new Input(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             break;
         default:
             break;
@@ -400,106 +403,26 @@ function quitar(num) {
 }
 */
 function scroll_horizontal(num){
-    $('.scroll-img').removeClass('bg-piel');
-    $('.scroll-img').addClass('bg-amarillo');
-    $('.scroll-flecha').removeClass('d-block');
-    $('.scroll-flecha').addClass('d-none');
+    $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').removeClass('d-flex');
+    $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').addClass('d-none');
     switch (parseInt(num)) {
         case 0:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/francisco_fernando_austria.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1914.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Es asesinado por los Serbios, el Archiduque Francisco Fernando, quien para ese momento era el heredero al trono de Austria Hungría.</b>');
-            $('.scroll-img-0').removeClass('bg-amarillo');
-            $('.scroll-img-0').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
+            $('.scroll_horizontal_1').addClass('d-flex');
+            $('.scroll_horizontal_1').removeClass('d-none');
             break;
         case 1:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/tratado_londres.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1915.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Italia abandona el bloque de la TRIPLE ALIANZA y entra a la guerra junto a la TRIPLE ENTENTE al firmar el tratado de Londres.</b>');
-            $('.scroll-img-1').removeClass('bg-amarillo');
-            $('.scroll-img-1').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
+            $('.scroll_horizontal_2').addClass('d-flex');
+            $('.scroll_horizontal_2').removeClass('d-none');
             break;
         case 2:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/trincheras.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1916.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Enfrentamientos entre los ejércitos de Francia y Alemania, representaron las batallas más sangrientas de la Guerra.</b>');
-            $('.scroll-img-2').removeClass('bg-amarillo');
-            $('.scroll-img-2').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            break;
-        case 3:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/nicolas.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1917.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>El inicio en Rusia de la revolución de febrero que generó la abdicación del Zar Nicolás.</b>');
-            $('.scroll-img-3').removeClass('bg-amarillo');
-            $('.scroll-img-3').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            $('.scroll-flecha-3').removeClass('d-none');
-            $('.scroll-flecha-3').addClass('d-block');
-            break;
-        case 4:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/union.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1918.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Se firma el Tratado de Brest-Litovsk, donde el nuevo gobierno socialista de Rusia firma la renuncia a algunos territorios.</b>');
-            $('.scroll-img-4').removeClass('bg-amarillo');
-            $('.scroll-img-4').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            $('.scroll-flecha-3').removeClass('d-none');
-            $('.scroll-flecha-3').addClass('d-block');
-            $('.scroll-flecha-4').removeClass('d-none');
-            $('.scroll-flecha-4').addClass('d-block');
-            break;
-        case 5:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/versalles.png">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1919.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Se da la firma del tratado de Versalles, contempla por primera vez la creación de un tribunal especial en su artículo 227.</b>');
-            $('.scroll-img-5').removeClass('bg-amarillo');
-            $('.scroll-img-5').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            $('.scroll-flecha-3').removeClass('d-none');
-            $('.scroll-flecha-3').addClass('d-block');
-            $('.scroll-flecha-4').removeClass('d-none');
-            $('.scroll-flecha-4').addClass('d-block');
-            $('.scroll-flecha-5').removeClass('d-none');
-            $('.scroll-flecha-5').addClass('d-block');
+            $('.scroll_horizontal_3').addClass('d-flex');
+            $('.scroll_horizontal_3').removeClass('d-none');
             break;
         default:
             break;
     }
 }
-function scroll_horizontal2(num){
+/*function scroll_horizontal2(num){
     switch (parseInt(num)) {
         case 0:
             var img_scroll = `
@@ -652,7 +575,7 @@ function scroll_horizontal2(num){
         default:
             break;
     }
-}
+}*/
 
 function cajas(num){
   switch (parseInt(num)) {
