@@ -460,7 +460,8 @@
 	width: 60%;
 }
 
-/dropdown/
+
+
 * {
   box-sizing: border-box;
 }
@@ -497,6 +498,44 @@
   background: #e39d40;
 }
 
+
+
+* {
+  box-sizing: border-box;
+}
+
+.acordeon2 input {
+  display: none;
+}
+
+.acordeon__titulo2 {
+  display: block;
+  background: #4472C4;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+  height: 60px;
+  border-radius: 20px;
+}
+.acordeon__titulo2:hover {
+  background: #4472C4;
+}
+
+.acordeon__contenido2 {
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.acordeon2 input:checked ~ .acordeon__contenido2{
+  height: auto;
+  margin: 15px 0;
+}
+.acordeon__item2{
+  background: #ffffff;
+}
 
 .imagen_acordeon{
   background: #D0CECE;
@@ -703,6 +742,75 @@ a.control_next {
 }
 
 .slider2_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+
+
+
+.ind_3carrusel{
+  height: 53px;
+  background: #9f4c97;
+}
+
+#slider3 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider3 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider3 ul li {
+  position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    background: #4472C4;
+    text-align: center;
+    border-radius: 30px;
+}
+
+a.control_prev3, a.control_next3 {
+  
+  width: auto;
+  height: auto;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider3_option {
   position: relative;
   margin: 10px auto;
   width: 160px;
@@ -991,4 +1099,203 @@ a.control_next {
   padding-top: 3px;
   color: white;
   font-weight: bold;
+}
+
+.size_14{
+  font-size: 14px;
+}
+
+.slide-container {
+  width: 300px;
+}
+
+.slide-container {
+  width: 300px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+    border-radius: 50%;
+  background-image: url('https://img.icons8.com/material-outlined/344/average-2.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+    border-radius: 50%;
+  background-image: url('https://img.icons8.com/material-outlined/344/average-2.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+}
+
+/*deslizador*/
+.inputDiv {
+  width: 80%;
+  display:block;
+  color:#aaa;
+  position:relative;
+}
+.output{display:none; width:40px; text-align:center;}
+
+input[type='range'] {
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(90deg);
+  position: relative;
+  left: -130px;
+}
+
+input[type='range']:focus {
+  outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-image: url('../assets/img/img_ova/Gravedad.png');
+  transform: scaleX(-1);
+  background-size: 100% 100%;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-image: url('../assets/img/img_ova/Gravedad.png');
+  transform: scaleX(-1);
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  background-image: url('https://img.icons8.com/material-outlined/344/average-2.png');
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #00384f;
+  height: 3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #00384f;
+  height: 3px;
+}
+
+input[type=range]::-ms-track {
+  background-color: #00384f;
+  height: 3px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background-color: #00384f;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-upper {
+  background-color: #00384f;
+  cursor: pointer;
+} 
+
+.banner_16{
+  min-height: 200px;
+    background: white;
+    border-radius: 50px;
+    padding: 50px 30px 26px 25px;
+    border: solid #548135;
+    margin-bottom: 10px;
+}
+
+.desliza_verde{
+  border-radius: 10px;
+  width: 2%;
+  margin-top: 4%;
+}
+
+.bannerManzana{
+  background: #BDD7EE;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.ejercicio_ejemplo{
+  background: #BDD7EE;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.baneBlue_c{
+  background: #bdd7ee;
+    padding: 25px;
+    border-radius: 50px;
+    width: 90%;
+}
+
+.btnmodal{
+  height: 30px;
+  width: 30px;
+  
+  border-radius: 50%;
+}
+
+.btn_active{
+  background: #006098;
+}
+
+.btn_inactive{
+  background: #E39D40;
 }
