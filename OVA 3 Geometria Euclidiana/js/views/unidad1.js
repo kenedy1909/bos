@@ -75,6 +75,7 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
+    $(".ruanda-img").on('click', ruandas);
     /*$(".modal_scroll1").on('click', modal_scroll1);
     $(".modal_scroll3").on('click', modal_scroll2);*/
     /*$(".ruanda-img").on('click', ruandas);*/
@@ -841,35 +842,28 @@ function cajas2(num){
           break;
   }
 }
-/*
+
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
-    $(".ruanda-img").removeClass('bg-cafe-activi');
-    $(".ruanda-img").addClass('bg-amarillo-c');
-    $(".ruanda-img-"+ruanda_num).removeClass('bg-amarillo-c');
-    $(".ruanda-img-"+ruanda_num).addClass('bg-cafe-activi');
+    $(".ruanda-img").removeClass('bg-verde-1');
+    $(".ruanda-img").addClass('bg-color-activi-c');
+    $(".ruanda-img-"+ruanda_num).removeClass('bg-color-activi-c');
+    $(".ruanda-img-"+ruanda_num).addClass('bg-verde-1');
+    $(".ruanda-1, .ruanda-2, .ruanda-3").addClass('d-none');
+    $(".ruanda-1, .ruanda-2, .ruanda-3").removeClass('d-flex');
 
     if (ruanda_num==1) {
-        var texto = `
-                    <img src="assets/img/img_ova/Derecho penal internacional-03.png" class="img-20 m-auto">
-                    <p class="p_black justificado my-auto pl-4">Es importante destacar que existieron diversos comités creados para redactar un código penal internacional que posteriormente debía ser discutido por los estados, sin embargo, no se presentó interés real para dar vida a un tratado que creará una corte internacional de carácter permanente.</p>
-                    `;
-        $("#ruanda").html(texto);
+        $(".ruanda-1").removeClass('d-none');
+        $(".ruanda-1").addClass('d-flex');
     }else if (ruanda_num==2) {
-        var texto = `
-                    <img src="assets/img/img_ova/Derecho penal internacional-07.png" class="img-20 m-auto">
-                    <p class="p_black justificado my-auto pl-4">Por lo anterior, las décadas pasaron sin que se volviera a recurrir al derecho penal internacional, aun cuando el contexto geopolítico ha evidenciado diversos conflictos armados, en los que hubiese sido importante contar con un tribunal que juzgará a los responsables de cometerlos y evitar la impunidad frente a graves crímenes internacionales.</p>
-                    `;
-        $("#ruanda").html(texto);
+        $(".ruanda-2").removeClass('d-none');
+        $(".ruanda-2").addClass('d-flex');
     }else if (ruanda_num==3) {
-        var texto = `
-                    <img src="assets/img/img_ova/Derecho penal internacional-06.png" class="img-20 m-auto">
-                    <p class="p_black justificado my-auto pl-4">Debe finalmente destacarse que, a los dos tribunales en los que se centra el presente tema, fueron creados por el Consejo de Seguridad de Naciones Unidas, en virtud del mandato que le asigna la Carta de la ONU de adoptar las medidas para el mantenimiento y restablecimiento de la paz.</p>
-                    `;
-        $("#ruanda").html(texto);
+        $(".ruanda-3").removeClass('d-none');
+        $(".ruanda-3").addClass('d-flex');
     }
 }
-
+/*
 function yugoslavias(num) {
     $(".yugoslavia-info").removeClass('bg-amarillo-c');
     $(".yugoslavia-info").addClass('bg-cafe-mo');
@@ -1161,5 +1155,113 @@ function funcionalidad_8(num) {
         $(".funcionalidad_8_2").removeClass('bg-color-activi-c');
         $(".funcionalidad_8_2").addClass('bg-verde-2');
         $(".info_funcionalidad_8_2").removeClass('d-none');
+    }
+}
+
+function cardPara4(num) {
+    $("#card4-1, #card4-2, #card4-3, #card4-4").removeClass('bg-blanco');
+    $("#card4-1").addClass('bg-color-activi-o');
+    $("#card4-2").addClass('bg-azul-1');
+    $("#card4-3").addClass('bg-verde-2');
+    $("#card4-4").addClass('bg-verde-1');
+    $("#card4-1").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Bisectrices interiores:</b></p>
+                                <br>
+                                <p class="p_white justificado">Son las que corresponden a los ángulos interiores.</p>
+                              </div>
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangulo (3).png" class="img-100 p-3">
+                              </div>
+                            </div>
+                        
+                        `);
+    $("#card4-2").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangulo (2).png" class="img-100 p-3">
+                              </div>
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Mediatrices</b></p>
+                                <br>
+                                <p class="p_white justificado">Las perpendiculares a cada lado en su punto medio.</p>
+                              </div>
+                            </div>
+                        `);
+    $("#card4-3").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Medianas:</b></p>
+                                <br>
+                                <p class="p_white justificado">Unen el punto medio de cada lado con el vértice opuesto.</p>
+                              </div>
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangulo (1).png" class="img-100 p-3">
+                              </div>
+                            </div>
+                        
+                        `);
+    $("#card4-4").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangular.png" class="img-100 p-3">
+                              </div>
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Alturas:</b></p>
+                                <br>
+                                <p class="p_white justificado">Perpendicular a cada lado (o a su prolongación) desde el vértice opuesto.</p>
+                              </div>
+                            </div>
+                        `);
+    if (num == 1) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_8.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-1").removeClass('bg-color-activi-o');
+        $("#card4-1").addClass('bg-blanco');
+        $("#card4-1").html(texto);
+    }if (num == 2) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_9.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-2").removeClass('bg-azul-1');
+        $("#card4-2").addClass('bg-blanco');
+        $("#card4-2").html(texto);
+    }if (num == 3) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_10.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-3").removeClass('bg-verde-2');
+        $("#card4-3").addClass('bg-blanco');
+        $("#card4-3").html(texto);
+    }if (num == 4) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_11.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-4").removeClass('bg-verde-1');
+        $("#card4-4").addClass('bg-blanco');
+        $("#card4-4").html(texto);
+    }
+}
+
+function instrucciones(num) {
+    $(".instrucciones-1, .instrucciones-2, .instrucciones-3, .instrucciones-4").addClass('d-none');
+    if (num == 1) {
+        $(".instrucciones-1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".instrucciones-2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".instrucciones-3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".instrucciones-4").removeClass('d-none');
     }
 }
