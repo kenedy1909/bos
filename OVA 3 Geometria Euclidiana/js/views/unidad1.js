@@ -75,6 +75,7 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
+    $(".ruanda-img").on('click', ruandas);
     /*$(".modal_scroll1").on('click', modal_scroll1);
     $(".modal_scroll3").on('click', modal_scroll2);*/
     /*$(".ruanda-img").on('click', ruandas);*/
@@ -841,35 +842,28 @@ function cajas2(num){
           break;
   }
 }
-/*
+
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
-    $(".ruanda-img").removeClass('bg-cafe-activi');
-    $(".ruanda-img").addClass('bg-amarillo-c');
-    $(".ruanda-img-"+ruanda_num).removeClass('bg-amarillo-c');
-    $(".ruanda-img-"+ruanda_num).addClass('bg-cafe-activi');
+    $(".ruanda-img").removeClass('bg-verde-1');
+    $(".ruanda-img").addClass('bg-color-activi-c');
+    $(".ruanda-img-"+ruanda_num).removeClass('bg-color-activi-c');
+    $(".ruanda-img-"+ruanda_num).addClass('bg-verde-1');
+    $(".ruanda-1, .ruanda-2, .ruanda-3").addClass('d-none');
+    $(".ruanda-1, .ruanda-2, .ruanda-3").removeClass('d-flex');
 
     if (ruanda_num==1) {
-        var texto = `
-                    <img src="assets/img/img_ova/Derecho penal internacional-03.png" class="img-20 m-auto">
-                    <p class="p_black justificado my-auto pl-4">Es importante destacar que existieron diversos comités creados para redactar un código penal internacional que posteriormente debía ser discutido por los estados, sin embargo, no se presentó interés real para dar vida a un tratado que creará una corte internacional de carácter permanente.</p>
-                    `;
-        $("#ruanda").html(texto);
+        $(".ruanda-1").removeClass('d-none');
+        $(".ruanda-1").addClass('d-flex');
     }else if (ruanda_num==2) {
-        var texto = `
-                    <img src="assets/img/img_ova/Derecho penal internacional-07.png" class="img-20 m-auto">
-                    <p class="p_black justificado my-auto pl-4">Por lo anterior, las décadas pasaron sin que se volviera a recurrir al derecho penal internacional, aun cuando el contexto geopolítico ha evidenciado diversos conflictos armados, en los que hubiese sido importante contar con un tribunal que juzgará a los responsables de cometerlos y evitar la impunidad frente a graves crímenes internacionales.</p>
-                    `;
-        $("#ruanda").html(texto);
+        $(".ruanda-2").removeClass('d-none');
+        $(".ruanda-2").addClass('d-flex');
     }else if (ruanda_num==3) {
-        var texto = `
-                    <img src="assets/img/img_ova/Derecho penal internacional-06.png" class="img-20 m-auto">
-                    <p class="p_black justificado my-auto pl-4">Debe finalmente destacarse que, a los dos tribunales en los que se centra el presente tema, fueron creados por el Consejo de Seguridad de Naciones Unidas, en virtud del mandato que le asigna la Carta de la ONU de adoptar las medidas para el mantenimiento y restablecimiento de la paz.</p>
-                    `;
-        $("#ruanda").html(texto);
+        $(".ruanda-3").removeClass('d-none');
+        $(".ruanda-3").addClass('d-flex');
     }
 }
-
+/*
 function yugoslavias(num) {
     $(".yugoslavia-info").removeClass('bg-amarillo-c');
     $(".yugoslavia-info").addClass('bg-cafe-mo');

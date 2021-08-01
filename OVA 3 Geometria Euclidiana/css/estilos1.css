@@ -629,3 +629,24 @@ a.control_next {
 .text-amarillo-3{
   color: #FFC000;
 }
+
+
+.bg-gris-o{
+  background-color: #D1D1D1;
+}
+.h-6px{
+  height: 6px;
+}
+.h-80px{
+  height: 80px;
+}
+.top-n40px{
+  top: -40px;
+}
+.w-80px{
+  width: 80px;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
