@@ -1258,3 +1258,16 @@ function cardPara4(num) {
         $("#card4-4").html(texto);
     }
 }
+
+function instrucciones(num) {
+    $(".instrucciones-1, .instrucciones-2, .instrucciones-3, .instrucciones-4").addClass('d-none');
+    if (num == 1) {
+        $(".instrucciones-1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".instrucciones-2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".instrucciones-3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".instrucciones-4").removeClass('d-none');
+    }
+}

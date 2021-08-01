@@ -621,3 +621,11 @@ a.control_next {
 .border-b-r{
   border-bottom-right-radius: 3em;
 }
+.border-abajo-radius{
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+
+.text-amarillo-3{
+  color: #FFC000;
+}
