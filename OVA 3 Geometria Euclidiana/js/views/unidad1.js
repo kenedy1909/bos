@@ -1163,3 +1163,98 @@ function funcionalidad_8(num) {
         $(".info_funcionalidad_8_2").removeClass('d-none');
     }
 }
+
+function cardPara4(num) {
+    $("#card4-1, #card4-2, #card4-3, #card4-4").removeClass('bg-blanco');
+    $("#card4-1").addClass('bg-color-activi-o');
+    $("#card4-2").addClass('bg-azul-1');
+    $("#card4-3").addClass('bg-verde-2');
+    $("#card4-4").addClass('bg-verde-1');
+    $("#card4-1").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Bisectrices interiores:</b></p>
+                                <br>
+                                <p class="p_white justificado">Son las que corresponden a los ángulos interiores.</p>
+                              </div>
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangulo (3).png" class="img-100 p-3">
+                              </div>
+                            </div>
+                        
+                        `);
+    $("#card4-2").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangulo (2).png" class="img-100 p-3">
+                              </div>
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Mediatrices</b></p>
+                                <br>
+                                <p class="p_white justificado">Las perpendiculares a cada lado en su punto medio.</p>
+                              </div>
+                            </div>
+                        `);
+    $("#card4-3").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Medianas:</b></p>
+                                <br>
+                                <p class="p_white justificado">Unen el punto medio de cada lado con el vértice opuesto.</p>
+                              </div>
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangulo (1).png" class="img-100 p-3">
+                              </div>
+                            </div>
+                        
+                        `);
+    $("#card4-4").html(`
+                            <div class="d-flex p-3">
+                              <div class="img-35">
+                                <img src="assets/img/img_ova/triangular.png" class="img-100 p-3">
+                              </div>
+                              <div class="img-65">
+                                <p class="p_white justificado"><b>Alturas:</b></p>
+                                <br>
+                                <p class="p_white justificado">Perpendicular a cada lado (o a su prolongación) desde el vértice opuesto.</p>
+                              </div>
+                            </div>
+                        `);
+    if (num == 1) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_8.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-1").removeClass('bg-color-activi-o');
+        $("#card4-1").addClass('bg-blanco');
+        $("#card4-1").html(texto);
+    }if (num == 2) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_9.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-2").removeClass('bg-azul-1');
+        $("#card4-2").addClass('bg-blanco');
+        $("#card4-2").html(texto);
+    }if (num == 3) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_10.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-3").removeClass('bg-verde-2');
+        $("#card4-3").addClass('bg-blanco');
+        $("#card4-3").html(texto);
+    }if (num == 4) {
+        var texto = `
+                    <div class="d-flex p-3">
+                      <img src="assets/img/img_ova/triangulo_11.png" class="img-50 m-auto">
+                    </div>
+                    `;
+        $("#card4-4").removeClass('bg-verde-1');
+        $("#card4-4").addClass('bg-blanco');
+        $("#card4-4").html(texto);
+    }
+}

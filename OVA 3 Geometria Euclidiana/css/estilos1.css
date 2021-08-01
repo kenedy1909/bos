@@ -605,3 +605,19 @@ a.control_next {
 .bg-gris-1{
   background: #767171;
 }
+
+.border-t-l{
+  border-top-left-radius: 3em;
+}
+
+.border-t-r{
+  border-top-right-radius: 3em;
+}
+
+.border-b-l{
+  border-bottom-left-radius: 3em;
+}
+
+.border-b-r{
+  border-bottom-right-radius: 3em;
+}
