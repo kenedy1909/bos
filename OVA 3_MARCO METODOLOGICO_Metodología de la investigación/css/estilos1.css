@@ -29,6 +29,194 @@
 	background: #B7CBD9;
 }
 
+
+.bg-color{
+	background: var(--bg-color)!important;
+}
+.bg-color-dark{
+	background: var(--bg-color-dark)!important;
+}
+.bg-color-medium{
+	background: var(--bg-color-medium)!important;
+}
+.bg-color-claro{
+	background: var(--bg-color-claro)!important;
+}
+.bg-color-naranja{
+	background: #ed7d31!important;
+}
+.bg-color-celeste{
+	background: #b4c6e7!important;
+}
+.bg-color-verde{
+	background: #2fe17d;
+}
+.bg-color-verde2{
+	background: #49af73;
+}
+.bg-color-verde3{
+	background: #5fdabd;
+}
+.bg-color-verde4{
+	background: #385623;
+}
+.bg-color-verde5{
+	background: #20d4aa;
+}
+.bg-color-verde6{
+	background: #2feba9;
+}
+.bg-color-rojo1{
+	background: #eb3c2f;
+}
+.bg-color-rojo2{
+	background: #c00000;
+}
+.bg-color-rojo2-trasparente{
+	background: #c00000bb;
+}
+.bg-trasparente{
+	background: rgba(255, 255, 255, 0.4);
+}
+
+
+.border-45{
+	border-radius: 45px;
+}
+.border-25{
+	border-radius: 25px;
+}
+.border-10{
+	border-radius: 10px;
+}
+.border-rb-25{
+	border-radius: 0 0 25px 25px;
+}
+.border-rt-25{
+	border-radius: 25px 25px 0 0;
+}
+
+.border-r{
+	border-right: 3px solid var(--bg-color)!important;
+}
+.border-rd{
+	border-right: 1px solid var(--bg-color)!important;
+}
+.border-b{
+	border-bottom: 3px solid var(--bg-color)!important;
+}
+.border-b-big{
+	border-bottom: 5px solid var(--bg-color-dark)!important;
+}
+.border_b_ao{
+	border-bottom: 5px solid #003442!important;
+}
+.border_b_r{
+	border-bottom: 5px solid #c00000;
+}
+.border-oscuro{
+	border: solid 2px #385723!important;
+}
+.border-claro{
+	border: solid 2px var(--bg-color);
+}
+.border-white{
+	border: solid 2px white!important;
+}
+.border-white-5p{
+	border: solid 5px white!important;
+}
+
+.menos-margin-25{
+	margin-left: -25px!important;
+}
+.menos-margin-50{
+	margin-left: -50px!important;
+}
+.menos-margin-75{
+	margin-left: -75px!important;
+}
+.menos-margin-100{
+	margin-left: -100px!important;
+}
+.menos-margin-120{
+	margin-left: -120px!important;
+}
+.menos-margin-150{
+	margin-left: -150px!important;
+}
+.menos-marginR-25{
+	margin-right: -25px!important;
+}
+.menos-marginR-50{
+	margin-right: -50px!important;
+}
+.menos-marginR-75{
+	margin-right: -75px!important;
+}
+.menos-marginR-100{
+	margin-right: -100px!important;
+}
+.menos-marginR-150{
+	margin-right: -150px!important;
+}
+.menos-marginR-200{
+	margin-right: -200px!important;
+}
+.menos-marginT-10{
+	margin-top: -10px!important;
+}
+.menos-marginT-25{
+	margin-top: -25px!important;
+}
+.menos-marginT-40{
+	margin-top: -40px!important;
+}
+.menos-marginT-50{
+	margin-top: -50px!important;
+}
+.menos-marginT-62{
+	margin-top: -62px!important;
+}
+.menos-marginT-75{
+	margin-top: -75px!important;
+}
+.menos-marginT-100{
+	margin-top: -100px!important;
+}
+.menos-marginT-150{
+	margin-top: -150px!important;
+}
+.menos-marginB-10{
+	margin-bottom: -10px!important;
+}
+.menos-marginB-25{
+	margin-bottom: -25px!important;
+}
+.menos-marginB-50{
+	margin-bottom: -50px!important;
+}
+.menos-marginB-100{
+	margin-bottom: -100px!important;
+}
+.menos-marginB-200{
+	margin-bottom: -200px!important;
+}
+.menos-marginB-300{
+	margin-bottom: -300px!important;
+}
+
+.hr-negro{
+	border-top: 5px solid black!important;
+}
+.hr-verde{
+	border-top: 2px solid var(--bg-color)!important;
+}
+.hr-verde-oscuro{
+	border-top: 7px solid var(--bg-color-dark)!important;
+}
+
+
 .card1{
 	padding: 0px;
 	border-radius: 45px;

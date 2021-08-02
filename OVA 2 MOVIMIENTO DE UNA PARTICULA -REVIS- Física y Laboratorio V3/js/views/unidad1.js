@@ -56,6 +56,8 @@ $( document ).ready(function() {
 
     /*scroll();*/
     slide_link(tema);
+
+
 });
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -79,6 +81,7 @@ function slide_link(num){
     controlSlides(num);
 }
 var sumaslide = 0;
+var sumaslide1 = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
@@ -162,6 +165,47 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
             break;
         case 14:
+            sumaslide1++;
+            if (sumaslide1 < 2) {
+                var slideCount = $('#slider3 ul li').length;
+                var slideWidth = $('#slider3 ul li').width();
+                var slideHeight = $('#slider3 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider3').css({ width: '100%', height: '200px' });
+                
+                $('#slider3 ul').css({ width: '90%'});
+                
+                $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+
+                function moveLeft3() {
+                    $('#slider3 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+                        $('#slider3 ul').css('left', '');
+                    });
+                };
+
+                function moveRight3() {
+                    $('#slider3 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider3 ul li:first-child').appendTo('#slider3 ul');
+                        $('#slider3 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev3').click(function (e) {
+                    moveLeft3();
+                    e.preventDefault();
+                });
+
+                $('a.control_next3').click(function (e) {
+                    moveRight3();
+                    e.preventDefault();
+                });
+            }
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
             break;
         case 15:
@@ -243,6 +287,12 @@ function targetas(num){
             $('.header1').removeClass('recogido');
             $('.header1').addClass('desplegado');
 
+            $('.texto_targeta').addClass('invisible');
+            $('.texto_targeta').removeClass('visible');
+
+            $('.text_T1').removeClass('invisible');
+            $('.text_T1').addClass('visible');
+
             $('.formula').addClass('invisible');
             $('.formula').removeClass('visible');
 
@@ -253,12 +303,40 @@ function targetas(num){
             $('.expresion2').addClass('invisible');
             break;
         case 2:
-            $('.ejemplos').addClass('invisible');
-            $('.ejemplos').removeClass('visible');
+            $('.deplegar').addClass('recogido');
+            $('.deplegar').removeClass('desplegado');
 
-            $('.ejemplo2').removeClass('invisible');
-            $('.ejemplo2').addClass('visible');
-            break2
+            $('.header2').removeClass('recogido');
+            $('.header2').addClass('desplegado');
+
+            $('.texto_targeta').addClass('invisible');
+            $('.texto_targeta').removeClass('visible');
+
+            $('.text_T2').removeClass('invisible');
+            $('.text_T2').addClass('visible');
+
+            $('.formula').addClass('invisible');
+            $('.formula').removeClass('visible');
+
+            $('.formula1').removeClass('invisible');
+            $('.formula1').addClass('visible');
+
+            $('.expresion1').removeClass('visible');
+            $('.expresion1').addClass('invisible');
+            break;
+        case 3:
+            $('.deplegar').addClass('recogido');
+            $('.deplegar').removeClass('desplegado');
+
+            $('.formula').addClass('invisible');
+            $('.formula').removeClass('visible');
+
+            $('.expresion').removeClass('invisible');
+            $('.expresion').addClass('visible');
+
+            $('.texto_targeta').addClass('invisible');
+            $('.texto_targeta').removeClass('visible');
+            break;
         default:
             break;
     }
@@ -1253,3 +1331,277 @@ function activi3(num){
             break;
     }
 }
+
+function pantallas18(num) {
+    switch (parseInt(num)) {
+        case 0:
+            $('.text-manzana').addClass('invisible');
+            $('.text-manzana').removeClass('visible');
+
+            $('.manzana1').removeClass('invisible');
+            $('.manzana1').addClass('visible');
+            break;
+        case 1:
+            $('.text-manzana').addClass('invisible');
+            $('.text-manzana').removeClass('visible');
+
+            $('.manzana2').removeClass('invisible');
+            $('.manzana2').addClass('visible');
+            break;
+        case 2:
+            $('.text-manzana').addClass('invisible');
+            $('.text-manzana').removeClass('visible');
+
+            $('.manzana3').removeClass('invisible');
+            $('.manzana3').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function btns_modal(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btnmodal').addClass('btn_inactive');
+            $('.btnmodal').removeClass('btn_active');
+
+            $('.btn1').removeClass('btn_inactive');
+            $('.btn1').addClass('btn_active');
+            break;
+        case 2:
+            $('.btnmodal').addClass('btn_inactive');
+            $('.btnmodal').removeClass('btn_active');
+
+            $('.btn2').removeClass('btn_inactive');
+            $('.btn2').addClass('btn_active');
+            break;
+        default:
+            break;
+    }
+}
+
+function formulas_unidimencionales(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional1').removeClass('invisible');
+            $('.formula_unidimencional1').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros1').removeClass('btn_numerosInactive');
+            $('.btn_numeros1').addClass('btn_numerosActive');
+            break;
+        case 2:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional2').removeClass('invisible');
+            $('.formula_unidimencional2').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros2').removeClass('btn_numerosInactive');
+            $('.btn_numeros2').addClass('btn_numerosActive');
+            break;
+        case 3:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional3').removeClass('invisible');
+            $('.formula_unidimencional3').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros3').removeClass('btn_numerosInactive');
+            $('.btn_numeros3').addClass('btn_numerosActive');
+            break;
+        case 4:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional4').removeClass('invisible');
+            $('.formula_unidimencional4').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros4').removeClass('btn_numerosInactive');
+            $('.btn_numeros4').addClass('btn_numerosActive');
+            break;
+        case 5:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional5').removeClass('invisible');
+            $('.formula_unidimencional5').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros5').removeClass('btn_numerosInactive');
+            $('.btn_numeros5').addClass('btn_numerosActive');
+            break;
+        default:
+            break;
+    }
+}
+
+function pantalla21(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.pantalla21').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion2').removeClass('invisible');
+            $('.opcion2').addClass('visible');
+            break;
+        case 2:
+            $('.pantalla21').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion3').removeClass('invisible');
+            $('.opcion3').addClass('visible');
+            break;
+        case 3:
+            $('.pantalla21').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion4').removeClass('invisible');
+            $('.opcion4').addClass('visible');
+            break;
+        case 4:
+            $('.pantalla21').removeClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion1').removeClass('invisible');
+            $('.opcion1').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function pantalla22(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.pantalla22').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion2-2').removeClass('invisible');
+            $('.opcion2-2').addClass('visible');
+            break;
+        case 2:
+            $('.pantalla22').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion3-3').removeClass('invisible');
+            $('.opcion3-3').addClass('visible');
+            break;
+        case 3:
+            $('.pantalla22').removeClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion1-1').removeClass('invisible');
+            $('.opcion1-1').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+//dezlizador
+var elementoPadre1 = document.querySelector(".inputDiv.i1");
+var elementoPadre2 = document.querySelector(".inputDiv.i2");
+var inputsRy = [];
+
+function Input() {
+  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+  this.att = {};
+  this.att.type = "range";
+  this.att.value = 0;
+  this.att.min = 0;
+  this.att.max = 2;
+  this.att.autocomplete = "off";
+  this.att.step = "1";
+  this.input;
+  this.output;
+
+  this.crear = function(elementoPadre) {
+    // crea un nuevo elemento input
+    this.input = document.createElement("input");
+    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+    for (var name in this.att) {
+      if (this.att.hasOwnProperty(name)) {
+        this.input.setAttribute(name, this.att[name]);
+      }
+    }
+    // crea un nuevo elemento div
+    this.output = document.createElement("div");
+    // establece el valor del atributo class del nuevo div
+    this.output.setAttribute("class", "output");
+    // y el contenido (innerHTML) de este
+    this.output.innerHTML = this.att.value;
+
+    // inserta los dos elementos creados al final  del elemento Padre 
+    elementoPadre.appendChild(this.input);
+    elementoPadre.appendChild(this.output);
+  }
+
+  this.actualizar = function() {
+    pantallas18(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+}
+
+// setup
+var i = new Input();
+i.crear(elementoPadre1);
+inputsRy.push(i);
+
+var i2 = new Input();
+i2.att.value = 70;
+i2.att.min = 20;
+i2.att.max = 120;
+i2.crear(elementoPadre2);
+inputsRy.push(i2);
+
+for (var n = 0; n < inputsRy.length; n++) {
+  (function(n) {
+    inputsRy[n].input.addEventListener("input", function() {
+      inputsRy[n].actualizar();
+    }, false)
+  }(n));
+}
+
+/* Draw
+function Draw(){
+ requestId = window.requestAnimationFrame(Draw); 
+  for( var n = 0; n< inputsRy.length; n++){
+    inputsRy[n].update();
+  }
+}
+
+requestId = window.requestAnimationFrame(Draw);
+*/
+// JavaScript Document
