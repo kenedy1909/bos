@@ -93,12 +93,12 @@ $( document ).ready(function() {
     // console.log(tema);
     slide_link(tema);
 });
-var pdf = `<div class="col-md-12">
+/*var pdf = `<div class="col-md-12">
                   <p class="p_black">
                         <a class="p_white" href="assets/PDF/UNIDAD 1/tratado-de-versalles.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tratado de versalles.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
-$('.pdfs').html(pdf);
+$('.pdfs').html(pdf);*/
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -124,77 +124,105 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Segunda Guerra Mundial");
-            
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
-            /*$(".i3").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
-            var inputsRy = [];  
-            var i = new Input(4);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input(4);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar2();
-                }, false)
-              }(n));
-            }  */
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            break;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            break;
+        case 21:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 22:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 23:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 25:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 26:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 27:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 28:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 29:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 30:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 31:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 32:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
             break;
         case 33:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -217,6 +245,33 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+            break;
+        case 34:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 35:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 36:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 37:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 38:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 39:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 40:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 41:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            break;
+        case 42:
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
             break;
         default:
             break;
