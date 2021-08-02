@@ -123,7 +123,6 @@ function controlSlides(num){
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            $("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;
             break;
             

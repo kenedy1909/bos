@@ -4,10 +4,6 @@
             <div class="col-md-12">
                 <div id="smartwizard">
                     <ul class="nav">
-                       <li style="display: none;">
-                           <a class="nav-link" href="#unidad2-0">
-                           </a>
-                       </li>
                        <li>
                            <a class="nav-link" href="#unidad2-1">
                            </a>
@@ -18,6 +14,10 @@
                        </li>
                        <li class="display-none">
                            <a class="nav-link" href="#unidad2-3">
+                           </a>
+                       </li>
+                       <li class="display-none">
+                           <a class="nav-link" href="#unidad2-4">
                            </a>
                        </li>
                     </ul>
@@ -38,11 +38,16 @@
 
                                 
                             </div>
-                          </div> 
-                          <div class="row">
-                            
-                              <img class="col-md-4 offset-md-4" src="assets/img/img_ova/circle.png">
-                            
+                          </div>
+                          <div class="m-auto" style="background-image: url('assets/img/img_ova/circle.png'); background-size: 100% 100%; background-repeat: no-repeat; width: 500px; height: 500px;">
+                              <svg height="500" width="500" style="position: absolute;">
+                                <path d="M 256 0 C 258 0 595 10 480 380 L 348 303 C 348 303 400 155 256 128 L 256 0" class="cursor" onclick="svg_img(2)" style="fill: transparent; stroke: transparent; stroke-width: 0px; position: absolute;"></path>
+                                <path d="M 244 0 C 244 0 -100 5 27 376 L 142 315 C 138 305 72 155 244 127 L 244 0" class="cursor" onclick="svg_img(1)" style="fill: transparent; stroke: transparent; stroke-width: 0px; position: absolute;"></path>
+                                <path d="M 25 395 C 25 395 250 660 460 385 L 340 315 C 340 315 250 425 150 325 L 25 395" class="cursor" onclick="svg_img(3)" style="fill: transparent;stroke: transparent;stroke-width: 0px; position: absolute;"></path>
+                              </svg>
+                              <div class="position-absolute img-30 d-none" id="svg-info" style="left: 0px; bottom: 0px;">
+                                
+                              </div>
                           </div>
                        </div>
                        <div id="unidad2-2" class="tab-pane" role="tabpanel">
@@ -74,9 +79,102 @@
                             </div>
                           </div>
                        </div>
-
-                       <!-- tema2 -->
-                       
+                       <div id="unidad2-4" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <h2 class="text-center color-text">CONTENIDO TEMÁTICO</h2>
+                                  <p class="text-center color-text">(Utiliza las flechas (<) (>) para visualizar las unidades de aprendizaje)</p>
+                                  <div id="flat">
+                                      <ul>
+                                          <li data-flip-title="1">
+                                              <div class="carrusel-flip" >
+                                                  <div class="card-container manual-flip">
+                                                      <div class="card">
+                                                          <div class="front box-shadow card-inactiva-c">
+                                                              <div class="cover card-inactiva-o">
+                                                                  
+                                                              </div>
+                                                              <div class="user">
+                                                                  <img class="" src="assets/img/img_ova/marcoteorico.png"/>
+                                                              </div>
+                                                              <div class="content text-center">
+                                                                  <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 1</h3>
+                                                                  <h3 class="text-center p_white">Construcción del marco teórico </h3>
+                                                                  <button class="btn btn-ova init-unidad card-inactiva-o">INICIAR</button>
+                                                              </div>
+                                                          </div> <!-- end front panel -->
+                                                      </div> <!-- end card -->
+                                                    </div>
+                                              </div>
+                                          </li>
+                                          <li data-flip-title="2">
+                                              <div class="carrusel-flip">
+                                                  <div class="card-container manual-flip">
+                                                      <div class="card">
+                                                          <div class="front box-shadow card-inactiva-c">
+                                                              <div class="cover card-inactiva-o">
+                                                                  
+                                                              </div>
+                                                              <div class="user">
+                                                                  <img class="img-circle" src="assets/img/img_ova/contrato.png"/>
+                                                              </div>
+                                                              <div class="content text-center">
+                                                                  <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 2</h3>
+                                                                  <h3 class="text-center p_white">Elementos generales para la comprensión del Marco Teórico  </h3>
+                                                                  <button class="btn btn-ova init-unidad card-inactiva-o">INICIAR</button>
+                                                              </div>
+                                                          </div> <!-- end front panel -->
+                                                      </div> <!-- end card -->
+                                                    </div>
+                                              </div>
+                                          </li>
+                                          <li data-flip-title="3">
+                                              <div class="carrusel-flip">
+                                                  <div class="card-container manual-flip">
+                                                      <div class="card">
+                                                          <div class="front box-shadow">
+                                                              <div class="cover">
+                                                                  
+                                                              </div>
+                                                              <div class="user">
+                                                                  <img class="img-circle" src="assets/img/img_ova/tecnicas.png"/>
+                                                              </div>
+                                                              <div class="content text-center">
+                                                                  <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 3</h3>
+                                                                  <h3 class="text-center p_white">Técnicas de recolección de información </h3>
+                                                                  <button class="btn btn-ova init-unidad" data-id="3">INICIAR</button>
+                                                              </div>
+                                                          </div> <!-- end front panel -->
+                                                      </div> <!-- end card -->
+                                                    </div>
+                                              </div>
+                                          </li>
+                                          <li data-flip-title="4">
+                                              <div class="carrusel-flip">
+                                                  <div class="card-container manual-flip">
+                                                      <div class="card">
+                                                          <div class="front box-shadow card-inactiva-c">
+                                                              <div class="cover card-inactiva-o">
+                                                                  
+                                                              </div>
+                                                              <div class="user">
+                                                                  <img class="img-circle" src="assets/img/img_ova/verificacion_antecedentes.png"/>
+                                                              </div>
+                                                              <div class="content text-center">
+                                                                  <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 4</h3>
+                                                                  <h3 class="text-center p_white">Diseño Metodológico </h3>
+                                                                  <button class="btn btn-ova init-unidad card-inactiva-o">INICIAR</button>
+                                                              </div>
+                                                          </div> <!-- end front panel -->
+                                                      </div> <!-- end card -->
+                                                    </div>
+                                              </div>
+                                          </li>                              
+                                      </ul>
+                                  </div> 
+                              </div>
+                          </div>
+                       </div>
                        
                     </div>
                 </div>
@@ -554,3 +652,4 @@
   </div>
 </div>
 <script src="js/views/unidad2.js"></script>
+<script src="js/views/unidades.js"></script>
