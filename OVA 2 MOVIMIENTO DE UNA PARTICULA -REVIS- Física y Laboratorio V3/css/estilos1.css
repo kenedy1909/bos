@@ -1299,3 +1299,78 @@ input[type=range]::-ms-fill-upper {
 .btn_inactive{
   background: #E39D40;
 }
+
+.ban_cafewhite{
+  background: #E49E40;
+  padding: 30px;
+  border-radius: 50px;
+  width: 90%;
+}
+
+.btn_numeros{
+  height: 50px;
+  width: 50px;
+  
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.btn_numerosActive{
+  background: #4472C4;
+}
+.btn_numerosInactive{
+  background: #C9C9C9;
+}
+
+.z-index{
+  z-index: 100;
+}
+
+.banneraqua{
+  padding: 5px;
+  background: #bed7ef;
+  border-radius: 20px;
+}
+
+.notas{
+  background: #bed7ef;
+  padding: 5px;
+  color: black;
+}
+
+.cabeza_btn{
+  width: 40px;
+  height: 40px;
+  background: #4472C4;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  padding-top: 8px;
+  z-index: 100;
+}
+
+.cuerpo_btn{
+  background: #B4C8E7;
+  height: 30px;
+  width: 115px;
+  padding: 3px 1px 3px 30px;
+  position: relative;
+  left: -20px;
+  border-radius: 7px;
+}
+.width-70{
+  width: 70%;
+}
+
+.cordenadas{
+  position: relative;
+  top: -20px;
+  left: 50px;
+}
+
+.targeta_blanca{
+  background: #fff;
+  border-radius: 50px;
+}

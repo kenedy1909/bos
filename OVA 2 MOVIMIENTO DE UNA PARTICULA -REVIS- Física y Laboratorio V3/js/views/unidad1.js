@@ -1381,6 +1381,154 @@ function btns_modal(num){
     }
 }
 
+function formulas_unidimencionales(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional1').removeClass('invisible');
+            $('.formula_unidimencional1').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros1').removeClass('btn_numerosInactive');
+            $('.btn_numeros1').addClass('btn_numerosActive');
+            break;
+        case 2:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional2').removeClass('invisible');
+            $('.formula_unidimencional2').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros2').removeClass('btn_numerosInactive');
+            $('.btn_numeros2').addClass('btn_numerosActive');
+            break;
+        case 3:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional3').removeClass('invisible');
+            $('.formula_unidimencional3').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros3').removeClass('btn_numerosInactive');
+            $('.btn_numeros3').addClass('btn_numerosActive');
+            break;
+        case 4:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional4').removeClass('invisible');
+            $('.formula_unidimencional4').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros4').removeClass('btn_numerosInactive');
+            $('.btn_numeros4').addClass('btn_numerosActive');
+            break;
+        case 5:
+            $('.form_uni').addClass('invisible');
+            $('.form_uni').removeClass('visible');
+
+            $('.formula_unidimencional5').removeClass('invisible');
+            $('.formula_unidimencional5').addClass('visible');
+
+            $('.btn_numeros').addClass('btn_numerosInactive');
+            $('.btn_numeros').removeClass('btn_numerosActive');
+
+            $('.btn_numeros5').removeClass('btn_numerosInactive');
+            $('.btn_numeros5').addClass('btn_numerosActive');
+            break;
+        default:
+            break;
+    }
+}
+
+function pantalla21(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.pantalla21').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion2').removeClass('invisible');
+            $('.opcion2').addClass('visible');
+            break;
+        case 2:
+            $('.pantalla21').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion3').removeClass('invisible');
+            $('.opcion3').addClass('visible');
+            break;
+        case 3:
+            $('.pantalla21').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion4').removeClass('invisible');
+            $('.opcion4').addClass('visible');
+            break;
+        case 4:
+            $('.pantalla21').removeClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion1').removeClass('invisible');
+            $('.opcion1').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function pantalla22(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.pantalla22').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion2-2').removeClass('invisible');
+            $('.opcion2-2').addClass('visible');
+            break;
+        case 2:
+            $('.pantalla22').addClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion3-3').removeClass('invisible');
+            $('.opcion3-3').addClass('visible');
+            break;
+        case 3:
+            $('.pantalla22').removeClass('targeta_blanca');
+
+            $('.opciones').addClass('invisible');
+            $('.opciones').removeClass('visible');
+
+            $('.opcion1-1').removeClass('invisible');
+            $('.opcion1-1').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
 //dezlizador
 var elementoPadre1 = document.querySelector(".inputDiv.i1");
 var elementoPadre2 = document.querySelector(".inputDiv.i2");
