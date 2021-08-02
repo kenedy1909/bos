@@ -84,6 +84,38 @@
                             <a class="nav-link" href="#unidad1-20">
                             </a>
                         </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-21">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-22">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-23">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-24">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-25">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-26">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-27">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#unidad1-28">
+                            </a>
+                        </li>
                     </ul>
                     <div class="tab-content">
                        <div id="unidad1-1" class="tab-pane" role="tabpanel">
@@ -833,39 +865,45 @@
                               <div class="col-md-6 d-flex justify-content-center">
                                 <div class="fondo_blue formula formula1 invisible" style="">
                                   <div class="header_target desplegado">
-                                    <div class="cerrado cursor">X</div>
+                                    <div class="cerrado cursor" onclick="targetas(3);">X</div>
                                     <img src="assets/img/img_ova/velocidadparticula2.jpg" class="img100">
                                   </div>
                                 </div>
                                 
-                                <div class="fondo_blue expresion1 visible" style="">
+                                <div class="fondo_blue expresion expresion1 visible" style="">
                                   <div class="header_target deplegar header1 recogido cursor" onclick="targetas(1);">
                                     <div style="">
                                       <img src="assets/img/img_ova/pensar.png" class="img-25">
                                     </div>
-                                    <div class="texto_targeta" style="">
+                                    <div class="texto_targeta text_T1 invisible" style="">
                                       <p class="justificado size_13">La velocidad de una partícula que se mueve a lo largo del eje x varía de acuerdo con la expresión vx (t) = 40 - 5t<sup>2</sup> [m/s], donde t está en segundos. Encuentre la aceleración promedio en el intervalo de tiempo t = 0,0 a t =2,0 s. y determine la aceleración en t = 2,0 s. (Young, Zemansky, Sears, 2009).</p>
                                     </div>
+                                  </div>
+                                  <div class="text-center" style="margin-top: 100%;">
+                                    <b class="text-white">1</b>
                                   </div>
                                 </div>
                               </div>
                               <div class="col-md-6 d-flex justify-content-center">
                                 <div class="fondo_blue formula formula2 invisible">
                                   <div class="header_target desplegado">
-                                    <div class="cerrado cursor">X</div>
+                                    <div class="cerrado cursor" onclick="targetas(3);">X</div>
                                     <img src="assets/img/img_ova/velocidadparticula.jpg" class="img100">
                                   </div>
                                 </div>
 
-                                <div class="fondo_blue expresion2 visible">
-                                  <div class="header_target deplegar header2 recogido">
+                                <div class="fondo_blue expresion expresion2 visible">
+                                  <div class="header_target deplegar header2 recogido cursor" onclick="targetas(2);">
                                     <div>
                                       <img src="assets/img/img_ova/matematicas.png" class="img-25">
                                     </div>
-                                    <div class="texto_targeta" style="">
+                                    <div class="texto_targeta text_T2 invisible" style="">
                                       <p class="justificado size_13">La posición de una partícula que se mueve a lo largo del eje x está dada por x(t) = 12t + 5t<sup>3</sup> [m], donde t está en segundos. Encuentre la aceleración promedio en el intervalo de tiempo t = 1,0 a t =3,0 s. Y determine la aceleración en t = 3,0 s. <br>
                                       (Young, Zemansky, Sears, 2009).</p>
                                     </div>
+                                  </div>
+                                  <div class="text-center" style="margin-top: 100%;">
+                                    <b class="text-white">2</b>
                                   </div>
                                 </div>
                               </div>
@@ -876,329 +914,678 @@
                           <div class="row">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
-                                      <h3 class="text-center"><b>Conceptos fundamentales</b></h3>
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
                                   </div>
-                                  <h5><b>Análisis vectorial/ Magnitud o norma de un vector</b></h5>
-                                  <br>
+                                  <h3 class="color-text">Movimiento unidimensional / Movimiento uniforme acelerado</h3>
                               </div>
                           </div>
-                          <div class="row pr-4">
-                              <div class="col-md-12">
-                                  <p class="p_black justificado">Como se acaba de observar en el ejercicio anterior, las magnitudes de estas componentes son las longitudes de los dos lados de un triángulo rectángulo con una hipotenusa de longitud D. Debido a esto, la magnitud y la dirección de D se relacionan con sus componentes mediante las expresiones. Pase el mouse por las tarjetas para ampliar la información</p>
+                          <div class="col-md-12 row">
+                            <div style="width: 5%;padding-top: 10%;">
+                              <div class="">
+                                    <a href="#" class="control_prev3"><div class="triag_cambiaslide2" style="transform: scaleX(-1);"></div></a>
+                                </div>
+                            </div>
+                            <div style="width: 90%;">
+                              <div id="slider3" style="" class="d-flex justify-content-center">
+                                <ul>
+                                  <li>
+                                    <p class="justificado text-white size_14">En las gráficas se puede ver el comportamiento de la aceleración y de la velocidad en un movimiento uniformemente acelerado,  note que en la gráfica de la izquierda la aceleración se representa por una línea horizontal debido a que su valor no cambia en el tiempo, permanece constante a través del tiempo; mientras tanto en el gráfico de la derecha que representa la velocidad en función del tiempo para el mismo movimiento, nótese que la velocidad crece linealmente en una proporción igual a la aceleración. Haga clic en las flechas azules para más información:</p>
+                                    <div>
+                                      <button class="btn btnAzul" style="float: right;" data-toggle="modal" data-target="#nota1">Nota:</button>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <p class="justificado text-white size_14">El movimiento acelerado más sencillo es el rectilíneo con una aceleración constante. En este caso, la velocidad cambia al mismo ritmo a lo largo del movimiento. Como ejemplo, un cuerpo que cae tiene aceleración constante si los efectos del aire no son significativos. Lo mismo sucede con un cuerpo que se desliza por una pendiente o sobre una superficie horizontal áspera, o con un avión cuando es lanzado con catapulta desde la cubierta de un portaaviones. Haga clic en las flechas azules para más información.</p>
+                                  </li>
+                                </ul>  
                               </div>
-                              <div class="col-md-12 row p-3">
-                                <div class="col-md-6 pb-2">
-                                  <div class="row target_3-4 mr-5 ml-1 fondo-blue-targeta" style="">
-                                    <div class="creciente row cursor" style="" onmouseover="efect(1);" onmouseout="removeefect(1);">
-                                      <div class="div_textonum" style="">
-                                        <img src="assets/img/img_ova/pensar.png" style="max-width: 100%;">
-                                      </div>
-                                      <div class="div_texto"style="">
-                                        <img src="assets/img/img_ova/D2.png" style="max-width: 110%;">
-                                      </div>
-                                    </div>
-                                    <div class="text-center textotema p_white" style="">
-                                      <center>Expresión</center>
-                                    </div>
-                                  </div>
+                            </div>
+                            <div style="width: 5%;padding-top: 10%;">
+                                <div class="">
+                                    <a href="#" class="control_next3"><div style="" class="triag_cambiaslide2"></div></a>
                                 </div>
-                                <div class="col-md-6 p-0">
-                                  <div class="row target_3-4 mr-5 ml-1 fondo-blue-targeta" style="">
-                                    <div class="creciente2 row cursor" style="" onmouseover="efect(2);" onmouseout="removeefect(2);">
-                                      <div class="div_textonum" style="">
-                                        <img src="assets/img/img_ova/calculos.png" style="max-width: 100%;">
-                                      </div>
-                                      <div class="div_texto2"style="">
-                                        <p class="justificado" style="color: #000;font-size: 10px;">Se observa que al utilizar el teorema de Pitágoras se obtiene nuevamente la magnitud original del vector 3.00 m, para el caso del ángulo es un poco más difícil, ya que al evaluar en la calculadora el sen<sup>-1</sup>(-1) se obtiene -45° y es su responsabilidad interpretar este resultado, es decir, se debe dar cuenta de que el ángulo entregado por la calculadora equivale al ángulo de referencia buscado que es de 315°.</p>
-                                      </div>
-                                    </div>
-                                    <div class="text-center textotema p_white" style="">
-                                      <center>Teoremas de Pitágoras</center>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="d-flex justify-content-center col-md-12 mt-2">
-                                  <div class="col-md-6">
-                                    <div class="row target_3-4 mr-5 ml-1 fondo-blue-targeta" style="">
-                                      <div class="creciente3 row cursor" style="" onmouseover="efect(3);" onmouseout="removeefect(3);">
-                                        <div class="div_textonum" style="">
-                                          <img src="assets/img/img_ova/matematicas.png" style="max-width: 100%;">
-                                        </div>
-                                        <div class="div_texto3"style="padding-left: 12px;">
-                                          <p class="justificado" style="color: #000;font-size: 13px;">En general, se puede calcular la magnitud de un vector si se conocen sus componentes rectangulares; en el caso de un vector tridimensional A, su magnitud se calcula:</p>
-                                          <img src="assets/img/img_ova/formula2a.jpg">
-                                        </div>
-                                      </div>
-                                      <div class="text-center textotema p_white" style="">
-                                        <center>Calcular la magnitud</center>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <img src="assets/img/img_ova/Aceleracion_movimiento.jpg" class="img100">
                           </div>
                        </div>
                        <div id="unidad1-15" class="tab-pane" role="tabpanel">
-                          <iframe src="actividades/actividad/actividad_v_o_f/index.html" frameborder="0"></iframe>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Movimiento uniforme acelerado</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12 mt-3">
+                            <b style="color: black; background: #ffffff; border-radius: 10px; padding: 5px;">Ejercicios de ejemplo:</b><br>
+                            <p class="color-text mt-3">Haga clic en la imagen para seleccionar ejercicio</p>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="acordeon2 mt-3">
+                                  <div class="acordeon__item2">
+                                    <input type="radio" name="acordeon" id="item5">
+                                    <label for="item5" class="acordeon__titulo2">
+                                      <div class="row">
+                                        <img src="assets/img/img_ova/Camion_movimiento.png" style="    max-width: 15%;margin-left: 30px;position: relative;top: -32px;">
+                                      </div>
+                                      
+                                    </label>
+                                    <div class="row acordeon__contenido2" >
+                                      <div style="padding: 1px 25px 1px 25px;">
+                                        <p class="justificado size_13">Un camión viaja a 80 km por una vía recta, a 100 metros de un cruce con semáforo, nota que esté cambia a rojo, acciona los frenos y logra una aceleración de -3,0 m/s<sup>2</sup> ¿Logrará detenerse antes del cruce?</p>
+                                        <div class="text-center">
+                                          <img src="assets/img/img_ova/formula_2.png" class="img-100">
+                                        </div>
+                                      </div>
+                                      <div class="row col-md-12">
+                                        <div class="col-md-8 text-center">
+                                          <p>Se busca la distancia necesaria para detenerse</p>
+                                        </div>
+                                        <div class="col-md-4 text-center mb-2">
+                                          <button class="btn btncoffe" data-toggle="modal" data-target="#respuestap15-1">Ver respuesta</button>
+                                        </div>
+                                      </div>
+                                        
+                                    </div>
+                                  </div>
+                                  <div class="acordeon__item2 mt-5">
+                                    <input type="radio" name="acordeon" id="item6">
+                                    <label for="item6" class="acordeon__titulo2" style="background: #E49E40;">
+                                      <div class="row">
+                                        <img src="assets/img/img_ova/Cohete_movimiento.png" style="    max-width: 10%;margin-left: 30px;position: relative;top: -4px;">
+                                      </div>
+                                    </label>
+                                    <div class="acordeon__contenido2">
+                                        <div style="padding: 1px 25px 1px 25px;">
+                                          <p class="justificado size_13">Un cohete navideño se lanza desde el suelo y la pólvora lo acelera hacia arriba uniformemente por 10 segundos, a 5 m/s<sup>2</sup> ¿Cuál es su altura en el instante que se agota la pólvora? </p>
+                                          <div class="text-center">
+                                            <img src="assets/img/img_ova/formula_4.png" class="img-100">
+                                          </div>
+                                        </div>
+                                        <div class="row col-md-12">
+                                          <div class="col-md-8 text-center">
+                                            <p>Se desprecian los términos que aparecen en la ecuación subrayados con rojo</p>
+                                          </div>
+                                          <div class="col-md-4 text-center mb-2">
+                                            <button class="btn btnAzul" data-toggle="modal" data-target="#respuestap15-2">Ver respuesta</button>
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                          <div style="height: 300px;"></div>
                        </div>
                        <div id="unidad1-16" class="tab-pane" role="tabpanel">
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <div class="titulo-ova">
-                                      <h3 class="text-center"><b>Conceptos fundamentales</b></h3>
-                                  </div>
-                                  <h5><b>Análisis vectorial/ Vectores unitarios</b></h5>
-                                  <br>
-                              </div>
-                          </div>
-                          <div class="row pr-4">
-                              <div class="col-md-12">
-                                  <p class="p_black justificado">Como se acaba de observar en el ejercicio anterior, las magnitudes de estas componentes son las longitudes de los dos lados de un triángulo rectángulo con una hipotenusa de longitud D. Debido a esto, la magnitud y la dirección de D se relacionan con sus componentes mediante las expresiones. Pase el mouse por las tarjetas para ampliar la información</p>
-                              </div>
-                              <div class="acordeon mt-3">
-                                  <div class="acordeon__item">
-                                    <input type="radio" name="acordeon" id="item1">
-                                    <label for="item1" class="acordeon__titulo">
-                                      <div class="row">
-                                        <div class="col-md-2">
-                                          <div class="imagen_acordeon" style="">
-                                            <img src="assets/img/img_ova/neuromarketing.png" style="max-width: 90%;">
-                                          </div>
-                                        </div>
-                                        <div class="col-md-1 pt-3">
-                                          <div class="triangulocordeon" style="">
-                                            
-                                          </div>
-                                        </div>
-                                        <div class="col-md-8 pt-4">
-                                          
-                                        </div>
-                                      </div>
-                                      
-                                    </label>
-                                    <div class="row acordeon__contenido" >
-                                        <div style="padding: 15px 15px 15px 15px;">
-                                          <p class="justificado">Los vectores unitarios proporcionan una notación conveniente para muchas expresiones que implican componentes de vectores. Para diferenciar estos vectores unitarios de los demás en los libros se usan diferentes notaciones para evitar confusiones.</p>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="acordeon__item">
-                                    <input type="radio" name="acordeon" id="item2">
-                                    <label for="item2" class="acordeon__titulo">
-                                      <div class="row">
-                                        <div class="col-md-2">
-                                          <div class="imagen_acordeon" style="">
-                                            <img src="assets/img/img_ova/flecha-correcta.png" style="max-width: 90%;">
-                                          </div>
-                                        </div>
-                                        <div class="col-md-1 pt-3">
-                                          <div class="triangulocordeon" style="">
-                                            
-                                          </div>
-                                        </div>
-                                        <div class="col-md-8 pt-4">
-                                        </div>
-                                      </div>
-                                    </label>
-                                    <div class="acordeon__contenido">
-                                      <div style="padding: 15px 15px 15px 15px;">
-                                        <p class="justificado">por ejemplo en algunos libros se usa el ascento circunflejo o "sombrero" (^), en otros puntos sobre el nombre en otros simplemente los vectores <b>i, j y k</b></p>
-                                        <div class="text-center">
-                                          <img src="assets/img/img_ova/nota33.png" style="max-width: 70%;">
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="acordeon__item">
-                                    <input type="radio" name="acordeon" id="item3">
-                                    <label for="item3" class="acordeon__titulo">
-                                      <div class="row">
-                                        <div class="col-md-2">
-                                          <div class="imagen_acordeon" style="">
-                                            <p style="color: #FFD966;font-size: 55px;">^</p>
-                                          </div>
-                                        </div>
-                                        <div class="col-md-1 pt-3">
-                                          <div class="triangulocordeon" style="">
-                                            
-                                          </div>
-                                        </div>
-                                        <div class="col-md-8 pt-4">
-                                          
-                                        </div>
-                                      </div>
-                                    </label>
-                                    <div class="acordeon__contenido">
-                                      <div class="row" style="padding: 15px 15px 15px 15px;">
-                                        <div class="col-md-6">
-                                          <img src="assets/img/img_ova/texto2.png" style="max-width: 100%;">
-                                        </div>
-                                        <div class="col-md-6">
-                                          <img src="assets/img/img_ova/nota34.png" style="max-width: 70%;">
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                              </div>
-                              <div style="height: 300px;">
-                                
-                              </div>
-                          </div>
+                        actividad
                        </div>
                        <div id="unidad1-17" class="tab-pane" role="tabpanel">
-                          <div class="row px-4">
+                          <div class="row">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
-                                      <h3><b>Conceptos fundamentales</b></h3>
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
                                   </div>
-                                  <h5><b>Análisis vectorial/ Propiedades y operaciones entre vectores</b></h5>
-                                  <br>
+                                  <h3 class="color-text">Movimiento unidimensional / Movimiento uniforme acelerado</h3>
                               </div>
                           </div>
-                          <div class="row">
-                            <div class="col-md-12">
-                              <div class="radius-2 p-3 bg-amarillo-c">
-                                <p class="p_black justificado">Al igual que con las cantidades escalares con las vectoriales también se pueden realizar ciertas operaciones. Para conocer más sobre cada una de las operaciones entre vectores de clic en cada numero</p>
-                              </div>
-                            </div>
-                            <div class="col-md-12 p-0 my-1">
-                              <div class="w-100 bg-azul-o py-5">
-                                  <div class="bg-blanco h-6px">
-                                      <div class="h-80px d-flex justify-content-evenly position-relative top-n40px">
-                                          <div class="w-80px my-auto">
-                                              <img src="assets/img/img_ova/matematicas2.png" class="w-80px my-auto bg-blanco p-2 radius-2 p-1 cursor teoria teoria-img teoria-img-1" data-teoria="1">
-                                              <div class="triangulo-abajo subir-triangulo m-auto d-block cursor teoria teoria-flecha teoria-flecha-1" style="z-index: 2;" data-teoria="1"></div>
-                                          </div>
-                                          <div class="w-80px my-auto">
-                                              <img src="assets/img/img_ova/cubos.png" class="w-80px my-auto bg-blanco p-2 radius-2 p-1 cursor teoria teoria-img teoria-img-2" data-teoria="2">
-                                              <div class="triangulo-abajo subir-triangulo m-auto d-none cursor teoria teoria-flecha teoria-flecha-2" style="z-index: 2;" data-teoria="2"></div>
-                                          </div>
-                                          <div class="w-80px my-auto">
-                                              <img src="assets/img/img_ova/gobernante.png" class="w-80px my-auto bg-blanco p-2 radius-2 p-1 cursor teoria teoria-img teoria-img-3" data-teoria="3">
-                                              <div class="triangulo-abajo subir-triangulo m-auto d-none cursor teoria teoria-flecha teoria-flecha-3" style="z-index: 2;" data-teoria="3"></div>
-                                          </div>
-                                          <div class="w-80px my-auto">
-                                              <img src="assets/img/img_ova/calculadora.png" class="w-80px my-auto bg-blanco p-2 radius-2 p-1 cursor teoria teoria-img teoria-img-4" data-teoria="4">
-                                              <div class="triangulo-abajo subir-triangulo m-auto d-none cursor teoria teoria-flecha teoria-flecha-4" style="z-index: 2;" data-teoria="4"></div>
-                                          </div>
-                                          <div class="w-80px my-auto">
-                                              <img src="assets/img/img_ova/angulo.png" class="w-80px my-auto bg-blanco p-2 radius-2 p-1 cursor teoria teoria-img teoria-img-5" data-teoria="5">
-                                              <div class="triangulo-abajo subir-triangulo m-auto d-none cursor teoria teoria-flecha teoria-flecha-5" style="z-index: 2;" data-teoria="5"></div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-md-12 p-0 my-1" id="teoria">
-                              <div class="w-100 py-5 d-flex" style="min-height: 350px;">
-                                  <div class="bg-azul-o h-6px m-auto">
-                                      <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
-                                          <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                              <p class="p_black justificado">En primer lugar, se tiene la <b>multiplicación por un escalar.</b> Este tipo de operación se da cuando se multiplica un vector por un número escalar, el resultado es un nuevo vector con la misma dirección del vector original, pero con una magnitud modificada y la cual dependerá del valor del escalar, si el escalar es menor de 1, el vector se acorta, si es mayor de 1 se alarga, si es negativo además de lo anterior cambia el sentido del vector y si es 1 pues no cambia.</p>
-                                          </div>
-                                          <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                              <img src="assets/img/img_ova/grafica 5.png" class="m-auto img-100" data-teoria="2">
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                            </div>
+                          <div class="col-md-12">
+                            <p>Visualice el siguiente video para ampliar el tema de <b class="color-text">Movimiento uniforme acelerado:</b></p>
+                          </div>
+                          <div class="col-md-12" style="height: 300px;">
+                            
                           </div>
                        </div>
                        <div id="unidad1-18" class="tab-pane" role="tabpanel">
                           <div class="row">
-                            <div class="col-md-12 row">
-                              <div class="col-md-1 p-0 zindex" style="">
-                                <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                              </div>
-                              <div class="col-md-4 ">
-                                <div class="titulo_sub" style="">
-                                  <p style=""><b>ACTIVIDAD # 3</b></p>
-                                </div>
-                              </div>
-                              <div class="col-md-6 banner_activi bg-amarillo-o" style="">
-                                <div class="row mb-1">
-                                  <p class="p_black pl-3">De clic en las tarjetas para ver las indicaciones para resolver la actividad </p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-4 d-flex mt-2 p-3">
-                              <div class="atras img-100">
-                                <div class="bg-azul-mo radius-3 p-4 shadow contraer1 cursor" style="height: 90%;" onclick="activi3(1);">
-                                  <div style="">
-                                    <p class="p_white text-center"><b>Instrucción #1</b></p>
-                                    <div class="text-center imagenactivi1">
-                                      <img src="assets/img/img_ova/calculos.png" class="img-70">
-                                    </div>
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
                                   </div>
-                                  
-                                </div>
-                                <div class="cont_indi" style="">
-                                  <p class="justificado" style="font-size: 13px;">Tres participantes en un concurso de TV están colocados en el centro de un campo de plano grande. A cada uno se le proporciona una regla graduada de un metro, un compás, una calculadora, una pala y (en diferente orden para cada concursante) los siguientes desplazamientos:</p>
-                                </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Caída libre</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="row">
+                              <div class="col-md-10">
+                                <p class="justificado">El movimiento más célebre con aceleración (casi) constante es la caída de un cuerpo bajo la influencia de la atracción gravitacional de la Tierra. Dicho movimiento ha interesado a filósofos y científicos desde la Antigüedad. En el siglo IV a.C., Aristóteles pensaba (erróneamente) que los objetos pesados caían con mayor rapidez que los ligeros, en proporción a su peso. Diecinueve siglos después, Galileo afirmó que los cuerpos caían con una aceleración constante e independiente de su peso.</p>
+                              </div>
+                              <div class="col-md-2">
+                                <img src="assets/img/img_ova/Movimiento2.png" class="img100">
                               </div>
                             </div>
-
-                            <div class="col-md-4 d-flex mt-2 p-3">
-                              <div class="atras img-100">
-                                <div class="bg-azul-mo radius-3 p-4 shadow contraer2 cursor" style="height: 90%;" onclick="activi3(2);">
-                                  <p class="p_white text-center"><b>Instrucción #2</b></p>
-                                  <div class="text-center imagenactivi2">
-                                    <img src="assets/img/img_ova/calculadora.png" class="img-70">
-                                  </div>
-                                  <p class="p_white text-center imagenactivi2"><b>Desplazamientos</b></p>
-                                </div>
-                                <div class="cont_indi">
-                                  <img src="assets/img/img_ova/imagen236.png" class="img-100">
-                                </div>
+                            <br>
+                            <b class="color-text">Deslice la manzana hacia abajo para ampliar la información:</b>
+                          </div>
+                          <div class="col-md-12 row" style="min-height: 300px;">
+                            <div class="col-md-2">
+                              <div class="desliza_verde" style="">
+                                <div class ="inputDiv i1"></div>
+                                <div class ="inputDiv i2" style="display: none;"></div>
                               </div>
                             </div>
-
-                            <div class="col-md-4 d-flex mt-2 p-3">
-                              <div class="atras img-100">
-                                <div class="bg-azul-mo radius-3 p-4 shadow contraer3 cursor" style="height: 90%;" onclick="activi3(3);">
-                                  <p class="p_white text-center"><b>Instrucción #3</b></p>
-                                  <div class="p_white tex imagenactivi3"><img src="assets/img/img_ova/regla-y-lapiz.png" class="img-70"></div>
+                            <div class="col-md-10 mt-2">
+                              <div class="bannerManzana">
+                                <div class="text-manzana manzana1 visible">
+                                  <p class="justificado size_14">Los experimentos indican que, si es posible omitir el efecto del aire, Galileo está en lo cierto: todos los cuerpos en un lugar específico caen con la misma aceleración hacia abajo, independientemente de su tamaño o peso. Si, además, la distancia de caída es pequeña en comparación con el radio terrestre, y si ignoramos los pequeños efectos debidos a la rotación de la Tierra, la aceleración es constante. El modelo idealizado que surge de tales supuestos se denomina caída libre, aunque también incluye el movimiento ascendente. (En tema 2 ampliaremos el estudio de la caída libre para incluir el movimiento de proyectiles, los cuales se desplazan en forma tanto horizontal como vertical).</p>
                                 </div>
-                                <div class="cont_indi">
-                                  <p class="justificado" style="font-size: 13px;">Los tres desplazamientos llevan al punto donde están enterradas las llaves de un Porsche nuevo. <br>
-                                  Dos concursantes comienzan a medir de inmediato; sin embargo, el ganador calcula primero a dónde debe ir. ¿Qué calculó?</p>
+                                <div class="text-manzana manzana2 invisible">
+                                  <p class="justificado size_14">La aceleración constante de un cuerpo en caída libre se llama aceleración debida a la gravedad, y denotamos su magnitud con la letra g. Por lo regular, usaremos el valor aproximado de g en la superficie terrestre o cerca de ella como 9,81 m/s² o 32,2 ft/s² según el sistema de unidades que se esté usando. El valor de la gravedad disminuye y aumenta altitud, al estar cerca de la superficie de la Tierra y asimismo ocurren variaciones en la gravedad con cambios en latitud.</p>
+                                </div>
+                                <div class="text-manzana manzana3 invisible">
+                                  <p class="justificado size_14">Cuando se dice objeto en caída libre no solo se hace referencia a un objeto que se suelta desde el reposo. Un objeto en caída libre es aquel que se mueve de manera libre bajo la influencia de la gravedad, sin importar su movimiento inicial. Todo objeto que se libera desde el reposo se lanza desde abajo o se lanza hacia arriba se encuentran en caída libre al momento de liberarlos. Cuando un objeto está en caída libre, no importa su movimiento inicial y experimenta una aceleración hacía abajo. En consecuencia, en un movimiento en caída libre, siempre se elegirá ay = -g, donde el signo negativo significa que la aceleración de un objeto en caída libre es hacia abajo.</p>
                                 </div>
                               </div>
-                              
                             </div>
                           </div>
                        </div>
                        <div id="unidad1-19" class="tab-pane" role="tabpanel">
-                          <div class="row px-3">
-                              <div class="col-md-5">
-                                  <div class="d-flex">
-                                    <img src="assets/img/img_ova/actividad_complementaria.png" class="img-activi">
-                                    <div class="content-text-img-activi-2">
-                                      <b class="text-img-actividad">ACTIVIDADES COMPLEMENTARIAS</b>
-                                    </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
                                   </div>
-                                  <div class="px-4 pt-2">
-                                    <p class="p_black justificado">Ingrese al botón “<b>Descargar</b>” y conozca las actividades complementarias para finalizar con éxito el contenido digital <b>Conceptos fundamentales</b></p>
-                                    <br>
-                                    <p class="p_black justificado">Este archivo se descargará automáticamente en formato pdf.</p>
-                                  </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Caída libre</h3>
                               </div>
-                              <div class="col-md-7 border-left-azul">
-                                  <div class="row">
-                                    <div class="col-md-3 pt-135px">
-                                      <a href="assets/PDF/Actividades complementarias.pdf" target="_blank"><button class="btn bg-azul-o p_white radius-2 p-3"><h2><b>Descargar</b></h2></button></a>
-                                    </div>
-                                    <div class="col-md-9">
-                                      <img src="assets/img/img_ova/descarga_actividades.png" alt="" width="100%">
-                                    </div>
+                          </div>
+                          <div class="col-md-12 mt-3">
+                            <b class="p_black ejercicio_ejemplo">Ejercicios de ejemplo:</b>
+                          </div>
+                          <div class="text-center col-md-12 mt-3">
+                            <b class="color-text">Para conocer la respuesta haga clic en el círculo inferior de cada tarjeta</b>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-md-6 d-flex justify-content-center">
+                              <div class="baneBlue_c">
+                                <div><b>Ejercicio de ejemplo 1:</b></div>
+                                <div>
+                                  <p class="justificado">Una turista deja caer una moneda de 50 pesos desde el último piso del Burj Khalifa a 828 metros de altura, ¿Cuál es la velocidad con la que la moneda choca con el suelo? Ignore la resistencia del aire</p>
+                                  <div class="text-center">
+                                    <img src="assets/img/img_ova/bombilla(1).png" class="img-25">
                                   </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-2">
+                                  <div class="btnmodal btn_inactive cursor btn1" data-toggle="modal" data-target="#ejemplo1" onclick="btns_modal(1);"></div>
+                                </div>
                               </div>
+                            </div>
+                            <div class="col-md-6 d-flex justify-content-center">
+                              <div class="baneBlue_c">
+                                <div><b>Ejercicio de ejemplo 2:</b></div>
+                                <div>
+                                  <p class="justificado">El turista del ejercicio anterior regresa a su casa y para celebrar, su vecino desde el piso 10 a 25m del suelo le lanza un huevo a la cabeza a 3 m/s. Si la turista mide 1,60 m y está justo debajo del vecino ¿Cuánto tiempo tiene el turista para reaccionar y esquivar el huevo?</p>
+                                </div>
+                                <div class="d-flex justify-content-center mt-2">
+                                  <div class="btnmodal btn_inactive cursor btn2" data-toggle="modal" data-target="#ejemplo2" onclick="btns_modal(2);"></div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                        </div>
                        <div id="unidad1-20" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Ecuaciones cinemáticas</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12 row">
+                            <div class="col-md-6 d-flex justify-content-center">
+                              <div class="ban_cafewhite">
+                                <p class="justificado text-white size_14">Como ya se ha mencionado los conceptos de este tema, en esta sección se va a revisar las ecuaciones cinemáticas que relacionan las cantidades físicas vistas con el propósito de utilizarlas más adelante como herramientas en la resolución de problemas.</p>
+                                <div class="text-center">
+                                  <img src="assets/img/img_ova/matematicas.png" class="img-40">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6" style="min-height: 400px;">
+                              <div class="col-md-12">
+                                <p class="p_black size_14">Una partícula se mueve en línea recta con aceleración constante ax, su movimiento se describe mediante las ecuaciones cinemáticas:</p>
+                                <b class="color-text size_13">Haga clic en los circulos para visualizar las formulas:</b>
+                              </div>
+                              <div class="row d-flex justify-content-center">
+                                <div class="col-md-2 z-index">
+                                  <div class="btn_numeros btn_numeros1 btn_numerosInactive cursor" onclick="formulas_unidimencionales(1);">1</div>
+                                </div>
+                                <div class="col-md-2 z-index">
+                                  <div class="btn_numeros btn_numeros2 btn_numerosInactive cursor" onclick="formulas_unidimencionales(2);">2</div>
+                                </div>
+                                <div class="col-md-2 z-index">
+                                  <div class="btn_numeros btn_numeros3 btn_numerosInactive cursor" onclick="formulas_unidimencionales(3);">3</div>
+                                </div>
+                                <div class="col-md-2 z-index">
+                                  <div class="btn_numeros btn_numeros4 btn_numerosInactive cursor" onclick="formulas_unidimencionales(4);">4</div>
+                                </div>
+                                <div class="col-md-2 z-index">
+                                  <div class="btn_numeros btn_numeros5 btn_numerosInactive cursor" onclick="formulas_unidimencionales(5);">5</div>
+                                </div>
+                              </div>
+                              <div class="col-md-12" style="position: relative;top: -28px;width: 100%;">
+                                <div style="height: 4px;background: black;position: relative;"></div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="text-center form_uni banneraqua formula_unidimencional1 invisible">
+                                  <img src="assets/img/img_ova/formula_unidimencional1.png" class="img100">
+                                </div>
+                                <div class="text-center form_uni banneraqua formula_unidimencional2 invisible">
+                                  <img src="assets/img/img_ova/formula_unidimencional2.png" class="img100">
+                                </div>
+                                <div class="text-center form_uni banneraqua formula_unidimencional3 invisible">
+                                  <img src="assets/img/img_ova/formula_unidimencional3.png" class="img100">
+                                </div>
+                                <div class="text-center form_uni banneraqua formula_unidimencional4 invisible">
+                                  <img src="assets/img/img_ova/formula_unidimencional4.png" class="img100">
+                                </div>
+                                <div class="text-center form_uni banneraqua formula_unidimencional5 invisible">
+                                  <img src="assets/img/img_ova/formula_unidimencional5.png" class="img100">
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <p class="color-text">Haga clic en las notas para visualizar las formulas:</p>
+                                <div class="row mt-3">
+                                  <div class="col-md-6">
+                                    <div class="text-center notas cursor" data-toggle="modal" data-target="#notas1P20">
+                                      NOTA 1
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="text-center notas cursor" data-toggle="modal" data-target="#notas2P20">
+                                      NOTA 2
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-21" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Ecuaciones cinemáticas</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12 row">
+                            <div class="col-md-6">
+                              <b class="fondo_indica p_black">Ejercicio de ejemplo:</b>
+                            </div>
+                            
+                            <div class="col-md-6">
+                              <b class="color-text size_13">Haga clic en el botón de los números para ver la información:</b>
+                            </div>
+                          </div>
+                          <div class="col-md-12 row mt-3 pantalla21" style="">
+                            <div class="col-md-6 d-flex justify-content-center m-0 p-0">
+                              <div class="bannercafe2">
+                                <div class="text-center">
+                                  <img src="assets/img/img_ova/tunel.png" class="img-40">
+                                </div>
+                                <div>
+                                  <p class="justificado text-white">Un automóvil entra en un túnel de un solo carril a 120 km/h y nota inmediatamente que 20 m adelante va un bus a 40 km/h, si aplica los frenos al entrar al túnel y puede frenar a 5 m/s<sup>2</sup> <br>
+                                  ¿Habrá colisión y si es así, a que distancia de la entrada del túnel ocurre?</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                              <div class="col-md-12">
+                                <div class="col-md-12 opcion1 opciones visible">
+                                  <div class="col-md-12 mt-3" style="height: 25%;">
+                                    <div class="row width-70 cursor" onclick="pantalla21(1);">
+                                      <div class="cabeza_btn">1</div>
+                                      <div class="cuerpo_btn">Datos</div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="col-md-12" style="height: 25%;padding-top: 15%;">
+                                    <div class="row width-50 cursor" onclick="pantalla21(2);">
+                                      <div class="cabeza_btn">2</div>
+                                      <div class="cuerpo_btn">Ecuaciones</div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="col-md-12" style="height: 25%;padding-top: 15%;">
+                                    <div class="row width-50 cursor" onclick="pantalla21(3);">
+                                      <div class="cabeza_btn">3</div>
+                                      <div class="cuerpo_btn">Solución</div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                <div class="col-md-12 opcion2 opciones invisible">
+                                  <div class="row">
+                                    <div class="col-md-10">
+                                      <div class="row" style="width: 70%;">
+                                          <div class="cabeza_btn">1</div>
+                                          <div class="cuerpo_btn">Datos</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="cabeza_btn cordenadas cursor" onclick="pantalla21(4);">X</div>
+                                    </div>
+                                  </div>
+                                  <div class="text-center">
+                                    <img src="assets/img/img_ova/datos.png" class="img-100">
+                                  </div>
+                                </div>
+
+                                <div class="col-md-12 opcion3 opciones invisible">
+                                  <div class="row">
+                                    <div class="col-md-10">
+                                      <div class="row" style="width: 70%;">
+                                          <div class="cabeza_btn">2</div>
+                                          <div class="cuerpo_btn">Ecuaciones</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="cabeza_btn cordenadas cursor" onclick="pantalla21(4);">X</div>
+                                    </div>
+                                  </div>
+                                  <div class="text-center">
+                                    <p class="p_black size_14">Ahora, se empiezan a utilizar las ecuaciones: </p>
+                                    <div class="text-center">
+                                      <img src="assets/img/img_ova/ecuaciones.png" style="max-width: 115%">
+                                    </div>
+                                    <p class="p_black size_14 mt-3">Si habrá colisión, por lo tanto</p>
+                                    <div class="text-center mt-3">
+                                      <img src="assets/img/img_ova/ecuaciones2.png" style="max-width: 115%">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12 opcion4 opciones invisible">
+                                  <div class="row">
+                                    <div class="col-md-10">
+                                      <div class="row" style="width: 70%;">
+                                          <div class="cabeza_btn">3</div>
+                                          <div class="cuerpo_btn">Solución</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="cabeza_btn cordenadas cursor" onclick="pantalla21(4);">X</div>
+                                    </div>
+                                  </div>
+                                  <div class="text-center">
+                                    <div class="row">
+                                      <div>
+                                        <p class="p_black">Dando solución para t, donde es </p>
+                                      </div>
+                                      <div style="width: 30%;position: relative;top: -19px;left: 10px;">
+                                        <img src="assets/img/img_ova/solucion.png" class="img-100">
+                                      </div>
+                                    </div>
+                                    <p class="p_black size_14 mt-3">Donde se toma el valor más pequeño para llegar a la colisión y poder conocer en qué distancia del túnel ocurre.</p><br>
+                                    <p class="p_black size_14 mt-3">Ahora, se toma la primera ecuación y se reemplaza t</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-22" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Ecuaciones cinemáticas</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12 row">
+                            <div class="col-md-6">
+                              <b class="ejercicio_ejemplo p_black" style="background: #61C5FF;">Ejercicio de ejemplo:</b>
+                            </div>
+                            
+                            <div class="col-md-6">
+                              <b class="color-text size_13">Haga clic en el botón de los números para ver la información:</b>
+                            </div>
+                          </div>
+                          <div class="col-md-12 row mt-3 pantalla22" style="min-height: 400px;">
+                            <div class="col-md-6 d-flex justify-content-center m-0 p-0">
+                              <div class="bannercafe2" style="background: #E49E40;">
+                                <div class="text-center">
+                                  <img src="assets/img/img_ova/objetivo.png" class="img-40">
+                                </div>
+                                <div>
+                                  <p class="justificado text-white">Un rifle se dispara de forma horizontal al centro de un gran blanco a 200 m de distancia. La velocidad inicial de la bala es de 500 m/s ¿Dónde incide la bala en el blanco? ¿Cuál debe ser el ángulo de elevación para dar en el centro del blanco?<br>
+                                  (Young, Zemansky, Sears, 2009).</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 mt-3">
+                              <div class="col-md-12">
+                                <div class="col-md-12 opcion1-1 opciones visible">
+                                  <div class="col-md-12 mt-3" style="height: 25%;">
+                                    <div class="row width-70 cursor" onclick="pantalla22(1);">
+                                      <div class="cabeza_btn">1</div>
+                                      <div class="cuerpo_btn">Datos</div>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="col-md-12" style="height: 25%;padding-top: 15%;">
+                                    <div class="row width-50 cursor" onclick="pantalla22(2);">
+                                      <div class="cabeza_btn">2</div>
+                                      <div class="cuerpo_btn">Ecuaciones</div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                <div class="col-md-12 opcion2-2 opciones invisible">
+                                  <div class="row">
+                                    <div class="col-md-10">
+                                      <div class="row" style="width: 70%;">
+                                          <div class="cabeza_btn">1</div>
+                                          <div class="cuerpo_btn">Datos</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="cabeza_btn cordenadas cursor" onclick="pantalla22(3);">X</div>
+                                    </div>
+                                  </div>
+                                  <div class="text-center">
+                                    <img src="assets/img/img_ova/ecuacion1-1.png" class="img-100">
+                                  </div>
+                                </div>
+
+                                <div class="col-md-12 opcion3-3 opciones invisible">
+                                  <div class="row">
+                                    <div class="col-md-10">
+                                      <div class="row" style="width: 70%;">
+                                          <div class="cabeza_btn">2</div>
+                                          <div class="cuerpo_btn">Solución</div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <div class="cabeza_btn cordenadas cursor" onclick="pantalla22(3);">X</div>
+                                    </div>
+                                  </div>
+                                  <div class="text-center">
+                                    <p class="p_black size_14">Tiempo de vuelo para cubrir 200 m horizontalmente:</p>
+                                    <div class="text-center">
+                                      <img src="assets/img/img_ova/solucion-1-1.png" style="max-width: 115%">
+                                    </div>
+                                    <div class="row">
+                                      <div><p class="p_black size_14 mt-3">Caída vertical en t, donde: </p></div>
+                                      <div class="text-center">
+                                        <img src="assets/img/img_ova/solucion-1-2.png" class="img-100">
+                                      </div>
+                                    </div>
+                                    <p class="p_black size_14">0,78 m por debajo del centro del blanco. <br>
+                                    Ahora, se va a hallar el ángulo.</p>
+                                    <div class="text-center">
+                                        <img src="assets/img/img_ova/solucion-1-3.png" class="img-100">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-23" class="tab-pane" role="tabpanel">
+                          actividad
+                       </div>
+                       <div id="unidad1-24" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento unidimensional / Estrategia para resolver problemas</h3>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 border-bottom-azul">
+                              <p class="p_black justificado"><i><b>A continuación, se va a proponer una serie de pasos que pueden ayudar a solucionar los problemas de esta unidad:</i></b></p>
+                              <br>
+                              <p class="p_black justificado"><b>Haga clic en los recuadros para ver la información:</b></p>
+                            </div>
+                            <div class="col-md-12 py-3">
+                              <div class="row">
+                                <div class="col-md-6 p-3 m-0 bg-azul-o cursor" data-toggle="modal" data-target="#Sistema-métrico-decimal-modal">
+                                  <p class="text-center"><img src="assets/img/img_ova/cinta.png" class="img-50"></p>
+                                  <p class="p_white text-center"><b>Conceptualizar</b></p>
+                                </div>
+                                <div class="col-md-6 p-3 m-0 bg-blanco cursor" data-toggle="modal" data-target="#Sistema-ingles-modal">
+                                  <p class="text-center"><img src="assets/img/img_ova/gobernante.png" class="img-50"></p>
+                                  <p class="p_black text-center"><b>Categorizar</b></p>
+                                </div>
+                                <div class="col-md-6 p-3 m-0 bg-blanco cursor" data-toggle="modal" data-target="#Sistema-MKS-modal">
+                                  <p class="text-center"><img src="assets/img/img_ova/atras-en-el-tiempo.png" class="img-50"></p>
+                                  <p class="p_black text-center"><b>Analizar</b></p>
+                                </div>
+                                <div class="col-md-6 p-3 m-0 bg-azul-o cursor" data-toggle="modal" data-target="#Sistema-Internacional-de-Unidades-SI-modal">
+                                  <p class="text-center"><img src="assets/img/img_ova/polea.png" class="img-50"></p>
+                                  <p class="p_black text-center"><b>Finalizar</b></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-25" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                                <div class="col-md-5 row">
+                                   <img class="img_activi" src="assets/img/img_ova/actividad_general.png" style="">
+                                   <div class="text-img-activi">
+                                     <b class="texto_activi" style="">ACTIVIDAD #2</b>
+                                   </div>
+                                </div>
+                                <div class="col-md-7 shadow contenedor_indi" style="">
+                                    <div class="">
+                                       <p class="row"><img src="assets/img/img_ova/actividad.png" class="logo_copiar" style=""><b style="color: white;">Video</b></p> 
+                                    </div>
+                                    <div class="">
+                                        <p class="row"><img src="assets/img/img_ova/reloj.png" style="max-width: 33px;"><b style="color: white;font-size: 15px;width: 70%;">Tiempo sugerido: 10 minutos</b></p>
+                                    </div>
+                                </div>
+                          </div>
+                          <div class="col-md-12 row mt-5">
+                            <div class="col-md-6">
+                              <div class="text-center">
+                                <img src="assets/img/img_ova/Recurso_video.png" class="img-100">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="d-flex justify-content-center">
+                                <div class="texto_video" style="">
+                                  <p class="justificado text-white">Con el fin de ampliar el tema visto, visualice el siguiente video de ecuaciones cinemáticas:</p>
+                                </div>
+                              </div>
+                              <div class="d-flex justify-content-center">
+                                <div class="text-center video_enlace" style="">
+                                  <a href="https://www.youtube.com/watch?v=2PWiKwhK2Oc" target="_blank"><img src="assets/img/img_ova/youtube_1.png" class="img-40"></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-26" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento bidimensional</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12 mt-3">
+                            <div class="row fondo_carta" style="">
+                              <div class="text-center imagenCarta" style="">
+                                <img src="assets/img/img_ova/notas.png" class="img-100">
+                              </div>
+                              <div style="width: 80%;">
+                                <p class="justificado size_14">¿Qué determina dónde cae un proyectil lanzado? ¿Cómo se describe el movimiento de un carro de la montaña rusa en una curva, o el vuelo de un halcón que describe círculos? ¿Cuál golpea el suelo primero: una pelota de béisbol que simplemente se deja caer o una que se arroja horizontalmente?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 d-flex justify-content-center mt-5">
+                            <div class="contenedorazul">
+                              <p class="justificado size_14">No se pueden contestar estas preguntas usando las técnicas del “Tema 1” donde se consideró que las partículas se movían solo en línea recta. En lugar de ello, es necesario ampliar nuestras descripciones del movimiento a situaciones en dos y hasta en tres dimensiones. Se seguirán empleando las cantidades vectoriales de desplazamiento, velocidad y aceleración; sin embargo, ahora no estarán a lo largo de una sola línea. Se mostrará que algunas clases de movimientos importantes se dan solo en dos dimensiones, es decir, en un plano, y pueden describirse con dos componentes de posición, velocidad y aceleración.</p><br>
+                              <p class="justificado size_14">En este tema, se conjunta el lenguaje de vectores que estudiamos en el OVA 1 con el lenguaje de la cinemática. Como antes, interesa describir el movimiento, no analizar sus causas. No obstante, el lenguaje que se aprendes aquí será una herramienta esencial en el OVA 3, al estudiar la relación entre fuerza y movimiento.</p>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-27" class="tab-pane" role="tabpanel">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="titulo-ova">
+                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                  </div>
+                                  <h3 class="color-text">Movimiento bidimensional</h3>
+                              </div>
+                          </div>
+                          <div class="col-md-12 mt-3">
+                            <div class="row fondo_carta" style="height: 110px;">
+                              <div class="text-center imagenCarta" style="">
+                                <img src="assets/img/img_ova/notas.png" class="img-100">
+                              </div>
+                              <div style="width: 80%;">
+                                <p class="justificado size_14">Para describir el movimiento de una partícula en el espacio, primero se tiene que describir su posición. Se considera una partícula que está en el punto P en cierto instante. El vector de posición 𝑟&#8407; de la partícula en ese instante es un vector que va del origen del sistema de coordenadas al punto P. Las coordenadas cartesianas x, y y z de P son las componentes x, y y z del vector. Si se usa vectores unitarios se puede escribir:</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mt-3">
+                            <b class="color-text">Haga clic en la flecha de la tarjeta para ver la información:</b>
+                            <div class="col-md-12 row mt-3">
+                              <div class="col-md-5 d-flex justify-content-center">
+                                <div class="text-center targetas27" style="">
+                                  <img src="assets/img/img_ova/Imagen1posicion.jpg" class="img-70">
+                                </div>
+                              </div>
+                              <div class="col-md-1">
+                                <div class="triangulo" style=""></div>
+                              </div>
+                              <div class="col-md-6 d-flex justify-content-center">
+                                <div class="targetas27">
+                                  <p style="font-size: 14px;">Durante un intervalo de tiempo ∆t, la partícula se mueve de P1, donde su vector de posición es <img src="assets/img/img_ova/simbolo1.png" style="max-width: 20px;"> a P2, donde su vector de posición es <img src="assets/img/img_ova/simbolo2.png" style="max-width: 20px;"> El cambio de posición durante este intervalo <img src="assets/img/img_ova/simbolo3.png" style="max-width: 109px;"><img src="assets/img/img_ova/simbolo4.png" style="max-width: 230px;">. Se define la velocidad media y la velocidad instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de posición tiene 3 componentes.</p><b class="color-text"> Pase el mouse en los números para ver la información:</b>
+                                  <div class="row">
+                                    <div class="col-md-6"></div>
+                                    <div class="col-md-6 row">
+                                      <div class="btn_targetas27" style="">1</div>
+                                      <div class="btn_targetas27" style="margin-left: 5px;">2</div>
+                                      <div class="btn_targetas27" style="margin-left: 5px;">3</div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div>
+                                <img src="assets/img/img_ova/textotarget1.png">
+                              </div>
+                              <div class="invisible">
+                                <img src="assets/img/img_ova/textotarget2.png">
+                              </div>
+                              <div class="invisible">
+                                <img src="assets/img/img_ova/textotarget3.png">
+                              </div>
+                            </div>
+                          </div>
+                       </div>
+                       <div id="unidad1-28" class="tab-pane" role="tabpanel">
                           <div class="row px-3">
                               <div class="col-md-6 offset-md-3">
                                   <h1 class="text-center">¡FELICITACIONES! <img src="assets/img/img_ova/felicitaciones.png" alt="" class="img-15"></h1>
@@ -1465,8 +1852,8 @@
   </div>
 </div>
 
-<div class="modal fade" id="Sistema-ingles-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+<div class="modal fade" id="nota1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
     <div class="modal-content">
       <div class="">
         <div class="card-container manual-flip">
@@ -1474,13 +1861,211 @@
               <div class="front bg-blanco">
                   <div class="cover" style="overflow: visible;">
                     <div class="row h-100">
-                      <div class="col-md-3 pt-2">
-                        <div class="text-center"> 
-                          <img src="assets/img/img_ova/gobernante.png" style="max-width: 35%;">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
                         </div>
-                        <div class="text-center">
-                          <h3 class="text-white">Sistema ingles</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                    <div class="col-md-2 text-center">
+                      <img src="assets/img/img_ova/bombilla(1).png" style="width: 180%;">
+                    </div>
+                    <div class="col-md-8" style="padding-top: 12%;padding-bottom: 10%;">
+                      <p class="justificado">También es de resaltar que en términos geométricos el área bajo las gráficas representa el cambio de la velocidad y la distancia recorrida respectivamente entre el inicio del movimiento y un instante t.</p>
+                    </div>
+                    <div class="col-md-2">
+                      
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="respuestap15-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                      <div class="text-center">
+                        <img src="assets/img/img_ova/formula_3.png" class="img-100">
+                      </div>
+                      <div class="text-center">
+                        <img src="assets/img/img_ova/bombilla(1).png" class="img-25">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="respuestap15-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content row">
+                      <div class="text-center">
+                        <img src="assets/img/img_ova/formula_5.png" class="img-100">
+                      </div>
+                      <div class="text-center">
+                        <img src="assets/img/img_ova/bombilla(1).png" class="img-25">
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ejemplo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content text-center">
+                      <img src="assets/img/img_ova/Ejercicio1_caida-libre.jpg" class="img-100">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="ejemplo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content text-center">
+                      <img src="assets/img/img_ova/Ejercicio2_caidalibre.jpg" class="img-100">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="notas1P20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
                       </div>
                       <div class="col-md-8 d-flex">
                         
@@ -1497,44 +2082,9 @@
                     </div>
                   </div>
                   <div class="content">
-                    <div class="row">
-                      <div class="col-md-4"> 
-                        <div class="banner_gris" style="">
-                          <p class="justificado">Este sistema también conocido como Imperial se deriva de la evolución de las unidades locales a través de los siglos y de los intentos de estandarización en Inglaterra.</p>
-                        </div>
+                      <div>
+                        <p class="justificado">En este punto es importante resaltar que cada una de estas ecuaciones suministra información sobre el movimiento si se conocen otros parámetros de este. Por ejemplo, en la primera ecuación se puede obtener la velocidad final si se conoce la velocidad inicial, la aceleración y el tiempo para alcanzarla. De la misma ecuación se podría obtener la aceleración si se conocen las velocidades y el tiempo. También se enfrentarán a situaciones en la que se debe obtener un dato de una ecuación, para reemplazarlo en otra y así obtener de forma indirecta la información deseada.</p>
                       </div>
-                      <div class="col-md-4">
-                        <div class="banner_gris">
-                          <p class="justificado">Hoy en día, estas unidades van siendo lentamente reemplazadas por el Sistema Internacional de Unidades, aunque en Estados Unidos la inercia del antiguo sistema y el alto costo de migración ha impedido en gran medida el cambio.</p>
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-4">
-                        <div class="banner_gris">
-                          <p class="justificado">En Estados Unidos el uso del sistema métrico se ha incrementado rápidamente en los últimos años, principalmente en los sectores manufacturero y educativo.</p>
-                        </div>
-                        
-                      </div>
-
-                      <div class="col-md-4">
-                        <div class="banner_gris">
-                          <p class="justificado">El sistema para medir longitudes se basa en la pulgada, el pie, la yarda y la milla. Cada una de estas unidades tiene dos definiciones ligeramente distintas, lo que ocasiona que existan dos diferentes sistemas de medición</p>
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-4">
-                        <div class="banner_gris">
-                          <p class="justificado">Una pulgada de medida internacional mide exactamente 25,4 mm (por definición), mientras que una pulgada de agrimensor de Estados Unidos se define que 39,37 pulgadas sean exactamente un metro</p>
-                        </div>
-                        
-                      </div>
-                      <div class="col-md-4">
-                        <div class="banner_gris"> 
-                          <p class="justificado">Para la mayoría de las aplicaciones, la diferencia es insignificante (aproximadamente 3 mm por cada milla). (J., 2008)</p>
-                        </div>
-                        
-                      </div>
-                    </div>
                   </div>
               </div>
           </div>
@@ -1544,8 +2094,8 @@
   </div>
 </div>
 
-<div class="modal fade" id="Sistema-cegesimal-o-CGS-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+<div class="modal fade" id="notas2P20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-md d-block" role="document">
     <div class="modal-content">
       <div class="">
         <div class="card-container manual-flip">
@@ -1553,13 +2103,8 @@
               <div class="front bg-blanco">
                   <div class="cover" style="overflow: visible;">
                     <div class="row h-100">
-                      <div class="col-md-3 pt-2">
-                        <div class="text-center"> 
-                          <img src="assets/img/img_ova/kilogramos.png" style="max-width: 35%;">
-                        </div>
-                        <div class="text-center">
-                          <h3 class="text-white">Sistema cegesimal o CGS</h3>
-                        </div>
+                      <div class="col-md-3">
+                        
                       </div>
                       <div class="col-md-8 d-flex">
                         
@@ -1575,35 +2120,57 @@
                       </div>
                     </div>
                   </div>
-                  <div class="content row text-center" style="padding: 10px 40px 20px;">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="row fondoazulo" style="">
-                          <div class="numero" style="">1</div>
-                          <div class="textonumero" style="">
-                            <p class="justificado">El Sistema cegesimal de unidades, también llamado sistema CGS o sistema Gaussiano, es un sistema de unidades basado en el centímetro, el gramo y el segundo. Su nombre es el acrónimo de estas tres unidades.</p><br>
-                            <p class="justificado">Fue propuesto por Gauss en 1832, e implantado por la Asociación Británica para el avance de la ciencia (BAAS, ahora BA)</p>
-                          </div>
+                  <div class="content">
+                      <div>
+                        <p class="justificado">Otra consideración importante es que, aunque están escritas en termino de x (que se asume horizontal), se pueden utilizar en y siempre que se tenga en cuenta el efecto de la gravedad.</p>
+                        <div class="text-center">
+                          <img src="assets/img/img_ova/bombilla(1).png" class="img-25">
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <div class="row fondoazulo">
-                          <div class="numero">2</div>
-                          <div class="textonumero">
-                            <p class="justificado">En 1874 incluyendo las reglas de formación de un sistema formado por unidades básicas y unidades derivadas.</p><br>
-                            <p class="justificado">El sistema CGS ha sido casi totalmente reemplazado por el Sistema Internacional de Unidades (SI).</p>
-                          </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Sistema-métrico-decimal-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1 pt-2">
+                        
+                        <div class="text-center">
+                          
                         </div>
                       </div>
-                      <div class="col-md-4">
-                        <div class="row fondoazulo">
-                          <div class="numero">3</div>
-                          <div class="textonumero">
-                            <p class="justificado">Sin embargo, aún perdura su utilización en algunos campos científicos y técnicos muy concretos, con resultados ventajosos en algunos contextos.</p><br>
-                            <p class="justificado">Así, muchas de las fórmulas del electromagnetismo presentan una forma más sencilla cuando se las expresa en unidades CGS.</p>
-                          </div>
+                      <div class="col-md-10">
+                        <div class="text-center"> 
+                          <img src="assets/img/img_ova/cinta.png" style="max-width: 15%;">
                         </div>
                       </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div>
+                      <p class="justificado">la primera cosa que debe hacer cuando aborde un problema es pensar y comprender la situación. Estudie cuidadosamente las representaciones de la información (por ejemplo: diagramas, gráficas, tablas o fotografías) que acompañen al problema. Imagine una película, que corra en su mente, de lo que sucede en el problema.</p><br>
+                      <p class="justificado">Si no se le proporciona una representación pictórica, casi siempre debe hacer un dibujo rápido de la situación o un diagrama. Indique los valores conocidos, acaso en una tabla o directamente en su bosquejo; enfóquese en qué información algebraica o numérica se proporciona en el problema. Lea con cuidado el enunciado del problema y busque frases clave como “parte del reposo”, “se detiene” o “cae libremente”. Ahora enfóquese en el resultado que se espera del problema resuelto. ¿Exactamente qué es lo que plantea la pregunta? ¿El resultado final será numérico o algebraico? ¿Sabe qué unidades esperar?</p>
                     </div>
                   </div>
               </div>
@@ -1614,6 +2181,49 @@
   </div>
 </div>
 
+<div class="modal fade" id="Sistema-ingles-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1 pt-2">
+                        
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <div class="text-center"> 
+                          <img src="assets/img/img_ova/gobernante.png" style="max-width: 15%;">
+                        </div>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="">
+                      <p class="justificado">Una vez que tenga una buena idea de lo que trata el problema, se necesita simplificar el problema. Se deben quitar los detalles que no sean importantes para la solución. Es importante categorizar el problema. ¿Es un simple problema de sustitución en el que los números se sustituyen en una ecuación? Si es así, es probable que el problema termine cuando realice esta sustitución. Si no, enfrenta lo que se llama problema analítico: la situación se debe analizar más profundamente para llegar a una solución.</p><br>
+                      <p class="justificado">Si es un problema analítico, necesita categorizarlo aún más ¿Ha visto este tipo de problemas antes? ¿Cae en la creciente lista de tipos de problemas que ha resuelto anteriormente? Si es así, se debe identificar cualquier modelo de análisis apropiado al problema: partícula bajo velocidad constante, partícula bajo rapidez constante y partícula bajo aceleración constante. Ser capaz de clasificar un problema con un modelo de análisis hace mucho más sencillo tender un plan para resolverlo.</p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div class="modal fade" id="Sistema-MKS-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
     <div class="modal-content">
@@ -1623,16 +2233,14 @@
               <div class="front bg-blanco">
                   <div class="cover" style="overflow: visible;">
                     <div class="row h-100">
-                      <div class="col-md-3 pt-2">
-                        <div class="text-center"> 
-                          <img src="assets/img/img_ova/atras-en-el-tiempo.png" style="max-width: 35%;">
-                        </div>
-                        <div class="text-center">
-                          <h3 class="text-white">Sistema MKS</h3>
-                        </div>
-                      </div>
-                      <div class="col-md-8 d-flex">
+                      <div class="col-md-1 pt-2">
                         
+                        
+                      </div>
+                      <div class="col-md-10">
+                        <div class="text-center"> 
+                          <img src="assets/img/img_ova/atras-en-el-tiempo.png" style="max-width: 15%;">
+                        </div>
                       </div>
                       <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                         <div class="divcerrar">
@@ -1647,16 +2255,7 @@
                   </div>
                   <div class="content row text-center">
                     <div class="">
-                      <div style="border-radius: 20px;background: #FFB509;color: white;padding: 10px;box-shadow: 2px 1px 5px 0px black;margin-bottom: 5px;"> 
-                        <p class="justificado">El sistema MKS de unidades expresa las medidas utilizando como unidades fundamentales metro, kilogramo y segundo (MKS).</p>
-                      </div>
-                      <div style="border-radius: 20px;background: #1e4e79;color: white;padding: 10px;box-shadow: 2px 1px 5px 0px black;margin-bottom: 5px;">
-                        <p class="justificado">El sistema MKS de unidades sentó las bases para el Sistema Internacional de Unidades, que ahora sirve como estándar internacional.</p>
-                      </div>
-                      <div style="border-radius: 20px;background: #FFB509;color: white;padding: 10px;box-shadow: 2px 1px 5px 0px black;">
-                        <p class="justificado">El sistema MKS de unidades sentó las bases para el Sistema Internacional de Unidades, que ahora sirve como estándar internacional</p>
-                      </div>
-                      
+                      <p class="justificado">Ahora se debe analizar el problema y esforzarse por una solución matemática. Puesto que ya categorizó el problema e identificó un modelo de análisis, no debe ser muy difícil seleccionar ecuaciones relevantes que se apliquen al tipo de situación en el problema. Se usa álgebra (y cálculo, si es necesario) para resolver simbólicamente la variable desconocida en términos de lo que está dado.</p>
                     </div>
                   </div>
               </div>
@@ -1676,16 +2275,14 @@
               <div class="front bg-blanco">
                   <div class="cover" style="overflow: visible;">
                     <div class="row h-100">
-                      <div class="col-md-3 pt-2">
-                        <div class="text-center"> 
-                          <img src="assets/img/img_ova/polea.png" style="max-width: 35%;">
-                        </div>
-                        <div class="text-center">
-                          <h3 class="text-white">Sistema Internacional de Unidades (SI)</h3>
-                        </div>
-                      </div>
-                      <div class="col-md-8 d-flex">
+                      <div class="col-md-1 pt-2">
                         
+                        
+                      </div>
+                      <div class="col-md-10">
+                        <div class="text-center"> 
+                          <img src="assets/img/img_ova/polea.png" style="max-width: 15%;">
+                        </div>
                       </div>
                       <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                         <div class="divcerrar">
@@ -1699,24 +2296,9 @@
                     </div>
                   </div>
                   <div class="content row text-center">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <div class="targeta_naranja">
-                          <p class="justificado">Las unidades del SI constituyen referencia internacional de las indicaciones de los instrumentos de medición, a las cuales están referidas mediante una concatenación ininterrumpida de calibraciones o comparaciones.</p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="targeta_naranja">
-                          <p class="justificado">Una de las características trascendentales del SI es que sus unidades actualmente se basan en fenómenos físicos fundamentales. <br>
-                          Este permite lograr contrastar con instrumentos similares, utilizados y calibrados en lugares distantes y, por ende, asegurar —sin necesidad de duplicación de ensayos y mediciones— el cumplimiento de las características de los productos que son objeto de transacciones en el comercio internacional, su intercambiabilidad. (J., 2008)</p>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="targeta_naranja">
-                          <p class="justificado">El SI se creó en 1960 por la 11.ª Conferencia General de Pesas y Medidas, durante la cual inicialmente se reconocieron seis unidades físicas básicas (las actuales excepto el mol). <br>
-                          El mol se añadió en 1971. Entre los años 2006 y 2009 se armonizó el Sistema Internacional de Magnitudes —a cargo de las organizaciones ISO y CEI— con el SI. El resultado es la norma ISO/IEC 80000.</p>
-                        </div>
-                      </div>
+                    <div class="">
+                        <p class="justificado">Examinar la respuesta numérica ¿Tiene las unidades correctas? ¿Satisface las expectativas de su conceptualización del problema? ¿Qué hay acerca de la forma algebraica del resultado? ¿Tiene sentido? Se examinan las variables del problema para ver si la respuesta cambiaría en una forma físicamente significativa si las variables aumentan o disminuyen drásticamente o incluso si se vuelven cero.</p><br>
+                        <p class="justificado">¿Por qué se asignó este problema? ¿Puede imaginar qué aprendió al hacerlo? Si es una nueva categoría de problema, se asegura que lo comprendió para que pueda usarlo como modelo para resolver problemas similares en el futuro. Cuando se resuelvan problemas complejos, es posible que se necesite identificar una serie de subproblemas y aplicar la estrategia para resolver cada uno. Para problemas simples, probablemente no se necesita esta estrategia. Sin embargo, cuando se intente resolver un problema y no sepa qué hacer a continuación, se deben recordar las etapas en la estrategia y usarlas como guía. (J., 2008).</p>
                     </div>
                   </div>
               </div>
