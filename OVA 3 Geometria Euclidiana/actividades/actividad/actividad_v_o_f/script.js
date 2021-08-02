@@ -8,10 +8,10 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "Realizar un inventario ordenado de problemas o situaciones desfavorables identificadas", answer_id: "A", img:""},
-        {question_txt: "Desintegrar los análisis al identificar cada una de las causas del problema", answer_id: "B", img:""},
-        {question_txt: "Desjerarquizar las diferentes categorías de los problemas", answer_id: "B", img:""},
-        {question_txt: "Agrupar o separar las problemáticas identificadas", answer_id: "A", img:""}
+        {question_txt: "Se llama ángulo a la “figura”  que se forma por dos semirrectas que tienen su origen en un mismo punto.", answer_id: "A", img:""},
+        {question_txt: "Las perpendiculares no se cortan.", answer_id: "B", img:""},
+        {question_txt: "La perpendicular es más corta que toda oblicua.", answer_id: "A", img:""},
+        {question_txt: "Dos rectas paralelas a una tercera serán paralelas entre sí.", answer_id: "A", img:""}
         
 
     ];

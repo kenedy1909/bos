@@ -209,7 +209,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th><p style="color: white;"></p><b>Para realizar un diagnóstico estratégico es necesario:</b></th>\
+                    <th><p style="color: white;"></p><b>Ítem</b></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
@@ -236,6 +236,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn" style="background: #97182F; color: #fff;" type="submit" >Calificar</button>\
+        <button class="btn" style="background: #003442; color: #fff;" type="submit" >Calificar</button>\
     </div>\
 </form>'
