@@ -99,7 +99,10 @@ iframe{
 }
 
 .color-text{
-  color: var(--bg-color);
+  color: var(--bg-color)!important;
+}
+.color-title{
+  color: var(--bg-color-dark)!important;
 }
 
 .titulo-ova{
@@ -488,6 +491,15 @@ iframe{
     color: rgb(0,0,0);
 }
 
+
+.text-white{
+  color: white!important;
+}
+.text-black{
+  color: #000!important;
+}
+
+
 .text{
     position: relative;
     color: rgb(0,0,0);
@@ -828,7 +840,7 @@ card flip*/
   color: #994c91;
 }
 .banner_activi{
-  background: #E2C4DF;
+  background: var(--bg-color-medium);
   margin-left: 10px;
   border-radius: 30px;
   padding: 25px 1px 25px 25px;
