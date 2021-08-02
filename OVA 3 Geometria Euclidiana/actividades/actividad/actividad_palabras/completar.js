@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded",() => {
 		op_1 = new SelectDropdown({ id: "op_1" }),
 		op_2 = new SelectDropdown({ id: "op_2" }),
 		op_3 = new SelectDropdown({ id: "op_3" }),
-		op_4 = new SelectDropdown({ id: "op_4" });
+		op_4 = new SelectDropdown({ id: "op_4" }),
+		op_5 = new SelectDropdown({ id: "op_5" });
 });
 
 class SelectDropdown {
