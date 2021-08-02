@@ -37,27 +37,42 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "El objetivo del análisis externo es…",
+                texto: "El punto en que se cortan las tres bisectrices se llama:",
                 respuestas: [{
-                    texto: "Identificar la cantidad de recursos con los cuales se cuenta una empresa.",
+                    texto: "Incentro",
                     correcta: false
                 }, {
-                    texto: "Identificar las oportunidades y amenazas estratégicas en el ambiente operativo de la organización.",
+                    texto: "Circuncentro",
+                    correcta: false
+                }, {
+                    texto: "Ortocentro",
+                    correcta: false
+                }, {
+                    texto: "Baricentro",
+                    correcta: true
+                }]
+            }, {
+                texto: "Las bisectrices interiores son:",
+                respuestas: [{
+                    texto: "Las que unen el punto medio de cada lado con el vértice opuesto.",
+                    correcta: false
+                }, {
+                    texto: "Las que corresponden a los ángulos interiores.",
                     correcta: true
                 }, {
-                    texto: "Desarrollo del plan estratégico para el mejoramiento de los procesos en una empresa.",
+                    texto: "Las perpendiculares a cada lado en su punto medio.",
+                    correcta: false
+                }, {
+                    texto: "Las que corresponden a los ángulos exteriores.",
                     correcta: false
                 }]
             }, {
-                texto: "La función principal del análisis del entorno empresarial consiste en…",
+                texto: "Circuncentro se refiere a: “Punto de corte de las mediatrices”.",
                 respuestas: [{
-                    texto: "Determinar objetivos estratégicos claros.",
+                    texto: "Falso",
                     correcta: false
                 }, {
-                    texto: "Resumir la información que permita tener un panorama claro de lo que se busca ",
-                    correcta: false
-                }, {
-                    texto: "Aprovechar al máximo las oportunidades y controlar o mitigar las amenazas.",
+                    texto: "Verdadero",
                     correcta: true
                 }]
             }]);

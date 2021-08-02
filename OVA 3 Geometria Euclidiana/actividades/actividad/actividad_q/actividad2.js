@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var img1 = `
 				<div class="img_questionario d-flex">
-								<img src="./img/objetivo3.png" class="w-100" style="
+								<img src="./img/triangulo (2).png" class="w-100" style="
 				    width: 90%;
 				    margin: auto;
 				">
@@ -9,7 +9,15 @@ $(document).ready(function() {
 				`;
 	var img2 = `
 				<div class="img_questionario d-flex">
-								<img src="./img/meta1.png" class="w-100" style="
+								<img src="./img/triangulo (1).png" class="w-100" style="
+				    width: 90%;
+				    margin: auto;
+				">
+								</div>
+				`;
+	var img3 = `
+				<div class="img_questionario d-flex">
+								<img src="./img/triangulo (3).png" class="w-100" style="
 				    width: 90%;
 				    margin: auto;
 				">
@@ -17,8 +25,10 @@ $(document).ready(function() {
 				`;
 	$(".img_questionario1").html(img1);
 	$(".img_questionario2").html(img2);
+	$(".img_questionario3").html(img3);
 
 	$("#cuestionario-2").css('display','none');
+	$("#cuestionario-3").css('display','none');
 
 	/*$(".siguente1").data('slide', 2);
 	$(".siguente2").data('slide', 3);
@@ -31,6 +41,7 @@ function siguente(){
 	var slide = $(this).data('slide');
 	$("#cuestionario-1").css('display','none');
 	$("#cuestionario-2").css('display','none');
+	$("#cuestionario-3").css('display','none');
 	$("#cuestionario-"+slide).css('display','block');
 		/*$("#siguente").removeData('slide');
 		$("#atras").removeData('slide');*/
@@ -38,6 +49,9 @@ function siguente(){
 		$("#siguente").data('slide', 2);
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
+		$("#siguente").data('slide', 3);
+		/*$("#atras").data('slide', 1);*/
+	}else if (slide == 3) {
 		$("#siguente").data('slide', 1);
 		/*$("#atras").data('slide', 1);*/
 	}
