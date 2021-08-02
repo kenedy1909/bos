@@ -1206,3 +1206,17 @@ function enter_hover_2(num) {
         $(".enter_hover_2_4").removeClass('bg-azul-1');
     }
 }
+
+function funcionalidad_9(num) {
+    $(".info_funcionalidad_9_1, .info_funcionalidad_9_2, .info_funcionalidad_9_3, .info_funcionalidad_9_4").addClass('d-none');
+
+    if (num == 1) {
+        $(".info_funcionalidad_9_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".info_funcionalidad_9_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".info_funcionalidad_9_3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".info_funcionalidad_9_4").removeClass('d-none');
+    }
+}
