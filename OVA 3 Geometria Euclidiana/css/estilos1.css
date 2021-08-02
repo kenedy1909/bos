@@ -24,35 +24,35 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb {
-  background-color: #771E18;
+  background-color: #0A57BF;
   width: 30px;
   height: 30px;
-  border: 3px solid #771E18;
+  border: 3px solid #0A57BF;
   border-radius: 50%;
   margin-top: -15px;
   cursor: pointer;
 }
 
 input[type=range]::-moz-range-thumb {
-  background-color: #771E18;
+  background-color: #0A57BF;
   width: 25px;
   height: 25px;
-  border: 3px solid #771E18;
+  border: 3px solid #0A57BF;
   border-radius: 50%;
   cursor: pointer;
 }
 
 input[type=range]::-ms-thumb {
-  background-color: #771E18;
+  background-color: #0A57BF;
   width: 30px;
   height: 30px;
-  border: 3px solid #771E18;
+  border: 3px solid #0A57BF;
   border-radius: 50%;
   cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-  background-color: #771E18;
+  background-color: #0A57BF;
   height: 3px;
 }
 
@@ -61,23 +61,23 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-moz-range-track {
-  background-color: #771E18;
+  background-color: #0A57BF;
   height: 3px;
 }
 
 input[type=range]::-ms-track {
-  background-color: #771E18;
+  background-color: #0A57BF;
   height: 3px;
   cursor: pointer;
 }
 
 input[type=range]::-ms-fill-lower {
-  background-color: #771E18;
+  background-color: #0A57BF;
   cursor: pointer;
 }
 
 input[type=range]::-ms-fill-upper {
-  background-color: #771E18;
+  background-color: #0A57BF;
   cursor: pointer;
 }
 .cursor{
@@ -401,6 +401,9 @@ a.control_next {
 .border-bottom-color-verde-1{
 	border-bottom-color: #09B68B;
 }
+.border-top-color-blanco{
+  border-top-color: #FFFFFF;
+}
 .border-top-color-verde-2{
 	border-top-color: #0AB8BF;
 }
@@ -432,6 +435,9 @@ a.control_next {
 
 .bg-amarillo-2{
   background-color: #FFE28B;
+}
+.text-amarillo-2{
+  color: #FFE28B;
 }
 
 .bg-verde-2{
@@ -529,6 +535,9 @@ a.control_next {
 
 .border-right-verde-2{
 	border-right: solid #0AB8BF 3px;
+}
+.border-left-azul-1{
+  border-left: solid #0A57BF 3px;
 }
 
 
