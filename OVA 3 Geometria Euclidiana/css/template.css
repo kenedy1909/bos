@@ -825,14 +825,14 @@ svg circle:nth-child(2){
 .acordeon__titulo {
   display: block;
   padding: 15px;
-  background: #F7CAAC;
+  background: #003442;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   border-bottom: 1px solid #fff;
 }
 .acordeon__titulo:hover {
-  background: #F7CAAC;
+  background: #003442;
 }
 
 .acordeon__contenido {
@@ -847,7 +847,7 @@ svg circle:nth-child(2){
   margin: 15px 0;
 }
 .acordeon__item{
-  background: #F7CAAC;
+  background: #003442;
 }
 
 
