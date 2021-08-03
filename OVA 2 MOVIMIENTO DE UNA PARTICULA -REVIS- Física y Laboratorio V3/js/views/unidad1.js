@@ -82,6 +82,8 @@ function slide_link(num){
 }
 var sumaslide = 0;
 var sumaslide1 = 0;
+var sumaslide2 = 0;
+var sumaslide3 = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
@@ -226,6 +228,121 @@ function controlSlides(num){
         case 20:
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
             break;
+        case 21:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 22:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 23:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 25:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 26:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 27:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 28:
+            sumaslide2++;
+            if (sumaslide2 < 2) {
+                var slideCount = $('#slider4 ul li').length;
+                var slideWidth = $('#slider4 ul li').width();
+                var slideHeight = $('#slider4 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider4').css({ width: '100%', height: '150px' });
+                
+                $('#slider4 ul').css({ width: '90%'});
+                
+                $('#slider4 ul li:last-child').prependTo('#slider4 ul');
+
+                function moveLeft4() {
+                    $('#slider4 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider4 ul li:last-child').prependTo('#slider4 ul');
+                        $('#slider4 ul').css('left', '');
+                    });
+                };
+
+                function moveRight4() {
+                    $('#slider4 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider4 ul li:first-child').appendTo('#slider4 ul');
+                        $('#slider4 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev4').click(function (e) {
+                    moveLeft4();
+                    e.preventDefault();
+                });
+
+                $('a.control_next4').click(function (e) {
+                    moveRight4();
+                    e.preventDefault();
+                });
+            }
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 29:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 30:
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
+        case 31:
+            sumaslide3++;
+            if (sumaslide3 < 2) {
+                var slideCount = $('#slider5 ul li').length;
+                var slideWidth = $('#slider5 ul li').width();
+                var slideHeight = $('#slider5 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider5').css({ width: '100%', height: '400px' });
+                
+                $('#slider5 ul').css({ width: '100%'});
+                
+                $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+
+                function moveLeft5() {
+                    $('#slider5 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+                        $('#slider5 ul').css('left', '');
+                    });
+                };
+
+                function moveRight5() {
+                    $('#slider5 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider5 ul li:first-child').appendTo('#slider5 ul');
+                        $('#slider5 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev5').click(function (e) {
+                    moveLeft5();
+                    e.preventDefault();
+                });
+
+                $('a.control_next5').click(function (e) {
+                    moveRight5();
+                    e.preventDefault();
+                });
+            }
+            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            break;
         default:
             break;
     }
@@ -341,6 +458,71 @@ function targetas(num){
             break;
     }
 }   
+
+function pantalla27(){
+    $('.aparece_target').addClass('visible');
+    $('.aparece_target').removeClass('invisible');           
+}
+
+function flotantes(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.flotante').addClass('invisible');
+            $('.flotante').removeClass('visible');
+
+            $('.flotante1').removeClass('invisible');
+            $('.flotante1').addClass('visible');
+            break;
+        case 2:
+            $('.flotante').addClass('invisible');
+            $('.flotante').removeClass('visible');
+
+            $('.flotante2').removeClass('invisible');
+            $('.flotante2').addClass('visible');
+            break;
+        case 3:
+            $('.flotante').addClass('invisible');
+            $('.flotante').removeClass('visible');
+
+            $('.flotante3').removeClass('invisible');
+            $('.flotante3').addClass('visible');
+            break;
+        case 4:
+            $('.flotante').addClass('invisible');
+            $('.flotante').removeClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function mesas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.mesas').addClass('invisible');
+            $('.mesas').removeClass('visible');
+
+            $('.cordenadamesa1').removeClass('invisible');
+            $('.cordenadamesa1').addClass('visible');
+            break;
+        case 2:
+            $('.mesas').addClass('invisible');
+            $('.mesas').removeClass('visible');
+
+            $('.cordenadamesa2').removeClass('invisible');
+            $('.cordenadamesa2').addClass('visible');
+            break;
+        case 3:
+            $('.mesas').addClass('invisible');
+            $('.mesas').removeClass('visible');
+
+            $('.cordenadamesa3').removeClass('invisible');
+            $('.cordenadamesa3').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
 
 function scroll(){
     // When the container is scrolled
