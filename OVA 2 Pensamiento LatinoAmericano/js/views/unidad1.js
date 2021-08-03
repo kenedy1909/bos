@@ -1691,7 +1691,7 @@ function tarjetasU14(num,posicion) {
                         </div>
                         </div>
                         <div class="col-4">
-                        <img src="assets/img/img_ova/apra.jpg" width="90%" height="80%" class="py-2">
+                        <img src="assets/img/img_ova/tarjeta2.png" width="90%" height="80%" class="py-2">
                         </div>
                     </div>
                         `;
