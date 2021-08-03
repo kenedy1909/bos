@@ -1759,7 +1759,7 @@ function abrirMapa(num) {
     }else if (num == 7) {
         $('.mapaConc-6, .mapaConc-7, .mapaConc-8').removeClass('d-none'); 
     }else if (num == 8) {
-        $('.mapaConc-6, .mapaConc-7, .mapaConc-9').removeClass('d-none'); 
+        $('.mapaConc-6, .mapaConc-7, .mapaConc-8, .mapaConc-9').removeClass('d-none'); 
     }else if (num == 9) {
         $('#contentMapaBG').removeClass('mapaBG2') ;
         $('#contentMapaBG').addClass('mapaBG3') ;
