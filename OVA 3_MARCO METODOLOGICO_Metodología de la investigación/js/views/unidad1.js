@@ -110,12 +110,7 @@ function controlSlides(num){
             scroll();
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
-            break;
-        case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            
-            tema = 1;
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");            tema = 1;
             break;
         default:
             break;
@@ -710,6 +705,8 @@ function pasos(num){
 }
 
 function pant13(num){
+    $('.avance1, .avance2, .avance3, .avance4').addClass('d-none');
+  
     switch (parseInt(num)) {
         case 1:
             var contenido = `<div class="col-md-9 banner3 text-center">
@@ -720,8 +717,7 @@ function pant13(num){
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance1').addClass('activa');
+            $('.avance1').removeClass('d-none');
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
@@ -735,8 +731,7 @@ function pant13(num){
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance2').addClass('activa');
+            $('.avance2').removeClass('d-none');
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
@@ -750,8 +745,7 @@ function pant13(num){
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance3').addClass('activa');
+            $('.avance3').removeClass('d-none');
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
@@ -765,88 +759,77 @@ function pant13(num){
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance4').addClass('activa');
+            $('.avance4').removeClass('d-none');
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
-            break;
-        case 5:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Tiene un lenguaje ambiguo</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento5.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance5').addClass('activa');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
-            break;
-        case 6:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es racional en cierto grado</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento6.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance6').addClass('activa');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
-            break;
-        case 7:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es superficial y falible</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento7.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance7').addClass('activa');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
-            break;
-        case 8:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es intrascendente: no van más allá de lo particular y contingente, es decir, no van más allá del hecho.</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento8.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance8').addClass('activa');
-
-            $('.impimg').removeClass('imagenimp');
-            $('.impimg').addClass('imagenimp2');
-            break;
-        case 9:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 20px;">Igualmente carece de un método: es decir, no se basa en una disciplina o método que procure la comprobación o desmentir lo que plantea.</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento9.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
-            $('.avance_blanco').removeClass('activa');
-            $('.avance9').addClass('activa');
-
-            $('.impimg').removeClass('imagenimp');
-            $('.impimg').addClass('imagenimp2');
             break;
         default:
             break;
     }
+}
+
+
+function cardPara4(num,ventana){
+  if (ventana==0) {
+      $("#card4-1").addClass('hidden')
+      $("#card4-2").addClass('hidden')
+      $("#card4-3").addClass('hidden')
+      $("#card4-4").addClass('hidden')
+      var conjunto = `<div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
+                      <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
+                      <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
+                      <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>`;
+      $("#card4-padre").html(conjunto)
+  }
+  if (ventana==1) {
+      $("#card4-1").addClass('hidden')
+      $("#card4-2").addClass('hidden')
+      $("#card4-3").addClass('hidden')
+      $("#card4-4").addClass('hidden')
+      if (num==1) {
+          var conjunto = `
+          <div class="col-6 bg-white border-1 justify-content pt-2 text-black" id="card4-1" onclick="cardPara4(1,0)> 
+            <p class="text-justify text-reducido">Finalmente, el diseño a seleccionar depende del problema a resolver y el contexto del estudio. Igualmente, en la mayoría de las situaciones dentro de una investigación se realiza el estudio a través de una muestra, que son subgrupos de la población del cual se recolectan los datos y debe ser representativo de la población.</p>
+          </div>
+          <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
+          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
+          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>
+          `;
+          $("#card4-padre").html(conjunto)
+      }
+      if (num==2) {
+          var conjunto = `
+          <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
+          <div class="col-6 bg-white border-2 justify-content p-4 text-black" id="card4-2"  onclick="cardPara4(2,0)> 
+            <p class="text-reducido text-justify">Las “unidades de análisis” son los sujetos, objetos, sucesos o comunidades de estudio que se desprenden del planteamiento de la investigación. Por ejemplo: en el caso de que el objetivo de la investigación sea describir el uso que hacen los niños de la televisión, la unidad de análisis es un “grupo de niños” y también puede ser “los padres de los niños”.</p>
+          </div>
+          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
+          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>
+          `;
+          $("#card4-padre").html(conjunto)
+      }
+      if (num==3) {
+          var conjunto = `
+              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
+              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div class="col-6 bg-white border-3 justify-content pt-2 text-black" id="card4-3"  onclick="cardPara4(3,0)> 
+                  <p class="text-reducido text-justify">Una vez que se ha definido cuál será la unidad de análisis, se procede a delimitar la población que va a ser estudiada y sobre la cual se pretende generalizar los resultados. Así, una población es el conjunto de todos los casos que concuerdan con una serie de especificaciones Selltiz et al. (1980).</p>
+              </div>
+              <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>
+          `;
+          $("#card4-padre").html(conjunto)
+      }
+      if (num==4) {
+          var conjunto = `
+              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
+              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
+              <div class="col-6 bg-white border-4  pt-4 text-black" id="card4-4" onclick="cardPara4(4,0)> 
+                  <p class="text-reducido">Es importante tener en cuenta que, una de las carencias que por lo general se suele presentar en proyectos de investigación es la poca o deficiente descripción de los rasgos constitutivos de la población objeto de estudio. Por lo que es de sobresaltar y llamar la atención en referencia a la importancia de desarrollar con claridad las diferentes características constitutivas de la población, para así definir las variables muestrales. </p>
+              </div>
+          `;
+          $("#card4-padre").html(conjunto)
+      }
+  }
 }

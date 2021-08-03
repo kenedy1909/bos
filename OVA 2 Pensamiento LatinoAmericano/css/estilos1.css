@@ -214,6 +214,52 @@
 	border-top: 7px solid var(--bg-color-dark)!important;
 }
 
+
+
+/*encabezado*/
+.info_actividad{
+    background: #b4c6e7;
+    border-radius: 20px;
+    padding: 20px;
+}
+.img-activi{
+    width: 116px;height: 116px;
+}
+
+.text-img-actividad{
+    font-size: 20px;
+    color: #005B8B;
+}
+
+.content-text-img-activi{
+  border-bottom: solid 3px #005B8B;
+  height: 86px;
+  margin: 0px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+.content-text-activi{
+    background: #DAE3F3;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.content-text-activi-2{
+    border: solid 2px #79CAF3;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
 .btnU1:hover{
 	color: white!important;
 }

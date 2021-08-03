@@ -100,6 +100,7 @@ function controlSlides(num){
                                 <a href="assets/PDF/.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Actividad complementaria. Pdf </a>
                             </p>
                         </div>`;
+            scroll_set(8);
             $('.pdfs').html(pdf);
             break;
         case 2:
