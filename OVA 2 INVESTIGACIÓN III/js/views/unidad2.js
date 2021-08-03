@@ -62,17 +62,15 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
-    if (parseInt(num)>0) {
-        controlSlides(num);
-    }
+    $('#smartwizard').smartWizard("goToStep", num-1);
+    
 }
 
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            $("#content-ova").load("base/unidades/unidad1.html");
+            
             tema = 10;
             break;
         case 1:
@@ -84,7 +82,7 @@ function controlSlides(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-             $("#content-ova").load("base/unidades/unidad3.html");
+            
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)");
@@ -99,7 +97,167 @@ function controlSlides(num){
 }
 
 
+function svg_img(num) {
+            $("#svg-info").addClass('d-none');
+    switch(parseInt(num)){
+        case 1:
+            $("#svg-info").html(`
+                                <div class="radius-2 img-100 border-verde-o bg-verde-c opacity-7" style="background: #c929808a;border: solid #c92980;">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-verde" style="background: #c92980;height: 40px;width: 40px;border-radius: 50%;">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="m-3 img-100" style="opacity: initial;">
+                                    <div class="custom-scrollbar_uno pr-3">
+                                      <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black justificado">Cuando se inicia el trabajo del marco teórico, nos encontramos en ocasiones, en disyuntivas sobre hacia dónde dirigir nuestro tema de investigación, o a veces encontramos demasiados aportes y se nos dificulta delimitar los temas; este es uno de los mayores obstáculos que se encuentran en la elaboración del marco teórico, el cómo empezar, pero la clave está en delimitar, cuáles son las investigaciones anteriores que se han hecho en relación a nuestro tema de investigación.</p>
+                                        <br>
+                                        <p class="p_black justificado">Por lo que, lo que se debe hacer es seguir la línea que responde a nuestro problema de investigación y no irnos hacia otras inclinaciones que nos llamen la atención, la clave radica en enfocarse en su investigación y solo en ella.</p>
+                                        
+                                      </div>
+                                      <div class="custom-scrollbar__bar_uno">
+                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#svg-info").removeClass('d-none');
+            $("#svg-info").attr('style', "left: 0px; bottom: 0px;");
+            $(".cerrar-svg").on('click', cerrar_svg);
+            modal_scroll_uno();
+            break;
+        case 2:
+            $("#svg-info").html(`
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c opacity-7" style="background: #16daf752;border: solid #16daf7;">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-azul" style="background: #16daf7;height: 40px;width: 40px;border-radius: 50%;">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="m-3 img-100" style="opacity: initial;">
+                                    <div class="custom-scrollbar_uno pr-3">
+                                      <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black justificado">El marco teórico es fundamental en una investigación, ya que es la guía y la referencia bibliográfica de nuestra investigación.</p>
+                                        <br>
+                                        <p class="p_black justificado">A través del marco teórico se puede perfectamente tomar posición sobre el asunto estudiado.</p>
+                                        <br>
+                                        <p class="p_black justificado">Lo importante es que quede claro si las teorías que existen sobre el problema que investigamos resuelven o no el problema y por qué.</p>
+                                        <br>
+                                        <p class="p_black justificado">En gran medida, y aunque muchos no comparten esta afirmación, se puede considerar el Marco Teórico como un ensayo expositivo, descriptivo, sobre el asunto investigado. Algunos suponen que más bien se trata de una gran reseña sobre las distintas posiciones que existen.</p>
+                                        
+                                      </div>
+                                      <div class="custom-scrollbar__bar_uno">
+                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#svg-info").removeClass('d-none');
+            $("#svg-info").attr('style', "right: 40px; bottom: 0px;");
+            $(".cerrar-svg").on('click', cerrar_svg);
+            modal_scroll_uno();
+            break;
+        case 3:
+            $("#svg-info").html(`
+                                <div class="radius-2 img-100 border-verde-mo bg-verde-mc opacity-7" style="background: #16daf752;border: solid #1898ab;">
+                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-verde-o" style="background: #1898ab;height: 40px;width: 40px;border-radius: 50%;">
+                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                  </div>
+                                  <div class="m-3 img-100" style="opacity: initial;">
+                                    <div class="custom-scrollbar_uno pr-3">
+                                      <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black justificado">Lo importante es que con esta revisión se vaya perfilando ya la forma como vamos a encarar los resultados encontrados, dado que podemos en cierta manera desde el Marco Teórico predecir estados futuros.</p>
+                                      </div>
+                                      <div class="custom-scrollbar__bar_uno">
+                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                `);
+            $("#svg-info").removeClass('d-none');
+            $("#svg-info").attr('style', "left: 0px; bottom: 0px;");
+            $(".cerrar-svg").on('click', cerrar_svg);
+            modal_scroll_uno();
+            break;
+        default:
+            break;
+    }
+}
+function cerrar_svg() {
+    $('#svg-info').addClass('d-none');
+}
+function modal_scroll_uno(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob_uno');
+    bar = document.querySelector('.custom-scrollbar__bar_uno');
+    container = document.querySelector('.custom-scrollbar__inner_uno');
+    scroll();
+}
 
+function scroll(){
+    // When the container is scrolled
+    container.addEventListener('scroll', () => {
+      // If we are dragging the knob, do nothing
+      if (dragging) return;
+
+      // Otherwise, set the knob position based on the scroll position
+      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+    });
+
+    dragging = false;
+
+    knob.addEventListener('mousedown', event => {
+        
+    console.log(knob+" "+bar+" "+container);
+      dragging = {
+        x: event.clientX,
+        y: event.clientY };
+
+    });
+    window.addEventListener('mousemove', event => {
+      if (dragging) {
+        // When dragging
+        event.preventDefault();
+        diff = {
+          x: event.clientX - dragging.x,
+          y: event.clientY - dragging.y };
+
+
+        // Clamp the position of the knob to be a maximum of 
+        // the knobs container, and a minimum of 0
+        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+        knob.style.top = newTop + 'px';
+
+        // Base the scroll offset on the knobs position
+        // in relation to the knobs container
+        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+        container.scrollTop = scrollOffset;
+
+        dragging = {
+          x: event.clientX,
+          y: event.clientY };
+
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      dragging = false;
+    });
+}
 function conjuntos(num){
     $(".info_conjuntos").removeClass('fondo_azul_claro');
     $(".info_conjuntos"+num).addClass('fondo_azul_claro');

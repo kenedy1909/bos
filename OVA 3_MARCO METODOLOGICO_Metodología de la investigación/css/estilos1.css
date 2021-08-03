@@ -78,7 +78,18 @@
 .bg-trasparente{
 	background: rgba(255, 255, 255, 0.4);
 }
-
+.bg-color-1{
+	background: #472b63;
+}
+.bg-color-2{
+	background: #cabbd8;
+}
+.bg-color-3{
+	background: #7b49ab;
+}
+.bg-color-4{
+	background: #9970c2;
+}
 
 .border-45{
 	border-radius: 45px;
@@ -95,6 +106,19 @@
 .border-rt-25{
 	border-radius: 25px 25px 0 0;
 }
+.border-1{
+	border-radius: 45px 0 0 0!important;
+}
+.border-2{
+	border-radius: 0 45px 0 0!important;
+}
+.border-3{
+  border-radius: 0 0 0 45px!important;
+}
+.border-4{
+  border-radius: 0 0 45px 0!important;
+}
+
 
 .border-r{
 	border-right: 3px solid var(--bg-color)!important;
@@ -126,6 +150,8 @@
 .border-white-5p{
 	border: solid 5px white!important;
 }
+
+
 
 .menos-margin-25{
 	margin-left: -25px!important;
@@ -216,6 +242,12 @@
 	border-top: 7px solid var(--bg-color-dark)!important;
 }
 
+.text-reducido{
+	font-size: 12px;
+}
+.transition-on{
+	transition-delay: .4s;
+}
 
 .card1{
 	padding: 0px;
@@ -1506,12 +1538,12 @@ input[type=range]::-ms-fill-upper {
 }
 
 .circulosp3{
-	background: gray;
-    width: 40px;
-    height: 40px;
+	background: #7b49ab	;
+    width:70px;
+    height:70px;
     border-radius: 50%;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 15px;
 }
 .textp3{
 	color: white;
@@ -1525,16 +1557,4 @@ input[type=range]::-ms-fill-upper {
     border-radius: 10px;
     border: dashed #994c91;
     padding-top: 50px;
-}
-.imagenimp{
-	position: relative;
-	top: -92px;
-	left: 80px; 
-	min-height: 250px;
-}
-.imagenimp2{
-	position: relative;
-    top: -66px;
-    left: -54px;
-    min-height: 250px;
 }

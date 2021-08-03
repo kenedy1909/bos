@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Template OVA UNAULA">
+    <meta name="author" content="Bos Developer">
+    <meta name="keyword" content="UNAULA">
+    <title>UNAULA</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="https://ghcdn.rawgit.org/miguel8888888/iconos/main/css/all.min.css">
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
+    <link href="css/template-geometria.css" rel="stylesheet"> 
+    <link href="css/template.css" rel="stylesheet"> 
+    <link href="css/estilos1.css" rel="stylesheet">
+    <link href="css/estilos2.css" rel="stylesheet">
+    <link href="css/estilos3.css" rel="stylesheet"> 
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none">
+        <h4>MENU</h4>
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
+          <i class="fad fa-home"></i> Inicio</a>
+        </li>
+        <li class="c-sidebar-nav-title">Contenido</li>
+        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
+          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>1. La pesquisa bibliográfica</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Exploración de la literatura como sustento.</a></li>
+            <!-- <li class="c-sidebar-nav-item link-menu-tema" data-id="5" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Método de demostración por Inducción matemática.</a></li> -->
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>2. Fundamento Teórico</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Proceso de revisión de la literatura</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>3. Marco conceptual, estado del arte, marco legal y contextual</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span> ¿Qué tener en cuenta a la hora de construir el marco teórico?</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <i class="fas fa-bars"> </i>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="c-header-nav d-md-down-none" style="width: 70%;">
+          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+          <li class="c-header-nav-item ">
+            <div class="box">
+                <div class="porcent">
+                    <svg class="svg_porcent">
+                        <circle cx="40" cy="60" r="25" style ="stroke: #9f4c97;stroke-width: 5px;"/>
+                        <circle class="up" cx="40" cy="60" r="25" style="stroke: #7f3d7d;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
+                    </svg>
+                    <div class="number">
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="c-header-nav-item z-index-pdf" style="max-width: 7%;"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-79.png" alt="" class="icons-menu" style="max-width: 100%;"></a></li>
+          <li class="c-header-nav-item " style="max-width: 7%;"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario" onclick="modal_scroll8();"><img src="assets/img/img_template/Botonera-78.png" alt="" class="icons-menu" style="max-width: 100%;"></a></li>
+          <li class="c-header-nav-item " style="max-width: 7%;"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias" onclick="modal_scroll9();"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu" style="max-width: 80%;"></a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto">
+          <li class="c-header-nav-item d-md-down-none">
+            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Menú</li>
+            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread3"></li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main" id="content-ova">
+          
+        </main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio modal-xl" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-79.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content pdfs" style="margin-left: 25%;">
+                            
+                            
+                            
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio modal-xl" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-78.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content custom-scrollbar8">
+                            <div class="custom-scrollbar__inner8">
+                              <p class="justificado text-white"><b class="font-weight-bold">Bibliografía:</b> 
+                              Conjunto de títulos de obras referente al tema de Investigación.</p> 
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Borrador:</b> 
+                              Escrito de primera intención en donde se exponen de manera organizada las ideas que incluirá el informe definitivo.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Concepto: </b>
+                              Símbolo que representa las semejanzas de fenómenos por demás diversos.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Confiabilidad:</b> 
+                              Indica la estabilidad, consistencia y exactitud de los resultados.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Consistencia: </b>
+                              La consistencia del informe radica en la relación y coherencia entre el título del trabajo, la hipótesis, los resultados y las conclusiones.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Dato primario: </b>
+                              Información reunida por el investigador directamente de la fuente.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Dato secundario:</b> 
+                              Información reunida por persona diferente al investigador.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Descripción:</b> Declaración de las características que presentan los fenómenos.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Fidedigno:</b> Un término es fidedigno cuando cualquier investigador o estudiante lo entiende de la misma manera en que es definido en nuestro trabajo de investigación.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Marco Teórico:</b> Es la exposición y análisis de la teoría o grupo de teorías que sirven como fundamento para explicar los antecedentes e interpretar los resultados de la investigación.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Proceso:</b> Conjuntos de etapas o pasos realizados para llevar a cabo una función.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Síntesis:</b> Método que procede de lo simple a lo compuesto, de los elementos al todo. Integración de las partes aisladas en un conjunto que unifique todos los elementos.</p>
+
+                              <p class="justificado text-white"><b class="font-weight-bold">Teoría:</b> Es el conjunto de conceptos, categorías y leyes que reflejan objetivamente la realidad.</p>
+
+                              <p class="justificado text-white">Los términos y sus significados fueron extraídos en su totalidad de esta página: Metodología de la investigación. Manuel Galán Amador.
+                              Recuperado el 8 de mayo de 2021, de
+                              http://manuelgalan.blogspot.com/p/glosario-de-investigaci.html</p>
+                              
+                            </div>
+                            <div class="custom-scrollbar__bar8">
+                              <div class="custom-scrollbar__knob8 cursor">
+                                <p class="text-center linea_scroll8">-</p>
+                              </div>
+                            </div>
+                          </div>
+                          
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio modal-xl" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="max-width: 70%;top: 16px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content custom-scrollbar9">
+                            <div class="custom-scrollbar__inner9">
+                              <p class="justificado text-white">Álvarez-Gayou, J.L. (2005). Cómo hacer investigación cualitativa. Fundamentos y metodología. México: Paidós.</p><br>
+                              
+                              <p class="justificado text-white">Alvarado, Sara Victoria, 1993, La construcción de categorías teóricas a partir de los datos empíricos, como base del acercamiento metodológico en la investigación cualitativa, En: investigación cualitativa. Confrontación y prospectiva, Medellín, Universidad de Antioquia.</p><br> 
+
+                              <p class="justificado text-white">Banyai, Istvan, 1997, México, Fondo de Cultura Económica. Impreso en Colombia, Santa Fe de Bogotá, Panamericana, Formas e Impresos S.A.</p><br>
+
+                              <p class="justificado text-white">Bonilla, Elsy y Rodríguez, Penélope, l997, Más Allá del dilema de los métodos. La investigación en Ciencias Sociales, Bogotá, Norma. </p><br>
+
+                              <p class="justificado text-white">Bryman A. y Burguess R. (eds), 1994, Analysing Qualitative data. London, New York, Routledge.</p><br>
+
+                              <p class="justificado text-white">Delgado, Juan Manuel y Gutiérrez, Juan, 1995, Métodos y técnicas cualitativas de investigación en ciencias sociales, Madrid, Síntesis, S.A.</p><br>
+
+                              <p class="justificado text-white">Denzin, Norman y Lincoln, Yvonna, 1994, Handbook of qualitative research (editors), London, Sage Publications.</p><br>
+
+                              <p class="justificado text-white">Eco, Umberto, 1987, Cómo se hace una tesis. Técnicas y procedimientos de investigación, estudio y escritura, Barcelona, Gedisa S.A.</p><br>
+
+                              <p class="justificado text-white">Folguera, Pilar, 1994, Cómo se hace Historia oral, Madrid, Eudema.</p><br>  
+
+                              <p class="justificado text-white">Freire, P. (2007). Pedagogía para la LIbertad. México.</p><br>
+
+                              <p class="justificado text-white">Galeano, Eumelia y Vélez, Olga Lucía, 2000, Investigación cualitativa. Estados del arte, Medellín, Digital Express. </p><br>
+
+                              <p class="justificado text-white">Guba, Egon G., 1989, Criterios de credibilidad en la investigación naturalítica, En: Sacristán, Jimeno y A., Pérez, La enseñanza: su teoría y su práctica, 3ª, edición, Madrid, Akal S.A., p. 148-165.</p><br>  
+
+                              <p class="justificado text-white">Martínez, Miguel.1999, La investigación cualitativa etnográfica en educación, Manual teórico-Práctico, Bogotá, Círculo de Lectura Alternativa.</p><br> 
+
+                              <p class="justificado text-white">Miles, M.B. y Huberman, M.A., 1994, Qualitative data analysis: An sapanded sourcebook, Thousand Oaks, California, Sage Publications.</p><br>
+
+                              <p class="justificado text-white">Sandoval, Carlos, 1997, Enfoques cualitativos de investigación social. Módulo 4. Programa de especialización en teoría, métodos y técnicas e investigación social. Iner-Icfes.</p><br>
+
+                              <p class="justificado text-white">Schwartz y Jacobs, 1984, Sociología cualitativa, Método para la reconstrucción de la realidad, México, Trillas.</p><br> 
+
+                              <p class="justificado text-white">Serna, Ciro & López, F.  (2005).  Ciencia, Método e Investigación.  Universidad de Manizales, Facultad de Economía. ISBN 958-9314-25-2</p><br>
+
+                              <p class="justificado text-white">Silverman, David, 1963, Interpreting cualitative data:Methods for analysing talk, text and interaction, London, Sage Publications.</p><br>   
+
+                              <p class="justificado text-white">Taylor S.J., y Bodgan, R.  1994, Introducción a los métodos cualitativos de investigación social.La búsqueda de significados, Barcelona, Paidós.</p>
+
+                            </div>
+                            <div class="custom-scrollbar__bar9">
+                              <div class="custom-scrollbar__knob9 cursor">
+                                <p class="text-center linea_scroll9">-</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="c-footer">
+          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+        </footer>
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="js/coreiu.bundle.min.js"></script>
+    <script src="js/coreiu-utils.js"></script>
+    <script src="js/jquery3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js" type="text/javascript"></script>
+    <script src="js/SCORM_API_wrapper.js"></script>
+    <script src="assets/componentes/flipster/jquery.flipster.min.js"></script>
+    <script src="assets/componentes/percircle/percircle.js"></script>
+    <script src="assets/componentes/jquery-smartwizard-master/src/js/jquery.smartWizard.min.js"></script>
+    <!--[if IE]><!-->
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

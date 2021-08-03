@@ -1374,3 +1374,65 @@ input[type=range]::-ms-fill-upper {
   background: #fff;
   border-radius: 50px;
 }
+
+.texto_video{
+  background: #282f9f;
+  padding: 25px 10px 40px 10px;
+  border-radius: 20px;
+  width: 90%;
+}
+.video_enlace{
+  width: 70%;
+  background: #40A7E3;
+  border-radius: 20px;
+  padding: 5px;
+  position: relative;
+  top: -30px;
+}
+
+.fondo_carta{
+  background: #BDD7EE;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.imagenCarta{
+  width: 15%;
+  position: relative;
+  top: -22px;
+}
+
+.contenedorazul{
+  width: 70%;
+  background: #40A7E3;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.targetas27{
+  background: #bdd7ee;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px -5px black;
+}
+
+.triangulo{
+  width: 0;height: 0;
+  border-left: 40px solid #40A7E3;
+  border-top: 27px solid transparent;
+  border-bottom: 27px solid transparent;
+  position: relative;
+  left: -28px;
+  top: 40%;
+}
+
+.btn_targetas27{
+  height: 40px;
+  width: 40px;
+  background: #40a7e3;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding-top: 8px;
+}

@@ -124,10 +124,8 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
-    if (parseInt(num)>0) {
-        controlSlides(num);
-    }
+    $('#smartwizard').smartWizard("goToStep", num-1);
+    
     
 }
 
@@ -143,7 +141,6 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             break;
         case 4:
-            $("#content-ova").load("base/unidades/unidad4.html");
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             break;
             // setMigaja("Unidades de aprendizaje","2. Conjuntos","Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)");
