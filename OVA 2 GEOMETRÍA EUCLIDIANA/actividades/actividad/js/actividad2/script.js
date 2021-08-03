@@ -37,7 +37,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "La expresión “(∃𝑥) (𝑥∈𝑈) (𝑃𝑥)”\n"+"Quiere decir que:",
+                texto: "La expresión “(∃𝑥) (𝑥 ∈ 𝑈) (𝑃𝑥)”\n"+"Quiere decir que:",
                 respuestas: [{
                     texto: "Que existe por lo menos un 𝑥 de 𝑈 que satisface 𝑃𝑥 ",
                     correcta: true
@@ -49,33 +49,33 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
                     correcta: false
                 }]
             }, {
-                texto: "Para (∀𝑛) (𝑛∈ℕ) (𝑛 𝑒𝑠 𝑖𝑚𝑝𝑎𝑟), “todo número natural es impar”\n"+"La negación será:",
+                texto: "Para (∀𝑛) (𝑛 ∈ ℕ) (𝑛 𝑒𝑠 𝑖𝑚𝑝𝑎𝑟), “todo número natural es impar”\n"+"La negación será:",
                 respuestas: [{
-                    texto: "a. (∀𝑛) (𝑛∈ℕ) (𝑛 𝑒𝑠 𝑝𝑎𝑟).  “todo número natural es par”.",
+                    texto: "a. (∀𝑛) (𝑛 ∈ ℕ) (𝑛 𝑒𝑠 𝑝𝑎𝑟).  “todo número natural es par”.",
                     correcta: false
                 }, {
-                    texto: "𝑏. (∃𝑛) (𝑛∈ℕ) (𝑛 𝑒𝑠 𝑖𝑚𝑝𝑎𝑟).  “existe algún número natural impar”.",
+                    texto: "𝑏. (∃𝑛) (𝑛 ∈ ℕ) (𝑛 𝑒𝑠 𝑖𝑚𝑝𝑎𝑟).  “existe algún número natural impar”.",
                     correcta: false
                 }, {
-                    texto: "𝑐. (∃𝑛) (𝑛∈ℕ) (𝑛 𝑒𝑠 𝑝𝑎𝑟),   “existe algún número natural par”.",
+                    texto: "𝑐. (∃𝑛) (𝑛 ∈ ℕ) (𝑛 𝑒𝑠 𝑝𝑎𝑟),   “existe algún número natural par”.",
                     correcta: true
                 }, {
-                    texto: "d. (∀𝑛) (𝑛∉ℕ) (𝑛 𝑒𝑠 𝑖𝑚𝑝𝑎𝑟), “todo número no natural es impar”.",
+                    texto: "d. (∀𝑛) (𝑛 ∉ ℕ) (𝑛 𝑒𝑠 𝑖𝑚𝑝𝑎𝑟), “todo número no natural es impar”.",
                     correcta: false
                 }]
             }, {
-                texto: "Para (∀𝑥) (𝑥∈ℕ) [(𝑥^2=4) ⋀ (𝑥+8=9)]\n"+"La negación será:",
+                texto: "Para (∀𝑥) (𝑥 ∈ ℕ) [(𝑥^2 = 4) ⋀ (𝑥 + 8 = 9)]\n"+"La negación será:",
                 respuestas: [{
-                    texto: "a. (∀𝑥) (𝑥∈ℕ) [(𝑥^2≠4) ⋀ (𝑥+8≠9)]",
+                    texto: "a. (∀𝑥) (𝑥 ∈ ℕ) [(𝑥^2 ≠ 4) ⋀ (𝑥 + 8 ≠ 9)]",
                     correcta: false
                 }, {
-                    texto: "𝑏. (∃𝑥) (𝑥∈ℕ) [(𝑥^2=4) ⋀ (𝑥+8=9)].",
+                    texto: "𝑏. (∃𝑥) (𝑥 ∈ ℕ) [(𝑥^2 = 4) ⋀ (𝑥 + 8 = 9)].",
                     correcta: false
                 }, {
-                    texto: "𝑐.(∀𝑥) (𝑥∈ℕ) [(𝑥^2=4) ⋁  (𝑥+8=9)]",
+                    texto: "𝑐.(∀𝑥) (𝑥 ∈ ℕ) [(𝑥^2 = 4) ⋁  (𝑥 + 8 = 9)]",
                     correcta: false
                 }, {
-                    texto: "d. (∃𝑥) (𝑥∈ℕ) [(𝑥^2≠4) ⋁(𝑥+8≠9)]",
+                    texto: "d. (∃𝑥) (𝑥 ∈ ℕ) [(𝑥^2 ≠ 4) ⋁(𝑥 + 8 ≠ 9)]",
                     correcta: true
                 }]
             }]);

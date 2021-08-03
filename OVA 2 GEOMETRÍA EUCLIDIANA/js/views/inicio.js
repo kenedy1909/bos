@@ -9,28 +9,28 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    $(".modal_scroll1").on('click', modal_scroll1);
-    $(".modal_scroll2").on('click', modal_scroll2);
+    $(".modal_scroll6").on('click', modal_scroll6);
+    $(".modal_scroll7").on('click', modal_scroll7);
 });
 
-function modal_scroll1(){
+function modal_scroll6(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob1');
-    bar = document.querySelector('.custom-scrollbar__bar1');
-    container = document.querySelector('.custom-scrollbar__inner1');
+    knob = document.querySelector('.custom-scrollbar__knob6');
+    bar = document.querySelector('.custom-scrollbar__bar6');
+    container = document.querySelector('.custom-scrollbar__inner6');
     scroll();
 }
-function modal_scroll2(){
+function modal_scroll7(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob2');
-    bar = document.querySelector('.custom-scrollbar__bar2');
-    container = document.querySelector('.custom-scrollbar__inner2');
+    knob = document.querySelector('.custom-scrollbar__knob7');
+    bar = document.querySelector('.custom-scrollbar__bar7');
+    container = document.querySelector('.custom-scrollbar__inner7');
     scroll();
 }
 

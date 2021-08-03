@@ -108,6 +108,11 @@ html{
     transition: all .8s;
     z-index: 1002;
 }
+@media (max-width: 767px) {
+    .backdrop {
+        padding: 5px;
+    }
+}
 .backdrop.actividad{
     background: #ffd200;
 }
@@ -164,7 +169,7 @@ html{
     overflow: auto;
 }
 .backdrop .fondo {
-    /*background-image: url(../img/logo-footer.png), url(../img/patron-fondo.png);*/
+    /*background-image: url(../../img/img3/logo-footer.png), url(../../img/img3/patron-fondo.png);*/
     background-color: #fff;
     position: relative;
     background-repeat: no-repeat, repeat;
@@ -172,7 +177,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #ad123c;
+    background: #0075a8;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -185,10 +190,10 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #ffd200;
+    background: #337ab7;
     border: none;
     border-radius: 0;
-    color: #ad123c;
+    color: #fff;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -211,10 +216,10 @@ html{
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img3/bien.png') center no-repeat;
+    background: url('../../img/img2/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img3/mal.png') center no-repeat;
+    background: url('../../img/img2/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;

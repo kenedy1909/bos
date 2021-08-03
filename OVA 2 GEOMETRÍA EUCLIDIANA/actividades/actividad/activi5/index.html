@@ -1,125 +1,99 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="es">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="../css/actividad5/trivia.css">
-  <title>JS Bin</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/flat/green.css'><!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/actividad5/animate.css">
+    <link rel="stylesheet" href="../css/actividad5/backdrop.css">
+    <link rel="stylesheet" type="text/css" href="../css/actividad5/estilos.css">
+    <link rel="stylesheet" type="text/css" href="../css/actividad5/style.css">
 </head>
+
 <body>
-  <div class="row px-4">
-    <div class="col-md-4 row d-flex">
-       <img src="../img/img5/actividad_general.png" class="img-activi">
-       <div>
-           <div class="content-text-img-activi">
-             <b class="text-img-actividad">ACTIVIDAD # 5</b>
-           </div>
-           <p class="text-center">OPCION CORRECTA</p>
-       </div>
-    </div>
-    <div class="col-md-8 shadow content-tarjeta">
-        <p class="pb-2 p_black">Elija la respuesta correcta para cada pregunta haciendo clic sobre el elemento que considere es correcto; después de seleccionar la respuesta puede ver la explicaciónón sobre la opción correcta.</p>
-    </div>
-    <div class="col-md-12">
-    </div>
-  </div>
-  <div class="wrapper">
-    <div id="quiz">
-      <div class="row">
-        <div class="col-lg-4">
-          
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div style="width: 80px;height: 40px;background: #FFC000;margin-top: 10px;z-index: 100;border-radius: 10px;" class="cantidad">
-            
-          </div>
-        </div>
-        <div class="col-lg-4">
-          
-        </div>
-      </div>
-      <div style="border-radius: 63px 63px 0px 0px;text-align: center;padding: 10px 80px 0px 80px;position: relative;top: -25px;">
-        <p class="questions" style="background: #003442;width: 100%;border-radius: 20px;">¿Cuales son los términos profesionales y académicos de la educación contable?</p>
-      </div>
-      
-      
-      <div class="answers row">
-        
-      </div>         
-      
-      <div class="checkAnswers" style="visibility: hidden;">
-        <h3>Correct?</h3>
-        <div class="checker">
-
-        </div>
-      </div>
-    </div>
-    <div style="text-align: center;margin-top: 20px;">
-      <button onclick="calificar();" style="background: #003442;color: white;font-size: 18px;border-radius: 10px;" data-toggle="modal" data-target="#exampleModal">Calificar</button>
-    </div>
-  </div>
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content tranparente" style="">
-        <div style="" class="principal">
-          <div style="" class="cabeza">
-            
-          </div>
-          <div class="d-flex justify-content-center">
-            <div style="" class="circulo_modal img_res">
-              
-            </div>
-          </div>
-          <div style="padding: 10px;">
-            <div style="color: white;">
-              Su puntaje es: <p class="puntaje"></p>
-            </div>
-            <div style="color: white;">
-              <p class="mensaje"></p>
-              <div class="custom-scrollbar6">
-                <div class="custom-scrollbar__inner6">
-                  <p>Justificación 1: </p>
-                  <p>Comenzamos con el valor de Verdad en la premisa (1)</p>
-                  <p>(1)  El pasatiempo de papá es la radio-afición.</p>
-                  <p>(v)</p>
-                  <p>(2)  Si a mamá le gusta leer entonces el pasatiempo de papá no es la radio-afición.</p>
-                  <p>(f)            (f)</p>
-                  <p>Si el consecuente es (f) entonces el antecedente tendrá que ser (f)</p>
-                  <p>(3)  Si a mamá no le gusta leer entonces a mi hermano le gustan las caricaturas.</p>
-                  <p>(v)            (v)</p>
-                  <p>Si antecedente es (v) entonces el consecuente tendrá que ser (v)                  (4)  A mi hermano le gustan las caricaturas</p>
-                  <br>
-                  <p>Justificación 2: comenzamos con el valor de Verdad en la premisa (1)</p>
-                  <p>(1) Paula canta o Alex no es buen actor,  </p>
-                  <p>  (v)     (f)</p>
-                  <p>(2) Si Alex no es buen actor entonces Santi no gana un Grammy, </p>
-                  <p>  (f)       (f)</p>
-                  <p>(3) Santi gana un Grammy</p>
-                  <p>(v)</p>
-                  <p>Paula no canta</p>
-                  <p>(f)                            RTA: No es válido</p>
+    <div class="backdrop actividad in">
+        <div class="fondo">
+            <div class="row principal" style="">
+                <div class="col-md-4 secundario" style="">
+                    <div class="d-flex div-img" style="">
+                      <img src="../img/img2/actividad_interactiva.png" alt="" style="" class="imagen">
+                      <div class="text-center texto_header" style="">
+                        <b class="pl-1 pr-1" style="">ACTIVIDAD INTERACTIVA</b>
+                        <div class="linea_blue" style=""></div>
+                        <i><p class="text-center text-muted" style="font-size: 17px;">CUESTIONARIO</p></i>
+                      </div>
+                    </div>
                 </div>
-                <div class="custom-scrollbar__bar6">
-                  <div class="custom-scrollbar__knob6 cursor"><p class="text-center linea_scroll6">-</p></div>
+                <div class="col-md-8 row terciario" style="">
+                    <p class="info_actividad shadow">
+                        Seleccione las respuestas correctas y presione la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+                    </p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row d-flex justify-content-center btns_modal">
+            <div style="display: inline-block;width: 100%;" class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
+            <div class="row">
+                <div style="display: inline-block;width: 50%;padding-top: 20px;padding-left: 5px;" class="col-md-7">
+                    <p class="size_15">Considere los conjuntos (es preferible que los represente por extensión, si lo considera necesario)</p>
+                    <p class="size_15"><b style="color: blue;">𝑨</b> es el conjunto que contiene los primeros 20 números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑩</b> es el conjunto que contiene los múltiplos de 3 entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑪</b> es el conjunto que contiene los múltiplos de 5 entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑫</b> es el conjunto que contiene a todos los números pares entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑬</b> es el conjunto que contiene a todos los números impares entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑭</b> es el conjunto que contiene a todos los múltiplos de cuatro (4) entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑮</b> es el conjunto que contiene a todos los números primos entre los 20 primeros números naturales.</p>
+                </div>
+                <div>
+                    <div style="width: 90px;height: 90px;position: relative;z-index: 100;border-radius: 50%;background: white;left: -70px;top: -15px;justify-content: center;box-shadow: -1px 3px 17px black;padding-top: 10px;padding-left: 10px;float: right;">
+                                                    <img style="max-width: 80%;" src="../img/img2/numeros_actividad.png">
+                                                </div>
+                    <div class="quiz-multiplito col-md-5">
+                        
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="btnCalificar">
+                    <button class="btn btn-primary" style="background: #003442;color: white;width: 100px;font-size: 22px;padding: 5px;border-radius: 15px;" type="button" ng-click="calificar()">Calificar</button>
+                </div> -->
+            </div>
             
-            
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="../js/actividad5/trivia.js"></script>
+    <!-- Modal -->
+    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body center-block">
+                    <div class="mensaje text-center">
+                        Tu puntaje es: <span class="puntaje">40%</span>
+                        <span class="texto-puntaje"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
+                        intentar</button>
+                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Incluisión de scripts -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.js'></script>
+    <script src="../js/actividad5/script2.js"></script><!-- 
+    <script src="../js/jquery.min.js"></script> -->
+    <script src="../js/bootstrap.min.js"></script><!-- 
+    <script src="../js/actividad5/angular.min.js"></script> -->
+    <script src="../js/actividades.js"></script><!-- 
+    <script src="../js/actividad5/script.js"></script> -->
+    <script src="../js/actividad5/slide.js"></script>
+    <!-- Fin de scripts -->
 </body>
+
 </html>

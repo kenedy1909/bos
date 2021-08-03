@@ -20,11 +20,10 @@ $( document ).ready(function() {
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob4');
-    bar = document.querySelector('.custom-scrollbar__bar4');
-    container = document.querySelector('.custom-scrollbar__inner4');
+    knob = document.querySelector('.custom-scrollbar__knob8');
+    bar = document.querySelector('.custom-scrollbar__bar8');
+    container = document.querySelector('.custom-scrollbar__inner8');
     scroll();
-
     /*$("#porcentaje_unidad").click();*/
     /*$(".bs-popover-right").css('width','65px');*/
     /*$(".bs-popover-right").css({
@@ -53,7 +52,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/44);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/23);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);
@@ -66,6 +65,8 @@ function actualizarprogress(){
             'stroke-dasharray', total,
             'stroke-dashoffset','415'
     );*/
+
+
     $(".up").css({ "stroke": "#003140", 
                     "stroke-width": "10px",
                     "stroke-dasharray": pixel,

@@ -33,7 +33,8 @@
     <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
     <link href="css/template-geometria.css" rel="stylesheet"> 
     <link href="css/template.css" rel="stylesheet"> 
-    <link href="css/estilos1.css" rel="stylesheet">  
+    <link href="css/estilos1.css" rel="stylesheet"> 
+    <link href="css/estilos2.css" rel="stylesheet"> 
   </head>
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
@@ -49,11 +50,18 @@
           <i class="fad fa-books"></i> Unidades de aprendizaje</a>
         </li>
         <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>1. Lógica matemática</a>
+          <i class="fas fa-bookmark"></i>1. Inducción Matemática</a>
           <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Proposiciones simples y compuestas</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="20" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Argumentos</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="38" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Métodos de demostración de teoremas</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Cuantificadores, sus negaciones y el contraejemplo.</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="5" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Método de demostración por Inducción matemática.</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>2. Conjuntos</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Definición, notación, determinación y clasificación de conjuntos</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="4" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="7" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Número de elementos de la unión entre conjuntos</a></li>
           </ul>
         </li>
       </ul>
@@ -76,8 +84,8 @@
             <div class="box">
                 <div class="porcent">
                     <svg class="svg_porcent">
-                        <circle class="circle_porcent_1" x="40" cy="60" r="25"/>
-                        <circle class="up circle_porcent_2" cx="40" cy="60" r="25"/>
+                        <circle cx="40" cy="60" r="25" style ="stroke: #006095;stroke-width: 5px;"/>
+                        <circle class="up" cx="40" cy="60" r="25" style="stroke: #003140;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
                     </svg>
                     <div class="number">
                         
@@ -110,7 +118,7 @@
           
         </main>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-dialog centered-propio" role="document">
             <div class="modal-content">
               <div class="">
                 <div class="card-container manual-flip">
@@ -125,9 +133,7 @@
                               <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                                 <div class="divcerrar">
                                   <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <div class="m-0 p-0 x-modal">
-                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
-                                    </div>
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
                                   </button>
                                 </div>
                               </div>
@@ -136,19 +142,16 @@
                           <div class="user">
                             <div class="border-white">
                               <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/icon-pdf.png" style="top: 5px;">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-15.png" style="top: 5px;">
                               </div>
                             </div>
                           </div>
-                          <div class="content">
+                          <div class="content pdfs">
                               <p class="p_white">
-                                    <a href="assets/PDF/Ejercicios sobre argumentos válidos.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Ejercicios sobre argumentos válidos.pdf    <b class="p_white"><u>Ver</u></b></a>
+                                    <a href="assets/PDF/Unidad 1/actividad complementaria_unidad1.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b><u>Ver</u></b></a>
                               </p>
                               <p class="p_white">
-                                    <a href="assets/PDF/Ejercicio para práctica.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Ejercicios para práctica.pdf    <b class="p_white"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_white">
-                                    <a href="assets/PDF/Evaluación 2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividades evaluativa 2.pdf    <b class="p_white"><u>Ver</u></b></a>
+                                    <a href="assets/PDF/Unidad 1/evaluacion1_induccion_matemática.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b><u>Ver</u></b></a>
                               </p>
                           </div>
                       </div> <!-- end front panel -->
@@ -159,7 +162,7 @@
           </div>
         </div>
         <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-dialog centered-propio" role="document">
             <div class="modal-content">
               <div class="">
                 <div class="card-container manual-flip">
@@ -174,9 +177,7 @@
                               <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                                 <div class="divcerrar">
                                   <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <div class="m-0 p-0 x-modal">
-                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
-                                    </div>
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
                                   </button>
                                 </div>
                               </div>
@@ -189,65 +190,86 @@
                               </div>
                             </div>
                           </div>
-                          <div class="content p_white custom-scrollbar4">
-                            <div class="custom-scrollbar__inner4">
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Lógica matemática: </b> es la disciplina que trata de métodos de razonamiento con una formulación precisa y completa de la lógica formal para demostrar teoremas matemáticos.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Argumento: </b> razonamiento utilizado para convencer a otros de la verdad de un enunciado. Conformado por un conjunto finito de proposiciones P_1,P_2,…P_(n-1) llamadas premisas y una conclusión P_n que se deriva de las premisas.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Proposición: </b> es una oración que puede ser falsa o verdadera pero no ambas a la vez. Afirmación con sentido completo.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Proposición compuesta: </b> son aquellas que se componen de más de un sujeto, un verbo y un complemento. Puede subdividirse en dos o más proposiciones. 
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Conectores lógicos: </b> palabras o expresiones que sirven para relacionar las ideas dentro de una proposición compuesta.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Inferencia lógica: </b> proceso de razonamiento que genera una conclusión a partir de una o varias proposiciones.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Tautologías: </b> proposición (compuesta) que es cierta para todos los valores de verdad de sus variables proposicionales.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Contradicción lógica: </b> proposición que es siempre falsa para todos los valores de verdad de sus variables proposicionales.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Valores de verdad: </b> juicio de valor que se le da cuando una proposición es falsa o verdadera.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Conjunción lógica: </b> es un operador o conector que sirve para conectar dos proposiciones que se deben cumplir para obtener un resultado verdadero.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Disyunción lógica: </b> es un operador o conector que sirve para obtener un resultado verdadero cuando alguna de las proposiciones es verdadera. Se conoce como suma lógica.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Negación lógica: </b> es un operador o conector que cumple la función de negar la proposición.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Implicación o condicional: </b> es aquella que está formada por dos proposiciones simples o compuestas. Siendo una la causa y la otra el efecto.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Doble implicación o bicondicional: </b> es aquella en la cual, el bicondicional se da en doble sentido. Cuando ambas proposiciones tienen el mismo valor de verdad es verdadero, y falso cuando sus valores de verdad son diferentes.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Proposiciones equivalentes: </b> son aquellas proposiciones compuestas que tienen el mismo valor de verdad, sin importar el valor de verdad de las proposiciones que intervienen.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Axioma: </b> es un principio básico que se asume como verdadero sin necesidad de requerir demostración alguna.
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Silogismo Hipotético: </b> es un argumento el cual está conformado por tres condicionales (o implicaciones).
-                              </p>
-                              <p class="p_white justificado"> <b class="font-weight-bold">
-                                Silogismo Disyuntivo: </b> es un argumento el cual está conformado por dos condicionales y una disyunción.
-                              </p>
-                            </div>
-                            <div class="custom-scrollbar__bar4">
-                              <div class="custom-scrollbar__knob4 cursor"><p class="text-center linea_scroll4">-</p></div>
+                          <div class="content p_white custom-scrollbar8">
+                              <div class="custom-scrollbar__inner8">
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Cuantificador universal o referencial:</b> es aquel cuantificador que indica que algo es cierto para todos los individuos de un conjunto y se utiliza la palabra “para todo”.                   
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Cuantificador existencial:</b> es aquel cuantificador que indica que algo es verdad para algunos individuos de un conjunto y se utiliza la palabra “algunos”.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Función proposicional:</b> son funciones cuya estructura lógica es una función proposicional.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto:</b> hace referencia a la agrupación de diversos elementos los cuales tienen entre sí características y propiedades semejantes.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Elemento:</b> son aquellos objetos que hacen parte y conforman los diferentes tipos de conjuntos.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Diagrama de Venn:</b> es la forma en que se pueden representar gráficamente los conjuntos y se realiza por medio de círculos y en su interior, se dibujan los elementos que lo conforman.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto universal:</b> es aquel conjunto general en el que se encuentran todas los elementos y también los subconjuntos que hagan parte de esto.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto finito:</b> es aquel conjunto que está conformado por elementos que pueden enumerar o contar, por ejemplo, las letras del alfabeto.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto infinito:</b> es aquel conjunto que se conforma por elementos que no se pueden contar porque no tienen fin, por ejemplo, los números.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto vacío:</b> es aquel conjunto en el que no se encuentra ningún tipo de elementos.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Subconjuntos:</b> se denomina aquel conjunto que se encuentra dentro de otro conjunto, es decir el conjunto B es subconjunto de A, por lo que todos los elementos que pertenecen a B están incluidos en A.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Diferencia entre conjuntos:</b> es aquella operación en la que se obtiene un nuevo conjunto donde se agrupan todos los elementos de B que no pertenecen a A. Es decir, Si un conjunto B está incluido en otro conjunto llamado A, la diferencia de los conjuntos B-A, es igual al conjunto vacío.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Intersección entre conjuntos:</b> es aquella operación en la que se tienen elementos en común o repetidos en dos o más conjuntos. 
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Unión entre conjuntos:</b> es el conjunto que se forma por todos los elementos que pertenecen a los conjuntos que se encuentren involucrados. Es decir, si tenemos dos conjuntos A y B, la unión es la suma de los elementos de A y B.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Diferencia simétrica:</b> es aquella operación entre conjuntos cuyos elementos son los que pertenecen a alguno de los conjuntos iniciales, es decir, solo los elementos que no son en común en dos o más conjuntos.
+                                </p>
+                                <br>
+                              </div>
+                              <div class="custom-scrollbar__bar8">
+                              <div class="custom-scrollbar__knob8 cursor"><p class="text-center linea_scroll8">-</p></div>
                             </div>
                           </div>
                       </div> <!-- end front panel -->
@@ -258,7 +280,7 @@
           </div>
         </div>
         <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-dialog centered-propio" role="document">
             <div class="modal-content">
               <div class="">
                 <div class="card-container manual-flip">
@@ -273,9 +295,7 @@
                               <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                                 <div class="divcerrar">
                                   <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <div class="m-0 p-0 x-modal">
-                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
-                                    </div>
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
                                   </button>
                                 </div>
                               </div>
@@ -289,11 +309,9 @@
                             </div>
                           </div>
                           <div class="content p_white">
-                              <p class="p_white justificado">Computación, M. P. (s.f.). </p>
-                              <br>
-                              <p class="p_white justificado">José Rodolfo, Karla,Rosario, Julio, Leticia. (16 de 11 de 2016). Club Mate para Compu. Obtenido de https://clubmateparacompu.blogspot.com/2016/11 </p>
-                              <br>
-                              <p class="p_white justificado">Perdomo, J. S. (2 de 04 de 2013). REDDOLAC. Obtenido de Red de docentes de América Latina y del Caribe: https://reddolac.org/profiles/blogs/algebra-de-proposiciones-conjuntos-y-sistemas-numericos-el-uso-de </p>
+                              <p class="justificado"> Uribe J., (2017). Matemáticas básicas y operativas, Medellín, Colombia: UROS EDITORES</p>
+                              <p class="justificado"> Girón C., (2016). Un primer curso de lógica informal para la enseñanza media. Bogotá, Colombia: UNIVERSIDAD NACIONAL DE COLOMBIA.                              </p>
+                              <p class="justificado"> Muñoz J., Introducción a la teoría de conjuntos. (4ta edición). Bogotá, Colombia: Facultad de Ciencias. UNAL</p>
                           </div>
                       </div> <!-- end front panel -->
                   </div> <!-- end card -->

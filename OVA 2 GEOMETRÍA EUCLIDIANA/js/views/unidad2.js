@@ -38,6 +38,15 @@ $( document ).ready(function() {
     console.log(tema);
     slide_link(tema);
 });
+var pdf = `<div class="col-md-12">
+                  <p class="p_white">
+                        <a href="assets/PDF/Unidad 2/ejemplo_nelementos_unidad2.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_white">
+                        <a href="assets/PDF/Unidad 2/evaluacion2_conjuntos.docx"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b><u>Ver</u></b></a>
+                  </p>
+                </div>`;
+$('.pdfs').html(pdf);
 
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
@@ -63,7 +72,7 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 10;
+            tema = 11;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
@@ -116,7 +125,7 @@ function controlSlides(num){
 
 
 
-/*function cambiacontenido(opcion){
+function cambiacontenido(opcion){
     switch (parseInt(opcion)) {
         case 1:
             var img = `<img src="assets/img/img_ova/dibujo_union.png" style="max-width: 90%;">`;
@@ -154,7 +163,7 @@ function controlSlides(num){
             break;
         case 5:
             var img = `<img src="assets/img/img_ova/dibujo_complemento.png" style="max-width: 90%;">`;
-            var cont = `<p>𝐴^𝐶 o 𝐴′  o  𝐴 ̅,  o también la diferencia  𝑈−𝐴 , se le llama complemento de 𝐴 con respecto a 𝑈,  o simplemente complemento de 𝐴.</p>
+            var cont = `<p>𝐴<sup>𝐶</sup> o 𝐴′  o  𝐴 ̅,  o también la diferencia  𝑈−𝐴 , se le llama complemento de 𝐴 con respecto a 𝑈,  o simplemente complemento de 𝐴.</p>
                                     <p>Está conformado por los elementos que NO pertenecen al conjunto A. (Que están por fuera de 𝐴)</p>`;
             $("#content").html(cont);
             $("#img_cont").html(img);
@@ -167,13 +176,15 @@ function controlSlides(num){
             break;
     }
 }
+
 function cambiacontenido2(opcion){
+            $("#pregunta_cont").addClass('d-none');
     switch (parseInt(opcion)) {
         case 1:
             var img = `<img src="assets/img/img_ova/ejp_union.png" style="max-width: 75%;">`;
             var cont = `<b>Complemento de la unión entre dos conjuntos:</b>
-                                      <p>〖(𝑨∪𝑩)〗^𝑪 o (𝑨∪𝑩)′  o  ((𝑨∪𝑩)) ̅, </p>
-                                      <p>O también la diferencia 𝐔−(𝐀∪𝐁</p>`;
+                                      <p>(𝑨∪𝑩)<sup>𝑪</sup> o (𝑨∪𝑩)′  o  ((𝑨∪𝑩)) ̅, </p>
+                                      <p>O también la diferencia 𝐔−(𝐀∪𝐁)</p>`;
             $("#contenido2").html(cont);
             $("#img_2").html(img);
             
@@ -182,7 +193,7 @@ function cambiacontenido2(opcion){
         case 2:
             var img = `<img src="assets/img/img_ova/ejp_complementointerseccion.png" style="max-width: 75%;">`;
             var cont = `<b>Complemento de la intersección entre dos conjuntos:</b>
-                                      <p>〖(𝐴∩𝐵)〗^𝐶 o (𝐴∩𝐵)′  o  ((𝐴∩𝐵)) </p>
+                                      <p>(𝐴∩𝐵)<sup>𝐶</sup> o (𝐴∩𝐵)′  o  ((𝐴∩𝐵)) </p>
                                       <p>O también la diferencia  𝑈−(𝐴∩𝐵)</p>`;
             $("#contenido2").html(cont);
             $("#img_2").html(img);
@@ -191,13 +202,14 @@ function cambiacontenido2(opcion){
         case 3:
             var img = `<img src="assets/img/img_ova/ejp_doblemente.png" style="max-width: 75%;">`;
             var cont = `<p>Si se quisiera graficar
-                        〖(𝐴∩𝐵)〗^𝐶∪𝐶 
-                        Los conjuntos 〖(𝐴∩𝐵)〗^𝐶 y 𝐶, se rayan en sentidos diferentes.
+                        (𝐴∩𝐵)<sup>𝐶</sup>∪𝐶 
+                        Los conjuntos (𝐴∩𝐵)<sup>𝐶</sup> y 𝐶, se rayan en sentidos diferentes.
                         La unión ∪, será todo lo rayado; Si se quisiera graficar la intersección
-                        (𝐴∩𝐵)^𝐶∩𝐶 
+                        (𝐴∩𝐵)<sup>𝐶</sup>∩𝐶 
                         <p>Será todo lo doblemente rayado</p>`;
             $("#contenido2").html(cont);
             $("#img_2").html(img);
+            $("#pregunta_cont").removeClass('d-none');
             
             break;
         default:
@@ -261,7 +273,7 @@ function conjuntos(num){
                             <img src="assets/img/img_ova/minuscula.png" style="max-width: 100%;">
                           </div>
                           <div class="col-lg-8">
-                            <p class="size_13">Y las letras <b>minúsculas</b> para denotar sus elementos</p>
+                            <p class="size_13">Y las letras <b>minúsculas</b> para denotar sus elementos.</p>
                           </div>
                       </div>
                       <div class="col-md-4" style="border-right: solid 1px #4141f3; padding-left: 20px;">
@@ -326,7 +338,7 @@ function conjuntos(num){
                                     <p class="text-white text-center azul_card p-2 rounded">b. Comprensión</p>
                                 </div>
                                 <br>
-                                <p>Se escriben todos sus elementos separados por comas, y encerrándolos dentro de llaves  { . . . . }</p>
+                                <p>Consiste esta forma, en describir un conjunto enunciando las propiedades de todos sus elementos.  Esto se representa usando la expresión matemática: “ / ” que se lee “tal que” (o “tales que”).</p>
                             </div>
                             <div class="card1_bottom2">
                                 <div class="row">
@@ -371,12 +383,15 @@ function conjuntos(num){
                         <div class="fondo_canvas col-lg-12 m-0 p-0">
                           <p class="rueda1 cursor" data-toggle="modal" data-target="#modalconjunto">Conjunto universal (referencial)</p>
                           <p class="rueda2 cursor" data-toggle="modal" data-target="#modalconjunto2">Conjuntos finitos e infinitos</p>
-                          <p class="rueda3 cursor" data-toggle="modal" data-target="#modalconjunto3">Subconjuntos</p>
-                          <p class="rueda4 cursor" data-toggle="modal" data-target="#modalconjunto4">Conjunto vacío</p>
+                          <p class="rueda3 cursor" data-toggle="modal" data-target="#modalconjunto4">Subconjuntos</p>
+                          <p class="rueda4 cursor" data-toggle="modal" data-target="#modalconjunto3">Conjunto vacío</p>
+                        </div>
+                        <div class="d-flex  col-lg-12">
+                            <p class="text-center mx-auto">Al hacer clic en los circulos puede ver más información</p>
                         </div>
                       </div>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }
-}*/
+}
