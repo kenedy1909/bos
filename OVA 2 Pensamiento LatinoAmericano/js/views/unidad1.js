@@ -1743,6 +1743,8 @@ function cambiarImgU16(num) {
 function abrirMapa(num) {
     $('.mapaConc').addClass('d-none');
     if (num == 1) {
+        $('#contentMapaBG').removeClass('mapaBG3') ;
+        $('#contentMapaBG').addClass('mapaBG1') ;
         $('.mapaConc-1, .mapaConc-2').removeClass('d-none');
     }else if (num == 2) {
         $('.mapaConc-1, .mapaConc-2, .mapaConc-3').removeClass('d-none'); 
