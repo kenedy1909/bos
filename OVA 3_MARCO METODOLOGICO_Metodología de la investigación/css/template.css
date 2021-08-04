@@ -499,6 +499,9 @@ iframe{
   color: #000!important;
 }
 
+.text-color-3{
+	color: #7b49ab!important;
+}
 
 .text{
     position: relative;
@@ -563,6 +566,9 @@ svg circle:nth-child(2){
 
 .z-index-pdf{
   z-index: 1000;
+}
+.hidden{
+  visibility: hidden!important;
 }
 
 .gris_circle{

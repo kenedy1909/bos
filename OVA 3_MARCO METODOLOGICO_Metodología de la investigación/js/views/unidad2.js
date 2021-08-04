@@ -82,17 +82,8 @@ function controlSlides2(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
-            break;
-        case 3:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            
-            break;
-        case 4:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            
             tema = 1;
             break;
-        
         default:
             break;
     }
