@@ -104,11 +104,11 @@
 }
 
 #actividad-1 ul#grupoB li.active:after {
-    background: #d1af4f;
+    background: #27DEBF;
 }
 
 #actividad-1 ul#grupoB li.active {
-    color: #fff;
+    color: black;
 }
 
 #actividad-1 ul#grupoA {

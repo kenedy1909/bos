@@ -32,7 +32,7 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
-    slide_predeterminado();
+    /*slide_predeterminado();*/
     console.log(tema);
     slide_link(tema);
 
@@ -77,7 +77,7 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num -1);
 
     controlSlides(num);
     
