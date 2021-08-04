@@ -58,6 +58,22 @@ $( document ).ready(function() {
     })
     
 });
+var pdf = `                 <div class="col-md-12">
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD1/SentenciaC-578_02.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>  Sentencia C-578/02.pdf   Ver.</a>
+                              </p>
+                            </div>
+                            <div class="col-md-12">
+                              <p class="p_white size_20">
+                                  <a href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>  Estatuto de Roma     Ver.</a>
+                              </p>
+                            </div>
+                            <div class="col-md-12">   
+                              <p class="p_white size_20">  
+                                  <a href="assets/PDF/UNIDAD1/reporte.PDF" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>  Reporte intermedio de la fiscalía  Ver.</a>
+                              </p>
+                            </div>`;
+$('.pdfs').html(pdf);
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -662,16 +678,24 @@ function scroll_horizontal(num){
                           </div>
                         </div>
                         <div class="text-center pt-0 col-md-8" style="font-size: 20px;display: inline-block;width: 60%;">
-                            <b class="" style="color: #771e18;">ACTIVIDAD #2</b>
+                            <b class="" style="color: #771e18;">ACTIVIDAD #3</b>
                             <div style="height: 5px; background: #771e18;"></div>
                             
                           </div>
                       </div>
                       
                       <p class="p_black justificado font13">
-                        Con el fin de  profundizar en el análisis de la competencia de la Corte, una vez leído el Estatuto de Roma visualice el video explicativo de los cuatro factores de competencia. <br><br>
-                        Con base en el video, elabore un cuadro sinóptico que consagre los principales elementos a tener presente de los factores de competencia
+                        Para efectos de una comprensión adecuada del examen preliminar y su desarrollo en un caso práctico, lea el reporte intermedio de la fiscalía (PDF) sobre el examen preliminar de Colombia.
                       </p>
+                      <br>
+                      <p class="p_black justificado font13">
+                        Una vez leído, realice un ensayo entre 3 a 5 páginas en el cual describen los principales elementos del análisis de la fiscalía tanto en la fase de competencia como la de admisibilidad.
+                      </p>
+                      <br>
+                      <p class="p_black justificado font13">
+                        Descargue el pdf dando clic en el botón
+                      </p>
+                      <a target="_blank" href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf"><img  style="background-color: #771e18; padding: 10px; border-radius: 10px; margin-top: 10px;" class="col-md-1 offset-md-7" src="assets/img/img_ova/pdf-file.png"></a>
 
                       <div class="row">
                           <img class="col-md-2" src="assets/img/img_ova/reloj.png">
@@ -683,7 +707,7 @@ function scroll_horizontal(num){
             $('#scroll-text').html('<b>Finalmente, en caso de confluir competencia y admisibilidad, le corresponde a la fiscalía analizar si una investigación y enjuiciamiento no redundaría en un interés en la justicia, en lo cual deberá tener presente en su análisis elementos como la gravedad de la conducta, los intereses de las víctimas y la edad o enfermedad del presunto autor, conforme lo dispone el artículo 53 literal c. </b>');
                       break;
         case 3:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/img14.png">`;
+            var pantalla = `<div><img class="img-60 m-auto" src="assets/img/img_ova/img14.png"> <br> <div class="d-flex"><div class="m-auto"><button data-toggle="modal" data-target="#modal13" class="btn btn-ova "><u><b>Cuestiones de admisibilidad</b></u></button></div></div></div>`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>Debe destacarse que los requisitos de admisibilidad están orientados a verificar que el estado que tenga jurisdicción para ejercer la acción penal sobre la conducta haya tenido la oportunidad de investigar y sancionar a los presuntos responsables, al respecto indica unas cuestiones de admisibilidad.Del análisis del mencionado artículo se puede encontrar que será admisible una cuestión no solo cuando el estado en cuestión no haya investigado a los responsables, sino también cuando habiendo adelantado la investigación, se demostrará que la misma no fue realizada de forma imparcial, estaba orientada a sustraer de la responsabilidad penal al individuo o que el estado no estaba realmente interesado en adelantar la investigación o no podía hacerlo. Haga clic en el siguiente botón para ampliar:</b>');
             
@@ -733,11 +757,11 @@ var inputsRy = [];
 
 
 // setup
-var i = new Input();
+var i = new Input(4);
 i.crear(elementoPadre1);
 inputsRy.push(i);
 
-var i2 = new Input();
+var i2 = new Input(4);
 i2.att.value = 70;
 i2.att.min = 20;
 i2.att.max = 120;

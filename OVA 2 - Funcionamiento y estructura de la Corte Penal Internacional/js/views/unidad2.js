@@ -28,7 +28,7 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    slide_predeterminado2();
+    /*slide_predeterminado2();*/
     slide_link2(tema);
     /*funcion_vanvas();
     funcion_canvas2();*/
@@ -69,7 +69,7 @@ function controlSlides2(num){
         case 0:
             setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
             $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 5;
+            tema = 13;
             break;
         case 1:
             var pdf = `<div class="col-md-12">
