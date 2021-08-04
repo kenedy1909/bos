@@ -128,43 +128,43 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");   
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 14:
             sumaslide1++;
@@ -208,46 +208,46 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 25:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 26:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 27:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 28:
             sumaslide2++;
@@ -291,13 +291,13 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 29:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 30:
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 31:
             sumaslide3++;
@@ -341,7 +341,46 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            break;
+        case 32:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            break;
+        case 33:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            break;
+        case 34:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            break;
+        case 35:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            break;
+        case 36:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 37:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 38:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 39:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 40:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 41:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 42:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 43:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            break;
+        case 44:
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
             break;
         default:
             break;
@@ -853,6 +892,44 @@ function espacial(num) {
 
             $('.formula_nave3').addClass('visible');
             $('.formula_nave3').removeClass('invisible');
+            break;
+        default:
+            break;
+    }
+}
+
+function agrandar(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.agrandador').addClass('cortico');
+            $('.agrandador').removeClass('agrandado');
+
+            $('.A1').addClass('agrandado');
+            $('.A1').removeClass('cortico');
+
+            $('.texto-target').removeClass('visible');
+            $('.texto-target').addClass('invisible');
+
+            $('.text1').addClass('visible');
+            $('.text1').removeClass('invisible');
+
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado1/index.html" frameborder="0"></iframe>`;
+            $('.iframe').html(iframe);
+            break;
+        case 2:
+            $('.agrandador').addClass('cortico');
+            $('.agrandador').removeClass('agrandado');
+
+            $('.A2').addClass('agrandado');
+            $('.A2').removeClass('cortico');
+
+            $('.texto-target').removeClass('visible');
+            $('.texto-target').addClass('invisible');
+
+            $('.text2').addClass('visible');
+            $('.text2').removeClass('invisible');
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado2/index.html" frameborder="0"></iframe>`;
+            $('.iframe').html(iframe);
             break;
         default:
             break;

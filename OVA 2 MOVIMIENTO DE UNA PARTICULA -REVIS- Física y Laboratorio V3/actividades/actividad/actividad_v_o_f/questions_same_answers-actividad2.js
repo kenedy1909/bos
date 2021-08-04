@@ -216,6 +216,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                 </tr>\
             </thead>\
             <tbody>\
+                <tr>\
+                    <th style="font-size: 15px;">Un automóvil parte del reposo desde un semáforo O con una aceleración de 0,9 m/s2. Poco tiempo después se encuentra con un autobús que viene en sentido contrario a una velocidad constante de 18 km/h. Sabiendo que el autobús pasó por el punto O, 22 segundos después de que el automóvil partió de allí, determine el tiempo en segundos a partir del momento en que el auto partió del semáforo hasta que se cruzaron los dos vehículos.</th>\
+                </tr>\
                 {% for question in form.questions %}\
                 <tr>\
                     <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\

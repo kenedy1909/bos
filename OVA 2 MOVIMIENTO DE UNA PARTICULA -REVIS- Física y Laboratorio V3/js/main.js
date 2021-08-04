@@ -31,6 +31,7 @@ $( document ).ready(function() {
     var newTop = "";
     var scrollOffset = "";
     $(".modal_scroll9").on('click', modal_scroll9);
+    $(".modal_scroll10").on('click', modal_scroll10);
 
 });
 function modal_scroll9(){
@@ -41,6 +42,17 @@ function modal_scroll9(){
     knob = document.querySelector('.custom-scrollbar__knob9');
     bar = document.querySelector('.custom-scrollbar__bar9');
     container = document.querySelector('.custom-scrollbar__inner9');
+    scroll();
+}
+
+function modal_scroll10(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob10');
+    bar = document.querySelector('.custom-scrollbar__bar10');
+    container = document.querySelector('.custom-scrollbar__inner10');
     scroll();
 }
 function scroll(){
@@ -104,13 +116,11 @@ function actualizarprogress(){
         naveg = 10;
     }*/
     done = $(".done").length;
-    if(unidad == 2){
-        done--;
-    }
+    
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/20);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/44);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);

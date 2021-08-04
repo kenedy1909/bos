@@ -1836,3 +1836,43 @@ a.control_next {
     left: 360px;
     top: -40px;
 }
+
+.targeta{
+  background: #965B0C;
+  width: 70%;
+  border-radius: 20px;
+  height: 80px;
+}
+.agrandador{
+  background: white;
+  border-radius: 20px;
+  padding: 20px 0px 0px 25px;
+  position: absolute;
+  height: 100%;
+}
+
+.agrandado{
+  width: 65%;
+}
+.cortico{
+  width: 25%;
+}
+.numerito{
+  width: 30px;height: 30px;
+  background: #965b0c;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.img_target{
+  margin-left: 129px;
+  padding-top: 12px;
+}
+.texto-target{
+  width: 120px;
+  position: relative;
+  left: 70px;
+}
