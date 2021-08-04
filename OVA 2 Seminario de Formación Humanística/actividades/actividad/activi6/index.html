@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/actividad6/completar.css">
+</head>
+<body>
+	<div class="row px-3 mb-3" style="margin-top: 1.5em;">
+	    <div class="col-md-5 d-flex">
+       <img src="../img/img5/actividad_interactiva.png" class="img-activi">
+       <div>
+           <div class="content-text-img-activi-2 w-100">
+             <b class="text-img-actividad" style="font-size: 15px; font-family: arial;">ACTIVIDAD INTERACTIVA</b>
+           </div>
+           <p class="text-center" style="font-size: 15px; font-family: arial;">COMPLETAR ESPACIOS</p>
+       </div>
+    </div>
+    <div class="col-md-7 shadow content-tarjeta">
+        <p class="pb-2 p_black" style="font-size: 15px; font-family: arial;">En cada una de las escenas seleccione la opción correcta de las promesas de la modernidad dando clic en la flecha, al finalizar pulse la casilla "<b>Calificar</b>" para conocer su puntuación.</p>
+    </div>
+	</div>
+	<form>
+		<div class="col-lg-12 row">
+			<div class="col-md-4">
+				<div class="enunciado">
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">En esta promesa convergen aspectos diversos, entre ellos se encontrará la clase burgués que da lugar al conocido libre comercio.</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_0"></label>
+					<select id="op_0" name="op_0">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="incorrecta">Tecnológica</option>
+						<option value="correcta">Abundancia</option>
+						<option value="incorrecta">Paz</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="enunciado">
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">En esta promesa el proceso de la tecnología inicia en los conceptos surgidos por la ciencia, es así, como estos conceptos darán lugar a la construcción de máquinas y de técnicas o procedimientos</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_1"></label>
+					<select id="op_1" name="op_1">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="incorrecta">Paz</option>
+						<option value="incorrecta">Abundancia</option>
+						<option value="correcta">Tecnológica</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="enunciado">
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">La Modernidad con su nuevo orden gobernante, prometía el uso de la razón para elegir a quienes estarían en posición de autoridad y quienes velarían por el bienestar del pueblo</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_2"></label>
+					<select id="op_2" name="op_2">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="correcta">Paz</option>
+						<option value="incorrecta">Tecnológica</option>
+						<option value="incorrecta">Abundancia</option>
+					</select>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-12 row">
+			<div class="col-md-4 offset-md-2">
+				<div class="enunciado">
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">En esta promesa gracias al conocimiento y reconocimiento de la humanidad como centro, se podría orientar todo el avance obtenido en beneficio del ser humano</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_3"></label>
+					<select id="op_3" name="op_3">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="incorrecta">Epistemológica</option>
+						<option value="correcta">Humanista</option>
+						<option value="incorrecta">Ninguna</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="enunciado">
+					<p style="font-size: 15px; text-align: center; margin-bottom: 2px;">Esta promesa se hacía atractiva, al crear en el individuo la expectativa de conocer el mundo por sí mismo, a través de su razón e incluso de crear a través de esa misma razón</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_4"></label>
+					<select id="op_4" name="op_4">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="correcta">Epistemológica</option>
+						<option value="incorrecta">Humanista</option>
+						<option value="incorrecta">Ninguna</option>
+					</select>
+				</div>
+			</div>
+			
+		</div>
+	</form>
+	<div style="text-align: center;margin-top: 20px;">
+	      <button onclick="calificar();" style="background: #6FB14D;color: white;font-size: 18px;border-radius: 10px;" class="p-2" data-toggle="modal" data-target="#exampleModal">Calificar</button>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	        <div style="" class="cabeza">
+	          
+	        </div>
+	        <div class="d-flex justify-content-center">
+	          <div style="" class="circulo_modal img_res">
+	            
+	          </div>
+	        </div>
+	        <div style="padding: 10px;">
+	          <div style="color: white;font-size: 15px;">
+	            Su puntaje es: <p class="puntaje"></p>
+	          </div>
+	          <div style="color: white;font-size: 15px;">
+	            <p class="mensaje"></p>
+	          </div>
+	        </div>
+	        <div class="row d-flex justify-content-center btns_modal">
+	          
+	          
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/actividad6/completar.js"></script>
+</body>
+</html>

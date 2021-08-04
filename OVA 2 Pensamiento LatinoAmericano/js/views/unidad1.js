@@ -100,6 +100,7 @@ function controlSlides(num){
                                 <a href="assets/PDF/.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Actividad complementaria. Pdf </a>
                             </p>
                         </div>`;
+            scroll_set(8);
             $('.pdfs').html(pdf);
             break;
         case 2:
@@ -1690,7 +1691,7 @@ function tarjetasU14(num,posicion) {
                         </div>
                         </div>
                         <div class="col-4">
-                        <img src="assets/img/img_ova/apra.jpg" width="90%" height="80%" class="py-2">
+                        <img src="assets/img/img_ova/tarjeta2.png" width="90%" height="80%" class="py-2">
                         </div>
                     </div>
                         `;
@@ -1742,6 +1743,8 @@ function cambiarImgU16(num) {
 function abrirMapa(num) {
     $('.mapaConc').addClass('d-none');
     if (num == 1) {
+        $('#contentMapaBG').removeClass('mapaBG3') ;
+        $('#contentMapaBG').addClass('mapaBG1') ;
         $('.mapaConc-1, .mapaConc-2').removeClass('d-none');
     }else if (num == 2) {
         $('.mapaConc-1, .mapaConc-2, .mapaConc-3').removeClass('d-none'); 
@@ -1758,7 +1761,7 @@ function abrirMapa(num) {
     }else if (num == 7) {
         $('.mapaConc-6, .mapaConc-7, .mapaConc-8').removeClass('d-none'); 
     }else if (num == 8) {
-        $('.mapaConc-6, .mapaConc-7, .mapaConc-9').removeClass('d-none'); 
+        $('.mapaConc-6, .mapaConc-7, .mapaConc-8, .mapaConc-9').removeClass('d-none'); 
     }else if (num == 9) {
         $('#contentMapaBG').removeClass('mapaBG2') ;
         $('#contentMapaBG').addClass('mapaBG3') ;

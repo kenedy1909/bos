@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Template OVA UNAULA">
+    <meta name="author" content="Bos Developer">
+    <meta name="keyword" content="UNAULA">
+    <title>UNAULA</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://ghcdn.rawgit.org/miguel8888888/iconos/main/css/all.min.css" rel="stylesheet"> 
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
+    <link href="css/template-geometria.css" rel="stylesheet"> 
+    <link href="css/template.css" rel="stylesheet"> 
+    <link href="css/estilos1.css" rel="stylesheet"> 
+    <link href="css/estilos2.css" rel="stylesheet"> 
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none">
+        <h4>MENU</h4>
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
+          <i class="fad fa-home"></i> Inicio</a>
+        </li>
+        <li class="c-sidebar-nav-title">Contenido</li>
+        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
+          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>1. Inducción Matemática</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Cuantificadores, sus negaciones y el contraejemplo.</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="5" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Método de demostración por Inducción matemática.</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>2. Conjuntos</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Definición, notación, determinación y clasificación de conjuntos</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="4" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="7" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Número de elementos de la unión entre conjuntos</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <i class="fas fa-bars"> </i>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="c-header-nav d-md-down-none">
+          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+          <li class="c-header-nav-item ">
+            <div class="box">
+                <div class="porcent">
+                    <svg class="svg_porcent">
+                        <circle cx="40" cy="60" r="25" style ="stroke: #006095;stroke-width: 5px;"/>
+                        <circle class="up" cx="40" cy="60" r="25" style="stroke: #003140;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
+                    </svg>
+                    <div class="number">
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-15.png" alt="" class="icons-menu"></a></li>
+          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-14.png" alt="" class="icons-menu"></a></li>
+          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu"></a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto">
+          <li class="c-header-nav-item d-md-down-none">
+            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Menú</li>
+            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread3"></li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main" id="content-ova">
+          
+        </main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-15.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content pdfs">
+                              <p class="p_white">
+                                    <a href="assets/PDF/Unidad 1/actividad complementaria_unidad1.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b><u>Ver</u></b></a>
+                              </p>
+                              <p class="p_white">
+                                    <a href="assets/PDF/Unidad 1/evaluacion1_induccion_matemática.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b><u>Ver</u></b></a>
+                              </p>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-14.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content p_white custom-scrollbar8">
+                              <div class="custom-scrollbar__inner8">
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Cuantificador universal o referencial:</b> es aquel cuantificador que indica que algo es cierto para todos los individuos de un conjunto y se utiliza la palabra “para todo”.                   
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Cuantificador existencial:</b> es aquel cuantificador que indica que algo es verdad para algunos individuos de un conjunto y se utiliza la palabra “algunos”.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Función proposicional:</b> son funciones cuya estructura lógica es una función proposicional.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto:</b> hace referencia a la agrupación de diversos elementos los cuales tienen entre sí características y propiedades semejantes.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Elemento:</b> son aquellos objetos que hacen parte y conforman los diferentes tipos de conjuntos.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Diagrama de Venn:</b> es la forma en que se pueden representar gráficamente los conjuntos y se realiza por medio de círculos y en su interior, se dibujan los elementos que lo conforman.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto universal:</b> es aquel conjunto general en el que se encuentran todas los elementos y también los subconjuntos que hagan parte de esto.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto finito:</b> es aquel conjunto que está conformado por elementos que pueden enumerar o contar, por ejemplo, las letras del alfabeto.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto infinito:</b> es aquel conjunto que se conforma por elementos que no se pueden contar porque no tienen fin, por ejemplo, los números.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Conjunto vacío:</b> es aquel conjunto en el que no se encuentra ningún tipo de elementos.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Subconjuntos:</b> se denomina aquel conjunto que se encuentra dentro de otro conjunto, es decir el conjunto B es subconjunto de A, por lo que todos los elementos que pertenecen a B están incluidos en A.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Diferencia entre conjuntos:</b> es aquella operación en la que se obtiene un nuevo conjunto donde se agrupan todos los elementos de B que no pertenecen a A. Es decir, Si un conjunto B está incluido en otro conjunto llamado A, la diferencia de los conjuntos B-A, es igual al conjunto vacío.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Intersección entre conjuntos:</b> es aquella operación en la que se tienen elementos en común o repetidos en dos o más conjuntos. 
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Unión entre conjuntos:</b> es el conjunto que se forma por todos los elementos que pertenecen a los conjuntos que se encuentren involucrados. Es decir, si tenemos dos conjuntos A y B, la unión es la suma de los elementos de A y B.
+                                </p>
+                                <br>
+                                <p class="justificado"> 
+                                  <b class="font-weight-bold">
+                                Diferencia simétrica:</b> es aquella operación entre conjuntos cuyos elementos son los que pertenecen a alguno de los conjuntos iniciales, es decir, solo los elementos que no son en común en dos o más conjuntos.
+                                </p>
+                                <br>
+                              </div>
+                              <div class="custom-scrollbar__bar8">
+                              <div class="custom-scrollbar__knob8 cursor"><p class="text-center linea_scroll8">-</p></div>
+                            </div>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 30px;" class="m-0 p-0">
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content p_white">
+                              <p class="justificado"> Uribe J., (2017). Matemáticas básicas y operativas, Medellín, Colombia: UROS EDITORES</p>
+                              <p class="justificado"> Girón C., (2016). Un primer curso de lógica informal para la enseñanza media. Bogotá, Colombia: UNIVERSIDAD NACIONAL DE COLOMBIA.                              </p>
+                              <p class="justificado"> Muñoz J., Introducción a la teoría de conjuntos. (4ta edición). Bogotá, Colombia: Facultad de Ciencias. UNAL</p>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="c-footer">
+          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+        </footer>
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="js/coreiu.bundle.min.js"></script>
+    <script src="js/coreiu-utils.js"></script>
+    <script src="js/jquery3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js" type="text/javascript"></script>
+    <script src="js/SCORM_API_wrapper.js"></script>
+    <script src="assets/componentes/flipster/jquery.flipster.min.js"></script>
+    <script src="assets/componentes/percircle/percircle.js"></script>
+    <script src="assets/componentes/jquery-smartwizard-master/src/js/jquery.smartWizard.min.js"></script>
+    <!--[if IE]><!-->
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>

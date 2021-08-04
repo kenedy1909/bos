@@ -210,13 +210,13 @@ class SelectDropdown {
 
 function calificar(){
 	var res = [];
-	for (var i = 0; i < 6; i++) {
+	for (var i = 0; i < 5; i++) {
 		res[i] = $("#op_"+i).val();
 	}
 	var puntaje = 100;
 	for (var i = 0; i < res.length; i++) {
 		if (res[i] == 'incorrecta') {
-			puntaje = puntaje - 16.6;
+			puntaje = puntaje - 20;
 			
 		}
 	}
@@ -225,17 +225,20 @@ function calificar(){
 	  $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
 	  $('.puntaje').text(puntaje+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
+	  $('.btns_modal').html('');
 	  $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
 		
 	  $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
 	  $('.puntaje').text(Math.round(puntaje)+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
+	  $('.btns_modal').html('');
 	  $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
 	}else{
 	  $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
 	  $('.mensaje').text("¡Puedes hacerlo mejor!");
 	  $('.puntaje').text(Math.round(puntaje)+"%");
+	  $('.btns_modal').html('');
 	  $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
 	}
 }

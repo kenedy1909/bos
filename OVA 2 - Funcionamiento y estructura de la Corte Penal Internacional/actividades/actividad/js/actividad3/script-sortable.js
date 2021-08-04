@@ -58,17 +58,17 @@ var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
         code : '<div class="componente " data-order-origen="contenedorA" >\n'+
-        '<div class=""><div class=""><img  src="../../../assets/img/img_ova/icono1.png"></div></div>\n'+
+        '<div class=""><div class=""><img  src="../../../assets/img/img_ova/icono3.png"></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente " data-order-origen="contenedorB" >\n'+
-        '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono2.png"></div></div>\n'+
+        '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono1.png"></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente" data-order-origen="contenedorC" >\n'+
-        '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono3.png"></div></div>\n'+
+        '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono2.png"></div></div>\n'+
         '</div>\n'
     },
     {
@@ -107,19 +107,19 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">PASO 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">PASO 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">PASO 3</h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">PASO 4</h2>');
+    $(contenedorAR1).html('<h5 class="tituloContenedor tituloContenedorA">Está relacionada con la delimitación de los crímenes que pueden ser investigados por la Corte.</h5>');
+    $(contenedorBR1).html('<h5 class="tituloContenedor tituloContenedorA">Uno de los objetivos de crear la CPI como mecanismo permanente, es que se juzguen los individuos responsables de la comisión de delitos de carácter internacional</h5>');
+    $(contenedorCR1).html('<h5 class="tituloContenedor tituloContenedorA">La Corte tendrá competencia para ejercer sus atribuciones en el territorio de cualquier estado parte en el ER, y en el territorio de otros estados en virtud de acuerdo especial con ese esta</h5>');
+    $(contenedorDR1).html('<h5 class="tituloContenedor tituloContenedorA">La competencia de la Corte para conocer de hechos que puedan ser constitutivos de crímenes internacionales dependerá en primer lugar de la fecha en que el Estatuto haya entrado en vigor frente a cada Estado.</h5>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">PASO 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">PASO 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">PASO 3</h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">PASO 4</h2>');
+    $(contenedorAR1).html('<h5 class="tituloContenedor tituloContenedorA">Está relacionada con la delimitación de los crímenes que pueden ser investigados por la Corte.</h5>');
+    $(contenedorBR1).html('<h5 class="tituloContenedor tituloContenedorA">Uno de los objetivos de crear la CPI como mecanismo permanente, es que se juzguen los individuos responsables de la comisión de delitos de carácter internacional</h5>');
+    $(contenedorCR1).html('<h5 class="tituloContenedor tituloContenedorA">La Corte tendrá competencia para ejercer sus atribuciones en el territorio de cualquier estado parte en el ER, y en el territorio de otros estados en virtud de acuerdo especial con ese esta</h5>');
+    $(contenedorDR1).html('<h5 class="tituloContenedor tituloContenedorA">La competencia de la Corte para conocer de hechos que puedan ser constitutivos de crímenes internacionales dependerá en primer lugar de la fecha en que el Estatuto haya entrado en vigor frente a cada Estado.</h5>');
     /*inicioREDIR1();*/
  }
 
@@ -190,7 +190,7 @@ function calificarR1() {
     if(parseInt(puntajeR1) == 100) {
         mensajeR1 = 'Felicitaciones!';
         exitoR1 = true;
-        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
      } else {
         mensajeR1 = 'Sigue intentando!';
          if (widthR1 < 767) {
@@ -198,7 +198,7 @@ function calificarR1() {
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          } else {
             exitoR1 = false;
-            mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, function(){});
+            mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          }
 
      }  
@@ -239,11 +239,11 @@ var activityDragR1 = function () {
                             shuffleOrigenR1();
                         } else {
                             $(btnCalificarR1).attr('disabled', false);
-                            $(btnCalificarR1).on('click', calificarR1);
+                            $(btnCalificarR1).off('click').on('click', calificarR1);
                         }
                     } else {
                         $(btnCalificarR1).attr('disabled', false);
-                        $(btnCalificarR1).on('click', calificarR1);
+                        $(btnCalificarR1).off('click').on('click', calificarR1);
                     }
                 }
                 
