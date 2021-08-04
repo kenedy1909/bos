@@ -4,7 +4,7 @@ var active = 0;
 
 $( document ).ready(function() {
     $("#content-ova").load("base/portada.html");
-    $(".modal_scroll8").on('click', modal_scroll8);
+    $(".modal_scroll_glosario").on('click', modal_scroll_glosario);
     $(".modal_scroll9").on('click', modal_scroll9);
     init();
 
@@ -28,14 +28,14 @@ $( document ).ready(function() {
 
 });
 
-function modal_scroll8(){
+function modal_scroll_glosario(){
     dragging = "";
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob8');
-    bar = document.querySelector('.custom-scrollbar__bar8');
-    container = document.querySelector('.custom-scrollbar__inner8');
+    knob = document.querySelector('.custom-scrollbar__knob_glosario');
+    bar = document.querySelector('.custom-scrollbar__bar_glosario');
+    container = document.querySelector('.custom-scrollbar__inner_glosario');
     scroll();
 }
 
