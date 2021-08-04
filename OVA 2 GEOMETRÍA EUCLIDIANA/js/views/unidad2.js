@@ -17,13 +17,13 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        /*actualizarprogress();*/
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
+        
     });
     slide_predeterminado();
     /*funcion_vanvas();
@@ -51,6 +51,7 @@ $('.pdfs').html(pdf);
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+11);
 }
 
 function slide_predeterminado(){
@@ -322,7 +323,7 @@ function conjuntos(num){
                               <div class="card1_bottom2">
                                   <div class="row">
                                       <div class="col-lg-12">
-                                        <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></p>
+                                        <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Ejemplo: </b></p>
                                         <p class="text-white">
                                         Al conjunto A formado por las vocales, puedes representarlo por:  𝐴 = { 𝑎, 𝑒, 𝑖, 𝑜, 𝑢 }</p>
                                       </div>
@@ -343,7 +344,7 @@ function conjuntos(num){
                             <div class="card1_bottom2">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                      <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></p>
+                                      <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Ejemplo: </b></p>
                                       <p class="text-white">Si 𝑀 es el conjunto de los números impares: 𝑀 = { 𝒙 / 𝒙 𝑒𝑠 𝑛ú𝑚𝑒𝑟𝑜 𝑖𝑚𝑝𝑎𝑟 }
                               Que se lee “𝑀 es el conjunto de elementos 𝒙,  tal que 𝒙 es número impar”.</p>
                                     </div>
