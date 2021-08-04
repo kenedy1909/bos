@@ -495,6 +495,93 @@ function flotantes(num){
             break;
     }
 }
+    
+function p39(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.text-p39').addClass('invisible');
+            $('.text-p39').removeClass('visible');
+
+            $('.p39-1').removeClass('invisible');
+            $('.p39-1').addClass('visible');
+
+            $('.btn_shadowAmarillo').addClass('shadow_inactive');
+            $('.btn_shadowAmarillo').removeClass('shadow_active');
+
+            $('.sha1').removeClass('shadow_inactive');
+            $('.sha1').addClass('shadow_active');
+
+            $('.banner39').removeClass('invisible');
+            $('.banner39').addClass('visible');
+            break;
+        case 2:
+            $('.text-p39').addClass('invisible');
+            $('.text-p39').removeClass('visible');
+
+            $('.p39-2').removeClass('invisible');
+            $('.p39-2').addClass('visible');
+
+            $('.btn_shadowAmarillo').addClass('shadow_inactive');
+            $('.btn_shadowAmarillo').removeClass('shadow_active');
+
+            $('.sha2').removeClass('shadow_inactive');
+            $('.sha2').addClass('shadow_active');
+
+            $('.banner39').removeClass('invisible');
+            $('.banner39').addClass('visible');
+            break;
+        case 3:
+            $('.text-p39').addClass('invisible');
+            $('.text-p39').removeClass('visible');
+
+            $('.p39-3').removeClass('invisible');
+            $('.p39-3').addClass('visible');
+
+            $('.btn_shadowAmarillo').addClass('shadow_inactive');
+            $('.btn_shadowAmarillo').removeClass('shadow_active');
+
+            $('.sha3').removeClass('shadow_inactive');
+            $('.sha3').addClass('shadow_active');
+
+            $('.banner39').removeClass('invisible');
+            $('.banner39').addClass('visible');
+            break;
+        case 4:
+            $('.text-p39').addClass('invisible');
+            $('.text-p39').removeClass('visible');
+
+            $('.p39-4').removeClass('invisible');
+            $('.p39-4').addClass('visible');
+
+            $('.btn_shadowAmarillo').addClass('shadow_inactive');
+            $('.btn_shadowAmarillo').removeClass('shadow_active');
+
+            $('.sha4').removeClass('shadow_inactive');
+            $('.sha4').addClass('shadow_active');
+
+            $('.banner39').removeClass('invisible');
+            $('.banner39').addClass('visible');
+            break;
+        case 5:
+            $('.text-p39').addClass('invisible');
+            $('.text-p39').removeClass('visible');
+
+            $('.p39-5').removeClass('invisible');
+            $('.p39-5').addClass('visible');
+
+            $('.btn_shadowAmarillo').addClass('shadow_inactive');
+            $('.btn_shadowAmarillo').removeClass('shadow_active');
+
+            $('.sha5').removeClass('shadow_inactive');
+            $('.sha5').addClass('shadow_active');
+
+            $('.banner39').removeClass('invisible');
+            $('.banner39').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
 
 function mesas(num){
     switch (parseInt(num)) {
@@ -518,6 +605,254 @@ function mesas(num){
 
             $('.cordenadamesa3').removeClass('invisible');
             $('.cordenadamesa3').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function banners(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.formulas_flecha').addClass('invisible');
+            $('.formulas_flecha').removeClass('visible');
+
+            $('.siguiente').addClass('triangulo_inactive');
+            $('.siguiente').removeClass('triangulo_active');
+
+            $('.siguiente1').addClass('triangulo_active');
+            $('.siguiente1').removeClass('triangulo_inactive');
+
+            $('.banflechascafe').addClass('invisible');
+            $('.banflechascafe').removeClass('visible');
+
+            $('.banflecha1').removeClass('invisible');
+            $('.banflecha1').addClass('visible');
+
+            $('.tria_desplega').addClass('invisible');
+            $('.tria_desplega').removeClass('visible');
+
+            $('.tria_desplega1').removeClass('invisible');
+            $('.tria_desplega1').addClass('visible');
+            break;
+        case 2:
+            $('.formulas_flecha').addClass('invisible');
+            $('.formulas_flecha').removeClass('visible');
+
+            $('.siguiente').addClass('triangulo_inactive');
+            $('.siguiente').removeClass('triangulo_active');
+
+            $('.siguiente2').addClass('triangulo_active');
+            $('.siguiente2').removeClass('triangulo_inactive');
+
+            
+            $('.banflechascafe').addClass('invisible');
+            $('.banflechascafe').removeClass('visible');
+
+            $('.banflecha2').removeClass('invisible');
+            $('.banflecha2').addClass('visible');
+
+            $('.tria_desplega').addClass('invisible');
+            $('.tria_desplega').removeClass('visible');
+
+            $('.tria_desplega2').removeClass('invisible');
+            $('.tria_desplega2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function desplega(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.siguiente').addClass('visible');
+            $('.siguiente').removeClass('invisible');
+
+            $('.siguiente1').addClass('invisible');
+            $('.siguiente1').removeClass('visible');
+
+            $('.anterior').addClass('invisible');
+            $('.anterior').removeClass('visible');
+
+            $('.anterior1').removeClass('invisible');
+            $('.anterior1').addClass('visible');
+
+            $('.banflecha1').removeClass('invisible');
+            $('.banflecha1').addClass('visible');
+
+            $('.tria_desplega').addClass('triangulo_inactive');
+            $('.tria_desplega').removeClass('triangulo_active');
+
+            $('.tria_desplega1').removeClass('triangulo_inactive');
+            $('.tria_desplega1').addClass('triangulo_active');
+
+            $('.formulas_flecha').addClass('invisible');
+            $('.formulas_flecha').removeClass('visible');
+
+            $('.form_f1').removeClass('invisible');
+            $('.form_f1').addClass('visible');
+            break;
+        case 2:
+            $('.siguiente').addClass('visible');
+            $('.siguiente').removeClass('invisible');
+
+            $('.siguiente2').addClass('invisible');
+            $('.siguiente2').removeClass('visible');
+
+            $('.anterior').addClass('invisible');
+            $('.anterior').removeClass('visible');
+
+            $('.anterior2').removeClass('invisible');
+            $('.anterior2').addClass('visible');
+
+            $('.banflecha2').removeClass('invisible');
+            $('.banflecha2').addClass('visible');
+
+            $('.tria_desplega').addClass('triangulo_inactive');
+            $('.tria_desplega').removeClass('triangulo_active');
+
+            $('.tria_desplega2').removeClass('triangulo_inactive');
+            $('.tria_desplega2').addClass('triangulo_active');
+
+            $('.formulas_flecha').addClass('invisible');
+            $('.formulas_flecha').removeClass('visible');
+
+            $('.form_f2').removeClass('invisible');
+            $('.form_f2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function retroceder(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.siguiente').addClass('visible');
+            $('.siguiente').removeClass('invisible');
+
+            $('.anterior').addClass('invisible');
+            $('.anterior').removeClass('visible');
+
+            $('.banflechascafe').removeClass('visible');
+            $('.banflechascafe').addClass('invisible');
+
+            $('.tria_desplega').addClass('triangulo_inactive');
+            $('.tria_desplega').removeClass('triangulo_active');
+
+            $('.formulas_flecha').addClass('invisible');
+            $('.formulas_flecha').removeClass('visible');
+
+            $('.siguiente').addClass('triangulo_inactive');
+            $('.siguiente').removeClass('triangulo_active');
+
+            $('.tria_desplega').addClass('invisible');
+            $('.tria_desplega').removeClass('visible');
+            break;
+        case 2:
+            $('.siguiente').addClass('visible');
+            $('.siguiente').removeClass('invisible');
+
+            $('.anterior').addClass('invisible');
+            $('.anterior').removeClass('visible');
+
+            $('.banflechascafe').removeClass('visible');
+            $('.banflechascafe').addClass('invisible');
+
+            $('.tria_desplega').addClass('triangulo_inactive');
+            $('.tria_desplega').removeClass('triangulo_active');
+
+            $('.formulas_flecha').addClass('invisible');
+            $('.formulas_flecha').removeClass('visible');
+
+            $('.siguiente').addClass('triangulo_inactive');
+            $('.siguiente').removeClass('triangulo_active');
+
+            $('.tria_desplega').addClass('invisible');
+            $('.tria_desplega').removeClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function espacial(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn_espacial').addClass('btn_espacialinactive');
+            $('.btn_espacial').removeClass('btn_espacialactive');
+
+            $('.cordenada_nave1').addClass('btn_espacialactive');
+            $('.cordenada_nave1').removeClass('btn_espacialinactive');
+
+            $('.espacial1').removeClass('visible');
+            $('.espacial1').addClass('invisible');
+
+            $('.imagen_espacial').addClass('invisible');
+            $('.imagen_espacial').removeClass('visible');
+
+            $('.espacial2').addClass('visible');
+            $('.espacial2').removeClass('invisible');
+
+            $('.baneformnav').addClass('visible');
+            $('.baneformnav').removeClass('invisible');
+
+            $('.formula_nave').addClass('invisible');
+            $('.formula_nave').removeClass('visible');
+
+            $('.formula_nave1').addClass('visible');
+            $('.formula_nave1').removeClass('invisible');
+            break;
+        case 2:
+            $('.btn_espacial').addClass('btn_espacialinactive');
+            $('.btn_espacial').removeClass('btn_espacialactive');
+
+            $('.cordenada_nave2').addClass('btn_espacialactive');
+            $('.cordenada_nave2').removeClass('btn_espacialinactive');
+
+            $('.espacial2').removeClass('visible');
+            $('.espacial2').addClass('invisible');
+
+            $('.imagen_espacial').addClass('invisible');
+            $('.imagen_espacial').removeClass('visible');
+
+            $('.espacial3').addClass('visible');
+            $('.espacial3').removeClass('invisible');
+
+            $('.baneformnav').addClass('visible');
+            $('.baneformnav').removeClass('invisible');
+
+            $('.formula_nave').addClass('invisible');
+            $('.formula_nave').removeClass('visible');
+
+            $('.formula_nave2').addClass('visible');
+            $('.formula_nave2').removeClass('invisible');
+            break;
+        case 3:
+            $('.btn_espacial').addClass('btn_espacialinactive');
+            $('.btn_espacial').removeClass('btn_espacialactive');
+
+            $('.cordenada_nave3').addClass('btn_espacialactive');
+            $('.cordenada_nave3').removeClass('btn_espacialinactive');
+
+            $('.espacial3').removeClass('visible');
+            $('.espacial3').addClass('invisible');
+
+            $('.imagen_espacial').addClass('invisible');
+            $('.imagen_espacial').removeClass('visible');
+
+            $('.espacial4').addClass('visible');
+            $('.espacial4').removeClass('invisible');
+
+            $('.baneformnav').addClass('visible');
+            $('.baneformnav').removeClass('invisible');
+
+            $('.formula_nave').addClass('invisible');
+            $('.formula_nave').removeClass('visible');
+
+            $('.formula_nave3').addClass('visible');
+            $('.formula_nave3').removeClass('invisible');
             break;
         default:
             break;
@@ -728,10 +1063,10 @@ function svg_img(num) {
     switch(parseInt(num)){
         case 1:
             $("#svg-info").html(`
-                                <div class="radius-2 img-100 border-verde-o bg-verde-c opacity-7">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
+                                  <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-verde">
+                                      <div class="m-0 p-0 x-modal-verde" style="background: #1f4e79;">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
@@ -739,13 +1074,11 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
-                                        <p class="p_black justificado"><b><i>Longitud.</i></b></p>
+                                        <p class="p_black justificado">Cuando una partícula se mueve en un círculo con rapidez constante, el movimiento se conoce como movimiento circular uniforme. Un automóvil que da vuelta en una curva de radio constante con rapidez constante, un satélite en órbita circular y un patinador que describe un círculo con rapidez constante son ejemplos de este movimiento</p>
                                         <br>
-                                        <p class="p_black justificado">Su unidad es el metro (m). En 1960, la longitud del metro se definió como la distancia entre dos líneas en una específica barra de platino–iridio que se almacena bajo condiciones controladas en Francia.</p>
-                                        <br>
-                                        <p class="p_black justificado">Sin embargo, los requerimientos actuales de la ciencia y la tecnología necesitaban más precisión que la dada por la separación entre las líneas en la barra. En las décadas de los sesenta y setenta del milenio pasado, el metro se definió como 1.650.763,73 longitudes de onda de la luz naranja–rojo, emitida de una lámpara de criptón 86.</p>
-                                        <br>
-                                        <p class="p_black justificado">No obstante, en octubre de 1983, el metro se redefinió como la distancia recorrida por la luz en el vacío durante un tiempo de 1/299.792.458 segundos. En efecto, esta última definición establece que la rapidez de la luz en el vacío es precisamente 299.792.458 metros por segundo. Esta definición del metro es válida a través del Universo respecto a la suposición de que la luz es la misma en todas partes. (J., 2008)</p>
+                                        <div class="text-center">
+                                           <img src="assets/img/img_ova/neutrones.png" class="img-25">
+                                        </div>
                                       </div>
                                       <div class="custom-scrollbar__bar_uno">
                                         <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
@@ -761,10 +1094,10 @@ function svg_img(num) {
             break;
         case 2:
             $("#svg-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c opacity-7">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
+                                  <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-azul">
+                                      <div class="m-0 p-0 x-modal-azul" style="background: #1f4e79;">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
@@ -772,12 +1105,9 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
-                                        <p class="p_black justificado"><b>Masa.</b> Su unidad es el kilogramo (kg)</p>
-                                        <br>
-                                        <p class="p_black justificado">La unidad fundamental del SI de masa, el kilogramo (kg), estaba definido como la masa de un cilindro de aleación platino–iridio específico que se conserva en la Oficina Internacional de Pesos y Medidas en Sèvres, Francia. (J., 2008) Esta masa estándar fue establecida en 1887 y no había cambiado hasta el 20 de mayo de 2019 cuando su definición pasó a estar ligada con la constante de Planck, una constante natural que describe los paquetes de energía emitidos en forma de radiación</p>
-                                        <br>
-                                        <p class="p_black justificado">Esto permite que un laboratorio de metrología debidamente equipado calibre un instrumento de medición de masa como una balanza de potencia. El kilogramo se define al fijar el valor numérico de la constante de Planck, un kilogramo seria h / 6,62607015 x 10-34 expresado en J·s (Julios por segundo), por·m²·s-1, donde el metro y el segundo se definen en función de c (velocidad de la luz en el vacío).</p>
-                                        <br>
+                                        <div class="text-center">
+                                           <img src="assets/img/img_ova/Imagen-ejemplo-particula.jpg" class="img-100">
+                                        </div>
                                       </div>
                                       <div class="custom-scrollbar__bar_uno">
                                         <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
@@ -793,10 +1123,10 @@ function svg_img(num) {
             break;
         case 3:
             $("#svg-info").html(`
-                                <div class="radius-2 img-100 border-verde-mo bg-verde-mc opacity-7">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
+                                  <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-verde-o">
+                                      <div class="m-0 p-0 x-modal-verde-o" style="background: #1f4e79;">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
@@ -804,9 +1134,10 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
-                                        <p class="p_black justificado"><b><i>Tiempo.</i></b> Su unidad es el segundo (s)</p>
-                                        <br>
-                                        <p class="p_black justificado">Antes de 1960 el estándar de tiempo fue definido en términos del día solar medio hacia el año 1900. (Un día solar es el intervalo de tiempo entre apariciones sucesivas del Sol en el punto más alto que alcanza en el cielo cada día.) La unidad fundamental de un segundo(s) fue definida como (1/60) (1/60) (1/24) de un día solar medio. Ahora se sabe que la rotación de la Tierra varía ligeramente con el tiempo.</p>
+                                        <p class="p_black justificado">No hay componente de aceleración paralela (tangente) a la trayectoria; si la hubiera, la rapidez cambiaría. El vector aceleración es perpendicular (normal) a la trayectoria y, por lo tanto, se dirige hacia adentro (¡nunca hacia afuera!), al centro de la trayectoria circular. Esto causa el cambio en la dirección de la velocidad, sin que cambie la rapidez.</p>
+                                        <div>
+                                            <button class="btn boton_claro" style="" data-toggle="modal" data-target="#Verinformación2-modal">Ver + información</button>
+                                        </div>
                                       </div>
                                       <div class="custom-scrollbar__bar_uno">
                                         <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
@@ -1683,8 +2014,8 @@ function pantalla22(num) {
         case 1:
             $('.pantalla22').addClass('targeta_blanca');
 
-            $('.opciones').addClass('invisible');
-            $('.opciones').removeClass('visible');
+            $('.opciones_1').addClass('invisible');
+            $('.opciones_1').removeClass('visible');
 
             $('.opcion2-2').removeClass('invisible');
             $('.opcion2-2').addClass('visible');
@@ -1692,8 +2023,8 @@ function pantalla22(num) {
         case 2:
             $('.pantalla22').addClass('targeta_blanca');
 
-            $('.opciones').addClass('invisible');
-            $('.opciones').removeClass('visible');
+            $('.opciones_1').addClass('invisible');
+            $('.opciones_1').removeClass('visible');
 
             $('.opcion3-3').removeClass('invisible');
             $('.opcion3-3').addClass('visible');
@@ -1701,8 +2032,8 @@ function pantalla22(num) {
         case 3:
             $('.pantalla22').removeClass('targeta_blanca');
 
-            $('.opciones').addClass('invisible');
-            $('.opciones').removeClass('visible');
+            $('.opciones_1').addClass('invisible');
+            $('.opciones_1').removeClass('visible');
 
             $('.opcion1-1').removeClass('invisible');
             $('.opcion1-1').addClass('visible');
