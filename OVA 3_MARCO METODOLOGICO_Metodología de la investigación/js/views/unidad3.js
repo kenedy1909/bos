@@ -81,22 +81,6 @@ function controlSlides3(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            break;
-        case 4:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            break;
-        case 5:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            break;
-        case 6:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            break;
-        case 7:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            
             tema = 1;
             break;    
         default:

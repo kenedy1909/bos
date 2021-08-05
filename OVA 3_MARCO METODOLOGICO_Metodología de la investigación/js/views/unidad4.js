@@ -68,7 +68,6 @@ function controlSlides4(num){
             tema = 7;
             break;
         case 1:
-           
             $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
             break;
@@ -83,13 +82,82 @@ function controlSlides4(num){
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob16');
+            bar = document.querySelector('.custom-scrollbar__bar16');
+            container = document.querySelector('.custom-scrollbar__inner16');
+            scroll();
             break;
-        
+        case 6:
+            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            break;
         default:
             break;
     }
 }
+function scroll_set(num) {
+  dragging = "";
+  diff = "";
+  newTop = "";
+  scrollOffset = "";
+  knob = document.querySelector('.custom-scrollbar__knob'+num);
+  bar = document.querySelector('.custom-scrollbar__bar'+num);
+  container = document.querySelector('.custom-scrollbar__inner'+num);
+  scroll();
+}
 
+function scroll(){
+  // When the container is scrolled
+  container.addEventListener('scroll', () => {
+    // If we are dragging the knob, do nothing
+    if (dragging) return;
+
+    // Otherwise, set the knob position based on the scroll position
+    knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+  });
+
+  dragging = false;
+
+  knob.addEventListener('mousedown', event => {
+      
+  console.log(knob+" "+bar+" "+container);
+    dragging = {
+      x: event.clientX,
+      y: event.clientY };
+
+  });
+  window.addEventListener('mousemove', event => {
+    if (dragging) {
+      // When dragging
+      event.preventDefault();
+      diff = {
+        x: event.clientX - dragging.x,
+        y: event.clientY - dragging.y };
+
+
+      // Clamp the position of the knob to be a maximum of 
+      // the knobs container, and a minimum of 0
+      newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+      knob.style.top = newTop + 'px';
+
+      // Base the scroll offset on the knobs position
+      // in relation to the knobs container
+      scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+      container.scrollTop = scrollOffset;
+
+      dragging = {
+        x: event.clientX,
+        y: event.clientY };
+
+    }
+  });
+  window.addEventListener('mouseup', () => {
+    dragging = false;
+  });
+}
 
 //dezlizador
 var elementoPadre1 = document.querySelector(".inputDiv.i1");
