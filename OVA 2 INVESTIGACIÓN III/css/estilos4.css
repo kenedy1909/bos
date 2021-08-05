@@ -409,8 +409,9 @@ p, button{
 
 .rec{
   background-image: url(../assets/img/img_ova/rec.png);
-  height: 200%;
-  width: 120%;
+  height: 228px;
+  width: 200px;
   position: relative;
   background-repeat: no-repeat;
+  background-size: 100%;
 }

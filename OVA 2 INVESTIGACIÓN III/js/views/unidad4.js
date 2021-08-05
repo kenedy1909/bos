@@ -67,13 +67,20 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            var pdf = `<p class="p_white">
+                                  <a href="assets/PDF/UNIDAD2/Epistemologia-hernando-salcedo.pdf"> <i class="fas fa-file-pdf fa-2x"></i> Epistemologia-hernando-salcedo</a>
+                      </p>
+                      <p class="p_white">
+                          <a href="assets/PDF/UNIDAD2/Tendencias-de-la-enseñanza-investigacion.pdf"> <i class="fas fa-file-pdf fa-2x"></i> Tendencias-de-la-enseñanza-investigacion </a>
+                      </p>`;
+            $('.pdfs').html(pdf);
+            setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
             $("#content").html('');
             $("#img_cont").html('');
             break;

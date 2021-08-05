@@ -23,7 +23,8 @@ $( document ).ready(function() {
         'transform':'translate3d(0, 0, 0px);',
         'width':'65px'
     });*/
-
+    $(".modal_scroll9").on('click', modal_scroll9);
+    $(".modal_scroll10").on('click', modal_scroll10);
 });
 
 var total = 200;
@@ -48,7 +49,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/19);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/20);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);
@@ -117,9 +118,10 @@ $('.link-menu-tema').off('click').on('click', function(evt){
     active = 1;
     var link_item = $(this).find("a").attr('href');
     var enlace = link_item.replace('#','');
+    tema = $(this).data('id');
     $("#content-ova").load("base/unidades/"+enlace+".html");
     evt.preventDefault();
-    tema = $(this).data('id');
+    
     console.log(tema);
 });
 function init(){
@@ -179,4 +181,75 @@ window.onunload = function (){
 
 function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+}
+
+function modal_scroll9(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob9');
+    bar = document.querySelector('.custom-scrollbar__bar9');
+    container = document.querySelector('.custom-scrollbar__inner9');
+    scroll();
+}
+
+function modal_scroll10(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob10');
+    bar = document.querySelector('.custom-scrollbar__bar10');
+    container = document.querySelector('.custom-scrollbar__inner10');
+    scroll();
+}
+function scroll(){
+    // When the container is scrolled
+    container.addEventListener('scroll', () => {
+      // If we are dragging the knob, do nothing
+      if (dragging) return;
+
+      // Otherwise, set the knob position based on the scroll position
+      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+    });
+
+    dragging = false;
+
+    knob.addEventListener('mousedown', event => {
+        
+    console.log(knob+" "+bar+" "+container);
+      dragging = {
+        x: event.clientX,
+        y: event.clientY };
+
+    });
+    window.addEventListener('mousemove', event => {
+      if (dragging) {
+        // When dragging
+        event.preventDefault();
+        diff = {
+          x: event.clientX - dragging.x,
+          y: event.clientY - dragging.y };
+
+
+        // Clamp the position of the knob to be a maximum of 
+        // the knobs container, and a minimum of 0
+        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+        knob.style.top = newTop + 'px';
+
+        // Base the scroll offset on the knobs position
+        // in relation to the knobs container
+        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+        container.scrollTop = scrollOffset;
+
+        dragging = {
+          x: event.clientX,
+          y: event.clientY };
+
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      dragging = false;
+    });
 }
