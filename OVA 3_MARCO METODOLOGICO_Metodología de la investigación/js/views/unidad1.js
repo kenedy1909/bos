@@ -706,63 +706,156 @@ function pasos(num){
 
 function pant13(num){
     $('.avance1, .avance2, .avance3, .avance4').addClass('d-none');
-  
+    $('.textU3, .imgU3').html(``);
+    $('.textU3, .imgU3').removeClass('d-flex');
     switch (parseInt(num)) {
         case 1:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es impreciso</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento1.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
+            var contenido = `<h3 class="color-title">Experimentales</h3>
+                            <br><br>
+                            <p class="text-justify">Se utilizan cuando el investigador pretende
+                                establecer el posible efecto de una causa que manipula. Un 
+                                experimento es un estudio donde se manipulan intencionalmente
+                                una o más variables independientes (causas) para analizar las 
+                                consecuencias (efectos) que la manipulación tiene sobre las 
+                                variables dentro de una situación de control. Ejemplo: hacer 
+                                enojar a una persona para ver sus reacciones. Los diseños 
+                                experimentales a su vez pueden ser según Campbell y Stanley 
+                                (1996): pres-experimentos, cuasi-experimentos y experimentos 
+                                “puros”.</p>`;
+            var img = `<img src="assets/img/img_ova/experimentales.png" width="100%">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
             $('.avance1').removeClass('d-none');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
             break;
         case 2:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es inconsistente</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento2.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
+            var contenido = `<h3 class="color-title">Pre-experimentales</h3>
+                            <br><br>
+                            <p class="text-justify">Generalmente útiles como primer acercamiento al problema de investigación en la realidad. El grado de control de las variables es mínimo. Son de dos clases: </p>
+                            <ol>
+                              <li>Estudio de caso con una sola medición.</li>
+                              <li>Estudio de caso con una sola medición.</li>
+                            </ol>
+                            `;
+            var img = `<img src="assets/img/img_ova/pre-experimentos.png" width="100%">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
             $('.avance2').removeClass('d-none');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
             break;
         case 3:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es subjetivo</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento3.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
+            var contenido = `<h3 class="color-title">Cuasi-experimentales</h3>
+                            <br><br>
+                            <p class="text-justify">Implican el manejo de grupos intactos, es decir, que estaban creados antes del experimento</p>`;
+            var img = `<img src="assets/img/img_ova/cuasi-experimentos.png" width="100%">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
             $('.avance3').removeClass('d-none');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
             break;
         case 4:
-            var contenido = `<div class="col-md-9 banner3 text-center">
-                                <p style="font-size: 25px;">Es acrítico</p>
-                              </div>`;
-            var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento4.png" style="max-width: 25%;">
-                        </div>`;
-            $('.impbanner').html(contenido);
-            $('.impimg').html(img);
+            var contenido = `<div class="row">
+                                <div class="col-6">
+                                    <h3 class="color-title">Experimentos “puros”</h3>
+                                    <br><br>
+                                    <p class="text-justify">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
+                                        <br></br>
+                                        Luego, utilice la flecha para avanzar en la visualización del contenido.
+                                    </p>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img src="assets/img/img_ova/experimentospuros.png" width="90%">
+                                    <div class="w-100 d-flex justify-content-center menos-marginT-25">
+                                        <h5 class="cursor text-white py-2 px-4 w-75 bg-color-dark border-10 shadow" data-toggle="modal" data-target="#modalimg_U1_3">VER IMAGEN</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-100 d-flex align-items-center">
+                                <i class="fas fa-caret-right text-color-3 display-4 ml-2 cursor" onclick="pant13Al(2)"></i>
+                            </div>`;
+            var img = `<img src="assets/img/img_ova/experimentospuros.png" width="100%">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
+            $('.textU3, .imgU3').addClass('d-flex');
             $('.avance4').removeClass('d-none');
-
-            $('.impimg').removeClass('imagenimp2');
-            $('.impimg').addClass('imagenimp');
+            break;
+        default:
+            break;
+    }
+}
+function pant13Al(num){
+    $('.textU3, .imgU3').html(``);
+    $('.textU3, .imgU3').removeClass('d-flex');
+    $('.avance1, .avance2, .avance3, .avance4').addClass('d-none');
+    
+    switch (parseInt(num)) {
+        case 1:
+            var contenido = `<div class="row">
+                                <div class="col-6">
+                                <h3 class="color-title">Experimentos “puros”</h3>
+                                <br><br>
+                                <p class="text-justify">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
+                                    <br></br>
+                                    Luego, utilice la flecha para avanzar en la visualización del contenido.
+                                </p>
+                                </div>
+                                <div class="col-6 text-center">
+                                <img src="assets/img/img_ova/experimentospuros.png" width="90%">
+                                <div class="w-100 d-flex justify-content-center menos-marginT-25">
+                                    <h5 class="cursor text-white py-2 px-4 w-75 bg-color-dark border-10 shadow" data-toggle="modal" data-target="#modalimg_U1_3">VER IMAGEN</h5>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="h-100 d-flex align-items-center">
+                                <i class="fas fa-caret-right text-color-3 display-4 ml-2 cursor" onclick="pant13Al(2)"></i>
+                            </div>`;
+            var img = `<img src="assets/img/img_ova/experimentospuros.png" width="100%" class="transition-on">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
+            $('.avance4').removeClass('d-none');
+            $('.textU3, .imgU3').addClass('d-flex');
+            break;
+        case 2:
+            var contenido = `<div class="row">
+                                <div class="col-12 pl-4">
+                                    <p class="text-justify">En conclusión, todos los experimentos lo que buscan es la eficacia interna, la garantía de generalizar los resultados de cualquier experimento a escenarios que sean no experimentales, y de igual forma a sujetos y comunidades. Para que su experimento tenga un grado de validez confiable, pregúntese: <span class="color-title"><b> ¿El resultado de mi experimento, lo puedo aplicar a qué tipo de sujetos, en qué contextos, o aplica en grupos o en qué situaciones? Es decir, ¿en qué tipo de situaciones, circunstancias o sujetos, se puede aplicar?</b></span></p>
+                                </div>
+                            </div>
+                            <div class="h-100 d-flex align-items-center">
+                                <i class="fas fa-caret-right text-color-3 display-4 ml-2 cursor" onclick="pant13Al(3)"></i>
+                            </div>`;
+            var img = `<div class="h-100 d-flex align-items-center">
+                            <i class="fas fa-caret-left text-color-3 display-4 cursor" onclick="pant13Al(1)"></i>
+                        </div>
+                        <img src="assets/img/img_ova/experimentospuros.png" width="100%" class="transition-on">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
+            $('.avance4').removeClass('d-none');
+            $('.textU3, .imgU3').addClass('d-flex');
+            break;
+        case 3:
+            var contenido = `<div class="row">
+                                <div class="col-12 pl-4">
+                                    <p class="text-justify">Los experimentos se pueden dar en dos contextos. Haga clic sobre los botones para ampliar la información.</p>
+                                    <div class="w-100 d-flex justify-content-center align-items-center">
+                                    <div class="w-75">
+                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3">
+                                        <h5 class="w-75">  Experimentos de laboratorio</h5>
+                                        <img src="assets/img/img_ova/experimento.png" width="10%">
+                                        </div>
+                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3_2">
+                                        <h5 class="w-75">  Experimentos de campo</h5>
+                                        <img src="assets/img/img_ova/ojo.png" width="10%">
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>`;
+            var img = `<div class="h-100 d-flex align-items-center">
+                            <i class="fas fa-caret-left text-color-3 display-4 cursor" onclick="pant13Al(2)"></i>
+                        </div>
+                        <img src="assets/img/img_ova/experimentospuros.png" width="100%" class="transition-on">`;
+            $('.textU3').html(contenido);
+            $('.imgU3').html(img);
+            $('.avance4').removeClass('d-none');
+            $('.imgU3').addClass('d-flex');
             break;
         default:
             break;
