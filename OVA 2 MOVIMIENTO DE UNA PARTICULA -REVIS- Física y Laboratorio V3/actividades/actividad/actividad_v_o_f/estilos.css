@@ -132,7 +132,7 @@ span.checked svg.svg2 {
     background-position: bottom center;
     background-repeat: no-repeat, repeat-x;
     margin-bottom: 30px;
-    background-color: #003442;
+    background-color: #E39D40;
     animation: fondo 10s linear infinite;
     overflow: hidden;
 }
@@ -146,7 +146,7 @@ span.checked svg.svg2 {
 }
 
 .info_actividad{
-    background: #E39D40;
+    background: #FFC000;
     border-radius: 20px;
     padding: 20px;
 }

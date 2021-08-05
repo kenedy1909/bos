@@ -389,13 +389,13 @@ iframe{
 
 
 /*scroll*/
-.custom-scrollbar6, .custom-scrollbar7, .custom-scrollbar8, .custom-scrollbar9 {
+.custom-scrollbar6, .custom-scrollbar7, .custom-scrollbar8, .custom-scrollbar9, .custom-scrollbar10 {
   position: relative;
   height: 219px;
   overflow: hidden;
 }
 
-.custom-scrollbar__inner6, .custom-scrollbar__inner7, .custom-scrollbar__inner8, .custom-scrollbar__inner9 {
+.custom-scrollbar__inner6, .custom-scrollbar__inner7, .custom-scrollbar__inner8, .custom-scrollbar__inner9, .custom-scrollbar__inner10 {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
@@ -409,7 +409,7 @@ iframe{
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar8, .custom-scrollbar__bar9 {
+.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar8, .custom-scrollbar__bar9, .custom-scrollbar__bar10 {
   position: absolute;
   top: 18px;
   bottom: 20px;
@@ -420,7 +420,7 @@ iframe{
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob8, .custom-scrollbar__knob9 {
+.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob8, .custom-scrollbar__knob9, .custom-scrollbar__knob10 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -432,7 +432,7 @@ iframe{
   will-change: top;
 }
 
-.linea_scroll6, .linea_scroll7, .linea_scroll8, .linea_scroll9 {
+.linea_scroll6, .linea_scroll7, .linea_scroll8, .linea_scroll9, .linea_scroll10 {
   font-size: 50px;
     margin: 0px;
     position: relative;
@@ -817,4 +817,56 @@ svg circle:nth-child(2){
 
 .w-50{
   max-width: 50%;
+}
+
+.border-bottom-actividad{
+    border-bottom: solid 3px #005B8B;
+}
+
+.img-activi{
+    width: 116px;height: 116px;
+}
+
+.text-img-actividad{
+    font-size: 20px;
+    color: #005B8B;
+}
+
+.content-text-img-activi{
+  border-bottom: solid 3px #005B8B;
+  height: 86px;
+  margin: 0px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.content-tarjeta{
+  background: #E39D40;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.max-w-30px{
+    max-width: 30px;
+}
+
+.content-text-activi{
+    background: #DAE3F3;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.content-text-activi-2{
+    border: solid 2px #79CAF3;
+    border-radius: 20px;
+    padding: 30px;
 }

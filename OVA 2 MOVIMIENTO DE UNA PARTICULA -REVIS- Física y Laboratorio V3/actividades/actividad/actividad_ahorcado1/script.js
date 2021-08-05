@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[1] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[2] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[3] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[4] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[5] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[6] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[7] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
-            this.palabras[8] = ['sistema-cegesimal', '¿Con que otro nombre es conocido el sistema métrico?'];
+            this.palabras[0] = ['trayectoria', ''];
+            this.palabras[1] = ['trayectoria', ''];
+            this.palabras[2] = ['trayectoria', ''];
+            this.palabras[3] = ['trayectoria', ''];
+            this.palabras[4] = ['trayectoria', ''];
+            this.palabras[5] = ['trayectoria', ''];
+            this.palabras[6] = ['trayectoria', ''];
+            this.palabras[7] = ['trayectoria', ''];
+            this.palabras[8] = ['trayectoria', ''];
 
             return this.palabras;
 
