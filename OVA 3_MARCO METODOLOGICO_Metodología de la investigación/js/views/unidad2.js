@@ -235,3 +235,16 @@ function openTabs(el) {
    btnTarget.classList.add("active");
 }
 
+function tarjetaU2_1(num) {
+  $('.hijaTarjeta1, .hijaTarjeta2').addClass('d-none');
+  $('.hijaTarjeta1, .hijaTarjeta2').removeClass('d-flex');
+  if (num == 1) {
+    $('.hijaTarjeta1').removeClass('d-none');
+    $('.hijaTarjeta1').addClass('d-flex');
+    
+  }else if (num == 2) {
+    $('.hijaTarjeta2').removeClass('d-none');
+    $('.hijaTarjeta2').addClass('d-flex');
+    
+  }
+}
