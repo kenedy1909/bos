@@ -413,13 +413,13 @@ iframe{
 
 
 /*scroll*/
-.custom-scrollbar6, .custom-scrollbar7, .custom-scrollbar8 {
+.custom-scrollbar6, .custom-scrollbar7, .custom-scrollbar8, .custom-scrollbar9, .custom-scrollbar10 {
   position: relative;
   height: 219px;
   overflow: hidden;
 }
 
-.custom-scrollbar__inner6, .custom-scrollbar__inner7, .custom-scrollbar__inner8 {
+.custom-scrollbar__inner6, .custom-scrollbar__inner7, .custom-scrollbar__inner8, .custom-scrollbar__inner9, .custom-scrollbar__inner10 {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
@@ -433,7 +433,7 @@ iframe{
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar8 {
+.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar8, .custom-scrollbar__bar9, .custom-scrollbar__bar10 {
   position: absolute;
   top: 18px;
   bottom: 20px;
@@ -444,7 +444,7 @@ iframe{
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob8 {
+.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob8, .custom-scrollbar__knob9, .custom-scrollbar__knob10 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -456,7 +456,7 @@ iframe{
   will-change: top;
 }
 
-.linea_scroll6, .linea_scroll7, .linea_scroll8 {
+.linea_scroll6, .linea_scroll7, .linea_scroll8, .linea_scroll9, .linea_scroll10 {
   font-size: 50px;
     margin: 0px;
     position: relative;
@@ -878,7 +878,7 @@ svg circle:nth-child(2){
 }
 
 .x-modal{
-  background: #006092;
+  background: #fb9bc9;
   border-radius: 50%;
   width: 50px;
   height: 50px;
