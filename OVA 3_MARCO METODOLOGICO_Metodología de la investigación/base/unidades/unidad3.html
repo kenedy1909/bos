@@ -32,16 +32,26 @@
                       <div class="row mt-4">
                         <div class="col-12 bg-white p-5">
                           <div class="row">
-                            <div class="col-12 d-flex justify-content-center p-4">
-                              <img src="assets/img/img_ova/poblacionymuestra.png" width="80%">
+                            <div class="col-12 d-flex justify-content-center p-4" id="contenidoCentralU3-1">
+                              <img src="assets/img/img_ova/poblacionymuestra.png" width="80%" class="imgCentral imgCentral1 ">
+                              <img src="assets/img/img_ova/comic1.png" width="45%" class="imgCentral imgCentral2 mr-2 d-none">
+                              <img src="assets/img/img_ova/comic2.png" width="45%" class="imgCentral imgCentral3 ml-2 d-none">
+                              <img src="assets/img/img_ova/comic3.png" width="80%" class="imgCentral imgCentral4 d-none">
+                              <img src="assets/img/img_ova/comic4.png" width="45%" class="imgCentral imgCentral5 mr-2 d-none">
+                              <img src="assets/img/img_ova/comic5.png" width="45%" class="imgCentral imgCentral6 ml-2 d-none">
                             </div>
-                            <div class="col-7 d-flex justify-content-end">
-                              <i class="fas fa-caret-left color-title display-4 mr-2 cursor"></i>
-                              <i class="fas fa-caret-right color-title display-4 ml-2 cursor"></i>
+                            <div class="col-7 d-flex justify-content-end pr-4">
+                              <i class="fas fa-caret-left color-title display-4 mr-2 cursor hidden flechaLU3-1" onclick="tarjertaGU3(1)"></i>
+                              <i class="fas fa-caret-right color-title display-4 ml-2 cursor flechaRU3-1" onclick="tarjertaGU3(2)"></i>
                             </div>
-                            <div class="col-5 d-flex justify-content-center">
-                              <a class="btn bg-color-dark text-white text-center px-4 py-3 border-10">
+                            <div class="col-5 d-flex justify-content-center btnDescarga1">
+                                <a class="btn bg-color-dark text-white text-center px-4 py-3 border-10">
                                 <h3 class="mx-3">Descargar gráfico</h3>
+                              </a>
+                            </div>
+                            <div class="col-5 justify-content-center btnDescarga2 d-none">
+                              <a class="btn bg-color-dark text-white text-center px-4 py-3 border-10">
+                                <h3 class="mx-3">Descargar historieta</h3>
                               </a>
                             </div>
                           </div>
@@ -56,7 +66,7 @@
                           </div>
                           <div class="col-md-3 ">
                             <div class="titulo_sub">
-                              <p><b>ACTIVIDAD #1</b></p>
+                              <p><b>ACTIVIDAD #3</b></p>
                             </div>
                           </div>
                           <div class="col-md-7 banner_activi text-white">
@@ -77,9 +87,9 @@
                             <div class="col-11">
                               <p class="text-justify">Realice la lectura del capítulo 8. “Selección de la muestra” del libro: Metodología de investigación cuarta – edición. Haga clic para descargar el documento.</p>
                               <div class="w-100 text-center d-flex justify-content-center">
-                                <div class="bg-color-dark p-4 text-center border-25 my-3 w-50">
+                                <a href="assets/PDF//UNIDAD2/metodologia-de-la-investigacion.pdf" target="_blank" class="bg-color-dark p-4 text-center border-25 my-3 w-50">
                                   <img src="assets/img/img_ova/pdfB.png" width="60%">
-                                </div>
+                                </a>
                               </div>
                               <p class="text-justify"><img src="assets/img/img_ova/reloj.png" width="30px">&nbsp; Tiempo sugerido:  2 horas y 30 minutos</p>
                             </div>
@@ -126,7 +136,7 @@
                         </div>
                         <div class="col-10">
                           <div class="row">
-                            <div class="col-3 bg-color-3 border-25 cardActiva">
+                            <div class="col-3 bg-color-3 border-25 cardU3-3" data-toggle="modal" data-target="#modalU3-3_1">
                               <div class="w-100 d-flex justify-content-center">
                                 <div class="bg-white rounded-circle d-flex justify-content-center align-items-center menos-marginT-25 w-50">
                                   <img src="assets/img/img_ova/radar.png" width="70%" height="80%">
@@ -136,7 +146,7 @@
                                 <h4 class="text-white">Tipos de Muestra</h4>
                               </div>
                             </div>
-                            <div class="col-3 bg-color-3 border-25 cardU3-3">
+                            <div class="col-3 bg-color-3 border-25 cardU3-3" data-toggle="modal" data-target="#modalU3-3_2">
                               <div class="w-100 d-flex justify-content-center">
                                 <div class="bg-white rounded-circle d-flex justify-content-center align-items-center menos-marginT-25 w-50">
                                   <img src="assets/img/img_ova/lupa.png" width="70%" height="80%">
@@ -146,7 +156,7 @@
                                 <h4 class="text-white">Unidades de análisis o elementos muestrales</h4>
                               </div>
                             </div>
-                            <div class="col-3 bg-color-3 border-25 cardU3-3">
+                            <div class="col-3 bg-color-3 border-25 cardU3-3" data-toggle="modal" data-target="#modalU3-3_3">
                               <div class="w-100 d-flex justify-content-center">
                                 <div class="bg-white rounded-circle d-flex justify-content-center align-items-center menos-marginT-25 w-50">
                                   <img src="assets/img/img_ova/probabilisticas.png" width="70%" height="80%">
@@ -156,7 +166,7 @@
                                 <h4 class="text-white">Muestras Probabilísticas</h4>
                               </div>
                             </div>
-                            <div class="col-3 bg-color-3 border-25 cardU3-3">
+                            <div class="col-3 bg-color-3 border-25 cardU3-3" data-toggle="modal" data-target="#modalU3-3_4">
                               <div class="w-100 d-flex justify-content-center">
                                 <div class="bg-white rounded-circle d-flex justify-content-center align-items-center menos-marginT-25 w-50">
                                   <img src="assets/img/img_ova/noprobabilisticas.png" width="70%" height="80%">
@@ -212,7 +222,7 @@
 </div>
 
 
-<div class="modal fade" id="modal3-1_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalU3-3_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog centered-propio modal-xl" role="document">
     <div class="modal-content">
       <div class="">
@@ -235,12 +245,49 @@
                     </div>
                   </div>
                   
-                  <div class="content row" style="padding: 30px 30px 30px 30px;">
-                    <div class="col-md-4">
-                      <img src="assets/img/img_ova/ejemplo1.png" class="img-fluid" style="max-width: 70%;">
+                  <div class="content row d-flex justify-content-center" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-2 mx-2 bg-color-1 border-25 py-5 d-flex justify-content-center align-items-center">
+                      <div class="w-50 rounded-circle bg-white p-2 d-flex justify-content-center align-items-center numerosSlide1">
+                        <img src="assets/img/img_ova/10.png" width="70%" class="my-2">
+                      </div>
                     </div>
-                    <div class="col-md-8">
-                      <p class="justificado color-text" style="font-size: 25px;">“El efecto de la nutrición sobre el rendimiento atlético de los niños”.</p>
+                    <div class="col-2 menos-marginB-25 mx-2 bg-color-3 border-25 py-5 d-flex justify-content-center align-items-center">
+                      <div class="w-50 rounded-circle bg-white p-2 d-flex justify-content-center align-items-center numerosSlide2">
+                        <img src="assets/img/img_ova/1.png" width="70%" class="my-2">
+                      </div>
+                    </div>
+                    <div class="col-2 mx-2 bg-color-1 border-25 py-5 d-flex justify-content-center align-items-center">
+                      <div class="w-50 rounded-circle bg-white p-2 d-flex justify-content-center align-items-center numerosSlide3">
+                        <img src="assets/img/img_ova/2.png" width="70%" class="my-2">
+                      </div>
+                    </div>
+                    <div class="col-2 mx-2 bg-color-1 border-25 py-5 d-flex justify-content-center align-items-center">
+                      <div class="w-50 rounded-circle bg-white p-2 d-flex justify-content-center align-items-center numerosSlide4">
+                        <img src="assets/img/img_ova/3.png" width="70%" class="my-2">
+                      </div>
+                    </div>
+                    <div class="col-2 mx-2 bg-color-1 border-25 py-5 d-flex justify-content-center align-items-center">
+                      <div class="w-50 rounded-circle bg-white p-2 d-flex justify-content-center align-items-center numerosSlide5">
+                        <img src="assets/img/img_ova/4.png" width="70%" class="my-2">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-end menos-marginT-25">
+                    <div class="col-6 pt-3">
+                      <h3 class="color-title">Tipos de Muestra</h3>
+                      <p class="text-black text-justify">Utilice las fechas para avanzar o retroceder en el contenido.</p>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-9 mr-2 border-25 bg-color-claro p-5 contenidoNumeros">
+                      <p class="text-justify text-black"><b class="h3 color-title"> No probabilísticas o dirigidas: </b> subgrupo de la población en el que la elección de los elementos no depende de la probabilidad sino de las características de la investigación.  
+                        <br><br>
+                        <b class="h3 color-title">Probabilísticas: </b>subgrupo de la población en el que todos los elementos de esta tienen la misma posibilidad de ser elegidos. 
+                      </p>
+                    </div>
+                    <div class="col-2 ml-2 d-flex justify-content-center align-items-center">
+                      <i class="fas fa-caret-left mr-3 text-color-1 display-4 cursor flechaNumModalL" onclick="slideModalU3_3(10)"></i>
+                      <i class="fas fa-caret-right ml-3 text-color-1 display-4 cursor flechaNumModalR" onclick="slideModalU3_3(2)"></i>
                     </div>
                   </div>
               </div> <!-- end front panel -->
@@ -250,7 +297,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade" id="modal3-1_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalU3-3_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog centered-propio modal-xl" role="document">
     <div class="modal-content">
       <div class="">
@@ -288,8 +335,45 @@
     </div>
   </div>
 </div>
-
-<div class="modal fade" id="modal3-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalU3-3_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio modal-xl" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="frontwhite">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="content row" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-md-4">
+                      <img src="assets/img/img_ova/ejemplo2.png" class="img-fluid" style="max-width: 70%;">
+                    </div>
+                    <div class="col-md-8">
+                      <p class="justificado color-text" style="font-size: 25px;">“¿Qué efecto tiene la nutrición sobre el rendimiento atlético de los niños?”.</p>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalU3-3_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog centered-propio modal-xl" role="document">
     <div class="modal-content">
       <div class="">
@@ -340,6 +424,123 @@
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="modalimg_U3-1_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio modal-xl" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="frontwhite">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-md-12 d-flex justify-content-center align-items-center">
+                      <img src="assets/img/img_ova/variables.png" width="50%">
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalimg_U3-1_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio modal-xl" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="frontwhite">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center mt-5">
+                    <div class="col-10">
+                      <p class="text-justify text-black">¿De qué tamaño debe ser la muestra? Por lo que el resultado estaría dado a través de:</p>
+                    </div>
+                  </div>
+                  <div class="content" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-md-12 d-flex justify-content-center align-items-center">
+                      <img src="assets/img/img_ova/tamañodelamuestra.png" width="50%">
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalimg_U3-1_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog centered-propio modal-xl" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="frontwhite">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex justify-content-center mt-5">
+                    <div class="col-10">
+                      <p class="text-justify text-black">Tomemos el siguiente caso: Delimitamos una población para un estudio de directores generales, en el cual consideramos a "todos aquellos directores generales de empresas industriales y comerciales que, en 1983, tenían un capital social superior a 30 millones de pesos, con ventas superiores a los 100 millones de pesos y con más de 300 personas empleadas". Con estas características se precisó que la población era de 1176 (N) directores generales, ya que 1176 empresas reunían las mencionadas características. ¿Cuál es entonces el número de directores generales (n) que se debe entrevistar, para tener un error estándar menor de 0.015, y dado que la población total es de 1176?</p>
+                    </div>
+                  </div>
+                  <div class="content d-flex justify-content-center mt-5" style="padding: 30px 30px 30px 30px;">
+                    <div class="col-md-10 d-flex justify-content-center align-items-center">
+                      <img src="assets/img/img_ova/caso.png" width="80%">
+                      <div class="w-50">
+                        <p class="text-justify text-black">Es decir, para la investigación se requieren 298 gerentes.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div> <!-- end front panel -->
+          </div> <!-- end card -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script src="js/views/unidad3.js"></script>
 <script src="js/views/unidades.js"></script>

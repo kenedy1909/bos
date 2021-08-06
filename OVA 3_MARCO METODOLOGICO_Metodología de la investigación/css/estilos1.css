@@ -255,20 +255,13 @@
 	font-size: 12px;
 }
 .transition-on{
-	transition-delay: .5s;
+	transition-delay: .3s;
 }
 
 .min-h-200{
 	min-height: 200px!important;
 }
-.cardU3-3{
-	min-height: 200px;
-	margin-bottom: 20px;
-}
-.cardActiva{
-	background: #472b63!important;
-	min-height: 220px;
-}
+
 
 
 .card1{
@@ -572,6 +565,9 @@ p, button{
     top: -32px;
 }
 
+.hidden{
+	visibility: hidden!important;
+}
 
 .custom-scrollbar2 {
   /*position: relative;*/

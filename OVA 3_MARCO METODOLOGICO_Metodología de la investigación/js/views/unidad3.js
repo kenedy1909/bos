@@ -364,3 +364,285 @@ function removeefect(num){
     } 
     
 }
+
+function tarjertaGU3(num) {
+  $('.imgCentral').addClass('d-none');
+  
+  if (num == 1) {
+    $('.imgCentral1').removeClass('d-none');
+    $('.flechaLU3-1').addClass('hidden');
+    $('.flechaRU3-1').removeClass('hidden');
+
+
+    $('.btnDescarga1').removeClass('d-none');
+    $('.btnDescarga1').addClass('d-flex');
+    $('.btnDescarga2').removeClass('d-flex');
+    $('.btnDescarga2').addClass('d-none');
+    
+    $('.flechaRU3-1').attr('onclick',"tarjertaGU3(2)");
+    
+  }else if (num == 2) {
+    $('.imgCentral2').removeClass('d-none');
+    $('.imgCentral3').removeClass('d-none');
+
+
+    $('.btnDescarga2').removeClass('d-none');
+    $('.btnDescarga2').addClass('d-flex');
+    $('.btnDescarga1').removeClass('d-flex');
+    $('.btnDescarga1').addClass('d-none');
+
+    
+    $('.flechaLU3-1').removeClass('hidden');
+    $('.flechaRU3-1').removeClass('hidden');
+    
+    $('.flechaLU3-1').attr('onclick',"tarjertaGU3(1)");
+    $('.flechaRU3-1').attr('onclick',"tarjertaGU3(3)");
+    
+  }else if (num ==3) {
+    $('.imgCentral4').removeClass('d-none');
+
+    
+    $('.btnDescarga2').removeClass('d-none');
+    $('.btnDescarga2').addClass('d-flex');
+    $('.btnDescarga1').removeClass('d-flex');
+    $('.btnDescarga1').addClass('d-none');
+
+    
+    $('.flechaLU3-1').removeClass('hidden');
+    $('.flechaRU3-1').removeClass('hidden');
+    $('.flechaLU3-1').attr('onclick',"tarjertaGU3(2)");
+    $('.flechaRU3-1').attr('onclick',"tarjertaGU3(4)");
+    
+  }else if (num ==4) {
+    $('.imgCentral5').removeClass('d-none');
+    $('.imgCentral6').removeClass('d-none');
+
+
+    $('.btnDescarga2').removeClass('d-none');
+    $('.btnDescarga2').addClass('d-flex');
+    $('.btnDescarga1').removeClass('d-flex');
+    $('.btnDescarga1').addClass('d-none');
+
+    
+    $('.flechaLU3-1').removeClass('hidden');
+    $('.flechaLU3-1').attr('onclick',"tarjertaGU3(3)");
+    $('.flechaRU3-1').addClass('hidden');
+    
+  }
+}
+
+function slideModalU3_3(num) {
+  if (num == 1) {
+    var img1 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+    var img2 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<p class="text-justify text-black"><b class="h3 color-title"> No probabilísticas o dirigidas: </b> subgrupo de la población en el que la elección de los elementos no depende de la probabilidad sino de las características de la investigación.  
+                      <br><br>
+                      <b class="h3 color-title">Probabilísticas: </b>subgrupo de la población en el que todos los elementos de esta tienen la misma posibilidad de ser elegidos. 
+                    </p>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(10)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(2)");
+  }else if (num == 2) {
+    var img1 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<p class="text-justify text-black">
+                      De igual forma, este tipo de muestras son fundamentales en los procesos de investigación transeccionales, tanto en los descriptivos como en los correlacionales – causales estos son, por ejemplo: las encuestas de opinión, en las cuales lo que se busca es hacer apreciaciones de diferentes variables en la población objeto de estudio, las cuales se miden y examinan a través de estadísticas, donde todos los factores analizado se supone, tienen la misma probabilidad, por tal razón son llamados o denominadas muestras probabilísticas. Las estimaciones y la precisión de los resultados dependen en gran medida del muestreo.  
+                    </p>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(1)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(3)");
+  }else if (num == 3) {
+    var img1 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<p class="text-justify text-black">Para lo anterior es necesario entender los siguientes términos:</p>
+                      <div class="row d-flex justify-content-end mt-3">
+                        <div class="col-5 mr-3 border-10 p-3 bg-color-1">
+                          <p class="text-white text-justify">Que la población a la que generalmente se le denomina  <b> N.</b>, significa un conjunto de elementos</p>
+                        </div>
+                        <div class="col-5 ml-3 border-10 p-3 bg-color-1">
+                          <p class="text-white text-justify">Que la muestra a la que generalmente se le denomina n, es un subconjunto de la población <b> N.</b> </p>
+                        </div>
+                      </div>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(2)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(4)");
+  }else if (num == 4) {
+    var img1 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<div class="d-flex">
+                      <p class="text-justify text-black pr-3">Por tal razón, se debe tener en cuenta que en una población N de la cual la delimitación o demarcación responderá a los objetivos planteados desde el inicio de la investigación, se deberán establecer y delimitar valores y características de los elementos constitutivos de dicha población N. Ya que, lo que se busca es determinar, conocer o saber, los valores de porcentaje o promedio en dicha población, por lo que lo anterior, se expresaría de la siguiente forma (ver imagen): </p>
+                      <div class="w-100 text-center">
+                        <img src="assets/img/img_ova/imagen.png" width="60%">
+                        <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_1"><b>VER IMAGEN</b></p>
+                      </div>
+                    </div>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(3)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(5)");
+  }else if (num == 5) {
+    var img1 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<div class="d-flex">
+                      <div class="w-100 text-center">
+                        <img src="assets/img/img_ova/pregunta.png" width="85%">
+                      </div>
+                      <p class="text-justify text-black pr-3">Por lo tanto, cuando se utiliza una muestra probabilística, es fundamental que se pregunte lo siguiente: se cuenta con una población que pertenece a N, si es así, <span class="color-text"><b> ¿cuál es el menor número de compuestos o elementos muestrales? ¿Qué se busca o pretende indagar?</b></span> Para que haga parte de esa muestra n, lo cual aseguraría un resultado adquirido como promedio bajo o leve de error estándar dentro de la investigación. Es el tamaño del error en las predicciones en una muestra probabilística.</p>
+                    </div>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(4)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(6)");
+  }else if (num == 6) {
+    var img1 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<p class="text-justify text-black">La respuesta a esta pregunta busca encontrar la probabilidad de ocurrencia de <i>𝑌 ̅,</i> así como que mi estado <i> 𝑦 ̅ </i>se acerque a <i>𝑌 ̅,</i> el valor real de la población. Si establecemos el error estándar y lo fijamos en 0.01, sugerimos que esta fluctuación promedio de nuestro estimado <i> 𝑦 ̅ </i> con respecto a los valores reales de la población <i> 𝑌 ̅ </i> no sea > 0.01, es decir, que de 100 casos, 99 veces mi predicción sea correcta y que el valor <i> 𝑦 ̅ </i>se sitúe en un intervalo de confianza que comprenda el valor de <i> 𝑌 ̅.</i></p>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(5)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(7)");
+  }else if (num == 7) {
+    var img1 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<div class="d-flex">
+                        <p class="text-justify text-black pr-3">En conclusión, para una variación establecida (V) de Y. La pregunta sería: ¿De qué tamaño debe ser la muestra? Por lo que el resultado estaría dado a través de (haga clic para visualizar la imagen):</p>
+                        <div class="w-50 text-center">
+                          <img src="assets/img/img_ova/imagen.png" width="60%">
+                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2"><b>VER IMAGEN</b></p>
+                        </div>
+                      </div>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(6)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(8)");
+  }else if (num == 8) {
+    var img1 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+    var img5 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<div class="text-center">
+                      <p class="text-justify text-black pr-3 w-100">Ahora, analicemos un caso. Haga clic en “ver imagen” para profundizar sobre este tema.</p>
+                      <div class="w-100 text-center mt-3 d-flex justify-content-center align-items-center">
+                        <img src="assets/img/img_ova/imagen.png" width="20%">
+                        <p class="border-10 bg-color-1 py-3 w-25 cursor text-white ml-4" data-toggle="modal" data-target="#modalimg_U3-1_3"><b>VER IMAGEN</b></p>
+                      </div>
+                    </div>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(7)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(9)");
+  }else if (num == 9) {
+    var img1 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+    var img3 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+    var img4 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<p class="text-justify text-black">Cuando se requiere hacer análisis de minorías, es necesario utilizar muestras probabilísticas estratificadas, que son un subgrupo en el que la población se divide en segmentos y se selecciona una muestra para cada segmento. Por ejemplo, en el caso de niveles de escolaridad: transición, primaria, secundaria, universitario y posgrados.</p>`;
+    
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(8)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(10)");
+  }else if (num == 10) {
+    var img1 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+    var img2 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+    var img3 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+    var img4 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+    var img5 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+    $('.numerosSlide1').html(img1);
+    $('.numerosSlide2').html(img2);
+    $('.numerosSlide3').html(img3);
+    $('.numerosSlide4').html(img4);
+    $('.numerosSlide5').html(img5);
+    
+    var contenido = `<p class="text-justify text-black">La estratificación aumenta la precisión de la muestra e implica el uso deliberado de diferentes tamaños de muestra para cada estrato, a fin de lograr reducir la varianza de cada unidad de la media muestral (Kish, 1995).
+                      <br></br>
+                      Por ejemplo: el empleo del muestreo por racimos, esto se hace cuando no se cuenta con recursos suficientes para abarcar una porción o proporción muy grande o extensa, entonces se opta por la muestra por racimos o por clústeres.
+                      <br></br>
+                      Este tipo de muestreo además de reducir costos, reduce tiempo y energía, ya que la muestra se puede extraer de determinados lugares ya sean físicos o geográficos, a los que denominan racimos. Esto nos obliga, además, a diferenciar entre unidad de análisis y la muestral, la primera se refiere a quienes van a ser medidos y la segunda, en este caso, se referirá al racimo a través del cual se realiza la unidad de análisis.
+                    </p>`;
+    $('.contenidoNumeros').html(contenido);
+
+    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(9)");
+    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(1)");
+  }
+}
