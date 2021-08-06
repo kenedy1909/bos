@@ -50,6 +50,7 @@ function slide_predeterminado2(){
     $(".nav-link").removeClass('active');
     controlSlides2(1);
     $('#smartwizard').smartWizard("goToStep", 1);
+    tema=1;
 }
 
 function slide_link2(num){
@@ -64,7 +65,7 @@ function controlSlides2(num){
         case 0:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
             $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 7;
+            tema = 8;
             break;
         case 1:
             var pdf = `<div class="col-md-12">
@@ -126,7 +127,7 @@ function controlSlides2(num){
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
-            $("#content-ova").load("base/unidades/unidad3.html");
+            /*$("#content-ova").load("base/unidades/unidad3.html");*/
             tema = 1;
             break;
         default:
@@ -604,13 +605,19 @@ function principal2_5(num){
                                 <b>Cita bibliográfica:</b>
                                 <p>Spurgeon, P.; Hicks, C. y Terry, R. (1983), "A preliminary investigation into sex differences in reported friendship determinants among a group of early adolescents", in The British Journal of Sodal Psychology, vol. 22. pp. 63-64.</p>
                               </div>
-                              <div class="col-md-12 d-flex justify-content-center">
-                                <div class="btn_circlewhite cursor btn2_1 btn_min" onclick="pantallasmin(1)"></div>
-                                <div class="btn_circle cursor btn2_2 btn_min" onclick="pantallasmin(2)"></div>
-                                <div class="btn_circle cursor btn2_3 btn_min" onclick="pantallasmin(3)"></div>
-                                <div class="btn_circle cursor btn2_4 btn_min" onclick="pantallasmin(4)"></div>
-                                <div class="btn_circle cursor btn2_5 btn_min" onclick="pantallasmin(5)"></div>
-                                <div class="btn_circle cursor btn2_6 btn_min" onclick="pantallasmin(6)"></div>
+
+                              <div class="row">
+                                  <div class="col-md-3">
+                                    <p>Desliza para avanzar</p>
+                                  </div>
+                                  <div class="col-md-6 d-flex justify-content-center">
+                                    <div class="btn_circlewhite cursor btn2_1 btn_min" onclick="pantallasmin(1)"></div>
+                                    <div class="btn_circle cursor btn2_2 btn_min" onclick="pantallasmin(2)"></div>
+                                    <div class="btn_circle cursor btn2_3 btn_min" onclick="pantallasmin(3)"></div>
+                                    <div class="btn_circle cursor btn2_4 btn_min" onclick="pantallasmin(4)"></div>
+                                    <div class="btn_circle cursor btn2_5 btn_min" onclick="pantallasmin(5)"></div>
+                                    <div class="btn_circle cursor btn2_6 btn_min" onclick="pantallasmin(6)"></div>
+                                  </div>
                               </div>
                             </div>
                           </div>`;

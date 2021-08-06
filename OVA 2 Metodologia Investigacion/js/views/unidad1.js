@@ -30,7 +30,7 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");*/
-    slide_predeterminado();
+    /*slide_predeterminado();*/
     slide_link(tema);
 
     var knob = "";
@@ -127,7 +127,7 @@ function controlSlides(num){
         
         case 9:
             setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
-            $("#content-ova").load("base/unidades/unidad2.html");
+            /*$("#content-ova").load("base/unidades/unidad2.html");*/
             tema = 1;
             break;
         default:
@@ -448,7 +448,7 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color-1')
         var conjunto = `
                         <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 ml-6 mt-5 text-white ">
+                            <div class="col-12 ml-2 mt-5 text-white ">
                                 <p>Instruye sobre cómo ha de desarrollarse el nuevo estudio, 
                                 pues a través de este nos podemos dar cuenta de cómo se ha tratado 
                                 un problema de investigación específico, por ejemplo: ¿qué clases de 
@@ -523,7 +523,7 @@ function cardImg(num,texto){
     if (texto == 1) {
         $(".text-2").addClass('hidden')
         var conjunto = `
-                        <img src="assets/img/img_ova/busqueda-de-conocimiento.png" class="w-50 my-3" id="img-2">
+                        <img src="assets/img/img_ova/busqueda-de-conocimiento.png" class="w-50 mt-3 mb-auto" id="img-2">
                         `;
         $("#card-img-big-2").html(conjunto)
     }else {
@@ -550,9 +550,9 @@ function cardImg(num,texto){
     }if (num == 2) {
         $("#img-2").addClass('hidden')
         var conjunto = `
-                        <div class="row justify-content my-2 text-2" onclick="cardImg(1,2)">
+                        <div class="row justify-content my-2 text-2 m-auto" onclick="cardImg(1,2)">
                             <div class="col-12 text-white text-start">
-                                <p class="p-small" style="margin-top:42px">La aplicación de una orientación teórica o de referencia, para que su investigación no pierda rigor científico.
+                                <p class="p-small">La aplicación de una orientación teórica o de referencia, para que su investigación no pierda rigor científico.
                                 </p>
                             </div>
                         </div>
@@ -699,7 +699,7 @@ function fuentesBiblio(num,ventana){
                                                     <img src="assets/img/img_ova/carpeta.png" class="w-50 p-2">
                                                 </div>
                                             </div>
-                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
+                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-70 menos-margin-r-100 ml-5">
                                                 <h5>Fuentes primarias</h5>
                                             </div>
                                         </div>
@@ -731,7 +731,7 @@ function fuentesBiblio(num,ventana){
                                                     <img src="assets/img/img_ova/archivo.png" class="w-50 p-2">
                                                 </div>
                                             </div>
-                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
+                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-70 menos-margin-r-100 ml-5">
                                                 <h5>Fuentes secundarias</h5>
                                             </div>
                                         </div>
@@ -763,7 +763,7 @@ function fuentesBiblio(num,ventana){
                                                     <img src="assets/img/img_ova/dosier.png" class="w-50 p-2">
                                                 </div>
                                             </div>
-                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-80 menos-margin-r-100 ml-5">
+                                            <div class="textUnidad6 bg-celeste border-default text-center p-3 menos-margin-70 menos-margin-r-100 ml-5">
                                                 <h5>Fuentes terciarias</h5>
                                             </div>
                                         </div>

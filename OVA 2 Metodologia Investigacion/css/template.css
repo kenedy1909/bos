@@ -702,3 +702,9 @@ svg circle:nth-child(2){
     border-radius: 20px;
     padding: 20px;
 }
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}
