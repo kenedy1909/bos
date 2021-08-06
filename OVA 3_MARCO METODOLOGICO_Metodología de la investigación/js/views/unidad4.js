@@ -66,6 +66,15 @@ function controlSlides4(num){
             setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
+            var pdf = `<div class="col-md-12">
+                        <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD4/Instrumento 1.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 1.pdf</a>
+                        </p>
+                        <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD4/Instrumento 2.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 2.pdf</a>
+                        </p>
+                      </div>`;
+            $('.pdfs').html(pdf);
             break;
         case 1:
             $('.pdfs').html('');

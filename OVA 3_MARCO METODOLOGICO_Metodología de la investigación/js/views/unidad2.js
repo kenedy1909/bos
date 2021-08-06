@@ -70,6 +70,12 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
+            var pdf = `<div class="col-md-12">
+                            <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
+                            </p>
+                        </div>`;
+            $('.pdfs').html(pdf);
             break;
         case 1:
             var pdf = `<div class="col-md-12">
@@ -235,3 +241,16 @@ function openTabs(el) {
    btnTarget.classList.add("active");
 }
 
+function tarjetaU2_1(num) {
+  $('.hijaTarjeta1, .hijaTarjeta2').addClass('d-none');
+  $('.hijaTarjeta1, .hijaTarjeta2').removeClass('d-flex');
+  if (num == 1) {
+    $('.hijaTarjeta1').removeClass('d-none');
+    $('.hijaTarjeta1').addClass('d-flex');
+    
+  }else if (num == 2) {
+    $('.hijaTarjeta2').removeClass('d-none');
+    $('.hijaTarjeta2').addClass('d-flex');
+    
+  }
+}

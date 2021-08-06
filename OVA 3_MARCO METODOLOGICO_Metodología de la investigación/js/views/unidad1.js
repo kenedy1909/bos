@@ -87,6 +87,12 @@ function controlSlides(num){
             bar = document.querySelector('.custom-scrollbar__bar');
             container = document.querySelector('.custom-scrollbar__inner');
             /*scroll();*/
+            var pdf = `<div class="col-md-12">
+                            <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
+                            </p>
+                        </div>`;
+            $('.pdfs').html(pdf);
             break;
         case 2:
             $('.pasos').removeClass('efectos');

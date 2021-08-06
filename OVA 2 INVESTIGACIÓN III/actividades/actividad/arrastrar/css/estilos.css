@@ -37,6 +37,15 @@
     }
 }
 
+.div-juego{
+    width: 33%;
+}
+
+.container-draggable .div-juego{
+    width: 90% !important;
+    margin-top: 90px;
+}
+
 
 
 .redi1 .listaComponentes {

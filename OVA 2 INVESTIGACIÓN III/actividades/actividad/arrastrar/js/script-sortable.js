@@ -57,7 +57,7 @@ var contenedorCR1 = ".contenedorC";
 // var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
-        code : '<div style="width: 33%;" data-order-origen="contenedorA">\n'+
+        code : '<div class="div-juego" data-order-origen="contenedorA">\n'+
         '<div style="width: 99%;background: #F7E448;padding: 25px;border-radius: 30px;box-shadow: 1px 1px 7px 0px;" >\n'+
         '<div style="text-align: center;position: relative;top: -50px;"><img src="img/reflexion.png" style="max-width: 20%;"></div>\n'+
         '<div><p>Son los que hacemos cuando el tema ha sido poco estudiado y no existe mucha información sobre el.</p></div>\n'+
@@ -65,7 +65,7 @@ var arrOrigenR1 = [
         '</div>\n'
     },
     {
-        code : '<div style="width: 33%;" data-order-origen="contenedorB">\n'+
+        code : '<div class="div-juego" data-order-origen="contenedorB">\n'+
         '<div style="width: 99%;background: #F7E448;padding: 25px;border-radius: 30px;box-shadow: 1px 1px 7px 0px;" >\n'+
         '<div style="text-align: center;position: relative;top: -50px;"><img src="img/dato.png" style="max-width: 20%;"></div>\n'+
         '<div><p>Remite a saber las causas que originan un fenómeno.</p></div>\n'+
@@ -73,7 +73,7 @@ var arrOrigenR1 = [
         '</div>\n'
     },
     {
-        code : '<div style="width: 33%;" data-order-origen="contenedorC">\n'+
+        code : '<div class="div-juego" data-order-origen="contenedorC">\n'+
         '<div style="width: 99%;background: #F7E448;padding: 25px;border-radius: 30px;box-shadow: 1px 1px 7px 0px;" >\n'+
         '<div style="text-align: center;position: relative;top: -50px;"><img src="img/verificacion_antecedentes.png" style="max-width: 20%;"></div>\n'+
         '<div><p>Esculcar cada elemento del objeto, situación o fenómeno y describirlo.</p></div>\n'+
