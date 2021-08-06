@@ -72,7 +72,7 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
 
