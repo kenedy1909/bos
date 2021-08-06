@@ -177,7 +177,7 @@ function controlSlides(num){
             break;
         case 33:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
-            $("#content-ova").load("base/unidades/unidad2.html");
+            /*$("#content-ova").load("base/unidades/unidad2.html");*/
             tema = 1;
             break;
         default:
