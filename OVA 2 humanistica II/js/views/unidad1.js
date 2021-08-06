@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
