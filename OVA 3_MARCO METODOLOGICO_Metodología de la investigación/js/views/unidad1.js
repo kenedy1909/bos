@@ -78,7 +78,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", ">");
+            setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", ">");
             dragging = "";
             diff = "";
             newTop = "";
@@ -96,16 +96,16 @@ function controlSlides(num){
             break;
         case 2:
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Método hipotético");            
+            setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Actividad");
+            setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
             dragging = "";
             diff = "";
             newTop = "";
@@ -116,7 +116,8 @@ function controlSlides(num){
             scroll();
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");            tema = 1;
+            setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");            
+            tema = 1;
             break;
         default:
             break;

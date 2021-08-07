@@ -1,113 +1,85 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-
+<!DOCTYPE html>
+<html lang="es" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name='author' content='Escuela Didáctica, info@escueladidactica.com'>
-    <title>Actividad</title>
-    
-    <link media="all" type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/animate.css">
-    <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/backdrop.css">
-    <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/jquery-ui.min.css">
-    <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/emparejamiento.css">
-    <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/estilos.css">
+  <meta charset="UTF-8">
+  <title>CodePen - Crucigrama</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+  <link rel="stylesheet" href="../css/actividad4/style.css">
+  <link rel="stylesheet" href="../css/actividad4/backdrop.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+
 </head>
-
 <body>
-    <div class="backdrop actividad in" id="actividad-1">
-        <div class="fondo">
-            <div class="row principal" style="">
-                <div class="col-md-4 secundario" style="">
-                    <div class="d-flex div-img" style="">
-                      <img src="../img/img2/actividad_interactiva.png" alt="" style="" class="imagen">
-                      <div class="text-center texto_header" style="">
-                        <b class="pl-1 pr-1" style="">ACTIVIDAD INTERACTIVA</b>
-                        <div class="linea_blue" style=""></div>
-                        <i><p class="text-center text-muted" style="font-size: 17px;">EMPAREJAMIENTO</p></i>
-                      </div>
-                    </div>
-                </div>
-                <div class="col-md-8 row terciario" style="">
-                    <p class="info_actividad shadow">
-                        Haga clic sobre el concepto y luego en la definición correspondiente, al finalizar pulse  la opción <b>"Calificar"</b> para conocer su puntuación.
-                    </p>
-                </div>
-            </div>
-            <div class="contenido" id="contenido_actividad1">
-                <div class="row mauto">
-                    <div class="col-xs-4">
-                        <ul id="grupoA" class="list-group connectedSortable">
-                            <li class="list-group-item" id="item-2" data-item="2" draggable="false">
-                                <div class="ficha-texto">El método en la economía</div>
-                            </li>
-                            <li class="list-group-item" id="item-0" data-item="0" draggable="false">
-                                <div class="ficha-texto">La comprobación empírica de la economía</div>
-                            </li>
-                            <li class="list-group-item" id="item-1" data-item="1" draggable="false">
-                                <div class="ficha-texto">Otro aspecto tiene que ver con los desarrollos en los campos centrales de la teoría económica es</div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="col-xs-7 col-xs-offset-1">
-                        <ul id="grupoB" class="list-group connectedSortable">
-                            
-                            <li class="list-group-item" data-item="1" draggable="false">
-                                <div class="ficha-texto">
-                                    <p>La microeconomía y la macroeconomía.</p>
-                                </div>
-                            </li>
-                            <li class="list-group-item" data-item="2" draggable="false">
-                                <div class="ficha-texto">
-                                    <p>Procedimiento del cual se sirve la disciplina para desarrollar un nuevo conocimiento</p>
-                                </div>
-                            </li>
-                            <li class="list-group-item" data-item="0" draggable="false">
-                                <div class="ficha-texto">
-                                    <p>Se hace mediante la econometría y la estadística.</p>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-12 text-center">
-                    <button id="calificar" class="btn btn-primary btn-calificar">Calificar</button>
-                </div>
-            </div>
+<!-- partial:index.partial.html -->
+<div id="app" class="" @keyup.escape="selected = undefined">
+  <div class="table-container" style="display:none;" v-show="true">
+    <div class="row principal" style="padding: 20px;">
+        <div class="col-md-4 col-sm-4 d-flex">
+           <img src="../img/img4/actividad_interactiva.png" class="img-activi">
+           <div>
+               <div class="content-text-img-activi-2" style="width: 100%;">
+                 <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
+               </div>
+               <p class="text-center">CRUCIGRAMA</p>
+           </div>
+        </div>
+        <div class="col-md-8 col-sm-8 terciario" style="">
+            <p class="info_actividad shadow">
+                Complete el crucigrama con palabras respectivas de acuerdo con las pistas que se brindaran al oprimir cada numero. Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
+            </p>
+        </div>
+        <div class="col-md-12 col-sm-12">
+            <p class="text-center p-4 p_black"><i>oprimir cada numero para ver una pista</i></p>
         </div>
     </div>
-    <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
-        </div>
+    <!-- <div class="mensaje" v-if="mensaje !== undefined">
+      <div class="content">{{mensaje}}</div>
+      <button @click="mensaje = undefined" class="btn btn-primary">OK</button>
+    </div>  -->
+    <table>
+      <tr v-for="(row, y) in matrix" :key="y">
+        <td v-for="(cell, x) in row" :class="{empty: cell.empty, start: !!cell.start, selected: cell.words.includes(selected)}" @click="selectWord(cell.start)">
+          <label v-if="!!cell.start">{{cell.start}}</label>
+          {{cell.words.some(i => completed[i]) ? cell.letter : ' '}}
+        </td>
+      </tr>
+    </table>
+    <div v-if="selected !== undefined" style="text-align: center;">
+      <p class="pista" v-if="pista">
+        {{pista}}
+      </p>
+      <input v-model="answer" ref="input" @keyup.enter="corregir"/>
+      <button @click="corregir" class="btn btn-primary">Colocar</button>
     </div>
-    <!-- Incluisión de scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/actividad4/jquery-ui.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/actividades.js"></script>
-    <script src="../js/actividad4/script.js"></script>
-    <!-- Fin de scripts -->
-</body>
+    <hr>
+    <button class="btn btn-mostaza" @click="finalizar"><b>Calificar</b></button>
+  </div>  
+  <h3 v-show="false">Cargando....</h3>
+</div>
 
+<div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body center-block">
+                <div class="mensaje text-center">
+                    Tu puntaje es: <span class="puntaje">40%</span>
+                    <span class="texto-puntaje"></span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
+                    intentar</button>
+                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/vue'></script>
+  <script  src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script  src="../js/actividades.js"></script>
+  <script  src="../js/actividad4/script.js"></script>
+
+</body>
 </html>

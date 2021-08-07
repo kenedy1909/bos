@@ -208,7 +208,7 @@ class SelectDropdown {
 
 function calificar(){
 	var res = [];
-	for (var i = 0; i < 6; i++) {
+	for (var i = 0; i < 3; i++) {
 		res[i] = $("#op_"+i).val();
 	}
 	var puntaje = 100;

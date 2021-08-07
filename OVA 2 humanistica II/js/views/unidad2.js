@@ -29,7 +29,7 @@ $( document ).ready(function() {
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
-    /*slide_predeterminado();*/
+    slide_predeterminado();
     var pdf = `<div class="col-md-12">
                   <p class="p_black">
                         <a href="assets/PDF/Unidad 1/etica_como_esencia.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Etica_como_esencia.pdf    <b class="text-cafe"><u>Ver</u></b></a>
@@ -66,6 +66,7 @@ $( document ).ready(function() {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+
 }
 
 function slide_predeterminado(){
@@ -73,13 +74,14 @@ function slide_predeterminado(){
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 1);
+    tema=1;
 }
 
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
-    controlSlides(num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
+    controlSlides(num+1);
 }
 
 function controlSlides(num){

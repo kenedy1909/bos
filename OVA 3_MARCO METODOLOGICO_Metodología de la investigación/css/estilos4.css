@@ -87,3 +87,23 @@
 .card-inactiva-c{
   background: #484848 !important;
 }
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.w-80px{
+  width: 80px;
+}
+
+.h-80px{
+  height: 80px;
+}
+
+.w-40px{
+  width: 40px;
+}
+
+.top-n40px{
+  top: -40px;
+}

@@ -902,7 +902,7 @@ card flip*/
   justify-content: center
 }
 .info_actividad{
-    background: rgba(255, 192, 0);
+    background: var(--bg-color-claro);
     border-radius: 20px;
     padding: 20px;
 }

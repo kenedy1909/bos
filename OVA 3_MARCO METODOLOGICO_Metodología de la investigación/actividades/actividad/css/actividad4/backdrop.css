@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Barmeno';
-    src: url('../fonts/barmeno.woff2') format('woff2'),
-        url('../fonts/barmeno.woff') format('woff');
+    src: url('../../fonts/barmeno.woff2') format('woff2'),
+        url('../../fonts/barmeno.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family:'Barmeno';
-    src: url('../fonts/barmeno_medium.woff2') format('woff2'),
-        url('../fonts/barmeno_medium.woff') format('woff');
+    src: url('../../fonts/barmeno_medium.woff2') format('woff2'),
+        url('../../fonts/barmeno_medium.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barmeno';
-    src: url('../fonts/barmeno_bold.woff2') format('woff2'),
-        url('../fonts/barmeno_bold.woff') format('woff');
+    src: url('../../fonts/barmeno_bold.woff2') format('woff2'),
+        url('../../fonts/barmeno_bold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -24,25 +24,25 @@
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/PTS55F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS55F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: italic;
-    src: url('../fonts/PTS56F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS56F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 800;
     font-style: normal;
-    src: url('../fonts/PTS75F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS75F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 800;
     font-style: italic;
-    src: url('../fonts/PTS76F-webfont.woff') format('woff');
+    src: url('../../fonts/PTS76F-webfont.woff') format('woff');
 }
 a {
     color: #49a5aa;
@@ -58,7 +58,7 @@ body {
     height: 100%;
 }
 button.close{
-    background: #ad123c;
+    background: #fff;
     border-radius: 50%;
     color: #fff;
     height: 30px;
@@ -74,7 +74,7 @@ button.close{
     z-index: 1000;
 }
 button.close:focus, button.close:hover{
-    background: #ffd200;
+    background: #79CAF3;
     opacity: 1;
 }
 button.cerrar-leccion{
@@ -88,10 +88,10 @@ h1, h2, h3, h4, h5{
     font-weight: 600;
 }
 h1{
-    color: #ad123c;
+    color: #fff;
 }
 h3{
-    color: #FFD200;
+    color: #79CAF3;
 }
 html{ 
     height: 100%; 
@@ -143,7 +143,7 @@ html{
     font-weight: 600;
 }
 .backdrop.actividad header h1{
-    text-shadow: 4px 3px 0 #ffd200;
+    text-shadow: 4px 3px 0 #79CAF3;
 }
 .backdrop.recurso header h1{
     text-shadow: 4px 3px 0 #49a5aa;
@@ -156,7 +156,7 @@ html{
     padding: 2px 25px;
 }
 .backdrop.actividad header h2{
-    color: #ffd200;
+    color: #79CAF3;
 }
 .backdrop.recurso header h2{
     color: #49a5aa;
@@ -177,7 +177,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #7a3d78;
+    background: #003442;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -186,15 +186,15 @@ html{
     border-radius: 20px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: #994c91;;
+    background: #79CAF3;
     border: none;
     outline: 0;
 }
 .btn-secundary{
-    background: #ffd200;
+    background: #79CAF3;
     border: none;
     border-radius: 0;
-    color: #ad123c;
+    color: #fff;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -217,10 +217,10 @@ html{
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img1/bien.png') center no-repeat;
+    background: url('../../img/img4/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img1/mal.png') center no-repeat;
+    background: url('../../img/img4/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;
@@ -251,7 +251,7 @@ html{
     color: #8eb936;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #ad123c;
+    color: #000;
 }
 @keyframes wobble {
     0% {

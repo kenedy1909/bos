@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -72,7 +73,7 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
 
@@ -177,7 +178,7 @@ function controlSlides(num){
             break;
         case 33:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
-            $("#content-ova").load("base/unidades/unidad2.html");
+            /*$("#content-ova").load("base/unidades/unidad2.html");*/
             tema = 1;
             break;
         default:

@@ -217,7 +217,7 @@ function calificar(){
 	var puntaje = 100;
 	for (var i = 0; i < res.length; i++) {
 		if (res[i] == 'incorrecta') {
-			puntaje = puntaje - 33.3;
+			puntaje = puntaje - 16.6;
 			
 		}
 	}

@@ -218,9 +218,11 @@ html{
 }
 .calificacion .modal-body.exito{
     background: url('../../img/img1/bien.png') center no-repeat;
+    background-size: 100%;
 }
 .calificacion .modal-body.parcial{
     background: url('../../img/img1/mal.png') center no-repeat;
+    background-size: 100%;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;

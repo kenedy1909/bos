@@ -67,7 +67,7 @@ function slide_link2(num){
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
             var pdf = `<div class="col-md-12">
@@ -84,10 +84,10 @@ function controlSlides2(num){
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             tema = 1;
             break;
         default:

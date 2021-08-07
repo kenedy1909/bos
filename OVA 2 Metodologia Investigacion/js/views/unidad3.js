@@ -72,7 +72,7 @@ function controlSlides3(num){
         case 0:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
             $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 17;
+            tema = 11;
             break;
         case 1:
             var pdf = `<div class="col-md-12">
@@ -359,7 +359,7 @@ function cardActividad(num){
                         <br>
                         <p class="p_black justificado">Adicional, antes de continuar realizar la lectura: Adopción de una teoría o desarrollo de una perspectiva teórica o de referencia. </p>
                         <br>
-                        <p class="p_black justificado">Lo puede encontrar en la carpeta XXXXX</p>
+                        <p><a href="assets/PDF/UNIDAD3/pdf-1.pdf" target="_blank">Adopción de una teoría o desarrollo de una perspectiva teórica o de referencia.pdf</a>
             `;
         $(".card-actividad-text-6").html(conjunto)
     }if (num == 7) {
@@ -451,8 +451,8 @@ function teorias() {
         var texto = `
                     
                     <div class="col-md-12 row">
-                          <div class="col-md-1" style="z-index: 100;">
-                            <img src="assets/img/img_ova/actividad_general.png" class="img_general" style="">
+                          <div class="col-md-2" style="z-index: 100;">
+                            <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
                             <p class="texto_act_general" style="">ACTIVIDAD # 7</p>
@@ -460,7 +460,7 @@ function teorias() {
                           </div>
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
-                              <div class="indicacionesimg" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
+                              <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
                               <div><p style="" class="size_18">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
@@ -514,8 +514,8 @@ function teorias() {
         var texto = `
                     
                     <div class="col-md-12 row">
-                          <div class="col-md-1" style="z-index: 100;">
-                            <img src="assets/img/img_ova/actividad_general.png" class="img_general" style="">
+                          <div class="col-md-2" style="z-index: 100;">
+                            <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
                             <p class="texto_act_general" style="">ACTIVIDAD # 8</p>
@@ -523,7 +523,7 @@ function teorias() {
                           </div>
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
-                              <div class="indicacionesimg" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
+                              <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
                               <div><p style="" class="size_18">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
@@ -573,6 +573,9 @@ function teorias() {
                         </div>
                         <div class="col-md-8 d-flex">
                             <div class="m-auto" id="rec">
+                                <div mt-auto>
+                                    <p class="p_black p-3 text-center">Clic en cada número para conocer la información</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -583,8 +586,8 @@ function teorias() {
         var texto = `
                     
                     <div class="col-md-12 row">
-                          <div class="col-md-1" style="z-index: 100;">
-                            <img src="assets/img/img_ova/actividad_general.png" class="img_general" style="">
+                          <div class="col-md-2" style="z-index: 100;">
+                            <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
                             <p class="texto_act_general" style="">ACTIVIDAD # 9</p>
@@ -592,7 +595,7 @@ function teorias() {
                           </div>
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
-                              <div class="indicacionesimg" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
+                              <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
                               <div><p style="" class="size_18">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
@@ -678,8 +681,8 @@ function teorias() {
         var texto = `
                     
                     <div class="col-md-12 row">
-                          <div class="col-md-1" style="z-index: 100;">
-                            <img src="assets/img/img_ova/actividad_general.png" class="img_general" style="">
+                          <div class="col-md-2" style="z-index: 100;">
+                            <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
                             <p class="texto_act_general" style="">ACTIVIDAD # 10</p>
@@ -687,7 +690,7 @@ function teorias() {
                           </div>
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
-                              <div class="indicacionesimg" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
+                              <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
                               <div><p style="" class="size_18">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
@@ -774,14 +777,14 @@ function circles() {
     }else if (circle_num == 3) {
         var texto = `
                     <p class="p_black justificado">Posterior a esto subdividir las normas de la siguiente forma por títulos y subtítulos, si fuera el caso de la siguiente forma:</p>
-                    <ul class="d-flex">
-                        <li class="p_black pr-5"><b>Leyes.</b></li>
-                        <li class="p_black pr-5"><b>Decretos.</b></li>
-                        <li class="p_black pr-5"><b>Resoluciones.</b></li>
-                        <li class="p_black pr-5"><b>Acuerdos.</b></li>
-                        <li class="p_black pr-5"><b>Ordenanzas.</b></li>
-                        <li class="p_black pr-5"><b>Sentencias.</b></li>
-                        <li class="p_black pr-5"><b>Circulares.</b></li>
+                    <ul class="row">
+                        <li class="p_black col p-0"><b>Leyes.</b></li>
+                        <li class="p_black col p-0"><b>Decretos.</b></li>
+                        <li class="p_black col pl-0 pr-3"><b>Resoluciones.</b></li>
+                        <li class="p_black col p-0"><b>Acuerdos.</b></li>
+                        <li class="p_black col p-0"><b>Ordenanzas.</b></li>
+                        <li class="p_black col p-0"><b>Sentencias.</b></li>
+                        <li class="p_black col p-0"><b>Circulares.</b></li>
                     </ul>
                     <p class="p_black justificado border-b-mm-o">Como puedes ver, hay una gran diferencia entre hacer un listado y presentar las definiciones que se encuentran en las normas.</p>
                     `;
@@ -880,7 +883,7 @@ function videos() {
                     <div>
                         <p class="p_black justificado"><b>Video:</b> Dr. Roberto Hernández Sampieri. La revisión de la literatura. </p>
                         <p class="p_black justificado">Tiempo: 8 minutos autónomos.</p>
-                        <p class="p_black justificado">El video lo encuentra en la carpeta https://www.youtube.com/watch?v=zrvZFEcQ_rg</p>
+                        <p class="p_black justificado">El video lo encuentra en la carpeta <a href="https://www.youtube.com/watch?v=zrvZFEcQ_rg" target="_blank">https://www.youtube.com/watch?v=zrvZFEcQ_rg</a></p>
                     </div>
                     `;
         $(".video-1").html(texto);
@@ -890,7 +893,7 @@ function videos() {
                     <div>
                         <p class="p_black justificado"><b>Video:</b> Dra. Rosario Hernández.</p>
                         <p class="p_black justificado">Tiempo: 8 minutos autónomos.</p>
-                        <p class="p_black justificado">El video lo encuentra en la carpeta https://www.youtube.com/watch?v=cG4UnZDH_d8</p>
+                        <p class="p_black justificado">El video lo encuentra en la carpeta <a href="https://www.youtube.com/watch?v=cG4UnZDH_d8" target="_blank">https://www.youtube.com/watch?v=cG4UnZDH_d8</a></p>
                     </div>
                     `;
         $(".video-1").html('<p class="m-auto text-center w-fit"><img src="assets/img/img_ova/jugar.png" class="w-125px"></p>');
