@@ -314,8 +314,8 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 2:
-            var cont = `<div class="m-auto"><p style="font-size: 13px;">Capítulos de libros cuando fueron escritos por varios autores o recopilado por una o más personas:</p>
-                      <ul style="font-size: 12px;">
+            var cont = `<div class="m-auto"><p style="font-size: 11px;">Capítulos de libros cuando fueron escritos por varios autores o recopilado por una o más personas:</p>
+                      <ul style="font-size: 11px;">
                         <li>Título y subtítulo del capítulo</li>
 
                         <li>Nombre(s) de (los) autor(es).</li>

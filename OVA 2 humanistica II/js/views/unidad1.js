@@ -28,7 +28,7 @@ $( document ).ready(function() {
         actualizarprogress();
     });
 
-    slide_predeterminado();
+    /*slide_predeterminado();*/
     $(".opcion-circular").on('click', opciones_circulares);
     $(".btn-parque").on('click', opciones_parques);
     $(".hoja").on('click', hojas_arbol);

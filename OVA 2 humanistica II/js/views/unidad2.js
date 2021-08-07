@@ -25,11 +25,10 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    slide_predeterminado();
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
-    slide_predeterminado();
+    /*slide_predeterminado();*/
     var pdf = `<div class="col-md-12">
                   <p class="p_black">
                         <a href="assets/PDF/Unidad 1/etica_como_esencia.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Etica_como_esencia.pdf    <b class="text-cafe"><u>Ver</u></b></a>
@@ -74,10 +73,10 @@ function slide_predeterminado(){
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 1);
-    tema=1;
 }
 
 function slide_link(num){
+    tema=1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num-1);
@@ -89,7 +88,7 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","Bioética o ética para la vida");
             $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 31;
+            tema = 32;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","Bioética o ética para la vida");

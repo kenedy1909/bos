@@ -703,6 +703,12 @@ p, button{
   border-top: 37px solid transparent;
   border-bottom: 37px solid transparent;
 }
+.triag_cambiaslide2{
+  width: 0;height: 0;
+  border-right: 81px solid #3A3838;
+  border-top: 37px solid transparent;
+  border-bottom: 37px solid transparent;
+}
 
 
 

@@ -25,7 +25,7 @@ $( document ).ready(function() {
         slide();
         
     });
-    slide_predeterminado();
+    /*slide_predeterminado();*/
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
@@ -62,6 +62,7 @@ function slide_predeterminado(){
 }
 
 function slide_link(num){
+    tema=1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num);
