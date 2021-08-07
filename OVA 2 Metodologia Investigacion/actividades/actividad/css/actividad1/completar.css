@@ -219,7 +219,7 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 153px;
+    /*height: 153px;*/
 }
 
 .seleccionable{

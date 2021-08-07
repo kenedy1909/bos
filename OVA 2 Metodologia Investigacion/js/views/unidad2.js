@@ -81,7 +81,7 @@ function controlSlides2(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
-            var cont = `<img src="assets/img/img_ova/saber-como.png" style="max-width: 70%;">`;
+            var cont = `<div class="m-auto"><img src="assets/img/img_ova/saber-como.png" style="max-width: 70%;"><div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_blanco_can');
             $('#circle_can').addClass('circulo_morado');
@@ -295,7 +295,7 @@ function funcion_vanvas() {
 function contenido2_3(num) {
     switch(parseInt(num)){
         case 1:
-            var cont = `<p>Libros:</p>
+            var cont = `<div class="m-auto"><p>Libros:</p>
                       <ul>
                         <li>Título y subtítulo del libro.</li>
 
@@ -308,13 +308,13 @@ function contenido2_3(num) {
                         <li>Nombre de la editorial.</li>
 
                         <li>No. Edición o reimpresión.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 2:
-            var cont = `<p style="font-size: 13px;">Capítulos de libros cuando fueron escritos por varios autores o recopilado por una o más personas:</p>
+            var cont = `<div class="m-auto"><p style="font-size: 13px;">Capítulos de libros cuando fueron escritos por varios autores o recopilado por una o más personas:</p>
                       <ul style="font-size: 12px;">
                         <li>Título y subtítulo del capítulo</li>
 
@@ -335,13 +335,13 @@ function contenido2_3(num) {
                         <li>No. Edición o reimpresión.</li>
 
                         <li>Si el capítulo se había publicado antes en otra fuente, citarla si el libro la incluye.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 3:
-            var cont = `<p>Artículos de revistas:</p>
+            var cont = `<div class="m-auto"><p>Artículos de revistas:</p>
                       <ul>
                         <li>Título y subtítulo del artículo</li>
 
@@ -352,13 +352,13 @@ function contenido2_3(num) {
                         <li>Año / volumen / Número o equivalente.</li>
 
                         <li>Página de inicio y final del artículo.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 4:
-            var cont = `<p>Artículo periodístico:</p>
+            var cont = `<div class="m-auto"><p>Artículo periodístico:</p>
                       <ul>
                         <li>Título y subtítulo del artículo</li>
 
@@ -369,13 +369,13 @@ function contenido2_3(num) {
                         <li>Sección y páginas donde se publicó</li>
 
                         <li>Fecha de publicación.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 5:
-            var cont = `<p>Videos y películas:</p>
+            var cont = `<div class="m-auto"><p>Videos y películas:</p>
                       <ul>
                         <li>Título y subtítulo del video/película.</li>
 
@@ -384,14 +384,14 @@ function contenido2_3(num) {
                         <li>Nombre de la institución o empresa productora.</li>
 
                         <li>Lugar y fecha de producción</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 6:
-            var cont = `<p style="font-size: 13px;">Trabajos presentados en seminarios, conferencias, congresos y eventos similares:</p>
-                      <ul style="font-size: 12px;">
+            var cont = `<div class="m-auto"><p>Trabajos presentados en seminarios, conferencias, congresos y eventos similares:</p>
+                      <ul>
                         <li>Título y subtítulo del trabajo.</li>
 
                         <li>Nombre(s) de (los) autor(es).</li>
@@ -405,13 +405,13 @@ function contenido2_3(num) {
                         <li>Lugar (ciudad y país).</li>
 
                         <li>Nombre del presidente del comité organizador.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 7: 
-            var cont = `<p>Entrevistas a expertos:</p>
+            var cont = `<div class="m-auto"><p>Entrevistas a expertos:</p>
                       <ul>
                         <li>Nombre entrevistado.</li>
 
@@ -424,13 +424,13 @@ function contenido2_3(num) {
                         <li>Título o temas.</li>
 
                         <li>Lugar y forma en la que está disponible.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 8: 
-            var cont = `<p>Tesis y disertaciones:</p>
+            var cont = `<div class="m-auto"><p>Tesis y disertaciones:</p>
                       <ul>
                         <li>Título y subtítulo de la tesis.</li>
 
@@ -443,13 +443,13 @@ function contenido2_3(num) {
                         <li>Mes y año.</li>
 
                         <li>Ciudad y país.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 9: 
-            var cont = `<p>Documentos no publicados:</p>
+            var cont = `<div class="m-auto"><p>Documentos no publicados:</p>
                       <ul>
                         <li>Título y subtítulo del documento.</li>
 
@@ -460,13 +460,13 @@ function contenido2_3(num) {
                         <li>Lugar y fecha.</li>
 
                         <li>Ubicación donde está disponible.</li>
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 10: 
-            var cont = `<p>Sitios web:</p>
+            var cont = `<div class="m-auto"><p>Sitios web:</p>
                       <ul>
                         <li>Nombre del sitio (URL).</li>
 
@@ -475,7 +475,7 @@ function contenido2_3(num) {
                         <li>Si es un documento anotar nombre de autores y lugar.</li>
 
                         
-                      </ul>`;
+                      </ul></div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_morado');
             $('#circle_can').addClass('circulo_blanco_can');
