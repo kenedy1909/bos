@@ -108,11 +108,11 @@ function actualizarprogress(){
     if(unidad == 1){
         naveg = 0;
     }else if(unidad == 2){
-        naveg = 6;
+        naveg = 7;
     }else if(unidad == 3){
         naveg = 9;
     }else if(unidad == 4){
-        naveg = 16;
+        naveg = 12;
     }
     done = $(".done").length;
     /*if(unidad == 2){

@@ -60,7 +60,7 @@ function slide_link3(num){
 function controlSlides3(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 3;
             break;
@@ -74,13 +74,13 @@ function controlSlides3(num){
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             tema = 1;
             break;    
         default:
