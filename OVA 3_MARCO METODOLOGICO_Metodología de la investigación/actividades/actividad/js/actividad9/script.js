@@ -150,14 +150,16 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['falsacion', ''];
-            this.palabras[1] = ['falsacion', ''];
-            this.palabras[2] = ['falsacion', ''];
-            this.palabras[4] = ['falsacion', ''];
-            this.palabras[5] = ['falsacion', ''];
-            this.palabras[6] = ['falsacion', ''];
-            this.palabras[7] = ['falsacion', ''];
-            this.palabras[8] = ['falsacion', ''];
+            this.palabras[0] = ['cualitativo', ''];
+            this.palabras[1] = ['cualitativo', ''];
+            this.palabras[2] = ['cualitativo', ''];
+            this.palabras[4] = ['cualitativo', ''];
+            this.palabras[5] = ['cualitativo', ''];
+            this.palabras[6] = ['cualitativo', ''];
+            this.palabras[7] = ['cualitativo', ''];
+            this.palabras[8] = ['cualitativo', ''];
+            this.palabras[9] = ['cualitativo', ''];
+            this.palabras[10] = ['cualitativo', ''];
 
             return this.palabras;
 

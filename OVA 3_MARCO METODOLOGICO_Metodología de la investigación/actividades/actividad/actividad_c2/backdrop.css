@@ -114,7 +114,7 @@ html{
     }
 }
 .backdrop.actividad{
-    background: #0075A8;
+    background: #ffffff;
 }
 .backdrop.recurso{
     background: #49a5aa;
@@ -128,7 +128,7 @@ html{
     padding: 20px 40px;
 }
 .backdrop.actividad header{
-    /* background: rgb(51 122 183 / 50%); */
+    background: rgba(255,210,0,.4);
 }
 .backdrop.recurso header{
     background: rgba(73,165,170,.4);
@@ -156,7 +156,7 @@ html{
     padding: 2px 25px;
 }
 .backdrop.actividad header h2{
-    color: #337ab7;
+    color: #ffd200;
 }
 .backdrop.recurso header h2{
     color: #49a5aa;
@@ -169,6 +169,7 @@ html{
     overflow: auto;
 }
 .backdrop .fondo {
+    background-image: url(../img/logo-footer.png), url(../img/patron-fondo.png);
     background-color: #fff;
     position: relative;
     background-repeat: no-repeat, repeat;
@@ -176,12 +177,13 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #0075a8;
+    background: #003442;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     padding: 6px 30px;
+    border-radius: 20px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
     background: #ffd200;
@@ -189,10 +191,10 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #337ab7;
+    background: #ffd200;
     border: none;
     border-radius: 0;
-    color: #fff;
+    color: #ad123c;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -211,14 +213,14 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-     height: 386px; 
+    height: 386px;
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img6/bien.png') center no-repeat;
+    background: url('./img/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img6/mal.png') center no-repeat;
+    background: url('./img/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;

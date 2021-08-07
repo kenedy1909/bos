@@ -8,10 +8,10 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "El problema debe expresar una relación existente entre dos o más conceptos o variables", answer_id: "A"},
-        {question_txt: "El problema  no debe estar formulado como pregunta, claramente sin ambigüedades.", answer_id: "B"},
-        {question_txt: "Las preguntas de la investigación dirigen o encaminan hacia las respuestas que se busca con la investigación que se planea realizar", answer_id: "A"},
-        {question_txt: "Las preguntas pueden ser más o menos generales, pero es mejor no ser muy precisos.", answer_id: "B"}
+        {question_txt: "Los experimentos “puros” implican el manejo de grupos intactos, es decir, que estaban creados antes del experimento.", answer_id: "B"},
+        {question_txt: "Las hipótesis pueden considerarse, una posible respuesta a la pregunta de investigación.", answer_id: "A"},
+        {question_txt: "Los estudios con posprueba son el grado de confianza que se tiene de que los resultados del experimento se interpreten adecuadamente y sean válidos.", answer_id: "B"},
+        {question_txt: "Las “unidades de análisis” son los sujetos, objetos, sucesos o comunidades de estudio que se desprenden del planteamiento de la investigación.", answer_id: "A"}
 
     ];
 

@@ -1,7 +1,7 @@
 // ### VARIABLES ###
 var intentosEmparejamiento = 0;
 // Array de palabras
-var palabras = [["Mantenimiento", ""]];
+var palabras = [["cualitativo", ""]];
 // Palabra a averiguar
 var palabra = "";
 // Nº aleatorio

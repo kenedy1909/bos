@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <title>CodePen - Crucigrama</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
-  <link rel="stylesheet" href="../css/actividad4/style.css">
-  <link rel="stylesheet" href="../css/actividad4/backdrop.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./backdrop.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 </head>
@@ -13,25 +13,26 @@
 <!-- partial:index.partial.html -->
 <div id="app" class="" @keyup.escape="selected = undefined">
   <div class="table-container" style="display:none;" v-show="true">
-    <div class="row principal" style="padding: 20px;">
-        <div class="col-md-4 col-sm-4 d-flex">
-           <img src="../img/img4/actividad_interactiva.png" class="img-activi">
+    <div class="d-flex principal" style="padding: 20px;">
+        <div class="col-md-5 col-sm-5 d-flex" style="width: 45%;">
+           <img src="./img/actividad_interactiva.png" class="img-activi">
            <div>
-               <div class="content-text-img-activi-2" style="width: 100%;">
+               <div class="content-text-img-activi-2" style="width: 80%;">
                  <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                </div>
                <p class="text-center">CRUCIGRAMA</p>
            </div>
         </div>
-        <div class="col-md-8 col-sm-8 terciario" style="">
-            <p class="info_actividad shadow">
-                Complete el crucigrama con palabras respectivas de acuerdo con las pistas que se brindaran al oprimir cada numero. Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
-            </p>
+        <div class="col-md-7 col-sm-7 terciario" style="width: 65%;">
+            <div class="info_actividad shadow" style="background: #DDEAF6;">  
+                <p style="color: #000;">Complete el crucigrama con palabras respectivas de acuerdo con las pistas brindadas.</p>
+                <p style="color: #000;">Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
+            </div>
         </div>
+    </div>
         <div class="col-md-12 col-sm-12">
             <p class="text-center p-4 p_black"><i>oprimir cada numero para ver una pista</i></p>
         </div>
-    </div>
     <!-- <div class="mensaje" v-if="mensaje !== undefined">
       <div class="content">{{mensaje}}</div>
       <button @click="mensaje = undefined" class="btn btn-primary">OK</button>
@@ -52,7 +53,7 @@
       <button @click="corregir" class="btn btn-primary">Colocar</button>
     </div>
     <hr>
-    <button class="btn btn-mostaza" @click="finalizar"><b>Calificar</b></button>
+    <button class="btn" style="background: #811111; color: #FFF;" @click="finalizar"><b>Calificar</b></button>
   </div>  
   <h3 v-show="false">Cargando....</h3>
 </div>
@@ -79,7 +80,7 @@
   <script  src="../js/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script  src="../js/actividades.js"></script>
-  <script  src="../js/actividad4/script.js"></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>
