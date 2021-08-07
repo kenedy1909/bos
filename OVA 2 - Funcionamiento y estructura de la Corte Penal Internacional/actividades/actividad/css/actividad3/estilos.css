@@ -352,3 +352,7 @@ h2.tituloContenedorE {
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
+
+.container-draggable .margen{
+    margin-top: 170px;
+}

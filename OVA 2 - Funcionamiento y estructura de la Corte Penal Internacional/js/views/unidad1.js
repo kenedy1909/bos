@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -17,7 +17,7 @@ $( document ).ready(function() {
 
 
 
-    
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -146,7 +146,9 @@ function controlSlides(num){
             break;
     }
 }
-
+function actividad(){
+    $('#smartwizard').smartWizard("goToStep", 2);
+}
 
 function scroll_p10(){
     dragging = "";
@@ -695,7 +697,7 @@ function scroll_horizontal(num){
                       <p class="p_black justificado font13">
                         Descargue el pdf dando clic en el botón
                       </p>
-                      <a target="_blank" href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf"><img  style="background-color: #771e18; padding: 10px; border-radius: 10px; margin-top: 10px;" class="col-md-1 offset-md-7" src="assets/img/img_ova/pdf-file.png"></a>
+                      <a target="_blank" href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf"><img  style="background-color: #771e18; padding: 10px; border-radius: 10px; margin-top: 10px;max-width: 15%;" class="col-md-1 offset-md-7" src="assets/img/img_ova/pdf-file.png"></a>
 
                       <div class="row">
                           <img class="col-md-2" src="assets/img/img_ova/reloj.png">
@@ -808,7 +810,35 @@ function pasos(num){
             break;
     }
 }
+function esposas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $(".parrafo").hide();
+            $(".parrafo-1").show(300);
 
+            
+            break;
+        case 2:
+            $(".parrafo").hide();
+            $(".parrafo-2").show(300);
+
+            
+            break;
+        case 3:
+            $(".parrafo").hide();
+            $(".parrafo-3").show(300);
+            
+            
+            break;
+        case 4:
+            $(".parrafo").hide();
+            $(".parrafo-4").show(300);
+            break;
+        
+        default:
+            break;
+    }
+}
 function canvas_1() {
         var canvas = new fabric.Canvas('canvas1');
         var imgElement = 'assets/img/img_ova/icono1.png';

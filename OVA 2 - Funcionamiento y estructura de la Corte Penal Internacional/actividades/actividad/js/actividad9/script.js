@@ -150,14 +150,14 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['estatutoderoma', ''];
-            this.palabras[1] = ['estatutoderoma', ''];
-            this.palabras[2] = ['estatutoderoma', ''];
-            this.palabras[4] = ['estatutoderoma', ''];
-            this.palabras[5] = ['estatutoderoma', ''];
-            this.palabras[6] = ['estatutoderoma', ''];
-            this.palabras[7] = ['estatutoderoma', ''];
-            this.palabras[8] = ['estatutoderoma', ''];
+            this.palabras[0] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[1] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[2] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[4] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[5] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[6] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[7] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
+            this.palabras[8] = ['lacorte', 'Está compuesta por: La presidencia, las salas, la fiscalía y la secretaria'];
 
             return this.palabras;
 

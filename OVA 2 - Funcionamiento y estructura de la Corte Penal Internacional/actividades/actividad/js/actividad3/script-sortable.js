@@ -57,22 +57,22 @@ var contenedorCR1 = ".contenedorC";
 var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
-        code : '<div class="componente " data-order-origen="contenedorA" >\n'+
+        code : '<div class="componente margen" data-order-origen="contenedorA" >\n'+
         '<div class=""><div class=""><img  src="../../../assets/img/img_ova/icono3.png"></div></div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente " data-order-origen="contenedorB" >\n'+
+        code : '<div class="componente margen" data-order-origen="contenedorB" >\n'+
         '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono1.png"></div></div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente" data-order-origen="contenedorC" >\n'+
+        code : '<div class="componente margen" data-order-origen="contenedorC" >\n'+
         '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono2.png"></div></div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente" data-order-origen="contenedorD" >\n'+
+        code : '<div class="componente margen" data-order-origen="contenedorD" >\n'+
         '<div ><div class=""><img src="../../../assets/img/img_ova/icono4.png"></div></div>\n'+
         '</div>\n'
     }

@@ -132,7 +132,7 @@ span.checked svg.svg2 {
     background-position: bottom center;
     background-repeat: no-repeat, repeat-x;
     margin-bottom: 30px;
-    background-color: #006092;
+    background-color: #FF9900;
     animation: fondo 10s linear infinite;
     overflow: hidden;
 }
