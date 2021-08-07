@@ -64,6 +64,7 @@ function slide_link2(num){
     controlSlides2(num);
     
 }
+var sumaslide = 0;
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
@@ -88,6 +89,92 @@ function controlSlides2(num){
             
             break;
         case 4:
+            sumaslide++;
+            if (sumaslide < 2) {
+                var slideCount = $('#slider2 ul li').length;
+                var slideWidth = $('#slider2 ul li').width();
+                var slideHeight = $('#slider2 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider2').css({ width: '100%', height: '920px' });
+                
+                $('#slider2 ul').css({ width: '100%'});
+                
+                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+                function moveLeft2() {
+                    $('#slider2 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                function moveRight2() {
+                    $('#slider2 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev2').click(function (e) {
+                    moveLeft2();
+                    e.preventDefault();
+                });
+
+                $('a.control_next2').click(function (e) {
+                    moveRight2();
+                    e.preventDefault();
+                });
+            }
+            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            
+            break;
+        case 5:
+            sumaslide++;
+            if (sumaslide < 2) {
+                var slideCount = $('#slider2 ul li').length;
+                var slideWidth = $('#slider2 ul li').width();
+                var slideHeight = $('#slider2 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider2').css({ width: '100%', height: '920px' });
+                
+                $('#slider2 ul').css({ width: '90%'});
+                
+                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+                function moveLeft2() {
+                    $('#slider2 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                function moveRight2() {
+                    $('#slider2 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev2').click(function (e) {
+                    moveLeft2();
+                    e.preventDefault();
+                });
+
+                $('a.control_next2').click(function (e) {
+                    moveRight2();
+                    e.preventDefault();
+                });
+            }
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             
             tema = 1;

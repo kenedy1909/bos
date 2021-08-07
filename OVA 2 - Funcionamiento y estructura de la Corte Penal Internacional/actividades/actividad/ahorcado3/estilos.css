@@ -1,0 +1,287 @@
+#recurso2 {
+	text-align: center;
+	font-size: 22px;
+	max-width: 100%;
+	width: 100%;
+	overflow: initial;
+}
+
+.botonCalififcar {
+	position: sticky;
+	bottom: 0;
+	text-align: center;
+}
+
+#reset {
+	color: #fff;
+	background: #7a3d74;
+	border: none;
+	border-radius: 0;
+	font-family: 'Barmeno', sans-serif;
+	font-size: 21px;
+	padding: 6px 20px;
+}
+
+#reset:hover {
+	background: #ffd200;
+	border: none;
+	outline: 0;
+}
+
+.texto-ahorcado {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: black;
+	font-size: 25px;
+}
+
+.letra {
+	width: 30px;
+	height: 30px;
+	border: none;
+	color: #fff;
+	margin: 5px;
+}
+
+.espacio {
+	width: 20px;
+}
+
+#container_abecedario {
+	width: 100%;
+	margin: auto;
+	max-width: 450px;
+}
+
+@media (max-width: 767px) {
+	#container_abecedario {
+		width: 100%;
+	}
+}
+
+#container_abecedario input {
+	border-radius: 3px;
+	padding: 0;
+}
+
+#container_abecedario input:nth-child(5n+1) {
+	background: #ad123c;
+	box-shadow: 0 0 0 2px #ad123c;
+}
+
+#container_abecedario input:nth-child(5n+2) {
+	background: #f57921;
+	box-shadow: 0 0 0 2px #f57921;
+}
+
+#container_abecedario input:nth-child(5n+3) {
+	background: #6a9b9b;
+	box-shadow: 0 0 0 2px #6a9b9b;
+}
+
+#container_abecedario input:nth-child(5n+4) {
+	background: #fed200;
+	box-shadow: 0 0 0 2px #fed200;
+}
+
+#container_abecedario input:nth-child(5n+5) {
+	background: #e51d3a;
+	box-shadow: 0 0 0 2px #e51d3a;
+}
+
+#container_abecedario input[disabled] {
+	background-color: #ccc;
+	box-shadow: 0 0 0 2px #ccc;
+}
+
+#container_palabra {
+	color: #f57921;
+	font-size: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 20px auto 10px;
+}
+
+@media (max-width: 767px)
+{
+	#container_palabra {
+		display: block;
+	}
+}
+
+
+#campo_ahorcado {
+	max-width: 500px;
+	width: 100%;
+}
+
+.px-0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.definicion {
+	width: 100%;
+	height: 100%;
+	color: #d15700;
+	border-radius: 10px;
+	padding: 1vw;
+	background: #ffffff;
+	padding: 10px;
+}
+
+.pista_titulo {
+	font-family: 'Barmeno', sans-serif;
+	font-size: 32px;
+	color: #ad123c;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+#pista_palabra {
+	padding-bottom: 10px;
+	color: #333;
+	font-size: 24px;
+	line-height: 1.3;
+}
+
+.linea {
+	font-size: 50px;
+	color: #994c91;
+	display: inline-block;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.linea:first-child {
+	margin-left: 0;
+}
+
+.linea:last-child {
+	margin-right: 0;
+}
+
+.letra-palabra {
+	color: #994c91;
+	position: relative;
+	display: inline-block;
+	font-size: 35px;
+	width: 0;
+	left: 10px;
+	padding-bottom: 5px;
+}
+
+@media (max-width: 570px) {
+	.linea {
+		font-size: 22px;
+	}
+
+	.letra-palabra {
+		font-size: 22px;
+		left: 5px;
+	}
+}
+
+#modal-ahorcado {
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+#modal-ahorcado .modal-content {
+	background: #49a5aa;
+	padding: 8px;
+	border-radius: 10px;
+}
+
+#modal-ahorcado.intentar .modal-content {
+	background: #ad123c;
+}
+
+#modal-ahorcado button.close {
+	background: #ad123c;
+}
+
+#modal-ahorcado.intentar button.close {
+	background: #49a5aa;
+}
+
+#modal-ahorcado button.close:hover {
+	color: #fff;
+}
+
+#modal-ahorcado .modal-body {
+	border: 2px dashed #fff;
+}
+
+#modal-ahorcado.modal.in .modal-dialog {
+	top: 50%;
+	transform: translateY(-70%);
+}
+
+#modal-ahorcado button.close {
+	top: 0;
+	right: 0;
+	transform: translate(30%, -30%);
+}
+
+#texto-modal {
+	font-size: 22px;
+	line-height: 1.3;
+}
+
+.intentalo {
+	font-family: 'Barmeno', sans-serif;
+	display: block;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+	#texto-modal {
+		font-size: 24px;
+		line-height: 1.3;
+	}
+}
+
+@media (max-width: 767px) {
+	.espacio::before {
+		content: '\A';
+		white-space: pre;
+	}
+}
+
+.info_actividad{
+    background: rgba(255, 192, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.pt-3{
+    padding-top: 1.5em;
+}
+.pt-5{
+    padding-top: 2.5em;
+}
+.pl-3{
+    padding-left: 1.5em;
+}
+.pr-3{
+    padding-right: 1.5em;
+}
+
+.border_punteado{
+    border: dashed #FFFFFF 5px;
+    border-radius: 85px;
+    padding: 1em;
+}
+
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
