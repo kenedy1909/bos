@@ -122,6 +122,7 @@ QuestionsSameAnswers.prototype.render =  function (elem) {
 }
 
 QuestionsSameAnswers.prototype.reset =  function (form) {
+    location.reload();
     var data = form.serializeArray();
 
     for (var i = 0; i < data.length; i++) {

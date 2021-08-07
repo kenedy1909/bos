@@ -399,6 +399,7 @@ function init_recurso_1() {
 
 
     Ahorcado.prototype.reiniciar = function () {
+        
         this.intento = 0;
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
