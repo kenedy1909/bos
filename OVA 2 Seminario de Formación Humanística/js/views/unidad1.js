@@ -30,41 +30,41 @@ $( document ).ready(function() {
         actualizarprogress();
     });
 
-    $(".btn-p1").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-1").show(300)
+    $(".mano0").on("click", function() {
+        $(".manos").hide();
+        $(".pmanos").hide();
+        $(".mano1").show(100)
+        $(".p-mano1").show(100)
     })
-    $(".btn-p2").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-2").show(300)
+
+    $(".mano1").on("click", function() {
+        $(".manos").hide();
+        $(".pmanos").hide();
+        $(".mano2").show(100)
+        $(".p-mano2").show(100)
     })
-    $(".btn-p3").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-3").show(300)
+
+    $(".mano2").on("click", function() {
+        $(".manos").hide();
+        $(".pmanos").hide();
+        $(".mano3").show(100)
+        $(".p-mano3").show(100)
     })
-    $(".btn-p4").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-4").show(300)
+    $(".mano3").on("click", function() {
+        $(".manos").hide();
+        $(".pmanos").hide();
+        $(".mano4").show(100)
+        $(".p-mano4").show(100)
     })
-    $(".btn-p5").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-5").show(300)
+
+    $(".btn13-1").on("click", function() {
+        $(".parrafo13").hide();
+        $(".p13-1").show();
     })
-    $(".btn23-1").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-2").show(300)
-    })
-    $(".btn23-2").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-3").show(300)
-    })
-    $(".btn23-3").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-4").show(300)
-    })
-    $(".btn23-4").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-5").show(300)
+
+    $(".btn13-5").on("click", function() {
+        $(".parrafo13").hide();
+        $(".p13-5").show();
     })
 
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
@@ -515,40 +515,7 @@ function scroll(){
       dragging = false;
     });
 }
-/*function scroll(){
-    $(".scroll-scrollbar").css({
-            'position':'relative',
-            'height':'240px',
-            'width':'fit-content',
-            'overflow':'hidden'
-    });
-    $(".scroll-scrollbar__bar").css({
-              'position':' absolute',
-              'top':' 22px',
-              'bottom':' 45px',
-              'background':'#FFFFFF',
-              'width':' 3px',
-              'right':' 30px',
-              'border-radius':' 4px'
-    });
-    $(".scroll-scrollbar__knob").css({
-              'position': 'absolute',
-              'top':' 0',
-              'left':' 50%',
-              'width':' 25px',
-              'height':' 25px',
-              'border-radius':' 50%',
-              'background':' #FFFFFF',
-              'transform':' translate(-50%, -50%)',
-              'will-change':' top'
-    });
-    $(".scroll-linea_scroll_modal").css({
-            'font-size':' 50px',
-            'margin':' 0px',
-            'position':' relative',
-            'top':' -32px'
-    });
-}*/
+
 
 function poner(num) {
     
@@ -656,10 +623,10 @@ function cardPara4(num,ventana){
       $("#card4-2").addClass('hidden')
       $("#card4-3").addClass('hidden')
       $("#card4-4").addClass('hidden')
-      var conjunto = `<div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
-                      <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-                      <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
-                      <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>`;
+      var conjunto = `<div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
+                      <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
+                      <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
+                      <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>`;
       $("#card4-padre").html(conjunto)
   }
   if (ventana==1) {
@@ -670,46 +637,47 @@ function cardPara4(num,ventana){
       if (num==1) {
           var conjunto = `
           <div class="col-6 bg-white border-1 justify-content pt-2 text-black" id="card4-1" onclick="cardPara4(1,0)> 
-            <p class="text-justify text-reducido">Finalmente, el diseño a seleccionar depende del problema a resolver y el contexto del estudio. Igualmente, en la mayoría de las situaciones dentro de una investigación se realiza el estudio a través de una muestra, que son subgrupos de la población del cual se recolectan los datos y debe ser representativo de la población.</p>
+            <p class="text-justify text-reducido">No obstante, es importante abarcar lo planteado por Ausubel, quien manifiesta desacuerdo en visualizar el proceso cognitivo de manera progresiva y sistemática, por lo tanto, su aporte se dirige hacia un aprendizaje significativo, donde la persona para obtener este aprendizaje necesita asimilar e interiorizar plenamente aquello que se requiere que aprenda y entonces, en ese momento sería posible llamársele aprendizaje</p>
           </div>
-          <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
-          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
           `;
           $("#card4-padre").html(conjunto)
       }
       if (num==2) {
           var conjunto = `
-          <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
           <div class="col-6 bg-white border-2 justify-content p-4 text-black" id="card4-2"  onclick="cardPara4(2,0)> 
-            <p class="text-reducido text-justify">Las “unidades de análisis” son los sujetos, objetos, sucesos o comunidades de estudio que se desprenden del planteamiento de la investigación. Por ejemplo: en el caso de que el objetivo de la investigación sea describir el uso que hacen los niños de la televisión, la unidad de análisis es un “grupo de niños” y también puede ser “los padres de los niños”.</p>
+            <p class="text-reducido text-justify">Así mismo, desde la teoría de Ausubel se considera que, para lograr un aprendizaje significativo es necesario integrar el conocimiento previo de la persona y encontrar un enlace que pueda ser utilizado para conectar la información o enseñanza nueva (Esquivel, s.f.); así como también sería fundamental, favorecer la participación activa de la persona, donde a través de reflexiones propias, toma de decisiones y argumentaciones críticas, interiorice aspectos esenciales de su proceso de aprendizaje y se contribuya al desarrollo cognitivo. </p>
           </div>
-          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
-          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
           `;
           $("#card4-padre").html(conjunto)
       }
       if (num==3) {
           var conjunto = `
-              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
-              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-              <div class="col-6 bg-white border-3 justify-content pt-2 text-black" id="card4-3"  onclick="cardPara4(3,0)> 
-                  <p class="text-reducido text-justify">Una vez que se ha definido cuál será la unidad de análisis, se procede a delimitar la población que va a ser estudiada y sobre la cual se pretende generalizar los resultados. Así, una población es el conjunto de todos los casos que concuerdan con una serie de especificaciones Selltiz et al. (1980).</p>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-white border-3 justify-content pt-2 text-black" id="card4-3"  onclick="cardPara4(3,0)> 
+                  <p class="text-reducido text-justify">Ahora bien, menciona Martínez (2009) que los procesos cognitivos son parte de la personalidad del ser humano, y en ellos es posible identificar como elemento esencial el pensamiento original creativo y productivo, así que, para dar lugar a este tipo de pensamiento, es necesario que exista una libertad de reflexión, de razonamiento y de imaginación, generando espacios que contribuyan a la autenticidad, donde naturalmente se daría un juicio crítico, una postura con sustento. </p>
               </div>
-              <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
           `;
           $("#card4-padre").html(conjunto)
       }
       if (num==4) {
           var conjunto = `
-              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
-              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-              <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
               <div class="col-6 bg-white border-4  pt-4 text-black" id="card4-4" onclick="cardPara4(4,0)> 
-                  <p class="text-reducido">Es importante tener en cuenta que, una de las carencias que por lo general se suele presentar en proyectos de investigación es la poca o deficiente descripción de los rasgos constitutivos de la población objeto de estudio. Por lo que es de sobresaltar y llamar la atención en referencia a la importancia de desarrollar con claridad las diferentes características constitutivas de la población, para así definir las variables muestrales. </p>
+                  <p class="text-reducido">Lo anterior debería tener lugar en los espacios educativos, sin censurar el pensamiento del estudiante, comprendiendo que, a partir de este pensamiento se generan transformaciones relevantes para dicho estudiante y para la sociedad. “Es plenamente natural al ser humano el comportarse en forma creadora”. (Martínez, 2009).</p>
               </div>
           `;
           $("#card4-padre").html(conjunto)
       }
   }
 }
+

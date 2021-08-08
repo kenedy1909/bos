@@ -57,7 +57,7 @@
 
 .btn-ova{
   color: #fff;
-  background-color: #78201A;
+  background-color: #8b6229;
   /*border-bottom-color: #ffffff;*/
   border-color: #ffffff;
   border-radius: 10px;
@@ -96,14 +96,14 @@
 }
 
 .color-text{
-  color:  #420f05;
+  color:  #E0A546;
 }
 
 .titulo-ova{
   background-image: url(../assets/img/img_ova/titulo_ova_desarrollo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 380px;
+  width: 420px;
   height: 100px;
   padding: 23px 99px 20px 100px;
 }
@@ -621,10 +621,11 @@ svg circle:nth-child(2){
 
 
 .caja-texto-b{
-  background-color: #FFFFFF;
+  background-color: #265c8c;
   margin-top: 10px;
   padding: 26px;
   border-radius: 10px;
+  color: #FFFFFF;
 }
 
 .img-5{
@@ -724,7 +725,7 @@ svg circle:nth-child(2){
 }
 
 .x-modal{
-  background: #811111;
+  background: #E0A546;
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -789,4 +790,30 @@ svg circle:nth-child(2){
 
 .display-none{
   display: none;
+}
+
+
+.imgH{
+  background-color: #FFFFFF;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+
+.cardAzul{
+  background-image: url(../assets/img/img_ova/PapelAzul.png);
+  /*background-repeat: no-repeat;*/
+  background-size: contain;
+  /*width: 1000px;*/
+  height: 100px;
+  padding: 23px 99px 20px 100px;
+}
+
+.cardRosa{
+  background-image: url(../assets/img/img_ova/Nota.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /*height: 400px;*/
+  padding: 75px 100px ;
 }

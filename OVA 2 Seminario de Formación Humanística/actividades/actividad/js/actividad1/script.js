@@ -150,15 +150,16 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[1] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[2] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[3] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[4] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[5] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[6] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[7] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
-            this.palabras[8] = ['postcapitalismo', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
+            this.palabras[0] = ['alfabetizacioncritica', 'Sugiere una ruta diferente más allá del mercado, sobre la premisa de una automatización decisiva de la actividad productiva, la desvinculación entre el trabajo y los salarios, el potenciamiento del efecto de red y la democratización de la información'];
+            this.palabras[1] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[2] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[3] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[4] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[5] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[6] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[7] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            this.palabras[8] = ['alfabetizacioncritica', 'La información obtenida por medio de la lectura, se articula con su mundo, con su realidad y adquiere un sentido práctico de valor real.'];
+            
 
             return this.palabras;
 

@@ -28,14 +28,14 @@
     height: 100px;
     width: 125%;
     position: relative;
-    border: 2px dashed #ad123c;
+    border: 2px dashed #ab751d;
     margin: 10px 0px 50px 0px;
     z-index: 1006;
     border-radius: 20px;
 }
 
 #actividad-1 ul#grupoA li.active:after {
-    background: #ad123c;
+    background: #ab751d;
 }
 
 #actividad-1 ul#grupoA li.active {
@@ -125,7 +125,7 @@
     bottom: -15px;
     border: solid #811111 2px;
     border-radius: 10px;
-    background-color: #811111;
+    background-color: #ab751d;
     background-image: url(../img/r1-contenedorC.png);
     background-repeat: repeat;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);

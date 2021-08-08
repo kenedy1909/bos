@@ -845,7 +845,7 @@ a.control_next {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 300px;
   /*border-radius: 15px;*/
   /*border: 1px solid #78201A;*/
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -877,14 +877,14 @@ a.control_next {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #78201A;
+  background-color: #68a3d9;
   border-radius: 15px;
   padding-top: 25px;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #78201A;
+  background-color: #FFFFFF;
   color: white;
   border-radius: 15px;
   padding-top: 25px;
