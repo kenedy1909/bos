@@ -1183,7 +1183,7 @@ function svg_img(num) {
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
                                         <div class="text-center">
-                                           <img src="assets/img/img_ova/Imagen-ejemplo-particula.jpg" class="img-100">
+                                           <img src="assets/img/img_ova/Imagen-ejemplo-particula.JPG" class="img-100">
                                         </div>
                                       </div>
                                       <div class="custom-scrollbar__bar_uno">
