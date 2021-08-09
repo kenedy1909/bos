@@ -635,7 +635,7 @@ function scroll_horizontal(num){
 function cajas(num){
   switch (parseInt(num)) {
       case 1:
-          var text = `<img src="assets/img/img_ova/infografia.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/infografia1.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav1').addClass('activa');
 
