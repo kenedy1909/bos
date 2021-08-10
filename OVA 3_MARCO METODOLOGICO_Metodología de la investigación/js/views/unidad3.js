@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    $( ".zoomContainer" ).remove();
+
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
@@ -15,7 +17,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    
+
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -27,9 +29,13 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+    
     slide_predeterminado3();
     console.log(tema);
     slide_link3(tema);
+    
     
 });
 $(function () {
