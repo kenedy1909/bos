@@ -52,7 +52,7 @@ a:hover {
     color: #49a5aa;
 }
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif!important;
     font-size: 18px;
     color: #666;
     height: 100%;
@@ -127,9 +127,9 @@ html{
     font-size: 1.3em;
     padding: 10px 20px;
 }
-.backdrop.actividad header{
-    /* background: rgb(51 122 183 / 50%); */
-}
+/* .backdrop.actividad header{
+    background: rgb(51 122 183 / 50%);
+} */
 .backdrop.recurso header{
     background: rgba(73,165,170,.4);
 }
