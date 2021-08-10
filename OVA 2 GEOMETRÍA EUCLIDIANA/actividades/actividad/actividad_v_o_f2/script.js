@@ -10,8 +10,8 @@ function inicioRecurso() {
     var _questions = [
         {question_txt: "{𝑎, 𝑑}⊂{𝑎,𝑏,𝑐,{ 𝑑}}", answer_id: "B", img:""},
         {question_txt: "{𝑎, 𝑎, 𝑎}⊂{𝑎}", answer_id: "A", img:""},
-        {question_txt: "{▒}=0", answer_id: "B", img:""},
-        {question_txt: "𝜙={▒}:", answer_id: "A", img:""},
+        {question_txt: "", answer_id: "B", img:"../img/img7/formulas (1).png"},
+        {question_txt: "", answer_id: "A", img:"../img/img7/formulas (2).png"},
         {question_txt: "Si 𝐴 ⊂ 𝐵 entonces  𝐴 ∩𝐵 ⊂ 𝐵:", answer_id: "B", img:""},
         {question_txt: "Si  𝑥∈𝐴 ∪𝐵  entonces  𝑥 ∈ 𝐴△𝐵", answer_id: "B", img:""}
 

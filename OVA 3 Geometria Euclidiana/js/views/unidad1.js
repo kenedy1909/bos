@@ -678,7 +678,7 @@ function cajas2(num){
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="assets/img/img_ova/triagulo_2.png" class="m-auto img-70">
+                            <img src="assets/img/img_ova/triangulo_2.png" class="m-auto img-70">
                           </div>
                         </div>
                      `;
@@ -702,7 +702,7 @@ function cajas2(num){
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="assets/img/img_ova/triagulo_3.png" class="m-auto img-70">
+                            <img src="assets/img/img_ova/triangulo_3.png" class="m-auto img-70">
                           </div>
                         </div>
                      `;
@@ -726,7 +726,7 @@ function cajas2(num){
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="assets/img/img_ova/triagulo_4.png" class="m-auto img-70">
+                            <img src="assets/img/img_ova/triangulo_4.png" class="m-auto img-70">
                           </div>
                         </div>
                      `;
@@ -750,7 +750,7 @@ function cajas2(num){
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="assets/img/img_ova/triagulo_5.png" class="m-auto img-70">
+                            <img src="assets/img/img_ova/triangulo_5.png" class="m-auto img-70">
                           </div>
                         </div>
                      `;
@@ -774,7 +774,7 @@ function cajas2(num){
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="assets/img/img_ova/triagulo_6.png" class="m-auto img-70">
+                            <img src="assets/img/img_ova/triangulo_6.png" class="m-auto img-70">
                           </div>
                         </div>
                      `;
@@ -800,7 +800,7 @@ function cajas2(num){
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <img src="assets/img/img_ova/triagulo_7.png" class="m-auto img-70">
+                            <img src="assets/img/img_ova/triangulo_7.png" class="m-auto img-70">
                           </div>
                         </div>
                      `;
