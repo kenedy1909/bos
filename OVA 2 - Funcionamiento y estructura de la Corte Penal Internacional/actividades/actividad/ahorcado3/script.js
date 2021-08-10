@@ -367,6 +367,8 @@ function init_recurso_1() {
         if (!flag) {
             ahorcado.trazar();
             if (!ahorcado.vivo) {
+                $('.img_res').html('<img src="../img/img9/mal.png" style="max-width: 90%;">');
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
                 $('#texto-modal').html('Incorrecto, <span class="intentalo">Inténtalo nuevamente</span>');
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
@@ -375,6 +377,8 @@ function init_recurso_1() {
         } else {
             ahorcado.dibujarTodo();
             if (this.gano()) {
+                $('.img_res').html('<img src="../img/img9/bien.png" style="max-width: 90%;">');
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
                 $('#texto-modal').html('Felicitaciones, Su puntaje es 100%.');
                 $('#modal-ahorcado').removeClass("intentar");
                 $('#modal-ahorcado').modal("show");

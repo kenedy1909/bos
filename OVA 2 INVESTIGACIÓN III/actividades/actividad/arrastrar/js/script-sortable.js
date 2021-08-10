@@ -59,7 +59,7 @@ var arrOrigenR1 = [
     {
         code : '<div class="div-juego" data-order-origen="contenedorA">\n'+
         '<div style="width: 99%;background: #F7E448;padding: 25px;border-radius: 30px;box-shadow: 1px 1px 7px 0px;" >\n'+
-        '<div style="text-align: center;position: relative;top: -50px;"><img src="img/reflexion.png" style="max-width: 20%;"></div>\n'+
+        '<div style="text-align: center;position: relative;top: -50px;height: 20px;"><img src="img/reflexion.png" style="max-width: 30%;"></div>\n'+
         '<div><p>Son los que hacemos cuando el tema ha sido poco estudiado y no existe mucha información sobre el.</p></div>\n'+
         '</div>\n'+
         '</div>\n'
@@ -67,7 +67,7 @@ var arrOrigenR1 = [
     {
         code : '<div class="div-juego" data-order-origen="contenedorB">\n'+
         '<div style="width: 99%;background: #F7E448;padding: 25px;border-radius: 30px;box-shadow: 1px 1px 7px 0px;" >\n'+
-        '<div style="text-align: center;position: relative;top: -50px;"><img src="img/dato.png" style="max-width: 20%;"></div>\n'+
+        '<div style="text-align: center;position: relative;top: -50px;height: 20px;"><img src="img/dato.png" style="max-width: 30%;"></div>\n'+
         '<div><p>Remite a saber las causas que originan un fenómeno.</p></div>\n'+
         '</div>\n'+
         '</div>\n'
@@ -75,7 +75,7 @@ var arrOrigenR1 = [
     {
         code : '<div class="div-juego" data-order-origen="contenedorC">\n'+
         '<div style="width: 99%;background: #F7E448;padding: 25px;border-radius: 30px;box-shadow: 1px 1px 7px 0px;" >\n'+
-        '<div style="text-align: center;position: relative;top: -50px;"><img src="img/verificacion_antecedentes.png" style="max-width: 20%;"></div>\n'+
+        '<div style="text-align: center;position: relative;top: -50px;height: 20px;"><img src="img/verificacion_antecedentes.png" style="max-width: 30%;"></div>\n'+
         '<div><p>Esculcar cada elemento del objeto, situación o fenómeno y describirlo.</p></div>\n'+
         '</div>\n'+
         '</div>\n'
@@ -111,18 +111,18 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Unidad de análisis</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Muestra</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Población o universo</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Estudios explorativos</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>');
     // $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">¿Qué aspecto mejora la situación problemática este nuevo conocimiento?</h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Unidad de análisis</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Muestra</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Población o universo</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Estudios explorativos</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>');
     // $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">¿Qué aspecto mejora la situación problemática este nuevo conocimiento?</h2>');
     inicioREDIR1();
  }
