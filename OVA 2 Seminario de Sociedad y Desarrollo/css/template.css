@@ -234,6 +234,13 @@
   border-radius: 22px;
   background: var(--bg-color);
 }
+
+.card-container2, .front2, .back2 {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  background: #811111;
+}
 .card .cover{
   height: 105px;
   overflow: hidden;
@@ -629,6 +636,9 @@ svg circle:nth-child(2){
 
 .img-5{
   width:5% ;
+}
+.img-7{
+  width:7% ;
 }
 .img-10{
   width:10% ;
