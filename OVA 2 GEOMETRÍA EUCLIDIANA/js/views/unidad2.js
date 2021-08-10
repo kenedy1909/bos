@@ -65,7 +65,7 @@ function slide_link(num){
     tema=1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num);
+    $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
 

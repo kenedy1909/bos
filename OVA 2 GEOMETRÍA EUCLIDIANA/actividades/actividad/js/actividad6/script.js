@@ -37,7 +37,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "En un diagrama de Venn sombree lo correspondiente al conjunto indicado \n"+" 𝑩−(𝑨∩𝑪^𝒄 )",
+                texto: "En un diagrama de Venn sombree lo correspondiente al conjunto indicado a continuacion \n"+" 𝑩−(𝑨∩𝑪^𝒄 )",
                 respuestas: [{
                     texto: "../img/img6/venn_a.png",
                     correcta: true
