@@ -6,7 +6,6 @@
 
 .droptarget {
     float: left;
-    margin: 15px;
     padding: 10px;
     border: 4px solid #008F3E;
     border-radius: 50px;
@@ -23,7 +22,7 @@
 	border: dashed #008F3E;
     min-height: 170px;
     border-radius: 50px;
-    padding: 25px 25px 25px 25px;
+    padding: 40px 0px 15px 20px;
 }
 #dragtarget1{
     cursor: pointer;

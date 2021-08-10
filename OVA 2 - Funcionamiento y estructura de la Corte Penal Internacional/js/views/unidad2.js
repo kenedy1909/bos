@@ -69,7 +69,7 @@ function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
-            $("#content-ova").load("base/unidades/unidad1.html");
+            /*$("#content-ova").load("base/unidades/unidad1.html");*/
             tema = 12;
             break;
         case 1:

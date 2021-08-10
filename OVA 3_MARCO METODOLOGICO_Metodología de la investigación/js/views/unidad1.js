@@ -15,8 +15,6 @@ $( document ).ready(function() {
         }
     });
 
-    
-
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -28,7 +26,11 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
-    });
+    }); 
+
+    $( ".zoomContainer" ).remove();
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+    
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
     console.log(tema);
@@ -777,7 +779,7 @@ function pant13(num){
                             <div class="h-100 d-flex align-items-center">
                                 <i class="fas fa-caret-right text-color-3 display-4 ml-2 cursor" onclick="pant13Al(2)"></i>
                             </div>`;
-            var img = `<img src="assets/img/img_ova/experimentospuros.png" width="100%">`;
+            var img = `<img src="assets/img/img_ova/experimentospuros1.png" width="100%">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.textU3, .imgU3').addClass('d-flex');

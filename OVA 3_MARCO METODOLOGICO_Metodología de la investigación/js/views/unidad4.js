@@ -28,6 +28,11 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+
+    $( ".zoomContainer" ).remove();
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+
+
     slide_predeterminado4();
     console.log(tema);
     slide_link4(tema);
@@ -240,7 +245,7 @@ function slideU4_1(num) {
     $('.flechaRU4-1').removeClass('hidden');
     
     var contenido = `
-                    <p class="text-justify text-white">Como se puede ver, para la recolección de datos se dispone de una generosa gama de instrumentos, técnicas y métodos, tanto cualitativas como cuantitativas y las cuales se pueden utilizar sin ningún tipo de discriminación en un mismo estudio.</p>
+                    <p class="text-justify text-black">Como se puede ver, para la recolección de datos se dispone de una generosa gama de instrumentos, técnicas y métodos, tanto cualitativas como cuantitativas y las cuales se pueden utilizar sin ningún tipo de discriminación en un mismo estudio.</p>
                     `;
     $('.flechaRU4-1').attr('onclick',"slideU4_1(2)");
 
@@ -250,7 +255,7 @@ function slideU4_1(num) {
     $('.flechaRU4-1').removeClass('hidden');
     
     var contenido = `
-                    <p class="text-justify text-white">En nuestra cotidianidad estamos en un constante medir, es así, como por ejemplo, al levantarnos medimos el tiempo desde que abrimos los ojos hasta prácticamente que nos volvemos a acostar en la noche, medimos la hora constantemente y en diferentes actividades.</p>
+                    <p class="text-justify text-black">En nuestra cotidianidad estamos en un constante medir, es así, como por ejemplo, al levantarnos medimos el tiempo desde que abrimos los ojos hasta prácticamente que nos volvemos a acostar en la noche, medimos la hora constantemente y en diferentes actividades.</p>
                     `;
     $('.flechaLU4-1').attr('onclick',"slideU4_1(1)");
     $('.flechaRU4-1').attr('onclick',"slideU4_1(3)");
@@ -261,7 +266,7 @@ function slideU4_1(num) {
     $('.flechaRU4-1').addClass('hidden');
     
     var contenido = `
-                    <p class="text-justify text-white"><b class="color-title">Por ejemplo,</b> en el trabajo tienes cierto tiempo para tomar el descanso e ir a almorzar, entonces te ves en la obligación de medir el tiempo que esto te tomará, después a la hora de salida,  después a la hora de salida, mides el tiempo que te tomará desplazarte a la cita con un amigo o simplemente de regreso a casa, por lo que medir hace parte de nuestra cotidianidad y es este precisamente el tema que a continuación vamos a ver.</p>
+                    <p class="text-justify text-black"><b class="color-title">Por ejemplo,</b> en el trabajo tienes cierto tiempo para tomar el descanso e ir a almorzar, entonces te ves en la obligación de medir el tiempo que esto te tomará, después a la hora de salida,  después a la hora de salida, mides el tiempo que te tomará desplazarte a la cita con un amigo o simplemente de regreso a casa, por lo que medir hace parte de nuestra cotidianidad y es este precisamente el tema que a continuación vamos a ver.</p>
                     `;
     $('.flechaLU4-1').attr('onclick',"slideU4_1(2)");
 
@@ -270,14 +275,40 @@ function slideU4_1(num) {
 }
 function slideMU4_1(num) {
   $('.contenidoCentralMU4-1').html(``);
-  $('.circuloM1,.circuloM2,.circuloM3,.circuloM4').addClass('.bg-color-3');
-  $('.circuloM1,.circuloM2,.circuloM3,.circuloM4').removeClass('.bg-color-1');
+  $('.circuloM1, .circuloM2, .circuloM3, .circuloM4').addClass('bg-color-3');
+  $('.circuloM1, .circuloM2, .circuloM3, .circuloM4').removeClass('bg-color-1');
   
   if (num == 1) {
-    $('.circuloM1').removeClass('.bg-color-3');
-    $('.circuloM1').addClass('.bg-color-1');
+    $('.circuloM1').removeClass('bg-color-3');
+    $('.circuloM1').addClass('bg-color-1');
 
     $('.flechaMLU4-1').addClass('hidden');
+    $('.flechaMRU4-1').removeClass('hidden');
+    
+    var contenido = `
+                    <div class="row">
+                      <div class="col-7 p-3">
+                        <p><b class="color-title">Escala para medir actitudes</b>
+                        <br></br>
+                        “Las escalas de medición de actitudes son un instrumento de medición que permite acercarse a la variabilidad afectiva de las personas respecto a cualquier sujeto, objeto o proceso.” (Iñiguez, 2010).
+                        </p>
+                      </div>
+                      <div class="col-5 d-flex justify-content-center align-items-center p-3">
+                        <div class="text-center">
+                          <img src="assets/img/img_ova/describir.png" width="80%">
+                          <a class="w-100 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM3"><b>VER IMAGEN</b></a>
+                        </div>
+                      </div>
+                    </div>
+                    `;
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(2)");
+
+    $('.contenidoCentralMU4-1').html(contenido);
+  }else if (num == 2) {
+    $('.circuloM1').removeClass('bg-color-3');
+    $('.circuloM1').addClass('bg-color-1');
+
+    $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
     
     var contenido = `
@@ -289,12 +320,13 @@ function slideMU4_1(num) {
                       <br><b class="color-title">Autoadministrado: </b>se realiza a través de una llamada telefónica, al tiempo que es una forma económica de recolectar información. 
                     </p>
                     `;
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(2)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(1)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(3)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 2) {
-    $('.circuloM1').removeClass('.bg-color-3');
-    $('.circuloM1').addClass('.bg-color-1');
+  }else if (num == 3) {
+    $('.circuloM1').removeClass('bg-color-3');
+    $('.circuloM1').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -306,13 +338,13 @@ function slideMU4_1(num) {
                       <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM"><b>VER IMAGEN</b></a>
                       `;
                     
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(1)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(3)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(2)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(4)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 3) {
-    $('.circuloM2').removeClass('.bg-color-3');
-    $('.circuloM2').addClass('.bg-color-1');
+  }else if (num == 4) {
+    $('.circuloM2').removeClass('bg-color-3');
+    $('.circuloM2').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -330,13 +362,13 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(2)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(4)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(3)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(5)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 4) {
-    $('.circuloM2').removeClass('.bg-color-3');
-    $('.circuloM2').addClass('.bg-color-1');
+  }else if (num == 5) {
+    $('.circuloM2').removeClass('bg-color-3');
+    $('.circuloM2').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -346,13 +378,13 @@ function slideMU4_1(num) {
                       Es decir, la actitud representa una preferencia o propensión para sentir, percibir, apreciar y por ende comportarse frente a una situación u objeto. Por consiguiente, cuando se habla de escala de medición de actitudes es un elemento que no es cien por ciento verídico, ya que se estaría planteando o partiendo a través de hipótesis, las cuales nos indicarán la intensidad y dirección de lo que se opina frente a un suceso, objeto o situación.
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(3)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(5)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(4)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(6)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 5) {
-    $('.circuloM2').removeClass('.bg-color-3');
-    $('.circuloM2').addClass('.bg-color-1');
+  }else if (num == 6) {
+    $('.circuloM2').removeClass('bg-color-3');
+    $('.circuloM2').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -364,13 +396,13 @@ function slideMU4_1(num) {
                       Los métodos más conocidos para medir por escalas las variables que constituyen actitudes son: <b class="color-title">el método de escalamiento Likert y el diferencial semántico</b>
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(4)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(6)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(5)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(7)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 6) {
-    $('.circuloM3').removeClass('.bg-color-3');
-    $('.circuloM3').addClass('.bg-color-1');
+  }else if (num == 7) {
+    $('.circuloM3').removeClass('bg-color-3');
+    $('.circuloM3').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -388,13 +420,13 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(5)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(7)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(6)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(8)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 7) {
-    $('.circuloM3').removeClass('.bg-color-3');
-    $('.circuloM3').addClass('.bg-color-1');
+  }else if (num == 8) {
+    $('.circuloM3').removeClass('bg-color-3');
+    $('.circuloM3').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -411,15 +443,15 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(6)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(8)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(7)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(9)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 8) {
-    $('.circuloM3').removeClass('.bg-color-3');
-    $('.circuloM3').addClass('.bg-color-1');
+  }else if (num == 9) {
+    $('.circuloM3').removeClass('bg-color-3');
+    $('.circuloM3').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').addClass('hidden');
+    $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
     
     var contenido = `
@@ -428,13 +460,13 @@ function slideMU4_1(num) {
                       <br><b class="color-title">Entrevista:  </b>en este caso una persona encargada de realizar la entrevista, va leyendo las afirmaciones o las diferentes alternativas que corresponden a las diferentes respuestas que el entrevistado va dando y las va anotando y así sucesivamente.
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(7)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(9)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(8)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(10)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 9) {
-    $('.circuloM4').removeClass('.bg-color-3');
-    $('.circuloM4').addClass('.bg-color-1');
+  }else if (num == 10) {
+    $('.circuloM4').removeClass('bg-color-3');
+    $('.circuloM4').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
@@ -451,13 +483,13 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(8)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(10)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(9)");
+    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(11)");
 
     $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 10) {
-    $('.circuloM4').removeClass('.bg-color-3');
-    $('.circuloM4').addClass('.bg-color-1');
+  }else if (num == 11) {
+    $('.circuloM4').removeClass('bg-color-3');
+    $('.circuloM4').addClass('bg-color-1');
 
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').addClass('hidden');
@@ -469,7 +501,7 @@ function slideMU4_1(num) {
                       <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM2"><b>VER IMAGEN</b></a>
                       `;
                     
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(9)");
+    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(10)");
 
     $('.contenidoCentralMU4-1').html(contenido);
   }
@@ -685,7 +717,7 @@ function teorias(num) {
         <b class="color-title">Preparar los resultados para presentarlos</b>
         Visualiza la imagen y conoce los elementos que conlleva preparar los resultados.
       </p>
-      <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor" data-toggle="modal" data-target="#modalAcordeonImg"><b>VER IMAGEN</b></a>  
+      <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor" data-toggle="modal" data-target="#modalAcordeonImg2"><b>VER IMAGEN</b></a>  
     </div>
                   `;
       $("#teorico").html(texto);
