@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     console.log(tema);
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
+    
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
