@@ -229,7 +229,7 @@ h2.tituloContenedorE {
 /*-- Maquetación --*/
 
 .redi1.contenido {
-    max-width: 1280px;
+    max-width: 100%;
 }
 
 .redi1 .componentesContent,
