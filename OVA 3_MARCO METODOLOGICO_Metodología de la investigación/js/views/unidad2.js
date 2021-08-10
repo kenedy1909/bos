@@ -71,18 +71,30 @@ function controlSlides2(num){
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
             var pdf = `<div class="col-md-12">
-                            <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
+                        <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD2/metodocualitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocualitativo.pdf </a>
+                        </p>
+                        <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD2/metodocuantitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocuantitativo.pdf </a>
+                        </p>
+                        <p class="p_white size_20">
+                              <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
                             </p>
-                        </div>`;
+                      </div>`;
             $('.pdfs').html(pdf);
             break;
         case 1:
             var pdf = `<div class="col-md-12">
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Cómo_investigan_los_economistas.pdf</a>
-                              </p>
-                            </div>`;
+                        <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD2/metodocualitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocualitativo.pdf </a>
+                        </p>
+                        <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD2/metodocuantitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocuantitativo.pdf </a>
+                        </p>
+                        <p class="p_white size_20">
+                              <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
+                            </p>
+                      </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             break;

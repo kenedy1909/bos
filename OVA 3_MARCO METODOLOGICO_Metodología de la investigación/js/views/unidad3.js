@@ -71,14 +71,12 @@ function controlSlides3(num){
             tema = 3;
             break;
         case 1:
+            
             var pdf = `<div class="col-md-12">
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD3/Elementos_fundamentales_para_plantear_un_problema.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Elementos fundamentales para plantear un problema.pdf</a>
-                              </p>
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD3/La_idea_en_la_investigación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La idea en la investigación.pdf</a>
-                              </p>
-                            </div>`;
+                      <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD3/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
+                      </p>
+                    </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             break;

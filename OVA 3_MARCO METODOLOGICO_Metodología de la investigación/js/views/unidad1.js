@@ -80,6 +80,13 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            var pdf = `<div class="col-md-12">
+                        <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
+                        </p>
+                      </div>`;
+            $('.pdfs').html(pdf);
+
             setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", ">");
             dragging = "";
             diff = "";
@@ -89,12 +96,6 @@ function controlSlides(num){
             bar = document.querySelector('.custom-scrollbar__bar');
             container = document.querySelector('.custom-scrollbar__inner');
             /*scroll();*/
-            var pdf = `<div class="col-md-12">
-                            <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
-                            </p>
-                        </div>`;
-            $('.pdfs').html(pdf);
             break;
         case 2:
             $('.pasos').removeClass('efectos');
@@ -815,7 +816,7 @@ function pant13Al(num){
                             <div class="h-100 d-flex align-items-center">
                                 <i class="fas fa-caret-right text-color-3 display-4 ml-2 cursor" onclick="pant13Al(2)"></i>
                             </div>`;
-            var img = `<img src="assets/img/img_ova/experimentospuros.png" width="100%" class="transition-on">`;
+            var img = `<img src="assets/img/img_ova/experimentospuros1.png" width="100%" class="transition-on">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.avance4').removeClass('d-none');
@@ -833,7 +834,7 @@ function pant13Al(num){
             var img = `<div class="h-100 d-flex align-items-center">
                             <i class="fas fa-caret-left text-color-3 display-4 cursor" onclick="pant13Al(1)"></i>
                         </div>
-                        <img src="assets/img/img_ova/experimentospuros.png" width="100%" class="transition-on">`;
+                        <img src="assets/img/img_ova/experimentospuros1.png" width="100%" class="transition-on">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.avance4').removeClass('d-none');
@@ -860,7 +861,7 @@ function pant13Al(num){
             var img = `<div class="h-100 d-flex align-items-center">
                             <i class="fas fa-caret-left text-color-3 display-4 cursor" onclick="pant13Al(2)"></i>
                         </div>
-                        <img src="assets/img/img_ova/experimentospuros.png" width="100%" class="transition-on">`;
+                        <img src="assets/img/img_ova/experimentospuros1.png" width="100%" class="transition-on">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.avance4').removeClass('d-none');
