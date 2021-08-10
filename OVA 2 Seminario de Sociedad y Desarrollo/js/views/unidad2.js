@@ -54,7 +54,16 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/La creación de la modernidad.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">La creación de la modernidad.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD2/5. La fabrica del sujeto neoliberal (1)2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">5. La fabrica del sujeto neoliberal (1)2<b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_white">
+                        <a href="assets/PDF/UNIDAD2/ERICH_FROMM.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">ERICH_FROMM<b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_white">
+                        <a href="assets/PDF/UNIDAD2/Lecturacomplementada.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Lecturacomplementada<b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_white">
+                        <a href="assets/PDF/UNIDAD2/Poemas.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Poemas<b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -180,98 +189,6 @@ function controlSlides(num){
 }
 
 
-
-/*function cambiacontenido(opcion){
-    switch (parseInt(opcion)) {
-        case 1:
-            var img = `<img src="assets/img/img_ova/dibujo_union.png" style="max-width: 90%;">`;
-            var cont = `<p>Si se tienen dos conjuntos A y B, se llama unión al conjunto formado por los elementos que pertenecen a estos conjuntos, es decir:</p>
-                                    <p>𝐴 ∪𝐵= {𝑥 / 𝑥∈𝐴 ∨ 𝑥∈𝐵}.</p>
-                                    <p>Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p>`;
-            $("#content").html(cont);
-            $("#img_cont").html(img);
-            break;
-        case 2:
-            var img = `<img src="assets/img/img_ova/dibujo_interseccion.png" style="max-width: 90%;">`;
-            var cont = `<p>Si se tienen dos conjuntos A y B, se llama intersección al conjunto formado por los elementos en común de estos conjuntos, es decir:</p>
-                                    <p>𝐴 ∩𝐵= {𝑥 / 𝑥∈𝐴  ∧   𝑥∈𝐵}.</p>
-                                    <p>Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p>`;
-            $("#content").html(cont);
-            $("#img_cont").html(img);
-            break;
-        case 3:
-            var img = `<img src="assets/img/img_ova/dibujo_diferencia.png" style="max-width: 90%;">`;
-            var cont = `<p>Dados dos conjuntos A y B, se llama diferencia al conjunto al formado por los elementos que son del primero pero que no son del segundo, es decir:</p>
-                                    <p>𝐴 ∩𝐵= 𝐴−𝐵= {𝑥 / 𝑥∈𝐴  ∧   𝑥∉𝐵}.</p>
-                                    <p>Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p>`;
-            $("#content").html(cont);
-            $("#img_cont").html(img);
-            break;
-        case 4:
-            var img = `<img src="assets/img/img_ova/dibujo_diferenciasimetrica.png" style="max-width: 90%;">`;
-            var cont = `<p>Se llama diferencia simétrica entre A y B al conjunto de los elementos exclusivos de los dos conjuntos, es decir:</p>
-                                    <p>𝐴△𝐵= {𝑥 / 𝑥∈(𝐴−𝐵)    ⋁   𝑥∈(𝐵−𝐴)}
-                                    𝐴△𝐵=(𝐴−𝐵)  ∪(𝐵−𝐴)</p>
-                                    <p>Propiedad; una forma equivalente</p>
-                                    <p>𝐴△𝐵=(𝐴∪𝐵)−(𝐴∩𝐵)</p>`;
-            $("#content").html(cont);
-            $("#img_cont").html(img);
-            break;
-        case 5:
-            var img = `<img src="assets/img/img_ova/dibujo_complemento.png" style="max-width: 90%;">`;
-            var cont = `<p>𝐴^𝐶 o 𝐴′  o  𝐴 ̅,  o también la diferencia  𝑈−𝐴 , se le llama complemento de 𝐴 con respecto a 𝑈,  o simplemente complemento de 𝐴.</p>
-                                    <p>Está conformado por los elementos que NO pertenecen al conjunto A. (Que están por fuera de 𝐴)</p>`;
-            $("#content").html(cont);
-            $("#img_cont").html(img);
-            break;
-        case 6:
-            // $("#content").html('');
-            // $("#img_cont").html('');
-            break;
-        default:
-            break;
-    }
-}
-
-function cambiacontenido2(opcion){
-    switch (parseInt(opcion)) {
-        case 1:
-            var img = `<img src="assets/img/img_ova/ejp_union.png" style="max-width: 75%;">`;
-            var cont = `<b>Complemento de la unión entre dos conjuntos:</b>
-                                      <p>〖(𝑨∪𝑩)〗^𝑪 o (𝑨∪𝑩)′  o  ((𝑨∪𝑩)) ̅, </p>
-                                      <p>O también la diferencia 𝐔−(𝐀∪𝐁</p>`;
-            $("#contenido2").html(cont);
-            $("#img_2").html(img);
-            
-            //$("#pregunta_cont").html('');
-            break;
-        case 2:
-            var img = `<img src="assets/img/img_ova/ejp_complementointerseccion.png" style="max-width: 75%;">`;
-            var cont = `<b>Complemento de la intersección entre dos conjuntos:</b>
-                                      <p>〖(𝐴∩𝐵)〗^𝐶 o (𝐴∩𝐵)′  o  ((𝐴∩𝐵)) </p>
-                                      <p>O también la diferencia  𝑈−(𝐴∩𝐵)</p>`;
-            $("#contenido2").html(cont);
-            $("#img_2").html(img);
-            //$("#pregunta_cont").html('');
-            break;
-        case 3:
-            var img = `<img src="assets/img/img_ova/ejp_doblemente.png" style="max-width: 75%;">`;
-            var cont = `<p>Si se quisiera graficar
-                        〖(𝐴∩𝐵)〗^𝐶∪𝐶 
-                        Los conjuntos 〖(𝐴∩𝐵)〗^𝐶 y 𝐶, se rayan en sentidos diferentes.
-                        La unión ∪, será todo lo rayado; Si se quisiera graficar la intersección
-                        (𝐴∩𝐵)^𝐶∩𝐶 
-                        <p>Será todo lo doblemente rayado</p>`;
-            $("#contenido2").html(cont);
-            $("#img_2").html(img);
-            
-            break;
-        default:
-            break;
-    }
-}
-
-*/
 
 function conjuntos(num){
     $(".info_conjuntos").removeClass('fondo_azul_claro');
