@@ -208,6 +208,9 @@ class SelectDropdown {
 		}
 	}
 }
+function reiniciar() {
+	location.reload();
+}
 
 function calificar(){
 	var res = [];
@@ -217,7 +220,7 @@ function calificar(){
 	var puntaje = 100;
 	for (var i = 0; i < res.length; i++) {
 		if (res[i] == 'incorrecta') {
-			puntaje = puntaje - 33.3;
+			puntaje = puntaje - 16.6;
 			
 		}
 	}
@@ -237,6 +240,6 @@ function calificar(){
 	  $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;">');
 	  $('.mensaje').text("¡Puedes hacerlo mejor!");
 	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar()">reiniciar</button>');
 	}
 }
