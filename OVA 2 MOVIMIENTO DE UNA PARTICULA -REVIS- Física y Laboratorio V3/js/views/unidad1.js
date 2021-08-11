@@ -17,8 +17,8 @@ $( document ).ready(function() {
         }
     });
 
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
-
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 20});
+    $('.zoom_img2').elevateZoom({zoomWindowPosition: 15});
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -291,6 +291,7 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
+
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 29:
@@ -1085,7 +1086,7 @@ function funcionalidad_1(num) {
                                     </div>
                                     `);
             $( ".zoomContainer" ).remove();
-            $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+            $('.zoom_img').elevateZoom({zoomWindowPosition: 50});
             break;
         case 2:
 
@@ -1183,7 +1184,7 @@ function svg_img(num) {
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
                                         <div class="text-center">
-                                           <img src="assets/img/img_ova/Imagen-ejemplo-particula.JPG" class="img-100">
+                                           <img src="assets/img/img_ova/imagenejemploparticula.png" class="img-100">
                                         </div>
                                       </div>
                                       <div class="custom-scrollbar__bar_uno">
@@ -1898,7 +1899,7 @@ function teorias() {
                     `;
         $("#teoria").html(texto);
         $( ".zoomContainer" ).remove();
-        $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+        $('.zoom_img').elevateZoom({zoomWindowPosition: 50});
     }
 }
 
