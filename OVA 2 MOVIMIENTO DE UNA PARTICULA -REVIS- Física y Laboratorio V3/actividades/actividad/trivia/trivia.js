@@ -8,7 +8,7 @@ window.onload = function () {
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
-        'Un autobús sale del punto A del reposo y acelera a razón de 0,75 m/s2 hasta que alcanza una velocidad de 9 m/s y continua a esa velocidad hasta que aplica los frenos y se detiene en el punto B, que está a 27 metros más adelante del punto donde los frenos se aplicaron. Suponiendo que la temperatura del pavimento es de 20,9° y una desaceleración uniforme, y si la distancia entre A y B es de 90 m, determine el tiempo total en segundos que le tomó al autobús ir de A a B.' : ['11,2', '19', 1]
+        'Un autobús sale del punto A del reposo y acelera a razón de 0,75 m/s<sup>2</sup> hasta que alcanza una velocidad de 9 m/s y continua a esa velocidad hasta que aplica los frenos y se detiene en el punto B, que está a 27 metros más adelante del punto donde los frenos se aplicaron. Suponiendo que la temperatura del pavimento es de 20,9° y una desaceleración uniforme, y si la distancia entre A y B es de 90 m, determine el tiempo total en segundos que le tomó al autobús ir de A a B.' : ['11,2', '19', 1]
         
         };
       
