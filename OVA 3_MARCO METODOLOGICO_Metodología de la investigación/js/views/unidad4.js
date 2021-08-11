@@ -94,13 +94,15 @@ function controlSlides4(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            scroll_set(18);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
-            scroll_set(16);
+            scroll_set(18);
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            scroll_set(18);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
@@ -630,22 +632,17 @@ function teorias(num) {
                   `;
       $("#teorico").html(texto);
   }else if (num == 2) {
+
       var texto = `
-                  <div class="content custom-scrollbar18 mr-3">
-                    <div class="custom-scrollbar__inner18">
-                      <p class="text-justify text-black">
-                        <b class="color-title">Poner en marcha el programa</b><br>
-                        SPSS y Minitab, estos dos paquetes son fáciles de usar, ya que, lo único que se debe hacer es solicitar los análisis requeridos, seleccionando las opciones adecuadas. 
-                      </p>
-                    </div>
-                    <div class="custom-scrollbar__bar18">
-                      <div class="custom-scrollbar__knob18 cursor">
-                        <p class="text-center linea_scroll18">-</p>
-                      </div>
-                    </div>
+                  <div class="d-flex align-items-center">
+                    <p class="text-justify text-black">
+                      <b class="color-title">Poner en marcha el programa</b><br>
+                      SPSS y Minitab, estos dos paquetes son fáciles de usar, ya que, lo único que se debe hacer es solicitar los análisis requeridos, seleccionando las opciones adecuadas. 
+                    </p>
                   </div>
                   `;
       $("#teorico").html(texto);
+      scroll_set(16);
   }else if (num == 3) {
       var texto = `
                   <div class="row">
