@@ -421,44 +421,6 @@ function Input(num) {
       /*alert();*/
   });
 }
-
-// setup
-
-/*
-function poner(num) {
-    
-    $(".texto_efecto"+num).css({
-        position: 'relative',
-        top: '2px',
-        display: 'block',
-        'z-index': '100'
-    });
-    if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','block');
-        $(".custom-scrollbar2").css('height','250');
-    }
-}
-function quitar(num) {
-    // $(".texto_efecto"+num).css({
-    //     position: 'relative',
-    //     top: '2px',
-    //     display: 'none',
-    //     'z-index': '100'
-    // });
-    if (num == 1) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
-    }
-    if (num == 2) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
-    }
-    if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
-    }
-}
-*/
 function scroll_horizontal(num){
     $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').removeClass('d-flex');
     $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').addClass('d-none');
@@ -479,161 +441,6 @@ function scroll_horizontal(num){
             break;
     }
 }
-/*function scroll_horizontal2(num){
-    switch (parseInt(num)) {
-        case 0:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bunker (1).png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/muerte.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `El primero de estos conflictos que debe llamar la atención es el ocurrido en la <span class="text-cafe-activi"><b>República Federativa de Yugoslavia</b></span>, la cual, después de integrar durante décadas pueblos con profundas diferencias étnicas, religiosas y de identidad nacional, comienza a desintegrarse a partir de la muerte del general Josip Broz Tito en 1980, quien durante treinta y cinco años gobernó la hoy extinta Yugoslavia.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 1:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/punto.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/balas.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `A raíz de la muerte del general tito se retomó el ánimo de varios pueblos por lograr su independencia y constituirse como un Estado soberano, lo que <span class="text-cafe-activi"><b>dio inicio a la confrontación,</b></span> especialmente cuando Bosnia Herzegovina empezó su proceso de independencia, ante la negativa de los Bosnios Serbios de apoyar el proceso, con el respaldo de Serbia, en cabeza de Slodovan Milosevic que se hizo al poder en la década del 90.`;
-            var activi_scroll = `
-                                <div class="row border-left-cafe">
-                                  <div class="col-md-12 row">
-                                    <div class="col-md-1 p-0 zindex" style="">
-                                      <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                    </div>
-                                    <div class="col-md-11">
-                                      <div class="titulo_sub" style="">
-                                        <p style=""><b>ACTIVIDAD # 5</b></p>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
-                                    </div>
-                                    <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
-                                        <p class="p_black pl-3">Para un recorrido rápido al conflicto de Yugoslavia, visualice el siguiente video haciendo clic en el botón YouTube:</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
-                                      <div class="m-auto bg-cafe-activi radius-2 p-3">
-                                        <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6 d-flex">
-                                      <div class="img-45 m-auto">
-                                        <img src="assets/img/img_ova/reloj.png" class="img-100">
-                                      </div>
-                                      <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>6 minutos</b></p>
-                                    </div>
-                                  </div>
-                                </div>
-                                `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 2:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/explosion.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/africa.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Por otra parte, en 1994 se tiene un conflicto interno que se desarrolla en el continente africano que llama la atención de la comunidad internacional por su <span class="text-cafe-activi"><b>grado tan elevado de violencia</b></span> entre dos grupos étnicos que habitan en la república de Ruanda.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 3:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/belgica.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/granada.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Estamos haciendo referencia al conflicto surgido como consecuencia de un proceso histórico de <span class="text-cafe-activi"><b>discriminación fomentado por Bélgica</b></span> que colonizó Ruanda, en el cual, estableció diferencias entre los Tutsis y los Hutus; los primeros considerados como una etnia superior que controlaba las principales fuentes de producción, lo que sembró un resentimiento que por décadas se alimentó y que fue en últimas lo que desembocó en el genocidio presentado en el año de 1994.`;
-            var activi_scroll = `
-                                <div class="row border-left-cafe">
-                                  <div class="col-md-12 row">
-                                    <div class="col-md-1 p-0 zindex" style="">
-                                      <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                    </div>
-                                    <div class="col-md-11">
-                                      <div class="titulo_sub" style="">
-                                        <p style=""><b>ACTIVIDAD # 6</b></p>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
-                                    </div>
-                                    <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
-                                        <p class="p_black pl-3">Para comprender el tema visto es  indispensable ver el documental que nos muestra el antes y durante del conflicto étnico que se vivió. Haga clic en el botón YouTube:</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
-                                      <div class="m-auto bg-cafe-activi radius-2 p-3">
-                                        <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="d-flex">
-                                          <div class="img-45 m-auto">
-                                            <img src="assets/img/img_ova/reloj.png" class="img-100">
-                                          </div>
-                                          <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>54 minutos</b></p>
-                                      </div>
-                                      <div class="d-flex">
-                                        <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 4:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/casco.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bala2.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Es importante señalar que las cifras oficiales dan cuenta de más de <span class="text-cafe-activi"><b>800.000 victimas</b></span> del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses, periodo de mayor crueldad de los ataques de los Hutus contra el pueblo Tutsi.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        default:
-            break;
-    }
-}*/
-
 function cajas(num){
   switch (parseInt(num)) {
       case 1:
@@ -825,12 +632,8 @@ function cajas2(num){
 
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
-    $(".ruanda-img").removeClass('bg-verde-1');
-    $(".ruanda-img").addClass('bg-color-activi-c');
-    $(".ruanda-img-"+ruanda_num).removeClass('bg-color-activi-c');
-    $(".ruanda-img-"+ruanda_num).addClass('bg-verde-1');
-    $(".ruanda-1, .ruanda-2, .ruanda-3").addClass('d-none');
-    $(".ruanda-1, .ruanda-2, .ruanda-3").removeClass('d-flex');
+    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4").addClass('d-none');
+    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4").removeClass('d-flex');
 
     if (ruanda_num==1) {
         $(".ruanda-1").removeClass('d-none');
@@ -841,75 +644,11 @@ function ruandas() {
     }else if (ruanda_num==3) {
         $(".ruanda-3").removeClass('d-none');
         $(".ruanda-3").addClass('d-flex');
+    }else if (ruanda_num==4) {
+        $(".ruanda-4").removeClass('d-none');
+        $(".ruanda-4").addClass('d-flex');
     }
 }
-/*
-function yugoslavias(num) {
-    $(".yugoslavia-info").removeClass('bg-amarillo-c');
-    $(".yugoslavia-info").addClass('bg-cafe-mo');
-    $(".yugoslavia-info-"+num).removeClass('bg-cafe-mo');
-    $(".yugoslavia-info-"+num).addClass('bg-amarillo-c');
-    if (num == 1) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar1">
-                      <div class="custom-scrollbar__inner1">
-                        <p class="justificado p_black">Mediante la Resolución 780 de 1992 el Consejo de Seguridad creó la Comisión de expertos para <span class="text-cafe-activi"><b>investigar y recoger pruebas de los graves incumplimientos</b></span> a los convenios de ginebra y otras infracciones al DIH, órgano que realizó un trabajo muy importante de recolección de información sobre todas las infracciones que se hubiesen presentado, lo que incluyó más de <span class="text-cafe-activi"><b>65.000 páginas de documentos, cerca de 300 horas de filmación en video y 3.300 páginas de análisis,</b></span> lo que contrasta en un trabajo juicioso, el hecho que el comité nunca recibió financiación de la ONU para el desarrollo de sus actividades.</p>
-                        <br>
-                        <br>
-                        <p class="justificado p_black">El trabajo realizado por el Comité de expertos fue entregado al tribunal en 1994, para que adelantara los procesos que correspondieren frente a los responsables de los crímenes cometidos. Debe destacarse que el valioso trabajo del comité se vio menguado por la decisión política de reducir su mandato en el tiempo, en tanto prevalecieron intereses políticos sobre la búsqueda de justicia.</p>
-                      </div>
-                      <div class="custom-scrollbar__bar1">
-                        <div class="custom-scrollbar__knob1 cursor">
-                          <p class="text-center linea_scroll1">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-        modal_scroll1();
-    }else if (num == 2) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar2">
-                      <div class="custom-scrollbar__inner2">
-                      <p class="justificado p_black">En febrero de 1993 el consejo de seguridad mediante la resolución 808 decidió que debía <span class="text-cafe-activi"><b>crearse un tribunal Ad hoc para investigar los infracciones al DIH (Derecho Internacional Humanitario)</b></span> cometidas en Yugoslavia a partir de 1991, para lo cual el secretario de la ONU debía presentar un informe sobre la pertinencia de crear el tribunal.</p>
-                        <br>
-                        <p class="justificado p_black">Como resultado de lo anterior, se emite la resolución 827 del consejo de seguridad, que crea el Tribunal Penal Internacional para la Antigua Yugoslavia y define su estatuto, el cual queda oficialmente conformado desde mayo de 1993, aunque la elección de sus jueces se realiza en septiembre y el fiscal asumió su cargo en agosto de 1994.</p>
-                      </div>
-                      <div class="custom-scrollbar__bar2">
-                        <div class="custom-scrollbar__knob2 cursor">
-                          <p class="text-center linea_scroll2">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-        modal_scroll2();
-    }else if (num == 3) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi">
-                      <div>
-                        <p class="justificado p_black">Uno de los elementos que debe destacarse es que el estatuto no solamente establece la competencia del tribunal para juzgar crímenes de guerra, que son graves infracciones al Derecho Internacional Humanitario, sino que incluye la categoría de crímenes de <span class="text-cafe-activi"><b>lesa humanidad y el genocidio</b></span>, como parte de los crímenes internacionales competencia del tribunal.</p>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-    }else if (num == 4) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3">
-                      <div class="custom-scrollbar__inner3">
-                        <p class="justificado p_black">La competencia temporal del tribunal es a partir de 1991, también se debe destacar que la sede se estableció en la Haya, Países Bajos y el <span class="text-cafe-activi"><b>presupuesto para su funcionamiento</b></span> sale de los recursos del Consejo de Seguridad de la  ONU, aún así el tribunal durante sus primeros años tuvo dificultades para el desarrollo de sus actividades, derivado de la falta de cooperación de los estados que surgieron con el proceso de escisión de la Antigua Yugoslavia, sin embargo, fueron finalmente juzgados cerca de un centenar de personas por el tribunal, desarrollando una abundante jurisprudencia que fortaleció el derecho penal internacional.</p>
-                      </div>
-                      <div class="custom-scrollbar__bar3">
-                        <div class="custom-scrollbar__knob3 cursor">
-                          <p class="text-center linea_scroll3">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-        modal_scroll3();
-    }
-}*/
 
 function funcionalidad_1(num) {
     $(".info_funcionalidad_1_1, .info_funcionalidad_1_2").addClass('d-none');

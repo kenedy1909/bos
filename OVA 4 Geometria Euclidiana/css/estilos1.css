@@ -9,3 +9,35 @@
 .bg-naranja-1{
   background: #F28800;
 }
+
+.bg-gris-o{
+  background: #D1D1D1;
+}
+
+.h-6px{
+  height: 6px;
+}
+
+.h-80px{
+  height: 80px;
+}
+
+.top-n40px{
+  top: -40px;
+}
+
+.w-80px{
+  width: 80px;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.bg-azul-1{
+  background: #009DF2;
+}
+
+.text-rojo-1{
+  color: #C00000;
+}
