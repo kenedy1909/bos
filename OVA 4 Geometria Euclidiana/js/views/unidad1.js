@@ -632,8 +632,10 @@ function cajas2(num){
 
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
-    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4").addClass('d-none');
-    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4").removeClass('d-flex');
+    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").addClass('d-none');
+    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").removeClass('d-flex');
+    $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").removeClass('bg-naranja-1');
+    $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").addClass('bg-color-activi-c');
 
     if (ruanda_num==1) {
         $(".ruanda-1").removeClass('d-none');
@@ -647,6 +649,21 @@ function ruandas() {
     }else if (ruanda_num==4) {
         $(".ruanda-4").removeClass('d-none');
         $(".ruanda-4").addClass('d-flex');
+    }else if (ruanda_num==5) {
+        $(".ruanda-5").removeClass('d-none');
+        $(".ruanda-5").addClass('d-flex');
+        $(".ruanda-img-5").removeClass('bg-color-activi-c');
+        $(".ruanda-img-5").addClass('bg-naranja-1');
+    }else if (ruanda_num==6) {
+        $(".ruanda-6").removeClass('d-none');
+        $(".ruanda-6").addClass('d-flex');
+        $(".ruanda-img-6").removeClass('bg-color-activi-c');
+        $(".ruanda-img-6").addClass('bg-naranja-1');
+    }else if (ruanda_num==7) {
+        $(".ruanda-7").removeClass('d-none');
+        $(".ruanda-7").addClass('d-flex');
+        $(".ruanda-img-7").removeClass('bg-color-activi-c');
+        $(".ruanda-img-7").addClass('bg-naranja-1');
     }
 }
 
