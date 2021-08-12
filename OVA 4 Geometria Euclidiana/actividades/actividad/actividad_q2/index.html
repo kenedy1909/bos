@@ -32,35 +32,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <p style="color: #000; text-align: center;"><b>(Utilice las flechas (<) (>) para visualizar todas las preguntas de la actividad)</b></p>
-                <br>
-                <div class="img-cuestionario-1"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen68.png" class="w-100" style="width: 60%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-2"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen45.png" class="w-100" style="width: 60%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-3"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen46.png" class="w-100" style="width: 60%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-4"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen46.png" class="w-100" style="width: 60%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-5"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen46.png" class="w-100" style="width: 60%; margin: auto;">
-                    </div>
-                </div>
-            </div>
+            <!-- <div class="col-md-12">
+                <p style="color: #000;"><b>Seleccione la respuesta correcta y luego haga clic en la flecha para continuar:</b></p>
+            </div> -->
             <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                 <div class="preguntas">
 
@@ -72,7 +46,8 @@
                         </div>
                     </div> -->
                     <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b>
+                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b></spam>
+                            <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                         </p>
                         <div class="respuestas-cuestionario">
                             <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
