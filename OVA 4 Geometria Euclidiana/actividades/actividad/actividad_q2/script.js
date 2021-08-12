@@ -1,6 +1,10 @@
 /*js de la Lección*/
 $(document).on('ready', inicioRecurso);
-
+var num_aleatorio_1;
+var num_aleatorio_2;
+var num_aleatorio_3;
+var num_aleatorio_4;
+var num_aleatorio_5;
 function inicioRecurso() {
 
     function tamanoCuadros() {
@@ -12,6 +16,7 @@ function inicioRecurso() {
         });
         console.log(highestBox)
         $('.pregunta-cuestionario').height(highestBox + 2);
+
     }
     // tamanoCuadros()
 }
@@ -31,49 +36,58 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
                 t = array[m];
                 array[m] = array[i];
                 array[i] = t;
+                num_aleatorio_1 = array[0]['texto'][0];
+                num_aleatorio_2 = array[1]['texto'][0];
+                num_aleatorio_3 = array[2]['texto'][0];
             }
 
             return array;
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "El punto en que se cortan las tres bisectrices se llama:",
+                texto: "1. De la siguiente figura, encuentra el resultado de  𝑚(𝐶 ̂ 𝐷) y selecciona la respuesta correcta",
                 respuestas: [{
-                    texto: "Incentro",
+                    texto: "88°",
                     correcta: false
                 }, {
-                    texto: "Circuncentro",
-                    correcta: false
-                }, {
-                    texto: "Ortocentro",
-                    correcta: false
-                }, {
-                    texto: "Baricentro",
-                    correcta: true
-                }]
-            }, {
-                texto: "Las bisectrices interiores son:",
-                respuestas: [{
-                    texto: "Las que unen el punto medio de cada lado con el vértice opuesto.",
-                    correcta: false
-                }, {
-                    texto: "Las que corresponden a los ángulos interiores.",
+                    texto: "61°",
                     correcta: true
                 }, {
-                    texto: "Las perpendiculares a cada lado en su punto medio.",
+                    texto: "44°",
                     correcta: false
                 }, {
-                    texto: "Las que corresponden a los ángulos exteriores.",
+                    texto: "27°",
                     correcta: false
                 }]
             }, {
-                texto: "Circuncentro se refiere a: “Punto de corte de las mediatrices”.",
+                texto: "2. En la siguiente figura, determine 𝑚∠𝐶",
                 respuestas: [{
-                    texto: "Falso",
+                    texto: "15°",
                     correcta: false
                 }, {
-                    texto: "Verdadero",
+                    texto: "15,3°",
+                    correcta: false
+                }, {
+                    texto: "13,5°",
                     correcta: true
+                }, {
+                    texto: "12°",
+                    correcta: false
+                }]
+            }, {
+                texto: "3. Subconjunto (o tramo) de la circunferencia limitado por dos puntos de ella.",
+                respuestas: [{
+                    texto: "Cuerda",
+                    correcta: false
+                }, {
+                    texto: "Arco",
+                    correcta: true
+                }, {
+                    texto: "Diámetro",
+                    correcta: false
+                }, {
+                    texto: "Corolario",
+                    correcta: false
                 }]
             }]);
         };
