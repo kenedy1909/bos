@@ -513,7 +513,7 @@ a.control_next {
 }
 
 .contenedor_indi{
-  background: #282F9F;
+  background: #00384b;
   border-radius: 20px;
   padding-top: 30px;
   padding-left: 29px;
@@ -1005,4 +1005,129 @@ input[type=range]::-ms-fill-upper {
   padding-left: 25px;
   position: relative;
   left: -25px;
+}
+
+.Prioritise-rafiki{
+  background-image: url('../assets/img/img_ova/Prioritise-rafiki.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 300px;
+  width: 300px;
+  padding-top: 228px;
+}
+.btn_cafe{
+  height: 30px;width: 30px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  
+  padding-top: 2px;
+  margin-left: 5px;
+}
+.btn_cafeActive{
+  background: #61C5FF;
+}
+.btn_cafeInactive{
+  background: #E39D40;
+}
+.cafe_leche{
+  background: #e39d40;
+  padding: 30px;
+  border-radius: 50px;
+}
+.blueBtn{
+  background: #00465e;
+  color: white;
+}
+.astronave{
+  max-width: 170px;
+  opacity: 15%;
+  position: relative;
+  left: -35px;
+}
+.contene-osc{
+  background: #00384f;
+  height: 70px;
+}
+.btn-pastilla{
+  background: #61C5FF;
+  height: 50px;
+  width: 60px;
+  border-radius: 10px;
+  color: #00384f;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
+.tria-pastilla{
+    width: 0;
+    height: 0;
+    border-left: 30px solid #61c5ff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(90deg);
+}
+.banner7{
+  background: #FCD966;
+  padding: 30px;
+  border-radius: 20px;
+  height: 214px;
+}
+.bannerSiete{
+  background: #FCD966;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/*scroll*/
+.custom-scrollbar_uno, .custom-scrollbar_dos, .custom-scrollbar_tres, .custom-scrollbar_cuatro{
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_uno, .custom-scrollbar__inner_dos, .custom-scrollbar__inner_tres, .custom-scrollbar__inner_cuatro{
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_uno, .custom-scrollbar__bar_dos, .custom-scrollbar__bar_tres, .custom-scrollbar__bar_cuatro{
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 14px;
+  /*right: 8px;*/
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob_uno, .custom-scrollbar__knob_dos, .custom-scrollbar__knob_tres, .custom-scrollbar__knob_cuatro{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.linea_scroll_uno, .linea_scroll_dos, .linea_scroll_tres, .linea_scroll_cuatro{
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #00414c;
+}
+
+.blancoBane{
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
 }
