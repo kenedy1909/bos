@@ -735,6 +735,38 @@ function funcionalidad_2(num) {
     }
 }
 
+function funcionalidad_3(num) {
+    $(".info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3, .info_funcionalidad_3_4, .info_funcionalidad_3_5, .info_funcionalidad_3_6").addClass('d-none');
+    $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").removeClass('bg-amarrillo-1');
+    $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").addClass('bg-naranja-1');
+
+    if (num == 1) {
+        $(".info_funcionalidad_3_1").removeClass('d-none');
+        $(".btn_funcionalidad_3_1").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_1").addClass('bg-amarrillo-1');
+    }else if (num == 2) {
+        $(".info_funcionalidad_3_2").removeClass('d-none');
+        $(".btn_funcionalidad_3_2").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_2").addClass('bg-amarrillo-1');
+    }else if (num == 3) {
+        $(".info_funcionalidad_3_3").removeClass('d-none');
+        $(".btn_funcionalidad_3_3").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_3").addClass('bg-amarrillo-1');
+    }else if (num == 4) {
+        $(".info_funcionalidad_3_4").removeClass('d-none');
+        $(".btn_funcionalidad_3_4").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_4").addClass('bg-amarrillo-1');
+    }else if (num == 5) {
+        $(".info_funcionalidad_3_5").removeClass('d-none');
+        $(".btn_funcionalidad_3_5").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_5").addClass('bg-amarrillo-1');
+    }else if (num == 6) {
+        $(".info_funcionalidad_3_6").removeClass('d-none');
+        $(".btn_funcionalidad_3_6").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_6").addClass('bg-amarrillo-1');
+    }
+}
+
 /*function funcionalidad_2(num) {
     $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5").addClass('d-none');
 
@@ -751,7 +783,7 @@ function funcionalidad_2(num) {
     }
 }*/
 
-function funcionalidad_3(num) {
+/*function funcionalidad_3(num) {
     $(".hover_1, .hover_2, .hover_3, .info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3").addClass('d-none');
     if (num == 1) {
         $(".hover_1").removeClass('d-none');
@@ -763,7 +795,7 @@ function funcionalidad_3(num) {
         $(".hover_3").removeClass('d-none');
         $(".info_funcionalidad_3_3").removeClass('d-none');
     }
-}
+}*/
 
 function funcionalidad_4(num) {
     $(".funcionalidad_4_1, .funcionalidad_4_2").removeClass('bg-verde-2');
