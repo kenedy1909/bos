@@ -85,6 +85,9 @@ function controlSlides3(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            break;    
+        case 4:
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             tema = 1;
             break;    
         default:
