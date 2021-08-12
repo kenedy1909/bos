@@ -99,6 +99,9 @@
 .bg-amarrillo-2{
   background: #FFE7B3;
 }
+.bg-amarrillo-3{
+  background: #FFC000;
+}
 
 .bg-naranja-2{
   background: #FCBFA6;
@@ -167,4 +170,8 @@
     position: relative;
     top: -32px;
     color: #FFFFFF;
+}
+
+.bg-azul-4{
+  background: #DAE3F3;
 }
