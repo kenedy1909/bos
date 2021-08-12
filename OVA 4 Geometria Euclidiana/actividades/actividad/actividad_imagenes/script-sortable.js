@@ -55,25 +55,31 @@ var contenedorAR1 = ".contenedorA";
 var contenedorBR1 = ".contenedorB";
 var contenedorCR1 = ".contenedorC";
 var contenedorDR1 = ".contenedorD";
+var contenedorER1 = ".contenedorE";
 var arrOrigenR1 = [
     {
-        code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se verifica que la proposición es cierta para el primer caso</div></div>\n'+
+        code : '<div class="componente" data-order-origen="contenedorA">\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen53.png" style="width: 80%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se <b>supone cierta</b> la proposición para un caso 𝑛=𝒌. (cualquier natural)</div></div>\n'+
+        code : '<div class="componente" data-order-origen="contenedorB">\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen54.png" style="width: 80%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">Se <b>demuestra que es cierta</b>, Se apoya en la premisa de <b>hipótesis de inducción</b>.</div></div>\n'+
+        code : '<div class="componente" data-order-origen="contenedorC">\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen55.png" style="width: 80%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente opcion_circulo" data-order-origen="contenedorD" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">se recurre al CONTRA EJEMPLO para afirmar que es falsa</div></div>\n'+
+        code : '<div class="componente" data-order-origen="contenedorD">\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen56.png" style="width: 80%; margin: auto;"></div>\n'+
+        '</div>\n'
+    },
+    {
+        code : '<div class="componente" data-order-origen="contenedorE">\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen57.png" style="width: 80%; margin: auto;"></div>\n'+
         '</div>\n'
     }
 ];
@@ -107,19 +113,21 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">PASO 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">PASO 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">PASO 3</h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">PASO 4</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">PASO 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">PASO 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">PASO 3</h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD">PASO 4</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
     /*inicioREDIR1();*/
  }
 
@@ -129,7 +137,7 @@ function shuffleOrigenR1() {
     } else {
         $(origenR1).html('');
         var arrCodeInitialOrigenR1 = shuffle(arrOrigenInitialR1);
-        arrCodeInitialOrigenR1.slice(-4).forEach(function (value) {
+        arrCodeInitialOrigenR1.slice(-5).forEach(function (value) {
            $(origenR1).append(value.code);
         });
     }
@@ -149,6 +157,7 @@ function calificarR1() {
     var contenidoBR1 = $(contenedorBR1).find('div');
     var contenidoCR1 = $(contenedorCR1).find('div');
     var contenidoDR1 = $(contenedorDR1).find('div');
+    var contenidoER1 = $(contenedorER1).find('div');
 
     contenidoAR1.each(function(){
         if(($(this).attr('data-order-origen') != "contenedorA")){
@@ -186,11 +195,20 @@ function calificarR1() {
         }
     })
 
+    contenidoER1.each(function(){
+        if(($(this).attr('data-order-origen') != "contenedorE")){
+            $(origenR1).append($(this).context.outerHTML);
+            $(this).remove();
+        } else {
+            puntajeR1 = puntajeR1 + incrementoR1;
+        }
+    })
+
 
     if(parseInt(puntajeR1) == 100) {
         mensajeR1 = 'Felicitaciones!';
         exitoR1 = true;
-        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
      } else {
         mensajeR1 = 'Sigue intentando!';
          if (widthR1 < 767) {
@@ -198,7 +216,7 @@ function calificarR1() {
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          } else {
             exitoR1 = false;
-            mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, function(){});
+            mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          }
 
      }  
@@ -239,11 +257,11 @@ var activityDragR1 = function () {
                             shuffleOrigenR1();
                         } else {
                             $(btnCalificarR1).attr('disabled', false);
-                            $(btnCalificarR1).on('click', calificarR1);
+                            $(btnCalificarR1).off('click').on('click', calificarR1);
                         }
                     } else {
                         $(btnCalificarR1).attr('disabled', false);
-                        $(btnCalificarR1).on('click', calificarR1);
+                        $(btnCalificarR1).off('click').on('click', calificarR1);
                     }
                 }
                 
