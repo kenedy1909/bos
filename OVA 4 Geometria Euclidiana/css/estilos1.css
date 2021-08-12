@@ -123,3 +123,48 @@
     font-size: 100%;
     text-align: center;
 }
+
+.custom-scrollbar_uno {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_uno {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_uno {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#003442;
+  width: 3px;
+  right: 30px;
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob_uno {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #003442;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.linea-scroll_uno {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #FFFFFF;
+}
