@@ -25,7 +25,7 @@
     font-size: 26px;
     font-weight: 600;
     display: table;
-    background: #09B68B;
+    background: #FFFFFF;
     height: 100px;
     width: 125%;
     position: relative;
@@ -98,13 +98,13 @@
     bottom: -15px;
     border: solid #393A72 2px;
     border-radius: 10px;
-    background: #09B68B;
+    background: #FFFFFF;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
     z-index: -1;
 }
 
 #actividad-1 ul#grupoB li.active:after {
-    background: #09B68B;
+    background: #FFFFFF;
 }
 
 #actividad-1 ul#grupoB li.active {
