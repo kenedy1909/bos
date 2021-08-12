@@ -111,3 +111,15 @@
 .bg-verde-1{
   background: #0AB8BF;
 }
+.sy {
+    position: relative;
+    text-align: center;
+}
+.oncapital, .onsmall {
+    position: absolute;
+    top: -0.7em;
+    left: 5px;
+    width: 100%;
+    font-size: 100%;
+    text-align: center;
+}
