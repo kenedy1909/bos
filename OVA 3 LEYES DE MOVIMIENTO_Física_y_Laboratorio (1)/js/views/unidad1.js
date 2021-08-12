@@ -550,6 +550,104 @@ function fuerzas(num){
     }
 }
 
+function textP6(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe1').removeClass('btn_cafeInactive');
+            $('.btn_cafe1').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-1').removeClass('invisible');
+            $('.textP6-1').addClass('visible');
+            break;
+        case 2:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe2').removeClass('btn_cafeInactive');
+            $('.btn_cafe2').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-2').removeClass('invisible');
+            $('.textP6-2').addClass('visible');
+            break;
+        case 3:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe3').removeClass('btn_cafeInactive');
+            $('.btn_cafe3').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-3').removeClass('invisible');
+            $('.textP6-3').addClass('visible');
+            break;
+        case 4:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe4').removeClass('btn_cafeInactive');
+            $('.btn_cafe4').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-4').removeClass('invisible');
+            $('.textP6-4').addClass('visible');
+            break;
+        case 5:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe5').removeClass('btn_cafeInactive');
+            $('.btn_cafe5').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-5').removeClass('invisible');
+            $('.textP6-5').addClass('visible');
+            break;
+        case 6:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe6').removeClass('btn_cafeInactive');
+            $('.btn_cafe6').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-6').removeClass('invisible');
+            $('.textP6-6').addClass('visible');
+            break;
+        case 7:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe7').removeClass('btn_cafeInactive');
+            $('.btn_cafe7').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-7').removeClass('invisible');
+            $('.textP6-7').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
 
 
 
