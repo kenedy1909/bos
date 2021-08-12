@@ -894,7 +894,7 @@ function funcionalidad_6(num) {
     }
 }
 
-function enter_hover_1(num) {
+/*function enter_hover_1(num) {
     $(".text_hover_1_1, .text_hover_1_2").removeClass('img-100');
     $(".content_hover_1_1, .content_hover_1_2").removeClass('img-100');
     $(".text_hover_1_1, .text_hover_1_2").addClass('img-50');
@@ -922,7 +922,7 @@ function enter_hover_1(num) {
         $(".ocultar_hover_1_2").removeClass('d-flex');
         $(".ocultar_hover_1_2").addClass('d-none');
     }
-}
+}*/
 function funcionalidad_7(num) {
     $(".funcionalidad_7_1, .funcionalidad_7_2").removeClass('bg-verde-2');
     $(".funcionalidad_7_1, .funcionalidad_7_2").addClass('bg-color-activi-c');
@@ -1058,21 +1058,24 @@ function instrucciones(num) {
     }
 }
 
-function enter_hover_2(num) {
-    $(".enter_hover_2_1, .enter_hover_2_2, .enter_hover_2_3, .enter_hover_2_4").removeClass('bg-color-activi-o');
-    $(".enter_hover_2_1, .enter_hover_2_2, .enter_hover_2_3, .enter_hover_2_4").addClass('bg-azul-1');
+function enter_hover_1(num) {
+    $(".enter_hover_1_1, .enter_hover_1_2, .enter_hover_1_3, .enter_hover_1_4, .enter_hover_1_5").removeClass('bg-color-activi-o');
+    $(".enter_hover_1_1, .enter_hover_1_2, .enter_hover_1_3, .enter_hover_1_4, .enter_hover_1_5").addClass('bg-color-activi-c');
     if (num == 1) {
-        $(".enter_hover_2_1").addClass('bg-color-activi-o');
-        $(".enter_hover_2_1").removeClass('bg-azul-1');
+        $(".enter_hover_1_1").addClass('bg-color-activi-o');
+        $(".enter_hover_1_1").removeClass('bg-color-activi-c');
     }else if (num == 2) {
-        $(".enter_hover_2_2").addClass('bg-color-activi-o');
-        $(".enter_hover_2_2").removeClass('bg-azul-1');
+        $(".enter_hover_1_2").addClass('bg-color-activi-o');
+        $(".enter_hover_1_2").removeClass('bg-color-activi-c');
     }else if (num == 3) {
-        $(".enter_hover_2_3").addClass('bg-color-activi-o');
-        $(".enter_hover_2_3").removeClass('bg-azul-1');
+        $(".enter_hover_1_3").addClass('bg-color-activi-o');
+        $(".enter_hover_1_3").removeClass('bg-color-activi-c');
     }else if (num == 4) {
-        $(".enter_hover_2_4").addClass('bg-color-activi-o');
-        $(".enter_hover_2_4").removeClass('bg-azul-1');
+        $(".enter_hover_1_4").addClass('bg-color-activi-o');
+        $(".enter_hover_1_4").removeClass('bg-color-activi-c');
+    }else if (num == 5) {
+        $(".enter_hover_1_5").addClass('bg-color-activi-o');
+        $(".enter_hover_1_5").removeClass('bg-color-activi-c');
     }
 }
 
