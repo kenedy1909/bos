@@ -624,20 +624,30 @@ p, button{
   position: relative;
   height: 400px;
 }
-.custom-scrollbar15, .custom-scrollbar16, .custom-scrollbar17, .custom-scrollbar18{
+.custom-scrollbar15, .custom-scrollbar16, .custom-scrollbar17, .custom-scrollbar18, .custom-scrollbar19{
 	position: relative;
   	height: 200px;
 }
 
-.custom-scrollbar10, .custom-scrollbar11{
+.custom-scrollbar10, .custom-scrollbar11, .custom-scrollbar19{
 	position: relative;
 	height: 150px;
 }
-.custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18{
+.custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar15, .custom-scrollbar__bar17{
 	position: absolute;
     top: 22px;
     bottom: 45px;
     background: #ffffff;
+    width: 3px;
+    right: 30px;
+    border-radius: 4px;
+    height: 150px;
+}
+.custom-scrollbar__bar16, .custom-scrollbar__bar18, .custom-scrollbar__bar19{
+	position: absolute;
+    top: 22px;
+    bottom: 45px;
+    background: #00000066;
     width: 3px;
     right: 30px;
     border-radius: 4px;
@@ -674,7 +684,7 @@ p, button{
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 }
-.custom-scrollbar__inner15, .custom-scrollbar__inner16, .custom-scrollbar__inner17, .custom-scrollbar__inner18{
+.custom-scrollbar__inner15, .custom-scrollbar__inner16, .custom-scrollbar__inner17, .custom-scrollbar__inner18, .custom-scrollbar__inner19{
 	height: 87%;
 	padding-right: 55px;
 	overflow-y: auto;
@@ -706,7 +716,7 @@ p, button{
   transform: translate(-50%, -50%);
   will-change: top;
 }
-.custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12, .custom-scrollbar__knob13, .custom-scrollbar__knob14, .custom-scrollbar__knob15, .custom-scrollbar__knob16, .custom-scrollbar__knob17, .custom-scrollbar__knob18{
+.custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12, .custom-scrollbar__knob13, .custom-scrollbar__knob14, .custom-scrollbar__knob15, .custom-scrollbar__knob17{
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -717,6 +727,17 @@ p, button{
 	transform: translate(-50%, -50%);
 	will-change: top;
 }
+.custom-scrollbar__knob18, .custom-scrollbar__knob16, .custom-scrollbar__knob19{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #a0a0a0;
+	transform: translate(-50%, -50%);
+	will-change: top;
+}
 .linea_scroll3, .linea_scroll4, .linea_scroll5{
 	font-size: 50px;
     margin: 0px;
@@ -724,7 +745,14 @@ p, button{
     top: -32px;
     color: #FFFFFF;
 }
-.linea_scroll10, .linea_scroll11, .linea_scroll12,.linea_scroll13, .linea_scroll14, .linea_scroll15, .linea_scroll16, .linea_scroll17, .linea_scroll18 {
+.linea_scroll10, .linea_scroll11, .linea_scroll12,.linea_scroll13, .linea_scroll14, .linea_scroll15, .linea_scroll16, .linea_scroll17, .linea_scroll18 , .linea_scroll19 {
+	font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: black;
+}
+.linea_scroll16, .linea_scroll18, .linea_scroll19{
 	font-size: 50px;
     margin: 0px;
     position: relative;
