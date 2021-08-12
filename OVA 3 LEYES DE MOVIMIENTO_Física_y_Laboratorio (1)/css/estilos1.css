@@ -287,7 +287,7 @@
 .triag_cambiaslide2{
   width: 0;
   height: 0;
-  border-left: 37px solid #3A3838;
+  border-left: 37px solid #00465e;
   border-top: 25px solid transparent;
   border-bottom: 26px solid transparent;
 }
@@ -298,7 +298,7 @@
 
 #slider2 {
   position: relative;
-  overflow: hidden;
+  
   margin: 20px auto 0 auto;
   border-radius: 4px;
 }
@@ -307,7 +307,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  height: 250px;
+  height: 400px;
   list-style: none;
 }
 
@@ -318,8 +318,8 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 250px;
-  background: #FFCC66;
+  height: 450px;
+  
   text-align: center;
 }
 
@@ -355,7 +355,9 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
-
+.margin-t-400{
+  margin-top: 400%;
+}
 
 
 
@@ -739,11 +741,11 @@ input[type='range']::-webkit-slider-thumb {
 
 input[type=range]::-webkit-slider-thumb {
   background-color: #61C5FF;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border: 3px solid #61C5FF;
   border-radius: 50%;
-  margin-top: -15px;
+  margin-top: -10px;
   cursor: pointer;
 }
 
@@ -956,4 +958,51 @@ input[type=range]::-ms-fill-upper {
   text-align: center;
   position: relative;
   top: -60px;
+}
+
+.baneBlue_c{
+  background: #61c5ff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 0px;
+}
+
+.indica_osc{
+  background: #00465e;
+    width: 170px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+.baneslide2{
+  background: #fc6;
+  padding: 1px;
+  border-radius: 50px;
+}
+.solucion{
+  background: #00465e;
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  top: -39px;
+  z-index: 100;
+}
+.head{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 7px;
+  background: #00465e;
+}
+.borde_blue_osc{
+  border-radius: 10px;
+  border: solid #00465e 1px;
+  padding: 5px;
+  padding-left: 25px;
+  position: relative;
+  left: -25px;
 }

@@ -197,7 +197,7 @@ function calificarR1() {
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
      } else {
         mensajeR1 = 'Sigue intentando!';
-         if (widthR1 < 767) {
+         if (widthR1 < 99) {
             exitoR1 = false;
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          } else {
@@ -238,7 +238,7 @@ var activityDragR1 = function () {
                 if (items > 2) {
                     $(this).sortable('cancel');
                 }else{
-                    if(widthR1 < 767) {
+                    if(widthR1 < 99) {
                         if(jR1 < arrOrigenR1.length) {
                             shuffleOrigenR1();
                         } else {

@@ -21,7 +21,7 @@
     font-size: 20px;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 99px) {
     .redi1.contenido {
         display: inline-flex;
         flex-wrap: wrap;
@@ -252,7 +252,7 @@ h2.tituloContenedorE {
 
 /*-- Fin Maquetación --*/
 
-@media (max-width: 767px) {
+@media (max-width: 99px) {
     .redi1 .listaComponentes .componente {
         min-width: max-content;
         font-size: 16px;
@@ -281,7 +281,7 @@ h2.tituloContenedorE {
     overflow: initial;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 99px) {
     .backdrop .contenido.redi1 {
         display: flex;
     }

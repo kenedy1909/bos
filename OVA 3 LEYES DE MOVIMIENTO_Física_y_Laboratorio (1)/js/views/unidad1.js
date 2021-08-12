@@ -59,6 +59,8 @@ $( document ).ready(function() {
 
 
 });
+
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -87,6 +89,36 @@ var sumaslide3 = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            
+            arco(4);
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            break;
+        case 2:
+            $(".i1").html('')   
+            var elementoPadre1 = document.querySelector(".inputDiv.i1");
+            var elementoPadre2 = document.querySelector(".inputDiv.i2");
+            var inputsRy = [];
+            var i = new Input(8);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(9);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            break;
+        case 3:
             sumaslide++;
             if (sumaslide < 2) {
                 var slideCount = $('#slider2 ul li').length;
@@ -94,7 +126,7 @@ function controlSlides(num){
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
                 
-                $('#slider2').css({ width: '100%', height: '250px' });
+                $('#slider2').css({ width: '100%', height: '400px' });
                 
                 $('#slider2 ul').css({ width: '90%'});
                 
@@ -128,35 +160,6 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            arco(4);
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
-            break;
-        case 2:
-            $(".i1").html('')   
-            var elementoPadre1 = document.querySelector(".inputDiv.i1");
-            var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
-            var i = new Input(5);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input(5);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
-            break;
-        case 3:
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 4:
@@ -476,7 +479,76 @@ function arco(num){
             break;
     }
 }
+function fuerzas(num){
+    switch (parseInt(num)) {
+        case 0:
 
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas1').removeClass('invisible');
+            $('.fuerzas1').addClass('visible');
+            break;
+        case 1:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas2').removeClass('invisible');
+            $('.fuerzas2').addClass('visible');
+            break;
+        case 2:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas3').removeClass('invisible');
+            $('.fuerzas3').addClass('visible');
+            break;
+        case 3:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas4').removeClass('invisible');
+            $('.fuerzas4').addClass('visible');
+            break;
+        case 4:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas5').removeClass('invisible');
+            $('.fuerzas5').addClass('visible');
+            break;
+        case 5:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas6').removeClass('invisible');
+            $('.fuerzas6').addClass('visible');
+            break;
+        case 6:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas7').removeClass('invisible');
+            $('.fuerzas7').addClass('visible');
+            break;
+        case 7:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas8').removeClass('invisible');
+            $('.fuerzas8').addClass('visible');
+            break;
+        case 8:
+            $('.fuerzas').addClass('invisible');
+            $('.fuerzas').removeClass('visible');
+
+            $('.fuerzas9').removeClass('invisible');
+            $('.fuerzas9').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
 
 
 
@@ -2256,7 +2328,7 @@ function Input(num) {
   }
 
   this.actualizar = function() {
-    scroll_horizontal(this.input.value);
+    fuerzas(this.input.value);
     this.output.innerHTML = this.input.value;
     this.att.value = this.input.value;
   }
