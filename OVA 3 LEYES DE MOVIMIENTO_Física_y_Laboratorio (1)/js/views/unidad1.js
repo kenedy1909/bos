@@ -172,6 +172,47 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 7:
+            sumaslide1++;
+            if (sumaslide1 < 2) {
+                var slideCount = $('#slider3 ul li').length;
+                var slideWidth = $('#slider3 ul li').width();
+                var slideHeight = $('#slider3 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider3').css({ width: '100%', height: '200px' });
+                
+                $('#slider3 ul').css({ width: '90%'});
+                
+                $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+
+                function moveLeft3() {
+                    $('#slider3 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider3 ul li:last-child').prependTo('#slider3 ul');
+                        $('#slider3 ul').css('left', '');
+                    });
+                };
+
+                function moveRight3() {
+                    $('#slider3 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider3 ul li:first-child').appendTo('#slider3 ul');
+                        $('#slider3 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev3').click(function (e) {
+                    moveLeft3();
+                    e.preventDefault();
+                });
+
+                $('a.control_next3').click(function (e) {
+                    moveRight3();
+                    e.preventDefault();
+                });
+            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 8:
@@ -181,6 +222,28 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 10:
+            $(".i3").html('')   
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];
+            var i = new Input(4);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(9);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 11:
@@ -550,6 +613,233 @@ function fuerzas(num){
     }
 }
 
+function textP6(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe1').removeClass('btn_cafeInactive');
+            $('.btn_cafe1').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-1').removeClass('invisible');
+            $('.textP6-1').addClass('visible');
+            break;
+        case 2:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe2').removeClass('btn_cafeInactive');
+            $('.btn_cafe2').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-2').removeClass('invisible');
+            $('.textP6-2').addClass('visible');
+            break;
+        case 3:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe3').removeClass('btn_cafeInactive');
+            $('.btn_cafe3').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-3').removeClass('invisible');
+            $('.textP6-3').addClass('visible');
+            break;
+        case 4:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe4').removeClass('btn_cafeInactive');
+            $('.btn_cafe4').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-4').removeClass('invisible');
+            $('.textP6-4').addClass('visible');
+            break;
+        case 5:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe5').removeClass('btn_cafeInactive');
+            $('.btn_cafe5').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-5').removeClass('invisible');
+            $('.textP6-5').addClass('visible');
+            break;
+        case 6:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe6').removeClass('btn_cafeInactive');
+            $('.btn_cafe6').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-6').removeClass('invisible');
+            $('.textP6-6').addClass('visible');
+            break;
+        case 7:
+            $('.btn_cafe').addClass('btn_cafeInactive');
+            $('.btn_cafe').removeClass('btn_cafeActive');
+
+            $('.btn_cafe7').removeClass('btn_cafeInactive');
+            $('.btn_cafe7').addClass('btn_cafeActive');
+
+            $('.textP6').addClass('invisible');
+            $('.textP6').removeClass('visible');
+
+            $('.textP6-7').removeClass('invisible');
+            $('.textP6-7').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+
+function pastillas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.tria-pastilla').addClass('invisible');
+            $('.tria-pastilla').removeClass('visible');
+
+            $('.triapast1').removeClass('invisible');
+            $('.triapast1').addClass('visible');
+
+            $('.cont-pastillas').addClass('invisible');
+            $('.cont-pastillas').removeClass('visible');
+
+            $('.cont-pas-1').removeClass('invisible');
+            $('.cont-pas-1').addClass('visible');
+
+            
+            break;
+        case 2:
+            $('.tria-pastilla').addClass('invisible');
+            $('.tria-pastilla').removeClass('visible');
+
+            $('.triapast2').removeClass('invisible');
+            $('.triapast2').addClass('visible');
+
+            $('.cont-pastillas').addClass('invisible');
+            $('.cont-pastillas').removeClass('visible');
+
+            $('.cont-pas-2').removeClass('invisible');
+            $('.cont-pas-2').addClass('visible');
+            break;
+        case 3:
+            $('.tria-pastilla').addClass('invisible');
+            $('.tria-pastilla').removeClass('visible');
+
+            $('.triapast3').removeClass('invisible');
+            $('.triapast3').addClass('visible');
+
+            $('.cont-pastillas').addClass('invisible');
+            $('.cont-pastillas').removeClass('visible');
+
+            $('.cont-pas-3').removeClass('invisible');
+            $('.cont-pas-3').addClass('visible');
+            break;
+        case 4:
+            $('.tria-pastilla').addClass('invisible');
+            $('.tria-pastilla').removeClass('visible');
+
+            $('.triapast4').removeClass('invisible');
+            $('.triapast4').addClass('visible');
+
+            $('.cont-pastillas').addClass('invisible');
+            $('.cont-pastillas').removeClass('visible');
+
+            $('.cont-pas-4').removeClass('invisible');
+            $('.cont-pas-4').addClass('visible');
+            break;
+        case 5:
+            $('.tria-pastilla').addClass('invisible');
+            $('.tria-pastilla').removeClass('visible');
+
+            $('.triapast5').removeClass('invisible');
+            $('.triapast5').addClass('visible');
+
+            $('.cont-pastillas').addClass('invisible');
+            $('.cont-pastillas').removeClass('visible');
+
+            $('.cont-pas-5').removeClass('invisible');
+            $('.cont-pas-5').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+function scroll_(num) {
+    switch (parseInt(num)) {
+        case 1:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_uno');
+            bar = document.querySelector('.custom-scrollbar__bar_uno');
+            container = document.querySelector('.custom-scrollbar__inner_uno');
+            scroll();
+            break;
+        case 2:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_dos');
+            bar = document.querySelector('.custom-scrollbar__bar_dos');
+            container = document.querySelector('.custom-scrollbar__inner_dos');
+            scroll();
+            break;
+        case 3:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_tres');
+            bar = document.querySelector('.custom-scrollbar__bar_tres');
+            container = document.querySelector('.custom-scrollbar__inner_tres');
+            scroll();
+            break;
+        case 4:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_cuatro');
+            bar = document.querySelector('.custom-scrollbar__bar_cuatro');
+            container = document.querySelector('.custom-scrollbar__inner_cuatro');
+            scroll();
+            break;
+        case 5:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_cinco');
+            bar = document.querySelector('.custom-scrollbar__bar_cinco');
+            container = document.querySelector('.custom-scrollbar__inner_cinco');
+            scroll();
+            break;
+        default:
+            break;
+    }
+}
 
 
 
