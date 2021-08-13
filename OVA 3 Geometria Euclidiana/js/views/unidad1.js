@@ -185,7 +185,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            /*setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");*/
+            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
             break;
         case 21:
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");

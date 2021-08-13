@@ -1,99 +1,141 @@
-﻿<!DOCTYPE html>
-<html lang="es">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Actividad</title>
-  <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
-  <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/animate.css">
-  <link rel="stylesheet" href="css/backdrop.css">
-  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>drag and drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/arrastar.css">
 </head>
-
 <body>
-  <div class="backdrop in">
-    <div class="fondo">
-      <header style="display: inline-block;">
-        <div class="row" style="display: inline-block;">
-            <div class="" style="width: 40%;display: inline-block;">
-                <div class="d-flex" style="width: 80%;">
-                  <img src="../img/img3/actividad_interactiva.png" alt="" style="width: 116px; height: 116px;">
-                  <div class="text-center pt-3" style="font-size: 20px;">
-                    <b class="pl-1 pr-1" style="color: #004c6d;">ACTIVIDAD INTERACTIVA</b>
-                    <div style="height: 5px; background: #004c6d;"></div>
-                    <p class="text-center text-muted">ORDENAMIENTO CON IMÁGENES</p>
-                  </div>
-                </div>
-            </div>
-            <div class="row" style="width: 56%;display: inline-block;">
-                <p class="info_actividad shadow">
-                    Haga clic sostenido para arrastrar los elementos y ordenarlos en los cajones según corresponda, al finalizar pulse la opción <b>"Calificar"</b> para conocer su puntuación.
-                </p>
-            </div>
-        </div>
-      </header>
-      
-      <div class="redi1 contenido">
-        <div class="col-1" style="width: 100%;">
-          <div class="componentesContent">
-            <div id="listaComponentes" class="listaComponentes list-connected">
-            </div>
-          </div>
-        </div>
-        <div class="col-2" style="width: 100%;">
-          <div id="lista-componentesDestino" class="componentesDestino">
-            <div class="componentesDestino__content" style="width: 30%;">
-              <div id="contenedorA" class="contenedorA container-draggable list-connected" data-order-destino="contenedorA">
-                <h2 class="tituloContenedor tituloContenedorA">Estudios exploratorios</h2>
-              </div>
-            </div>
-            <div class="componentesDestino__content" style="width: 30%;">
-              <div id="contenedorB" class="contenedorB container-draggable list-connected" data-order-destino="contenedorB">
-                <h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>
-              </div>
-            </div>
-            <div class="componentesDestino__content offset-md-4" style="width: 30%;">
-              <div id="contenedorC" class="contenedorC container-draggable list-connected" data-order-destino="contenedorC">
-                <h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <button type="button" id="calificar" class="btn btn-primary">Calificar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body center-block">
-          <div class="mensaje text-center">
-            Tu puntaje es: <span class="puntaje">40%</span>
-            <span class="texto-puntaje"></span>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-            intentar</button>
-          <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Incluisión de scripts -->
-  <script src="../js/jquery.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/jquery.ui.touch-punch.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="js/script-sortable.js"></script>
-  <!-- Fin de scripts -->
-</body>
+	<div class="holder row">
+		<div class="row col-md-12" style="">
+		    <div class="col-md-5" style="">
+		        <div class="col-lg-12 row" style="">
+		        	<div class="col-md-4" style="z-index: 100;">
+		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
+		        	</div>
+		            <div class="text-center col-md-8" style="padding-top: 10px;">
+			            <b class="pl-1 pr-1" style="color: #B02477;">ACTIVIDAD INTERACTIVA</b>
+			            <div class="linea_blue" style="background: #B02477;height: 4px;"></div>
+			            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+		          	</div>
+		        </div>
+		    </div>
+		    <div class="col-md-7 row" style="">
+		        <p class="info_actividad shadow" style="background: #8E1D66;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%;color: white;font-size: 14px;">
+		            Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según correponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+		        </p>
+		    </div>
+		</div>
 
+		<div class="col-md-12">
+			<div class="col-md-12 row mt-5" style="height: 200px;">
+				
+				<div style="" class="col-md-4"> 
+					
+					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
+						<img src="img/dato.png" style="max-width: 80px;position: relative;left: 40%;top: -60px;"><br>
+						Remite a saber las causas que originan un fenómeno.
+					</p>
+				</div>
+				<div style="" class="col-md-4">
+					
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
+						<img src="img/reflexion.png" style="max-width: 80px;position: relative;left: 40%;top: -60px;"><br>
+						Son los que hacemos cuando el tema ha sido poco estudiado y no existe mucha información sobre el.
+					</p>
+					
+				</div>
+				<div style="" class="col-md-4">
+					
+					<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
+						<img src="img/verificacion_antecedentes.png" style="max-width: 80px;position: relative;left: 40%;top: -60px;"><br>
+						Esculcar cada elemento del objeto, situación o fenómeno y describirlo.
+					</p>
+				</div>
+				
+				
+				
+			</div>
+			<div class="col-md-12 row mt-5">
+				<div class="col-md-4 d-flex justify-content-center">
+					<div style="width: 100%;">
+						<div class="encabezado_target">Estudios exploratorios</div>
+						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<div class="interno cont1"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div style="width: 100%;">
+						<div class="encabezado_target">Estudios explicativos</div>
+						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<div class="interno cont2"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div style="width: 100%;">
+						<div class="encabezado_target">Estudios descriptivos</div>
+						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+							<div class="interno cont3"></div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+
+		<p id="demo" style="visibility: hidden;"></p>
+	</div>
+	<div class="col-md-12 d-flex justify-content-center">
+		<button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="" onclick="calificar();">Calificar</button>
+	</div>
+	
+	
+
+	
+	
+	<!-- Button trigger modal -->
+	
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	      	<div style="" class="cabeza">
+	      		
+	      	</div>
+	      	<div class="d-flex justify-content-center">
+	      		<div style="" class="circulo_modal img_res">
+	      			
+	      		</div>
+	      	</div>
+	      	<div style="padding: 10px;">
+	      		<div style="color: white;">
+	      			Su puntaje es: <p class="puntaje"></p>
+	      		</div>
+	      		<div style="color: white;">
+	      			<p class="mensaje"></p>
+	      		</div>
+	      	</div>
+	      	<div class="row d-flex justify-content-center btns_modal">
+	      		
+	      		
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/arrastrar.js"></script>
+</body>
 </html>

@@ -19,19 +19,18 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        /*actualizarprogress();*/
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     /*slide_predeterminado();*/
 
-    var slideCount = $('#slider2 ul li').length;
+    /*var slideCount = $('#slider2 ul li').length;
     var slideWidth = $('#slider2 ul li').width();
     var slideHeight = $('#slider2 ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
@@ -68,7 +67,7 @@ $( document ).ready(function() {
     $('a.control_next2').click(function (e) {
         moveRight2();
         e.preventDefault();
-    });
+    });*/
 
     var knob = "";
     var bar = "";
@@ -107,6 +106,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -117,6 +117,7 @@ function slide_predeterminado(){
 }
 
 function slide_link(num){
+    tema=1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num-1);
@@ -126,154 +127,73 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
-            
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
-            
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 24:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 25:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 26:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 27:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 28:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 29:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 30:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 31:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 32:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 33:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            $(".i1").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv.i1");
-            var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
-            var i = new Input(2);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input(2);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  
-            break;
-        case 34:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 35:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 36:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 37:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 38:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 39:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 40:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 41:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 42:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         default:
             break;
@@ -290,7 +210,7 @@ function scroll_uno(){
     container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
-function scroll_dos(){
+/*function scroll_dos(){
     dragging = "";
     diff = "";
     newTop = "";
@@ -309,7 +229,7 @@ function scroll_tres(){
     bar = document.querySelector('.custom-scrollbar__bar_tres');
     container = document.querySelector('.custom-scrollbar__inner_tres');
     scroll();
-}
+}*/
 
 
 //scroll2
@@ -422,415 +342,12 @@ function Input(num) {
   });
 }
 
-// setup
-
-/*
-function poner(num) {
-    
-    $(".texto_efecto"+num).css({
-        position: 'relative',
-        top: '2px',
-        display: 'block',
-        'z-index': '100'
-    });
-    if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','block');
-        $(".custom-scrollbar2").css('height','250');
-    }
-}
-function quitar(num) {
-    // $(".texto_efecto"+num).css({
-    //     position: 'relative',
-    //     top: '2px',
-    //     display: 'none',
-    //     'z-index': '100'
-    // });
-    if (num == 1) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
-    }
-    if (num == 2) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
-    }
-    if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
-    }
-}
-*/
-function scroll_horizontal(num){
-    $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').removeClass('d-flex');
-    $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').addClass('d-none');
-    switch (parseInt(num)) {
-        case 0:
-            $('.scroll_horizontal_1').addClass('d-flex');
-            $('.scroll_horizontal_1').removeClass('d-none');
-            break;
-        case 1:
-            $('.scroll_horizontal_2').addClass('d-flex');
-            $('.scroll_horizontal_2').removeClass('d-none');
-            break;
-        case 2:
-            $('.scroll_horizontal_3').addClass('d-flex');
-            $('.scroll_horizontal_3').removeClass('d-none');
-            break;
-        default:
-            break;
-    }
-}
-/*function scroll_horizontal2(num){
-    switch (parseInt(num)) {
-        case 0:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bunker (1).png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/muerte.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `El primero de estos conflictos que debe llamar la atención es el ocurrido en la <span class="text-cafe-activi"><b>República Federativa de Yugoslavia</b></span>, la cual, después de integrar durante décadas pueblos con profundas diferencias étnicas, religiosas y de identidad nacional, comienza a desintegrarse a partir de la muerte del general Josip Broz Tito en 1980, quien durante treinta y cinco años gobernó la hoy extinta Yugoslavia.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 1:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/punto.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/balas.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `A raíz de la muerte del general tito se retomó el ánimo de varios pueblos por lograr su independencia y constituirse como un Estado soberano, lo que <span class="text-cafe-activi"><b>dio inicio a la confrontación,</b></span> especialmente cuando Bosnia Herzegovina empezó su proceso de independencia, ante la negativa de los Bosnios Serbios de apoyar el proceso, con el respaldo de Serbia, en cabeza de Slodovan Milosevic que se hizo al poder en la década del 90.`;
-            var activi_scroll = `
-                                <div class="row border-left-cafe">
-                                  <div class="col-md-12 row">
-                                    <div class="col-md-1 p-0 zindex" style="">
-                                      <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                    </div>
-                                    <div class="col-md-11">
-                                      <div class="titulo_sub" style="">
-                                        <p style=""><b>ACTIVIDAD # 5</b></p>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
-                                    </div>
-                                    <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
-                                        <p class="p_black pl-3">Para un recorrido rápido al conflicto de Yugoslavia, visualice el siguiente video haciendo clic en el botón YouTube:</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
-                                      <div class="m-auto bg-cafe-activi radius-2 p-3">
-                                        <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6 d-flex">
-                                      <div class="img-45 m-auto">
-                                        <img src="assets/img/img_ova/reloj.png" class="img-100">
-                                      </div>
-                                      <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>6 minutos</b></p>
-                                    </div>
-                                  </div>
-                                </div>
-                                `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 2:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/explosion.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/africa.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Por otra parte, en 1994 se tiene un conflicto interno que se desarrolla en el continente africano que llama la atención de la comunidad internacional por su <span class="text-cafe-activi"><b>grado tan elevado de violencia</b></span> entre dos grupos étnicos que habitan en la república de Ruanda.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 3:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/belgica.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/granada.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Estamos haciendo referencia al conflicto surgido como consecuencia de un proceso histórico de <span class="text-cafe-activi"><b>discriminación fomentado por Bélgica</b></span> que colonizó Ruanda, en el cual, estableció diferencias entre los Tutsis y los Hutus; los primeros considerados como una etnia superior que controlaba las principales fuentes de producción, lo que sembró un resentimiento que por décadas se alimentó y que fue en últimas lo que desembocó en el genocidio presentado en el año de 1994.`;
-            var activi_scroll = `
-                                <div class="row border-left-cafe">
-                                  <div class="col-md-12 row">
-                                    <div class="col-md-1 p-0 zindex" style="">
-                                      <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                    </div>
-                                    <div class="col-md-11">
-                                      <div class="titulo_sub" style="">
-                                        <p style=""><b>ACTIVIDAD # 6</b></p>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
-                                    </div>
-                                    <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
-                                        <p class="p_black pl-3">Para comprender el tema visto es  indispensable ver el documental que nos muestra el antes y durante del conflicto étnico que se vivió. Haga clic en el botón YouTube:</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
-                                      <div class="m-auto bg-cafe-activi radius-2 p-3">
-                                        <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="d-flex">
-                                          <div class="img-45 m-auto">
-                                            <img src="assets/img/img_ova/reloj.png" class="img-100">
-                                          </div>
-                                          <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>54 minutos</b></p>
-                                      </div>
-                                      <div class="d-flex">
-                                        <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 4:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/casco.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bala2.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Es importante señalar que las cifras oficiales dan cuenta de más de <span class="text-cafe-activi"><b>800.000 victimas</b></span> del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses, periodo de mayor crueldad de los ataques de los Hutus contra el pueblo Tutsi.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        default:
-            break;
-    }
-}*/
-
-function cajas(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `<img src="assets/img/img_ova/infografia1.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav1').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na1').removeClass('inactivo');           
-          $('.na1').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 2:
-          var text = `<img src="assets/img/img_ova/infografia2.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2').removeClass('inactivo');           
-          $('.na2').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      
-      default:
-          break;
-  }
-}
-function cajas2(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">También denominado equiángulo.</p>
-                              <br>
-                              <p class="p_white justificado">Tiene sus tres lados iguales y sus tres ángulos.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_2.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_1').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_1').removeClass('inactivo');           
-          $('.na2_1').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 2:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene dos lados iguales (los ángulos a los que se oponen son también iguales).  Se llama vértice al compartido por los lados iguales, base al lado opuesto al vértice.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_3.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_2').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_2').removeClass('inactivo');           
-          $('.na2_2').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 3:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene sus tres lados desiguales</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_4.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_3').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_3').removeClass('inactivo');           
-          $('.na2_3').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 4:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene sus tres ángulos agudos.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_5.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_4').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_4').removeClass('inactivo');           
-          $('.na2_4').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 5:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene un ángulo obtuso.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_6.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_5').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_5').removeClass('inactivo');           
-          $('.na2_5').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 6:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene un ángulo recto.</p>
-                              <br>
-                              <p class="p_white justificado">Se llama hipotenusa al lado que se opone al ángulo recto (es el mayor) y a los otros dos, catetos..</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_7.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_6').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_6').removeClass('inactivo');           
-          $('.na2_6').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      
-      default:
-          break;
-  }
-}
-
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
-    $(".ruanda-img").removeClass('bg-verde-1');
-    $(".ruanda-img").addClass('bg-color-activi-c');
-    $(".ruanda-img-"+ruanda_num).removeClass('bg-color-activi-c');
-    $(".ruanda-img-"+ruanda_num).addClass('bg-verde-1');
-    $(".ruanda-1, .ruanda-2, .ruanda-3").addClass('d-none');
-    $(".ruanda-1, .ruanda-2, .ruanda-3").removeClass('d-flex');
+    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").addClass('d-none');
+    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").removeClass('d-flex');
+    $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").removeClass('bg-naranja-1');
+    $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").addClass('bg-color-activi-c');
 
     if (ruanda_num==1) {
         $(".ruanda-1").removeClass('d-none');
@@ -841,117 +358,128 @@ function ruandas() {
     }else if (ruanda_num==3) {
         $(".ruanda-3").removeClass('d-none');
         $(".ruanda-3").addClass('d-flex');
+    }else if (ruanda_num==4) {
+        $(".ruanda-4").removeClass('d-none');
+        $(".ruanda-4").addClass('d-flex');
+    }else if (ruanda_num==5) {
+        $(".ruanda-5").removeClass('d-none');
+        $(".ruanda-5").addClass('d-flex');
+        $(".ruanda-img-5").removeClass('bg-color-activi-c');
+        $(".ruanda-img-5").addClass('bg-naranja-1');
+    }else if (ruanda_num==6) {
+        $(".ruanda-6").removeClass('d-none');
+        $(".ruanda-6").addClass('d-flex');
+        $(".ruanda-img-6").removeClass('bg-color-activi-c');
+        $(".ruanda-img-6").addClass('bg-naranja-1');
+    }else if (ruanda_num==7) {
+        $(".ruanda-7").removeClass('d-none');
+        $(".ruanda-7").addClass('d-flex');
+        $(".ruanda-img-7").removeClass('bg-color-activi-c');
+        $(".ruanda-img-7").addClass('bg-naranja-1');
     }
 }
-/*
-function yugoslavias(num) {
-    $(".yugoslavia-info").removeClass('bg-amarillo-c');
-    $(".yugoslavia-info").addClass('bg-cafe-mo');
-    $(".yugoslavia-info-"+num).removeClass('bg-cafe-mo');
-    $(".yugoslavia-info-"+num).addClass('bg-amarillo-c');
-    if (num == 1) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar1">
-                      <div class="custom-scrollbar__inner1">
-                        <p class="justificado p_black">Mediante la Resolución 780 de 1992 el Consejo de Seguridad creó la Comisión de expertos para <span class="text-cafe-activi"><b>investigar y recoger pruebas de los graves incumplimientos</b></span> a los convenios de ginebra y otras infracciones al DIH, órgano que realizó un trabajo muy importante de recolección de información sobre todas las infracciones que se hubiesen presentado, lo que incluyó más de <span class="text-cafe-activi"><b>65.000 páginas de documentos, cerca de 300 horas de filmación en video y 3.300 páginas de análisis,</b></span> lo que contrasta en un trabajo juicioso, el hecho que el comité nunca recibió financiación de la ONU para el desarrollo de sus actividades.</p>
-                        <br>
-                        <br>
-                        <p class="justificado p_black">El trabajo realizado por el Comité de expertos fue entregado al tribunal en 1994, para que adelantara los procesos que correspondieren frente a los responsables de los crímenes cometidos. Debe destacarse que el valioso trabajo del comité se vio menguado por la decisión política de reducir su mandato en el tiempo, en tanto prevalecieron intereses políticos sobre la búsqueda de justicia.</p>
-                      </div>
-                      <div class="custom-scrollbar__bar1">
-                        <div class="custom-scrollbar__knob1 cursor">
-                          <p class="text-center linea_scroll1">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-        modal_scroll1();
-    }else if (num == 2) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar2">
-                      <div class="custom-scrollbar__inner2">
-                      <p class="justificado p_black">En febrero de 1993 el consejo de seguridad mediante la resolución 808 decidió que debía <span class="text-cafe-activi"><b>crearse un tribunal Ad hoc para investigar los infracciones al DIH (Derecho Internacional Humanitario)</b></span> cometidas en Yugoslavia a partir de 1991, para lo cual el secretario de la ONU debía presentar un informe sobre la pertinencia de crear el tribunal.</p>
-                        <br>
-                        <p class="justificado p_black">Como resultado de lo anterior, se emite la resolución 827 del consejo de seguridad, que crea el Tribunal Penal Internacional para la Antigua Yugoslavia y define su estatuto, el cual queda oficialmente conformado desde mayo de 1993, aunque la elección de sus jueces se realiza en septiembre y el fiscal asumió su cargo en agosto de 1994.</p>
-                      </div>
-                      <div class="custom-scrollbar__bar2">
-                        <div class="custom-scrollbar__knob2 cursor">
-                          <p class="text-center linea_scroll2">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-        modal_scroll2();
-    }else if (num == 3) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi">
-                      <div>
-                        <p class="justificado p_black">Uno de los elementos que debe destacarse es que el estatuto no solamente establece la competencia del tribunal para juzgar crímenes de guerra, que son graves infracciones al Derecho Internacional Humanitario, sino que incluye la categoría de crímenes de <span class="text-cafe-activi"><b>lesa humanidad y el genocidio</b></span>, como parte de los crímenes internacionales competencia del tribunal.</p>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-    }else if (num == 4) {
-        var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3">
-                      <div class="custom-scrollbar__inner3">
-                        <p class="justificado p_black">La competencia temporal del tribunal es a partir de 1991, también se debe destacar que la sede se estableció en la Haya, Países Bajos y el <span class="text-cafe-activi"><b>presupuesto para su funcionamiento</b></span> sale de los recursos del Consejo de Seguridad de la  ONU, aún así el tribunal durante sus primeros años tuvo dificultades para el desarrollo de sus actividades, derivado de la falta de cooperación de los estados que surgieron con el proceso de escisión de la Antigua Yugoslavia, sin embargo, fueron finalmente juzgados cerca de un centenar de personas por el tribunal, desarrollando una abundante jurisprudencia que fortaleció el derecho penal internacional.</p>
-                      </div>
-                      <div class="custom-scrollbar__bar3">
-                        <div class="custom-scrollbar__knob3 cursor">
-                          <p class="text-center linea_scroll3">-</p>
-                        </div>
-                      </div>
-                    </div>
-                    `;
-        $("#tribunal").html(texto);
-        modal_scroll3();
-    }
-}*/
 
 function funcionalidad_1(num) {
-    $(".info_funcionalidad_1_1, .info_funcionalidad_1_2").addClass('d-none');
+    $(".funcionalidad_1_1, .funcionalidad_1_2").removeClass('col-md-6');
+    $(".funcionalidad_1_1, .funcionalidad_1_2").addClass('col-md-12');
+    $(".funcionalidad_oculta_1_1, .funcionalidad_oculta_1_2").addClass('d-none');
+    $(".funcionalidad_col_1_1_1, .funcionalidad_col_1_2_1").removeClass('col-md-12');
+    $(".funcionalidad_col_1_1_1, .funcionalidad_col_1_2_1").addClass('col-md-7');
+    $(".funcionalidad_col_1_1_2, .funcionalidad_col_1_2_2").removeClass('col-md-12');
+    $(".funcionalidad_col_1_1_2, .funcionalidad_col_1_2_2").addClass('col-md-5');
 
     if (num == 1) {
-        $(".info_funcionalidad_1_1").removeClass('d-none');
+        $(".funcionalidad_1_1").removeClass('col-md-12');
+        $(".funcionalidad_1_1").addClass('col-md-6');
+        $(".funcionalidad_oculta_1_1").removeClass('d-none');
+        $(".funcionalidad_col_1_1_1").removeClass('col-md-7');
+        $(".funcionalidad_col_1_1_1").addClass('col-md-12');
+        $(".funcionalidad_col_1_1_2").removeClass('col-md-5');
+        $(".funcionalidad_col_1_1_2").addClass('col-md-12');
     }else if (num == 2) {
-        $(".info_funcionalidad_1_2").removeClass('d-none');
+        $(".funcionalidad_1_2").removeClass('col-md-12');
+        $(".funcionalidad_1_2").addClass('col-md-6');
+        $(".funcionalidad_oculta_1_2").removeClass('d-none');
+        $(".funcionalidad_col_1_2_1").removeClass('col-md-7');
+        $(".funcionalidad_col_1_2_1").addClass('col-md-12');
+        $(".funcionalidad_col_1_2_2").removeClass('col-md-5');
+        $(".funcionalidad_col_1_2_2").addClass('col-md-12');
     }
 }
 
 function funcionalidad_2(num) {
-    $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5").addClass('d-none');
+    $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5, .info_funcionalidad_2_6, .info_funcionalidad_2_7, .info_funcionalidad_2_8").addClass('d-none');
+    $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").removeClass('bg-verde-1');
+    $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").addClass('bg-color-activi-o');
 
     if (num == 1) {
         $(".info_funcionalidad_2_1").removeClass('d-none');
+        $(".btn_funcionalidad_2_1").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_1").addClass('bg-verde-1');
     }else if (num == 2) {
         $(".info_funcionalidad_2_2").removeClass('d-none');
+        $(".btn_funcionalidad_2_2").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_2").addClass('bg-verde-1');
     }else if (num == 3) {
         $(".info_funcionalidad_2_3").removeClass('d-none');
+        $(".btn_funcionalidad_2_3").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_3").addClass('bg-verde-1');
     }else if (num == 4) {
         $(".info_funcionalidad_2_4").removeClass('d-none');
+        $(".btn_funcionalidad_2_4").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_4").addClass('bg-verde-1');
     }else if (num == 5) {
         $(".info_funcionalidad_2_5").removeClass('d-none');
+        $(".btn_funcionalidad_2_5").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_5").addClass('bg-verde-1');
+    }else if (num == 6) {
+        $(".info_funcionalidad_2_6").removeClass('d-none');
+        $(".btn_funcionalidad_2_6").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_6").addClass('bg-verde-1');
+    }else if (num == 7) {
+        $(".info_funcionalidad_2_7").removeClass('d-none');
+        $(".btn_funcionalidad_2_7").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_7").addClass('bg-verde-1');
+    }else if (num == 8) {
+        $(".info_funcionalidad_2_8").removeClass('d-none');
+        $(".btn_funcionalidad_2_8").removeClass('bg-color-activi-o');
+        $(".btn_funcionalidad_2_8").addClass('bg-verde-1');
     }
 }
 
 function funcionalidad_3(num) {
-    $(".hover_1, .hover_2, .hover_3, .info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3").addClass('d-none');
+    $(".info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3, .info_funcionalidad_3_4, .info_funcionalidad_3_5, .info_funcionalidad_3_6").addClass('d-none');
+    $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").removeClass('bg-amarrillo-1');
+    $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").addClass('bg-naranja-1');
+
     if (num == 1) {
-        $(".hover_1").removeClass('d-none');
         $(".info_funcionalidad_3_1").removeClass('d-none');
+        $(".btn_funcionalidad_3_1").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_1").addClass('bg-amarrillo-1');
     }else if (num == 2) {
-        $(".hover_2").removeClass('d-none');
         $(".info_funcionalidad_3_2").removeClass('d-none');
+        $(".btn_funcionalidad_3_2").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_2").addClass('bg-amarrillo-1');
     }else if (num == 3) {
-        $(".hover_3").removeClass('d-none');
         $(".info_funcionalidad_3_3").removeClass('d-none');
+        $(".btn_funcionalidad_3_3").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_3").addClass('bg-amarrillo-1');
+    }else if (num == 4) {
+        $(".info_funcionalidad_3_4").removeClass('d-none');
+        $(".btn_funcionalidad_3_4").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_4").addClass('bg-amarrillo-1');
+    }else if (num == 5) {
+        $(".info_funcionalidad_3_5").removeClass('d-none');
+        $(".btn_funcionalidad_3_5").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_5").addClass('bg-amarrillo-1');
+    }else if (num == 6) {
+        $(".info_funcionalidad_3_6").removeClass('d-none');
+        $(".btn_funcionalidad_3_6").removeClass('bg-naranja-1');
+        $(".btn_funcionalidad_3_6").addClass('bg-amarrillo-1');
     }
 }
 
-function funcionalidad_4(num) {
+/*function funcionalidad_4(num) {
     $(".funcionalidad_4_1, .funcionalidad_4_2").removeClass('bg-verde-2');
     $(".funcionalidad_4_1, .funcionalidad_4_2").addClass('bg-color-activi-c');
     $(".info_funcionalidad_3_2_1, .info_funcionalidad_3_2_2").addClass('d-none');
@@ -1031,38 +559,6 @@ function removeefect(num){
     
 }
 
-function funcionalidad_5(num) {
-    $(".info_funcionalidad_5_1, .info_funcionalidad_5_2, .info_funcionalidad_5_3, .info_funcionalidad_5_4, .info_funcionalidad_5_5, .info_funcionalidad_5_6").addClass('d-none');
-    $(".btn_funcionalidad_5_1, .btn_funcionalidad_5_2, .btn_funcionalidad_5_3, .btn_funcionalidad_5_4, .btn_funcionalidad_5_5, .btn_funcionalidad_5_6").removeClass('bg-verde-2');
-    $(".btn_funcionalidad_5_1, .btn_funcionalidad_5_2, .btn_funcionalidad_5_3, .btn_funcionalidad_5_4, .btn_funcionalidad_5_5, .btn_funcionalidad_5_6").addClass('bg-color-activi-o');
-
-    if (num == 1) {
-        $(".info_funcionalidad_5_1").removeClass('d-none');
-        $(".btn_funcionalidad_5_1").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_5_1").addClass('bg-verde-2');
-    }else if (num == 2) {
-        $(".info_funcionalidad_5_2").removeClass('d-none');
-        $(".btn_funcionalidad_5_2").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_5_2").addClass('bg-verde-2');
-    }else if (num == 3) {
-        $(".info_funcionalidad_5_3").removeClass('d-none');
-        $(".btn_funcionalidad_5_3").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_5_3").addClass('bg-verde-2');
-    }else if (num == 4) {
-        $(".info_funcionalidad_5_4").removeClass('d-none');
-        $(".btn_funcionalidad_5_4").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_5_4").addClass('bg-verde-2');
-    }else if (num == 5) {
-        $(".info_funcionalidad_5_5").removeClass('d-none');
-        $(".btn_funcionalidad_5_5").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_5_5").addClass('bg-verde-2');
-    }else if (num == 6) {
-        $(".info_funcionalidad_5_6").removeClass('d-none');
-        $(".btn_funcionalidad_5_6").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_5_6").addClass('bg-verde-2');
-    }
-}
-
 function funcionalidad_6(num) {
     $(".funcionalidad_6_1, .funcionalidad_6_2").removeClass('bg-verde-2');
     $(".funcionalidad_6_1, .funcionalidad_6_2").addClass('bg-color-activi-c');
@@ -1080,35 +576,6 @@ function funcionalidad_6(num) {
     }
 }
 
-function enter_hover_1(num) {
-    $(".text_hover_1_1, .text_hover_1_2").removeClass('img-100');
-    $(".content_hover_1_1, .content_hover_1_2").removeClass('img-100');
-    $(".text_hover_1_1, .text_hover_1_2").addClass('img-50');
-    $(".content_hover_1_1, .content_hover_1_2").addClass('img-25');
-    $(".info_hover_1_1, .info_hover_1_2").removeClass('d-flex');
-    $(".info_hover_1_1, .info_hover_1_2").addClass('d-none');
-    $(".ocultar_hover_1_1, .ocultar_hover_1_2").removeClass('d-none');
-    $(".ocultar_hover_1_1, .ocultar_hover_1_2").addClass('d-flex');
-    if (num == 1) {
-        $(".info_hover_1_1").removeClass('d-none');
-        $(".info_hover_1_1").addClass('d-flex');
-        $(".text_hover_1_1").removeClass('img-50');
-        $(".text_hover_1_1").addClass('img-100');
-        $(".content_hover_1_1").removeClass('img-25');
-        $(".content_hover_1_1").addClass('img-100');
-        $(".ocultar_hover_1_1").removeClass('d-flex');
-        $(".ocultar_hover_1_1").addClass('d-none');
-    }else if (num == 2) {
-        $(".info_hover_1_2").removeClass('d-none');
-        $(".info_hover_1_2").addClass('d-flex');
-        $(".text_hover_1_2").removeClass('img-50');
-        $(".text_hover_1_2").addClass('img-100');
-        $(".content_hover_1_2").removeClass('img-25');
-        $(".content_hover_1_2").addClass('img-100');
-        $(".ocultar_hover_1_2").removeClass('d-flex');
-        $(".ocultar_hover_1_2").addClass('d-none');
-    }
-}
 function funcionalidad_7(num) {
     $(".funcionalidad_7_1, .funcionalidad_7_2").removeClass('bg-verde-2');
     $(".funcionalidad_7_1, .funcionalidad_7_2").addClass('bg-color-activi-c');
@@ -1231,40 +698,41 @@ function cardPara4(num) {
         $("#card4-4").addClass('bg-blanco');
         $("#card4-4").html(texto);
     }
-}
+}*/
 
 function instrucciones(num) {
-    $(".instrucciones-1, .instrucciones-2, .instrucciones-3, .instrucciones-4").addClass('d-none');
+    $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
         $(".instrucciones-1").removeClass('d-none');
     }else if (num == 2) {
         $(".instrucciones-2").removeClass('d-none');
     }else if (num == 3) {
         $(".instrucciones-3").removeClass('d-none');
-    }else if (num == 4) {
-        $(".instrucciones-4").removeClass('d-none');
     }
 }
 
-function enter_hover_2(num) {
-    $(".enter_hover_2_1, .enter_hover_2_2, .enter_hover_2_3, .enter_hover_2_4").removeClass('bg-color-activi-o');
-    $(".enter_hover_2_1, .enter_hover_2_2, .enter_hover_2_3, .enter_hover_2_4").addClass('bg-azul-1');
+function enter_hover_1(num) {
+    $(".enter_hover_1_1, .enter_hover_1_2, .enter_hover_1_3, .enter_hover_1_4, .enter_hover_1_5").removeClass('bg-color-activi-o');
+    $(".enter_hover_1_1, .enter_hover_1_2, .enter_hover_1_3, .enter_hover_1_4, .enter_hover_1_5").addClass('bg-color-activi-c');
     if (num == 1) {
-        $(".enter_hover_2_1").addClass('bg-color-activi-o');
-        $(".enter_hover_2_1").removeClass('bg-azul-1');
+        $(".enter_hover_1_1").addClass('bg-color-activi-o');
+        $(".enter_hover_1_1").removeClass('bg-color-activi-c');
     }else if (num == 2) {
-        $(".enter_hover_2_2").addClass('bg-color-activi-o');
-        $(".enter_hover_2_2").removeClass('bg-azul-1');
+        $(".enter_hover_1_2").addClass('bg-color-activi-o');
+        $(".enter_hover_1_2").removeClass('bg-color-activi-c');
     }else if (num == 3) {
-        $(".enter_hover_2_3").addClass('bg-color-activi-o');
-        $(".enter_hover_2_3").removeClass('bg-azul-1');
+        $(".enter_hover_1_3").addClass('bg-color-activi-o');
+        $(".enter_hover_1_3").removeClass('bg-color-activi-c');
     }else if (num == 4) {
-        $(".enter_hover_2_4").addClass('bg-color-activi-o');
-        $(".enter_hover_2_4").removeClass('bg-azul-1');
+        $(".enter_hover_1_4").addClass('bg-color-activi-o');
+        $(".enter_hover_1_4").removeClass('bg-color-activi-c');
+    }else if (num == 5) {
+        $(".enter_hover_1_5").addClass('bg-color-activi-o');
+        $(".enter_hover_1_5").removeClass('bg-color-activi-c');
     }
 }
 
-function funcionalidad_9(num) {
+/*function funcionalidad_9(num) {
     $(".info_funcionalidad_9_1, .info_funcionalidad_9_2, .info_funcionalidad_9_3, .info_funcionalidad_9_4").addClass('d-none');
 
     if (num == 1) {
@@ -1276,4 +744,4 @@ function funcionalidad_9(num) {
     }else if (num == 4) {
         $(".info_funcionalidad_9_4").removeClass('d-none');
     }
-}
+}*/

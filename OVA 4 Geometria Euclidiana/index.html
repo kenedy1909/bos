@@ -50,11 +50,11 @@
           <i class="fad fa-books"></i> Unidades de aprendizaje</a>
         </li>
         <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>1. Geometría plana</a>
+          <i class="fas fa-bookmark"></i>1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes</a>
           <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Conceptos y definiciones básicas</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="21" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Triángulos y cuadriláteros</a></li>
-            <!-- <li class="c-sidebar-nav-item link-menu-tema" data-id="5" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Método de demostración por Inducción matemática.</a></li> -->
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span>Proporcionalidad y semejanza</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span>Circunferencia</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="17" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span>Áreas y volúmenes</a></li>
           </ul>
         </li>
       </ul>
@@ -89,9 +89,9 @@
                 </div>
             </div>
           </li>
-          <li class="c-header-nav-item d-none"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-15.png" alt="" class="icons-menu w-60px"></a></li>
+          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-15.png" alt="" class="icons-menu w-60px"></a></li>
           <li class="c-header-nav-item z-index-pdf modal_scroll1"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-14.png" alt="" class="icons-menu w-60px"></a></li>
-          <li class="c-header-nav-item modal_scroll2"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px"></a></li>
+          <li class="c-header-nav-item"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px"></a></li>
         </ul>
         <ul class="c-header-nav ml-auto">
           <li class="c-header-nav-item d-md-down-none">
@@ -144,14 +144,17 @@
                               </div>
                             </div>
                           </div>
-                          <!-- <div class="content pdfs">
+                          <div class="content pdfs">
                               <p class="p_white">
-                                    <a class="p_white" href="assets/PDF/UNIDAD 1/tratado-de-versalles.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tratado de versalles.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                                    <a class="p_white" href="assets/PDF/aclaracion.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> ACLARACIÓN.PDF    <b class="text-cafe"><u>Ver</u></b></a>
                               </p>
                               <p class="p_white">
-                                    <a class="p_white" href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                                    <a class="p_white" href="assets/PDF/evaluacion1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Evaluación 1 semejanza.PDF    <b class="text-cafe"><u>Ver</u></b></a>
                               </p>
-                          </div> -->
+                              <p class="p_white">
+                                    <a class="p_white" href="assets/PDF/evaluacion2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Evaluación 2 circunferencia.PDF    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>
+                          </div>
                       </div> <!-- end front panel -->
                   </div> <!-- end card -->
                 </div>
@@ -193,95 +196,79 @@
                           <div class="content p_white custom-scrollbar1">
                             <div class="custom-scrollbar__inner1">
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Corolario:</b> es una proposición que se deduce con facilidad de lo que se demuestra anteriormente y no necesita ninguna prueba en particular.
+                                <b class="font-weight-bold"> 
+                                Proporcionalidad:</b> relación que existe entre dos figuras de igual o distinto tamaño.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Plano:</b> se puede definir como un conjunto infinito de puntos y rectas y solo posee dos dimensiones. 
+                                <b class="font-weight-bold"> 
+                                Semejanza de triángulos:</b> cuando se habla de triángulos semejantes, se dice que son aquellos que tienen la misma forma, pero no necesariamente el tamaño.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Línea recta:</b> se puede definir como un elemento o figura geométrica que se compone de puntos infinitos que se encuentran en la misma dirección, o también puede definirse como la figura que se forma al unir dos puntos.
+                                <b class="font-weight-bold"> 
+                                Teorema de Tales:</b> es una ley de la geometría que nos indica que si se traza una línea paralela a cualquiera de los lados de un triángulo tendremos como resultado un triángulo semejante el triángulo original. (Westreicher, 2020)
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Figura geométrica:</b> son figuras que delimitan superficies planas a través de un conjunto de líneas, es decir, es la representación visual y funcional de un conjunto no vacío y cerrado de puntos en un plano geométrico. (M., 2020).
+                                <b class="font-weight-bold"> 
+                                Criterios de semejanza:</b> son un conjunto de condiciones entre dos triángulos, que al decir que cumplen con estas condiciones, son semejantes.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Segmento de recta:</b> se puede definir como la porción por la unión de los puntos externos de una recta, es decir, es la parte recta limitada que existe entre estos dos puntos.
+                                <b class="font-weight-bold"> 
+                                Arcos de circunferencia:</b> se define como una porción de una circunferencia. Es decir, es cada una de las partes en que la cuerda divide a la circunferencia.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Congruencia entre figuras geométricas:</b> se define que las figuras geométricas son congruentes cuando poseen la misma forma y dimensión, se desprecia la orientación y posición de la figura.
+                                <b class="font-weight-bold"> 
+                                Cuerda en circunferencia:</b> se define cuerda como el segmento que une dos puntos en la circunferencia. Algo muy importante, es que la cuerda siempre es menor que la circunferencia.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Complemento de un ángulo:</b> el complemento se define como los grados que le hacen falta al ángulo para medir 90°. Es decir, un ángulo recto.
+                                <b class="font-weight-bold"> 
+                                Ángulos centrales:</b> es un ángulo cuyo vértice coincide con el centro de la circunferencia. 
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Suplemento de un ángulo:</b> el complemento se define como los grados que le hacen falta al ángulo para medir 180°. Es decir, un ángulo plano o llano.
+                                <b class="font-weight-bold"> 
+                                Ángulo inscrito:</b> es un ángulo cuyo vértice pertenece a la circunferencia.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Bisectriz:</b> es una recta que al pasar por un ángulo este lo divide en dos ángulos iguales. 
+                                <b class="font-weight-bold"> 
+                                Ángulo seminscrito:</b> es un ángulo cuyo vértice está en la misma circunferencia y uno de los lados sea la tangente a la circunferencia en el vértice y otro una cuerda con origen en el vértice.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Mediatriz:</b> se conoce como una recta perpendicular a un segmento que pasa por el punto medio, donde lo divide en dos partes iguales midiendo lo mismo.
+                                <b class="font-weight-bold"> 
+                                Ángulo interior:</b> es un ángulo cuyo vértice está dentro de la circunferencia. 
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Mediana:</b> es el segmento que une cada vértice de un triángulo con el punto medio de lado opuesto.
+                                <b class="font-weight-bold"> 
+                                Ángulo exterior:</b> es un ángulo cuyo vértice esta por fuera de la circunferencia y sus lados está en contacto con la circunferencia.
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Altura:</b> cuando se habla de triángulos, se menciona que es la menor distancia entre un vértice y el lado opuesto, por lo que cada vértice tiene una altura. También, se define como la recta que pasa por un vértice y es perpendicular al lado opuesto y en esa recta se obtiene la distancia.
+                                <b class="font-weight-bold"> 
+                                Circunferencia:</b> es una figura geométrica plana y cerrada caracterizada por que sus puntos están a una distancia constante del centro, donde dicha distancia se llama radio. 
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Triángulo:</b> son figuras geométricas que tienen tres lados iguales que hacen contacto y forman vértices entre ellos. Dependiendo del ángulo que tenga el triángulo se clasifican en diferentes tipos como: equiláteros, escalenos, isósceles. 
+                                <b class="font-weight-bold"> 
+                                Área:</b> es la medida de un espacio delimitado por un contorno al que se denomina perímetro. Su unidad de medida en el sistema internacional de medida es m^2 (Westreicher, 2020)
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Cuadrilátero:</b> es una figura geométrica o un polígono formado por cuatro ángulos y cuatro lados.
+                                <b class="font-weight-bold"> 
+                                Volumen:</b> Se denomina volumen a una magnitud que mide el espacio que un cuerpo ocupa. Su unidad de medida en el sistema internacional de medidas es m^3
                               </p>
                               <br>
                               <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Rectángulo:</b> es una figura geométrica de cuatro lados donde todos sus ángulos son de 90°, es decir, son ángulos rectos.
+                                <b class="font-weight-bold"> 
+                                Figuras tridimensionales:</b> son aquellas figuras geométricas que se encuentran en el espacio, es decir en el plano de tres dimensiones.
                               </p>
-                              <br>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Paralelogramo:</b> es un cuadrilátero el cual tiene los lados paralelos dos a dos, es decir, dos de sus lados son iguales y los otros dos lados restantes de igual manera.
-                              </p>
-                              <br>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Rombo:</b> los rombos tienen semejanza con los cuadrados, donde tienen cuatro lados idénticos en contacto, pero ninguno constituye ángulos rectos, sin agudos y dos obtusos. (M., 2020)
-                              </p>
-                              <br>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                Trapecio:</b> es un cuadrilátero el cual tiene al menos dos lados paralelos.
-                              </p>
-                              <br>
                             </div>
                             <div class="custom-scrollbar__bar1">
                               <div class="custom-scrollbar__knob1 cursor"><p class="text-center linea-scroll1">-</p></div>
@@ -325,16 +312,11 @@
                               </div>
                             </div>
                           </div>
-                          <div class="content p_white custom-scrollbar2">
-                            <div class="custom-scrollbar__inner2">
-                              <p class="justificado">Uribe J., (2017). Matemáticas básicas y operativas, Medellín, Colombia: UROS EDITORES.</p>
-                              <br>
-                              <p class="justificado">Raffino M., (2020). Figuras geométricas. Argentina. CONCEPTO.DE.</p>
-                              <br>
+                          <div class="content p_white">
+                            <div class="">
                               <p class="justificado">Bruño., (1964). Geometría plana y del espacio. Madrid, España: EDITORIAL BOURET.</p>
-                            </div>
-                            <div class="custom-scrollbar__bar2">
-                              <div class="custom-scrollbar__knob2 cursor"><p class="text-center linea-scroll2">-</p></div>
+                              <br>
+                              <p class="justificado">Westreicher, G. (2020). Teorema de Tales, Economipedia.com</p>
                             </div>
                           </div>
                       </div> <!-- end front panel -->

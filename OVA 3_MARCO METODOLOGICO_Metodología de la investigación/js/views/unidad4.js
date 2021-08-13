@@ -94,13 +94,15 @@ function controlSlides4(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            scroll_set(18);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
-            scroll_set(16);
+            scroll_set(18);
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            scroll_set(18);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
@@ -286,20 +288,20 @@ function slideMU4_1(num) {
     $('.flechaMRU4-1').removeClass('hidden');
     
     var contenido = `
-                    <div class="row">
-                      <div class="col-7 p-3">
-                        <p><b class="color-title">Escala para medir actitudes</b>
-                        <br></br>
-                        “Las escalas de medición de actitudes son un instrumento de medición que permite acercarse a la variabilidad afectiva de las personas respecto a cualquier sujeto, objeto o proceso.” (Iñiguez, 2010).
-                        </p>
-                      </div>
-                      <div class="col-5 d-flex justify-content-center align-items-center p-3">
-                        <div class="text-center">
-                          <img src="assets/img/img_ova/describir.png" width="80%">
-                          <a class="w-100 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM3"><b>VER IMAGEN</b></a>
-                        </div>
+                  <div class="row">
+                    <div class="col-7 p-3">
+                      <p><b class="color-title">En primera medida hablaremos de los cuestionarios</b>
+                      <br></br>
+                      son un grupo de preguntas en relación de una o más variables a ser medidas, y estas preguntas pueden ser cerradas o abiertas. En la siguiente imagen se observan las características de las preguntas abierta y cerradas.
+                      </p>
+                    </div>
+                    <div class="col-5 d-flex justify-content-center align-items-center p-3">
+                      <div class="text-center">
+                        <img src="assets/img/img_ova/describir.png" width="80%">
+                        <a class="w-100 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM3"><b>VER IMAGEN</b></a>
                       </div>
                     </div>
+                  </div>
                     `;
     $('.flechaMRU4-1').attr('onclick',"slideMU4_1(2)");
 
@@ -331,7 +333,7 @@ function slideMU4_1(num) {
     $('.flechaMLU4-1').removeClass('hidden');
     $('.flechaMRU4-1').removeClass('hidden');
     
-    var contenido = `<h5 class="color-title">En relación a los cuestionarios, estos pueden aplicarse así:</h5>
+    var contenido = `
                       <p class="text-black text-justify mb-4">
                         <b class="color-title">La entrevista : </b>es ideal cuando el grupo focal o la muestra que se tiene, está integrado por personas analfabetas o con bajos niveles educativos o por ejemplo, si son niños que aún no saben leer, aunque también se puede contar con cuestionarios gráficos, en relación al tipo de población antes mencionado; siempre pensando en la comodidad de los entrevistados y en el resultado de los datos que se recolecten para nuestra investigación. Un ejemplo de cuestionario gráfico sería el siguiente:
                       </p>
@@ -352,7 +354,7 @@ function slideMU4_1(num) {
     var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-3">
-                        <img src="assets/img/img_ova/vision.png" width="80%">
+                        <img src="assets/img/img_ova/actitudes.png" width="80%">
                       </div>
                       <div class="col-7 p-3">
                         <p><b class="color-title">Escala para medir actitudes</b>
@@ -410,7 +412,7 @@ function slideMU4_1(num) {
     var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-3">
-                        <img src="assets/img/img_ova/vision.png" width="80%">
+                        <img src="assets/img/img_ova/likert.png" width="80%">
                       </div>
                       <div class="col-7 p-3">
                         <p><b class="color-title">Escalamiento de Likert</b>
@@ -434,7 +436,7 @@ function slideMU4_1(num) {
     var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-3">
-                        <img src="assets/img/img_ova/vision.png" width="80%">
+                        <img src="assets/img/img_ova/likert.png" width="80%">
                       </div>
                       <div class="col-7 p-3">
                         <p>
@@ -474,7 +476,7 @@ function slideMU4_1(num) {
     var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-4">
-                        <img src="assets/img/img_ova/vision.png" width="80%">
+                        <img src="assets/img/img_ova/semantico.png" width="80%">
                       </div>
                       <div class="col-7 p-3">
                         <p><b class="color-title">Método semántico</b> <br><br>
@@ -601,8 +603,8 @@ function teorias(num) {
                     <div class="content custom-scrollbar18 mr-3">
                       <div class="custom-scrollbar__inner18">
                         <p class="text-justify text-black">
-                          <b class="color-title">Seleccionar un programa de análisis</b>
-                          Estos son algunos de los más conocidos:
+                          <b class="color-title">Seleccionar un programa de análisis</b><br>
+                          Estos son algunos de los más conocidos:<br>
                         </p>
                         <ul class="text-black">
                           <li>Statistical Package for the Social Sciences o Paquete Estadístico para las Ciencias Sociales (SPSS®). </li>
@@ -629,96 +631,102 @@ function teorias(num) {
                     </div>
                   `;
       $("#teorico").html(texto);
+      scroll_set(18);
   }else if (num == 2) {
       var texto = `
-                  <div class="content custom-scrollbar18 mr-3">
-                    <div class="custom-scrollbar__inner18">
-                      <p class="text-justify text-black">
-                        <b class="color-title">Poner en marcha el programa</b>
-                        SPSS y Minitab, estos dos paquetes son fáciles de usar, ya que, lo único que se debe hacer es solicitar los análisis requeridos, seleccionando las opciones adecuadas. 
-                      </p>
-                    </div>
-                    <div class="custom-scrollbar__bar18">
-                      <div class="custom-scrollbar__knob18 cursor">
-                        <p class="text-center linea_scroll18">-</p>
-                      </div>
-                    </div>
+                  <div class="d-flex align-items-center">
+                    <p class="text-justify text-black">
+                      <b class="color-title">Poner en marcha el programa</b><br>
+                      SPSS y Minitab, estos dos paquetes son fáciles de usar, ya que, lo único que se debe hacer es solicitar los análisis requeridos, seleccionando las opciones adecuadas. 
+                    </p>
                   </div>
                   `;
       $("#teorico").html(texto);
   }else if (num == 3) {
       var texto = `
-                  <div class="row">
+                <div class="content custom-scrollbar16">
+                  <div class="custom-scrollbar__inner16">
+                    <div class="row">
                       <div class="col-md-12">
-                          <p class="p_white bg-mm-o p-3 text-center">Marco legal</p>
+                          <p class="color-title"><b>Marco legal</b></p>
                       </div>
                       <div class="col-md-12 p-3" id="info-circle">
-                          <p class="p_black pb-4 border-b-mm-o">Como su nombre lo indica, el marco legal hace referencia al conjunto de leyes, normas y reglamentos que le dan validez a tu investigación. Por lo que, llegados a este punto, lo que se debe hacer es una selección juiciosa y rigurosa de aquellos artículos que tengan de una u otra forma relación con nuestro tema de investigación, posterior a esto, se deben referenciar de manera correcta en nuestro marco legal.</p>
+                          <p class="text-black pb-4 border-b-mm-o">Como su nombre lo indica, el marco legal hace referencia al conjunto de leyes, normas y reglamentos que le dan validez a tu investigación. Por lo que, llegados a este punto, lo que se debe hacer es una selección juiciosa y rigurosa de aquellos artículos que tengan de una u otra forma relación con nuestro tema de investigación, posterior a esto, se deben referenciar de manera correcta en nuestro marco legal.</p>
                       </div>
                       <div class="col-md-12 d-flex">
-                          <div class="m-auto w-80px d-flex justify-content-evenly">
+                          <div class="m-auto w-80px d-flex justify-content-evenly text-black">
                               <div class="w-h-15px radius-50 bg-morado-c cursor circle-morado circle-morado-1" data-circle="1"></div>
-                              <div class="w-h-15px radius-50 bg-mm-o cursor circle-morado circle-morado-2" data-circle="2"></div>
-                              <div class="w-h-15px radius-50 bg-mm-o cursor circle-morado circle-morado-3" data-circle="3"></div>
+                              <div class="w-h-15px radius-50 cursor circle-morado circle-morado-2" data-circle="2"></div>
+                              <div class="w-h-15px radius-50 cursor circle-morado circle-morado-3" data-circle="3"></div>
                           </div>
                       </div>
+                    </div>
                   </div>
-                  `;
-      $("#teorico").html(texto);
-      $(".circle-morado").on('click' , circles);
-  }else if (num == 4) {
-      var texto = `
-                  <div class="content custom-scrollbar20 mr-3">
-                  <div class="custom-scrollbar__inner20">
-                    <p class="text-justify text-black">
-                      <b class="color-title">Valorar la seguridad y eficacia alcanzada por la herramienta de medición</b>
-                      <br> Determinamos las puntuaciones o valores obtenidos por los casos (participantes. 
-                      <br> objetos. etc.) en cada ítem tomado individualmente. Otros ítems. Agrupados, miden una misma variable y deben constituir una escala para poder juntarse o sumarse (tener las mismas categorías o alternativas de respuesta). Ahora se debe demostrar que tales escalas fueron confiables y válidas en la investigación.
-                      <br></br>
-                      <b class="color-title">Confiables:</b> se calcula mediante diferentes métodos:
-                      <ul>
-                        <li>Medida de estabilidad: confiabilidad por test-retest: se calcula aplicando a los participantes la misma prueba dos veces, para obtener un coeficiente de reciprocidad entre las puntuaciones de ambas aplicaciones.</li>
-                        <li>Método de formas alternativas o paralelas: se computa o calcula a través de un coeficiente de reciprocidad o correlación entre los resultados de dos pruebas tácitamente equivalentes.</li>
-                        <li>Medidas de relación interna, coeficientes de seguridad alfa de Cronbach (a) y los coeficientes KR-20 y KR-21: hace referencia a coeficientes que fluctúan entre 0 y 1, donde un coeficiente de 0 significa nula confiabilidad y 1 representa un máximo de confiabilidad (confiabilidad total o integral).</li>
-                      </ul>
-                      <b class="color-title">Válidas:</b> la evidencia de la validez de criterio se produce al correlacionar las puntuaciones de los participantes, obtenidas por medio del instrumento, con sus valores logrados en el criterio. Recordemos que una correlación implica asociar puntuaciones obtenidas por la muestra en dos o más variables.
-                    </p>
-                  </div>
-                  <div class="custom-scrollbar__bar20">
-                    <div class="custom-scrollbar__knob20 cursor">
-                      <p class="text-center linea_scroll20">-</p>
+                  <div class="custom-scrollbar__bar16">
+                    <div class="custom-scrollbar__knob16 cursor">
+                      <p class="text-center linea_scroll16">-</p>
                     </div>
                   </div>
                 </div>
                   `;
       $("#teorico").html(texto);
-  }else if (num == 5) {
+      scroll_set(16);
+  }else if (num == 4) {
       var texto = `
-                  <p class="text-justify text-black">
-                  <b class="color-title">Visualice la imagen y conozca sobre el estudio mediante pruebas estadísticas en relación a las hipótesis o presunciones formuladas o estadística inferencial</b>
-                </p>
-                <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor" data-toggle="modal" data-target="#modalAcordeonImg"><b>VER IMAGEN</b></a>
-
+                  <div class="content custom-scrollbar19 mr-3">
+                    <div class="custom-scrollbar__inner19">
+                      <p class="text-justify text-black">
+                        <b class="color-title">Valorar la seguridad y eficacia alcanzada por la herramienta de medición</b>
+                        <br> Determinamos las puntuaciones o valores obtenidos por los casos (participantes. 
+                        <br> objetos. etc.) en cada ítem tomado individualmente. Otros ítems. Agrupados, miden una misma variable y deben constituir una escala para poder juntarse o sumarse (tener las mismas categorías o alternativas de respuesta). Ahora se debe demostrar que tales escalas fueron confiables y válidas en la investigación.
+                        <br></br>
+                        <b class="color-title">Confiables:</b> se calcula mediante diferentes métodos:
+                        <ul class="text-black">
+                          <li>Medida de estabilidad: confiabilidad por test-retest: se calcula aplicando a los participantes la misma prueba dos veces, para obtener un coeficiente de reciprocidad entre las puntuaciones de ambas aplicaciones.</li>
+                          <li>Método de formas alternativas o paralelas: se computa o calcula a través de un coeficiente de reciprocidad o correlación entre los resultados de dos pruebas tácitamente equivalentes.</li>
+                          <li>Medidas de relación interna, coeficientes de seguridad alfa de Cronbach (a) y los coeficientes KR-20 y KR-21: hace referencia a coeficientes que fluctúan entre 0 y 1, donde un coeficiente de 0 significa nula confiabilidad y 1 representa un máximo de confiabilidad (confiabilidad total o integral).</li>
+                        </ul>
+                        <p class="text-black"><b class="color-title">Válidas:</b> la evidencia de la validez de criterio se produce al correlacionar las puntuaciones de los participantes, obtenidas por medio del instrumento, con sus valores logrados en el criterio. Recordemos que una correlación implica asociar puntuaciones obtenidas por la muestra en dos o más variables.</p>
+                      </p>
+                    </div>
+                    <div class="custom-scrollbar__bar19">
+                      <div class="custom-scrollbar__knob19 cursor">
+                        <p class="text-center linea_scroll19">-</p>
+                      </div>
+                    </div>
+                  </div>
                   `;
       $("#teorico").html(texto);
-      $(".rec").on('click' , rec);
+      scroll_set(19);
+  }else if (num == 5) {
+      var texto = `
+                  <div>
+                    <p class="text-justify text-black">
+                      <b class="color-title">Visualice la imagen y conozca sobre el estudio mediante pruebas estadísticas en relación a las hipótesis o presunciones formuladas o estadística inferencial</b>
+                    </p><br>
+                    <div class="w-100 d-flex justify-content-center">
+                      <a class="w-50 p-2 border-10 bg-color-dark text-white h5 text-center shadow cursor" data-toggle="modal" data-target="#modalAcordeonImg"><b>VER IMAGEN</b></a>
+                    </div>
+                  </div>
+                  `;
+      $("#teorico").html(texto);
   }else if (num == 6) {
       var texto = `
-                    <p class="text-justify text-black">
-                    <b class="color-title">Realizar análisis adicionales</b>
+                  <p class="text-justify text-black">
+                    <b class="color-title">Realizar análisis adicionales</b><br>
                     Una vez ejecutados nuestros análisis, es posible que decidamos realizar otros análisis extras o pruebas para confirmar tendencias o preferencias y así poder evaluar los datos desde diferentes ángulos y puntos de vista. 
                   </p>
                   `;
       $("#teorico").html(texto);
   }else if (num == 7) {
       var texto = `
-      <div class="d-flex">
-      <p class="text-justify text-black">
-        <b class="color-title">Preparar los resultados para presentarlos</b>
-        Visualiza la imagen y conoce los elementos que conlleva preparar los resultados.
-      </p>
-      <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor" data-toggle="modal" data-target="#modalAcordeonImg2"><b>VER IMAGEN</b></a>  
-    </div>
+                <div class="d-flex align-items-center h-100">
+                  <p class="text-justify text-black pr-1 w-75">
+                    <b class="color-title">Preparar los resultados para presentarlos</b><br>
+                    Visualiza la imagen y conoce los elementos que conlleva preparar los resultados.
+                  </p>
+                  <a class="p-2 border-10 bg-color-dark text-white h6 shadow cursor text-center" style=" width: 110px;" data-toggle="modal" data-target="#modalAcordeonImg2"><b>VER IMAGEN</b></a>  
+                </div>
                   `;
       $("#teorico").html(texto);
   }

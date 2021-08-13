@@ -85,13 +85,25 @@ function controlSlides3(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            break;    
+        case 4:
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             tema = 1;
             break;    
         default:
             break;
     }
 }
-
+function scroll_set(num) {
+  dragging = "";
+  diff = "";
+  newTop = "";
+  scrollOffset = "";
+  knob = document.querySelector('.custom-scrollbar__knob'+num);
+  bar = document.querySelector('.custom-scrollbar__bar'+num);
+  container = document.querySelector('.custom-scrollbar__inner'+num);
+  scroll();
+}
 
 //dezlizador
 var elementoPadre1 = document.querySelector(".inputDiv.i1");
@@ -638,15 +650,27 @@ function slideModalU3_3(num) {
     $('.numerosSlide4').html(img4);
     $('.numerosSlide5').html(img5);
     
-    var contenido = `<p class="text-justify text-black">La estratificación aumenta la precisión de la muestra e implica el uso deliberado de diferentes tamaños de muestra para cada estrato, a fin de lograr reducir la varianza de cada unidad de la media muestral (Kish, 1995).
+    var contenido = `
+                <div class="content custom-scrollbar18">
+                  <div class="custom-scrollbar__inner18">
+                    <p class="text-justify text-black">La estratificación aumenta la precisión de la muestra e implica el uso deliberado de diferentes tamaños de muestra para cada estrato, a fin de lograr reducir la varianza de cada unidad de la media muestral (Kish, 1995).
                       <br></br>
                       Por ejemplo: el empleo del muestreo por racimos, esto se hace cuando no se cuenta con recursos suficientes para abarcar una porción o proporción muy grande o extensa, entonces se opta por la muestra por racimos o por clústeres.
                       <br></br>
                       Este tipo de muestreo además de reducir costos, reduce tiempo y energía, ya que la muestra se puede extraer de determinados lugares ya sean físicos o geográficos, a los que denominan racimos. Esto nos obliga, además, a diferenciar entre unidad de análisis y la muestral, la primera se refiere a quienes van a ser medidos y la segunda, en este caso, se referirá al racimo a través del cual se realiza la unidad de análisis.
-                    </p>`;
+                    </p>
+                  </div>
+                  <div class="custom-scrollbar__bar18">
+                    <div class="custom-scrollbar__knob18 cursor">
+                      <p class="text-center linea_scroll18">-</p>
+                    </div>
+                  </div>
+                </div>
+                    `;
     $('.contenidoNumeros').html(contenido);
 
     $('.flechaNumModalL').attr('onclick',"slideModalU3_3(9)");
     $('.flechaNumModalR').attr('onclick',"slideModalU3_3(1)");
+    scroll_set(18);
   }
 }
