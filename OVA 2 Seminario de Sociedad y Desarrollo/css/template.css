@@ -793,3 +793,7 @@ svg circle:nth-child(2){
 .display-none{
   display: none;
 }
+
+.marginb{
+  margin-bottom: 100px;
+}

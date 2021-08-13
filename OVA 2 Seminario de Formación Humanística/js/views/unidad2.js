@@ -30,10 +30,80 @@ $( document ).ready(function() {
         actualizarprogress();
     });
 
-    $(".p4-1").on("hover", function () {
-        // $(".p4-2").show(1000)
-        alert("añldskad")
+    $(".int1").on("click", function () {
+        $(".tarjetas").hide()
+        $(".tarjeta1").show(400)
     })
+    $(".int2").on("click", function () {
+        $(".tarjetas").hide()
+        $(".tarjeta2").show(400)
+    })
+    $(".int3").on("click", function () {
+        $(".tarjetas").hide()
+        $(".tarjeta3").show(400)
+    })
+    $(".int4").on("click", function () {
+        $(".tarjetas").hide()
+        $(".tarjeta4").show(400)
+    })
+    $(".int5").on("click", function () {
+        $(".tarjetas").hide()
+        $(".tarjeta5").show(400)
+    })
+
+    $(".collapse1").on("click", function () {
+        $(".collapses").hide()
+        $(".pcollapse1").show(500)
+    })
+    $(".collapse2").on("click", function () {
+        $(".collapses").hide()
+        $(".pcollapse2").show(500)
+    })
+
+    $(".pergamino1").on("click", function () {
+        $(".pergamino1").hide()
+        $(".pergamino2").show()
+    })
+
+    $(".flecha1").on("click", function () {
+        $(".pergaminos").hide()
+        $(".pergaminop1").show()
+    })
+
+    $(".flecha2").on("click", function () {
+        $(".pergaminos").hide()
+        $(".pergaminop2").show()
+    })
+
+    $(".flecha3").on("click", function () {
+        $(".pergaminos").hide()
+        $(".pergaminop3").show()
+    })
+
+    $(".flecha4").on("click", function () {
+        $(".pergaminos").hide()
+        $(".pergaminop4").show()
+    })
+
+
+    $(".btn_planificacion").on("click", function () {
+        $(".textos8").hide()
+        $(".textos8-1").show()
+    })
+    $(".btn_indagacion").on("click", function () {
+        $(".textos8").hide()
+        $(".textos8-2").show()
+    })
+    // $(".btn_revision").on("click", function () {
+    //     $(".textos8").hide()
+    //     $(".textos8-3").show()
+    // })
+    // $(".btn_redaccion").on("click", function () {
+    //     $(".textos8").hide()
+    //     $(".textos8-4").show()
+    // })
+
+    canvas_1();
 
     $(".circle-verde").on('click' , circles);
     $(".rec").on('click' , rec);
@@ -650,6 +720,135 @@ function slider2(){
         moveRight();
     });
 }
+
+
+function canvas_1() {
+        var canvas = new fabric.Canvas('canvas1');
+        var imgElement = 'assets/img/img_ova/b1.png';
+        var imgElement2 = 'assets/img/img_ova/b2.png'; 
+        var imgElement3 = 'assets/img/img_ova/b3.png';
+        var imgElement4 = 'assets/img/img_ova/b4.png';
+        var imgElement5= 'assets/img/img_ova/b5.png';
+        var imgElement6 = 'assets/img/img_ova/b6.png';
+        var imgElement7 = 'assets/img/img_ova/7.png';
+        var imgElement8 = 'assets/img/img_ova/8.png';
+        fabric.Image.fromURL(imgElement, function(oImg) {
+            oImg.left=0;
+            oImg.top=200;
+            oImg.scaleToHeight(50);
+            oImg.scaleToWidth(50);
+            oImg.selectable = false;
+            canvas.add(oImg);
+
+            oImg.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr1").show(300);           
+            });
+            
+        });
+        fabric.Image.fromURL(imgElement2, function(oImg2) {
+            oImg2.left=15;
+            oImg2.top=120;
+            oImg2.scaleToHeight(50);
+            oImg2.scaleToWidth(50);
+            oImg2.selectable = false;
+            canvas.add(oImg2);
+
+            oImg2.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr2").show(300);           
+            });
+            
+        });
+        fabric.Image.fromURL(imgElement3, function(oImg3) {
+            oImg3.left=50;
+            oImg3.top=50;
+            oImg3.scaleToHeight(50);
+            oImg3.scaleToWidth(50);
+            oImg3.selectable = false;
+            canvas.add(oImg3);
+
+            oImg3.on('mouseup', function() {  
+                $(".parr").hide();
+                $(".parr3").show(300);            
+            });
+            
+        });
+        fabric.Image.fromURL(imgElement4, function(oImg4) {
+            oImg4.left=120;
+            oImg4.top=0;
+            oImg4.scaleToHeight(50);
+            oImg4.scaleToWidth(50);
+            oImg4.selectable = false;
+            canvas.add(oImg4);
+
+            oImg4.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr4").show(300);      
+            });
+            
+        });
+        fabric.Image.fromURL(imgElement5, function(oImg5) {
+            oImg5.left=200;
+            oImg5.top=0;
+            oImg5.scaleToHeight(50);
+            oImg5.scaleToWidth(50);
+            oImg5.selectable = false;
+            canvas.add(oImg5);
+
+            oImg5.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr5").show(300);     
+            });
+            
+        });
+
+        fabric.Image.fromURL(imgElement6, function(oImg6) {
+            oImg6.left=275;
+            oImg6.top=50;
+            oImg6.scaleToHeight(50);
+            oImg6.scaleToWidth(50);
+            oImg6.selectable = false;
+            canvas.add(oImg6);
+
+            oImg6.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr6").show(300);      
+            });
+            
+        });
+
+        fabric.Image.fromURL(imgElement7, function(oImg7) {
+            oImg7.left=330;
+            oImg7.top=120;
+            oImg7.scaleToHeight(50);
+            oImg7.scaleToWidth(50);
+            oImg7.selectable = false;
+            canvas.add(oImg7);
+
+            oImg7.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr7").show(300);      
+            });
+            
+        });
+
+        fabric.Image.fromURL(imgElement8, function(oImg8) {
+            oImg8.left=350;
+            oImg8.top=190;
+            oImg8.scaleToHeight(50);
+            oImg8.scaleToWidth(50);
+            oImg8.selectable = false;
+            canvas.add(oImg8);
+
+            oImg8.on('mouseup', function() {
+                $(".parr").hide();
+                $(".parr8").show(300);     
+            });
+            
+        });
+        
+    }
 
 
 function slider_all(){

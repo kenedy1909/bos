@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drag and drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/arrastar.css">
+</head>
+<body>
+	<div class="holder row">
+		<div class="row col-md-12" style="">
+		    <div class="col-md-4" style="">
+		        <div class="col-lg-12 row" style="">
+		        	<div class="col-md-4" style="z-index: 100;">
+		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
+		        	</div>
+		            <div class="text-center col-md-8" style="padding-top: 10px;">
+			            <b class="pl-1 pr-1" style="color: #E0A546;">ACTIVIDAD INTERACTIVA</b>
+			            <div class="linea_blue" style="background: #E0A546;height: 4px;"></div>
+			            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+		          	</div>
+		        </div>
+		    </div>
+		    <div class="col-md-8 row" style="">
+		        <p class="info_actividad shadow" style="background: #ffd966;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%;">
+		            Haga clic sostenido sobre cada personaje  y arrástrelo hasta el recuadro de las características correspondientes. Al finalizar pulse la opción “Calificar” para conocer su puntuación
+		        </p>
+		    </div>
+		</div>
+
+		<div class="col-md-12">
+			<div class="col-md-12 row" style="height: 200px;">
+				<div style="" class="col-md-3">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/N1.png" style="max-width: 30%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
+							Operaciones concretas
+
+						</p>
+						</div>
+							</div>
+					</div>
+					
+				</div>
+				<div style="" class="col-md-3">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/N2.png" style="max-width: 20%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
+							Preoperacional
+						</p>
+						</div>
+							</div>
+					</div>
+				</div>
+				<div style="" class="col-md-3">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/N3.png" style="max-width: 20%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
+							Sensorio-motor
+
+						</p>
+						</div>
+							</div>
+					</div>
+				</div>
+				<div style="" class="col-md-3">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/N4.png" style="max-width: 20%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">
+							Operaciones formales
+
+						</p>
+						</div>
+							</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="col-md-12 row">
+				<div class="col-md-3 " style="font-size: 13px;">
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont1">Se inicia el proceso de una conducta direccionada al logro de metas, igualmente los objetos empiezan a concebirse como permanentes.</div>
+					</div>
+				</div>
+				<div class="col-md-3" style="font-size: 13px;">
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont2">En esta etapa se mencionan cuatro propiedades de pensamiento: lógica proposicional, razonamiento científico, razonamiento combinatorio y razonamiento de probabilidades y proporciones</div>
+					</div>
+				</div>
+				<div class="col-md-3" style="font-size: 13px;">
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont3">El inicio de adquisición del lenguaje y la comprensión numérica en esta etapa se vuelve protagónico al permitir la comunicación y el conteo </div>
+					</div>
+				</div>
+				<div class="col-md-3" style="font-size: 13px;">
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont4">Es posible distinguir tres operaciones mentales dadas en esta etapa: seriación, clasificación y conservación.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<p id="demo" style="visibility: hidden;"></p>
+	</div>
+	<div class="col-md-12 d-flex justify-content-center">
+		<button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="" onclick="calificar();">Calificar</button>
+	</div>
+	
+	
+
+	
+	
+	<!-- Button trigger modal -->
+	
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	      	<div style="" class="cabeza">
+	      		
+	      	</div>
+	      	<div class="d-flex justify-content-center">
+	      		<div style="" class="circulo_modal img_res">
+	      			
+	      		</div>
+	      	</div>
+	      	<div style="padding: 10px;">
+	      		<div style="color: white;">
+	      			Su puntaje es: <p class="puntaje"></p>
+	      		</div>
+	      		<div style="color: white;">
+	      			<p class="mensaje"></p>
+	      		</div>
+	      	</div>
+	      	<div class="row d-flex justify-content-center btns_modal">
+	      		
+	      		
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/arrastrar.js"></script>
+</body>
+</html>
