@@ -19,19 +19,18 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        /*actualizarprogress();*/
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     /*slide_predeterminado();*/
 
-    var slideCount = $('#slider2 ul li').length;
+    /*var slideCount = $('#slider2 ul li').length;
     var slideWidth = $('#slider2 ul li').width();
     var slideHeight = $('#slider2 ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
@@ -68,7 +67,7 @@ $( document ).ready(function() {
     $('a.control_next2').click(function (e) {
         moveRight2();
         e.preventDefault();
-    });
+    });*/
 
     var knob = "";
     var bar = "";
@@ -107,6 +106,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -117,6 +117,7 @@ function slide_predeterminado(){
 }
 
 function slide_link(num){
+    tema=1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num-1);
@@ -126,154 +127,73 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
-            
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
-            
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 24:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 25:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 26:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 27:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 28:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 29:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 30:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 31:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 32:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 33:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            $(".i1").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv.i1");
-            var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
-            var i = new Input(2);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input(2);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  
-            break;
-        case 34:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 35:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 36:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 37:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 38:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 39:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 40:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 41:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
-            break;
-        case 42:
-            setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         default:
             break;
@@ -290,7 +210,7 @@ function scroll_uno(){
     container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
-function scroll_dos(){
+/*function scroll_dos(){
     dragging = "";
     diff = "";
     newTop = "";
@@ -309,7 +229,7 @@ function scroll_tres(){
     bar = document.querySelector('.custom-scrollbar__bar_tres');
     container = document.querySelector('.custom-scrollbar__inner_tres');
     scroll();
-}
+}*/
 
 
 //scroll2
@@ -420,214 +340,6 @@ function Input(num) {
   $("input[type=range]").on('change', function () {
       /*alert();*/
   });
-}
-function scroll_horizontal(num){
-    $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').removeClass('d-flex');
-    $('.scroll_horizontal_1, .scroll_horizontal_2, .scroll_horizontal_3').addClass('d-none');
-    switch (parseInt(num)) {
-        case 0:
-            $('.scroll_horizontal_1').addClass('d-flex');
-            $('.scroll_horizontal_1').removeClass('d-none');
-            break;
-        case 1:
-            $('.scroll_horizontal_2').addClass('d-flex');
-            $('.scroll_horizontal_2').removeClass('d-none');
-            break;
-        case 2:
-            $('.scroll_horizontal_3').addClass('d-flex');
-            $('.scroll_horizontal_3').removeClass('d-none');
-            break;
-        default:
-            break;
-    }
-}
-function cajas(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `<img src="assets/img/img_ova/infografia1.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav1').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na1').removeClass('inactivo');           
-          $('.na1').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 2:
-          var text = `<img src="assets/img/img_ova/infografia2.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2').removeClass('inactivo');           
-          $('.na2').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      
-      default:
-          break;
-  }
-}
-function cajas2(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">También denominado equiángulo.</p>
-                              <br>
-                              <p class="p_white justificado">Tiene sus tres lados iguales y sus tres ángulos.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_2.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_1').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_1').removeClass('inactivo');           
-          $('.na2_1').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 2:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene dos lados iguales (los ángulos a los que se oponen son también iguales).  Se llama vértice al compartido por los lados iguales, base al lado opuesto al vértice.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_3.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_2').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_2').removeClass('inactivo');           
-          $('.na2_2').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 3:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene sus tres lados desiguales</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_4.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_3').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_3').removeClass('inactivo');           
-          $('.na2_3').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 4:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene sus tres ángulos agudos.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_5.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_4').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_4').removeClass('inactivo');           
-          $('.na2_4').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 5:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene un ángulo obtuso.</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_6.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_5').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_5').removeClass('inactivo');           
-          $('.na2_5').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      case 6:
-          var text = `
-                        <div class="row pl-3">
-                          <div class="col-md-6">
-                            <div class="radius-2 bg-verde-1 p-3">
-                              <p class="p_white justificado">Tiene un ángulo recto.</p>
-                              <br>
-                              <p class="p_white justificado">Se llama hipotenusa al lado que se opone al ángulo recto (es el mayor) y a los otros dos, catetos..</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img src="assets/img/img_ova/triangulo_7.png" class="m-auto img-70">
-                          </div>
-                        </div>
-                     `;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2_6').addClass('activa');
-
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
-
-          $('.na2_6').removeClass('inactivo');           
-          $('.na2_6').addClass('encendido');
-          
-          $('#infografia2').html(text);
-          break;
-      
-      default:
-          break;
-  }
 }
 
 function ruandas() {
@@ -767,37 +479,7 @@ function funcionalidad_3(num) {
     }
 }
 
-/*function funcionalidad_2(num) {
-    $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5").addClass('d-none');
-
-    if (num == 1) {
-        $(".info_funcionalidad_2_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".info_funcionalidad_2_2").removeClass('d-none');
-    }else if (num == 3) {
-        $(".info_funcionalidad_2_3").removeClass('d-none');
-    }else if (num == 4) {
-        $(".info_funcionalidad_2_4").removeClass('d-none');
-    }else if (num == 5) {
-        $(".info_funcionalidad_2_5").removeClass('d-none');
-    }
-}*/
-
-/*function funcionalidad_3(num) {
-    $(".hover_1, .hover_2, .hover_3, .info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3").addClass('d-none');
-    if (num == 1) {
-        $(".hover_1").removeClass('d-none');
-        $(".info_funcionalidad_3_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".hover_2").removeClass('d-none');
-        $(".info_funcionalidad_3_2").removeClass('d-none');
-    }else if (num == 3) {
-        $(".hover_3").removeClass('d-none');
-        $(".info_funcionalidad_3_3").removeClass('d-none');
-    }
-}*/
-
-function funcionalidad_4(num) {
+/*function funcionalidad_4(num) {
     $(".funcionalidad_4_1, .funcionalidad_4_2").removeClass('bg-verde-2');
     $(".funcionalidad_4_1, .funcionalidad_4_2").addClass('bg-color-activi-c');
     $(".info_funcionalidad_3_2_1, .info_funcionalidad_3_2_2").addClass('d-none');
@@ -894,35 +576,6 @@ function funcionalidad_6(num) {
     }
 }
 
-/*function enter_hover_1(num) {
-    $(".text_hover_1_1, .text_hover_1_2").removeClass('img-100');
-    $(".content_hover_1_1, .content_hover_1_2").removeClass('img-100');
-    $(".text_hover_1_1, .text_hover_1_2").addClass('img-50');
-    $(".content_hover_1_1, .content_hover_1_2").addClass('img-25');
-    $(".info_hover_1_1, .info_hover_1_2").removeClass('d-flex');
-    $(".info_hover_1_1, .info_hover_1_2").addClass('d-none');
-    $(".ocultar_hover_1_1, .ocultar_hover_1_2").removeClass('d-none');
-    $(".ocultar_hover_1_1, .ocultar_hover_1_2").addClass('d-flex');
-    if (num == 1) {
-        $(".info_hover_1_1").removeClass('d-none');
-        $(".info_hover_1_1").addClass('d-flex');
-        $(".text_hover_1_1").removeClass('img-50');
-        $(".text_hover_1_1").addClass('img-100');
-        $(".content_hover_1_1").removeClass('img-25');
-        $(".content_hover_1_1").addClass('img-100');
-        $(".ocultar_hover_1_1").removeClass('d-flex');
-        $(".ocultar_hover_1_1").addClass('d-none');
-    }else if (num == 2) {
-        $(".info_hover_1_2").removeClass('d-none');
-        $(".info_hover_1_2").addClass('d-flex');
-        $(".text_hover_1_2").removeClass('img-50');
-        $(".text_hover_1_2").addClass('img-100');
-        $(".content_hover_1_2").removeClass('img-25');
-        $(".content_hover_1_2").addClass('img-100');
-        $(".ocultar_hover_1_2").removeClass('d-flex');
-        $(".ocultar_hover_1_2").addClass('d-none');
-    }
-}*/
 function funcionalidad_7(num) {
     $(".funcionalidad_7_1, .funcionalidad_7_2").removeClass('bg-verde-2');
     $(".funcionalidad_7_1, .funcionalidad_7_2").addClass('bg-color-activi-c');
@@ -1045,7 +698,7 @@ function cardPara4(num) {
         $("#card4-4").addClass('bg-blanco');
         $("#card4-4").html(texto);
     }
-}
+}*/
 
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
@@ -1079,7 +732,7 @@ function enter_hover_1(num) {
     }
 }
 
-function funcionalidad_9(num) {
+/*function funcionalidad_9(num) {
     $(".info_funcionalidad_9_1, .info_funcionalidad_9_2, .info_funcionalidad_9_3, .info_funcionalidad_9_4").addClass('d-none');
 
     if (num == 1) {
@@ -1091,4 +744,4 @@ function funcionalidad_9(num) {
     }else if (num == 4) {
         $(".info_funcionalidad_9_4").removeClass('d-none');
     }
-}
+}*/
