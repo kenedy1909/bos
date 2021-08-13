@@ -547,7 +547,7 @@
                           <div class="col-md-12 mt-3 row">
                             <div class="col-md-5">
                                 <div class="Prioritise-rafiki row">
-                                    <div class="btn_cafe btn_cafeInactive btn_cafe1 cursor" style="" onclick="textP6(1);">1</div>
+                                    <div class="btn_cafe btn_cafeActive btn_cafe1 cursor" style="" onclick="textP6(1);">1</div>
                                     <div class="btn_cafe btn_cafeInactive btn_cafe2 cursor" style="" onclick="textP6(2);">2</div>
                                     <div class="btn_cafe btn_cafeInactive btn_cafe3 cursor" style="" onclick="textP6(3);">3</div>
                                     <div class="btn_cafe btn_cafeInactive btn_cafe4 cursor" style="" onclick="textP6(4);">4</div>
@@ -603,43 +603,43 @@
                           <div class="col-md-12 mt-3">
                               <div class="row d-flex justify-content-center contene-osc" style="">
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="btn-pastilla" style="">1</div>
+                                      <div class="btn-pastilla cursor" style="" onclick="pastillas(1);">1</div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="btn-pastilla" style="">2</div>
+                                      <div class="btn-pastilla cursor" style="" onclick="pastillas(2);">2</div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="btn-pastilla" style="">3</div>
+                                      <div class="btn-pastilla cursor" style="" onclick="pastillas(3);">3</div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="btn-pastilla" style="">4</div>
+                                      <div class="btn-pastilla cursor" style="" onclick="pastillas(4);">4</div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="btn-pastilla" style="">5</div>
+                                      <div class="btn-pastilla cursor" style="" onclick="pastillas(5);">5</div>
                                   </div>
                               </div>
                           </div>
                           <div class="col-md-12">
                               <div class="row d-flex justify-content-center" style="position: relative;top: -27px;">
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="tria-pastilla"></div>
+                                      <div class="tria-pastilla visible triapast1"></div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="tria-pastilla"></div>
+                                      <div class="tria-pastilla invisible triapast2"></div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="tria-pastilla"></div>
+                                      <div class="tria-pastilla invisible triapast3"></div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="tria-pastilla"></div>
+                                      <div class="tria-pastilla invisible triapast4"></div>
                                   </div>
                                   <div class="col-md-2 d-flex justify-content-center pt-2">
-                                      <div class="tria-pastilla"></div>
+                                      <div class="tria-pastilla invisible triapast5"></div>
                                   </div>
                               </div>
                           </div>
 
-                          <div class="col-md-12 invisible" style="z-index: 1;">
+                          <div class="col-md-12 visible cont-pastillas cont-pas-1" style="z-index: 1;">
                               <div class="row">
                                   <div class="col-md-4">
                                       <div class="banner7">
@@ -647,7 +647,7 @@
                                       </div>
                                   </div>
                                   <div class="col-md-4">
-                                      <div class="banner7">
+                                      <div class="banner7" onmouseover="scroll_(1);">
                                           <div class="content custom-scrollbar_uno p_white">
                                             <div class="custom-scrollbar__inner_uno">
                                                 <p class="justificado p_black size_13"><b>Masa</b> es la cantidad de materia en un objeto. También es la medida de la inercia o pereza que un objeto muestra en respuesta a cualquier esfuerzo hecho para ponerlo en movimiento, frenarlo o cambiar su estado de movimiento en cualquier forma. Peso, por lo general, la fuerza con que es atraído un objeto debido a la gravedad.</p>
@@ -659,7 +659,7 @@
                                       </div>
                                   </div>
                                   <div class="col-md-4">
-                                      <div class="banner7">
+                                      <div class="banner7" onmouseover="scroll_(2);">
                                           <div class="content custom-scrollbar_dos p_white">
                                             <div class="custom-scrollbar__inner_dos">
                                                 <p class="justificado p_black size_13">En la definición de peso se dice por lo general porque un objeto puede tener peso cuando la gravedad no es un factor, como ocurre en una estación espacial en rotación. En cualquier caso, cerca de la superficie de la Tierra y en ausencia de aceleración, masa y peso son directamente proporcionales entre ellos.</p>
@@ -672,7 +672,7 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="col-md-12 invisible" style="z-index: 1;">
+                          <div class="col-md-12 invisible cont-pastillas cont-pas-2" style="z-index: 1;">
                               <div class="row">
                                   <div class="col-md-4">
                                       <div class="text-center blancoBane">
@@ -686,10 +686,10 @@
                                   </div>
                               </div>
                           </div>
-                          <div class="col-md-12 visible" style="z-index: 1;">
+                          <div class="col-md-12 invisible cont-pastillas cont-pas-3" style="z-index: 1;">
                               <div class="row">
                                   <div class="col-md-4">
-                                      <div class="banner7">
+                                      <div class="banner7" onmouseover="scroll_(3);">
                                           <div class="content custom-scrollbar_tres p_white">
                                             <div class="custom-scrollbar__inner_tres">
                                                 <p class="justificado p_black size_13">Además, en ocasiones se confunden masa y peso porque es habitual medir la cantidad de materia que tienen las cosas (masa) mediante su atracción gravitacional a la Tierra (peso). Pero la masa es más fundamental que el peso; es una cantidad fundamental que escapa por completo a la observación de la mayoría de las personas.</p>
@@ -701,7 +701,7 @@
                                       </div>
                                   </div>
                                   <div class="col-md-4">
-                                      <div class="banner7">
+                                      <div class="banner7" onmouseover="scroll_(4);">
                                           <div class="content custom-scrollbar_cuatro p_white">
                                             <div class="custom-scrollbar__inner_cuatro">
                                                 <p class="justificado p_black size_13">Hay momentos en los que el peso corresponde a la noción inconsciente de inercia. Por ejemplo, si intentas determinar cuál de dos objetos pequeños es el más pesado, puedes agitarlos atrás y adelante en tus manos o moverlos en alguna forma en lugar de levantarlos.</p>
@@ -721,6 +721,63 @@
                                   </div>
                               </div>
                           </div>
+                          <div class="col-md-12 invisible cont-pastillas cont-pas-4" style="z-index: 1;">
+                              <div class="row bannerSiete" style="padding: 10px;">
+                                  <div class="col-md-2">
+                                        <img src="assets/img/img_ova/ladrillo.png" style="max-width: 170%;position: relative;left: -30px;margin-top: 35px;">
+                                  </div>
+                                  <div class="col-md-10">
+                                      <div id="slider3" style="" class="d-flex justify-content-center">
+                                        <ul>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-md-1">
+                                                        <div class="" style="margin-top: 50px;">
+                                                            <a href="#" class="control_next3"><div style="transform: scaleX(-1);" class="triag_cambiaslide2"></div></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-11">
+                                                        <p class="justificado p_black size_13">Aun cuando no ejerza presión sobre la báscula, el ladrillo tiene la misma resistencia a cambiar de movimiento que tiene sobre la Tierra. Un astronauta tendría que ejercer la misma fuerza en la nave espacial para agitarlo atrás y adelante, que la necesaria para agitarlo atrás y adelante cuando está sobre la Tierra. Tanto en la Luna como en la Tierra tendría que aplicar la misma cantidad de empuje para acelerar un enorme camión hasta cierta rapidez sobre una superficie a nivel. Sin embargo, la dificultad de levantarlo contra la gravedad (peso) es otra cosa. Masa y peso son diferentes entre sí.</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-md-11" onmouseover="scroll_(5);">
+                                                        <div class="content custom-scrollbar_cinco p_white">
+                                                          <div class="custom-scrollbar__inner_cinco">
+                                                              <p class="justificado p_black size_13">Un ladrillo de 1 kilogramo pesa 9,81 Newtons; lejos de la superficie de la Tierra, donde la influencia de la gravedad es menor, el ladrillo pesa menos. También pesaría menos sobre la superficie de los planetas con gravedad más débil que la Tierra. Sobre la superficie de la Luna, por ejemplo, donde la fuerza gravitacional sobre las cosas es sólo 1/6 de la que hay sobre la Tierra, un ladrillo de 1 kilogramo pesa aproximadamente 1,64 Newtons (o 0,36 libras). En planetas con una gravedad mayor, pesaría más, pero la masa del ladrillo es la misma en todas partes. El ladrillo ofrece la misma resistencia a acelerar o frenar sin importar si el objeto está sobre la Tierra, sobre la Luna o sobre cualquier otro cuerpo que lo atraiga. En una nave espacial a la deriva, donde la lectura de una báscula con un ladrillo en ella indicaría cero, el ladrillo seguiría teniendo masa. <b>Use la flecha azul para continuar:</b></p>
+                                                          </div>
+                                                          <div class="custom-scrollbar__bar_cinco">
+                                                            <div class="custom-scrollbar__knob_cinco cursor"><p class="text-center linea_scroll_cinco">-</p></div>
+                                                          </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-md-1">
+                                                        <div class="" style="margin-top: 50px;">
+                                                            <a href="#" class="control_next3"><div style="" class="triag_cambiaslide2"></div></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>  
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12 invisible cont-pastillas cont-pas-5" style="z-index: 1;">
+                              <div class="row bannerSiete" style="padding: 10px;width: 100%;">
+                                  <div class="col-md-3">
+                                        <img src="assets/img/img_ova/Newton.png" class="img-100">
+                                  </div>
+                                  <div class="col-md-9">
+                                    <p class="justificado p_black size_14">También es fácil confundir masa y volumen. Cuando se piensa en un objeto masivo, con frecuencia se piensa en un objeto grande. Sin embargo, el tamaño de un objeto (volumen) no necesariamente es un buen indicador de su masa ¿Cuál es más fácil de poner en movimiento: una batería de automóvil o una caja de cartón vacía del mismo tamaño? Así pues, se observa que la masa no es ni peso ni volumen.</p>
+                                  </div>
+                              </div>
+                          </div>
+
                           <div>
                               <div style="height: 4px;background: #00384b;position: relative;top: -100px;"></div>
                           </div>
@@ -729,54 +786,117 @@
                           <div class="row">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
-                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
+                                      <h3 class="text-center color-text"><b>Leyes de movimiento</b></h3>
                                   </div>
-                                  <h3 class="color-text">Movimiento unidimensional / Velocidad relativa</h3>
+                                  
                               </div>
                           </div>
                           <div class="col-md-12">
-                            <p class="justificado">En muchas situaciones de la vida cotidiana se experimenta un fenómeno físico curioso y es cuando vamos por ejemplo en el metro, se sabe que esté se desplaza a unos 90 km/h con respecto al suelo, sin embargo, se nota como el tren sobrepasa los autos que viaja paralelos a la vía y en la misma dirección lentamente, digamos a unos 10 km/h; o cuando se encuentra con otro tren que viene en sentido contrario también a 90 km/h, parece que la velocidad es mayor unos 180 km/h. Es por esto que la velocidad que un observador determinado percibe es la velocidad relativa a él, o simplemente la velocidad relativa.</p>
+                            <div class="indica_osc">
+                                <b>Ejercicio de ejemplo</b>
+                            </div>
                           </div>
                           <div class="col-md-12">
-                            <div class="baneBlue">
-                              <div class="banewhite">
-                                <div class="text-center"><img src="assets/img/img_ova/aceleracion.png" class="" style="width: 25%;"></div>
-                                <div><p class="justificado">Dados dos observadores, A y B, cuyas velocidades medidas por un tercer observador (ese observador está quieto con respecto al suelo (se le llama observador inercial) son vA y vB respectivamente, la velocidad relativa de B con respecto a A se denota como vBA = vB - vA. Naturalmente, la velocidad relativa de A con respecto a B se denota como vAB = vA – vB.  De modo que las velocidades relativas vBA y vAB tienen el mismo módulo, pero sentidos opuestos.</p></div>
-                              </div>
+                            <div class="baneslide2 mt-3" style="padding: 15px;">
+                                <div class="col-md-12">
+                                    <p class="justificado p_black size_14">Las cajas A y B se encuentran en contacto sobre una superficie horizontal sin fricción, como se muestra en la figura. La caja   A tiene una masa de 20.0 kg y la caja B tiene una masa de 5.0 kg. Sobre la caja A se ejerce una fuerza horizontal de 100 N ¿Cuál es la magnitud de la fuerza que la caja A ejerce sobre la caja B?   (Young, Zemansky, Sears, 2009).</p>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-md-6">
+                                        <div class="text-center">
+                                            <img src="assets/img/img_ova/imagen8.png" class="img-70">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                            <div class="d-flex justify-content-center">
+                                                <div class="solucion" style="">
+                                                    Solución
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="head" style="">1</div>
+                                                <div class="borde_blue_osc" style="">
+                                                    <p class="p_black">Primero se toma el sistema</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-3">
+                                                <img src="assets/img/img_ova/formulaP9.png" style="    width: 130%;position: relative;left: -70px;">
+                                            </div>
+                                            <div class="row">
+                                                <div class="head" style="">2</div>
+                                                <div class="borde_blue_osc" style="">
+                                                    <p class="p_black">Ahora solo se toma para el bloque B:</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-center mt-3">
+                                                <p class="justificado p_black">𝐹<sub>𝐴𝐵</sub>=𝑚<sub>𝐵</sub>.𝑎  (la a es la misma</p><br>
+                                                <img src="assets/img/img_ova/formulaP10.png" class="img-70">
+                                                
+                                            </div>
+                                        
+                                    </div>
+                                </div>
                             </div>
                           </div>
                        </div>
                        <div id="unidad1-9" class="tab-pane" role="tabpanel">
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <div class="titulo-ova">
-                                      <h3 class="text-center"><b>Movimiento de Una partícula</b></h3>
-                                  </div>
-                                  <h3 class="color-text">Movimiento unidimensional / Velocidad relativa</h3>
-                              </div>
-                          </div>
-                          <div class="col-md-12 row">
-                            <div class="col-md-6">
-                              <div><b style="background: #BDD7EE;padding: 5px;border-radius: 5px;">Ejercicio de ejemplo:</b></div>
-                              <div class="mt-5 azul">
-                                <div class="text-center"><img src="assets/img/img_ova/velero.png" style="    max-width: 25%;"></div>
-                                <div>
-                                  <p class="justificado text-white">Un bote que cruza un río ancho se mueve con una rapidez de 10.0 km/h en relación con el agua. El agua en el río tiene una rapidez uniforme de 5.00 km/h hacia el este en relación con la Tierra. Si el bote se dirige hacia el norte, determine la velocidad del bote en relación con un observador que está de pie en cualquier orilla. (Young, Zemansky, Sears, 2009).</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="text-center">
-                                <img src="assets/img/img_ova/Movimientobote.JPG" class="img-70">
-                              </div>
-                              <div class="text-center">
-                                <button class="btn botoncafe" data-toggle="modal" data-target="#respuesta2">Ver respuesta</button>
-                              </div>
-                            </div>
-                          </div>
+                            actividad
                        </div>
                        <div id="unidad1-10" class="tab-pane" role="tabpanel">
-                            <iframe src="actividades/actividad/actividad_v_o_f/index.html" frameborder="0"></iframe>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="titulo-ova">
+                                        <h3 class="text-center color-text"><b>Leyes de movimiento</b></h3>
+                                    </div>
+                                    <h3 class="color-text">La fuerza y las leyes de Newton/ Segunda ley de Newton</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-12 row">
+                                <div class="col-md-6">
+                                    <p class="justificado p_black size_14">Galileo introdujo el concepto de aceleración, es decir, la tasa a la que cambia la velocidad con el tiempo. Pero ¿Qué produce la aceleración? Esa pregunta la responde la segunda ley de Newton: es la fuerza.</p><br>
+                                    <b class="p_black size_13">Para conocer más sobre la segunda ley de Newton, arrastre el botón por la barra deslizadora:</b>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="comentario mt-3">
+                                        <div style="height: 23px;"><img src="assets/img/img_ova/signo-de-comillas.png" style="position: relative;top: -25px;width: 60px;"></div>
+                                        <div style="padding: 5px;">
+                                            <i><p class="justificado p_white size_13">Si una fuerza externa neta actúa sobre un cuerpo, este se acelera. La dirección de la aceleración es la misma que la de la fuerza neta. El vector de fuerza neta es igual a la masa del cuerpo multiplicada por su aceleración”. Newton.</p></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 row">
+                                <div class="col-md-6 row">
+                                    <div style="width: 70%;">
+                                        <img src="assets/img/img_ova/galileo.png" style="max-width: 100%;">
+                                    </div>
+                                    <div style="width: 12%;">
+                                        <div class="desliza_verde" style="">
+                                          <div class ="inputDiv2 i3"></div>
+                                          <div class ="inputDiv2 i4" style="display: none;"></div>
+                                        </div>
+                                    </div>
+                                    <div style="width: 10%;">
+                                        <div>
+                                            <div class="puntero_head" style="margin-top: 175%;"></div>
+                                            <div class="puntero_body" style=""></div>
+                                            <div class="puntero_head" style="margin-top: 14%;"></div>
+                                            <div class="puntero_body" style=""></div>
+                                            <div class="puntero_head" style="margin-top: 15%;"></div>
+                                            <div class="puntero_body" style=""></div>
+                                            <div class="puntero_head" style="margin-top: 8%;"></div>
+                                            <div class="puntero_body" style=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div style="background: #61C5FF;padding: 20px;border-radius: 30px;">
+                                        <div>
+                                            <p class="justificado p_black">La segunda ley de Newton vincula los conceptos fundamentales de aceleración y fuerza con el concepto de masa de Galileo, dado por la famosa ecuación a F = ma. Es interesante que Isaac Newton se haya vuelto famoso en su tiempo inicialmente no por sus leyes de movimiento y ni siquiera por su ley de la gravitación universal, sino por su estudio de la luz, pues observó que la luz blanca estaba compuesta de los colores del arcoíris.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                        </div>
                        <div id="unidad1-11" class="tab-pane" role="tabpanel">
                           <div class="row">
