@@ -689,3 +689,12 @@ a.control_next {
   width: 325px;
   margin: auto;
 }
+
+#canvas3{
+  background-image: url(../assets/img/img_ova/Tablet.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height: 600px;
+  width: 100%;
+  margin: auto;
+}
