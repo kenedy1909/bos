@@ -37,33 +37,33 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "En la página 1 del texto, el autor plantea un problema en torno al concepto de necesidades. Este problema es:",
+                texto: "Es la afirmación concreta que se pretende defender o refutar.",
                 respuestas: [{
-                    texto: "No existe claridad acerca del concepto de necesidad. ",
+                    texto: "Párrafo ",
                     correcta: false
                 }, {
-                    texto: "Existen diversas concepciones, alcances y formas de satisfacerlas.  ",
+                    texto: "Argumentar",
+                    correcta: false
+                }, {
+                    texto: "Tesis",
                     correcta: true
                 }, {
-                    texto: "No es posible satisfacer las necesidades de todas las personas.",
-                    correcta: false
-                }, {
-                    texto: "El concepto está ligado a una sola concepción del desarrollo y de la vida humana.",
+                    texto: "Objeto",
                     correcta: false
                 }]
             }, {
-                texto: "De la definición que el autor da sobre necesidad se puede afirmar que: ",
+                texto: "Los tipos de párrafo según su función",
                 respuestas: [{
-                    texto: "Tiene una visión exclusivamente material e individualista de la necesidad.",
+                    texto: "Deductivo, deductivo – inductivo e inductivo.",
                     correcta: false
                 }, {
-                    texto: "Se orienta a la satisfacción personal de metas económicas e intelectuales del sujeto.",
+                    texto: "Introducción, argumentativo, desarrollo y conclusión.",
                     correcta: false
                 }, {
-                    texto: "Obedece a una concepción estrictamente capitalista del concepto. ",
+                    texto: "Introducción, desarrollo, enlace y conclusión",
                     correcta: true
                 }, {
-                    texto: "Intenta superar la visión estrictamente capitalista del concepto.",
+                    texto: "Narrativo, contraste, argumentativo y descriptivo.",
                     correcta: false
                 }]
             }]);

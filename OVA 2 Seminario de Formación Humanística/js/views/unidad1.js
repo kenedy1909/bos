@@ -17,6 +17,8 @@ $( document ).ready(function() {
         }
     });
 
+    
+
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -67,6 +69,27 @@ $( document ).ready(function() {
         $(".p13-5").show();
     })
 
+    $(".btnemo1").on("click", function() {
+        $(".emo").hide();
+        $(".emo1").show();
+    })
+    $(".btnemo2").on("click", function() {
+        $(".emo").hide();
+        $(".emo2").show();
+    })
+    $(".btnemo3").on("click", function() {
+        $(".emo").hide();
+        $(".emo3").show();
+    })
+    $(".btnemo4").on("click", function() {
+        $(".emo").hide();
+        $(".emo4").show();
+    })
+    $(".btnemo5").on("click", function() {
+        $(".emo").hide();
+        $(".emo5").show();
+    })
+
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     var knob = "";
@@ -81,23 +104,10 @@ $( document ).ready(function() {
     $(".modal_scroll4").on('click', modal_scroll4);
 
     $(".circle-verde").on('click' , circles);
-    /*$(".unidad1-1").on('click', slide_link);
-    $(".unidad1-5").on('click', slide_link);
-    $(".unidad1-6_paso1").on('mouseover', unidad1_pantalla6_accion1);
-    $(".unidad1-6_paso3").on('mouseover', unidad1_pantalla6_accion3);
-    $(".unidad1-6_paso1").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso2").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
 
     /*scroll();*/
     slide_link(tema);
 
-
-
-
-
-    
-    
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
@@ -173,25 +183,15 @@ function controlSlides(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
-            break;
-        case 5:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
-            break;
-        case 6:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
-            break;
-
-        case 11:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
             var inputsRy = [];  
-            var i = new Input(2);
+            var i = new Input(3);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(2);
+            var i2 = new Input(3);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -206,8 +206,27 @@ function controlSlides(num){
               }(n));
             }  
             break;
+        case 5:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 6:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
 
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob11');
+            bar = document.querySelector('.custom-scrollbar__bar11');
+            container = document.querySelector('.custom-scrollbar__inner11');    
+            scroll();
         
         default:
             break;
@@ -375,19 +394,33 @@ function Input(num) {
     switch (parseInt(num)) {
         case 0:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img34.png">
+                            <div class="col-md-8 margin-bottom50">
+                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Sensorio-motor </b>(del nacimiento a los dos años de vida): se hace uso de los sentidos para relacionarse con el entorno, lo cual da la posibilidad de hacer representaciones mentales; se inicia el proceso de una conducta direccionada al logro de metas, igualmente los objetos empiezan a concebirse como permanentes, pues al inicio, se considera que todo objeto que no se percibe, no existe. La imitación y el juego toman un papel protagónico en este periodo. (Linares, s.f.)</p>
+                              </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 1:
             var info_scroll = `
-                            <img class="col-md-8 offset-md-6" src="assets/img/img_ova/antesdespues.jpeg">
+                            <div class="col-md-8 offset-md-2 margin-bottom50">
+                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Preoperacional  </b>(dos a siete años): los símbolos empiezan a ser asimilados y empleados para hacer representaciones del mundo, se facilita el juego simulado, utilizando objetos para fingir funciones que no le corresponden (por ejemplo, jugar con una escoba como si fuera un caballo). El inicio de adquisición del lenguaje y la comprensión numérica en esta etapa se vuelve protagónico al permitir la comunicación y el conteo. (Linares, s.f.)</p>
+                              </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 2:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img35.png">
+                            <div class="col-md-9 offset-md-1 margin-bottom50">
+                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Operaciones concretas </b>(siete a once años): es la época de la primaria y se inicia un proceso de uso frecuente de la lógica para examinar hechos y objetos del entorno, en esta etapa se desarrolla la capacidad de hacer análisis mentalmente. El pensamiento empieza a adquirir una connotación flexible o adaptable y se disminuye el pensamiento egocéntrico y la opinión no se fundamenta en las apariencias; se presenta ahora la capacidad de contemplar diversas características sobre un aspecto. Es posible distinguir tres operaciones mentales dadas en esta etapa: seriación (ordenar en progresión lógica), clasificación (clasificar por semejanzas o relaciones de pertenencia) y conservación (comprender la permanencia de un objeto a pesar de las variables) (Linares, s.f.)</p>
+                              </div>
+                            `;
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 3:
+            var info_scroll = `
+                            <div class="col-md-11 offset-md-1 margin-bottom50">
+                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Operaciones formales  </b>(once años en adelante): coincide aproximadamente con el inicio del periodo conocido como la adolescencia. El pensamiento y la lógica adquieren un componente abstracto, donde ya no solo se contempla lo considerado como real, sino que toma gran importancia aquello que se percibe como una posibilidad, quizás no se haya tenido relación personal con algo, pero es posible imaginarlo, de esta manera se da también la capacidad de plantear hipótesis. En esta etapa se mencionan cuatro propiedades de pensamiento: lógica proposicional (realizar una inferencia lógica a partir de la relación entre dos hipótesis), razonamiento científico (generar y probar hipótesis de manera lógica y sistemática), razonamiento combinatorio (pensar en múltiples causas), razonamiento de probabilidades y proporciones (Linares, s.f.)</p>
+                              </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
@@ -623,10 +656,10 @@ function cardPara4(num,ventana){
       $("#card4-2").addClass('hidden')
       $("#card4-3").addClass('hidden')
       $("#card4-4").addClass('hidden')
-      var conjunto = `<div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
-                      <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-                      <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
-                      <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>`;
+      var conjunto = `<div style="background-color: #68a3d9; border: 1px #FFFFFF solid;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-3" id="img-card4-1"></div>
+                      <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-4" id="img-card4-2"></div>
+                      <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-3"></div>
+                      <div style="background-color: #68a3d9; border: 1px #FFFFFF solid;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-4"></div>`;
       $("#card4-padre").html(conjunto)
   }
   if (ventana==1) {
@@ -639,39 +672,39 @@ function cardPara4(num,ventana){
           <div class="col-6 bg-white border-1 justify-content pt-2 text-black" id="card4-1" onclick="cardPara4(1,0)> 
             <p class="text-justify text-reducido">No obstante, es importante abarcar lo planteado por Ausubel, quien manifiesta desacuerdo en visualizar el proceso cognitivo de manera progresiva y sistemática, por lo tanto, su aporte se dirige hacia un aprendizaje significativo, donde la persona para obtener este aprendizaje necesita asimilar e interiorizar plenamente aquello que se requiere que aprenda y entonces, en ese momento sería posible llamársele aprendizaje</p>
           </div>
-          <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-          <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
-          <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-4" id="img-card4-2"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-3"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-4"></div>
           `;
           $("#card4-padre").html(conjunto)
       }
       if (num==2) {
           var conjunto = `
-          <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-3" id="img-card4-1"></div>
           <div class="col-6 bg-white border-2 justify-content p-4 text-black" id="card4-2"  onclick="cardPara4(2,0)> 
             <p class="text-reducido text-justify">Así mismo, desde la teoría de Ausubel se considera que, para lograr un aprendizaje significativo es necesario integrar el conocimiento previo de la persona y encontrar un enlace que pueda ser utilizado para conectar la información o enseñanza nueva (Esquivel, s.f.); así como también sería fundamental, favorecer la participación activa de la persona, donde a través de reflexiones propias, toma de decisiones y argumentaciones críticas, interiorice aspectos esenciales de su proceso de aprendizaje y se contribuya al desarrollo cognitivo. </p>
           </div>
-          <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
-          <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-3"></div>
+          <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-4"></div>
           `;
           $("#card4-padre").html(conjunto)
       }
       if (num==3) {
           var conjunto = `
-              <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
-              <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-3" id="img-card4-1"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-4" id="img-card4-2"></div>
               <div style="background-color: #68a3d9;" class="col-6 bg-white border-3 justify-content pt-2 text-black" id="card4-3"  onclick="cardPara4(3,0)> 
                   <p class="text-reducido text-justify">Ahora bien, menciona Martínez (2009) que los procesos cognitivos son parte de la personalidad del ser humano, y en ellos es posible identificar como elemento esencial el pensamiento original creativo y productivo, así que, para dar lugar a este tipo de pensamiento, es necesario que exista una libertad de reflexión, de razonamiento y de imaginación, generando espacios que contribuyan a la autenticidad, donde naturalmente se daría un juicio crítico, una postura con sustento. </p>
               </div>
-              <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-4"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-4"></div>
           `;
           $("#card4-padre").html(conjunto)
       }
       if (num==4) {
           var conjunto = `
-              <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-3" id="img-card4-1"></div>
-              <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-4" id="img-card4-2"></div>
-              <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC3.png" class="w-50 p-4" id="img-card4-3"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/DC2.png" class="w-50 p-3" id="img-card4-1"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/DC1.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div style="background-color: #68a3d9;" class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/DC4.png" class="w-50 p-4" id="img-card4-3"></div>
               <div class="col-6 bg-white border-4  pt-4 text-black" id="card4-4" onclick="cardPara4(4,0)> 
                   <p class="text-reducido">Lo anterior debería tener lugar en los espacios educativos, sin censurar el pensamiento del estudiante, comprendiendo que, a partir de este pensamiento se generan transformaciones relevantes para dicho estudiante y para la sociedad. “Es plenamente natural al ser humano el comportarse en forma creadora”. (Martínez, 2009).</p>
               </div>

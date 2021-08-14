@@ -104,7 +104,7 @@ var pdf = `<div class="col-md-12">
                                     <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">SOBRE NECESIDADES<b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">La TEXTO_2_EL_GÉNERO_DEL_CONSUMO_EN_LA_SOCIEDAD_DEL_CONSUMO <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">EL GÉNERO DEL CONSUMO EN LA SOCIEDAD DEL CONSUMO <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
                         <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Una teoría de las necesidades humanas para el desarrollo <b class="text-cafe"><u>Ver</u></b></a>
@@ -381,13 +381,13 @@ function Input(num) {
     switch (parseInt(num)) {
         case 0:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img34.png">
+                            <img class="col-md-8 offset-md-6" src="assets/img/img_ova/antesdespues.jpeg">
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 1:
             var info_scroll = `
-                            <img class="col-md-8 offset-md-6" src="assets/img/img_ova/antesdespues.jpeg">
+                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img34.png">
                             `;
             $('#info-scroll').html(info_scroll);
             break;

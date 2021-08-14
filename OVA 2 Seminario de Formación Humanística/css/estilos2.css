@@ -496,7 +496,7 @@ p, button{
   margin-right: 6px;
 }
 .active{
-  background: #598e42;
+  /*background: #598e42;*/
 }
 
 #slider,#slider-2,#slider-3,#slider-4,#slider-5 {
@@ -658,4 +658,43 @@ a.control_next {
 
 .bg-verde-btn{
   background: #6FB14D;
+}
+
+
+#canvas1{
+  background-image: url(../assets/img/img_ova/Lectura3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  width: 325px;
+  margin-left: 10px;
+}
+
+
+.pergamino2{
+  background-image: url(../assets/img/img_ova/pergamino2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+  width: 700px;
+  margin-left: 100px;
+  margin-top: -50px;
+}
+
+#canvas2{
+  background-image: url(../assets/img/img_ova/Proceso2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 400px;
+  width: 325px;
+  margin: auto;
+}
+
+#canvas3{
+  background-image: url(../assets/img/img_ova/Tablet.png);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  height: 600px;
+  width: 100%;
+  margin: auto;
 }

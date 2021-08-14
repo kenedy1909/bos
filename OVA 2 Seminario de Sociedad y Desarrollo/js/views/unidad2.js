@@ -54,13 +54,13 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                    <a href="assets/PDF/UNIDAD2/5. La fabrica del sujeto neoliberal (1)2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">5. La fabrica del sujeto neoliberal (1)2<b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD2/5. La fabrica del sujeto neoliberal (1)2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> La fabrica del sujeto neoliberal<b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/ERICH_FROMM.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">ERICH_FROMM<b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD2/ERICH_FROMM.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">ERICH FROMM<b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/Lecturacomplementada.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Lecturacomplementada<b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD2/Lecturacomplementada.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Lectura complementada<b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
                         <a href="assets/PDF/UNIDAD2/Poemas.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Poemas<b class="text-cafe"><u>Ver</u></b></a>
