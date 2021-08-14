@@ -240,7 +240,7 @@ function controlSlides(num){
             for (var n = 0; n < inputsRy.length; n++) {
               (function(n) {
                 inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
+                  inputsRy[n].actualizar2();
                 }, false)
               }(n));
             }
@@ -250,9 +250,91 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 12:
+            sumaslide2++;
+            if (sumaslide2 < 2) {
+                var slideCount = $('#slider4 ul li').length;
+                var slideWidth = $('#slider4 ul li').width();
+                var slideHeight = $('#slider4 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider4').css({ width: '100%', height: '370px' });
+                
+                $('#slider4 ul').css({ width: '90%'});
+                
+                $('#slider4 ul li:last-child').prependTo('#slider4 ul');
+
+                function moveLeft4() {
+                    $('#slider4 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider4 ul li:last-child').prependTo('#slider4 ul');
+                        $('#slider4 ul').css('left', '');
+                    });
+                };
+
+                function moveRight4() {
+                    $('#slider4 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider4 ul li:first-child').appendTo('#slider4 ul');
+                        $('#slider4 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev4').click(function (e) {
+                    moveLeft4();
+                    e.preventDefault();
+                });
+
+                $('a.control_next4').click(function (e) {
+                    moveRight4();
+                    e.preventDefault();
+                });
+            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 13:
+            sumaslide3++;
+            if (sumaslide3 < 2) {
+                var slideCount = $('#slider5 ul li').length;
+                var slideWidth = $('#slider5 ul li').width();
+                var slideHeight = $('#slider5 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider5').css({ width: '100%', height: '300px' });
+                
+                $('#slider5 ul').css({ width: '90%'});
+                
+                $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+
+                function moveLeft5() {
+                    $('#slider5 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider5 ul li:last-child').prependTo('#slider5 ul');
+                        $('#slider5 ul').css('left', '');
+                    });
+                };
+
+                function moveRight5() {
+                    $('#slider5 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider5 ul li:first-child').appendTo('#slider5 ul');
+                        $('#slider5 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev5').click(function (e) {
+                    moveLeft5();
+                    e.preventDefault();
+                });
+
+                $('a.control_next5').click(function (e) {
+                    moveRight5();
+                    e.preventDefault();
+                });
+            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 14:
@@ -836,11 +918,73 @@ function scroll_(num) {
             container = document.querySelector('.custom-scrollbar__inner_cinco');
             scroll();
             break;
+        case 6:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_seis');
+            bar = document.querySelector('.custom-scrollbar__bar_seis');
+            container = document.querySelector('.custom-scrollbar__inner_seis');
+            scroll();
+            break;
+        case 7:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_siete');
+            bar = document.querySelector('.custom-scrollbar__bar_siete');
+            container = document.querySelector('.custom-scrollbar__inner_siete');
+            scroll();
+            break;
         default:
             break;
     }
 }
+function textBane_10(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.blue_aquaBane').addClass('invisible');
+            $('.blue_aquaBane').removeClass('visible');
+            break;
+        case 1:
+            $('.blue_aquaBane').addClass('visible');
+            $('.blue_aquaBane').removeClass('invisible');
 
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-1').addClass('visible');
+            $('.bane10-1').removeClass('invisible');
+            break;
+        case 2:
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-2').addClass('visible');
+            $('.bane10-2').removeClass('invisible');
+            scroll_(6);
+            break;
+        case 3:
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-3').addClass('visible');
+            $('.bane10-3').removeClass('invisible');
+            scroll_(7);
+            break;
+        case 4:
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-4').addClass('visible');
+            $('.bane10-4').removeClass('invisible');
+            break;
+        default:
+            break;
+    }
+}
 
 
 
@@ -2625,11 +2769,11 @@ function Input(num) {
   $("input[type=range]").on('change', function () {
       /*alert();*/
   });
-  /*this.actualizar2 = function() {
-    scroll_horizontal2(this.input.value);
+  this.actualizar2 = function() {
+    textBane_10(this.input.value);
     this.output.innerHTML = this.input.value;
     this.att.value = this.input.value;
-  }*/
+  }
   $("input[type=range]").on('change', function () {
       /*alert();*/
   });
