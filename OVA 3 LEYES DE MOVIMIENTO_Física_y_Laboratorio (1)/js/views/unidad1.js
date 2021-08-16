@@ -86,6 +86,7 @@ var sumaslide = 0;
 var sumaslide1 = 0;
 var sumaslide2 = 0;
 var sumaslide3 = 0;
+var sumaslide4 = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
@@ -294,6 +295,10 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 13:
+            
+            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            break;
+        case 14:
             sumaslide3++;
             if (sumaslide3 < 2) {
                 var slideCount = $('#slider5 ul li').length;
@@ -335,50 +340,7 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
-            break;
-        case 14:
-            sumaslide1++;
-            if (sumaslide1 < 2) {
-                var slideCount = $('#slider3 ul li').length;
-                var slideWidth = $('#slider3 ul li').width();
-                var slideHeight = $('#slider3 ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider3').css({ width: '100%', height: '200px' });
-                
-                $('#slider3 ul').css({ width: '90%'});
-                
-                $('#slider3 ul li:last-child').prependTo('#slider3 ul');
-
-                function moveLeft3() {
-                    $('#slider3 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider3 ul li:last-child').prependTo('#slider3 ul');
-                        $('#slider3 ul').css('left', '');
-                    });
-                };
-
-                function moveRight3() {
-                    $('#slider3 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider3 ul li:first-child').appendTo('#slider3 ul');
-                        $('#slider3 ul').css('left', '');
-                    });
-                };
-
-                $('a.control_prev3').click(function (e) {
-                    moveLeft3();
-                    e.preventDefault();
-                });
-
-                $('a.control_next3').click(function (e) {
-                    moveRight3();
-                    e.preventDefault();
-                });
-            }
+            scroll_(8);
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 15:
@@ -391,6 +353,47 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 18:
+            sumaslide4++;
+            if (sumaslide4 < 2) {
+                var slideCount = $('#slider6 ul li').length;
+                var slideWidth = $('#slider6 ul li').width();
+                var slideHeight = $('#slider6 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider6').css({ width: '100%', height: '350px' });
+                
+                $('#slider6 ul').css({ width: '100%'});
+                
+                $('#slider6 ul li:last-child').prependTo('#slider6 ul');
+
+                function moveLeft6() {
+                    $('#slider6 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider6 ul li:last-child').prependTo('#slider6 ul');
+                        $('#slider6 ul').css('left', '');
+                    });
+                };
+
+                function moveRight6() {
+                    $('#slider6 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider6 ul li:first-child').appendTo('#slider6 ul');
+                        $('#slider6 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev6').click(function (e) {
+                    moveLeft6();
+                    e.preventDefault();
+                });
+
+                $('a.control_next6').click(function (e) {
+                    moveRight6();
+                    e.preventDefault();
+                });
+            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 19:
@@ -421,47 +424,6 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 28:
-            sumaslide2++;
-            if (sumaslide2 < 2) {
-                var slideCount = $('#slider4 ul li').length;
-                var slideWidth = $('#slider4 ul li').width();
-                var slideHeight = $('#slider4 ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider4').css({ width: '100%', height: '150px' });
-                
-                $('#slider4 ul').css({ width: '90%'});
-                
-                $('#slider4 ul li:last-child').prependTo('#slider4 ul');
-
-                function moveLeft4() {
-                    $('#slider4 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider4 ul li:last-child').prependTo('#slider4 ul');
-                        $('#slider4 ul').css('left', '');
-                    });
-                };
-
-                function moveRight4() {
-                    $('#slider4 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider4 ul li:first-child').appendTo('#slider4 ul');
-                        $('#slider4 ul').css('left', '');
-                    });
-                };
-
-                $('a.control_prev4').click(function (e) {
-                    moveLeft4();
-                    e.preventDefault();
-                });
-
-                $('a.control_next4').click(function (e) {
-                    moveRight4();
-                    e.preventDefault();
-                });
-            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 29:
@@ -471,47 +433,6 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 31:
-            sumaslide3++;
-            if (sumaslide3 < 2) {
-                var slideCount = $('#slider5 ul li').length;
-                var slideWidth = $('#slider5 ul li').width();
-                var slideHeight = $('#slider5 ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider5').css({ width: '100%', height: '400px' });
-                
-                $('#slider5 ul').css({ width: '100%'});
-                
-                $('#slider5 ul li:last-child').prependTo('#slider5 ul');
-
-                function moveLeft5() {
-                    $('#slider5 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider5 ul li:last-child').prependTo('#slider5 ul');
-                        $('#slider5 ul').css('left', '');
-                    });
-                };
-
-                function moveRight5() {
-                    $('#slider5 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider5 ul li:first-child').appendTo('#slider5 ul');
-                        $('#slider5 ul').css('left', '');
-                    });
-                };
-
-                $('a.control_prev5').click(function (e) {
-                    moveLeft5();
-                    e.preventDefault();
-                });
-
-                $('a.control_next5').click(function (e) {
-                    moveRight5();
-                    e.preventDefault();
-                });
-            }
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
             break;
         case 32:
@@ -938,6 +859,76 @@ function scroll_(num) {
             container = document.querySelector('.custom-scrollbar__inner_siete');
             scroll();
             break;
+        case 8:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_ocho');
+            bar = document.querySelector('.custom-scrollbar__bar_ocho');
+            container = document.querySelector('.custom-scrollbar__inner_ocho');
+            scroll();
+            break;
+        case 9:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_nueve');
+            bar = document.querySelector('.custom-scrollbar__bar_nueve');
+            container = document.querySelector('.custom-scrollbar__inner_nueve');
+            scroll();
+            break;
+        case 10:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_diez');
+            bar = document.querySelector('.custom-scrollbar__bar_diez');
+            container = document.querySelector('.custom-scrollbar__inner_diez');
+            scroll();
+            break;
+        case 11:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_once');
+            bar = document.querySelector('.custom-scrollbar__bar_once');
+            container = document.querySelector('.custom-scrollbar__inner_once');
+            scroll();
+            break;
+        case 12:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_doce');
+            bar = document.querySelector('.custom-scrollbar__bar_doce');
+            container = document.querySelector('.custom-scrollbar__inner_doce');
+            scroll();
+            break;
+        case 13:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_trece');
+            bar = document.querySelector('.custom-scrollbar__bar_trece');
+            container = document.querySelector('.custom-scrollbar__inner_trece');
+            scroll();
+            break;
+        case 14:
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob_catorce');
+            bar = document.querySelector('.custom-scrollbar__bar_catorce');
+            container = document.querySelector('.custom-scrollbar__inner_catorce');
+            scroll();
+            break;
         default:
             break;
     }
@@ -980,6 +971,224 @@ function textBane_10(num){
 
             $('.bane10-4').addClass('visible');
             $('.bane10-4').removeClass('invisible');
+            break;
+        default:
+            break;
+    }
+}
+function textoRocas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn_rocas').addClass('btn_rocasInactive');
+            $('.btn_rocas').removeClass('btn_rocasActive');
+
+            $('.btn_roc1').removeClass('btn_rocasInactive');
+            $('.btn_roc1').addClass('btn_rocasActive');
+
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
+
+            $('.textoroc1').removeClass('invisible');
+            $('.textoroc1').addClass('visible');
+
+            $('.lineas').addClass('escondido');
+            $('.lineas').removeClass('mostrado');
+
+            $('.lineas1').removeClass('escondido');
+            $('.lineas1').addClass('mostrado');
+            break;
+        case 2:
+            $('.btn_rocas').addClass('btn_rocasInactive');
+            $('.btn_rocas').removeClass('btn_rocasActive');
+
+            $('.btn_roc2').removeClass('btn_rocasInactive');
+            $('.btn_roc2').addClass('btn_rocasActive');
+
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
+
+            $('.textoroc2').removeClass('invisible');
+            $('.textoroc2').addClass('visible');
+
+            $('.lineas').addClass('escondido');
+            $('.lineas').removeClass('mostrado');
+
+            $('.lineas2').removeClass('escondido');
+            $('.lineas2').addClass('mostrado');
+            break;
+        case 3:
+            $('.btn_rocas').addClass('btn_rocasInactive');
+            $('.btn_rocas').removeClass('btn_rocasActive');
+
+            $('.btn_roc3').removeClass('btn_rocasInactive');
+            $('.btn_roc3').addClass('btn_rocasActive');
+
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
+
+            $('.textoroc3').removeClass('invisible');
+            $('.textoroc3').addClass('visible');
+
+            $('.lineas').addClass('escondido');
+            $('.lineas').removeClass('mostrado');
+
+            $('.lineas3').removeClass('escondido');
+            $('.lineas3').addClass('mostrado');
+            break;
+        default:
+            break;
+    }
+}
+function punteros19(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.punteroHead19').addClass('puntero2_headInactive');
+            $('.punteroHead19').removeClass('puntero2_headActive');
+
+            $('.punteroHead19-1').removeClass('puntero2_headInactive');
+            $('.punteroHead19-1').addClass('puntero2_headActive');
+
+            $('.punteroBody19').addClass('puntero2_bodyInactive');
+            $('.punteroBody19').removeClass('puntero2_bodyActive');
+
+            $('.punteroBody19-1').removeClass('puntero2_bodyInactive');
+            $('.punteroBody19-1').addClass('puntero2_bodyActive');
+
+            $('.flecha19').addClass('invisible');
+            $('.flecha19').removeClass('visible');
+
+            $('.flecha19-1').removeClass('invisible');
+            $('.flecha19-1').addClass('visible');
+
+            $('.bane19blue').addClass('invisible');
+            $('.bane19blue').removeClass('visible');
+
+            $('.bane19-1').removeClass('invisible');
+            $('.bane19-1').addClass('visible');
+            break;
+        case 2:
+            $('.punteroHead19').addClass('puntero2_headInactive');
+            $('.punteroHead19').removeClass('puntero2_headActive');
+
+            $('.punteroHead19-2').removeClass('puntero2_headInactive');
+            $('.punteroHead19-2').addClass('puntero2_headActive');
+
+            $('.punteroBody19').addClass('puntero2_bodyInactive');
+            $('.punteroBody19').removeClass('puntero2_bodyActive');
+
+            $('.punteroBody19-2').removeClass('puntero2_bodyInactive');
+            $('.punteroBody19-2').addClass('puntero2_bodyActive');
+
+            $('.flecha19').addClass('invisible');
+            $('.flecha19').removeClass('visible');
+
+            $('.flecha19-2').removeClass('invisible');
+            $('.flecha19-2').addClass('visible');
+
+            $('.bane19blue').addClass('invisible');
+            $('.bane19blue').removeClass('visible');
+
+            $('.bane19-2').removeClass('invisible');
+            $('.bane19-2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+function textblue(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue1').removeClass('btnCircleInactive');
+            $('.btnblue1').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue1').removeClass('invisible');
+            $('.textoblue1').addClass('visible');
+
+            
+            break;
+        case 2:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue2').removeClass('btnCircleInactive');
+            $('.btnblue2').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue2').removeClass('invisible');
+            $('.textoblue2').addClass('visible');
+            break;
+        case 3:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue3').removeClass('btnCircleInactive');
+            $('.btnblue3').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue3').removeClass('invisible');
+            $('.textoblue3').addClass('visible');
+            break;
+        case 4:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue4').removeClass('btnCircleInactive');
+            $('.btnblue4').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue4').removeClass('invisible');
+            $('.textoblue4').addClass('visible');
+            break;
+        case 5:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue5').removeClass('btnCircleInactive');
+            $('.btnblue5').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue5').removeClass('invisible');
+            $('.textoblue5').addClass('visible');
+            break;
+        case 6:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue6').removeClass('btnCircleInactive');
+            $('.btnblue6').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue6').removeClass('invisible');
+            $('.textoblue6').addClass('visible');
+            break;
+        case 7:
+            $('.btnCircle').addClass('btnCircleInactive');
+            $('.btnCircle').removeClass('btnCircleActive');
+
+            $('.btnblue7').removeClass('btnCircleInactive');
+            $('.btnblue7').addClass('btnCircleActive');
+
+            $('.textoblue').addClass('invisible');
+            $('.textoblue').removeClass('visible');
+
+            $('.textoblue7').removeClass('invisible');
+            $('.textoblue7').addClass('visible');
             break;
         default:
             break;
@@ -1544,55 +1753,7 @@ function agrandar(num) {
     }
 }
 
-function scroll(){
-    // When the container is scrolled
-    container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
-    });
-
-    dragging = false;
-
-    knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
-
-    });
-    window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
-
-
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
-
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
-
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
-
-      }
-    });
-    window.addEventListener('mouseup', () => {
-      dragging = false;
-    });
-}
 
 
 //dezlizador
@@ -2727,6 +2888,9 @@ function pantalla22(num) {
             break;
     }
 }
+
+
+
 //dezlizador
 function Input(num) {
   //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
@@ -2777,4 +2941,54 @@ function Input(num) {
   $("input[type=range]").on('change', function () {
       /*alert();*/
   });
+}
+
+function scroll(){
+    // When the container is scrolled
+    container.addEventListener('scroll', () => {
+      // If we are dragging the knob, do nothing
+      if (dragging) return;
+
+      // Otherwise, set the knob position based on the scroll position
+      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+    });
+
+    dragging = false;
+
+    knob.addEventListener('mousedown', event => {
+        
+    console.log(knob+" "+bar+" "+container);
+      dragging = {
+        x: event.clientX,
+        y: event.clientY };
+
+    });
+    window.addEventListener('mousemove', event => {
+      if (dragging) {
+        // When dragging
+        event.preventDefault();
+        diff = {
+          x: event.clientX - dragging.x,
+          y: event.clientY - dragging.y };
+
+
+        // Clamp the position of the knob to be a maximum of 
+        // the knobs container, and a minimum of 0
+        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+        knob.style.top = newTop + 'px';
+
+        // Base the scroll offset on the knobs position
+        // in relation to the knobs container
+        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+        container.scrollTop = scrollOffset;
+
+        dragging = {
+          x: event.clientX,
+          y: event.clientY };
+
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      dragging = false;
+    });
 }
