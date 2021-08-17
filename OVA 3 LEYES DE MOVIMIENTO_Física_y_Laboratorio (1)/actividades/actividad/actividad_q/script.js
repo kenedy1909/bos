@@ -37,66 +37,41 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "¿Cuales son las unidades físicas fundamentales? ",
+                texto: "¿Cuál debe ser el valor de la masa 2 para que el sistema este en equilibrio si no hay fricción entre las superficies, ni en la polea y la masa 1 es de 2 kg y el ángulo es de 55 grados",
                 respuestas: [{
-                    texto: "Velocidad, tiempo y masa.",
+                    texto: "1,20",
                     correcta: false
                 }, {
-                    texto: "Longitud, masa y tiempo",
-                    correcta: true
+                    texto: "3,15",
+                    correcta: false
                 }, {
-                    texto: "“Longitud, fuerza y tiempo",
+                    texto: "4,0",
                     correcta: false
                 },{
-                    texto: "Todas las anteriores",
+                    texto: "3,68",
                     correcta: false
+                },{
+                    texto: "2,44",
+                    correcta: true
                 }]
             }, {
-                texto: "¿Cómo se representa la masa en el Sistema Internacional?",
+                texto: "Si el peso de la viga es de 4,66 kN, ¿Cuál es la magnitud en kN de la reacción en A?",
                 respuestas: [{
-                    texto: "KG",
-                    correcta: false
-                }, {
-                    texto: "Kg",
+                    texto: "18,88",
                     correcta: true
                 }, {
-                    texto: "k",
+                    texto: "14,66",
+                    correcta: false
+                }, {
+                    texto: "7,33",
                     correcta: false
                 },{
-                    texto: "kgm",
-                    correcta: false
-                }]
-            }, {
-                texto: "De las siguientes magnitudes, ¿Cuál es una magnitud derivada?",
-                respuestas: [{
-                    texto: "Área.",
-                    correcta: true
-                }, {
-                    texto: "Tiempo.",
-                    correcta: false
-                }, {
-                    texto: "Masa",
+                    texto: "10,66",
                     correcta: false
                 },{
-                    texto: "Ninguna de las anteriores",
+                    texto: "29,32",
                     correcta: false
                 }]
-            }, {
-                texto: "¿Cuál es la unidad de longitud en el sistema Cegesimal?",
-                respuestas: [{
-                    texto: "Metro.",
-                    correcta: false
-                }, {
-                    texto: "Kilometro.",
-                    correcta: false
-                }, {
-                    texto: "Centímetro",
-                    correcta: true
-                },{
-                    texto: "Milímetro",
-                    correcta: false
-                }]
-
             }]);
         };
     $scope.preguntas = getPreguntas();
