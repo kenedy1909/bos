@@ -14,18 +14,52 @@
 </head>
 
 <body>
-    <div class="backdrop in" style="height: 280px;">
-        <div class="fondo" style="height: 200px; padding: 0px;">
-            
+    <div class="backdrop in">
+        <div class="fondo" style="padding: 0px;">
+            <header style="padding: 0px;">
+                <div class="row">
+                    <div class="col-md-4" style="display: inline-block;width: 37%;">
+                        <div class="" style="display: inline-block;">
+                          <img src="img/actividad_general.png" alt="" style="width: 100px;height: 100px;">
+                          <div class="text-center pt-0" style="font-size: 20px;display: inline-block;">
+                            <b class="">ACTIVIDAD # 4</b>
+                            <div style="height: 5px; background: #004c6d;"></div>
+                            <p class="text-muted"></p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 row" style="display: inline-block;width: 60%;">
+                        
+                        <div class="info_actividad shadow">
+                            <div class="">
+                               <p class="row"><img src="img/actividad.png" class="logo_copiar" style=""><b style="color: white;font-size: 15px;">Video</b></p> 
+                            </div>
+                            <div class="">
+                                <p class="row"><img src="img/reloj.png" style="max-width: 33px;"><b style="color: white;font-size: 15px;width: 70%;">Tiempo sugerido: 3 horas</b></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- <h1>Reducción y aprovechamiento de empaques y envases</h1> -->
+                
+            </header>
+            <div class="col-md-12 mt-2 mb-2" style="margin-top: 10px;">
+                <div style="background: #FFD966;padding: 15px;border-radius: 20px;">
+                    <p class="justificado p_black size_13">Teniendo en cuenta lo aprendido, desarrolle los siguientes preguntas, de clic en las flechas para revisar las preguntas:</p>
+                </div>
+            </div>
             <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                 <div class="preguntas">
+                    
                     <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                        <div style="display: inline-flex;width: 40%;height: 100%">
-                            <p class="texto-pregunta"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b></spam>
+                        <div style="display: inline-flex;width: 40%;height: 106%">
+                            <p class="texto-pregunta"><spam style="width: -webkit-fill-available; text-align: center;"><b style="font-size: 13px;">{{pregunta.texto}} </b></spam>
                                 <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                             </p>
                         </div>
-                        <div style="display: inline-flex;width: 56%;height: 100%">
+                        <div style="display: inline-flex;width: 56%;height: 106%">
                             <div class="respuestas-cuestionario">
                                 <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
                                     
@@ -33,6 +67,10 @@
                                     {{respuesta.texto}}
                                     
                                 </div>
+
+                            </div>
+                            <div style="text-align: center;">
+                                <img src="img/imagen23.png" style="max-width: 90%;    margin-top: 12px;">
                             </div>
                         </div>
                         

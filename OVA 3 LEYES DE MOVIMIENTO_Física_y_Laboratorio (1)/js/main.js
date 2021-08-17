@@ -120,7 +120,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/44);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/33);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);
@@ -189,9 +189,11 @@ $('.link-menu-tema').off('click').on('click', function(evt){
     active = 1;
     var link_item = $(this).find("a").attr('href');
     var enlace = link_item.replace('#','');
+    tema = $(this).data('id');
+    
     $("#content-ova").load("base/unidades/"+enlace+".html");
     evt.preventDefault();
-    tema = $(this).data('id');
+    
     console.log(tema);
 });
 function init(){
