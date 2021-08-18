@@ -305,6 +305,23 @@ function funcionalidad_3(num) {
         $(".fun_3_card_text").removeClass('d-none');
 }
 
+function funcionalidad_4(num) {
+    $(".fun_4_content, .fun_4_text_1, .fun_4_text_2, .fun_4_text_3, .fun_4_text_4").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_4_text_1").removeClass('d-none');
+        $(".fun_4_content").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_4_text_2").removeClass('d-none');
+        $(".fun_4_content").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_4_text_3").removeClass('d-none');
+        $(".fun_4_content").removeClass('d-none');
+    }else if (num == 4) {
+        $(".fun_4_text_4").removeClass('d-none');
+        $(".fun_4_content").removeClass('d-none');
+    }
+}
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
