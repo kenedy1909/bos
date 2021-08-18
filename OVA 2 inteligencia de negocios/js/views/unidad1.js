@@ -373,6 +373,10 @@ function funcionalidad_8() {
         $(".fun_8_card_img").addClass('img-90');
         $(".fun_8_card_text").removeClass('d-none');
 }
+
+function funcionalidad_9() {
+        $(".fun_9_text").removeClass('d-none');
+}
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
