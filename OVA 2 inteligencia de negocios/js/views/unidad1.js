@@ -373,6 +373,27 @@ function funcionalidad_8() {
         $(".fun_8_card_img").addClass('img-90');
         $(".fun_8_card_text").removeClass('d-none');
 }
+
+function funcionalidad_9() {
+        $(".fun_9_text").removeClass('d-none');
+}
+
+function funcionalidad_10(num) {
+
+    $(".fun_10_card_1, .fun_10_card_2").removeClass('d-none');
+    $(".fun_10_card_1, .fun_10_card_2").addClass('d-flex');
+    $(".fun_10_card_text_1, .fun_10_card_text_2").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_10_card_1").removeClass('d-flex');
+        $(".fun_10_card_1").addClass('d-none');
+        $(".fun_10_card_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_10_card_2").removeClass('d-flex');
+        $(".fun_10_card_2").addClass('d-none');
+        $(".fun_10_card_text_2").removeClass('d-none');
+    }
+}
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {

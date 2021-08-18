@@ -829,14 +829,14 @@ svg circle:nth-child(2){
 .acordeon__titulo {
   display: block;
   padding: 15px;
-  background: #811111;
+  background: #1E2054;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
   border-bottom: 1px solid #fff;
 }
 .acordeon__titulo:hover {
-  background: #811111;
+  background: #1E2054;
 }
 
 .acordeon__contenido {
@@ -851,7 +851,7 @@ svg circle:nth-child(2){
   margin: 15px 0;
 }
 .acordeon__item{
-  background: #811111;
+  background: #1E2054;
 }
 
 
@@ -866,10 +866,9 @@ svg circle:nth-child(2){
 .triangulocordeon{
   width: 0;
   height: 0;
-  border-left: 43px solid #ba236d;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  transform: rotate(90deg);
+  border-left: 40px solid transparent;
+  border-top: 30px solid #FFFFFF;
+  border-right: 40px solid transparent;
 }
 .textocordeon{
   font-weight: bold;
