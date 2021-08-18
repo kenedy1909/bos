@@ -298,35 +298,11 @@ function funcionalidad_2(num) {
 }
 
 function funcionalidad_3(num) {
-    $(".info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3, .info_funcionalidad_3_4, .info_funcionalidad_3_5, .info_funcionalidad_3_6").addClass('d-none');
-    $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").removeClass('bg-amarrillo-1');
-    $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").addClass('bg-naranja-1');
-
-    if (num == 1) {
-        $(".info_funcionalidad_3_1").removeClass('d-none');
-        $(".btn_funcionalidad_3_1").removeClass('bg-naranja-1');
-        $(".btn_funcionalidad_3_1").addClass('bg-amarrillo-1');
-    }else if (num == 2) {
-        $(".info_funcionalidad_3_2").removeClass('d-none');
-        $(".btn_funcionalidad_3_2").removeClass('bg-naranja-1');
-        $(".btn_funcionalidad_3_2").addClass('bg-amarrillo-1');
-    }else if (num == 3) {
-        $(".info_funcionalidad_3_3").removeClass('d-none');
-        $(".btn_funcionalidad_3_3").removeClass('bg-naranja-1');
-        $(".btn_funcionalidad_3_3").addClass('bg-amarrillo-1');
-    }else if (num == 4) {
-        $(".info_funcionalidad_3_4").removeClass('d-none');
-        $(".btn_funcionalidad_3_4").removeClass('bg-naranja-1');
-        $(".btn_funcionalidad_3_4").addClass('bg-amarrillo-1');
-    }else if (num == 5) {
-        $(".info_funcionalidad_3_5").removeClass('d-none');
-        $(".btn_funcionalidad_3_5").removeClass('bg-naranja-1');
-        $(".btn_funcionalidad_3_5").addClass('bg-amarrillo-1');
-    }else if (num == 6) {
-        $(".info_funcionalidad_3_6").removeClass('d-none');
-        $(".btn_funcionalidad_3_6").removeClass('bg-naranja-1');
-        $(".btn_funcionalidad_3_6").addClass('bg-amarrillo-1');
-    }
+        $(".fun_3_card").removeClass('img-100');
+        $(".fun_3_card").addClass('img-30');
+        $(".fun_3_card_img").removeClass('img-50');
+        $(".fun_3_card_img").addClass('img-90');
+        $(".fun_3_card_text").removeClass('d-none');
 }
 
 function instrucciones(num) {
