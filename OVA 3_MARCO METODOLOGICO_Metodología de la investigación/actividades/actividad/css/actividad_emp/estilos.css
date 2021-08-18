@@ -149,12 +149,12 @@
 }
 #item-0, .list-group-item2{
     position: relative!important; 
-    right: -165px!important; 
+    right: -225px!important; 
     top: -28px!important;
 }
 #item-1, .list-group-item3{
     position: relative!important; 
-    right: -80px!important; 
+    right: -165px!important; 
     top: 64px!important; 
 }
 .ficha-texto p {
@@ -242,5 +242,5 @@
     background: url(../../img/img_emp/rueda.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 415px 380px;
+    background-size: 390px 330px;
 }

@@ -13074,6 +13074,7 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
 
 .tooltip {
   position: absolute;
+  top: -25px;
   z-index: 1070;
   display: block;
   margin: 0;
@@ -13093,13 +13094,24 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   line-break: auto;
   font-size: 0.765625rem;
   word-wrap: break-word;
+  visibility: hidden;
   opacity: 0;
 }
 
 .tooltip.show {
+  visibility: visible;
   opacity: 0.9;
 }
-
+.tooltip-arrow {
+  width: 50%!important;
+  height: 50%!important;
+  position: absolute!important;
+  top: 100%!important;
+  left: 50%!important;
+  transform: translateX(-50%)!important;
+  overflow: hidden!important; /* ← Here is the trick */
+}
+/* 
 .tooltip .tooltip-arrow {
   position: absolute;
   display: block;
@@ -13110,49 +13122,49 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   content: "";
   border-color: transparent;
   border-style: solid;
-}
+} */
 
 .tooltip[data-popper-placement^="top"],
 .tooltip[data-popper-placement^="bottom"] {
   padding: 0.4rem 0;
 }
 
-.tooltip[data-popper-placement^="top"] .tooltip-arrow,
+/* .tooltip[data-popper-placement^="top"] .tooltip-arrow,
 .tooltip[data-popper-placement^="bottom"] .tooltip-arrow {
   width: 0.8rem;
   height: 0.4rem;
-}
+} */
 
 .tooltip[data-popper-placement^="right"],
 .tooltip[data-popper-placement^="left"] {
   padding: 0 0.4rem;
 }
 
-.tooltip[data-popper-placement^="right"] .tooltip-arrow,
+/* .tooltip[data-popper-placement^="right"] .tooltip-arrow,
 .tooltip[data-popper-placement^="left"] .tooltip-arrow {
   width: 0.4rem;
   height: 0.8rem;
-}
+} */
 
-.tooltip[data-popper-placement^="top"] .tooltip-arrow {
+/* .tooltip[data-popper-placement^="top"] .tooltip-arrow {
   bottom: 0;
-}
+} */
 
 .tooltip[data-popper-placement^="top"] .tooltip-arrow::before {
   top: 0;
   border-width: 0.4rem 0.4rem 0;
   border-top-color: #000015;
 }
-
+/* 
 .tooltip[data-popper-placement^="right"] .tooltip-arrow {
   left: 0;
-}
+} */
 
-.tooltip[data-popper-placement^="right"] .tooltip-arrow::before {
+/* .tooltip[data-popper-placement^="right"] .tooltip-arrow::before {
   right: 0;
   border-width: 0.4rem 0.4rem 0.4rem 0;
   border-right-color: #000015;
-}
+} */
 
 
 .tooltip[data-popper-placement^="bottom"] .tooltip-arrow {

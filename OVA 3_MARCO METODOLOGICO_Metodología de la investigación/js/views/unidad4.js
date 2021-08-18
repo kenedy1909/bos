@@ -73,18 +73,27 @@ function controlSlides4(num){
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
             var pdf = `<div class="col-md-12">
-                        <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD4/Instrumento 1.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 1.pdf</a>
-                        </p>
-                        <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD4/Instrumento 2.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 2.pdf</a>
-                        </p>
-                      </div>`;
+                          <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD4/Instrumento 1.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 1.pdf</a>
+                          </p>
+                          <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD4/Instrumento 2.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 2.pdf</a>
+                          </p>
+                        </div>`;
             $('.pdfs').html(pdf);
             break;
         case 1:
             $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            var pdf = `<div class="col-md-12">
+                          <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD4/Instrumento 1.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 1.pdf</a>
+                          </p>
+                          <p class="p_white size_20">
+                            <a href="assets/PDF/UNIDAD4/Instrumento 2.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 2.pdf</a>
+                          </p>
+                        </div>`;
+            $('.pdfs').html(pdf);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
@@ -600,40 +609,46 @@ function teorias(num) {
 
   if (num == 1) {
       var texto = `
-                    <div class="content custom-scrollbar18 mr-3">
-                      <div class="custom-scrollbar__inner18">
-                        <p class="text-justify text-black">
-                          <b class="color-title">Seleccionar un programa de análisis</b><br>
-                          Estos son algunos de los más conocidos:<br>
-                        </p>
-                        <ul class="text-black">
-                          <li>Statistical Package for the Social Sciences o Paquete Estadístico para las Ciencias Sociales (SPSS®). </li>
-                        </ul>
-                        <p class="text-justify text-black">
-                          Este programa, desarrollado en la Universidad de Chicago, es uno de los más difundidos.
-                        </p>
-                        <ul class="text-black">
-                          <li>Minitab®, es un paquete que goza de popularidad por su relativamente bajo costo. Incluye un considerable número de pruebas estadísticas, y cuenta con un tutorial para aprender a utilizarlo y practicar; además, es muy sencillo de manejar. El sitio web para acceder es http://www.minitab.com. (Tiempo aproximado horas directas: 20 minutos)</li>
-                          <li>STATA</li>
-                          <li>Eviews</li>
-                          <li>R</li>
-                          <li>SAS</li>
-                        </ul>
-                        <p class="text-justify text-black">
-                          (Estos programas se verían en los cursos de Estadística y Econometría.)
-                        </p>
-                      </div>
-                      <div class="custom-scrollbar__bar18">
-                        <div class="custom-scrollbar__knob18 cursor">
-                          <p class="text-center linea_scroll18">-</p>
-                        </div>
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">1</b></p>
+                  </div>
+                  <div class="content custom-scrollbar18 mr-3">
+                    <div class="custom-scrollbar__inner18">
+                      <p class="text-justify text-black">
+                        <b class="color-title">Seleccionar un programa de análisis</b><br>
+                        Estos son algunos de los más conocidos:<br>
+                      </p>
+                      <ul class="text-black">
+                        <li>Statistical Package for the Social Sciences o Paquete Estadístico para las Ciencias Sociales (SPSS®). </li>
+                      </ul>
+                      <p class="text-justify text-black">
+                        Este programa, desarrollado en la Universidad de Chicago, es uno de los más difundidos.
+                      </p>
+                      <ul class="text-black">
+                        <li>Minitab®, es un paquete que goza de popularidad por su relativamente bajo costo. Incluye un considerable número de pruebas estadísticas, y cuenta con un tutorial para aprender a utilizarlo y practicar; además, es muy sencillo de manejar. El sitio web para acceder es http://www.minitab.com. (Tiempo aproximado horas directas: 20 minutos)</li>
+                        <li>STATA</li>
+                        <li>Eviews</li>
+                        <li>R</li>
+                        <li>SAS</li>
+                      </ul>
+                      <p class="text-justify text-black">
+                        (Estos programas se verían en los cursos de Estadística y Econometría.)
+                      </p>
+                    </div>
+                    <div class="custom-scrollbar__bar18">
+                      <div class="custom-scrollbar__knob18 cursor">
+                        <p class="text-center linea_scroll18">-</p>
                       </div>
                     </div>
+                  </div>
                   `;
       $("#teorico").html(texto);
       scroll_set(18);
   }else if (num == 2) {
       var texto = `
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">2</b></p>
+                  </div>
                   <div class="d-flex align-items-center">
                     <p class="text-justify text-black">
                       <b class="color-title">Poner en marcha el programa</b><br>
@@ -644,6 +659,9 @@ function teorias(num) {
       $("#teorico").html(texto);
   }else if (num == 3) {
       var texto = `
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">3</b></p>
+                  </div>
                 <div class="content custom-scrollbar16">
                   <div class="custom-scrollbar__inner16">
                     <div class="row">
@@ -673,6 +691,9 @@ function teorias(num) {
       scroll_set(16);
   }else if (num == 4) {
       var texto = `
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">4</b></p>
+                  </div>
                   <div class="content custom-scrollbar19 mr-3">
                     <div class="custom-scrollbar__inner19">
                       <p class="text-justify text-black">
@@ -700,6 +721,9 @@ function teorias(num) {
       scroll_set(19);
   }else if (num == 5) {
       var texto = `
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">5</b></p>
+                  </div>
                   <div>
                     <p class="text-justify text-black">
                       <b class="color-title">Visualice la imagen y conozca sobre el estudio mediante pruebas estadísticas en relación a las hipótesis o presunciones formuladas o estadística inferencial</b>
@@ -712,6 +736,9 @@ function teorias(num) {
       $("#teorico").html(texto);
   }else if (num == 6) {
       var texto = `
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">6</b></p>
+                  </div>
                   <p class="text-justify text-black">
                     <b class="color-title">Realizar análisis adicionales</b><br>
                     Una vez ejecutados nuestros análisis, es posible que decidamos realizar otros análisis extras o pruebas para confirmar tendencias o preferencias y así poder evaluar los datos desde diferentes ángulos y puntos de vista. 
@@ -720,13 +747,16 @@ function teorias(num) {
       $("#teorico").html(texto);
   }else if (num == 7) {
       var texto = `
-                <div class="d-flex align-items-center h-100">
-                  <p class="text-justify text-black pr-1 w-75">
-                    <b class="color-title">Preparar los resultados para presentarlos</b><br>
-                    Visualiza la imagen y conoce los elementos que conlleva preparar los resultados.
-                  </p>
-                  <a class="p-2 border-10 bg-color-dark text-white h6 shadow cursor text-center" style=" width: 110px;" data-toggle="modal" data-target="#modalAcordeonImg2"><b>VER IMAGEN</b></a>  
-                </div>
+                  <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
+                    <p class="h5"><b id="indiceLT">7</b></p>
+                  </div>
+                  <div class="d-flex align-items-center h-100">
+                    <p class="text-justify text-black pr-1 w-75">
+                      <b class="color-title">Preparar los resultados para presentarlos</b><br>
+                      Visualiza la imagen y conoce los elementos que conlleva preparar los resultados.
+                    </p>
+                    <a class="p-2 border-10 bg-color-dark text-white h6 shadow cursor text-center" style=" width: 110px;" data-toggle="modal" data-target="#modalAcordeonImg2"><b>VER IMAGEN</b></a>  
+                  </div>
                   `;
       $("#teorico").html(texto);
   }

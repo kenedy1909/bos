@@ -159,6 +159,9 @@
 
 
 
+.menos-margin-5{
+	margin-left: -5px!important;
+}
 .menos-margin-25{
 	margin-left: -25px!important;
 }
@@ -239,6 +242,9 @@
 }
 .menos-marginB-300{
 	margin-bottom: -300px!important;
+}
+.mas-marginT-75{
+	margin-top: 75px!important;
 }
 
 .hr-negro{

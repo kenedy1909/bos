@@ -674,3 +674,28 @@ function slideModalU3_3(num) {
     scroll_set(18);
   }
 }
+
+function tooltip(num) {
+  $('.tooltip').removeClass('show');
+
+  if (num == 1) {
+    $('#tooltip1').addClass('show');
+  }else if (num == 2) {
+    $('#tooltip2').addClass('show');
+  }else if (num == 3) {
+    $('#tooltip3').addClass('show');
+  }else if (num == 4) {
+    $('#tooltip4').addClass('show');
+  }else if (num == 5) {
+    $('#tooltip5').addClass('show');
+  }else if (num == 6) {
+    $('#tooltip6').addClass('show');
+  }else if (num == 7) {
+    $('#tooltip7').addClass('show');
+  }else if (num == 8) {
+    $('#tooltip8').addClass('show');
+  }else if (num == 9) {
+    $('#tooltip9').addClass('show');
+  }
+
+}
