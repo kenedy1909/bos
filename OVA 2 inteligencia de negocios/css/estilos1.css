@@ -142,4 +142,12 @@
 .bg-azul-1{
   background: #282F9F;
 }
+.bg-azul-2{
+  background: #1E2054;
+}
 /*colores fin*/
+
+
+.cursor{
+  cursor: pointer;
+}
