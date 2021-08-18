@@ -341,6 +341,30 @@ function funcionalidad_6(num) {
         $(".fun_6_text_2").removeClass('d-none');
     }
 }
+
+function funcionalidad_7(num) {
+    $(".fun_7_btn_1, .fun_7_btn_2, .fun_7_btn_3, .fun_7_btn_4").removeClass('bg-piel-1');
+    $(".fun_7_btn_1, .fun_7_btn_2, .fun_7_btn_3, .fun_7_btn_4").addClass('bg-color-activi-o');
+    $(".fun_7_text_1, .fun_7_text_2, .fun_7_text_3, .fun_7_text_4").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_7_btn_1").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_1").addClass('bg-piel-1');
+        $(".fun_7_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_7_btn_2").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_2").addClass('bg-piel-1');
+        $(".fun_7_text_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_7_btn_3").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_3").addClass('bg-piel-1');
+        $(".fun_7_text_3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".fun_7_btn_4").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_4").addClass('bg-piel-1');
+        $(".fun_7_text_4").removeClass('d-none');
+    }
+}
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
