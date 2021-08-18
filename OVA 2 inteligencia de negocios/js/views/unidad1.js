@@ -297,7 +297,7 @@ function funcionalidad_2(num) {
     }
 }
 
-function funcionalidad_3(num) {
+function funcionalidad_3() {
         $(".fun_3_card").removeClass('img-100');
         $(".fun_3_card").addClass('img-30');
         $(".fun_3_card_img").removeClass('img-50');
@@ -323,10 +323,23 @@ function funcionalidad_4(num) {
     }
 }
 
-function funcionalidad_5(num) {
+function funcionalidad_5() {
         $(".fun_5_card").removeClass('d-flex');
         $(".fun_5_card").addClass('d-none');
         $(".fun_5_card_text").removeClass('d-none');
+}
+
+function funcionalidad_6(num) {
+    $(".fun_6_content_1, .fun_6_content_2").removeClass('d-none');
+    $(".fun_6_text_1, .fun_6_text_2").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_6_content_1").addClass('d-none');
+        $(".fun_6_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_6_content_2").addClass('d-none');
+        $(".fun_6_text_2").removeClass('d-none');
+    }
 }
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
