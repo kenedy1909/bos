@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['trayectoria', ''];
-            this.palabras[1] = ['trayectoria', ''];
-            this.palabras[2] = ['trayectoria', ''];
-            this.palabras[3] = ['trayectoria', ''];
-            this.palabras[4] = ['trayectoria', ''];
-            this.palabras[5] = ['trayectoria', ''];
-            this.palabras[6] = ['trayectoria', ''];
-            this.palabras[7] = ['trayectoria', ''];
-            this.palabras[8] = ['trayectoria', ''];
+            this.palabras[0] = ['fuerza', ''];
+            this.palabras[1] = ['fuerza', ''];
+            this.palabras[2] = ['fuerza', ''];
+            this.palabras[3] = ['fuerza', ''];
+            this.palabras[4] = ['fuerza', ''];
+            this.palabras[5] = ['fuerza', ''];
+            this.palabras[6] = ['fuerza', ''];
+            this.palabras[7] = ['fuerza', ''];
+            this.palabras[8] = ['fuerza', ''];
 
             return this.palabras;
 

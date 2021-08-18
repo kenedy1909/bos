@@ -8,13 +8,8 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "7,2 s", answer_id: "B", img:""},
-        {question_txt: "23,5 s", answer_id: "B", img:""},
-        {question_txt: "18,6 s", answer_id: "A", img:""},
-        {question_txt: "14,8 s", answer_id: "B", img:""},
-        {question_txt: "34,3 s", answer_id: "B", img:""}
-        
-
+        {question_txt: "Para hablar de la cantidad de materia que tiene algo, se utiliza el término masa", answer_id: "A", img:""},
+        {question_txt: "La proporción directa entre la masa y el peso dice que, si la masa de un objeto se duplica, su peso también se duplica; si la masa se reduce a la mitad, el peso se reduce a la mitad. Debido a esto, masa y peso con frecuencia se usan en forma igual.", answer_id: "B", img:""}
     ];
 
     var qwsa = new QuestionsSameAnswers({

@@ -1,0 +1,156 @@
+.border-color-left-c{
+  border-left: solid #DA2316 3px;
+}
+
+.border-color-left-o{
+  border-left: solid #811111 3px;
+}
+
+.border-color-bottom-c{
+  border-bottom: solid #DA2316 3px;
+}
+
+.border-color-bottom-o{
+  border-bottom: solid #811111 3px;
+}
+
+.border-color-top-c{
+  border-top: solid #DA2316 3px;
+}
+
+.border-color-top-o{
+  border-top: solid #811111 3px;
+}
+
+.border-color-right-c{
+  border-right: solid #DA2316 3px;
+}
+
+.border-color-right-o{
+  border-right: solid #811111 3px;
+}
+
+.h-6px{
+  height: 6px;
+}
+
+.h-80px{
+  height: 80px;
+}
+
+.top-n40px{
+  top: -40px;
+}
+
+.w-80px{
+  width: 80px;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.triangulo-derecha{
+  border-top: solid 25px transparent;
+  border-left: solid 40px transparent;
+  border-bottom: solid 25px transparent;
+  width: 0px;
+  height: 0px;
+}
+.triangulo-izquierda{
+  border-top: solid 25px transparent;
+  border-right: solid 40px transparent;
+  border-bottom: solid 25px transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.triangulo-arriba{
+  border-right: solid 25px transparent;
+  border-bottom: solid 40px transparent;
+  border-left: solid 25px transparent;
+  width: 0px;
+  height: 0px;
+}
+.triangulo-abajo{
+  border-right: solid 25px transparent;
+  border-top: solid 40px transparent;
+  border-left: solid 25px transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.border-right-color-c{
+ border-right-color: #DA2316;
+}
+.border-left-color-c{
+ border-left-color: #DA2316;
+}
+.border-bottom-color-c{
+ border-bottom-color: #DA2316;
+}
+.border-top-color-c{
+ border-top-color: #DA2316;
+}
+
+.custom-scrollbar_uno {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_uno {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_uno {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#811111;
+  width: 3px;
+  right: 30px;
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob_uno {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #811111;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.linea-scroll_uno {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #FFFFFF;
+}
+
+/*colores*/
+.bg-azul-1{
+  background: #282F9F;
+}
+.bg-azul-2{
+  background: #1E2054;
+}
+.bg-azul-3{
+  background: #8DA9DB;
+}
+/*colores fin*/
+
+
+.cursor{
+  cursor: pointer;
+}

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Template OVA UNAULA">
+    <meta name="author" content="Bos Developer">
+    <meta name="keyword" content="UNAULA">
+    <title>UNAULA</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Main styles for this application-->
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" type="text/css" href="https://ghcdn.rawgit.org/miguel8888888/iconos/main/css/all.min.css">
+    <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet">  -->
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
+    <link href="css/template-geometria.css" rel="stylesheet"> 
+    <link href="css/template.css" rel="stylesheet"> 
+    <link href="css/estilos1.css" rel="stylesheet">
+  </head>
+  <body class="c-app">
+    <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
+      <div class="c-sidebar-brand d-lg-down-none">
+        <h4>MENU</h4>
+      </div>
+      <ul class="c-sidebar-nav">
+        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
+          <i class="fad fa-home"></i> Inicio</a>
+        </li>
+        <li class="c-sidebar-nav-title">Contenido</li>
+        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
+          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span>Proporcionalidad y semejanza</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span>Circunferencia</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="17" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span>Áreas y volúmenes</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>2. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span>Proporcionalidad y semejanza</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span>Circunferencia</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="17" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span>Áreas y volúmenes</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>3. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span>Proporcionalidad y semejanza</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span>Circunferencia</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="17" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span>Áreas y volúmenes</a></li>
+          </ul>
+        </li>
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+          <i class="fas fa-bookmark"></i>4. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes</a>
+          <ul class="c-sidebar-nav-dropdown-items">
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad4"><span class="c-sidebar-nav-icon"></span>Proporcionalidad y semejanza</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad4"><span class="c-sidebar-nav-icon"></span>Circunferencia</a></li>
+            <li class="c-sidebar-nav-item link-menu-tema" data-id="17" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad4"><span class="c-sidebar-nav-icon"></span>Áreas y volúmenes</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="text-center ov-personaje">
+          <img src="assets/img/img_ova/personaje.png" style="width:60%">
+      </div>
+      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+    </div>
+    <div class="c-wrapper c-fixed-components">
+      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+          <i class="fas fa-bars"> </i>
+        </button><a class="c-header-brand d-lg-none" href="#">
+          <svg width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="assets/brand/coreui.svg#full"></use>
+          </svg></a>
+        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="c-header-nav d-md-down-none">
+          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+          <li class="c-header-nav-item ">
+            <div class="box">
+                <div class="porcent">
+                    <svg class="svg_porcent">
+                        <circle cx="40" cy="60" r="25" style ="stroke: #DA2316;stroke-width: 5px;"/>
+                        <circle class="up" cx="40" cy="60" r="25" style="stroke: #811111;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
+                    </svg>
+                    <div class="number">
+                        
+                    </div>
+                </div>
+            </div>
+          </li>
+          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-115.png" alt="" class="icons-menu w-60px"></a></li>
+          <li class="c-header-nav-item z-index-pdf modal_scroll1"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-114.png" alt="" class="icons-menu w-60px"></a></li>
+          <li class="c-header-nav-item"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px"></a></li>
+        </ul>
+        <ul class="c-header-nav ml-auto">
+          <li class="c-header-nav-item d-md-down-none">
+            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+          </li>
+        </ul>
+        <div class="c-subheader px-3">
+          <!-- Breadcrumb-->
+          <ol class="breadcrumb border-0 m-0">
+            <li class="breadcrumb-item">Menú</li>
+            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+            <li class="breadcrumb-item bread3"></li>
+            <!-- Breadcrumb Menu-->
+          </ol>
+        </div>
+      </header>
+      <div class="c-body">
+        <main class="c-main" id="content-ova">
+          
+        </main>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-115.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content pdfs">
+                              <p class="p_white">
+                                    <a class="p_white" href="assets/PDF/aclaracion.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> ACLARACIÓN.PDF    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>
+                              <p class="p_white">
+                                    <a class="p_white" href="assets/PDF/evaluacion1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Evaluación 1 semejanza.PDF    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>
+                              <p class="p_white">
+                                    <a class="p_white" href="assets/PDF/evaluacion2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Evaluación 2 circunferencia.PDF    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-114.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content p_white custom-scrollbar1">
+                            <div class="custom-scrollbar__inner1">
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Proporcionalidad:</b> relación que existe entre dos figuras de igual o distinto tamaño.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Semejanza de triángulos:</b> cuando se habla de triángulos semejantes, se dice que son aquellos que tienen la misma forma, pero no necesariamente el tamaño.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Teorema de Tales:</b> es una ley de la geometría que nos indica que si se traza una línea paralela a cualquiera de los lados de un triángulo tendremos como resultado un triángulo semejante el triángulo original. (Westreicher, 2020)
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Criterios de semejanza:</b> son un conjunto de condiciones entre dos triángulos, que al decir que cumplen con estas condiciones, son semejantes.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Arcos de circunferencia:</b> se define como una porción de una circunferencia. Es decir, es cada una de las partes en que la cuerda divide a la circunferencia.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Cuerda en circunferencia:</b> se define cuerda como el segmento que une dos puntos en la circunferencia. Algo muy importante, es que la cuerda siempre es menor que la circunferencia.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Ángulos centrales:</b> es un ángulo cuyo vértice coincide con el centro de la circunferencia. 
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Ángulo inscrito:</b> es un ángulo cuyo vértice pertenece a la circunferencia.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Ángulo seminscrito:</b> es un ángulo cuyo vértice está en la misma circunferencia y uno de los lados sea la tangente a la circunferencia en el vértice y otro una cuerda con origen en el vértice.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Ángulo interior:</b> es un ángulo cuyo vértice está dentro de la circunferencia. 
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Ángulo exterior:</b> es un ángulo cuyo vértice esta por fuera de la circunferencia y sus lados está en contacto con la circunferencia.
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Circunferencia:</b> es una figura geométrica plana y cerrada caracterizada por que sus puntos están a una distancia constante del centro, donde dicha distancia se llama radio. 
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Área:</b> es la medida de un espacio delimitado por un contorno al que se denomina perímetro. Su unidad de medida en el sistema internacional de medida es m^2 (Westreicher, 2020)
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Volumen:</b> Se denomina volumen a una magnitud que mide el espacio que un cuerpo ocupa. Su unidad de medida en el sistema internacional de medidas es m^3
+                              </p>
+                              <br>
+                              <p class="justificado"> 
+                                <b class="font-weight-bold"> 
+                                Figuras tridimensionales:</b> son aquellas figuras geométricas que se encuentran en el espacio, es decir en el plano de tres dimensiones.
+                              </p>
+                            </div>
+                            <div class="custom-scrollbar__bar1">
+                              <div class="custom-scrollbar__knob1 cursor"><p class="text-center linea-scroll1">-</p></div>
+                            </div>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog centered-propio" role="document">
+            <div class="modal-content">
+              <div class="">
+                <div class="card-container manual-flip">
+                  <div class="card">
+                      <div class="front">
+                          <div class="cover" style="overflow: visible;">
+                            <div class="row">
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4">
+                              </div>
+                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="user">
+                            <div class="border-white">
+                              <div class="radius-gray">
+                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="top: 5px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="content p_white">
+                            <div class="">
+                              <p class="justificado">Bruño., (1964). Geometría plana y del espacio. Madrid, España: EDITORIAL BOURET.</p>
+                              <br>
+                              <p class="justificado">Westreicher, G. (2020). Teorema de Tales, Economipedia.com</p>
+                            </div>
+                          </div>
+                      </div> <!-- end front panel -->
+                  </div> <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="c-footer">
+          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+        </footer>
+      </div>
+    </div>
+    <!-- CoreUI and necessary plugins-->
+    <script src="js/coreiu.bundle.min.js"></script>
+    <script src="js/coreiu-utils.js"></script>
+    <script src="js/jquery3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.1.0/fabric.min.js" type="text/javascript"></script>
+    <script src="js/SCORM_API_wrapper.js"></script>
+    <script src="assets/componentes/flipster/jquery.flipster.min.js"></script>
+    <script src="assets/componentes/percircle/percircle.js"></script>
+    <script src="js/jquery.elevatezoom.js"></script>
+    <script src="assets/componentes/jquery-smartwizard-master/src/js/jquery.smartWizard.min.js"></script>
+    <!--[if IE]><!-->
+    <!--<![endif]-->
+    <!-- Plugins and scripts required by this view-->
+    
+    <script src="js/main.js"></script>
+  </body>
+</html>
