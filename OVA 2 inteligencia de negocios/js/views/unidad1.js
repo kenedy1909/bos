@@ -27,48 +27,6 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
-    /*slide_predeterminado();*/
-
-    /*var slideCount = $('#slider2 ul li').length;
-    var slideWidth = $('#slider2 ul li').width();
-    var slideHeight = $('#slider2 ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
-    
-    $('#slider2').css({ width: '100%', height: '500px' });
-    
-    $('#slider2 ul').css({ width: '90%'});
-    
-    $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-
-    function moveLeft2() {
-        $('#slider2 ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-            $('#slider2 ul').css('left', '');
-        });
-    };
-
-    function moveRight2() {
-        $('#slider2 ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider2 ul li:first-child').appendTo('#slider2 ul');
-            $('#slider2 ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev2').click(function (e) {
-        moveLeft2();
-        e.preventDefault();
-    });
-
-    $('a.control_next2').click(function (e) {
-        moveRight2();
-        e.preventDefault();
-    });*/
-
     var knob = "";
     var bar = "";
     var container = "";
@@ -76,22 +34,9 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
+
     $(".ruanda-img").on('click', ruandas);
-    /*$(".modal_scroll1").on('click', modal_scroll1);
-    $(".modal_scroll3").on('click', modal_scroll2);*/
-    /*$(".ruanda-img").on('click', ruandas);*/
-
-
-    /*$(".unidad1-1").on('click', slide_link);
-    $(".unidad1-5").on('click', slide_link);
-    $(".unidad1-6_paso1").on('mouseover', unidad1_pantalla6_accion1);
-    $(".unidad1-6_paso3").on('mouseover', unidad1_pantalla6_accion3);
-    $(".unidad1-6_paso1").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso2").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
-
-    /*scroll();*/
-    // console.log(tema);
+    
     slide_link(tema);
 });
 /*var pdf = `<div class="col-md-12">
@@ -210,26 +155,6 @@ function scroll_uno(){
     container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
-/*function scroll_dos(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_dos');
-    bar = document.querySelector('.custom-scrollbar__bar_dos');
-    container = document.querySelector('.custom-scrollbar__inner_dos');
-    scroll();
-}
-function scroll_tres(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_tres');
-    bar = document.querySelector('.custom-scrollbar__bar_tres');
-    container = document.querySelector('.custom-scrollbar__inner_tres');
-    scroll();
-}*/
 
 
 //scroll2
@@ -288,60 +213,6 @@ function scroll(){
 }
 
 
-//dezlizador
-
-
-function Input(num) {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = num;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
-
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
-    }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
-
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    scroll_horizontal(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
-  this.actualizar2 = function() {
-    scroll_horizontal2(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
-}
-
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
     $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").addClass('d-none');
@@ -380,30 +251,16 @@ function ruandas() {
 }
 
 function funcionalidad_1(num) {
-    $(".funcionalidad_1_1, .funcionalidad_1_2").removeClass('col-md-6');
-    $(".funcionalidad_1_1, .funcionalidad_1_2").addClass('col-md-12');
-    $(".funcionalidad_oculta_1_1, .funcionalidad_oculta_1_2").addClass('d-none');
-    $(".funcionalidad_col_1_1_1, .funcionalidad_col_1_2_1").removeClass('col-md-12');
-    $(".funcionalidad_col_1_1_1, .funcionalidad_col_1_2_1").addClass('col-md-7');
-    $(".funcionalidad_col_1_1_2, .funcionalidad_col_1_2_2").removeClass('col-md-12');
-    $(".funcionalidad_col_1_1_2, .funcionalidad_col_1_2_2").addClass('col-md-5');
 
     if (num == 1) {
-        $(".funcionalidad_1_1").removeClass('col-md-12');
-        $(".funcionalidad_1_1").addClass('col-md-6');
-        $(".funcionalidad_oculta_1_1").removeClass('d-none');
-        $(".funcionalidad_col_1_1_1").removeClass('col-md-7');
-        $(".funcionalidad_col_1_1_1").addClass('col-md-12');
-        $(".funcionalidad_col_1_1_2").removeClass('col-md-5');
-        $(".funcionalidad_col_1_1_2").addClass('col-md-12');
+        $(".fun_1_info_1").addClass('bg-azul-1');
+        $(".fun_1_text_1").removeClass('d-none');
     }else if (num == 2) {
-        $(".funcionalidad_1_2").removeClass('col-md-12');
-        $(".funcionalidad_1_2").addClass('col-md-6');
-        $(".funcionalidad_oculta_1_2").removeClass('d-none');
-        $(".funcionalidad_col_1_2_1").removeClass('col-md-7');
-        $(".funcionalidad_col_1_2_1").addClass('col-md-12');
-        $(".funcionalidad_col_1_2_2").removeClass('col-md-5');
-        $(".funcionalidad_col_1_2_2").addClass('col-md-12');
+        $(".fun_1_info_2").addClass('bg-azul-1');
+        $(".fun_1_text_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_1_info_3").addClass('bg-azul-1');
+        $(".fun_1_text_3").removeClass('d-none');
     }
 }
 
@@ -479,227 +336,6 @@ function funcionalidad_3(num) {
     }
 }
 
-/*function funcionalidad_4(num) {
-    $(".funcionalidad_4_1, .funcionalidad_4_2").removeClass('bg-verde-2');
-    $(".funcionalidad_4_1, .funcionalidad_4_2").addClass('bg-color-activi-c');
-    $(".info_funcionalidad_3_2_1, .info_funcionalidad_3_2_2").addClass('d-none');
-    if (num == 1) {
-        $(".funcionalidad_4_1").removeClass('bg-color-activi-c');
-        $(".funcionalidad_4_1").addClass('bg-verde-2');
-        $(".info_funcionalidad_3_2_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".funcionalidad_4_2").removeClass('bg-color-activi-c');
-        $(".funcionalidad_4_2").addClass('bg-verde-2');
-        $(".info_funcionalidad_3_2_2").removeClass('d-none');
-    }
-}
-
-function efect(num) {
-    switch (parseInt(num)) {
-        case 1:
-            $('.creciente').addClass('crece');
-            $('.div_texto').addClass('visibilidad');
-            break;
-        case 2:
-            $('.creciente2').addClass('crece');
-            $('.div_texto2').addClass('visibilidad');
-            break;
-        case 3:
-            $('.creciente3').addClass('crece');
-            $('.div_texto3').addClass('visibilidad');
-            break;
-        case 4:
-            $('.creciente4').addClass('crece');
-            $('.div_texto4').addClass('visibilidad');
-            break;
-        case 5:
-            $('.creciente5').addClass('crece');
-            $('.div_texto5').addClass('visibilidad');
-            break;
-        case 6:
-            $('.creciente6').addClass('crece');
-            $('.div_texto6').addClass('visibilidad');
-            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #7a3d74;color: white;font-size: 18px;">Ver aquí ejemplo de preguntas de investigación</button>');
-            break;
-        default:
-            break;
-    }           
-    
-}
-
-function removeefect(num){
-    switch (parseInt(num)) {
-        case 1:
-            $('.creciente').removeClass('crece');
-            $('.div_texto').removeClass('visibilidad');
-            break;
-        case 2:
-            $('.creciente2').removeClass('crece');
-            $('.div_texto2').removeClass('visibilidad');
-            break;
-        case 3:
-            $('.creciente3').removeClass('crece');
-            $('.div_texto3').removeClass('visibilidad');
-            break;
-        case 4:
-            $('.creciente4').removeClass('crece');
-            $('.div_texto4').removeClass('visibilidad');
-            break;
-        case 5:
-            $('.creciente5').removeClass('crece');
-            $('.div_texto5').removeClass('visibilidad');
-            break;
-        case 6:
-            $('.creciente6').removeClass('crece');
-            $('.div_texto6').removeClass('visibilidad');
-            break;
-        default:
-            break;
-    } 
-    
-}
-
-function funcionalidad_6(num) {
-    $(".funcionalidad_6_1, .funcionalidad_6_2").removeClass('bg-verde-2');
-    $(".funcionalidad_6_1, .funcionalidad_6_2").addClass('bg-color-activi-c');
-    $(".info_funcionalidad_6_1, .info_funcionalidad_6_2").addClass('d-none');
-    $(".p_funcionalidad_6").removeClass('bg-verde-2');
-    if (num == 1) {
-        $(".funcionalidad_6_1").removeClass('bg-color-activi-c');
-        $(".funcionalidad_6_1").addClass('bg-verde-2');
-        $(".info_funcionalidad_6_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".funcionalidad_6_2").removeClass('bg-color-activi-c');
-        $(".funcionalidad_6_2").addClass('bg-verde-2');
-        $(".info_funcionalidad_6_2").removeClass('d-none');
-        $(".p_funcionalidad_6").addClass('bg-verde-2');
-    }
-}
-
-function funcionalidad_7(num) {
-    $(".funcionalidad_7_1, .funcionalidad_7_2").removeClass('bg-verde-2');
-    $(".funcionalidad_7_1, .funcionalidad_7_2").addClass('bg-color-activi-c');
-    $(".info_funcionalidad_7_1, .info_funcionalidad_7_2").addClass('d-none');
-    if (num == 1) {
-        $(".funcionalidad_7_1").removeClass('bg-color-activi-c');
-        $(".funcionalidad_7_1").addClass('bg-verde-2');
-        $(".info_funcionalidad_7_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".funcionalidad_7_2").removeClass('bg-color-activi-c');
-        $(".funcionalidad_7_2").addClass('bg-verde-2');
-        $(".info_funcionalidad_7_2").removeClass('d-none');
-    }
-}
-function funcionalidad_8(num) {
-    $(".funcionalidad_8_1, .funcionalidad_8_2").removeClass('bg-verde-2');
-    $(".funcionalidad_8_1, .funcionalidad_8_2").addClass('bg-color-activi-c');
-    $(".info_funcionalidad_8_1, .info_funcionalidad_8_2").addClass('d-none');
-    if (num == 1) {
-        $(".funcionalidad_8_1").removeClass('bg-color-activi-c');
-        $(".funcionalidad_8_1").addClass('bg-verde-2');
-        $(".info_funcionalidad_8_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".funcionalidad_8_2").removeClass('bg-color-activi-c');
-        $(".funcionalidad_8_2").addClass('bg-verde-2');
-        $(".info_funcionalidad_8_2").removeClass('d-none');
-    }
-}
-
-function cardPara4(num) {
-    $("#card4-1, #card4-2, #card4-3, #card4-4").removeClass('bg-blanco');
-    $("#card4-1").addClass('bg-color-activi-o');
-    $("#card4-2").addClass('bg-azul-1');
-    $("#card4-3").addClass('bg-verde-2');
-    $("#card4-4").addClass('bg-verde-1');
-    $("#card4-1").html(`
-                            <div class="d-flex p-3">
-                              <div class="img-65">
-                                <p class="p_white justificado"><b>Bisectrices interiores:</b></p>
-                                <br>
-                                <p class="p_white justificado">Son las que corresponden a los ángulos interiores.</p>
-                              </div>
-                              <div class="img-35">
-                                <img src="assets/img/img_ova/triangulo (3).png" class="img-100 p-3">
-                              </div>
-                            </div>
-                        
-                        `);
-    $("#card4-2").html(`
-                            <div class="d-flex p-3">
-                              <div class="img-35">
-                                <img src="assets/img/img_ova/triangulo (2).png" class="img-100 p-3">
-                              </div>
-                              <div class="img-65">
-                                <p class="p_white justificado"><b>Mediatrices</b></p>
-                                <br>
-                                <p class="p_white justificado">Las perpendiculares a cada lado en su punto medio.</p>
-                              </div>
-                            </div>
-                        `);
-    $("#card4-3").html(`
-                            <div class="d-flex p-3">
-                              <div class="img-65">
-                                <p class="p_white justificado"><b>Medianas:</b></p>
-                                <br>
-                                <p class="p_white justificado">Unen el punto medio de cada lado con el vértice opuesto.</p>
-                              </div>
-                              <div class="img-35">
-                                <img src="assets/img/img_ova/triangulo (1).png" class="img-100 p-3">
-                              </div>
-                            </div>
-                        
-                        `);
-    $("#card4-4").html(`
-                            <div class="d-flex p-3">
-                              <div class="img-35">
-                                <img src="assets/img/img_ova/triangular.png" class="img-100 p-3">
-                              </div>
-                              <div class="img-65">
-                                <p class="p_white justificado"><b>Alturas:</b></p>
-                                <br>
-                                <p class="p_white justificado">Perpendicular a cada lado (o a su prolongación) desde el vértice opuesto.</p>
-                              </div>
-                            </div>
-                        `);
-    if (num == 1) {
-        var texto = `
-                    <div class="d-flex p-3">
-                      <img src="assets/img/img_ova/triangulo_8.png" class="img-50 m-auto">
-                    </div>
-                    `;
-        $("#card4-1").removeClass('bg-color-activi-o');
-        $("#card4-1").addClass('bg-blanco');
-        $("#card4-1").html(texto);
-    }if (num == 2) {
-        var texto = `
-                    <div class="d-flex p-3">
-                      <img src="assets/img/img_ova/triangulo_9.png" class="img-50 m-auto">
-                    </div>
-                    `;
-        $("#card4-2").removeClass('bg-azul-1');
-        $("#card4-2").addClass('bg-blanco');
-        $("#card4-2").html(texto);
-    }if (num == 3) {
-        var texto = `
-                    <div class="d-flex p-3">
-                      <img src="assets/img/img_ova/triangulo_10.png" class="img-50 m-auto">
-                    </div>
-                    `;
-        $("#card4-3").removeClass('bg-verde-2');
-        $("#card4-3").addClass('bg-blanco');
-        $("#card4-3").html(texto);
-    }if (num == 4) {
-        var texto = `
-                    <div class="d-flex p-3">
-                      <img src="assets/img/img_ova/triangulo_11.png" class="img-50 m-auto">
-                    </div>
-                    `;
-        $("#card4-4").removeClass('bg-verde-1');
-        $("#card4-4").addClass('bg-blanco');
-        $("#card4-4").html(texto);
-    }
-}*/
-
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
@@ -731,17 +367,3 @@ function enter_hover_1(num) {
         $(".enter_hover_1_5").removeClass('bg-color-activi-c');
     }
 }
-
-/*function funcionalidad_9(num) {
-    $(".info_funcionalidad_9_1, .info_funcionalidad_9_2, .info_funcionalidad_9_3, .info_funcionalidad_9_4").addClass('d-none');
-
-    if (num == 1) {
-        $(".info_funcionalidad_9_1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".info_funcionalidad_9_2").removeClass('d-none');
-    }else if (num == 3) {
-        $(".info_funcionalidad_9_3").removeClass('d-none');
-    }else if (num == 4) {
-        $(".info_funcionalidad_9_4").removeClass('d-none');
-    }
-}*/
