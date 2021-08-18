@@ -322,6 +322,12 @@ function funcionalidad_4(num) {
         $(".fun_4_content").removeClass('d-none');
     }
 }
+
+function funcionalidad_5(num) {
+        $(".fun_5_card").removeClass('d-flex');
+        $(".fun_5_card").addClass('d-none');
+        $(".fun_5_card_text").removeClass('d-none');
+}
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
