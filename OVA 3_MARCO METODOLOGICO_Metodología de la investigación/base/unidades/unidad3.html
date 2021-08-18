@@ -445,8 +445,13 @@
                     <div class="col-md-4 p-4 d-flex justify-content-center align-items-center">
                       <div class="text-center">
                         <img src="assets/img/img_ova/tombola.png" class="img-fluid" style="max-width: 50%;">
+                        <div class="tooltip" id="tooltip1">
+                          <div class="p-4 border-25 bg-color-claro">
+                            <p class="text-justify text-black">A través de este procedimiento se enumeran todos los elementos muestrales desde el 1 al número n. Y se pueden hacer fichas, una por cada componente, revolverlos e ir sacando cierta cantidad de fichas y los números elegidos conformarán la muestra a trabajar.  Esto se debe hacer teniendo en cuenta el tamaño de la muestra</p>
+                          </div>
+                        </div>
                         <div class="w-100 d-flex justify-content-center align-items-center mt-2 cursor">
-                          <p class="text-white bg-color-3 px-3 py-2 rounded-circle h1"  data-toggle="modal" data-target="#modalMTextU3-3_1">+</p>
+                          <p class="text-white bg-color-3 px-3 py-2 rounded-circle h1" onclick="tooltip(1)">+</p>
                         </div>
                         <h5 class="color-title">Tómbola</h5>
                       </div>
@@ -455,7 +460,14 @@
                       <div class="text-center">
                         <img src="assets/img/img_ova/aleatorio.png" class="img-fluid" style="max-width: 50%;">
                         <div class="w-100 d-flex justify-content-center align-items-center mt-2 cursor">
-                          <p class="text-white bg-color-3 px-3 py-2 rounded-circle h1"  data-toggle="modal" data-target="#modalMTextU3-3_2">+</p>
+                          <p class="text-white bg-color-3 px-3 py-2 rounded-circle h1" onclick="tooltip(2)">+</p>
+                        </div>
+                        <div class="tooltip" id="tooltip2">
+                          <div class="p-4 border-25 bg-color-claro">
+                            <p class="text-justify text-black">
+                              Aquí se utiliza una tabla numérica la cual relaciona un componente de probabilidad previamente diseñado y como su nombre lo indica la dinámica es aleatoria. 
+                            </p>
+                          </div>
                         </div>
                         <h5 class="color-title">Números aleatorios</h5>
                       </div>
@@ -464,7 +476,12 @@
                       <div class="text-center">
                         <img src="assets/img/img_ova/clasificar.png" class="img-fluid" style="max-width: 50%;">
                         <div class="w-100 d-flex justify-content-center align-items-center mt-2 cursor">
-                          <p class="text-white bg-color-3 px-3 py-2 rounded-circle h1"  data-toggle="modal" data-target="#modalMTextU3-3_3">+</p>
+                          <p class="text-white bg-color-3 px-3 py-2 rounded-circle h1" onclick="tooltip(3)">+</p>
+                        </div>
+                        <div class="tooltip" id="tooltip3">
+                          <div class="p-4 border-25 bg-color-claro">
+                            <p class="text-justify text-black">Ya en este apartado, se elige o se escoge dentro de la población N un número o cifra n de factores o elementos, tomando como punto de partida un intervalo K, donde K se determinaría por la dimensión o tamaño de la muestra. Por lo que, K=N/n, siendo K= intervalo de clasificación o elección sistemática, donde N sería la población y n la muestra.</p>
+                          </div>
                         </div>
                         <h5 class="color-title">Elección o clasificación sistemática de factores o elementos muestrales</h5>
                       </div>
@@ -505,15 +522,53 @@
                       <br>
                       <p class="text-black text-justify">Pase el mouse por cada número para ampliar su conocimiento sobre este tema</p>
                     </div>
+                    <div class="col-4">
+                      <div class="tooltip" id="tooltip4">
+                        <div class="p-4 border-25 bg-color-claro">
+                          <p class="text-justify text-black">Este tipo de muestra se constituyen a través de determinar el tamaño de la muestra, posterior a esto, se inicia un proceso de selección aleatoria, la cual permite que todos los elementos que conforman la población, sean elegidos de igual forma. </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 pb-2 menos-marginT-100">
+                      <div class="tooltip" id="tooltip5">
+                        <div class="p-4 border-25 bg-color-claro">
+                          <p class="text-justify text-black">En relación a lo anterior, también se podría mencionar lo que constituye el marco muestral: que no es otra cosa que, un marco de referencia el cual permite identificar de manera física el universo de la población, la posibilidad de enumerarlos y en consecuencia a realizar la selección de los elementos muestrales. </p>
+                        </div>
+                      </div>
+                      <div class="tooltip menos-marginT-75" id="tooltip6">
+                        <div class="p-3 border-25 bg-color-claro">
+                          <p class="text-justify text-black">Para este marco muestral o de referencia, nos podemos ayudar de material existente como, por ejemplo: listas, archivos, mapas y volúmenes de periódicos empastados que reposan en las hemerotecas de cualquier biblioteca. Por otro lado, las muestras probabilísticas se basan en dos recursos: La especificación del volumen de la muestra y la elección circunstancial de los elementos muestrales.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 menos-marginT-100">
+                      <div class="tooltip menos-margin-120" id="tooltip7">
+                        <div class="p-4 border-25 bg-color-claro">
+                          <p class="text-justify text-black">Por consiguiente, se hace necesario especificar de manera concreta y bien delimitada el volumen o tamaño de la muestra. Ya que podría convertirse en un aspecto no solo tedioso sino difícil de medir o analizar. Por lo cual, es conveniente, que vaya en estrecha relación con el problema de investigación y los objetivos planteados, para así poder definir tanto la población como la muestra.</p>
+                        </div>
+                      </div>
+                      <div class="tooltip mt-5 mas-marginT-75" id="tooltip8">
+                        <div class="p-4 border-25 bg-color-claro">
+                          <p class="text-justify text-black">En conclusión, el tamaño de la muestra está determinada por el número de subgrupos que conforman la población objeto de estudio, por ejemplo: un tamaño de una muestra, podría ser una subdivisión en niños y niñas de 2 grupos de edades respectivamente, y a su vez este grupo dividirlo por niveles culturales o socioeconómicos, y así de manera tal que la muestra sea mayor y bien delimitada.</p>
+                        </div>
+                      </div>
+                      <div class="tooltip mt-5 mas-marginT-75" id="tooltip9">
+                        <div class="p-4 border-25 bg-color-claro text-center">
+                          <p class="text-justify text-black">Se tiene entonces, que una distribución normal, es la distribución gráfica en forma de campana, esta se obtiene con muestras de 100 o más elementos muestrales y se utilizan cuando se trabajan deducciones, conclusiones o inferencias de carácter estadístico, por ejemplo:</p>
+                          <p class="p-3 bg-color-dark border-10 text-white h4 w-75 text-center cursor" data-toggle="modal" data-target="#modalMImgU3-3-6_1"><b>VER IMAGEN</b></p>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="col-md-12 p-4 d-flex justify-content-center">
                       <img src="assets/img/img_ova/muestrasprobabilisticas.png" width="500px" usemap="#imagen-mapeada">
                       <map name="imagen-mapeada">
-                        <area class="cursor" alt="1" title="1" coords="30,90,26" shape="circle" data-toggle="modal" data-target="#modalAreaImgU3_3_1">
-                        <area class="cursor" alt="2" title="2" coords="85,160,30" shape="circle" data-toggle="modal" data-target="#modalAreaImgU3_3_2">
-                        <area class="cursor" alt="3" title="3" coords="180,100,26" shape="circle" data-toggle="modal" data-target="#modalAreaImgU3_3_3">
-                        <area class="cursor" alt="4" title="4" coords="280,55,26" shape="circle" data-toggle="modal" data-target="#modalAreaImgU3_3_4">
-                        <area class="cursor" alt="5" title="5" coords="330,165,30" shape="circle" data-toggle="modal" data-target="#modalAreaImgU3_3_5">
-                        <area class="cursor" alt="6" title="6" coords="415,65,26" shape="circle" data-toggle="modal" data-target="#modalAreaImgU3_3_6">
+                        <area class="cursor" alt="1" title="1" coords="30,90,26" shape="circle" onclick="tooltip(4)">
+                        <area class="cursor" alt="2" title="2" coords="85,160,30" shape="circle" onclick="tooltip(5)">
+                        <area class="cursor" alt="3" title="3" coords="180,100,26" shape="circle" onclick="tooltip(6)">
+                        <area class="cursor" alt="4" title="4" coords="280,55,26" shape="circle" onclick="tooltip(7)">
+                        <area class="cursor" alt="5" title="5" coords="330,165,30" shape="circle" onclick="tooltip(8)">
+                        <area class="cursor" alt="6" title="6" coords="415,65,26" shape="circle" onclick="tooltip(9)">
                       </map>
                     </div>
                   </div>
@@ -788,219 +843,6 @@
   </div>
 </div>
 
-<div class="modal fade" id="modalAreaImgU3_3_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-    <div class="modal-content">
-      <div class="">
-        <div class="radius_modal blanco" style="background: #fff0;">
-          <div class="transparente" style="border: hidden;">
-              <div class="transparente">
-                  <div class="row header_modal" style="background: #fff0;">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4 header_card text-white p-4">
-                      <center></center>
-                    </div>
-                    <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                      <div class="divcerrar">
-                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                          <img src="assets/img/img_ova/btn_closed.png" style="width: 60px;" class="m-0 p-0">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-start align-items-center">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <div class="p-4 border-25 bg-color-claro">
-                        <p class="text-justify text-black">Este tipo de muestra se constituyen a través de determinar el tamaño de la muestra, posterior a esto, se inicia un proceso de selección aleatoria, la cual permite que todos los elementos que conforman la población, sean elegidos de igual forma. </p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- end front panel -->
-          </div> <!-- end card -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalAreaImgU3_3_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-    <div class="modal-content">
-      <div class="">
-        <div class="radius_modal blanco" style="background: #fff0;">
-          <div class="transparente" style="border: hidden;">
-              <div class="transparente">
-                  <div class="row header_modal" style="background: #fff0;">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4 header_card text-white p-4">
-                      <center></center>
-                    </div>
-                    <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                      <div class="divcerrar">
-                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                          <img src="assets/img/img_ova/btn_closed.png" style="width: 60px;" class="m-0 p-0">
-                        </button>
-                      </div>
-                    </div>
-                  </div><div class="row d-flex justify-content-start align-items-center">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <div class="p-4 border-25 bg-color-claro">
-                        <p class="text-justify text-black">
-                          En relación a lo anterior, también se podría mencionar lo que constituye el marco muestral: que no es otra cosa que, un marco de referencia el cual permite identificar de manera física el universo de la población, la posibilidad de enumerarlos y en consecuencia a realizar la selección de los elementos muestrales. 
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- end front panel -->
-          </div> <!-- end card -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalAreaImgU3_3_3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-    <div class="modal-content">
-      <div class="">
-        <div class="radius_modal blanco" style="background: #fff0;">
-          <div class="transparente" style="border: hidden;">
-              <div class="transparente">
-                  <div class="row header_modal" style="background: #fff0;">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4 header_card text-white p-4">
-                      <center></center>
-                    </div>
-                    <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                      <div class="divcerrar">
-                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                          <img src="assets/img/img_ova/btn_closed.png" style="width: 60px;" class="m-0 p-0">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <div class="p-4 border-25 bg-color-claro">
-                        <p class="text-justify text-black">Para este marco muestral o de referencia, nos podemos ayudar de material existente como, por ejemplo: listas, archivos, mapas y volúmenes de periódicos empastados que reposan en las hemerotecas de cualquier biblioteca. Por otro lado, las muestras probabilísticas se basan en dos recursos: La especificación del volumen de la muestra y la elección circunstancial de los elementos muestrales.</p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- end front panel -->
-          </div> <!-- end card -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalAreaImgU3_3_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-    <div class="modal-content">
-      <div class="">
-        <div class="radius_modal blanco" style="background: #fff0;">
-          <div class="transparente" style="border: hidden;">
-              <div class="transparente">
-                  <div class="row header_modal" style="background: #fff0;">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4 header_card text-white p-4">
-                      <center></center>
-                    </div>
-                    <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                      <div class="divcerrar">
-                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                          <img src="assets/img/img_ova/btn_closed.png" style="width: 60px;" class="m-0 p-0">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-end align-items-center">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <div class="p-4 border-25 bg-color-claro">
-                        <p class="text-justify text-black">Por consiguiente, se hace necesario especificar de manera concreta y bien delimitada el volumen o tamaño de la muestra. Ya que podría convertirse en un aspecto no solo tedioso sino difícil de medir o analizar. Por lo cual, es conveniente, que vaya en estrecha relación con el problema de investigación y los objetivos planteados, para así poder definir tanto la población como la muestra.</p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- end front panel -->
-          </div> <!-- end card -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalAreaImgU3_3_5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-    <div class="modal-content">
-      <div class="">
-        <div class="radius_modal blanco" style="background: #fff0;">
-          <div class="transparente" style="border: hidden;">
-              <div class="transparente">
-                  <div class="row header_modal" style="background: #fff0;">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4 header_card text-white p-4">
-                      <center></center>
-                    </div>
-                    <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                      <div class="divcerrar">
-                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                          <img src="assets/img/img_ova/btn_closed.png" style="width: 60px;" class="m-0 p-0">
-                        </button>
-                      </div>
-                    </div>
-                  </div><div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <div class="p-4 border-25 bg-color-claro">
-                        <p class="text-justify text-black">
-                          En conclusión, el tamaño de la muestra está determinada por el número de subgrupos que conforman la población objeto de estudio, por ejemplo: un tamaño de una muestra, podría ser una subdivisión en niños y niñas de 2 grupos de edades respectivamente, y a su vez este grupo dividirlo por niveles culturales o socioeconómicos, y así de manera tal que la muestra sea mayor y bien delimitada. 
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- end front panel -->
-          </div> <!-- end card -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="modalAreaImgU3_3_6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
-    <div class="modal-content">
-      <div class="">
-        <div class="radius_modal blanco" style="background: #fff0;">
-          <div class="transparente" style="border: hidden;">
-              <div class="transparente">
-                  <div class="row header_modal" style="background: #fff0;">
-                    <div class="col-lg-4">
-                    </div>
-                    <div class="col-lg-4 header_card text-white p-4">
-                      <center></center>
-                    </div>
-                    <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                      <div class="divcerrar">
-                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                          <img src="assets/img/img_ova/btn_closed.png" style="width: 60px;" class="m-0 p-0">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row d-flex justify-content-end align-items-center">
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <div class="p-4 border-25 bg-color-claro">
-                        <p class="text-justify text-black">Se tiene entonces, que una distribución normal, es la distribución gráfica en forma de campana, esta se obtiene con muestras de 100 o más elementos muestrales y se utilizan cuando se trabajan deducciones, conclusiones o inferencias de carácter estadístico, por ejemplo:</p>
-                        <p class="p-3 bg-color-dark border-10 text-white h4 w-50 text-center cursor" data-toggle="modal" data-target="#modalMImgU3-3-6_1"><b>VER IMAGEN</b></p>
-                      </div>
-                    </div>
-                  </div>
-              </div> <!-- end front panel -->
-          </div> <!-- end card -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="modal fade" id="modalMImgU3-3-6_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog centered-propio modal-xl" role="document">
