@@ -297,7 +297,7 @@ function funcionalidad_2(num) {
     }
 }
 
-function funcionalidad_3(num) {
+function funcionalidad_3() {
         $(".fun_3_card").removeClass('img-100');
         $(".fun_3_card").addClass('img-30');
         $(".fun_3_card_img").removeClass('img-50');
@@ -321,6 +321,57 @@ function funcionalidad_4(num) {
         $(".fun_4_text_4").removeClass('d-none');
         $(".fun_4_content").removeClass('d-none');
     }
+}
+
+function funcionalidad_5() {
+        $(".fun_5_card").removeClass('d-flex');
+        $(".fun_5_card").addClass('d-none');
+        $(".fun_5_card_text").removeClass('d-none');
+}
+
+function funcionalidad_6(num) {
+    $(".fun_6_content_1, .fun_6_content_2").removeClass('d-none');
+    $(".fun_6_text_1, .fun_6_text_2").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_6_content_1").addClass('d-none');
+        $(".fun_6_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_6_content_2").addClass('d-none');
+        $(".fun_6_text_2").removeClass('d-none');
+    }
+}
+
+function funcionalidad_7(num) {
+    $(".fun_7_btn_1, .fun_7_btn_2, .fun_7_btn_3, .fun_7_btn_4").removeClass('bg-piel-1');
+    $(".fun_7_btn_1, .fun_7_btn_2, .fun_7_btn_3, .fun_7_btn_4").addClass('bg-color-activi-o');
+    $(".fun_7_text_1, .fun_7_text_2, .fun_7_text_3, .fun_7_text_4").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_7_btn_1").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_1").addClass('bg-piel-1');
+        $(".fun_7_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_7_btn_2").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_2").addClass('bg-piel-1');
+        $(".fun_7_text_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_7_btn_3").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_3").addClass('bg-piel-1');
+        $(".fun_7_text_3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".fun_7_btn_4").removeClass('bg-color-activi-o');
+        $(".fun_7_btn_4").addClass('bg-piel-1');
+        $(".fun_7_text_4").removeClass('d-none');
+    }
+}
+
+function funcionalidad_8() {
+        $(".fun_8_card").removeClass('img-100');
+        $(".fun_8_card").addClass('img-30');
+        $(".fun_8_card_img").removeClass('img-50');
+        $(".fun_8_card_img").addClass('img-90');
+        $(".fun_8_card_text").removeClass('d-none');
 }
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
