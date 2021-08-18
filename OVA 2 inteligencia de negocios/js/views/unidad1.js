@@ -365,6 +365,14 @@ function funcionalidad_7(num) {
         $(".fun_7_text_4").removeClass('d-none');
     }
 }
+
+function funcionalidad_8() {
+        $(".fun_8_card").removeClass('img-100');
+        $(".fun_8_card").addClass('img-30');
+        $(".fun_8_card_img").removeClass('img-50');
+        $(".fun_8_card_img").addClass('img-90');
+        $(".fun_8_card_text").removeClass('d-none');
+}
 function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
