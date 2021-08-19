@@ -270,6 +270,36 @@ function funcionalidad_17() {
     $(".fun_17_card").addClass('d-none');
     $(".fun_17_card_text").removeClass('d-none');
 }
+function funcionalidad_18(num) {
+    $(".fun_18_content, .fun_18_text_1, .fun_18_text_2, .fun_18_text_3, .fun_18_text_4").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_18_content, .fun_18_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_18_content, .fun_18_text_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_18_content, .fun_18_text_3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".fun_18_content, .fun_18_text_4").removeClass('d-none');
+    }
+}
+function funcionalidad_19(num) {
+    $(".fun_19_text_1, .fun_19_text_2, .fun_19_text_3, .fun_19_text_4, .fun_19_text_5, .fun_19_text_6").addClass('d-none');
+    
+    if (num == 1) {
+        $(".fun_19_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_19_text_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_19_text_3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".fun_19_text_4").removeClass('d-none');
+    }else if (num == 5) {
+        $(".fun_19_text_5").removeClass('d-none');
+    }else if (num == 6) {
+        $(".fun_19_text_6").removeClass('d-none');
+    }
+}
 function funcionalidad_2(num) {
     $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5, .info_funcionalidad_2_6, .info_funcionalidad_2_7, .info_funcionalidad_2_8").addClass('d-none');
     $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").removeClass('bg-verde-1');
