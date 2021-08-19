@@ -347,43 +347,61 @@ function funcionalidad_14(num) {
     }
 }
 
-function funcionalidad_2(num) {
-    $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5, .info_funcionalidad_2_6, .info_funcionalidad_2_7, .info_funcionalidad_2_8").addClass('d-none');
-    $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").removeClass('bg-verde-1');
-    $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").addClass('bg-color-activi-o');
+function funcionalidad_15(num) {
+    $(".info_funcionalidad_15_1, .info_funcionalidad_15_2, .info_funcionalidad_15_3, .info_funcionalidad_15_4, .info_funcionalidad_15_5, .info_funcionalidad_15_6, .info_funcionalidad_15_7, .info_funcionalidad_15_8").addClass('d-none');
+    $(".btn_funcionalidad_15_1, .btn_funcionalidad_15_2, .btn_funcionalidad_15_3, .btn_funcionalidad_15_4, .btn_funcionalidad_15_5, .btn_funcionalidad_15_6, .btn_funcionalidad_15_7, .btn_funcionalidad_15_8").removeClass('bg-blanco');
+    $(".btn_funcionalidad_15_1, .btn_funcionalidad_15_2, .btn_funcionalidad_15_3, .btn_funcionalidad_15_4, .btn_funcionalidad_15_5, .btn_funcionalidad_15_6, .btn_funcionalidad_15_7, .btn_funcionalidad_15_8").removeClass('p_black');
+    $(".btn_funcionalidad_15_1, .btn_funcionalidad_15_2, .btn_funcionalidad_15_3, .btn_funcionalidad_15_4, .btn_funcionalidad_15_5, .btn_funcionalidad_15_6, .btn_funcionalidad_15_7, .btn_funcionalidad_15_8").addClass('bg-azul-2');
+    $(".btn_funcionalidad_15_1, .btn_funcionalidad_15_2, .btn_funcionalidad_15_3, .btn_funcionalidad_15_4, .btn_funcionalidad_15_5, .btn_funcionalidad_15_6, .btn_funcionalidad_15_7, .btn_funcionalidad_15_8").addClass('p_white');
 
     if (num == 1) {
-        $(".info_funcionalidad_2_1").removeClass('d-none');
-        $(".btn_funcionalidad_2_1").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_1").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_1").removeClass('d-none');
+        $(".btn_funcionalidad_15_1").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_1").removeClass('p_white');
+        $(".btn_funcionalidad_15_1").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_1").addClass('p_black');
     }else if (num == 2) {
-        $(".info_funcionalidad_2_2").removeClass('d-none');
-        $(".btn_funcionalidad_2_2").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_2").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_2").removeClass('d-none');
+        $(".btn_funcionalidad_15_2").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_2").removeClass('p_white');
+        $(".btn_funcionalidad_15_2").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_2").addClass('p_black');
     }else if (num == 3) {
-        $(".info_funcionalidad_2_3").removeClass('d-none');
-        $(".btn_funcionalidad_2_3").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_3").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_3").removeClass('d-none');
+        $(".btn_funcionalidad_15_3").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_3").removeClass('p_white');
+        $(".btn_funcionalidad_15_3").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_3").addClass('p_black');
     }else if (num == 4) {
-        $(".info_funcionalidad_2_4").removeClass('d-none');
-        $(".btn_funcionalidad_2_4").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_4").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_4").removeClass('d-none');
+        $(".btn_funcionalidad_15_4").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_4").removeClass('p_white');
+        $(".btn_funcionalidad_15_4").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_4").addClass('p_black');
     }else if (num == 5) {
-        $(".info_funcionalidad_2_5").removeClass('d-none');
-        $(".btn_funcionalidad_2_5").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_5").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_5").removeClass('d-none');
+        $(".btn_funcionalidad_15_5").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_5").removeClass('p_white');
+        $(".btn_funcionalidad_15_5").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_5").addClass('p_black');
     }else if (num == 6) {
-        $(".info_funcionalidad_2_6").removeClass('d-none');
-        $(".btn_funcionalidad_2_6").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_6").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_6").removeClass('d-none');
+        $(".btn_funcionalidad_15_6").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_6").removeClass('p_white');
+        $(".btn_funcionalidad_15_6").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_6").addClass('p_black');
     }else if (num == 7) {
-        $(".info_funcionalidad_2_7").removeClass('d-none');
-        $(".btn_funcionalidad_2_7").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_7").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_7").removeClass('d-none');
+        $(".btn_funcionalidad_15_7").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_7").removeClass('p_white');
+        $(".btn_funcionalidad_15_7").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_7").addClass('p_black');
     }else if (num == 8) {
-        $(".info_funcionalidad_2_8").removeClass('d-none');
-        $(".btn_funcionalidad_2_8").removeClass('bg-color-activi-o');
-        $(".btn_funcionalidad_2_8").addClass('bg-verde-1');
+        $(".info_funcionalidad_15_8").removeClass('d-none');
+        $(".btn_funcionalidad_15_8").removeClass('bg-azul-2');
+        $(".btn_funcionalidad_15_8").removeClass('p_white');
+        $(".btn_funcionalidad_15_8").addClass('bg-blanco');
+        $(".btn_funcionalidad_15_8").addClass('p_black');
     }
 }
 
