@@ -435,34 +435,3 @@ function funcionalidad_12(num) {
         $(".fun_12_btn_8").addClass('bg-blanco');
     }
 }
-function instrucciones(num) {
-    $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
-    if (num == 1) {
-        $(".instrucciones-1").removeClass('d-none');
-    }else if (num == 2) {
-        $(".instrucciones-2").removeClass('d-none');
-    }else if (num == 3) {
-        $(".instrucciones-3").removeClass('d-none');
-    }
-}
-
-function enter_hover_1(num) {
-    $(".enter_hover_1_1, .enter_hover_1_2, .enter_hover_1_3, .enter_hover_1_4, .enter_hover_1_5").removeClass('bg-color-activi-o');
-    $(".enter_hover_1_1, .enter_hover_1_2, .enter_hover_1_3, .enter_hover_1_4, .enter_hover_1_5").addClass('bg-color-activi-c');
-    if (num == 1) {
-        $(".enter_hover_1_1").addClass('bg-color-activi-o');
-        $(".enter_hover_1_1").removeClass('bg-color-activi-c');
-    }else if (num == 2) {
-        $(".enter_hover_1_2").addClass('bg-color-activi-o');
-        $(".enter_hover_1_2").removeClass('bg-color-activi-c');
-    }else if (num == 3) {
-        $(".enter_hover_1_3").addClass('bg-color-activi-o');
-        $(".enter_hover_1_3").removeClass('bg-color-activi-c');
-    }else if (num == 4) {
-        $(".enter_hover_1_4").addClass('bg-color-activi-o');
-        $(".enter_hover_1_4").removeClass('bg-color-activi-c');
-    }else if (num == 5) {
-        $(".enter_hover_1_5").addClass('bg-color-activi-o');
-        $(".enter_hover_1_5").removeClass('bg-color-activi-c');
-    }
-}
