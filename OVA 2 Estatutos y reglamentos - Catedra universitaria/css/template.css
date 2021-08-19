@@ -760,10 +760,9 @@ svg circle:nth-child(2){
   color: #811111;
 }
 .banner_activi{
-  background: #811111;
+  background: var(--bg-color-claro);
   margin-left: 10px;
   border-radius: 30px;
-  padding: 25px 1px 25px 25px;
 }
 
 .copiacirculo{
