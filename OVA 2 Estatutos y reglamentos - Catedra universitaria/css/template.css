@@ -107,6 +107,9 @@ iframe{
 .color-text{
   color: var(--bg-color);
 }
+.color-title{
+  color: var(--bg-color-dark);
+}
 
 .titulo-ova{
   background-image: url(../assets/img/img_ova/titulo-ova.png);
