@@ -187,3 +187,18 @@
 .cursor{
   cursor: pointer;
 }
+
+/*border*/
+.border-dashed-1{
+  border: dashed #3265DB 5px;
+}
+.border-dashed-2{
+  border: dashed #EF2D2D 5px;
+}
+.border-dashed-3{
+  border: dashed #F8B53C 5px;
+}
+.border-dashed-4{
+  border: dashed #00A983 5px;
+}
+/*border fin*/

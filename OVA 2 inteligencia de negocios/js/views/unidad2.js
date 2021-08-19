@@ -405,6 +405,27 @@ function funcionalidad_15(num) {
     }
 }
 
+function funcionalidad_16(num) {
+    $(".fun_16_info_1, .fun_16_info_2, .fun_16_info_3, .fun_16_info_4").addClass('d-none');
+    $(".fun_16_border").removeClass('border-dashed-1');
+    $(".fun_16_border").removeClass('border-dashed-2');
+    $(".fun_16_border").removeClass('border-dashed-3');
+    $(".fun_16_border").removeClass('border-dashed-4');
+
+    if (num == 1) {
+        $(".fun_16_info_1").removeClass('d-none');
+        $(".fun_16_border").addClass('border-dashed-1');
+    }else if (num == 2) {
+        $(".fun_16_info_2").removeClass('d-none');
+        $(".fun_16_border").addClass('border-dashed-2');
+    }else if (num == 3) {
+        $(".fun_16_info_3").removeClass('d-none');
+        $(".fun_16_border").addClass('border-dashed-3');
+    }else if (num == 4) {
+        $(".fun_16_info_4").removeClass('d-none');
+        $(".fun_16_border").addClass('border-dashed-4');
+    }
+}
 function funcionalidad_3(num) {
     $(".info_funcionalidad_3_1, .info_funcionalidad_3_2, .info_funcionalidad_3_3, .info_funcionalidad_3_4, .info_funcionalidad_3_5, .info_funcionalidad_3_6").addClass('d-none');
     $(".btn_funcionalidad_3_1, .btn_funcionalidad_3_2, .btn_funcionalidad_3_3, .btn_funcionalidad_3_4, .btn_funcionalidad_3_5, .btn_funcionalidad_3_6").removeClass('bg-amarrillo-1');
