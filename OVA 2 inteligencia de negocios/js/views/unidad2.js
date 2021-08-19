@@ -317,6 +317,36 @@ function funcionalidad_13(num) {
     }
 }
 
+function funcionalidad_14(num) {
+    $(".fun_14_content, .fun_14_text_1, .fun_14_text_2, .fun_14_text_3, .fun_14_text_4, .fun_14_text_5, .fun_14_text_6, .fun_14_text_7, .fun_14_text_8").addClass('d-none');
+
+    if (num == 1) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_2").removeClass('d-none');
+    }else if (num == 3) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_3").removeClass('d-none');
+    }else if (num == 4) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_4").removeClass('d-none');
+    }else if (num == 5) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_5").removeClass('d-none');
+    }else if (num == 6) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_6").removeClass('d-none');
+    }else if (num == 7) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_7").removeClass('d-none');
+    }else if (num == 8) {
+        $(".fun_14_content").removeClass('d-none');
+        $(".fun_14_text_8").removeClass('d-none');
+    }
+}
+
 function funcionalidad_2(num) {
     $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5, .info_funcionalidad_2_6, .info_funcionalidad_2_7, .info_funcionalidad_2_8").addClass('d-none');
     $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").removeClass('bg-verde-1');
