@@ -27,71 +27,13 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
-    /*slide_predeterminado();*/
-
-    /*var slideCount = $('#slider2 ul li').length;
-    var slideWidth = $('#slider2 ul li').width();
-    var slideHeight = $('#slider2 ul li').height();
-    var sliderUlWidth = slideCount * slideWidth;
-    
-    $('#slider2').css({ width: '100%', height: '500px' });
-    
-    $('#slider2 ul').css({ width: '90%'});
-    
-    $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-
-    function moveLeft2() {
-        $('#slider2 ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-            $('#slider2 ul').css('left', '');
-        });
-    };
-
-    function moveRight2() {
-        $('#slider2 ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider2 ul li:first-child').appendTo('#slider2 ul');
-            $('#slider2 ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev2').click(function (e) {
-        moveLeft2();
-        e.preventDefault();
-    });
-
-    $('a.control_next2').click(function (e) {
-        moveRight2();
-        e.preventDefault();
-    });*/
-
     var knob = "";
     var bar = "";
     var container = "";
     var dragging = "";
     var diff = "";
     var newTop = "";
-    var scrollOffset = "";
-    $(".ruanda-img").on('click', ruandas);
-    /*$(".modal_scroll1").on('click', modal_scroll1);
-    $(".modal_scroll3").on('click', modal_scroll2);*/
-    /*$(".ruanda-img").on('click', ruandas);*/
 
-
-    /*$(".unidad1-1").on('click', slide_link);
-    $(".unidad1-5").on('click', slide_link);
-    $(".unidad1-6_paso1").on('mouseover', unidad1_pantalla6_accion1);
-    $(".unidad1-6_paso3").on('mouseover', unidad1_pantalla6_accion3);
-    $(".unidad1-6_paso1").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso2").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
-
-    /*scroll();*/
-    // console.log(tema);
     slide_link(tema);
 });
 /*var pdf = `<div class="col-md-12">
@@ -200,7 +142,7 @@ function controlSlides(num){
     }
 }
 
-function scroll_uno(){
+/*function scroll_uno(){
     dragging = "";
     diff = "";
     newTop = "";
@@ -208,26 +150,6 @@ function scroll_uno(){
     knob = document.querySelector('.custom-scrollbar__knob_uno');
     bar = document.querySelector('.custom-scrollbar__bar_uno');
     container = document.querySelector('.custom-scrollbar__inner_uno');
-    scroll();
-}
-/*function scroll_dos(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_dos');
-    bar = document.querySelector('.custom-scrollbar__bar_dos');
-    container = document.querySelector('.custom-scrollbar__inner_dos');
-    scroll();
-}
-function scroll_tres(){
-    dragging = "";
-    diff = "";
-    newTop = "";
-    scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob_tres');
-    bar = document.querySelector('.custom-scrollbar__bar_tres');
-    container = document.querySelector('.custom-scrollbar__inner_tres');
     scroll();
 }*/
 
@@ -342,68 +264,25 @@ function Input(num) {
   });
 }
 
-function ruandas() {
-    var ruanda_num = $(this).data('ruanda');
-    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").addClass('d-none');
-    $(".ruanda-1, .ruanda-2, .ruanda-3, .ruanda-4, .ruanda-5, .ruanda-6, .ruanda-7").removeClass('d-flex');
-    $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").removeClass('bg-naranja-1');
-    $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").addClass('bg-color-activi-c');
+function funcionalidad_20(num) {
+    $(".fun_20_info_0, .fun_20_info_1, .fun_20_info_2").addClass('d-none');
 
-    if (ruanda_num==1) {
-        $(".ruanda-1").removeClass('d-none');
-        $(".ruanda-1").addClass('d-flex');
-    }else if (ruanda_num==2) {
-        $(".ruanda-2").removeClass('d-none');
-        $(".ruanda-2").addClass('d-flex');
-    }else if (ruanda_num==3) {
-        $(".ruanda-3").removeClass('d-none');
-        $(".ruanda-3").addClass('d-flex');
-    }else if (ruanda_num==4) {
-        $(".ruanda-4").removeClass('d-none');
-        $(".ruanda-4").addClass('d-flex');
-    }else if (ruanda_num==5) {
-        $(".ruanda-5").removeClass('d-none');
-        $(".ruanda-5").addClass('d-flex');
-        $(".ruanda-img-5").removeClass('bg-color-activi-c');
-        $(".ruanda-img-5").addClass('bg-naranja-1');
-    }else if (ruanda_num==6) {
-        $(".ruanda-6").removeClass('d-none');
-        $(".ruanda-6").addClass('d-flex');
-        $(".ruanda-img-6").removeClass('bg-color-activi-c');
-        $(".ruanda-img-6").addClass('bg-naranja-1');
-    }else if (ruanda_num==7) {
-        $(".ruanda-7").removeClass('d-none');
-        $(".ruanda-7").addClass('d-flex');
-        $(".ruanda-img-7").removeClass('bg-color-activi-c');
-        $(".ruanda-img-7").addClass('bg-naranja-1');
+    if (num == 0) {
+        $(".fun_20_info_0").removeClass('d-none');
+    }else if (num == 1) {
+        $(".fun_20_info_1").removeClass('d-none');
+    }else if (num == 2) {
+        $(".fun_20_info_2").removeClass('d-none');
     }
 }
 
-function funcionalidad_1(num) {
-    $(".funcionalidad_1_1, .funcionalidad_1_2").removeClass('col-md-6');
-    $(".funcionalidad_1_1, .funcionalidad_1_2").addClass('col-md-12');
-    $(".funcionalidad_oculta_1_1, .funcionalidad_oculta_1_2").addClass('d-none');
-    $(".funcionalidad_col_1_1_1, .funcionalidad_col_1_2_1").removeClass('col-md-12');
-    $(".funcionalidad_col_1_1_1, .funcionalidad_col_1_2_1").addClass('col-md-7');
-    $(".funcionalidad_col_1_1_2, .funcionalidad_col_1_2_2").removeClass('col-md-12');
-    $(".funcionalidad_col_1_1_2, .funcionalidad_col_1_2_2").addClass('col-md-5');
+function funcionalidad_21(num) {
+    $(".fun_21_text_1, .fun_21_text_2").addClass('d-none');
 
     if (num == 1) {
-        $(".funcionalidad_1_1").removeClass('col-md-12');
-        $(".funcionalidad_1_1").addClass('col-md-6');
-        $(".funcionalidad_oculta_1_1").removeClass('d-none');
-        $(".funcionalidad_col_1_1_1").removeClass('col-md-7');
-        $(".funcionalidad_col_1_1_1").addClass('col-md-12');
-        $(".funcionalidad_col_1_1_2").removeClass('col-md-5');
-        $(".funcionalidad_col_1_1_2").addClass('col-md-12');
+        $(".fun_21_text_1").removeClass('d-none');
     }else if (num == 2) {
-        $(".funcionalidad_1_2").removeClass('col-md-12');
-        $(".funcionalidad_1_2").addClass('col-md-6');
-        $(".funcionalidad_oculta_1_2").removeClass('d-none');
-        $(".funcionalidad_col_1_2_1").removeClass('col-md-7');
-        $(".funcionalidad_col_1_2_1").addClass('col-md-12');
-        $(".funcionalidad_col_1_2_2").removeClass('col-md-5');
-        $(".funcionalidad_col_1_2_2").addClass('col-md-12');
+        $(".fun_21_text_2").removeClass('d-none');
     }
 }
 
