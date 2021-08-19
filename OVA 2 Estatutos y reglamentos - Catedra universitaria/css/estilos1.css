@@ -794,6 +794,9 @@ p, button{
 .border-rd{
 	border-right: 1px solid var(--bg-color)!important;
 }
+.border-rdr{
+	border-right: 1px solid #c00000!important;
+}
 .border-b{
 	border-bottom: 3px solid var(--bg-color)!important;
 }
@@ -808,8 +811,13 @@ p, button{
 }
 
 .border-claro{
-	border: solid 2px var(--bg-color);
+	border: solid 2px var(--bg-color)!important;
 }
+.border-secondary-claro{
+	border: solid 2px var(--bg-color-secondary)!important;
+}
+
+
 .menos-margin-5{
 	margin-left: -5px!important;
 }
@@ -901,6 +909,12 @@ p, button{
 	font-size: 12px;
 }
 
+.fondo-libros{
+	background: url(../assets/img/img_ova/libros.png);
+	background-repeat: no-repeat;
+	background-size: 70% 100%;
+	background-position:right;
+}
 
 .mg-left{
 		margin-left: 20px;
