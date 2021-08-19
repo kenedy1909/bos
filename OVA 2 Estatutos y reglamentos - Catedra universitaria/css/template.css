@@ -1,5 +1,5 @@
-.icons-menu{
-}
+/* .icons-menu{
+} */
 .tab-pane iframe{
   width: 100%;
   overflow: hidden;
@@ -112,7 +112,7 @@ iframe{
 }
 
 .titulo-ova{
-  background-image: url(../assets/img/img_ova/titulo-ova.png);
+  background-image: url(../assets/img/img_ova/catedra-universitaria-05.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 380px;
@@ -358,7 +358,7 @@ iframe{
 }
 
 .img-circle {
-    /border-radius: 50%;/
+    border-radius: 50%;
 }
 
 
@@ -521,7 +521,7 @@ svg circle{
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/
+/* Claculo para simular el porcent */
 svg circle:nth-child(2){
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
