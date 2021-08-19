@@ -42,6 +42,10 @@
   border-top-color: #DA2316 !important;
 }
 
+.border-azul-bottom-1{
+  border-bottom: solid #282F9F 3px;
+}
+
 .h-6px{
   height: 6px;
 }
@@ -183,8 +187,14 @@
 .bg-azul-4{
   background: #0070C0;
 }
+.bg-azul-5{
+  background: #DDEAF6;
+}
 .bg-piel-1{
   background: #E8AF98;
+}
+.bg-piel-2{
+  background: #DFAFAF;
 }
 .bg-gris-1{
   background: #7F7F7F;
