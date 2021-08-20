@@ -69,12 +69,12 @@ var arrOrigenR1 = [
     },
     {
         code : '<div class="componente" data-order-origen="contenedorC">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen55.png" style="width: 80%; margin: auto;"></div>\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen56.png" style="width: 80%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente" data-order-origen="contenedorD">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen56.png" style="width: 80%; margin: auto;"></div>\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/imagen55.png" style="width: 80%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
@@ -113,21 +113,21 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
     /*inicioREDIR1();*/
  }
 
