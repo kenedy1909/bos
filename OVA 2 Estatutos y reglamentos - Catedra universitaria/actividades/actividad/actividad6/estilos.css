@@ -14,7 +14,7 @@
 
 #reset {
 	color: #fff;
-	background: #811111;
+	background: #005B8B;
 	border: none;
 	border-radius: 0;
 	font-family: 'Barmeno', sans-serif;
@@ -23,7 +23,7 @@
 }
 
 #reset:hover {
-	background: #811111bd;
+	background: #005B8Bbd;
 	border: none;
 	outline: 0;
 }
@@ -31,7 +31,7 @@
 .texto-ahorcado {
 	margin-top: 10px;
 	margin-bottom: 10px;
-	color: #811111;
+	color: #005B8B;
 	font-size: 25px;
 }
 
@@ -95,7 +95,7 @@
 }
 
 #container_palabra {
-	color: #811111;
+	color: #005B8B;
 	font-size: 0;
 	display: flex;
 	align-items: flex-end;
@@ -149,7 +149,7 @@
 
 .linea {
 	font-size: 50px;
-	color: #811111;
+	color: #005B8B;
 	display: inline-block;
 	margin-left: 4px;
 	margin-right: 4px;
@@ -164,7 +164,7 @@
 }
 
 .letra-palabra {
-	color: #811111;
+	color: #005B8B;
 	position: relative;
 	display: inline-block;
 	font-size: 35px;
@@ -254,7 +254,7 @@
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #811111;
+    border-bottom: solid 3px #005B8B;
 }
 
 .img-activi{
@@ -263,11 +263,11 @@
 
 .text-img-actividad{
     font-size: 20px;
-    color: #811111;
+    color: #005B8B;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #005B8B;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -275,7 +275,7 @@
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #005B8B;
   width: 50%;
   height: 86px;
   margin: 0px;
