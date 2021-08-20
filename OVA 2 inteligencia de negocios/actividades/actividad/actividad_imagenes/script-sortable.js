@@ -55,31 +55,25 @@ var contenedorAR1 = ".contenedorA";
 var contenedorBR1 = ".contenedorB";
 var contenedorCR1 = ".contenedorC";
 var contenedorDR1 = ".contenedorD";
-var contenedorER1 = ".contenedorE";
 var arrOrigenR1 = [
     {
         code : '<div class="componente" data-order-origen="contenedorA">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen53.png" style="width: 80%; margin: auto;"></div>\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/inteligencia8.png" style="width: 100%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente" data-order-origen="contenedorB">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen54.png" style="width: 80%; margin: auto;"></div>\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/inteligencia9.png" style="width: 100%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente" data-order-origen="contenedorC">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen55.png" style="width: 80%; margin: auto;"></div>\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/inteligencia10.png" style="width: 100%; margin: auto;"></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente" data-order-origen="contenedorD">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen56.png" style="width: 80%; margin: auto;"></div>\n'+
-        '</div>\n'
-    },
-    {
-        code : '<div class="componente" data-order-origen="contenedorE">\n'+
-        '<div style="display: flex; margin: auto;"><img src="./img/imagen57.png" style="width: 80%; margin: auto;"></div>\n'+
+        '<div style="display: flex; margin: auto;"><img src="./img/inteligencia11.png" style="width: 100%; margin: auto;"></div>\n'+
         '</div>\n'
     }
 ];
@@ -113,21 +107,19 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA" style="font-size: 15px;">Son datos estadísticos resumidos que se obtienen de las bases de datos, dentro de ellas se pueden encontrar funcionalidades bastante útiles que facilitan a los  usuarios realizar labores de procesamiento de datos.</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB" style="font-size: 15px;">Se usan cuando se deben mostrar datos de manera resumida adicionalmente se pueden usar cuando se quiere identificar algún patrón o tendencia en los datos, y sobre todo si son una gran magnitud de datos.</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC" style="font-size: 15px;">Funcionan un poco diferente dependiendo la versión de Excel que se tenga instalada en el equipo.</h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD" style="font-size: 15px;">Tienen como particularidad que tras su elaboración permiten mostrar los datos de una tabla dinámica. Al igual que en un gráfico normal.</h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA"><img src="./img/imagen58.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB"><img src="./img/imagen59.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC"><img src="./img/imagen60.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD"><img src="./img/imagen61.png" style="width: 80%; margin: auto;"></h2>');
-    $(contenedorER1).html('<h2 class="tituloContenedor tituloContenedorE"><img src="./img/imagen62.png" style="width: 80%; margin: auto;"></h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA" style="font-size: 15px;">Son datos estadísticos resumidos que se obtienen de las bases de datos, dentro de ellas se pueden encontrar funcionalidades bastante útiles que facilitan a los  usuarios realizar labores de procesamiento de datos.</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB" style="font-size: 15px;">Se usan cuando se deben mostrar datos de manera resumida adicionalmente se pueden usar cuando se quiere identificar algún patrón o tendencia en los datos, y sobre todo si son una gran magnitud de datos.</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC" style="font-size: 15px;">Funcionan un poco diferente dependiendo la versión de Excel que se tenga instalada en el equipo.</h2>');
+    $(contenedorDR1).html('<h2 class="tituloContenedor tituloContenedorD" style="font-size: 15px;">Tienen como particularidad que tras su elaboración permiten mostrar los datos de una tabla dinámica. Al igual que en un gráfico normal.</h2>');
     /*inicioREDIR1();*/
  }
 
@@ -157,7 +149,6 @@ function calificarR1() {
     var contenidoBR1 = $(contenedorBR1).find('div');
     var contenidoCR1 = $(contenedorCR1).find('div');
     var contenidoDR1 = $(contenedorDR1).find('div');
-    var contenidoER1 = $(contenedorER1).find('div');
 
     contenidoAR1.each(function(){
         if(($(this).attr('data-order-origen') != "contenedorA")){
@@ -188,15 +179,6 @@ function calificarR1() {
 
     contenidoDR1.each(function(){
         if(($(this).attr('data-order-origen') != "contenedorD")){
-            $(origenR1).append($(this).context.outerHTML);
-            $(this).remove();
-        } else {
-            puntajeR1 = puntajeR1 + incrementoR1;
-        }
-    })
-
-    contenidoER1.each(function(){
-        if(($(this).attr('data-order-origen') != "contenedorE")){
             $(origenR1).append($(this).context.outerHTML);
             $(this).remove();
         } else {

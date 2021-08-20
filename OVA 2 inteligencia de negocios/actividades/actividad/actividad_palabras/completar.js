@@ -211,13 +211,13 @@ class SelectDropdown {
 
 function calificar(){
 	var res = [];
-	for (var i = 0; i < 4; i++) {
+	for (var i = 0; i < 6; i++) {
 		res[i] = $("#op_"+i).val();
 	}
 	var puntaje = 100;
 	for (var i = 0; i < res.length; i++) {
 		if (res[i] == 'incorrecta') {
-			puntaje = puntaje - 25;
+			puntaje = puntaje - 16.6;
 			
 		}
 	}
