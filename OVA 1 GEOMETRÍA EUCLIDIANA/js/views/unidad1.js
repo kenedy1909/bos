@@ -18,6 +18,7 @@ $( document ).ready(function() {
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
