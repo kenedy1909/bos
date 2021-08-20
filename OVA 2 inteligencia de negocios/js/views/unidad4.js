@@ -286,6 +286,43 @@ function funcionalidad_21(num) {
     }
 }
 
+function funcionalidad_22(num) {
+
+    $(".fun_22_text_1, .fun_22_text_2, .fun_22_text_3, .fun_22_text_4, .fun_22_text_5, .fun_22_text_6, .fun_22_text_7").addClass('d-none');
+    $(".fun_22_btn_1, .fun_22_btn_2, .fun_22_btn_3, .fun_22_btn_4, .fun_22_btn_5, .fun_22_btn_6, .fun_22_btn_7").removeClass('bg-blanco');
+    $(".fun_22_btn_1, .fun_22_btn_2, .fun_22_btn_3, .fun_22_btn_4, .fun_22_btn_5, .fun_22_btn_6, .fun_22_btn_7").addClass('bg-azul-2');
+
+    if (num == 1) {
+        $(".fun_22_text_1").removeClass('d-none');
+        $(".fun_22_btn_1").removeClass('bg-azul-2');
+        $(".fun_22_btn_1").addClass('bg-blanco');
+    }else if (num == 2) {
+        $(".fun_22_text_2").removeClass('d-none');
+        $(".fun_22_btn_2").removeClass('bg-azul-2');
+        $(".fun_22_btn_2").addClass('bg-blanco');
+    }else if (num == 3) {
+        $(".fun_22_text_3").removeClass('d-none');
+        $(".fun_22_btn_3").removeClass('bg-azul-2');
+        $(".fun_22_btn_3").addClass('bg-blanco');
+    }else if (num == 4) {
+        $(".fun_22_text_4").removeClass('d-none');
+        $(".fun_22_btn_4").removeClass('bg-azul-2');
+        $(".fun_22_btn_4").addClass('bg-blanco');
+    }else if (num == 5) {
+        $(".fun_22_text_5").removeClass('d-none');
+        $(".fun_22_btn_5").removeClass('bg-azul-2');
+        $(".fun_22_btn_5").addClass('bg-blanco');
+    }else if (num == 6) {
+        $(".fun_22_text_6").removeClass('d-none');
+        $(".fun_22_btn_6").removeClass('bg-azul-2');
+        $(".fun_22_btn_6").addClass('bg-blanco');
+    }else if (num == 7) {
+        $(".fun_22_text_7").removeClass('d-none');
+        $(".fun_22_btn_7").removeClass('bg-azul-2');
+        $(".fun_22_btn_7").addClass('bg-blanco');
+    }
+}
+
 function funcionalidad_2(num) {
     $(".info_funcionalidad_2_1, .info_funcionalidad_2_2, .info_funcionalidad_2_3, .info_funcionalidad_2_4, .info_funcionalidad_2_5, .info_funcionalidad_2_6, .info_funcionalidad_2_7, .info_funcionalidad_2_8").addClass('d-none');
     $(".btn_funcionalidad_2_1, .btn_funcionalidad_2_2, .btn_funcionalidad_2_3, .btn_funcionalidad_2_4, .btn_funcionalidad_2_5, .btn_funcionalidad_2_6, .btn_funcionalidad_2_7, .btn_funcionalidad_2_8").removeClass('bg-verde-1');
