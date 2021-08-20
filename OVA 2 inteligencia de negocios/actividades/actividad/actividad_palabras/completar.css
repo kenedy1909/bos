@@ -57,7 +57,7 @@ label {
 	-webkit-appearance: none;
 	appearance: none;
 	z-index: 1;
-	background: #FFC000;
+	background: #FBE4D4;
 	color: white;
 }
 .select__button:focus, .select__option:focus {
@@ -214,12 +214,12 @@ label {
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
     height: 200px;
-    background: #FFFFFF;
+    background: #DA2316;
     color: white;
 }
 
 .seleccionable{
-	background: #FFC000;
+	background: #FBE4D4;
     position: relative;
     top: -18px;
 }
@@ -237,11 +237,11 @@ label {
 .principal{
   height: 400px;
   border-radius: 40px;
-  background: #006092;
+  background: #DA2316;
 }
 
 .cabeza{
-  background: #003442;
+  background: #811111;
   height: 100px;
   border-radius: 40px 40px 0px 0px;
 }
