@@ -157,3 +157,99 @@ function textoBorder(num){
             break;
     }
 }
+function pintura(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn-pintura').addClass('btn-pinturaInactive');
+            $('.btn-pintura').removeClass('btn-pinturaActive');
+
+            $('.btnP-1').removeClass('btn-pinturaInactive');
+            $('.btnP-1').addClass('btn-pinturaActive');
+
+            $('.bannerTextPintura').addClass('inactive');
+            $('.bannerTextPintura').removeClass('active');
+
+            $('.bannerP1').removeClass('inactive');
+            $('.bannerP1').addClass('active');
+
+            for (var i = 0; i < 5; i++) {
+                $('#dimensiones').removeClass('social'+i);
+            }
+            $('#dimensiones').addClass('social1');
+            break;
+        case 2:
+            $('.btn-pintura').addClass('btn-pinturaInactive');
+            $('.btn-pintura').removeClass('btn-pinturaActive');
+
+            $('.btnP-2').removeClass('btn-pinturaInactive');
+            $('.btnP-2').addClass('btn-pinturaActive');
+
+            $('.bannerTextPintura').addClass('inactive');
+            $('.bannerTextPintura').removeClass('active');
+
+            $('.bannerP2').removeClass('inactive');
+            $('.bannerP2').addClass('active');
+
+            for (var i = 0; i < 5; i++) {
+                $('#dimensiones').removeClass('social'+i);
+            }
+            $('#dimensiones').addClass('social2');
+            break;
+        case 3:
+            $('.btn-pintura').addClass('btn-pinturaInactive');
+            $('.btn-pintura').removeClass('btn-pinturaActive');
+
+            $('.btnP-3').removeClass('btn-pinturaInactive');
+            $('.btnP-3').addClass('btn-pinturaActive');
+
+            $('.bannerTextPintura').addClass('inactive');
+            $('.bannerTextPintura').removeClass('active');
+
+            $('.bannerP3').removeClass('inactive');
+            $('.bannerP3').addClass('active');
+
+            for (var i = 0; i < 5; i++) {
+                $('#dimensiones').removeClass('social'+i);
+            }
+            $('#dimensiones').addClass('social3');
+            break;
+        case 4:
+            $('.btn-pintura').addClass('btn-pinturaInactive');
+            $('.btn-pintura').removeClass('btn-pinturaActive');
+
+            $('.btnP-4').removeClass('btn-pinturaInactive');
+            $('.btnP-4').addClass('btn-pinturaActive');
+
+            $('.bannerTextPintura').addClass('inactive');
+            $('.bannerTextPintura').removeClass('active');
+
+            $('.bannerP4').removeClass('inactive');
+            $('.bannerP4').addClass('active');
+
+            for (var i = 0; i < 5; i++) {
+                $('#dimensiones').removeClass('social'+i);
+            }
+            $('#dimensiones').addClass('social4');
+            break;
+        case 5:
+            $('.btn-pintura').addClass('btn-pinturaInactive');
+            $('.btn-pintura').removeClass('btn-pinturaActive');
+
+            $('.btnP-5').removeClass('btn-pinturaInactive');
+            $('.btnP-5').addClass('btn-pinturaActive');
+
+            $('.bannerTextPintura').addClass('inactive');
+            $('.bannerTextPintura').removeClass('active');
+
+            $('.bannerP5').removeClass('inactive');
+            $('.bannerP5').addClass('active');
+
+            for (var i = 0; i < 5; i++) {
+                $('#dimensiones').removeClass('social'+i);
+            }
+            $('#dimensiones').addClass('social5');
+            break;
+        default:
+            break;
+    }
+}
