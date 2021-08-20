@@ -36,12 +36,33 @@ $( document ).ready(function() {
 
     slide_link(tema);
 });
-/*var pdf = `<div class="col-md-12">
+var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/UNIDAD 1/tratado-de-versalles.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tratado de versalles.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/big.docx" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> El Big Data y la minería de datos en la empresa de hoy.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/aprendizaje_2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Unidad de aprendizaje 2 La Inteligencia de Negocios.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 2/graficos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipos de gráficos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/color.docx" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipología del color.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/base.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Base de datos y minería de datos en contornos empresariales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/seguridad.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> La seguridad informática y la seguridad de la información.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/parte2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Parte II bases de datos deductivas.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/actividad_practica.docx" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Aproximación práctica.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
-$('.pdfs').html(pdf);*/
+$('.pdfs').html(pdf);
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -69,73 +90,19 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Las tablas y gráficos dinámicos");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
-            break;
-        case 6:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
-            break;
-        case 7:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
-            break;
-        case 9:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 11:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 12:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 13:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 14:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 15:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 16:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
-            break;
-        case 17:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
-            break;
-        case 18:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
-            break;
-        case 19:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
-            break;
-        case 20:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
-            break;
-        case 21:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
-            break;
-        case 22:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
-            break;
-        case 23:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         default:
             break;
