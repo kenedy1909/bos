@@ -139,3 +139,62 @@
 .img-140{
   width: 140%;
 }
+#dimensiones{
+  width: 800px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 100%;s
+}
+.social0{
+  background-image: url('../assets/img/img_ova/social0.jpg');
+}
+.social1{
+  background-image: url('../assets/img/img_ova/social2.jpg');
+}
+.social2{
+  background-image: url('../assets/img/img_ova/social3.jpg');
+}
+.social3{
+  background-image: url('../assets/img/img_ova/social4.jpg');
+}
+.social4{
+  background-image: url('../assets/img/img_ova/social5.jpg');
+}
+.social5{
+  background-image: url('../assets/img/img_ova/social6.jpg');
+}
+.btn-pintura{
+  width: 15px;height: 15px;
+  border-radius: 50%;
+  
+  border: solid 1px #96182F;
+  margin-bottom: 5px;
+}
+.btn-pinturaActive{
+  background: #96182F;
+}
+.btn-pinturaInactive{
+  background: #757EED;
+}
+.cont-btns{
+  position: relative;
+  left: 30px;
+  top: 70px;
+}
+.bannerTextPintura{
+  width: 70%;
+  height: 150px;
+  background: #ffffffb0;
+  padding: 10px;
+  border-radius: 20px;
+  border: solid 1px #97182f;
+  position: relative;
+  left: 161px;
+  top: 2px;
+}
+.inactive{
+  display: none;
+}
+.active{
+  display: block;
+}
