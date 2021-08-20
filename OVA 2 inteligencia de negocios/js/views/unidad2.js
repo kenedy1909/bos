@@ -35,12 +35,12 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    $(".ruanda-img").on('click', ruandas);
 
+    slide_link(tema);
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/DOCUMENTOS/aprendizaje_2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Unidad de aprendizaje 2 La Inteligencia de Negocios.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/aprendizaje_2.docx" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Unidad de aprendizaje 2 La Inteligencia de Negocios.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
                         <a class="p_white" href="assets/PDF/UNIDAD 2/graficos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipos de gráficos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
@@ -56,7 +56,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    actualizarprogress(stepIndex+1+19);
 }
 
 function slide_predeterminado(){

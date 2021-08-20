@@ -34,7 +34,6 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    $(".ruanda-img").on('click', ruandas);
 
     slide_link(tema);
 });
@@ -50,7 +49,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    actualizarprogress(stepIndex+1+19+8);
 }
 
 function slide_predeterminado(){
