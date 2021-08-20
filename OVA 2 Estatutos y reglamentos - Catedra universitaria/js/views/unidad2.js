@@ -160,6 +160,9 @@ function textoBorder(num){
 function pintura(num){
     switch (parseInt(num)) {
         case 1:
+            $('.target-float').addClass('inactive');
+            $('.target-float').removeClass('active');
+
             $('.btn-pintura').addClass('btn-pinturaInactive');
             $('.btn-pintura').removeClass('btn-pinturaActive');
 
@@ -172,12 +175,15 @@ function pintura(num){
             $('.bannerP1').removeClass('inactive');
             $('.bannerP1').addClass('active');
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i <= 6; i++) {
                 $('#dimensiones').removeClass('social'+i);
             }
             $('#dimensiones').addClass('social1');
             break;
         case 2:
+            $('.target-float').addClass('inactive');
+            $('.target-float').removeClass('active');
+
             $('.btn-pintura').addClass('btn-pinturaInactive');
             $('.btn-pintura').removeClass('btn-pinturaActive');
 
@@ -190,12 +196,15 @@ function pintura(num){
             $('.bannerP2').removeClass('inactive');
             $('.bannerP2').addClass('active');
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i <= 6; i++) {
                 $('#dimensiones').removeClass('social'+i);
             }
             $('#dimensiones').addClass('social2');
             break;
         case 3:
+            $('.target-float').addClass('inactive');
+            $('.target-float').removeClass('active');
+
             $('.btn-pintura').addClass('btn-pinturaInactive');
             $('.btn-pintura').removeClass('btn-pinturaActive');
 
@@ -208,12 +217,15 @@ function pintura(num){
             $('.bannerP3').removeClass('inactive');
             $('.bannerP3').addClass('active');
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i <= 6; i++) {
                 $('#dimensiones').removeClass('social'+i);
             }
             $('#dimensiones').addClass('social3');
             break;
         case 4:
+            $('.target-float').addClass('inactive');
+            $('.target-float').removeClass('active');
+
             $('.btn-pintura').addClass('btn-pinturaInactive');
             $('.btn-pintura').removeClass('btn-pinturaActive');
 
@@ -226,12 +238,15 @@ function pintura(num){
             $('.bannerP4').removeClass('inactive');
             $('.bannerP4').addClass('active');
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i <= 6; i++) {
                 $('#dimensiones').removeClass('social'+i);
             }
             $('#dimensiones').addClass('social4');
             break;
         case 5:
+            $('.target-float').addClass('inactive');
+            $('.target-float').removeClass('active');
+
             $('.btn-pintura').addClass('btn-pinturaInactive');
             $('.btn-pintura').removeClass('btn-pinturaActive');
 
@@ -244,10 +259,28 @@ function pintura(num){
             $('.bannerP5').removeClass('inactive');
             $('.bannerP5').addClass('active');
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i <= 6; i++) {
                 $('#dimensiones').removeClass('social'+i);
             }
             $('#dimensiones').addClass('social5');
+            break;
+        case 6:
+            $('.btn-pintura').addClass('btn-pinturaInactive');
+            $('.btn-pintura').removeClass('btn-pinturaActive');
+
+            $('.btnP-6').removeClass('btn-pinturaInactive');
+            $('.btnP-6').addClass('btn-pinturaActive');
+
+            $('.bannerTextPintura').addClass('inactive');
+            $('.bannerTextPintura').removeClass('active');
+
+            $('.target-float').addClass('active');
+            $('.target-float').removeClass('inactive');
+
+            for (var i = 0; i <= 6; i++) {
+                $('#dimensiones').removeClass('social'+i);
+            }
+            $('#dimensiones').addClass('social6');
             break;
         default:
             break;

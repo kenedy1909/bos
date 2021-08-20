@@ -143,7 +143,7 @@
   width: 800px;
   height: 400px;
   background-repeat: no-repeat;
-  background-size: 100%;s
+  background-size: 100%;
 }
 .social0{
   background-image: url('../assets/img/img_ova/social0.jpg');
@@ -162,6 +162,11 @@
 }
 .social5{
   background-image: url('../assets/img/img_ova/social6.jpg');
+}
+.social6{
+  background-image: url('../assets/img/img_ova/social6.jpg');
+  z-index: 1;
+  opacity: 0.6;
 }
 .btn-pintura{
   width: 15px;height: 15px;
@@ -197,4 +202,10 @@
 }
 .active{
   display: block;
+}
+.flotante{
+  width: 60%;
+  background: #757EED;
+  padding: 10px;
+  border-radius: 15px;
 }
