@@ -99,3 +99,61 @@ function controlSlides(num){
     }
 }
 
+function textoBorder(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.btn-border').addClass('btn-borderInactive');
+            $('.btn-border').removeClass('btn-borderActive');
+
+            $('.btnB-1').removeClass('btn-borderInactive');
+            $('.btnB-1').addClass('btn-borderActive');
+
+            $('.texto-border').addClass('oculto');
+            $('.texto-border').removeClass('mostrado');
+
+            $('.texto-border1').removeClass('oculto');
+            $('.texto-border1').addClass('mostrado');
+            break;
+        case 2:
+            $('.btn-border').addClass('btn-borderInactive');
+            $('.btn-border').removeClass('btn-borderActive');
+
+            $('.btnB-2').removeClass('btn-borderInactive');
+            $('.btnB-2').addClass('btn-borderActive');
+
+            $('.texto-border').addClass('oculto');
+            $('.texto-border').removeClass('mostrado');
+
+            $('.texto-border2').removeClass('oculto');
+            $('.texto-border2').addClass('mostrado');
+            break;
+        case 3:
+            $('.btn-border').addClass('btn-borderInactive');
+            $('.btn-border').removeClass('btn-borderActive');
+
+            $('.btnB-3').removeClass('btn-borderInactive');
+            $('.btnB-3').addClass('btn-borderActive');
+
+            $('.texto-border').addClass('oculto');
+            $('.texto-border').removeClass('mostrado');
+
+            $('.texto-border3').removeClass('oculto');
+            $('.texto-border3').addClass('mostrado');
+            break;
+        case 4:
+            $('.btn-border').addClass('btn-borderInactive');
+            $('.btn-border').removeClass('btn-borderActive');
+
+            $('.btnB-4').removeClass('btn-borderInactive');
+            $('.btnB-4').addClass('btn-borderActive');
+
+            $('.texto-border').addClass('oculto');
+            $('.texto-border').removeClass('mostrado');
+
+            $('.texto-border4').removeClass('oculto');
+            $('.texto-border4').addClass('mostrado');
+            break;
+        default:
+            break;
+    }
+}

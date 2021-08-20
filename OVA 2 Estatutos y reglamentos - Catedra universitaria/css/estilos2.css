@@ -11,7 +11,64 @@
 .btn-border{
   height: 12px;width: 12px;
   border-radius: 50%;
-  background: #757EED;
+  
   border: solid white 2px;
   margin-left: 5px;
+}
+.btn-borderActive{
+  background: #97182F;
+}
+.btn-borderInactive{
+  background: #757EED;
+}
+.estilosB1{
+  position: relative;
+  top: -145px;
+  left: -12px;
+  width: 40%;
+  padding: 10px;
+  background: #ffffff73;
+  border: solid #97182f;
+  border-radius: 20px;
+}
+.estilosB2{
+  position: relative;
+  top: -399px;
+  left: -12px;
+  width: 40%;
+  padding: 10px;
+  background: #ffffff73;
+  border: solid #97182f;
+  border-radius: 20px;
+}
+.estilosB3{
+  position: relative;
+  top: -565px;
+  left: 125px;
+  width: 63%;
+  padding: 10px;
+  background: #ffffff73;
+  border: solid #97182f;
+  border-radius: 20px;
+}
+.estilosB4{
+  position: relative;
+  top: -659px;
+  left: 421px;
+  width: 45%;
+  padding: 10px;
+  background: #ffffff73;
+  border: solid #97182f;
+  border-radius: 20px;
+}
+.oculto{
+  visibility: hidden;
+}
+.mostrado{
+  visibility: visible;
+}
+.text-simple{
+    position: relative;
+    top: -670px;
+    width: 28%;
 }
