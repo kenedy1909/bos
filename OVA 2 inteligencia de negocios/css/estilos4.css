@@ -2,6 +2,10 @@
   border-left: solid #DA2316 3px;
 }
 
+.border-azul-left-1{
+  border-left: solid #282F9F 3px;
+}
+
 .border-azul-left-2{
   border-left: solid #1E2054 3px;
 }
@@ -28,6 +32,10 @@
 
 .border-color-right-c{
   border-right: solid #DA2316 3px;
+}
+
+.border-azul-right-1{
+  border-right: solid #282F9F 3px;
 }
 
 .border-color-right-o{
@@ -102,7 +110,7 @@
   border-left: solid 100px transparent;
   width: 0px;
   height: 0px;
-
+}
 .border-right-color-c{
  border-right-color: #DA2316;
 }
@@ -114,6 +122,30 @@
 }
 .border-top-color-c{
  border-top-color: #DA2316;
+}
+.border-right-color-o{
+ border-right-color: #811111;
+}
+.border-left-color-o{
+ border-left-color: #811111;
+}
+.border-bottom-color-o{
+ border-bottom-color: #811111;
+}
+.border-top-color-o{
+ border-top-color: #811111;
+}
+.border-right-azul-1{
+ border-right-color: #282F9F;
+}
+.border-left-azul-1{
+ border-left-color: #282F9F;
+}
+.border-bottom-azul-1{
+ border-bottom-color: #282F9F;
+}
+.border-top-azul-1{
+ border-top-color: #282F9F;
 }
 
 .custom-scrollbar_uno {
