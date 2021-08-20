@@ -15,6 +15,7 @@ $( document ).ready(function() {
         }
     });
     $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();

@@ -61,38 +61,35 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Introducción a la ética");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 16;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Introducción a la ética");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Ética, moral y derecho");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            $("#content").html('');
-            $("#img_cont").html('');
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Ética, moral y derecho");
+            
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            //$("#pregunta_cont").html('');
-            $("#contenido2").html('');
-            $("#img_2").html('');
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Ética, moral y derecho");
+            
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
         default:
             break;
