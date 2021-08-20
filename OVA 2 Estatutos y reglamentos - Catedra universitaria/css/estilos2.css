@@ -72,3 +72,64 @@
     top: -670px;
     width: 28%;
 }
+.baneremociones{
+  width: 300px;
+    position: relative;
+    left: -62px;
+}
+.banner2{
+  background: #aad5d0;
+  padding: 15px;
+  border-radius: 30px;
+}
+.textobanner{
+  width: 50%;
+  padding-top: 30px;
+}
+.hojaManchada{
+  background-image: url('../assets/img/img_ova/fondo_hoja.png');
+  background-size: 100%;
+}
+.earl{
+  width: 110px;
+  height: 110px;
+}
+.marco{
+  width: 130px;
+  height: 130px;
+  border: solid 1px #97182f;
+  padding: 10px;
+}
+.triangulo-borbuja{
+    width: 0;
+    height: 0;
+    border-left: 15px solid #ffffff;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transform: rotate(90deg);
+    margin-left: 30px;
+    position: relative;
+    top: -15px;
+}
+.blue_target{
+  background: #757EED;
+  padding: 1px;
+  border-radius: 10px;
+  width: 145px;
+  height: 105px;
+}
+.borbuja{
+  background: #fff;
+  border-radius: 10px;
+  height: 47px;
+}
+.textoBorbuja{
+  padding: 14px 24px 1px 26px;
+  text-align: center;
+}
+.btnVino{
+  background: #540F23;
+}
+.borde_red{
+  border-right: solid 1px #97182f;
+}
