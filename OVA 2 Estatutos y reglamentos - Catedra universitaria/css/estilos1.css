@@ -747,12 +747,13 @@ p, button{
 .bg-color-dark{
 	background: var(--bg-color-dark)!important;
 }
-/* .bg-color-medium{
-	background: var(--bg-color-medium)!important;
-} */
-/* .bg-color-claro{
+.bg-color-claro{
 	background: var(--bg-color-claro)!important;
-} */
+}
+.bg-color-secondary{
+	background: var(--bg-color-secondary)!important;
+}
+
 .border-45{
 	border-radius: 45px;
 }
@@ -1159,7 +1160,7 @@ a.animated-button.thar-two:before {
 	min-height: 300px;
 }
 .fondo-9{
-	background-image: url(../assets/img/img_ova/libro abierto.png);
+	background-image: url(../assets/img/img_ova/libro_abierto.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
