@@ -437,7 +437,7 @@ function controlSlides(num){
                 var slideHeight = $('#slider10 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
                 
-                $('#slider10').css({ width: '100%', height: '290px' });
+                $('#slider10').css({ width: '100%', height: '390px' });
                 
                 $('#slider10 ul').css({ width: '100%'});
                 
