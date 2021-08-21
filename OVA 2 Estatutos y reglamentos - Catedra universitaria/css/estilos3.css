@@ -1,579 +1,77 @@
-/*.fondo_gris_morado{
-	background: #d1d1d1;
-}
-.fondo_azul_claro{
-	background: #929cb7;
-}
-.img_nav{
-	width: 50px;
-}
-
-.cont_nav{
-	padding: 5px;
-}
-
-.text_morado{
-	color: #45073d;
-}
-
-.justificado{
-	text-align: justify;
-}
-
-.banner{
-	background-image: url(../assets/img/img_ova/banner_azul.png);
-  padding: 12px;
-  background-size: 180px;
-  background-repeat: no-repeat;
-  height: 180px;
-  width: 180px;
-  background-position-x: center;
-  display: flex;
-
-}
-
-.content-banner{
-  width:50%;
-  display: block;
-  margin: auto;
-}
-
-.text-banner{
-  width: min-content;
-  text-align: center;
-  margin: auto;
-}
-
-.carta_azul{
-	width: 18rem;
-	border-right: solid 1px #0075a2;
-	border-radius: 10%;
-}
-
-.cards_blue{
-	border: solid 1px #0075b0;
-	max-width: 18em;
-}
-.card_body_blue{
-	background: #0075b0;
-}
-
-.size_13{
-	font-size: 14px;
-}
-.fondo_canvas{
-	background-image: url('../assets/img/img_ova/clasificacion_conjuntos_fondo.png');
-	width: 1122px;
-    height: 479px;
-    background-size: cover;
-}
-.radius_modal{
-	border-radius: 30px;
-}
-
-.transparente{
-	background: #fff0;
-}
-
-.btn_claro{
-	background-image: url('../assets/img/img_ova/btn_claro.png');
-	max-width: 100%;
-    margin-bottom: 4px;
-    width: 100%;
-    height: 35px;
-    cursor: pointer;
-}
-.btn_oscuro{
-	background-image: url('../assets/img/img_ova/btn_oscuro.png');
-	max-width: 100%;
-    margin-bottom: 4px;
-    width: 100%;
-    height: 35px;
-    cursor: pointer;
-}
-.div_claro{
-	background: #c4e2ff;
-}
-
-.content_aqua{
-	border: none;
-  	border-radius: 40px 10px;
-  	background: #89d8ff;
-  	height: 190px;
-}
-.circulo_blue{
-	background-image: url('../assets/img/img_ova/circulo_fondo.png');
-	width: 50%;
-    height: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.triangulo{
-	background-image: url(../assets/img/img_ova/triangulo1.png);
-    height: 26%;
-    width: 39%;
-    background-size: 100%;
-    margin-top: 48px;
-    position: absolute;
-    cursor: pointer;
-}
-.t_1{
-
-}
-.t_2{
-	background-image: url(../assets/img/img_ova/triangulo2.png);
-	margin-left: 27px;
-    margin-top: 78px;
-}
-.t_3{
-	background-image: url(../assets/img/img_ova/triangulo3.png);
-	margin-left: 51px;
-}
-.celda_clara{
-	background: #c6d2d4;
-}
-.celda_azul{
-	background: #98bec4;
-}
-.celda_clarascura{
-	background: #8ca6aa;
-}
-.celda_oscura{
-	background: #47747c;
-}
-#hexagono3 {
-  height: 20em;
-  margin: -6.5em 0;
-  overflow: hidden;
-  transform: rotate(120deg);
-  visibility: hidden;
-  width: 10em;
-  
-}
-#hexagono3-1 {
-  height: 100%;
-  overflow: hidden;
-  transform: rotate(-60deg);
-  width: 100%;
-  
-}
-#hexagono3-2 {
-  height: 100%;
-  transform: rotate(-60deg); 
-  visibility: visible ;
-
-  width: 100%;
-  
-}
-.color-example{
-	background: #c6d2d4;
-	
-}
-
-.text_panal{
-	font-size: 12px;
-	margin-top: 25px;
-	margin-left: 9px;
-	color: #ffffff;
-	width: 75%;
-}
-
-.panal{
-	background-size: cover;
-  width: 195px;
-  height: 195px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  padding-top: 20px;
-}
-p, button{
-	font-size: 15px;
-}
-
-.rueda1{
-	  width: 150px;
-	  height: 150px;
-    margin: 0px;
-    position: absolute;
-    left: 12%;
-    top: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-}
-
-.rueda2{
-	  width: 150px;
-	  height: 150px;
-    margin: 0px;
-    position: absolute;
-    left: 23%;
-    top: 51%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-}
-
-.rueda3{
-	  width: 150px;
-	  height: 150px;
-    margin: 0px;
-    position: absolute;
-    left: 72%;
-    top: 0%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-}
-
-.rueda4{
-	  width: 150px;
-	  height: 150px;
-    margin: 0px;
-    position: absolute;
-    left: 65%;
-    top: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-}
-
-.cursor{
-	cursor: pointer;
-}
-
-.blanco{
-  background: #ffffff;
-}
-.header_card{
-  background: #0075b0;
-  max-height: 25px;
-    font-size: 10px;
-    border-radius: 3px;
-}
-.close{
-  cursor: pointer;
-}
-
-.size_16{
-  font-size: 16px;
-}
-
-.borde_azul{
-  border: solid 1px #321fdb;
-}
-.borde_azul_left{
-  border-left: solid 1px #321fdb;
-}
-
-.card1-2{
-  padding: 0px;
-  border-radius: 45px;
-  border: solid rgba(0, 117, 168, 1);
-  min-height: 380px;
-}
-
-.card_top2{
-  margin: 0px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  min-height: 190px;
-  border-bottom-right-radius: 42px;
-  border-bottom-left-radius: 42px;
-}
-
-.card1_bottom2{
-  margin: 0px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 0.5rem;
-  min-height: 190px;
-  border-bottom-right-radius: 42px;
-  border-bottom-left-radius: 42px;
-  background-color: rgba(0, 117, 168, 1);
-}
-
-.azul_card{
-  background: #0075b0;
-}
-
-.text-img-activi{
-  border-bottom: solid 3px rgba(0, 91, 139);
-  width: 50%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 45px;
-}
-
-.content-img-actividad{
-  z-index: 100;
-  padding-top: 32px;
-  width: 100%;
-}
-
-.img-activi{
-    max-width: 100%;
-    z-index: 100;
-}
-
-.back-green{
-  background-color: #6fb14d;
-  padding: 30px;
-  border-radius: 30px;
-  
-}
-
-.titulo_decorado{
-  margin: 0px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  background: linear-gradient(215deg, #6fb14d, #6fb14d);
-  width: 120%;
-  position: absolute;
-  left: -10%;
-}
-
-.contenido_decorado{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  position: absolute;
-  height: 15em;
-  width: 70%;
-  left: 42px;
-  bottom: -6vh;
-  -webkit-transition: height 1s;
-  transition: height 1s;
-  background: linear-gradient(278deg, #e9ec70, #e9ec70);;
-}
-.contenido_decorado:hover{
-  height: 30em;
-  color: #000000;
-}
-
-.margin-auto{
-  margin: auto;
-}
-
-.button-green{
-  background-color: #6fb14d;
-  color: #FFFFFF;
-  padding: 8px 0 ;
-  margin: 12px 0;
-}
-
-.img-font{
-  background-image: url("assets/img/img_ova/industria.png");
-  width: 10px;
-}*/
-
-.cursor{
-  cursor: pointer;
-}
-
-.bg-cafe-o{
-  background-color: #420F05;
-}
-
-.bg-amarillo-c{
-  background-color: #FFD966;
-}
-
-.bg-dorado-o{
-  background-color: #BF9000;
-}
-
-.h-80px{
-  height: 80px;
-}
-.w-80px{
-  width: 80px;
-}
-.h-120px{
-  height: 120px;
-}
-.w-120px{
-  width: 120px;
-}
-
-.w-300px{
-  width: 300px;
-}
-.bg-amarillo{
-  background-color: #FF9900;
-}
-.bg-piel{
-  background-color: #F3C8C5;
-}
-.bg-piel-o{
-  background-color: #F4B081;
-}
-
-.bg-piel-c{
-  background-color: #FBE4D4;
-}
-
-.bg-piel-mc{
-  background-color: #F7CAAC;
-}
-
-.bg-cafe-mo{
-  background-color: #420F05;
-}
-
-.fondo-5{
-  background-image: url(../assets/img/img_ova/circulo-cafe.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  min-height: 300px;
-  background-position: center;
-}
-
-.fondo-6{
-  background-image: url(../assets/img/img_ova/nazi.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 400px;
-  background-position: center;
-  border-radius: 17%;
-}
-
-.fondo-7{
-  background-image: url(../assets/img/img_ova/pinochet.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 400px;
-  background-position: center;
-  border-radius: 17%;
-}
-
-.circulo-cafe-1{
-  top: 15px;
-  left: 125px;
-}
-
-.circulo-cafe-2{
-  top: 125px;
-  left: 235px;
-}
-
-.circulo-cafe-3{
-  top: 245px;
-  left: 125px;
-}
-
-.border-abajo{
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
-
-.border-arriba{
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
-.min-h-100{
-  min-height: 100px;
-}
-
-
-.bg-blanco{
-  background-color: #FFFFFF;
-}
-.opacity-9{
-  opacity: 0.9;
-}
-
-.w-h-30px{
-  width: 30px;
-  height: 30px;
-}
-
-.border-left-cafe{
-  border-left: solid #420F05 2px;
-}
-.border-bottom-cafe{
-  border-bottom: solid #420F05 2px;
-}
-
-.border-t-l{
-  border-top-left-radius: 3em;
-}
-
-.border-t-r{
-  border-top-right-radius: 3em;
-}
-
-.border-b-l{
-  border-bottom-left-radius: 3em;
-}
-
-.border-b-r{
-  border-bottom-right-radius: 3em;
-}
-
-/*scroll*/
-.custom-scrollbar10 {
+.tria3{
+  width: 0;
+  height: 0;
+  border-left: 80px solid #D3D6F9;
+  border-top: 80px solid transparent;
+  border-bottom: 80px solid transparent;
+}
+.fondo-flechas{
+  width: 321px;
   position: relative;
-  height: 300px;
-  overflow: hidden;
+  left: -188px;
 }
-
-.custom-scrollbar__inner10 {
-  height: 100%;
-  width: calc(100% + 40px);
-  padding-right: 75px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+.bannerflecha1{
+  width: 80%;
+  background: #D3D6F9;
+  height: 125px;
+  position: relative;
+  top: 18px;
+  padding: 10px;
+  border-radius: 30px 0px 0px 30px;
 }
-/*.custom-scrollbar__inner10
-  margin-bottom: 16px;
+.bannerflecha2{
+  width: 80%;
+  background: #D3D6F9;
+  height: 125px;
+  position: relative;
+  top: 18px;
+  padding: 10px;
+  border-radius: 0px 30px 30px 0px;
 }
-.custom-scrollbar__inner10
-  max-width: 100%;
-}*/
-
-.custom-scrollbar__bar10 {
-  position: absolute;
-  top: 28px;
-  bottom: 20px;
-  background:#420F05;
-  width: 3px;
-  right: 30px;
-  /*right: 8px;*/
-  border-radius: 4px;
+.btn-imagen{
+    width: 600px;
+    height: 108px;
+    background-image: url('../assets/img/img_ova/circulos.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-
-.custom-scrollbar__knob10 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 25px;
-  height: 25px;
+.click-imagen{
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: #420F05;
-  transform: translate(-50%, -50%);
-  will-change: top;
+  position: relative;
 }
-
-.linea_scroll10 {
-  font-size: 50px;
-    margin: 0px;
-    position: relative;
-    top: -32px;
-    color: #FFFFFF;
+.click1{
+  top: 3px;
+  left: 17px;
+}
+.click2{
+  top: 2px;
+  left: 67px;
+}
+.click3{
+  top: -97px;
+  left: 118px;
+}
+.click4{
+  top: -97px;
+  left: 168px;
+}
+.click5{
+  top: -198px;
+  left: 221px;
+}
+.click6{
+  top: -196px;
+  left: 275px;
+}
+.textoClicks{
+  height: 99px;
+  width: 436px;
+  background: #9c182f;
+  position: relative;
+  left: -179px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 3px 1px;
+  padding: 10px;
 }
