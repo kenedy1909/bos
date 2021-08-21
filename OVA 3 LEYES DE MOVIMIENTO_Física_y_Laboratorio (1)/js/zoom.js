@@ -10,7 +10,7 @@
     this._touchMoveListener     = null
 
     this._$document = $(document)
-    this._$window   = $(window)
+    this._$window   = $('#smartwizard')
     this._$body     = $(document.body)
 
     this._boundClick = $.proxy(this._clickHandler, this)
@@ -31,7 +31,7 @@
       return window.open((e.target.getAttribute('data-original') || e.target.src), '_blank')
     }
 
-    if (target.width >= ($(window).width() - Zoom.OFFSET)) return
+    if (target.width >= ($('#smartwizard').width() - Zoom.OFFSET)) return
 
     this._activeZoomClose(true)
 
@@ -136,7 +136,7 @@
     var img = document.createElement('img')
     img.onload = $.proxy(function () {
       this._fullHeight = Number(img.height)
-      this._fullWidth = Number(img.width-200)
+      this._fullWidth = Number(img.width)
       this._zoomOriginal()
     }, this)
     img.src = this._targetImage.src
@@ -168,12 +168,12 @@
     var originalFullImageWidth  = this._fullWidth
     var originalFullImageHeight = this._fullHeight
 
-    var scrollTop = $(window).scrollTop()
+    var scrollTop = $('#smartwizard').scrollTop()
 
     var maxScaleFactor = originalFullImageWidth / this._targetImage.width
 
-    var viewportHeight = ($(window).height() - Zoom.OFFSET)
-    var viewportWidth  = ($(window).width() - Zoom.OFFSET)
+    var viewportHeight = ($('#smartwizard').height() - Zoom.OFFSET)
+    var viewportWidth  = ($('#smartwizard').width() - Zoom.OFFSET)
 
     var imageAspectRatio    = originalFullImageWidth / originalFullImageHeight
     var viewportAspectRatio = viewportWidth / viewportHeight
@@ -193,13 +193,13 @@
     this._targetImage.offsetWidth // repaint before animating
 
     var imageOffset = $(this._targetImage).offset()
-    var scrollTop   = $(window).scrollTop()
+    var scrollTop   = $('#smartwizard').scrollTop()
 
-    var viewportY = scrollTop + ($(window).height() / 2)
-    var viewportX = ($(window).width() / 2)
+    var viewportY = scrollTop + ($('#smartwizard').height() / 2)
+    var viewportX = ($('#smartwizard').width() / 1)
 
     var imageCenterY = imageOffset.top + (this._targetImage.height / 2)
-    var imageCenterX = imageOffset.left + (this._targetImage.width / 2)
+    var imageCenterX = imageOffset.left + (this._targetImage.width / 1)
 
     this._translateY = viewportY - imageCenterY
     this._translateX = viewportX - imageCenterX

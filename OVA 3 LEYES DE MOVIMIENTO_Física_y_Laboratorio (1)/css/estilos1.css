@@ -1170,7 +1170,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 .comentario{
-  background-image: url('../assets/img/img_ova/comentario1.png');
+  /*background-image: url('../assets/img/img_ova/comentario1.png');*/
   background-size: 100%;
   background-repeat: no-repeat;
   height: 150px;
