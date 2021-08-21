@@ -125,32 +125,46 @@ function clicks(num){
     switch (parseInt(num)) {
         case 1:
 
-            $('.texto-clicks').addClass('invisible');
-            $('.texto-clicks').removeClass('visible');
+            $('.texto-clicks').addClass('no-visible');
+            $('.texto-clicks').removeClass('si-visible');
 
-            $('.texto-border1').removeClass('invisible');
-            $('.texto-border1').addClass('visible');
+            $('.textC1').removeClass('no-visible');
+            $('.textC1').addClass('si-visible');
             break;
         case 2:
-            $('.texto-clicks').addClass('invisible');
-            $('.texto-clicks').removeClass('visible');
+            $('.texto-clicks').addClass('no-visible');
+            $('.texto-clicks').removeClass('si-visible');
 
-            $('.texto-border2').removeClass('invisible');
-            $('.texto-border2').addClass('visible');
+            $('.textC2').removeClass('no-visible');
+            $('.textC2').addClass('si-visible');
             break;
         case 3:
-            $('.texto-clicks').addClass('invisible');
-            $('.texto-clicks').removeClass('visible');
+            $('.texto-clicks').addClass('no-visible');
+            $('.texto-clicks').removeClass('si-visible');
 
-            $('.texto-border3').removeClass('invisible');
-            $('.texto-border3').addClass('visible');
+            $('.textC3').removeClass('no-visible');
+            $('.textC3').addClass('si-visible');
             break;
         case 4:
-            $('.texto-clicks').addClass('invisible');
-            $('.texto-clicks').removeClass('visible');
+            $('.texto-clicks').addClass('no-visible');
+            $('.texto-clicks').removeClass('si-visible');
 
-            $('.texto-border4').removeClass('invisible');
-            $('.texto-border4').addClass('visible');
+            $('.textC4').removeClass('no-visible');
+            $('.textC4').addClass('si-visible');
+            break;
+        case 5:
+            $('.texto-clicks').addClass('no-visible');
+            $('.texto-clicks').removeClass('si-visible');
+
+            $('.textC5').removeClass('no-visible');
+            $('.textC5').addClass('si-visible');
+            break;
+        case 6:
+            $('.texto-clicks').addClass('no-visible');
+            $('.texto-clicks').removeClass('si-visible');
+
+            $('.textC6').removeClass('no-visible');
+            $('.textC6').addClass('si-visible');
             break;
         default:
             break;
