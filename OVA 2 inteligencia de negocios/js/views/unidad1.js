@@ -253,33 +253,52 @@ function funcionalidad_1(num) {
 
 function funcionalidad_2(num) {
     $(".fun_2_content, .fun_2_text_1, .fun_2_text_2, .fun_2_text_3, .fun_2_text_4, .fun_2_text_5, .fun_2_text_6, .fun_2_text_7, .fun_2_text_8, .fun_2_text_9").addClass('d-none');
-
+    $(".fun_2_btn_1, .fun_2_btn_2, .fun_2_btn_3, .fun_2_btn_4, .fun_2_btn_5, .fun_2_btn_6, .fun_2_btn_7, .fun_2_btn_8, .fun_2_btn_9").removeClass('bg-azul-1');
+    $(".fun_2_btn_1, .fun_2_btn_2, .fun_2_btn_3, .fun_2_btn_4, .fun_2_btn_5, .fun_2_btn_6, .fun_2_btn_7, .fun_2_btn_8, .fun_2_btn_9").addClass('bg-azul-2');
     if (num == 1) {
         $(".fun_2_text_1").removeClass('d-none');
+        $(".fun_2_btn_1").removeClass('bg-azul-2');
+        $(".fun_2_btn_1").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 2) {
         $(".fun_2_text_2").removeClass('d-none');
+        $(".fun_2_btn_2").removeClass('bg-azul-2');
+        $(".fun_2_btn_2").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 3) {
         $(".fun_2_text_3").removeClass('d-none');
+        $(".fun_2_btn_3").removeClass('bg-azul-2');
+        $(".fun_2_btn_3").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 4) {
         $(".fun_2_text_4").removeClass('d-none');
+        $(".fun_2_btn_4").removeClass('bg-azul-2');
+        $(".fun_2_btn_4").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 5) {
         $(".fun_2_text_5").removeClass('d-none');
+        $(".fun_2_btn_5").removeClass('bg-azul-2');
+        $(".fun_2_btn_5").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 6) {
         $(".fun_2_text_6").removeClass('d-none');
+        $(".fun_2_btn_6").removeClass('bg-azul-2');
+        $(".fun_2_btn_6").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 7) {
         $(".fun_2_text_7").removeClass('d-none');
+        $(".fun_2_btn_7").removeClass('bg-azul-2');
+        $(".fun_2_btn_7").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 8) {
         $(".fun_2_text_8").removeClass('d-none');
+        $(".fun_2_btn_8").removeClass('bg-azul-2');
+        $(".fun_2_btn_8").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }else if (num == 9) {
         $(".fun_2_text_9").removeClass('d-none');
+        $(".fun_2_btn_9").removeClass('bg-azul-2');
+        $(".fun_2_btn_9").addClass('bg-azul-1');
         $(".fun_2_content").removeClass('d-none');
     }
 }
