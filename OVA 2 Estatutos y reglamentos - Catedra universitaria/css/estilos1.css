@@ -775,6 +775,14 @@ p, button{
 .border-rt-25{
 	border-radius: 25px 25px 0 0;
 }
+.border-rr-25{
+	border-radius: 0 25px 25px 0;
+}
+.border-rl-25{
+	border-radius: 25px 0px 0 25px;
+}
+
+
 .border-1{
 	border-radius: 45px 0 0 0!important;
 }
@@ -789,6 +797,12 @@ p, button{
 }
 
 
+.border-rw{
+	border-right: 1px solid white!important;
+}
+.border-rlw{
+	border-left: 1px solid white!important;
+}
 .border-r{
 	border-right: 3px solid var(--bg-color)!important;
 }
@@ -821,6 +835,12 @@ p, button{
 
 .menos-margin-5{
 	margin-left: -5px!important;
+}
+.menos-margin-10{
+	margin-left: -10px!important;
+}
+.menos-margin-15{
+	margin-left: -15px!important;
 }
 .menos-margin-25{
 	margin-left: -25px!important;
@@ -891,6 +911,9 @@ p, button{
 .menos-marginB-50{
 	margin-bottom: -50px!important;
 }
+.menos-marginB-75{
+	margin-bottom: -75px!important;
+}
 .menos-marginB-100{
 	margin-bottom: -100px!important;
 }
@@ -941,8 +964,46 @@ p, button{
     border-bottom: 15px solid #fff;
     margin-top: -30px;
 }
-
-
+.triangulo-l-1 {
+	width: 0;
+    height: 0;
+    border-left: 20px solid #fff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -18px;
+    bottom: 18px; 
+}
+.triangulo-l-1-1 {
+	width: 0;
+    height: 0;
+    border-left: 20px solid var(--bg-color-secondary);
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -17px;
+    bottom: 18px; 
+}
+.triangulo-l-2 {
+	width: 0;
+    height: 0;
+    border-left: 20px solid #fff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -18px;
+    bottom: 18px; 
+}
+.triangulo-l-3 {
+	width: 0;
+    height: 0;
+    border-left: 20px solid #fff;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -18px;
+    bottom: 18px; 
+}
 
 
 
