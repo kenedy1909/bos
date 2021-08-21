@@ -80,7 +80,7 @@
   ZoomService.prototype._scrollHandler = function (e) {
     if (this._initialScrollPosition === null) this._initialScrollPosition = $(window).scrollTop()
     var deltaY = this._initialScrollPosition - $(window).scrollTop()
-    if (Math.abs(deltaY) >= 40) this._activeZoomClose()
+    /*if (Math.abs(deltaY) >= 40) this._activeZoomClose()*/
   }
 
   ZoomService.prototype._keyHandler = function (e) {
@@ -129,14 +129,14 @@
   }
 
   Zoom.OFFSET = 80
-  Zoom._MAX_WIDTH = 2560
-  Zoom._MAX_HEIGHT = 4096
+  Zoom._MAX_WIDTH = 809
+  Zoom._MAX_HEIGHT = 815
 
   Zoom.prototype.zoomImage = function () {
     var img = document.createElement('img')
     img.onload = $.proxy(function () {
       this._fullHeight = Number(img.height)
-      this._fullWidth = Number(img.width)
+      this._fullWidth = Number(img.width-200)
       this._zoomOriginal()
     }, this)
     img.src = this._targetImage.src
