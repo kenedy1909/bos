@@ -1,23 +1,108 @@
-.numero1{
-	background-image: url('../assets/img/img_ova/1.png');
-	/*height: 150px;*/
-	background-size: 100% 100%;
-	padding: 15px 15px 15px 75px;
+.target1{
+	background: #465FB3;width: 70%;margin-left: 5px;
+	border-radius: 10px;
+	height: 50px;
+	margin-top: 5px;
+	box-shadow: 2px 2px 7px -2px black;
 }
-.numero2{
-	background-image: url('../assets/img/img_ova/2.png');
-	/*height: 150px;*/
-	background-size: 100% 100%;
-	padding: 15px 15px 15px 75px;
+.target2{
+	background: #465FB3;
+	width: 70%;
+	border-radius: 10px;
+	height: 50px;
+	margin-top: 50px;
+	margin-left: 36px;
+	box-shadow: 2px 2px 7px -2px black;
 }
-.numero3{
-	background-image: url('../assets/img/img_ova/3.png');
-	/*height: 150px;*/
-	background-size: 100% 100%;
-	padding: 15px 15px 15px 75px;
+.imagenTarget{
+	width: 70px;
+	position: relative;
+	left: -31px;top: -11px;
 }
-
-.banneactiv_pdf{
-	background: #DEEBF7;
-	padding: 5px 5px 5px 5px;
+.textoTargets{
+	width: 50%;
+	padding-top: 12px;
+}
+.indicador1{
+	height: 30px;width: 30px;
+	border-radius: 50%;
+	background: #96AFFF;color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 4px;
+	position: relative;
+	top: -13px;left: 25px;
+}
+.contFijo-img{
+	width: 221px;
+	height: 155px;
+}
+.computador{
+	position: relative;
+	top: -50px;z-index: 1;
+}
+.linea1{
+	background: #A5A5A5;
+	height: 4px;
+	position: relative;
+	top: -129px;
+	left: -70%;
+	width: 250%;
+}
+.linea2{
+	background: #A5A5A5;
+	height: 4px;
+	position: relative;
+	top: -74px;
+	left: -84px;
+	transform: rotate(-29deg);
+}
+.linea3{
+	background: #A5A5A5;
+	height: 4px;
+	position: relative;
+	top: -74px;
+	left: 84px;
+	transform: rotate(25deg);
+}
+.target3{
+	background: #465FB3;
+	width: 70%;
+	border-radius: 10px;
+	height: 50px;
+	margin-top: 50px;
+	margin-left: 30px;
+	box-shadow: 2px 2px 7px -2px black;
+}
+.target4{
+	background: #465FB3;
+	width: 70%;
+	border-radius: 10px;
+	height: 50px;
+	margin-top: 0px;
+	margin-left: 50px;
+	box-shadow: 2px 2px 7px -2px black;
+}
+.indicador2{
+	height: 30px;width: 30px;
+	border-radius: 50%;
+	background: #96AFFF;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 4px;
+	position: relative;
+	top: -13px;left: -20px;
+}
+.imagenTarget2{
+	width: 70px;
+	position: relative;
+	left: 31px;
+	top: -11px;
+}
+.size_13{
+	font-size: 13px;
+}
+.text-user{
+	padding: 25px 40px 25px 40px;
 }

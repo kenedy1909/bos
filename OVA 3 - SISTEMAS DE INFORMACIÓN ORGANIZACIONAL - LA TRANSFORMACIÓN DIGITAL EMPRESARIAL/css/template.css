@@ -1034,3 +1034,28 @@ svg circle:nth-child(2){
 .font13{
   font-size: 13px;
 }
+.usuario{
+  height: 125px;
+  width: 125px;
+  background: #da2316;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 14px;
+}
+.container-user{
+  position: relative;
+  top: -60px;
+  height: 22px;
+}
+.titulo-user{
+  background: #fff;
+  z-index: 1;
+  background: #da2316;
+  width: 30%;
+  height: 40px;
+  border: solid white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 0px;
+  text-align: center;
+  padding-top: 4px;
+}
