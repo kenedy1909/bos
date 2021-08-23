@@ -40,18 +40,7 @@ $( document ).ready(function() {
 
     slide_link(tema);
 });
-var pdf = `<div class="col-md-12">
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2. Introducción a los Conceptos Básicos de la TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 2. Introducción a los Conceptos Básicos de la TGS.pdf.pdf  <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
-$('.pdfs').html(pdf);
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -115,59 +104,48 @@ function controlSlides(num){
     }
 }
 
-function objetivos(num){
+function pantalla2(num){
     switch (parseInt(num)) {
-        
         case 1:
-            $('.visible1').css({'visibility': 'visible'});
+
+            $('.banewhite').addClass('invisible');
+            $('.banewhite').removeClass('visible');
+
+            $('.banewhite1').removeClass('invisible');
+            $('.banewhite1').addClass('visible');
             break;
         case 2:
-            $('.visible2').css({'visibility': 'visible'});
+            $('.banewhite').addClass('invisible');
+            $('.banewhite').removeClass('visible');
+
+            $('.banewhite2').removeClass('invisible');
+            $('.banewhite2').addClass('visible');
             break;
         case 3:
-            $('.visible3').css({'visibility': 'visible'});
-            break;
-        default:
-            break;
-    }
-}
+            $('.banewhite').addClass('invisible');
+            $('.banewhite').removeClass('visible');
 
-function infoactivi(num) {
-    switch (parseInt(num)) {
-        
-        case 1:
-            $('.info1').css({'visibility': 'visible'});
-            
+            $('.banewhite3').removeClass('invisible');
+            $('.banewhite3').addClass('visible');
             break;
-        case 2:
-            $('.info2').css({'visibility': 'visible'});
-            break;
-        default:
-            break;
-    }
-}
-function infoactivi2(num) {
-    switch (parseInt(num)) {
-        
-        case 1:
-            $('.info1_1').css({'visibility': 'visible'});
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob5');
-            bar = document.querySelector('.custom-scrollbar__bar5');
-            container = document.querySelector('.custom-scrollbar__inner5');
-            scroll();
-            break;
-        case 2:
-            $('.info2_1').css({'visibility': 'visible'});
-            break;
-        default:
-            break;
-    }
-}
+        case 4:
+            $('.banewhite').addClass('invisible');
+            $('.banewhite').removeClass('visible');
 
+            $('.banewhite4').removeClass('invisible');
+            $('.banewhite4').addClass('visible');
+            break;
+        case 5:
+            $('.banewhite').addClass('invisible');
+            $('.banewhite').removeClass('visible');
+
+            $('.banewhite5').removeClass('invisible');
+            $('.banewhite5').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
 
 
 /*var knob = document.querySelector('.custom-scrollbar__knob2');

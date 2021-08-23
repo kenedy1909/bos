@@ -1059,3 +1059,9 @@ svg circle:nth-child(2){
   text-align: center;
   padding-top: 4px;
 }
+.invisible{
+  display: none;
+}
+.visible{
+  display: block;
+}
