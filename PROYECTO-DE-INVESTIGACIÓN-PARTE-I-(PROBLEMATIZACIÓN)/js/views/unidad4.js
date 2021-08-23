@@ -16,7 +16,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
