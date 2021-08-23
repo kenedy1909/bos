@@ -207,6 +207,38 @@ function textoRocas(num){
             break;
     }
 }
+function targetsreds(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.triaTargetRed').addClass('invisible');
+            $('.triaTargetRed').removeClass('visible');
+
+            $('.tria1').removeClass('invisible');
+            $('.tria1').addClass('visible');
+
+            $('.banepwhite').addClass('invisible');
+            $('.banepwhite').removeClass('visible');
+
+            $('.banep1').removeClass('invisible');
+            $('.banep1').addClass('visible');
+            break;
+        case 2:
+            $('.triaTargetRed').addClass('invisible');
+            $('.triaTargetRed').removeClass('visible');
+
+            $('.tria2').removeClass('invisible');
+            $('.tria2').addClass('visible');
+
+            $('.banepwhite').addClass('invisible');
+            $('.banepwhite').removeClass('visible');
+
+            $('.banep2').removeClass('invisible');
+            $('.banep2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
 var bar = document.querySelector('.custom-scrollbar__bar2');
 var container = document.querySelector('.custom-scrollbar__inner2');*/

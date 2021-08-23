@@ -308,7 +308,7 @@
 .targetred{
 	height: 50px;
 	background: #FF4133;
-	width: 40%;
+	width: 100px;
 	border-radius: 10px;
 	box-shadow: -2px 2px 5px -2px black;
 	padding-top: 12px;
@@ -323,4 +323,9 @@
 }
 .marginL15{
 	margin-left: 15px;
+}
+.banepwhite{
+	background: #fff;
+    padding: 20px;
+    border-radius: 30px;
 }
