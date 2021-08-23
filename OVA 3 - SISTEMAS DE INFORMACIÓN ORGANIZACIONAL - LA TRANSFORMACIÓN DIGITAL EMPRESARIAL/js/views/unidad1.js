@@ -147,7 +147,66 @@ function pantalla2(num){
     }
 }
 
+function textoRocas(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
 
+            $('.textoroc1').removeClass('invisible');
+            $('.textoroc1').addClass('visible');
+
+            $('.lineasRocas').addClass('escondido');
+            $('.lineasRocas').removeClass('mostrado');
+
+            $('.lineasR1').removeClass('escondido');
+            $('.lineasR1').addClass('mostrado');
+            break;
+        case 2:
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
+
+            $('.textoroc2').removeClass('invisible');
+            $('.textoroc2').addClass('visible');
+
+            $('.lineasRocas').addClass('escondido');
+            $('.lineasRocas').removeClass('mostrado');
+
+            $('.lineasR2').removeClass('escondido');
+            $('.lineasR2').addClass('mostrado');
+            break;
+        case 3:
+
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
+
+            $('.textoroc3').removeClass('invisible');
+            $('.textoroc3').addClass('visible');
+
+            $('.lineasRocas').addClass('escondido');
+            $('.lineasRocas').removeClass('mostrado');
+
+            $('.lineasR3').removeClass('escondido');
+            $('.lineasR3').addClass('mostrado');
+            break;
+        case 4:
+
+            $('.texto_rocas').addClass('invisible');
+            $('.texto_rocas').removeClass('visible');
+
+            $('.textoroc4').removeClass('invisible');
+            $('.textoroc4').addClass('visible');
+
+            $('.lineasRocas').addClass('escondido');
+            $('.lineasRocas').removeClass('mostrado');
+
+            $('.lineasR4').removeClass('escondido');
+            $('.lineasR4').addClass('mostrado');
+            break;
+        default:
+            break;
+    }
+}
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
 var bar = document.querySelector('.custom-scrollbar__bar2');
 var container = document.querySelector('.custom-scrollbar__inner2');*/
