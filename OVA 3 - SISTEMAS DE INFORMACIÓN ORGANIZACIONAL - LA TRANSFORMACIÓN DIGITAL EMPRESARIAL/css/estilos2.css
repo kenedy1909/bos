@@ -8,10 +8,13 @@
     padding: 25px 10px 70px 10px;
     width: 80%;
     box-shadow: 1px 1px 5px 2px;
+    bottom:0;
+    position: absolute;
 }
 .carpeta{
     position: relative;
     top: -100px;
+    height: 325px;
 }
 
 .is-hidden {
@@ -20,9 +23,16 @@
 }
 
 .not-hidden {
-  height:150px;
+  height: 315px;
   transition: height 1s ease-in-out;
 }
 .msg {
   display:none;
+}
+.btn-carpeta{
+  height: 15px;
+  width: 15px;
+  background: #393A72;
+  border-radius: 50%;
+  margin-left: 5px;
 }

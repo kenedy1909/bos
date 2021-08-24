@@ -76,9 +76,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 10;
+            
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
@@ -137,43 +135,29 @@ function controlSlides(num){
             break;
     }
 }
-function targeta(num){
+function carpeta(num){
     switch (parseInt(num)) {
         case 1:
 
-            $('.banewhite').addClass('invisible');
-            $('.banewhite').removeClass('visible');
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-            $('.banewhite1').removeClass('invisible');
-            $('.banewhite1').addClass('visible');
+            $('.target1').removeClass('is-hidden');
+            $('.target1').addClass('not-hidden');
             break;
         case 2:
-            $('.banewhite').addClass('invisible');
-            $('.banewhite').removeClass('visible');
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-            $('.banewhite2').removeClass('invisible');
-            $('.banewhite2').addClass('visible');
+            $('.target2').removeClass('is-hidden');
+            $('.target2').addClass('not-hidden');
             break;
         case 3:
-            $('.banewhite').addClass('invisible');
-            $('.banewhite').removeClass('visible');
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-            $('.banewhite3').removeClass('invisible');
-            $('.banewhite3').addClass('visible');
-            break;
-        case 4:
-            $('.banewhite').addClass('invisible');
-            $('.banewhite').removeClass('visible');
-
-            $('.banewhite4').removeClass('invisible');
-            $('.banewhite4').addClass('visible');
-            break;
-        case 5:
-            $('.banewhite').addClass('invisible');
-            $('.banewhite').removeClass('visible');
-
-            $('.banewhite5').removeClass('invisible');
-            $('.banewhite5').addClass('visible');
+            $('.target3').removeClass('is-hidden');
+            $('.target3').addClass('not-hidden');
             break;
         default:
             break;
