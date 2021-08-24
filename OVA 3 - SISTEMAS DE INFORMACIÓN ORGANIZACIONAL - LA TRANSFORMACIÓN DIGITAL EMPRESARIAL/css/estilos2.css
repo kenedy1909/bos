@@ -36,3 +36,29 @@
   border-radius: 50%;
   margin-left: 5px;
 }
+.size_12{
+  font-size: 12px;
+}
+.banner_activiti{
+  width: 90%;
+  background: #7D9AFE;
+  height: 50px;
+}
+.img-sobre{
+  width: 70px;
+  position:relative;
+  left: -30px;
+  top: -18px;
+  z-index: 1;
+}
+.titulo-bane{
+  width: 80%;
+  text-align: center;
+  padding-top: 10px;
+}
+.Ultimotexto{
+  width: 90%;
+  background: #DAE3F3;
+  padding: 10px 15px 10px 15px;
+  border-radius: 1px 1px 30px 30px;
+}

@@ -138,7 +138,6 @@ function controlSlides(num){
 function carpeta(num){
     switch (parseInt(num)) {
         case 1:
-
             $('.baneTarget').addClass('is-hidden');
             $('.baneTarget').removeClass('not-hidden');
 
@@ -158,6 +157,20 @@ function carpeta(num){
 
             $('.target3').removeClass('is-hidden');
             $('.target3').addClass('not-hidden');
+            break;
+        default:
+            break;
+    }
+}
+function actividad(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.end1').addClass('mostrado');
+            $('.end1').removeClass('escondido');
+            break;
+        case 2:
+            $('.end2').addClass('mostrado');
+            $('.end2').removeClass('escondido');
             break;
         default:
             break;
