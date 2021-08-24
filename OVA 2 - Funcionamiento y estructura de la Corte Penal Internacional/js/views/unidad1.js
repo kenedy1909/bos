@@ -23,7 +23,6 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
-
     });
     
     $('#prev').on('click', function () {

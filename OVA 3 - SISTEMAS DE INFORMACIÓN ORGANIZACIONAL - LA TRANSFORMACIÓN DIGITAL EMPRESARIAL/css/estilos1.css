@@ -163,3 +163,169 @@
 	color: white;
 	font-weight: bold;
 }
+
+.linea{
+  height: 4px;
+  background: #465FB3;
+  position: relative;
+  top: -35px;
+}
+.bangris{
+  background: #BFBFBF;
+  padding: 10px;
+}
+.btn_rocas{
+  width: 50px;
+  height: 50px;
+  background: #465FB3;
+  border-radius: 50%;
+}
+
+.bane16{
+  padding: 15px;
+  background: #7D9AFE;
+  border-radius: 30px;
+  position: relative;
+  top: -43px;
+}
+.indicador1-1{
+	width: 4px;
+	background: #465fb3;
+	height: 30px;
+	margin-left: 47%;
+	position: relative;
+	top: -16px;
+	
+}
+.indicador1-2{
+	height: 4px;
+	width: 200%;
+	background: #465fb3;
+	margin-left: 47%;
+	position: relative;
+	top: -17px;
+	
+}
+.indicador1-3{
+	height: 30px;
+	width: 4px;
+	margin-left: 245%;
+	background: #465fb3;
+	position: relative;
+	top: -20px;
+	
+}
+.indicador2-1{
+	width: 4px;
+	background: #465fb3;
+	height: 30px;
+	margin-left: 47%;
+	position: relative;
+	top: -16px;
+	
+}
+.indicador2-2{
+	height: 4px;
+	width: 80%;
+	background: #465fb3;
+	margin-left: 47%;
+	position: relative;
+	top: -17px;
+	
+}
+.indicador2-3{
+	height: 30px;
+	width: 4px;
+	margin-left: 125%;
+	background: #465fb3;
+	position: relative;
+	top: -20px;
+	
+}
+.indicador3-1{
+	width: 4px;
+	background: #465fb3;
+	height: 30px;
+	margin-left: 51%;
+	position: relative;
+	top: -16px;
+	
+}
+.indicador3-2{
+	height: 4px;
+	width: 47%;
+	background: #465fb3;
+	margin-left: 6%;
+	position: relative;
+	top: -17px;
+	
+}
+.indicador3-3{
+	height: 30px;
+	width: 4px;
+	margin-left: 6%;
+	background: #465fb3;
+	position: relative;
+	top: -20px;
+	
+}
+.indicador4-1{
+	width: 4px;
+	background: #465fb3;
+	height: 30px;
+	margin-left: 51%;
+	position: relative;
+	top: -16px;
+}
+.indicador4-2{
+	height: 4px;
+	width: 164%;
+	background: #465fb3;
+	margin-left: -111%;
+	position: relative;
+	top: -17px;
+}
+.indicador4-3{
+	height: 30px;
+	width: 4px;
+	margin-left: -111%;
+	background: #465fb3;
+	position: relative;
+	top: -20px;
+}
+.escondido{
+	visibility: hidden;
+}
+.mostrado{
+	visibility: visible;
+}
+.btnRojo{
+	background: #da2316;
+    color: white;
+    font-weight: bold;
+}
+
+.targetred{
+	height: 50px;
+	background: #FF4133;
+	width: 100px;
+	border-radius: 10px;
+	box-shadow: -2px 2px 5px -2px black;
+	padding-top: 12px;
+}
+.triaTargetRed{
+	width: 0;height: 0;
+	border-left: 30px solid #FF4133;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	position: relative;
+	left: -10px;
+}
+.marginL15{
+	margin-left: 15px;
+}
+.banepwhite{
+	background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+}
