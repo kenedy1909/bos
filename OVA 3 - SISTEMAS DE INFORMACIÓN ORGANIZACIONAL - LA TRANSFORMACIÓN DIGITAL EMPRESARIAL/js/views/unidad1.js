@@ -14,7 +14,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -234,6 +234,22 @@ function targetsreds(num){
 
             $('.banep2').removeClass('invisible');
             $('.banep2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+function verman(num){
+    switch (parseInt(num)) {
+        case 1:
+
+            $('.verman1').removeClass('escondido');
+            $('.verman1').addClass('mostrado');
+            break;
+        case 2:
+
+            $('.verman2').removeClass('escondido');
+            $('.verman2').addClass('mostrado');
             break;
         default:
             break;

@@ -329,3 +329,12 @@
     padding: 20px;
     border-radius: 30px;
 }
+.cuadro-blue{
+	background: #465FB3;
+	height: 50px;
+}
+.verde-manzana{
+	background: #DAE3F3;
+	padding: 25px 10px 40px 10px;
+	border-radius: 1px 1px 30px 30px;
+}
