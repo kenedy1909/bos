@@ -833,7 +833,9 @@ p, button{
 .border_bds{
 	border-bottom: 1px solid var(--bg-color-secondary)!important;
 }
-
+.border-tn{
+	border-top: black 1px solid;
+}
 .border-claro{
 	border: solid 2px var(--bg-color)!important;
 }
@@ -841,13 +843,13 @@ p, button{
 	border: solid 2px var(--bg-color-secondary)!important;
 }
 
-.targetitas:hover{
+.targetitas{
 	border: 1px solid var(--bg-color-secondary)!important;
 	background: white!important;
 	color: black!important;
 }
-.targetitas:has(.triangulo-peque-w):hover{
-	visibility: visible;
+.tMuestra{
+	visibility: visible!important;
 }
 
 .menos-margin-5{
@@ -858,6 +860,9 @@ p, button{
 }
 .menos-margin-15{
 	margin-left: -15px!important;
+}
+.menos-margin-20{
+	margin-left: -20px!important;
 }
 .menos-margin-25{
 	margin-left: -25px!important;
@@ -904,6 +909,9 @@ p, button{
 .menos-marginT-10{
 	margin-top: -10px!important;
 }
+.menos-marginT-15{
+	margin-top: -15px!important;
+}
 .menos-marginT-25{
 	margin-top: -25px!important;
 }
@@ -927,6 +935,9 @@ p, button{
 }
 .menos-marginB-10{
 	margin-bottom: -10px!important;
+}
+.menos-marginB-15{
+	margin-bottom: -15px!important;
 }
 .menos-marginB-25{
 	margin-bottom: -25px!important;
@@ -1007,7 +1018,7 @@ p, button{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     position: absolute;
-    right: -18px;
+    right: -19px;
     bottom: 18px; 
 }
 .triangulo-l-1-1 {
@@ -1017,7 +1028,17 @@ p, button{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     position: absolute;
-    right: -17px;
+    right: -16px;
+    bottom: 18px; 
+}
+.triangulo-l-1-2 {
+	width: 0;
+    height: 0;
+    border-left: 20px solid var(--bg-color-secondary);
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -20px;
     bottom: 18px; 
 }
 .triangulo-l-2 {
@@ -1295,6 +1316,12 @@ a.animated-button.thar-two:before {
 .fondo2{
 	background-image: url(../assets/img/img_ova/teamwork.png);
 	background-size: content;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo3{
+	background-image: url(../assets/img/img_ova/fondo3.png);
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
