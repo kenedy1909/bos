@@ -26,7 +26,8 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
-    slide_predeterminado();
+    /*slide_predeterminado();*/
+    slide_link(tema);
     var knob = "";
     var bar = "";
     var container = "";
@@ -76,60 +77,28 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            var pdf = `<p class="p_white">
+                            <a href="assets/PDF/UNIDAD-2_LEY-DE-HABEAS-DATA/DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>
+                      <p class="p_white">
+                            <a href="assets/PDF/UNIDAD-2_LEY-DE-HABEAS-DATA/Ley_1581_de_2012.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Ley_1581_de_2012.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>`;
+            $('.pdfs').html(pdf);
+            setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 6:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 7:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 9:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 11:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 12:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 13:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 14:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            scroll_uno();
-            break;
-        case 15:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 16:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            break;
-        case 17:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            tema = 1;
+            setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
         default:
             break;

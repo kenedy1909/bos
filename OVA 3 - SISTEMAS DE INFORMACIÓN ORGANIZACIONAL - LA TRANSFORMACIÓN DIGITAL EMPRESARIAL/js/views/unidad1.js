@@ -66,41 +66,48 @@ var sumaslide = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            var pdf = `<p class="p_white">
+                            <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia1_Principios-del-marketing-digital.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>
+                      <p class="p_white">
+                            <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia2_Redes-Sociales.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>`;
+            $('.pdfs').html(pdf);
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 12:
@@ -145,8 +152,26 @@ function controlSlides(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         default:
             break;
