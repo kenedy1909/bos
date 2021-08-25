@@ -73,7 +73,7 @@
     width: 100%;
     height: 100px;
     position: relative;
-    border: 2px dashed rgb(0 52 66);
+    border: 2px dashed rgb(84 15 35);
     padding-left: 20px;
     margin: 10px 0px 50px 0px;
     z-index: 1006;
@@ -95,7 +95,7 @@
     left: -15px;
     right: -15px;
     bottom: -15px;
-    border: solid rgb(0 52 66) 2px;
+    border: solid #E8687D 2px;
     border-radius: 10px;
     background: transparent;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
@@ -103,7 +103,7 @@
 }
 
 #actividad-1 ul#grupoB li.active:after {
-    background: #FFD966;
+    background: #f8d4da;
 }
 
 #actividad-1 ul#grupoB li.active {
@@ -123,9 +123,9 @@
     left: -15px;
     right: -15px;
     bottom: -15px;
-    border: solid #811111 2px;
+    border: solid #540F23 2px;
     border-radius: 10px;
-    background-color: #811111;
+    background-color: #540F23;
     background-image: url(../img/r1-contenedorC.png);
     background-repeat: repeat;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
@@ -134,7 +134,7 @@
 }
 
 #actividad-1 ul#grupoA li.active:after {
-    background: #811111;
+    background: #540F23;
 }
 
 #actividad-1 ul#grupoA li.active {
@@ -207,13 +207,13 @@
     width: 50%;
 }
 .texto_header b{
-    color: #004c6d;
+    color: #540F23;
     padding-left: 1px;
     padding-right: 1px;
 }
 .linea_blue{
     height: 5px; 
-    background: #004c6d;
+    background: #540F23;
 }
 
 
@@ -223,7 +223,7 @@
     width: 65px;
     height: 65px;
     background: #fffefe;
-    border-radius: 50%;
+    border-radius: 20%;
     top: 15px;
     left: -44px;
     box-shadow: 1px 0px 11px -2px black;
@@ -235,10 +235,10 @@
 }
 
 .bg-cafe-activi{
-  background: #811111;
+  background: #540F23;
 }
 .text-cafe-activi{
-  color: #811111;
+  color: #540F23;
 }
 
 .img-100{
