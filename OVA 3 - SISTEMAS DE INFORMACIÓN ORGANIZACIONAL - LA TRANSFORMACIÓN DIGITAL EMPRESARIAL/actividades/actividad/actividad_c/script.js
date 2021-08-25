@@ -2,40 +2,40 @@
 // la palabra en cuestión y la pista que se presenta al usuario
 const palabras = [
   {
-    pos: [3, 0],
-    sentido: 0,
-    palabra: 'conjuntos',
-    pista: 'En las definiciones más corrientes se identifican los sistemas como.'
-  },
-  {
-    pos: [10, 0],
+    pos: [9, 0],
     sentido: 1,
-    palabra: 'organizaciones',
-    pista: 'Las ________ son el objeto de estudio de la ciencia de la administración '
+    palabra: 'transformaciondigital',
+    pista: 'La _______ es la aplicación de capacidades digitales a procesos, productos y activos para mejorar la eficiencia, mejorar el valor para el cliente.'
   },
   {
-    pos: [15, 3],
-    sentido: 1,
-    palabra: 'los sistemas',
-    pista: 'Son concebidos como una totalidad compuesta por múltiples componentes, cuyas propiedades no son atribuibles a la adición de partes o elementos independientes de sus partes o nuevos componentes.'
-  },
-  {
-    pos: [0, 4],
+    pos: [8, 1],
     sentido: 0,
-    palabra: 'retroalimentacion',
-    pista: 'Una ___________ puede ser positiva o negativa, dependiendo de las consecuencias que tengan dentro del funcionamiento del sistema.'
+    palabra: 'proteccion',
+    pista: 'La Ley de _____ de Datos Personales reconoce y protege el derecho que tienen todas las personas a conocer, actualizar y rectificar las informaciones'
   },
   {
-    pos: [1, 9],
-    sentido: 0,
-    palabra: 'comportamientos',
-    pista: 'Desarrollar un conjunto de leyes aplicables a los __________ y funcionamiento de los sistemas.'
-  },
-  {
-    pos: [7, 9],
+    pos: [6, 3],
     sentido: 1,
-    palabra: 'tgs',
-    pista: 'La teoría general de los sistemas'
+    palabra: 'habeasdata',
+    pista: 'Es el instrumento que regula en Colombia todo lo relacionado con la protección de los datos personales de los ciudadanos'
+  },
+  {
+    pos: [9, 4],
+    sentido: 0,
+    palabra: 'sic',
+    pista: 'La ______ es responsable de vigilar la observancia de las disposiciones contenidas en el estatuto del consumidor'
+  },
+  {
+    pos: [0, 6],
+    sentido: 0,
+    palabra: 'datospersonales',
+    pista: 'Son toda aquella información que se relaciona con nuestra persona y que nos identifica o nos hace identificables'
+  },
+  {
+    pos: [2, 9],
+    sentido: 0,
+    palabra: 'basededatos',
+    pista: 'Una ____ es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso'
   }
 ]
 

@@ -62,7 +62,7 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
-
+var sumaslide = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
@@ -93,11 +93,60 @@ function controlSlides(num){
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
-             
+            
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
-            tema=1;
+            
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            
+            break;
+        case 12:
+            sumaslide++;
+            if (sumaslide < 2) {
+                var slideCount = $('#slider2 ul li').length;
+                var slideWidth = $('#slider2 ul li').width();
+                var slideHeight = $('#slider2 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider2').css({ width: '100%', height: '700' });
+                
+                $('#slider2 ul').css({ width: '90%'});
+                
+                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+                function moveLeft2() {
+                    $('#slider2 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                function moveRight2() {
+                    $('#slider2 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev2').click(function (e) {
+                    moveLeft2();
+                    e.preventDefault();
+                });
+
+                $('a.control_next2').click(function (e) {
+                    moveRight2();
+                    e.preventDefault();
+                });
+            }
+            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            
             break;
         default:
             break;

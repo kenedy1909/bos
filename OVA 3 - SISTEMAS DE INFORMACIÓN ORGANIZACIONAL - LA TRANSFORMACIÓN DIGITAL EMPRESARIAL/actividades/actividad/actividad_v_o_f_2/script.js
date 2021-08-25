@@ -8,9 +8,9 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "Decimos que los procesos de automatización industrial implican la asimilación y utilización de avances tecnológicos.", answer_id: "A", img:""},
-        {question_txt: "RPA por sus siglas en inglés (Robotic Process Automation) cuando nos referimos a automatización robótica.", answer_id: "A", img:""},
-        {question_txt: "Aunque la automatización se puede dar en diferentes campos y aspectos.", answer_id: "B", img:""}
+        {question_txt: "La  Automatización se puede identificar una tendencia de hoy hacia una sociedad más lenta en los procesos con base a la tecnología", answer_id: "B", img:""},
+        {question_txt: "Según la RAE, automatización es la acción de automatizar", answer_id: "A", img:""},
+        {question_txt: "“Fordismo”, término que hace referencia al método de “Fredy Lord “.", answer_id: "B", img:""}
     ];
 
     var qwsa = new QuestionsSameAnswers({
