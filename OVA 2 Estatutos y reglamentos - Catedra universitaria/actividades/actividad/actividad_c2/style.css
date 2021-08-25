@@ -82,7 +82,7 @@ td.start.selected:hover {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #811111;
+    border-bottom: solid 3px #540F23;
 }
 
 .img-activi{
@@ -91,11 +91,11 @@ td.start.selected:hover {
 
 .text-img-actividad{
     font-size: 20px;
-    color: #811111;
+    color: #540F23;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #540F23;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -103,7 +103,7 @@ td.start.selected:hover {
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #540F23;
   width: 50%;
   height: 86px;
   margin: 0px;

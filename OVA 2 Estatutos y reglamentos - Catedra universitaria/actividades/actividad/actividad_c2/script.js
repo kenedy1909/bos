@@ -2,40 +2,34 @@
 // la palabra en cuestión y la pista que se presenta al usuario
 const palabras = [
   {
-    pos: [5, 9],
+    pos: [9, 0],
     sentido: 1,
-    palabra: 'LIMA',
-    pista: 'Ciudad capital donde se realizó el séptimo Congreso de la Sociedad Interamericana de planificación con el fin de reflexionar sobre la posible situación regional en el año 2000'
+    palabra: 'asambleadelegataria',
+    pista: 'Está conformada por representantes de todos los asociados de la Universidad'
   },
   {
-    pos: [13, 0],
+    pos: [0, 1],
+    sentido: 0,
+    palabra: 'Fundadores',
+    pista: 'Órgano jerárquico más alto y se encuentra conformado por los fundadores'
+  },
+  {
+    pos: [16, 1],
     sentido: 1,
-    palabra: 'MÉXICO',
-    pista: 'País donde se creó la fundación Javier Barros Sierra, primera institución regional dedicada exclusiva y sistemáticamente a la prospectiva'
+    palabra: 'cogobierno',
+    pista: 'Órgano que se encuentra conformado por profesores, estudiantes y egresados exclusivamente'
   },
   {
-    pos: [8, 1],
+    pos: [9, 9],
     sentido: 0,
-    palabra: '¿QUÉ CAMBIA?',
-    pista: 'Uno de los 5 interrogantes que se debe tener en cuenta en el ejercicio de la prospectiva. '
+    palabra: 'eleccion',
+    pista: 'Órgano que tiene representantes de estudiantes y de profesores o de profesores, estudiantes y egresados.'
   },
   {
-    pos: [3, 2],
-    sentido: 1,
-    palabra: 'PROSPECTIVA',
-    pista: 'Disciplina que diseña y moldea el futuro'
-  },
-  {
-    pos: [0, 5],
+    pos: [9, 12],
     sentido: 0,
-    palabra: 'PLANIFICACIÓN ESTRATÉGICA',
-    pista: 'Una de las tres etapas de la prospectiva'
-  },
-  {
-    pos: [8, 10],
-    sentido: 0,
-    palabra: 'GASTON BERGER',
-    pista: 'Autor a quien se le atribuye el origen de la prospectiva'
+    palabra: 'gobierno',
+    pista: 'Órgano que toma las decisiones fundamentales para la dirección de la Universidad.'
   }
 
 ]
