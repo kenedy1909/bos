@@ -17,7 +17,7 @@ $( document ).ready(function() {
         }
     });
     /*slide_predeterminado();*/
-
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();

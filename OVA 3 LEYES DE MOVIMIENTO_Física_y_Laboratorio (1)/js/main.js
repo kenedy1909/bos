@@ -1,7 +1,11 @@
 var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
-/*var courseid = parent.scormplayerdata.courseid;*/
+/*if (typeof parent.scormplayerdata == 'undefined') {
+    var courseid = 1;
+}else{
+    var courseid = parent.scormplayerdata.courseid;
+}*/
 /*var urlsite_1 = location.href.split('/pluginfile',1);*/
 /*var urlsite = urlsite_1[0];*/
 

@@ -39,7 +39,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/DOCUMENTOS/actividad_practica.docx" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Aproximación práctica.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/actividad_practica.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Aproximación práctica.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
