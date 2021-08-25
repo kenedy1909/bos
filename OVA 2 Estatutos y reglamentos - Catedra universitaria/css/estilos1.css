@@ -753,6 +753,9 @@ p, button{
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
 }
+.bg-color-secondary-claro{
+	background: #cfd5ea!important;
+}
 .bg-color-secondary-dark{
 	background: var(--bg-color-secondary-dark)!important;
 }
@@ -1067,6 +1070,15 @@ p, button{
 	background: var(--bg-color-dark);
 	color: white;
 }
+.tableU15{
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+.border-whiteU15{
+	border: 1px solid white;
+	padding: 0.5rem !important;
+	text-align: center;
+}
 
 /*Deslizador*/
 
@@ -1277,6 +1289,12 @@ a.animated-button.thar-two:before {
 .fondo1{
 	background-image: url(../assets/img/img_ova/fondo1.png);
 	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo2{
+	background-image: url(../assets/img/img_ova/teamwork.png);
+	background-size: content;
 	background-repeat: no-repeat;
 	background-position: center;
 }
