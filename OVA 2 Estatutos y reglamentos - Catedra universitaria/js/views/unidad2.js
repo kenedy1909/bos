@@ -284,3 +284,4 @@ function pintura(num){
             break;
     }
 }
+

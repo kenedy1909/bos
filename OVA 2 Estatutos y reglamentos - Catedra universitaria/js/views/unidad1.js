@@ -1036,6 +1036,162 @@ function acordeon(num,estado) {
   }
 }
 
-function cambiarClases(num) {
-  
+function lineaDir(num) {
+  $('.lineaDir').removeClass('pl-3');
+  $('.textContentP').html(``);
+  if (num == 1) {
+    var contenido =`
+                  <p class="text-justify">Órganos de gobierno, los cuales toman las decisiones fundamentales para la dirección de la Universidad, el presidente del consejo superior también se considera como un órgano de gobierno (literal g, art. 22.4 – estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir1').addClass('pl-3');
+    $('.textContentP').html(contenido);
+
+  }else if (num == 2) {
+    var contenido =`
+                  <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
+                  `;
+    $('.lineaDir2').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 3) {
+    var contenido =`
+                  <p class="text-justify">Órganos Unipersonales: una persona ejerce las funciones. </p>
+                  `;
+    $('.lineaDir3').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 4) {
+    var contenido =`
+                  <p class="text-justify">Órganos Colegiados: están integrados por varias personas que pertenecen a los órganos y/o asociados, (artículo 10, estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir4').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 5) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Cogobierno, el cual se encuentra conformado por profesores, estudiantes y egresados exclusivamente. </p>
+                  `;
+    $('.lineaDir5').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 6) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Elección, los cuales en su conformación tienen representantes de estudiantes y de profesores o de profesores, estudiantes y egresados, están conformados exclusivamente por estos, así como son los del cogobierno. </p>
+                  `;
+    $('.lineaDir6').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }
+}
+
+function lineaDir2(num) {
+  $('.lineaDir').removeClass('pl-3');
+  $('.textContentP').html(``);
+  if (num == 1) {
+    var contenido =`
+                  <p class="text-justify">Órganos de gobierno, los cuales toman las decisiones fundamentales para la dirección de la Universidad, el presidente del consejo superior también se considera como un órgano de gobierno (literal g, art. 22.4 – estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir1').addClass('pl-3');
+    $('.textContentP').html(contenido);
+
+  }else if (num == 2) {
+    var contenido =`
+                  <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
+                  `;
+    $('.lineaDir2').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 3) {
+    var contenido =`
+                  <p class="text-justify">Órganos Unipersonales: una persona ejerce las funciones. </p>
+                  `;
+    $('.lineaDir3').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 4) {
+    var contenido =`
+                  <p class="text-justify">Órganos Colegiados: están integrados por varias personas que pertenecen a los órganos y/o asociados, (artículo 10, estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir4').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 5) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Cogobierno, el cual se encuentra conformado por profesores, estudiantes y egresados exclusivamente. </p>
+                  `;
+    $('.lineaDir5').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 6) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Elección, los cuales en su conformación tienen representantes de estudiantes y de profesores o de profesores, estudiantes y egresados, están conformados exclusivamente por estos, así como son los del cogobierno. </p>
+                  `;
+    $('.lineaDir6').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }
+}
+
+/*pantallas 1*/
+function carpeta(num){
+  switch (parseInt(num)) {
+      case 1:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target1').removeClass('is-hidden');
+          $('.target1').addClass('not-hidden');
+          break;
+      case 2:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target2').removeClass('is-hidden');
+          $('.target2').addClass('not-hidden');
+          break;
+      case 3:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target3').removeClass('is-hidden');
+          $('.target3').addClass('not-hidden');
+          break;
+      case 4:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target4').removeClass('is-hidden');
+          $('.target4').addClass('not-hidden');
+          break;
+      case 5:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target5').removeClass('is-hidden');
+          $('.target5').addClass('not-hidden');
+          break;
+      case 6:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target6').removeClass('is-hidden');
+          $('.target6').addClass('not-hidden');
+          break;
+      case 7:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target7').removeClass('is-hidden');
+          $('.target7').addClass('not-hidden');
+          break;
+      case 8:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target8').removeClass('is-hidden');
+          $('.target8').addClass('not-hidden');
+          break;
+      default:
+          break;
+  }
 }
