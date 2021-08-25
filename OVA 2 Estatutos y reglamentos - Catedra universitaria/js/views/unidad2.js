@@ -284,3 +284,67 @@ function pintura(num){
             break;
     }
 }
+
+/*pantallas 1*/
+function carpeta(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target1').removeClass('is-hidden');
+            $('.target1').addClass('not-hidden');
+            break;
+        case 2:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target2').removeClass('is-hidden');
+            $('.target2').addClass('not-hidden');
+            break;
+        case 3:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target3').removeClass('is-hidden');
+            $('.target3').addClass('not-hidden');
+            break;
+        case 4:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target4').removeClass('is-hidden');
+            $('.target4').addClass('not-hidden');
+            break;
+        case 5:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target5').removeClass('is-hidden');
+            $('.target5').addClass('not-hidden');
+            break;
+        case 6:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target6').removeClass('is-hidden');
+            $('.target6').addClass('not-hidden');
+            break;
+        case 7:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target7').removeClass('is-hidden');
+            $('.target7').addClass('not-hidden');
+            break;
+        case 8:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
+
+            $('.target8').removeClass('is-hidden');
+            $('.target8').addClass('not-hidden');
+            break;
+        default:
+            break;
+    }
+}
