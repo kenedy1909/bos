@@ -239,9 +239,15 @@ iframe{
   background: #97182f;
 }
 .card .cover{
+  height: 105px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
   background: #540F23;
+}
+.card .cover1{
+  overflow: hidden!;
+  border-radius: 22px 22px 0 0!;
+  background: #540F23!;
 }
 .card .cover img{
   width: 100%;
