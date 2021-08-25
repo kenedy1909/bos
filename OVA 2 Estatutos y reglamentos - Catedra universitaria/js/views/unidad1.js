@@ -199,6 +199,16 @@ function controlSlides(num){
             break;
     }
 }
+function scroll_set(num) {
+  dragging = "";
+  diff = "";
+  newTop = "";
+  scrollOffset = "";
+  knob = document.querySelector('.custom-scrollbar__knob'+num);
+  bar = document.querySelector('.custom-scrollbar__bar'+num);
+  container = document.querySelector('.custom-scrollbar__inner'+num);
+  scroll();
+}
 
 function modal_scroll1(){
     dragging = "";

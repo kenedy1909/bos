@@ -753,6 +753,9 @@ p, button{
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
 }
+.bg-color-secondary-dark{
+	background: var(--bg-color-secondary-dark)!important;
+}
 
 .border-45{
 	border-radius: 45px;
@@ -824,6 +827,9 @@ p, button{
 .border_bd{
 	border-bottom: 1px solid var(--bg-color)!important;
 }
+.border_bds{
+	border-bottom: 1px solid var(--bg-color-secondary)!important;
+}
 
 .border-claro{
 	border: solid 2px var(--bg-color)!important;
@@ -832,6 +838,14 @@ p, button{
 	border: solid 2px var(--bg-color-secondary)!important;
 }
 
+.targetitas:hover{
+	border: 1px solid var(--bg-color-secondary)!important;
+	background: white!important;
+	color: black!important;
+}
+.targetitas:has(.triangulo-peque-w):hover{
+	visibility: visible;
+}
 
 .menos-margin-5{
 	margin-left: -5px!important;
@@ -859,6 +873,12 @@ p, button{
 }
 .menos-margin-150{
 	margin-left: -150px!important;
+}
+.menos-marginR-10{
+	margin-right: -10px!important;
+}
+.menos-marginR-15{
+	margin-right: -15px!important;
 }
 .menos-marginR-25{
 	margin-right: -25px!important;
@@ -932,7 +952,12 @@ p, button{
 .text-reducido{
 	font-size: 12px;
 }
-
+.text-secondary-claro{
+	color: var(--bg-color-secondary);
+}
+.lineaDir:hover{
+	padding-left: 1rem !important;
+}
 .fondo-libros{
 	background: url(../assets/img/img_ova/libros.png);
 	background-repeat: no-repeat;
@@ -941,7 +966,7 @@ p, button{
 }
 
 .mg-left{
-		margin-left: 20px;
+	margin-left: 20px;
 }
 .btn-y{
 	background-color: #ff9900;
@@ -953,7 +978,15 @@ p, button{
 .transition-on{
 	transition: all ease-in-out .6s ;
 }
-
+.transition-on-3{
+	transition: all ease-in-out .3s ;
+}
+.rotate-y{
+	transform: rotate(90deg);
+}
+.rotate-menos-y{
+	transform: rotate(-90deg);
+}
 
 .triangulo-equilatero-bottom {
 	width: 0;
@@ -1004,8 +1037,36 @@ p, button{
     right: -18px;
     bottom: 18px; 
 }
+.triangulo-peque {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 18px solid var(--bg-color-secondary);
+    border-right: 30px solid transparent;
+    margin-bottom: -34px;
+}
+.triangulo-peque2 {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 18px solid var(--bg-color-secondary);
+    border-right: 30px solid transparent;
+    margin-bottom: -35px;
+}
+.triangulo-peque-w {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 18px solid white;
+    border-right: 30px solid transparent;
+	position: absolute;
+    margin-top: -1px;
+}
 
-
+.circulos1:hover{
+	background: var(--bg-color-dark);
+	color: white;
+}
 
 /*Deslizador*/
 
@@ -1213,7 +1274,44 @@ a.animated-button.thar-two:before {
 .h-30px{
 	height: 30px;
 }
+.fondo1{
+	background-image: url(../assets/img/img_ova/fondo1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo4{
+	background-image: url(../assets/img/img_ova/fondo4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondoLibro1{
+	background-image: url(../assets/img/img_ova/libros1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondoLibro2{
+	background-image: url(../assets/img/img_ova/libros2.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondoLibro3{
+	background-image: url(../assets/img/img_ova/libros3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+
+.fondoLinea{
+	background-image: url(../assets/img/img_ova/fondo5.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .fondo-1{
 	background-image: url(../assets/img/img_ova/portada-libro.png);
 	background-size: contain;
