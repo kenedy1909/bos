@@ -18,13 +18,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado();
     console.log(tema);
@@ -56,6 +54,7 @@ $('.pdfs').html(pdf);
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+1+27+8);
 }
 
 function modal_scroll10(){
