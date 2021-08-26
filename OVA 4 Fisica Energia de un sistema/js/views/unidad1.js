@@ -118,25 +118,25 @@ for (var n = 0; n < inputsRy.length; n++) {
 
 // Inicio evento/efecto unidad1-3 => ruta destino: base/unidades/unidad1.html
 function eventUnidad1_3(num) {
-    $(".flechaVertical_1, .flechaVertical_2, .flechaVertical_3, .flechaVertical_4").html('<img class="img-100" src="/assets/img/img_ova/flecha_azul.png" alt="">');
+    $(".flechaVertical_1, .flechaVertical_2, .flechaVertical_3, .flechaVertical_4").html('<img class="img-100" src="assets/img/img_ova/flecha_azul.png" alt="">');
     switch (parseInt(num)) {
         case 0:
             $("#verEventUnd1-3").html('');
             break;
         case 1:
-            $(".flechaVertical_1").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
-            $("#verEventUnd1-3").html('<p class="justificado p_black">Una definición alterna para trabajo sería: “El trabajo, cantidad física equivalente al producto punto entre el vector de la fuerza resultante sobre una partícula y el de su desplazamiento”. Se nota que si esta fuerza es constante entonces el trabajo calculado durante el tiempo que se aplique la fuerza será una cantidad escalar y además se puede interpretar como el producto del desplazamiento y la componente de la fuerza en la dirección del movimiento. A continuación, se muestra la ecuación del trabajo:</p><img src="/assets/img/img_ova/texto.png" alt="formula" style="width: 200px;">');
+            $(".flechaVertical_1").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $("#verEventUnd1-3").html('<p class="justificado p_black">Una definición alterna para trabajo sería: “El trabajo, cantidad física equivalente al producto punto entre el vector de la fuerza resultante sobre una partícula y el de su desplazamiento”. Se nota que si esta fuerza es constante entonces el trabajo calculado durante el tiempo que se aplique la fuerza será una cantidad escalar y además se puede interpretar como el producto del desplazamiento y la componente de la fuerza en la dirección del movimiento. A continuación, se muestra la ecuación del trabajo:</p><img src="assets/img/img_ova/texto.png" alt="formula" style="width: 200px;">');
             break;
         case 2:
-            $(".flechaVertical_2").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $(".flechaVertical_2").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
             $("#verEventUnd1-3").html('<p class="justificado p_black">La unidad de trabajo en el SI es el joule (que se abrevia J, nombrado así en honor del físico inglés del siglo XIX James Prescott Joule) y equivale a un Newton por metro. En el sistema británico, la unidad de fuerza es la libra (lb), la unidad de distancia es el pie (ft), y la unidad de trabajo es el pie-libra (ft·lb).</p>');
             break;
         case 3:
-            $(".flechaVertical_3").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $(".flechaVertical_3").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
             $("#verEventUnd1-3").html('<p class="justificado p_black">Es importante entender que el trabajo también puede ser negativo o incluso cero. En alguna circunstancia cuando se intenta subir una nevera por una rampa o escalera y aunque se jale con fuerza la nevera se mueve hacia abajo. Esta es la diferencia esencial entre la definición de trabajo en física y la definición “cotidiana” del mismo.</p>');
             break;
         case 4:
-            $(".flechaVertical_4").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $(".flechaVertical_4").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
             $("#verEventUnd1-3").html('<p class="justificado p_black">Ahora se plantean las opciones para un trabajo positivo, negativo y cero:</p><ul><li class="justificado p_black">Si la fuerza tiene una componente en la misma dirección que el desplazamiento, es decir, ϕ entre 0° y 90°, entonces el cos(ϕ) y el trabajo (W) son positivos.</li><li class="justificado p_black">Si la fuerza tiene una componente opuesta al desplazamiento, es decir, ϕ entre 90° y 180°, entonces el cos(ϕ) y el trabajo (W) son negativos.</li><li class="justificado p_black">Si la fuerza es perpendicular al desplazamiento, el trabajo (W) realizado por la fuerza es cero.</li></ul>');
             break;
         default:
@@ -258,12 +258,12 @@ $("#btn1-und2-3").click(function () {
     $("#eventoUnidad2-3").html(
         `<div class="row align-items-center justify-content-center position-absolute und2-3-1">
         <div class="col-md-6 p-0">
-            <p class="justificado p_black font13">La cantidad de movimiento se define como el producto de la masa de un objeto y su velocidad <img style="width: 50px;" src="/assets/img/img_ova/formula3.png" alt="">,se debe tener en cuenta que la cantidad
+            <p class="justificado p_black font13">La cantidad de movimiento se define como el producto de la masa de un objeto y su velocidad <img style="width: 50px;" src="assets/img/img_ova/formula3.png" alt="">,se debe tener en cuenta que la cantidad
                 de movimiento es una cantidad vectorial, cuando la dirección no es un factor importante, se puede mencionar que la cantidad de movimiento es masa por rapidez. En la definición se puede ver que un objeto
                 en movimiento puede tener una gran cantidad de movimiento si su masa o su velocidad es grande, o si tanto su masa como su velocidad son grandes.</p>
         </div>
         <div class="col-md-2 p-0">
-            <img class="rounded" src="/assets/img/img_ova/imagen18.png" alt="imagen18" style="width: 218px;">
+            <img class="rounded" src="assets/img/img_ova/imagen18.png" alt="imagen18" style="width: 218px;">
         </div>
     </div>`);
     $("#eventoUnidad2-3").show();
@@ -275,7 +275,7 @@ $("#btn2-und2-3").click(function () {
     $("#eventoUnidad2-3").hide();
     $("#eventoUnidad2-3").html(
         `<div class="row align-items-center justify-content-center position-absolute und2-3-2">
-        <img class="img1-und2-3-2" src="/assets/img/img_ova/Camion.png" alt="camion">
+        <img class="img1-und2-3-2" src="assets/img/img_ova/Camion.png" alt="camion">
         <div class="col-md-4 borde-dashed px-4 py-5 mr-3" style="min-height: 214px">
             <p class="justificado p_black font13">El camión tiene más cantidad de movimiento que el carro que se mueve con
                 la misma rapidez porque el camión tiene mayor masa.</p>
@@ -285,7 +285,7 @@ $("#btn2-und2-3").click(function () {
                 tener una gran cantidad de movimiento, como la puede tener una pequeña bala que se mueve con gran rapidez.
             </p>
         </div>
-        <img class="img2-und2-3-2" src="/assets/img/img_ova/Barco.png" alt="barco">
+        <img class="img2-und2-3-2" src="assets/img/img_ova/Barco.png" alt="barco">
     </div>`);
     $("#eventoUnidad2-3").show();
 });
@@ -302,7 +302,7 @@ $("#btn3-und2-3").click(function () {
                     hizo en términos del momento así:</p>
             </div>
         </div>
-        <img class="w-50" src="/assets/img/img_ova/formula6.png" alt="formula6">
+        <img class="w-50" src="assets/img/img_ova/formula6.png" alt="formula6">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <p class="justificado p_black font13">A la cantidad p, se le suele llamar momento lineal o
@@ -330,7 +330,7 @@ $("#btn4-und2-3").click(function () {
         </div>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-2 d-flex justify-content-end p-0">
-            <img class="w-50" src="/assets/img/img_ova/Relojarena.png" alt="reloj arena">
+            <img class="w-50" src="assets/img/img_ova/Relojarena.png" alt="reloj arena">
           </div>
           <div class="col-md-8">
             <p class="justificado p_black font13"><b>¿Qué produce esa aceleración?</b><br>
