@@ -118,25 +118,25 @@ for (var n = 0; n < inputsRy.length; n++) {
 
 // Inicio evento/efecto unidad1-3 => ruta destino: base/unidades/unidad1.html
 function eventUnidad1_3(num) {
-    $(".flechaVertical_1, .flechaVertical_2, .flechaVertical_3, .flechaVertical_4").html('<img class="img-100" src="/assets/img/img_ova/flecha_azul.png" alt="">');
+    $(".flechaVertical_1, .flechaVertical_2, .flechaVertical_3, .flechaVertical_4").html('<img class="img-100" src="assets/img/img_ova/flecha_azul.png" alt="">');
     switch (parseInt(num)) {
         case 0:
             $("#verEventUnd1-3").html('');
             break;
         case 1:
-            $(".flechaVertical_1").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
-            $("#verEventUnd1-3").html('<p class="justificado p_black">Una definición alterna para trabajo sería: “El trabajo, cantidad física equivalente al producto punto entre el vector de la fuerza resultante sobre una partícula y el de su desplazamiento”. Se nota que si esta fuerza es constante entonces el trabajo calculado durante el tiempo que se aplique la fuerza será una cantidad escalar y además se puede interpretar como el producto del desplazamiento y la componente de la fuerza en la dirección del movimiento. A continuación, se muestra la ecuación del trabajo:</p><br><p><b>PENDIENTE FORMULA</b></p>');
+            $(".flechaVertical_1").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $("#verEventUnd1-3").html('<p class="justificado p_black">Una definición alterna para trabajo sería: “El trabajo, cantidad física equivalente al producto punto entre el vector de la fuerza resultante sobre una partícula y el de su desplazamiento”. Se nota que si esta fuerza es constante entonces el trabajo calculado durante el tiempo que se aplique la fuerza será una cantidad escalar y además se puede interpretar como el producto del desplazamiento y la componente de la fuerza en la dirección del movimiento. A continuación, se muestra la ecuación del trabajo:</p><img src="assets/img/img_ova/texto.png" alt="formula" style="width: 200px;">');
             break;
         case 2:
-            $(".flechaVertical_2").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $(".flechaVertical_2").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
             $("#verEventUnd1-3").html('<p class="justificado p_black">La unidad de trabajo en el SI es el joule (que se abrevia J, nombrado así en honor del físico inglés del siglo XIX James Prescott Joule) y equivale a un Newton por metro. En el sistema británico, la unidad de fuerza es la libra (lb), la unidad de distancia es el pie (ft), y la unidad de trabajo es el pie-libra (ft·lb).</p>');
             break;
         case 3:
-            $(".flechaVertical_3").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $(".flechaVertical_3").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
             $("#verEventUnd1-3").html('<p class="justificado p_black">Es importante entender que el trabajo también puede ser negativo o incluso cero. En alguna circunstancia cuando se intenta subir una nevera por una rampa o escalera y aunque se jale con fuerza la nevera se mueve hacia abajo. Esta es la diferencia esencial entre la definición de trabajo en física y la definición “cotidiana” del mismo.</p>');
             break;
         case 4:
-            $(".flechaVertical_4").html('<img class="img-100" src="/assets/img/img_ova/flecha_amarrilla.png" alt="">')
+            $(".flechaVertical_4").html('<img class="img-100" src="assets/img/img_ova/flecha_amarrilla.png" alt="">')
             $("#verEventUnd1-3").html('<p class="justificado p_black">Ahora se plantean las opciones para un trabajo positivo, negativo y cero:</p><ul><li class="justificado p_black">Si la fuerza tiene una componente en la misma dirección que el desplazamiento, es decir, ϕ entre 0° y 90°, entonces el cos(ϕ) y el trabajo (W) son positivos.</li><li class="justificado p_black">Si la fuerza tiene una componente opuesta al desplazamiento, es decir, ϕ entre 90° y 180°, entonces el cos(ϕ) y el trabajo (W) son negativos.</li><li class="justificado p_black">Si la fuerza es perpendicular al desplazamiento, el trabajo (W) realizado por la fuerza es cero.</li></ul>');
             break;
         default:
@@ -149,32 +149,32 @@ function eventUnidad1_3(num) {
 
 // Inicio evento/efecto unidad1-5 => ruta destino: base/unidades/unidad1.html
 // boton # 1
-$("#btn1Und1_5").mouseenter(function() {
+$("#btn1Und1_5").mouseenter(function () {
     $("#caja-msj").html('<p class="caja-texto-msj position-absolute">Siempre se habla de trabajo realizado sobre un cuerpo específico por una fuerza determinada. Nunca se debe olvidar especificar exactamente qué fuerza realiza el trabajo en cuestión. Si se levanta un libro, se ejerce una fuerza hacia arriba sobre el libro y el desplazamiento de este es hacia arriba, así que el trabajo realizado por la fuerza de levantamiento sobre el libro es positivo.</p>');
     $("#caja-msj").show();
 });
 
-$("#btn1Und1_5").mouseleave(function() {
+$("#btn1Und1_5").mouseleave(function () {
     $("#caja-msj").hide();
 });
 
 // boton # 2
-$("#btn2Und1_5").mouseenter(function() {
+$("#btn2Und1_5").mouseenter(function () {
     $("#caja-msj").html('<p class="caja-texto-msj position-absolute" style="top:43%">En cambio, el trabajo realizado por la fuerza gravitacional (peso) sobre el libro que se levanta es negativo, porque la fuerza es opuesta al desplazamiento hacia arriba.</p>');
     $("#caja-msj").show();
 });
 
-$("#btn2Und1_5").mouseleave(function() {
+$("#btn2Und1_5").mouseleave(function () {
     $("#caja-msj").hide();
 });
 
 // boton # 3
-$("#btn3Und1_5").mouseenter(function() {
-    $("#caja-msj").html('<p class="caja-texto-msj position-absolute" style="top:47%">Es importante saber que el trabajo (W) es una transferencia de energía. Es decir, si W es el trabajo realizado sobre un sistema y es positivo, se dice que se transfiere al sistema; pero si el trabajo (W) es negativo, se dice que la energía se transfiere desde el sistema. Por lo tanto, al sistema interactuar con su entorno produce una interacción que se describe como una transferencia de energía a través de las fronteras del sistema dando como resultado un cambio en la energía almacenada en el sistema. </p>');
+$("#btn3Und1_5").mouseenter(function () {
+    $("#caja-msj").html('<p class="caja-texto-msj position-absolute" style="top:57%">Es importante saber que el trabajo (W) es una transferencia de energía. Es decir, si W es el trabajo realizado sobre un sistema y es positivo, se dice que se transfiere al sistema; pero si el trabajo (W) es negativo, se dice que la energía se transfiere desde el sistema. Por lo tanto, al sistema interactuar con su entorno produce una interacción que se describe como una transferencia de energía a través de las fronteras del sistema dando como resultado un cambio en la energía almacenada en el sistema. </p>');
     $("#caja-msj").show();
 });
 
-$("#btn3Und1_5").mouseleave(function() {
+$("#btn3Und1_5").mouseleave(function () {
     $("#caja-msj").hide();
 });
 // Fin evento/efecto unidad1-5
@@ -183,37 +183,37 @@ $("#btn3Und1_5").mouseleave(function() {
 // Inicio evento/efecto unidad1-10 => ruta destino: base/unidades/unidad1.html
 
 // tarjeta # 1
-$("#cajaImgMsj_1").mouseenter(function() {
+$("#cajaImgMsj_1").mouseenter(function () {
     $("#imgMsj_1").hide();
     $("#p-imgMsj_1").html('<p class="position-absolute pUnd1-10">Cuando un arquero realiza trabajo para tensar la cuerda de su arco, el arco doblado adquiere la capacidad de realizar trabajo sobre la flecha.</p>');
     $("#p-imgMsj_1").show();
 });
 
-$("#cajaImgMsj_1").mouseleave(function() {
+$("#cajaImgMsj_1").mouseleave(function () {
     $("#p-imgMsj_1").hide();
     $("#imgMsj_1").show();
 });
 
 // tarjeta # 2
-$("#cajaImgMsj_2").mouseenter(function() {
+$("#cajaImgMsj_2").mouseenter(function () {
     $("#imgMsj_2").hide();
     $("#p-imgMsj_2").html('<p class="position-absolute pUnd1-10">Cuando se realiza trabajo para elevar el pesado pistón de un mazo, el pistón adquiere la capacidad de realizar trabajo sobre el objeto que golpea cuando cae.</p>');
     $("#p-imgMsj_2").show();
 });
 
-$("#cajaImgMsj_2").mouseleave(function() {
+$("#cajaImgMsj_2").mouseleave(function () {
     $("#p-imgMsj_2").hide();
     $("#imgMsj_2").show();
 });
 
 // tarjeta # 3
-$("#cajaImgMsj_3").mouseenter(function() {
+$("#cajaImgMsj_3").mouseenter(function () {
     $("#imgMsj_3").hide();
     $("#p-imgMsj_3").html('<p class="position-absolute">Cuando se realiza trabajo para envolver un mecanismo de resorte, el resorte adquiere la capacidad para realizar trabajo sobre varios engranes para operar un reloj, timbrar una campana o sonar una alarma.</p>');
     $("#p-imgMsj_3").show();
 });
 
-$("#cajaImgMsj_3").mouseleave(function() {
+$("#cajaImgMsj_3").mouseleave(function () {
     $("#p-imgMsj_3").hide();
     $("#imgMsj_3").show();
 });
@@ -222,28 +222,28 @@ $("#cajaImgMsj_3").mouseleave(function() {
 
 // Inicio evento/efecto unidad1-17 => ruta destino: base/unidades/unidad1.html
 // acordeon # 1
-$("#btnAcordeon1").click(function() { 
-    $("#acordeon1").slideToggle("slow"); 
+$("#btnAcordeon1").click(function () {
+    $("#acordeon1").slideToggle("slow");
 });
 
 // acordeon # 2
-$("#btnAcordeon2").click(function() { 
-    $("#acordeon2").slideToggle("slow"); 
+$("#btnAcordeon2").click(function () {
+    $("#acordeon2").slideToggle("slow");
 });
 
 // acordeon # 3
-$("#btnAcordeon3").click(function() { 
-    $("#acordeon3").slideToggle("slow"); 
+$("#btnAcordeon3").click(function () {
+    $("#acordeon3").slideToggle("slow");
 });
 
 // acordeon # 4
-$("#btnAcordeon4").click(function() { 
-    $("#acordeon4").slideToggle("slow"); 
+$("#btnAcordeon4").click(function () {
+    $("#acordeon4").slideToggle("slow");
 });
 
 // acordeon # 5
-$("#btnAcordeon5").click(function() { 
-    $("#acordeon5").slideToggle("slow"); 
+$("#btnAcordeon5").click(function () {
+    $("#acordeon5").slideToggle("slow");
 });
 // Fin evento/efecto unidad1-17
 
@@ -251,34 +251,31 @@ $("#btnAcordeon5").click(function() {
 
 // Inicio evento/efecto unidad1-20 => ruta destino: base/unidades/unidad2.html
 
-$("#btn1-und2-3").click(function() {
+$("#btn1-und2-3").click(function () {
     $(".btn-und2-3").removeClass("btn-und2-3-color");
     $(this).addClass("btn-und2-3-color");
     $("#eventoUnidad2-3").hide();
     $("#eventoUnidad2-3").html(
         `<div class="row align-items-center justify-content-center position-absolute und2-3-1">
-            <div class="col-md-6 p-0">
-            <p class="justificado p_black font13">La cantidad de movimiento se define como el producto de la masa de un
-                objeto y su velocidad <img style="width: 50px;" src="/assets/img/img_ova/formula3.png" alt="">,se debe tener
-                en cuenta que la cantidad de movimiento es una cantidad vectorial, cuando la dirección no es un factor
-                importante, se puede mencionar que la cantidad de movimiento es masa por rapidez. En la definición se puede
-                ver que un objeto en movimiento puede tener una gran cantidad de movimiento si su masa o su velocidad es
-                grande, o si tanto su masa como su velocidad son grandes.</p>
+        <div class="col-md-6 p-0">
+            <p class="justificado p_black font13">La cantidad de movimiento se define como el producto de la masa de un objeto y su velocidad <img style="width: 50px;" src="assets/img/img_ova/formula3.png" alt="">,se debe tener en cuenta que la cantidad
+                de movimiento es una cantidad vectorial, cuando la dirección no es un factor importante, se puede mencionar que la cantidad de movimiento es masa por rapidez. En la definición se puede ver que un objeto
+                en movimiento puede tener una gran cantidad de movimiento si su masa o su velocidad es grande, o si tanto su masa como su velocidad son grandes.</p>
         </div>
         <div class="col-md-2 p-0">
-            <img class="rounded" src="/assets/img/img_ova/formula18.png" alt="">
+            <img class="rounded" src="assets/img/img_ova/imagen18.png" alt="imagen18" style="width: 218px;">
         </div>
-        </div>`);
+    </div>`);
     $("#eventoUnidad2-3").show();
 });
 
-$("#btn2-und2-3").click(function() {
+$("#btn2-und2-3").click(function () {
     $(".btn-und2-3").removeClass("btn-und2-3-color");
     $(this).addClass("btn-und2-3-color");
     $("#eventoUnidad2-3").hide();
     $("#eventoUnidad2-3").html(
         `<div class="row align-items-center justify-content-center position-absolute und2-3-2">
-        <img class="img1-und2-3-2" src="/assets/img/img_ova/camion2.png" alt="">
+        <img class="img1-und2-3-2" src="assets/img/img_ova/Camion.png" alt="camion">
         <div class="col-md-4 borde-dashed px-4 py-5 mr-3" style="min-height: 214px">
             <p class="justificado p_black font13">El camión tiene más cantidad de movimiento que el carro que se mueve con
                 la misma rapidez porque el camión tiene mayor masa.</p>
@@ -288,12 +285,12 @@ $("#btn2-und2-3").click(function() {
                 tener una gran cantidad de movimiento, como la puede tener una pequeña bala que se mueve con gran rapidez.
             </p>
         </div>
-        <img class="img2-und2-3-2" src="/assets/img/img_ova/Barco.png" alt="">
+        <img class="img2-und2-3-2" src="assets/img/img_ova/Barco.png" alt="barco">
     </div>`);
     $("#eventoUnidad2-3").show();
 });
 
-$("#btn3-und2-3").click(function() {
+$("#btn3-und2-3").click(function () {
     $(".btn-und2-3").removeClass("btn-und2-3-color");
     $(this).addClass("btn-und2-3-color");
     $("#eventoUnidad2-3").hide();
@@ -305,7 +302,7 @@ $("#btn3-und2-3").click(function() {
                     hizo en términos del momento así:</p>
             </div>
         </div>
-        <img class="w-50" src="/assets/img/img_ova/formula6.png" alt="">
+        <img class="w-50" src="assets/img/img_ova/formula6.png" alt="formula6">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <p class="justificado p_black font13">A la cantidad p, se le suele llamar momento lineal o
@@ -318,7 +315,7 @@ $("#btn3-und2-3").click(function() {
     $("#eventoUnidad2-3").show();
 });
 
-$("#btn4-und2-3").click(function() {
+$("#btn4-und2-3").click(function () {
     $(".btn-und2-3").removeClass("btn-und2-3-color");
     $(this).addClass("btn-und2-3-color");
     $("#eventoUnidad2-3").hide();
@@ -333,7 +330,7 @@ $("#btn4-und2-3").click(function() {
         </div>
         <div class="row align-items-center justify-content-center">
           <div class="col-md-2 d-flex justify-content-end p-0">
-            <img class="w-50" src="/assets/img/img_ova/Relojarena.png" alt="">
+            <img class="w-50" src="assets/img/img_ova/Relojarena.png" alt="reloj arena">
           </div>
           <div class="col-md-8">
             <p class="justificado p_black font13"><b>¿Qué produce esa aceleración?</b><br>
@@ -344,7 +341,7 @@ $("#btn4-und2-3").click(function() {
     $("#eventoUnidad2-3").show();
 });
 
-$("#btn5-und2-3").click(function() {
+$("#btn5-und2-3").click(function () {
     $(".btn-und2-3").removeClass("btn-und2-3-color");
     $(this).addClass("btn-und2-3-color");
     $("#eventoUnidad2-3").hide();
@@ -370,6 +367,7 @@ $("#btn5-und2-3").click(function() {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
+
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex + 1);
@@ -392,80 +390,115 @@ function slide_link(num) {
 function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Introducción a la Planeación estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
 
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Introducción a la Planeación estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Introducción a la Planeación estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Introducción a la Planeación estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Desarrollo de las etapas de la Planeación Estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Desarrollo de las etapas de la Planeación Estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Desarrollo de las etapas de la Planeación Estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Planeación estratégica");
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
-
         case 13:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "El trabajo y la energía");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje", "1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
+        case 21:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 22:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 23:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 25:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 26:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 27:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 28:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 29:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 30:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 31:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 32:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 33:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 34:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 35:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+        case 36:
+            setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
+            break;
+
         default:
             break;
     }
@@ -536,6 +569,7 @@ function objetivos(num) {
             break;
     }
 }
+
 function infoactivi2(num) {
     switch (parseInt(num)) {
 
@@ -832,18 +866,21 @@ function funcionalidad_2(num) {
             break;
     }
 }
+
 function scroll_uno() {
     knob = document.querySelector('.custom-scrollbar__knob_uno');
     bar = document.querySelector('.custom-scrollbar__bar_uno');
     container = document.querySelector('.custom-scrollbar__inner_uno');
     scroll();
 }
+
 function scroll_dos() {
     knob = document.querySelector('.custom-scrollbar__knob_dos');
     bar = document.querySelector('.custom-scrollbar__bar_dos');
     container = document.querySelector('.custom-scrollbar__inner_dos');
     scroll();
 }
+
 function scroll_tres() {
     knob = document.querySelector('.custom-scrollbar__knob_tres');
     bar = document.querySelector('.custom-scrollbar__bar_tres');
@@ -1018,4 +1055,3 @@ $("#btnEvaFinal").click(function () {
 //       /*alert();*/
 //   });
 // }
-
