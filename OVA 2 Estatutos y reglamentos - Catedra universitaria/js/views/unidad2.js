@@ -92,6 +92,31 @@ function controlSlides(num){
         case 8:
             setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
+        case 9:
+            $(".i3").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];
+            var i = new Input2(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input2(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar2();
+                }, false)
+              }(n));
+            }
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;
         default:
             break;
     }
@@ -285,3 +310,95 @@ function pintura(num){
     }
 }
 
+/*pantalla1*/
+
+
+function scroll_horizontal2(num) {
+    switch (parseInt(num)) {
+        case 0:
+            $('.cont-slideH').addClass('oculto-on');
+            $('.cont-slideH').removeClass('oculto-off');
+
+            $('.ordinaria').removeClass('oculto-on');
+            $('.ordinaria').addClass('oculto-off');
+
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
+
+            $('.comodin').removeClass('comodinInactive');
+            $('.comodin').addClass('comodinActive');
+            break;
+        case 1:
+            $('.cont-slideH').addClass('oculto-on');
+            $('.cont-slideH').removeClass('oculto-off');
+
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
+            break;
+        case 2:
+            $('.cont-slideH').addClass('oculto-on');
+            $('.cont-slideH').removeClass('oculto-off');
+
+            $('.extraordinaria').removeClass('oculto-on');
+            $('.extraordinaria').addClass('oculto-off');
+
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
+
+            $('.comodin2').removeClass('comodinInactive');
+            $('.comodin2').addClass('comodinActive');
+            break;
+        default:
+            break;
+    }
+}
+function Input2(num) {
+  /*<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">*/
+  this.att = {};
+  this.att.type = "range";
+  this.att.value = 1;
+  this.att.min = 0;
+  this.att.max = num;
+  this.att.autocomplete = "off";
+  this.att.step = "1";
+  this.input;
+  this.output;
+
+  this.crear = function(elementoPadre) {
+    // crea un nuevo elemento input
+    this.input = document.createElement("input");
+    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+    for (var name in this.att) {
+      if (this.att.hasOwnProperty(name)) {
+        this.input.setAttribute(name, this.att[name]);
+      }
+    }
+    // crea un nuevo elemento div
+    this.output = document.createElement("div");
+    // establece el valor del atributo class del nuevo div
+    this.output.setAttribute("class", "output");
+    // y el contenido (innerHTML) de este
+    this.output.innerHTML = this.att.value;
+
+    // inserta los dos elementos creados al final  del elemento Padre 
+    elementoPadre.appendChild(this.input);
+    elementoPadre.appendChild(this.output);
+  }
+
+  this.actualizar = function() {
+    scroll_horizontal(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
+  this.actualizar2 = function() {
+    scroll_horizontal2(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
+}
