@@ -46,6 +46,17 @@ $( document ).ready(function() {
        $(".ventajas2").show(300);
     })
 
+    $(".bpr1").on("click", function () {
+       $(".pr1").show(300);
+    })
+
+    $(".bpr2").on("click", function () {
+       $(".pr2").show(300);
+    })
+    $(".bpr3").on("click", function () {
+       $(".pr3").show(300);
+    })
+
     $(".i3").html('')   
     var elementoPadre1 = document.querySelector(".inputDiv2.i3");
     var elementoPadre2 = document.querySelector(".inputDiv2.i4");
