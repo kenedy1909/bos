@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	var img1 = `
-				<img class="img_questionario" src="../../../assets/img/img_ova/sabermas.webp">
+				<img class="img_questionario" src="../../../assets/img/img_ova/ec2.png">
 				`;
 	var img2 = `
-				<img class="img_questionario" src="../../../assets/img/img_ova/sabermas.webp">
+				<img class="img_questionario" src="../../../assets/img/img_ova/ec2.png">
 				`;
 	$(".img_questionario1").html(img1);
 	$(".img_questionario2").html(img2);
@@ -53,12 +53,6 @@ function siguente(){
 		$("#siguente").data('slide', 5);
 		/*$("#atras").data('slide', 1);*/
 	}else if (slide == 5) {
-		$("#siguente").data('slide', 6);
-		/*$("#atras").data('slide', 1);*/
-	}else if (slide == 6) {
-		$("#siguente").data('slide', 7);
-		/*$("#atras").data('slide', 1);*/
-	}else if (slide == 7) {
 		$("#siguente").data('slide', 1);
 		/*$("#atras").data('slide', 1);*/
 	}
