@@ -14,7 +14,8 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -62,42 +63,116 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
-
+var sumaslide = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            var pdf = `<p class="p_white">
+                            <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia1_Principios-del-marketing-digital.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>
+                      <p class="p_white">
+                            <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia2_Redes-Sociales.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                      </p>`;
+            $('.pdfs').html(pdf);
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","Conceptos Generales de la TGS");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
-             
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
-            tema=1;
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            
+            break;
+        case 12:
+            sumaslide++;
+            if (sumaslide < 2) {
+                var slideCount = $('#slider2 ul li').length;
+                var slideWidth = $('#slider2 ul li').width();
+                var slideHeight = $('#slider2 ul li').height();
+                var sliderUlWidth = slideCount * slideWidth;
+                
+                $('#slider2').css({ width: '100%', height: '700' });
+                
+                $('#slider2 ul').css({ width: '90%'});
+                
+                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+
+                function moveLeft2() {
+                    $('#slider2 ul').animate({
+                        left: + slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                function moveRight2() {
+                    $('#slider2 ul').animate({
+                        left: - slideWidth
+                    }, 200, function () {
+                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                        $('#slider2 ul').css('left', '');
+                    });
+                };
+
+                $('a.control_prev2').click(function (e) {
+                    moveLeft2();
+                    e.preventDefault();
+                });
+
+                $('a.control_next2').click(function (e) {
+                    moveRight2();
+                    e.preventDefault();
+                });
+            }
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         default:
             break;
@@ -234,6 +309,22 @@ function targetsreds(num){
 
             $('.banep2').removeClass('invisible');
             $('.banep2').addClass('visible');
+            break;
+        default:
+            break;
+    }
+}
+function verman(num){
+    switch (parseInt(num)) {
+        case 1:
+
+            $('.verman1').removeClass('escondido');
+            $('.verman1').addClass('mostrado');
+            break;
+        case 2:
+
+            $('.verman2').removeClass('escondido');
+            $('.verman2').addClass('mostrado');
             break;
         default:
             break;

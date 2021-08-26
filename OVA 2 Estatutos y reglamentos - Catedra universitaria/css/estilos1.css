@@ -753,6 +753,12 @@ p, button{
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
 }
+.bg-color-secondary-claro{
+	background: #cfd5ea!important;
+}
+.bg-color-secondary-dark{
+	background: var(--bg-color-secondary-dark)!important;
+}
 
 .border-45{
 	border-radius: 45px;
@@ -824,7 +830,12 @@ p, button{
 .border_bd{
 	border-bottom: 1px solid var(--bg-color)!important;
 }
-
+.border_bds{
+	border-bottom: 1px solid var(--bg-color-secondary)!important;
+}
+.border-tn{
+	border-top: black 1px solid;
+}
 .border-claro{
 	border: solid 2px var(--bg-color)!important;
 }
@@ -832,6 +843,14 @@ p, button{
 	border: solid 2px var(--bg-color-secondary)!important;
 }
 
+.targetitas{
+	border: 1px solid var(--bg-color-secondary)!important;
+	background: white!important;
+	color: black!important;
+}
+.tMuestra{
+	visibility: visible!important;
+}
 
 .menos-margin-5{
 	margin-left: -5px!important;
@@ -841,6 +860,9 @@ p, button{
 }
 .menos-margin-15{
 	margin-left: -15px!important;
+}
+.menos-margin-20{
+	margin-left: -20px!important;
 }
 .menos-margin-25{
 	margin-left: -25px!important;
@@ -859,6 +881,12 @@ p, button{
 }
 .menos-margin-150{
 	margin-left: -150px!important;
+}
+.menos-marginR-10{
+	margin-right: -10px!important;
+}
+.menos-marginR-15{
+	margin-right: -15px!important;
 }
 .menos-marginR-25{
 	margin-right: -25px!important;
@@ -880,6 +908,9 @@ p, button{
 }
 .menos-marginT-10{
 	margin-top: -10px!important;
+}
+.menos-marginT-15{
+	margin-top: -15px!important;
 }
 .menos-marginT-25{
 	margin-top: -25px!important;
@@ -904,6 +935,9 @@ p, button{
 }
 .menos-marginB-10{
 	margin-bottom: -10px!important;
+}
+.menos-marginB-15{
+	margin-bottom: -15px!important;
 }
 .menos-marginB-25{
 	margin-bottom: -25px!important;
@@ -932,7 +966,12 @@ p, button{
 .text-reducido{
 	font-size: 12px;
 }
-
+.text-secondary-claro{
+	color: var(--bg-color-secondary);
+}
+.lineaDir:hover{
+	padding-left: 1rem !important;
+}
 .fondo-libros{
 	background: url(../assets/img/img_ova/libros.png);
 	background-repeat: no-repeat;
@@ -941,7 +980,7 @@ p, button{
 }
 
 .mg-left{
-		margin-left: 20px;
+	margin-left: 20px;
 }
 .btn-y{
 	background-color: #ff9900;
@@ -953,7 +992,15 @@ p, button{
 .transition-on{
 	transition: all ease-in-out .6s ;
 }
-
+.transition-on-3{
+	transition: all ease-in-out .3s ;
+}
+.rotate-y{
+	transform: rotate(90deg);
+}
+.rotate-menos-y{
+	transform: rotate(-90deg);
+}
 
 .triangulo-equilatero-bottom {
 	width: 0;
@@ -971,7 +1018,7 @@ p, button{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     position: absolute;
-    right: -18px;
+    right: -19px;
     bottom: 18px; 
 }
 .triangulo-l-1-1 {
@@ -981,7 +1028,17 @@ p, button{
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
     position: absolute;
-    right: -17px;
+    right: -16px;
+    bottom: 18px; 
+}
+.triangulo-l-1-2 {
+	width: 0;
+    height: 0;
+    border-left: 20px solid var(--bg-color-secondary);
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    right: -20px;
     bottom: 18px; 
 }
 .triangulo-l-2 {
@@ -1004,8 +1061,45 @@ p, button{
     right: -18px;
     bottom: 18px; 
 }
+.triangulo-peque {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 18px solid var(--bg-color-secondary);
+    border-right: 30px solid transparent;
+    margin-bottom: -34px;
+}
+.triangulo-peque2 {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 18px solid var(--bg-color-secondary);
+    border-right: 30px solid transparent;
+    margin-bottom: -35px;
+}
+.triangulo-peque-w {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-top: 18px solid white;
+    border-right: 30px solid transparent;
+	position: absolute;
+    margin-top: -1px;
+}
 
-
+.circulos1:hover{
+	background: var(--bg-color-dark);
+	color: white;
+}
+.tableU15{
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+.border-whiteU15{
+	border: 1px solid white;
+	padding: 0.5rem !important;
+	text-align: center;
+}
 
 /*Deslizador*/
 
@@ -1213,7 +1307,56 @@ a.animated-button.thar-two:before {
 .h-30px{
 	height: 30px;
 }
+.fondo1{
+	background-image: url(../assets/img/img_ova/fondo1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo2{
+	background-image: url(../assets/img/img_ova/teamwork.png);
+	background-size: content;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo3{
+	background-image: url(../assets/img/img_ova/fondo3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondo4{
+	background-image: url(../assets/img/img_ova/fondo4.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondoLibro1{
+	background-image: url(../assets/img/img_ova/libros1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondoLibro2{
+	background-image: url(../assets/img/img_ova/libros2.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fondoLibro3{
+	background-image: url(../assets/img/img_ova/libros3.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
+
+.fondoLinea{
+	background-image: url(../assets/img/img_ova/fondo5.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .fondo-1{
 	background-image: url(../assets/img/img_ova/portada-libro.png);
 	background-size: contain;
@@ -1479,4 +1622,45 @@ a.control_next {
     position: relative;
     top: -32px;
     color: #FFFFFF;
+}
+
+
+/*pantallas 1*/
+
+.baneTarget{
+    background: #fff;
+    padding: 25px 10px 70px 10px;
+    width: 80%;
+    box-shadow: 1px 1px 5px 2px;
+    bottom:0;
+    position: absolute;
+}
+.carpeta{
+    position: relative;
+    top: -30px;
+    height: 229px;
+    width: 622px;
+    left: -130px;
+}
+
+.is-hidden {
+  height:50px;
+  transition: height 1s ease-in-out;
+}
+
+.not-hidden {
+  height: 315px;
+  transition: height 1s ease-in-out;
+}
+.msg {
+  display:none;
+}
+.btn-carpeta{
+  height: 15px;
+    width: 15px;
+    background: #757EED;
+    border-radius: 50%;
+    margin-left: 5px;
+    border: solid 1px #97182f;
+  
 }

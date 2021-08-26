@@ -102,15 +102,22 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            break;
+        case 3:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            
+            break;
+        case 4:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
             var inputsRy = [];  
-            var i = new Input(5);
+            var i = new Input(4);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(5);
+            var i2 = new Input(4);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -124,13 +131,6 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
-            break;
-        case 3:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
-            
-            break;
-        case 4:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             break;
         case 5:
             
@@ -164,11 +164,11 @@ function controlSlides(num){
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
             var inputsRy = [];  
-            var i = new Input(4);
+            var i = new Input(3);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(4);
+            var i2 = new Input(3);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -195,9 +195,55 @@ function controlSlides(num){
         case 15:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
             break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 21:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 22:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 23:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 25:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 26:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
+        case 27:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            break;
         default:
             break;
     }
+}
+function scroll_set(num) {
+  dragging = "";
+  diff = "";
+  newTop = "";
+  scrollOffset = "";
+  knob = document.querySelector('.custom-scrollbar__knob'+num);
+  bar = document.querySelector('.custom-scrollbar__bar'+num);
+  container = document.querySelector('.custom-scrollbar__inner'+num);
+  scroll();
 }
 
 function modal_scroll1(){
@@ -483,100 +529,55 @@ function quitar(num) {
 }
 
 function scroll_horizontal(num){
-    $('.scroll-img').removeClass('bg-piel');
-    $('.scroll-img').addClass('bg-amarillo');
-    $('.scroll-flecha').removeClass('d-block');
-    $('.scroll-flecha').addClass('d-none');
+  
     switch (parseInt(num)) {
         case 0:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/francisco_fernando_austria.jpg">`;
+            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
             $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1914.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Es asesinado por los Serbios, el Archiduque Francisco Fernando, quien para ese momento era el heredero al trono de Austria Hungría.</b>');
-            $('.scroll-img-0').removeClass('bg-amarillo');
-            $('.scroll-img-0').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
+
+            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion2.png">`;
+            $('#scroll-img2').html(pantalla);
+
+            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion3.png">`;
+            $('#scroll-img3').html(pantalla);
+
+            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion4.png">`;
+            $('#scroll-img4').html(pantalla);
             break;
-        case 1:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/tratado_londres.jpg">`;
+        case 1:  
+            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
             $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1915.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Italia abandona el bloque de la TRIPLE ALIANZA y entra a la guerra junto a la TRIPLE ENTENTE al firmar el tratado de Londres.</b>');
-            $('.scroll-img-1').removeClass('bg-amarillo');
-            $('.scroll-img-1').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
+
+            $('#scroll-img2').html(``);
+            $('#scroll-img3').html(``);
+            $('#scroll-img4').html(``);
+
             break;
         case 2:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/trincheras.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1916.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Enfrentamientos entre los ejércitos de Francia y Alemania, representaron las batallas más sangrientas de la Guerra.</b>');
-            $('.scroll-img-2').removeClass('bg-amarillo');
-            $('.scroll-img-2').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
+            $('#scroll-img').html(``);
+
+            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion2.png">`;
+            $('#scroll-img2').html(pantalla);
+
+            $('#scroll-img3').html(``);
+            $('#scroll-img4').html(``);
             break;
         case 3:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/nicolas.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1917.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>El inicio en Rusia de la revolución de febrero que generó la abdicación del Zar Nicolás.</b>');
-            $('.scroll-img-3').removeClass('bg-amarillo');
-            $('.scroll-img-3').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            $('.scroll-flecha-3').removeClass('d-none');
-            $('.scroll-flecha-3').addClass('d-block');
+            $('#scroll-img').html(``);
+            $('#scroll-img2').html(``);
+
+            var pantalla = `<img class="m-auto transition-on" width="95%" src="assets/img/img_ova/accion3.png">`;
+            $('#scroll-img3').html(pantalla);
+
+            $('#scroll-img4').html(``);
             break;
         case 4:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/union.jpg">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1918.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Se firma el Tratado de Brest-Litovsk, donde el nuevo gobierno socialista de Rusia firma la renuncia a algunos territorios.</b>');
-            $('.scroll-img-4').removeClass('bg-amarillo');
-            $('.scroll-img-4').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            $('.scroll-flecha-3').removeClass('d-none');
-            $('.scroll-flecha-3').addClass('d-block');
-            $('.scroll-flecha-4').removeClass('d-none');
-            $('.scroll-flecha-4').addClass('d-block');
-            break;
-        case 5:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/versalles.png">`;
-            $('#scroll-img').html(pantalla);
-            $('#pdf-anios').html(`<a href="assets/PDF/1919.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
-            $('#scroll-text').html('<b>Se da la firma del tratado de Versalles, contempla por primera vez la creación de un tribunal especial en su artículo 227.</b>');
-            $('.scroll-img-5').removeClass('bg-amarillo');
-            $('.scroll-img-5').addClass('bg-piel');
-            $('.scroll-flecha-0').removeClass('d-none');
-            $('.scroll-flecha-0').addClass('d-block');
-            $('.scroll-flecha-1').removeClass('d-none');
-            $('.scroll-flecha-1').addClass('d-block');
-            $('.scroll-flecha-2').removeClass('d-none');
-            $('.scroll-flecha-2').addClass('d-block');
-            $('.scroll-flecha-3').removeClass('d-none');
-            $('.scroll-flecha-3').addClass('d-block');
-            $('.scroll-flecha-4').removeClass('d-none');
-            $('.scroll-flecha-4').addClass('d-block');
-            $('.scroll-flecha-5').removeClass('d-none');
-            $('.scroll-flecha-5').addClass('d-block');
+            $('#scroll-img').html(``);
+            $('#scroll-img2').html(``);
+            $('#scroll-img3').html(``);
+            
+            var pantalla = `<img class="m-auto transition-on" width="95%" src="assets/img/img_ova/accion4.png">`;
+            $('#scroll-img4').html(pantalla);
             break;
         default:
             break;
@@ -890,4 +891,307 @@ function yugoslavias(num) {
         $("#tribunal").html(texto);
         modal_scroll3();
     }
+}
+
+function cardsPeq(num,estado) {
+
+  $('.textoCards1,.textoCards2,.textoCards3,.textoCards4').removeClass('d-flex');
+  $('.textoCards1,.textoCards2,.textoCards3,.textoCards4').addClass('d-none');
+
+  $('.tarjCard1,.tarjCard2,.tarjCard3,.tarjCard4').removeClass('d-none');
+  $('.tarjCard1,.tarjCard2,.tarjCard3,.tarjCard4').addClass('d-flex');
+
+
+  if (estado=='abrir') {
+      if (num==1) {
+        $('.tarjCard1').removeClass('d-flex');
+        $('.tarjCard1').addClass('d-none');
+
+        $('.textoCards1').removeClass('d-none');
+        $('.textoCards1').addClass('d-flex');
+      }else if (num==2) {
+        $('.tarjCard2').removeClass('d-flex');
+        $('.tarjCard2').addClass('d-none');
+
+        $('.textoCards2').removeClass('d-none');
+        $('.textoCards2').addClass('d-flex');
+          
+      }else if (num==3) {
+        $('.tarjCard3').removeClass('d-flex');
+        $('.tarjCard3').addClass('d-none');
+
+        $('.textoCards3').removeClass('d-none');
+        $('.textoCards3').addClass('d-flex');
+          
+      }else if (num==4) {
+        $('.tarjCard4').removeClass('d-flex');
+        $('.tarjCard4').addClass('d-none');
+
+        $('.textoCards4').removeClass('d-none');
+        $('.textoCards4').addClass('d-flex');
+          
+      }
+
+  }else if(estado=='ocultar'){
+
+      if (num==1) {
+        $('.tar1Card11').addClass('d-flex');
+        $('.tar1Card11').removeClass('d-none');
+
+        $('.text1Cards1').addClass('d-none');
+        $('.text1Cards1').removeClass('d-flex');
+          
+      }else if (num==2) {
+        $('.tarjCard2').addClass('d-flex');
+        $('.tarjCard2').removeClass('d-none');
+
+        $('.textoCards2').addClass('d-none');
+        $('.textoCards2').removeClass('d-flex');
+          
+      }else if (num==3) {
+        $('.tarjCard3').addClass('d-flex');
+        $('.tarjCard3').removeClass('d-none');
+
+        $('.textoCards3').addClass('d-none');
+        $('.textoCards3').removeClass('d-flex');
+          
+      }else if (num==4) {
+        $('.tarjCard4').addClass('d-flex');
+        $('.tarjCard4').removeClass('d-none');
+
+        $('.textoCards4').addClass('d-none');
+        $('.textoCards4').removeClass('d-flex');
+          
+      }
+  }
+}
+
+function acordeon(num,estado) {
+
+  $('#conjuntoText1,#conjuntoText2,#conjuntoText3,#conjuntoText4,#conjuntoText5').addClass('d-none');
+
+  if (estado=='abrir') {
+      if (num==1) {
+        $('#conjuntoText1').removeClass('d-none');
+
+        $('#padreAcordeon').addClass('menos-marginT-100');
+        $('#padreAcordeon').removeClass('menos-margin-100');
+      }else if (num==2) {
+        $('#conjuntoText2').removeClass('d-none');
+
+        $('#padreAcordeon').addClass('menos-marginT-100');
+        $('#padreAcordeon').removeClass('menos-margin-100');
+          
+      }else if (num==3) {
+        $('#conjuntoText3').removeClass('d-none');
+
+        $('#padreAcordeon').addClass('menos-marginT-100');
+        $('#padreAcordeon').removeClass('menos-margin-100');
+          
+      }else if (num==4) {
+        $('#conjuntoText4').removeClass('d-none');
+
+        $('#padreAcordeon').addClass('menos-marginT-100');
+        $('#padreAcordeon').removeClass('menos-margin-100');
+      }else if (num==5) {
+        $('#conjuntoText5').removeClass('d-none');
+        
+        $('#padreAcordeon').addClass('menos-marginT-100');
+        $('#padreAcordeon').removeClass('menos-margin-100');
+      }
+
+  }else if(estado=='ocultar'){
+
+      if (num==1) {
+        $('#conjuntoText1').addClass('d-none');
+
+        $('#padreAcordeon').removeClass('menos-marginT-100');
+        $('#padreAcordeon').addClass('menos-margin-100');
+          
+      }else if (num==2) {
+        $('#conjuntoText2').addClass('d-none');
+
+        $('#padreAcordeon').removeClass('menos-marginT-100');
+        $('#padreAcordeon').addClass('menos-margin-100');
+          
+      }else if (num==3) {
+        $('#conjuntoText3').addClass('d-none');
+
+        $('#padreAcordeon').removeClass('menos-marginT-100');
+        $('#padreAcordeon').addClass('menos-margin-100');
+          
+      }else if (num==4) {
+        $('#conjuntoText4').addClass('d-none');
+
+        $('#padreAcordeon').removeClass('menos-marginT-100');
+        $('#padreAcordeon').addClass('menos-margin-100');
+        
+      }else if (num==5) {
+        $('#conjuntoText5').addClass('d-none');
+
+        $('#padreAcordeon').removeClass('menos-marginT-100');
+        $('#padreAcordeon').addClass('menos-margin-100');
+          
+      }
+  }
+}
+
+function lineaDir(num) {
+  $('.lineaDir').removeClass('pl-3');
+  $('.textContentP').html(``);
+  if (num == 1) {
+    var contenido =`
+                  <p class="text-justify">Órganos de gobierno, los cuales toman las decisiones fundamentales para la dirección de la Universidad, el presidente del consejo superior también se considera como un órgano de gobierno (literal g, art. 22.4 – estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir1').addClass('pl-3');
+    $('.textContentP').html(contenido);
+
+  }else if (num == 2) {
+    var contenido =`
+                  <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
+                  `;
+    $('.lineaDir2').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 3) {
+    var contenido =`
+                  <p class="text-justify">Órganos Unipersonales: una persona ejerce las funciones. </p>
+                  `;
+    $('.lineaDir3').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 4) {
+    var contenido =`
+                  <p class="text-justify">Órganos Colegiados: están integrados por varias personas que pertenecen a los órganos y/o asociados, (artículo 10, estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir4').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 5) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Cogobierno, el cual se encuentra conformado por profesores, estudiantes y egresados exclusivamente. </p>
+                  `;
+    $('.lineaDir5').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 6) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Elección, los cuales en su conformación tienen representantes de estudiantes y de profesores o de profesores, estudiantes y egresados, están conformados exclusivamente por estos, así como son los del cogobierno. </p>
+                  `;
+    $('.lineaDir6').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }
+}
+
+function lineaDir2(num) {
+  $('.lineaDir').removeClass('pl-3');
+  $('.textContentP').html(``);
+  if (num == 1) {
+    var contenido =`
+                  <p class="text-justify">Órganos de gobierno, los cuales toman las decisiones fundamentales para la dirección de la Universidad, el presidente del consejo superior también se considera como un órgano de gobierno (literal g, art. 22.4 – estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir1').addClass('pl-3');
+    $('.textContentP').html(contenido);
+
+  }else if (num == 2) {
+    var contenido =`
+                  <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
+                  `;
+    $('.lineaDir2').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 3) {
+    var contenido =`
+                  <p class="text-justify">Órganos Unipersonales: una persona ejerce las funciones. </p>
+                  `;
+    $('.lineaDir3').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 4) {
+    var contenido =`
+                  <p class="text-justify">Órganos Colegiados: están integrados por varias personas que pertenecen a los órganos y/o asociados, (artículo 10, estatutos UNAULA). </p>
+                  `;
+    $('.lineaDir4').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 5) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Cogobierno, el cual se encuentra conformado por profesores, estudiantes y egresados exclusivamente. </p>
+                  `;
+    $('.lineaDir5').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }else if (num == 6) {
+    var contenido =`
+                  <p class="text-justify">Órganos de Elección, los cuales en su conformación tienen representantes de estudiantes y de profesores o de profesores, estudiantes y egresados, están conformados exclusivamente por estos, así como son los del cogobierno. </p>
+                  `;
+    $('.lineaDir6').addClass('pl-3');
+    $('.textContentP').html(contenido);
+    
+  }
+}
+
+/*pantallas 1*/
+function carpeta(num){
+  switch (parseInt(num)) {
+      case 1:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target1').removeClass('is-hidden');
+          $('.target1').addClass('not-hidden');
+          break;
+      case 2:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target2').removeClass('is-hidden');
+          $('.target2').addClass('not-hidden');
+          break;
+      case 3:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target3').removeClass('is-hidden');
+          $('.target3').addClass('not-hidden');
+          break;
+      case 4:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target4').removeClass('is-hidden');
+          $('.target4').addClass('not-hidden');
+          break;
+      case 5:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target5').removeClass('is-hidden');
+          $('.target5').addClass('not-hidden');
+          break;
+      case 6:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target6').removeClass('is-hidden');
+          $('.target6').addClass('not-hidden');
+          break;
+      case 7:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target7').removeClass('is-hidden');
+          $('.target7').addClass('not-hidden');
+          break;
+      case 8:
+          $('.baneTarget').addClass('is-hidden');
+          $('.baneTarget').removeClass('not-hidden');
+
+          $('.target8').removeClass('is-hidden');
+          $('.target8').addClass('not-hidden');
+          break;
+      default:
+          break;
+  }
 }
