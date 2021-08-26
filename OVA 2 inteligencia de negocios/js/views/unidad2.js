@@ -101,7 +101,11 @@ function controlSlides(num){
         case 8:
             setMigaja("Unidades de aprendizaje","2. La inteligencia de negocios","Visualización de información");
             break;
+        case 0:
+            setMigaja("Unidades de aprendizaje","2. La inteligencia de negocios","De los datos a la información");
+            break;
         default:
+            setMigaja("Unidades de aprendizaje","2. La inteligencia de negocios","De los datos a la información");
             break;
     }
 }

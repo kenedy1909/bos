@@ -85,7 +85,11 @@ function controlSlides(num){
         case 5:
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","La minería de datos");
             break;
+        case 0:
+            setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","El BigData");
+            break;
         default:
+            setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","El BigData");
             break;
     }
 }
