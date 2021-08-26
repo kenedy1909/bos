@@ -84,7 +84,11 @@ function controlSlides(num){
         case 5:
             setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
+        case 0:
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Las tablas y gráficos dinámicos");
+            break;
         default:
+            setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Las tablas y gráficos dinámicos");
             break;
     }
 }

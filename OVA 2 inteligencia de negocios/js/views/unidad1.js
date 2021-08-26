@@ -135,7 +135,11 @@ function controlSlides(num){
         case 19:
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Seguridad de la información");
             break;
+        case 0:
+            setMigaja("Unidades de aprendizaje","1. Las bases de datos","Fundamentos de las bases de datos");
+            break;
         default:
+            setMigaja("Unidades de aprendizaje","1. Las bases de datos","Fundamentos de las bases de datos");
             break;
     }
 }
