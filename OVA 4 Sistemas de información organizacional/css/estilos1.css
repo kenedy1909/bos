@@ -845,7 +845,7 @@ a.control_next {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
+  height: 300px;
   /*border-radius: 15px;*/
   /*border: 1px solid #78201A;*/
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -873,6 +873,7 @@ a.control_next {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  margin-bottom: 50px;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -1165,4 +1166,117 @@ a.control_next {
 	animation-iteration-count: 1;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
+}
+
+.img_circle{
+	padding: 10px 15px;
+	background-color: #FFFFFF;
+	border-radius: 48%;
+	border: 10px #ff6e64 solid;
+}
+
+#demo {
+    -webkit-transition: width 2s ease;
+    -moz-transition: width 2s ease;
+    -o-transition: width 2s ease;
+    transition: width 2s ease;
+    
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    background: yellow;
+    vertical-align: middle;
+    line-height: 30px;
+    height: 30px;
+
+    width: 0px;
+}
+#demo.in {
+    width: 220px;
+}
+
+.inputDiv2 input[type='range'] {
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(90deg);
+  position: relative;
+  left: -130px;
+}
+
+.inputDiv2 input[type=range]::-webkit-slider-thumb {
+  background: #174C7F;
+  transform: scaleX(-1);
+  background-size: 100% 100%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: -15px;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-moz-range-thumb {
+  background: #174C7F;
+  transform: scaleX(-1);
+  background-size: 100% 100%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-ms-thumb {
+  background: #174C7F;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-webkit-slider-runnable-track {
+  background-color: #174C7F;
+  height: 3px;
+}
+
+.inputDiv2 input[type=range]::-moz-range-track {
+  background-color: #174C7F;
+  height: 3px;
+}
+
+.inputDiv2 input[type=range]::-ms-track {
+  background-color: #174C7F;
+  height: 3px;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-ms-fill-lower {
+  background-color: #174C7F;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-ms-fill-upper {
+  background-color: #174C7F;
+  cursor: pointer;
+} 
+
+.banner_16{
+  min-height: 200px;
+    background: white;
+    border-radius: 50px;
+    padding: 50px 30px 26px 25px;
+    border: solid #548135;
+    margin-bottom: 10px;
+}
+
+.desliza_verde{
+  border-radius: 10px;
+  width: 2%;
+  margin-top: 4%;
+}
+
+u{
+	cursor: pointer;
 }

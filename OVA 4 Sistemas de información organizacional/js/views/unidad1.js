@@ -31,42 +31,43 @@ $( document ).ready(function() {
         actualizarprogress();
     });
 
-    $(".btn-p1").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-1").show(300)
+    $("[data-toggle='toggle']").click(function() {
+        var selector = $(this).data("target");
+        $(selector).toggleClass('in');
+    });
+
+    $(".ven1").on("click", function () {
+       $(".ventajas").hide();
+       $(".ventajas1").show(300);
     })
-    $(".btn-p2").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-2").show(300)
+
+    $(".ven2").on("click", function () {
+       $(".ventajas").hide();
+       $(".ventajas2").show(300);
     })
-    $(".btn-p3").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-3").show(300)
-    })
-    $(".btn-p4").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-4").show(300)
-    })
-    $(".btn-p5").on("click", function() {
-        $(".parrafo").hide();
-        $(".pa-5").show(300)
-    })
-    $(".btn23-1").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-2").show(300)
-    })
-    $(".btn23-2").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-3").show(300)
-    })
-    $(".btn23-3").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-4").show(300)
-    })
-    $(".btn23-4").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-5").show(300)
-    })
+
+    $(".i3").html('')   
+    var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+    var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+    var inputsRy = [];
+    var i = new Input(4);
+    i.crear(elementoPadre1);
+    inputsRy.push(i);
+
+    var i2 = new Input(9);
+    i2.att.value = 70;
+    i2.att.min = 20;
+    i2.att.max = 120;
+    i2.crear(elementoPadre2);
+    inputsRy.push(i2);
+
+    for (var n = 0; n < inputsRy.length; n++) {
+      (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+          inputsRy[n].actualizar2();
+        }, false)
+      }(n));
+    }
 
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
@@ -82,22 +83,13 @@ $( document ).ready(function() {
     $(".modal_scroll4").on('click', modal_scroll4);
 
     $(".circle-verde").on('click' , circles);
-    /*$(".unidad1-1").on('click', slide_link);
-    $(".unidad1-5").on('click', slide_link);
-    $(".unidad1-6_paso1").on('mouseover', unidad1_pantalla6_accion1);
-    $(".unidad1-6_paso3").on('mouseover', unidad1_pantalla6_accion3);
-    $(".unidad1-6_paso1").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso2").on('mouseleave', unidad1_pantalla6_accion4);
-    $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
 
     /*scroll();*/
     slide_link(tema);
 
 
-
-
-
     
+
     
 });
 var pdf = `<div class="col-md-12">
@@ -159,17 +151,32 @@ function controlSlides(num){
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
             scroll();
+
+
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob8');
-            bar = document.querySelector('.custom-scrollbar__bar8');
-            container = document.querySelector('.custom-scrollbar__inner8');
-            scroll();
+            $(".i3").html('')   
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];
+            var i = new Input(4);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(9);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar2();
+                }, false)
+              }(n));
+            }
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");            
@@ -185,6 +192,10 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             break;
         case 6:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 10:
+
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             break;
 
@@ -382,19 +393,37 @@ function Input(num) {
     switch (parseInt(num)) {
         case 0:
             var info_scroll = `
-                            <img class="col-md-8 offset-md-6" src="assets/img/img_ova/antesdespues.jpeg">
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p> 
+                              <img class="col-md-4" src="assets/img/img_ova/ec1.png">
+                            </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 1:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img34.png">
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Según PlacetoPay, una de las pasarelas de pago más reconocidas de Colombia; en el país al 2019, antes de la pandemia, el 38% de las empresas vendían por internet. Esta cifra, casi se duplicó, llegando al 72% a mayo de 2021, 14 meses después de haber comenzado la pandemia, según lo expresó Carlos Mario López Muñoz, Jefe de Desarrollo Empresarial y Líder de los procesos de Transformación Digital y E-commerce de la Cámara de Comercio de Medellín para Antioquia.</p> 
+                              <img class="col-md-4" src="assets/img/img_ova/ec2.png">
+                            </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 2:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img35.png">
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Teniendo en cuenta lo anterior, se tomó la decisión de dedicar una OVA completa dentro del curso de Sistemas de Información Organizacional, para que el estudiante de Administración de Empresas conozca los elementos fundamentales del E-commerce, así como los beneficios que tiene para los negocios y las empresas, con respecto al comercio tradicional, y esté en condiciones de determinar cómo diseñar y gestionar estrategias para la comercialización en medios electrónicos.</p> 
+                              <img class="col-md-4" src="assets/img/img_ova/ec3.png">
+                            </div>
+                            `;
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 3:
+            var info_scroll = `
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p> 
+                              <img class="col-md-4" src="assets/img/img_ova/importante.png">
+                            </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
@@ -466,6 +495,50 @@ function removeefect(num){
             break;
     } 
     
+}
+
+function textBane_10(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.blue_aquaBane').addClass('invisible');
+            $('.blue_aquaBane').removeClass('visible');
+            break;
+        case 1:
+            $('.blue_aquaBane').addClass('visible');
+            $('.blue_aquaBane').removeClass('invisible');
+
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-1').addClass('visible');
+            $('.bane10-1').removeClass('invisible');
+            break;
+        case 2:
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-2').addClass('visible');
+            $('.bane10-2').removeClass('invisible');
+            scroll_(6);
+            break;
+        case 3:
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-3').addClass('visible');
+            $('.bane10-3').removeClass('invisible');
+            scroll_(7);
+            break;
+        case 4:
+            $('.textBane-10').removeClass('visible');
+            $('.textBane-10').addClass('invisible');
+
+            $('.bane10-4').addClass('visible');
+            $('.bane10-4').removeClass('invisible');
+            break;
+        default:
+            break;
+    }
 }
 
 
