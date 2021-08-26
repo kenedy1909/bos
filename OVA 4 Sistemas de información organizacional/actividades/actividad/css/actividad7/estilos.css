@@ -87,6 +87,7 @@ table.tabla-actividad2 td,
     padding: 2px;
     vertical-align: middle;
     border-top: 1px solid #ddd;
+    color: #FFFFFF;
 }
 
 svg.svg-radio-elegant {
@@ -135,10 +136,12 @@ span.checked svg.svg2 {
     background-position: bottom center;
     background-repeat: no-repeat, repeat-x;
     margin-bottom: 30px;
-    background-color: #FFF2CC;
+    background-color: #da2316;
     animation: fondo 10s linear infinite;
     overflow: hidden;
-    color: #771E18;
+    color: #FFFFFF;
+
+    font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -151,10 +154,11 @@ span.checked svg.svg2 {
 
 
 .info_actividad{
-    background: rgba(255, 192, 0);
+    background: rgba(39, 46, 159);
     border-radius: 20px;
     padding: 20px;
-}
+    color:#FFFFFF;
+} 
 
 .d-flex{
     display: flex;

@@ -102,10 +102,18 @@ $( document ).ready(function() {
        $(".p20").hide();
        $(".p20-5").show();
     })
-
-    
-
-    
+    $(".btn21-1").on("click", function () {
+       $(".p21").hide();
+       $(".p21-1").show();
+    })
+    $(".btn21-2").on("click", function () {
+       $(".p21").hide();
+       $(".p21-2").show();
+    })
+    $(".btn21-3").on("click", function () {
+       $(".p21").hide();
+       $(".p21-3").show();
+    })
 
     $(".btn13-1").on("click", function () {
        $(".btn13-1").hide();
