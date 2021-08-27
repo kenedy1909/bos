@@ -819,3 +819,7 @@ svg circle:nth-child(2){
 .padding-top{
   padding: 30px;
 }
+
+.cursor{
+  cursor: pointer;
+}
