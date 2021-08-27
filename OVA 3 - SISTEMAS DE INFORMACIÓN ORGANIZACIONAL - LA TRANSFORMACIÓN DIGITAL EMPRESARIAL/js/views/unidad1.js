@@ -172,6 +172,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         case 18:
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             break;
         default:

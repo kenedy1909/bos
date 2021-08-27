@@ -84,6 +84,7 @@ table .fa-circle {
 
 table.tabla-actividad2 td,
 .table td {
+    font-size: 15px;
     padding: 2px;
     vertical-align: middle;
     border-top: 1px solid #ddd;

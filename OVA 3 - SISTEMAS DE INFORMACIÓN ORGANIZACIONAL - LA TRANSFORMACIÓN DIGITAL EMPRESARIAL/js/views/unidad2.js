@@ -85,7 +85,13 @@ function controlSlides(num){
                       </p>
                       <p class="p_white">
                             <a href="assets/PDF/UNIDAD-2_LEY-DE-HABEAS-DATA/Ley_1581_de_2012.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Ley_1581_de_2012.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                      </p>`;
+                      </p>
+                      <p class="p_white">
+                              <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia1_Principios-del-marketing-digital.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        </p>
+                        <p class="p_white">
+                              <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia2_Redes-Sociales.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;

@@ -124,7 +124,7 @@ function reinitREDIR1() {
  }
 
 function shuffleOrigenR1() {
-    if (widthR1 < 767) {
+    if (widthR1 < 100) {
        shuffleOrigenMovilR1();
     } else {
         $(origenR1).html('');

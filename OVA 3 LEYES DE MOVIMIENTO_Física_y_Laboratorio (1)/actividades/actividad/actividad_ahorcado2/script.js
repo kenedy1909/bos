@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['fuerza-de-tencion', ''];
-            this.palabras[1] = ['fuerza-de-tencion', ''];
-            this.palabras[2] = ['fuerza-de-tencion', ''];
-            this.palabras[3] = ['fuerza-de-tencion', ''];
-            this.palabras[4] = ['fuerza-de-tencion', ''];
-            this.palabras[5] = ['fuerza-de-tencion', ''];
-            this.palabras[6] = ['fuerza-de-tencion', ''];
-            this.palabras[7] = ['fuerza-de-tencion', ''];
-            this.palabras[8] = ['fuerza-de-tencion', ''];
+            this.palabras[0] = ['fuerza-de-tension', ''];
+            this.palabras[1] = ['fuerza-de-tension', ''];
+            this.palabras[2] = ['fuerza-de-tension', ''];
+            this.palabras[3] = ['fuerza-de-tension', ''];
+            this.palabras[4] = ['fuerza-de-tension', ''];
+            this.palabras[5] = ['fuerza-de-tension', ''];
+            this.palabras[6] = ['fuerza-de-tension', ''];
+            this.palabras[7] = ['fuerza-de-tension', ''];
+            this.palabras[8] = ['fuerza-de-tension', ''];
 
             return this.palabras;
 

@@ -426,6 +426,7 @@ function init_recurso_1() {
 
 
     Ahorcado.prototype.reiniciar = function () {
+        location.reload();
         this.intento = 0;
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
@@ -438,6 +439,9 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
+        location.reload();
+    });
+    document.getElementById('perdio').addEventListener('click', function () {
         location.reload();
     });
 
