@@ -57,6 +57,80 @@ $( document ).ready(function() {
        $(".pr3").show(300);
     })
 
+    $(".btn17-1").on("click", function () {
+       $(".p17").hide();
+       $(".p17-1").show();
+    })
+    $(".btn17-2").on("click", function () {
+       $(".p17").hide();
+       $(".p17-2").show();
+    })
+    $(".btn17-3").on("click", function () {
+       $(".p17").hide();
+       $(".p17-3").show();
+    })
+    $(".btn17-4").on("click", function () {
+       $(".p17").hide();
+       $(".p17-4").show();
+    })
+    $(".btn17-5").on("click", function () {
+       $(".p17").hide();
+       $(".p17-5").show();
+    })
+    $(".btn17-6").on("click", function () {
+       $(".p17").hide();
+       $(".p17-6").show();
+    })
+
+    $(".btn-p1").on("click", function () {
+       $(".p20").hide();
+       $(".p20-1").show();
+    })
+    $(".btn-p2").on("click", function () {
+       $(".p20").hide();
+       $(".p20-2").show();
+    })
+    $(".btn-p3").on("click", function () {
+       $(".p20").hide();
+       $(".p20-3").show();
+    })
+    $(".btn-p4").on("click", function () {
+       $(".p20").hide();
+       $(".p20-4").show();
+    })
+    $(".btn-p5").on("click", function () {
+       $(".p20").hide();
+       $(".p20-5").show();
+    })
+    $(".btn21-1").on("click", function () {
+       $(".p21").hide();
+       $(".p21-1").show();
+    })
+    $(".btn21-2").on("click", function () {
+       $(".p21").hide();
+       $(".p21-2").show();
+    })
+    $(".btn21-3").on("click", function () {
+       $(".p21").hide();
+       $(".p21-3").show();
+    })
+
+    $(".btn13-1").on("click", function () {
+       $(".btn13-1").hide();
+       $(".p13-2").hide();
+       $(".btn13-2").show();
+       $(".p13-1").show();
+
+    })
+
+    $(".btn13-2").on("click", function () {
+       $(".btn13-2").hide();
+       $(".p13-1").hide();
+       $(".btn13-1").show();
+       $(".p13-2").show();
+
+    })
+
     $(".i3").html('')   
     var elementoPadre1 = document.querySelector(".inputDiv2.i3");
     var elementoPadre2 = document.querySelector(".inputDiv2.i4");
