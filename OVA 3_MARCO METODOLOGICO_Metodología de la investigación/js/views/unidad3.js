@@ -22,13 +22,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
@@ -45,6 +43,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides3(stepIndex);
+        actualizarprogress(stepIndex+7+3);
 }
 
 function slide_predeterminado3(){

@@ -19,14 +19,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     }); 
 
     $( ".zoomContainer" ).remove();
@@ -59,6 +57,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+        actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
