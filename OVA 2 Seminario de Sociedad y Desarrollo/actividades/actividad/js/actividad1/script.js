@@ -1,6 +1,10 @@
 $(document).on('ready', init_recurso_1);
 
 function init_recurso_1() {
+
+
+
+    
     $('#modal-ahorcado').hide();
     var common = {
         msg: "vsdf",
@@ -365,17 +369,17 @@ function init_recurso_1() {
             }
         }
 
-       /* var modalID = "#calificacionModal";
-        var exito = false;
-        var mensaje = "Inténtalo nuevamente.";
-        if (puntaje == 100) {
-            exito = true;
-            mensaje = "¡Felicitaciones!"
-        }
-        registrarActividad(puntaje);
-        mostrarCalificacion(modalID, mensaje, exito, function () {
-            self.reset(form);
-        });*/
+        // var modalID = "#calificacionModal";
+        // var exito = false;
+        // var mensaje = "Inténtalo nuevamente.";
+        // if (puntaje == 100) {
+        //     exito = true;
+        //     mensaje = "¡Felicitaciones!"
+        // }
+        // registrarActividad(puntaje);
+        // mostrarCalificacion(modalID, mensaje, exito, function () {
+        //     self.reset(form);
+        // });
 
         if (!flag) {
             ahorcado.trazar();
@@ -440,5 +444,10 @@ function init_recurso_1() {
     document.getElementById('reset').addEventListener('click', function () {
         ahorcado.reiniciar();
     });
+
+
+    $("#reset").on("click", function() {
+        $("#unidad1-28").html('<iframe src="actividades/actividad/activi1/index.html" frameborder="0"></iframe>')
+    })
 
 }

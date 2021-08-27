@@ -766,6 +766,10 @@ svg circle:nth-child(2){
   width: 60px;
 }
 
+.w-50px{
+  width: 50px;
+}
+
 .card-inactiva-o{
   background: #252525 !important;
 }
