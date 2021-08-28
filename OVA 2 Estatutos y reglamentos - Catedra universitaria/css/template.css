@@ -425,7 +425,7 @@ iframe{
   position: absolute;
   top: 18px;
   bottom: 20px;
-  background:white;
+  background:var(--bg-color);
   width: 3px;
   right: 30px;
   /*right: 8px;*/
@@ -439,7 +439,7 @@ iframe{
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: white;
+  background: var(--bg-color);
   transform: translate(-50%, -50%);
   will-change: top;
 }
@@ -449,7 +449,7 @@ iframe{
     margin: 0px;
     position: relative;
     top: -32px;
-    color: var(--bg-color);
+    color: white;
 }
 /*porcentaje*/
 
@@ -458,7 +458,7 @@ iframe{
     justify-content: center;
     align-items: center;
     min-height: 98vh;
-    background: white;
+    background: var(--bg-color);
 }
 
 
