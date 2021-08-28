@@ -1320,7 +1320,7 @@ function carruseles(num){
                 var slideHeight = $('#slider9 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
                 
-                $('#slider9').css({ width: '100%', height: '290px' });
+                $('#slider9').css({ width: '100%', height: '300px' });
                 
                 $('#slider9 ul').css({ width: '100%'});
                 

@@ -1732,7 +1732,7 @@ a.control_next {
 #slider7 {
   position: relative;
   border-radius: 4px;
-  overflow: hidden;
+  
   
 }
 
@@ -1751,7 +1751,7 @@ a.control_next {
     margin: 0;
     padding: 10px;
     width: 100%;
-    height: 290px;
+    height: 300px;
     
     text-align: center;
     border-radius: 30px;
@@ -1800,7 +1800,6 @@ a.control_next {
 #slider8 {
   position: relative;
   border-radius: 4px;
-  overflow: hidden;
   
 }
 
@@ -1819,7 +1818,7 @@ a.control_next {
     margin: 0;
     padding: 10px;
     width: 100%;
-    height: 290px;
+    height: 300px;
     
     text-align: center;
     border-radius: 30px;
@@ -2061,9 +2060,9 @@ a.control_next {
   background: #7F9DCC;
 }
 .img-formula{
-    width: 300px;
+    width: 350px;
     position: relative;
-    left: -28px;
+    left: -26px;
 }
 .bane28{
   background: #FCD966;
@@ -2198,9 +2197,8 @@ a.control_next {
   left: 70px;
 }
 .imagen22{
-  height: 100px;
-    width: 250px;
+  width: 216px;
     position: relative;
-    left: -52px;
+    left: -25px;
     top: 25px;
 }
