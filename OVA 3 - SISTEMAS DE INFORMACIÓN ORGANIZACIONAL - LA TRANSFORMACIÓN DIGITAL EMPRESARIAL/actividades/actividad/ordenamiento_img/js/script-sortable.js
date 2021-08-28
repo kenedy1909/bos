@@ -124,15 +124,12 @@ function reinitREDIR1() {
  }
 
 function shuffleOrigenR1() {
-    if (widthR1 < 100) {
-       shuffleOrigenMovilR1();
-    } else {
-        $(origenR1).html('');
+    
+    $(origenR1).html('');
         var arrCodeInitialOrigenR1 = shuffle(arrOrigenInitialR1);
         arrCodeInitialOrigenR1.slice(-4).forEach(function (value) {
            $(origenR1).append(value.code);
         });
-    }
     activityDragR1();
 }
 
