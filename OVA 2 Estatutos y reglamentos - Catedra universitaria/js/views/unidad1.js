@@ -50,6 +50,75 @@ $( document ).ready(function() {
     /*scroll();*/
     // console.log(tema);
     slide_link(tema);
+
+  /* -------------------- hover unidad 1 -8-------------------- */
+    $(".targetasHover1").hover(function(){
+        $('.targetasHover1').removeClass('bg-color-secondary');
+        $('.targetasHover1').removeClass('text-white');
+        $('.targetasHover1').addClass('targetitas');
+        $('.hoverTriangulo1').removeClass('hidden');
+      }, function(){
+        $('.targetasHover1').removeClass('targetitas');
+        $('.targetasHover1').addClass('bg-color-secondary');
+        $('.targetasHover1').addClass('text-white');
+        $('.hoverTriangulo1').addClass('hidden');
+    });
+    $(".targetasHover2").hover(function(){
+        $('.targetasHover2').removeClass('bg-color-secondary');
+        $('.targetasHover2').removeClass('text-white');
+        $('.targetasHover2').addClass('targetitas');
+        $('.hoverTriangulo2').removeClass('hidden');
+      }, function(){
+        $('.targetasHover2').removeClass('targetitas');
+        $('.targetasHover2').addClass('bg-color-secondary');
+        $('.targetasHover2').addClass('text-white');
+        $('.hoverTriangulo2').addClass('hidden');
+    });
+    $(".targetasHover3").hover(function(){
+        $('.targetasHover3').removeClass('bg-color-secondary');
+        $('.targetasHover3').removeClass('text-white');
+        $('.targetasHover3').addClass('targetitas');
+        $('.hoverTriangulo3').removeClass('hidden');
+      }, function(){
+        $('.targetasHover3').removeClass('targetitas');
+        $('.targetasHover3').addClass('bg-color-secondary');
+        $('.targetasHover3').addClass('text-white');
+        $('.hoverTriangulo3').addClass('hidden');
+    });
+    $(".targetasHover4").hover(function(){
+        $('.targetasHover4').removeClass('bg-color-secondary');
+        $('.targetasHover4').removeClass('text-white');
+        $('.targetasHover4').addClass('targetitas');
+        $('.hoverTriangulo4').removeClass('hidden');
+      }, function(){
+        $('.targetasHover4').removeClass('targetitas');
+        $('.targetasHover4').addClass('bg-color-secondary');
+        $('.targetasHover4').addClass('text-white');
+        $('.hoverTriangulo4').addClass('hidden');
+    });
+    $(".targetasHover5").hover(function(){
+        $('.targetasHover5').removeClass('bg-color-secondary');
+        $('.targetasHover5').removeClass('text-white');
+        $('.targetasHover5').addClass('targetitas');
+        $('.hoverTriangulo5').removeClass('hidden');
+      }, function(){
+        $('.targetasHover5').removeClass('targetitas');
+        $('.targetasHover5').addClass('bg-color-secondary');
+        $('.targetasHover5').addClass('text-white');
+        $('.hoverTriangulo5').addClass('hidden');
+    });
+    $(".targetasHover6").hover(function(){
+        $('.targetasHover6').removeClass('bg-color-secondary');
+        $('.targetasHover6').removeClass('text-white');
+        $('.targetasHover6').addClass('targetitas');
+        $('.hoverTriangulo6').removeClass('hidden');
+      }, function(){
+        $('.targetasHover6').removeClass('targetitas');
+        $('.targetasHover6').addClass('bg-color-secondary');
+        $('.targetasHover6').addClass('text-white');
+        $('.hoverTriangulo6').addClass('hidden');
+    });
+  /* ------------------- */
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
@@ -92,7 +161,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -109,14 +178,14 @@ function controlSlides(num){
             
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");  
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -141,31 +210,32 @@ function controlSlides(num){
             }  
             break;
         case 5:
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
             
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+          setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");  
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Segunda Guerra Mundial");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             $(".i3").html('')    
@@ -192,22 +262,22 @@ function controlSlides(num){
             }  
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -232,7 +302,7 @@ function controlSlides(num){
             }
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             $(".i5").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
             var elementoPadre2 = document.querySelector(".inputDiv2.i6");
@@ -257,31 +327,31 @@ function controlSlides(num){
             }
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
             break;
         case 25:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
             break;
         case 26:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
             break;
         case 27:
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
             break;
         default:
             break;
