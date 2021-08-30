@@ -57,6 +57,7 @@ $( document ).ready(function() {
         $(".pmanos").hide();
         $(".mano4").show(100)
         $(".p-mano4").show(100)
+        $(".oculto").show()
     })
 
     $(".btn13-1").on("click", function() {
@@ -89,6 +90,15 @@ $( document ).ready(function() {
         $(".emo").hide();
         $(".emo5").show();
     })
+
+
+    $(".p13").on("click", function() {
+        $(".globo").show();
+    })
+
+    
+
+    
 
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 

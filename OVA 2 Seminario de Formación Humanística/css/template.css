@@ -781,6 +781,10 @@ svg circle:nth-child(2){
   width: 60px;
 }
 
+.w-50px{
+  width: 50px;
+}
+
 .card-inactiva-o{
   background: #252525 !important;
 }
@@ -891,4 +895,12 @@ svg circle:nth-child(2){
   font-weight: bold;
   cursor: pointer;
   margin: 50px 0 ;
+}
+
+#canvasmsn{
+  background-image: url(../assets/img/img_ova/desarrollopas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  /*padding: 38px 110px 0px 100px;*/
 }
