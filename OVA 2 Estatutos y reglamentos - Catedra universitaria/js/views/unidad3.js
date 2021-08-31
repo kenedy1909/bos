@@ -13,7 +13,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    /*$(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);*/
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -45,10 +45,10 @@ $( document ).ready(function() {
     
 });
 var pdf = `<div class="col-md-12">
-                  <p class="p_black">
-                        <a href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
+                <p class="p_white">
+                    <a class="p_white" href="assets/PDF/decreto_1268de1977.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> decreto_1268de1977.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+            </div>`;
 $('.pdfs').html(pdf);
 
 function slide(){

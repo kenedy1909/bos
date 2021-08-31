@@ -231,9 +231,10 @@ var activityDragR1 = function () {
                 if (items > 2) {
                     $(this).sortable('cancel');
                 }else{
-                    if(widthR1 < 767) {
+                    if(widthR1 < 100) {
                         if(jR1 < arrOrigenR1.length) {
-                            shuffleOrigenR1();
+                            //shuffleOrigenR1();
+                            $(btnCalificarR1).attr('disabled', false);
                         } else {
                             $(btnCalificarR1).attr('disabled', false);
                             $(btnCalificarR1).off('click').on('click', calificarR1);

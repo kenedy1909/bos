@@ -11,7 +11,7 @@ function inicioRecurso() {
             }
         });
         console.log(highestBox)
-        $('.pregunta-cuestionario').height(highestBox + 2);
+        $('.pregunta-cuestionario').height(highestBox + 3);
     }
     // tamanoCuadros()
 }
@@ -64,6 +64,21 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
                     correcta: true
                 }, {
                     texto: "Narrativo, contraste, argumentativo y descriptivo.",
+                    correcta: false
+                }]
+            }, {
+                texto: "Aquellos en los que la oración temática se encuentra ubicada al inicio",
+                respuestas: [{
+                    texto: "Deductivo",
+                    correcta: true
+                }, {
+                    texto: "Inductivo",
+                    correcta: false
+                }, {
+                    texto: "Según su función",
+                    correcta: false
+                }, {
+                    texto: "Introductorio",
                     correcta: false
                 }]
             }]);

@@ -39,6 +39,27 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/base.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Base de datos y minería de datos en contornos empresariales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/seguridad.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> La seguridad informática y la seguridad de la información.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/parte2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Parte II bases de datos deductivas.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/aprendizaje_2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Unidad de aprendizaje 2 La Inteligencia de Negocios.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/UNIDAD 2/graficos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipos de gráficos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/color.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipología del color.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/big.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> El Big Data y la minería de datos en la empresa de hoy.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  </p>
+                  <p class="p_black">
                         <a class="p_white" href="assets/PDF/DOCUMENTOS/actividad_practica.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Aproximación práctica.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
