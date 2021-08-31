@@ -170,7 +170,7 @@ $( document ).ready(function() {
     /*$(".t_1").on('click', cambiacontenido2(1));
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
-    slide_link2(tema);
+    slide_link(tema);
     
 });
 var pdf = `<div class="col-md-12">
@@ -270,29 +270,7 @@ function controlSlides(num){
             slider_4();
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
-            $(".i1").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv.i1");
-            var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
-            var i = new Input(3);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
-
-            var i2 = new Input(3);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
-
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar2();
-                }, false)
-              }(n));
-            }  
+            
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
@@ -301,12 +279,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
-            slideCount = $('#slider-5 ul li').length;
-            slideWidth = $('#slider-5 ul li').width();
-            slideHeight = $('#slider-5 ul li').height();
-            slider_num = "#slider-5";
-            slider_5();
+            
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
@@ -314,12 +287,7 @@ function controlSlides(num){
         case 17:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
             break;
-        case 18:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
-            break;
-        case 19:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
-            break;
+        
         default:
             break;
     }

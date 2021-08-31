@@ -30,129 +30,6 @@ $( document ).ready(function() {
         actualizarprogress();
     });
 
-    $(".int1").on("click", function () {
-        $(".tarjetas").hide()
-        $(".tarjeta1").show(400)
-    })
-    $(".int2").on("click", function () {
-        $(".tarjetas").hide()
-        $(".tarjeta2").show(400)
-    })
-    $(".int3").on("click", function () {
-        $(".tarjetas").hide()
-        $(".tarjeta3").show(400)
-    })
-    $(".int4").on("click", function () {
-        $(".tarjetas").hide()
-        $(".tarjeta4").show(400)
-    })
-    $(".int5").on("click", function () {
-        $(".tarjetas").hide()
-        $(".tarjeta5").show(400)
-    })
-
-    $(".collapse1").on("click", function () {
-        $(".collapses").hide()
-        $(".pcollapse1").show(500)
-    })
-    $(".collapse2").on("click", function () {
-        $(".collapses").hide()
-        $(".pcollapse2").show(500)
-    })
-
-    $(".pergamino1").on("click", function () {
-        $(".pergamino1").hide()
-        $(".pergamino2").show()
-    })
-
-    $(".flecha1").on("click", function () {
-        $(".pergaminos").hide()
-        $(".pergaminop1").show()
-    })
-
-    $(".flecha2").on("click", function () {
-        $(".pergaminos").hide()
-        $(".pergaminop2").show()
-    })
-
-    $(".flecha3").on("click", function () {
-        $(".pergaminos").hide()
-        $(".pergaminop3").show()
-    })
-
-    $(".flecha4").on("click", function () {
-        $(".pergaminos").hide()
-        $(".pergaminop4").show()
-    })
-
-
-    $(".btn_planificacion").on("click", function () {
-        $(".textos8").hide()
-        $(".textos8-1").show()
-    })
-    $(".btn_indagacion").on("click", function () {
-        $(".textos8").hide()
-        $(".textos8-2").show()
-    })
-    $(".btn_revision").on("click", function () {
-        $(".textos8").hide()
-        $(".textos8-3").show()
-    })
-    $(".btn_redaccion").on("click", function () {
-        $(".textos8").hide()
-        $(".textos8-4").show()
-    }) 
-
-    $(".btnp1").on("click", function() {
-        $(".btninicio").hide();
-        $(".pantalla2").show();
-    })
-
-    $(".btnp2").on("click", function() {
-        $(".btninicio").hide();
-        $(".pantalla4").show();
-    })
-
-    $(".btnp3").on("click", function() {
-        $(".btninicio").hide();
-        $(".pantalla5").show();
-    })
-
-    $(".modalp10").on("click", function() {
-        $(".pantalla2").hide();
-        $(".pantalla3").show();
-    })
-
-    $(".p10inicio").on("click", function() {
-        $(".pantalla3").hide();
-        $(".pantalla4").hide();
-        $(".btninicio").show();
-    })
-
-    $(".i12-1").on("click", function() {
-        $(".p12").hide();
-        $(".p12-1").show();
-    })
-    $(".i12-2").on("click", function() {
-        $(".p12").hide();
-        $(".p12-2").show();
-    })
-    $(".i12-3").on("click", function() {
-        $(".p12").hide();
-        $(".p12-3").show();
-    })
-    $(".i12-4").on("click", function() {
-        $(".p12").hide();
-        $(".p12-4").show();
-    })
-    $(".i12-5").on("click", function() {
-        $(".p12").hide();
-        $(".p12-5").show();
-    })
-
-    
-
-    
 
     canvas_1();
 
@@ -170,7 +47,7 @@ $( document ).ready(function() {
     /*$(".t_1").on('click', cambiacontenido2(1));
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
-    slide_link2(tema);
+    slide_link(tema);
     
 });
 var pdf = `<div class="col-md-12">
