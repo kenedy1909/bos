@@ -15517,6 +15517,7 @@ html:not([dir="rtl"]) .float-left {
   box-shadow: none !important;
 }
 
+<<<<<<< HEAD
 .w-10 {
   width: 10% !important;
 }
@@ -15529,10 +15530,13 @@ html:not([dir="rtl"]) .float-left {
   width: 20% !important;
 }
 
+=======
+>>>>>>> e006ccc5476c3dfe98a021b40e8fb7093ec403c1
 .w-25 {
   width: 25% !important;
 }
 
+<<<<<<< HEAD
 .w-30 {
   width: 30% !important;
 }
@@ -15545,6 +15549,8 @@ html:not([dir="rtl"]) .float-left {
   width: 40% !important;
 }
 
+=======
+>>>>>>> e006ccc5476c3dfe98a021b40e8fb7093ec403c1
 .w-50 {
   width: 50% !important;
 }

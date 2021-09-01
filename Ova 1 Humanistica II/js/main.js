@@ -32,6 +32,7 @@ $( document ).ready(function() {
         'transform':'translate3d(0, 0, 0px);',
         'width':'65px'
     });*/
+    alert('Para navegar en la OVA se recomienda utilizar Chrome');
 
 });
 

@@ -8,11 +8,6 @@
   width: 700px;
   height: 360px;
 }
-
-.bold{
-  font-weight: bold;
-}
-
 .btn-border{
   height: 12px;width: 12px;
   border-radius: 50%;
@@ -365,6 +360,7 @@
 }
 .oculto-off{
   display: block;
+<<<<<<< HEAD
 }
 
 /*unidad2-1*/
@@ -440,3 +436,6 @@
 .mr-20{
   margin-right: -20px;
 }
+=======
+}
+>>>>>>> e006ccc5476c3dfe98a021b40e8fb7093ec403c1
