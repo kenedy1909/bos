@@ -368,7 +368,7 @@
 }
 
 /*unidad2-1*/
-.circulo-img{
+.img-c{
   border-radius: 50%;
   border: solid 10px var(--bg-color-dark);
   background-color: gray;
@@ -396,4 +396,47 @@
 .img-balanza{
   top: 45%;
   right: 8%;
+}
+
+/*unidad2-2*/
+.box-color-claro{
+  background-color: var(--bg-color-claro);
+}
+
+.box-color-dark{
+  background-color: var(--bg-color-dark);
+}
+
+.box-h-20rem{
+  min-height: 20rem;
+}
+
+.box-w-24rem{
+  max-width: 24rem;
+}
+
+.icon-c{
+  border-radius: 50%;
+  border: solid 2px white;
+  background-color: var(--bg-color-dark);
+  padding: 2px 13px;
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
+
+.icon-arrow-size{
+  font-size: 45px;
+  color: white;
+}
+
+.icon-mt-5{
+  margin-top: -15%;
+  margin-right: 11%;
+}
+
+
+/*unidad2-3*/
+.mr-20{
+  margin-right: -20px;
 }

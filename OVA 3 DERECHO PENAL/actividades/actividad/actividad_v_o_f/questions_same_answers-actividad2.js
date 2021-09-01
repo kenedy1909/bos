@@ -209,7 +209,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th>Ítem</th>\
+                    <th><p style="color: white;"></p><b>Item:</b></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
@@ -235,7 +235,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
       </div>\
     </div>\
     {% endfor %}\
-    <div class="text-center">\
-        <button class="btn " style="background: #771E18; color: #FFFFFF;" type="submit" >Calificar</button>\
+    <div class="col-xs-12 text-center">\
+        <button id="calificar" class="btn btn-primary rounded-lg">Calificar</button>\
     </div>\
 </form>'

@@ -4,16 +4,17 @@ $(document).on('ready', inicioRecurso);
 function inicioRecurso() {
     //Actividad 2
     var _answers = [
-            {id: "A", answer_txt: "Verdadero"},
-            {id: "B", answer_txt: "Falso"}
-        ];
+        { id: "A", answer_txt: "Verdadero" },
+        { id: "B", answer_txt: "Falso" }
+    ];
     var _questions = [
-        {question_txt: "El documento creado por la comisión de expertos donde recolectaron las infracciones presentadas tuvo más de 65.000 páginas.", answer_id: "A", img:""},
-        {question_txt: "En febrero de 1993 el consejo de seguridad mediante la resolución 808 decidió que debía crearse un tribunal Ad hoc para investigar los infracciones al DIH.", answer_id: "A", img:""},
-        {question_txt: "El trabajo realizado por el Comité de expertos fue entregado al tribunal en 1999.", answer_id: "B", img:""},
-        {question_txt: "El Estatuto conformado desde mayo de 1993 también establece la competencia del tribunal para juzgar crímenes como el genocidio.", answer_id: "A", img:""},
-        {question_txt: "El Consejo de Seguridad de Naciones Unidas decide crear los tribunales ad hoc para investigar y juzgar a los responsables de los crímenes cometidos en los conflictos de Yugoslavia y Ruanda.", answer_id: "A", img:""}
+        { question_txt: "La parte V del Estatuto de Roma consagra las normas aplicables a la investigación, iniciando en el artículo 53 que establece el inicio de la investigación por parte del Fiscal, donde cuál se consagra los requisitos que debe analizar la fiscalía a fin de poder determinar el inicio formal de la investigación.", answer_id: "A", img: "" },
 
+        { question_txt: "La Regla 401 de las Reglas de procedimiento y prueba de la CPI, dispone todas las instancias a las que puede acudir el fiscal para recabar la información necesaria para evaluar la información que ha recibido.", answer_id: "B", img: "" },
+
+        { question_txt: "La regla 109 establece el plazo y procedimiento para la sala de cuestiones preliminares revisar una decisión de la fiscalía.", answer_id: "A", img: "" },
+
+        { question_txt: "La regla 116 establece el procedimiento para cuando la prueba sea solicitada por la defensa.", answer_id: "A", img: "" },
     ];
 
     var qwsa = new QuestionsSameAnswers({
