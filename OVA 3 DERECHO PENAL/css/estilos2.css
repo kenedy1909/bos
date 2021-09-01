@@ -8,6 +8,11 @@
   width: 700px;
   height: 360px;
 }
+
+.bold{
+  font-weight: bold;
+}
+
 .btn-border{
   height: 12px;width: 12px;
   border-radius: 50%;
@@ -360,4 +365,35 @@
 }
 .oculto-off{
   display: block;
+}
+
+/*unidad2-1*/
+.circulo-img{
+  border-radius: 50%;
+  border: solid 10px var(--bg-color-dark);
+  background-color: gray;
+  height: 130px;
+  width: 130px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-buscar{
+  top: 45%;
+  left: 6%;
+}
+
+.img-palacio{
+  top: 10%;
+  left: 16%;
+}
+
+.img-reloj{
+  top: 10%;
+  right: 18%;
+}
+
+.img-balanza{
+  top: 45%;
+  right: 8%;
 }
