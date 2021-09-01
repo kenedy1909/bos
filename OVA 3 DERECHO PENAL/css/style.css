@@ -1449,16 +1449,17 @@ fieldset:disabled a.btn {
 @media (hover: hover), (-ms-high-contrast: none) {
   .btn-primary:hover {
     color: #fff;
-    background-color: #2a1ab9;
-    border-color: #2819ae;
+    background-color: var( --bg-color-claro2);
+    border-color: var(--bg-color-claro2);
   }
 }
 
 .btn-primary:focus, .btn-primary.focus {
-  color: #fff;
-  background-color: #2a1ab9;
-  border-color: #2819ae;
-  box-shadow: 0 0 0 0.2rem rgba(81, 65, 224, 0.5);
+  color: #000;
+  background-color: var(--bg-color-claro2);
+  border-color: var(--bg-color-claro2);
+  box-shadow: var(--bg-color-dark);
+  /* box-shadow: 0 0 0 0.2rem rgba(81, 65, 224, 0.5); */
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
