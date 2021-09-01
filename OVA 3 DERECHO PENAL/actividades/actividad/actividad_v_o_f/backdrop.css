@@ -176,9 +176,9 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #0075a8;
+    background-color: #5f1817;;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;   
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     padding: 6px 30px;

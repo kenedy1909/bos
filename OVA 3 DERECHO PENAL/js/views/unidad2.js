@@ -401,3 +401,8 @@ function Input2(num) {
       /*alert();*/
   });
 }
+
+//unidad2-2
+$("#btn-carousel").click(function() {
+    $('.carousel').carousel('next')
+});
