@@ -442,12 +442,12 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
-        ahorcado.reiniciar();
+        location.reload();
     });
 
 
     $("#reset").on("click", function() {
-        $("#unidad1-28").html('<iframe src="actividades/actividad/activi1/index.html" frameborder="0"></iframe>')
+        location.reload();
     })
 
 }

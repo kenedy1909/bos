@@ -56,7 +56,7 @@
 }
 
 .btn-ova{
-  color: #fff;
+  color: #fff!important;
   background-color: #78201A;
   /*border-bottom-color: #ffffff;*/
   border-color: #ffffff;
