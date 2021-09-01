@@ -408,8 +408,14 @@ $("#btn-carousel").click(function() {
 });
 
 //unidad2-4
+// inicio btn1
  $("#btn1Carcel").click(function() {
-    $("#contentBtn1").removeClass('d-none'); 
+    $("#contentBtn1").removeClass('d-none');
+    $("#contentBtn2").addClass('d-none'); 
+    $("#contentBtn3").addClass('d-none'); 
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
  });
 
  $("#btn1-a").click(function() {
@@ -421,3 +427,117 @@ $("#btn-carousel").click(function() {
     $("#content1-b").removeClass('d-none');
     $("#content1-a").addClass('d-none');
  });
+// fin btn1
+
+// inicio btn2
+ $("#btn2Carcel").click(function() {
+    $("#contentBtn2").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn3").addClass('d-none'); 
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+
+ $("#btn2-a").click(function() {
+    $("#content2-a").removeClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-b").click(function() {
+    $("#content2-b").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-c").click(function() {
+    $("#content2-c").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-d").click(function() {
+    $("#content2-d").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-e").click(function() {
+    $("#content2-e").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+ });
+//  fin btn2
+
+// inicio btn3
+$("#btn3Carcel").click(function() {
+    $("#contentBtn3").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+
+ $("#btn3-a").click(function() {
+    $("#content3-a").removeClass('d-none');
+    $("#content3-b").addClass('d-none');
+    $("#content3-c").addClass('d-none');
+ });
+
+ $("#btn3-b").click(function() {
+    $("#content3-b").removeClass('d-none');
+    $("#content3-a").addClass('d-none');
+    $("#content3-c").addClass('d-none');
+ });
+
+ $("#btn3-c").click(function() {
+    $("#content3-c").removeClass('d-none');
+    $("#content3-a").addClass('d-none');
+    $("#content3-b").addClass('d-none');
+ });
+// fin btn3
+
+// inicio btn4
+$("#btn4Carcel").click(function() {
+    $("#contentBtn4").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+// fin btn4
+
+// inicio btn5
+$("#btn5Carcel").click(function() {
+    $("#contentBtn5").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+// fin btn5
+
+// inicio btn6
+$("#btn6Carcel").click(function() {
+    $("#contentBtn6").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+ });
+// fin btn6
