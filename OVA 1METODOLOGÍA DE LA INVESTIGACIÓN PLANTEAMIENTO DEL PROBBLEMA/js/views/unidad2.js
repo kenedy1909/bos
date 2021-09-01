@@ -30,7 +30,7 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     slide_predeterminado2();
-    slide_link2(tema);
+    slide_link(tema);
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
