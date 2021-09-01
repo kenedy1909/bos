@@ -406,3 +406,18 @@ function Input2(num) {
 $("#btn-carousel").click(function() {
     $('.carousel').carousel('next')
 });
+
+//unidad2-4
+ $("#btn1Carcel").click(function() {
+    $("#contentBtn1").removeClass('d-none'); 
+ });
+
+ $("#btn1-a").click(function() {
+    $("#content1-a").removeClass('d-none');
+    $("#content1-b").addClass('d-none');
+ });
+
+ $("#btn1-b").click(function() {
+    $("#content1-b").removeClass('d-none');
+    $("#content1-a").addClass('d-none');
+ });
