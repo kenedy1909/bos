@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     console.log(tema);
-    
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -17,7 +17,7 @@ $( document ).ready(function() {
         }
     });
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
-    
+
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -72,7 +72,7 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
 }
-var sumaslide = 0;
+
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
@@ -134,47 +134,6 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 11:
-            sumaslide++;
-            if (sumaslide < 2) {
-                var slideCount = $('#slider ul li').length;
-                var slideWidth = $('#slider ul li').width();
-                var slideHeight = $('#slider ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider').css({ width: '100%', height: '430px' });
-                
-                $('#slider ul').css({ width: '90%'});
-                
-                $('#slider ul li:last-child').prependTo('#slider ul');
-
-                function moveLeft() {
-                    $('#slider ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:last-child').prependTo('#slider2 ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
-
-                function moveRight() {
-                    $('#slider ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:first-child').appendTo('#slider ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
-
-                $('a.control_prev').click(function (e) {
-                    moveLeft();
-                    e.preventDefault();
-                });
-
-                $('a.control_next').click(function (e) {
-                    moveRight();
-                    e.preventDefault();
-                });
-            }
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 12:
