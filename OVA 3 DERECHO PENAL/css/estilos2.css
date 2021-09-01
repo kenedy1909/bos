@@ -8,6 +8,11 @@
   width: 700px;
   height: 360px;
 }
+
+.bold{
+  font-weight: bold;
+}
+
 .btn-border{
   height: 12px;width: 12px;
   border-radius: 50%;
@@ -363,7 +368,11 @@
 }
 
 /*unidad2-1*/
+<<<<<<< HEAD
 .img-c{
+=======
+.circulo-img{
+>>>>>>> parent of 4d7531b9 (31 08 2021)
   border-radius: 50%;
   border: solid 10px var(--bg-color-dark);
   background-color: gray;
@@ -391,6 +400,7 @@
 .img-balanza{
   top: 45%;
   right: 8%;
+<<<<<<< HEAD
 }
 
 /*unidad2-2*/
@@ -435,3 +445,6 @@
 .mr-20{
   margin-right: -20px;
 }
+=======
+}
+>>>>>>> parent of 4d7531b9 (31 08 2021)

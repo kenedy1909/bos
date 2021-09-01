@@ -15517,6 +15517,7 @@ html:not([dir="rtl"]) .float-left {
   box-shadow: none !important;
 }
 
+<<<<<<< HEAD
 .w-10 {
   width: 10% !important;
 }
@@ -15525,6 +15526,8 @@ html:not([dir="rtl"]) .float-left {
   width: 15% !important;
 }
 
+=======
+>>>>>>> parent of 4d7531b9 (31 08 2021)
 .w-20 {
   width: 20% !important;
 }
@@ -15533,6 +15536,7 @@ html:not([dir="rtl"]) .float-left {
   width: 25% !important;
 }
 
+<<<<<<< HEAD
 .w-30 {
   width: 30% !important;
 }
@@ -15541,6 +15545,8 @@ html:not([dir="rtl"]) .float-left {
   width: 35% !important;
 }
 
+=======
+>>>>>>> parent of 4d7531b9 (31 08 2021)
 .w-40 {
   width: 40% !important;
 }
