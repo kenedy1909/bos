@@ -10,7 +10,7 @@ const palabras = [
   {
     pos: [0, 1],
     sentido: 0,
-    palabra: 'Fundadores',
+    palabra: 'fundadores',
     pista: 'Órgano jerárquico más alto y se encuentra conformado por los fundadores'
   },
   {
