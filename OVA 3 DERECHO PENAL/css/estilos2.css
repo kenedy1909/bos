@@ -437,3 +437,44 @@
 
 
 /*unidad2-3*/
+.box-prision{
+  min-width: 800px;
+  min-height: 320px;
+}
+
+/* ARROWS */
+.w60px{
+  width: 60px;
+}
+
+.w990px{
+  width: 990px;
+}
+
+.arrowText {
+  position:relative;
+  height: 35px;
+  background-color: var(--bg-color-dark);
+  float: left;
+}
+
+  .arrowText:before, .arrowText:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* RIGHT ARROW */
+.arrowRight:before {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  top:-2px;
+}
+  
+ .arrowRight:before {
+  border-left: 16px solid var(--bg-color-dark);
+  right: -16px;
+  z-index: 1;
+}

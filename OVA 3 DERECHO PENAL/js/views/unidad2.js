@@ -408,6 +408,7 @@ $("#btn-carousel").click(function() {
 });
 
 //unidad2-4
+// inicio modal carcel
 // inicio btn1
  $("#btn1Carcel").click(function() {
     $("#contentBtn1").removeClass('d-none');
@@ -581,3 +582,77 @@ $("#btn7Carcel").click(function() {
     $("#content7-c").addClass('d-none');
  });
 // fin btn7
+// fin modal calcer
+
+// inicio modal prision
+// inicio btn1
+$("#btnPris1").click(function() {
+   $("#contentBtnPris1").removeClass('d-none');
+   $(".arrowRight").removeClass('w60px');
+   $(".arrowRight").removeClass('w990px');
+   $(".arrowRight").addClass('w60px');
+   $("#arrow1").addClass('w990px');
+   $("#contentBtnPris2").addClass('d-none');
+   $("#contentBtnPris3").addClass('d-none');
+   $("#contentBtnPris4").addClass('d-none');
+   $("#contentBtnPris5").addClass('d-none');
+   
+});
+// fin btn1
+
+// inicio btn2
+$("#btnPris2").click(function() {
+    $("#contentBtnPris2").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow2").addClass('w990px');
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris3").addClass('d-none');
+    $("#contentBtnPris4").addClass('d-none');
+    $("#contentBtnPris5").addClass('d-none');
+ });
+ // fin btn2
+
+ // inicio btn3
+$("#btnPris3").click(function() {
+    $("#contentBtnPris3").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow3").addClass('w990px');
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris2").addClass('d-none');
+    $("#contentBtnPris4").addClass('d-none');
+    $("#contentBtnPris5").addClass('d-none');
+ });
+ // fin btn3
+
+ // inicio btn4
+$("#btnPris4").click(function() {
+    $("#contentBtnPris4").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow4").addClass('w990px');
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris2").addClass('d-none');
+    $("#contentBtnPris3").addClass('d-none');
+    $("#contentBtnPris5").addClass('d-none');
+ });
+ // fin btn4
+
+ // inicio btn5
+$("#btnPris5").click(function() {
+    $("#contentBtnPris5").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow5").addClass('w990px');;
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris2").addClass('d-none');
+    $("#contentBtnPris3").addClass('d-none');
+    $("#contentBtnPris4").addClass('d-none');
+ });
+ // fin btn5
+// fin modal prision
