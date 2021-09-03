@@ -487,3 +487,56 @@
 .border-color2{
   border: solid 5px var(--bg-color-claro2);
 }
+
+/*unidad2-12*/
+.h400px{
+  min-height: 400px;
+}
+
+.btnImgJuicio {
+  position: absolute;
+  width: 140px;
+  height: 125px;
+  border: solid 1px ghostwhite;
+  opacity: 0.1;
+}
+
+#btn1ImgJuicio {
+  top: -4%;
+  left: 38%;
+}
+
+#btn2ImgJuicio {
+  top: 6%;
+  left: 71%;
+}
+
+#btn3ImgJuicio {
+  top: 42%;
+  left: 74%;
+}
+
+#btn4ImgJuicio {
+  top: 76%;
+  left: 72%;
+}
+
+#btn5ImgJuicio {
+  top: 76%;
+  left: 37%;
+}
+
+#btn6ImgJuicio {
+  top: 74%;
+  left: 2%;
+}
+
+#btn7ImgJuicio {
+  top: 41%;
+  left: 1%;
+}
+
+#btn8ImgJuicio {
+  top: 8%;
+  left: 3%;
+}

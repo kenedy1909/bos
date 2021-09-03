@@ -692,7 +692,34 @@ $("#box3ImgP").click(function () {
     $("#box3ImgP").addClass('d-none');
     $("#box3Img").removeClass('d-none');
 }); 
-// fin box3    
+// fin box3   
+
+// unidad1-12
+
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
+
+$(function () {
+    $('.example-popover').popover({
+      container: 'body'
+    });
+});
+
+// btn1
+$("#btn1ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn1").removeClass('d-none');
+});
+
+// btn2
+$("#btn2ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn2").removeClass('d-none');
+});
+
+ 
+
 
 
 
