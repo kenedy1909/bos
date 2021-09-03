@@ -407,6 +407,10 @@
   background-color: var(--bg-color-dark);
 }
 
+.box-color-claro2{
+  background-color: var(--bg-color-claro2);
+}
+
 .box-h-20rem{
   min-height: 20rem;
 }
