@@ -482,3 +482,8 @@
   right: -16px;
   z-index: 1;
 }
+
+/*unidad2-7*/
+.border-color2{
+  border: solid 5px var(--bg-color-claro2);
+}

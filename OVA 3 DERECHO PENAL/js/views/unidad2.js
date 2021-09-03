@@ -656,3 +656,14 @@ $("#btnPris5").click(function() {
  });
  // fin btn5
 // fin modal prision
+
+// unidad2-7
+$("#box1Img").click(function () {
+    $("#box1Img").addClass('d-none');
+    $("#box1ImgP").removeClass('d-none');
+});
+
+
+
+
+
