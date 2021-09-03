@@ -658,12 +658,41 @@ $("#btnPris5").click(function() {
 // fin modal prision
 
 // unidad2-7
+// inicio box1
 $("#box1Img").click(function () {
     $("#box1Img").addClass('d-none');
     $("#box1ImgP").removeClass('d-none');
 });
 
+$("#box1ImgP").click(function () {
+    $("#box1ImgP").addClass('d-none');
+    $("#box1Img").removeClass('d-none');
+}); 
+// fin box1
 
+// inicio box2
+$("#box2Img").click(function () {
+    $("#box2Img").addClass('d-none');
+    $("#box2ImgP").removeClass('d-none');
+});
+
+$("#box2ImgP").click(function () {
+    $("#box2ImgP").addClass('d-none');
+    $("#box2Img").removeClass('d-none');
+}); 
+// fin box2
+
+// inicio box3
+$("#box3Img").click(function () {
+    $("#box3Img").addClass('d-none');
+    $("#box3ImgP").removeClass('d-none');
+});
+
+$("#box3ImgP").click(function () {
+    $("#box3ImgP").addClass('d-none');
+    $("#box3Img").removeClass('d-none');
+}); 
+// fin box3    
 
 
 
