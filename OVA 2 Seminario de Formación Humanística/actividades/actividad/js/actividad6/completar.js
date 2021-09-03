@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded",() => {
 		op_1 = new SelectDropdown({ id: "op_1" }),
 		op_2 = new SelectDropdown({ id: "op_2" }),
 		op_3 = new SelectDropdown({ id: "op_3" }),
-		op_4 = new SelectDropdown({ id: "op_4" });
+		op_4 = new SelectDropdown({ id: "op_4" }),
+		op_5 = new SelectDropdown({ id: "op_5" }),
+		op_6 = new SelectDropdown({ id: "op_6" }),
+		op_7 = new SelectDropdown({ id: "op_7" });
 });
 
 class SelectDropdown {
@@ -210,13 +213,13 @@ class SelectDropdown {
 
 function calificar(){
 	var res = [];
-	for (var i = 0; i < 6; i++) {
+	for (var i = 0; i < 7; i++) {
 		res[i] = $("#op_"+i).val();
 	}
 	var puntaje = 100;
 	for (var i = 0; i < res.length; i++) {
 		if (res[i] == 'incorrecta') {
-			puntaje = puntaje - 33.3;
+			puntaje = puntaje - 12.5;
 			
 		}
 	}
