@@ -45,7 +45,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "1. De la siguiente figura, encuentra el resultado de  𝑚(𝐶 ̂ 𝐷) y selecciona la respuesta correcta",
+                texto: "1. De la siguiente figura, encuentra el resultado de  𝑚 𝐶𝐷 ̂  y selecciona la respuesta correcta",
                 respuestas: [{
                     texto: "88°",
                     correcta: false

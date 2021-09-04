@@ -2,18 +2,12 @@ $(document).ready(function() {
 	console.log(num_aleatorio_1);
 	console.log(num_aleatorio_2);
 	console.log(num_aleatorio_3);
-	/*var img1 = `
-								<img src="./img/triangulo (2).png" class="w-100" style="
-				    width: 90%;
-				    margin: auto;
-				">
+	var img1 = `
+								<img src="./img/imagen67.png" class="w-100" style="width: 60%; margin: auto;">
 				`;
 	var img2 = `
 				<div class="img_questionario d-flex">
-								<img src="./img/triangulo (1).png" class="w-100" style="
-				    width: 90%;
-				    margin: auto;
-				">
+								<img src="./img/imagen52.png" class="w-100" style="width: 60%; margin: auto;">
 								</div>
 				`;
 	var img3 = `
@@ -23,7 +17,7 @@ $(document).ready(function() {
 				    margin: auto;
 				">
 								</div>
-				`;*/
+				`;
 	/*$(".img_questionario1").html(img1);
 	$(".img_questionario2").html(img2);
 	$(".img_questionario3").html(img3);*/
