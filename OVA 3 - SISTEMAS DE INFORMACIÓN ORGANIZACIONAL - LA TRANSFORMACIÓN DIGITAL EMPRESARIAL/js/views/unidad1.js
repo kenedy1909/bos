@@ -68,11 +68,11 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             var pdf = `<p class="p_white">
-                            <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia1_Principios-del-marketing-digital.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                      </p>
-                      <p class="p_white">
-                            <a href="assets/PDF/UNIDAD-1_TENDECIAS-TECNOLÓGICAS/Guia2_Redes-Sociales.png" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                      </p>`;
+                            <a href="assets/PDF/UNIDAD1/guia1PrincipiosDelMarketingDigital.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        </p>
+                        <p class="p_white">
+                            <a href="assets/PDF/UNIDAD1/guia2RedesSociales.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
             
