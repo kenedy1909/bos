@@ -258,7 +258,7 @@ $("#btn1-und2-3").click(function () {
     $("#eventoUnidad2-3").html(
         `<div class="row align-items-center justify-content-center position-absolute und2-3-1">
         <div class="col-md-6 p-0">
-            <p class="justificado p_black font13">La cantidad de movimiento se define como el producto de la masa de un objeto y su velocidad <img style="width: 50px;" src="assets/img/img_ova/formula3.png" alt="">,se debe tener en cuenta que la cantidad
+            <p class="justificado p_black font13">La cantidad de movimiento se define como el producto de la masa de un objeto y su velocidad <img style="width: 50px;cursor: pointer;" src="assets/img/img_ova/formula3.png" title="Clic para Zoom" data-toggle="modal" data-target="#modalimg_FormulaNue" >,se debe tener en cuenta que la cantidad
                 de movimiento es una cantidad vectorial, cuando la dirección no es un factor importante, se puede mencionar que la cantidad de movimiento es masa por rapidez. En la definición se puede ver que un objeto
                 en movimiento puede tener una gran cantidad de movimiento si su masa o su velocidad es grande, o si tanto su masa como su velocidad son grandes.</p>
         </div>
