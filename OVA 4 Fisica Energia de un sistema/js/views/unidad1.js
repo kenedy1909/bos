@@ -996,10 +996,10 @@ function scroll() {
 }
 
 //boton para abrir dos enlaces (documentos) al mismo tiempo 
-$("#btnEvaFinal").click(function () {
-    open('assets/PDF/2021_1_Cuestionario_OVA_4__Energ_a_de_un_sistema___Q01.pdf');
-    open('assets/PDF/2021_1_Cuestionario_OVA_4__Energ_a_de_un_sistema___Q02.pdf');
-});
+// $("#btnEvaFinal").click(function () {
+//     open('assets/PDF/2021_1_Cuestionario_OVA_4__Energ_a_de_un_sistema___Q01.pdf');
+//     open('assets/PDF/2021_1_Cuestionario_OVA_4__Energ_a_de_un_sistema___Q02.pdf');
+// });
 
 
 //dezlizador
