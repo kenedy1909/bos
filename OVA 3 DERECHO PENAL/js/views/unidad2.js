@@ -695,15 +695,8 @@ $("#box3ImgP").click(function () {
 // fin box3   
 
 // unidad1-12
-
 $(function () {
     $('[data-toggle="popover"]').popover()
-});
-
-$(function () {
-    $('.example-popover').popover({
-      container: 'body'
-    });
 });
 
 // btn1
@@ -718,6 +711,41 @@ $("#btn2ImgJuicio").click(function() {
     $("#contentJBtn2").removeClass('d-none');
 });
 
+// btn3
+$("#btn3ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn3").removeClass('d-none');
+});
+
+// btn4
+$("#btn4ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn4").removeClass('d-none');
+});
+
+// btn5
+$("#btn5ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn5").removeClass('d-none');
+});
+
+// btn6
+$("#btn6ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn6").removeClass('d-none');
+});
+
+// btn7
+$("#btn7ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn7").removeClass('d-none');
+});
+
+// btn8
+$("#btn8ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn8").removeClass('d-none');
+});
  
 
 
