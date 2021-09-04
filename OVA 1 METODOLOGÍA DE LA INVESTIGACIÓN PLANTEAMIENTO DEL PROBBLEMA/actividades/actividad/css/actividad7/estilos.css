@@ -1,0 +1,179 @@
+.contenido {
+    max-width: 1200px;
+}
+
+@media (max-width: 767px) {
+    .backdrop header h1 {
+        font-size: 40px;
+    }
+}
+
+.qwsa-form label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    cursor: pointer
+}
+
+table {
+    color: #fff;
+    font-size: 22px;
+}
+
+@media (max-width: 767px) {
+    table {
+        font-size: 18px;
+    }
+}
+
+.title_table {
+    text-align: center;
+}
+
+
+.label-container {
+    margin: 0;
+}
+
+.label-container input {
+    left: 45%;
+    right: 50%;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+    display: none;
+    opacity: 0;
+}
+
+.radio-elegant {
+    top: -5px;
+    right: 50%;
+    margin: auto;
+    width: 35px;
+    height: 35px;
+}
+
+svg.svg-radio-elegant: not(: root) {
+    overflow: hidden;
+}
+
+svg.svg-radio-elegant path {
+    /*  stroke: #655E5E; */
+    stroke-width: 20px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+
+    -webkit-transition: stroke-dashoffset 0.8s ease-in 0s;
+    transition: stroke-dashoffset 0.2s ease-in 0s;
+}
+
+svg.svg-radio-elegant path {
+    stroke: #444;
+}
+
+span.checked svg.svg-radio-elegant path {
+    stroke: #444;
+}
+
+table .fa-circle {
+    color: #B6BAB4;
+    font-size: 5px;
+}
+
+table.tabla-actividad2 td,
+.table td {
+    padding: 2px;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+svg.svg-radio-elegant {
+    border: none;
+    height: 35px;
+    pointer-events: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+span.checked svg.svg1 {
+    border: none;
+    background: #8eb936;
+    stroke: #444;
+}
+
+span.checked svg.svg2 {
+    border: none;
+    background: #FA5A62;
+    stroke: #444;
+}
+
+@keyframes fondo {
+    0% {
+        background-position: bottom 15px center, bottom right 0;
+    }
+
+    100% {
+        background-position: bottom 15px center, bottom right 920px;
+    }
+}
+
+
+.fondoContenido {
+    /* background-image: url(../img/carro.png), url(../img/fondo5.png); */
+    padding: 25px;
+    border-radius: 85px;
+    background-size: 90px, 920px;
+    /*padding: 20px 50px 100px;
+    border-radius: 10px;*/
+    background-position: bottom center;
+    background-repeat: no-repeat, repeat-x;
+    margin-bottom: 30px;
+    background-color: #0075a8;
+    animation: fondo 10s linear infinite;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+
+    .fondoContenido {
+        padding: 20px 20px 100px;
+        margin-bottom: 30px;
+    }
+}
+
+.info_actividad{
+    background: rgba(255, 192, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.pt-3{
+    padding-top: 1.5em;
+}
+.pt-5{
+    padding-top: 2.5em;
+}
+.pl-3{
+    padding-left: 1.5em;
+}
+.pr-3{
+    padding-right: 1.5em;
+}
+
+.border_punteado{
+    border: dashed #FFFFFF 5px;
+    border-radius: 85px;
+    padding: 1em;
+}
+
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}

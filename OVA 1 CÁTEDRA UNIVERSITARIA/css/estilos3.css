@@ -1,0 +1,136 @@
+.cursor{
+  cursor: pointer;
+}
+
+.bg-rojo-1{
+  background: #E32242;
+}
+
+.border-top-radius{
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+.border-right-radius{
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+#slider2 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider2 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  list-style: none;
+}
+
+#slider2 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 500px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+a.control_prev2, a.control_next2 {
+  
+  width: auto;
+  height: auto;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider2_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.inactivo{
+  background: #ae1c16;
+  height: 4px;
+}
+
+.activo{
+  background: #ffffff;
+  height: 4px;
+}
+
+.bg-morado{
+  background: #632D36;
+}
+
+.custom-scrollbar_dos, .custom-scrollbar_tres{
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__inner_dos, .custom-scrollbar__inner_tres {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.custom-scrollbar__bar_dos, .custom-scrollbar__bar_tres {
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#97182F;
+  width: 3px;
+  right: 30px;
+  border-radius: 4px;
+
+}
+
+.custom-scrollbar__knob_dos, .custom-scrollbar__knob_tres {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #97182F;
+  transform: translate(-50%, -50%);
+  will-change: top;
+  cursor: pointer;
+}
+
+.linea_scroll_dos, .linea_scroll_tres {
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+    color: #540F23;
+}

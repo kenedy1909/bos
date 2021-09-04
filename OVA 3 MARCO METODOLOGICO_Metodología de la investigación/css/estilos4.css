@@ -1,0 +1,109 @@
+.cartas_4{
+	background: #7a3d78;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+}
+.btn_unidad4{
+	background: #7a3d74;
+    font-size: 22px;
+    color: white
+}
+
+
+
+.acordeon input {
+  display: none;
+}
+
+.acordeon__titulo {
+  display: block;
+  padding: 15px;
+  background: #7b49ab;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+.acordeon__titulo:hover {
+  background: #7c49abcc;
+}
+
+.acordeon__contenido {
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.acordeon input:checked ~ .acordeon__contenido{
+  height: auto;
+  margin: 15px 0;
+}
+.acordeon__item{
+  background: var(--bg-color-claro);
+}
+
+
+.imagen_acordeon{
+  background: white;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 0px;
+}
+.triangulocordeon{
+  width: 0;
+  height: 0;
+  border-left: 43px solid #ba236d;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  transform: rotate(90deg);
+}
+.textocordeon{
+  font-weight: bold;
+  font-size: 15px;
+  color: #ba236d;
+}
+.div_entregable{
+  width: 100px;
+  background: #fff;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;left: 50px;
+}
+.text_entre{
+  background: #f7e448;
+  height: 100px;
+  padding: 39px 20px 15px 55px;
+  border-radius: 15px;
+}
+
+.card-inactiva-o{
+  background: #252525 !important;
+}
+.card-inactiva-c{
+  background: #484848 !important;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.w-80px{
+  width: 80px;
+}
+
+.h-80px{
+  height: 80px;
+}
+
+.w-40px{
+  width: 40px;
+}
+
+.top-n40px{
+  top: -40px;
+}

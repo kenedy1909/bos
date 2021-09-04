@@ -1,0 +1,60 @@
+.navegation{
+    border-top: solid #994c91;
+    border-left: solid #994c91;
+    border-right: solid #994c91;
+    height: 50px;
+    padding: 5px 0px 1px 10px;
+}
+
+.activas{
+  height: 4px;
+  background: #994c91;
+}
+.font20{
+  font-size: 20px;
+}
+.encendido{
+  color: #994c91;
+}
+.inactivo{
+  color: #e2c4df;
+}
+
+.banner3_2{
+  min-height: 260px;
+  background: #cccccc;
+  border-radius: 10px;
+  border: dashed #994c91;
+  
+}
+.banner_crema{
+  background: #E2C4DF;
+  min-height: 100px;
+  border-radius: 30px;
+  padding: 25px 25px 25px 25px
+}
+.fondotargeta{
+  width: 100px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+}
+
+.encabezado{
+  height: 40px;
+  background: #7a3d74;
+  border-radius: 15px 15px 0px 0px;
+}
+.circulotarget{
+  height: 40px;
+  width: 40px;
+  background: #994c91;
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  left: 31px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+}

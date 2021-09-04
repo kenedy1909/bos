@@ -1,0 +1,178 @@
+.container {
+  margin-top: 3vh;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+td {
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: arial;
+}
+
+td.empty {
+  background: #ff9f55;
+  visibility: hidden;
+}
+
+td.selected {
+  background: lightblue;
+}
+
+td.start {
+  cursor: pointer;  
+}
+
+td.start label {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  text-align: left;
+  font-size: 10px;
+}
+
+td.start:hover {
+  background: #eee;
+}
+
+td.start.selected:hover {
+  background: #ddf;
+}
+
+/*.mensaje {
+  position: absolute;
+  color: white;
+  left: 25vw;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+  width: 50vw;
+  z-index: 1000;
+  background: rgba(0, 0, 255, 0.9)
+}*/
+
+/*.mensaje button {
+  margin-top: 10px;
+}*/
+
+.modal-backdrop{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 0 !important;
+}
+
+.modal-footer{
+  display: block !important;
+}
+
+.border-bottom-actividad{
+    border-bottom: solid 3px #811111;
+}
+
+.img-activi{
+    width: 116px;height: 116px;
+}
+
+.text-img-actividad{
+    font-size: 20px;
+    color: #811111;
+}
+
+.content-text-img-activi{
+  border-bottom: solid 3px #811111;
+  height: 86px;
+  margin: 0px;
+  padding-top: 45px;
+  text-align: center;
+}
+
+.content-text-img-activi-2{
+  border-bottom: solid 3px #811111;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.content-tarjeta{
+  background: #FFC000;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.max-w-30px{
+    max-width: 30px;
+}
+
+.content-text-activi{
+    background: #DAE3F3;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.content-text-activi-2{
+    border: solid 2px #79CAF3;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-muted{
+    color: #6c757d!important;
+}
+
+.info_actividad{
+    background: rgba(255, 192, 0);
+    border-radius: 20px;
+    padding: 20px;
+}
+.pt-3{
+    padding-top: 1.5em;
+}
+.pt-5{
+    padding-top: 2.5em;
+}
+.pl-3{
+    padding-left: 1.5em;
+}
+.pr-3{
+    padding-right: 1.5em;
+}
+.pl-1{
+    padding-left: 0.5em;
+}
+.pr-1{
+    padding-right: 0.5em;
+}
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+.btn-mostaza{
+    background: #A38D38;
+    color: #fff;
+}
