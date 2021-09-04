@@ -238,6 +238,14 @@ iframe{
   border-radius: 22px;
   background: #97182f;
 }
+
+.card-container, .front2, .back2 {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  background: var(--bg-color-claro);
+}
+
 .card .cover{
   height: 105px;
   overflow: hidden;
@@ -908,4 +916,8 @@ svg circle:nth-child(2){
 }
 .card-inactiva-c{
   background: #484848 !important;
+}
+
+.card-inactiva-o2, .card-inactiva-c2{
+  background: var(--bg-color-claro2) !important;
 }
