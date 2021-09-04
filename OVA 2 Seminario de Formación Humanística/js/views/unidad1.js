@@ -395,9 +395,7 @@ function Input(num) {
     $("input[type=range]").on('change', function () {
         /*alert();*/
     });
-  }
-
-
+}
 
   function scroll_horizontal2(num){
     $(".zoomContainer" ).remove();

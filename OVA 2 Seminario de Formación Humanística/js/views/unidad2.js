@@ -260,6 +260,28 @@ function controlSlides(num){
             slideHeight = $('#slider-3 ul li').height();
             slider_num = "#slider-3";
             slider_all();
+            $(".i3").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];  
+            var i = new Input(4);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(4);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
@@ -268,9 +290,54 @@ function controlSlides(num){
             slideHeight = $('#slider-4 ul li').height();
             slider_num = "#slider-4";
             slider_4();
+
+            $(".i3").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];  
+            var i = new Input(4);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(4);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             break;
         case 12:
-            
+            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            $(".i3").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];  
+            var i = new Input(4);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(4);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
@@ -293,6 +360,104 @@ function controlSlides(num){
     }
 }
 
+function Input(num) {
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
+  
+    this.crear = function(elementoPadre) {
+      // crea un nuevo elemento input
+      this.input = document.createElement("input");
+      //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+      for (var name in this.att) {
+        if (this.att.hasOwnProperty(name)) {
+          this.input.setAttribute(name, this.att[name]);
+        }
+      }
+      // crea un nuevo elemento div
+      this.output = document.createElement("div");
+      // establece el valor del atributo class del nuevo div
+      this.output.setAttribute("class", "output");
+      // y el contenido (innerHTML) de este
+      this.output.innerHTML = this.att.value;
+  
+      // inserta los dos elementos creados al final  del elemento Padre 
+      elementoPadre.appendChild(this.input);
+      elementoPadre.appendChild(this.output);
+    }
+  
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+      }
+      $("input[type=range]").on('change', function () {
+          /*alert();*/
+      });
+    this.actualizar2 = function() {
+      scroll_horizontal2(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+}
+
+  function scroll_horizontal(num){
+    $(".zoomContainer" ).remove();
+    switch (parseInt(num)) {
+        case 0:
+            var info_scroll = `
+                            <p class="caja-texto-b justificado font13 col-md-6 p12-1 p12">
+                                <b >Receptor:</b> puede ser una persona o idea. La finalidad es convencerle o persuadirle sobre la validez del propio punto de vista. 
+                            </p>
+                            `;
+            $('#info-scroll2').html(info_scroll);
+            break;
+        case 1:
+            var info_scroll = `
+                            <p class="caja-texto-b justificado font13 col-md-6 p12-2 p12">
+                                <b >Objeto:</b> es el tema frente al cual se genera la discusión y sobre el cual se debe argumentar. 
+                            </p>
+                            `;
+            $('#info-scroll2').html(info_scroll);
+            break;
+        case 2:
+            var info_scroll = `
+                            <p class="caja-texto-b justificado font13 col-md-6 p12-3 p12">
+                                <b >Tesis o idea:</b> implica una actitud y opinión sobre el tema u objeto. Es la afirmación concreta que se pretende defender o refutar. 
+                            </p>
+                            `;
+            $('#info-scroll2').html(info_scroll);
+            break;
+        case 3:
+            var info_scroll = `
+                            <p class="caja-texto-b justificado font13 col-md-6 p12-4 p12">
+                                <b >Argumentos:</b> son las razones válidas que se utilizan para justificar la propia tesis o posición. 
+                            </p>
+                            `;
+            $('#info-scroll2').html(info_scroll);
+            break;
+        case 4:
+            var info_scroll = `
+                            <p class="caja-texto-b justificado font13 col-md-6 p12-5 p12">
+                                <b >Conflictividad:</b> es la disputa entre dos posturas opuestas frente a un mismo tema. El tema sobre el que se debate debe ser polémico, razón por la cual se hace justamente necesario argumentar a favor o en contra de una idea concreta. 
+                            </p>
+                            `;
+            $('#info-scroll2').html(info_scroll);
+            break;
+        default:
+            break;
+    }
+}
 
 
 /*function cambiacontenido(opcion){
