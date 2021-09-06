@@ -845,7 +845,7 @@ a.control_next {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 300px;
+  height: 315px;
   /*border-radius: 15px;*/
   /*border: 1px solid #78201A;*/
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
