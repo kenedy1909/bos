@@ -20,11 +20,11 @@
 	left: -31px;top: -11px;
 }
 .textoTargets{
-	width: 50%;
 	padding-top: 12px;
 }
 .indicador1{
-	height: 30px;width: 30px;
+	height: 30px;
+	width: 30px;
 	border-radius: 50%;
 	background: #96AFFF;color: white;
 	font-weight: bold;
