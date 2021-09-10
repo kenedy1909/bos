@@ -765,6 +765,12 @@ p, button{
 	cursor: pointer;
 }
 
+.fondoCultura{
+	background: url('../assets/img/img_ova/cultura.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 /*slide*/
 #slider-uni-1 {
