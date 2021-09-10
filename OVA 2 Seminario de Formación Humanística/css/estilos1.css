@@ -381,15 +381,19 @@ p, button{
     color: #00414c;
 }
 
-.custom-scrollbar3, .custom-scrollbar4, .custom-scrollbar5 {
+.custom-scrollbar3, .custom-scrollbar4 {
   position: relative;
   height: 400px;
+}
+.custom-scrollbar5 {
+  position: relative;
+  height: 270px;
 }
 
 .custom-scrollbar__inner3, .custom-scrollbar__inner4, .custom-scrollbar__inner5 {
   height: 100%;
   width: calc(100% + 40px);
-  padding-right: 55px;
+  padding-right: 65px;
   overflow-y: auto;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -404,7 +408,7 @@ p, button{
   bottom: 45px;
   background:#00414c;
   width: 3px;
-  right: 30px;
+  right: 0px;
   border-radius: 4px;
 }
 
@@ -767,9 +771,34 @@ p, button{
 
 .fondoCultura{
 	background: url('../assets/img/img_ova/cultura.png');
-	background-size: 100%;
+	background-size: 78%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center right;
+}
+.bg-color-ova{
+	color: #fff;
+	background-color: #8b6229;
+}
+.bg-color-ova:hover{
+	transition: all 0.5s;
+	background: #00b0f0!important;
+	color: white!important;
+	border: 1px solid #002060!important;
+}
+.bg-azul{
+	background: #00b0f0!important;
+	color: white!important;
+	border: 1px solid #002060!important;
+}
+.cardTarj1{
+	color: #fff;
+	background-color: #006dbb;
+	border-radius: 45px;
+}
+.cardTarj2{
+	color: #fff;
+	background-color: #bf9000;
+	border-radius: 45px;
 }
 
 /*slide*/

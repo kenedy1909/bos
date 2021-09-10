@@ -103,17 +103,20 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            scroll_set(5);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
             $("#content").html('');
             $("#img_cont").html('');
+            scroll_set(5);
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
+            scroll_set(5);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
@@ -203,6 +206,16 @@ function controlSlides(num){
 }
 
 
+function scroll_set(num) {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob'+num);
+    bar = document.querySelector('.custom-scrollbar__bar'+num);
+    container = document.querySelector('.custom-scrollbar__inner'+num);
+    scroll();
+}
 
 /*function cambiacontenido(opcion){
     switch (parseInt(opcion)) {
@@ -989,3 +1002,26 @@ alert();
     });
 
 });*/
+
+function aparecerLaterales(num) {
+    
+    $('.cardToogle').addClass('d-none');
+    $('.bg-color-ova').removeClass('bg-azul');
+    
+    if (num == 1) {
+        $('.cardToogle1').removeClass('d-none');
+        $('.btnToogle1').addClass('bg-azul');
+    }else if (num == 2) {
+        $('.cardToogle2').removeClass('d-none');
+        $('.btnToogle2').addClass('bg-azul');
+    }else if (num == 3) {
+        $('.cardToogle3').removeClass('d-none');
+        $('.btnToogle3').addClass('bg-azul');
+    }else if (num == 4) {
+        $('.cardToogle4').removeClass('d-none');
+        $('.btnToogle4').addClass('bg-azul');
+    }else if (num == 5) {
+        $('.cardToogle5').removeClass('d-none');
+        $('.btnToogle5').addClass('bg-azul');
+    }
+}
