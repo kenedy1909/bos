@@ -8,11 +8,9 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "Un elemento clave del Capital es la posibilidad de obtener ganancia a partir de la posesión e intercambio de estos medios", answer_id: "A", img:""},
-        {question_txt: "La visión de Marx ha recibido diversas críticas por limitarse exclusivamente al capitalismo industrial y por minimizar el efecto del mercado", answer_id: "A", img:""},
-        {question_txt: "El Capitalismo ha tenido un comportamiento homogéneo en todos los países.", answer_id: "B", img:""},
-        {question_txt: "El Capitalismo es un sistema económico que permea formas de concebir el mundo y la sociedad", answer_id: "A", img:""}
-
+        {question_txt: "El humanismo ha sido la primera revolución moderna", answer_id: "B", img:""},
+        {question_txt: "La ética no es una reflexión o estudio del comportamiento humano", answer_id: "A", img:""},
+        {question_txt: "La formación humanística se trata netamente de saberes específicos", answer_id: "A", img:""}
     ];
 
     var qwsa = new QuestionsSameAnswers({

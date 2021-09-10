@@ -9,7 +9,6 @@ if (typeof parent.scormplayerdata == 'undefined') {
 var urlsite_1 = location.href.split('/pluginfile',1);
 var urlsite = urlsite_1[0];
 
-
 $( document ).ready(function() {
     $("#content-ova").load("base/portada.html");
     $(".modal_scroll10").on('click', modal_scroll10);
