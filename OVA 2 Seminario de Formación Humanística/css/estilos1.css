@@ -800,6 +800,11 @@ p, button{
 	background-color: #bf9000;
 	border-radius: 45px;
 }
+.btn-pdfs{
+	background: #002060!important;
+	color: white!important;
+}
+
 
 /*slide*/
 #slider-uni-1 {

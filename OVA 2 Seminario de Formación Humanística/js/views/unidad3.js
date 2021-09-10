@@ -52,10 +52,10 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/Tipos-de-prrafo.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipos de parrafo.pdf <b class="text-cafe"><u> Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD3/culturaySociedadCanclini.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> culturay Sociedad Canclini.pdf <b class="text-cafe"><u> Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/Elenunciadoyeltexto.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> El enunciado y el texto.pdf <b class="text-cafe"><u> Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD3/educacionParaUnNuevoHumanismo.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> educacion Para Un Nuevo Humanismo.pdf <b class="text-cafe"><u> Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
