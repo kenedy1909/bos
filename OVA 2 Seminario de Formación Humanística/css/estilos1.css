@@ -805,6 +805,18 @@ p, button{
 	color: white!important;
 }
 
+.btn-recorrido{
+	background: #4472c4!important;
+}
+.btn-recorrido:hover{
+	background: #ddeaf6!important;
+	border: solid 1px #4472c4!important;
+}
+.btn-recorridoH{
+	background: #ddeaf6!important;
+	border: solid 1px #4472c4!important;
+}
+
 
 /*slide*/
 #slider-uni-1 {
