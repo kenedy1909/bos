@@ -817,6 +817,28 @@ p, button{
 	border: solid 1px #4472c4!important;
 }
 
+.bg-card1{
+	border-radius:45px;
+	background: url('../assets/img/img_ova/textura.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.bg-card2{
+	border-radius:45px;
+	background: url('../assets/img/img_ova/textura2.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+.bg-card3{
+	border-radius:45px;
+	background: url('../assets/img/img_ova/textura3.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
 
 /*slide*/
 #slider-uni-1 {

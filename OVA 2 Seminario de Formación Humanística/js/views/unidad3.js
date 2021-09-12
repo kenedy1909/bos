@@ -1028,3 +1028,126 @@ function aparecerLaterales(num) {
         $('.btnToogle5').addClass('bg-azul');
     }
 }
+
+function ficha(num,estado) {
+
+    $('.ocultarFicha1, .ocultarFicha2, .ocultarFicha3, .ocultarFicha4, .ocultarFicha5, .ocultarFicha6').removeClass('btn-recorridoH');
+    $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+
+    if (estado=='ficha') {
+        if (num==1) {
+            $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+            $('.contenidoFicha1').removeClass('d-none');
+
+            $('.ficha1').addClass('ocultarFicha1');
+            $('.ficha1').addClass('btn-recorridoH');
+            $('.ficha1').removeClass('ficha1');
+            
+            $('.ocultarFicha1').attr('onclick',"ficha(1,'ocultar')");
+        }else if (num==2) {
+            $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+            $('.contenidoFicha2').removeClass('d-none');
+
+            $('.ficha2').addClass('ocultarFicha2');
+            $('.ficha2').addClass('btn-recorridoH');
+            $('.ficha2').removeClass('ficha2');
+            
+            $('.ocultarFicha2').attr('onclick',"ficha(2,'ocultar')");
+        }else if (num==3) {
+            $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+            $('.contenidoFicha3').removeClass('d-none');
+
+            $('.ficha3').addClass('ocultarFicha3');
+            $('.ficha3').addClass('btn-recorridoH');
+            $('.ficha3').removeClass('ficha3');
+            
+            $('.ocultarFicha3').attr('onclick',"ficha(3,'ocultar')");
+        }else if (num==4) {
+            $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+            $('.contenidoFicha4').removeClass('d-none');
+
+            $('.ficha4').addClass('ocultarFicha4');
+            $('.ficha4').addClass('btn-recorridoH');
+            $('.ficha4').removeClass('ficha4');
+            
+            $('.ocultarFicha4').attr('onclick',"ficha(4,'ocultar')");
+        }else if (num==5) {
+            $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+            $('.contenidoFicha5').removeClass('d-none');
+
+            $('.ficha5').addClass('ocultarFicha5');
+            $('.ficha5').addClass('btn-recorridoH');
+            $('.ficha5').removeClass('ficha5');
+            
+            $('.ocultarFicha5').attr('onclick',"ficha(5,'ocultar')");
+        }else if (num==6) {
+            $('.contenidoFicha1, .contenidoFicha2, .contenidoFicha3, .contenidoFicha4, .contenidoFicha5, .contenidoFicha6').addClass('d-none');
+
+            $('.contenidoFicha6').removeClass('d-none');
+
+            $('.ficha6').addClass('ocultarFicha6');
+            $('.ficha6').addClass('btn-recorridoH');
+            $('.ficha6').removeClass('ficha6');
+            
+            $('.ocultarFicha6').attr('onclick',"ficha(6,'ocultar')");
+        }
+
+    }else if(estado=='ocultar'){
+
+        if (num==1) {
+            $('.ocultarFicha1').addClass('ficha1');
+            $('.ocultarFicha1').removeClass('btn-recorridoH');
+            $('.ocultarFicha1').removeClass('ocultarFicha1');
+            
+            $('.contenidoFicha1').addClass('d-none');
+            
+            $('.ficha1').attr('onclick',"ficha(1,'ficha')");
+        }else if (num==2) {
+            $('.ocultarFicha2').addClass('ficha2');
+            $('.ocultarFicha2').removeClass('btn-recorridoH');
+            $('.ocultarFicha2').removeClass('ocultarFicha2');
+            
+            $('.contenidoFicha2').addClass('d-none');
+            
+            $('.ficha2').attr('onclick',"ficha(2,'ficha')");
+        }else if (num==3) {
+            $('.ocultarFicha3').addClass('ficha3');
+            $('.ocultarFicha3').removeClass('btn-recorridoH');
+            $('.ocultarFicha3').removeClass('ocultarFicha3');
+            
+            $('.contenidoFicha3').addClass('d-none');
+            
+            $('.ficha3').attr('onclick',"ficha(3,'ficha')");
+        }else if (num==4) {
+            $('.ocultarFicha4').addClass('ficha4');
+            $('.ocultarFicha4').removeClass('btn-recorridoH');
+            $('.ocultarFicha4').removeClass('ocultarFicha4');
+            
+            $('.contenidoFicha4').addClass('d-none');
+            
+            $('.ficha4').attr('onclick',"ficha(4,'ficha')");
+        }else if (num==5) {
+            $('.ocultarFicha5').addClass('ficha5');
+            $('.ocultarFicha5').removeClass('btn-recorridoH');
+            $('.ocultarFicha5').removeClass('ocultarFicha5');
+            
+            $('.contenidoFicha5').addClass('d-none');
+            
+            $('.ficha5').attr('onclick',"ficha(5,'ficha')");
+        }else if (num==6) {
+            $('.ocultarFicha6').addClass('ficha6');
+            $('.ocultarFicha6').removeClass('btn-recorridoH');
+            $('.ocultarFicha6').removeClass('ocultarFicha6');
+            
+            $('.contenidoFicha6').addClass('d-none');
+            
+            $('.ficha6').attr('onclick',"ficha(6,'ficha')");
+        }
+    }
+}
