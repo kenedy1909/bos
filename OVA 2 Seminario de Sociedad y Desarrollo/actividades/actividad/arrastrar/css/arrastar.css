@@ -7,10 +7,11 @@
 .droptarget {
     float: left;
     margin: 15px;
-    padding: 10px;
+    /* padding: 10px; */
     border: 4px solid #E0A546;
     border-radius: 50px;
     min-height: 200px;
+    width: 90%;
 }
 
 #opcion{
@@ -20,53 +21,67 @@
     cursor: pointer;
 }
 .interno{
-	border: dashed #E0A546;
     min-height: 170px;
     border-radius: 50px;
-    padding: 25px 25px 25px 25px;
+    padding: 50px 10px 10px 10px;
 }
 #dragtarget1{
     cursor: pointer;
-    background: #E0A546;
-    color: white;
-    height: 30px;
-    width: 140px;
-    text-align: center;
-    padding: 4px 1px 6px 15px;
+    background: #F7E448;
+    color: black;
+    /* height: 30px; */
+    width: 100%;
+    font-size: 13px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px -3px black;
+    margin-top: 45px;
 }
 #dragtarget2{
     cursor: pointer;
-    background: #E0A546;
-    color: white;
-    height: 30px;
-    width: 140px;
-    padding: 4px 1px 6px 15px;
+    background: #F7E448;
+    color: black;
+    /* height: 30px; */
+    width: 100%;
+    font-size: 13px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px -3px black;
+    margin-top: 45px;
 }
 #dragtarget3{
     cursor: pointer;
-    background: #E0A546;
-    color: white;
-    height: 30px;
-    width: 140px;
-    padding: 4px 1px 6px 15px;
+    background: #F7E448;
+    color: black;
+    /* height: 30px; */
+    width: 100%;
+    font-size: 13px;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px -3px black;
+    margin-top: 45px;
 }
 #dragtarget4{
     cursor: pointer;
-        cursor: pointer;
-    background: red;
-    color: white;
-    height: 30px;
-    width: 125px;
-    padding: 4px 1px 6px 15px;
+    background: #F7E448;
+    color: black;
+    /* height: 30px; */
+    width: 90%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px -3px black;
+    margin-top: 45px;
 }
 #dragtarget5{
     cursor: pointer;
-        cursor: pointer;
-    background: red;
-    color: white;
-    height: 30px;
-    width: 125px;
-    padding: 4px 1px 6px 15px;
+    background: #F7E448;
+    color: black;
+    /* height: 30px; */
+    width: 90%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 7px -3px black;
+    margin-top: 45px;
 }
 #dragtarget6{
     cursor: pointer;
@@ -97,11 +112,11 @@
 .principal{
 	height: 400px;
 	border-radius: 40px;
-	background: #821a14;
+	background: #E0A546;
 }
 
 .cabeza{
-	background: #420f05;
+	background: #E0A546;
 	height: 100px;
 	border-radius: 40px 40px 0px 0px;
 }
@@ -120,4 +135,15 @@
 	color: white;
 	border-radius: 10px;
 	font-size: 22px;
+}
+.encabezado_target{
+    height: 60px;
+    background: #E0A546;
+    border-radius: 20px 20px 1px 1px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+    top: 60px;
 }

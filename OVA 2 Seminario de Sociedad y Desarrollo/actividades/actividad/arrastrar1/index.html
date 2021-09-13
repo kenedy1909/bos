@@ -8,7 +8,7 @@
 <body>
 	<div class="holder row">
 		<div class="row col-md-12" style="">
-		    <div class="col-md-5" style="">
+		    <div class="col-md-4" style="">
 		        <div class="col-lg-12 row" style="">
 		        	<div class="col-md-4" style="z-index: 100;">
 		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
@@ -20,69 +20,74 @@
 		          	</div>
 		        </div>
 		    </div>
-		    <div class="col-md-7 row" style="">
-		        <p class="info_actividad shadow" style="background: #E0A546;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%;color: white;font-size: 14px;">
-		            Haga clic sostenido sobre cada recomendación y arrástrelo hacia el documento del lado de abajo según corresponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+		    <div class="col-md-8 row" style="">
+		        <p class="info_actividad shadow" style="background: #ffd966;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%;">
+		            Haga clic sostenido para arrastrar y ubicar los ítems del desarrollo económico, y ordenarlos en los cajones según corresponda, al finalizar pulse la opción "Calificar" para conocer su puntuación.
 		        </p>
 		    </div>
 		</div>
 
 		<div class="col-md-12">
-			<div class="col-md-12 row mt-5" style="height: 200px;">
+			<div class="col-md-12 row" style="height: 200px;">
+				<div style="" class="col-md-4">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/Crecimiento.png" style="max-width: 60%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
+							PIB
+						</p>
+						</div>
+							</div>
+					</div>
+					
+				</div>
+				<div style="" class="col-md-4">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/Impedimentos.png" style="max-width: 40%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
+							IMPEDIMENTOS
+						</p>
+						</div>
+							</div>
+					</div>
+				</div>
+				<div style="" class="col-md-4">
+					<div class="d-block">		
+						<p class="text-center"><img src="../../../assets/img/img_ova/ODS.png" style="max-width: 40%;"></p>
+							<div class="d-flex">
+						<div class="m-auto" style="width: fit-content;">
+								
+						<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
+							ODS
+						</p>
+						</div>
+							</div>
+					</div>
+				</div>
 				
-				<div style="" class="col-md-4 text-center"> 
-					
-					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
-						<img src="img/crecimiento.png" style="width: 52%;position: relative;top: -53px;"><br>
-						El principal indicador de crecimiento económico.
-					</p>
-				</div>
-				<div style="" class="col-md-4 text-center">
-					
-					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
-						<img src="img/impedimentos.png" style="width: 40%;position: relative;top: -60px;"><br>
-						Se debe a la desigualdad e inequidad que caracteriza a América Latina.
-					</p>
-					
-				</div>
-				<div style="" class="col-md-4 text-center">
-					
-					<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
-						<img src="img/ods.png" style="width: 40%;position: relative;top: -63px;"><br>
-						Propone una agenda de objetivos a trabajarse por países hasta el 2030
-					</p>
-				</div>
 				
 			</div>
-			<div class="col-md-12 row mt-5">
+			<div class="col-md-12 row">
 				<div class="col-md-4 d-flex justify-content-center">
-					<div style="width: 100%;">
-						<div class="encabezado_target">PIB</div>
-						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-							<div class="interno cont1"></div>
-						</div>
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont1">El principal indicador de crecimiento económico.</div>
 					</div>
-					
 				</div>
 				<div class="col-md-4 d-flex justify-content-center">
-					<div style="width: 100%;">
-						<div class="encabezado_target">IMPEDIMENTOS</div>
-						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-							<div class="interno cont2"></div>
-						</div>
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont2">Se debe a la desigualdad e inequidad que caracteriza a América Latina.</div>
 					</div>
-					
 				</div>
 				<div class="col-md-4 d-flex justify-content-center">
-					<div style="width: 100%;">
-						<div class="encabezado_target">ODS</div>
-						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-							<div class="interno cont3"></div>
-						</div>
+					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="interno cont3">Propone una agenda de objetivos a trabajarse por países hasta el 2030</div>
 					</div>
-					
 				</div>
-				
 			</div>
 		</div>
 		
