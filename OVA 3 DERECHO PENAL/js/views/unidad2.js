@@ -27,6 +27,7 @@ $( document ).ready(function() {
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);
+
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
@@ -406,3 +407,348 @@ function Input2(num) {
 $("#btn-carousel").click(function() {
     $('.carousel').carousel('next')
 });
+
+//unidad2-4
+// inicio modal carcel
+// inicio btn1
+ $("#btn1Carcel").click(function() {
+    $("#contentBtn1").removeClass('d-none');
+    $("#contentBtn2").addClass('d-none'); 
+    $("#contentBtn3").addClass('d-none'); 
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+
+ $("#btn1-a").click(function() {
+    $("#content1-a").removeClass('d-none');
+    $("#content1-b").addClass('d-none');
+ });
+
+ $("#btn1-b").click(function() {
+    $("#content1-b").removeClass('d-none');
+    $("#content1-a").addClass('d-none');
+ });
+// fin btn1
+
+// inicio btn2
+ $("#btn2Carcel").click(function() {
+    $("#contentBtn2").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn3").addClass('d-none'); 
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+
+ $("#btn2-a").click(function() {
+    $("#content2-a").removeClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-b").click(function() {
+    $("#content2-b").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-c").click(function() {
+    $("#content2-c").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-d").click(function() {
+    $("#content2-d").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-e").addClass('d-none');
+ });
+
+ $("#btn2-e").click(function() {
+    $("#content2-e").removeClass('d-none');
+    $("#content2-a").addClass('d-none');
+    $("#content2-b").addClass('d-none');
+    $("#content2-c").addClass('d-none');
+    $("#content2-d").addClass('d-none');
+ });
+//  fin btn2
+
+// inicio btn3
+$("#btn3Carcel").click(function() {
+    $("#contentBtn3").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+
+ $("#btn3-a").click(function() {
+    $("#content3-a").removeClass('d-none');
+    $("#content3-b").addClass('d-none');
+    $("#content3-c").addClass('d-none');
+ });
+
+ $("#btn3-b").click(function() {
+    $("#content3-b").removeClass('d-none');
+    $("#content3-a").addClass('d-none');
+    $("#content3-c").addClass('d-none');
+ });
+
+ $("#btn3-c").click(function() {
+    $("#content3-c").removeClass('d-none');
+    $("#content3-a").addClass('d-none');
+    $("#content3-b").addClass('d-none');
+ });
+// fin btn3
+
+// inicio btn4
+$("#btn4Carcel").click(function() {
+    $("#contentBtn4").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+// fin btn4
+
+// inicio btn5
+$("#btn5Carcel").click(function() {
+    $("#contentBtn5").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+// fin btn5
+
+// inicio btn6
+$("#btn6Carcel").click(function() {
+    $("#contentBtn6").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+ });
+// fin btn6
+
+// inicio btn7
+$("#btn7Carcel").click(function() {
+    $("#contentBtn7").removeClass('d-none'); 
+    $("#contentBtn1").addClass('d-none'); 
+    $("#contentBtn2").addClass('d-none');
+    $("#contentBtn3").addClass('d-none');
+    $("#contentBtn4").addClass('d-none');
+    $("#contentBtn5").addClass('d-none');
+    $("#contentBtn6").addClass('d-none');
+ });
+
+ $("#btn7-a").click(function() {
+    $("#content7-a").removeClass('d-none');
+    $("#content7-b").addClass('d-none');
+    $("#content7-c").addClass('d-none');
+    $("#content7-d").addClass('d-none');
+ });
+
+ $("#btn7-b").click(function() {
+    $("#content7-b").removeClass('d-none');
+    $("#content7-a").addClass('d-none');
+    $("#content7-c").addClass('d-none');
+    $("#content7-d").addClass('d-none');
+ });
+
+ $("#btn7-c").click(function() {
+    $("#content7-c").removeClass('d-none');
+    $("#content7-a").addClass('d-none');
+    $("#content7-b").addClass('d-none');
+    $("#content7-d").addClass('d-none');
+ });
+
+ $("#btn7-d").click(function() {
+    $("#content7-d").removeClass('d-none');
+    $("#content7-a").addClass('d-none');
+    $("#content7-b").addClass('d-none');
+    $("#content7-c").addClass('d-none');
+ });
+// fin btn7
+// fin modal calcer
+
+// inicio modal prision
+// inicio btn1
+$("#btnPris1").click(function() {
+   $("#contentBtnPris1").removeClass('d-none');
+   $(".arrowRight").removeClass('w60px');
+   $(".arrowRight").removeClass('w990px');
+   $(".arrowRight").addClass('w60px');
+   $("#arrow1").addClass('w990px');
+   $("#contentBtnPris2").addClass('d-none');
+   $("#contentBtnPris3").addClass('d-none');
+   $("#contentBtnPris4").addClass('d-none');
+   $("#contentBtnPris5").addClass('d-none');
+   
+});
+// fin btn1
+
+// inicio btn2
+$("#btnPris2").click(function() {
+    $("#contentBtnPris2").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow2").addClass('w990px');
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris3").addClass('d-none');
+    $("#contentBtnPris4").addClass('d-none');
+    $("#contentBtnPris5").addClass('d-none');
+ });
+ // fin btn2
+
+ // inicio btn3
+$("#btnPris3").click(function() {
+    $("#contentBtnPris3").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow3").addClass('w990px');
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris2").addClass('d-none');
+    $("#contentBtnPris4").addClass('d-none');
+    $("#contentBtnPris5").addClass('d-none');
+ });
+ // fin btn3
+
+ // inicio btn4
+$("#btnPris4").click(function() {
+    $("#contentBtnPris4").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow4").addClass('w990px');
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris2").addClass('d-none');
+    $("#contentBtnPris3").addClass('d-none');
+    $("#contentBtnPris5").addClass('d-none');
+ });
+ // fin btn4
+
+ // inicio btn5
+$("#btnPris5").click(function() {
+    $("#contentBtnPris5").removeClass('d-none');
+    $(".arrowRight").removeClass('w60px');
+    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").addClass('w60px');
+    $("#arrow5").addClass('w990px');;
+    $("#contentBtnPris1").addClass('d-none');
+    $("#contentBtnPris2").addClass('d-none');
+    $("#contentBtnPris3").addClass('d-none');
+    $("#contentBtnPris4").addClass('d-none');
+ });
+ // fin btn5
+// fin modal prision
+
+// unidad2-7
+// inicio box1
+$("#box1Img").click(function () {
+    $("#box1Img").addClass('d-none');
+    $("#box1ImgP").removeClass('d-none');
+});
+
+$("#box1ImgP").click(function () {
+    $("#box1ImgP").addClass('d-none');
+    $("#box1Img").removeClass('d-none');
+}); 
+// fin box1
+
+// inicio box2
+$("#box2Img").click(function () {
+    $("#box2Img").addClass('d-none');
+    $("#box2ImgP").removeClass('d-none');
+});
+
+$("#box2ImgP").click(function () {
+    $("#box2ImgP").addClass('d-none');
+    $("#box2Img").removeClass('d-none');
+}); 
+// fin box2
+
+// inicio box3
+$("#box3Img").click(function () {
+    $("#box3Img").addClass('d-none');
+    $("#box3ImgP").removeClass('d-none');
+});
+
+$("#box3ImgP").click(function () {
+    $("#box3ImgP").addClass('d-none');
+    $("#box3Img").removeClass('d-none');
+}); 
+// fin box3   
+
+// unidad1-12
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
+
+// btn1
+$("#btn1ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn1").removeClass('d-none');
+});
+
+// btn2
+$("#btn2ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn2").removeClass('d-none');
+});
+
+// btn3
+$("#btn3ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn3").removeClass('d-none');
+});
+
+// btn4
+$("#btn4ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn4").removeClass('d-none');
+});
+
+// btn5
+$("#btn5ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn5").removeClass('d-none');
+});
+
+// btn6
+$("#btn6ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn6").removeClass('d-none');
+});
+
+// btn7
+$("#btn7ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn7").removeClass('d-none');
+});
+
+// btn8
+$("#btn8ImgJuicio").click(function() {
+    $(".contentJuicio").addClass('d-none');
+    $("#contentJBtn8").removeClass('d-none');
+});
+ 
+
+
+
+

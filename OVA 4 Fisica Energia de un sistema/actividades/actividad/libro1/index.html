@@ -11,6 +11,9 @@
 
 <body style="background: #eaeaea;">
 
+    <div class="d-flex pl-4">
+        <p class="text-black"><i>(Dar clic en la esquina del libro para pasar las páginas)</i></p>
+    </div>
     <div class="d-flex  justify-content-center">
         <div id="flipbook" style="background-image: url('./img/libretaAmarilla.png'); background-repeat: no-repeat; background-size: 100% 100%;">
 
@@ -18,7 +21,7 @@
                 <div style="position: relative;top: 52px;left: 30px; height: 75%;" class="img-80 d-flex">
                     <div class="d-flex flex-column bd-highlight mb-3 mt-0">
                         <div class="bd-highlight">
-                            <p class="p_black justificado p-size12">Un obrero empuja horizontalmente una caja de 30.0 kgunadistancia de 4.5 m en un piso plano, con velocidad constante. El coeficiente de friccióncinéticaentre el piso y la caja es de 0.25. (Young, Hugh D y Freedman, 2013). Haga
+                            <p class="p_black justificado p-size12">Un obrero empuja horizontalmente una caja de 30.0 kg una distancia de 4.5 m en un piso plano, con velocidad constante. El coeficiente de friccióncinéticaentre el piso y la caja es de 0.25. (Young, Hugh D y Freedman, 2013). Haga
                                 clic sobre el lateral paraconocer la solución:</p>
                         </div>
                         <div class="p-2 bd-highlight">
@@ -224,7 +227,7 @@
                                 <div class="col-md-11 pl-1">
                                     <p class="p-size12 p_black">Para iniciar, se van a hallar las fuerzas que se interactúan con el Bloque 12 N a=0
                                     </p>
-                                    <img class="pl-1" src="../../../assets/img/img_ova/formula3.png" alt="formula3" style="width: 135px">
+                                    <img class="pl-1" src="../../../assets/img/img_ova/formula3.png" alt="formula3" style="width: 135px;cursor:pointer;" title="Clic para zoom" data-toggle="modal" data-target="#modal_formula3">
                                     <ul class="p-size12 p_black">
                                         <li>w<sub>g</sub> = w.d.cos0° = 12*0,75*1 = <b>9 J</b></li>
                                         <li>w<sub>T</sub> = T.d.cos180° = 12*0,75*1 = <b>9 J</b></li>
@@ -238,7 +241,7 @@
                                 <div class="col-md-11 pl-1">
                                     <p class="p-size12 p_black mb-0">Ahora, se hallan las fuerzas para el bloque de 20 N:
                                     </p>
-                                    <img class="pl-3" src="../../../assets/img/img_ova/formula3B.png" alt="formula3b" style="width: 190px">
+                                    <img class="pl-3" src="../../../assets/img/img_ova/formula3B.png" alt="formula3b" style="width: 190px;cursor:pointer;" title="Clic para zoom" data-toggle="modal" data-target="#modal_formula3b">
                                     <ul class="p-size12 p_black mb-1">
                                         <li>w<sub>g</sub> = m.g.dcosφ = 20*0,75*cos270° = <b>0</b></li>
                                         <li>w<sub>n</sub> = n.dcosφ = 20*0,75*cos90° = <b>0</b></li>
@@ -410,6 +413,78 @@
     </div>
   </div>
 </div> -->
+
+<div class="modal fade" id="modal_formula3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #fffc;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
+      <div class="modal-content">
+        <div class="">
+          <div class="radius_modal blanco" style="background: #fff0;">
+            <div class="transparente" style="border: hidden;">
+                <div class="transparente">
+                    <div class="row header_modal" style="background: #fff0;">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 header_card text-white p-4">
+                        <center></center>
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                            <button type="button" class="btn d-flex align-items-center" data-dismiss="modal" aria-label="Close" style="background: #006092;text-align: center;border-radius: 50%;padding: 5px 15px;">
+                                <div class="m-0 p-0 x-modal">
+                                    <h4 class="text-white text-center x-modal-text">
+                                        <b>X</b>
+                                    </h4>
+                                </div>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" text-center">
+                      <img src="../../../assets/img/img_ova/formula3.png" width="150%" class="" style="margin-left: -100px;">
+                    </div>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal fade" id="modal_formula3b" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="background: #fffc;">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document" >
+      <div class="modal-content">
+        <div class="">
+          <div class="radius_modal blanco" style="background: #fff0;">
+            <div class="transparente" style="border: hidden;">
+                <div class="transparente">
+                    <div class="row header_modal" style="background: #fff0;">
+                      <div class="col-lg-4">
+                      </div>
+                      <div class="col-lg-4 header_card text-white p-4">
+                        <center></center>
+                      </div>
+                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                            <button type="button" class="btn d-flex align-items-center" data-dismiss="modal" aria-label="Close" style="background: #006092;text-align: center;border-radius: 50%;padding: 5px 15px;">
+                                <div class="m-0 p-0 x-modal">
+                                    <h4 class="text-white text-center x-modal-text">
+                                        <b>X</b>
+                                    </h4>
+                                </div>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" text-center">
+                      <img src="../../../assets/img/img_ova/formula3B.png" width="150%" class="" style="margin-left: -100px;">
+                    </div>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="js/turn.min.js"></script>
 <script type="text/javascript" src="js/turn.js"></script>

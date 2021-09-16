@@ -8,11 +8,6 @@
   width: 700px;
   height: 360px;
 }
-
-.bold{
-  font-weight: bold;
-}
-
 .btn-border{
   height: 12px;width: 12px;
   border-radius: 50%;
@@ -20,6 +15,11 @@
   border: solid white 2px;
   margin-left: 5px;
 }
+
+.bold{
+  font-weight: bold;
+}
+
 .btn-borderActive{
   background: #97182F;
 }
@@ -368,11 +368,7 @@
 }
 
 /*unidad2-1*/
-<<<<<<< HEAD
 .img-c{
-=======
-.circulo-img{
->>>>>>> parent of 4d7531b9 (31 08 2021)
   border-radius: 50%;
   border: solid 10px var(--bg-color-dark);
   background-color: gray;
@@ -400,7 +396,6 @@
 .img-balanza{
   top: 45%;
   right: 8%;
-<<<<<<< HEAD
 }
 
 /*unidad2-2*/
@@ -410,6 +405,10 @@
 
 .box-color-dark{
   background-color: var(--bg-color-dark);
+}
+
+.box-color-claro2{
+  background-color: var(--bg-color-claro2);
 }
 
 .box-h-20rem{
@@ -442,9 +441,102 @@
 
 
 /*unidad2-3*/
-.mr-20{
-  margin-right: -20px;
+.box-prision{
+  min-width: 800px;
+  min-height: 320px;
 }
-=======
+
+/* ARROWS */
+.w60px{
+  width: 60px;
 }
->>>>>>> parent of 4d7531b9 (31 08 2021)
+
+.w990px{
+  width: 990px;
+}
+
+.arrowText {
+  position:relative;
+  height: 35px;
+  background-color: var(--bg-color-dark);
+  float: left;
+}
+
+  .arrowText:before, .arrowText:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+/* RIGHT ARROW */
+.arrowRight:before {
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid transparent;
+  top:-2px;
+}
+  
+ .arrowRight:before {
+  border-left: 16px solid var(--bg-color-dark);
+  right: -16px;
+  z-index: 1;
+}
+
+/*unidad2-7*/
+.border-color2{
+  border: solid 5px var(--bg-color-claro2);
+}
+
+/*unidad2-12*/
+.h400px{
+  min-height: 400px;
+}
+
+.btnImgJuicio {
+  position: absolute;
+  width: 140px;
+  height: 125px;
+  border: solid 1px ghostwhite;
+  opacity: 0.1;
+}
+
+#btn1ImgJuicio {
+  top: -4%;
+  left: 38%;
+}
+
+#btn2ImgJuicio {
+  top: 6%;
+  left: 71%;
+}
+
+#btn3ImgJuicio {
+  top: 42%;
+  left: 74%;
+}
+
+#btn4ImgJuicio {
+  top: 76%;
+  left: 72%;
+}
+
+#btn5ImgJuicio {
+  top: 76%;
+  left: 37%;
+}
+
+#btn6ImgJuicio {
+  top: 74%;
+  left: 2%;
+}
+
+#btn7ImgJuicio {
+  top: 41%;
+  left: 1%;
+}
+
+#btn8ImgJuicio {
+  top: 8%;
+  left: 3%;
+}
