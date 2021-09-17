@@ -30,7 +30,9 @@ table {
 .title_table {
     text-align: center;
 }
-
+.texto-reducido{
+    font-size: 15px;
+}
 
 .label-container {
     margin: 0;
