@@ -1511,3 +1511,27 @@ function pestaniasBig(num) {
     $('.contenedorPest3').removeClass('d-none');
   }
 }
+
+function activi1_2(num) {
+  if (num == 1) {
+
+    $('#activiInicial').removeClass('d-flex');
+    $('#activiInicial').addClass('d-none');
+    $('#activiPosterior').removeClass('d-none');
+    $('#activiPosterior').addClass('d-flex');
+
+    $('#padreActivi').attr('onclick','activi1_2(2)');
+
+  }else if (num == 2) {
+
+    $('#activiInicial').removeClass('d-none');
+    $('#activiInicial').addClass('d-flex');
+    $('#activiPosterior').addClass('d-none');
+    $('#activiPosterior').removeClass('d-flex');
+    
+    $('#padreActivi').attr('onclick','activi1_2(1)');
+
+  }
+
+
+}

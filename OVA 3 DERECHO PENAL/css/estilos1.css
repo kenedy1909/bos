@@ -765,6 +765,9 @@ p, button{
 .bg-opalizado{
 	background: rgba(255, 255, 255, 0.8);
 }
+.bg-color-amarillo{
+	background: var(--bg-color-amarillo)!important;
+}
 
 .border-45{
 	border-radius: 45px;
@@ -822,6 +825,9 @@ p, button{
 }
 .border-rd{
 	border-right: 1px solid var(--bg-color)!important;
+}
+.border-ld{
+	border-left: 1px solid var(--bg-color)!important;
 }
 .border-rdr{
 	border-right: 1px solid #c00000!important;
