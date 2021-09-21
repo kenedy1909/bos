@@ -411,7 +411,7 @@ iframe{
 /*scroll*/
 .custom-scrollbar6, .custom-scrollbar7, .custom-scrollbar4, .custom-scrollbar5, .custom-scrollbar8 {
   position: relative;
-  height: 219px;
+  height: 190px;
   overflow: hidden;
 }
 
@@ -433,9 +433,9 @@ iframe{
   position: absolute;
   top: 18px;
   bottom: 20px;
-  background:var(--bg-color);
+  background:white;
   width: 3px;
-  right: 30px;
+  right: 15px;
   /*right: 8px;*/
   border-radius: 4px;
 }
@@ -447,7 +447,7 @@ iframe{
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: var(--bg-color);
+  background: white;
   transform: translate(-50%, -50%);
   will-change: top;
 }
@@ -457,7 +457,7 @@ iframe{
     margin: 0px;
     position: relative;
     top: -32px;
-    color: white;
+    color: var(--bg-color);
 }
 /*porcentaje*/
 

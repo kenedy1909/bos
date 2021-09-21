@@ -853,7 +853,7 @@ p, button{
 .border-claro{
 	border: solid 2px var(--bg-color)!important;
 }
-.border-color{
+.border-color-1{
 	border: solid 1px var(--bg-color)!important;
 }
 .border-secondary-claro{
@@ -1283,7 +1283,7 @@ p, button{
 .inputDiv,.inputDiv2 {
   width: 100%;
   display:block;
-  color:#aaa;
+  color:var(--bg-color);
   position:relative;
 }
 .output{display:none; width:40px; text-align:center;}
@@ -1304,35 +1304,35 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 input[type=range]::-webkit-slider-thumb {
-  background-color: rgb(111, 111, 111);
-  width: 30px;
-  height: 30px;
-  border: 3px solid rgb(111, 111, 111);
+  background-color: var(--bg-color);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color);
   border-radius: 50%;
   margin-top: -10px;
   cursor: pointer;
 }
 
 input[type=range]::-moz-range-thumb {
-  background-color: rgb(111, 111, 111);
-  width: 25px;
-  height: 25px;
-  border: 3px solid rgb(111, 111, 111);
+  background-color: var(--bg-color);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 input[type=range]::-ms-thumb {
-  background-color: rgb(111, 111, 111);
-  width: 30px;
-  height: 30px;
-  border: 3px solid rgb(111, 111, 111);
+  background-color: var(--bg-color);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
-  background-color: rgba(95, 95, 95, 0.8);
+  background-color: var(--bg-color);
   height: 7px;
 }
 
@@ -1341,23 +1341,23 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-moz-range-track {
-  background-color: rgba(95, 95, 95, 0.8);
+  background-color: var(--bg-color);
   height: 7px;
 }
 
 input[type=range]::-ms-track {
-  background-color: rgba(95, 95, 95, 0.8);
+  background-color: var(--bg-color);
   height: 7px;
   cursor: pointer;
 }
 
 input[type=range]::-ms-fill-lower {
-  background-color: rgba(95, 95, 95, 0.8);
+  background-color: var(--bg-color);
   cursor: pointer;
 }
 
 input[type=range]::-ms-fill-upper {
-  background-color: rgba(95, 95, 95, 0.8);
+  background-color: var(--bg-color);
   cursor: pointer;
 }
 

@@ -190,11 +190,11 @@ function controlSlides(num){
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
             var inputsRy = [];  
-            var i = new Input(4);
+            var i = new Input(1);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(4);
+            var i2 = new Input(1);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -208,6 +208,8 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+
+            scroll_set(6);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
@@ -654,52 +656,16 @@ function scroll_horizontal(num){
   
     switch (parseInt(num)) {
         case 0:
-            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
+            var pantalla = `<p class="text-black text-justify">De igual forma, en el caso Jean Pierre Bemba, se discutió si la exigencia que el autor sea consciente de las circunstancias de hecho es un elemento contextual material o jurisdiccional, dándose un importante cambio en la jurisprudencia, al considerarlo como material, es decir, nuevamente se traslada a ser un elemento necesario para que se configure el crimen y no para determinar la jurisdicción del tribunal internacional. 
+            <br>
+            <b>Deslice para continuar con la información:</b>
+          </p>`;
             $('#scroll-img').html(pantalla);
-
-            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion2.png">`;
-            $('#scroll-img2').html(pantalla);
-
-            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion3.png">`;
-            $('#scroll-img3').html(pantalla);
-
-            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion4.png">`;
-            $('#scroll-img4').html(pantalla);
             break;
         case 1:  
-            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
+            var pantalla = `<p class="text-black text-justify">Así mismo, es importante reconocer en este punto que, cuando se habla de los elementos contextuales materiales, los mismos deben ser abarcados por el elemento subjetivo requerido para el crimen, mientras que en los elementos contextuales jurisdiccionales no.</p>`;
             $('#scroll-img').html(pantalla);
 
-            $('#scroll-img2').html(``);
-            $('#scroll-img3').html(``);
-            $('#scroll-img4').html(``);
-
-            break;
-        case 2:
-            $('#scroll-img').html(``);
-
-            var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion2.png">`;
-            $('#scroll-img2').html(pantalla);
-
-            $('#scroll-img3').html(``);
-            $('#scroll-img4').html(``);
-            break;
-        case 3:
-            $('#scroll-img').html(``);
-            $('#scroll-img2').html(``);
-
-            var pantalla = `<img class="m-auto transition-on" width="95%" src="assets/img/img_ova/accion3.png">`;
-            $('#scroll-img3').html(pantalla);
-
-            $('#scroll-img4').html(``);
-            break;
-        case 4:
-            $('#scroll-img').html(``);
-            $('#scroll-img2').html(``);
-            $('#scroll-img3').html(``);
-            
-            var pantalla = `<img class="m-auto transition-on" width="95%" src="assets/img/img_ova/accion4.png">`;
-            $('#scroll-img4').html(pantalla);
             break;
         default:
             break;
@@ -1530,6 +1496,43 @@ function activi1_2(num) {
     $('#activiPosterior').removeClass('d-flex');
     
     $('#padreActivi').attr('onclick','activi1_2(1)');
+
+  }
+
+
+}
+
+function tarjetaModal(num) {
+  $('.selectorModal1, .selectorModal2').addClass('d-flex');
+  $('.selectorModal1, .selectorModal2').removeClass('d-none');
+  $('.divcerrar').addClass('d-none');
+  $('.modalTarjeta1, .modalTarjeta2').removeClass('d-flex');
+  $('.modalTarjeta1, .modalTarjeta2').addClass('d-none');
+  if (num == 0) {
+
+    $('.selectorModal1, .selectorModal2').removeClass('d-none');
+    $('.selectorModal1, .selectorModal2').addClass('d-flex');
+
+    $('.modalTarjeta1, .modalTarjeta2').removeClass('d-flex');
+    $('.modalTarjeta1, .modalTarjeta2').addClass('d-none');
+    
+    $('.divcerrar').addClass('d-none');
+
+  }else if (num == 1) {
+    $('.selectorModal1, .selectorModal2').removeClass('d-flex');
+    $('.selectorModal1, .selectorModal2').addClass('d-none');
+    $('.divcerrar').removeClass('d-none');
+
+    $('.modalTarjeta1').addClass('d-flex');
+    $('.modalTarjeta1').removeClass('d-none');
+
+  }else if (num == 2) {
+    $('.selectorModal1, .selectorModal2').removeClass('d-flex');
+    $('.selectorModal1, .selectorModal2').addClass('d-none');
+    $('.divcerrar').removeClass('d-none');
+
+    $('.modalTarjeta2').addClass('d-flex');
+    $('.modalTarjeta2').removeClass('d-none');
 
   }
 
