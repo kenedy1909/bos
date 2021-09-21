@@ -40,17 +40,17 @@ function calificar(){
 	});
 	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'uno' || res1[i] == 'dos'){
+	  if (res1[i] == 'uno'){
 	    puntaje = puntaje + 33;
 	  }
 	}
 	for (var i = 0; i < res2.length; i++){
-	  if (res2[i] == 'dos' || res2[i] == 'tres' ){
+	  if (res2[i] == 'dos'){
 	    puntaje = puntaje + 33;
 	  }
 	}
 	for (var i = 0; i < res3.length; i++){
-	  if (res3[i] == 'uno' || res3[i] == 'tres'){
+	  if (res3[i] == 'tres'){
 	    puntaje = puntaje + 34;
 	  }
 	}
@@ -59,7 +59,7 @@ function calificar(){
 	//     puntaje = puntaje - 25;
 	//   }
 	// }
-	if (puntaje >= 66) {
+	if (puntaje == 100) {
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
 	    $('.puntaje').text(Math.round(puntaje)+"%");
 	    $('.mensaje').text("¡Felicitaciones!");
