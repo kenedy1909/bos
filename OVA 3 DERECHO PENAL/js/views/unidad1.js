@@ -1505,7 +1505,7 @@ function activi1_2(num) {
 function tarjetaModal(num) {
   $('.selectorModal1, .selectorModal2').addClass('d-flex');
   $('.selectorModal1, .selectorModal2').removeClass('d-none');
-  $('.divcerrar').addClass('d-none');
+  $('.divcerrarMt').addClass('d-none');
   $('.modalTarjeta1, .modalTarjeta2').removeClass('d-flex');
   $('.modalTarjeta1, .modalTarjeta2').addClass('d-none');
   if (num == 0) {
@@ -1516,12 +1516,12 @@ function tarjetaModal(num) {
     $('.modalTarjeta1, .modalTarjeta2').removeClass('d-flex');
     $('.modalTarjeta1, .modalTarjeta2').addClass('d-none');
     
-    $('.divcerrar').addClass('d-none');
+    $('.divcerrarMt').addClass('d-none');
 
   }else if (num == 1) {
     $('.selectorModal1, .selectorModal2').removeClass('d-flex');
     $('.selectorModal1, .selectorModal2').addClass('d-none');
-    $('.divcerrar').removeClass('d-none');
+    $('.divcerrarMt').removeClass('d-none');
 
     $('.modalTarjeta1').addClass('d-flex');
     $('.modalTarjeta1').removeClass('d-none');
@@ -1529,11 +1529,79 @@ function tarjetaModal(num) {
   }else if (num == 2) {
     $('.selectorModal1, .selectorModal2').removeClass('d-flex');
     $('.selectorModal1, .selectorModal2').addClass('d-none');
-    $('.divcerrar').removeClass('d-none');
+    $('.divcerrarMt').removeClass('d-none');
 
     $('.modalTarjeta2').addClass('d-flex');
     $('.modalTarjeta2').removeClass('d-none');
 
+  }
+
+
+}
+
+function selectorDe3(num) {
+
+  $('.mostrarContenido1, .mostrarContenido2, .mostrarContenido3').removeClass('bg-color');
+  $('.mostrarContenido1, .mostrarContenido2, .mostrarContenido3').addClass('bg-white');
+  
+  $('.selector1, .selector2, .selector3').removeClass('d-flex');
+  $('.selector1, .selector2, .selector3').addClass('d-none');
+
+  if (num==1) {
+    $('.selector1').removeClass('d-none');
+    $('.selector1').addClass('d-flex');
+
+    $('.mostrarContenido1').removeClass('bg-white');
+    $('.mostrarContenido1').addClass('bg-color');
+  }else if (num==2) {
+    $('.selector2').removeClass('d-none');
+    $('.selector2').addClass('d-flex');
+
+    $('.mostrarContenido2').removeClass('bg-white');
+    $('.mostrarContenido2').addClass('bg-color');
+  }else if (num==3) {
+    $('.selector3').removeClass('d-none');
+    $('.selector3').addClass('d-flex');
+
+    $('.mostrarContenido3').removeClass('bg-white');
+    $('.mostrarContenido3').addClass('bg-color');
+  }
+}
+
+function selectorDe3_2(num) {
+
+  
+  $('.over1, .over2, .over3').addClass('d-none');
+
+  if (num==1) {
+    $('.over1').removeClass('d-none');
+  }else if (num==2) {
+    $('.over2').removeClass('d-none');
+  }else if (num==3) {
+    $('.over3').removeClass('d-none');
+  }
+}
+
+function ModalContenidoPant(num) {
+
+  if (num == 0) {
+    $('.modalPrinContenido').removeClass('d-none');
+    $('.modalSecContenido').addClass('d-none');
+  }else if (num == 'm1') {
+    $('.modalPrinContenido').addClass('d-none');
+    $('.modalSecContenido').removeClass('d-none');
+  }else if (num == 'm2') {
+    $('.modalPrinContenido').addClass('d-none');
+    $('.modalTerContenido').removeClass('d-none');
+  }else if (num == 1) {
+    $('.cardSelect1').removeClass('d-none');
+    $('.cardSelect2, .cardSelect3').addClass('d-none');
+  }else if (num == 2) {
+    $('.cardSelect2').removeClass('d-none');
+    $('.cardSelect1, .cardSelect3').addClass('d-none');
+  }else if (num == 3) {
+    $('.cardSelect3').removeClass('d-none');
+    $('.cardSelect1, .cardSelect2').addClass('d-none');
   }
 
 

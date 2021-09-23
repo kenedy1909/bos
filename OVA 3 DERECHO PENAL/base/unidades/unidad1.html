@@ -298,8 +298,8 @@
                               <!-- modales de las tarjetas -->
                               <div class="col-12 row d-flex justify-content-center align-items-center">
                                 <div class="col-11 d-flex justify-content-end zindex pr-5">
-                                  <div class="divcerrar d-none">
-                                    <button type="button" class="btn m-0 px-3 py-2 bg-white border-claro rounded-circle menos-marginB-50" onclick="tarjetaModal(0)">
+                                  <div class="divcerrarMt d-none">
+                                    <button type="button" class="btn m-0 px-3 py-2 bg-white border-claro rounded-circle menos-marginB-50 shadow" onclick="tarjetaModal(0)">
                                         <h2 class="color-text text-center x-modal-text"><b>X</b></h2>
                                     </button>
                                   </div>
@@ -384,51 +384,89 @@
                             <br>
                             <p class="text-justify text-black"><b>Haga clic en los botones para ver el elemento subjetivo general, el mismo está planteado en el artículo 30 del Estatuto de Roma, que consagra:</b></p>
                             <div class="mt-3 mx-3 bg-color-amarillo border-10 row justify-content-center align-items-center">
-                              <div class="col-3 d-flex justify-content-start align-items-center">
-                                <div class="bg-white rounded-circle p-3 text-center">
+                              <div class="col-4 d-flex justify-content-start align-items-center zindex">
+                                <div class="bg-white rounded-circle p-3 text-center cursor mostrarContenido1 hoverColor" onclick="selectorDe3(1)">
                                   <img src="assets/img/img_ova/icono_tribunal.png" width="60px">
                                 </div>
                               </div>
-                              <div class="col-4 d-flex justify-content-center align-items-center">
-                                <div class="bg-white rounded-circle p-3 text-center">
+                              <div class="col-4 d-flex justify-content-center align-items-center zindex">
+                                <div class="bg-white rounded-circle p-3 text-center cursor mostrarContenido2 hoverColor" onclick="selectorDe3(2)">
                                   <img src="assets/img/img_ova/forma4.png" width="72px">
                                 </div>
                               </div>
-                              <div class="col-3 d-flex justify-content-end align-items-center">
-                                <div class="bg-white rounded-circle p-3 text-center">
+                              <div class="col-4 d-flex justify-content-end align-items-center zindex">
+                                <div class="bg-white rounded-circle p-3 text-center cursor mostrarContenido3 hoverColor" onclick="selectorDe3(3)">
                                   <img src="assets/img/img_ova/forma2.png" width="80px">
                                 </div>
                               </div>
+                              <div class="col-11 px-2 mx-5 position-absolute row justify-content-center">
+                                <div class="pt-1 bg-white col-md-12"></div>
+                              </div>
+                            </div>
+                            <div class="row mt-2 p-4">
+                              <div class="selector1 d-none justify-content-start">
+                                <div class="triangulo-equilatero-bottom"></div>
+                                <div class="bg-color border-25 p-4 zindex">
+                                  <h5 class="text-white">"Elemento de intencionalidad"</h5>
+                                  <ol class="text-white">
+                                    <li>Salvo disposición en contrario, una persona será penalmente responsable y podrá ser penada por un crimen de la competencia de la Corte únicamente si los elementos materiales del crimen se realizan con intención y conocimiento de los elementos materiales del crimen.</li>
+                                  </ol>
+                                </div>
+                              </div>
+                              <div class="selector2 d-none justify-content-center">
+                                <div class="triangulo-equilatero-bottom2"></div>
+                                <div class="bg-color border-25 p-4 zindex">
+                                  <ol class="text-white" start="2">
+                                    <li>A los efectos del presente artículo, se entiende que actúa intencionalmente quien:
+                                      <ol type="a">
+                                        <li>En relación con una conducta, se propone incurrir en ella.</li><br>
+                                        <li>En relación con una consecuencia, se propone causarla o es consciente de que</li>
+                                      </ol>
+                                    </li>
+                                    <p class="text-white">se producirá en el curso normal de los acontecimientos.</p>
+                                  </ol>
+                                </div>
+                              </div>
+                              <div class="selector3 d-none justify-content-end">
+                                <div class="triangulo-equilatero-bottom3"></div>
+                                <div class="bg-color border-25 p-4 zindex">
+                                  <ol class="text-white" start="3">
+                                    <li><i>A los efectos del presente artículo, por “conocimiento” se entiende la conciencia de que existe una circunstancia o se va a producir una consecuencia en el curso normal de los acontecimientos. Las palabras “a sabiendas” y “con conocimiento” se entenderán en el mismo sentido” </i> (Estatuto de Roma, 1998)</li>
+                                  </ol>
+                                </div>
+                              </div>
+                              <div style="height: 220px;"></div>
                             </div>
                           </div>
                           <div class="col-6">
-                            <div class="row">
-                              <div class="col-md-12 row">
-                                <div class="col-md-8 d-flex p-0 zindex" style="">
-                                  <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                  <div class="titulo_sub px-0" style="">
-                                    <p style=""><b>ACTIVIDAD # 2</b></p>
-                                  </div>
+                            <div class="row justify-content-center my-3">
+                              <div class="col-11 border-25 bg-color-claro p-3 pb-5">
+                                <p class="text-black text-justify">Del análisis del artículo 30 se desprenden importantes conclusiones, (i) solamente consagra de forma expresa el dolo directo de primer y segundo grado , y (ii) excluye cualquier forma inferior de culpabilidad, al no estar expresamente consagrada en el artículo 30, tales como el dolo eventual.</p>
+                                <br>
+                                <p class="text-black text-justify"><b>Haga clic en los botones especificar sobre los diferentes tipos de dolo:</b></p>
+                              </div>
+                              <div class="col-12 menos-marginT-25 d-flex justify-content-center align-items-center row">
+                                <div class="col-1 mx-4 py-2 px-4 d-flex align-items-center justify-content-center rounded-circle bg-color border-color-1 cursor hoverColorClaro shadow" onclick="selectorDe3_2(1)">
+                                  <p class="text-white h5">1</p>
                                 </div>
-                                <div class="col-md-11 banner_activi m-0 pl-5 py-4 ml-2 bg-color" style="">
-                                  <div class="row my-1">
-                                    <img src="assets/img/img_ova/actividad.png" style="max-width: 4%;">
-                                    <p class="text-white pl-3">lectura.</p>
-                                  </div>
-                                  <div class="row">
-                                    <img src="assets/img/img_ova/reloj.png" style="max-width: 4%;">
-                                    <p class="text-white pl-3">Tiempo estimado: 2 horas</p>
-                                  </div>
+                                <div class="col-1 mx-4 py-2 px-4 d-flex align-items-center justify-content-center rounded-circle bg-color border-color-1 cursor hoverColorClaro shadow" onclick="selectorDe3_2(2)">
+                                  <p class="text-white h5">2</p>
+                                </div>
+                                <div class="col-1 mx-4 py-2 px-4 d-flex align-items-center justify-content-center rounded-circle bg-color border-color-1 cursor hoverColorClaro shadow" onclick="selectorDe3_2(3)">
+                                  <p class="text-white h5">3</p>
                                 </div>
                               </div>
                             </div>
-                            <div class="row mt-3">
-                              <div class="col-11 ml-2 border-25 bg-color-amarillo p-4">
-                                <p class="text-black text-justify">Para una mejor comprensión y como complemento de la unidad, realice la lectura del siguiente documento “Elementos del crimen”  el cual hace  parte del Estatuto de Roma, como instrumento de interpretación para la Corte Penal Internacional.</p>
-                                <br>
-                                <p class="text-justify text-black"><b>Haga clic en el icono para ver el documento.</b></p>
-                                <div class="w-100 d-flex justify-content-center">
-                                  <a href="assets/PDF/UNIDAD1/elementosDelCrimen.pdf" target="_blank" class="w-25"><img src="assets/img/img_ova/botonera-43.png" width="100%" class="cursor"></a>
+                            <div class="row mt-3 d-flex justify-content-center align-items-center">
+                              <div class="col-11 row fondo1" style="min-height: 280px;">
+                                <div class="col-12 border-25 bg-color-trasparente p-4 over1 d-none">
+                                  <p class="text-white text-justify">Es importante destacar que conforme lo define el artículo 30, cuando se hace referencia al dolo directo de primer grado, son aquellas situaciones en las que el autor sabe que sus acciones y omisiones tendrán como consecuencia la ocurrencia de los elementos objetivos del crimen y realiza la conducta con la intención concreta que ocurra.</p>
+                                </div>
+                                <div class="col-12 border-25 bg-color-trasparente p-4 over2 d-none">
+                                  <p class="text-white text-justify">Por su parte, el dolo directo de segundo grado se da cuando el autor sabe que sus acciones y omisiones conllevarán necesariamente a la ocurrencia de los elementos objetivos del crimen y sin tener la intención concreta, realiza la conducta.</p>
+                                </div>
+                                <div class="col-12 border-25 bg-color-trasparente p-4 over3 d-none">
+                                  <p class="text-white text-justify">El dolo eventual ha sido discutido en la jurisprudencia internacional, sin embargo, la posición que actualmente impera es la de excluirlo por cuanto no forma parte de los elementos de intencionalidad que expresamente consagra el artículo 30, así lo definió la sala de cuestiones preliminares I en el caso Bemba, teniendo como consecuencia la exclusión de cualquier otra forma inferior de culpabilidad, tal como la temeridad consciente, la temeridad inconsciente y la imprudencia simple.</p>
                                 </div>
                               </div>
                             </div>
@@ -436,7 +474,163 @@
                         </div>
                        </div>
                        <div id="unidad1-7" class="tab-pane" role="tabpanel">
-                        <iframe src="actividades/actividad/opcion_correcta/index.html" frameborder="0"></iframe>
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="titulo-ova">
+                                  <h3 class="color-title">Formas de responsabilidad penal y reglas de procedimiento</h3>
+                              </div>
+                              <h5 class="color-text">Responsabilidad principal/ Autoría mediata:</h5>
+                            </div>
+                        </div>
+                        <div class="row mt-3 pl-4 modalPrinContenido d-none">
+                          <p class="text-justify text-black">La autoría mediata se presenta cuando la persona comete la conducta por medio de otro, quien es el instrumento para la realización de la misma. En este caso, los elementos objetivos del crimen no necesitan ser ejecutados por el dirigente para ser penalmente responsable.
+                            <br><br>
+                            En el caso de la autoría mediata, el dirigente realiza la conducta por medio de otro, quien puede o no ser penalmente responsable.
+                            <br><br> <b>Haga clic en los botones para conocer las diferentes formas de autoría mediata: </b>
+                            </p>
+                          <div class="row col-12 mt-4">
+                            <div class="col-9">
+                              <img src="assets/img/img_ova/crimenesInternacionales.png" width="100%">
+                            </div>
+                            <div class="col-3">
+                              <div class="row d-flex justify-content-center my-5">
+                                <div class="col-10 border-10 bg-color p-3 text-center cursor hoverColorTrans" onclick="ModalContenidoPant('m1')">
+                                  <img src="assets/img/img_ova/equipo.png" width="30%" class="menos-marginT-50">
+                                  <p class="text-white"><b> Utilización de personas no plenamente responsables</b></p>
+                                </div>
+                              </div>
+                              <div class="row d-flex justify-content-center my-5">
+                                <div class="col-10 border-10 bg-color p-3 text-center cursor hoverColorTrans" onclick="ModalContenidoPant('m2')">
+                                  <img src="assets/img/img_ova/pensando.png" width="30%" class="menos-marginT-50">
+                                  <p class="text-white"><b> Utilización de personas plenamente responsables</b></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3 pl-4 modalSecContenido d-none">
+                          <div class="col-12 d-flex justify-content-end zindex pr-5">
+                            <div class="divcerrarMt">
+                              <button type="button" class="btn m-0 px-3 py-2 bg-color rounded-circle menos-marginB-15 hoverColorTrans shadow" onclick="ModalContenidoPant(0)">
+                                  <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="py-1 col-11 menos-marginT-15 bg-color"></div>
+                          <div class="col-12 row mt-4">
+                            <div class="col-6 p-3 border-r">
+                              <img src="assets/img/img_ova/cortePrincipal.png" width="100%">
+                              <p class="text-black text-justify mt-2">
+                                Por una parte, nos encontramos con la <b> autoría mediata a través de la utilización de personas que no son plenamente responsables </b> en este supuesto hacemos referencia a los casos en los que el dirigente utiliza para la comisión de la conducta a personas que no son plenamente responsables, por varios motivos:
+                                <br></br>
+                                Haga clic en los botones para ver los casos de autoría mediata a través de la utilización de personas que no son plenamente responsables: 
+
+                              </p>
+                            </div>
+                            <div class="col-6 p-3">
+                              <div class="border-25 bg-color-amarillo text-black p-4 pb-5 cardSelect1" style="height: 500px!important;">
+                                <div class="w-100 text-center">
+                                  <img src="assets/img/img_ova/justicia.png" width="40%">
+                                </div>
+                                <div class="w-100">
+                                  <p class="text-justify text-black"><b>(i)</b> &nbsp; <b>Uso y utilización de menores de 18 años para la realización de la conducta:</b>
+                                    en este supuesto, como se indicó cuando se abordó la competencia ratione personae, la Corte no tiene competencia para juzgar personas menores de 18 años, por lo cual, no son plenamente responsables por la comisión de la conducta. En este supuesto, el dirigente garantizó la realización de la conducta por medio de niños para la guerra, como es el caso Thomas Lubanga Dilo, primera sentencia de la Corte Penal Internacional.
+                                  <br>
+                                  <b>Haga clic en los botones para continuar:</b>
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="border-25 bg-color-claro text-black p-4 pb-5 cardSelect2 d-none" style="height: 500px!important;">
+                                <div class="w-100 text-center">
+                                  <img src="assets/img/img_ova/explosion.png" width="40%">
+                                </div>
+                                <div class="w-100">
+                                  <p class="text-justify text-black"><b>(ii)</b> &nbsp;Un segundo supuesto, es cuando <b> el dirigente induce al error a otros </b> como, por ejemplo, cuando un comandante ordena el bombardeo de un lugar en el que en principio se considera un objetivo militar legítimo, por lo cual, los subalternos actúan bajo la creencia que están atacando un objetivo militar, inducidos al error por el superior, quien tiene el conocimiento que en realidad es un caserío de una comunidad campesina.</p>
+                                </div>
+                              </div>
+                              <div class="border-25 bg-color-claro2 text-black p-4 pb-5 cardSelect3 d-none" style="height: 500px!important;">
+                                <div class="w-100 text-center">
+                                  <img src="assets/img/img_ova/soldados.png" width="40%">
+                                </div>
+                                <div class="w-100">
+                                  <p class="text-justify text-black"><b>(iii)</b> &nbsp; Cuando <b>el subalterno actúa bajo coacción,</b>
+                                    supuesto en el cual el dominio de la voluntad del sujeto estaba en cabeza del superior o dirigente, quien bajo coacción logra que el subalterno realice determinada conducta. Es importante destacar que en este supuesto no se puede encajar la alegada obediencia debida, que son aquellos casos en los que, aun conociendo la ilegalidad de la conducta, se actúa bajo la creencia que las órdenes de los superiores deben ser cumplidas independientes de su ilicitud, como se discutió en el caso Erdemovic contra la Fiscalía del tribunal penal para la antigua Yugoslavia
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="w-100 row d-flex justify-content-center menos-marginT-25">
+                                <div class="col-1 shadow mx-1 px-5 py-3 bg-color-amarillo cursor" title="(i)" onclick="ModalContenidoPant(1)"></div>
+                                <div class="col-1 shadow mx-1 px-5 py-3 bg-color-claro cursor" title="(ii)" onclick="ModalContenidoPant(2)"></div>
+                                <div class="col-1 shadow mx-1 px-5 py-3 bg-color-claro2 cursor" title="(iii)" onclick="ModalContenidoPant(3)"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-3 pl-4 modalTerContenido">
+                          <div class="col-12 d-flex justify-content-end zindex pr-5">
+                            <div class="divcerrarMt">
+                              <button type="button" class="btn m-0 px-3 py-2 bg-color rounded-circle menos-marginB-15 hoverColorTrans shadow" onclick="ModalContenidoPant(0)">
+                                  <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="py-1 col-11 menos-marginT-15 bg-color"></div>
+                          <div class="col-12 row mt-4">
+                            <div class="col-6 p-3">
+                              <div class="w-100 text-center menos-marginB-100">
+                                <img src="assets/img/img_ova/guerra.png" width="70%">
+                              </div>
+                              <div class="border-25 bg-color-claro text-black p-4 pt-5">
+                                <div class="w-100 mt-5 pt-4">
+                                  <p class="text-justify text-black">De otra parte, nos encontramos con la <b> autoría mediata a través de la utilización de personas que son plenamente responsables </b> en este supuesto hacemos referencia a la comisión del crimen a través de estructuras organizadas de poder.
+                                   <br></br>
+                                    Haga clic en las flechas para continuar con la información 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-6 p-3 d-flex row justify-content-center">
+                              <div class="col-1 row pt-5 menos-margin-50 position-absolute zindex text-center">
+                                <div class="col-12 mb-5">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor" onclick="ModalContenidoPant(4)"><i class="fas fa-caret-up mt-1 h1"></i></div>
+                                </div>
+                                <div class="col-12 mb-5">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-none justify-content-center align-items-center cursor" onclick="ModalContenidoPant(4)"><i class="fas fa-caret-down mt-1 h1"></i></div>
+                                </div>
+                                <div class="col-12 my-5">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor mt-5 hidden" onclick="ModalContenidoPant(5)"><i class="fas fa-caret-down mt-1 h1"></i></div>
+                                </div>
+                                <div class="col-12 my-5 pt-5">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor my-5 top-300" onclick="ModalContenidoPant(5)"><i class="fas fa-caret-down mt-1 h1"></i></div>
+                                </div>
+                              </div>
+                              <div class="bg-color pl-1 h-100 menos-marginR-50 position-absolute"></div>
+                              <div class="col-12 pt-5 mt-5">
+                                <div class="border-25 bg-color-claro text-black p-4 pb-5 menos-marginB-75 mt-2 d-none" style="height: 330px!important;">
+                                  <div class="w-100">
+                                    <p class="text-justify text-black">Al respecto, resulta relevante hacer énfasis que las estructuras organizadas de poder, conforme lo ha definido entre otras la sala de cuestiones preliminares de la Corte, son estructuras que tienen vida propia, con independencia de cada uno de los miembros que la integran, así, por ejemplo, cuando nos referimos a un crimen cometido por una estructura organizada de poder acostumbramos a dirigirnos a la misma y no al miembro de la estructura que cometió la conducta. Lo anterior implica reconocer que los miembros de aquella son fungibles.</p>
+                                  </div>
+                                </div>
+                                <div class="border-25 bg-color-claro text-black p-4 pb-5 mt-5" style="height: 330px!important;">
+                                  <div class="w-100 mt-5">
+                                  </div>
+                                  <div class="w-100">
+                                    <p class="text-justify text-black">Así mismo, la estructura organizada de poder tiene una estricta jerarquía, lo que conlleva a que el cumplimiento de las órdenes dentro de la misma se cumplan con un alto grado de automatismo.</p>
+                                  </div>
+                                </div>
+                                <div class="border-25 bg-color-claro2 text-black p-4 pb-5 d-none" style="height: 500px!important;">
+                                  <div class="w-100 text-center">
+                                    <img src="assets/img/img_ova/explosion.png" width="40%">
+                                  </div>
+                                  <div class="w-100">
+                                    <p class="text-justify text-black"><b>(ii)</b> &nbsp;Un segundo supuesto, es cuando <b> el dirigente induce al error a otros </b> como, por ejemplo, cuando un comandante ordena el bombardeo de un lugar en el que en principio se considera un objetivo militar legítimo, por lo cual, los subalternos actúan bajo la creencia que están atacando un objetivo militar, inducidos al error por el superior, quien tiene el conocimiento que en realidad es un caserío de una comunidad campesina.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div style="height: 100px!important;"></div>
                        </div>
                        <div id="unidad1-8" class="tab-pane" role="tabpanel">
                         <div class="row">

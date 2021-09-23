@@ -744,11 +744,17 @@ p, button{
 .bg-color{
 	background: var(--bg-color)!important;
 }
+.bg-color-trasparente{
+	background: #771e18a1!important;
+}
 .bg-color-dark{
 	background: var(--bg-color-dark)!important;
 }
 .bg-color-claro{
 	background: var(--bg-color-claro)!important;
+}
+.bg-color-claro2{
+	background: var(--bg-color-claro2)!important;
 }
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
@@ -884,6 +890,9 @@ p, button{
 .menos-margin-25{
 	margin-left: -25px!important;
 }
+.menos-margin-30{
+	margin-left: -30px!important;
+}
 .menos-margin-50{
 	margin-left: -50px!important;
 }
@@ -999,6 +1008,20 @@ p, button{
 	border: 1px solid var(--bg-color);
 	color: black!important;
 	background: white!important;
+}
+.hoverColor:hover{
+	background: var(--bg-color)!important;
+}
+.hoverColorClaro:hover{
+	background: var(--bg-color-claro)!important;
+	/* border: 1px solid var(--bg-color)!important; */	
+}
+.hoverColorTrans:hover{
+	background: #783d39!important;
+	/* border: 1px solid var(--bg-color)!important; */	
+}
+.top-300{
+	top: 300px;
 }
 
 
@@ -1174,6 +1197,45 @@ p, button{
 	transform: rotate(-90deg);
 }
 
+
+.triangulo-equilatero-bottom {
+	width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-top: 270px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 19px solid var(--bg-color);
+    position: absolute;
+    top: 100px;
+    margin-left: 40px;
+}
+.triangulo-equilatero-bottom2 {
+	width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-top: 270px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 19px solid var(--bg-color);
+    position: absolute;
+    top: 100px;
+}
+.triangulo-equilatero-bottom3 {
+	width: 0;
+    height: 0;
+    border-right: 30px solid transparent;
+    border-top: 270px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 19px solid var(--bg-color);
+    position: absolute;
+    top: 100px;
+    margin-right: 40px;
+}
+@media (max-height: 720px) {
+	.triangulo-equilatero-bottom, .triangulo-equilatero-bottom2, .triangulo-equilatero-bottom3{
+		top: 165px!important;
+	}
+}
+/* 
 .triangulo-equilatero-bottom {
 	width: 0;
     height: 0;
@@ -1257,7 +1319,7 @@ p, button{
     border-right: 30px solid transparent;
 	position: absolute;
     margin-top: -1px;
-}
+} */
 
 .circulos1:hover{
 	background: var(--bg-color-dark);
@@ -1485,8 +1547,8 @@ a.animated-button.thar-two:before {
 	height: 30px;
 }
 .fondo1{
-	background-image: url(../assets/img/img_ova/fondo1.png);
-	background-size: 100%;
+	background-image: url(../assets/img/img_ova/estatutodeRoma.gif);
+	background-size: 90%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
