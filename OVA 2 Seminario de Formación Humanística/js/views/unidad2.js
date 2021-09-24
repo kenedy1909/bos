@@ -63,6 +63,7 @@ $( document ).ready(function() {
     $(".pergamino1").on("click", function () {
         $(".pergamino1").hide()
         $(".pergamino2").show()
+        $("#text26").html("Para continuar con la información referente a los procesos de escritura haga clic en cada triangulo:")
     })
 
     $(".flecha1").on("click", function () {
