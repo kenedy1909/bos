@@ -186,11 +186,7 @@ $( document ).ready(function() {
                             <h1 class="p_white"><b>3</b></h1>
                             <div class="d-flex">
                                 <div class="m-auto">
-                                    <p class="p_white text-rigth"><i><b>𝐷𝑒𝑚𝑜𝑠𝑡𝑟𝑎𝑟  ~(𝑦=1  → 𝑥^2≯𝑥𝑦)</b></i></p>
-                                    <br>
-                                    <p class="p_white text-center">(1)  𝑥=1  ∨ ~(𝑥+𝑦=𝑦  ∨  𝑥≯𝑦 )</p>
-                                    <p class="p_white text-center">(2)   𝑥>𝑦  → (𝑥^2>𝑥𝑦  ∧  𝑦=1 )</p>
-                                    <p class="p_white text-center">(3)  𝑥≠1</p>
+                                    <img src="assets/img/img_ova/imagen23.png" class="img-100">
                                 </div>
                             </div>
                             <div class="d-flex">
@@ -832,7 +828,7 @@ function disyunciones(){
                             <div class="col-md-9 px-3">
                                   <p class="p_black justificado">Hay un conector, que no es muy utilizado, llamado:</p>
                                   <br>
-                                  <p class="p_black justificado">“La disyunción exclusiva o fuerte de “p con q”:    p V q,  y se lee “O  p o q”</p>
+                                  <p class="p_black justificado">“La <i><u>disyunción exclusiva o fuerte </u></i> de “p con q”:    p V q,  y se lee “O  p o q”</p>
                                   <br>
                                   <p class="p_black justificado">La disyunción exclusiva (fuerte) entre dos proposiciones será verdadera (V) cuando solo</p>
                                   <p class="p_black justificado">una sea verdadera; no admite la opción de que ambas sean verdaderas, para ser verdadera.</p>
@@ -928,11 +924,11 @@ function conector(){
                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" data-disyuncion="2"></div>
                     </div>
                     <div class="col-md-5 px-3" id="disyuncion-1">
-                          <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
+                          <p class="p_black justificado">Cuando se habla de <u>disyunción</u> o también llamada suma lógica, donde al tener una de las proposiciones verdaderas, se convierte el valor de verdad en verdadero.                          </p>
                           <br>
-                          <p class="p_black justificado">“La conjunción de p con q”:      p ^ q, se lee “p y q”</p>
+                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:          𝑝     𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
                           <br>
-                          <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
+                          <p class="p_black justificado">La disyunción entre dos proposiciones será verdadera (V) cuando por lo menos una sea verdadera: </p>
                     </div>
                     <div class="col-md-5 px-3" id="disyuncion-2">
                           <img src="assets/img/img_ova/tabla de disyunción lógica-02.png" alt="" class="img-100">
@@ -950,6 +946,10 @@ function conector(){
                           <br>
                           <p class="p_black justificado">La negación de una proposición tiene el valor de verdad opuesto a la proposición dada </p>
                           <p class="p_black justificado">También se acostumbra el signo “¬”, es decir “¬ p” para la negación o con la escritura “no p”.</p>
+                          <p>Una negación
+                          lógica, como su nombre lo dice,
+                          hace que su función sea negar la
+                          proposición. </p>
                     </div>
                     <div class="col-md-6 px-3">
                           <img src="assets/img/img_ova/tabla de negación.png" alt="" class="img-100">
@@ -1268,7 +1268,7 @@ function argumentos(){
                             <p class="p_black justificado pb-3"><b>Solución:</b>   Se observan los valores de verdad de las premisas y de la conclusión para todas las asignaciones posibles de las variables proposicionales que intervienen:</p>
                        </div>
                        <div class="col-md-7">
-                           <img src="assets/img/img_ova/ejemplo argumentos 1.png" alt="" class="img-80">
+                           <img src="assets/img/img_ova/ejemploargumentos2.png" alt="" class="img-100">
                        </div>
                    </div>
                    `;
