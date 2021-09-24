@@ -216,74 +216,7 @@
 }
 
 
-/*pantanlla1*/
 
-.inputDiv2 input[type='range'] {
-  display: inline-block;
-  width: 100%;
-  height: 2px;
-  margin: 0;
-  transform-origin: 75px 75px;
-  /*transform: rotate(90deg);*/
-  position: relative;
-  /*left: -130px;*/
-}
-
-.inputDiv2 input[type=range]::-webkit-slider-thumb {
-  background: white;
-  transform: scaleX(-1);
-  background-size: 100% 100%;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-top: -5px;
-  cursor: pointer;
-}
-
-.inputDiv2 input[type=range]::-moz-range-thumb {
-  background: #174C7F;
-  transform: scaleX(-1);
-  background-size: 100% 100%;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.inputDiv2 input[type=range]::-ms-thumb {
-  background: #174C7F;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #333;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.inputDiv2 input[type=range]::-webkit-slider-runnable-track {
-  background-color: #525DE9;
-  height: 20px;
-}
-
-.inputDiv2 input[type=range]::-moz-range-track {
-  background-color: #525DE9;
-  height: 20px;
-}
-
-.inputDiv2 input[type=range]::-ms-track {
-  background-color: #525DE9;
-  height: 20px;
-  cursor: pointer;
-}
-
-.inputDiv2 input[type=range]::-ms-fill-lower {
-  background-color: #174C7F;
-  cursor: pointer;
-}
-
-.inputDiv2 input[type=range]::-ms-fill-upper {
-  background-color: #174C7F;
-  cursor: pointer;
-} 
 
 .banner_16{
   min-height: 200px;

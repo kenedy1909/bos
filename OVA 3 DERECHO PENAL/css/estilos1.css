@@ -1460,6 +1460,82 @@ input[type=range]::-ms-fill-upper {
   cursor: pointer;
 }
 
+
+/*pantanlla9 segundo deslizador*/
+
+.inputDiv2 input[type='range'] {
+  display: inline-block;
+  width: 100%;
+}
+
+.inputDiv2 input[type='range']:focus {
+  outline: none;
+}
+
+.inputDiv2 input[type='range'],
+.inputDiv2 input[type='range']::-webkit-slider-runnable-track,
+.inputDiv2 input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.inputDiv2 input[type=range]::-webkit-slider-thumb {
+  background-color: var(--bg-color);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color);
+  border-radius: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-moz-range-thumb {
+  background-color: var(--bg-color);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-ms-thumb {
+  background-color: var(--bg-color);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-webkit-slider-runnable-track {
+  background-color: var(--bg-color);
+  height: 7px;
+}
+
+.inputDiv2 input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+.inputDiv2 input[type=range]::-moz-range-track {
+  background-color: var(--bg-color);
+  height: 7px;
+}
+
+.inputDiv2 input[type=range]::-ms-track {
+  background-color: var(--bg-color);
+  height: 7px;
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-ms-fill-lower {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+.inputDiv2 input[type=range]::-ms-fill-upper {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
 .bg-amarillo{
 	background-color: #FF9900;
 }

@@ -229,26 +229,15 @@ function controlSlides(num){
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
-            
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
-            break;
-        case 11:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
-            // $("#content-ova").load("base/unidades/unidad2.html");
-            // tema = 1;
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
             var inputsRy = [];  
-            var i = new Input(3);
+            var i = new Input(5);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(3);
+            var i2 = new Input(5);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -262,6 +251,17 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+            break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            // $("#content-ova").load("base/unidades/unidad2.html");
+            // tema = 1;
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            // $("#content-ova").load("base/unidades/unidad2.html");
+            // tema = 1;
+           
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
@@ -671,160 +671,160 @@ function scroll_horizontal(num){
             break;
     }
 }
-function scroll_horizontal2(num){
-    switch (parseInt(num)) {
-        case 0:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bunker (1).png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/muerte.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `El primero de estos conflictos que debe llamar la atención es el ocurrido en la <span class="text-cafe-activi"><b>República Federativa de Yugoslavia</b></span>, la cual, después de integrar durante décadas pueblos con profundas diferencias étnicas, religiosas y de identidad nacional, comienza a desintegrarse a partir de la muerte del general Josip Broz Tito en 1980, quien durante treinta y cinco años gobernó la hoy extinta Yugoslavia.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 1:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/punto.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/balas.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `A raíz de la muerte del general tito se retomó el ánimo de varios pueblos por lograr su independencia y constituirse como un Estado soberano, lo que <span class="text-cafe-activi"><b>dio inicio a la confrontación,</b></span> especialmente cuando Bosnia Herzegovina empezó su proceso de independencia, ante la negativa de los Bosnios Serbios de apoyar el proceso, con el respaldo de Serbia, en cabeza de Slodovan Milosevic que se hizo al poder en la década del 90.`;
-            var activi_scroll = `
-                                <div class="row border-left-cafe">
-                                  <div class="col-md-12 row">
-                                    <div class="col-md-1 p-0 zindex" style="">
-                                      <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                    </div>
-                                    <div class="col-md-11">
-                                      <div class="titulo_sub" style="">
-                                        <p style=""><b>ACTIVIDAD # 5</b></p>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
-                                    </div>
-                                    <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
-                                        <p class="p_black pl-3">Para un recorrido rápido al conflicto de Yugoslavia, visualice el siguiente video haciendo clic en el botón YouTube:</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
-                                      <div class="m-auto bg-cafe-activi radius-2 p-3">
-                                        <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6 d-flex">
-                                      <div class="img-45 m-auto">
-                                        <img src="assets/img/img_ova/reloj.png" class="img-100">
-                                      </div>
-                                      <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>6 minutos</b></p>
-                                    </div>
-                                  </div>
-                                </div>
-                                `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 2:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/explosion.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/africa.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Por otra parte, en 1994 se tiene un conflicto interno que se desarrolla en el continente africano que llama la atención de la comunidad internacional por su <span class="text-cafe-activi"><b>grado tan elevado de violencia</b></span> entre dos grupos étnicos que habitan en la república de Ruanda.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 3:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/belgica.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/granada.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Estamos haciendo referencia al conflicto surgido como consecuencia de un proceso histórico de <span class="text-cafe-activi"><b>discriminación fomentado por Bélgica</b></span> que colonizó Ruanda, en el cual, estableció diferencias entre los Tutsis y los Hutus; los primeros considerados como una etnia superior que controlaba las principales fuentes de producción, lo que sembró un resentimiento que por décadas se alimentó y que fue en últimas lo que desembocó en el genocidio presentado en el año de 1994.`;
-            var activi_scroll = `
-                                <div class="row border-left-cafe">
-                                  <div class="col-md-12 row">
-                                    <div class="col-md-1 p-0 zindex" style="">
-                                      <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
-                                    </div>
-                                    <div class="col-md-11">
-                                      <div class="titulo_sub" style="">
-                                        <p style=""><b>ACTIVIDAD # 6</b></p>
-                                      </div>
-                                      <br>
-                                      <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
-                                    </div>
-                                    <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
-                                        <p class="p_black pl-3">Para comprender el tema visto es  indispensable ver el documental que nos muestra el antes y durante del conflicto étnico que se vivió. Haga clic en el botón YouTube:</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
-                                      <div class="m-auto bg-cafe-activi radius-2 p-3">
-                                        <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <div class="d-flex">
-                                          <div class="img-45 m-auto">
-                                            <img src="assets/img/img_ova/reloj.png" class="img-100">
-                                          </div>
-                                          <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>54 minutos</b></p>
-                                      </div>
-                                      <div class="d-flex">
-                                        <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        case 4:
-            var img_scroll = `
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/casco.png" class="img-90 m-auto">
-                             </div>
-                             <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bala2.png" class="img-90 m-auto">
-                             </div>
-                             `;
-            var info_scroll = `Es importante señalar que las cifras oficiales dan cuenta de más de <span class="text-cafe-activi"><b>800.000 victimas</b></span> del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses, periodo de mayor crueldad de los ataques de los Hutus contra el pueblo Tutsi.`;
-            var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
-            break;
-        default:
-            break;
-    }
-}
+// function scroll_horizontal2(num){
+//     switch (parseInt(num)) {
+//         case 0:
+//             var img_scroll = `
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/bunker (1).png" class="img-90 m-auto">
+//                              </div>
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/muerte.png" class="img-90 m-auto">
+//                              </div>
+//                              `;
+//             var info_scroll = `El primero de estos conflictos que debe llamar la atención es el ocurrido en la <span class="text-cafe-activi"><b>República Federativa de Yugoslavia</b></span>, la cual, después de integrar durante décadas pueblos con profundas diferencias étnicas, religiosas y de identidad nacional, comienza a desintegrarse a partir de la muerte del general Josip Broz Tito en 1980, quien durante treinta y cinco años gobernó la hoy extinta Yugoslavia.`;
+//             var activi_scroll = ``;
+//             $('#img-scroll').html(img_scroll);
+//             $('#info-scroll').html(info_scroll);
+//             $('#activi-scroll').html(activi_scroll);
+//             break;
+//         case 1:
+//             var img_scroll = `
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/punto.png" class="img-90 m-auto">
+//                              </div>
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/balas.png" class="img-90 m-auto">
+//                              </div>
+//                              `;
+//             var info_scroll = `A raíz de la muerte del general tito se retomó el ánimo de varios pueblos por lograr su independencia y constituirse como un Estado soberano, lo que <span class="text-cafe-activi"><b>dio inicio a la confrontación,</b></span> especialmente cuando Bosnia Herzegovina empezó su proceso de independencia, ante la negativa de los Bosnios Serbios de apoyar el proceso, con el respaldo de Serbia, en cabeza de Slodovan Milosevic que se hizo al poder en la década del 90.`;
+//             var activi_scroll = `
+//                                 <div class="row border-left-cafe">
+//                                   <div class="col-md-12 row">
+//                                     <div class="col-md-1 p-0 zindex" style="">
+//                                       <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
+//                                     </div>
+//                                     <div class="col-md-11">
+//                                       <div class="titulo_sub" style="">
+//                                         <p style=""><b>ACTIVIDAD # 5</b></p>
+//                                       </div>
+//                                       <br>
+//                                       <br>
+//                                       <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
+//                                     </div>
+//                                     <div class="col-md-12 banner_activi bg-amarillo-c">
+//                                       <div class="pr-3">
+//                                         <p class="p_black pl-3">Para un recorrido rápido al conflicto de Yugoslavia, visualice el siguiente video haciendo clic en el botón YouTube:</p>
+//                                       </div>
+//                                     </div>
+//                                   </div>
+//                                   <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
+//                                     <div class="col-md-6 d-flex">
+//                                       <div class="m-auto bg-cafe-activi radius-2 p-3">
+//                                         <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
+//                                       </div>
+//                                     </div>
+//                                     <div class="col-md-6 d-flex">
+//                                       <div class="img-45 m-auto">
+//                                         <img src="assets/img/img_ova/reloj.png" class="img-100">
+//                                       </div>
+//                                       <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>6 minutos</b></p>
+//                                     </div>
+//                                   </div>
+//                                 </div>
+//                                 `;
+//             $('#img-scroll').html(img_scroll);
+//             $('#info-scroll').html(info_scroll);
+//             $('#activi-scroll').html(activi_scroll);
+//             break;
+//         case 2:
+//             var img_scroll = `
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/explosion.png" class="img-90 m-auto">
+//                              </div>
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/africa.png" class="img-90 m-auto">
+//                              </div>
+//                              `;
+//             var info_scroll = `Por otra parte, en 1994 se tiene un conflicto interno que se desarrolla en el continente africano que llama la atención de la comunidad internacional por su <span class="text-cafe-activi"><b>grado tan elevado de violencia</b></span> entre dos grupos étnicos que habitan en la república de Ruanda.`;
+//             var activi_scroll = ``;
+//             $('#img-scroll').html(img_scroll);
+//             $('#info-scroll').html(info_scroll);
+//             $('#activi-scroll').html(activi_scroll);
+//             break;
+//         case 3:
+//             var img_scroll = `
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/belgica.png" class="img-90 m-auto">
+//                              </div>
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/granada.png" class="img-90 m-auto">
+//                              </div>
+//                              `;
+//             var info_scroll = `Estamos haciendo referencia al conflicto surgido como consecuencia de un proceso histórico de <span class="text-cafe-activi"><b>discriminación fomentado por Bélgica</b></span> que colonizó Ruanda, en el cual, estableció diferencias entre los Tutsis y los Hutus; los primeros considerados como una etnia superior que controlaba las principales fuentes de producción, lo que sembró un resentimiento que por décadas se alimentó y que fue en últimas lo que desembocó en el genocidio presentado en el año de 1994.`;
+//             var activi_scroll = `
+//                                 <div class="row border-left-cafe">
+//                                   <div class="col-md-12 row">
+//                                     <div class="col-md-1 p-0 zindex" style="">
+//                                       <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
+//                                     </div>
+//                                     <div class="col-md-11">
+//                                       <div class="titulo_sub" style="">
+//                                         <p style=""><b>ACTIVIDAD # 6</b></p>
+//                                       </div>
+//                                       <br>
+//                                       <br>
+//                                       <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
+//                                     </div>
+//                                     <div class="col-md-12 banner_activi bg-amarillo-c">
+//                                       <div class="pr-3">
+//                                         <p class="p_black pl-3">Para comprender el tema visto es  indispensable ver el documental que nos muestra el antes y durante del conflicto étnico que se vivió. Haga clic en el botón YouTube:</p>
+//                                       </div>
+//                                     </div>
+//                                   </div>
+//                                   <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
+//                                     <div class="col-md-6 d-flex">
+//                                       <div class="m-auto bg-cafe-activi radius-2 p-3">
+//                                         <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
+//                                       </div>
+//                                     </div>
+//                                     <div class="col-md-6">
+//                                       <div class="d-flex">
+//                                           <div class="img-45 m-auto">
+//                                             <img src="assets/img/img_ova/reloj.png" class="img-100">
+//                                           </div>
+//                                           <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>54 minutos</b></p>
+//                                       </div>
+//                                       <div class="d-flex">
+//                                         <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
+//                                       </div>
+//                                     </div>
+//                                   </div>
+//                                 </div>
+//                                 `;
+//             $('#img-scroll').html(img_scroll);
+//             $('#info-scroll').html(info_scroll);
+//             $('#activi-scroll').html(activi_scroll);
+//             break;
+//         case 4:
+//             var img_scroll = `
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/casco.png" class="img-90 m-auto">
+//                              </div>
+//                              <div class="col-md-6 px-2 d-flex">
+//                                <img src="assets/img/img_ova/bala2.png" class="img-90 m-auto">
+//                              </div>
+//                              `;
+//             var info_scroll = `Es importante señalar que las cifras oficiales dan cuenta de más de <span class="text-cafe-activi"><b>800.000 victimas</b></span> del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses, periodo de mayor crueldad de los ataques de los Hutus contra el pueblo Tutsi.`;
+//             var activi_scroll = ``;
+//             $('#img-scroll').html(img_scroll);
+//             $('#info-scroll').html(info_scroll);
+//             $('#activi-scroll').html(activi_scroll);
+//             break;
+//         default:
+//             break;
+//     }
+// }
 
 function cajas(num){
   switch (parseInt(num)) {
@@ -1216,45 +1216,89 @@ function cambiarFondoLibro(num) {
   }
 }
 
-function scroll_horizontal2(num) {
+function scroll_horizontal2(num){
+  $('.scroll-img').removeClass('bg-piel');
+  $('.scroll-img').addClass('bg-amarillo');
+  $('.scroll-flecha').removeClass('d-block');
+  $('.scroll-flecha').addClass('d-none');
   switch (parseInt(num)) {
       case 0:
-          $('.cont-slideH').addClass('oculto-on');
-          $('.cont-slideH').removeClass('oculto-off');
-
-          $('.ordinaria').removeClass('oculto-on');
-          $('.ordinaria').addClass('oculto-off');
-
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
-
-          $('.comodin').removeClass('comodinInactive');
-          $('.comodin').addClass('comodinActive');
+          var pantalla = `<img src="assets/img/img_ova/icono22.png" width="150px" class="menos-marginT-100">`;
+          $('#scroll-img2').html(pantalla);
+          $('#scroll-text').html('<b>“b) Ordene, proponga o induzca la comisión de ese crimen, ya sea consumado o en grado de tentativa;</b>');
+          $('.scroll-flecha-0').removeClass('d-none');
+          $('.scroll-flecha-0').addClass('d-block');
           break;
       case 1:
-          $('.cont-slideH').addClass('oculto-on');
-          $('.cont-slideH').removeClass('oculto-off');
-
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
+          var pantalla = `<img src="assets/img/img_ova/escritura.png" width="150px" class="menos-marginT-100">`;
+          $('#scroll-img2').html(pantalla);
+          $('#scroll-text').html('<b>c) Con el propósito de facilitar la comisión de ese crimen, sea cómplice o encubridor o colabore de algún modo en la comisión o la tentativa de comisión del crimen, incluso suministrando los medios para su comisión;</b>');
+          $('.scroll-flecha-0').removeClass('d-none');
+          $('.scroll-flecha-0').addClass('d-block');
+          $('.scroll-flecha-1').removeClass('d-none');
+          $('.scroll-flecha-1').addClass('d-block');
           break;
       case 2:
-          $('.cont-slideH').addClass('oculto-on');
-          $('.cont-slideH').removeClass('oculto-off');
-
-          $('.extraordinaria').removeClass('oculto-on');
-          $('.extraordinaria').addClass('oculto-off');
-
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
-
-          $('.comodin2').removeClass('comodinInactive');
-          $('.comodin2').addClass('comodinActive');
+          var pantalla = `<img src="assets/img/img_ova/equipo.png" width="150px" class="menos-marginT-100">`;
+          $('#scroll-img2').html(pantalla);
+          $('#scroll-text').html('<b>d) Contribuya de algún otro modo en la comisión o tentativa de comisión del crimen por un grupo de personas que tengan una finalidad común. La contribución deberá ser intencional y se hará;</b>');
+          $('.scroll-flecha-0').removeClass('d-none');
+          $('.scroll-flecha-0').addClass('d-block');
+          $('.scroll-flecha-1').removeClass('d-none');
+          $('.scroll-flecha-1').addClass('d-block');
+          $('.scroll-flecha-2').removeClass('d-none');
+          $('.scroll-flecha-2').addClass('d-block');
+          break;
+      case 3:
+          var pantalla = `<img src="assets/img/img_ova/history.png" width="150px" class="menos-marginT-100">`;
+          $('#scroll-img2').html(pantalla);
+          $('#scroll-text').html('<b>i) con el propósito de llevar a cabo la actividad o propósito delictivo del grupo, cuando una u otro entrañe la comisión de un crimen de la competencia de la Corte; o</b>');
+          $('.scroll-flecha-0').removeClass('d-none');
+          $('.scroll-flecha-0').addClass('d-block');
+          $('.scroll-flecha-1').removeClass('d-none');
+          $('.scroll-flecha-1').addClass('d-block');
+          $('.scroll-flecha-2').removeClass('d-none');
+          $('.scroll-flecha-2').addClass('d-block');
+          $('.scroll-flecha-3').removeClass('d-none');
+          $('.scroll-flecha-3').addClass('d-block');
+          break;
+      case 4:
+          var pantalla = `<img src="assets/img/img_ova/crimenesDeGuerra.png" width="150px" class="menos-marginT-100">`;
+          $('#scroll-img2').html(pantalla);
+          $('#scroll-text').html('<b>ii) a sabiendas de que el grupo tiene la intención de cometer el crimen;</b>');
+          $('.scroll-flecha-0').removeClass('d-none');
+          $('.scroll-flecha-0').addClass('d-block');
+          $('.scroll-flecha-1').removeClass('d-none');
+          $('.scroll-flecha-1').addClass('d-block');
+          $('.scroll-flecha-2').removeClass('d-none');
+          $('.scroll-flecha-2').addClass('d-block');
+          $('.scroll-flecha-3').removeClass('d-none');
+          $('.scroll-flecha-3').addClass('d-block');
+          $('.scroll-flecha-4').removeClass('d-none');
+          $('.scroll-flecha-4').addClass('d-block');
+          break;
+      case 5:
+          var pantalla = `<img src="assets/img/img_ova/genocidio.png" width="250px" class="menos-marginT-100">`;
+          $('#scroll-img2').html(pantalla);
+          $('#scroll-text').html('<b>e) respecto del crimen de genocidio, haga una instigación directa y pública a que se cometa” (Estatuto de Roma, 1998).</b>');
+          $('.scroll-flecha-0').removeClass('d-none');
+          $('.scroll-flecha-0').addClass('d-block');
+          $('.scroll-flecha-1').removeClass('d-none');
+          $('.scroll-flecha-1').addClass('d-block');
+          $('.scroll-flecha-2').removeClass('d-none');
+          $('.scroll-flecha-2').addClass('d-block');
+          $('.scroll-flecha-3').removeClass('d-none');
+          $('.scroll-flecha-3').addClass('d-block');
+          $('.scroll-flecha-4').removeClass('d-none');
+          $('.scroll-flecha-4').addClass('d-block');
+          $('.scroll-flecha-5').removeClass('d-none');
+          $('.scroll-flecha-5').addClass('d-block');
           break;
       default:
           break;
   }
 }
+
 function Input2(num) {
   /* <input type="range" value="35" min="0" max="100" autocomplete="off" step="1"> */
   this.att = {};
