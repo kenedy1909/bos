@@ -482,7 +482,7 @@
                               <h5 class="color-text">Responsabilidad principal/ Autoría mediata:</h5>
                             </div>
                         </div>
-                        <div class="row mt-3 pl-4 modalPrinContenido d-none">
+                        <div class="row mt-3 pl-4 modalPrinContenido">
                           <p class="text-justify text-black">La autoría mediata se presenta cuando la persona comete la conducta por medio de otro, quien es el instrumento para la realización de la misma. En este caso, los elementos objetivos del crimen no necesitan ser ejecutados por el dirigente para ser penalmente responsable.
                             <br><br>
                             En el caso de la autoría mediata, el dirigente realiza la conducta por medio de otro, quien puede o no ser penalmente responsable.
@@ -566,7 +566,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="row mt-3 pl-4 modalTerContenido">
+                        <div class="row mt-3 pl-4 modalTerContenido d-none">
                           <div class="col-12 d-flex justify-content-end zindex pr-5">
                             <div class="divcerrarMt">
                               <button type="button" class="btn m-0 px-3 py-2 bg-color rounded-circle menos-marginB-15 hoverColorTrans shadow" onclick="ModalContenidoPant(0)">
@@ -592,38 +592,41 @@
                             <div class="col-6 p-3 d-flex row justify-content-center">
                               <div class="col-1 row pt-5 menos-margin-50 position-absolute zindex text-center">
                                 <div class="col-12 mb-5">
-                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor" onclick="ModalContenidoPant(4)"><i class="fas fa-caret-up mt-1 h1"></i></div>
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-none justify-content-center align-items-center cursor abrirCollapse1_1" onclick="ModalContenidoPant('4_1')"><i class="fas fa-caret-up mt-1 h1"></i></div>
+                                </div>
+                                <div class="col-12 abrirCollapsePadre1">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor abrirCollapse1" onclick="ModalContenidoPant(4)"><i class="fas fa-caret-down mt-1 h1"></i></div>
                                 </div>
                                 <div class="col-12 mb-5">
-                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-none justify-content-center align-items-center cursor" onclick="ModalContenidoPant(4)"><i class="fas fa-caret-down mt-1 h1"></i></div>
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-none justify-content-center align-items-center cursor abrirCollapse2_1" onclick="ModalContenidoPant('5_1')"><i class="fas fa-caret-up mt-1 h1"></i></div>
                                 </div>
-                                <div class="col-12 my-5">
-                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor mt-5 hidden" onclick="ModalContenidoPant(5)"><i class="fas fa-caret-down mt-1 h1"></i></div>
+                                <div class="col-12 my-5 abrirCollapsePadre2">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor abrirCollapse2 mt-5" onclick="ModalContenidoPant(5)"><i class="fas fa-caret-down mt-1 h1"></i></div>
                                 </div>
-                                <div class="col-12 my-5 pt-5">
-                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor my-5 top-300" onclick="ModalContenidoPant(5)"><i class="fas fa-caret-down mt-1 h1"></i></div>
+                                <div class="col-12 mb-5">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-none justify-content-center align-items-center cursor abrirCollapse3_1 top-menos110" onclick="ModalContenidoPant('6_1')"><i class="fas fa-caret-up mt-1 h1"></i></div>
+                                </div>
+                                <div class="col-12 my-5 pt-5 abrirCollapsePadre3">
+                                  <div class="bg-color py-2 px-4 position-absolute rounded-circle d-flex justify-content-center align-items-center cursor abrirCollapse3 my-5" onclick="ModalContenidoPant(6)"><i class="fas fa-caret-down mt-1 h1"></i></div>
                                 </div>
                               </div>
                               <div class="bg-color pl-1 h-100 menos-marginR-50 position-absolute"></div>
                               <div class="col-12 pt-5 mt-5">
-                                <div class="border-25 bg-color-claro text-black p-4 pb-5 menos-marginB-75 mt-2 d-none" style="height: 330px!important;">
+                                <div class="border-25 bg-color-claro text-black p-4 pb-5 menos-marginB-75 mt-2 contenidoCollapse1 d-none" style="height: 330px!important;">
                                   <div class="w-100">
                                     <p class="text-justify text-black">Al respecto, resulta relevante hacer énfasis que las estructuras organizadas de poder, conforme lo ha definido entre otras la sala de cuestiones preliminares de la Corte, son estructuras que tienen vida propia, con independencia de cada uno de los miembros que la integran, así, por ejemplo, cuando nos referimos a un crimen cometido por una estructura organizada de poder acostumbramos a dirigirnos a la misma y no al miembro de la estructura que cometió la conducta. Lo anterior implica reconocer que los miembros de aquella son fungibles.</p>
                                   </div>
                                 </div>
-                                <div class="border-25 bg-color-claro text-black p-4 pb-5 mt-5" style="height: 330px!important;">
+                                <div class="border-25 bg-color-claro text-black p-4 pb-5 mt-5 contenidoCollapse2 d-none" style="height: 260px!important;">
                                   <div class="w-100 mt-5">
                                   </div>
                                   <div class="w-100">
                                     <p class="text-justify text-black">Así mismo, la estructura organizada de poder tiene una estricta jerarquía, lo que conlleva a que el cumplimiento de las órdenes dentro de la misma se cumplan con un alto grado de automatismo.</p>
                                   </div>
                                 </div>
-                                <div class="border-25 bg-color-claro2 text-black p-4 pb-5 d-none" style="height: 500px!important;">
-                                  <div class="w-100 text-center">
-                                    <img src="assets/img/img_ova/explosion.png" width="40%">
-                                  </div>
+                                <div class="border-25 bg-color-claro text-black p-4 pb-5 contenidoCollapse3 top140 d-none" style="height: 260px!important;">   
                                   <div class="w-100">
-                                    <p class="text-justify text-black"><b>(ii)</b> &nbsp;Un segundo supuesto, es cuando <b> el dirigente induce al error a otros </b> como, por ejemplo, cuando un comandante ordena el bombardeo de un lugar en el que en principio se considera un objetivo militar legítimo, por lo cual, los subalternos actúan bajo la creencia que están atacando un objetivo militar, inducidos al error por el superior, quien tiene el conocimiento que en realidad es un caserío de una comunidad campesina.</p>
+                                    <p class="text-justify text-black">En el plano interno de Colombia, se puede por ejemplo revisar el funcionamiento de los grupos armados ilegales en el marco del conflicto armado, tales como el ELN y en su momento la extinta, FARC-EP y las AUC, en las cuales están presente estos elementos de la Estructura Organizada de Poder que desarrolla la jurisprudencia y que es explicada en detalle en el documento guía del tema.</p>
                                   </div>
                                 </div>
                               </div>
@@ -632,75 +635,66 @@
                         </div>
                         <div style="height: 100px!important;"></div>
                        </div>
-                       <div id="unidad1-8" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-8" class="tab-pane" role="tabpanel" style="background: white!important;">
                         <div class="row">
-                          <div class="col-md-12">
-                              <div class="titulo-ova">
-                                  <h3 class="color-title">Estatutos y reglamentos</h3>
+                          <div class="col-md-12 row">
+                            <div class="col-md-5 d-flex p-0 zindex" style="">
+                              <img src="assets/img/img_template/actividad_general.png" class="imgactividad" style="">
+                              <div class="titulo_sub px-0" style="">
+                                <p style=""><b>ACTIVIDAD # 2</b></p>
                               </div>
-                              <h5 class="color-title">Asociados que conforman la Corporación</h5>
+                            </div>
+                            <div class="col-md-6 banner_activi m-0 pl-5 pt-4" style="">
+                              <div class="row mb-1">
+                                <img src="assets/img/img_ova/actividad.png" style="max-width: 4%;">
+                                <p class="text-black pl-3">Activida Autómona.</p>
+                              </div>
+                              <div class="row">
+                                <img src="assets/img/img_ova/reloj.png" style="max-width: 4%;">
+                                <p class="text-black pl-3">Tiempo estimado: 3 horas</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-12 mt-2">
-                            <p class="text-justify text-black">Las personas que son asociados de la corporación tienen derecho a elegir y ser elegidos para la Asamblea Delegataria y deben colaborar en el cumplimiento de los objetivos de la Universidad. A continuación, se presentan las personas que lo conforman.</p>
-                            <br></br>
-                            <p class="text-justify text-black"><b>Haga clic en cada recuadro para ampliar la información:</b></p>
+                        <div class="row mt-5 pl-3" style="height:500px; padding-bottom: 200px;">
+                          <div class="col-12">
+                            <p class="text-justify text-black">Haga clic en los números para conocer los pasos de la actividad autónoma que debe realizar para finalizar el tema 1:</p>
                           </div>
-                        </div>
-                        <div class="row fondo1 d-flex align-items-center justify-content-center" style="min-height: 400px;">
-                          <div class="col-11 fondoLinea d-flex align-items-center justify-content-center" style="min-height: 400px;">
-                            <div class="">
-                              <div class="row mt-0" style="margin-bottom: 100px;">
-                                <div class="col-3 text-white border-10 bg-color-secondary p-3 text-center ml-3 mr-5 cursor targetasHover1" data-toggle="modal" data-target="#modalRese1">
-                                  <div class="img menos-marginT-50">
-                                    <img src="assets/img/img_ova/flag2.png" width="35%">
-                                  </div>
-                                  <p class="text-center h6 my-2">Asociados fundadores</p>
-                                  <div class="triangulo-peque-w hoverTriangulo1 hidden"></div>
-                                  <div class="triangulo-peque"></div>
+                          <div class="col-12 mt-5 row align-items-center justify-content-center border-b">
+                            <div class="col-3 d-flex align-items-end ">
+                              <img src="assets/img/img_ova/leer2.png" width="100%">
+                            </div>
+                            <div class="col-9 row d-flex align-items-center">
+                              <div class="col-3 d-flex align-items-center justify-content-center mb-2">
+                                <h1 class="text-white text-center py-4 px-5 rounded-circle bg-color cursor hoverColorTrans" data-toggle="collapse" href=".collapseCard1" role="button" aria-expanded="false" aria-controls="collapseCard1">1</h1>
+                              </div>
+                              <div class="col-9 d-flex row mb-2">
+                                <div class="col-2 m-0 py-0 px-5 bg-color zindex-1 border-10 collapse collapseCard1" style="height: 250px!important;">
+                                  <div class="trianguloActividad zindex-2"></div>
                                 </div>
-                                <div class="col-3 text-white border-10 bg-color-secondary p-3 text-center ml-2 mr-5 cursor targetasHover2" data-toggle="modal" data-target="#modalRese2">
-                                  <div class="img menos-marginT-50">
-                                    <img src="assets/img/img_ova/class.png" width="40%">
+                                <div class="col-10 bg-color-claro border-25 px-5 zindex menos-margin-25 pt-2 collapse collapseCard1" style="height: 250px!important;">
+                                  <p class="text-black text-justify">Realice la lectura del siguiente documento titulado “la sentencia de primera instancia” de Thomas Lubanga Dilo de la Corte Penal Internacional, sobre la cual se discutirá sobre la forma de responsabilidad que se le imputó.
+                                    <br></br>
+                                    <b>Haga clic en el icono para descargar el documento: </b>
+                                  </p>
+                                  <div class="w-100 text-center">
+                                    <a href="assets/PDF/UNIDAD1/sentenciaPrimeraInstanciaLubanga.pdf" target="_blank"><img src="assets/img/img_ova/botonera-43.png" width="20%" class="cursor"></a>
                                   </div>
-                                  <p class="text-center h6 my-2">Asociados profesores </p>
-                                  <div class="triangulo-peque-w hoverTriangulo2 hidden"></div>
-                                  <div class="triangulo-peque"></div>
-                                </div>
-                                <div class="col-3 text-white border-10 bg-color-secondary p-3 text-center cursor targetasHover3" data-toggle="modal" data-target="#modalRese3">
-                                  <div class="img menos-marginT-50">
-                                    <img src="assets/img/img_ova/student.png" width="40%">
-                                  </div>
-                                  <p class="text-center h6 my-2">Asociados estudiantes </p>
-                                  <div class="triangulo-peque-w hoverTriangulo3 hidden"></div>
-                                  <div class="triangulo-peque"></div>  
                                 </div>
                               </div>
-                              <div class="row ml-5" style="margin-top: 50px;">
-                                <div class="col-3 text-white border-10 bg-color-secondary p-3 text-center ml-5 mr-5 mt-3 cursor targetasHover4" data-toggle="modal" data-target="#modalRese4">
-                                  <div class="img menos-marginT-50">
-                                    <img src="assets/img/img_ova/winner.png" width="40%">
-                                  </div>
-                                  <p class="text-center h6 my-2">Asociados honorarios</p>
-                                  <div class="triangulo-peque-w hoverTriangulo4 hidden"></div>
-                                  <div class="triangulo-peque"></div>
+                              
+                              <div class="col-3 d-flex align-items-center justify-content-center mt-5">
+                                <h1 class="text-white text-center py-4 px-5 rounded-circle bg-color cursor hoverColorTrans" data-toggle="collapse" href=".collapseCard2" role="button" aria-expanded="false" aria-controls="collapseCard2">2</h1>
+                              </div>
+                              <div class="col-9 d-flex row">
+                                <div class="col-2 m-0 py-0 px-5 bg-color zindex-1 border-10  collapse collapseCard2" style="height: 250px!important;">
+                                  <div class="trianguloActividad zindex-2"></div>
                                 </div>
-                                <div class="col-3 text-white border-10 bg-color-secondary p-3 text-center ml-2 mr-5 mt-3 cursor targetasHover5" data-toggle="modal" data-target="#modalRese5">
-                                  <div class="img menos-marginT-50">
-                                    <img src="assets/img/img_ova/support.png" width="40%">
+                                <div class="col-10 bg-color-claro border-25 px-5 zindex menos-margin-25 pt-2 collapse collapseCard2" style="height: 250px!important;">
+                                  <div class="d-flex align-items-center">
+                                    <img src="assets/img/img_ova/empleado.png" width="40%">
+                                    <p class="text-black text-justify">Encuentro sincrónico (2 horas)</p>
                                   </div>
-                                  <p class="text-center h6 my-2">Asociados benefactores</p>
-                                  <div class="triangulo-peque-w hoverTriangulo5 hidden"></div>
-                                  <div class="triangulo-peque"></div>
-                                </div>
-                                <div class="col-3 text-white border-10 bg-color-secondary p-3 text-center ml-3 mb-3 cursor targetasHover6" data-toggle="modal" data-target="#modalRese6">
-                                  <div class="img menos-marginT-50">
-                                    <img src="assets/img/img_ova/graduado.png" width="40%">
-                                  </div>
-                                  <p class="text-center h6 my-2">Asociados graduados</p>
-                                  <div class="triangulo-peque-w hoverTriangulo6 hidden"></div>
-                                  <div class="triangulo-peque"></div> 
                                 </div>
                               </div>
                             </div>

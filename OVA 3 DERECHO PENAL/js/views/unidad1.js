@@ -1587,6 +1587,7 @@ function ModalContenidoPant(num) {
   if (num == 0) {
     $('.modalPrinContenido').removeClass('d-none');
     $('.modalSecContenido').addClass('d-none');
+    $('.modalTerContenido').addClass('d-none');
   }else if (num == 'm1') {
     $('.modalPrinContenido').addClass('d-none');
     $('.modalSecContenido').removeClass('d-none');
@@ -1602,6 +1603,168 @@ function ModalContenidoPant(num) {
   }else if (num == 3) {
     $('.cardSelect3').removeClass('d-none');
     $('.cardSelect1, .cardSelect2').addClass('d-none');
+  
+  }else if (num == 4) {
+    $('.abrirCollapse1').removeClass('d-flex');
+    $('.abrirCollapse1').addClass('d-none');
+
+    $('.abrirCollapse1_1').removeClass('d-none');
+    $('.abrirCollapse1_1').addClass('d-flex');
+
+    $('.abrirCollapse2_1').removeClass('d-flex');
+    $('.abrirCollapse2_1').addClass('d-none');
+
+    $('.abrirCollapse3_1').removeClass('d-flex');
+    $('.abrirCollapse3_1').addClass('d-none');
+
+    $('.abrirCollapse2').addClass('hidden');
+    $('.abrirCollapse3').addClass('top-100');
+    $('.abrirCollapse1').removeClass('top-menos110');
+    $('.abrirCollapse2').removeClass('top-menos190');
+    
+    $('.abrirCollapsePadre3').removeClass('my-5 pt-5');
+    
+    $('.contenidoCollapse1').removeClass('d-none');
+    $('.contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
+
+  }else if (num == '4_1') {
+    $('.abrirCollapse1').removeClass('d-none');
+    $('.abrirCollapse1').addClass('d-flex');
+
+    $('.abrirCollapse1_1').removeClass('d-flex');
+    $('.abrirCollapse1_1').addClass('d-none');
+    
+    $('.abrirCollapse2_1').removeClass('d-flex');
+    $('.abrirCollapse2_1').addClass('d-none');
+
+    $('.abrirCollapse2').removeClass('d-none');
+    $('.abrirCollapse2').addClass('d-flex');
+
+    $('.abrirCollapse2').removeClass('hidden');
+    $('.abrirCollapse3').removeClass('top-100');
+    $('.abrirCollapse1').removeClass('top-menos80');
+    
+    $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
+    $('.abrirCollapsePadre1').addClass('mb-5');
+    $('.abrirCollapsePadre3').addClass('my-5 pt-5');
+    $('.abrirCollapse3').addClass('my-5');
+
+
+  }else if (num == 5) {
+    $('.abrirCollapse2').removeClass('d-flex');
+    $('.abrirCollapse2').addClass('d-none');
+
+    $('.abrirCollapse1').removeClass('d-none');
+    $('.abrirCollapse1').addClass('d-flex');
+
+    $('.abrirCollapse3').removeClass('d-none');
+    $('.abrirCollapse3').addClass('d-flex');
+    
+    $('.abrirCollapse2_1').removeClass('d-none');
+    $('.abrirCollapse2_1').addClass('d-flex');
+
+    $('.abrirCollapse1_1').removeClass('d-flex');
+    $('.abrirCollapse1_1').addClass('d-none');
+
+    $('.abrirCollapse3_1').removeClass('d-flex');
+    $('.abrirCollapse3_1').addClass('d-none');
+    
+    $('.abrirCollapse3').addClass('top-100');   
+    $('.abrirCollapse1').removeClass('top-menos110');
+    $('.abrirCollapse2').removeClass('top-menos190');
+
+    $('.abrirCollapsePadre1').removeClass('mb-5');
+    $('.abrirCollapsePadre3').removeClass('my-5 pt-5');
+    
+    $('.contenidoCollapse2').removeClass('d-none');
+    $('.contenidoCollapse1, .contenidoCollapse3').addClass('d-none');
+
+  }else if (num == '5_1') {
+    $('.abrirCollapse2').removeClass('d-none');
+    $('.abrirCollapse2').addClass('d-flex');
+    
+    $('.abrirCollapse1_1').removeClass('d-flex');
+    $('.abrirCollapse1_1').addClass('d-none');
+    
+    $('.abrirCollapse2_1').removeClass('d-flex');
+    $('.abrirCollapse2_1').addClass('d-none');
+
+    $('.abrirCollapse2').removeClass('d-none');
+    $('.abrirCollapse2').addClass('d-flex');
+    
+    $('.abrirCollapse3').removeClass('top-100');
+    $('.abrirCollapse1').removeClass('top-menos80');
+    $('.abrirCollapse2').removeClass('hidden');
+
+    $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
+    $('.abrirCollapsePadre1').addClass('mb-5');
+    $('.abrirCollapsePadre3').addClass('my-5 pt-5');
+    $('.abrirCollapse3').addClass('my-5');
+
+  }else if (num == 6) {
+    $('.abrirCollapse3').removeClass('d-flex');
+    $('.abrirCollapse3').addClass('d-none');
+    
+    $('.abrirCollapse2').removeClass('d-none');
+    $('.abrirCollapse2').addClass('d-flex');
+    $('.abrirCollapse2').removeClass('hidden');
+    
+    $('.abrirCollapse1').removeClass('d-none');
+    $('.abrirCollapse1').addClass('d-flex');
+    
+    $('.abrirCollapse3_1').removeClass('d-none');
+    $('.abrirCollapse3_1').addClass('d-flex');
+
+    $('.abrirCollapse2_1').removeClass('d-flex');
+    $('.abrirCollapse2_1').addClass('d-none');
+
+    $('.abrirCollapse1_1').removeClass('d-flex');
+    $('.abrirCollapse1_1').addClass('d-none');
+    
+    $('.abrirCollapse1').addClass('top-menos110');
+    $('.abrirCollapse2').addClass('top-menos190');
+    
+    $('.contenidoCollapse3').removeClass('d-none');
+    $('.contenidoCollapse1, .contenidoCollapse2').addClass('d-none');
+
+
+  }else if (num == '6_1') {
+    $('.abrirCollapse3').removeClass('d-none');
+    $('.abrirCollapse3').addClass('d-flex');
+    
+    $('.abrirCollapse2').removeClass('d-none');
+    $('.abrirCollapse2').addClass('d-flex');
+    $('.abrirCollapse2').removeClass('hidden');
+    
+    $('.abrirCollapse1').removeClass('d-none');
+    $('.abrirCollapse1').addClass('d-flex');
+
+    $('.abrirCollapse3_1').removeClass('d-flex');
+    $('.abrirCollapse3_1').addClass('d-none');
+    
+    $('.abrirCollapse2_1').removeClass('d-flex');
+    $('.abrirCollapse2_1').addClass('d-none');
+    
+    $('.abrirCollapse1_1').removeClass('d-flex');
+    $('.abrirCollapse1_1').addClass('d-none');;
+    
+    $('.abrirCollapse1').removeClass('top-menos110');
+    $('.abrirCollapse2').removeClass('top-menos190');
+    
+    $('.contenidoCollapse3').removeClass('d-none');
+    $('.contenidoCollapse1, .contenidoCollapse2').addClass('d-none');
+
+    $('.abrirCollapse2').removeClass('d-none');
+    $('.abrirCollapse2').addClass('d-flex');
+    
+    $('.abrirCollapse2_1').removeClass('d-flex');
+    $('.abrirCollapse2_1').addClass('d-none');
+    
+    $('.abrirCollapse3').removeClass('top-100');
+    $('.abrirCollapse1').removeClass('top-menos80');
+
+    $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
+
   }
 
 

@@ -1020,6 +1020,33 @@ p, button{
 	background: #783d39!important;
 	/* border: 1px solid var(--bg-color)!important; */	
 }
+.top140{
+	margin-top: 140px;
+}
+.top-menos80{
+	top: -80px;
+}
+.top-menos100{
+	top: -100px;
+}
+.top-menos110{
+	top: -110px;
+}
+.top-menos150{
+	top: -150px;
+}
+.top-menos190{
+	top: -190px;
+}
+.top-80{
+	top: 80px;
+}
+.top-100{
+	top: 100px;
+}
+.top-200{
+	top: 200px;
+}
 .top-300{
 	top: 300px;
 }
@@ -1208,6 +1235,16 @@ p, button{
     position: absolute;
     top: 100px;
     margin-left: 40px;
+}
+.trianguloActividad {
+	width: 0;
+    height: 0;
+    border-right: 40px solid var(--bg-color);
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    position: absolute;
+    left: -30px;
+    top: 70px;
 }
 .triangulo-equilatero-bottom2 {
 	width: 0;
