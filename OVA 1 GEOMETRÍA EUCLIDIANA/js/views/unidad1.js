@@ -779,21 +779,21 @@ function listas(){
     var lista_num = $(this).data('lista');
     if (lista_num == 1) {
         var text = `
-                    <p class="text-center"><img src="assets/img/img_ova/ejemplo preposiciones 1.png" alt="" class="img-80"></p>
+                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-01.png" alt="" class="img-80"></p>
                     `;
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 2);
         $(".lista-a").data('lista', 3);
     }else if (lista_num == 2) {
         var text = `
-                    <p class="text-center"><img src="assets/img/img_ova/ejemplo preposiciones 2.png" alt="" class="img-80"></p>
+                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-02.png" alt="" class="img-80"></p>
                     `;
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 3);
         $(".lista-a").data('lista', 1);
     }else if (lista_num == 3) {
         var text = `
-                    <p class="text-center"><img src="assets/img/img_ova/ejemplo preposiciones 3.png" alt="" class="img-80"></p>
+                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-03.png" alt="" class="img-80"></p>
                     `;
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 1);
@@ -1279,7 +1279,7 @@ function argumentos(){
 
 function formulas(num){
     if (num == 1) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 1.png" alt="" class="img-100"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" alt="" class="img-100"></p>';
         $("#info-formula").html(info);
     }else if (num == 2) {
         var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 2.png" alt="" class="img-100"></p>';
