@@ -1810,6 +1810,21 @@ function ModalContenidoPant(num) {
     $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
 
   }
+}
 
+function abrirActivi4() {
+  $('#contenidoActivi4').removeClass('p-5');
+  $('#contenidoActivi4').addClass('p-3 pl-5');
 
+  var contenido = `
+                  <div class="ml-5">
+                    <p class="text-black text-justify">Capítulo 6 “el documento de formas de participación en el Derecho Penal Internacional” del profesor Héctor Olasolo Alonso.</p>
+                    <br></br>
+                    <p class="text-black text-justify"><b> Haga clic en el icono para descargar.</b></p>
+                  </div>
+                  <div class="w-100 text-center mt-2 px-5">
+                    <a href="assets/PDF/UNIDAD1/capituloVIFormasDeParticipacion.pdf" target="_blank"><img src="assets/img/img_ova/botonera-43.png" width="25%" class="cursor"></a>
+                  </div>`;
+
+  $('#contenidoActivi4').html(contenido);
 }
