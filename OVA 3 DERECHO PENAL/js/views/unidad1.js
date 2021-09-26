@@ -1828,3 +1828,53 @@ function abrirActivi4() {
 
   $('#contenidoActivi4').html(contenido);
 }
+
+function activi5(num) {
+  if (num == 1) {
+
+    $('#activiInicial5').removeClass('d-flex');
+    $('#activiInicial5').addClass('d-none');
+    $('#activiPosterior5').removeClass('d-none');
+    $('#activiPosterior5').addClass('d-flex');
+
+    $('#padreActivi5').removeClass('bg-color');
+    $('#padreActivi5').addClass('bg-color-claro');
+    $('#padreActivi5').attr('onclick','activi5(2)');
+
+  }else if (num == 2) {
+
+    $('#activiInicial5').removeClass('d-none');
+    $('#activiInicial5').addClass('d-flex');
+    $('#activiPosterior5').addClass('d-none');
+    $('#activiPosterior5').removeClass('d-flex');
+    
+    $('#padreActivi5').removeClass('bg-color-claro');
+    $('#padreActivi5').addClass('bg-color');
+    $('#padreActivi5').attr('onclick','activi5(1)');
+
+  }else if (num == 3) {
+
+    $('#activiInicial5_2').removeClass('d-flex');
+    $('#activiInicial5_2').addClass('d-none');
+    $('#activiPosterior5_2').removeClass('d-none');
+    $('#activiPosterior5_2').addClass('d-flex');
+
+    $('#padreActivi5_2').removeClass('bg-color');
+    $('#padreActivi5_2').addClass('bg-color-claro');
+    $('#padreActivi5_2').attr('onclick','activi5(4)');
+
+  }else if (num == 4) {
+
+    $('#activiInicial5_2').removeClass('d-none');
+    $('#activiInicial5_2').addClass('d-flex');
+    $('#activiPosterior5_2').addClass('d-none');
+    $('#activiPosterior5_2').removeClass('d-flex');
+    
+    $('#padreActivi5_2').removeClass('bg-color-claro');
+    $('#padreActivi5_2').addClass('bg-color');
+    $('#padreActivi5_2').attr('onclick','activi5(3)');
+
+  }
+
+
+}
