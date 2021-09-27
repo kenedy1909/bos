@@ -1878,3 +1878,67 @@ function activi5(num) {
 
 
 }
+
+function ModalContenidoPant13(num) {
+
+  if (num == 0) {
+    $('#pantallaPrin13').removeClass('d-none');
+    $('#pantallaSec13').addClass('d-none');
+
+  }else if (num == 'm1') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>1</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">En la instigación, al igual que en ordenar, el partícipe no realiza ninguno de los elementos objetivos del crimen, pues de ser así, se pasaría de un escenario de partícipe por instigar a responsabilidad principal como coautor.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+
+  }else if (num == 'm2') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/habla.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>2</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">La instigación se da principalmente en aquellos supuestos en los que una persona tiene un cargo que le permite influir sobre otros para realizar una conducta, como los asesores políticos, los ideólogos e incluso el superior que, aprovechando su cargo, influye sobre el subalterno para que realice determinado acto.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+
+  }else if (num == 'm3') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/icono_tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>3</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">Se destaca que la instigación puede ser expresa o tácita, lo cual, plantea escenarios de discusión, especialmente cuando se analiza frente a superiores, por la delgada línea que implica diferenciar la responsabilidad accesoria por ordenar de la por instigar. Al respecto es prudente recurrir a que en ordenar se debe contar con una acción positiva, como es la orden de llevar a cabo la conducta, mientras que en instigar, puede ser también por omisión y al ser expresa puede recurrirse a una forma de motivación para realizar la conducta y no a la orden directa de cometerla.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+
+  }else if (num == 'm4') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/buscar.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>4</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">Una de las precisiones más importantes que ha realizado la jurisprudencia, es que en la instigación no se debe demostrar que  esta fue el factor determinante para la comisión de la conducta, basta con demostrar que hay un factor de contribución sustancial, es decir, no se exige que sin la instigación la conducta no se hubiese cometido, puede ser responsable con el solo hecho de reforzar la idea de cometer la conducta.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+  }
+}
