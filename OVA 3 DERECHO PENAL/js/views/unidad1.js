@@ -1942,3 +1942,45 @@ function ModalContenidoPant13(num) {
     $('.bodyCont13').html(bodyCont13);
   }
 }
+
+function textoCambiante14(num) {
+  
+  $('.circuloText1,.circuloText2,.circuloText3,.circuloText4,.circuloText5').addClass('bg-color');
+  $('.circuloText1,.circuloText2,.circuloText3,.circuloText4,.circuloText5').removeClass('bg-color-amarillo');
+  if (num == 1) {
+    $('.circuloText1').removeClass('bg-color');
+    $('.circuloText1').addClass('bg-color-amarillo');
+    var contenido = `
+                    Es importante destacar que en la responsabilidad por cooperar se exige una contribución sustancial para la realización de la conducta, pero sin que sea necesario que se demuestre algún tipo de vínculo entre el partícipe y el autor material, lo anterior quiere decir que lo importante es el efecto de la contribución sobre la realización de la conducta y no la relación que pueda existir entre ambos.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 2) {
+    $('.circuloText2').removeClass('bg-color');
+    $('.circuloText2').addClass('bg-color-amarillo');
+    var contenido = `
+                    La responsabilidad por cooperar se puede dar por acción y por omisión, por ejemplo, cuando un comandante o autoridad pública deliberadamente no realiza controles a sus tropas o cuando se omite adoptar medidas de protección que finalmente facilitan que el autor material realice la conducta.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 3) {
+    $('.circuloText3').removeClass('bg-color');
+    $('.circuloText3').addClass('bg-color-amarillo');
+    var contenido = `
+                    También se presenta responsabilidad por cooperar cuando se entregan medios materiales para que el autor material pueda realizar la conducta, como por ejemplo proporcionando armas, vehículos, medios de comunicación o información que le facilite llevar a cabo su cometido.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 4) {
+    $('.circuloText4').removeClass('bg-color');
+    $('.circuloText4').addClass('bg-color-amarillo');
+    var contenido = `
+                    Debe destacarse que la cooperación puede ser directa o indirecta, aun en el supuesto que la contribución sea por intermedio de otra persona, basta con que el efecto de la contribución sea sustancial para la realización de la conducta.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 5) {
+    $('.circuloText5').removeClass('bg-color');
+    $('.circuloText5').addClass('bg-color-amarillo');
+    var contenido = `
+                    Finalmente, es importante resaltar que, en la responsabilidad accesoria por cooperar, de la lectura del artículo 25.3.c se desprende que hay una exigencia -no presente en las otras formas de responsabilidad accesoria- de que el responsable accesorio actúe con un dolo directo de primer grado, es decir, que frente a él debe estar no solamente la contribución sustancial, sino el nivel de certeza de que su conducta se desarrolla con la intención de facilitar la realización de la conducta criminal.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }
+}
