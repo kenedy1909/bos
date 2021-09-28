@@ -506,16 +506,6 @@ iframe{
     color: rgb(0,0,0);
 }
 
-.text{
-    position: relative;
-    color: rgb(0,0,0);
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.5s;
-}
 
 .svg_porcent{
     position: relative;

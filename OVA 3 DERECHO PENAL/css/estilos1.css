@@ -1028,6 +1028,10 @@ p, button{
 	color: rgb(177, 177, 177)!important;
 	/* border: 1px solid var(--bg-color)!important; */	
 }
+.hoverUniversalTrans:hover{
+	background: rgba(130, 130, 130, 0.5)!important;
+	/* border: 1px solid var(--bg-color)!important; */	
+}
 .top140{
 	margin-top: 140px;
 }

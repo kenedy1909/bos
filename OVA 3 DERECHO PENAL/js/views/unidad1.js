@@ -208,7 +208,7 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
-
+            scroll_set(8);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
@@ -2135,5 +2135,50 @@ function slideSoldados(num) {
                     `;
     $('#textoCambiar').html(contenido);
 
+  }
+}
+function cardTarjetas(num) {
+
+  if (num == 0) {
+    $('#tarjetasCards').removeClass('d-none');
+    $('#contenidoCards').addClass('d-none');
+    
+  }else if (num == 1) {
+    $('#contenidoCards').removeClass('d-none');
+    $('#tarjetasCards').addClass('d-none');
+
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').removeClass('d-flex');
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').addClass('d-none');
+
+    $('.card1Contenido').removeClass('d-none');
+    $('.card1Contenido').addClass('d-flex');
+
+  }else if (num == 2) {
+    $('#contenidoCards').removeClass('d-none');
+    $('#tarjetasCards').addClass('d-none');
+
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').removeClass('d-flex');
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').addClass('d-none');
+
+    $('.card2Contenido').removeClass('d-none');
+    $('.card2Contenido').addClass('d-flex');
+  }else if (num == 3) {
+    $('#contenidoCards').removeClass('d-none');
+    $('#tarjetasCards').addClass('d-none');
+
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').removeClass('d-flex');
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').addClass('d-none');
+
+    $('.card3Contenido').removeClass('d-none');
+    $('.card3Contenido').addClass('d-flex');
+  }else if (num == 4) {
+    $('#contenidoCards').removeClass('d-none');
+    $('#tarjetasCards').addClass('d-none');
+
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').removeClass('d-flex');
+    $('.card1Contenido,.card2Contenido,.card3Contenido,.card4Contenido').addClass('d-none');
+
+    $('.card4Contenido').removeClass('d-none');
+    $('.card4Contenido').addClass('d-flex');
   }
 }
