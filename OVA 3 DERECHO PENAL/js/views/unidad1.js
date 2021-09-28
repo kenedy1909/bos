@@ -209,7 +209,6 @@ function controlSlides(num){
               }(n));
             }  
 
-            scroll_set(6);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
@@ -1984,3 +1983,94 @@ function textoCambiante14(num) {
     $('.textoCambiante14').html(contenido);
   }
 }
+
+function selectorOficina(num) {
+  
+  $('.flechas').removeClass('color-text');
+  $('.flechas').addClass('filterScaleFlecha');
+
+  $('.imgOficina').addClass('filterScale');
+  
+  if (num == 1) {
+    $('.flecha1').removeClass('filterScaleFlecha');
+    $('.flecha1').addClass('color-text');
+    $('.imgOficina1').removeClass('filterScale');
+
+    var contenido = `
+                    <p class="text-black text-justify">En la responsabilidad por planear se requiere que exista un nivel de diseño en la realización de la conducta que constituye crimen internacional, aun cuando la misma no se haya consumado, es decir, la responsabilidad se configura independientemente de la comisión o no de la conducta, aceptando en consecuencia la tentativa</p>
+                    `;
+    $('.contenedorOficina').html(contenido);
+  }else if (num == 2) {
+    $('.flecha2').removeClass('filterScaleFlecha');
+    $('.flecha2').addClass('color-text');
+    $('.imgOficina2').removeClass('filterScale');
+
+    var contenido = `
+                    <div class="content p_white custom-scrollbar7">
+                      <div class="custom-scrollbar__inner7">
+                        <p class="text-black text-justify">Debe destacarse que conforme lo ha recogido la jurisprudencia internacional, pueden existir diferentes niveles de participación por planear dentro de un grupo criminal, el ejemplo más común es el de los mandos medios que transmiten la orden del mando superior, por lo que en cada escala de la línea de mando.
+                          <br>
+                          existe un diferente nivel de planeación que genera responsabilidad en el Derecho Penal Internaciona.
+                        </p>
+                      </div>
+                      <div class="custom-scrollbar__bar7">
+                        <div class="custom-scrollbar__knob7 cursor">
+                          <p class="text-center linea_scroll7">-</p>
+                        </div>
+                      </div>
+                    </div>                
+                    `;
+    $('.contenedorOficina').html(contenido);
+    scroll_set(7);
+  }else if (num == 3) {
+    $('.flecha3').removeClass('filterScaleFlecha');
+    $('.flecha3').addClass('color-text');
+    $('.imgOficina3').removeClass('filterScale');
+
+    var contenido = `
+                   <p class="text-black text-justify"> Al igual que en las otras formas de responsabilidad accesoria analizadas, en la que da por planear es necesario que el diseño del plan sea un factor que contribuya sustancialmente en la ejecución del crimen, por lo cual no hay una exigencia de esencialidad, que lo convertiría en una forma de responsabilidad principal.</p>
+                    `;
+    $('.contenedorOficina').html(contenido);
+  }else if (num == 4) {
+    $('.flecha4').removeClass('filterScaleFlecha');
+    $('.flecha4').addClass('color-text');
+    $('.imgOficina4').removeClass('filterScale');
+
+    var contenido = `
+                    <div class="content p_white custom-scrollbar7">
+                      <div class="custom-scrollbar__inner7">
+                        <p class="text-black text-justify">Debe destacarse que conforme lo ha recogido la jurisprudencia internacional, pueden existir diferentes niveles de participación por planear dentro de un grupo criminal, el ejemplo más común es el de los mandos medios que transmiten la orden del mando superior, por lo que en cada escala de la línea de mando.
+                          <br>
+                          olvidando que el papel de quienes diseñaron el plan inicial, es una contribución que también requiere reproche jurídico penal.
+                        </p>
+                      </div>
+                      <div class="custom-scrollbar__bar7">
+                        <div class="custom-scrollbar__knob7 cursor">
+                          <p class="text-center linea_scroll7">-</p>
+                        </div>
+                      </div>
+                    </div>
+                    `;
+    $('.contenedorOficina').html(contenido);
+    scroll_set(7);
+  }else if (num == 5) {
+    $('.flecha5').removeClass('filterScaleFlecha');
+    $('.flecha5').addClass('color-text');
+    $('.imgOficina5').removeClass('filterScale');
+
+    var contenido = `
+                    <p class="text-black text-justify"> En lo que corresponde con los elementos subjetivos, persiste lo establecido en la jurisprudencia frente a las demás formas de responsabilidad accesoria, en el sentido que quien planea debe ser al menos consciente de la probabilidad sustancial, sin que se exija con respecto a él, todos los elementos subjetivos propios del crimen en concreto.</p>
+                    `;
+    $('.contenedorOficina').html(contenido);
+  }else if (num == 6) {
+    $('.flecha6').removeClass('filterScaleFlecha');
+    $('.flecha6').addClass('color-text');
+    $('.imgOficina6').removeClass('filterScale');
+
+    var contenido = `
+                  <p class="text-black text-justify"> Lo que sí resulta relevante recordar, es que si en desarrollo de la conducta planeada, se presentan otras en las cuales el dirigente tenía ese conocimiento de la probabilidad sustancial de que esas otras conductas ocurrieran, será igualmente responsable de las mismas.</p>
+                    `;
+    $('.contenedorOficina').html(contenido);
+  }
+}
+

@@ -998,11 +998,11 @@ p, button{
 .lineaDir:hover{
 	padding-left: 1rem !important;
 }
-.fondo-libros{
-	background: url(../assets/img/img_ova/libros.png);
+.fondo-oficina{
+	background: url(../assets/img/img_ova/oficina.png);
 	background-repeat: no-repeat;
-	background-size: 70% 100%;
-	background-position:right;
+	background-size: 100% 100%;
+	background-position:center;
 }
 .pestaniaNuev:hover{
 	border: 1px solid var(--bg-color);
@@ -1026,6 +1026,9 @@ p, button{
 }
 .top140{
 	margin-top: 140px;
+}
+.top-0{
+	top: 0px;
 }
 .top-menos80{
 	top: -80px;
@@ -1053,6 +1056,18 @@ p, button{
 }
 .top-300{
 	top: 300px;
+}
+.filterScale{
+	filter: grayscale(1);
+}
+.filterScale:hover{
+	filter: grayscale(0)!important;
+}
+.filterScaleFlecha{
+	color: gray;
+}
+.filterScaleFlecha:hover{
+	color: var(--bg-color)!important;
 }
 
 
@@ -1964,16 +1979,16 @@ a.control_next {
 }
 
 /*scroll*/
-.custom-scrollbar1, .custom-scrollbar2, .custom-scrollbar3 {
+.custom-scrollbar1, .custom-scrollbar2, .custom-scrollbar3, .custom-scrollbar6 {
   position: relative;
   height: 219px;
   overflow: hidden;
 }
 
-.custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3 {
+.custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3, .custom-scrollbar__inner6 {
   height: 100%;
   width: calc(100% + 40px);
-  padding-right: 75px;
+  padding-right: 80px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -1984,18 +1999,18 @@ a.control_next {
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3 {
+.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3, .custom-scrollbar__bar6 {
   position: absolute;
   top: 18px;
   bottom: 20px;
   background:#811111;
   width: 3px;
-  right: 30px;
+  right: 20px;
   /*right: 8px;*/
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3 {
+.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3, .custom-scrollbar__knob6 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -2007,7 +2022,7 @@ a.control_next {
   will-change: top;
 }
 
-.linea_scroll1, .linea_scroll2, .linea_scroll3 {
+.linea_scroll1, .linea_scroll2, .linea_scroll3, .linea_scroll6 {
   font-size: 50px;
     margin: 0px;
     position: relative;
