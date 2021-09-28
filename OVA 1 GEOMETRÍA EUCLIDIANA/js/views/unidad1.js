@@ -411,7 +411,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Conectores lógicos y valores de verdad.");
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
