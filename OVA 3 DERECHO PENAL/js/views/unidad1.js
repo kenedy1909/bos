@@ -2074,3 +2074,30 @@ function selectorOficina(num) {
   }
 }
 
+function activi6(num) {
+  if (num == 1) {
+
+    $('#activiInicial6').removeClass('d-flex');
+    $('#activiInicial6').addClass('d-none');
+    $('#activiPosterior6').removeClass('d-none');
+    $('#activiPosterior6').addClass('d-flex');
+    $('#padreActivi6').removeClass('bg-color');
+    $('#padreActivi6').addClass('bg-color-claro');
+
+    $('#padreActivi6').attr('onclick','activi6(2)');
+
+  }else if (num == 2) {
+
+    $('#activiInicial6').removeClass('d-none');
+    $('#activiInicial6').addClass('d-flex');
+    $('#activiPosterior6').addClass('d-none');
+    $('#activiPosterior6').removeClass('d-flex');
+    $('#padreActivi6').removeClass('bg-color-claro');
+    $('#padreActivi6').addClass('bg-color');
+    
+    $('#padreActivi6').attr('onclick','activi6(1)');
+
+  }
+
+
+}
