@@ -1020,6 +1020,10 @@ p, button{
 	background: #783d39!important;
 	/* border: 1px solid var(--bg-color)!important; */	
 }
+.hoverColorAmarillo:hover{
+	background: var(--bg-color-amarillo)!important;
+	/* border: 1px solid var(--bg-color)!important; */	
+}
 .hoverUniversalT:hover{
 	color: rgb(177, 177, 177)!important;
 	/* border: 1px solid var(--bg-color)!important; */	

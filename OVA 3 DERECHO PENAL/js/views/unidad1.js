@@ -2101,3 +2101,39 @@ function activi6(num) {
 
 
 }
+
+function slideSoldados(num) {
+  $('.slid1Soldado,.slid2Soldado,.slid3Soldado').removeClass('bg-color-amarillo');
+  $('.slid1Soldado,.slid2Soldado,.slid3Soldado').addClass('bg-white');
+
+  if (num == 1) {
+
+    $('.slid1Soldado').removeClass('bg-white');
+    $('.slid1Soldado').addClass('bg-color-amarillo');
+    var contenido = `
+                    La responsabilidad del superior está contenida en el artículo 28 del Estatuto de Roma y corresponde con una forma de responsabilidad penal individual en la cual los comandantes, tanto de iure como de facto, pueden ser responsables de las conductas de sus subalternos por diversas causales descritas en la norma.
+                    <br><br>
+                    <b> Haga clic en los círculos para continuar con la información</b>
+                    `;
+    $('#textoCambiar').html(contenido);
+
+  }else if (num == 2) {
+
+    $('.slid2Soldado').removeClass('bg-white');
+    $('.slid2Soldado').addClass('bg-color-amarillo');
+    var contenido = `
+                    Esta forma de responsabilidad es especialmente importante en los países en los que, como Colombia, se ha presentado un conflicto armado por décadas, en el marco del cual se acusa a las diferentes partes del conflicto de cometer crímenes internacionales y se cuestiona el papel que debieron tener los superiores para evitar la ocurrencia de los mismos.
+                    `;
+    $('#textoCambiar').html(contenido);
+
+  }else if (num == 3) {
+
+    $('.slid3Soldado').removeClass('bg-white');
+    $('.slid3Soldado').addClass('bg-color-amarillo');
+    var contenido = `
+                    Se trata en consecuencia de analizar cuáles son las obligaciones que recaen en cabeza de los superiores frente a las conductas de sus subalternos, de tal suerte que generan responsabilidad en el Derecho Penal Internacional.
+                    `;
+    $('#textoCambiar').html(contenido);
+
+  }
+}
