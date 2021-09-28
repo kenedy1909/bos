@@ -1878,3 +1878,109 @@ function activi5(num) {
 
 
 }
+
+function ModalContenidoPant13(num) {
+
+  if (num == 0) {
+    $('#pantallaPrin13').removeClass('d-none');
+    $('#pantallaSec13').addClass('d-none');
+
+  }else if (num == 'm1') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>1</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">En la instigación, al igual que en ordenar, el partícipe no realiza ninguno de los elementos objetivos del crimen, pues de ser así, se pasaría de un escenario de partícipe por instigar a responsabilidad principal como coautor.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+
+  }else if (num == 'm2') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/habla.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>2</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">La instigación se da principalmente en aquellos supuestos en los que una persona tiene un cargo que le permite influir sobre otros para realizar una conducta, como los asesores políticos, los ideólogos e incluso el superior que, aprovechando su cargo, influye sobre el subalterno para que realice determinado acto.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+
+  }else if (num == 'm3') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/icono_tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>3</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">Se destaca que la instigación puede ser expresa o tácita, lo cual, plantea escenarios de discusión, especialmente cuando se analiza frente a superiores, por la delgada línea que implica diferenciar la responsabilidad accesoria por ordenar de la por instigar. Al respecto es prudente recurrir a que en ordenar se debe contar con una acción positiva, como es la orden de llevar a cabo la conducta, mientras que en instigar, puede ser también por omisión y al ser expresa puede recurrirse a una forma de motivación para realizar la conducta y no a la orden directa de cometerla.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+
+  }else if (num == 'm4') {
+
+    $('#pantallaPrin13').addClass('d-none');
+    $('#pantallaSec13').removeClass('d-none');
+    var headCont13 = `
+                    <img src="assets/img/img_ova/buscar.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <p class="text-white pl-5 h4 mx-4"><b>4</b></p>
+                    `;
+    var bodyCont13 = `
+                    <p class="text-black text-justify">Una de las precisiones más importantes que ha realizado la jurisprudencia, es que en la instigación no se debe demostrar que  esta fue el factor determinante para la comisión de la conducta, basta con demostrar que hay un factor de contribución sustancial, es decir, no se exige que sin la instigación la conducta no se hubiese cometido, puede ser responsable con el solo hecho de reforzar la idea de cometer la conducta.</p>
+                    `;
+    $('.headCont13').html(headCont13);
+    $('.bodyCont13').html(bodyCont13);
+  }
+}
+
+function textoCambiante14(num) {
+  
+  $('.circuloText1,.circuloText2,.circuloText3,.circuloText4,.circuloText5').addClass('bg-color');
+  $('.circuloText1,.circuloText2,.circuloText3,.circuloText4,.circuloText5').removeClass('bg-color-amarillo');
+  if (num == 1) {
+    $('.circuloText1').removeClass('bg-color');
+    $('.circuloText1').addClass('bg-color-amarillo');
+    var contenido = `
+                    Es importante destacar que en la responsabilidad por cooperar se exige una contribución sustancial para la realización de la conducta, pero sin que sea necesario que se demuestre algún tipo de vínculo entre el partícipe y el autor material, lo anterior quiere decir que lo importante es el efecto de la contribución sobre la realización de la conducta y no la relación que pueda existir entre ambos.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 2) {
+    $('.circuloText2').removeClass('bg-color');
+    $('.circuloText2').addClass('bg-color-amarillo');
+    var contenido = `
+                    La responsabilidad por cooperar se puede dar por acción y por omisión, por ejemplo, cuando un comandante o autoridad pública deliberadamente no realiza controles a sus tropas o cuando se omite adoptar medidas de protección que finalmente facilitan que el autor material realice la conducta.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 3) {
+    $('.circuloText3').removeClass('bg-color');
+    $('.circuloText3').addClass('bg-color-amarillo');
+    var contenido = `
+                    También se presenta responsabilidad por cooperar cuando se entregan medios materiales para que el autor material pueda realizar la conducta, como por ejemplo proporcionando armas, vehículos, medios de comunicación o información que le facilite llevar a cabo su cometido.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 4) {
+    $('.circuloText4').removeClass('bg-color');
+    $('.circuloText4').addClass('bg-color-amarillo');
+    var contenido = `
+                    Debe destacarse que la cooperación puede ser directa o indirecta, aun en el supuesto que la contribución sea por intermedio de otra persona, basta con que el efecto de la contribución sea sustancial para la realización de la conducta.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }else if (num == 5) {
+    $('.circuloText5').removeClass('bg-color');
+    $('.circuloText5').addClass('bg-color-amarillo');
+    var contenido = `
+                    Finalmente, es importante resaltar que, en la responsabilidad accesoria por cooperar, de la lectura del artículo 25.3.c se desprende que hay una exigencia -no presente en las otras formas de responsabilidad accesoria- de que el responsable accesorio actúe con un dolo directo de primer grado, es decir, que frente a él debe estar no solamente la contribución sustancial, sino el nivel de certeza de que su conducta se desarrolla con la intención de facilitar la realización de la conducta criminal.
+                    `;
+    $('.textoCambiante14').html(contenido);
+  }
+}
