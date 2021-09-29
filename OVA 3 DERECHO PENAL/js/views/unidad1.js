@@ -121,18 +121,36 @@ $( document ).ready(function() {
   /* ------------------- */
 });
 var pdf = `<div class="col-md-12">
-                <p class="p_white">
-                  <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> reglamento_administrativo_unaula.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                  <a class="p_white" href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> reforma_estatutos_unaula2020.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                  <a class="p_white" href="assets/PDF/cuestionario_reforma_estatutos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> cuestionario_reforma_estatutos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                  <a class="p_white" href="assets/PDF/regimen_disciplinario.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> regimen_disciplinario.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
+              <p class="p_white">
+              <a class="p_white" href="assets/PDF/elementosDelCrimen.pdf" target="_blank"> <img
+                  class="menu_superior w-40px" src="assets/img/img_template/pdf.png">
+                elementosDelCrimen.pdf <b class="text-cafe"><u>Ver</u></b></a>
+              </p>
+              <p class="p_white">
+              <a class="p_white" href="assets/PDF/sentenciaApelacionCasoBemba.es.pdf" target="_blank"> <img
+                  class="menu_superior w-40px" src="assets/img/img_template/pdf.png">
+                sentenciaApelacionCasoBemba.es.pdf <b class="text-cafe"><u>Ver</u></b></a>
+              </p>
+              <p class="p_white">
+              <a class="p_white" href="assets/PDF/sentenciaPrimeraInstanciaBemba.pdf" target="_blank"> <img
+                  class="menu_superior w-40px" src="assets/img/img_template/pdf.png">
+                sentenciaPrimeraInstanciaBemba.pdf <b class="text-cafe"><u>Ver</u></b></a>
+              </p>
+              <p class="p_white">
+              <a class="p_white" href="assets/PDF/sentenciaPrimeraInstanciaLubanga.pdf" target="_blank"> <img
+                  class="menu_superior w-40px" src="assets/img/img_template/pdf.png">
+                sentenciaPrimeraInstanciaLubanga.pdf <b class="text-cafe"><u>Ver</u></b></a>
+              </p>
+              <p class="p_white">
+              <a class="p_white" href="assets/PDF/capituloVIFormasDeParticipacion.pdf" target="_blank"> <img
+                  class="menu_superior w-40px" src="assets/img/img_template/pdf.png">
+                capituloVIFormasDeParticipacion.pdf <b class="text-cafe"><u>Ver</u></b></a>
+              </p>
+              <p class="p_white">
+              <a class="p_white" href="assets/PDF/autoriaMaterialMediataOlasolo.pdf" target="_blank"> <img
+                  class="menu_superior w-40px" src="assets/img/img_template/pdf.png">
+                autoriaMaterialMediataOlasolo.pdf <b class="text-cafe"><u>Ver</u></b></a>
+              </p>
             </div>`;
 $('.pdfs').html(pdf);
 $(function () {
