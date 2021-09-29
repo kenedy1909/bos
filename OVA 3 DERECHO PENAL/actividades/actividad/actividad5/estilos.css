@@ -123,9 +123,9 @@
     left: -15px;
     right: -15px;
     bottom: -15px;
-    border: solid #540F23 2px;
+    border: solid #771e18 2px;
     border-radius: 10px;
-    background-color: #540F23;
+    background-color: #771e18;
     background-image: url(../img/r1-contenedorC.png);
     background-repeat: repeat;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
@@ -134,7 +134,7 @@
 }
 
 #actividad-1 ul#grupoA li.active:after {
-    background: #540F23;
+    background: #771e18;
 }
 
 #actividad-1 ul#grupoA li.active {
@@ -207,13 +207,13 @@
     width: 50%;
 }
 .texto_header b{
-    color: #540F23;
+    color: #771e18;
     padding-left: 1px;
     padding-right: 1px;
 }
 .linea_blue{
     height: 5px; 
-    background: #540F23;
+    background: #771e18;
 }
 
 
@@ -223,7 +223,7 @@
     width: 65px;
     height: 65px;
     background: #fffefe;
-    border-radius: 20%;
+    border-radius: 50%;
     top: 15px;
     left: -44px;
     box-shadow: 1px 0px 11px -2px black;
@@ -235,10 +235,10 @@
 }
 
 .bg-cafe-activi{
-  background: #540F23;
+  background: #771e18;
 }
 .text-cafe-activi{
-  color: #540F23;
+  color: #771e18;
 }
 
 .img-100{
