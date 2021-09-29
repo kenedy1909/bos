@@ -139,11 +139,67 @@ function controlSlides(num){
             }  
             setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob10');
+            bar = document.querySelector('.custom-scrollbar__bar10');
+            container = document.querySelector('.custom-scrollbar__inner10');
+            scroll();
+
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob11');
+            bar = document.querySelector('.custom-scrollbar__bar11');
+            container = document.querySelector('.custom-scrollbar__inner11');
+            scroll();
+
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob12');
+            bar = document.querySelector('.custom-scrollbar__bar12');
+            container = document.querySelector('.custom-scrollbar__inner12');
+            scroll();
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;    
+        case 12:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;    
+        case 14:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;    
+        case 16:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;    
         default:
             break;
     }
 }
-
+function scroll_set(num) {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob'+num);
+    bar = document.querySelector('.custom-scrollbar__bar'+num);
+    container = document.querySelector('.custom-scrollbar__inner'+num);
+    scroll();
+  }
 function textoBorder(num){
     switch (parseInt(num)) {
         case 1:

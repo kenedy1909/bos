@@ -1925,11 +1925,22 @@ a.control_next {
   height: 219px;
   overflow: hidden;
 }
-
+.custom-scrollbar10, .custom-scrollbar11, .custom-scrollbar12{
+	position: relative;
+	height: 200px;
+	overflow: hidden;
+}
 .custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3, .custom-scrollbar__inner6 {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 80px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.custom-scrollbar__inner10, .custom-scrollbar__inner11, .custom-scrollbar__inner12 {
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 40px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -1940,7 +1951,7 @@ a.control_next {
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3, .custom-scrollbar__bar6 {
+.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3, .custom-scrollbar__bar6, .custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12 {
   position: absolute;
   top: 18px;
   bottom: 20px;
@@ -1951,7 +1962,7 @@ a.control_next {
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3, .custom-scrollbar__knob6 {
+.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3, .custom-scrollbar__knob6, .custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1963,7 +1974,7 @@ a.control_next {
   will-change: top;
 }
 
-.linea_scroll1, .linea_scroll2, .linea_scroll3, .linea_scroll6 {
+.linea_scroll1, .linea_scroll2, .linea_scroll3, .linea_scroll6, .linea_scroll10, .linea_scroll11, .linea_scroll12 {
   font-size: 50px;
     margin: 0px;
     position: relative;
