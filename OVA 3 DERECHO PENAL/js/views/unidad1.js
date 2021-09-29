@@ -342,18 +342,6 @@ function controlSlides(num){
         case 23:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
             break;
-        case 24:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
-            break;
-        case 25:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
-            break;
-        case 26:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
-            break;
-        case 27:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
-            break;
         default:
             break;
     }
