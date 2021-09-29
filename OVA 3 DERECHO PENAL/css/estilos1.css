@@ -1942,6 +1942,20 @@ a.animated-button.thar-two:before {
 }
 
 
+.contenidoScroll{
+	height: 200px;
+	overflow-y: scroll;
+}
+.contenidoScroll::-webkit-scrollbar{
+	cursor: pointer;
+	width: 10px;
+}
+.contenidoScroll::-webkit-scrollbar-thumb{
+	background: var(--bg-color);
+	border-radius: 5px;
+}
+
+
 #slider-5 ul {
   position: relative;
   margin: 0;
@@ -2005,18 +2019,24 @@ a.control_next {
 .custom-scrollbar10, .custom-scrollbar11, .custom-scrollbar12{
 	position: relative;
 	height: 200px;
+	overflow-y: scroll;
 	overflow: hidden;
+}
+.custom-scrollbar10::-webkit-scrollbar, .custom-scrollbar11::-webkit-scrollbar, .custom-scrollbar12::-webkit-scrollbar{
+	width: 7px;
+}
+.custom-scrollbar10::-webkit-scrollbar-thumb, .custom-scrollbar11::-webkit-scrollbar-thumb, .custom-scrollbar12::-webkit-scrollbar-thumb{
+	background: var(--bg-color);
+	border: 5px;
 }
 .custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3, .custom-scrollbar__inner6 {
   height: 100%;
-  width: calc(100% + 40px);
   padding-right: 80px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 .custom-scrollbar__inner10, .custom-scrollbar__inner11, .custom-scrollbar__inner12 {
   height: 100%;
-  width: calc(100% + 40px);
   padding-right: 40px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -2035,7 +2055,6 @@ a.control_next {
   background:#811111;
   width: 3px;
   right: 20px;
-  /*right: 8px;*/
   border-radius: 4px;
 }
 

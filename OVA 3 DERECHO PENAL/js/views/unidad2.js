@@ -141,32 +141,32 @@ function controlSlides(num){
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob10');
-            bar = document.querySelector('.custom-scrollbar__bar10');
-            container = document.querySelector('.custom-scrollbar__inner10');
-            scroll();
+            // dragging = "";
+            // diff = "";
+            // newTop = "";
+            // scrollOffset = "";
+            // knob = document.querySelector('.custom-scrollbar__knob10');
+            // bar = document.querySelector('.custom-scrollbar__bar10');
+            // container = document.querySelector('.custom-scrollbar__inner10');
+            // scroll();
 
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob11');
-            bar = document.querySelector('.custom-scrollbar__bar11');
-            container = document.querySelector('.custom-scrollbar__inner11');
-            scroll();
+            // dragging = "";
+            // diff = "";
+            // newTop = "";
+            // scrollOffset = "";
+            // knob = document.querySelector('.custom-scrollbar__knob11');
+            // bar = document.querySelector('.custom-scrollbar__bar11');
+            // container = document.querySelector('.custom-scrollbar__inner11');
+            // scroll();
 
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob12');
-            bar = document.querySelector('.custom-scrollbar__bar12');
-            container = document.querySelector('.custom-scrollbar__inner12');
-            scroll();
+            // dragging = "";
+            // diff = "";
+            // newTop = "";
+            // scrollOffset = "";
+            // knob = document.querySelector('.custom-scrollbar__knob12');
+            // bar = document.querySelector('.custom-scrollbar__bar12');
+            // container = document.querySelector('.custom-scrollbar__inner12');
+            // scroll();
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
