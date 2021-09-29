@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[1] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[2] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[3] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[4] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[5] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[6] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[7] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[8] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[0] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[1] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[2] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[3] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[4] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[5] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[6] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[7] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
+            this.palabras[8] = ['autoria-material', 'Cuando la persona realiza por sí misma la conducta constitutiva de crimen internacional'];
 
             return this.palabras;
 
