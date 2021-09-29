@@ -62,32 +62,32 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Introducción a la ética");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 16;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Introducción a la ética");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Ética, moral y derecho");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Ética, moral y derecho");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","Ética, moral y derecho");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -112,7 +112,7 @@ function controlSlides(num){
             }  
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 9:
             $(".i3").html('')    
@@ -137,10 +137,10 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             dragging = "";
             diff = "";
             newTop = "";
@@ -169,16 +169,16 @@ function controlSlides(num){
             scroll();
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             break;    
         case 12:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             break;    
         case 14:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             $(".i5").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
             var elementoPadre2 = document.querySelector(".inputDiv2.i6");
@@ -225,10 +225,10 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             break;    
         case 16:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             break;    
         default:
             break;

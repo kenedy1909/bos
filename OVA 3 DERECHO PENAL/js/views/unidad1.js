@@ -161,7 +161,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -178,14 +178,14 @@ function controlSlides(num){
             
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");  
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");  
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -211,23 +211,23 @@ function controlSlides(num){
             scroll_set(8);
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
             
             break;
         case 6:
-          setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+          setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");  
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");  
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -252,33 +252,33 @@ function controlSlides(num){
             }  
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
            
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -303,7 +303,7 @@ function controlSlides(num){
             }
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             $(".i5").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
             var elementoPadre2 = document.querySelector(".inputDiv2.i6");
@@ -328,19 +328,19 @@ function controlSlides(num){
             }
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         default:
             break;
