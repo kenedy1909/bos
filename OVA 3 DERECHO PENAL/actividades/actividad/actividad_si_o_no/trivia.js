@@ -8,11 +8,13 @@ window.onload = function () {
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
-        'Es una de las funciones de la Sala de Fundadores…' : ['Elegir Secretario de la Sala. Quien actúa también como Secretario de la Presidencia y de la Comisión Permanente.', 'Ejercer interinamente las funciones de los órganos colegiados de gobierno cuando no estuvieren funcionando.', 0],
+        '¿ En qué articulo se encuentran definidas de manera general las funciones y atribuciones de la Sala de Primera Instancia,?' : ['Artículo 64 del ER', 'Ley de confidencialidad 1432 del AR', 0],
 
-        '“Elaborar una terna que enviará al Consejo Superior Universitario para la elección del Rector de la Universidad”' : ['Lo indica el artículo 19 para realizar una Reforma de los Estatutos.', 'Lo indica el artículo 6 para realizar una Reforma de los Estatutos.', 0],
+        '¿Cuáles son los elementos por los que debe velar la Sala de Primera Instancia para que el juicio sea justo?' : ['Que se lean las pruebas correspondientes al crimen cometido', 'Que se sustancie con respeto de los derechos del acusado y la protección de victimas y testigos', 1],
         
-        '“Los únicos que pueden apelar una decisión, en proceso disciplinario en UNAULA, son los profesores y los estudiantes.”' : ['En una disolución de manera obligatoria', 'En una disolución de manera voluntaria', 0]
+        '¿Qué articulo le da poder al juez para realizar un juicio a puerta cerrada ?' : ['Articulo 68', 'Articulo 46', 0],
+        
+        '¿Cuál de las siguientes decisiones, pueden ser tomadas por la Sala de primera Instancia a solicitud de una de las partes?' : ['Modificar fecha de juicio y posibles testigos', 'Administrar la pertinencia de las pruebas y mantener el orden en las audiencias', 1]
       };
       
   function loadQuestion(curr) {
@@ -30,13 +32,16 @@ window.onload = function () {
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
   if (curr == 0) {
-    $('.cantidad').html('1/3');
+    $('.cantidad').html('1/4');
   }
   if (curr == 1) {
-    $('.cantidad').html('2/3');
+    $('.cantidad').html('2/4');
   }
   if (curr == 2) {
-    $('.cantidad').html('3/3');
+    $('.cantidad').html('3/4');
+  }
+  if (curr == 3) {
+    $('.cantidad').html('4/4');
   }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
@@ -61,14 +66,14 @@ window.onload = function () {
   function Imag() {
     var texto1 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="./img/choosing.png" style="width: 100%;">
+                    <img src="./img/manualDeFunciones.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="./img/pencil.png" style="width: 100%;">
+                    <img src="./img/confidencialidad.png" style="width: 100%;">
                   </div>
                 </div>`;
 
@@ -77,14 +82,14 @@ window.onload = function () {
 // ------------------------ pregunta 2
     var texto3 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="./img/ballot.png" style="width: 100%;">
+                    <img src="./img/leer.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
     var texto4 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="./img/certificate.png" style="width: 100%;">
+                    <img src="./img/testigo.png" style="width: 100%;">
                   </div>
                 </div>`;
 
@@ -92,19 +97,35 @@ window.onload = function () {
 // ------------------------ pregunta 3
 
     var texto5 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: #525DE9; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="./img/Imagen1.png" style="width: 100%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                    <img src="./img/icono_tribunal.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_0').prepend(texto5);
     var texto6 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: #525DE9; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
-                    <img src="./img/stamp.png" style="width: 100%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                    <img src="./img/forma4.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_1').prepend(texto6);
+// ------------------------ pregunta 4
+
+    var texto7 = `<div style="width: 100%; position: relative; display: flex;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                    <img src="./img/icono_tribunal.png" style="width: 100%;">
+                  </div>
+                </div>`;
+
+    $('.img_option_3_0').prepend(texto7);
+    var texto8 = `<div style="width: 100%; position: relative; display: flex;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                    <img src="./img/forma4.png" style="width: 100%;">
+                  </div>
+                </div>`;
+
+    $('.img_option_3_1').prepend(texto8);
   }
   
   function checkAnswer(i, arr) {
@@ -176,7 +197,7 @@ function calificar(){
   var puntaje = 100;
   for (var i = 0; i < res.length; i++){
     if (res[i] == 'false'){
-      puntaje = puntaje - 33.3;
+      puntaje = puntaje - 25;
     }
   }
   /*alert(Math.round(puntaje));*/
