@@ -88,20 +88,15 @@ function controlSlides(num){
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
-            break;
-        case 9:
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
-            var inputsRy = [];
-            var i = new Input2(2);
+            var inputsRy = [];  
+            var i = new Input(1);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input2(2);
+            var i2 = new Input(1);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -114,7 +109,34 @@ function controlSlides(num){
                   inputsRy[n].actualizar2();
                 }, false)
               }(n));
-            }
+            }  
+            break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            break;
+        case 9:
+            $(".i3").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            var inputsRy = [];  
+            var i = new Input(1);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(1);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar2();
+                }, false)
+              }(n));
+            }  
             setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;
         default:
@@ -311,42 +333,80 @@ function pintura(num){
 }
 
 /*pantalla1*/
+function Input(num) {
+  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+  this.att = {};
+  this.att.type = "range";
+  this.att.value = 0;
+  this.att.min = 0;
+  this.att.max = num;
+  this.att.autocomplete = "off";
+  this.att.step = "1";
+  this.input;
+  this.output;
 
+  this.crear = function(elementoPadre) {
+    // crea un nuevo elemento input
+    this.input = document.createElement("input");
+    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+    for (var name in this.att) {
+      if (this.att.hasOwnProperty(name)) {
+        this.input.setAttribute(name, this.att[name]);
+      }
+    }
+    // crea un nuevo elemento div
+    this.output = document.createElement("div");
+    // establece el valor del atributo class del nuevo div
+    this.output.setAttribute("class", "output");
+    // y el contenido (innerHTML) de este
+    this.output.innerHTML = this.att.value;
 
-function scroll_horizontal2(num) {
+    // inserta los dos elementos creados al final  del elemento Padre 
+    elementoPadre.appendChild(this.input);
+    elementoPadre.appendChild(this.output);
+  }
+
+  this.actualizar = function() {
+    scroll_horizontal(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
+  this.actualizar2 = function() {
+    scroll_horizontal2(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
+}
+
+function scroll_horizontal2(num){
+  
     switch (parseInt(num)) {
         case 0:
-            $('.cont-slideH').addClass('oculto-on');
-            $('.cont-slideH').removeClass('oculto-off');
-
-            $('.ordinaria').removeClass('oculto-on');
-            $('.ordinaria').addClass('oculto-off');
-
-            $('.comodines').addClass('comodinInactive');
-            $('.comodines').removeClass('comodinActive');
-
-            $('.comodin').removeClass('comodinInactive');
-            $('.comodin').addClass('comodinActive');
+            var pantalla = `<p class="p_black text-justify size_13">La sala de cuestiones preliminares tiene definido en las
+                                reglas de procedimiento y prueba tanto el procedimiento previo a la audiencia (regla 121), así
+                                como el desarrollo de la audiencia, diferenciando entre la audiencia de confirmación con
+                                presencia del acusado (regla 122), de la audiencia de confirmación en ausencia del acusado
+                                (regla 126), en este caso la ausencia se deriva de la renuncia del acusado en participar en la
+                                audiencia, conforme lo permite la regla 124. <b>Deslice para continuar:</b>
+                            </p>
+                            <p class="p_black text-justify size_13 d-none">La Sala de cuestiones preliminares puede decidir
+                                confirmar los cargos, pero también puede no confirmar cuando considere que las pruebas
+                                presentadas son insuficientes, en cuyo caso la fiscalía podrá volver a presentar la solicitud,
+                                con la exigencia de presentar nuevas pruebas. Una vez se confirman los cargos, la presidencia de
+                                la Corte decide conformar una sala de primera instancia para adelantar el enjuiciamiento.</b>
+                            </p>`;
+            $('#scroll-img2').html(pantalla);
             break;
-        case 1:
-            $('.cont-slideH').addClass('oculto-on');
-            $('.cont-slideH').removeClass('oculto-off');
+        case 1:  
+            var pantalla = `<p class="text-black text-justify">La Sala de cuestiones preliminares puede decidir confirmar los cargos, pero también puede no confirmar cuando considere que las pruebas presentadas son insuficientes, en cuyo caso la fiscalía podrá volver a presentar la solicitud, con la exigencia de presentar nuevas pruebas. Una vez se confirman los cargos, la presidencia de la Corte decide conformar una sala de primera instancia para adelantar el enjuiciamiento.</p>`;
+            $('#scroll-img2').html(pantalla);
 
-            $('.comodines').addClass('comodinInactive');
-            $('.comodines').removeClass('comodinActive');
-            break;
-        case 2:
-            $('.cont-slideH').addClass('oculto-on');
-            $('.cont-slideH').removeClass('oculto-off');
-
-            $('.extraordinaria').removeClass('oculto-on');
-            $('.extraordinaria').addClass('oculto-off');
-
-            $('.comodines').addClass('comodinInactive');
-            $('.comodines').removeClass('comodinActive');
-
-            $('.comodin2').removeClass('comodinInactive');
-            $('.comodin2').addClass('comodinActive');
             break;
         default:
             break;
