@@ -13,7 +13,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    /*$(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);*/
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -179,8 +179,52 @@ function controlSlides(num){
             break;    
         case 14:
             setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
+            $(".i5").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            var inputsRy = [];  
+            var i = new Input2(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input2(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             break;
         case 15:
+            $(".i5").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            var inputsRy = [];  
+            var i = new Input2(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input2(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             setMigaja("Unidades de aprendizaje","2. Nociones generales de la ética","La ética como fundamento del ciudadano");
             break;    
         case 16:
@@ -438,6 +482,14 @@ function Input(num) {
   $("input[type=range]").on('change', function () {
       /*alert();*/
   });
+  this.actualizar3 = function() {
+    scroll_horizontal3(this.input.value);
+    this.output.innerHTML = this.input.value;
+    this.att.value = this.input.value;
+  }
+  $("input[type=range]").on('change', function () {
+      /*alert();*/
+  });
 }
 
 function scroll_horizontal2(num){
@@ -468,6 +520,7 @@ function scroll_horizontal2(num){
             break;
     }
 }
+
 function Input2(num) {
   /*<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">*/
   this.att = {};
@@ -502,7 +555,7 @@ function Input2(num) {
   }
 
   this.actualizar = function() {
-    scroll_horizontal(this.input.value);
+    scroll_horizontal3(this.input.value);
     this.output.innerHTML = this.input.value;
     this.att.value = this.input.value;
   }
@@ -519,6 +572,39 @@ function Input2(num) {
   });
 }
 
+function scroll_horizontal3(num){
+  
+    switch (parseInt(num)) {
+        case 0:
+            var img = `<img class="w-100" src="assets/img/img_ova/carcel.png" alt="carcel">`;
+            var text= `
+                    <p class="p_black text-justify size_13">Es importante destacar que el ER permite que la Corte pueda cambiar la designación del Estado donde se cumple la pena, conforme lo dispone el artículo 104 del ER.</p>
+                    <p class="p_black text-justify size_13 bold">Deslice para continuar con la información:</p>
+                    `;
+
+            $('#scroll-img3').html(img);
+            $('#scroll-text3').html(text);
+            break;
+        case 1:  
+            var img = `<img class="w-100" src="assets/img/img_ova/crimenAgresion.png" alt="crimenAgresion">`;
+            var text= `<p class="p_black text-justify size_13">De igual forma se debe destacar que la supervisión del cumplimiento de la pena estará en cabeza de la Corte, sin embargo, en lo relacionado con las condiciones de reclusión se seguirá lo dispuesto en la legislación del Estado respectivo, según lo dispone el artículo 106 del ER.</p>`;
+
+            $('#scroll-img3').html(img);
+            $('#scroll-text3').html(text);
+
+            break;
+        case 2:  
+            var img = `<img class="w-100" src="assets/img/img_ova/liberacion.png" alt="Liberación">`;
+            var text= `<p class="p_black text-justify size_13">Finalmente debe destacarse que, para la reducción de la pena, el artículo 110 del Estatuto establece que solo la Corte podrá decidir sobre la misma, para lo cual se deberá cumplir como requisito que el recluso haya cumplido las dos terceras partes de la pena o en el caso de personas condenadas a prisión perpetua, que haya transcurrido 25 años.</p>`;
+
+            $('#scroll-img3').html(img);
+            $('#scroll-text3').html(text);
+
+            break;
+        default:
+            break;
+    }
+}
 //unidad2-2
 $("#btn-carousel").click(function() {
     $('.carousel').carousel('next')
