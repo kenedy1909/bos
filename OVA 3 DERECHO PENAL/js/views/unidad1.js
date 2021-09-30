@@ -2003,9 +2003,19 @@ function selectorOficina(num) {
     $('.imgOficina1').removeClass('filterScale');
 
     var contenido = `
+                <div class="content p_white custom-scrollbar7">
+                  <div class="custom-scrollbar__inner7">
                     <p class="text-black text-justify">En la responsabilidad por planear se requiere que exista un nivel de diseño en la realización de la conducta que constituye crimen internacional, aun cuando la misma no se haya consumado, es decir, la responsabilidad se configura independientemente de la comisión o no de la conducta, aceptando en consecuencia la tentativa</p>
+                  </div>
+                    <div class="custom-scrollbar__bar7">
+                      <div class="custom-scrollbar__knob7 cursor">
+                        <p class="text-center linea_scroll7">-</p>
+                      </div>
+                    </div>
+                  </div>   
                     `;
     $('.contenedorOficina').html(contenido);
+    scroll_set(7);
   }else if (num == 2) {
     $('.flecha2').removeClass('filterScaleFlecha');
     $('.flecha2').addClass('color-text');
@@ -2034,9 +2044,19 @@ function selectorOficina(num) {
     $('.imgOficina3').removeClass('filterScale');
 
     var contenido = `
-                   <p class="text-black text-justify"> Al igual que en las otras formas de responsabilidad accesoria analizadas, en la que da por planear es necesario que el diseño del plan sea un factor que contribuya sustancialmente en la ejecución del crimen, por lo cual no hay una exigencia de esencialidad, que lo convertiría en una forma de responsabilidad principal.</p>
-                    `;
+                    <div class="content p_white custom-scrollbar7">
+                      <div class="custom-scrollbar__inner7">
+                        <p class="text-black text-justify"> Al igual que en las otras formas de responsabilidad accesoria analizadas, en la que da por planear es necesario que el diseño del plan sea un factor que contribuya sustancialmente en la ejecución del crimen, por lo cual no hay una exigencia de esencialidad, que lo convertiría en una forma de responsabilidad principal.</p>
+                      </div>
+                      <div class="custom-scrollbar__bar7">
+                        <div class="custom-scrollbar__knob7 cursor">
+                          <p class="text-center linea_scroll7">-</p>
+                        </div>
+                      </div>
+                    </div>
+                        `;
     $('.contenedorOficina').html(contenido);
+    scroll_set(7);
   }else if (num == 4) {
     $('.flecha4').removeClass('filterScaleFlecha');
     $('.flecha4').addClass('color-text');
@@ -2065,9 +2085,19 @@ function selectorOficina(num) {
     $('.imgOficina5').removeClass('filterScale');
 
     var contenido = `
-                    <p class="text-black text-justify"> En lo que corresponde con los elementos subjetivos, persiste lo establecido en la jurisprudencia frente a las demás formas de responsabilidad accesoria, en el sentido que quien planea debe ser al menos consciente de la probabilidad sustancial, sin que se exija con respecto a él, todos los elementos subjetivos propios del crimen en concreto.</p>
-                    `;
+                  <div class="content p_white custom-scrollbar7">
+                    <div class="custom-scrollbar__inner7">
+                      <p class="text-black text-justify"> En lo que corresponde con los elementos subjetivos, persiste lo establecido en la jurisprudencia frente a las demás formas de responsabilidad accesoria, en el sentido que quien planea debe ser al menos consciente de la probabilidad sustancial, sin que se exija con respecto a él, todos los elementos subjetivos propios del crimen en concreto.</p>
+                    </div>
+                    <div class="custom-scrollbar__bar7">
+                      <div class="custom-scrollbar__knob7 cursor">
+                        <p class="text-center linea_scroll7">-</p>
+                      </div>
+                    </div>
+                  </div>
+                      `;
     $('.contenedorOficina').html(contenido);
+    scroll_set(7);
   }else if (num == 6) {
     $('.flecha6').removeClass('filterScaleFlecha');
     $('.flecha6').addClass('color-text');
