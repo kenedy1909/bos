@@ -26,9 +26,11 @@ function siguente(){
 		$("#atras").removeData('slide');*/
 	if (slide == 1) {
 		$("#siguente").data('slide', 2);
+		$("#btnCalificar").hide();
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
-		$("#siguente").data('slide', 1);
+		$("#siguente").data('slide', 1); 
+		$("#btnCalificar").show();
 		/*$("#atras").data('slide', 1);*/
 	}
 }
