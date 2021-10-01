@@ -244,11 +244,11 @@ function controlSlides(num){
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
             var inputsRy = [];
-            var i = new Input(4);
+            var i = new Input(3);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(9);
+            var i2 = new Input(3);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -508,6 +508,11 @@ function Input(num) {
                             <div class="row caja-texto-b "style="background-color: #1e2054; ">
                               <p class="font13 col-md-8" >Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p> 
                               <img class="col-md-4" src="assets/img/img_ova/importante.png">
+                              <div class="col-8 d-flex justify-content-center px-3">
+                                <button class="btn bg-white color-text py-3 btn-lg" data-toggle="modal" data-target="#modalPant1">
+                                    <b>RECOMENDACIONES</b>
+                                </button>
+                                </div>
                             </div>
                             `;
             $('#info-scroll').html(info_scroll);

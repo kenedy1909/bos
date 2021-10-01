@@ -430,6 +430,7 @@ function init_recurso_1() {
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
         this.iniciar();
+        location.reload();
         //console.clear();
     }
 
