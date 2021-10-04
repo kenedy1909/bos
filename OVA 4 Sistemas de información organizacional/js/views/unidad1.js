@@ -282,19 +282,15 @@ function controlSlides(num){
         case 10:
 
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
-            break;
-
-        case 11:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
             var inputsRy = [];  
-            var i = new Input(2);
+            var i = new Input(11);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(2);
+            var i2 = new Input(11);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -304,10 +300,14 @@ function controlSlides(num){
             for (var n = 0; n < inputsRy.length; n++) {
               (function(n) {
                 inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar2();
+                  inputsRy[n].actualizar();
                 }, false)
               }(n));
             }  
+            break;
+
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             break;
 
             
@@ -469,11 +469,117 @@ function Input(num) {
     $("input[type=range]").on('change', function () {
         /*alert();*/
     });
-  }
+}
 
+function scroll_horizontal(num){
 
+    $('.venCards,.espacioEnBlanco1, .espacioEnBlanco2, .espacioEnBlanco1_2, .espacioEnBlanco2_2').removeClass('d-flex');
+    $('.venCards,.espacioEnBlanco1, .espacioEnBlanco2, .espacioEnBlanco1_2, .espacioEnBlanco2_2').addClass('d-none');
 
-  function scroll_horizontal2(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('#ven1').removeClass('d-none');
+            $('#ven1').addClass('d-flex');
+            break;
+        case 1:
+            $('#ven1_2').removeClass('d-none');
+            $('#ven1_2').addClass('d-flex');
+            
+            break;
+        case 2:
+            $('#ven2').removeClass('d-none');
+            $('#ven2').addClass('d-flex');
+            
+            break;
+        case 3:
+            $('#ven2_2').removeClass('d-none');
+            $('#ven2_2').addClass('d-flex');
+            
+            break;
+        case 4:
+            $('#ven3').removeClass('d-none');
+            $('#ven3').addClass('d-flex');
+            
+            break;
+        case 5:
+            $('.espacioEnBlanco1').removeClass('d-none');
+            $('.espacioEnBlanco1').addClass('d-flex');
+            
+            $('.espacioEnBlanco2').removeClass('d-none');
+            $('.espacioEnBlanco2').addClass('d-flex');
+            
+            $('#ven3_2').removeClass('d-none');
+            $('#ven3_2').addClass('d-flex');
+            
+            break;
+        case 6:
+            $('.espacioEnBlanco1').removeClass('d-none');
+            $('.espacioEnBlanco1').addClass('d-flex');
+            
+            $('.espacioEnBlanco2').removeClass('d-none');
+            $('.espacioEnBlanco2').addClass('d-flex');
+            
+            $('#ven4').removeClass('d-none');
+            $('#ven4').addClass('d-flex');
+            
+            break;
+        case 7:
+            $('.espacioEnBlanco1').removeClass('d-none');
+            $('.espacioEnBlanco1').addClass('d-flex');
+            
+            $('.espacioEnBlanco2').removeClass('d-none');
+            $('.espacioEnBlanco2').addClass('d-flex');
+            
+            $('#ven4_2').removeClass('d-none');
+            $('#ven4_2').addClass('d-flex');
+            
+            break;
+        case 8:
+            $('.espacioEnBlanco1').removeClass('d-none');
+            $('.espacioEnBlanco1').addClass('d-flex');
+
+            $('#ven5').removeClass('d-none');
+            $('#ven5').addClass('d-flex');
+            
+            break;
+        case 9:
+            $('.espacioEnBlanco1_2').removeClass('d-none');
+            $('.espacioEnBlanco1_2').addClass('d-flex');
+            
+            $('.espacioEnBlanco2_2').removeClass('d-none');
+            $('.espacioEnBlanco2_2').addClass('d-flex');
+
+            $('#ven5_2').removeClass('d-none');
+            $('#ven5_2').addClass('d-flex');
+            
+            break;
+        case 10:
+            $('.espacioEnBlanco1_2').removeClass('d-none');
+            $('.espacioEnBlanco1_2').addClass('d-flex');
+            
+            $('.espacioEnBlanco2_2').removeClass('d-none');
+            $('.espacioEnBlanco2_2').addClass('d-flex');
+
+            $('#ven6').removeClass('d-none');
+            $('#ven6').addClass('d-flex');
+            
+            break;
+        case 11:
+            $('.espacioEnBlanco1_2').removeClass('d-none');
+            $('.espacioEnBlanco1_2').addClass('d-flex');
+            
+            $('.espacioEnBlanco2_2').removeClass('d-none');
+            $('.espacioEnBlanco2_2').addClass('d-flex');
+
+            $('#ven7').removeClass('d-none');
+            $('#ven7').addClass('d-flex');
+            break;
+        default:
+            break;
+    }
+}
+
+function scroll_horizontal2(num){
     $(".zoomContainer" ).remove();
     switch (parseInt(num)) {
         case 0:
