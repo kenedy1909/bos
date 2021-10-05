@@ -309,6 +309,83 @@ function controlSlides(num){
         case 11:
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            $(".i5").html('')   
+            var elementoPadre1 = document.querySelector(".inputDiv3.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv3.i6");
+            var inputsRy = [];
+            var i = new Input(3);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(3);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar3();
+                }, false)
+              }(n));
+            }
+            break;
+        case 21:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            $(".i5").html('')   
+            var elementoPadre1 = document.querySelector(".inputDiv3.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv3.i6");
+            var inputsRy = [];
+            var i = new Input(3);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(3);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar3();
+                }, false)
+              }(n));
+            }
+            break;
+        case 22:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
 
             
         
@@ -469,6 +546,14 @@ function Input(num) {
     $("input[type=range]").on('change', function () {
         /*alert();*/
     });
+    this.actualizar3 = function() {
+      scroll_horizontal3(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
 }
 
 function scroll_horizontal(num){
@@ -580,6 +665,55 @@ function scroll_horizontal(num){
 }
 
 function scroll_horizontal2(num){
+    $(".zoomContainer" ).remove();
+    switch (parseInt(num)) {
+        case 0:
+            var info_scroll = `
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p> 
+                              <img class="col-md-4" src="assets/img/img_ova/ec1.png">
+                            </div>
+                            `;
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 1:
+            var info_scroll = `
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Según PlacetoPay, una de las pasarelas de pago más reconocidas de Colombia; en el país al 2019, antes de la pandemia, el 38% de las empresas vendían por internet. Esta cifra, casi se duplicó, llegando al 72% a mayo de 2021, 14 meses después de haber comenzado la pandemia, según lo expresó Carlos Mario López Muñoz, Jefe de Desarrollo Empresarial y Líder de los procesos de Transformación Digital y E-commerce de la Cámara de Comercio de Medellín para Antioquia.</p> 
+                              <img class="col-md-4" src="assets/img/img_ova/ec2.png">
+                            </div>
+                            `;
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 2:
+            var info_scroll = `
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Teniendo en cuenta lo anterior, se tomó la decisión de dedicar una OVA completa dentro del curso de Sistemas de Información Organizacional, para que el estudiante de Administración de Empresas conozca los elementos fundamentales del E-commerce, así como los beneficios que tiene para los negocios y las empresas, con respecto al comercio tradicional, y esté en condiciones de determinar cómo diseñar y gestionar estrategias para la comercialización en medios electrónicos.</p> 
+                              <img class="col-md-4" src="assets/img/img_ova/ec3.png">
+                            </div>
+                            `;
+            $('#info-scroll').html(info_scroll);
+            break;
+        case 3:
+            var info_scroll = `
+                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
+                              <p class="font13 col-md-8" >Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p> 
+                              <img class="col-md-4" src="assets/img/img_ova/importante.png">
+                              <div class="col-8 d-flex justify-content-center px-3">
+                                <button class="btn bg-white color-text py-3 btn-lg" data-toggle="modal" data-target="#modalPant1">
+                                    <b>RECOMENDACIONES</b>
+                                </button>
+                                </div>
+                            </div>
+                            `;
+            $('#info-scroll').html(info_scroll);
+            break;
+        default:
+            break;
+    }
+}
+
+function scroll_horizontal3(num){
     $(".zoomContainer" ).remove();
     switch (parseInt(num)) {
         case 0:
