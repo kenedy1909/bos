@@ -534,7 +534,12 @@ p, button{
 .text-secondary-claro{
 	color: var(--bg-color-secondary);
 }
-
+.zindex{
+	z-index: 100;
+}
+.hidden{
+	visibility: hidden;
+}
 
 
 /*scroll*/
