@@ -387,6 +387,37 @@ function controlSlides(num){
         case 22:
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
             break;
+        case 23:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            $(".i7").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv.i7");
+            var elementoPadre2 = document.querySelector(".inputDiv.i8");
+            var inputsRy = [];  
+            var i = new Input(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar4();
+                }, false)
+              }(n));
+            }  
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            break;
 
             
         
@@ -561,6 +592,14 @@ function Input(num) {
     });
     this.actualizar3 = function() {
       scroll_horizontal3(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    this.actualizar4 = function() {
+      scroll_horizontal4(this.input.value);
       this.output.innerHTML = this.input.value;
       this.att.value = this.input.value;
     }
@@ -777,6 +816,35 @@ function scroll_horizontal3(num){
             $('#imgScrollV').html(imgScrollV);
             $('#textScrollV').html(textScrollV);
             scroll_set(13);
+            break;
+        default:
+            break;
+    }
+}
+
+function scroll_horizontal4(num){
+    $(".zoomContainer" ).remove();
+    switch (parseInt(num)) {
+        case 0:
+            $('#padreScrollH').addClass('d-none');
+            var imgScrollH = ``;
+            var textScrollH = ``;
+            $('#imgScrollH').html(imgScrollH);
+            $('#textScrollH').html(textScrollH);
+            break;
+        case 1:
+            $('#padreScrollH').removeClass('d-none');
+            var imgScrollH = `<img width="15%" src="assets/img/img_ova/est2.png" class="px-3 py-2 bg-white rounded-circle menos-marginT-25">`;
+            var textScrollH = `Los clientes deben conocer todo lo relacionado con el producto que están comprando, independientemente si se hace por internet o en canales tradicionales, es un derecho adquirido por Ley, estar informados sobre su precio, impuestos y costos adicionales que se puedan generar. Es así como el Estatuto del consumidor (Ley 1480 de 2011) se convierte en una herramienta que permite formalizar la relación de las empresas con sus clientes.`;
+            $('#imgScrollH').html(imgScrollH);
+            $('#textScrollH').html(textScrollH);
+            break;
+        case 2:
+            $('#padreScrollH').removeClass('d-none');
+            var imgScrollH = `<img width="15%" src="assets/img/img_ova/est1.png" class="px-3 py-2 bg-white rounded-circle menos-marginT-25">`;
+            var textScrollH = `Su importancia radica en que a través de ella se promueve la protección que se brinda al consumidor, y cómo ampara el respeto a su dignidad e intereses económicos. Por lo tanto, es fundamental que las empresas, brinden a sus clientes información adecuada sobre los productos o servicios, dejando claros atributos, precio, garantías, y sobre todo que respete su libre decisión en la compra`;
+            $('#imgScrollH').html(imgScrollH);
+            $('#textScrollH').html(textScrollH);
             break;
         default:
             break;
