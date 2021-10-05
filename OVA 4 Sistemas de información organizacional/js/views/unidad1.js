@@ -357,6 +357,7 @@ function controlSlides(num){
                 }, false)
               }(n));
             }
+            scroll_set(12);
             break;
         case 21:
             setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
@@ -393,6 +394,18 @@ function controlSlides(num){
             break;
     }
 }
+
+function scroll_set(num) {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob'+num);
+    bar = document.querySelector('.custom-scrollbar__bar'+num);
+    container = document.querySelector('.custom-scrollbar__inner'+num);
+    scroll();
+}
+
 
 function modal_scroll2(){
     dragging = "";
@@ -717,45 +730,53 @@ function scroll_horizontal3(num){
     $(".zoomContainer" ).remove();
     switch (parseInt(num)) {
         case 0:
-            var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p> 
-                              <img class="col-md-4" src="assets/img/img_ova/ec1.png">
-                            </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            var imgScrollV = `<img width="20%" src="assets/img/img_ova/cat3.png">`;
+            var textScrollV = `<div class="content custom-scrollbar12">
+                                    <div class="custom-scrollbar__inner12">
+                                    <p class="justificado mt-3 text-black"><b>Consumer to Business (C2B):</b>aunque no es tan común, este tipo de relación comercial se da entre una persona que ofrece sus servicios o productos a empresas (business). Una forma bastante común como se puede dar son los prestadores de servicios o freelance que ofrecen sus servicios profesionales a las empresas.
+                                        <br><br>
+                                        El C2B es un modelo que la mayoría de la gente no piensa inmediatamente, pero que está creciendo en prevalencia, especialmente para profesiones de desarrollo informático, programación, diseño gráfico, traducción y capacitación. Dos plataformas reconocidas en este modelo son UpWork y Google AdSense.
+                                    </p>
+                                    </div>
+                                    <div class="custom-scrollbar__bar12">
+                                    <div class="custom-scrollbar__knob12 cursor">
+                                        <p class="text-center linea_scroll12">-</p>
+                                    </div>
+                                    </div>
+                                </div>`;
+            $('#imgScrollV').html(imgScrollV);
+            $('#textScrollV').html(textScrollV);
             break;
         case 1:
-            var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Según PlacetoPay, una de las pasarelas de pago más reconocidas de Colombia; en el país al 2019, antes de la pandemia, el 38% de las empresas vendían por internet. Esta cifra, casi se duplicó, llegando al 72% a mayo de 2021, 14 meses después de haber comenzado la pandemia, según lo expresó Carlos Mario López Muñoz, Jefe de Desarrollo Empresarial y Líder de los procesos de Transformación Digital y E-commerce de la Cámara de Comercio de Medellín para Antioquia.</p> 
-                              <img class="col-md-4" src="assets/img/img_ova/ec2.png">
-                            </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            var imgScrollV = `<img width="20%" src="assets/img/img_ova/cat2.png">`;
+            var textScrollV = `<p class="justificado mt-3 text-black"><b>Government to Consumer (G2C):</b> esta relación comercial se da cuando un gobierno permite que los ciudadanos realicen sus trámites y los paguen a través de una plataforma, en el caso colombiano existe una estrategia que se llama Gobierno en Línea. Su gran ventaja es el ahorro del tiempo, eficiencias en trámites y la seguridad que puede brindar el respaldo electrónico. Es bastante común para el pago de impuestos.</p>`;
+            $('#imgScrollV').html(imgScrollV);
+            $('#textScrollV').html(textScrollV);
             break;
         case 2:
-            var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Teniendo en cuenta lo anterior, se tomó la decisión de dedicar una OVA completa dentro del curso de Sistemas de Información Organizacional, para que el estudiante de Administración de Empresas conozca los elementos fundamentales del E-commerce, así como los beneficios que tiene para los negocios y las empresas, con respecto al comercio tradicional, y esté en condiciones de determinar cómo diseñar y gestionar estrategias para la comercialización en medios electrónicos.</p> 
-                              <img class="col-md-4" src="assets/img/img_ova/ec3.png">
-                            </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            var imgScrollV = `<img width="20%" src="assets/img/img_ova/cat5.png">`;
+            var textScrollV = `<p class="justificado mt-3 text-black"><b>Business to Government (B2G):</b> esta relación comercial se da cuando una empresa o las empresas en general le ofrecen productos o servicios al gobierno. Normalmente son plataformas a través de las cuales se realizan las contrataciones, compras públicas y licitaciones</p>`;
+            $('#imgScrollV').html(imgScrollV);
+            $('#textScrollV').html(textScrollV);
             break;
         case 3:
-            var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p> 
-                              <img class="col-md-4" src="assets/img/img_ova/importante.png">
-                              <div class="col-8 d-flex justify-content-center px-3">
-                                <button class="btn bg-white color-text py-3 btn-lg" data-toggle="modal" data-target="#modalPant1">
-                                    <b>RECOMENDACIONES</b>
-                                </button>
-                                </div>
-                            </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            var imgScrollV = `<img width="20%" src="assets/img/img_ova/cat1.png">`;
+            var textScrollV = `<div class="content custom-scrollbar13">
+                                    <div class="custom-scrollbar__inner13">
+                                    <p class="justificado mt-3 text-black"><b>Consumer to Business (C2B):</b>aunque no es tan común, este tipo de relación comercial se da entre una persona que ofrece sus servicios o productos a empresas (business). Una forma bastante común como se puede dar son los prestadores de servicios o freelance que ofrecen sus servicios profesionales a las empresas.
+                                        <br><br>
+                                        El C2B es un modelo que la mayoría de la gente no piensa inmediatamente, pero que está creciendo en prevalencia, especialmente para profesiones de desarrollo informático, programación, diseño gráfico, traducción y capacitación. Dos plataformas reconocidas en este modelo son UpWork y Google AdSense.
+                                    </p>
+                                    </div>
+                                    <div class="custom-scrollbar__bar13">
+                                    <div class="custom-scrollbar__knob13 cursor">
+                                        <p class="text-center linea_scroll13">-</p>
+                                    </div>
+                                    </div>
+                                </div>`;
+            $('#imgScrollV').html(imgScrollV);
+            $('#textScrollV').html(textScrollV);
+            scroll_set(13);
             break;
         default:
             break;
