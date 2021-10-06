@@ -946,9 +946,7 @@ function conector(){
                           <br>
                           <p class="p_black justificado">La negación de una proposición tiene el valor de verdad opuesto a la proposición dada </p>
                           <p class="p_black justificado">También se acostumbra el signo “¬”, es decir “¬ p” para la negación o con la escritura “no p”.</p>
-                          <p>Una negación
-                          lógica, como su nombre lo dice,
-                          hace que su función sea negar la
+                          <p class="p_black justificado">Una negación lógica, como su nombre lo dice, hace que su función sea negar la
                           proposición. </p>
                     </div>
                     <div class="col-md-6 px-3">
@@ -1279,10 +1277,10 @@ function argumentos(){
 
 function formulas(num){
     if (num == 1) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" alt="" class="img-100"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" data-toggle="modal" data-target="#modalfor1" style="cursor: pointer;" title="Clic para zoom" class="img-100"></p>';
         $("#info-formula").html(info);
     }else if (num == 2) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 2.png" alt="" class="img-100"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;" title="Clic para zoom" class="img-100"></p>';
         $("#info-formula").html(info);
     }
 }

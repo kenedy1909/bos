@@ -108,5 +108,6 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
             }
 
         });
+        location.reload();
     };
 });
