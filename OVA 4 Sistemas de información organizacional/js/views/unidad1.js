@@ -227,7 +227,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             dragging = "";
             diff = "";
             newTop = "";
@@ -240,6 +240,7 @@ function controlSlides(num){
 
             break;
         case 1:
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");  
             $(".i3").html('')   
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -264,24 +265,33 @@ function controlSlides(num){
             }
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");            
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
+            break;
+        case 7:
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
+            break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
+            break;
+        case 9:
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             break;
         case 10:
 
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -307,34 +317,34 @@ function controlSlides(num){
             break;
 
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Fundamentos");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","La cadena de valor del E-commerce");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","La cadena de valor del E-commerce");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","La cadena de valor del E-commerce");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Sistemas de recaudo y pasarelas");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Sistemas de recaudo y pasarelas");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Sistemas de recaudo y pasarelas");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Sistemas de recaudo y pasarelas");
             $(".i5").html('')   
             var elementoPadre1 = document.querySelector(".inputDiv3.i5");
             var elementoPadre2 = document.querySelector(".inputDiv3.i6");
@@ -360,7 +370,7 @@ function controlSlides(num){
             scroll_set(12);
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Categorías del E-commerce");
             $(".i5").html('')   
             var elementoPadre1 = document.querySelector(".inputDiv3.i5");
             var elementoPadre2 = document.querySelector(".inputDiv3.i6");
@@ -385,10 +395,10 @@ function controlSlides(num){
             }
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Categorías del E-commerce");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Normatividad");
             $(".i7").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i7");
             var elementoPadre2 = document.querySelector(".inputDiv.i8");
@@ -413,14 +423,11 @@ function controlSlides(num){
             }  
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Normatividad");
             break;
-        case 24:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+        case 25:
+            setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Normatividad");
             break;
-
-            
-        
         default:
             break;
     }
