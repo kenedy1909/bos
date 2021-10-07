@@ -35,31 +35,7 @@
             <div class="col-md-12">
                 <p style="color: #000; text-align: center;"><b>(Utilice las flechas (<) (>) para visualizar todas las preguntas de la actividad)</b></p>
                 <br>
-                <div class="img-cuestionario-1"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen68.png" class="w-100" style="width: 30%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-2"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen45.png" class="w-100" style="width: 30%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-3"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen46.png" class="w-100" style="width: 30%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-4"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen65.png" class="w-100" style="width: 30%; margin: auto;">
-                    </div>
-                </div>
-                <div class="img-cuestionario-5"> 
-                    <div class="d-flex">
-                        <img src="./img/imagen66.png" class="w-100" style="width: 30%; margin: auto;">
-                    </div>
-                </div>
+                
             </div>
             <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                 <div class="preguntas">
@@ -74,10 +50,39 @@
                     <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
                         <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b>
                         </p>
-                        <div class="respuestas-cuestionario">
-                            <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
-                                <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
-                                {{respuesta.texto}}
+                        <div class="respuestas-cuestionario row d-flex align-items-center">
+                            <div class="col-6">
+                                <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                    <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
+                                    {{respuesta.texto}}
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex align-items-center">
+                                <div class="img-cuestionario-1"> 
+                                    <div class="d-flex">
+                                        <img src="./img/imagen68.png" class="w-100" style="width: 65%; margin: auto;">
+                                    </div>
+                                </div>
+                                <div class="img-cuestionario-2"> 
+                                    <div class="d-flex">
+                                        <img src="./img/imagen45.png" class="w-100" style="width: 65%; margin: auto;">
+                                    </div>
+                                </div>
+                                <div class="img-cuestionario-3"> 
+                                    <div class="d-flex">
+                                        <img src="./img/imagen46.png" class="w-100" style="width: 65%; margin: auto;">
+                                    </div>
+                                </div>
+                                <div class="img-cuestionario-4"> 
+                                    <div class="d-flex">
+                                        <img src="./img/imagen65.png" class="w-100" style="width: 65%; margin: auto;">
+                                    </div>
+                                </div>
+                                <div class="img-cuestionario-5"> 
+                                    <div class="d-flex">
+                                        <img src="./img/imagen66.png" class="w-100" style="width: 65%; margin: auto;">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
