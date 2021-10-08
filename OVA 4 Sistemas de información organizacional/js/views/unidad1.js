@@ -396,6 +396,28 @@ function controlSlides(num){
             break;
         case 22:
             setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Categorías del E-commerce");
+            $(".i7").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv.i7");
+            var elementoPadre2 = document.querySelector(".inputDiv.i8");
+            var inputsRy = [];  
+            var i = new Input(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar4();
+                }, false)
+              }(n));
+            }  
             break;
         case 23:
             setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Normatividad");
@@ -792,6 +814,7 @@ function scroll_horizontal3(num){
                                 </div>`;
             $('#imgScrollV').html(imgScrollV);
             $('#textScrollV').html(textScrollV);
+            scroll_set(12);
             break;
         case 1:
             var imgScrollV = `<img width="20%" src="assets/img/img_ova/cat2.png">`;
@@ -1154,3 +1177,37 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+
+function btnHover(num) {
+    
+    if (num == 1) {
+        $('.imgBtnHover1').addClass('d-none');
+        $('.img2BtnHover1').removeClass('d-none');
+        $('.text2BtnHover1').removeClass('d-none');
+        $('.btnHover1').removeClass('btn-ova');
+        $('.btnHover1').addClass('bg-white');
+
+    }else if (num == 2) {
+        $('.imgBtnHover2').addClass('d-none');
+        $('.img2BtnHover2').removeClass('d-none');
+        $('.text2BtnHover2').removeClass('d-none');
+        $('.btnHover2').removeClass('btn-ova');
+        $('.btnHover2').addClass('bg-white');
+
+    }else if (num == 3) {
+        $('.imgBtnHover3').addClass('d-none');
+        $('.img2BtnHover3').removeClass('d-none');
+        $('.text2BtnHover3').removeClass('d-none');
+        $('.btnHover3').removeClass('btn-ova');
+        $('.btnHover3').addClass('bg-white');
+
+    }else if (num == 4) {
+        $('.imgBtnHover4').addClass('d-none');
+        $('.img2BtnHover4').removeClass('d-none');
+        $('.text2BtnHover4').removeClass('d-none');
+        $('.btnHover4').removeClass('btn-ova');
+        $('.btnHover4').addClass('bg-white');
+
+    }
+}
