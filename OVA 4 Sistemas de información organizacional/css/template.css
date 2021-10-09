@@ -409,8 +409,13 @@
   height: 317px;
   overflow: hidden;
 }
+.custom-scrollbar14{
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
 
-.custom-scrollbar__inner6, .custom-scrollbar__inner7, .custom-scrollbar__inner9, .custom-scrollbar__inner10, .custom-scrollbar__inner11, .custom-scrollbar__inner12, .custom-scrollbar__inner13 {
+.custom-scrollbar__inner6, .custom-scrollbar__inner7, .custom-scrollbar__inner9, .custom-scrollbar__inner10, .custom-scrollbar__inner11, .custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14 {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
@@ -432,7 +437,7 @@
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar8, .custom-scrollbar__bar9, .custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12, .custom-scrollbar__bar13 {
+.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar8, .custom-scrollbar__bar9, .custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14 {
   position: absolute;
   top: 18px;
   bottom: 20px;
@@ -442,7 +447,7 @@
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob8, .custom-scrollbar__knob9, .custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12, .custom-scrollbar__knob13 {
+.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob8, .custom-scrollbar__knob9, .custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12, .custom-scrollbar__knob13, .custom-scrollbar__knob14 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -454,7 +459,7 @@
   will-change: top;
 }
 
-.linea_scroll6, .linea_scroll7, .linea_scroll8 , .linea_scroll9 , .linea_scroll10 , .linea_scroll11 , .linea_scroll12 , .linea_scroll13 {
+.linea_scroll6, .linea_scroll7, .linea_scroll8 , .linea_scroll9 , .linea_scroll10 , .linea_scroll11 , .linea_scroll12 , .linea_scroll13 , .linea_scroll14 {
   font-size: 50px;
     margin: 0px;
     position: relative;

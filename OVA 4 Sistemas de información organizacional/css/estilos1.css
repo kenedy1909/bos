@@ -541,6 +541,14 @@ p, button{
 	visibility: hidden;
 }
 
+.fondoImgClic{
+	background: url('../assets/img/img_ova/tyc1.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position:center;
+}
+
+
 
 /*scroll*/
 .custom-scrollbar {

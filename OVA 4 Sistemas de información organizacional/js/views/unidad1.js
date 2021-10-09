@@ -1211,3 +1211,113 @@ function btnHover(num) {
 
     }
 }
+
+function tiendaSeccion(num,accion) {
+
+    $('.selectorTienda1').attr('onclick',"tiendaSeccion(1,'abrir')");
+    $('.selectorTienda2').attr('onclick',"tiendaSeccion(2,'abrir')");
+    $('.selectorTienda3').attr('onclick',"tiendaSeccion(3,'abrir')");
+    
+    if (accion == 'abrir') {
+        if (num == 1) {
+            var contenido = `
+            <div class="bg-color-claro p-4 pt-5 border-rb-25 mt-5" style="transition: all 1s ease-out;">
+                <div class="w-100 text-center menos-marginT-150">
+                <img class="zindex" width="40%" src="assets/img/img_ova/tyc2.png">
+                </div>
+                <p class="mt-2 text-justify" style="color: black;">
+                    Los Términos y Condiciones (TyC), son aquellas normas que se hacen públicas en el sitio web, con las cuales se regula la relación tienda-comprador, también es conocido como Condiciones de Uso y Contratación. Hacen referencia al conjunto de reglas o declaraciones que los usuarios, los clientes y los posibles clientes de una tienda virtual, han de conocer cuando desean comprar en un sitio web. Generalmente, los TyC se presentan a través de un texto que se hace visible dentro del sitio, ya sea en el momento de logeo inicial, en una pestaña visible o en la parte inferior del home principal.
+                </p>
+            </div>
+            `;
+            $('#contenidoTiendaSeccion').html(contenido);
+
+            $('.selectorTienda1').attr('onclick',"tiendaSeccion(1,'cerrar')");
+        }else if (num == 2) {
+            var contenido = `
+            <div class="bg-color-claro p-4 pt-5 border-rb-25 mt-5" style="transition: all 1s ease-out;">
+                <div class="w-100 text-center menos-marginT-150">
+                <img class="zindex" width="40%" src="assets/img/img_ova/tyc3.png">
+                </div>
+                <p class="mt-2 text-justify" style="color: black;">
+                Es redactado con las estipulaciones y cláusulas, que dispone la tienda con las políticas de compra, garantías de producto, condiciones para las promociones y descuentos, devoluciones, responsabilidades ante daños, entre otras estipuladas en el Estatuto del Consumidor o en las leyes asociadas a la actividad comercial online.
+                </p>
+            </div>
+            `;
+            $('#contenidoTiendaSeccion').html(contenido);
+
+            $('.selectorTienda2').attr('onclick',"tiendaSeccion(2,'cerrar')");
+        }else if (num == 3) {
+            var contenido = `
+                            <div class="content custom-scrollbar14">
+                                <div class="custom-scrollbar__inner14 py-5">
+                                    <div class="bg-color-claro p-4 pt-5 border-rb-25 mt-5" style="transition: all 1s ease-out;">
+                                    <div class="w-100 text-center menos-marginT-100">
+                                    <img class="zindex" width="30%" src="assets/img/img_ova/tyc4.png">
+                                    </div>
+                                    <p class="mt-2 text-justify" style="color: black;">
+                                        Es fundamental que una tienda en línea cuente con los TyC dentro del sitio web, para que los clientes lo puedan conocer y recordar cada vez que sea necesario. Para estipular y definir adecuadamente los términos y condiciones del E-commerce, VendesFácil el servicio de Coordinadora Mercantil, que apoya a las mipymes colombianas en la creación de las tiendas en línea, propone una serie de recomendaciones o consejos para que los usuarios entiendan muy bien los requisitos o cláusulas que se deben incluir en el sitio de comercio electrónico.
+                                    </p>
+                                    </div>
+                                    <div class="bg-color-claro p-4 border-25 mt-5" style="transition: all 1s ease-out;">
+                                        <p class="mt-2 text-justify" style="color: black;">
+                                        Como se ha mencionado los términos y condiciones permiten definir las reglas que los usuarios y clientes de una tienda virtual deben conocer para comprar por lo tanto es necesario que los fundadores de un E-commerce conozcan como escribirlas.
+                                        </p>
+                                    </div>
+                                    <div class="mt-2">
+                                    <p class="text-black text-justify" style="color: black;">
+                                        Antes de continuar, realice la lectura del artículo “<b>Términos y condiciones: ¡tenlos muy presentes para tu tienda virtual!</b>” del servicio vendesfacil.com
+                                    </p>
+                                    
+                                    <div class="row d-flex justify-content-center my-2 ">
+                                        <a href="https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/" target="_blank" class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow">
+                                        <img src="assets/img/img_ova/tyc5.png" width="30%" class="position-absolute" style="right: 0;">
+                                        <p class="text-white pr-5 h4"><b>ARTÍCULO</b></p>
+                                        </a>
+                                    </div>
+                                    
+                                    <p class="text-black text-justify mt-3" style="color: black;">
+                                        A continuación se describen las recomendaciones mas importantes para la elaboración de los términos y condiciones de una tienda virtual, <b>seleccione el botón para conocerlas: </b>
+                                    </p>
+                                    <div class="row d-flex justify-content-center my-2">
+                                        <a href="#" target="_blank" class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow">
+                                        <img src="assets/img/img_ova/tyc6.png" width="30%" class="position-absolute" style="right: 0;">
+                                        <p class="text-white pr-5 h4"><b>DESCARGAR</b></p>
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="custom-scrollbar__bar14">
+                                    <div class="custom-scrollbar__knob14 cursor">
+                                    <p class="text-center linea_scroll14">-</p>
+                                    </div>
+                                </div>
+                            </div>
+            `;
+            $('#contenidoTiendaSeccion').html(contenido);
+            scroll_set(14);
+
+            $('.selectorTienda3').attr('onclick',"tiendaSeccion(3,'cerrar')");
+        }
+    }else if (accion == 'cerrar') {
+        if (num == 1) {
+            $('#contenidoTiendaSeccion').html(``);
+            
+            $('.selectorTienda1').attr('onclick',"tiendaSeccion(1,'abrir')");
+            $('.selectorTienda2').attr('onclick',"tiendaSeccion(2,'abrir')");
+            $('.selectorTienda3').attr('onclick',"tiendaSeccion(3,'abrir')"); 
+        }else if (num == 2) {
+            $('#contenidoTiendaSeccion').html(``);
+
+            $('.selectorTienda1').attr('onclick',"tiendaSeccion(1,'abrir')");
+            $('.selectorTienda2').attr('onclick',"tiendaSeccion(2,'abrir')");
+            $('.selectorTienda3').attr('onclick',"tiendaSeccion(3,'abrir')");
+        }else if (num == 3) {
+            $('#contenidoTiendaSeccion').html(``);
+            
+            $('.selectorTienda1').attr('onclick',"tiendaSeccion(1,'abrir')");
+            $('.selectorTienda2').attr('onclick',"tiendaSeccion(2,'abrir')");
+            $('.selectorTienda3').attr('onclick',"tiendaSeccion(3,'abrir')");
+        }
+    }
+}
