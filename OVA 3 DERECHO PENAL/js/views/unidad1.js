@@ -1554,7 +1554,7 @@ function activi1_2(num) {
 function tarjetaModal(num) {
   $('.selectorModal1, .selectorModal2').addClass('d-flex');
   $('.selectorModal1, .selectorModal2').removeClass('d-none');
-  $('.divcerrarMt').addClass('d-none');
+  $('.divcerrarMtp4').addClass('d-none');
   $('.modalTarjeta1, .modalTarjeta2').removeClass('d-flex');
   $('.modalTarjeta1, .modalTarjeta2').addClass('d-none');
   if (num == 0) {
@@ -1565,12 +1565,12 @@ function tarjetaModal(num) {
     $('.modalTarjeta1, .modalTarjeta2').removeClass('d-flex');
     $('.modalTarjeta1, .modalTarjeta2').addClass('d-none');
     
-    $('.divcerrarMt').addClass('d-none');
+    $('.divcerrarMtp4').addClass('d-none');
 
   }else if (num == 1) {
     $('.selectorModal1, .selectorModal2').removeClass('d-flex');
     $('.selectorModal1, .selectorModal2').addClass('d-none');
-    $('.divcerrarMt').removeClass('d-none');
+    $('.divcerrarMtp4').removeClass('d-none');
 
     $('.modalTarjeta1').addClass('d-flex');
     $('.modalTarjeta1').removeClass('d-none');
@@ -1578,7 +1578,7 @@ function tarjetaModal(num) {
   }else if (num == 2) {
     $('.selectorModal1, .selectorModal2').removeClass('d-flex');
     $('.selectorModal1, .selectorModal2').addClass('d-none');
-    $('.divcerrarMt').removeClass('d-none');
+    $('.divcerrarMtp4').removeClass('d-none');
 
     $('.modalTarjeta2').addClass('d-flex');
     $('.modalTarjeta2').removeClass('d-none');
@@ -1640,9 +1640,13 @@ function ModalContenidoPant(num) {
   }else if (num == 'm1') {
     $('.modalPrinContenido').addClass('d-none');
     $('.modalSecContenido').removeClass('d-none');
+    $('.divcerrarMtp7').removeClass('d-none');
+
   }else if (num == 'm2') {
     $('.modalPrinContenido').addClass('d-none');
     $('.modalTerContenido').removeClass('d-none');
+    $('.divcerrarMtp7').removeClass('d-none');
+
   }else if (num == 1) {
     $('.cardSelect1').removeClass('d-none');
     $('.cardSelect2, .cardSelect3').addClass('d-none');
@@ -1675,6 +1679,7 @@ function ModalContenidoPant(num) {
     
     $('.contenidoCollapse1').removeClass('d-none');
     $('.contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
+    
 
   }else if (num == '4_1') {
     $('.abrirCollapse1').removeClass('d-none');

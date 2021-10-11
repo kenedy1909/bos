@@ -755,3 +755,44 @@ alert();
     });
 
 });*/
+
+
+
+function mostrarCardP1(num,accion) {
+
+    $('.cardCambia').addClass('d-none');
+    $('.btnMostrarCardA').attr('onclick',"mostrarCardP1(1,'abrir')");
+    $('.btnMostrarCardB').attr('onclick',"mostrarCardP1(2,'abrir')");
+    $('.btnMostrarCardC').attr('onclick',"mostrarCardP1(3,'abrir')");
+    $('.btnMostrarCardD').attr('onclick',"mostrarCardP1(4,'abrir')");
+    $('.btnMostrarCardE').attr('onclick',"mostrarCardP1(5,'abrir')");
+    $('.btnMostrarCardF').attr('onclick',"mostrarCardP1(6,'abrir')");
+    
+    if (accion == 'abrir') {
+        if (num == 1) {
+            $('.cardCambiaA').removeClass('d-none');
+
+            $('.btnMostrarCardA').attr('onclick',"mostrarCardP1(1,'cerrar')");
+        }else if (num == 2) {
+            $('.cardCambiaB').removeClass('d-none');
+
+            $('.btnMostrarCardB').attr('onclick',"mostrarCardP1(2,'cerrar')");
+        }else if (num == 3) {
+            $('.cardCambiaC').removeClass('d-none');
+
+            $('.btnMostrarCardC').attr('onclick',"mostrarCardP1(3,'cerrar')");
+        }else if (num == 4) {
+            $('.cardCambiaD').removeClass('d-none');
+
+            $('.btnMostrarCardD').attr('onclick',"mostrarCardP1(4,'cerrar')");
+        }else if (num == 5) {
+            $('.cardCambiaE').removeClass('d-none');
+
+            $('.btnMostrarCardE').attr('onclick',"mostrarCardP1(5,'cerrar')");
+        }else if (num == 6) {
+            $('.cardCambiaF').removeClass('d-none');
+
+            $('.btnMostrarCardF').attr('onclick',"mostrarCardP1(6,'cerrar')");
+        }
+    }
+}

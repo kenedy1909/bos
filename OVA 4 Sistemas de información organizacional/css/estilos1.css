@@ -296,7 +296,7 @@ p, button{
 	background: var(--bg-color-secondary)!important;
 }
 .bg-color-secondary-claro{
-	background: #cfd5ea!important;
+	background: var(--bg-color-secondary-claro)!important;
 }
 .bg-color-secondary-claro1{
 	background: #989ff5ab!important;
@@ -307,9 +307,7 @@ p, button{
 .bg-opalizado{
 	background: rgba(255, 255, 255, 0.8);
 }
-.bg-color-amarillo{
-	background: var(--bg-color-amarillo)!important;
-}
+
 
 .border-45{
 	border-radius: 45px;
@@ -540,6 +538,8 @@ p, button{
 .hidden{
 	visibility: hidden;
 }
+
+
 
 .fondoImgClic{
 	background: url('../assets/img/img_ova/tyc1.png');
