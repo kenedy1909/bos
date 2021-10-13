@@ -81,7 +81,10 @@ table .fa-circle {
     color: #B6BAB4;
     font-size: 5px;
 }
-
+.tabla-actividad2{
+    width: 85%!important;
+    max-width: 85%!important;
+}
 table.tabla-actividad2 td,
 .table td {
     padding: 2px;
@@ -176,6 +179,8 @@ span.checked svg.svg2 {
     border: dashed #FFFFFF 5px;
     border-radius: 85px;
     padding: 1em;
+    display: flex!important;
+    justify-content: center!important;
 }
 
 .shadow{
