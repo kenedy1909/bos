@@ -1277,10 +1277,10 @@ function argumentos(){
 
 function formulas(num){
     if (num == 1) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" data-toggle="modal" data-target="#modalfor1" style="cursor: pointer;" title="Clic para zoom" class="img-100"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" data-toggle="modal" data-target="#modalfor1" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
         $("#info-formula").html(info);
     }else if (num == 2) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;" title="Clic para zoom" class="img-100"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
         $("#info-formula").html(info);
     }
 }
