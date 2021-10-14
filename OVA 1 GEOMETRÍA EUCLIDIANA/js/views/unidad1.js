@@ -828,7 +828,7 @@ function disyunciones(){
                             <div class="col-md-9 px-3">
                                   <p class="p_black justificado">Hay un conector, que no es muy utilizado, llamado:</p>
                                   <br>
-                                  <p class="p_black justificado">“La <i><u>disyunción exclusiva o fuerte </u></i> de “p con q”:    p V q,  y se lee “O  p o q”</p>
+                                  <p class="p_black justificado">“<i>La disyunción <u>exclusiva o fuerte</u></i> de “p con q”:    p V q,  y se lee “O  p o q”</p>
                                   <br>
                                   <p class="p_black justificado">La disyunción exclusiva (fuerte) entre dos proposiciones será verdadera (V) cuando solo</p>
                                   <p class="p_black justificado">una sea verdadera; no admite la opción de que ambas sean verdaderas, para ser verdadera.</p>
