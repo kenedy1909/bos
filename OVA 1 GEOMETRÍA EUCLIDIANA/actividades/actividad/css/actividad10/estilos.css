@@ -129,6 +129,7 @@ span.checked svg.svg2 {
     /* background-image: url(../img/carro.png), url(../img/fondo5.png); */
     padding: 25px;
     border-radius: 85px;
+    padding: 5px;
     /*display: flex;
     align-items: center;
     justify-content: center;*/
