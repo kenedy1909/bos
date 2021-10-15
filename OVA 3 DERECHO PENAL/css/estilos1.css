@@ -1202,12 +1202,12 @@ p, button{
 .trianguloActividad {
 	width: 0;
     height: 0;
-    border-right: 40px solid var(--bg-color);
-    border-top: 40px solid transparent;
+    border-right: 40px solid var(--bg-color-claro);
+    border-top: 45px solid transparent;
     border-bottom: 40px solid transparent;
     position: absolute;
-    left: -30px;
-    top: 70px;
+    left: -50px;
+    top: 20px;
 }
 .triangulo-equilatero-bottom2 {
 	width: 0;
