@@ -32,6 +32,13 @@
 
 }
 
+.fondoCanva{
+	background-image: url(../assets/img/img_ova/modelocanvas.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .content-banner{
   width:50%;
   display: block;

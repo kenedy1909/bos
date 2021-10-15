@@ -774,6 +774,9 @@ p, button{
 .bg-color-amarillo{
 	background: var(--bg-color-amarillo)!important;
 }
+.bg-color-amarillo2{
+	background: var(--bg-color-amarillo2)!important;
+}
 
 .border-45{
 	border-radius: 45px;

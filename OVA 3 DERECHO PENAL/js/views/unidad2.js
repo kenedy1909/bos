@@ -74,20 +74,23 @@ function controlSlides(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
-            
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
-            
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
+            
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -173,6 +176,7 @@ function controlSlides(num){
             break;    
         case 12:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            scroll_set(9);
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
@@ -243,7 +247,7 @@ function scroll_set(num) {
     bar = document.querySelector('.custom-scrollbar__bar'+num);
     container = document.querySelector('.custom-scrollbar__inner'+num);
     scroll();
-  }
+}
 function textoBorder(num){
     switch (parseInt(num)) {
         case 1:
@@ -620,6 +624,7 @@ $("#btn-carousel").click(function() {
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
+    $("#contentBtn7").addClass('d-none');
  });
 
  $("#btn1-a").click(function() {
@@ -641,6 +646,7 @@ $("#btn-carousel").click(function() {
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
+    $("#contentBtn7").addClass('d-none');
  });
 
  $("#btn2-a").click(function() {
@@ -692,6 +698,7 @@ $("#btn3Carcel").click(function() {
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
+    $("#contentBtn7").addClass('d-none');
  });
 
  $("#btn3-a").click(function() {
@@ -721,6 +728,7 @@ $("#btn4Carcel").click(function() {
     $("#contentBtn3").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
+    $("#contentBtn7").addClass('d-none');
  });
 // fin btn4
 
@@ -732,6 +740,7 @@ $("#btn5Carcel").click(function() {
     $("#contentBtn3").addClass('d-none');
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
+    $("#contentBtn7").addClass('d-none');
  });
 // fin btn5
 
@@ -743,6 +752,7 @@ $("#btn6Carcel").click(function() {
     $("#contentBtn3").addClass('d-none');
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
+    $("#contentBtn7").addClass('d-none');
  });
 // fin btn6
 
