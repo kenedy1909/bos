@@ -796,3 +796,91 @@ function mostrarCardP1(num,accion) {
         }
     }
 }
+
+
+function selectorP5(num) {
+    
+    $('.padreSelectorP5').removeClass('d-none');
+
+    $('.selectorP5Btn').removeClass('bg-gray2');
+    $('.selectorP5Btn').addClass('bg-color-dark');
+
+    $('.numSelector').removeClass('color-title');
+    $('.numSelector').addClass('text-white');
+
+    if (num == 1) {
+        $('.selectorP5Btn1').removeClass('bg-color-dark');
+        $('.selectorP5Btn1').addClass('bg-gray2');
+
+        $('.numSelector1').removeClass('text-white');
+        $('.numSelector1').addClass('color-title');
+
+        var img = `<img src="assets/img/img_ova/evalu2.png" width="30%" class="menos-marginT-75">`;
+        $('.imgSelector').html(img);
+
+        var parrafo = `Identifique una necesidad en el mercado o problema no solucionado, cuya solución se pueda dar a través de la puesta en marcha de un E-commerce (tienda en internet).`;
+        $('.textSelector').html(parrafo);
+
+    }else if (num == 2) {
+        $('.selectorP5Btn2').removeClass('bg-color-dark');
+        $('.selectorP5Btn2').addClass('bg-gray2');
+
+        $('.numSelector2').removeClass('text-white');
+        $('.numSelector2').addClass('color-title');
+
+        var img = `<img src="assets/img/img_ova/evalu3.png" width="30%" class="menos-marginT-75">`;
+        $('.imgSelector').html(img);
+
+        var parrafo = `Defina el modelo de negocios de la tienda, asegurándose de incluir todos los elementos.`;
+        $('.textSelector').html(parrafo);
+    }else if (num == 3) {
+        $('.selectorP5Btn3').removeClass('bg-color-dark');
+        $('.selectorP5Btn3').addClass('bg-gray2');
+
+        $('.numSelector3').removeClass('text-white');
+        $('.numSelector3').addClass('color-title');
+
+        var img = `<img src="assets/img/img_ova/evalu4.png" width="30%" class="menos-marginT-75">`;
+        $('.imgSelector').html(img);
+
+        var parrafo = `De acuerdo al modelo de negocio, seleccione la plataforma en la cual realizará el diseño (Wordpress.com, Wix.com, app.site123.com, u otro), en este caso no será una tienda en redes sociales, sino tienda en sitio web propio (no se tiene que adquirir el dominio, recuerda que estas plataformas posibilitan la publicación del sitio web).`;
+        $('.textSelector').html(parrafo);
+    }else if (num == 4) {
+        $('.selectorP5Btn4').removeClass('bg-color-dark');
+        $('.selectorP5Btn4').addClass('bg-gray2');
+
+        $('.numSelector4').removeClass('text-white');
+        $('.numSelector4').addClass('color-title');
+
+        var img = `<img src="assets/img/img_ova/evalu5.png" width="30%" class="menos-marginT-75">`;
+        $('.imgSelector').html(img);
+
+        var parrafo = `Elabore el Catálogo de Productos (o servicios), incluye la selección de fotos, la definición de los atributos a cada uno (descripción de las características), precios y propuesta de promociones (si se desea).`;
+        $('.textSelector').html(parrafo);
+    }else if (num == 5) {
+        $('.selectorP5Btn5').removeClass('bg-color-dark');
+        $('.selectorP5Btn5').addClass('bg-gray2');
+
+        $('.numSelector5').removeClass('text-white');
+        $('.numSelector5').addClass('color-title');
+
+        var img = `<img src="assets/img/img_ova/evalu6.png" width="30%" class="menos-marginT-75">`;
+        $('.imgSelector').html(img);
+
+        var parrafo = `Defina los demás pasos, que apliquen, de acuerdo a la cadena de valor del E-commerce a crear.`;
+        $('.textSelector').html(parrafo);
+    }else if (num == 6) {
+        $('.selectorP5Btn6').removeClass('bg-color-dark');
+        $('.selectorP5Btn6').addClass('bg-gray2');
+
+        $('.numSelector6').removeClass('text-white');
+        $('.numSelector6').addClass('color-title');
+
+        var img = `<img src="assets/img/img_ova/evalu7.png" width="30%" class="menos-marginT-75">`;
+        $('.imgSelector').html(img);
+
+        var parrafo = `Realice un análisis de la normatividad y regulación legal que debe seguir para la operación de la tienda. Allí se debe incluir la propuesta de texto de Términos y Condiciones, que se debe publicar en la tienda.`;
+        $('.textSelector').html(parrafo);
+    }
+
+}

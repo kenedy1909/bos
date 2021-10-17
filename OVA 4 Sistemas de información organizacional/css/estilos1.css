@@ -548,6 +548,18 @@ p, button{
 	background-position:center;
 }
 
+.bg-ter{
+	background: #2f5597!important;
+}
+.bg-gray2{
+	background:#cecece!important;
+}
+.border-amarillo{
+	border: 15px solid #ffc09b;
+}
+.color-title{
+	color: var(--bg-color-dark);
+}
 
 
 /*scroll*/
