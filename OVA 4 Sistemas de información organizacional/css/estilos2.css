@@ -34,10 +34,215 @@
 
 .fondoCanva{
 	background-image: url(../assets/img/img_ova/modelocanvas.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.hoverUniversalT:hover{
+  background: #811111cb!important;
+}
+
+/*  -------------------------- PANTALLA 2 --------------------------  */
+.puntero{
+  text-align: center;
+  font-weight: bold;
+  padding-top: 7px;
+  width: 100%;
+  height: 40px;
+}
+.punteroInactive{
+color: white;
+background-image: url('../assets/img/img_ova/punteroInactive.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.punteroActive{
+color: #70302C;
+background-image: url('../assets/img/img_ova/punteroActive.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.globorosa{
+border-radius: 30px;
+  background: #FFC09B;
+  padding: 15px;
+}
+.img-globo{
+  position: relative;
+  top: -50px;
+  width: 100px;
+}
+.btn_vino{
+  background: #70302c;
+  color: white;
+  font-weight: bold;
+}
+.ban-blue{
+  background: #B4C7E7;
+  padding: 10px 10px 10px 20px;
+  border-radius: 1px 15px 15px 1px;
+  box-shadow: 2px 2px 5px 0px;
+}
+.flip-cardnew {
+  background-color: transparent;
+  width: 100%;
+  min-height: 300px;
+  border-radius: 50px;
+  perspective: 1000px;
+}
+
+.flip-cardnew-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-cardnew:hover .flip-cardnew-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-cardnew-front, .flip-cardnew-back {
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-cardnew-front {
+  background-color: #272E9F;
+  color: black;
+  border-radius: 50px;
+}
+
+.flip-cardnew-back {
+  background: #272E9F;
+  border-radius: 50px;
+  color: white;
+  transform: rotateY(180deg);
+  padding: 20px;
+}
+.img_card_flip{
+  margin-top: 45px;
+  max-width: 30%;
+}
+.img_card_flip4{
+  margin-top: 10px;
+  max-width: 90%;
+}
+.font_15{
+  font-size: 15px;
+}
+.info{
+  border-top: solid 6px #a08a37;
+  margin-top: 20px;
+}
+
+.cabezera{
+  width: 150px;height: 150px;background: #1E2054;border-radius: 50%;margin-top: 10%;
+}
+.cuerpo{
+  border-radius: 50%;background: white;height: 115px;width: 115px;margin-top: 15px;
+}
+
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+/*  ------------------------ FIN PANTALLA 2,3,9 ------------------------  */
+
+
+/*  ------------------------ PANTALLA 5,6,7 ------------------------  */
+.bg-azul-1{
+  background: #BDD7EE;
+}
+.bg-cafe-1{
+  background: #811111;
+}
+.bg-piel-1{
+  background: #FFC09B;
+}
+.color-amarillo-1{
+  color: #FFFF00;
+}
+.custom-scrollbar-a, .custom-scrollbar-b {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.custom-scrollbar-c, .custom-scrollbar-d {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+.custom-scrollbar__inner-a, .custom-scrollbar__inner-b, .custom-scrollbar__inner-c, .custom-scrollbar__inner-d {
+  height: 100%;
+  /*width: calc(100% + 40px);*/
+  /*padding-right: 75px;*/
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+/*.custom-scrollbar__inner-a, .custom-scrollbar__inner-b div {
+  margin-bottom: 16px;
+}
+.custom-scrollbar__inner-a, .custom-scrollbar__inner-b, .custom-scrollbar__inner-c, .custom-scrollbar__inner-d img {
+  max-width: 100%;
+}*/
+.custom-scrollbar__bar-a, .custom-scrollbar__bar-b, .custom-scrollbar__bar-c, .custom-scrollbar__bar-d {
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  background:#70302C;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+}
+.custom-scrollbar__knob-a, .custom-scrollbar__knob-b, .custom-scrollbar__knob-c, .custom-scrollbar__knob-d {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #70302C;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+.linea_scroll-a, .linea_scroll-b, .linea_scroll-c, .linea_scroll-d{
+  font-size: 50px;
+    margin: 0px;
+    position: relative;
+    top: -32px;
+}
+/*  ------------------------ FIN PANTALLA 5,6,7 ------------------------  */
 
 .content-banner{
   width:50%;

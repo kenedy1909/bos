@@ -264,16 +264,38 @@
                        <div id="unidad2-3" class="tab-pane" role="tabpanel">
                           <div class="row">
                             <div class="col-md-12">
-                                <img style="margin: 0;" class="img-30" src="assets/img/img_ova/Botonera1.png">
-                                <h5 class="subtitulo">El modelo de negocio</h5>
+                              <img style="margin: 0;" class="img-30" src="assets/img/img_ova/Botonera1.png">
                             </div>
-
-                            <p class="font13 justificado p_black col-md-12">Para dar respuesta a las nueve variables mencionadas y desarrollarlas de una manera clara, fácil y útil, Osterwalder & Pigneur (2011), proponen un lienzo denominado CANVAS, compuesto por 9 bloques o compartimentos que al construirlo permiten analizar el modelo de negocios. <br>
-                            A continuación se presenta el lienzo, para ampliar la información de cada uno de los bloques haga clic sobre cada uno de ellos:
-                            </p>
                           </div>
-
                           <div class="row">
+                            <div class="col-6 d-flex align-items-end pl-4">
+                              <h5 class="subtitulo">El modelo de negocio</h5>
+                            </div>
+                            <div class="col-6 d-none justify-content-end align-items-center" id="BtnCerrar">
+                              <div class="col-12 my-3 d-flex justify-content-end zindex pr-5">
+                                <div class="divcerrarMt divcerrarMtp7">
+                                  <button type="button" class="btn m-0 px-3 py-2 bg-color-dark rounded-circle menos-marginB-15 shadow hoverUniversalT btnX" onclick="cambioPantalla3(0)">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                  </button>
+                                  <button type="button" class="btn m-0 px-3 py-2 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi1" onclick="cambioPantalla3('activi1')">
+                                      <h2 class="text-white text-center x-modal-text"><b>Continuar</b></h2>
+                                  </button>
+                                  <button type="button" class="btn m-0 px-3 py-2 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi2" onclick="cambioPantalla3('activi2')">
+                                      <h2 class="text-white text-center x-modal-text"><b>Continuar</b></h2>
+                                  </button>
+                                  <button type="button" class="btn m-0 px-3 py-2 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi3" onclick="cambioPantalla3('activi3')">
+                                      <h2 class="text-white text-center x-modal-text"><b>Continuar</b></h2>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-flex" id="pantalla3_p">
+                            <div class="col-12 my-3">
+                              <p class="font13 justificado p_black col-md-12">Para dar respuesta a las nueve variables mencionadas y desarrollarlas de una manera clara, fácil y útil, Osterwalder & Pigneur (2011), proponen un lienzo denominado CANVAS, compuesto por 9 bloques o compartimentos que al construirlo permiten analizar el modelo de negocios. <br>
+                              A continuación se presenta el lienzo, para ampliar la información de cada uno de los bloques haga clic sobre cada uno de ellos:
+                              </p>
+                            </div>
                             <div class="col-md-4 d-flex justify-content-center align-items-center row">
                               <div class="col-10 border-45 shadow p-4 bg-color-secondary">
                                 <div class="w-100 imgSelector text-center">
@@ -295,14 +317,604 @@
                                 </ol>
                               </div>
                             </div>
-                            <div class="col-md-8 fondoCanva row" style="height: 600px;">
-                              <div class="col-2 mx-1 p-3"></div>
-                              <div class="col-2 mx-1 p-3"></div>
-                              <div class="col-3 mx-1 p-3"></div>
-                              <div class="col-3 mx-1 p-3"></div>
-                              <div class="col-2 mx-1 p-3"></div>
+                            <div class="col-md-8 fondoCanva row p-0" style="height: 600px;">
+                              <div class="col-2 ml-2 mr-3 p-3 h-75 cursor" onclick="cambioPantalla3(5)" title="Aliados estratégicos"></div>
+                              <div class="col-2 ml-2 mr-3 p-0 h-75">
+                                <div class="col-12 p-3 h-50 cursor" onclick="cambioPantalla3(6)" title="Actividades claves. (Cadena de valor o mapa de procesos)"></div>
+                                <div class="col-12 p-3 h-50 cursor" onclick="cambioPantalla3(7)" title="Recursos claves"></div>
+                              </div>
+                              <div class="col-2 p-3 mx-2 h-75 cursor" onclick="cambioPantalla3(2)" title="Propuesta de valor"></div>
+                              <div class="col-2 p-0 h-75 ml-2 mr-3">
+                                <div class="col-12 p-3 h-50 cursor" onclick="cambioPantalla3(3)" title="Relación con clientes"></div>
+                                <div class="col-12 p-3 h-50 cursor" onclick="cambioPantalla3(4)" title="Canales de venta/ distribución"></div>
+                              </div>
+                              <div class="col-2 p-3 h-75 cursor" onclick="cambioPantalla3(1)" title="Segmentación de clientes"></div>
+                              <div class="col-6 h-25 cursor" onclick="cambioPantalla3(8)" title="Estructura de costos"></div>
+                              <div class="col-6 h-25 cursor" onclick="cambioPantalla3(9)" title="Flujo de ingresos"></div>
                             </div>
                           </div>
+                          <div class="row mt-3 d-none" id="pantalla3_1">
+                            <div class="col-12 my-3">
+                              <p class="h3 text-center p_black">
+                               <b> SEGMENTO CLIENTES </b>
+                              </p>
+                            </div>
+                            <div class="col-md-12 mt-2 mb-5 d-flex justify-content-center align-items-center row">
+                              <div class="col-11 border-25 shadow p-3 bg-color-secondary">
+                                <p class="text-white text-justify">
+                                  En este apartado se definen los diferentes grupos de personas o entidades que tienen la necesidad, problema, deseo, que se propone solucionar. Los clientes son el foco de cualquier modelo de negocio, son ellos hacia donde la empresa enfocará sus esfuerzos, ninguna empresa puede sobrevivir sin clientes. Es posible aumentar su satisfacción agrupándolos en varios segmentos de acuerdo a sus necesidades, problemas, comportamientos y atributos comunes
+                                </p>
+                              </div>
+                            </div>
+                            <div class="col-4 px-3">
+                              <p class="p_black text-justify">
+                                Un modelo de negocio puede tener uno o varios segmentos de clientes, ya sean grandes o pequeños, cada segmento se caracteriza por tener sus propias particularidades para satisfacer la necesidad. Una empresa debe definir muy bien el segmento o segmentos hacia los que se van a dirigir y, al mismo tiempo, debe definir los que no tendrán en cuenta, dado que esta acción también hace parte de la segmentación. Una vez definido el segmento de clientes, ya se puede diseñar un modelo de negocio basado en un conocimiento exhaustivo de las necesidades específicas del cliente objetivo
+                              </p>
+                            </div>
+                            <div class="col-4 px-3 d-flex align-items-center">
+                              <img width="100%" src="assets/img/img_ova/canvas1.png">
+                            </div>
+                            <div class="col-4 px-3">
+                              <p class="text-justify p_black"><b>Utilice los botones para conocer mas respecto a los segmentos de clientes en un negocio:</b></p>
+                              <div class="w-100 mt-2 px-5">
+                                <div class="bg-color-dark px-4 btn border-10 hoverUniversalT shadow py-2 d-flex align-items-center justify-content-center my-4" data-toggle="modal" data-target="#modal_segCliente">
+                                  <p class="h5 text-white mr-2"><b>SEGMETOS DE CLIENTES</b></p>
+                                  <img src="assets/img/img_ova/clien1.png" width="20%">
+                                </div>
+                                <div class="bg-color-dark px-4 btn border-10 hoverUniversalT shadow py-2 d-flex align-items-center justify-content-center my-4" data-toggle="modal" data-target="#modal_tipoCliente">
+                                  <p class="h5 text-white mr-2"><b>TIPOS DE SEGMETOS</b></p>
+                                  <img src="assets/img/img_ova/clien2.png" width="20%">
+                                </div>
+                                <div class="bg-color-dark px-4 btn border-10 hoverUniversalT shadow py-2 d-flex align-items-center justify-content-center my-4">
+                                  <p class="h5 text-white mr-2"><b>DEFINIR SEGMENTO</b></p>
+                                  <img src="assets/img/img_ova/clien3.png" width="20%">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_2">
+                            <div class="col-md-12 mt-3 row">
+                              <div class="col-md-9">
+                                <b class="p_black">PROPUESTA DE VALOR</b><br><br>
+                                <p class="p_black font13">Es el  factor que hace que un cliente decida por mi solución (producto o servicio) y no por el de la competencia; su finalidad es solucionar el problema o satisfacer la necesidad al cliente. En este sentido, se puede definir también, como una serie de ventajas que una empresa ofrece a los clientes. (Osterwalder & Pigneur - 2011).</p><br>
+                                <p class="p_black font13"><b>Pase el mouse sobre las tarjetas para ampliar la información:</b></p>
+                              </div>
+                              <div class="col-md-3">
+                                <img src="assets/img/img_ova/canvas2.png" class="img-100">
+                              </div>
+                            </div>
+                            <div class="col-md-12 row d-flex justify-content-center" style="height: 215px;">
+                                <div class="col-md-4 p-3 cursor">
+                                    <div class="flip-cardnew" style="">
+                                      <div class="flip-cardnew-inner" style="border-radius: 50px;">
+                                        <div class="flip-cardnew-front">
+                                          <div class="d-flex justify-content-center">
+                                            <div class="d-flex justify-content-center cabezera">
+                                              <div class="text-center cuerpo">
+                                                <img src="assets/img/img_ova/prop1.png" class="img-70" style="margin-top: 15px;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="flip-cardnew-back">
+                                          <div style="height: 150px; overflow: auto;">
+                                            <p class="font13">Una propuesta de valor ha de ser innovadora y presentar una solución atractiva y pertinente para el cliente, en caso de no ser así, debe por lo menos incluir alguna característica o atributo adicional que lo haga llamativo para el cliente. Si la propuesta de valor, no es percibida como tal por el cliente, eso significa que es necesario ajustarla de lo contrario el modelo de negocio no será exitoso.</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3 cursor">
+                                    <div class="flip-cardnew" style="">
+                                      <div class="flip-cardnew-inner" style="border-radius: 50px;">
+                                        <div class="flip-cardnew-front">
+                                          <div class="d-flex justify-content-center">
+                                            <div class="d-flex justify-content-center cabezera">
+                                              <div class="text-center cuerpo">
+                                                <img src="assets/img/img_ova/prop2.png" class="img-70" style="margin-top: 15px;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="flip-cardnew-back">
+                                          <div style="height: 150px; overflow: auto;">
+                                            <p class="font13">Según Osterwalder (2011), una propuesta de valor crea valor para un segmento de mercado gracias a una mezcla específica de elementos que se adecúan a sus necesidades. Los valores pueden ser cuantitativos (precio, velocidad del servicio, etc.) o cualitativos (diseño, experiencia del cliente, etc.).</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 p-3 cursor">
+                                    <div class="flip-cardnew" style="">
+                                      <div class="flip-cardnew-inner" style="border-radius: 50px;">
+                                        <div class="flip-cardnew-front">
+                                          <div class="d-flex justify-content-center">
+                                            <div class="d-flex justify-content-center cabezera">
+                                              <div class="text-center cuerpo">
+                                                <img src="assets/img/img_ova/prop3.png" class="img-70" style="margin-top: 15px;">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="flip-cardnew-back">
+                                          <div style="height: 150px; overflow: auto;">
+                                            <p class="font13">A continuación se relacionan algunos elementos que pueden ser considerados a la hora de construir una propuesta de valor:</p>
+                                            <div class="row col-md-12">
+                                              <p class="col-md-6" style="font-size: 11px;padding: 0px;">
+                                                Novedad <br>
+                                                Personalización  <br>
+                                                Cumplimiento  <br>
+                                                Diseño <br>
+                                                Marca/status <br>
+                                              </p>
+                                              <p class="col-md-6" style="font-size: 11px;padding-left: 23px;">
+                                                Precio  <br>
+                                                Costos bajos <br> 
+                                                Accesibilidad  <br>
+                                                Disponibilidad  <br>
+                                                Comodidad <br>
+                                              </p>
+                                            </div>
+                                            
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_3">
+                            <div class="col-md-12 mt-3 row">
+                              <div class="col-md-12">
+                                <b class="p_black">RELACIONES CON LOS CLIENTES</b><br><br>
+                                <p class="p_black font13">Hace referencia a los diferentes tipos de relaciones que establece una empresa con cada uno de sus segmentos de clientes. Las empresas deben definir el tipo de relación que desean establecer con cada uno, y eso se hace partiendo del tipo de segmento de clientes y la propuesta de valor que se quiere entregar a cada uno de ellos. En las tiendas E-commerce, la relación con los clientes puede ser personal o automatizada.</p><br>
+                                <p class="p_black font13"><b>Para ampliar la información respecto a la relación con los clientes utilice las flechas:</b></p>
+                              </div>
+                            </div>
+                            <div class="row mt-2" style="height: 270px;">
+                              <div class="col-md-4">
+                                <div class="puntero puntero1 punteroInactive cursor" onclick="punteros(1);">
+                                  A
+                                </div>
+                                <div class="puntero puntero2 punteroInactive mt-2 cursor" onclick="punteros(2);">
+                                  B
+                                </div>
+                                <div class="puntero puntero3 punteroInactive mt-2 cursor" onclick="punteros(3);">
+                                  C
+                                </div>
+                                <div class="puntero puntero4 punteroInactive mt-2 cursor" onclick="punteros(4);">
+                                  D
+                                </div>
+                                <div class="puntero puntero5 punteroInactive mt-2 cursor" onclick="punteros(5);">
+                                  E
+                                </div>
+                              </div>
+                              <div class="col-md-5 mt-5">
+                                  <div class="globorosa gloRo1 d-none">
+                                    <div class="text-center" style="height: 25px;">
+                                      <img src="assets/img/img_ova/rela1.png" class="img-30 img-globo">
+                                    </div>
+                                    <div class="mt-5">
+                                      <p class="font13">Cuando se habla de relación con los clientes, se habla en parte a una estrategia empresarial o a un propósito superior que despierta la intención de entablar puentes de relaciones entre la empresa y el cliente, por lo tanto una relación puede basarse en fundamentos como:</p>
+                                      <p class="font13 text-center"><b>Captación de clientes <br>
+                                        Fidelización de clientes <br>
+                                        Estimulación de las ventas</b></p>
+                                    </div>
+                                  </div>
+                                  <div class="globorosa gloRo2 d-none">
+                                    <div class="text-center" style="height: 30px;">
+                                      <img src="assets/img/img_ova/rela3.png" class="img-30 img-globo">
+                                    </div>
+                                    <div class="mt-5">
+                                      <p class="font13 text-center"><b class="p_black">Captación de clientes</b></p>
+                                      <p class="font13 text-center">Cuando las acciones que se realizan tiene como propósito incrementar la cantidad de clientes.</p>
+                                    </div>
+                                  </div>
+                                  <div class="globorosa gloRo3 d-none">
+                                    <div class="text-center" style="height: 35px;">
+                                      <img src="assets/img/img_ova/rela2.png" class="img-30 img-globo">
+                                    </div>
+                                    <div class="mt-5">
+                                      <p class="font13 text-center"><b class="p_black">Fidelización de clientes</b></p>
+                                      <p class="font13 text-center">Cuando las acciones que se realizan tienen como propósito lograr mantener contentos y leales a los clientes actuales.</p>
+                                    </div>
+                                  </div>
+                                  <div class="globorosa gloRo4 d-none">
+                                    <div class="text-center" style="height: 35px;">
+                                      <img src="assets/img/img_ova/rela4.png" class="img-30 img-globo">
+                                    </div>
+                                    <div class="mt-5">
+                                      <p class="font13 text-center"><b class="p_black">Estimulación de las ventas:</b></p>
+                                      <p class="font13 text-center">Cuando las acciones que se realizan tienen como propósito incentivar a que los clientes (nuevos y antiguos) compren más.</p>
+                                    </div>
+                                  </div>
+                                  <div class="globorosa gloRo5 d-none">
+                                    <div class="text-center" style="height: 35px;">
+                                      <img src="assets/img/img_ova/rela5.png" class="img-30 img-globo">
+                                    </div>
+                                    <div class="mt-5">
+                                      <p class="font13">Existen varios tipos de relaciones con clientes que pueden coexistir en las estrategias de relacionamiento que una empresa puede considerar con su segmento de clientes.</p>
+                                      <p class="font13 p_black"><b>Seleccione el botón para conocerlas:</b></p>
+                                      <div class="text-center">
+                                        <a href="assets/img/img_ova/relacionamiento.png" target="_blank" download><button class="btn btn_vino">DESCARGAR</button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-3">
+                                <div class="text-center">
+                                  <img src="assets/img/img_ova/canvas3.png" class="img-100">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_4">
+                            <div class="col-12 my-3">
+                              <h5 class="subtitulo">El modelo de negocio</h5>
+  
+                              <p class="font13 justificado p_black col-md-12">Para dar respuesta a las nueve variables mencionadas y desarrollarlas de una manera clara, fácil y útil, Osterwalder & Pigneur (2011), proponen un lienzo denominado CANVAS, compuesto por 9 bloques o compartimentos que al construirlo permiten analizar el modelo de negocios. <br>
+                              A continuación se presenta el lienzo, para ampliar la información de cada uno de los bloques haga clic sobre cada uno de ellos:
+                              </p>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center row">
+                              <div class="col-10 border-45 shadow p-4 bg-color-secondary">
+                                <div class="w-100 imgSelector text-center">
+                                  <img src="assets/img/img_ova/post.png" width="30%" class="menos-marginT-75">
+                                </div>
+                                <p class="text-white h5 text-center">
+                                  <b>VARIABLES</b>
+                                </p>
+                                <ol class="pt-2 text-white">
+                                  <li>Segmentación de clientes.</li>
+                                  <li>Propuesta de valor.</li>
+                                  <li>Relación con clientes.</li>
+                                  <li>Canales de venta/ distribución.</li>
+                                  <li>Aliados estratégicos.</li>
+                                  <li>Actividades claves. (Cadena de valor o mapa de procesos).</li>
+                                  <li>Recursos claves.</li>
+                                  <li>Estructura de costos.</li>
+                                  <li>Flujo de ingresos.</li>
+                                </ol>
+                              </div>
+                            </div>
+                            <div class="col-md-8 fondoCanva row p-0" style="height: 600px;">
+                              <div class="col-2 ml-2 mr-3 p-3 h-75" title="5"></div>
+                              <div class="col-2 ml-2 mr-3 p-0 h-75">
+                                <div class="col-12 p-3 h-50" title="6"></div>
+                                <div class="col-12 p-3 h-50" title="7"></div>
+                              </div>
+                              <div class="col-2 p-3 mx-2 h-75" title="2"></div>
+                              <div class="col-2 p-0 h-75 ml-2 mr-3">
+                                <div class="col-12 p-3 h-50" title="3"></div>
+                                <div class="col-12 p-3 h-50" title="4"></div>
+                              </div>
+                              <div class="col-2 p-3 h-75" title="1"></div>
+                              <div class="col-6 h-25" title="8"></div>
+                              <div class="col-6 h-25" title="9"></div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_5">
+                            <div class="col-md-12">
+                              <h3 class="p_black"><b>ALIADOS CLAVE</b></h3>
+                              <p class="font13 justificado p_black">También es conocido (por la traducción al español), como alianzas clave, o asociaciones clave. Hace referencia a la red de proveedores, socios o aliados que contribuyen para que el modelo de negocio funcione correctamente. Las empresas se asocian o se juntan para colaborar por múltiples motivos y estas asociaciones son cada vez más importantes en Los modelos de negocio, donde el principal motivo para trabajar conjuntamente, es que las dos partes van a ganar.</p>
+                              <p class="font13 justificado p_black"><b>Use los botones para ampliar la información respecto a los aliados clave:</b></p>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-7">
+                                <img src="assets/img/img_ova/aliad1.png" width="100%">
+                                <br>
+                                <div class="d-flex">
+                                  <button class="btn btn-ova font-weight-bold d-flex" onclick="fun1(1)"><span class="my-auto">TIPOS DE ALIANZAS</span><img width="35%" class="my-auto" src="assets/img/img_ova/canvas5.png"></button>
+                                  <button class="btn btn-ova font-weight-bold d-flex" onclick="fun1(2)"><span class="my-auto">BENEFICIOS ALIANZAS</span><img width="35%" class="my-auto" src="assets/img/img_ova/canvas5.png"></button>
+                                  <button class="btn btn-ova font-weight-bold d-flex" onclick="fun1(3)"><span class="my-auto">IMPORTANTE</span><img width="35%" class="my-auto" src="assets/img/img_ova/canvas5.png"></button>
+                                </div>
+                              </div>
+                              <div class="col-md-5 pt-4">
+                                <div class="bg-azul-1 position-relative pt-4 shadow d-none fun1_content1" style="border-top-left-radius: 25px; border-bottom-right-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -30px;">
+                                    <img src="assets/img/img_ova/aliad2.png" width="30%" class="m-auto">
+                                  </div>
+                                  <div class="custom-scrollbar-a pt-5 pr-4">
+                                    <div class="custom-scrollbar__inner-a py-3 px-4">
+                                      <p class="p_black justificado">Las empresas crean <b>alianzas para optimizar los ingresos, reducir riesgos o adquirir recursos.</b> Según Osterwalder (2011), en un modelo de negocios se pueden considerar cuatro tipos de alianzas:</p>
+                                      <ul class="p_black">
+                                        <li class="justificado"><b>Alianzas:</b> cuando se juntan dos empresas no competidoras con un objetivo común, ambas partes hacen un aporte en efectivo o en especie.</li>
+                                        <li class="justificado"><b>Competición:</b> cuando se acuerdan asociaciones estratégicas entre empresas competidoras.</li>
+                                        <li class="justificado"><b>Joint ventures:</b> cuando dos empresas se juntan para crear nuevos negocios.</li>
+                                        <li class="justificado"><b>Relaciones cliente-proveedor:</b> para garantizar la fiabilidad de los suministros de bienes o servicios requeridos para que la tienda funcione</li>
+                                      </ul>
+                                    </div>
+                                    <div class="custom-scrollbar__bar-a">
+                                      <div class="custom-scrollbar__knob-a cursor">
+                                        <p class="text-center linea_scroll-a">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="bg-azul-1 position-relative pt-4 shadow d-none fun1_content2" style="border-top-left-radius: 25px; border-bottom-right-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -30px;">
+                                    <img src="assets/img/img_ova/aliad3.png" width="30%" class="m-auto">
+                                  </div>
+                                  <div class="custom-scrollbar-b pt-5 pr-4">
+                                    <div class="custom-scrollbar__inner-b py-3 px-4">
+                                      <p class="p_black justificado">A continuación se enuncian los beneficios de las Alianzas o trabajo en red:</p>
+                                      <ul class="p_black">
+                                        <li class="justificado">Hay optimización de recursos y logro de economías de escala.</li>
+                                        <li class="justificado">Se reduce el riesgo y la incertidumbre, especialmente cuando el entorno es muy competitivo.</li>
+                                        <li class="justificado">Reducir costos cuando se compra determinados recursos o actividades.</li>
+                                        <li class="justificado">Cada uno se especializa en lo que sabe hacer.</li>
+                                      </ul>
+                                    </div>
+                                    <div class="custom-scrollbar__bar-b">
+                                      <div class="custom-scrollbar__knob-b cursor">
+                                        <p class="text-center linea_scroll-b">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="bg-azul-1 position-relative pt-4 shadow d-none fun1_content3" style="border-top-left-radius: 25px; border-bottom-right-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -30px;">
+                                    <img src="assets/img/img_ova/aliad4.png" width="30%" class="m-auto">
+                                  </div>
+                                  <div class="pt-5 pr-4">
+                                    <div class="py-3 px-4">
+                                      <p class="p_black justificado">Los principales aliados para un modelo de negocio de un E-commerce:</p>
+                                      <ol class="p_black">
+                                        <li class="justificado">Los distribuidores</li>
+                                        <li class="justificado">Los proveedores de insumos </li>
+                                        <li class="justificado">El desarrollador web.</li>
+                                      </ol>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_6">
+                            <div class="col-md-12">
+                              <h3 class="p_black"><b>ACTIVIDADES CLAVE</b></h3>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-7 pt-5">
+                                <div class="bg-cafe-1 position-relative pt-5 shadow" style="border-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -50px;">
+                                    <img src="assets/img/img_ova/canvas6.png" width="17%" class="m-auto">
+                                  </div>
+                                  <div class="p-3">
+                                    <p class="p_white justificado">Hace referencia a las acciones más importantes que debe realizar una empresa para que su modelo de negocio funcione correctamente. Todos los modelos de negocio requieren una serie de actividades, sin embargo unas son más clave que otras. Estas actividades son las acciones más importantes que debe asegurar sean realizadas por una empresa para entregar la propuesta de valor al cliente.</p>
+                                    <br>
+                                    <p class="p_white justificado"><b>Seleccione las letras para conocer más sobre las actividades clave:</b></p>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-5 position-relative" style="min-height: 350px; border-left: solid #272E9F 3px;">
+                                <div class="bg-piel-1 position-relative pt-3 shadow d-none fun2_content1" style="border-top-left-radius: 25px; border-top-right-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -30px;">
+                                    <img src="assets/img/img_ova/activi2.png" width="20%" class="m-auto">
+                                  </div>
+                                  <div class="custom-scrollbar-c pt-5 pr-4">
+                                    <div class="custom-scrollbar__inner-c py-3 px-4">
+                                      <p class="p_black justificado">Al igual que los recursos clave, y los aliados clave, estas actividades son necesarias para crear y entregar la propuesta de valor, llegar a cada uno de los segmentos de clientes, establecer relaciones con ellos y percibir ingresos. Las actividades también varían dependiendo del modelo de negocio.</p>
+                                      <br>
+                                      <p class="p_black justificado">La actividad clave de Dominos Pizza, no está en la receta sino en el tiempo de producción y de entrega, para asegurarse que el cliente reciba el pedido antes de 30 minutos. Por otro lado, la actividad clave de Amazon.com, está centrada en la gestión de la cadena logística.</p>
+                                    </div>
+                                    <div class="custom-scrollbar__bar-c">
+                                      <div class="custom-scrollbar__knob-c cursor">
+                                        <p class="text-center linea_scroll-c">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="bg-piel-1 position-relative pt-3 shadow d-none fun2_content2" style="border-top-left-radius: 25px; border-top-right-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -30px;">
+                                    <img src="assets/img/img_ova/activi3.png" width="20%" class="m-auto">
+                                  </div>
+                                  <div class="custom-scrollbar-d pt-5 pr-4">
+                                    <div class="custom-scrollbar__inner-d py-3 px-4">
+                                      <p class="p_black justificado">Las actividades clave de un modelo de negocio, se pueden entender, a través de la ilustración de la cadena de valor o mapa de procesos, donde se observe la secuencia de actividades, y cómo cada una agrega valor para el segmento de clientes.</p>
+                                    </div>
+                                    <div class="custom-scrollbar__bar-d">
+                                      <div class="custom-scrollbar__knob-d cursor">
+                                        <p class="text-center linea_scroll-d">-</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="d-flex position-absolute" style="bottom: 0px; width: 100%;">
+                                  <div class="m-auto d-flex position-relative">
+                                    <img src="assets/img/img_ova/activi1.png" width="200px">
+                                    <h2 class="color-amarillo-1 position-absolute cursor" onclick="fun2(1)" style="bottom: 25px; left: 63px;">A</h2>
+                                    <h2 class="color-amarillo-1 position-absolute cursor" onclick="fun2(2)" style="bottom: 25px; right: 63px;">B</h2>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_7">
+                            <div class="col-md-12">
+                                <h3 class="p_black"><b>RECURSOS CLAVE</b></h3>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <p class="p_black justificado">Se refiere a los activos más importantes con los que debe contar la empresa para que el modelo de negocio funcione. En las tiendas de E-commerce, hay quienes dicen que el recurso clave es la plataforma en la cual se implementa la tienda, y seguramente tienen razón, puesto que sin ella, no es posible entregarle la propuesta de valor al cliente.</p>
+                                <div class="bg-azul-1 position-relative pt-5 mt-5 shadow" style="border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;">
+                                  <div class="position-absolute d-flex" style="width: 100%; top: -30px;">
+                                    <img src="assets/img/img_ova/canvas7.png" width="20%" class="m-auto">
+                                  </div>
+                                  <div class="p-3">
+                                    <p class="p_black justificado">Para Osterwalder (2011), todos los modelos de negocio requieren recursos clave que permiten a las empresas crear y ofrecer una propuesta de valor, llegar a sus clientes, establecer relaciones con segmentos y obtener ingresos. Cada modelo de negocio requiere recursos clave diferentes. Un fabricante de microchips necesita instalaciones de producción con un capital elevado, mientras que un diseñador de microchips depende más de los recursos humanos.</p>
+                                    <br>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-6 position-relative" style="min-height: 350px; border-left: dashed #272E9F 3px;">
+                                <p class="p_black justificado">Ahora bien, en este momento es necesario preguntar ¿Qué recursos requieren las propuestas de valor, canales de distribución, relaciones con clientes y fuentes de ingreso? </p>
+                                <br>
+                                <p class="p_black justificado"><b>Haga clic en los botones de la parte inferior para conocer las respuestas:</b></p>
+                                <br>
+                                <div class="row px-3">
+                                  <div style="min-height: 300px;" class="col-md-4 p-0 d-flex align-items-end flex-column">
+                                    <div class="mx-auto">
+                                      <div class="bg-white d-flex radius-50 cursor" data-toggle="modal" data-target="#modal_info1" style="border: solid #70302C 15px; width: 130px; height: 130px;">
+                                        <div class="m-auto" style="width: 70%;">
+                                          <img src="assets/img/img_ova/rec1.png" width="100%">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="mt-auto mx-auto">
+                                      <div class="bg-white d-flex radius-50 cursor" data-toggle="modal" data-target="#modal_info4" style="border: solid #70302C 15px; width: 130px; height: 130px;">
+                                        <div class="m-auto" style="width: 70%;">
+                                          <img src="assets/img/img_ova/rec2.png" width="100%">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div style="min-height: 300px;" class="col-md-4 p-0 d-flex">
+                                    <div class="m-auto">
+                                      <div class="bg-white d-flex radius-50 cursor" data-toggle="modal" data-target="#modal_info3" style="border: solid #70302C 15px; width: 130px; height: 130px;">
+                                        <div class="m-auto" style="width: 70%;">
+                                          <img src="assets/img/img_ova/rec3.png" width="100%">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div style="min-height: 300px;" class="col-md-4 p-0 d-flex align-items-end flex-column">
+                                    <div class="mx-auto">
+                                      <div class="bg-white d-flex radius-50 cursor" data-toggle="modal" data-target="#modal_info2" style="border: solid #70302C 15px; width: 130px; height: 130px;">
+                                        <div class="m-auto" style="width: 70%;">
+                                          <img src="assets/img/img_ova/rec4.png" width="100%">
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="mt-auto mx-auto">
+                                      <div class="bg-white d-flex radius-50 cursor" data-toggle="modal" data-target="#modal_info5" style="border: solid #70302C 15px; width: 130px; height: 130px;">
+                                        <div class="m-auto" style="width: 70%;">
+                                          <img src="assets/img/img_ova/rec5.png" width="100%">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_8">
+                            <div class="col-12 my-3">
+                              <h5 class="subtitulo">El modelo de negocio</h5>
+  
+                              <p class="font13 justificado p_black col-md-12">Para dar respuesta a las nueve variables mencionadas y desarrollarlas de una manera clara, fácil y útil, Osterwalder & Pigneur (2011), proponen un lienzo denominado CANVAS, compuesto por 9 bloques o compartimentos que al construirlo permiten analizar el modelo de negocios. <br>
+                              A continuación se presenta el lienzo, para ampliar la información de cada uno de los bloques haga clic sobre cada uno de ellos:
+                              </p>
+                            </div>
+                            <div class="col-md-4 d-flex justify-content-center align-items-center row">
+                              <div class="col-10 border-45 shadow p-4 bg-color-secondary">
+                                <div class="w-100 imgSelector text-center">
+                                  <img src="assets/img/img_ova/post.png" width="30%" class="menos-marginT-75">
+                                </div>
+                                <p class="text-white h5 text-center">
+                                  <b>VARIABLES</b>
+                                </p>
+                                <ol class="pt-2 text-white">
+                                  <li>Segmentación de clientes.</li>
+                                  <li>Propuesta de valor.</li>
+                                  <li>Relación con clientes.</li>
+                                  <li>Canales de venta/ distribución.</li>
+                                  <li>Aliados estratégicos.</li>
+                                  <li>Actividades claves. (Cadena de valor o mapa de procesos).</li>
+                                  <li>Recursos claves.</li>
+                                  <li>Estructura de costos.</li>
+                                  <li>Flujo de ingresos.</li>
+                                </ol>
+                              </div>
+                            </div>
+                            <div class="col-md-8 fondoCanva row p-0" style="height: 600px;">
+                              <div class="col-2 ml-2 mr-3 p-3 h-75" title="5"></div>
+                              <div class="col-2 ml-2 mr-3 p-0 h-75">
+                                <div class="col-12 p-3 h-50" title="6"></div>
+                                <div class="col-12 p-3 h-50" title="7"></div>
+                              </div>
+                              <div class="col-2 p-3 mx-2 h-75" title="2"></div>
+                              <div class="col-2 p-0 h-75 ml-2 mr-3">
+                                <div class="col-12 p-3 h-50" title="3"></div>
+                                <div class="col-12 p-3 h-50" title="4"></div>
+                              </div>
+                              <div class="col-2 p-3 h-75" title="1"></div>
+                              <div class="col-6 h-25" title="8"></div>
+                              <div class="col-6 h-25" title="9"></div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_9">
+                            <div class="col-md-12 mt-3 row">
+                              <div class="col-md-12">
+                                <b class="p_black">FLUJO DE INGRESOS</b><br><br>
+                                <p class="p_black font13">Hace referencia a los diferentes tipos de relaciones que establece una empresa con cada uno de sus segmentos de clientes. Las empresas deben definir el tipo de relación que desean establecer con cada uno, y eso se hace partiendo del tipo de segmento de clientes y la propuesta de valor que se quiere entregar a cada uno de ellos. En las tiendas E-commerce, la relación con los clientes puede ser personal o automatizada.</p><br>
+                                <p class="p_black font13">A continuación encontrará mas información respecto a este apartado, <b>deslice la flecha para conocerla:</b></p>
+                              </div>
+                            </div>
+                            <div class="row mt-2" style="height: 310px;">
+                              <div class="col-md-8">
+                                <div class="col-md-12" style="height: 145px;">
+                                  <div class="text-center ingre1 ingre d-none">
+                                    <img src="assets/img/img_ova/ingre1.png" width="20%">
+                                  </div>
+                                  <div class="text-center d-none ingre2 ingre">
+                                    <img src="assets/img/img_ova/ingre3.png" width="20%">
+                                  </div>
+                                  <div class="text-center d-none ingre3 ingre">
+                                    <img src="assets/img/img_ova/ingre4.png" width="20%">
+                                  </div>
+                                  <div class="text-center d-none ingre4 ingre">
+                                    <img src="assets/img/img_ova/ingre5.png" width="20%">
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="col-12">
+                                    <div class="inputDiv i1"></div>
+                                    <div class="inputDiv i2" style="display: none;"></div>
+                                  </div>
+                                </div>
+                                <div class="col-md-12 mt-3" style="height: 114px;">
+                                  <div class="ban-blue banBlue1 d-none">
+                                    <p class="font13">Es importante dejar claro que en este apartado no se habla de rentabilidad, beneficios ni utilidad, se habla de ingresos o flujo de caja. En otros ejercicios por fuera del modelo de negocio se podrá analizar los beneficios o utilidades que tendría la empresa con su actividad comercial, pero dentro del modelo de negocio no se hace.</p>
+                                  </div>
+                                  <div class="ban-blue d-none banBlue2">
+                                    <p class="font13">Para poner en marcha un modelo de negocio, una empresa debe preguntarse lo siguiente: ¿Qué valor está dispuesto a pagar cada segmento de clientes? Una vez la empresa responda esta pregunta, podrá crear una o varias fuentes de ingresos para cada segmento de clientes.</p>
+                                  </div>
+                                  <div class="ban-blue d-none banBlue3">
+                                    <p class="font13">De igual manera, cada una puede tener un mecanismo de fijación de precios diferentes, por ejemplo: lista de precios fijos, negociaciones, subastas, según mercado, volumen o gestión de la rentabilidad.</p>
+                                  </div>
+                                  <div class="ban-blue d-none banBlue4">
+                                    <p class="font13">Al estructurar un modelo de negocios para una empresa, independientemente cuál sea el canal de venta, se pueden considerar dos modalidades de ingresos:</p>
+                                    <p class="text-center font13">
+                                      <b>1. Ingresos por transacciones</b><br>
+                                      <b>2. Ingresos recurrentes</b>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="text-center">
+                                  <img src="assets/img/img_ova/canvas9.png" class="img-70">
+                                </div>
+                                <p class="font13 p_black"><b>Seleccione el botón para profundizar en el tema:</b></p>
+                                <div class="text-center">
+                                  <a href="assets/PDF/flujoDeIngresos.pdf" target="_blank"><button class="btn_vino btn">FLUJO DE INGRESOS</button></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_act1">
+                            <iframe src="actividades/actividad/anagrama/index.html" frameborder="0"></iframe>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_act2">
+                            <iframe src="actividades/actividad/completar/index.html" frameborder="0"></iframe>
+                          </div>
+                          <div class="row mt-3 d-none" id="pantalla3_act3">
+                            <iframe src="actividades/actividad/completar/index.html" frameborder="0"></iframe>
+                          </div>
+                          <div style="height: 200px;"></div>
                        </div>
                        <div id="unidad2-4" class="tab-pane " role="tabpanel">
                         <div class="row">
@@ -618,6 +1230,323 @@
                   <div class="row" style=" padding: 40px 0;">
                     <div class="p-4">
                       <img src="assets/img/img_ova/modelonegocio2.png" class="img-100">
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- pantalla 3-1, 3-4, 3-8 -->
+<div class="modal fade" id="modal_segCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h5 class="text-center text-white font-weight-bold m-auto" >¿Cómo saber si se requieren varios segmentos de clientes en un modelo de negocios?</h5>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <img width="100%" src="assets/img/img_ova/clien4_1.png">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_tipoCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h4 class="text-center text-white font-weight-bold m-auto" >¿Cómo se define un segmento de clientes?</h4>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img width="100%" src="assets/img/img_ova/clien3.png">
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        <div class="m-auto">
+                          <p class="justificado p_black h6">De acuerdo a lo dicho hasta aquí, un segmento de clientes se debe definir de una manera que permita diferenciarlo basado en unas características particulares. Esto se logra, describiendo los atributos en común de las personas que conforman el grupo de clientes. Por ejemplo, el segmento de clientes del Gimnasio las Lomas se describe así:</p>
+                          <p class="justificado p_black ml-5 h5 mt-5"><i><b>hombres y mujeres entre 20 y 52 años, que vivan en la ciudad de Medellín y el sur del Valle de Aburrá, pertenecientes a los estratos 4, 5 y 6 que deseen cuidar su salud, a la vez que deseen aumentar su rendimiento físico y apariencia corporal, a través del ejercicio y el deporte.</b></i></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- pantalla 3-5, 3-6, 3-7 -->
+<div class="modal fade" id="modal_info1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="text-center text-white font-weight-bold m-auto" >RECURSOS</h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="justificado p_black">Los recursos clave pueden ser:</p>
+                      </div>
+                      <div class="col-md-6  offset-md-3">
+                        <img width="100%" src="assets/img/img_ova/video8.png">
+                      </div>
+                      <div class="col-md-12">
+                        <p class="justificado p_black">Además, la empresa puede tenerlos en propiedad, alquilarlos u obtenerlos de sus socios clave.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="text-center text-white font-weight-bold m-auto" >RECURSOS FÍSICOS</h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img width="100%" src="assets/img/img_ova/rec4.png">
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        <div class="m-auto">
+                          <p class="justificado p_black">En esta categoría se incluyen los activos físicos como instalaciones de la fábrica, edificios, vehículos, máquinas, equipos de cómputo, puntos de venta y redes de distribución. </p>
+                          <br>
+                          <p class="justificado p_black">Normalmente los recursos físicos de una tienda en línea, son los centros de distribución, equipos de logística, los servidores donde se almacena el sitio web, entre otros. (Osterwalder & Pigneur 2011).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="text-center text-white font-weight-bold m-auto" >RECURSOS INTELCTUALES</h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img width="100%" src="assets/img/img_ova/rec3.png">
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        <div class="m-auto">
+                          <p class="justificado p_black">Son los recursos intelectuales como marcas, información privada, patentes, derechos de autor, asociaciones y bases de datos de clientes, algoritmos, sistemas de información. Son elementos cada vez más importantes en un modelo de negocio sólido, incluso en un E-commerce. </p>
+                          <br>
+                          <p class="justificado p_black">El recurso clave más importante para las empresas como Nike o Amazon.com es el nombre de marca. Microsoft y SAP dependen del software y la propiedad intelectual asociada que desarrollaron a lo largo de los años.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="text-center text-white font-weight-bold m-auto" >RECURSOS HUMANOS</h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img width="100%" src="assets/img/img_ova/rec2.png">
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        <div class="m-auto">
+                          <p class="justificado p_black">Todas las empresas necesitan recursos humanos, aunque en algunos modelos de negocio, las personas son más importantes que en otros, todo depende de la actividad comercial que realicen. En un E-commerce especializado, donde se requiera bastante de conocimientos especializados, los recursos humanos son vitales. De igual manera, si la tienda debe contar con tareas de distribución y logística de manera directa (no por medio de aliados), el recurso humano que se encargan del domicilio o la entrega de los productos son un recurso clave dentro del modelo de negocio.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal_info5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg centered-propio" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class=" manual-flip">
+          <div class="card">
+              <div class="" >
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-1">
+                      </div>
+                      <div class="col-md-10 d-flex">
+                        <h2 class="text-center text-white font-weight-bold m-auto" >RECURSOS ECONÓMICOS</h2>
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <div class="m-0 p-0 x-modal">
+                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                          </div>
+                        </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <img width="100%" src="assets/img/img_ova/rec5.png">
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        <div class="m-auto">
+                          <p class="justificado p_black">Hace referencia a los recursos o garantías económicas como dinero en efectivo, líneas de crédito o una cartera de opciones sobre acciones, para garantizar la adquisición de los recursos clave. En otras palabras, es la inversión inicial requerida para que el modelo de negocio funcione.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
               </div>

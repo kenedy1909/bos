@@ -51,6 +51,14 @@ $( document ).ready(function() {
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
     slide_link(tema);
+
+    var knob = "";
+    var bar = "";
+    var container = "";
+    var dragging = "";
+    var diff = "";
+    var newTop = "";
+    var scrollOffset = "";
     
 });
 var pdf = `<div class="col-md-12">
@@ -112,11 +120,13 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            barra();
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
             $("#content").html('');
             $("#img_cont").html('');
+            barra();
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
@@ -138,6 +148,7 @@ function controlSlides(num){
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+           
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
@@ -884,3 +895,442 @@ function selectorP5(num) {
     }
 
 }
+
+// FUNCIONALIDAD PRINCIPAL DE LA PANTALLA 3
+
+function cambioPantalla3(num) {
+
+    $('#pantalla3_p, #pantalla3_1, #pantalla3_2, #pantalla3_3, #pantalla3_4, #pantalla3_5, #pantalla3_6, #pantalla3_7, #pantalla3_8, #pantalla3_9, #pantalla3_act1, #pantalla3_act2, #pantalla3_act3').removeClass('d-flex');
+    $('#pantalla3_p, #pantalla3_1, #pantalla3_2, #pantalla3_3, #pantalla3_4, #pantalla3_5, #pantalla3_6, #pantalla3_7, #pantalla3_8, #pantalla3_9, #pantalla3_act1, #pantalla3_act2, #pantalla3_act3').addClass('d-none');
+    $('.btnX').removeClass('d-none');
+    $('.btnActivi1,.btnActivi2,.btnActivi3').addClass('d-none');
+
+    if (num == 0) {
+        $('#pantalla3_p').removeClass('d-none');
+        $('#pantalla3_p').addClass('d-flex');
+
+        $('#BtnCerrar').removeClass('d-flex');
+        $('#BtnCerrar').addClass('d-none');
+    }else if (num == 1) {
+        $('#pantalla3_1').removeClass('d-none');
+        $('#pantalla3_1').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 2) {
+        $('#pantalla3_2').removeClass('d-none');
+        $('#pantalla3_2').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 3) {
+        $('#pantalla3_3').removeClass('d-none');
+        $('#pantalla3_3').addClass('d-flex');
+        
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+        
+        $('.btnX').addClass('d-none');
+        
+        $('.btnActivi1').removeClass('d-none');
+    }else if (num == 4) {
+        $('#pantalla3_4').removeClass('d-none');
+        $('#pantalla3_4').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 5) {
+        $('#pantalla3_5').removeClass('d-none');
+        $('#pantalla3_5').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 6) {
+        $('#pantalla3_6').removeClass('d-none');
+        $('#pantalla3_6').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 7) {
+        $('#pantalla3_7').removeClass('d-none');
+        $('#pantalla3_7').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 8) {
+        $('#pantalla3_8').removeClass('d-none');
+        $('#pantalla3_8').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 9) {
+        $('#pantalla3_9').removeClass('d-none');
+        $('#pantalla3_9').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == 'activi1') {
+        $('#pantalla3_act1').removeClass('d-none');
+        $('#pantalla3_act1').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == '') {
+        $('#pantalla3_').removeClass('d-none');
+        $('#pantalla3_').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }else if (num == '') {
+        $('#pantalla3_').removeClass('d-none');
+        $('#pantalla3_').addClass('d-flex');
+        
+        $('#BtnCerrar').removeClass('d-none');
+        $('#BtnCerrar').addClass('d-flex');
+    }
+}
+
+
+// PANTALLA 2, 3 Y 9
+
+function punteros(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.globorosa').addClass('d-none');
+            $('.gloRo1').removeClass('d-none');
+
+            $('.puntero').addClass('punteroInactive');
+            $('.puntero').removeClass('punteroActive');
+
+            $('.puntero1').addClass('punteroActive');
+            $('.puntero1').removeClass('punteroInactive');
+            break;
+        case 2:
+            $('.globorosa').addClass('d-none');
+            $('.gloRo2').removeClass('d-none');
+
+            $('.puntero').addClass('punteroInactive');
+            $('.puntero').removeClass('punteroActive');
+
+            $('.puntero2').addClass('punteroActive');
+            $('.puntero2').removeClass('punteroInactive');
+            break;
+        case 3:
+            $('.globorosa').addClass('d-none');
+            $('.gloRo3').removeClass('d-none');
+
+            $('.puntero').addClass('punteroInactive');
+            $('.puntero').removeClass('punteroActive');
+
+            $('.puntero3').addClass('punteroActive');
+            $('.puntero3').removeClass('punteroInactive');
+            break;
+        case 4:
+            $('.globorosa').addClass('d-none');
+            $('.gloRo4').removeClass('d-none');
+
+            $('.puntero').addClass('punteroInactive');
+            $('.puntero').removeClass('punteroActive');
+
+            $('.puntero4').addClass('punteroActive');
+            $('.puntero4').removeClass('punteroInactive');
+            break;
+        case 5:
+            $('.globorosa').addClass('d-none');
+            $('.gloRo5').removeClass('d-none');
+
+            $('.puntero').addClass('punteroInactive');
+            $('.puntero').removeClass('punteroActive');
+
+            $('.puntero5').addClass('punteroActive');
+            $('.puntero5').removeClass('punteroInactive');
+            break;
+        default:
+            // statements_def
+            break;
+    }
+}
+
+function barra(){
+    $(".i1").html('')    
+    var elementoPadre1 = document.querySelector(".inputDiv.i1");
+    var elementoPadre2 = document.querySelector(".inputDiv.i2");
+    var inputsRy = [];  
+    var i = new Input(5);
+    i.crear(elementoPadre1);
+    inputsRy.push(i);
+
+    var i2 = new Input(5);
+    i2.att.value = 70;
+    i2.att.min = 20;
+    i2.att.max = 120;
+    i2.crear(elementoPadre2);
+    inputsRy.push(i2);
+
+    for (var n = 0; n < inputsRy.length; n++) {
+      (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+          inputsRy[n].actualizar();
+        }, false)
+      }(n));
+    }
+}function Input(num) {
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
+  
+    this.crear = function(elementoPadre) {
+      // crea un nuevo elemento input
+      this.input = document.createElement("input");
+      //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+      for (var name in this.att) {
+        if (this.att.hasOwnProperty(name)) {
+          this.input.setAttribute(name, this.att[name]);
+        }
+      }
+      // crea un nuevo elemento div
+      this.output = document.createElement("div");
+      // establece el valor del atributo class del nuevo div
+      this.output.setAttribute("class", "output");
+      // y el contenido (innerHTML) de este
+      this.output.innerHTML = this.att.value;
+  
+      // inserta los dos elementos creados al final  del elemento Padre 
+      elementoPadre.appendChild(this.input);
+      elementoPadre.appendChild(this.output);
+    }
+  
+    this.actualizar = function() {
+      scroll_horizontal(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+}
+
+function Input(num) {
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
+  
+    this.crear = function(elementoPadre) {
+      // crea un nuevo elemento input
+      this.input = document.createElement("input");
+      //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+      for (var name in this.att) {
+        if (this.att.hasOwnProperty(name)) {
+          this.input.setAttribute(name, this.att[name]);
+        }
+      }
+      // crea un nuevo elemento div
+      this.output = document.createElement("div");
+      // establece el valor del atributo class del nuevo div
+      this.output.setAttribute("class", "output");
+      // y el contenido (innerHTML) de este
+      this.output.innerHTML = this.att.value;
+  
+      // inserta los dos elementos creados al final  del elemento Padre 
+      elementoPadre.appendChild(this.input);
+      elementoPadre.appendChild(this.output);
+    }
+  
+    this.actualizar = function() {
+      scroll_horizontal(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+      scroll_horizontal2(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    this.actualizar3 = function() {
+      scroll_horizontal3(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+    this.actualizar4 = function() {
+      scroll_horizontal4(this.input.value);
+      this.output.innerHTML = this.input.value;
+      this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function () {
+        /*alert();*/
+    });
+}
+
+function scroll_horizontal(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.ban-blue').addClass('d-none');
+            $('.ingre').addClass('d-none');
+            break;
+        case 1:
+            $('.ban-blue').addClass('d-none');
+            $('.banBlue1').removeClass('d-none');
+
+            $('.ingre').addClass('d-none');
+            $('.ingre1').removeClass('d-none');
+            break;
+        case 2:
+            $('.ban-blue').addClass('d-none');
+            $('.banBlue2').removeClass('d-none');
+
+            $('.ingre').addClass('d-none');
+            $('.ingre2').removeClass('d-none');
+            break;
+        case 3:
+            $('.ban-blue').addClass('d-none');
+            $('.banBlue3').removeClass('d-none');
+
+            $('.ingre').addClass('d-none');
+            $('.ingre3').removeClass('d-none');
+            break;
+        case 4:
+            $('.ban-blue').addClass('d-none');
+            $('.banBlue4').removeClass('d-none');
+
+            $('.ingre').addClass('d-none');
+            $('.ingre4').removeClass('d-none');
+            break;
+        case 5:
+            $('.ban-blue').addClass('d-none');
+            $('.banBlue5').removeClass('d-none');
+
+            $('.ingre').addClass('d-none');
+            $('.ingre5').removeClass('d-none');
+            break;
+        case 6:
+            $('.ban-blue').addClass('d-none');
+            $('.ingre').addClass('d-none');
+            break;
+        default:
+            break;
+    }
+}
+
+// PANTALLA 5, 6 Y 7
+
+function fun1(num) {
+    
+    $('.fun1_content1, .fun1_content2, .fun1_content3').addClass('d-none');
+    if (num == 1) {
+        $('.fun1_content1').removeClass('d-none');
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob-a');
+        bar = document.querySelector('.custom-scrollbar__bar-a');
+        container = document.querySelector('.custom-scrollbar__inner-a');
+        scroll();
+    }else if (num == 2) {
+        $('.fun1_content2').removeClass('d-none');
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob-b');
+        bar = document.querySelector('.custom-scrollbar__bar-b');
+        container = document.querySelector('.custom-scrollbar__inner-b');
+        scroll();
+    }else if (num == 3) {
+        $('.fun1_content3').removeClass('d-none');
+    }
+}
+function fun2(num) {
+    
+    $('.fun2_content1, .fun2_content2').addClass('d-none');
+    if (num == 1) {
+        $('.fun2_content1').removeClass('d-none');
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob-c');
+        bar = document.querySelector('.custom-scrollbar__bar-c');
+        container = document.querySelector('.custom-scrollbar__inner-c');
+        scroll();
+    }else if (num == 2) {
+        $('.fun2_content2').removeClass('d-none');
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob-d');
+        bar = document.querySelector('.custom-scrollbar__bar-d');
+        container = document.querySelector('.custom-scrollbar__inner-d');
+        scroll();
+    }
+}
+function scroll(){
+    // When the container is scrolled
+    container.addEventListener('scroll', () => {
+      // If we are dragging the knob, do nothing
+      if (dragging) return;
+      // Otherwise, set the knob position based on the scroll position
+      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+    });
+    dragging = false;
+    knob.addEventListener('mousedown', event => {
+        
+    console.log(knob+" "+bar+" "+container);
+      dragging = {
+        x: event.clientX,
+        y: event.clientY };
+    });
+    window.addEventListener('mousemove', event => {
+      if (dragging) {
+        // When dragging
+        event.preventDefault();
+        diff = {
+          x: event.clientX - dragging.x,
+          y: event.clientY - dragging.y };
+        // Clamp the position of the knob to be a maximum of 
+        // the knobs container, and a minimum of 0
+        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+        knob.style.top = newTop + 'px';
+        // Base the scroll offset on the knobs position
+        // in relation to the knobs container
+        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+        container.scrollTop = scrollOffset;
+        dragging = {
+          x: event.clientX,
+          y: event.clientY };
+      }
+    });
+    window.addEventListener('mouseup', () => {
+      dragging = false;
+    });
+}
+
