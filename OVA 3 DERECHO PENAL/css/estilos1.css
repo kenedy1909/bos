@@ -1202,7 +1202,7 @@ p, button{
 .trianguloActividad {
 	width: 0;
     height: 0;
-    border-right: 40px solid var(--bg-color-claro);
+    border-right: 40px solid var(--bg-color);
     border-top: 45px solid transparent;
     border-bottom: 40px solid transparent;
     position: absolute;
