@@ -236,7 +236,7 @@ iframe{
   width: 100%;
   height: auto;
   border-radius: 22px;
-  background: #97182f;
+  background: #771e18;
 }
 
 .card-container, .front2, .back2 {
@@ -250,7 +250,7 @@ iframe{
   height: 105px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
-  background: #540F23;
+  background: #410f04;
 }
 .card .cover1{
   overflow: hidden!;
