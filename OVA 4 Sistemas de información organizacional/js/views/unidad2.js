@@ -917,6 +917,7 @@ function cambioPantalla3(num) {
         
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
+        
     }else if (num == 2) {
         $('#pantalla3_2').removeClass('d-none');
         $('#pantalla3_2').addClass('d-flex');
