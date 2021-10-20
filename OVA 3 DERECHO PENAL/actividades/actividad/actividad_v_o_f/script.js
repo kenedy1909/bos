@@ -15,6 +15,10 @@ function inicioRecurso() {
         { question_txt: "La regla 109 establece el plazo y procedimiento para la sala de cuestiones preliminares revisar una decisión de la fiscalía.", answer_id: "A", img: "" },
 
         { question_txt: "La regla 116 establece el procedimiento para cuando la prueba sea solicitada por la defensa.", answer_id: "A", img: "" },
+
+        { question_txt: "Todas las actuaciones que se dan en la investigación, hasta antes de la confirmación de cargos, corresponde el control judicial a la sala de cuestiones preliminares.", answer_id: "A", img: "" },
+
+        { question_txt: "El juez y policia judicial son quienes deciden, con base en la evaluación que realiza de la información suministrada, si solicita o no a la sala de cuestiones preliminares el inicio de una investigación.", answer_id: "B", img: "" },
     ];
 
     var qwsa = new QuestionsSameAnswers({
