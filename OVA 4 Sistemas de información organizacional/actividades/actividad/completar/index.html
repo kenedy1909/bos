@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./completar.css">
+</head>
+<body>
+	<div class="row px-3 mb-3" style="margin-top: 1.5em;">
+	    <div class="col-md-5 d-flex">
+       <img src="./img/actividad_interactiva.png" class="img-activi">
+       <div>
+           <div class="content-text-img-activi-2 w-100">
+             <b class="text-img-actividad" style="font-size: 15px; font-family: arial;">ACTIVIDAD INTERACTIVA</b>
+           </div>
+           <p class="text-center" style="font-size: 15px; font-family: arial;">COMPLETAR ESPACIOS</p>
+       </div>
+    </div>
+    <div class="col-md-7 shadow content-tarjeta">
+        <p class="pb-2 p_black" style="font-size: 15px; font-family: arial;">En cada una de las escenas seleccione el FLUJO DE INGRESOS que correspondiente dando clic en la flecha, al finalizar pulse la casilla "<b>Calificar</b>" para conocer su puntuación.</p>
+    </div>
+	</div>
+	<form>
+		<div class="col-lg-12 row">
+			<div class="col-md-4">
+				<div class="enunciado d-flex">
+					<p style="font-size: 15px; margin: auto; text-align: center;">Es el resultado de las cuotas por publicidad de un producto, servicio o marca determinado.</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_0"></label>
+					<select id="op_0" name="op_0">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="incorrecta">Venta de activos</option>
+						<option value="correcta">Publicidad</option>
+						<option value="incorrecta">Préstamo/alquiler</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="enunciado d-flex">
+					<p style="font-size: 15px; margin: auto; text-align: center;">Se basa en el uso de un servicio determinado,  mayor uso mayor es el pago.</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_1"></label>
+					<select id="op_1" name="op_1">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="incorrecta">Publicidad</option>
+						<option value="incorrecta">Venta de activos</option>
+						<option value="correcta">Cuota por uso</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="enunciado d-flex">
+					<p style="font-size: 15px; margin: auto; text-align: center;">Se basa en la concesión temporal, a cambio de un pago por utilizar un activo determinado.</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_2"></label>
+					<select id="op_2" name="op_2">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="correcta">Préstamo/alquiler</option>
+						<option value="incorrecta">Cuota por uso</option>
+						<option value="incorrecta">Publicidad</option>
+					</select>
+				</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-12 row">
+			<div class="col-md-4">
+				<div class="enunciado d-flex">
+					<p style="font-size: 15px; margin: auto; text-align: center;">Cuando el cliente debe pagar de manera regular por un servicio.</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_3"></label>
+					<select id="op_3" name="op_3">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="incorrecta">Publicidad</option>
+						<option value="correcta">Cuota de suscripción</option>
+						<option value="incorrecta">Cuota por uso</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<img src="./img/flujoingresos.png" style="width: 100%;">
+			</div>
+			<div class="col-md-4">
+				<div class="enunciado d-flex">
+					<p style="font-size: 15px; margin: auto; text-align: center;">Venta de los derechos de propiedad sobre un producto físico.</p>
+				</div>
+				<div class="seleccionable">
+					<label for="op_4"></label>
+					<select id="op_4" name="op_4">
+						<option value="incorrecta" selected>Seleccionar…</option>
+						<option value="correcta">Venta de activos</option>
+						<option value="incorrecta">Préstamo/alquiler</option>
+						<option value="incorrecta">Publicidad</option>
+					</select>
+				</div>
+			</div>
+			
+		</div>
+	</form>
+	<div style="text-align: center;">
+	      <button onclick="calificar();" style="background: #811111;color: white;font-size: 18px;border-radius: 10px;" class="p-2" data-toggle="modal" data-target="#exampleModal">Calificar</button>
+	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	        <div style="" class="cabeza">
+	          
+	        </div>
+	        <div class="d-flex justify-content-center">
+	          <div style="" class="circulo_modal img_res">
+	            
+	          </div>
+	        </div>
+	        <div style="padding: 10px;">
+	          <div style="color: white;font-size: 15px;">
+	            Su puntaje es: <p class="puntaje"></p>
+	          </div>
+	          <div style="color: white;font-size: 15px;">
+	            <p class="mensaje"></p>
+	          </div>
+	        </div>
+	        <div class="row d-flex justify-content-center btns_modal">
+	          
+	          
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./completar.js"></script>
+</body>
+</html>

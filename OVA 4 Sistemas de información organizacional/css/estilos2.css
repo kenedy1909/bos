@@ -38,10 +38,61 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.fondoCanal1{
+	background-image: url(../assets/img/img_ova/canal1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .hoverUniversalT:hover{
   background: #811111cb!important;
 }
+.bg-color-yellow{
+  background: #ffff00;
+}
+.bg-color-yellow-claro{
+  background: #ffe699;
+}
+.border-yellow{
+  border: 1px solid #ffff00;
+}
+.hoverAmarillo:hover{
+  background: #ffffff;
+}
+.SelectorHAmarillo{
+  background: #ffffff;
+}
+.rota-horizontal{
+  transform: scaleX(-1);
+}
+.hoverSecondary1:hover{
+  padding-left: 3rem !important;
+  transition: ease-out 0.5s all;
+}
+.hoverSecondary2:hover{
+  padding-left: 3rem !important;
+  transition: ease-out 0.5s all;
+}
+
+
+.textSecondary{
+  color: #bdd7ee;
+}
+.bg-color-rosa{
+  background: #f26b61;
+}
+
+
+.trianguloPantallaActivi {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-top: 30px solid var(--bg-color-dark);
+  border-right: 50px solid transparent;
+}
+
+
 
 /*  -------------------------- PANTALLA 2 --------------------------  */
 .puntero{

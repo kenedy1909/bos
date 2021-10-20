@@ -8667,11 +8667,17 @@ html:not([dir="rtl"]) .modal-header .close {
   .modal-xl {
     max-width: 800px;
   }
+  .modal-xxl{
+    max-width:90%;
+  }
 }
 
 @media (min-width: 1200px) {
   .modal-xl {
     max-width: 1140px;
+  }
+  .modal-xxl{
+    max-width:90%;
   }
 }
 

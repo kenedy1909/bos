@@ -327,6 +327,9 @@ p, button{
 .border-rb-25{
 	border-radius: 0 0 25px 25px!important;
 }
+.border-rb-45{
+	border-radius: 0 0 45px 45px!important;
+}
 .border-rt-25{
 	border-radius: 25px 25px 0 0!important;
 }
