@@ -129,6 +129,7 @@ $('#add').on('click', function() {
   //numero de elementos p
   var num_p = $('#bin').find('p').length;
 
+  $('.btns_modal').html(``);
   //recorrer el contenedor y obtener los valores
   var res = [];
   var i = 0;

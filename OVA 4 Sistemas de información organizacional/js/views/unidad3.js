@@ -22,13 +22,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $(".p4-1").on("hover", function () {
@@ -54,19 +52,7 @@ $( document ).ready(function() {
     
 });
 var pdf = `<div class="col-md-12">
-                  <p class="p_white">
-                    <a href="assets/PDF/UNIDAD2/5. La fabrica del sujeto neoliberal (1)2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> La fabrica del sujeto neoliberal<b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/ERICH_FROMM.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">ERICH FROMM<b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/Lecturacomplementada.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Lectura complementada<b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD2/Poemas.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Poemas<b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
+            </div>`;
 $('.pdfs').html(pdf);
 
 function hoverp41(argument) {
@@ -80,6 +66,7 @@ function hoverp42(argument) {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+1+33);
 }
 
 function slide_predeterminado(){

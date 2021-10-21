@@ -107,24 +107,24 @@ function scroll(){
 }
 
 var total = 200;
-function actualizarprogress(){
-    var naveg = 0;
-    var done = 0;
+function actualizarprogress(num){
+    // var naveg = 0;
+    // var done = 0;
     
-    var unidad = $(".container-fluid").data("unidad");
-    if(unidad == 1){
-        naveg = 0;
-    }else if(unidad == 2){
-        naveg = 32;
-    }
-    done = $(".done").length;
-    if(unidad == 2){
-        done--;
-    }
+    // var unidad = $(".container-fluid").data("unidad");
+    // if(unidad == 1){
+    //     naveg = 0;
+    // }else if(unidad == 2){
+    //     naveg = 32;
+    // }
+    // done = $(".done").length;
+    // if(unidad == 2){
+    //     done--;
+    // }
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/42);
+    total_porcentaje = parseInt(((num)*100)/36);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);

@@ -21,14 +21,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $("[data-toggle='toggle']").click(function() {
@@ -178,16 +176,22 @@ $( document ).ready(function() {
     
 });
 var pdf = `<div class="col-md-12">
-                  <p class="p_white">
-                                    <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">SOBRE NECESIDADES<b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">EL GÉNERO DEL CONSUMO EN LA SOCIEDAD DEL CONSUMO <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1/SOBRENECESIDADES.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Una teoría de las necesidades humanas para el desarrollo <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
+                <p class="p_white">
+                    <a href="assets/PDF/UNIDAD1/el_elemento_central_de_la_estrategia.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">el_elemento_central_de_la_estrategia <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                      <a href="assets/PDF/UNIDAD1/cadenaDeValor.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">cadena_De_Valor <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                    <a href="assets/PDF/UNIDAD1/Estatuto_del_Consumidor.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Estatuto_del_Consumidor <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                    <a href="assets/PDF/UNIDAD1/guia_tienda_online.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">guia_tienda_online <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                    <a href="assets/PDF/UNIDAD1/otrasRegulacionesEcommerce.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">otras_Regulaciones_Ecommerce <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+            </div>`;
 $('.pdfs').html(pdf);
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -195,6 +199,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -1280,7 +1285,7 @@ function tiendaSeccion(num,accion) {
                                         A continuación se describen las recomendaciones mas importantes para la elaboración de los términos y condiciones de una tienda virtual, <b>seleccione el botón para conocerlas: </b>
                                     </p>
                                     <div class="row d-flex justify-content-center my-2">
-                                        <a href="#" target="_blank" class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow">
+                                        <a href="assets/img/img_ova/recomendacionesTiendaOnline.png" target="_blank" download class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow">
                                         <img src="assets/img/img_ova/tyc6.png" width="30%" class="position-absolute" style="right: 0;">
                                         <p class="text-white pr-5 h4"><b>DESCARGAR</b></p>
                                         </a>
