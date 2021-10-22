@@ -129,15 +129,15 @@ $('#add').on('click', function() {
   //numero de elementos p
   var num_p = $('#bin').find('p').length;
 
-  $('.btns_modal').html(``);
   //recorrer el contenedor y obtener los valores
   var res = [];
   var i = 0;
-  var puntaje = 100;
+  var puntaje = 0;
   $("#bin p").each(function(){
     res[i] = $(this).text();
     i++;
   });
+
   if (num_p > 5 || num_p < 1) {
       $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
       $('.mensaje').text("¡Puedes hacerlo mejor!");
@@ -146,20 +146,20 @@ $('#add').on('click', function() {
       die();
   }
   for (var i = 0; i < res.length; i++) {
-    if (res[i] == 'incorrecto'){
-      puntaje = puntaje - 33;
+    if (res[i] == 'correcto'){
+      puntaje = puntaje + 20;
     }
   }
   if (puntaje == 100) {
     $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
-  }else if (puntaje >= 50 && puntaje < 99){
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+  }else if (puntaje < 99){
     $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(puntaje+"%");
-    $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
   }
   
 });
