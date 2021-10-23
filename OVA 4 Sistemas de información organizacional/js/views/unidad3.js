@@ -90,86 +90,15 @@ function controlSlides(num){
     slider_num = "";
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","3. Implementación de la tienda online","Implementación de la tienda online");
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","3. Implementación de la tienda online","Implementación de la tienda online");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            break;
-        case 3:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            $("#content").html('');
-            $("#img_cont").html('');
-            break;
-        case 4:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            //$("#pregunta_cont").html('');
-            $("#contenido2").html('');
-            $("#img_2").html('');
-            break;
-        case 5:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            break;
-        case 6:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            break;
-        case 7:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            break;
-        case 8:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            break;
-        case 9:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
-            break;
-        case 10:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
-            slideCount = $('#slider-3 ul li').length;
-            slideWidth = $('#slider-3 ul li').width();
-            slideHeight = $('#slider-3 ul li').height();
-            slider_num = "#slider-3";
-            slider_all();
-            break;
-        case 11:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
-            slideCount = $('#slider-4 ul li').length;
-            slideWidth = $('#slider-4 ul li').width();
-            slideHeight = $('#slider-4 ul li').height();
-            slider_num = "#slider-4";
-            slider_4();
-            break;
-        case 12:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
-            break;
-        case 13:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
-            break;
-        case 14:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
-            break;
-        case 15:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
-            slideCount = $('#slider-5 ul li').length;
-            slideWidth = $('#slider-5 ul li').width();
-            slideHeight = $('#slider-5 ul li').height();
-            slider_num = "#slider-5";
-            slider_5();
-            break;
-        case 16:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
-            break;
-        case 17:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
-            break;
-        case 18:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
-            break;
-        case 19:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            setMigaja("Unidades de aprendizaje","3. Implementación de la tienda online","Implementación de la tienda online");
             break;
         default:
             break;
