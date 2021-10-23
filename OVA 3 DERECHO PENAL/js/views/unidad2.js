@@ -180,6 +180,28 @@ function controlSlides(num){
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            $(".i5").html('')    
+            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            var inputsRy = [];  
+            var i = new Input2(2);
+            i.crear(elementoPadre1);
+            inputsRy.push(i);
+
+            var i2 = new Input2(2);
+            i2.att.value = 70;
+            i2.att.min = 20;
+            i2.att.max = 120;
+            i2.crear(elementoPadre2);
+            inputsRy.push(i2);
+
+            for (var n = 0; n < inputsRy.length; n++) {
+              (function(n) {
+                inputsRy[n].input.addEventListener("input", function() {
+                  inputsRy[n].actualizar();
+                }, false)
+              }(n));
+            }  
             break;    
         case 14:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
