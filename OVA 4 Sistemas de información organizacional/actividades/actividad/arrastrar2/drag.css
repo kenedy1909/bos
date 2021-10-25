@@ -155,6 +155,7 @@ li.over {
 	position: relative;
 	top: -60px;
 	text-align: center;
+  padding: 5px;
 }
 
 .boton_inc{

@@ -139,7 +139,7 @@ $('#add').on('click', function() {
   });
 
   if (num_p > 5 || num_p < 1) {
-      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 100%;">');
       $('.mensaje').text("¡Puedes hacerlo mejor!");
       $('.puntaje').text("0%");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
@@ -151,12 +151,12 @@ $('#add').on('click', function() {
     }
   }
   if (puntaje == 100) {
-    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="img/bien.png" style="max-width: 100%;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
   }else if (puntaje < 99){
-    $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="img/mal.png" style="max-width: 100%;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(puntaje+"%");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
