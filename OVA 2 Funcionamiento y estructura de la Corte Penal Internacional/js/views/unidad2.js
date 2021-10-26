@@ -33,7 +33,7 @@ $( document ).ready(function() {
     slide_link2(tema);
     /*funcion_vanvas();
     funcion_canvas2();*/
-    /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
+    /*setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");*/
     /*slide_predeterminado();*/
 
     /*$(".t_1").on('click', cambiacontenido2(1));
@@ -69,7 +69,7 @@ var sumaslide = 0;
 function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");
             /*$("#content-ova").load("base/unidades/unidad1.html");*/
             tema = 12;
             break;
@@ -80,13 +80,13 @@ function controlSlides2(num){
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");
             
             break;
         case 4:
@@ -131,7 +131,7 @@ function controlSlides2(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");
             
             break;
         case 5:
@@ -176,7 +176,7 @@ function controlSlides2(num){
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");
             
             tema = 1;
             break;
