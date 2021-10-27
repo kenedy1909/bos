@@ -102,7 +102,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", ">");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");
             dragging = "";
             diff = "";
             newTop = "";
@@ -114,16 +114,16 @@ function controlSlides(num){
             break;
         case 2:
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Método hipotético");            
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma", "Estructura de la Corte Penal Internacional");
             dragging = "";
             diff = "";
             newTop = "";
@@ -134,12 +134,36 @@ function controlSlides(num){
             scroll();
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma", "Estructura de la Corte Penal Internacional");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Factores de Competencia");
             
             tema = 1;
+            break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Factores de Competencia");
+            
+            break;
+        case 9:
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Factores de Competencia");
+            
+            break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Requisitos de admisibilidad");
+            
+            break;
+        case 11:
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Requisitos de admisibilidad");
+            
+            break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Requisitos de admisibilidad");
+            
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Requisitos de admisibilidad");
+            
             break;
         default:
             break;

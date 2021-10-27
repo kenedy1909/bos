@@ -67,123 +67,123 @@ function slide_link2(num){
 }
 var sumaslide = 0;
 function controlSlides2(num){
-    switch (parseInt(num)) {
-        case 0:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
-            /*$("#content-ova").load("base/unidades/unidad1.html");*/
-            tema = 12;
-            break;
-        case 1:
-            var pdf = `<div class="col-md-12">
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Cómo_investigan_los_economistas.pdf</a>
-                              </p>
-                            </div>`;
-            $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
-            break;
-        case 2:
-            setMigaja("Unidades de aprendizaje","2. Acercamiento epistemológico a la economía como ciencia ","El método en la economía");
-            break;
-        case 3:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            
-            break;
-        case 4:
-            sumaslide++;
-            if (sumaslide < 2) {
-                var slideCount = $('#slider2 ul li').length;
-                var slideWidth = $('#slider2 ul li').width();
-                var slideHeight = $('#slider2 ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider2').css({ width: '100%', height: '920px' });
-                
-                $('#slider2 ul').css({ width: '100%'});
-                
-                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+  switch (parseInt(num)) {
+      case 0:
+          setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");
+          /*$("#content-ova").load("base/unidades/unidad1.html");*/
+          tema = 12;
+          break;
+      case 1:
+          var pdf = `<div class="col-md-12">
+                            <p class="p_white size_20">
+                                <a href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Cómo_investigan_los_economistas.pdf</a>
+                            </p>
+                          </div>`;
+          $('.pdfs').html(pdf);
+          setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");
+          break;
+      case 2:
+          setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");
+          break;
+      case 3:
+          setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");
+          
+          break;
+      case 4:
+          sumaslide++;
+          if (sumaslide < 2) {
+              var slideCount = $('#slider2 ul li').length;
+              var slideWidth = $('#slider2 ul li').width();
+              var slideHeight = $('#slider2 ul li').height();
+              var sliderUlWidth = slideCount * slideWidth;
+              
+              $('#slider2').css({ width: '100%', height: '920px' });
+              
+              $('#slider2 ul').css({ width: '100%'});
+              
+              $('#slider2 ul li:last-child').prependTo('#slider2 ul');
 
-                function moveLeft2() {
-                    $('#slider2 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-                        $('#slider2 ul').css('left', '');
-                    });
-                };
+              function moveLeft2() {
+                  $('#slider2 ul').animate({
+                      left: + slideWidth
+                  }, 200, function () {
+                      $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                      $('#slider2 ul').css('left', '');
+                  });
+              };
 
-                function moveRight2() {
-                    $('#slider2 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
-                        $('#slider2 ul').css('left', '');
-                    });
-                };
+              function moveRight2() {
+                  $('#slider2 ul').animate({
+                      left: - slideWidth
+                  }, 200, function () {
+                      $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                      $('#slider2 ul').css('left', '');
+                  });
+              };
 
-                $('a.control_prev2').click(function (e) {
-                    moveLeft2();
-                    e.preventDefault();
-                });
+              $('a.control_prev2').click(function (e) {
+                  moveLeft2();
+                  e.preventDefault();
+              });
 
-                $('a.control_next2').click(function (e) {
-                    moveRight2();
-                    e.preventDefault();
-                });
-            }
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            
-            break;
-        case 5:
-            sumaslide++;
-            if (sumaslide < 2) {
-                var slideCount = $('#slider2 ul li').length;
-                var slideWidth = $('#slider2 ul li').width();
-                var slideHeight = $('#slider2 ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider2').css({ width: '100%', height: '920px' });
-                
-                $('#slider2 ul').css({ width: '90%'});
-                
-                $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+              $('a.control_next2').click(function (e) {
+                  moveRight2();
+                  e.preventDefault();
+              });
+          }
+          setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");
+          
+          break;
+      case 5:
+          sumaslide++;
+          if (sumaslide < 2) {
+              var slideCount = $('#slider2 ul li').length;
+              var slideWidth = $('#slider2 ul li').width();
+              var slideHeight = $('#slider2 ul li').height();
+              var sliderUlWidth = slideCount * slideWidth;
+              
+              $('#slider2').css({ width: '100%', height: '920px' });
+              
+              $('#slider2 ul').css({ width: '90%'});
+              
+              $('#slider2 ul li:last-child').prependTo('#slider2 ul');
 
-                function moveLeft2() {
-                    $('#slider2 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider2 ul li:last-child').prependTo('#slider2 ul');
-                        $('#slider2 ul').css('left', '');
-                    });
-                };
+              function moveLeft2() {
+                  $('#slider2 ul').animate({
+                      left: + slideWidth
+                  }, 200, function () {
+                      $('#slider2 ul li:last-child').prependTo('#slider2 ul');
+                      $('#slider2 ul').css('left', '');
+                  });
+              };
 
-                function moveRight2() {
-                    $('#slider2 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider2 ul li:first-child').appendTo('#slider2 ul');
-                        $('#slider2 ul').css('left', '');
-                    });
-                };
+              function moveRight2() {
+                  $('#slider2 ul').animate({
+                      left: - slideWidth
+                  }, 200, function () {
+                      $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                      $('#slider2 ul').css('left', '');
+                  });
+              };
 
-                $('a.control_prev2').click(function (e) {
-                    moveLeft2();
-                    e.preventDefault();
-                });
+              $('a.control_prev2').click(function (e) {
+                  moveLeft2();
+                  e.preventDefault();
+              });
 
-                $('a.control_next2').click(function (e) {
-                    moveRight2();
-                    e.preventDefault();
-                });
-            }
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
-            
-            tema = 1;
-            break;
-        
-        default:
-            break;
-    }
+              $('a.control_next2').click(function (e) {
+                  moveRight2();
+                  e.preventDefault();
+              });
+          }
+          setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte","De los crímenes internacionales");
+          
+          tema = 1;
+          break;
+      
+      default:
+          break;
+  }
 }
 function crimenes() {
   $('#smartwizard').smartWizard("goToStep", 1);
