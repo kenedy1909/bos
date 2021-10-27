@@ -1228,11 +1228,7 @@ function argumentos(){
         $(".circle-argumento-2").removeClass('bg-circle-a');
         $(".circle-argumento-2").addClass('bg-circle-am');
         var text1 =`
-                    <p class="p_black text-center">Probar que el argumento: </p>
-                    <p class="p_black text-center"> p → q ,~ q / ~ p  es un argumento válido.</p>
-                    <p class="p_black text-center">         p → q</p>
-                    <p class="p_black text-center">         ~ q   </p>
-                    <p class="p_black text-center">                 ~ p</p>
+                        <img src="assets/img/img_ova/formulaArgumento.png" alt="" class="img-100">
                    `;
         var text2 =`
                    <p class="p_black justificado pb-3"><b>Solución:</b>   se muestran los valores de verdad de las premisas y de la conclusión, para todas las asignaciones posibles de las variables proposicionales que intervienen:</p>
@@ -1280,7 +1276,7 @@ function formulas(num){
         var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" data-toggle="modal" data-target="#modalfor1" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
         $("#info-formula").html(info);
     }else if (num == 2) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/Formula solucion 2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/formulasolucion2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
         $("#info-formula").html(info);
     }
 }
