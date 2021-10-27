@@ -1146,26 +1146,52 @@ function removeefect(num){
     
 }
 
+// funcion primera pantalla para mostrar el contenido
 function agregarContenido(num,estado) {
+    
 
-    $('.contenidoAgregar1, .contenidoAgregar2').addClass('d-none');
+    // $('').addClass('d-none');
+    $('.contenidoAgregar1,.contenidoAgregar2').addClass('hidden');
 
+    $('.cambiarBGtargeta1, .cambiarBGtargeta2').addClass('bg-color-claro');
+    $('.cambiarBGtargeta1, .cambiarBGtargeta2').removeClass('bg-color');
 
     if (estado=='agregar') {
         if (num==1) {
             $('.agregar1').addClass('ocultarAgregar1');
             $('.agregar1').removeClass('agregar1');
             
-            $('.contenidoAgregar1').removeClass('d-none');
+            $('.contenidoAgregar1').removeClass('hidden');
+            $('.contenidoAgregar1').addClass('position-absolute');
+            
+            $('.cambiarBGtargeta1').removeClass('bg-color-claro');
+            $('.cambiarBGtargeta1').addClass('bg-color');
             
             $('.ocultarAgregar1').attr('onclick',"agregarContenido(1,'ocultar')");
-        }else if (num==2) {            
+
+
+            $('.ocultarAgregar2').addClass('agregar2');
+            $('.ocultarAgregar2').removeClass('ocultarAgregar2');
+            $('.contenidoAgregar2').addClass('hidden');
+            $('.agregar2').attr('onclick',"agregarContenido(2,'agregar')");
+
+        }else if (num==2) {
             $('.agregar2').addClass('ocultarAgregar2');
             $('.agregar2').removeClass('agregar2');
             
-            $('.contenidoAgregar2').removeClass('d-none');
+            $('.contenidoAgregar2').removeClass('hidden');
+            $('.contenidoAgregar2').addClass('position-absolute');
+            
+            $('.cambiarBGtargeta2').removeClass('bg-color-claro');
+            $('.cambiarBGtargeta2').addClass('bg-color');
             
             $('.ocultarAgregar2').attr('onclick',"agregarContenido(2,'ocultar')");
+
+
+            $('.ocultarAgregar1').addClass('agregar1');
+            $('.ocultarAgregar1').removeClass('ocultarAgregar1');
+            $('.contenidoAgregar1').addClass('hidden');
+            $('.agregar1').attr('onclick',"agregarContenido(1,'agregar')");
         }
 
     }else if(estado=='ocultar'){
@@ -1173,86 +1199,83 @@ function agregarContenido(num,estado) {
         if (num==1) {
             $('.ocultarAgregar1').addClass('agregar1');
             $('.ocultarAgregar1').removeClass('ocultarAgregar1');
-            
-            $('.contenidoAgregar1').addClass('d-none');
-            
+            $('.contenidoAgregar1').addClass('hidden');
+            $('.contenidoAgregar1').removeClass('position-absolute');
             $('.agregar1').attr('onclick',"agregarContenido(1,'agregar')");
         }else if (num==2) {            
             $('.ocultarAgregar2').addClass('agregar2');
             $('.ocultarAgregar2').removeClass('ocultarAgregar2');
-            
-            $('.contenidoAgregar2').addClass('d-none');
-            
+            $('.contenidoAgregar2').addClass('hidden');
+            $('.contenidoAgregar2').removeClass('position-absolute');
             $('.agregar2').attr('onclick',"agregarContenido(2,'agregar')");
         }
     }
 }
 
+
+// funcion segunda pantalla para mostrar el contenido
 function agregarTarjeta(num,estado) {
 
     $('.contenidoAgregar1_1, .contenidoAgregar2_1, .contenidoAgregar3, .contenidoAgregar4').addClass('hidden');
-
+    $('.imgTarg3').addClass('d-none');
 
     if (estado=='agregar') {
         if (num==1) {
-            $('.agregar1_1').addClass('ocultarAgregar1_1');
-            $('.agregar1_1').removeClass('agregar1_1');
-            
             $('.contenidoAgregar1_1').removeClass('hidden');
             
-            $('.ocultarAgregar1_1').attr('onclick',"agregarTarjeta(1,'ocultar')");
-        }else if (num==2) {            
-            $('.agregar2_1').addClass('ocultarAgregar2_1');
-            $('.agregar2_1').removeClass('agregar2_1');
+            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'ocultar')");
             
+            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
+            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
+            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+
+        }else if (num==2) {            
             $('.contenidoAgregar2_1').removeClass('hidden');
             
-            $('.ocultarAgregar2_1').attr('onclick',"agregarTarjeta(2,'ocultar')");
+            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'ocultar')");
+
+            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
+            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
+            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+
         }else if (num==3) {            
-            $('.agregar3').addClass('ocultarAgregar3');
-            $('.agregar3').removeClass('agregar3');
-            
             $('.contenidoAgregar3').removeClass('hidden');
+            $('.imgTarg3').removeClass('d-none');
             
-            $('.ocultarAgregar3').attr('onclick',"agregarTarjeta(3,'ocultar')");
+            $('.agregar3').attr('onclick',"agregarTarjeta(3,'ocultar')");
+
+            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
+            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
+            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+
         }else if (num==4) {            
-            $('.agregar4').addClass('ocultarAgregar4');
-            $('.agregar4').removeClass('agregar4');
-            
             $('.contenidoAgregar4').removeClass('hidden');
             
-            $('.ocultarAgregar4').attr('onclick',"agregarTarjeta(4,'ocultar')");
+            $('.agregar4').attr('onclick',"agregarTarjeta(4,'ocultar')");
+
+            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
+            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
+            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
+
         }
 
     }else if(estado=='ocultar'){
 
         if (num==1) {
-            $('.ocultarAgregar1_1').addClass('agregar1_1');
-            $('.ocultarAgregar1_1').removeClass('ocultarAgregar1_1');
-            
             $('.contenidoAgregar1_1').addClass('hidden');
-            
+
             $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
-        }else if (num==2) {            
-            $('.ocultarAgregar2_1').addClass('agregar2_1');
-            $('.ocultarAgregar2_1').removeClass('ocultarAgregar2_1');
-            
+        }else if (num==2) {
             $('.contenidoAgregar2_1').addClass('hidden');
-            
+
             $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
-        }else if (num==3) {            
-            $('.ocultarAgregar3').addClass('agregar3');
-            $('.ocultarAgregar3').removeClass('ocultarAgregar3');
-            
+        }else if (num==3) {
             $('.contenidoAgregar3').addClass('hidden');
-            
+
             $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
-        }else if (num==4) {            
-            $('.ocultarAgregar4').addClass('agregar4');
-            $('.ocultarAgregar4').removeClass('ocultarAgregar4');
-            
+        }else if (num==4) {
             $('.contenidoAgregar4').addClass('hidden');
-            
+
             $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
         }
     }

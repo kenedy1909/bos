@@ -33,6 +33,37 @@
 	color: white!important;
 }
 
+.contenidoAgregarTrans1, .contenidoAgregarTrans2{
+	transition: all .5s ease!important;
+}
+.trianguloTrans {
+	width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 32px solid #c00000bb;
+    border-right: 50px solid transparent;
+    transform: rotate(27deg);
+    position: relative;
+    top: -37px;    
+	left: 72px; 
+}
+.trianguloTrans2 {
+	width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 32px solid #c00000bb;
+    border-right: 50px solid transparent;
+    transform: rotate(30deg);
+    position: relative;
+    top: -42px;
+    left: 72px;
+}
+.hoverColorWhite:hover p{
+	color: white!important;
+}
+
+
+
 
 .bg-color{
 	background: var(--bg-color)!important;
