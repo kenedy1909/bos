@@ -158,9 +158,10 @@
 
 /*encabezado*/
 .info_actividad{
-    background: #b4c6e7;
+    background: #DEEBF7;
     border-radius: 20px;
     padding: 20px;
+    color: black;
 }
 .pt-3{
     padding-top: 1.5em;

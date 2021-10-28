@@ -61,6 +61,12 @@
 .hoverColorWhite:hover p{
 	color: white!important;
 }
+.bgFondoFlechas{
+	background: url(../assets/img/img_ova/fondoFlechas.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
 
 
 
