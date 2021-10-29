@@ -1589,8 +1589,8 @@ function pestanias(num) {
         $('#contenidoCaractU9').html(``);
 
         var data = `
-                    <p class="text-justify pb-3"><b>Así por ejemplo,</b> se hace necesario revisar cómo “El lenguaje empleado por las comunidades indígenas que destaquen hoy el buen vivir debe ser objeto de observación, análisis y atención” (Rojas Quiceno, 2013, p.33), especialmente en el contexto de las comunidades indígenas latinoamericanas.</p>
-                    <img src="assets/img/img_ova/americano1.png" width="60%">
+                    <p class="text-justify pb-3 transition-on"><b>Así por ejemplo,</b> se hace necesario revisar cómo “El lenguaje empleado por las comunidades indígenas que destaquen hoy el buen vivir debe ser objeto de observación, análisis y atención” (Rojas Quiceno, 2013, p.33), especialmente en el contexto de las comunidades indígenas latinoamericanas.</p>
+                    <img src="assets/img/img_ova/americano1.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
     }else if (num == 2) {
@@ -1600,7 +1600,7 @@ function pestanias(num) {
         $('#contenidoCaractU9').html(``);
 
         var data = `
-                    <p class="text-justify pb-3">El buen vivir se ha elaborado a partir del encuentro de prácticas ancestrales y que, por tanto, se encuentra asociado a una comprensión de vida dentro de cada comunidad indígena, por lo que no existe una definición exacta del concepto de buen vivir en el idioma español.
+                    <p class="text-justify pb-3 transition-on">El buen vivir se ha elaborado a partir del encuentro de prácticas ancestrales y que, por tanto, se encuentra asociado a una comprensión de vida dentro de cada comunidad indígena, por lo que no existe una definición exacta del concepto de buen vivir en el idioma español.
                         <br><br>
                         “Cada cultura le ha dado sus propios significados de acuerdo a su cosmovisión, sin embargo, es posible identificar elementos comunes entre las distintas acepciones” (Alimonda 2012, 34), y esa es precisamente la tarea de la presente investigación, a saber, dar cuenta de esos puntos comunes desde el marco conceptual de la filosofía orteguiana. 
                     </p>
@@ -1613,8 +1613,8 @@ function pestanias(num) {
         $('#contenidoCaractU9').html(``);
 
         var data = `
-                    <p class="text-justify pb-3">“Cuando el Buen Vivir es tomado como objetivo, representante del interés general y punto de partida del Estado, como sucede en Ecuador y Bolivia, las diferentes concepciones deben articularse y devolverse a las comunidades a través de políticas públicas generales, con matices particulares según el imaginario de cada pueblo del que fue tomado”   (Alimonda 2012, 35). </p>
-                    <img src="assets/img/img_ova/orgullo1.png" width="60%">
+                    <p class="text-justify pb-3 transition-on">“Cuando el Buen Vivir es tomado como objetivo, representante del interés general y punto de partida del Estado, como sucede en Ecuador y Bolivia, las diferentes concepciones deben articularse y devolverse a las comunidades a través de políticas públicas generales, con matices particulares según el imaginario de cada pueblo del que fue tomado”   (Alimonda 2012, 35). </p>
+                    <img src="assets/img/img_ova/orgullo1.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
     }else if (num == 4) {
@@ -1624,9 +1624,9 @@ function pestanias(num) {
         $('#contenidoCaractU9').html(``);
 
         var data = `
-                    <p class="text-justify pb-3">Desde este punto de vista, el buen vivir no solo debe articularse por vía del Estado, sino como necesidad teórica, en tanto permite llevar con mayor facilidad el buen vivir a su relevancia desde distintas cosmovisiones.</p>
-                    <img src="assets/img/img_ova/ansiedad.png" width="60%">                            
-                    <p class="text-justify pb-3">El bien es algo subjetivo. “En lo que respecta a la conceptualización de las áreas morales, el bien se halla incorporado en realidades concretas y lo bueno es lo conveniente, lo honesto, lo correcto o útil para la vida” (Rojas Quiceno 2013, 35). </p>
+                    <p class="text-justify pb-3 transition-on">Desde este punto de vista, el buen vivir no solo debe articularse por vía del Estado, sino como necesidad teórica, en tanto permite llevar con mayor facilidad el buen vivir a su relevancia desde distintas cosmovisiones.</p>
+                    <img src="assets/img/img_ova/ansiedad.png" width="60%" class="transition-on">                            
+                    <p class="text-justify pb-3 transition-on">El bien es algo subjetivo. “En lo que respecta a la conceptualización de las áreas morales, el bien se halla incorporado en realidades concretas y lo bueno es lo conveniente, lo honesto, lo correcto o útil para la vida” (Rojas Quiceno 2013, 35). </p>
                     `;
         $('#contenidoCaractU9').html(data);
     }else if (num == 5) {
@@ -1636,8 +1636,8 @@ function pestanias(num) {
         $('#contenidoCaractU9').html(``);
 
         var data = `
-                    <p class="text-justify pb-3">>El bien también puede entenderse como algo convencional. En la ontología moderna, la concepción semántica del bien, da a entender que se trata de “un término que fácilmente puede sustituir el término bueno, en es muy bueno” (Ferrater Mora 1979,10). Lo bueno es la ejecución de un valor positivo. </p>
-                    <img src="assets/img/img_ova/pensamiento-positivo.png" width="60%">
+                    <p class="text-justify pb-3 transition-on">>El bien también puede entenderse como algo convencional. En la ontología moderna, la concepción semántica del bien, da a entender que se trata de “un término que fácilmente puede sustituir el término bueno, en es muy bueno” (Ferrater Mora 1979,10). Lo bueno es la ejecución de un valor positivo. </p>
+                    <img src="assets/img/img_ova/pensamiento-positivo.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
     }else if (num == 6) {
@@ -1647,8 +1647,8 @@ function pestanias(num) {
         $('#contenidoCaractU9').html(``);
 
         var data = `
-                    <p class="text-justify pb-3">Desde la fundamentación Kantiana, lo bueno refiere a “la buena voluntad, pero no es buena por lo que efectúe o realice, sino por el querer, es decir, es buena en sí misma, como un valor absoluto” (citado por Urdanoz 1991, 86), pero el bien y el mal no son principios de orden moral sino objetos de la voluntad.</p>
-                    <img src="assets/img/img_ova/conciencia-de-si-mismo.png" width="60%">
+                    <p class="text-justify pb-3 transition-on">Desde la fundamentación Kantiana, lo bueno refiere a “la buena voluntad, pero no es buena por lo que efectúe o realice, sino por el querer, es decir, es buena en sí misma, como un valor absoluto” (citado por Urdanoz 1991, 86), pero el bien y el mal no son principios de orden moral sino objetos de la voluntad.</p>
+                    <img src="assets/img/img_ova/conciencia-de-si-mismo.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
     }

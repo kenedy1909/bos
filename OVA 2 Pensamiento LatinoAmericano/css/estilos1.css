@@ -165,8 +165,23 @@
 	border: solid 5px white!important;
 }
 
+.menos-margin-5{
+	margin-left: -5px!important;
+}
+.menos-margin-10{
+	margin-left: -10px!important;
+}
+.menos-margin-15{
+	margin-left: -15px!important;
+}
+.menos-margin-20{
+	margin-left: -20px!important;
+}
 .menos-margin-25{
 	margin-left: -25px!important;
+}
+.menos-margin-30{
+	margin-left: -30px!important;
 }
 .menos-margin-50{
 	margin-left: -50px!important;
@@ -182,6 +197,15 @@
 }
 .menos-margin-150{
 	margin-left: -150px!important;
+}
+.menos-marginR-10{
+	margin-right: -10px!important;
+}
+.menos-marginR-15{
+	margin-right: -15px!important;
+}
+.menos-marginR-25{
+	margin-right: -25px!important;
 }
 .menos-marginR-50{
 	margin-right: -50px!important;
@@ -200,6 +224,9 @@
 }
 .menos-marginT-10{
 	margin-top: -10px!important;
+}
+.menos-marginT-15{
+	margin-top: -15px!important;
 }
 .menos-marginT-25{
 	margin-top: -25px!important;
@@ -225,14 +252,23 @@
 .menos-marginB-10{
 	margin-bottom: -10px!important;
 }
+.menos-marginB-15{
+	margin-bottom: -15px!important;
+}
 .menos-marginB-25{
 	margin-bottom: -25px!important;
 }
 .menos-marginB-50{
 	margin-bottom: -50px!important;
 }
+.menos-marginB-75{
+	margin-bottom: -75px!important;
+}
 .menos-marginB-100{
 	margin-bottom: -100px!important;
+}
+.menos-marginB-150{
+	margin-bottom: -150px!important;
 }
 .menos-marginB-200{
 	margin-bottom: -200px!important;
