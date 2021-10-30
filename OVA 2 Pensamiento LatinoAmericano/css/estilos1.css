@@ -387,9 +387,9 @@
 	height: 100%;
 	min-height: 400px;
 }
-.h-200{
+/* .h-200{
 	height: 200px;
-}
+} */
 .transition-on{
 	transition: all 0.4s;
 }

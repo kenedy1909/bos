@@ -364,4 +364,9 @@
 .btn-mostaza{
     background: #008F3E;
     color: #fff;
+    transition: all .3s ease-out;
+}
+.btn-mostaza:hover{
+    color: #fff;
+    background: #008f3ec6;
 }

@@ -151,12 +151,16 @@ function controlSlides(num){
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause(); 
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
