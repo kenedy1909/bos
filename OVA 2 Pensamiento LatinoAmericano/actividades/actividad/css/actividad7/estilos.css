@@ -54,7 +54,7 @@ table {
     height: 35px;
 }
 
-svg.svg-radio-elegant: not(: root) {
+svg.svg-radio-elegant:not(:root) {
     overflow: hidden;
 }
 
@@ -146,7 +146,7 @@ span.checked svg.svg2 {
 }
 
 .info_actividad{
-    background: #b4c6e7;
+    background: #ddeaf6;
     border-radius: 20px;
     padding: 20px;
 }

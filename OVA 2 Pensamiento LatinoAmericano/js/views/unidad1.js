@@ -1664,7 +1664,7 @@ function tarjetasU14(num,posicion) {
             $('#tarjeta1U14').html(``);
             var data = `
                     <div class="fondo1U14 w-100">
-                        <div class="row px-5 h-200 w-100 bg-trasparente cursor"  onclick="tarjetasU14(1,'s')">
+                        <div class="row px-5 py-3 h-200 w-100 bg-trasparente cursor"  onclick="tarjetasU14(1,'s')">
                         <div class="col-12 mb-5 pb-3">
                             <div class="w-75 p-4">
                             <p class="color-title text-justify text-black"> Más adelante, en los inicios del siglo XX, la Alianza Popular Revolucionaria Americana (APRA) marcará el pensamiento "populista" de esta generación y el tema de las negritudes reaparecerá, se trata de una generación      “  anti positivista” y espiritualista influida por Ortega y Gasset, vive un fenómeno parecido al de algún antiimperialismo anglosajón como el sucedido en la España de la generación del año 1998 haciendo uso de categorías   "ambiguas" (Dussel 1994: 43,44).</p>
@@ -1677,11 +1677,11 @@ function tarjetasU14(num,posicion) {
         }else if (num == 2) {
             $('#tarjeta2U14').html(``);
             var data = `
-                    <div class="row bg-white px-5 h-200 w-100 cursor">
+                    <div class="row bg-white px-5 py-3 h-200 w-100 cursor">
                         <div class="col-12 mb-5 pb-3">
                         <div class="w-100"  onclick="tarjetasU14(2,'s')">
-                            <p class="text-justify">La “Filosofía de la liberación” fue una ruptura de la praxis y del pueblo. La filosofía de la liberación se adelantó a su época impostando geopolíticamente la posibilidad de un pensar filosófico crítico desde la periferia del capitalismo…El movimiento se ocupa en el presente en la impostación intercultural de la filosofía y en la cuestión de la “descolonización”, y es por eso que, la filosofía de la liberación es sin duda la raíz crítica de una filosofía del buen vivir en Latinoamérica; en esa medida, el buen vivir no corresponde en principio, a un concepto político sino a un asunto ético y filosófico que ha alcanzado protagonismo social, económico y jurídico y no es más que un desarrollo de la filosofía de la liberación. </p>
-                            <p class="color-title">Haga clic en la flecha para continuar con la información</p>
+                            <p class="text-justify text-black">La “Filosofía de la liberación” fue una ruptura de la praxis y del pueblo. La filosofía de la liberación se adelantó a su época impostando geopolíticamente la posibilidad de un pensar filosófico crítico desde la periferia del capitalismo…El movimiento se ocupa en el presente en la impostación intercultural de la filosofía y en la cuestión de la “descolonización”, y es por eso que, la filosofía de la liberación es sin duda la raíz crítica de una filosofía del buen vivir en Latinoamérica; en esa medida, el buen vivir no corresponde en principio, a un concepto político sino a un asunto ético y filosófico que ha alcanzado protagonismo social, económico y jurídico y no es más que un desarrollo de la filosofía de la liberación. </p>
+                            <p class="color-title ">Haga clic en la flecha para continuar con la información</p>
                         </div>
                         <div class="w-100 d-flex justify-content-end menos-marginT-25">
                             <i class="fas fa-caret-right color-text h1 cursor" onclick="tarjetasU14(2,'t')"></i>
@@ -1695,7 +1695,7 @@ function tarjetasU14(num,posicion) {
         if (num == 1) {
             $('#tarjeta1U14').html(``);
             var data = `
-                <div class="row bg-color-verde2 px-5 h-200 w-100 cursor" onclick="tarjetasU14(1,'p')">
+                <div class="row bg-color-verde2 px-5 py-3 h-200 w-100 cursor" onclick="tarjetasU14(1,'p')">
                     <div class="col-7 d-flex align-items-end mb-5 pb-3">
                     <div class="w-100">
                         <p class="color-title h5"> Alianza Popular Revolucionaria Americana </p>
@@ -1711,7 +1711,7 @@ function tarjetasU14(num,posicion) {
         }else if (num == 2) {
             $('#tarjeta2U14').html(``);
             var data = `
-                    <div class="row bg-color-verde3 px-5 h-200 w-100 cursor" onclick="tarjetasU14(2,'p')">
+                    <div class="row bg-color-verde3 px-5 py-3 h-200 w-100 cursor" onclick="tarjetasU14(2,'p')">
                         <div class="col-7 d-flex align-items-end mb-5 pb-3">
                         <div class="w-100">
                             <p class="color-title h5"> Filosofia de la liberación </p>
@@ -1729,10 +1729,10 @@ function tarjetasU14(num,posicion) {
         if (num == 2) {
             $('#tarjeta2U14').html(``);
             var data = `
-                    <div class="row bg-white px-5 h-200 w-100">
+                    <div class="row bg-white px-5 py-3 h-200 w-100">
                         <div class="col-7 mb-5 pb-3">
                         <div class="w-100">
-                            <p class="text-justify">“El Buen Vivir” se ha elaborado a partir del encuentro de prácticas ancestrales y que, por tanto, se encuentra asociado a una comprensión de vida dentro de cada comunidad indígena, por lo que no existe una definición exacta del concepto de “Buen Vivir”, en el idioma español. “Cada cultura le ha dado sus propios significados de acuerdo a su cosmovisión. Sin embargo, es posible identificar elementos comunes entre las distintas acepciones” (Alimonda 2012, 34).</p>
+                            <p class="text-justify text-black">“El Buen Vivir” se ha elaborado a partir del encuentro de prácticas ancestrales y que, por tanto, se encuentra asociado a una comprensión de vida dentro de cada comunidad indígena, por lo que no existe una definición exacta del concepto de “Buen Vivir”, en el idioma español. “Cada cultura le ha dado sus propios significados de acuerdo a su cosmovisión. Sin embargo, es posible identificar elementos comunes entre las distintas acepciones” (Alimonda 2012, 34).</p>
                         </div>
                         </div>
                         <div class="col-5 mb-5 pb-3">
