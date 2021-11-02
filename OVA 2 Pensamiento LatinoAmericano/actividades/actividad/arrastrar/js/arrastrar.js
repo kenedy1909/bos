@@ -45,25 +45,25 @@ function calificar(){
 	    
 	    i4++;
 	});
-	var puntaje = 100;
+	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'dos' || res1[i] == 'tres' || res1[i] == 'cuatro'){
-	    puntaje = puntaje - 25;
+	  if (res1[i] == 'uno'){
+	    puntaje = puntaje + 25;
 	  }
 	}
 	for (var i = 0; i < res2.length; i++){
-	  if (res2[i] == 'uno' || res2[i] == 'tres' || res2[i] == 'cuatro'){
-	    puntaje = puntaje - 25;
+	  if (res2[i] == 'dos'){
+	    puntaje = puntaje + 25;
 	  }
 	}
 	for (var i = 0; i < res3.length; i++){
-	  if (res3[i] == 'uno' || res3[i] == 'dos' || res3[i] == 'cuatro'){
-	    puntaje = puntaje - 25;
+	  if (res3[i] == 'tres'){
+	    puntaje = puntaje + 25;
 	  }
 	}
 	for (var i = 0; i < res4.length; i++){
-	  if (res4[i] == 'uno' || res4[i] == 'dos' || res4[i] == 'tres'){
-	    puntaje = puntaje - 25;
+	  if (res4[i] == 'cuatro'){
+	    puntaje = puntaje + 25;
 	  }
 	}
 	if (puntaje >= 75) {

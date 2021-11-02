@@ -169,10 +169,10 @@ function calificar(){
     i++;
   });
 
-  var puntaje = 100;
+  var puntaje = 0;
   for (var i = 0; i < res.length; i++){
     if (res[i] == 'false'){
-      puntaje = puntaje - 33.3;
+      puntaje = puntaje + 33.3;
     }
   }
   /*alert(Math.round(puntaje));*/

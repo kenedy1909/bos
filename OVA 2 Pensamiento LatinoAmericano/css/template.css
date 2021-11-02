@@ -276,7 +276,7 @@ iframe{
   background: none;
     display: block;
     margin: 4px 6px;
-    max-width: 100%;
+    max-width: 90%;
     position: relative;
     top: 0px;
 }

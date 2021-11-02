@@ -218,10 +218,11 @@ function calificar(){
 	for (var i = 0; i < 10; i++) {
 		res[i] = $("#op_"+i).val();
 	}
-	var puntaje = 100;
+	var puntaje = 0;
+
 	for (var i = 0; i < res.length; i++) {
-		if (res[i] == 'incorrecta') {
-			puntaje = puntaje - 10;
+		if (res[i] == 'correcta') {
+			puntaje = puntaje + 10;
 			
 		}
 	}
