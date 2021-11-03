@@ -44,7 +44,7 @@
     border-right: 50px solid transparent;
     transform: rotate(27deg);
     position: relative;
-    top: -37px;    
+    top: -31px;    
 	left: 72px; 
 }
 .trianguloTrans2 {
@@ -55,7 +55,7 @@
     border-right: 50px solid transparent;
     transform: rotate(30deg);
     position: relative;
-    top: -42px;
+    top: -35px;
     left: 72px;
 }
 .hoverColorWhite:hover p{
@@ -345,7 +345,7 @@
 .fondoU1{
 	width: 100%;
 	height: 570px;
-	background: url(../assets/img/img_ova/diversidad.png);
+	background: url(../assets/img/img_ova/diversi.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
