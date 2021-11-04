@@ -16,9 +16,6 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-
-    
-
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -95,11 +92,6 @@ $( document ).ready(function() {
     $(".p13").on("click", function() {
         $(".globo").show();
     })
-
-    
-
-    
-
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     var knob = "";
@@ -155,10 +147,6 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
 }
-
-
-
-
 
 function controlSlides(num){
     switch (parseInt(num)) {

@@ -150,11 +150,6 @@ $( document ).ready(function() {
         $(".p12").hide();
         $(".p12-5").show();
     })
-
-    
-
-    
-
     canvas_1();
 
     $(".circle-verde").on('click' , circles);

@@ -50,6 +50,7 @@ $( document ).ready(function() {
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
     slide_link(tema);
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     
 });
 var pdf = `<div class="col-md-12">

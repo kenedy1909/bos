@@ -91,13 +91,7 @@ $( document ).ready(function() {
 
     /*scroll();*/
     slide_link(tema);
-
-
-
-
-
-    
-    
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
