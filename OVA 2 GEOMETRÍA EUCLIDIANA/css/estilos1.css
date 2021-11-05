@@ -10,6 +10,10 @@
 	background-color: #47747c;
 }
 
+.azul_oscuro_n1{
+	background-color: #00688c;
+}
+
 .azul_muy_claro2{
 	background-color:  #c4e2ff;
 }
@@ -675,6 +679,9 @@ p, button{
 }
 .borde_azul_left{
   border-left: solid 1px #321fdb;
+}
+.borde_azul_left_1{
+  border-left: solid 2px #B7CBD9;
 }
 .borde_azul_right{
   border-right: solid 1px #321fdb;
