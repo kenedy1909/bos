@@ -40,19 +40,19 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a href="assets/PDF/Unidad 1/actividad_complementaria1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/actividad_complementaria1.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
-                        <a href="assets/PDF/Unidad 1/actividad_complementaria2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/actividad_complementaria2.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
-                        <a href="assets/PDF/Unidad 1/actividad_complementaria3.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria3.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/actividad_complementaria3.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria3.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
-                        <a href="assets/PDF/Unidad 1/actividad_complementaria4.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria4.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/actividad_complementaria4.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria4.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
-                        <a href="assets/PDF/Unidad 1/actividad_complementaria5.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria5.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/actividad_complementaria5.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria5.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);

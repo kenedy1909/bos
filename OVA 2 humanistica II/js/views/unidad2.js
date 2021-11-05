@@ -32,7 +32,7 @@ $( document ).ready(function() {
     /*slide_predeterminado();*/
     var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a href="assets/PDF/Unidad 1/etica_como_esencia.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Etica_como_esencia.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/etica_como_esencia.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Etica_como_esencia.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
     $('.pdfs').html(pdf);
@@ -104,6 +104,14 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","Bioética o ética para la vida");
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob3');
+            bar = document.querySelector('.custom-scrollbar__bar3');
+            container = document.querySelector('.custom-scrollbar__inner3');
+            scroll();
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Necesidad de la formación Humanística");
