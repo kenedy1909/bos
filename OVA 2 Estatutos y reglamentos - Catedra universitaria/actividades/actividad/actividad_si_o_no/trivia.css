@@ -167,6 +167,7 @@ body, html {
   background: #F8D4DA;
   border-radius: 20px;
   padding: 15px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 15%) !important;
 }
 
 .max-w-30px{

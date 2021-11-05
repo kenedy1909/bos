@@ -421,7 +421,7 @@ iframe{
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar6, .custom-scrollbar__bar7, .custom-scrollbar__bar4, .custom-scrollbar__bar5, .custom-scrollbar__bar8 {
+.custom-scrollbar__bar6, .custom-scrollbar__bar7 .custom-scrollbar__bar8 {
   position: absolute;
   top: 18px;
   bottom: 20px;
@@ -432,7 +432,7 @@ iframe{
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob6, .custom-scrollbar__knob7, .custom-scrollbar__knob4, .custom-scrollbar__knob5, .custom-scrollbar__knob8 {
+.custom-scrollbar__knob6, .custom-scrollbar__knob7 .custom-scrollbar__knob8 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -440,6 +440,29 @@ iframe{
   height: 25px;
   border-radius: 50%;
   background: var(--bg-color);
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.custom-scrollbar__bar4, .custom-scrollbar__bar5{
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:var(--bg-color-dark);
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+}
+
+.custom-scrollbar__knob4, .custom-scrollbar__knob5{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--bg-color-dark);
   transform: translate(-50%, -50%);
   will-change: top;
 }

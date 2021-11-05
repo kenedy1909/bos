@@ -122,16 +122,16 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> reglamento_administrativo_unaula.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior mr-3 w-40px" src="assets/img/img_template/pdf.png"> reglamento_administrativo_unaula.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> reforma_estatutos_unaula2020.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank"> <img class="menu_superior mr-3 w-40px" src="assets/img/img_template/pdf.png"> reforma_estatutos_unaula2020.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/cuestionario_reforma_estatutos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> cuestionario_reforma_estatutos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/cuestionario_reforma_estatutos.pdf" target="_blank"> <img class="menu_superior mr-3 w-40px" src="assets/img/img_template/pdf.png"> cuestionario_reforma_estatutos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/regimen_disciplinario.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> regimen_disciplinario.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/regimen_disciplinario.pdf" target="_blank"> <img class="menu_superior mr-3 w-40px" src="assets/img/img_template/pdf.png"> regimen_disciplinario.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
@@ -272,12 +272,16 @@ function controlSlides(num){
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");

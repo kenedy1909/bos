@@ -46,7 +46,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a class="p_white" href="assets/PDF/decreto_1268de1977.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> decreto_1268de1977.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                    <a class="p_white" href="assets/PDF/decreto_1268de1977.pdf" target="_blank"> <img class="menu_superior mr-3 w-40px" src="assets/img/img_template/pdf.png"> decreto_1268de1977.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);

@@ -257,4 +257,5 @@ label {
     background: rgba(255, 192, 0);
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 15%) !important;
 }
