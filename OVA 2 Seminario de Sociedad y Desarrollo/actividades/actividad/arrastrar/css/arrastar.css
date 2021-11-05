@@ -131,7 +131,7 @@
 }
 
 .boton_inc{
-	background: #E0A546;
+	background: #771E18;
 	color: white;
 	border-radius: 10px;
 	font-size: 22px;
@@ -146,4 +146,8 @@
     padding-top: 15px;
     position: relative;
     top: 60px;
+}
+
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
