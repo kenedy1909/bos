@@ -187,37 +187,53 @@ function pantalla2(num){
 
             $('.banewhite').addClass('invisible');
             $('.banewhite').removeClass('visible');
+            $('.banewhite').removeClass('animacion');
 
             $('.banewhite1').removeClass('invisible');
             $('.banewhite1').addClass('visible');
+
+            $('.banewhite1').addClass('animacion');
+
             break;
         case 2:
             $('.banewhite').addClass('invisible');
             $('.banewhite').removeClass('visible');
+            $('.banewhite').removeClass('animacion');
 
             $('.banewhite2').removeClass('invisible');
             $('.banewhite2').addClass('visible');
+
+            $('.banewhite2').addClass('animacion');
             break;
         case 3:
             $('.banewhite').addClass('invisible');
             $('.banewhite').removeClass('visible');
+            $('.banewhite').removeClass('animacion');
 
             $('.banewhite3').removeClass('invisible');
             $('.banewhite3').addClass('visible');
+
+            $('.banewhite3').addClass('animacion');
             break;
         case 4:
             $('.banewhite').addClass('invisible');
             $('.banewhite').removeClass('visible');
+            $('.banewhite').removeClass('animacion');
 
             $('.banewhite4').removeClass('invisible');
             $('.banewhite4').addClass('visible');
+
+            $('.banewhite4').addClass('animacion');
             break;
         case 5:
             $('.banewhite').addClass('invisible');
             $('.banewhite').removeClass('visible');
+            $('.banewhite').removeClass('animacion');
 
             $('.banewhite5').removeClass('invisible');
             $('.banewhite5').addClass('visible');
+
+            $('.banewhite5').addClass('animacion');
             break;
         default:
             break;

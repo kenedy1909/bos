@@ -292,8 +292,8 @@ h2.tituloContenedorE {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 185px;
-    height: 185px;
+    width: 100px;
+    height: 100px;
     background: #00343A;
     border-radius: 50%;
     padding: 20px;
@@ -306,8 +306,8 @@ h2.tituloContenedorE {
 }
 
 .opcion_circulo_content{
-    width: 180px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
     border: dashed 4px #FFFFFF;
     border-radius: 50%;
     display: flex;

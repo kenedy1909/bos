@@ -58,22 +58,22 @@ var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="img/mundo.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 90%"  src="img/mundo.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="img/discusion.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 90%"  src="img/discusion.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="img/comprador.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 90%"  src="img/comprador.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorD" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="img/megafono.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 90%"  src="img/megafono.png" ></div></div>\n'+
         '</div>\n'
     },
 ];
