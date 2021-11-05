@@ -98,7 +98,7 @@ h2.tituloContenedor {
     position: absolute;
     top: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     margin: 0;
     padding: 10px;
@@ -148,7 +148,7 @@ h2.tituloContenedorE {
 .redi1 .contenedorC,
 .redi1 .contenedorD,
 .redi1 .contenedorE {
-    min-height: 240px;
+    min-height: 180px;
     transform: scale(1);
     transition: transform .3s;
     border-radius: 20px;
