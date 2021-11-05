@@ -78,10 +78,10 @@ function controlSlides3(num){
         case 1:
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD3/Adopción-de-una-teoría-o-desarrollo-de-una-perspectiva-teórica-o-de-referencia.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Adopción de una teoría o desarrollo de una perspectiva teórica o de referencia.</a>
+                            <a href="assets/PDF/UNIDAD3/Adopción-de-una-teoría-o-desarrollo-de-una-perspectiva-teórica-o-de-referencia.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-3"></i> Adopción de una teoría o desarrollo de una perspectiva teórica o de referencia.</a>
                           </p>
                           <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD3/Cómo-se-hace-una-tesis.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Cómo se hace una tesis</a>
+                            <a href="assets/PDF/UNIDAD3/Cómo-se-hace-una-tesis.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-3"></i>Cómo se hace una tesis</a>
                           </p>
                         </div>`;
             $('.pdfs').html(pdf);
@@ -462,11 +462,11 @@ function teorias() {
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
                               <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Actividad de lectura.</p></div>
+                              <div><p style="" class="size_18 p_black">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
                               <div class="indicacionesimg" style=""><img src="assets/img/img_ova/reloj.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Tiempo sugerido: 2 horas autónomos</p></div>
+                              <div><p style="" class="size_18 p_black">Tiempo sugerido: 2 horas autónomos</p></div>
                             </div>
                           </div>
                     </div>
@@ -525,11 +525,11 @@ function teorias() {
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
                               <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Actividad de lectura.</p></div>
+                              <div><p style="" class="size_18 p_black">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
                               <div class="indicacionesimg" style=""><img src="assets/img/img_ova/reloj.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Tiempo sugerido: 1 horas autónomos</p></div>
+                              <div><p style="" class="size_18 p_black">Tiempo sugerido: 1 horas autónomos</p></div>
                             </div>
                           </div>
                     </div>
@@ -597,11 +597,11 @@ function teorias() {
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
                               <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Actividad de lectura.</p></div>
+                              <div><p style="" class="size_18 p_black">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
                               <div class="indicacionesimg" style=""><img src="assets/img/img_ova/reloj.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Tiempo sugerido: 2 horas autónomos</p></div>
+                              <div><p style="" class="size_18 p_black">Tiempo sugerido: 2 horas autónomos</p></div>
                             </div>
                           </div>
                     </div>
@@ -692,11 +692,11 @@ function teorias() {
                           <div class="col-md-7 banner_general" style="">
                             <div class="row">
                               <div class="indicacionesimg mb-2" style=""><img src="assets/img/img_ova/actividad.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Actividad de lectura.</p></div>
+                              <div><p style="" class="size_18 p_black">Actividad de lectura.</p></div>
                             </div>
                             <div class="row">
                               <div class="indicacionesimg" style=""><img src="assets/img/img_ova/reloj.png" style="max-width: 70%;"></div>
-                              <div><p style="" class="size_18">Tiempo sugerido: 2 horas autónomos</p></div>
+                              <div><p style="" class="size_18 p_black">Tiempo sugerido: 2 horas autónomos</p></div>
                             </div>
                           </div>
                     </div>

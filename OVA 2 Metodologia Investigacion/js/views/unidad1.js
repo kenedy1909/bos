@@ -90,7 +90,7 @@ function controlSlides(num){
             /*scroll();*/
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20">
-                              <a href="assets/PDF/UNIDAD1/Lectura-y-escritura-en-la-investigación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Lectura y escritura en la investigación</a>
+                              <a href="assets/PDF/UNIDAD1/Lectura-y-escritura-en-la-investigación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-3"></i> Lectura y escritura en la investigación</a>
                           </p>
                         </div>`;
             $('.pdfs').html(pdf);

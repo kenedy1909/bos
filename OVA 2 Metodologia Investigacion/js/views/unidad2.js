@@ -71,7 +71,7 @@ function controlSlides2(num){
         case 1:
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD2/Recopilación-de-literatura.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Recopilación de literatura</a>
+                            <a href="assets/PDF/UNIDAD2/Recopilación-de-literatura.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-3"></i> Recopilación de literatura</a>
                           </p>
                         </div>`;
             $('.pdfs').html(pdf);
