@@ -19,9 +19,9 @@ function modal_scroll6(){
     diff = "";
     newTop = "";
     scrollOffset = "";
-    knob = document.querySelector('.custom-scrollbar__knob6');
-    bar = document.querySelector('.custom-scrollbar__bar6');
-    container = document.querySelector('.custom-scrollbar__inner6');
+    knob = document.querySelector('.custom-scrollbar__knobWhite');
+    bar = document.querySelector('.custom-scrollbar__barWhite');
+    container = document.querySelector('.custom-scrollbar__innerWhite');
     scroll();
 }
 function modal_scroll7(){
