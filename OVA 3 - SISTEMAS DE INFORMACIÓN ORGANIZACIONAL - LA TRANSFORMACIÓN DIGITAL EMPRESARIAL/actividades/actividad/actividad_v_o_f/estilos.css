@@ -140,7 +140,7 @@ span.checked svg.svg2 {
 @media (max-width: 767px) {
 
     .fondoContenido {
-        padding: 20px 20px 100px;
+        padding: 20px 20px 20px;
         margin-bottom: 30px;
     }
 }

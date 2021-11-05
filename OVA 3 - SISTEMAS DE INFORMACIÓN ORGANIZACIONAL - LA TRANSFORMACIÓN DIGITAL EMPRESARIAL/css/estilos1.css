@@ -465,3 +465,7 @@ a.control_next {
     border-radius: 30px;
     padding: 10px;
 }
+
+.reversa{
+	transform: scaleX(-1);
+}
