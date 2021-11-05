@@ -150,7 +150,7 @@
 	width: 90%;
 	margin-left: 20px;
 	border-radius: 20px;
-	height: 120px;
+	height: 150px;
 }
 .img-baneactivi{
 	width: 115px;
@@ -179,6 +179,7 @@
   height: 50px;
   background: #465FB3;
   border-radius: 50%;
+  padding-top: 7px;
 }
 
 .bane16{
@@ -451,4 +452,16 @@ a.control_next {
 .animacion {
   animation-name:example;
   animation-duration: 2s;
+}
+
+.btn-medio{
+	background: #465FB3;
+	font-weight: bold;
+  color: white;
+}
+
+.blanqueado{
+	  background: #fff;
+    border-radius: 30px;
+    padding: 10px;
 }
