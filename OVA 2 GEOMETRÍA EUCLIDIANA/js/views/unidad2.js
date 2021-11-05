@@ -227,7 +227,7 @@ function conjuntos(num){
     $(".info_conjuntos"+num).addClass('shadow');
     if (num == 1) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12">
+                    <div class="col-lg-12 col-md-12 pt-3">
                       <b>Definiciones básicas</b>
                       <div class="mt-2">
                         <p class="justificado">Un conjunto es una colección o reunión de objetos o cosas.  Se llaman “elementos” a aquellos objetos o cosas que constituyen el conjunto, o que lo conforman</p>
@@ -264,7 +264,7 @@ function conjuntos(num){
         $("#info_unidad2").html(conjunto)
     }if (num == 2) {
         var conjunto = `
-                    <div class="col-lg-12 row">
+                    <div class="col-lg-12 row pt-3">
                       <div class="col-md-4 row" style="border-right: solid 1px #4141f3;">
                           <div class="col-lg-4">
                             <img src="assets/img/img_ova/mayuscula.png" style="max-width: 100%;">
