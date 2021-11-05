@@ -338,11 +338,15 @@ function verman(num){
 
             $('.verman1').removeClass('escondido');
             $('.verman1').addClass('mostrado');
+
+            $('.verman1').addClass('animacion');
             break;
         case 2:
 
             $('.verman2').removeClass('escondido');
             $('.verman2').addClass('mostrado');
+
+            $('.verman2').addClass('animacion');
             break;
         default:
             break;

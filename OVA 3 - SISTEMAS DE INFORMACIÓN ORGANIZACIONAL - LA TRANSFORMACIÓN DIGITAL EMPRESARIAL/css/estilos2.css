@@ -23,7 +23,7 @@
 }
 
 .not-hidden {
-  height: 315px;
+  height: 250px;
   transition: height 1s ease-in-out;
 }
 .msg {
