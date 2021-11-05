@@ -788,11 +788,14 @@ svg circle:nth-child(2){
 .titulo_sub p{
   font-size: 20px;
   color: #811111;
+  padding-top: 20%;
 }
 .banner_activi{
   background: var(--bg-color-claro);
   margin-left: 10px;
-  border-radius: 30px;
+  border-radius: 15px;
+  height: 100px;
+  box-shadow: 3px 2px 7px 1px #00000094;
 }
 
 .copiacirculo{
@@ -972,4 +975,13 @@ svg circle:nth-child(2){
 
 .text-cafe{
   float: right;
+}
+.size_13{
+  font-size: 13px;
+}
+
+.comil{
+  font-family: arial;
+  font-size: 90px;
+  color: black;
 }
