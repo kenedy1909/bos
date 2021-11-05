@@ -1025,9 +1025,8 @@ svg circle:nth-child(2){
 }
 .pdf_activi{
   background: #282f9f;
-  height: 100px;
   border-radius: 20px;
-  padding-top: 10px;
+  padding: 10px;
   margin-top: 25px;
 }
 
