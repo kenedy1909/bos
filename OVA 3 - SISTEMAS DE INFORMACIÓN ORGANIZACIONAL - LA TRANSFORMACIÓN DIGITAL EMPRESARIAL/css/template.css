@@ -99,7 +99,7 @@ iframe{
 
 .botones-inicio{
     width: auto;
-    height: 120px;
+    height: 90px;
     margin: auto;
     cursor: pointer;
 }
@@ -232,13 +232,13 @@ iframe{
 .card-container, .front, .back {
   width: 100%;
   height: auto;
-  border-radius: 22px;
+  border-radius: 30px;
   background: #DA2316;
 }
 .card .cover{
   height: 105px;
   overflow: hidden;
-  border-radius: 22px 22px 0 0;
+  border-radius: 30px 30px 0 0;
   background: #811111;
 }
 .card .cover img{
@@ -266,7 +266,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 70%;
   position: relative;
   top: 25px;
 }
@@ -610,7 +610,7 @@ svg circle:nth-child(2){
 }
 
 .title-portada{
-  font-size: 38px;
+  font-size: 30px;
   color: #771e18;
   font-weight: bold;
   text-align: center;
@@ -760,8 +760,8 @@ svg circle:nth-child(2){
 .x-modal{
   background: #DA2316;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
 }
 
@@ -1001,7 +1001,7 @@ svg circle:nth-child(2){
   width: 50%;
   height: 86px;
   margin: 0px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .img_activi{
@@ -1014,10 +1014,11 @@ svg circle:nth-child(2){
 }
 
 .contenedor_indi{
-  background: #282F9F;
+  background: #465FB3;
   border-radius: 20px;
   padding-top: 30px;
   padding-left: 29px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%)
 }
 
 .logo_copiar{
@@ -1064,4 +1065,52 @@ svg circle:nth-child(2){
 }
 .visible{
   display: block;
+}
+
+.titulo_text{
+  color: #811111;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+.scrol-color::-webkit-scrollbar-thumb {
+  background-color: #a8bbbf !important;
+}
+.scrol-color::-webkit-scrollbar {
+  width: 20px !important;
+}
+
+.scrol{
+  overflow: auto;
+}
+
+
+.w-40px{
+  width: 40px;
+}
+
+#flat{
+  margin-top: 3%;
 }

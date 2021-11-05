@@ -99,7 +99,7 @@ iframe{
 
 .botones-inicio{
     width: auto;
-    height: 120px;
+    height: 100px;
     margin: auto;
     cursor: pointer;
 }
@@ -574,7 +574,7 @@ svg circle:nth-child(2){
 
 .subtitle-portada{
   font-size: 30px;
-  color: #771e18;
+  color: #420F05;
   text-align: center;
 }
 
@@ -914,4 +914,8 @@ svg circle:nth-child(2){
 
 .card-inactiva-o2, .card-inactiva-c2{
   background: var(--bg-color-claro2) !important;
+}
+
+.w-40px{
+  width: 40px;
 }

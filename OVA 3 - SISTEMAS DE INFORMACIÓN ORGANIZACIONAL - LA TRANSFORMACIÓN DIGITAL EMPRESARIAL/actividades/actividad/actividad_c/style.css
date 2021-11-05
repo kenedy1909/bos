@@ -24,8 +24,8 @@ td {
 }
 
 td.empty {
-  background: #ff9f55;
-  visibility: hidden;
+  border: white;
+  visibility: hidden !important;
 }
 
 td.selected {
@@ -82,7 +82,7 @@ td.start.selected:hover {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #811111;
+    border-bottom: solid 3px #005B8B;
 }
 
 .img-activi{
@@ -91,11 +91,11 @@ td.start.selected:hover {
 
 .text-img-actividad{
     font-size: 20px;
-    color: #811111;
+    color: #005B8B;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #005B8B;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -103,7 +103,7 @@ td.start.selected:hover {
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #005B8B;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -172,7 +172,27 @@ td.start.selected:hover {
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
 
-.btn-mostaza{
-    background: #A38D38;
-    color: #fff;
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
