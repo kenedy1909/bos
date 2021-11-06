@@ -928,14 +928,24 @@ function funcionalidad_2(num) {
 
     if (num == 1) {
         $(".info_funcionalidad_2_1").removeClass('d-none');
+        $(".animation1").removeClass('animacion');
+        $(".info_funcionalidad_2_1").addClass('animacion');
     }else if (num == 2) {
         $(".info_funcionalidad_2_2").removeClass('d-none');
+        $(".animation1").removeClass('animacion');
+        $(".info_funcionalidad_2_2").addClass('animacion');
     }else if (num == 3) {
         $(".info_funcionalidad_2_3").removeClass('d-none');
+        $(".animation1").removeClass('animacion');
+        $(".info_funcionalidad_2_3").addClass('animacion');
     }else if (num == 4) {
         $(".info_funcionalidad_2_4").removeClass('d-none');
+        $(".animation1").removeClass('animacion');
+        $(".info_funcionalidad_2_4").addClass('animacion');
     }else if (num == 5) {
         $(".info_funcionalidad_2_5").removeClass('d-none');
+        $(".animation1").removeClass('animacion');
+        $(".info_funcionalidad_2_5").addClass('animacion');
     }
 }
 
