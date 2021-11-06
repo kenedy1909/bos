@@ -99,7 +99,7 @@ iframe{
 
 .botones-inicio{
     width: auto;
-    height: 120px;
+    height: 100px;
     margin: auto;
     cursor: pointer;
 }
@@ -266,7 +266,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 60%;
   position: relative;
   top: 25px;
 }
@@ -892,4 +892,47 @@ svg circle:nth-child(2){
 }
 .card-inactiva-c{
   background: #484848 !important;
+}
+
+.w-40px{
+  width: 40px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+.scrol-color::-webkit-scrollbar-thumb {
+  background-color: #a8bbbf !important;
+}
+.scrol-color::-webkit-scrollbar {
+  width: 20px !important;
+}
+
+.scrol{
+  overflow: auto;
+}
+
+#flat{
+  margin-top: 5%;
 }
