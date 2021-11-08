@@ -761,3 +761,26 @@ function teorias(num) {
       $("#teorico").html(texto);
   }
 }
+
+function pausevideo(num){
+  switch(parseInt(num))
+  {
+    case 1:
+      var videointro = document.getElementById('video_intro1');
+      videointro.pause(); 
+    break;
+    default:
+    break;
+  }
+}
+function pausevideo(num){
+  switch(parseInt(num))
+  {
+    case 1:
+      var videointro = document.getElementById('video_intro1');
+      videointro.pause(); 
+    break;
+    default:
+    break;
+  }
+}
