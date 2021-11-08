@@ -350,8 +350,8 @@ function scroll_slide(num) {
                                   <div class="pt-3 custom-scrollbar5">
                                     <div class="row custom-scrollbar__inner5 padding_scroll" style="padding: 0px 70px 1px 25px;">
                                       
-                                      <p class="justificado">Es la etapa más determinante desde la perspectiva gerencial en el diseño de un sistema de información puesto que en ella se identifica la problemática que tiene la organización y cuya solución es claramente un sistema de información como tal. En esta fase se identifican las necesidades de los usuarios con respecto al sistema a fin de definir sus objetivos, alcances y justificación. La planeación del proyecto debe ser consistente con el plan estratégico de la empresa, por lo que es recomendable que involucre una muy buena parte del equipo directivo, así como representantes de diferentes áreas de la empresa, entre mayor sea el alcance.</p>
-                                      <p class="justificado">Una vez definidos los objetivos, alcances y la justificación del sistema, se procede a hacer un diagrama funcional del sistema, que consiste en una gráfica que debe mostrar de manera clara cómo operará el sistema y cuáles son sus funciones.  <br>
+                                      <p class="justificado text-black">Es la etapa más determinante desde la perspectiva gerencial en el diseño de un sistema de información puesto que en ella se identifica la problemática que tiene la organización y cuya solución es claramente un sistema de información como tal. En esta fase se identifican las necesidades de los usuarios con respecto al sistema a fin de definir sus objetivos, alcances y justificación. La planeación del proyecto debe ser consistente con el plan estratégico de la empresa, por lo que es recomendable que involucre una muy buena parte del equipo directivo, así como representantes de diferentes áreas de la empresa, entre mayor sea el alcance.</p>
+                                      <p class="justificado text-black">Una vez definidos los objetivos, alcances y la justificación del sistema, se procede a hacer un diagrama funcional del sistema, que consiste en una gráfica que debe mostrar de manera clara cómo operará el sistema y cuáles son sus funciones.  <br>
                                       El cronograma define las actividades o etapas que se deben seguir para la elaboración del proyecto, así como las fechas de inicio y terminación de cada una de las actividades, identificando quiénes son sus responsables (de gerencia, de sistemas y por parte de los usuarios) y los indicadores que se usarán para medir el cumplimiento de los resultados. <br>
                                       Finalmente, en el presupuesto se debe especificar la asignación de recursos en donde se cuantifican y valoran monetariamente los recursos</p>
                                       
@@ -360,7 +360,7 @@ function scroll_slide(num) {
                                       <div class="custom-scrollbar__knob5 cursor"><p class="text-white text-center linea_scroll5">-</p></div>
                                     </div>
                                   </div>
-                                  <div class="col-md-12"><b>haga clic en cada botón azul para desplegar la información.</b></div>
+                                  <div class="col-md-12 text-black"><b>haga clic en cada botón azul para desplegar la información.</b></div>
 
                                   <div class="row mt-2">
                                     <div class="col-md-4">
@@ -384,8 +384,8 @@ function scroll_slide(num) {
                                 <div class="pt-3">
                                   <div>
                                     <h3 class="color-text">Fase 2: Análisis del Sistema</h3><br>
-                                    <p class="justificado">Una vez desarrollada la planeación del sistema (proyecto) en donde se definió qué es lo que se quiere hacer, la programación y el presupuesto, se puede proceder con la etapa de análisis del sistema. En esta fase se <b>analiza la viabilidad o factibilidad</b> del sistema, además, se <b>definen los requerimientos técnicos</b> para el desarrollo de este, <b>se estructura el flujo de los datos</b> y se determina <b>el método de almacenamiento</b> de los datos y la información generada.</p><br>
-                                    <b>haga clic en cada botón azul para desplegar la información.</b>
+                                    <p class="justificado text-black">Una vez desarrollada la planeación del sistema (proyecto) en donde se definió qué es lo que se quiere hacer, la programación y el presupuesto, se puede proceder con la etapa de análisis del sistema. En esta fase se <b>analiza la viabilidad o factibilidad</b> del sistema, además, se <b>definen los requerimientos técnicos</b> para el desarrollo de este, <b>se estructura el flujo de los datos</b> y se determina <b>el método de almacenamiento</b> de los datos y la información generada.</p><br>
+                                    <b class="text-black">haga clic en cada botón azul para desplegar la información.</b>
                                   </div>
                                   
                                   <div class="row mt-2">
@@ -512,7 +512,7 @@ function scroll_slide(num) {
                                   <div class="pt-3 custom-scrollbar20">
                                     <div class="row custom-scrollbar__inner20 padding_scroll" style="padding: 0px 70px 1px 25px;">
                                       
-                                      <p class="justificado">Esta es la fase que más tiempo toma, además es la más costosa para la organización, incluso más costosa que el mismo diseño y desarrollo. Se puede decir que la fase de mantenimiento existirá mientras el sistema tenga vida. Implica la dedicación de capacidad profesional o del área a cargo de los sistemas (TICs, Informática, sistemas, etc), durante todo el tiempo de vida del software, pues requiere hacer correcciones, modificaciones o incluso actualizaciones de acuerdos con los cambios de la tecnología y de los cambios en los de la empresa, esto también se conoce como soporte técnico al sistema.</p>
+                                      <p class="justificado text-black">Esta es la fase que más tiempo toma, además es la más costosa para la organización, incluso más costosa que el mismo diseño y desarrollo. Se puede decir que la fase de mantenimiento existirá mientras el sistema tenga vida. Implica la dedicación de capacidad profesional o del área a cargo de los sistemas (TICs, Informática, sistemas, etc), durante todo el tiempo de vida del software, pues requiere hacer correcciones, modificaciones o incluso actualizaciones de acuerdos con los cambios de la tecnología y de los cambios en los de la empresa, esto también se conoce como soporte técnico al sistema.</p>
                                       
                                       <div class="col-md-12 d-flex" style="margin-left: 5px;z-index: 100;">
                                         <div class="img-15 d-flex">
@@ -526,7 +526,7 @@ function scroll_slide(num) {
                                                 <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
                                                   
                                                   <div style="width: 70%;">
-                                                    <p class="justificado" style="font-size: 13px;">Errores o requerimientos que se dejaron pasar en las fases iniciales.</p>
+                                                    <p class="justificado text-black" style="font-size: 13px;">Errores o requerimientos que se dejaron pasar en las fases iniciales.</p>
                                                   </div>
                                                   <div style="width: 25%;"><img src="assets/img/img_ova/error.png" style="max-width: 100%;"></div>
                                                 </div>
@@ -535,7 +535,7 @@ function scroll_slide(num) {
                                                 <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
                                                   
                                                   <div style="width: 70%;">
-                                                    <p class="justificado" style="font-size: 11px;">Cambios en los requerimientos de los usuarios originados por cambios en los procesos de la organización, cambios en las normas y leyes existentes, o nuevas inquietudes de los usuarios propias de la evolución misma del negocio. </p>
+                                                    <p class="justificado text-black" style="font-size: 13px;">Cambios en los requerimientos de los usuarios originados por cambios en los procesos de la organización, cambios en las normas y leyes existentes, o nuevas inquietudes de los usuarios propias de la evolución misma del negocio. </p>
                                                   </div>
                                                   <div style="width: 25%;"><img src="assets/img/img_ova/exchange.png" style="max-width: 100%;"></div>
                                                 </div>
@@ -544,7 +544,7 @@ function scroll_slide(num) {
                                                 <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
                                                   
                                                   <div style="width: 70%;">
-                                                    <p class="justificado" style="font-size: 11px;">Cambios tecnológicos, como por ejemplo la instalación de un nuevo hardware, nuevos sistemas operativos, nuevas tecnologías de redes, migración de los sistemas a otros. </p>
+                                                    <p class="justificado text-black" style="font-size: 13px;">Cambios tecnológicos, como por ejemplo la instalación de un nuevo hardware, nuevos sistemas operativos, nuevas tecnologías de redes, migración de los sistemas a otros. </p>
                                                   </div>
                                                   <div style="width: 25%;"><img src="assets/img/img_ova/proceso.png" style="max-width: 100%;"></div>
                                                 </div>
