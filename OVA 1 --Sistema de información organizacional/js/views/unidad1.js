@@ -105,7 +105,7 @@ function controlSlides(num){
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
-             
+            scroll_set(5);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
@@ -114,6 +114,17 @@ function controlSlides(num){
         default:
             break;
     }
+}
+
+function scroll_set(num) {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob'+num);
+    bar = document.querySelector('.custom-scrollbar__bar'+num);
+    container = document.querySelector('.custom-scrollbar__inner'+num);
+    scroll();
 }
 
 function objetivos(num){
@@ -152,14 +163,7 @@ function infoactivi2(num) {
         
         case 1:
             $('.info1_1').css({'visibility': 'visible'});
-            dragging = "";
-            diff = "";
-            newTop = "";
-            scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob5');
-            bar = document.querySelector('.custom-scrollbar__bar5');
-            container = document.querySelector('.custom-scrollbar__inner5');
-            scroll();
+            scroll_set(5);
             break;
         case 2:
             $('.info2_1').css({'visibility': 'visible'});

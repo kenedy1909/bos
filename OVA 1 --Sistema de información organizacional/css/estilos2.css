@@ -730,3 +730,13 @@ card flip*/
 .p-15px{
   padding: 15px;
 }
+
+.transacciones-info, .transacciones-infoCardss{
+  animation-name:animationCards;
+  animation-duration: 3s;
+  height: 240px;
+}
+@keyframes animationCards {
+  from {opacity:0;}
+  to {opacity:1;}
+}
