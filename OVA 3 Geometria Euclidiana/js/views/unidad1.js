@@ -1050,26 +1050,38 @@ function funcionalidad_5(num) {
 
     if (num == 1) {
         $(".info_funcionalidad_5_1").removeClass('d-none');
+        $(".info_funcionalidad_5_1").removeClass('animacion');
+        $(".info_funcionalidad_5_1").addClass('animacion');
         $(".btn_funcionalidad_5_1").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_5_1").addClass('bg-verde-2');
     }else if (num == 2) {
         $(".info_funcionalidad_5_2").removeClass('d-none');
+        $(".info_funcionalidad_5_2").removeClass('animacion');
+        $(".info_funcionalidad_5_2").addClass('animacion');
         $(".btn_funcionalidad_5_2").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_5_2").addClass('bg-verde-2');
     }else if (num == 3) {
         $(".info_funcionalidad_5_3").removeClass('d-none');
+        $(".info_funcionalidad_5_3").removeClass('animacion');
+        $(".info_funcionalidad_5_3").addClass('animacion');
         $(".btn_funcionalidad_5_3").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_5_3").addClass('bg-verde-2');
     }else if (num == 4) {
         $(".info_funcionalidad_5_4").removeClass('d-none');
+        $(".info_funcionalidad_5_4").removeClass('animacion');
+        $(".info_funcionalidad_5_4").addClass('animacion');
         $(".btn_funcionalidad_5_4").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_5_4").addClass('bg-verde-2');
     }else if (num == 5) {
         $(".info_funcionalidad_5_5").removeClass('d-none');
+        $(".info_funcionalidad_5_5").removeClass('animacion');
+        $(".info_funcionalidad_5_5").addClass('animacion');
         $(".btn_funcionalidad_5_5").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_5_5").addClass('bg-verde-2');
     }else if (num == 6) {
         $(".info_funcionalidad_5_6").removeClass('d-none');
+        $(".info_funcionalidad_5_6").removeClass('animacion');
+        $(".info_funcionalidad_5_6").addClass('animacion');
         $(".btn_funcionalidad_5_6").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_5_6").addClass('bg-verde-2');
     }
