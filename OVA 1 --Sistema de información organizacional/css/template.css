@@ -399,9 +399,14 @@ iframe{
   overflow: hidden;
 }
 
-.custom-scrollbar5, .custom-scrollbar6, .custom-scrollbar20{
+.custom-scrollbar6, .custom-scrollbar20{
   position: relative;
   height: 400px;
+  overflow: hidden;
+}
+.custom-scrollbar5{
+  position: relative;
+  height: 200px;
   overflow: hidden;
 }
 
