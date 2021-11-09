@@ -538,8 +538,8 @@ function scroll_horizontal2(num){
                             </p>`;
             $('#scroll-img2').html(pantalla);
             break;
-        case 1:  
-            var pantalla = `<p class="text-black text-justify">La Sala de cuestiones preliminares puede decidir confirmar los cargos, pero también puede no confirmar cuando considere que las pruebas presentadas son insuficientes, en cuyo caso la fiscalía podrá volver a presentar la solicitud, con la exigencia de presentar nuevas pruebas. Una vez se confirman los cargos, la presidencia de la Corte decide conformar una sala de primera instancia para adelantar el enjuiciamiento.</p>`;
+        case 1:
+            var pantalla = `<p class="text-black text-justify size_13">La Sala de cuestiones preliminares puede decidir confirmar los cargos, pero también puede no confirmar cuando considere que las pruebas presentadas son insuficientes, en cuyo caso la fiscalía podrá volver a presentar la solicitud, con la exigencia de presentar nuevas pruebas. Una vez se confirman los cargos, la presidencia de la Corte decide conformar una sala de primera instancia para adelantar el enjuiciamiento.</p>`;
             $('#scroll-img2').html(pantalla);
 
             break;
