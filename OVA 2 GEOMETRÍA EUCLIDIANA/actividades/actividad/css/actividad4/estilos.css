@@ -204,7 +204,7 @@
 .texto_header{
     font-size: 17px;
     display: inline-block;
-    width: 50%;
+    /*width: 50%;*/
 }
 .texto_header b{
     color: #004c6d;
@@ -227,4 +227,8 @@
     top: 15px;
     left: -44px;
     box-shadow: 1px 0px 11px -2px black;
+}
+
+.d-flex{
+    display: flex;
 }

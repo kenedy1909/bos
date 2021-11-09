@@ -67,7 +67,7 @@
                                 </div>
                                 <h3 class="pl-3">Definición, notación, determinación y clasificación de conjuntos.</h3>
                                 <div class="container">
-                                  <div class="row fondo_gris_morado">
+                                  <div class="row fondo_gris_morado position-relative">
                                     <div class="col m-0 p-0">
                                       <div class="shadow p-1 bg-body rounded info_conjuntos cursor info_conjuntos1 fondo_azul_claro" onclick="conjuntos(1)">
                                         <div class="col-lg-12 col-md-12">
@@ -128,12 +128,29 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="col-md-12 mx-1 p-0 row position-absolute" style="height: 20px; bottom: -20px; z-index: 1;">
+                                      <div class="col m-0 p-0 d-flex">
+                                        <div class="triangulo-mora mx-auto tri1"></div>
+                                      </div>
+                                      <div class="col m-0 p-0 d-flex">
+                                        <div class="triangulo-mora mx-auto tri2 d-none"></div>
+                                      </div>
+                                      <div class="col m-0 p-0 d-flex">
+                                        <div class="triangulo-mora mx-auto tri3 d-none"></div>
+                                      </div>
+                                      <div class="col m-0 p-0 d-flex">
+                                        <div class="triangulo-mora mx-auto tri4 d-none"></div>
+                                      </div>
+                                      <div class="col m-0 p-0 d-flex">
+                                        <div class="triangulo-mora mx-auto tri5 d-none"></div>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
 
                                 <div class="col-lg-12 col-md-12 p-0">
                                   <div class="row px-4" id="info_unidad2" style="min-height: 500px;">
-                                    <div class="col-lg-12 col-md-12 pt-3">
+                                    <div class="col-lg-12 col-md-12 pt-4">
                                       <b>Definiciones básicas</b>
                                       <div class="mt-2">
                                         <p class="justificado">Un conjunto es una colección o reunión de objetos o cosas.  Se llaman “elementos” a aquellos objetos o cosas que constituyen el conjunto, o que lo conforman</p>
@@ -143,12 +160,14 @@
                                     <div><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Por ejemplo: </b></div>
 
                                     <div class="m-0 row">
-                                      <div class="col-lg-4">
-                                        <div class="mt-5">
-                                          <center><h5>Son conjuntos los siguientes</h5></center>
-                                        </div>
-                                        <div>
-                                          <center><img src="assets/img/img_ova/flecha_punteada.png"></center>
+                                      <div class="col-lg-4 d-flex">
+                                        <div class="m-auto">
+                                          <div class="mx-5">
+                                            <center><h5>Son conjuntos los siguientes</h5></center>
+                                          </div>
+                                          <div>
+                                            <center><img src="assets/img/img_ova/flecha_punteada.png"></center>
+                                          </div>
                                         </div>
                                       </div>
                                       <div class="col-lg-4">
@@ -185,14 +204,13 @@
                                 <div class="titulo-ova">
                                     <h3>Inducción matemática y conjuntos</h3>
                                 </div>
-                                <h3 class="">Relaciones y operaciones entre conjuntos, y sus propiedades</h3>
                                 <div class="container mb-2 row">
-                                  <div class="col-lg-6">
-                                    <b>Igualdad entre conjuntos:</b>
-                                    <p> dos conjuntos son iguales si tienen los mismos elementos.  Es decir, si todo elemento de A es elemento de B, y viceversa, si todo elemento de B es elemento de A.</p>
+                                  <div class="col-lg-8">
+                                    <h3 class="">Relaciones y operaciones entre conjuntos, y sus propiedades</h3>
+                                    <p class="justificado" style="color: black;"><b>Igualdad entre conjuntos:</b> dos conjuntos son iguales si tienen los mismos elementos.  Es decir, si todo elemento de A es elemento de B, y viceversa, si todo elemento de B es elemento de A.</p>
                                   </div>
-                                  <div class="col-lg-6">
-                                    <img src="assets/img/img_ova/notacion_dip62.png" style="max-width: 70%;">
+                                  <div class="col-lg-4 d-flex">
+                                    <img src="assets/img/img_ova/notacion_dip62.png" class="m-auto" style="max-width: 100%;">
                                   </div>
                                 </div>
 
@@ -202,22 +220,22 @@
                                 <div class="mt-2 row">
                                   <div class="col-lg-3">
                                     <div class="btn_claro pt-2" onMouseover="cambiacontenido(1);" onMouseout="cambiacontenido(6);">
-                                      <center><p class="text-white"><b>Unión</b></p></center>
+                                      <center><p class="text-white hover_1"><b>Unión</b></p></center>
                                     </div>
                                     <div class="btn_oscuro pt-2" onMouseover="cambiacontenido(2);" onMouseout="cambiacontenido(6);">
-                                      <center><p class="text-white"><b>Intersección</b></p></center>
+                                      <center><p class="text-white hover_2"><b>Intersección</b></p></center>
                                     </div>
                                     <div class="btn_claro pt-2" onMouseover="cambiacontenido(3);" onMouseout="cambiacontenido(6);">
-                                      <center><p class="text-white"><b>Diferencia</b></p></center>
+                                      <center><p class="text-white hover_3"><b>Diferencia</b></p></center>
                                     </div>
                                     <div class="btn_oscuro pt-2" onMouseover="cambiacontenido(4);" onMouseout="cambiacontenido(6);">
-                                      <center><p class="text-white"><b>Diferencia simétrica</b></p></center>
+                                      <center><p class="text-white hover_4"><b>Diferencia simétrica</b></p></center>
                                     </div>
                                     <div class="btn_claro pt-2" onMouseover="cambiacontenido(5);" onMouseout="cambiacontenido(6);">
-                                      <center><p class="text-white"><b>Complemento</b></p></center>
+                                      <center><p class="text-white hover_5"><b>Complemento</b></p></center>
                                     </div>
                                   </div>
-                                  <div class="col-lg-5 div_claro shadow p-3" id="content">
+                                  <div class="col-lg-5 div_claro d-flex shadow p-3" id="content">
                                     
                                   </div>
                                   <div class="col-lg-4" id="img_cont">
@@ -237,12 +255,14 @@
                               <div class="col-lg-12">
                                 <p>Haga clic en cada número</p>
                               </div>
+                              <br>
                               <div class="col-lg-12" style="min-height: 320px;">
                                 <div class="col-lg-12 content_aqua">
                                   <div class="col-lg-12 row">
                                     <div class="col-lg-4" style="width: 100%;height: 180px;">
-                                      <div class="col-lg-12" style="height: 20%; z-index: 100;">
-                                        <img src="assets/img/img_ova/ejemplos.png" style="width: 80px;">
+                                      <div class="position-relative col-lg-12" style="height: 20%; z-index: 100;">
+                                        <img src="assets/img/img_ova/ejemplos.png" style="width: 70px;">
+                                        <p class="p_dark px-2 text-center ml-3 position-absolute" style="border-radius: 5px; width: fit-content; background: white; bottom: -50px;">Ejemplos</p>
                                       </div>
                                       <div class="col-lg-12 circulo_blue">
                                         <div class="triangulo t_1" onclick="cambiacontenido2(1);">
@@ -257,10 +277,10 @@
                                         <!-- <canvas id="canvas_unid2_2" width="900" height="300px"></canvas> -->
                                       </div>
                                     </div>
-                                    <div class="col-lg-4 p-2" id="contenido2">
+                                    <div class="col-lg-4 p-2 d-flex" id="contenido2">
                                       
                                     </div>
-                                    <div class="col-lg-4 p-2" id="img_2">
+                                    <div class="col-lg-4 p-2 d-flex" id="img_2">
                                       
                                     </div>
                                   </div>
@@ -391,26 +411,26 @@
                                   </div>
                                 </div>
                                 <div class="col-lg-12 row" style="margin-top: 14%;">
-                                  <div class="col-lg-4">
-                                    <center><p>Cardinal o número de elementos de dos conjuntos  A∪B</p></center>
+                                  <div class="col-lg-4 d-flex">
+                                    <p class="text-center m-auto">Cardinal o número de elementos de dos conjuntos  A∪B</p>
                                   </div>
                                   <div class="col-lg-4">
                                     <img src="assets/img/img_ova/cardinal.png" style="max-width: 100%;">
                                   </div>
-                                  <div class="col-lg-4">
+                                  <div class="col-lg-4 p-0">
                                     <div class="col-lg-12">
                                       <img src="assets/img/img_ova/cardinal_resultado.png"style="max-width: 100%;">
                                     </div>
                                     <div class="col-lg-12">
                                       <p>La intersección 𝑨∩𝑩 se repite; hay que restarlos del total</p>
                                     </div>
-                                    <div class="col-lg-12 row">
-                                      <div class="col-lg-6">
-                                        <img src="assets/img/img_ova/ejemplos.png" style="max-width: 70%;">
-                                        <b>Ejemplo</b>
+                                    <div class="col-lg-12 p-0 m-0 row">
+                                      <div class="col-lg-6 p-0">
+                                        <p><img src="assets/img/img_ova/ejemplos.png" style="max-width: 50%;">
+                                        <b class="ml-2">Ejemplo</b></p>
                                       </div>
-                                      <div class="col-lg-6">
-                                        <a href="assets/PDF/Unidad 2/pdf-2.pdf" target="_blank"><button type="button" class="btn" style="background: #003442; color: #ffffff;">VER PDF</button></a>
+                                      <div class="col-lg-6 d-flex">
+                                        <a href="assets/PDF/Unidad 2/pdf-2.pdf" target="_blank" class="m-auto"><button type="button" class="btn" style="background: #003442; color: #ffffff;">VER PDF</button></a>
                                       </div>
                                     </div>
                                   </div>
@@ -426,14 +446,14 @@
                                 </div>
                                 <h3 class="">Cardinal o número de elementos de la unión entre tres conjuntos A∪B∪C:</h3>
                                 <div class="col-lg-12 row" style="border-bottom: solid 1px;">
-                                  <div class="col-lg-4">
-                                    <img src="assets/img/img_ova/cardinal_resultado2.png" style="max-width: 100%;">
+                                  <div class="col-lg-4 d-flex">
+                                    <img src="assets/img/img_ova/cardinal_resultado2.png" class="m-auto" style="max-width: 100%;">
                                   </div>
-                                  <div class="col-lg-4">
-                                    <img src="assets/img/img_ova/cardinal_dibujo.png" style="max-width: 70%;">
+                                  <div class="col-lg-4 d-flex">
+                                    <img src="assets/img/img_ova/cardinal_dibujo.png" class="m-auto" style="max-width: 70%;">
                                   </div>
-                                  <div class="col-lg-4">
-                                    <p>Al sumarlos todos 𝒏(𝑨)+𝒏(𝑩)+𝒏(𝑪),  se repiten las 3 dobles intersecciones, (𝑨∩𝑩), (𝑨∩𝑪) y (𝑩∩𝑪), que al restarlas eliminan la triple intersección 𝑨∩𝑩∩𝑪 , así que hay que sumarla nuevamente.</p>
+                                  <div class="col-lg-4 d-flex">
+                                    <p class="justificado m-auto p_black">Al sumarlos todos 𝒏(𝑨)+𝒏(𝑩)+𝒏(𝑪),  se repiten las 3 dobles intersecciones, (𝑨∩𝑩), (𝑨∩𝑪) y (𝑩∩𝑪), que al restarlas eliminan la triple intersección 𝑨∩𝑩∩𝑪 , así que hay que sumarla nuevamente.</p>
                                   </div>
 
                                 </div>
@@ -443,35 +463,35 @@
                                       <img src="assets/img/img_ova/ejemplos.png" style="max-width: 100%;">
                                     </div>
                                     <div class="col-lg-8">
-                                      <b>Ejemplo</b>
-                                      <p>Se hace un estudio entre 150 estudiantes del Liceo del Pueblo, y se encuentra lo siguiente.</p>
+                                      <b class="p_black">Ejemplo</b>
+                                      <p class="p_black">Se hace un estudio entre 150 estudiantes del Liceo del Pueblo, y se encuentra lo siguiente.</p>
                                     </div>
                                   </div>
                                   <div class="col-lg-4 row">
-                                    <div class="col-lg-6">
-                                      <img src="assets/img/img_ova/woman.png" style="max-width: 75%;">
+                                    <div class="col-lg-6 p-0">
+                                      <img src="assets/img/img_ova/woman.png" style="max-width: 100%;">
                                     </div>
                                     <div class="col-lg-6">
-                                      <p class="size_13">54 estudian álgebra. <br>
+                                      <p class="size_13 p_black">54 estudian álgebra. <br>
                                       89 estudian inglés.<br>
                                       80 estudian biología.<br>
                                       60 inglés y biología.</p>
                                     </div>
                                   </div>
                                   <div class="col-lg-4 row">
-                                    <div class="col-lg-6">
-                                      <img src="assets/img/img_ova/man.png" style="max-width: 70%;">
+                                    <div class="col-lg-6 p-0">
+                                      <img src="assets/img/img_ova/man.png" style="max-width: 90%;">
                                     </div>
                                     <div class="col-lg-6">
-                                      <p class="size_13">10 álgebra solamente.<br>
+                                      <p class="size_13 p_black">10 álgebra solamente.<br>
                                       20 álgebra y biología.<br>
                                       15 las tres asignaturas.</p>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col-lg-12 row">
-                                  <div class="col-lg-2">
-                                    <center><b>¿Cuántos estudian?</b></center>
+                                <div class="col-lg-12 mt-2 row">
+                                  <div class="col-lg-2 d-flex">
+                                    <p class="p_black m-auto text-center"><b>¿Cuántos estudian?</b></p>
                                   </div>
                                   <div class="col-lg-8">
                                     <div class="col-lg-12 row mb-1">
@@ -500,8 +520,8 @@
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-lg-2">
-                                    <button class="btn" data-toggle="modal" data-target="#Respuesta2" style="background: #003442; color: #ffffff;">Respuestas</button>
+                                  <div class="col-lg-2 d-flex">
+                                    <button class="btn m-auto" data-toggle="modal" data-target="#Respuesta2" style="background: #003442; color: #ffffff;">Respuestas</button>
                                     <!-- <button class="btn" data-toggle="modal" data-target="#Respuesta2" style="background: #47747c; color: #ffffff;">Respuestas</button> -->
                                   </div>
                                 </div>
@@ -535,12 +555,13 @@
                                 </div>
 
                                 <div class="row pt-5 w-100">
-                                  <div class="col-md-1 offset-md-1 content-img-actividad">
-                                    <img src="assets/img/img_ova/multimedia.png" class="img-activi">
+                                  <div class="col-md-1 offset-md-1 d-flex p-0 content-img-actividad">
+                                    <img src="assets/img/img_ova/multimedia.png" class="img-activi position-relative my-auto" style="right: -20px;">
                                   </div>
                                   <div class="col-md-10" style="background: rgba(218, 227, 243);border-radius: 20px;height: 150px;padding: 30px;">
-                                    <p>Descargue los ejercicios y resuélvalos</p>
-                                    <p>Se realizará encuentro sincrónico para resolver dudas sobre los ejercicios.</p>
+                                    <p class="p_black">Descargue los ejercicios y resuélvalos</p>
+                                    <br>
+                                    <p class="p_black">Se realizará encuentro sincrónico para resolver dudas sobre los ejercicios.</p>
                                   </div>
                                   
                                 </div>
@@ -552,33 +573,33 @@
                             </div>
                           </div>
                        </div>
-                       <div id="unidad2-12" class="tab-pane" role="tabpanel">
-                          <div class="row px-3">
-                              <div class="col-md-4">
-                                  <div class="d-flex">
-                                    <img src="assets/img/img_ova/actividad_complementaria.png" alt="" style="width: 30%;">
-                                    <div class="text-center pt-3" style="font-size: 20px;">
-                                      <b>ACTIVIDADES COMPLEMENTARIAS</b>
-                                      <div style="height: 5px; background: #004c6d;"></div>
-                                    </div>
-                                  </div>
-                                  <div class="px-4 pt-2">
-                                    <p class="justificado">Ingrese al botón “<b>Descargar</b>” y conozca las actividades complementarias para finalizar con éxito el curso Inducción matémática y conjuntos.</p>
-                                    <p>Este archivo se descargará automáticamente en formato pdf.</p>
-                                  </div>
-                              </div>
-                              <div class="col-md-8 borde_azul_left">
-                                  <div class="row">
-                                    <div class="col-md-3" style="padding-top: 135px;">
-                                      <a href="assets/PDF/actividades.pdf" target="_blank"><button class="btn text-white" style="height: fit-content; background: #004c6d;"><h2><b>Descargar</b></h2></button></a>
-                                    </div>
-                                    <div class="col-md-9">
-                                      <img src="assets/img/img_ova/descarga.png" alt="" width="100%">
-                                    </div>
-                                  </div>
-                              </div>
-                          </div>
-                       </div>
+                       <div id="unidad2-12" class="tab-pane" role="tabpanel" style="position: static; left: auto; width: 902px; display: block;">
+                         <div class="row px-3">
+                             <div class="col-md-5">
+                                 <div class="d-flex">
+                                   <img src="assets/img/img_ova/actividad_complementaria.png" alt="" style="width: 30%;">
+                                   <div class="text-center pt-3" style="font-size: 20px; color: #005b8b;">
+                                     <b>ACTIVIDADES COMPLEMENTARIAS</b>
+                                     <div style="height: 5px; background: #005b8b;"></div>
+                                   </div>
+                                 </div>
+                                 <div class="px-4 pt-2">
+                                   <p class="justificado p_black">Ingrese al botón “<b>Descargar</b>” y conozca las actividades complementarias para finalizar con éxito el curso Inducción matémática y conjuntos.</p>
+                                   <p>Este archivo se descargará automáticamente en formato pdf.</p>
+                                 </div>
+                             </div>
+                             <div class="col-md-7 borde_azul_left">
+                                 <div class="row">
+                                   <div class="col-md-3" style="padding-top: 50px;">
+                                     <a href="assets/PDF/actividades.pdf" target="_blank" style="position: relative;right: -70px;"><button class="btn text-white" style="height: fit-content; background: #004c6d;"><h3><b>Descargar</b></h3></button></a>
+                                   </div>
+                                   <div class="col-md-9">
+                                     <img src="assets/img/img_ova/descarga.png" alt="" width="100%">
+                                   </div>
+                                 </div>
+                             </div>
+                         </div>
+                      </div>
                        <div id="unidad2-13" class="tab-pane" role="tabpanel">
                           <div class="row px-3">
                               <div class="col-md-6 offset-md-3">
@@ -587,7 +608,7 @@
                               <div class="col-md-12">
                                   <div class="row">
                                     <div class="col-md-4">
-                                      <img src="assets/img/img_ova/personaje.png" alt="" width="90%">
+                                      <img src="assets/img/img_ova/personaje.png" alt="" width="65%">
                                     </div>
                                     <div class="col-md-8" style="padding-top: 9%;">
                                       <p class="text-center"><b>Ha llegado al final del curso Inducción matemática y conjuntos.</b></p>
@@ -635,7 +656,7 @@
                       
                   </div>
                   <div class="p_dark p-3">
-                      <p > Es aquel conjunto que contiene a todos los elementos posibles a los que nos referiremos.  Se denota por <b>U</b>.  También se conoce como Conjunto Referencia o Referencial <b>𝓡</b>.</p>
+                      <p class="justificado"> Es aquel conjunto que contiene a todos los elementos posibles a los que nos referiremos.  Se denota por <b>U</b>.  También se conoce como Conjunto Referencia o Referencial <b>𝓡</b>.</p>
                   </div>
               </div> <!-- end front panel -->
           </div> <!-- end card -->
@@ -668,7 +689,7 @@
                       
                   </div>
                   <div class="p_dark p-3">
-                      <p > Si el <b>número o cantidad de elementos</b> de un conjunto, también llamado <b>cardinal</b> de A; se puede expresar mediante un número entero positivo, el conjunto A es finito (“si es posible contarlos”).  En caso contrario el conjunto es infinito, si la cantidad es inconmensurable.</p>
+                      <p class="justificado"> Si el <b>número o cantidad de elementos</b> de un conjunto, también llamado <b>cardinal</b> de A; se puede expresar mediante un número entero positivo, el conjunto A es finito (“si es posible contarlos”).  En caso contrario el conjunto es infinito, si la cantidad es inconmensurable.</p>
                   </div>
               </div> <!-- end front panel -->
           </div> <!-- end card -->
@@ -701,7 +722,7 @@
                       
                   </div>
                   <div class="p-3">
-                    <p class="p_dark">Es aquel que no tiene elementos.  Lo representamos por la letra griega 𝜙 o por  { }.</p>
+                    <p class="p_dark justificado">Es aquel que no tiene elementos.  Lo representamos por la letra griega 𝜙 o por  { }.</p>
                   </div>
               </div> <!-- end front panel -->
           </div> <!-- end card -->
@@ -734,13 +755,13 @@
                       
                   </div>
                   <div class="p-3">
-                    <p class="p_dark">Un conjunto A se llama subconjunto de B, solo cuando todo elemento que pertenezca a A también pertenece a B, y se escribe <img src="assets/img/img_ova/subconjuntos_a-b.jpg" style="max-width: 10%;">, que se lee A es subconjunto de B, o también A este contenido en B.</p>
+                    <p class="p_dark justificado">Un conjunto A se llama subconjunto de B, solo cuando todo elemento que pertenezca a A también pertenece a B, y se escribe <img src="assets/img/img_ova/subconjuntos_a-b.jpg" style="max-width: 10%;">, que se lee A es subconjunto de B, o también A este contenido en B.</p>
                     <br>
                     <p class="text-center m-auto"><img src="assets/img/img_ova/subconjuntos58.png" class="img-70"></p>
                     <br>
-                    <p class="p_dark">“Para Cualquier 𝑥∈𝑈, si 𝑥∈𝐴  entonces  𝑥∈𝐵”</p>
-                    <p class="p_dark">Si al menos un elemento de A no es del conjunto B, se escribirá 𝐴 ⊄𝐵; negando el “pertenece”. </p>
-                    <p class="p_dark">Que se lee “A no es subconjunto de B” o bien “A no está contenido en B”</p>
+                    <p class="p_dark justificado">“Para Cualquier 𝑥∈𝑈, si 𝑥∈𝐴  entonces  𝑥∈𝐵”</p>
+                    <p class="p_dark justificado">Si al menos un elemento de A no es del conjunto B, se escribirá 𝐴 ⊄𝐵; negando el “pertenece”. </p>
+                    <p class="p_dark justificado">Que se lee “A no es subconjunto de B” o bien “A no está contenido en B”</p>
                   </div>
               </div> <!-- end front panel -->
           </div> <!-- end card -->
@@ -798,8 +819,8 @@
                   <div class="row">
                     <div class="col-lg-4">
                     </div>
-                    <div class="col-lg-4 header_card">
-                      <center><p class="text-white size_16">Respuesta</p></center>
+                    <div class="col-lg-4">
+                      <!-- <center><p class="text-white size_16">Respuesta</p></center> -->
                     </div>
                     <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                       <div class="divcerrar">
@@ -809,8 +830,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="p-5 row">
-                    <p>Hay muchas otras propiedades que se pueden probar mediante la técnica de sombreado y también mediante las propiedades del Álgebra Proposicional</p>
+                  <div class="px-5 pb-5 d-flex">
+                    <p class="justificado m-auto">Hay muchas otras propiedades que se pueden probar mediante la técnica de sombreado y también mediante las propiedades del Álgebra Proposicional</p>
                   </div>
               </div> <!-- end front panel -->
           </div> <!-- end card -->

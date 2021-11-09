@@ -124,7 +124,7 @@ input {
 .texto_header{
     font-size: 17px;
     display: inline-block;
-    width: 50%;
+    /*width: 50%;*/
 }
 .texto_header b{
     color: #004c6d;
@@ -219,4 +219,8 @@ input {
 
 .size_15{
     font-size: 15px;
+}
+
+.d-flex{
+    display: flex;
 }
