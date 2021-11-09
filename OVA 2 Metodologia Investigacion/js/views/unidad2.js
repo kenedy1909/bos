@@ -296,7 +296,7 @@ function funcion_vanvas() {
 function contenido2_3(num) {
     switch(parseInt(num)){
         case 1:
-            var cont = `<div class="m-auto"><p>Libros:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Libros:</p>
                       <ul>
                         <li>Título y subtítulo del libro.</li>
 
@@ -315,7 +315,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 2:
-            var cont = `<div class="m-auto"><p style="font-size: 11px;">Capítulos de libros cuando fueron escritos por varios autores o recopilado por una o más personas:</p>
+            var cont = `<div class="m-auto"><p style="font-size: 11px;" class="font-weight-bold">Capítulos de libros cuando fueron escritos por varios autores o recopilado por una o más personas:</p>
                       <ul style="font-size: 11px;">
                         <li>Título y subtítulo del capítulo</li>
 
@@ -342,7 +342,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 3:
-            var cont = `<div class="m-auto"><p>Artículos de revistas:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Artículos de revistas:</p>
                       <ul>
                         <li>Título y subtítulo del artículo</li>
 
@@ -359,7 +359,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 4:
-            var cont = `<div class="m-auto"><p>Artículo periodístico:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Artículo periodístico:</p>
                       <ul>
                         <li>Título y subtítulo del artículo</li>
 
@@ -376,7 +376,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 5:
-            var cont = `<div class="m-auto"><p>Videos y películas:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Videos y películas:</p>
                       <ul>
                         <li>Título y subtítulo del video/película.</li>
 
@@ -391,7 +391,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 6:
-            var cont = `<div class="m-auto"><p>Trabajos presentados en seminarios, conferencias, congresos y eventos similares:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Trabajos presentados en seminarios, conferencias, congresos y eventos similares:</p>
                       <ul>
                         <li>Título y subtítulo del trabajo.</li>
 
@@ -412,7 +412,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 7: 
-            var cont = `<div class="m-auto"><p>Entrevistas a expertos:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Entrevistas a expertos:</p>
                       <ul>
                         <li>Nombre entrevistado.</li>
 
@@ -431,7 +431,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 8: 
-            var cont = `<div class="m-auto"><p>Tesis y disertaciones:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Tesis y disertaciones:</p>
                       <ul>
                         <li>Título y subtítulo de la tesis.</li>
 
@@ -450,7 +450,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 9: 
-            var cont = `<div class="m-auto"><p>Documentos no publicados:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Documentos no publicados:</p>
                       <ul>
                         <li>Título y subtítulo del documento.</li>
 
@@ -467,7 +467,7 @@ function contenido2_3(num) {
             $('#circle_can').addClass('circulo_blanco_can');
             break;
         case 10: 
-            var cont = `<div class="m-auto"><p>Sitios web:</p>
+            var cont = `<div class="m-auto"><p class="font-weight-bold">Sitios web:</p>
                       <ul>
                         <li>Nombre del sitio (URL).</li>
 
@@ -489,8 +489,8 @@ function contenido2_3(num) {
 function pantalla2_5(num){
     switch(parseInt(num)){
         case 1:
-            var text = `<p>Clarke, S.P., Sloane, D.M. y Aiken, L.H. (2002), Effects of hospital staffing and organizational climate on needlestick injuries to nurses, Am J Public Health, 92(7):1115·1119.</p><br>
-                        <p>En esta investigación con enfermeros(as) se encontró que el clima afecta la productividad y la calidad del servicio a nivel personal. EI estudio incluyó datos retrospectivos de 732 enfermeros(as) y prospectivos de 960.</p>`;
+            var text = `<div><p>Clarke, S.P., Sloane, D.M. y Aiken, L.H. (2002), Effects of hospital staffing and organizational climate on needlestick injuries to nurses, Am J Public Health, 92(7):1115·1119.</p><br>
+                        <p>En esta investigación con enfermeros(as) se encontró que el clima afecta la productividad y la calidad del servicio a nivel personal. EI estudio incluyó datos retrospectivos de 732 enfermeros(as) y prospectivos de 960.</div>`;
             $('.banner2_5').html(text);
             $('.tria1').css({ "visibility": "visible"});
             $('.tria2').css({ "visibility": "hidden"});
@@ -608,10 +608,10 @@ function principal2_5(num){
                               </div>
 
                               <div class="row">
-                                  <div class="col-md-3">
-                                    <p>Desliza para avanzar</p>
+                                  <div class="col-md-4">
+                                    <p>De clic en los círculos para avanzar</p>
                                   </div>
-                                  <div class="col-md-6 d-flex justify-content-center">
+                                  <div class="col-md-4 d-flex justify-content-center">
                                     <div class="btn_circlewhite cursor btn2_1 btn_min" onclick="pantallasmin(1)"></div>
                                     <div class="btn_circle cursor btn2_2 btn_min" onclick="pantallasmin(2)"></div>
                                     <div class="btn_circle cursor btn2_3 btn_min" onclick="pantallasmin(3)"></div>
