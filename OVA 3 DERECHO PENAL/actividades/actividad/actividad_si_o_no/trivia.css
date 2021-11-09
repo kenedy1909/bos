@@ -15,7 +15,7 @@ body, html {
 
 #quiz {
   margin-top: 20px; 
-  background-color: #E7E6E6;
+  background-color: #F2C7C4;
   height: 390px;
   padding-bottom: 60px;
   width: 100%;
@@ -87,7 +87,7 @@ body, html {
 }
 
 .opcion{
-  border: solid #1E2054;
+  border: solid #00953E;
   border-radius: 20px;
 }
 
@@ -164,7 +164,7 @@ body, html {
 }
 
 .content-tarjeta{
-  background: #F8D4DA;
+  background: #ECECEC;
   border-radius: 20px;
   padding: 15px;
 }
