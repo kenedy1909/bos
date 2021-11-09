@@ -244,8 +244,7 @@ function funcionalidad_1(num) {
     switch(parseInt(num)){
         case 1:
             $("#funcionalidad-1").html(`
-                                        <div class="custom-scrollbar_uno">
-                                          <div class="custom-scrollbar__inner_uno">
+                                          <div class="d-flex justify-content-center align-items-center w-100 h-100">
                                             <div class="position-relative d-flex" style="width: 700px; height: 445px;">
                                                 <img src="assets/img/img_ova/linea.png" class="img-100 m-auto">
                                                 <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 4px;" onclick="funcionalidad_1_1(1)"></div>
@@ -268,10 +267,6 @@ function funcionalidad_1(num) {
                                                 <div id="info_funcionalidad_2" class="position-absolute d-none img-45"></div>
                                             </div>
                                           </div>
-                                          <div class="custom-scrollbar__bar_uno">
-                                            <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
-                                          </div>
-                                        </div>
                                         `);
             scroll_uno();
             break;
@@ -287,7 +282,7 @@ function funcionalidad_1(num) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 p-3" id="funcionalidad_1_2">
+                                            <div class="col-md-12 p-3 d-flex align-items-center" id="funcionalidad_1_2" style="min-height: 570px!important;">
 
                                             </div>
                                             <div class="col-md-12 mx-auto mt-auto">
@@ -522,8 +517,8 @@ function scroll_horizontal(num){
                                         <br>
                                         <p class="justificado p_black">Se presenta constante alteración del orden público mediante desfiles, manifestaciones públicas y protestas por parte de los estudiantes.</p>
                                     </div>
-                                    <div class="img-50 my-auto p-5 border-left-color-c">
-                                        <img src="assets/img/img_ova/Imagen13.jpg" class="img-100 m-auto">
+                                    <div class="img-50 my-auto p-5 border-left-color-c text-center">
+                                        <img src="assets/img/img_ova/Imagen13.jpg" width="60%" class=" m-auto">
                                     </div>
                                 </div>
                                 `);
