@@ -1556,7 +1556,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="modalp7-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalp7-2" onclick="pausevideo(1)" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl centered-propio" role="document">
     <div class="modal-content">
       <div class="">
@@ -1572,7 +1572,7 @@
                       </div>
                       <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                         <div class="divcerrar">
-                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close" onclick=pausevideo(1)">>
                           <div class="m-0 p-0 x-modal">
                             <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                           </div>
@@ -1583,8 +1583,7 @@
                   </div>
                   <div class="content">
                       <p class="font13 font-weight-bold justificado p_black">Seleccione las letras para conocer (V) las ventajas y (D) las desventajas de los Marketplaces:</p> <br><br>
-
-                      <p> Video Faltante</p>
+                      <video id="video_intro1" src="assets/img/img_ova/ventajasydesventajas.mp4" width="70%" controls></video>
                   </div>
               </div> <!-- end front panel -->
           </div> <!-- end card -->

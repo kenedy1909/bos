@@ -95,6 +95,7 @@ $( document ).ready(function() {
     /*scroll();*/
     // console.log(tema);
     slide_link(tema);
+    $('.menu1').removeClass('d-none');
 });
 /*var pdf = `<div class="col-md-12">
                   <p class="p_black">
