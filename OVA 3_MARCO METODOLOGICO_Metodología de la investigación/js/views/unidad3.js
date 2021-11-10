@@ -3,7 +3,8 @@ $( document ).ready(function() {
     $(".pedfs").addClass('d-none');
     $(".pdf3").removeClass('d-none');
     $( ".zoomContainer" ).remove();
-
+    setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({

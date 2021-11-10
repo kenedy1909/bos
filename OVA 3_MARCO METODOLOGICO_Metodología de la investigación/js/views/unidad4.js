@@ -2,6 +2,8 @@ $( document ).ready(function() {
     $(".menu4").removeClass('d-none');
     $(".pedfs").addClass('d-none');
     $(".pdf4").removeClass('d-none');
+    setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            
     tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({

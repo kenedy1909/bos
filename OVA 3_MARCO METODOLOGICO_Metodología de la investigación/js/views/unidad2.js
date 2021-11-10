@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     $(".menu2").removeClass('d-none');
-
+    setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
+            
     $(".pedfs").addClass('d-none');
 
     $(".pdf2").removeClass('d-none');
