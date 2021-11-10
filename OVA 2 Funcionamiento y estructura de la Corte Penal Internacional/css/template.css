@@ -258,9 +258,9 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 80%;
+  max-width: 65%;
   position: relative;
-  top: 10px;
+  top: 25px;
 }
 
 .card .user .menu_superior{

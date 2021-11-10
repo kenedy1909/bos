@@ -1367,6 +1367,17 @@ input[type=range]::-ms-fill-upper {
   border-top: 25px solid transparent;
   border-bottom: 26px solid transparent;
 }
+
+.triag_cambiaslide21{
+  width: 0;
+  height: 0;
+  border-left: 37px solid #5f1813;
+  border-top: 25px solid transparent;
+  border-bottom: 26px solid transparent;
+  position: relative;
+  left: -20px;
+  top: 25px;
+}
 .ind_2carrusel{
   height: 53px;
   background: #9f4c97;
