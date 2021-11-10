@@ -1,5 +1,8 @@
 $( document ).ready(function() {
     $(".menu1").removeClass('d-none');
+
+    $(".pedfs").addClass('d-none');
+    $(".pdf1").removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -80,13 +83,6 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            var pdf = `<div class="col-md-12">
-                        <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
-                        </p>
-                      </div>`;
-            $('.pdfs').html(pdf);
-
             setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", ">");
             dragging = "";
             diff = "";

@@ -1,5 +1,7 @@
 $( document ).ready(function() {
     $(".menu3").removeClass('d-none');
+    $(".pedfs").addClass('d-none');
+    $(".pdf3").removeClass('d-none');
     $( ".zoomContainer" ).remove();
 
     tema = 1;
@@ -72,13 +74,6 @@ function controlSlides3(num){
             tema = 3;
             break;
         case 1:
-            
-            var pdf = `<div class="col-md-12">
-                      <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD3/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
-                      </p>
-                    </div>`;
-            $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             break;
         case 2:

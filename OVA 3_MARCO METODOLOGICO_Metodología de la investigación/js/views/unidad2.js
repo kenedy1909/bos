@@ -1,5 +1,9 @@
 $( document ).ready(function() {
     $(".menu2").removeClass('d-none');
+
+    $(".pedfs").addClass('d-none');
+
+    $(".pdf2").removeClass('d-none');
     console.log(tema);
     /*slide_link2(tema);*/
     $('#smartwizard').smartWizard({
@@ -70,32 +74,8 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
-            var pdf = `<div class="col-md-12">
-                        <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD2/metodocualitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocualitativo.pdf </a>
-                        </p>
-                        <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD2/metodocuantitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocuantitativo.pdf </a>
-                        </p>
-                        <p class="p_white size_20">
-                              <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
-                            </p>
-                      </div>`;
-            $('.pdfs').html(pdf);
             break;
         case 1:
-            var pdf = `<div class="col-md-12">
-                        <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD2/metodocualitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocualitativo.pdf </a>
-                        </p>
-                        <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD2/metodocuantitativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodocuantitativo.pdf </a>
-                        </p>
-                        <p class="p_white size_20">
-                              <a href="assets/PDF/UNIDAD1/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
-                            </p>
-                      </div>`;
-            $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             break;
         case 2:
