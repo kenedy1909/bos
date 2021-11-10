@@ -8,10 +8,10 @@ function inicioRecurso() {
             {id: "B", answer_txt: "Falso"}
         ];
     var _questions = [
-        {question_txt: "Se llama ángulo a la “figura”  que se forma por dos semirrectas que tienen su origen en un mismo punto.", answer_id: "A", img:""},
-        {question_txt: "Las perpendiculares no se cortan.", answer_id: "B", img:""},
-        {question_txt: "La perpendicular es más corta que toda oblicua.", answer_id: "A", img:""},
-        {question_txt: "Dos rectas paralelas a una tercera serán paralelas entre sí.", answer_id: "A", img:""}
+        {question_txt: "El examen preliminar por parte de la fiscalía es diferente al inicio formal de una investigación. ", answer_id: "A", img:""},
+        {question_txt: "En caso de confluir competencia y admisibilidad, le corresponde a la Corte analizar si una investigación y enjuiciamiento. ", answer_id: "B", img:""}, 
+        {question_txt: "Los requisitos de admisibilidad se encuentran establecidos en el artículo 117 del ER.", answer_id: "B", img:""}, 
+        {question_txt: "Debe destacarse que los requisitos de admisibilidad están orientados a verificar que el estado tenga jurisdicción para ejercer la acción penal..", answer_id: "A", img:""}
         
 
     ];
