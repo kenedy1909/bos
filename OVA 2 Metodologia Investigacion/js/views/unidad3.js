@@ -21,13 +21,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $(".libro").on('click' , libros);
@@ -52,6 +50,7 @@ $( document ).ready(function() {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides3(stepIndex);
+    actualizarprogress(stepIndex+9+11);
 }
 
 function slide_predeterminado3(){
@@ -214,17 +213,17 @@ function libros() {
     if (libros_num == 1) {
         var text = `
                     <ul>
-                        <li class="p_black">Cuando se encuentre información que se considere contribuye o hace referencia a nuestro problema o tema de investigación, se deben extraer las ideas, opiniones, referencias que consideremos principales, igual que los datos y teorías.</li>
-                        <li class="p_black">El desarrollo de nuestro marco teórico parte de la revisión de la literatura, de lo que se encuentre, de si existen o no teorías que la preceden, de que hayan estudio que mencionen el tema a profundidad o someramente, o que en su defecto existan solamente estudios no comprobados o empezados y no terminados; todo esto se debe poner en consideración a la hora de sentarnos a escribir nuestro marco teórico.</li>
+                        <li class="p_black justificado">Cuando se encuentre información que se considere contribuye o hace referencia a nuestro problema o tema de investigación, se deben extraer las ideas, opiniones, referencias que consideremos principales, igual que los datos y teorías.</li>
+                        <li class="p_black justificado">El desarrollo de nuestro marco teórico parte de la revisión de la literatura, de lo que se encuentre, de si existen o no teorías que la preceden, de que hayan estudio que mencionen el tema a profundidad o someramente, o que en su defecto existan solamente estudios no comprobados o empezados y no terminados; todo esto se debe poner en consideración a la hora de sentarnos a escribir nuestro marco teórico.</li>
                     </ul>
                    `;
         $("#marco").html(text);
     }else if (libros_num == 2) {
         var text = `
-                    <p class="p_black"><b>A manera de conclusión:</b></p>
+                    <p class="p_black justificado"><b>A manera de conclusión:</b></p>
                     <ul>
-                        <li class="p_black">El marco teórico está integrado por los estudios que con anterioridad se han realizado, igualmente por las teorías o enfoques o antecedentes que se encuentren en relación con nuestro tema o problema de investigación.</li>
-                        <li class="p_black">Para el desarrollo del marco teórico es fundamental consultar toda la literatura concerniente a nuestro tema de investigación.</li>
+                        <li class="p_black justificado">El marco teórico está integrado por los estudios que con anterioridad se han realizado, igualmente por las teorías o enfoques o antecedentes que se encuentren en relación con nuestro tema o problema de investigación.</li>
+                        <li class="p_black justificado">Para el desarrollo del marco teórico es fundamental consultar toda la literatura concerniente a nuestro tema de investigación.</li>
                     </ul>
                    `;
         $("#marco").html(text);
@@ -290,8 +289,8 @@ function libros() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 p-3">
-                            <div class="p-3 bg-morado-c radius-2 d-flex" id="info-morado">
+                        <div class="col-md-8 p-3 d-flex">
+                            <div class="p-3 bg-morado-c radius-2 d-flex my-auto" id="info-morado">
                                 <p class="p_white justificado">¿A qué clase de información acudí, fue esta segura?</p>
                             </div>
                         </div>
@@ -428,7 +427,7 @@ function teorias() {
                                 <p class="p_white bg-mm-o p-3 text-center">Marco Conceptual</p>
                             </div>
                             <div class="col-md-6 p-3">
-                                <p class="p_black">El marco conceptual nos ayuda a entender nuestro tema de investigación, a la vez que nos ubica respecto a la teoría y temáticas a desarrollar, ya que se deben explicar aquí las teorías y conceptos encontrados, es decir, desglosar desde lo general a lo específico lo encontrado en la revisión bibliográfica, la cual nos ayudará a:</p>
+                                <p class="p_black justificado">El marco conceptual nos ayuda a entender nuestro tema de investigación, a la vez que nos ubica respecto a la teoría y temáticas a desarrollar, ya que se deben explicar aquí las teorías y conceptos encontrados, es decir, desglosar desde lo general a lo específico lo encontrado en la revisión bibliográfica, la cual nos ayudará a:</p>
                             </div>
                             <div class="col-md-6 p-3">
                                 <div class="bg-gris p-3 w-100 h-100 d-flex">
@@ -635,18 +634,18 @@ function teorias() {
                             <div class="col-md-12 p-3">
                                 <div id="carouselExampleControls" class="carousel slide px-5" data-ride="carousel">
                                     <div class="carousel-item active">
-                                        <p class="p_black d-block w-100" alt="First slide">En el marco contextual, se incorpora el escenario físico del objeto de estudio, como lo son las condiciones del entorno, las condiciones temporales y ambientales, en general se evalúa, describe e incorpora todo lo que hace parte del contexto de nuestra investigación y que sirve como referente, por ejemplo: la cultura, las costumbres, los aspectos históricos, económicos y sociales. Y estos aspectos, son definitorios en ciertas investigaciones, como, por ejemplo, en las investigaciones cualitativas, donde se trabaja con resultados en los que influye todo este tipo de características de corte general. Por lo que el marco contextual, es definitorio en un proyecto de investigación ya que dirige la mirada hacia ciertos aspectos, esto, dependiendo del tipo de investigación que se planea hacer y de los objetivos propuestos.</p>
+                                        <p class="p_black justificado d-block w-100" alt="First slide">En el marco contextual, se incorpora el escenario físico del objeto de estudio, como lo son las condiciones del entorno, las condiciones temporales y ambientales, en general se evalúa, describe e incorpora todo lo que hace parte del contexto de nuestra investigación y que sirve como referente, por ejemplo: la cultura, las costumbres, los aspectos históricos, económicos y sociales. Y estos aspectos, son definitorios en ciertas investigaciones, como, por ejemplo, en las investigaciones cualitativas, donde se trabaja con resultados en los que influye todo este tipo de características de corte general. Por lo que el marco contextual, es definitorio en un proyecto de investigación ya que dirige la mirada hacia ciertos aspectos, esto, dependiendo del tipo de investigación que se planea hacer y de los objetivos propuestos.</p>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="p_black d-block w-100" alt="Second slide">De igual forma, el marco contextual contribuye en la elaboración del marco teórico, ya que basándose en el marco contextual, delimita el tema orientando la búsqueda de la temática. Por lo que el marco contextual es un componente fundamental a la hora de desarrollar nuestro proyecto de investigación.</p>
+                                        <p class="p_black justificado d-block w-100" alt="Second slide">De igual forma, el marco contextual contribuye en la elaboración del marco teórico, ya que basándose en el marco contextual, delimita el tema orientando la búsqueda de la temática. Por lo que el marco contextual es un componente fundamental a la hora de desarrollar nuestro proyecto de investigación.</p>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="p_black d-block w-100" alt="Third slide">
                                             <b>Características</b>
                                             <ul>
-                                                <li>Demarca el espacio</li>
+                                                <li class="justificado">Demarca el espacio</li>
                                                 <p>El marco contextual demarca y ubica la investigación, el cual puede ser físico, de tiempo o ambos. </p>
-                                                <li>Depende de los objetivos</li>
+                                                <li class="justificado">Depende de los objetivos</li>
                                                 <p>Depende de los objetivos, ya que son estos los que definen el contexto en el cual tendrá lugar nuestra investigación, y este contexto puede responder a un grupo, comunidad, organización, cultura, entre muchos.</p>
                                             </ul>
                                         </div>
@@ -654,15 +653,15 @@ function teorias() {
                                     <div class="carousel-item">
                                         <div class="p_black d-block w-100" alt="Fourth slide">
                                             <ul>
-                                                <li>Da sentido a la investigación</li>
+                                                <li class="justificado">Da sentido a la investigación</li>
                                                 <p>En la medida en que ubica al investigador dentro de un entorno, realidad para a partir de allí desarrollar su investigación.</p>
-                                                <li>Va de lo general a lo particular</li>
+                                                <li class="justificado">Va de lo general a lo particular</li>
                                                 <p>Se empieza describiendo los aspectos generales del contexto para llegar a los particulares, describiendo el contexto de manera completa, pero sin extenderse demasiado en detalles que no aporten. Por otra parte, esta contextualización generalmente suele ubicarse en el marco teórico.</p>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="p_black d-block w-100" alt="Fourth slide">A manera de conclusión, el marco contextual es fundamental en el proceso investigativo ya que ubica el objeto o problema de estudio para el desarrollo de los objetivos y de los demás elementos que conforman la investigación, por ejemplo, el marco teórico. De otra forma, se hace uso de este tanto en investigaciones cualitativas como cuantitativas.</p>
+                                        <p class="p_black justificado d-block w-100" alt="Fourth slide">A manera de conclusión, el marco contextual es fundamental en el proceso investigativo ya que ubica el objeto o problema de estudio para el desarrollo de los objetivos y de los demás elementos que conforman la investigación, por ejemplo, el marco teórico. De otra forma, se hace uso de este tanto en investigaciones cualitativas como cuantitativas.</p>
                                     </div>
                                   </div>
                                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -884,7 +883,7 @@ function videos() {
                     <div>
                         <p class="p_black justificado"><b>Video:</b> Dr. Roberto Hernández Sampieri. La revisión de la literatura. </p>
                         <p class="p_black justificado">Tiempo: 8 minutos autónomos.</p>
-                        <p class="p_black justificado">El video lo encuentra en la carpeta <a href="https://www.youtube.com/watch?v=zrvZFEcQ_rg" target="_blank">https://www.youtube.com/watch?v=zrvZFEcQ_rg</a></p>
+                        <p class="p_black justificado">El video lo encuentra al dar clic aquí: <a href="https://www.youtube.com/watch?v=zrvZFEcQ_rg" target="_blank">https://www.youtube.com/watch?v=zrvZFEcQ_rg</a></p>
                     </div>
                     `;
         $(".video-1").html(texto);
@@ -894,7 +893,7 @@ function videos() {
                     <div>
                         <p class="p_black justificado"><b>Video:</b> Dra. Rosario Hernández.</p>
                         <p class="p_black justificado">Tiempo: 8 minutos autónomos.</p>
-                        <p class="p_black justificado">El video lo encuentra en la carpeta <a href="https://www.youtube.com/watch?v=cG4UnZDH_d8" target="_blank">https://www.youtube.com/watch?v=cG4UnZDH_d8</a></p>
+                        <p class="p_black justificado">El video lo encuentra al dar clic aquí: <a href="https://www.youtube.com/watch?v=cG4UnZDH_d8" target="_blank">https://www.youtube.com/watch?v=cG4UnZDH_d8</a></p>
                     </div>
                     `;
         $(".video-1").html('<p class="m-auto text-center w-fit"><img src="assets/img/img_ova/jugar.png" class="w-125px"></p>');
