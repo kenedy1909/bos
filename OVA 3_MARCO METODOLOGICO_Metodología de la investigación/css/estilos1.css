@@ -1610,3 +1610,10 @@ input[type=range]::-ms-fill-upper {
     border: dashed #994c91;
     padding-top: 50px;
 }
+
+.reduct{
+	padding: 15px 10px 1px 15px;
+	height: 145px;
+	overflow: auto;
+	font-size: 14px;
+}
