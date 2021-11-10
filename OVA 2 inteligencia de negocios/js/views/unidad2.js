@@ -41,13 +41,13 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/DOCUMENTOS/aprendizaje_2.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Unidad de aprendizaje 2 La Inteligencia de Negocios.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/aprendizaje_2.pdf" target="_blank"> <img class="menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> Unidad de aprendizaje 2 La Inteligencia de Negocios.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/UNIDAD 2/graficos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipos de gráficos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/UNIDAD 2/graficos.pdf" target="_blank"> <img class="menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> Tipos de gráficos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/DOCUMENTOS/color.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tipología del color.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/DOCUMENTOS/color.pdf" target="_blank"> <img class="menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> Tipología del color.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
