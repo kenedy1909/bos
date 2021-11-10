@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".menu4").removeClass('d-none');
     tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({

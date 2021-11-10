@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $(".menu1").removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -121,6 +121,8 @@ function controlSlides(num){
         case 6:
             setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");            
             tema = 1;
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;
         default:
             break;

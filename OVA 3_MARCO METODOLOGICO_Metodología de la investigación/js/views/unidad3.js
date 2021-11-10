@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".menu3").removeClass('d-none');
     $( ".zoomContainer" ).remove();
 
     tema = 1;
@@ -89,6 +90,8 @@ function controlSlides3(num){
         case 4:
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             tema = 1;
+            star_uni = 3;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;    
         default:
             break;

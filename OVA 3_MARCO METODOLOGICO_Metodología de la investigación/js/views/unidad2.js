@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $(".menu2").removeClass('d-none');
     console.log(tema);
     /*slide_link2(tema);*/
     $('#smartwizard').smartWizard({
@@ -101,6 +101,8 @@ function controlSlides2(num){
         case 2:
             setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
             tema = 1;
+            star_uni = 2;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;
         default:
             break;
