@@ -537,7 +537,7 @@ p, button{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 /*.custom-scrollbar__inner10

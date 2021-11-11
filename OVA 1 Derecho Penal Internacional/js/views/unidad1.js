@@ -594,9 +594,9 @@ function scroll_horizontal2(num){
                              `;
             var info_scroll = `El primero de estos conflictos que debe llamar la atención es el ocurrido en la <span class="text-cafe-activi"><b>República Federativa de Yugoslavia</b></span>, la cual, después de integrar durante décadas pueblos con profundas diferencias étnicas, religiosas y de identidad nacional, comienza a desintegrarse a partir de la muerte del general Josip Broz Tito en 1980, quien durante treinta y cinco años gobernó la hoy extinta Yugoslavia.`;
             var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
+            $('#img-scroll2').html(img_scroll);
+            $('#info-scroll2').html(info_scroll);
+            $('#activi-scroll2').html(activi_scroll);
             break;
         case 1:
             var img_scroll = `
@@ -643,9 +643,9 @@ function scroll_horizontal2(num){
                                   </div>
                                 </div>
                                 `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
+            $('#img-scroll2').html(img_scroll);
+            $('#info-scroll2').html(info_scroll);
+            $('#activi-scroll2').html(activi_scroll);
             break;
         case 2:
             var img_scroll = `
@@ -658,9 +658,9 @@ function scroll_horizontal2(num){
                              `;
             var info_scroll = `Por otra parte, en 1994 se tiene un conflicto interno que se desarrolla en el continente africano que llama la atención de la comunidad internacional por su <span class="text-cafe-activi"><b>grado tan elevado de violencia</b></span> entre dos grupos étnicos que habitan en la república de Ruanda.`;
             var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
+            $('#img-scroll2').html(img_scroll);
+            $('#info-scroll2').html(info_scroll);
+            $('#activi-scroll2').html(activi_scroll);
             break;
         case 3:
             var img_scroll = `
@@ -712,9 +712,9 @@ function scroll_horizontal2(num){
                                   </div>
                                 </div>
                                 `;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
+            $('#img-scroll2').html(img_scroll);
+            $('#info-scroll2').html(info_scroll);
+            $('#activi-scroll2').html(activi_scroll);
             break;
         case 4:
             var img_scroll = `
@@ -727,9 +727,9 @@ function scroll_horizontal2(num){
                              `;
             var info_scroll = `Es importante señalar que las cifras oficiales dan cuenta de más de <span class="text-cafe-activi"><b>800.000 victimas</b></span> del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses, periodo de mayor crueldad de los ataques de los Hutus contra el pueblo Tutsi.`;
             var activi_scroll = ``;
-            $('#img-scroll').html(img_scroll);
-            $('#info-scroll').html(info_scroll);
-            $('#activi-scroll').html(activi_scroll);
+            $('#img-scroll2').html(img_scroll);
+            $('#info-scroll2').html(info_scroll);
+            $('#activi-scroll2').html(activi_scroll);
             break;
         default:
             break;
@@ -831,7 +831,7 @@ function yugoslavias(num) {
     $(".yugoslavia-info-"+num).addClass('bg-amarillo-c');
     if (num == 1) {
         var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar1">
+                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar1 shadow">
                       <div class="custom-scrollbar__inner1">
                         <p class="justificado p_black">Mediante la Resolución 780 de 1992 el Consejo de Seguridad creó la Comisión de expertos para <span class="text-cafe-activi"><b>investigar y recoger pruebas de los graves incumplimientos</b></span> a los convenios de ginebra y otras infracciones al DIH, órgano que realizó un trabajo muy importante de recolección de información sobre todas las infracciones que se hubiesen presentado, lo que incluyó más de <span class="text-cafe-activi"><b>65.000 páginas de documentos, cerca de 300 horas de filmación en video y 3.300 páginas de análisis,</b></span> lo que contrasta en un trabajo juicioso, el hecho que el comité nunca recibió financiación de la ONU para el desarrollo de sus actividades.</p>
                         <br>
@@ -849,7 +849,7 @@ function yugoslavias(num) {
         modal_scroll1();
     }else if (num == 2) {
         var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar2">
+                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar2 shadow">
                       <div class="custom-scrollbar__inner2">
                       <p class="justificado p_black">En febrero de 1993 el consejo de seguridad mediante la resolución 808 decidió que debía <span class="text-cafe-activi"><b>crearse un tribunal Ad hoc para investigar los infracciones al DIH (Derecho Internacional Humanitario)</b></span> cometidas en Yugoslavia a partir de 1991, para lo cual el secretario de la ONU debía presentar un informe sobre la pertinencia de crear el tribunal.</p>
                         <br>
@@ -866,7 +866,7 @@ function yugoslavias(num) {
         modal_scroll2();
     }else if (num == 3) {
         var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi">
+                    <div class="p-3 radius-4 border-cafe-activi shadow">
                       <div>
                         <p class="justificado p_black">Uno de los elementos que debe destacarse es que el estatuto no solamente establece la competencia del tribunal para juzgar crímenes de guerra, que son graves infracciones al Derecho Internacional Humanitario, sino que incluye la categoría de crímenes de <span class="text-cafe-activi"><b>lesa humanidad y el genocidio</b></span>, como parte de los crímenes internacionales competencia del tribunal.</p>
                       </div>
@@ -875,7 +875,7 @@ function yugoslavias(num) {
         $("#tribunal").html(texto);
     }else if (num == 4) {
         var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3">
+                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3 shadow">
                       <div class="custom-scrollbar__inner3">
                         <p class="justificado p_black">La competencia temporal del tribunal es a partir de 1991, también se debe destacar que la sede se estableció en la Haya, Países Bajos y el <span class="text-cafe-activi"><b>presupuesto para su funcionamiento</b></span> sale de los recursos del Consejo de Seguridad de la  ONU, aún así el tribunal durante sus primeros años tuvo dificultades para el desarrollo de sus actividades, derivado de la falta de cooperación de los estados que surgieron con el proceso de escisión de la Antigua Yugoslavia, sin embargo, fueron finalmente juzgados cerca de un centenar de personas por el tribunal, desarrollando una abundante jurisprudencia que fortaleció el derecho penal internacional.</p>
                       </div>

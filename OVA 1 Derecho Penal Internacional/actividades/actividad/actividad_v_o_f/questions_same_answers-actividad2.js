@@ -236,6 +236,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn " style="background: #771E18; color: #FFFFFF;" type="submit" >Calificar</button>\
+        <button class="btn btn-lg shadow" style="background: #771E18; color: #FFFFFF;" type="submit" >Calificar</button>\
     </div>\
 </form>'
