@@ -277,9 +277,17 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 65%;
   position: relative;
-  top: 1px;
+  top: 25px;
+}
+.card .user2 img{
+  background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 90%;
+    position: relative;
+    top: 2px;
 }
 
 .card .user .menu_superior{
