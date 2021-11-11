@@ -602,7 +602,7 @@ function slideModalU3_3(num) {
                         <p class="text-justify text-black pr-3">En conclusión, para una variación establecida (V) de Y. La pregunta sería: ¿De qué tamaño debe ser la muestra? Por lo que el resultado estaría dado a través de (haga clic para visualizar la imagen):</p>
                         <div class="w-50 text-center">
                           <img src="assets/img/img_ova/imagen.png" width="60%">
-                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2"><b>VER IMAGEN</b></p>
+                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2" ><b>VER IMAGEN</b></p>
                         </div>
                       </div>`;
     $('.contenidoNumeros').html(contenido);
