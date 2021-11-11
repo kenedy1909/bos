@@ -503,7 +503,7 @@ function transaccion_1() {
     $(".transacciones-inferior").addClass('d-flex');
     $(".transacciones-info-1").addClass('img-100');
     $(".transacciones-info-1").html(`
-                                    <div class="d-flex">
+                                    <div class="d-flex transacciones-infoCardss">
                                         <div class="img-80 m-auto" data-toggle="modal" data-target="#modal-tps">
                                           <p class="justificado p_white"><b>Diseño de un TPS</b></p>
                                           <p class="justificado p_white">(Haz clic aquí para desplegar más información)</p>
@@ -527,7 +527,7 @@ function transaccion_2() {
     $(".transacciones-inferior").addClass('d-flex');
     $(".transacciones-info-2").addClass('img-100');
     $(".transacciones-info-2").html(`
-                                    <div class="d-flex">
+                                    <div class="d-flex transacciones-infoCardss">
                                         <div class="img-80">
                                           <p class="justificado p_white"><b>Identificar Propósito y Funcionalidad</b></p>
                                           <p class="justificado p_white">Esto implica tener certeza de la situación, intención y contexto. Ejemplo: base de datos de clientes para diseñar la estrategia de fidelización de acuerdo con su comportamiento en compras.</p>
@@ -551,7 +551,7 @@ function transaccion_3() {
     $(".transacciones-inferior").addClass('d-flex');
     $(".transacciones-info-3").addClass('img-100');
     $(".transacciones-info-3").html(`
-                                    <div class="d-flex">
+                                    <div class="d-flex transacciones-infoCardss">
                                         <div class="img-80">
                                           <p class="justificado p_white"><b>Definir Las Entidades</b></p>
                                           <p class="justificado p_white">Implica identificar los grupos de variables con los que contará la base de datos. Ejemplo: 1. Datos Personales Cliente; 2. Ubicación o localización del cliente. 3.  Histórico de compras cliente.</p>
@@ -575,7 +575,7 @@ function transaccion_4() {
     $(".transacciones-inferior").addClass('d-flex');
     $(".transacciones-info-4").addClass('img-100');
     $(".transacciones-info-4").html(`
-                                    <div class="d-flex">
+                                    <div class="d-flex transacciones-infoCardss">
                                         <div class="img-80">
                                           <p class="justificado p_white"><b>Definir Las Variables</b></p>
                                           <p class="justificado p_white">Se definen los atributos o variables con los que contará cada entidad, y que será objeto de alimentación de la base de datos: Ejemplo: Nombre, Apellido, teléfono, Dirección.</p>
@@ -602,7 +602,7 @@ function transaccion_5() {
     $(".transacciones-info-5").html(`
                                     <div class="custom-scrollbar_dos">
                                       <div class="custom-scrollbar__inner_dos">
-                                        <div class="d-flex">
+                                        <div class="d-flex transacciones-infoCardss">
                                             <div class="img-80">
                                               <p class="justificado p_white"><b>Definir El Esquema De Recopilación De Datos</b></p>
                                               <p class="justificado p_white">En este paso se deben definir las técnicas sobre las cuales se recopilarán los datos, de acuerdo con el propósito o funcionalidad. Ejemplo: proceso transaccional, captura de imagen, captura de texto. Etc.</p>
@@ -634,7 +634,7 @@ function transaccion_6() {
     $(".transacciones-inferior").addClass('d-flex');
     $(".transacciones-info-6").addClass('img-100');
     $(".transacciones-info-6").html(`
-                                    <div class="d-flex">
+                                    <div class="d-flex transacciones-infoCardss">
                                         <div class="img-80">
                                           <p class="justificado p_white"><b>Definir El Esquema De Almacenamiento De Los Datos</b></p>
                                           <p class="justificado p_white">En este último paso, se debe determinar la forma y la fuente de almacenamiento de los datos que se recopilen. Ejemplo: software, datamart, la nube, cubos, etc.</p>
