@@ -82,12 +82,13 @@ function controlSlides3(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
-            break;    
-        case 4:
-            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             tema = 1;
             star_uni = 3;
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            break;    
+        case 4:
+            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            
             break;    
         default:
             break;
