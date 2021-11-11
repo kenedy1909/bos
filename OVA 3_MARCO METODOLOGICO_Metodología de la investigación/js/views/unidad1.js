@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $(".menu1").removeClass('d-none');
     setMigaja("Unidades de aprendizaje","1. El diseño metodológico de la investigación ", ">");
-            
+
     $(".pedfs").addClass('d-none');
     $(".pdf1").removeClass('d-none');
     $('#smartwizard').smartWizard({
