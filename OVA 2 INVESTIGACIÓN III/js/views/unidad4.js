@@ -270,3 +270,14 @@ function quitar(num) {
     //     $(".custom-scrollbar2").css('height','180px');
     // }
 }
+function pausevideo(num){
+  switch(parseInt(num))
+  {
+    case 1:
+      var videointro = document.getElementById('video_intro1');
+      videointro.pause(); 
+    break;
+    default:
+    break;
+  }
+}
