@@ -985,3 +985,7 @@ svg circle:nth-child(2){
   font-size: 90px;
   color: black;
 }
+
+.size_14{
+  font-size: 14px;
+}

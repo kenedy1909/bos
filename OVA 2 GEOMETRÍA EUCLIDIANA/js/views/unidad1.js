@@ -53,10 +53,10 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 1/actividad complementaria_unidad1.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/actividad complementaria_unidad1.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="ml-4"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 1/evaluacion1_induccion_matemática.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/evaluacion1_induccion_matemática.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b class="ml-4"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);

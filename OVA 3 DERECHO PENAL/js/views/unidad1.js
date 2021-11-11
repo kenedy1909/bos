@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $('.menu1').removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -358,6 +359,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 23:
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         default:

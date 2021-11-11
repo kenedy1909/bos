@@ -1,6 +1,10 @@
 $( document ).ready(function() {
+    $(".menu3").removeClass('d-none');
+    $(".pedfs").addClass('d-none');
+    $(".pdf3").removeClass('d-none');
     $( ".zoomContainer" ).remove();
-
+    setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
@@ -71,13 +75,6 @@ function controlSlides3(num){
             tema = 3;
             break;
         case 1:
-            
-            var pdf = `<div class="col-md-12">
-                      <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD3/metodologia-de-la-investigacion.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> metodologia-de-la-investigacion.pdf </a>
-                      </p>
-                    </div>`;
-            $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
             break;
         case 2:
@@ -85,10 +82,13 @@ function controlSlides3(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            tema = 1;
+            star_uni = 3;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;    
         case 4:
             setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
-            tema = 1;
+            
             break;    
         default:
             break;
@@ -481,7 +481,7 @@ function slideModalU3_3(num) {
     $('.numerosSlide5').html(img5);
     
     var contenido = `<p class="text-justify text-black">
-                      De igual forma, este tipo de muestras son fundamentales en los procesos de investigación transeccionales, tanto en los descriptivos como en los correlacionales – causales estos son, por ejemplo: las encuestas de opinión, en las cuales lo que se busca es hacer apreciaciones de diferentes variables en la población objeto de estudio, las cuales se miden y examinan a través de estadísticas, donde todos los factores analizado se supone, tienen la misma probabilidad, por tal razón son llamados o denominadas muestras probabilísticas. Las estimaciones y la precisión de los resultados dependen en gran medida del muestreo.  
+                      De igual forma, este tipo de muestras son fundamentales en los procesos de investigación transeccionales, tanto en los descriptivos como en los correlacionales – causales estos son, por ejemplo: las encuestas de opinión, en las cuales lo que se busca es hacer apreciaciones de diferentes variables en la población objeto de estudio, las cuales se miden y examinan a través de estadísticas, donde todos los factores analizados se supone, tienen la misma probabilidad, por tal razón son llamados o denominadas muestras probabilísticas. Las estimaciones y la precisión de los resultados dependen en gran medida del muestreo.  
                     </p>`;
     $('.contenidoNumeros').html(contenido);
 

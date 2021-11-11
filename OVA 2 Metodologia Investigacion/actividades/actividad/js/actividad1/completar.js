@@ -26,7 +26,7 @@ class SelectDropdown {
 			// create button
 			let id = this.select.id,
 				selectBtnAttrs = {
-					"class": "select__button select__button--pristine",
+					"class": "select__button select__button--pristine selecc",
 					"type": "button",
 					"id": `${id}-options`,
 					"aria-haspopup": "listbox",

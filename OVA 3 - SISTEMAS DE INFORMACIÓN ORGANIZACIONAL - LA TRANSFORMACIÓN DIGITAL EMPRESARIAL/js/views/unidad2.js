@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
+    $(".menu2").removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -54,6 +55,8 @@ $( document ).ready(function() {
     
     console.log(tema);
     slide_link(tema);
+
+
 });
 
 function slide(){

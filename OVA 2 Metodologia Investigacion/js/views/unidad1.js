@@ -21,14 +21,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
-
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");*/
     /*slide_predeterminado();*/
@@ -60,6 +57,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -79,7 +77,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
             dragging = "";
             diff = "";
             newTop = "";
@@ -96,17 +94,17 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");            
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
             dragging = "";
             diff = "";
             newTop = "";
@@ -439,8 +437,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color')
         var conjunto = `
                         <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 m-5 text-white">
-                                <p>Previene errores o falencias que otros estudios pudiesen haber presentado.</p>
+                            <div class="col-12  ml-2 text-white">
+                                <p class="justificado">Previene errores o falencias que otros estudios pudiesen haber presentado.</p>
                             </div>
                         </div>
                     `;
@@ -449,8 +447,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color-1')
         var conjunto = `
                         <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 ml-2 mt-5 text-white ">
-                                <p>Instruye sobre cómo ha de desarrollarse el nuevo estudio, 
+                            <div class="col-12 ml-2 text-white ">
+                                <p class="justificado">Instruye sobre cómo ha de desarrollarse el nuevo estudio, 
                                 pues a través de este nos podemos dar cuenta de cómo se ha tratado 
                                 un problema de investigación específico, por ejemplo: ¿qué clases de 
                                 estudios se han realizado, los tipos de participantes, la recolección de datos,
@@ -463,8 +461,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color-2')
         var conjunto = `
                         <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 mt-5 text-white">
-                                <p>Guía al investigador centrándolo en su problema de investigación.</p>
+                            <div class="col-12 text-white">
+                                <p class="justificado">Guía al investigador centrándolo en su problema de investigación.</p>
                             </div>
                         </div>
                     `;
@@ -473,8 +471,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color-3')
         var conjunto = `
                         <div class="row px-5" id="contenido-hijo">
-                            <div class="col-12 ml-3 mt-5 text-white">
-                                <p>Legitima la importancia y la necesidad de realizar dicha investigación, 
+                            <div class="col-12 ml-3 text-white">
+                                <p class="justificado">Legitima la importancia y la necesidad de realizar dicha investigación, 
                                 ya que a través de la bibliografía consultada esta le dará razones para el 
                                 avance o cambio del tema de investigación.</p>
                             </div>
@@ -485,8 +483,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color-4')
         var conjunto = `
                     <div class="row px-5" id="contenido-hijo">
-                        <div class="col-12 ml-3 mt-5 text-white">
-                            <p>Conlleva a la construcción de hipótesis o afirmaciones de lo que se cree 
+                        <div class="col-12 ml-3 text-white">
+                            <p class="justificado">Conlleva a la construcción de hipótesis o afirmaciones de lo que se cree 
                             se va a probar con la realización de dicha investigación y que serán comprobadas 
                             o no después de esta.</p>
                         </div>
@@ -497,8 +495,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color')
         var conjunto = `
                     <div class="row px-5" id="contenido-hijo">
-                        <div class="col-12 ml-3 mt-5 text-white">
-                            <p>Incentiva a la continuación de posteriores investigaciones similares, 
+                        <div class="col-12 ml-3 text-white">
+                            <p class="justificado">Incentiva a la continuación de posteriores investigaciones similares, 
                             a la vez que puede establecer nuevas teorías o metodologías para su aplicabilidad, 
                             generando nuevos conocimientos.</p>
                         </div>
@@ -509,8 +507,8 @@ function textAreaCard(num){
         $(".text-area-card-hijo").addClass('bg-color-1')
         var conjunto = `
                     <div class="row px-5" id="contenido-hijo">
-                        <div class="col-12 mt-5 text-white">
-                            <p>Proporciona y crea marcos de referencia para la interpretación de resultados.</p>
+                        <div class="col-12 text-white">
+                            <p class="justificado">Proporciona y crea marcos de referencia para la interpretación de resultados.</p>
                         </div>
                     </div>
                 `;
@@ -567,7 +565,7 @@ function cardMedium(num){
         $(".card3-padre-1").removeClass('bg-celeste')
         $(".card3-padre-1").addClass('bg-white')
         var conjunto = `
-                        <p class="p-4 p-small" id="text-car-1" style="color:black!important">Yo tengo mi propia idea de cómo guiar mi vida, mientras que otros pueden tener una idea diferente de cómo se debe guiar la vida.</p>
+                        <p class="p-4" id="text-car-1" style="color:black!important">Yo tengo mi propia idea de cómo guiar mi vida, mientras que otros pueden tener una idea diferente de cómo se debe guiar la vida.</p>
                         `;
         $("#card-img-medium-1").html(conjunto)
 
@@ -583,7 +581,7 @@ function cardMedium(num){
         $(".card3-padre-2").removeClass('bg-celeste')
         $(".card3-padre-2").addClass('bg-white')
         var conjunto = `
-                        <p class="p-4 p-small" id="text-car-2" style="color:black!important">Algunos creen que la vida es bien vivida si se trabaja y se consigue cada vez más dinero, mientras que otros creen que vivirla bien es viajar y trabajar más bien poco.</p>
+                        <p class="p-4" id="text-car-2" style="color:black!important">Algunos creen que la vida es bien vivida si se trabaja y se consigue cada vez más dinero, mientras que otros creen que vivirla bien es viajar y trabajar más bien poco.</p>
                         `;
         $("#card-img-medium-2").html(conjunto)
         
@@ -710,7 +708,7 @@ function fuentesBiblio(num,ventana){
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8 bg-white border-default p-5">
                                             <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed.png" onclick="fuentesBiblio(1,0)">
-                                            <p>Proporcionan datos de primera mano, son documentos que contienen resultados de estudios. 
+                                            <p class="justificado">Proporcionan datos de primera mano, son documentos que contienen resultados de estudios. 
                                                 Ejemplos: libros, artículos de revistas científicas y ponencias o trabajos presentados 
                                                 en congresos, simposios y otros eventos similares.</p>
                                         </div>
@@ -742,7 +740,7 @@ function fuentesBiblio(num,ventana){
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8 bg-white border-default p-5">
                                             <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed.png" onclick="fuentesBiblio(1,0)">
-                                            <p>Son listas, compilaciones y resúmenes de referencias o fuentes primarias, es decir, reprocesos
+                                            <p class="justificado">Son listas, compilaciones y resúmenes de referencias o fuentes primarias, es decir, reprocesos
                                              de información de primera mano. Las referencias se presentan alfabéticamente según la clasificación 
                                              que se utilice para ordenarlas: por autor, por tema, por fecha o por área de conocimiento.</p>
                                         </div>
@@ -774,7 +772,7 @@ function fuentesBiblio(num,ventana){
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8 bg-white border-default p-5">
                                             <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed.png" onclick="fuentesBiblio(1,0)">
-                                            <p>Son documentos donde se registran referencias a otros documentos de características diversas. 
+                                            <p class="justificado">Son documentos donde se registran referencias a otros documentos de características diversas. 
                                             Son útiles para detectar fuentes no documentales como organizaciones que realizan o financian estudios, 
                                             asociaciones científicas, entre otras. (Danhke, 1989).</p>
                                         </div>
