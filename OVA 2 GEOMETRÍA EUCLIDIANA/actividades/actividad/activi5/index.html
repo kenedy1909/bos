@@ -20,15 +20,19 @@
 <body>
     <div class="backdrop actividad in">
         <div class="fondo">
-            <div class="row principal" style="">
-                <div class="col-md-4 secundario" style="">
+            <div class="row principal" style="display: flex;">
+                <div class="col-md-4 secundario">
                     <div class="d-flex div-img" style="">
                       <img src="../img/img2/actividad_interactiva.png" alt="" style="" class="imagen">
-                      <div class="text-center texto_header" style="">
-                        <b class="pl-1 pr-1" style="">ACTIVIDAD INTERACTIVA</b>
-                        <div class="linea_blue" style=""></div>
-                        <i><p class="text-center text-muted" style="font-size: 17px;">CUESTIONARIO</p></i>
-                      </div>
+                        <div style="display: flex;">
+                          <div style="margin: auto;">
+                              <div class="text-center texto_header" style="">
+                                <b class="pl-1 pr-1" style="">ACTIVIDAD INTERACTIVA</b>
+                                <div class="linea_blue" style=""></div>
+                                <i><p class="text-center text-muted" style="font-size: 17px;">CUESTIONARIO</p></i>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8 row terciario" style="">
@@ -40,7 +44,7 @@
             <div style="display: inline-block;width: 100%;" class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
             <div class="row">
                 <div style="display: inline-block;width: 50%;padding-top: 20px;padding-left: 5px;" class="col-md-7">
-                    <p class="size_15">Considere los conjuntos (es preferible que los represente por extensión, si lo considera necesario)</p>
+                    <p class="size_15" style="color: black;">Considere los conjuntos (es preferible que los represente por extensión, si lo considera necesario)</p>
                     <p class="size_15"><b style="color: blue;">𝑨</b> es el conjunto que contiene los primeros 20 números naturales.</p>
                     <p class="size_15"><b style="color: blue;">𝑩</b> es el conjunto que contiene los múltiplos de 3 entre los 20 primeros números naturales.</p>
                     <p class="size_15"><b style="color: blue;">𝑪</b> es el conjunto que contiene los múltiplos de 5 entre los 20 primeros números naturales.</p>
@@ -50,7 +54,7 @@
                     <p class="size_15"><b style="color: blue;">𝑮</b> es el conjunto que contiene a todos los números primos entre los 20 primeros números naturales.</p>
                 </div>
                 <div>
-                    <div style="width: 90px;height: 90px;position: relative;z-index: 100;border-radius: 50%;background: white;left: -70px;top: -15px;justify-content: center;box-shadow: -1px 3px 17px black;padding-top: 10px;padding-left: 10px;float: right;">
+                    <div style="width: 90px;height: 90px;position: relative;z-index: 100;border-radius: 50%;background: white;right: 30px;top: -15px;justify-content: center;box-shadow: -1px 3px 17px black;padding-top: 10px;padding-left: 10px;float: right;">
                                                     <img style="max-width: 80%;" src="../img/img2/numeros_actividad.png">
                                                 </div>
                     <div class="quiz-multiplito col-md-5">

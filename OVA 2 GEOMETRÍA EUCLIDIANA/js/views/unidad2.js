@@ -41,10 +41,10 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/ejemplo_nelementos_unidad2.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 2/ejemplo_nelementos_unidad2.pdf"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="ml-4"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/evaluacion2_conjuntos.docx"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 2/evaluacion2_conjuntos.docx"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b class="ml-4"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -129,47 +129,53 @@ function controlSlides(num){
 
 
 function cambiacontenido(opcion){
+    $(".hover_1, .hover_2, .hover_3, .hover_4, .hover_5").removeClass('font-weight-bold');
     switch (parseInt(opcion)) {
         case 1:
             var img = `<img src="assets/img/img_ova/dibujo_union.png" style="max-width: 90%;">`;
-            var cont = `<p>Si se tienen dos conjuntos A y B, se llama unión al conjunto formado por los elementos que pertenecen a estos conjuntos, es decir:</p>
-                                    <p>𝐴 ∪𝐵= {𝑥 / 𝑥∈𝐴 ∨ 𝑥∈𝐵}.</p>
-                                    <p>Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p>`;
+            var cont = `<div class="m-auto"><p class="justificado">Si se tienen dos conjuntos A y B, se llama unión al conjunto formado por los elementos que pertenecen a estos conjuntos, es decir:</p>
+                                    <p class="justificado">𝐴 ∪𝐵= {𝑥 / 𝑥∈𝐴 ∨ 𝑥∈𝐵}.</p>
+                                    <p class="justificado">Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p></div>`;
             $("#content").html(cont);
             $("#img_cont").html(img);
+            $(".hover_1").addClass('font-weight-bold');
             break;
         case 2:
             var img = `<img src="assets/img/img_ova/dibujo_interseccion.png" style="max-width: 90%;">`;
-            var cont = `<p>Si se tienen dos conjuntos A y B, se llama intersección al conjunto formado por los elementos en común de estos conjuntos, es decir:</p>
-                                    <p>𝐴 ∩𝐵= {𝑥 / 𝑥∈𝐴  ∧   𝑥∈𝐵}.</p>
-                                    <p>Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p>`;
+            var cont = `<div class="m-auto"><p class="justificado">Si se tienen dos conjuntos A y B, se llama intersección al conjunto formado por los elementos en común de estos conjuntos, es decir:</p>
+                                    <p class="justificado">𝐴 ∩𝐵= {𝑥 / 𝑥∈𝐴  ∧   𝑥∈𝐵}.</p>
+                                    <p class="justificado">Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p></div>`;
             $("#content").html(cont);
             $("#img_cont").html(img);
+            $(".hover_2").addClass('font-weight-bold');
             break;
         case 3:
             var img = `<img src="assets/img/img_ova/dibujo_diferencia.png" style="max-width: 90%;">`;
-            var cont = `<p>Dados dos conjuntos A y B, se llama diferencia al conjunto al formado por los elementos que son del primero pero que no son del segundo, es decir:</p>
-                                    <p>𝐴 ∩𝐵= 𝐴−𝐵= {𝑥 / 𝑥∈𝐴  ∧   𝑥∉𝐵}.</p>
-                                    <p>Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p>`;
+            var cont = `<div class="m-auto"><p class="justificado">Dados dos conjuntos A y B, se llama diferencia al conjunto al formado por los elementos que son del primero pero que no son del segundo, es decir:</p>
+                                    <p class="justificado">𝐴 ∩𝐵= 𝐴−𝐵= {𝑥 / 𝑥∈𝐴  ∧   𝑥∉𝐵}.</p>
+                                    <p class="justificado">Sombreado <img src="assets/img/img_ova/señalar.png" style="max-width: 15%;"></p></div>`;
             $("#content").html(cont);
             $("#img_cont").html(img);
+            $(".hover_3").addClass('font-weight-bold');
             break;
         case 4:
             var img = `<img src="assets/img/img_ova/dibujo_diferenciasimetrica.png" style="max-width: 90%;">`;
-            var cont = `<p>Se llama diferencia simétrica entre A y B al conjunto de los elementos exclusivos de los dos conjuntos, es decir:</p>
-                                    <p>𝐴△𝐵= {𝑥 / 𝑥∈(𝐴−𝐵)    ⋁   𝑥∈(𝐵−𝐴)}
+            var cont = `<div class="m-auto"><p class="justificado">Se llama diferencia simétrica entre A y B al conjunto de los elementos exclusivos de los dos conjuntos, es decir:</p>
+                                    <p class="justificado">𝐴△𝐵= {𝑥 / 𝑥∈(𝐴−𝐵)    ⋁   𝑥∈(𝐵−𝐴)}
                                     𝐴△𝐵=(𝐴−𝐵)  ∪(𝐵−𝐴)</p>
-                                    <p>Propiedad; una forma equivalente</p>
-                                    <p>𝐴△𝐵=(𝐴∪𝐵)−(𝐴∩𝐵)</p>`;
+                                    <p class="justificado">Propiedad; una forma equivalente</p>
+                                    <p class="justificado">𝐴△𝐵=(𝐴∪𝐵)−(𝐴∩𝐵)</p></div>`;
             $("#content").html(cont);
             $("#img_cont").html(img);
+            $(".hover_4").addClass('font-weight-bold');
             break;
         case 5:
             var img = `<img src="assets/img/img_ova/dibujo_complemento.png" style="max-width: 90%;">`;
-            var cont = `<p>𝐴<sup>𝐶</sup> o 𝐴′  o  𝐴 ̅,  o también la diferencia  𝑈−𝐴 , se le llama complemento de 𝐴 con respecto a 𝑈,  o simplemente complemento de 𝐴.</p>
-                                    <p>Está conformado por los elementos que NO pertenecen al conjunto A. (Que están por fuera de 𝐴)</p>`;
+            var cont = `<div class="m-auto"><p class="justificado">𝐴<sup>𝐶</sup> o 𝐴′  o  𝐴 ̅,  o también la diferencia  𝑈−𝐴 , se le llama complemento de 𝐴 con respecto a 𝑈,  o simplemente complemento de 𝐴.</p>
+                                    <p class="justificado">Está conformado por los elementos que NO pertenecen al conjunto A. (Que están por fuera de 𝐴)</p></div>`;
             $("#content").html(cont);
             $("#img_cont").html(img);
+            $(".hover_5").addClass('font-weight-bold');
             break;
         case 6:
             // $("#content").html('');
@@ -184,32 +190,32 @@ function cambiacontenido2(opcion){
             $("#pregunta_cont").addClass('d-none');
     switch (parseInt(opcion)) {
         case 1:
-            var img = `<img src="assets/img/img_ova/ejp_union.png" style="max-width: 75%;">`;
-            var cont = `<b>Complemento de la unión entre dos conjuntos:</b>
+            var img = `<div class="m-auto"><img src="assets/img/img_ova/ejp_union.png" style="max-width: 75%;"></div>`;
+            var cont = `<div class="m-auto"><b>Complemento de la unión entre dos conjuntos:</b>
                                       <p>(𝑨∪𝑩)<sup>𝑪</sup> o (𝑨∪𝑩)′  o  ((𝑨∪𝑩)) ̅, </p>
-                                      <p>O también la diferencia 𝐔−(𝐀∪𝐁)</p>`;
+                                      <p>O también la diferencia 𝐔−(𝐀∪𝐁)</p></div>`;
             $("#contenido2").html(cont);
             $("#img_2").html(img);
             
             //$("#pregunta_cont").html('');
             break;
         case 2:
-            var img = `<img src="assets/img/img_ova/ejp_complementointerseccion.png" style="max-width: 75%;">`;
-            var cont = `<b>Complemento de la intersección entre dos conjuntos:</b>
+            var img = `<div class="m-auto"><img src="assets/img/img_ova/ejp_complementointerseccion.png" style="max-width: 75%;"></div>`;
+            var cont = `<div class="m-auto"><b>Complemento de la intersección entre dos conjuntos:</b>
                                       <p>(𝐴∩𝐵)<sup>𝐶</sup> o (𝐴∩𝐵)′  o  ((𝐴∩𝐵)) </p>
-                                      <p>O también la diferencia  𝑈−(𝐴∩𝐵)</p>`;
+                                      <p>O también la diferencia  𝑈−(𝐴∩𝐵)</p></div>`;
             $("#contenido2").html(cont);
             $("#img_2").html(img);
             //$("#pregunta_cont").html('');
             break;
         case 3:
-            var img = `<img src="assets/img/img_ova/ejp_doblemente.png" style="max-width: 75%;">`;
-            var cont = `<p>Si se quisiera graficar
+            var img = `<div class="m-auto"><img src="assets/img/img_ova/ejp_doblemente.png" style="max-width: 75%;"></div>`;
+            var cont = `<div class="m-auto"><p>Si se quisiera graficar
                         (𝐴∩𝐵)<sup>𝐶</sup>∪𝐶 
                         Los conjuntos (𝐴∩𝐵)<sup>𝐶</sup> y 𝐶, se rayan en sentidos diferentes.
                         La unión ∪, será todo lo rayado; Si se quisiera graficar la intersección
                         (𝐴∩𝐵)<sup>𝐶</sup>∩𝐶 
-                        <p>Será todo lo doblemente rayado</p>`;
+                        <p>Será todo lo doblemente rayado</p></div>`;
             $("#contenido2").html(cont);
             $("#img_2").html(img);
             $("#pregunta_cont").removeClass('d-none');
@@ -225,9 +231,10 @@ function conjuntos(num){
     $(".info_conjuntos"+num).addClass('fondo_azul_claro');
     $(".info_conjuntos").removeClass('shadow');
     $(".info_conjuntos"+num).addClass('shadow');
+    $(".tri1, .tri2, .tri3, .tri4, .tri5").addClass('d-none');
     if (num == 1) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 pt-3">
+                    <div class="col-lg-12 col-md-12 pt-4">
                       <b>Definiciones básicas</b>
                       <div class="mt-2">
                         <p class="justificado">Un conjunto es una colección o reunión de objetos o cosas.  Se llaman “elementos” a aquellos objetos o cosas que constituyen el conjunto, o que lo conforman</p>
@@ -261,23 +268,29 @@ function conjuntos(num){
                       </div>
                     </div>
                     `;
-        $("#info_unidad2").html(conjunto)
+        $("#info_unidad2").html(conjunto);
+        $(".tri1").removeClass('d-none');
     }if (num == 2) {
         var conjunto = `
-                    <div class="col-lg-12 row pt-3">
-                      <div class="col-md-4 row" style="border-right: solid 1px #4141f3;">
-                          <div class="col-lg-4">
+                    <div class="col-lg-12 row pt-4">
+                      <div class="col-md-4" style="border-right: solid 1px #4141f3;">
+                        <div class="row">
+                          <div class="col-lg-4 col-md-4" style="height: fit-content;">
                             <img src="assets/img/img_ova/mayuscula.png" style="max-width: 100%;">
                           </div>
-                          <div class="col-lg-8">
+                          <div class="col-lg-8 col-md-8" style="height: fit-content;">
                             <p class="size_13">Se acostumbra a utilizar las letras <b>mayúsculas</b> para denotar conjuntos.</p>
                           </div>
-                          <div class="col-lg-4">
+                        </div>
+                        <br>
+                        <div class="row">
+                          <div class="col-lg-4 col-md-4" style="height: fit-content;">
                             <img src="assets/img/img_ova/minuscula.png" style="max-width: 100%;">
                           </div>
-                          <div class="col-lg-8">
+                          <div class="col-lg-8 col-md-8" style="height: fit-content;">
                             <p class="size_13">Y las letras <b>minúsculas</b> para denotar sus elementos.</p>
                           </div>
+                        </div>
                       </div>
                       <div class="col-md-4" style="border-right: solid 1px #4141f3; padding-left: 20px;">
                           <div class="mb-2">
@@ -294,7 +307,7 @@ function conjuntos(num){
                             <p>Si el elemento 𝒂 no pertenece al conjunto <b>𝑩</b> escribiremos</p>
                           </div>
                           <div class="content-banner">
-                              <div class="banner">
+                              <div class="banner mt-4">
                                 <p class="text-white text-banner">𝒙∉𝑩</p>
                               </div>
                           </div>
@@ -304,10 +317,11 @@ function conjuntos(num){
                       </div>
                     </div>
                     `;
-        $("#info_unidad2").html(conjunto)
+        $("#info_unidad2").html(conjunto);
+        $(".tri2").removeClass('d-none');
     }if (num == 3) {
         var conjunto = `
-                    <div class="col-lg-12 col-md-12 mt-3">
+                    <div class="col-lg-12 col-md-12 pt-4">
                       <h5>Determinación de conjuntos:</h5>
                       <p>Un conjunto se puede describir o determinar, por:</p>
                     </div>
@@ -325,7 +339,7 @@ function conjuntos(num){
                               <div class="card1_bottom2">
                                   <div class="row">
                                       <div class="col-lg-12">
-                                        <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Ejemplo: </b></p>
+                                        <p class="text-white text-center"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Ejemplo: </b></p>
                                         <p class="text-white">
                                         Al conjunto A formado por las vocales, puedes representarlo por:  𝐴 = { 𝑎, 𝑒, 𝑖, 𝑜, 𝑢 }</p>
                                       </div>
@@ -341,13 +355,13 @@ function conjuntos(num){
                                     <p class="text-white text-center azul_card p-2 rounded">b. Comprensión</p>
                                 </div>
                                 <br>
-                                <p>Consiste esta forma, en describir un conjunto enunciando las propiedades de todos sus elementos.  Esto se representa usando la expresión matemática: “ / ” que se lee “tal que” (o “tales que”).</p>
+                                <p class="justificado">Consiste esta forma, en describir un conjunto enunciando las propiedades de todos sus elementos.  Esto se representa usando la expresión matemática: “ / ” que se lee “tal que” (o “tales que”).</p>
                             </div>
                             <div class="card1_bottom2">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                      <p class="text-white"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Ejemplo: </b></p>
-                                      <p class="text-white">Si 𝑀 es el conjunto de los números impares: 𝑀 = { 𝒙 / 𝒙 𝑒𝑠 𝑛ú𝑚𝑒𝑟𝑜 𝑖𝑚𝑝𝑎𝑟 }
+                                      <p class="text-white text-center"><img src="assets/img/img_template/ejemplos.png" alt="" class="img-icon"> <b>Ejemplo: </b></p>
+                                      <p class="text-white justificado">Si 𝑀 es el conjunto de los números impares: 𝑀 = { 𝒙 / 𝒙 𝑒𝑠 𝑛ú𝑚𝑒𝑟𝑜 𝑖𝑚𝑝𝑎𝑟 }
                               Que se lee “𝑀 es el conjunto de elementos 𝒙,  tal que 𝒙 es número impar”.</p>
                                     </div>
                                 </div>
@@ -356,29 +370,40 @@ function conjuntos(num){
                       </div>
                     </div>
                     `;
-        $("#info_unidad2").html(conjunto)
+        $("#info_unidad2").html(conjunto);
+        $(".tri3").removeClass('d-none');
     }if (num == 4) {
         var conjunto = `
-                    <div class="col-lg-12 row m-2">
-                      <h5>Representación de conjuntos:</h5>
-                      <p class="justificado">Los conjuntos pueden representarse en DIAGRAMA DE VENN
-                      Todo conjunto se puede representar gráficamente por medio de un área plana delimitada por una curva cerrada (óvalos, círculo, triángulo, rectángulo, etc.)</p>
-                    </div>
-                    <div class="row m-1">
-                      <div class="col-lg-2">
-                        <img src="assets/img/img_ova/ejemplos.png" style="max-width: 100%;">
-                      </div>
-                      <div class="col-lg-5">
-                        <b>Ejemplo</b>
-                        <p>Los conjuntos 𝐴 = {1, 2, 3 }  y 𝐵={ 2, 4 }  gráficamente:</p>
-                        <img src="assets/img/img_ova/flecha_punteada.png">
-                      </div>
-                      <div class="col-lg-5">
-                        <img src="assets/img/img_ova/representacion_conjuntos.png" style="max-width: 70%;">
-                      </div>
+                    <div>
+                        <div class="col-lg-12 m-2 pt-4">
+                            <div class="row">
+                              <h5>Representación de conjuntos:</h5>
+                              <p class="justificado">Los conjuntos pueden representarse en DIAGRAMA DE VENN
+                              Todo conjunto se puede representar gráficamente por medio de un área plana delimitada por una curva cerrada (óvalos, círculo, triángulo, rectángulo, etc.)</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-lg-12 m-1">
+                            <div class="row ">
+                              <div class="col-lg-2 d-flex">
+                                <img src="assets/img/img_ova/ejemplos.png" class="my-auto" style="max-width: 100%;">
+                              </div>
+                              <div class="col-lg-5 d-flex">
+                                  <div class="my-auto">
+                                    <b>Ejemplo</b>
+                                    <p>Los conjuntos 𝐴 = {1, 2, 3 }  y 𝐵={ 2, 4 }  gráficamente:</p>
+                                    <img src="assets/img/img_ova/flecha_punteada.png">
+                                  </div>
+                              </div>
+                              <div class="col-lg-5">
+                                <img src="assets/img/img_ova/representacion_conjuntos.png" style="max-width: 70%;">
+                              </div>
+                            </div>
+                        </div>
                     </div>
                     `;
-        $("#info_unidad2").html(conjunto)
+        $("#info_unidad2").html(conjunto);
+        $(".tri4").removeClass('d-none');
     }if (num == 5) {
         var conjunto = `
                     <div class="d-flex justify-content-center col-md-12">
@@ -395,6 +420,7 @@ function conjuntos(num){
                       </div>
                     </div>
                     `;
-        $("#info_unidad2").html(conjunto)
+        $("#info_unidad2").html(conjunto);
+        $(".tri5").removeClass('d-none');
     }
 }

@@ -59,17 +59,17 @@ $( document ).ready(function() {
 });
 var pdf = `                 <div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/SentenciaC-578_02.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>  Sentencia C-578/02.pdf   Ver.</a>
+                                  <a href="assets/PDF/UNIDAD1/SentenciaC-578_02.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>  Sentencia C-578/02.pdf   Ver.</a>
                               </p>
                             </div>
                             <div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>  Estatuto de Roma     Ver.</a>
+                                  <a href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>  Estatuto de Roma     Ver.</a>
                               </p>
                             </div>
                             <div class="col-md-12">   
                               <p class="p_white size_20">  
-                                  <a href="assets/PDF/UNIDAD1/reporte.PDF" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>  Reporte intermedio de la fiscalía  Ver.</a>
+                                  <a href="assets/PDF/UNIDAD1/reporte.PDF" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>  Reporte intermedio de la fiscalía  Ver.</a>
                               </p>
                             </div>`;
 $('.pdfs').html(pdf);
@@ -683,16 +683,19 @@ function scroll_horizontal(num){
     $('.scroll-img').addClass('bg-amarillo');
     $('.scroll-flecha').removeClass('d-block');
     $('.scroll-flecha').addClass('d-none');
+    $('.img-scroll').addClass('d-none');
     switch (parseInt(num)) {
         case 0:
             var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/img12.png">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>“1. El Fiscal podrá iniciar de oficio una investigación sobre la base de información acerca de un crimen de la competencia de la Corte.“2. El Fiscal analizará la veracidad de la información recibida. Con tal fin, podrá recabar más información de los Estados, los órganos de las Naciones Unidas, las organizaciones intergubernamentales o no gubernamentales u otras fuentes fidedignas que considere apropiadas y podrá recibir testimonios escritos u orales en la sede de la Corte”. (Estatuto de Roma, 1998).Debe dejarse claro, que esta investigación de oficio es lo que se ha denominado como el examen preliminar por parte de la fiscalía, diferente al inicio formal de una investigación que se deriva de la solicitud que hace el fiscal ante la sala de cuestiones preliminares, conforme lo dispone el numeral 3 del citado artículo 15</b>');
+            $('.img-scroll').addClass('d-none');
             break;
         case 1:
             var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/img13.png">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>“En el marco del examen preliminar, la fiscalía analiza si se presentan los tres elementos principales para considerar que una situación sería admisible ante la Corte, a saber: (i) que se tienen elementos suficientes para considerar que se han cometido uno o más crímenes competencia de la corte, (ii) que la situación sería admisible de conformidad con el artículo 17 del ER, y (iii) que la investigación no redundaría en un interés en la justicia, de conformidad con lo dispuesto en el artículo 53 del ER. <br> En el desarrollo del examen preliminar la fiscalía puede recibir información de diferentes fuentes sobre la situación que se está monitoreando, incluyendo el mismo estado, organismos de naciones unidas con presencia en el estado, ONG y otras instancias o personas que puedan tener información relevante para la fiscalía</b>');
+            $('.img-scroll').addClass('d-none');
             break;
         case 2:
             var pantalla = `<div class="col-md-12 margin-top50">
@@ -730,17 +733,20 @@ function scroll_horizontal(num){
                     </div>`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>Finalmente, en caso de confluir competencia y admisibilidad, le corresponde a la fiscalía analizar si una investigación y enjuiciamiento no redundaría en un interés en la justicia, en lo cual deberá tener presente en su análisis elementos como la gravedad de la conducta, los intereses de las víctimas y la edad o enfermedad del presunto autor, conforme lo dispone el artículo 53 literal c. </b>');
+            $('.img-scroll').removeClass('d-none');
                       break;
         case 3:
-            var pantalla = `<div><img class="img-60 m-auto" src="assets/img/img_ova/img14.png"> <br> <div class="d-flex"><div class="m-auto"><button data-toggle="modal" data-target="#modal13" class="btn btn-ova "><u><b>Cuestiones de admisibilidad</b></u></button></div></div></div>`;
+            var pantalla = `<div><img class="img-60 mt-3" src="assets/img/img_ova/img14.png"> <br> <div class="d-flex"><div class="m-auto"><button data-toggle="modal" data-target="#modal13" class="btn btn-ova "><u><b>Cuestiones de admisibilidad</b></u></button></div></div></div>`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>Debe destacarse que los requisitos de admisibilidad están orientados a verificar que el estado que tenga jurisdicción para ejercer la acción penal sobre la conducta haya tenido la oportunidad de investigar y sancionar a los presuntos responsables, al respecto indica unas cuestiones de admisibilidad.Del análisis del mencionado artículo se puede encontrar que será admisible una cuestión no solo cuando el estado en cuestión no haya investigado a los responsables, sino también cuando habiendo adelantado la investigación, se demostrará que la misma no fue realizada de forma imparcial, estaba orientada a sustraer de la responsabilidad penal al individuo o que el estado no estaba realmente interesado en adelantar la investigación o no podía hacerlo. Haga clic en el siguiente botón para ampliar:</b>');
+            $('.img-scroll').addClass('d-none');
             
             break;
         case 4:
             var pantalla = `<img class="col-md-12 m-auto" src="assets/img/img_ova/12-Victimas.png">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>Del análisis del mencionado artículo se puede encontrar que será admisible una cuestión no solo cuando el estado en cuestión no haya investigado a los responsables, sino también cuando habiendo adelantado la investigación, se demostrará que la misma no fue realizada de forma imparcial, estaba orientada a sustraer de la responsabilidad penal al individuo o que el estado no estaba realmente interesado en adelantar la investigación o no podía hacerlo. Lo que plantea en definitiva el artículo 17, es que se garantice el derecho a la justicia de las víctimas, al tener la posibilidad la corte de analizar las actuaciones judiciales internas para determinar si las mismas satisfacen los derechos de las víctimas o si el estado no cumplió con su deber de investigar y sancionar, en consecuencia le corresponde a la instancia internacional actuar para cumplir con el mandato de la comunidad internacional de perseguir a los responsables de graves crímenes internacionales.</b>');
+            $('.img-scroll').addClass('d-none');
             
             break;
         default:

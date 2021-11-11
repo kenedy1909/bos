@@ -15,6 +15,11 @@
 	border: solid #E32242 1px;
 }
 
+.p-black{
+  color: black!important;
+}
+
+
 .triangulo-abajo{
 	border-right: solid transparent 25px;
 	border-top: solid #97182F 25px;

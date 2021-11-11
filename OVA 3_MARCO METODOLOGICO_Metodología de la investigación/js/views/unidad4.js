@@ -1,4 +1,9 @@
 $( document ).ready(function() {
+    $(".menu4").removeClass('d-none');
+    $(".pedfs").addClass('d-none');
+    $(".pdf4").removeClass('d-none');
+    setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            
     tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({
@@ -72,28 +77,10 @@ function controlSlides4(num){
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
-            var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD4/Instrumento 1.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 1.pdf</a>
-                          </p>
-                          <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD4/Instrumento 2.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 2.pdf</a>
-                          </p>
-                        </div>`;
-            $('.pdfs').html(pdf);
             break;
         case 1:
-            $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
-            var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD4/Instrumento 1.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 1.pdf</a>
-                          </p>
-                          <p class="p_white size_20">
-                            <a href="assets/PDF/UNIDAD4/Instrumento 2.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Instrumento 2.pdf</a>
-                          </p>
-                        </div>`;
-            $('.pdfs').html(pdf);
+            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
@@ -350,7 +337,6 @@ function slideMU4_1(num) {
                       `;
                     
     $('.flechaMLU4-1').attr('onclick',"slideMU4_1(2)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(4)");
 
     $('.contenidoCentralMU4-1').html(contenido);
   }else if (num == 4) {
@@ -408,7 +394,6 @@ function slideMU4_1(num) {
                     </p>
                     `;
     $('.flechaMLU4-1').attr('onclick',"slideMU4_1(5)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(7)");
 
     $('.contenidoCentralMU4-1').html(contenido);
   }else if (num == 7) {
@@ -472,7 +457,7 @@ function slideMU4_1(num) {
                     </p>
                     `;
     $('.flechaMLU4-1').attr('onclick',"slideMU4_1(8)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(10)");
+    /*$('.flechaMRU4-1').attr('onclick',"slideMU4_1(10)");*/
 
     $('.contenidoCentralMU4-1').html(contenido);
   }else if (num == 10) {
@@ -614,24 +599,24 @@ function teorias(num) {
                   </div>
                   <div class="content custom-scrollbar18 mr-3">
                     <div class="custom-scrollbar__inner18">
-                      <p class="text-justify text-black">
+                      <p class="justificado text-black">
                         <b class="color-title">Seleccionar un programa de análisis</b><br>
                         Estos son algunos de los más conocidos:<br>
                       </p>
                       <ul class="text-black">
                         <li>Statistical Package for the Social Sciences o Paquete Estadístico para las Ciencias Sociales (SPSS®). </li>
                       </ul>
-                      <p class="text-justify text-black">
+                      <p class="justificado text-black">
                         Este programa, desarrollado en la Universidad de Chicago, es uno de los más difundidos.
                       </p>
                       <ul class="text-black">
-                        <li>Minitab®, es un paquete que goza de popularidad por su relativamente bajo costo. Incluye un considerable número de pruebas estadísticas, y cuenta con un tutorial para aprender a utilizarlo y practicar; además, es muy sencillo de manejar. El sitio web para acceder es http://www.minitab.com. (Tiempo aproximado horas directas: 20 minutos)</li>
+                        <li class="justificado">Minitab®, es un paquete que goza de popularidad por su relativamente bajo costo. Incluye un considerable número de pruebas estadísticas, y cuenta con un tutorial para aprender a utilizarlo y practicar; además, es muy sencillo de manejar. El sitio web para acceder es http://www.minitab.com. (Tiempo aproximado horas directas: 20 minutos)</li>
                         <li>STATA</li>
                         <li>Eviews</li>
                         <li>R</li>
                         <li>SAS</li>
                       </ul>
-                      <p class="text-justify text-black">
+                      <p class="justificado text-black">
                         (Estos programas se verían en los cursos de Estadística y Econometría.)
                       </p>
                     </div>
@@ -650,7 +635,7 @@ function teorias(num) {
                     <p class="h5"><b id="indiceLT">2</b></p>
                   </div>
                   <div class="d-flex align-items-center">
-                    <p class="text-justify text-black">
+                    <p class="justificado text-black">
                       <b class="color-title">Poner en marcha el programa</b><br>
                       SPSS y Minitab, estos dos paquetes son fáciles de usar, ya que, lo único que se debe hacer es solicitar los análisis requeridos, seleccionando las opciones adecuadas. 
                     </p>
@@ -669,7 +654,7 @@ function teorias(num) {
                           <p class="color-title"><b>Marco legal</b></p>
                       </div>
                       <div class="col-md-12 p-3" id="info-circle">
-                          <p class="text-black pb-4 border-b-mm-o">Como su nombre lo indica, el marco legal hace referencia al conjunto de leyes, normas y reglamentos que le dan validez a tu investigación. Por lo que, llegados a este punto, lo que se debe hacer es una selección juiciosa y rigurosa de aquellos artículos que tengan de una u otra forma relación con nuestro tema de investigación, posterior a esto, se deben referenciar de manera correcta en nuestro marco legal.</p>
+                          <p class="text-black pb-4 border-b-mm-o justificado">Como su nombre lo indica, el marco legal hace referencia al conjunto de leyes, normas y reglamentos que le dan validez a tu investigación. Por lo que, llegados a este punto, lo que se debe hacer es una selección juiciosa y rigurosa de aquellos artículos que tengan de una u otra forma relación con nuestro tema de investigación, posterior a esto, se deben referenciar de manera correcta en nuestro marco legal.</p>
                       </div>
                       <div class="col-md-12 d-flex">
                           <div class="m-auto w-80px d-flex justify-content-evenly text-black">
@@ -696,18 +681,18 @@ function teorias(num) {
                   </div>
                   <div class="content custom-scrollbar19 mr-3">
                     <div class="custom-scrollbar__inner19">
-                      <p class="text-justify text-black">
+                      <p class="justificado text-black">
                         <b class="color-title">Valorar la seguridad y eficacia alcanzada por la herramienta de medición</b>
                         <br> Determinamos las puntuaciones o valores obtenidos por los casos (participantes. 
                         <br> objetos. etc.) en cada ítem tomado individualmente. Otros ítems. Agrupados, miden una misma variable y deben constituir una escala para poder juntarse o sumarse (tener las mismas categorías o alternativas de respuesta). Ahora se debe demostrar que tales escalas fueron confiables y válidas en la investigación.
                         <br></br>
                         <b class="color-title">Confiables:</b> se calcula mediante diferentes métodos:
                         <ul class="text-black">
-                          <li>Medida de estabilidad: confiabilidad por test-retest: se calcula aplicando a los participantes la misma prueba dos veces, para obtener un coeficiente de reciprocidad entre las puntuaciones de ambas aplicaciones.</li>
-                          <li>Método de formas alternativas o paralelas: se computa o calcula a través de un coeficiente de reciprocidad o correlación entre los resultados de dos pruebas tácitamente equivalentes.</li>
-                          <li>Medidas de relación interna, coeficientes de seguridad alfa de Cronbach (a) y los coeficientes KR-20 y KR-21: hace referencia a coeficientes que fluctúan entre 0 y 1, donde un coeficiente de 0 significa nula confiabilidad y 1 representa un máximo de confiabilidad (confiabilidad total o integral).</li>
+                          <li class="justificado">Medida de estabilidad: confiabilidad por test-retest: se calcula aplicando a los participantes la misma prueba dos veces, para obtener un coeficiente de reciprocidad entre las puntuaciones de ambas aplicaciones.</li>
+                          <li class="justificado">Método de formas alternativas o paralelas: se computa o calcula a través de un coeficiente de reciprocidad o correlación entre los resultados de dos pruebas tácitamente equivalentes.</li>
+                          <li class="justificado">Medidas de relación interna, coeficientes de seguridad alfa de Cronbach (a) y los coeficientes KR-20 y KR-21: hace referencia a coeficientes que fluctúan entre 0 y 1, donde un coeficiente de 0 significa nula confiabilidad y 1 representa un máximo de confiabilidad (confiabilidad total o integral).</li>
                         </ul>
-                        <p class="text-black"><b class="color-title">Válidas:</b> la evidencia de la validez de criterio se produce al correlacionar las puntuaciones de los participantes, obtenidas por medio del instrumento, con sus valores logrados en el criterio. Recordemos que una correlación implica asociar puntuaciones obtenidas por la muestra en dos o más variables.</p>
+                        <p class="text-black justificado"><b class="color-title">Válidas:</b> la evidencia de la validez de criterio se produce al correlacionar las puntuaciones de los participantes, obtenidas por medio del instrumento, con sus valores logrados en el criterio. Recordemos que una correlación implica asociar puntuaciones obtenidas por la muestra en dos o más variables.</p>
                       </p>
                     </div>
                     <div class="custom-scrollbar__bar19">
@@ -725,7 +710,7 @@ function teorias(num) {
                     <p class="h5"><b id="indiceLT">5</b></p>
                   </div>
                   <div>
-                    <p class="text-justify text-black">
+                    <p class="justificado text-black">
                       <b class="color-title">Visualice la imagen y conozca sobre el estudio mediante pruebas estadísticas en relación a las hipótesis o presunciones formuladas o estadística inferencial</b>
                     </p><br>
                     <div class="w-100 d-flex justify-content-center">
@@ -739,7 +724,7 @@ function teorias(num) {
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">6</b></p>
                   </div>
-                  <p class="text-justify text-black">
+                  <p class="justificado text-black">
                     <b class="color-title">Realizar análisis adicionales</b><br>
                     Una vez ejecutados nuestros análisis, es posible que decidamos realizar otros análisis extras o pruebas para confirmar tendencias o preferencias y así poder evaluar los datos desde diferentes ángulos y puntos de vista. 
                   </p>
@@ -751,7 +736,7 @@ function teorias(num) {
                     <p class="h5"><b id="indiceLT">7</b></p>
                   </div>
                   <div class="d-flex align-items-center h-100">
-                    <p class="text-justify text-black pr-1 w-75">
+                    <p class="justificado text-black pr-1 w-75">
                       <b class="color-title">Preparar los resultados para presentarlos</b><br>
                       Visualiza la imagen y conoce los elementos que conlleva preparar los resultados.
                     </p>

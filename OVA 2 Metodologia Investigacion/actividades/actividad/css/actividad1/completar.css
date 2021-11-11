@@ -646,3 +646,8 @@ label {
 .color-text{
   color: var(--bg-color);
 }
+
+.selecc{
+	font-size: 23px;
+    padding-left: 50px;
+}

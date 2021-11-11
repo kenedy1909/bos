@@ -21,13 +21,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     funcion_vanvas();
     slide_predeterminado2();
@@ -44,6 +42,7 @@ $( document ).ready(function() {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides2(stepIndex);
+    actualizarprogress(stepIndex+9);
 }
 
 function slide_predeterminado2(){

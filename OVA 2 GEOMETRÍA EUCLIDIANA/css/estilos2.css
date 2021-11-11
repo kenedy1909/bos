@@ -33,7 +33,7 @@
 }
 
 .content-banner{
-  width:50%;
+  width:70%;
   display: block;
   margin: auto;
 }
@@ -331,4 +331,15 @@ p, button{
 .img-activi{
     max-width: 100%;
     z-index: 100;
+}
+
+.triangulo-mora{
+  width: 0px;
+  height: 0px;
+  border-left: solid transparent 20px;
+  border-top: solid #929cb7 20px;
+  border-right: solid transparent 20px;
+}
+.p_black{
+  color: black;
 }
