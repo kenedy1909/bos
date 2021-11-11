@@ -70,23 +70,23 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Elementos generales para la comprensión del Marco Teórico","");
             
             tema = 10;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","2. Elementos generales para la comprensión del Marco Teórico","");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","","");
             
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje","","");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)");
+            setMigaja("Unidades de aprendizaje","","");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
