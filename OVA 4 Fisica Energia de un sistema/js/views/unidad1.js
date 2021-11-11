@@ -464,12 +464,14 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 25:
+            pausevideo(1);
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 26:
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 27:
+            pausevideo(1);
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 28:
@@ -994,6 +996,17 @@ function scroll() {
     window.addEventListener('mouseup', () => {
         dragging = false;
     });
+}
+function pausevideo(num){
+  switch(parseInt(num))
+  {
+    case 1:
+      var videointro = document.getElementById('video_intro1');
+      videointro.pause(); 
+    break;
+    default:
+    break;
+  }
 }
 
 //boton para abrir dos enlaces (documentos) al mismo tiempo 

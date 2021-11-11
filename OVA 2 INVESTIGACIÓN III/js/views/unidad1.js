@@ -104,24 +104,23 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");            
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","El marco teórico conceptual");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
-            
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Comprensión del marco teórico");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Inicio del marco teórico referencial");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
             
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje","","");
             tema = 1;
             break;
             

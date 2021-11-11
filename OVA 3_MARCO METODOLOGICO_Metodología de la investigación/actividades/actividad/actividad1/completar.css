@@ -46,6 +46,7 @@ label {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 0.375em;
+	font-size: 17px;
 }
 .select__button {
 	animation-duration: var(--foldDur);
@@ -61,6 +62,7 @@ label {
 	appearance: none;
 	z-index: 1;
 	background: #dcb6d8;
+	height: 30px;
 }
 .select__button:focus, .select__option:focus {
 	outline: transparent;
@@ -214,7 +216,7 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 180px;
+    height: 125px;
 }
 
 .seleccionable{
