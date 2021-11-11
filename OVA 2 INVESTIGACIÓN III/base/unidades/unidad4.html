@@ -241,7 +241,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal2" onclick="pausevideo(1)" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document" >
     <div class="modal-content">
       <div class="">
@@ -258,7 +258,7 @@
                       </div>
                       <div class="col-md-2 m-0 p-0 d-flex flex-row-reverse bd-highlight">
                         <div class="divcerrar">
-                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close" onclick="pausevideo(1)" >
                             <div class="m-0 p-0 x-modal">
                               <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                             </div>
@@ -270,11 +270,10 @@
                 <div class="content" style="padding: 25px;">
                   
                   <div class="row" style="padding: 30px; background-color: #fb9bc9; border-radius: 10px;">
-                      <div class="col-md-6 offset-md-3">
-                        <img class="col-md-12" src="assets/img/img_ova/reproductor.png">
+                    <div class="w-100 d-flex justify-content-center align-items-center">
+                        <video id="video_intro1" src="assets/img/img_ova/EnfoqueEpistemologico.mp4" width="70%" controls>
+                        </video>
                       </div>
-                      
-                      
                   </div>
                 </div>
                   
