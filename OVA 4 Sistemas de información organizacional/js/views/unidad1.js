@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     /*slide_predeterminado();*/
     // console.log(tema);
+    $(".menu1").removeClass('d-none');
     
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -450,6 +451,8 @@ function controlSlides(num){
             }  
             break;
         case 24:
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Normatividad");
             break;
         case 25:

@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".menu2").removeClass('d-none');
     
     console.log(tema);
     
@@ -123,6 +124,8 @@ function controlSlides(num){
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
+            star_uni = 2;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;
         default:
             break;
