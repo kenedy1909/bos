@@ -42,10 +42,10 @@ $( document ).ready(function() {
     
 });
 var pdf = `<div class="col-md-12">
-                  <p class="p_black">
-                        <a href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                </div>`;
+                <p class="p_white">
+                    <a href="assets/PDF/UNIDAD 3 - EL CRM Y EL ERP/TEMA 1 - Los CRM/El CRM como herramienta para el servicio al cliente.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">El CRM como herramienta para el servicio al cliente.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                </p>
+            </div>`;
 $('.pdfs').html(pdf);
 
 function slide(){
