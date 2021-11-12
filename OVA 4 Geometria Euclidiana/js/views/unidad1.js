@@ -174,15 +174,21 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 16:
+            
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 17:
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 18:
+            
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 19:
+            var videointro = document.getElementById('video_intro1');
+            videointro.pause();
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 20:
