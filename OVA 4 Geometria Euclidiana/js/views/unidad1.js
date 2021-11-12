@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".menu1").removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -111,6 +112,7 @@ function slide(){
 
 function slide_predeterminado(){
     $(".nav-link").removeClass('done');
+    
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);

@@ -742,7 +742,7 @@ svg circle:nth-child(2){
 .titulo_sub{
   height: 85px;
   border-bottom: solid 4px #003442;
-  padding-top: 20px;padding-left: 25px;
+  padding-top: 50px;padding-left: 10px;
   text-align: center;
 }
 .titulo_sub p{
@@ -752,8 +752,9 @@ svg circle:nth-child(2){
 .banner_activi{
   background: #003442;
   margin-left: 10px;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 25px 1px 25px 25px;
+  box-shadow: 3px 3px 10px 0px;
 }
 
 .copiacirculo{
@@ -892,4 +893,15 @@ svg circle:nth-child(2){
 }
 .card-inactiva-c{
   background: #484848 !important;
+}
+.w-40px{
+  width: 40px;
+}
+
+#flat{
+  margin-top: 5%;
+}
+
+.cursor{
+  cursor: pointer;
 }
