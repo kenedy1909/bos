@@ -1648,3 +1648,14 @@ u{
 .circle_bluc{
 	width: 140px;height: 140px;background: #fff;border-radius: 50%;text-align: center;padding-top: 20px;margin-top: 4%;margin-left: 10px;
 }
+
+.tab-content > .active {
+    background: transparent !important;
+}
+.nav-link.active{
+	  color: #da2316 !important;
+	  border-top: 1px solid #da2316 !important;
+	  border-left: 1px solid #da2316 !important;
+	  border-right: 1px solid #da2316 !important;
+	  background: white !important;
+}
