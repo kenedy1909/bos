@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     $(".menu3").removeClass('d-none');
-    
+    $(".pedfs").addClass('d-none');
     console.log(tema);
     
     $('#smartwizard').smartWizard({

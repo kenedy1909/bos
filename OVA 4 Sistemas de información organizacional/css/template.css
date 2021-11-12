@@ -263,7 +263,7 @@
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 60%;
   position: relative;
   top: 10px;
 }
@@ -861,4 +861,12 @@ svg circle:nth-child(2){
 
 .scrol{
   overflow: auto;
+}
+
+.menu_superiorPd {
+    width: 5%;
+    margin-right: 15px;
+}
+#flat{
+  margin-top: 5%;
 }
