@@ -1179,6 +1179,8 @@ a.control_next {
   padding-top: 25px;
   padding: 20px;
   transform: rotateY(180deg);
+  height: 335px;
+  overflow: auto;
 }
 
 
