@@ -396,9 +396,6 @@ function tarjertaGU3(num) {
     $('.btnDescarga2').addClass('d-none');
     
     $('.flechaRU3-1').attr('onclick',"tarjertaGU3(2)");
-    $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/img/img_ova/comic1.png" target="_blank" download>
-                                <h3 class="mx-3">Descargar historieta</h3>
-                              </a>`);
     
   }else if (num == 2) {
     $('.imgCentral2').removeClass('d-none');
@@ -416,9 +413,6 @@ function tarjertaGU3(num) {
     
     $('.flechaLU3-1').attr('onclick',"tarjertaGU3(1)");
     $('.flechaRU3-1').attr('onclick',"tarjertaGU3(3)");
-    $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/img/img_ova/comic2.png" target="_blank" download>
-                                <h3 class="mx-3">Descargar historieta</h3>
-                              </a>`);
     
   }else if (num ==3) {
     $('.imgCentral4').removeClass('d-none');
@@ -434,9 +428,6 @@ function tarjertaGU3(num) {
     $('.flechaRU3-1').removeClass('hidden');
     $('.flechaLU3-1').attr('onclick',"tarjertaGU3(2)");
     $('.flechaRU3-1').attr('onclick',"tarjertaGU3(4)");
-    $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/img/img_ova/comic3.png" target="_blank" download>
-                                <h3 class="mx-3">Descargar historieta</h3>
-                              </a>`);
     
   }else if (num ==4) {
     $('.imgCentral5').removeClass('d-none');
@@ -452,7 +443,7 @@ function tarjertaGU3(num) {
     $('.flechaLU3-1').removeClass('hidden');
     $('.flechaLU3-1').attr('onclick',"tarjertaGU3(3)");
     $('.flechaRU3-1').addClass('hidden');
-    $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/img/img_ova/comic4.png" target="_blank" download>
+    $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/PDF/UNIDAD3/PDFCOMICS.pdf" target="_blank" download>
                                 <h3 class="mx-3">Descargar historieta</h3>
                               </a>`);
     
