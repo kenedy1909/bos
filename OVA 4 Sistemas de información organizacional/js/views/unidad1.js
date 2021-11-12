@@ -1,6 +1,9 @@
 $( document ).ready(function() {
     /*slide_predeterminado();*/
     // console.log(tema);
+    $(".menu1").removeClass('d-none');
+    $(".pedfs").addClass('d-none');
+    $(".pedfs1").removeClass('d-none');
     
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -175,24 +178,7 @@ $( document ).ready(function() {
 
     
 });
-var pdf = `<div class="col-md-12">
-                <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1/el_elemento_central_de_la_estrategia.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">el_elemento_central_de_la_estrategia <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                      <a href="assets/PDF/UNIDAD1/cadenaDeValor.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">cadena_De_Valor <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1/Estatuto_del_Consumidor.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">Estatuto_del_Consumidor <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1/guia_tienda_online.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">guia_tienda_online <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-                <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1/otrasRegulacionesEcommerce.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">otras_Regulaciones_Ecommerce <b class="text-cafe"><u>Ver</u></b></a>
-                </p>
-            </div>`;
-$('.pdfs').html(pdf);
+
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -450,6 +436,8 @@ function controlSlides(num){
             }  
             break;
         case 24:
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje","1. Fundamentos del E-commerce","Normatividad");
             break;
         case 25:
@@ -755,40 +743,71 @@ function scroll_horizontal2(num){
     switch (parseInt(num)) {
         case 0:
             var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p> 
-                              <img class="col-md-4" src="assets/img/img_ova/ec1.png">
+                            <div class="row">
+                                <div class="banderita"></div>
+                                <div class="row banner_abluc">
+                                    <div class="text_bluc">
+                                        <p class="font13 p_white">Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p>
+                                    </div>
+                                    <div class="circle_bluc">
+                                        <img src="assets/img/img_ova/ec1.png" class="img-70">
+                                    </div>
+                                </div>
                             </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 1:
             var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Según PlacetoPay, una de las pasarelas de pago más reconocidas de Colombia; en el país al 2019, antes de la pandemia, el 38% de las empresas vendían por internet. Esta cifra, casi se duplicó, llegando al 72% a mayo de 2021, 14 meses después de haber comenzado la pandemia, según lo expresó Carlos Mario López Muñoz, Jefe de Desarrollo Empresarial y Líder de los procesos de Transformación Digital y E-commerce de la Cámara de Comercio de Medellín para Antioquia.</p> 
-                              <img class="col-md-4" src="assets/img/img_ova/ec2.png">
+                            <div class="row">
+                                <div class="banderita"></div>
+                                <div class="row banner_abluc">
+                                    <div class="text_bluc">
+                                        <p class="font13 p_white mt-4">Según PlacetoPay, una de las pasarelas de pago más reconocidas de Colombia; en el país al 2019, antes de la pandemia, el 38% de las empresas vendían por internet. Esta cifra, casi se duplicó, llegando al 72% a mayo de 2021, 14 meses después de haber comenzado la pandemia, según lo expresó Carlos Mario López Muñoz, Jefe de Desarrollo Empresarial y Líder de los procesos de Transformación Digital y E-commerce de la Cámara de Comercio de Medellín para Antioquia. </p>
+                                    </div>
+                                    <div class="circle_bluc">
+                                        <img src="assets/img/img_ova/ec2.png" class="img-70">
+                                    </div>
+                                </div>
                             </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 2:
             var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Teniendo en cuenta lo anterior, se tomó la decisión de dedicar una OVA completa dentro del curso de Sistemas de Información Organizacional, para que el estudiante de Administración de Empresas conozca los elementos fundamentales del E-commerce, así como los beneficios que tiene para los negocios y las empresas, con respecto al comercio tradicional, y esté en condiciones de determinar cómo diseñar y gestionar estrategias para la comercialización en medios electrónicos.</p> 
-                              <img class="col-md-4" src="assets/img/img_ova/ec3.png">
+                            <div class="row">
+                                <div class="banderita"></div>
+                                <div class="row banner_abluc">
+                                    <div class="text_bluc">
+                                        <p class="font13 p_white mt-4">Teniendo en cuenta lo anterior, se tomó la decisión de dedicar una OVA completa dentro del curso de Sistemas de Información Organizacional, para que el estudiante de Administración de Empresas conozca los elementos fundamentales del E-commerce, así como los beneficios que tiene para los negocios y las empresas, con respecto al comercio tradicional, y esté en condiciones de determinar cómo diseñar y gestionar estrategias para la comercialización en medios electrónicos.</p>
+                                    </div>
+                                    <div class="circle_bluc">
+                                        <img src="assets/img/img_ova/ec3.png" class="img-70">
+                                    </div>
+                                </div>
                             </div>
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 3:
             var info_scroll = `
-                            <div class="row caja-texto-b "style="background-color: #1e2054; ">
-                              <p class="font13 col-md-8" >Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p> 
-                              <img class="col-md-4" src="assets/img/img_ova/importante.png">
-                              <div class="col-8 d-flex justify-content-center px-3">
-                                <button class="btn bg-white color-text py-3 btn-lg" data-toggle="modal" data-target="#modalPant1">
-                                    <b>RECOMENDACIONES</b>
-                                </button>
+                            <div class="row">
+                                <div class="banderita"></div>
+                                <div class="row banner_abluc">
+                                    <div style="width: 70%;">
+                                        <div class="text_bluc col-md-12" style="height: 125px;">
+                                            <p class="font13 p_white mt-4">Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. <br><br>
+                                            Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <button class="btn bg-white color-text py-3 btn-lg" data-toggle="modal" data-target="#modalPant1">
+                                                <b>RECOMENDACIONES</b>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="circle_bluc">
+                                        <img src="assets/img/img_ova/importante.png" class="img-70">
+                                    </div>
                                 </div>
                             </div>
                             `;

@@ -1179,6 +1179,8 @@ a.control_next {
   padding-top: 25px;
   padding: 20px;
   transform: rotateY(180deg);
+  height: 335px;
+  overflow: auto;
 }
 
 
@@ -1634,4 +1636,28 @@ a.control_next {
 
 u{
 	cursor: pointer;
+}
+
+.banderita{
+	width: 25px;height: 115px;background: #da2316;z-index: 1;margin: 50px 5px 1px 1px;
+}
+.banner_abluc{
+	width: 90%;background: #1E2054;border-radius: 30px;padding: 15px;
+}
+.text_bluc{
+	width: 70%;height: 200px;overflow: auto;
+}
+.circle_bluc{
+	width: 140px;height: 140px;background: #fff;border-radius: 50%;text-align: center;padding-top: 20px;margin-top: 4%;margin-left: 10px;
+}
+
+.tab-content > .active {
+    background: transparent !important;
+}
+.nav-link.active{
+	  color: #da2316 !important;
+	  border-top: 1px solid #da2316 !important;
+	  border-left: 1px solid #da2316 !important;
+	  border-right: 1px solid #da2316 !important;
+	  background: white !important;
 }

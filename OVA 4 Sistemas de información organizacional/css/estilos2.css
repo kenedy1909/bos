@@ -573,7 +573,7 @@ p, button{
 }
 
 .text-img-activi{
-  border-bottom: solid 3px rgba(0, 91, 139);
+  border-bottom: solid 3px rgb(120 32 26);
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -648,9 +648,10 @@ p, button{
 }
 
 .img-circle{
-  padding: 15px;
-  background-color: #FFFFFF;
-  border-radius: 50%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    max-width: 90% !important;
+    top: 3px !important;
 }
 
 .img-circle-2{

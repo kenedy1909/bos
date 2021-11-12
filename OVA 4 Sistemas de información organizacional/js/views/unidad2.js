@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+    $(".menu2").removeClass('d-none');
+    $(".pedfs").addClass('d-none');
+    $(".pedfs2").removeClass('d-none');
     
     console.log(tema);
     
@@ -59,12 +62,7 @@ $( document ).ready(function() {
     var scrollOffset = "";
     
 });
-var pdf = `<div class="col-md-12">
-                <p class="p_white">
-                    <a href="assets/PDF/UNIDAD2/flujoDeIngresos.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">flujo_De_Ingresos<b class="text-cafe"><u>Ver</u></b></a>
-                </p> 
-            </div>`;
-$('.pdfs').html(pdf);
+
 
 function hoverp41(argument) {
     $(".p4-2").show(200)
@@ -123,6 +121,8 @@ function controlSlides(num){
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
+            star_uni = 2;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;
         default:
             break;
