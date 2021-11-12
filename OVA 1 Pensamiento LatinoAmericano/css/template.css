@@ -404,6 +404,9 @@ iframe{
   top: 15%;
 }
 
+.text-black{
+  color: #000!important;
+}
 
 
 /*scroll*/
@@ -417,7 +420,7 @@ iframe{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }

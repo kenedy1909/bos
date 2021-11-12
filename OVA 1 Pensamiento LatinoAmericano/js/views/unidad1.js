@@ -521,8 +521,8 @@ function pantalla13(num){
     switch (parseInt(num)) {
         case 1:
             var text = `
-                          <h3 class="text-center py-1 font-weight-bold">SITUACIÓN</h3>
-                          <p class="font-weight-bold">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
+                          <h3 class="text-center py-1 font-weight-bold text-black">SITUACIÓN</h3>
+                          <p class="font-weight-bold text-black">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
                        `;
             
             $('.wite_ban_13').css({ "background": "white"});
@@ -539,8 +539,8 @@ function pantalla13(num){
             break;
         case 2:
             var text = `
-                          <h3 class="text-center py-1 font-weight-bold">“TERRA NULLIUS”</h3>
-                          <p class="font-weight-bold">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
+                          <h3 class="text-center py-1 font-weight-bold text-black">“TERRA NULLIUS”</h3>
+                          <p class="font-weight-bold text-black">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
                        `;
             
             $('.wite_ban_13').css({ "background": "white"});
@@ -557,8 +557,8 @@ function pantalla13(num){
             break;
         case 3:
             var text = `
-                          <h3 class="text-center py-1 font-weight-bold">“TRANSFORMACIÓN”</h3>
-                          <p class="font-weight-bold">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
+                          <h3 class="text-center py-1 font-weight-bold text-black">“TRANSFORMACIÓN”</h3>
+                          <p class="font-weight-bold text-black">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
                        `;
             
             $('.wite_ban_13').css({ "background": "white"});
@@ -576,8 +576,8 @@ function pantalla13(num){
             break;
         case 4:
             var text = `
-                          <h3 class="text-center py-1 font-weight-bold">PROBLEMAS</h3>
-                           <p class="font-weight-bold">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
+                          <h3 class="text-center py-1 font-weight-bold text-black">PROBLEMAS</h3>
+                           <p class="font-weight-bold text-black">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
                        `;
             
             $('.wite_ban_13').css({ "background": "white"});

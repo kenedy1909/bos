@@ -436,7 +436,7 @@ p, button{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 .custom-scrollbar__inner div {
@@ -486,7 +486,7 @@ p, button{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -561,21 +561,21 @@ p, button{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 55px;
-  overflow-y: auto;
+  overflow-y: hidden;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 .custom-scrollbar__inner10, .custom-scrollbar__inner11, .custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
 	height: 100%;
 	padding-right: 55px;
-	overflow-y: auto;
+	overflow-y: hidden;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 }
 .custom-scrollbar__inner15, .custom-scrollbar__inner16, .custom-scrollbar__inner17{
 	height: 80%;
 	padding-right: 55px;
-	overflow-y: auto;
+	overflow-y: hidden;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 
@@ -590,7 +590,7 @@ p, button{
 .custom-scrollbar__inner15, .custom-scrollbar__inner16, .custom-scrollbar__inner17, .custom-scrollbar__inner18{
 	height: 87%;
 	padding-right: 55px;
-	overflow-y: auto;
+	overflow-y: hidden;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 }
@@ -655,7 +655,7 @@ p, button{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 /*.custom-scrollbar__inner6, .custom-scrollbar__inner7 div {
@@ -706,7 +706,7 @@ p, button{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 /*.custom-scrollbar__inner6, .custom-scrollbar__inner7 div {
