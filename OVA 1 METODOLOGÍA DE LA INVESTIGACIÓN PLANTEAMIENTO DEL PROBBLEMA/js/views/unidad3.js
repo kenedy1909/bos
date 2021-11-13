@@ -208,8 +208,8 @@ function pantalla3_2(num){
         case 1:
             var text = `
             <div class="col-md-6">
-              <p class="justificado">Si tomamos la pregunta sobre “¿Cómo se relacionan los medios de comunicación colectiva con el voto?” </p><br>
-              <p>Analizando cada parte encontramos:</p>
+              <p class="justificado text-black">Si tomamos la pregunta sobre “¿Cómo se relacionan los medios de comunicación colectiva con el voto?” </p><br>
+              <p class="justificado text-black">Analizando cada parte encontramos:</p>
             </div>
             <div class="col-md-6 row">
               <div class="col-md-6">
@@ -246,8 +246,8 @@ function pantalla3_2(num){
         case 2:
             var text = `
             <div class="col-md-6">
-              <p class="justificado">¿Por qué hay más personas satisfechas en su trabajo que otras?</p><br>
-              <p class="justificado">
+              <p class="justificado text-black">¿Por qué hay más personas satisfechas en su trabajo que otras?</p><br>
+              <p class="justificado text-black">
                 ¿Cómo se relacionan los medios de comunicación colectiva con el voto?
               </p>
             </div>
@@ -268,11 +268,11 @@ function pantalla3_2(num){
         case 3:
             var text = `
               <div class="col-md-8">
-                <p class="justificado sub_2">¿Se investigarán los efectos que la difusión de propaganda política a través de estos medios, tienen en la conducta de los votantes?</p><br>
-                <p class="justificado sub_2">
+                <p class="justificado sub_2 text-black">¿Se investigarán los efectos que la difusión de propaganda política a través de estos medios, tienen en la conducta de los votantes?</p><br>
+                <p class="justificado sub_2 text-black">
                   ¿Se analizará el papel de los medios como agentes de socialización política de los votantes?
                 </p><br>
-                <p>Es decir, no queda claro que se va a investigar.</p>
+                <p class="justificado text-black">Es decir, no queda claro que se va a investigar.</p>
               </div>
               <div class="col-md-4 text-center">
                 <img src="assets/img/img_ova/question.png" class="" style="width: 50%;">
@@ -292,9 +292,9 @@ function pantalla3_2(num){
         case 4:
             var text = `
               <div class="col-md-8">
-                <p>Por lo tanto, se deben plantear preguntas mucho más específicas como</p><br>
+                <p class="justificado text-black">Por lo tanto, se deben plantear preguntas mucho más específicas como</p><br>
 
-                <p class="justificado sub_2">La exposición por parte de los votantes a los debates televisivos de los candidatos a la presidencia de Brasil, ¿Está correlacionada con la decisión de votar o abstenerse?.</p>
+                <p class="justificado sub_2 text-black">La exposición por parte de los votantes a los debates televisivos de los candidatos a la presidencia de Brasil, ¿Está correlacionada con la decisión de votar o abstenerse?.</p>
               </div>
               <div class="col-md-4 text-center">
                 <img src="assets/img/img_ova/preguntas.png" class="" style="width: 50%;">
