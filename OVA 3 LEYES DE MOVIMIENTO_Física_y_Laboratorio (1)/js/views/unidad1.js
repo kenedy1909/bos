@@ -417,7 +417,7 @@ function controlSlides(num){
             break;
         case 22:
             paraIframe(0);
-            pausevideo(1); 
+            /*pausevideo(1);*/ 
             carruseles(1);
             $( ".zoomContainer" ).remove();
             $('.zoom_img').elevateZoom({zoomWindowPosition: 15});
@@ -428,7 +428,7 @@ function controlSlides(num){
             break;
         case 24:
             paraIframe(0);
-            pausevideo(1);
+            /*pausevideo(1);*/
             setMigaja("Unidades de aprendizaje","1. Leyes de movimiento","Análisis de los cuerpos en movimiento");
             break;
         case 25:
@@ -1670,7 +1670,7 @@ function scroll(){
       dragging = false;
     });
 }
-function pausevideo(num){
+/*function pausevideo(num){
   switch(parseInt(num))
   {
     case 1:
@@ -1680,7 +1680,7 @@ function pausevideo(num){
     default:
     break;
   }
-}
+}*/
 
 function paraIframe(num){
     switch (parseInt(num)) {

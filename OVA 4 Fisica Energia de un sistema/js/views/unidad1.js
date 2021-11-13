@@ -464,14 +464,16 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 25:
-            pausevideo(1);
+            /*pausevideo(1);*/
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 26:
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 27:
-            pausevideo(1);
+            /*pausevideo(1);*/
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. Energía de un sistema", "Cantidad de movimiento lineal y colisiones");
             break;
         case 28:
@@ -997,7 +999,7 @@ function scroll() {
         dragging = false;
     });
 }
-function pausevideo(num){
+/*function pausevideo(num){
   switch(parseInt(num))
   {
     case 1:
@@ -1007,65 +1009,33 @@ function pausevideo(num){
     default:
     break;
   }
+}*/
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
 
-//boton para abrir dos enlaces (documentos) al mismo tiempo 
-// $("#btnEvaFinal").click(function () {
-//     open('assets/PDF/2021_1_Cuestionario_OVA_4__Energ_a_de_un_sistema___Q01.pdf');
-//     open('assets/PDF/2021_1_Cuestionario_OVA_4__Energ_a_de_un_sistema___Q02.pdf');
-// });
-
-
-//dezlizador
-
-
-// function Input(num) {
-//   //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-//   this.att = {};
-//   this.att.type = "range";
-//   this.att.value = 0;
-//   this.att.min = 0;
-//   this.att.max = num;
-//   this.att.autocomplete = "off";
-//   this.att.step = "1";
-//   this.input;
-//   this.output;
-
-//   this.crear = function(elementoPadre) {
-//     // crea un nuevo elemento input
-//     this.input = document.createElement("input");
-//     //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-//     for (var name in this.att) {
-//       if (this.att.hasOwnProperty(name)) {
-//         this.input.setAttribute(name, this.att[name]);
-//       }
-//     }
-//     // crea un nuevo elemento div
-//     this.output = document.createElement("div");
-//     // establece el valor del atributo class del nuevo div
-//     this.output.setAttribute("class", "output");
-//     // y el contenido (innerHTML) de este
-//     this.output.innerHTML = this.att.value;
-
-//     // inserta los dos elementos creados al final  del elemento Padre 
-//     elementoPadre.appendChild(this.input);
-//     elementoPadre.appendChild(this.output);
-//   }
-
-//   this.actualizar = function() {
-//     scroll_horizontal(this.input.value);
-//     this.output.innerHTML = this.input.value;
-//     this.att.value = this.input.value;
-//   }
-//   $("input[type=range]").on('change', function () {
-//       /*alert();*/
-//   });
-//   this.actualizar2 = function() {
-//     scroll_horizontal2(this.input.value);
-//     this.output.innerHTML = this.input.value;
-//     this.att.value = this.input.value;
-//   }
-//   $("input[type=range]").on('change', function () {
-//       /*alert();*/
-//   });
-// }

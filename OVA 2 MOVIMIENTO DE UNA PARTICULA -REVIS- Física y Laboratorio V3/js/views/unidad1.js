@@ -2197,7 +2197,7 @@ function Draw(){
 requestId = window.requestAnimationFrame(Draw);
 */
 // JavaScript Document
-function pausevideo(num){
+/*function pausevideo(num){
   switch(parseInt(num))
   {
     case 1:
@@ -2207,7 +2207,7 @@ function pausevideo(num){
     default:
     break;
   }
-}
+}*/
 
 function paraIframe(num){
     switch (parseInt(num)) {
