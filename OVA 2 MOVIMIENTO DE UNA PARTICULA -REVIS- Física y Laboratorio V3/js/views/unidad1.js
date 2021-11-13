@@ -218,7 +218,7 @@ function controlSlides(num){
         case 17:
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
-        case 18:
+        case 18: 
             setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
             break;
         case 19:
@@ -2195,3 +2195,14 @@ function Draw(){
 requestId = window.requestAnimationFrame(Draw);
 */
 // JavaScript Document
+function pausevideo(num){
+  switch(parseInt(num))
+  {
+    case 1:
+      var videointro = document.getElementById('video_intro1');
+      videointro.pause(); 
+    break;
+    default:
+    break;
+  }
+}
