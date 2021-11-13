@@ -219,6 +219,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             break;
         case 19:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             break;
         case 20:
@@ -226,6 +227,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             break;
         case 21:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             break;
         case 22:
@@ -1101,5 +1103,34 @@ function pantalla20(num){
         default:
             break;
     }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
 
