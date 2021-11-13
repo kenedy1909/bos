@@ -870,3 +870,6 @@ svg circle:nth-child(2){
     border-radius: 20px;
     padding: 30px;
 }
+.youtubes{
+  min-height: 300px !important;
+}
