@@ -141,6 +141,7 @@ function controlSlides(num){
             tema = 7;
             break;
         case 1:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             var pdf = `<p class="p_white">
                             <a href="assets/PDF/UNIDAD 3/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Código de ética y buen gobierno <b class="text-cafe"><u>Ver</u></b></a>
@@ -166,6 +167,7 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 2:
+
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             break;
         case 3:
