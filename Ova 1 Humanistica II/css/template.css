@@ -848,3 +848,13 @@ card flip*/
   border-radius: 30px;
   padding: 25px 1px 25px 25px;
 }
+
+.youtubes{
+  min-height: 200px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}

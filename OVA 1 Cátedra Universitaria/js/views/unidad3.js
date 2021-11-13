@@ -60,11 +60,13 @@ $( document ).ready(function() {
     };
 
     $('a.control_prev2').click(function (e) {
+        paraIframe(0);
         moveLeft2();
         e.preventDefault();
     });
 
     $('a.control_next2').click(function (e) {
+        paraIframe(0);
         moveRight2();
         e.preventDefault();
     });
@@ -139,6 +141,7 @@ function controlSlides(num){
             tema = 7;
             break;
         case 1:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             var pdf = `<p class="p_white">
                             <a href="assets/PDF/UNIDAD 3/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Código de ética y buen gobierno <b class="text-cafe"><u>Ver</u></b></a>
@@ -164,6 +167,7 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 2:
+
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             break;
         case 3:
@@ -475,4 +479,33 @@ function funcionalidad_12(num) {
                                         </div>
                                         `);
     }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
