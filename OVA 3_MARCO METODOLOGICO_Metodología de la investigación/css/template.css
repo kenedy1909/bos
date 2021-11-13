@@ -960,3 +960,12 @@ card flip*/
 .scrol-color::-webkit-scrollbar {
   width: 20px !important;
 }
+.youtubes{
+  min-height: 300px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}

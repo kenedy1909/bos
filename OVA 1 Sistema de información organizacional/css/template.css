@@ -1038,3 +1038,13 @@ svg circle:nth-child(2){
 .font13{
   font-size: 13px;
 }
+
+.youtubes{
+  min-height: 200px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}

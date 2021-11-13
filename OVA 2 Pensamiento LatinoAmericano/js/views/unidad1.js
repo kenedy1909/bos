@@ -150,17 +150,19 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 9:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
-            var videointro = document.getElementById('video_intro1');
-            videointro.pause(); 
+            /*var videointro = document.getElementById('video_intro1');
+            videointro.pause(); */
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
             break;
         case 11:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
-            var videointro = document.getElementById('video_intro1');
-            videointro.pause();
+            /*var videointro = document.getElementById('video_intro1');
+            videointro.pause();*/
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
@@ -1803,4 +1805,33 @@ function abrirMapa(num) {
     }else if (num == 13) {
         $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13, .mapaConc-14').removeClass('d-none'); 
     }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
