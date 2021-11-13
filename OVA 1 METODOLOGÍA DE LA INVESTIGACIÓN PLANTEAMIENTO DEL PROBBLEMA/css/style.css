@@ -18640,6 +18640,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #768192 !important;
 }
 
+.text-black {
+  color: #000 !important;
+}
+
 .text-black-50 {
   color: rgba(0, 0, 21, 0.5) !important;
 }
