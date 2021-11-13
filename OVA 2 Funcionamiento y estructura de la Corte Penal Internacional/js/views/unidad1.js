@@ -1074,3 +1074,12 @@ function pant13(num){
             break;
     }
 }
+
+function cerrar_vide_1(){
+    var videointro = document.getElementById('video_1');
+            videointro.pause();
+}
+
+function cerrar_vide_2(){
+    $('#video_2').attr('src', $('#video_2').attr('src'));
+}
