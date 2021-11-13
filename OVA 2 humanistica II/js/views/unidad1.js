@@ -152,12 +152,14 @@ function controlSlides(num){
             break;
         case 24:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            $('#video_2').attr('src', $('#video_2').attr('src'));
             break;
         case 25:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
             break;
         case 26:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            $('#video_2').attr('src', $('#video_2').attr('src'));
             break;
         case 27:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
@@ -574,4 +576,11 @@ function limpiar_pantalla(pantallita) {
         $("#pantalla_vertientes").html(texto);
         $(".opcion-circular").on('click', opciones_circulares);
     }
+}
+
+
+
+function cerrar_vide_1(){
+    var videointro = document.getElementById('video_1');
+            videointro.pause();
 }
