@@ -990,3 +990,9 @@ svg circle:nth-child(2){
 .img90{
   max-width: 90%;
 }
+.youtubes{
+  min-height: 300px !important;
+}
+.img-70{
+  width: 70% !important;
+}
