@@ -747,7 +747,7 @@ function teorias(num) {
   }
 }
 
-function pausevideo(num){
+/*function pausevideo(num){
   switch(parseInt(num))
   {
     case 1:
@@ -757,4 +757,33 @@ function pausevideo(num){
     default:
     break;
   }
+}*/
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
