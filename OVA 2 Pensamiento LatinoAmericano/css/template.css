@@ -907,3 +907,13 @@ card flip*/
   height: 350px;
   justify-content: center
 }
+
+.youtubes{
+  min-height: 300px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}
