@@ -328,9 +328,8 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 60%;
+  max-width: 100%;
   position: relative;
-  top: 25px;
 }
 
 .card .user .menu_superior{
@@ -425,9 +424,9 @@ iframe{
   color: #777777;
 }
 
-.img-circle {
-    /border-radius: 50%;/
-}
+/* .img-circle {
+     border-radius: 50%;
+} */
 
 
 /*modales inicio*/
@@ -496,7 +495,7 @@ iframe{
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
-  overflow-y: auto;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
 /*.custom-scrollbar__inner6, .custom-scrollbar__inner7 div {
@@ -611,7 +610,7 @@ svg circle{
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/
+/* /Claculo para simular el porcent/ */
 svg circle:nth-child(2){
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
