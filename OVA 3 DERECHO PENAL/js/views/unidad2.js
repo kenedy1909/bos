@@ -77,20 +77,24 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 4:
+            
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 5:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
-            var videointro = document.getElementById('video_intro1');
-            videointro.pause();
+            /*var videointro = document.getElementById('video_intro1');
+            videointro.pause();*/
             break;
         case 6:
+
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             break;
         case 7:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
-            var videointro = document.getElementById('video_intro1');
-            videointro.pause();
+            /*var videointro = document.getElementById('video_intro1');
+            videointro.pause();*/
             
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
@@ -987,3 +991,31 @@ $("#btn8ImgJuicio").click(function() {
 
 
 
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
+}
