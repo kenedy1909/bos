@@ -104,10 +104,10 @@ function pantalla2_1(num){
       case 1:
           var text = `<div class="col-md-6">
                         <div style="background: #E2C4DF;border-radius: 50px;height: 150px;padding: 25px 25px 25px 25px;">
-                          <p class="justificado">El método en economía, como en cualquier otra área del conocimiento, tiene que ver con el procedimiento del cual se sirve la disciplina para desarrollar un nuevo conocimiento.</p>
+                          <p class="justificado text-black">El método en economía, como en cualquier otra área del conocimiento, tiene que ver con el procedimiento del cual se sirve la disciplina para desarrollar un nuevo conocimiento.</p>
                         </div>
                         <div class="mt-2">
-                          <p class="justificado">Por otra parte, la metodología ha sido un tema de preocupación desde los economistas clásicos hasta las corrientes contemporáneas de la economía, por lo que el método es indispensable en cualquier área del conocimiento, pero sobre todo en economía, donde el <b class="subrayado">método rige los estados y ámbitos del proceso numérico.</b></p>
+                          <p class="justificado text-black">Por otra parte, la metodología ha sido un tema de preocupación desde los economistas clásicos hasta las corrientes contemporáneas de la economía, por lo que el método es indispensable en cualquier área del conocimiento, pero sobre todo en economía, donde el <b class="subrayado">método rige los estados y ámbitos del proceso numérico.</b></p>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -129,11 +129,11 @@ function pantalla2_1(num){
       case 2:
           var text = `<div class="col-md-12">
                         <div class="banner_crema">
-                          <p class="justificado">La comprobación empírica de la economía se hace mediante la econometría y la estadística. Y en el avance de los métodos cuantitativos aplicados han ocurrido los siguientes hechos:</p>
+                          <p class="justificado text-black">La comprobación empírica de la economía se hace mediante la econometría y la estadística. Y en el avance de los métodos cuantitativos aplicados han ocurrido los siguientes hechos:</p>
                         </div>
                       </div>
                       <div class="col-md-12">
-                      <p>click para observar la imagen</p>
+                      <p class="text-black">click para observar la imagen</p>
                         <div class="banner3_2 text-center mt-2">
                           <img data-toggle="modal" data-target="#modalimg_2" src="assets/img/img_ova/hechos.png" style="max-width: 100%" class="cursor">
                         </div>
@@ -152,7 +152,7 @@ function pantalla2_1(num){
       case 3:
           var text = `<div class="col-md-6">
                               <div class="banner_crema">
-                                <p class="justificado">Si fuese posible establecer un común denominador de los desarrollos contemporáneos de la teoría económica y de sus componentes metodológicos, podríamos señalar que los mismos se enmarcan en la necesidad de explicar fenómenos altamente complejos y, en consecuencia y en mayor o menor grado, ciertos niveles de interdisciplinariedad. <br>
+                                <p class="justificado text-black">Si fuese posible establecer un común denominador de los desarrollos contemporáneos de la teoría económica y de sus componentes metodológicos, podríamos señalar que los mismos se enmarcan en la necesidad de explicar fenómenos altamente complejos y, en consecuencia y en mayor o menor grado, ciertos niveles de interdisciplinariedad. <br>
                                 Así, la economía encuentra explicaciones más competentes a sus temas de estudio a partir de su relación con disciplinas como la política, el derecho, la filosofía, la psicología, la sociología, la antropología, entre otras</p>
                               </div>
                             </div>
