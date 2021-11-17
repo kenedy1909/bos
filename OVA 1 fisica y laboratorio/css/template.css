@@ -818,3 +818,13 @@ svg circle:nth-child(2){
 .w-50{
   max-width: 50%;
 }
+
+.youtubes{
+  min-height: 250px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}
