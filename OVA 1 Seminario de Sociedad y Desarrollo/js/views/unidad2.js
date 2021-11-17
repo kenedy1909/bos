@@ -282,7 +282,7 @@ function conjuntos(num){
     if (num == 1) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b">
                         Para algunos autores como Lyotard (1987), la Postmodernidad más que un momento en tiempo o lugar, se trata de una condición devenida a causa de las promesas rotas y efectos adversos que la modernidad originó, lo cual llevó a la sociedad al escepticismo y desconfianza de aquellos discursos que aseguraban el dominio del mundo y el progreso en todas las esferas. 
 
                       </p>
@@ -292,7 +292,7 @@ function conjuntos(num){
     }if (num == 2) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b">
                         Al precisar que a través de la razón no se lograba lo esperado, el hombre busca otras maneras de satisfacer sus necesidades, y encuentra respuesta en el placer, placer que debe ser ocupado en el presente, pues el futuro es incierto. Lo anterior conlleva a un aumento del consumismo, ya que, aquellos relatos que prometían un mundo mejor donde existía la paz, la libertad y la igualdad, ya no son creíbles e incluso llevan la desconfianza hacia quien quiera volver a ellos
 
                       </p>
@@ -302,7 +302,7 @@ function conjuntos(num){
     }if (num == 3) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b">
                         Se deja de lado el uso de la razón; lo importante ahora es el entretenimiento, justificando el hombre que la realidad y el mundo son complejos, y que, a través del razonamiento no es posible dimensionarlos y mucho menos dominarlos; así que ahora cada idea tiene algo de verdad, pero ni siquiera haciendo una suma de ellas, se logra explicar el mundo; no hay un relato absoluto, cada quien tiene su propia perspectiva o subjetividad y es cada uno el encargado de dar sentido o explicación a esa realidad. 
 
                       </p>
@@ -312,7 +312,7 @@ function conjuntos(num){
     }if (num == 4) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b">
                         Es en la postmodernidad que el ser humano hace una exigencia del reconocimiento de la pluralidad, negando la posibilidad de homogeneización que planteaba la Modernidad, defendiendo la diversidad como algo genuino y aduciendo la necesidad de libertad para decidir el estilo y forma de vida que cada quien decide llevar; esto da paso a  visibilizar las minorías que hasta el momento se encontraban relegadas por no considerarse relevantes para los procesos de avance de la sociedad, pero ahora se les da lugar otorgándoles valor e integrando la diversidad. 
 
                       </p>
@@ -322,7 +322,7 @@ function conjuntos(num){
     }if (num == 5) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b">
                         Finalmente, en este estado, el ser humano busca liberarse de estándares y prototipos que de manera sutil le han sido impuestos, y para ello hace uso del arte y realiza manifestaciones en contra de las normas que lo quieren regir y limitar, buscando apartar aquello que quiere indicarle lo que debe y no debe ser.
 
                       </p>
@@ -383,7 +383,7 @@ function circles() {
         var texto = `
                       El taller adquiere gran importancia y, debido a los desarrollos científicos, se empiezan a tecnificar hasta convertirse en fábricas. Se inicia así, en el siglo XVIII, la Revolución Industrial: A partir de allí, empieza un proceso de expansión que se extendió hasta finales del siglo XX. <br>
  
-                      <a class="btn btn-warning" target="_blank" class=" font13 justificado" href="https://www.youtube.com/watch?v=3LQAnFEADl4&ab_channel=AcademiaPlay">VER VIDEO</a> 
+                      <a class="btn btn-warning" target="_blank" class=" font13 justificado text-black" href="https://www.youtube.com/watch?v=3LQAnFEADl4&ab_channel=AcademiaPlay">VER VIDEO</a> 
 
                     `;
        $("#info-circle").html(texto);
@@ -422,7 +422,7 @@ function rec() {
                 `<div class="col-md-12">
                   <div class="col-md-12 row imprime">
                     <div class="col-md-5">
-                      <p class="justificado">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+                      <p class="justificado text-black">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
                     </div>
                     <div class="col-md-7">
                        <p class="text-center p_black">clic a la imagen</p>
@@ -501,10 +501,10 @@ function rec() {
 
                   <ul>
                     <li>
-                      <p class="justificado">El hombre se emancipa de la autoridad religiosa y ahora presenta un anhelo por hacer de la razón su fundamento para explorar y conocer la vida, en un sentimiento de libertad, comprende que a través de su razón puede aprender y actuar sin una coacción externa. En la Revista de Artes y Humanidades UNICA, Ávila (2010) menciona que “La idea de modernidad sustituye, en el centro de la sociedad, a Dios por la ciencia y deja las creencias religiosas para el seno de la vida privada” (p. 168). Lo anterior comprendiendo que la religión ejercía dominio sobre el pensamiento, lo que incluso genera dificultad en este nuevo actuar independiente del hombre, llegando al punto de considerarse el razonamiento como herejía (Revuelta, 1990); no obstante, se avanza en una pretensión de descubrir.</p>
+                      <p class="justificado text-black">El hombre se emancipa de la autoridad religiosa y ahora presenta un anhelo por hacer de la razón su fundamento para explorar y conocer la vida, en un sentimiento de libertad, comprende que a través de su razón puede aprender y actuar sin una coacción externa. En la Revista de Artes y Humanidades UNICA, Ávila (2010) menciona que “La idea de modernidad sustituye, en el centro de la sociedad, a Dios por la ciencia y deja las creencias religiosas para el seno de la vida privada” (p. 168). Lo anterior comprendiendo que la religión ejercía dominio sobre el pensamiento, lo que incluso genera dificultad en este nuevo actuar independiente del hombre, llegando al punto de considerarse el razonamiento como herejía (Revuelta, 1990); no obstante, se avanza en una pretensión de descubrir.</p>
                     </li>
                     <li>
-                      <p class="justificado">El culto a la racionalidad deriva en una racionalización de la vida colectiva y personal; surge así la regulación y el control como un proceso subyacente a todas las esferas. La tecnificación de los procesos productivos se extiende hacia la tecnificación de todas las acciones personales; la planificación, la burocracia y la deshumanización de los procesos surgen como resultado del culto a la eficiencia.</p>
+                      <p class="justificado text-black">El culto a la racionalidad deriva en una racionalización de la vida colectiva y personal; surge así la regulación y el control como un proceso subyacente a todas las esferas. La tecnificación de los procesos productivos se extiende hacia la tecnificación de todas las acciones personales; la planificación, la burocracia y la deshumanización de los procesos surgen como resultado del culto a la eficiencia.</p>
                     </li>
                     
                   </ul>
@@ -518,12 +518,12 @@ function rec() {
         slideHeight = $('#slider ul li').height();
         slider2();
     }else if (rec_num == 5) {
-        $("#rec").html('<p class="justificado p-4">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
+        $("#rec").html('<p class="justificado text-black p-4 pr-5 mr-4">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
     }else if (rec_num == 6) {
         $("#rec").html(
             `<div class="col-md-12 row">
               <div class="col-md-5">
-                <p>6.   Naturalización de la vida social tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
+                <p class="text-black text-justify">6.   Naturalización de la vida social tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
               </div>
               <div class="col-md-7">
               <p class="text-center p_black">clic a la imagen</p>
@@ -539,7 +539,7 @@ function circlerec(num){
         case 1:
             var cont = `
             <div class="col-md-5">
-              <p class="justificado">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+              <p class="justificado text-black">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
             </div>
             <div class="col-md-7">
                <p class="text-center p_black">clic a la imagen</p>
