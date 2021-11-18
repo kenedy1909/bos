@@ -21,13 +21,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $(".p4-1").on("hover", function () {
@@ -80,6 +78,7 @@ function hoverp42(argument) {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+31+1);
 }
 
 function slide_predeterminado(){
@@ -103,44 +102,44 @@ function controlSlides(num){
     slider_num = "";
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","","");
             slideCount = $('#slider-3 ul li').length;
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
@@ -148,7 +147,7 @@ function controlSlides(num){
             slider_all();
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","","");
             slideCount = $('#slider-4 ul li').length;
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();

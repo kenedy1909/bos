@@ -20,14 +20,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
-
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $(".btn-p1").on("click", function() {
@@ -111,6 +108,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -143,7 +141,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             dragging = "";
             diff = "";
             newTop = "";
@@ -154,7 +152,7 @@ function controlSlides(num){
             scroll();
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             dragging = "";
             diff = "";
             newTop = "";
@@ -165,24 +163,34 @@ function controlSlides(num){
             scroll();
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");            
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
-            
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             break;
-
+        case 7:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 9:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -205,6 +213,66 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+            break;
+        case 12:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 13:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 14:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 15:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 20:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 21:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 22:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 23:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            break;
+        case 24:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            break;
+        case 25:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            break;
+        case 26:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            break;
+        case 27:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            break;
+        case 28:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            break;
+        case 29:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 30:
+            setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            break;
+        case 31:
+            setMigaja("Unidades de aprendizaje","","");
             break;
 
             

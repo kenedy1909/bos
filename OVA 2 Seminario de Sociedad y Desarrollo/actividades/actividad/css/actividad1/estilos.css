@@ -254,7 +254,7 @@
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 3px #78201A;
 }
 
 .img-activi{
@@ -263,11 +263,11 @@
 
 .text-img-actividad{
     font-size: 20px;
-    color: #005B8B;
+    color: #78201A;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #78201A;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -275,7 +275,7 @@
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #78201A;
   width: 50%;
   height: 86px;
   margin: 0px;
