@@ -400,6 +400,9 @@ iframe{
   top: 3px;
   left: 1px;
 }
+.w-60{
+  width: 60%;
+}
 
 /*.divcerrar{
   position: relative;
@@ -997,4 +1000,11 @@ svg circle:nth-child(2){
 }
 .img-100{
   width: 100%;
+}
+.uni_gray{
+  background: #999999;
+      width: 142px;
+      height: 142px;
+      border-radius: 50%;
+      margin-top: 4px;
 }

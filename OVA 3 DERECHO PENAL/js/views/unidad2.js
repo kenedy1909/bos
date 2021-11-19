@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     $('.menu2').removeClass('d-none');
+    $( ".ov-personaje").hide();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
