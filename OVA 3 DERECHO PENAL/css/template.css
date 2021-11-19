@@ -393,13 +393,12 @@ iframe{
 .radius_gray_ini{
   background: #999999;
   border-radius: 50%;
-  margin: 1px;
   padding: 0%;
   width: 142px;
   height: 142px;
   position: relative;
-  top: -6px;
-  left: 2px;
+  top: 3px;
+  left: 1px;
 }
 
 /*.divcerrar{
