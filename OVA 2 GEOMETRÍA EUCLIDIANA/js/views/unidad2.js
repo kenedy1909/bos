@@ -78,9 +78,11 @@ function controlSlides(num){
             tema = 11;
             break;
         case 1:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             break;
         case 2:
+
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
             break;
         case 3:
@@ -252,16 +254,8 @@ function conjuntos(num){
                           <center><img src="assets/img/img_ova/flecha_punteada.png"></center>
                         </div>
                       </div>
-                      <div class="col-lg-4">
-                        <p class="justificado size_13">
-                          <b>a</b>. Las letras del alfabeto castellano. <br>
-                          <b>b</b>. Los estudiantes de Ingenierías y de Economía de UNAULA.<br>
-                          <b>c</b>. Los números pares.<br>
-                          <b>d</b>. El conjunto de todos los habitantes de Colombia.<br>
-                          <b>e</b>. Los ciudadanos de Colombia que han sido presidentes.<br>
-                          <b>f</b>. Los estudiantes de Ingeniería Informática de Colombia que han leído la Constitución.<br>
-                          <b>g</b>. Los números Enteros.
-                        </p>
+                      <div class="col-lg-4 d-flex justify-content-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uOOW-0kkbqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtubes img-100 vid"></iframe>
                       </div>
                       <div class="col-lg-4">
                         <img src="assets/img/img_ova/geometricos.png" style="max-width: 70%;">
@@ -423,4 +417,33 @@ function conjuntos(num){
         $("#info_unidad2").html(conjunto);
         $(".tri5").removeClass('d-none');
     }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
