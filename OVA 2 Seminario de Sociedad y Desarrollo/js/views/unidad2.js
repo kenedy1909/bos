@@ -107,17 +107,21 @@ function controlSlides(num){
             tema = 5;*/
             break;
         case 1:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             break;
         case 2:
+
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             break;
         case 3:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
+            
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
@@ -754,3 +758,33 @@ alert();
     });
 
 });*/
+
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
+}
