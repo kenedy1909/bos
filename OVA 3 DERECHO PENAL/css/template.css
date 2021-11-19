@@ -117,11 +117,11 @@ iframe{
   background-size: contain;
   width: 380px;
   height: 100px;
-  padding: 31px 105px 20px 101px;
+  padding: 31px 25px 20px 90px;
 }
 
 .titulo-ova h3{
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .c-body{
