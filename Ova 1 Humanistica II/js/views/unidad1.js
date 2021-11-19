@@ -260,7 +260,7 @@ function controlSlides(num){
 function imprime16(){
     var text = `
             <div style="padding: 28px 25px 25px 25px;">
-              <p class="justificado">No obstante, los perfiles de formación profesionales y ocupacionales de los contadores públicos, continúan estando orientados a responder con suficiencia a las demandas empresariales más que a las sociales, por tanto se considera fundamental revisar de manera reflexiva las intenciones formativas, los fines y usuarios de la formación contable y los propósitos y filosofías institucionales como aspectos que posibilitan la incorporación de las dimensiones no incluidas en la educación contable tradicional.</p>
+              <p class="justificado text-black">No obstante, los perfiles de formación profesionales y ocupacionales de los contadores públicos, continúan estando orientados a responder con suficiencia a las demandas empresariales más que a las sociales, por tanto se considera fundamental revisar de manera reflexiva las intenciones formativas, los fines y usuarios de la formación contable y los propósitos y filosofías institucionales como aspectos que posibilitan la incorporación de las dimensiones no incluidas en la educación contable tradicional.</p>
               <button class="btn btnpant16" data-toggle="modal" data-target="#modaltable">ver</button>
             </div>
     `;
@@ -418,7 +418,7 @@ function pantalla9(num){
     switch (parseInt(num)) {
         case 1:
             var text = `<div class="p9_cont">
-                      <p class="justificado">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
+                      <p class="justificado text-black">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
                     </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -430,7 +430,7 @@ function pantalla9(num){
             break;
         case 2:
             var text = `<div class="p9_cont">
-                          <p class="justificado">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
+                          <p class="justificado text-black">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -442,7 +442,7 @@ function pantalla9(num){
             break;
         case 3:
             var text = `<div class="p9_cont">
-                          <p class="justificado">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
+                          <p class="justificado text-black">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -454,7 +454,7 @@ function pantalla9(num){
             break;
         case 4:
             var text = `<div class="p9_cont">
-                          <p class="justificado">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
+                          <p class="justificado text-black">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -466,7 +466,7 @@ function pantalla9(num){
             break;
         case 5:
             var text = `<div class="p9_cont">
-                          <p class="justificado">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
+                          <p class="justificado text-black">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -483,7 +483,7 @@ function pantalla9(num){
 
 function citar(){
     var contenido = `<div style="height: 248px;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
-                    <p class="justificado">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
+                    <p class="justificado text-black">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
                   </div>`;
     $('.imprime_heare').html(contenido);
 }
@@ -493,42 +493,42 @@ function imprime(num) {
     var cont = 0;
     switch (parseInt(num)) {
         case 1:
-            text = `<p class="justificado">La universidad, según Houssay (1941) desempeña un papel principal en la formación del ser humano, aunque indica el mismo autor, que ha faltado a su rol en el sentido de reducirse a la transmisión de conocimientos y no avanzar a la instrucción y formación de hombres y mujeres capaces de dar respuesta a las exigencias de un mundo que se encuentra en constante cambio, y capaces al tiempo de generar transformaciones en dirección al progreso de la sociedad.</p>`;
+            text = `<p class="justificado text-black">La universidad, según Houssay (1941) desempeña un papel principal en la formación del ser humano, aunque indica el mismo autor, que ha faltado a su rol en el sentido de reducirse a la transmisión de conocimientos y no avanzar a la instrucción y formación de hombres y mujeres capaces de dar respuesta a las exigencias de un mundo que se encuentra en constante cambio, y capaces al tiempo de generar transformaciones en dirección al progreso de la sociedad.</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
                     
                 });
             cont = 1;
             break;
         case 2:
-            text= `<p class="justificado">Comprendiendo lo anterior, es necesario como señala Esquivel (2004) esclarecer la connotación de educar, en este sentido, menciona que educar y ser se encuentran vinculados, pues ambos abarcan aspectos de cultura, vida, pensamiento y demás; de esta manera, en sus palabras “se educa para ser y se es en tanto se es educado” (p. 310).</p>`;
+            text= `<p class="justificado text-black">Comprendiendo lo anterior, es necesario como señala Esquivel (2004) esclarecer la connotación de educar, en este sentido, menciona que educar y ser se encuentran vinculados, pues ambos abarcan aspectos de cultura, vida, pensamiento y demás; de esta manera, en sus palabras “se educa para ser y se es en tanto se es educado” (p. 310).</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
                     
                 });
             cont = 2;
             break;
         case 3:
-            text = `<p class="justificado">Así, la educación y principalmente la superior (universitaria), debe contribuir a una formación integral que desarrolle y fortalezca en el ser humano la capacidad de observar y criticar desde su propio juicio, considerando principios como la libertad, la creatividad y el amor, los cuales según Nussbaum (2010).</p>`;
+            text = `<p class="justificado text-black">Así, la educación y principalmente la superior (universitaria), debe contribuir a una formación integral que desarrolle y fortalezca en el ser humano la capacidad de observar y criticar desde su propio juicio, considerando principios como la libertad, la creatividad y el amor, los cuales según Nussbaum (2010).</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
                     
                 });
             cont = 3;
             break;
         case 4:
-            text = `<p class="justificado">Son fundamentales para la democracia (en la que los estudiantes deben participar con conocimiento y de manera activa, y esta participación, dada por la formación de una educación superior que los hace competentes); sin embargo, señala la autora que, en la actualidad, aunque libertad, amor y creatividad son fundamentales para el desarrollo del pensamiento crítico, se han olvidado relegando su importancia en el proceso de educación.</p>`; 
+            text = `<p class="justificado text-black">Son fundamentales para la democracia (en la que los estudiantes deben participar con conocimiento y de manera activa, y esta participación, dada por la formación de una educación superior que los hace competentes); sin embargo, señala la autora que, en la actualidad, aunque libertad, amor y creatividad son fundamentales para el desarrollo del pensamiento crítico, se han olvidado relegando su importancia en el proceso de educación.</p>`; 
             $('.triangulo_indica').css({ "visibility": "hidden"
                     
                 });
             cont = 4;
             break;
         case 5:
-            text =  `<p class="justificado">A lo anterior, Nussbaum (2010) lo ha denominado “crisis silenciosa” por considerar que sucede de manera desapercibida para la sociedad, siendo así el hombre despojado de su capacidad de participación y reduciéndolo a una simple utilidad.</p>`;
+            text =  `<p class="justificado text-black">A lo anterior, Nussbaum (2010) lo ha denominado “crisis silenciosa” por considerar que sucede de manera desapercibida para la sociedad, siendo así el hombre despojado de su capacidad de participación y reduciéndolo a una simple utilidad.</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
                     
                 });
             cont = 5;
             break;
         case 6:
-            text = `<p class="justificado">Todo lo anterior, para fundamentar la importancia de la educación en el vivir del individuo, pues a la vez que una universidad tiene como compromiso el educar, también debe desempeñar el rol de formar, entendiendo que la educación repercute directamente en el estilo de vida; en palabras de Esquivel (2004) “se educa para ser y se vive de acuerdo con cómo se es” (p. 310).</p>`;
+            text = `<p class="justificado text-black">Todo lo anterior, para fundamentar la importancia de la educación en el vivir del individuo, pues a la vez que una universidad tiene como compromiso el educar, también debe desempeñar el rol de formar, entendiendo que la educación repercute directamente en el estilo de vida; en palabras de Esquivel (2004) “se educa para ser y se vive de acuerdo con cómo se es” (p. 310).</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
                     
                 });
@@ -546,21 +546,21 @@ function imprime(num) {
 function pantalla6(num){
     switch (parseInt(num)){
         case 1:
-            var texto = `<p style="font-size: 13px;" class="justificado">El origen de la palabra democracia viene del griego y su significado es “gobierno del pueblo” o “gobierno popular” (Rodríguez, 2010.), comprendiendo que la palabra hace referencia a un sistema político</p>`;
+            var texto = `<p style="font-size: 13px;" class="justificado text-black">El origen de la palabra democracia viene del griego y su significado es “gobierno del pueblo” o “gobierno popular” (Rodríguez, 2010.), comprendiendo que la palabra hace referencia a un sistema político</p>`;
             $('.banne_white').html(texto);
             $('.triangulo_yellow').css({ "visibility": "visible"});
             $('.tria_blue1').css({ "visibility": "hidden"});
             $('.tria_blue2').css({ "visibility": "hidden"});
             break;
         case 2:
-            var texto = `<p style="font-size: 13px;" class="justificado">Era la figura de función política permanente, los pertenecientes a este grupo se elegían cada año por los ciudadanos que contaran con edad mayor a treinta. Entre sus funciones se encontraba preparar las sesiones de la asamblea y el correspondiente orden del día; en aquel tiempo, todo caso debía ser evaluado inicialmente por este consejo para luego ser atendido por la asamblea, así mismo, eran encargados de validar el cumplimiento de los requisitos por parte de quienes integrarían los grupos del gobierno.</p>`;
+            var texto = `<p style="font-size: 13px;" class="justificado text-black">Era la figura de función política permanente, los pertenecientes a este grupo se elegían cada año por los ciudadanos que contaran con edad mayor a treinta. Entre sus funciones se encontraba preparar las sesiones de la asamblea y el correspondiente orden del día; en aquel tiempo, todo caso debía ser evaluado inicialmente por este consejo para luego ser atendido por la asamblea, así mismo, eran encargados de validar el cumplimiento de los requisitos por parte de quienes integrarían los grupos del gobierno.</p>`;
             $('.boder_white_baner').html(texto);
             $('.triangulo_yellow').css({ "visibility": "hidden"});
             $('.tria_blue1').css({ "visibility": "visible"});
             $('.tria_blue2').css({ "visibility": "hidden"});
             break;
         case 3:
-            var texto = `<p style="font-size: 13px;" class="justificado">Este grupo era la concentración real del poder político y a su vez el más reconocido, ya que, en él todas las personas con pleno derecho para ejercer participación, tenían potestad de votar en los diversos temas expuestos que previamente habían sido validados por el consejo. Aunque el número de personas que podían asistir y dar su voto era alto, la asistencia real no lo era, lo cual no se distancia mucho de la situación en la actualidad.</p>`;
+            var texto = `<p style="font-size: 13px;" class="justificado text-black">Este grupo era la concentración real del poder político y a su vez el más reconocido, ya que, en él todas las personas con pleno derecho para ejercer participación, tenían potestad de votar en los diversos temas expuestos que previamente habían sido validados por el consejo. Aunque el número de personas que podían asistir y dar su voto era alto, la asistencia real no lo era, lo cual no se distancia mucho de la situación en la actualidad.</p>`;
             $('.boder_white_baner').html(texto);
             $('.triangulo_yellow').css({ "visibility": "hidden"});
             $('.tria_blue1').css({ "visibility": "hidden"});
@@ -712,42 +712,42 @@ function funcion_vanvas() {
 function pantalla13(num){
     switch (parseInt(num)) {
         case 1:
-            var text = `<p class="justificado">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
+            var text = `<p class="justificado text-black">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 2:
-            var text = `<p class="justificado">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
+            var text = `<p class="justificado text-black">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 3:
-            var text = `<p class="justificado">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
+            var text = `<p class="justificado text-black">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 4:
-            var text = `<p class="justificado">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
+            var text = `<p class="justificado text-black">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 5:
-            var text = `<p class="justificado">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
+            var text = `<p class="justificado text-black">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 6:
-            var text = `<p class="justificado">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
+            var text = `<p class="justificado text-black">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
                               <iframe id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen>`;
             $('.wite_ban_13').css({ "background": "white"
                     
@@ -960,7 +960,7 @@ function pantallas16(num){
         case 1:
             var pantalla = `
             <div class="banner_16">
-              <p class="justificado">El pedagogo brasileño Paulo Freire, quien ha sido uno de los principales exponentes de la pedagogía crítica latinoamericana, considera que “(...) la función principal de la educación es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola” (Ayuste, 2006, p. 42).</p>
+              <p class="justificado text-black">El pedagogo brasileño Paulo Freire, quien ha sido uno de los principales exponentes de la pedagogía crítica latinoamericana, considera que “(...) la función principal de la educación es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola” (Ayuste, 2006, p. 42).</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
@@ -968,7 +968,7 @@ function pantallas16(num){
         case 2:
             var pantalla = `
             <div class="banner_16">
-              <p class="justificado">Y que a partir de esa educación, el concepto de liberación cobra toda significancia posible tanto  desde  el  punto de vista de las ciencias sociales como en las aplicadas, especialmente para el particular de este trabajo, la contabilidad.</p>
+              <p class="justificado text-black">Y que a partir de esa educación, el concepto de liberación cobra toda significancia posible tanto  desde  el  punto de vista de las ciencias sociales como en las aplicadas, especialmente para el particular de este trabajo, la contabilidad.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
@@ -976,7 +976,7 @@ function pantallas16(num){
         case 3:
             var pantalla = `
             <div class="banner_16">
-              <p class="justificado">Siguiendo con Gómez (2012) Las disciplinas científicas, incluso aquellas que se especializan en problemas de conocimientos tecnológicos y técnicos, requieren una comprensión del medio en el cual se desata la transmisión de saberes, de tal forma que pueda desarrollarse favorablemente el proceso.</p>
+              <p class="justificado text-black">Siguiendo con Gómez (2012) Las disciplinas científicas, incluso aquellas que se especializan en problemas de conocimientos tecnológicos y técnicos, requieren una comprensión del medio en el cual se desata la transmisión de saberes, de tal forma que pueda desarrollarse favorablemente el proceso.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
@@ -984,7 +984,7 @@ function pantallas16(num){
         case 4:
             var pantalla = `
             <div class="banner_16">
-              <p class="justificado">Lo anterior implica un estudio juicioso y comprometido de quienes aprenden, enseñan y educan de forma coherente con las necesidades de la sociedad y no únicamente con aquellas derivadas del mercado de capitales.</p>
+              <p class="justificado text-black">Lo anterior implica un estudio juicioso y comprometido de quienes aprenden, enseñan y educan de forma coherente con las necesidades de la sociedad y no únicamente con aquellas derivadas del mercado de capitales.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
@@ -992,7 +992,7 @@ function pantallas16(num){
         case 5:
             var pantalla = `
             <div class="banner_16">
-              <p class="justificado">Según lo expresado por Sánchez (2015) la necesidad de profesionalización contable es producto de esfuerzos gremiales y gubernamentales por otorgar el estatus de saber disciplinar a la contabilidad; su marcado uso en el mundo de los negocios y el tecnicismo asociado a su práctica, ha  legado la percepción social de la contabilidad como saber hacer en contraposición a la concepción social del saber contable.</p>
+              <p class="justificado text-black">Según lo expresado por Sánchez (2015) la necesidad de profesionalización contable es producto de esfuerzos gremiales y gubernamentales por otorgar el estatus de saber disciplinar a la contabilidad; su marcado uso en el mundo de los negocios y el tecnicismo asociado a su práctica, ha  legado la percepción social de la contabilidad como saber hacer en contraposición a la concepción social del saber contable.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
@@ -1000,7 +1000,7 @@ function pantallas16(num){
         case 6:
             var pantalla = `
             <div class="banner_16">
-              <p class="justificado">En tanto resultado de las dinámicas y modificaciones en las relaciones sociales y económicas, la contabilidad se encuentra convocada a mejorar sus conceptualizaciones, formas de representación, medición y presentación, que complementen más que sustituyan las financieras tradicionales.</p>
+              <p class="justificado text-black">En tanto resultado de las dinámicas y modificaciones en las relaciones sociales y económicas, la contabilidad se encuentra convocada a mejorar sus conceptualizaciones, formas de representación, medición y presentación, que complementen más que sustituyan las financieras tradicionales.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
@@ -1015,7 +1015,7 @@ function img_17(num){
     switch (parseInt(num)) {
         
         case 1:
-            var text = `<p class="justificado">
+            var text = `<p class="justificado text-black">
                           Producto de las corrientes dominantes, la educación contable concentra sus esfuerzos en dotar al estudiante de competencias y conocimientos que le permitan insertarse al mundo laboral, por desgracia, el excesivo enfoque en esta visión pragmática y poco humanizadora del contable, desemboca precisamente en la crisis de confianza frente a la formación de un sujeto ético y moral, que visione el efecto de sus actuaciones en protección del interés público y de la fe pública que le ha sido encomendada.
                         </p>`;
             $('.banner_17').html(text);
@@ -1024,7 +1024,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 2:
-            var text = `<p class="justificado">
+            var text = `<p class="justificado text-black">
                           Conviene entonces comprender que producto de las crisis y las demandas sociales, hay una preocupación creciente por la manera como están siendo formados y transformados a través de la educación los sujetos contables. Si bien en principio se requería de un profesional cuya experticia radicara más en el saber hacer (contabilidad), con el tiempo, se migra hacia la necesidad de aportar a través de la teorización y el enfoque disciplinar hacia la perspectiva crítica e interpretativa de la contabilidad como disciplina científica (contaduría pública).
                         </p>`;
             $('.banner_17').html(text);
@@ -1033,7 +1033,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 3:
-            var text = `<p class="justificado">
+            var text = `<p class="justificado text-black">
                           En desarrollos más recientes, aumenta la preocupación en la educación contable por el sujeto (contador público), en un esfuerzo por humanizar las prácticas, reconociendo el alto valor y riesgo social que implica el ejercicio irresponsable y contrario a los cánones establecidos tanto por la normativa propia de la profesión como por la posibilidad de seguir construyendo el proyecto de vida personal de quien la ejerce.
                         </p>`;
             $('.banner_17').html(text);
@@ -1042,7 +1042,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 4:
-            var text = `<p class="justificado">
+            var text = `<p class="justificado text-black">
                           De acuerdo con Gracia (2019) en términos profesionales y académicos, la ética puede observarse a través de la Accountability (en su sentido de rendición de cuentas), pero más allá en su manera del held accountable (es decir «responsabilizado» por sus acciones).
                         </p>`;
             $('.banner_17').html(text);
@@ -1051,7 +1051,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 5:
-            var text = `<p class="justificado">
+            var text = `<p class="justificado text-black">
                           Reflexionar la ética en relación con lo significado como «rendición de cuentas» y la «responsabilidad» (individual y social), es tal vez, el paso necesario e indispensable para contar con juicios que enclaven en el corazón de las prácticas contables la responsabilidad por la consecuencia de las acciones. Precisamente, se consideraría esta una manera acertada de comprender la ética, dispuesta en permanente relación de convivencia con los hechos y la práctica.
                         </p>`;
             $('.banner_17').html(text);
@@ -1060,7 +1060,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 6:
-            var text = `<p class="justificado">
+            var text = `<p class="justificado text-black">
                           Dussel (2016) reafirma este contenido al decir «la ética, esa dimensión humana esencial en primer lugar es ‘una práctica’. Lo ético es inherente a la existencia humana en su actuación cotidiana. Tanto singular como comunitariamente toda acción es Ética y lo Ético del acto indica justamente que es práctico» (p. 17).
                         </p>`;
             $('.banner_17').html(text);
