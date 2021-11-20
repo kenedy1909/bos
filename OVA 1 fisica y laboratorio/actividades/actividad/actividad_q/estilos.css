@@ -82,12 +82,20 @@ input {
     width: 58px;
     height: 58px;
     position: relative;
-    top: -64px;
-    left: -69px;
+    /*top: -64px;
+    left: -69px;*/
     background: #FFFFFF;
     border-radius: 50%;
     padding: 12px;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%)
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+    margin: auto;
+}
+
+.content_img_questionario {
+    position: absolute;
+    display: flex;
+    left: 60px;
+    height: 150px;
 }
 
 .d-flex{
@@ -198,4 +206,8 @@ input {
 
 .d-flex{
     display: flex;
+}
+
+.d-none{
+    display: none;
 }

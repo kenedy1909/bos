@@ -19,10 +19,41 @@
             
             <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                 <div class="preguntas">
+                    <div style="width: 0px; height: 150px;">
+                        <spam class="img_questionarios" style="height: 150px;">
+                            <div class="img_questionario1">
+                                <div class="content_img_questionario">
+                                    <div class="img_questionario d-flex">
+                                        <h2 style="color: #000; margin: auto;">1</h2>           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none img_questionario2">
+                                <div class="content_img_questionario">
+                                    <div class="img_questionario d-flex">
+                                        <h2 style="color: #000; margin: auto;">2</h2>           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none img_questionario3">
+                                <div class="content_img_questionario">
+                                    <div class="img_questionario d-flex">
+                                        <h2 style="color: #000; margin: auto;">3</h2>           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none img_questionario4">
+                                <div class="content_img_questionario">
+                                    <div class="img_questionario d-flex">
+                                        <h2 style="color: #000; margin: auto;">4</h2>           
+                                    </div>
+                                </div>
+                            </div>
+                        </spam>
+                    </div>
                     <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
                         <div style="display: inline-flex;width: 40%;height: 100%">
                             <p class="texto-pregunta"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b></spam>
-                                <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                             </p>
                         </div>
                         <div style="display: inline-flex;width: 56%;height: 100%">
