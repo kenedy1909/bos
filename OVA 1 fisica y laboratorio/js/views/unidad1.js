@@ -22,14 +22,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
-
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado();
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
@@ -63,6 +60,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+        actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -975,14 +973,14 @@ function aviones(num) {
             break;
         case 5:
             $("#avion").removeClass('fondo-1');
-            $(".avion-content").removeClass('m-auto');
-            $(".avion-content").addClass('mx-auto mt-auto');
+            $(".avion-content").removeClass('m-auto mx-auto');
+            $(".avion-content").addClass('ml-4 mt-auto');
             $("#avion").addClass('fondo-6');
             $("#avion").attr('onclick','aviones(6)');
             $("#avion").attr('style','width: 780px; height: 475px;');
             $(".avion-content").html(`
                                         <div class="d-flex">
-                                          <img src="assets/img/img_ova/profesor (3).png" class="img-45 m-auto">
+                                          <img src="assets/img/img_ova/profesor (3).png" class="img-35 m-auto">
                                         </div>
                                         <p class="p_black justificado">Para entender mejor los vectores y su combinación, se comienza con la cantidad vectorial más sencilla, el desplazamiento, que simplemente es un cambio en la posición de un objeto. El desplazamiento es una cantidad vectorial porque se debe establecer no solo qué tan lejos se mueve el objeto, sino también en qué dirección.</p>
                                         <br>
@@ -998,7 +996,7 @@ function aviones(num) {
             $("#avion").attr('style','width: 700px; height: 475px;');
             $(".avion-content").html(`
                                     <div class="d-flex">
-                                      <img src="assets/img/img_ova/profesor (2).png" class="img-45 m-auto">
+                                      <img src="assets/img/img_ova/profesor (2).png" class="img-50 m-auto">
                                     </div>
                                     <p class="border-top-azul text-azul-c text-center my-3"><b>Cantidad escalares y vectoriales </b></p>
                                     `);
@@ -1011,7 +1009,7 @@ function aviones(num) {
 function actividadrecogible(num) {
     switch (parseInt(num)) {
         case 1:
-            $('.bg-recogible').css({'width': '12%'});
+            $('.bg-recogible').css({'width': '15%'});
             $('.img_recogible1').css({'max-width': '125%'})
             break;
         default:
@@ -1122,16 +1120,16 @@ function ruta(num) {
     switch(parseInt(num)){
         case 1:
             $("#ruta-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3" style="min-height: 450px;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 40px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-amarillo">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial;">
-                                    <div>
+                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                    <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Frecuentemente se representa la magnitud de una cantidad vectorial (su longitud, en el caso de un vector desplazamiento) con la misma letra que se usa para el vector, pero sin la flecha arriba. Una notación alternativa es el símbolo vectorial encerrado entre barras verticales en ambos lados:</p>
                                       </div>
@@ -1146,21 +1144,20 @@ function ruta(num) {
                                 </div>
                                 `);
             $("#ruta-info").removeClass('d-none');
-            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
             $(".cerrar-ruta").on('click', cerrar_ruta);
             break;
         case 2:
             $("#ruta-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3" style="min-height: 450px;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 40px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-amarillo">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial;">
-                                    <div>
+                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                    <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Para definir las componentes de un vector se parte de un sistema rectangular de ejes de coordenadas (cartesiano) y luego se dibuja el vector con su cola en O, el origen del sistema coordenado. Se puede representar cualquier vector en el plano xy como la suma de un vector paralelo al eje x y un vector paralelo al eje y.</p>
                                       </div>
@@ -1172,21 +1169,20 @@ function ruta(num) {
                                 </div>
                                 `);
             $("#ruta-info").removeClass('d-none');
-            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
             $(".cerrar-ruta").on('click', cerrar_ruta);
             break;
         case 3:
             $("#ruta-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3" style="min-height: 450px;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 40px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-amarillo">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial;">
-                                    <div>
+                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                    <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Estos dos vectores se identifican como <b>A</b>x y <b>A</b>y; son los vectores componentes del vector y su suma vectorial es simbólicamente igual a:</p>
                                       </div>
@@ -1198,47 +1194,45 @@ function ruta(num) {
                                 </div>
                                 `);
             $("#ruta-info").removeClass('d-none');
-            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
             $(".cerrar-ruta").on('click', cerrar_ruta);
             break;
         case 4:
             $("#ruta-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3" style="min-height: 450px;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 40px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-amarillo">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial;">
-                                    <div>
+                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                    <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Se puede calcular las componentes del vector si se conoce la magnitud <b>A</b> y su dirección. Se describirá la dirección de un vector por su ángulo en relación con una dirección de referencia, medido entre el eje x positivo y el vector.</p>
                                       </div>
-                                      <div>
-                                        <img src="assets/img/img_ova/cos y sen.png" class="m-auto img-100">
+                                      <div class="d-flex">
+                                        <img src="assets/img/img_ova/cos y sen.png" class="m-auto img-80">
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                                 `);
             $("#ruta-info").removeClass('d-none');
-            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
             $(".cerrar-ruta").on('click', cerrar_ruta);
             break;
         case 5:
             $("#ruta-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3" style="min-height: 450px;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 40px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-amarillo">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial;">
-                                    <div>
+                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                    <div class="m-auto">
                                       <div>
                                         <p class="p_white justificado p-3 bg-azul w-fit"><b><i>Ejemplo:</i></b></p>
                                       </div>
@@ -1253,21 +1247,20 @@ function ruta(num) {
                                 </div>
                                 `);
             $("#ruta-info").removeClass('d-none');
-            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
             $(".cerrar-ruta").on('click', cerrar_ruta);
             break;
         case 6:
             $("#ruta-info").html(`
-                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                <div class="radius-2 img-100 border-azul-o bg-azul-c p-3" style="min-height: 450px;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 40px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-ruta" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-amarillo">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial;">
-                                    <div>
+                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                    <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Primero note que el ángulo α no es el de referencia, sino que es 360° – α, es decir, 315°, con esto aclarado vemos que <b>D</b>x = D * cos 315° = 3 * (√2)⁄2 = 2,12 m, mientras que <b>D</b>y = D * sen 315° = 3 * (−√2)⁄2 = -2,12 m. </p>
                                         <br>
@@ -1278,7 +1271,6 @@ function ruta(num) {
                                 </div>
                                 `);
             $("#ruta-info").removeClass('d-none');
-            $("#ruta-info").attr('style', "left: 0px; bottom: -45px;");
             $(".cerrar-ruta").on('click', cerrar_ruta);
             break;
         default:
@@ -1301,11 +1293,11 @@ function teorias() {
         var texto = `
                         <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                             <div class="bg-azul-o h-6px m-auto">
-                                <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
-                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                <div class="d-flex justify-content-evenly position-relative px-4" style="top: -129px;">
+                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3" style=" min-height:258px;">
                                         <p class="p_black justificado">En primer lugar, se tiene la <b>multiplicación por un escalar.</b> Este tipo de operación se da cuando se multiplica un vector por un número escalar, el resultado es un nuevo vector con la misma dirección del vector original, pero con una magnitud modificada y la cual dependerá del valor del escalar, si el escalar es menor de 1, el vector se acorta, si es mayor de 1 se alarga, si es negativo además de lo anterior cambia el sentido del vector y si es 1 pues no cambia.</p>
                                     </div>
-                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                                    <div class="bg-blanco radius-2 my-auto d-flex mx-3 p-3" style=" min-height:258px;">
                                         <img src="assets/img/img_ova/grafica 5.png" class="m-auto img-100" data-teoria="2">
                                     </div>
                                 </div>
@@ -1317,8 +1309,8 @@ function teorias() {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
-                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
-                                <div class="bg-blanco radius-2 my-auto mx-3 p-3">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -160px;">
+                                <div class="bg-blanco radius-2 my-auto mx-3 px-3 py-4">
                                     <img src="assets/img/img_ova/imagen423.png" style="width:230px;">
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
@@ -1333,12 +1325,14 @@ function teorias() {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
-                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -75px;">
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3 d-flex">
                                     <div class="img-40">
                                         <img src="assets/img/img_ova/opinion.png" class="m-auto img-100" data-teoria="3">
                                     </div>
-                                    <p class="p_black justificado"><img src="assets/img/img_ova/imagen522.png" style="width:100%"></p>
+                                    <div class="d-flex">
+                                        <p class="m-auto p_black justificado"><img src="assets/img/img_ova/imagen522.png" style="width:100%"></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1349,14 +1343,14 @@ function teorias() {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
-                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
-                                <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -152px;">
+                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3 d-flex" style="min-height: 305px;">
                                     <img src="assets/img/img_ova/calculadora.png" class="m-auto img-100" data-teoria="4">
                                 </div>
-                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3" style="min-height: 305px;">
                                     <p class="p_black justificado" style="font-size: 14px;">La suma (o resta) de vectores es muy común en física.  Se supone que una partícula experimenta un desplazamiento seguido por un segundo desplazamiento. El resultado final es el mismo como si la partícula hubiera partido del mismo punto y experimentado un solo desplazamiento).</p>
                                 </div>
-                                <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3">
+                                <div class="bg-blanco img-35 radius-2 my-auto mx-3 p-3" style="min-height: 305px;">
                                     <p class="p_black justificado">Se llama a suma vectorial, o resultante, de los desplazamientos. Si se efectúan los desplazamientos y en orden inverso, primero y luego el resultado será el mismo ya que se cumple la propiedad conmutativa.</p>
                                     <button class="btn bg-amarillo-c p-3 p_black" data-toggle="modal" data-target="#teoria-modal">Ver + información</button>
                                 </div>
@@ -1369,18 +1363,18 @@ function teorias() {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
-                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -120px;">
-                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                            <div class="d-flex justify-content-evenly position-relative px-4" style="top: -130px;">
+                                <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <div class="d-flex">
                                         <img src="assets/img/img_ova/pensar.png" class="m-auto img-70" data-teoria="4">
                                     </div>
                                     <p class="p_black justificado">En el caso de dos vectores 𝐴&#8407 y 𝐵&#8407 la suma o resultante seria 𝑅&#8407.</p>
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
-                                <div class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
+                                <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
                                     <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80 zoom_img" data-teoria="5" data-zoom-image="assets/img/img_ova/grafica 7.png">
                                 </div>
-                                <div class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se puede ampliar este procedimiento para calcular la suma de cualquier cantidad de vectores. Si es la suma vectorial de entonces, las componentes son:</p>
                                     <img src="assets/img/img_ova/formula-r.png" class="m-auto img-100" data-teoria="5">
                                 </div>
@@ -1399,14 +1393,17 @@ function activi3(num){
         case 1:
             $('.contraer1').css({'height': '20%'});
             $('.imagenactivi1').css({'visibility':'hidden'});
+            $('.tar_img_1').removeClass('d-none');
             break;
         case 2:
             $('.contraer2').css({'height': '20%'});
             $('.imagenactivi2').css({'visibility':'hidden'});
+            $('.tar_img_2').removeClass('d-none');
             break;
         case 3:
             $('.contraer3').css({'height': '20%'});
             $('.imagenactivi3').css({'visibility':'hidden'});
+            $('.tar_img_3').removeClass('d-none');
             break;
         default:
             
@@ -1479,3 +1476,39 @@ function agrandar(num) {
             break;
     }
 }
+
+
+function acordeon(num1, num2) {
+    switch (parseInt(num1)) {
+        case 1:
+            if (num2 == 1) {
+                $(".collapse").collapse('show');
+                $("#cordi1").attr('onclick','acordeon(1,2)');
+            }else{
+                $(".collapse").collapse('hide');
+                $("#cordi1").attr('onclick','acordeon(1,1)');
+            }
+            break;
+        case 2:
+            if (num2 == 1) {
+                $(".collapse").collapse('show');
+                $("#cordi2").attr('onclick','acordeon(2,2)');
+            }else{
+                $(".collapse").collapse('hide');
+                $("#cordi2").attr('onclick','acordeon(2,1)');
+            }
+            break;
+        case 3:
+            if (num2 == 1) {
+                $(".collapse").collapse('show');
+                $("#cordi3").attr('onclick','acordeon(3,2)');
+            }else{
+                $(".collapse").collapse('hide');
+                $("#cordi3").attr('onclick','acordeon(3,1)');
+            }
+            break;
+        default:
+            break;
+    }
+}
+

@@ -28,10 +28,10 @@ window.onload = function () {
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
   if (curr == 0) {
-    $('.cantidad').html('1/2');
+    $('.cantidad').html('<p style="margin: auto;">1/2</p>');
   }
   if (curr == 1) {
-    $('.cantidad').html('2/2');
+    $('.cantidad').html('<p style="margin: auto;">2/2</p>');
   }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
@@ -90,7 +90,7 @@ window.onload = function () {
       
       createDiv.appendChild(txt);
       if ((current+2) != 3) {
-        $('.cantidad').html((current+2)+"/"+cantidad);
+        $('.cantidad').html('<p style="margin: auto;">'+(current+2)+"/"+cantidad+'</p>');
       }
       if (bool) {
         
@@ -126,12 +126,12 @@ function calificar(){
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%; margin: auto;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
   }else{
-    $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%; margin: auto;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');

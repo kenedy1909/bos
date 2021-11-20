@@ -188,3 +188,6 @@ body, html {
 .d-flex{
   display: flex;
 }
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
