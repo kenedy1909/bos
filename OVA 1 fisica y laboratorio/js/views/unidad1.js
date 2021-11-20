@@ -625,7 +625,7 @@ function svg_img(num) {
         case 1:
             $("#svg-info").html(`
                                 <div class="radius-2 img-100 border-verde-o bg-verde-c opacity-7">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-verde">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
@@ -658,7 +658,7 @@ function svg_img(num) {
         case 2:
             $("#svg-info").html(`
                                 <div class="radius-2 img-100 border-azul-o bg-azul-c opacity-7">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-azul">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
@@ -668,7 +668,9 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
-                                        <p class="p_black justificado"><b>Masa.</b> Su unidad es el kilogramo (kg)</p>
+                                        <p class="p_black justificado"><b><i>Masa.</i></b></p>
+                                        <br>
+                                        <p class="p_black justificado">Su unidad es el kilogramo (kg)</p>
                                         <br>
                                         <p class="p_black justificado">La unidad fundamental del SI de masa, el kilogramo (kg), estaba definido como la masa de un cilindro de aleación platino–iridio específico que se conserva en la Oficina Internacional de Pesos y Medidas en Sèvres, Francia. (J., 2008) Esta masa estándar fue establecida en 1887 y no había cambiado hasta el 20 de mayo de 2019 cuando su definición pasó a estar ligada con la constante de Planck, una constante natural que describe los paquetes de energía emitidos en forma de radiación</p>
                                         <br>
@@ -690,7 +692,7 @@ function svg_img(num) {
         case 3:
             $("#svg-info").html(`
                                 <div class="radius-2 img-100 border-verde-mo bg-verde-mc opacity-7">
-                                  <div class="img-100 d-flex" style="opacity: initial;">
+                                  <div class="img-100 d-flex" style="opacity: initial; height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-verde-o">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
@@ -700,7 +702,9 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
-                                        <p class="p_black justificado"><b><i>Tiempo.</i></b> Su unidad es el segundo (s)</p>
+                                        <p class="p_black justificado"><b><i>Tiempo.</i></b></p>
+                                        <br>
+                                        <p class="p_black justificado">Su unidad es el segundo (s)</p>
                                         <br>
                                         <p class="p_black justificado">Antes de 1960 el estándar de tiempo fue definido en términos del día solar medio hacia el año 1900. (Un día solar es el intervalo de tiempo entre apariciones sucesivas del Sol en el punto más alto que alcanza en el cielo cada día.) La unidad fundamental de un segundo(s) fue definida como (1/60) (1/60) (1/24) de un día solar medio. Ahora se sabe que la rotación de la Tierra varía ligeramente con el tiempo.</p>
                                       </div>
@@ -726,14 +730,14 @@ function cerrar_svg() {
 }
 
 function pant9(num){
+            $('.bannerp-9').removeClass('d-none');
+            $('.bannerp-9').addClass('d-flex');
     switch (parseInt(num)) {
         case 1:
             var texto = `
-            <div class="bannerp-9" style="">
-              <p class="justificado" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L<sup>2</sup> y que eso en el sistema SI corresponda a m<sup>2</sup> y en el norteamericano a ft<sup>2</sup>.</p>
-            </div>`;
-            $('.orange_cont').html(texto);
+              <p class="justificado my-auto" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L<sup>2</sup> y que eso en el sistema SI corresponda a m<sup>2</sup> y en el norteamericano a ft<sup>2</sup>.</p>`;
 
+            $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
 
@@ -741,7 +745,7 @@ function pant9(num){
             $('.circulo1').addClass('activo');
             break;
         case 2:
-            var texto = `<p class="justificado" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m<sup>2</sup>/s<sup>2</sup>) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s<sup>2</sup>) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s<sup>2</sup> por m se obtiene kg m<sup>2</sup>/s<sup>2</sup> por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
+            var texto = `<p class="justificado my-auto" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m<sup>2</sup>/s<sup>2</sup>) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s<sup>2</sup>) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s<sup>2</sup> por m se obtiene kg m<sup>2</sup>/s<sup>2</sup> por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -750,7 +754,7 @@ function pant9(num){
             $('.circulo2').addClass('activo');
             break;
         case 3:
-            var texto = `<p class="justificado" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv<sup>2</sup>, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)<sup>2</sup> finalmente kg m<sup>2</sup>/s<sup>2</sup> que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
+            var texto = `<p class="justificado my-auto" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv<sup>2</sup>, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)<sup>2</sup> finalmente kg m<sup>2</sup>/s<sup>2</sup> que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -1437,4 +1441,41 @@ function paraIframe(num){
             break;
     }
     
+}
+function agrandar(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.agrandador').addClass('cortico');
+            $('.agrandador').removeClass('agrandado');
+
+            $('.A1').addClass('agrandado');
+            $('.A1').removeClass('cortico');
+
+            $('.texto-target').removeClass('visible');
+            $('.texto-target').addClass('invisible');
+
+            $('.text1').addClass('visible');
+            $('.text1').removeClass('invisible');
+
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado1/index.html" frameborder="0"></iframe>`;
+            $('.iframe').html(iframe);
+            break;
+        case 2:
+            $('.agrandador').addClass('cortico');
+            $('.agrandador').removeClass('agrandado');
+
+            $('.A2').addClass('agrandado');
+            $('.A2').removeClass('cortico');
+
+            $('.texto-target').removeClass('visible');
+            $('.texto-target').addClass('invisible');
+
+            $('.text2').addClass('visible');
+            $('.text2').removeClass('invisible');
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado2/index.html" frameborder="0"></iframe>`;
+            $('.iframe').html(iframe);
+            break;
+        default:
+            break;
+    }
 }

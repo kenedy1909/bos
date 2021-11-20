@@ -107,6 +107,12 @@
 	height: 90px;
 }
 
+
+.w-h-100px{
+	width: 100px;
+	height: 100px;
+}
+
 .bg-azul{
 	background-color: #4472C4;
 }
@@ -635,4 +641,75 @@
 }
 .escondida{
 	visibility: hidden;
+}
+
+.azul_n1{
+	background: #8da9db;
+}
+
+.trian_azul_d{
+	border-top: solid transparent 15px;
+	border-left: solid #1f3864 25px;
+	border-bottom: solid transparent 15px;
+}
+
+.trian_azul_i{
+	border-top: solid transparent 15px;
+	border-right: solid #1f3864 25px;
+	border-bottom: solid transparent 15px;
+}
+.agrandador{
+  background: white;
+  border-radius: 20px;
+  padding: 20px 0px 0px 25px;
+  position: absolute;
+  height: 100%;
+}
+
+.agrandado{
+  width: 82%;
+}
+.cortico{
+  width: 25%;
+}
+
+.visible{
+	display: block;
+}
+
+.invisible{
+	display: none;
+}
+.numerito{
+  width: 30px;height: 30px;
+  background: #965b0c;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 3px;
+}
+
+
+.targeta{
+  background: #965B0C;
+  width: 90%;
+  border-radius: 20px;
+  height: 80px;
+}
+
+.img_target{
+  margin-left: 129px;
+  padding-top: 12px;
+}
+.texto-target{
+  width: 65%;
+  position: relative;
+  left: 70px;
+}
+
+.content-tarjeta{
+  background: #E39D40;
+  border-radius: 20px;
+  padding: 15px;
 }

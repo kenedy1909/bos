@@ -1,33 +1,39 @@
 $(document).ready(function() {
-	var img1 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">1</h2>			
+	/*var img1 = `
+				<div class="content_img_questionario">
+					<div class="img_questionario d-flex">
+						<h2 style="color: #000; margin: auto;">1</h2>			
+					</div>
 				</div>
 				`;
 	var img2 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">2</h2>			
+				<div class="content_img_questionario">
+					<div class="img_questionario d-flex">
+						<h2 style="color: #000; margin: auto;">2</h2>			
+					</div>
 				</div>
 				`;
 	var img3 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">3</h2>			
+				<div class="content_img_questionario">
+					<div class="img_questionario d-flex">
+						<h2 style="color: #000; margin: auto;">3</h2>			
+					</div>
 				</div>
 				`;
 	var img4 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">4</h2>			
+				<div class="content_img_questionario">
+					<div class="img_questionario d-flex">
+						<h2 style="color: #000; margin: auto;">4</h2>			
+					</div>
 				</div>
 				`;
 	var img5 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">5</h2>			
+				<div class="content_img_questionario">
+					<div class="img_questionario d-flex">
+						<h2 style="color: #000; margin: auto;">5</h2>			
+					</div>
 				</div>
-				`;
-	$(".img_questionario1").html(img1);
-	$(".img_questionario2").html(img2);
-	$(".img_questionario3").html(img3);
-	$(".img_questionario4").html(img4);
+				`;*/
 
 	$("#cuestionario-2").css('display','none');
 	$("#cuestionario-3").css('display','none');
@@ -48,22 +54,27 @@ function siguente(){
 	$("#cuestionario-3").css('display','none');
 	$("#cuestionario-4").css('display','none');
 	$("#cuestionario-"+slide).css('display','block');
+	$(".img_questionario1, .img_questionario2, .img_questionario3, .img_questionario4").addClass('d-none');
 		/*$("#siguente").removeData('slide');
 		$("#atras").removeData('slide');*/
 	if (slide == 1) {
 		$("#siguente").data('slide', 2);
+		$(".img_questionario1").removeClass('d-none');
 		
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
 		$("#siguente").data('slide', 3);
+		$(".img_questionario2").removeClass('d-none');
 		
 		/*$("#atras").data('slide', 1);*/
 	}else if (slide == 3) {
 		$("#siguente").data('slide', 4);
+		$(".img_questionario3").removeClass('d-none');
 		
 		/*$("#atras").data('slide', 2);*/
 	}else if (slide == 4) {
 		$("#siguente").data('slide', 1);
+		$(".img_questionario4").removeClass('d-none');
 		$('.calificar').css({
 								'visibility': 'visible',
 								'color': '#FFF',
