@@ -402,12 +402,14 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");            
             break;
         case 3:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 4:
@@ -1539,5 +1541,34 @@ function esconder_tarjeta(){
         $(".aparecer-card").data('aparecer' , 3);
         $(".esconder-card").data('esconder' , 3);
     }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }
 

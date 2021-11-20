@@ -941,3 +941,13 @@ card flip*/
 .card-inactiva-c{
   background: #484848 !important;
 }
+
+.youtubes{
+  min-height: 200px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}

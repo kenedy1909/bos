@@ -178,8 +178,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
             break;
         case 17:
-            var videointro = document.getElementById('video_intro1');
-            videointro.pause();
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 18:
@@ -187,8 +186,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 19:
-            var videointro = document.getElementById('video_intro1');
-            videointro.pause();
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
             break;
         case 20:
@@ -753,3 +751,32 @@ function enter_hover_1(num) {
         $(".info_funcionalidad_9_4").removeClass('d-none');
     }
 }*/
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
+}

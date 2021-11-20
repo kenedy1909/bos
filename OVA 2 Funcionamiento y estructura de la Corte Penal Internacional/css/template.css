@@ -1021,3 +1021,13 @@ card flip*/
     border-bottom: 15px solid transparent;
     cursor: pointer;
 }
+
+.youtubes{
+  min-height: 200px !important;
+}
+.img-70{
+  width: 70% !important;
+}
+.img-100{
+  width: 100%;
+}

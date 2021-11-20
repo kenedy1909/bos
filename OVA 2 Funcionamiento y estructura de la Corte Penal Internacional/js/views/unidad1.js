@@ -117,12 +117,14 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");            
             break;
         case 3:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");
             break;
         case 5:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Estatuto de Roma", "Estructura de la Corte Penal Internacional");
             dragging = "";
             diff = "";
@@ -1082,4 +1084,33 @@ function cerrar_vide_1(){
 
 function cerrar_vide_2(){
     $('#video_2').attr('src', $('#video_2').attr('src'));
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }

@@ -271,6 +271,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 15:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             var videointro = document.getElementById('video_intro1');
             videointro.pause();
@@ -279,6 +280,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             break;
         case 17:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
             var videointro = document.getElementById('video_intro1');
             videointro.pause();
@@ -1514,4 +1516,33 @@ function pestaniasBig(num) {
     $('.pestaniaNuev3').addClass('bg-white text-black border-color');
     $('.contenedorPest3').removeClass('d-none');
   }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }

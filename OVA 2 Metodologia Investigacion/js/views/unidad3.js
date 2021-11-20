@@ -75,6 +75,7 @@ function controlSlides3(num){
             tema = 11;
             break;
         case 1:
+
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20">
                             <a href="assets/PDF/UNIDAD3/Adopción-de-una-teoría-o-desarrollo-de-una-perspectiva-teórica-o-de-referencia.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-3"></i> Adopción de una teoría o desarrollo de una perspectiva teórica o de referencia.</a>
@@ -87,6 +88,7 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
             break;
         case 2:
+            paraIframe(0);
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
             break;
         case 3:
@@ -302,7 +304,7 @@ function libros() {
         var text = `<p class="p_black justificado">Lo primordial a la hora de sentarnos a escribir nuestro marco teórico, es centrarnos en nuestro problema de investigación, dicho de otra forma, no irnos por las ramas o buscar información que no sea la concerniente y específica sobre nuestro tema, por lo que buscaremos única y exclusivamente sobre ello, esto ya que es probable que en la búsqueda de la literatura, se vayan encontrando temas que llamen nuestra atención, por lo que ahí en ese preciso momento, es donde usted debe centrarse en el tema que lo ocupa.</p>`;
         $("#marco").html(text);
     }else if (libros_num == 5) {
-        var text = `<p class="p_black justificado">De igual forma, debe tener en cuenta que la cantidad no hace referencia a la calidad; es frecuente pensar que mientras más se escriba, mejor será nuestro marco teórico, aquí lo que importa es que lo que se relacione desglose y trabaje con profundidad nuestro tema de estudio, relacionando la literatura y teorías encontradas de manera lógica, coherente y clara con la problemática que nos ocupa.</p><br><p class="p_black justificado">Por otra parte, y no menos importante es la forma en que se debe escribir y redactar el marco teórico, ya que no se trata de hacer un resumen o un informe de lectura, es redactar de manera coherente, clara y verosímil la información encontrada, desglosando y uniendo las teorías y conceptos de manera tal, que al leerse se entienda con claridad lo que se desea compartir.</p>`;
+        var text = `<iframe width="560" height="315" src="https://www.youtube.com/embed/A45_n99FpsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtubes  img-100 vid" style="margin-top: 25%;"></iframe>`;
         $("#marco").html(text);
     }
 }
@@ -899,4 +901,33 @@ function videos() {
         $(".video-1").html('<p class="m-auto text-center w-fit"><img src="assets/img/img_ova/jugar.png" class="w-125px"></p>');
         $(".video-2").html(texto);
     }
+}
+
+function paraIframe(num){
+    switch (parseInt(num)) {
+        case 0:
+            $('.vid').attr('src', $('.vid').attr('src'));
+            break;
+        case 1:
+            $('.vid1').attr('src', $('.vid1').attr('src'));
+            break;
+        case 2:
+            $('.vid2').attr('src', $('.vid2').attr('src'));
+            break;
+        case 3:
+            $('.vid3').attr('src', $('.vid3').attr('src'));
+            break;
+        case 4:
+            $('.vid4').attr('src', $('.vid4').attr('src'));
+            break;
+        case 5:
+            $('.vid5').attr('src', $('.vid5').attr('src'));
+            break;
+        case 6:
+            $('.vid6').attr('src', $('.vid6').attr('src'));
+            break;
+        default:
+            break;
+    }
+    
 }

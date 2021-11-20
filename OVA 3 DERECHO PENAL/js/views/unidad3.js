@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $( ".ov-personaje").hide();
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
