@@ -367,6 +367,40 @@ function init_recurso_1() {
         if (!flag) {
             ahorcado.trazar();
             if (!ahorcado.vivo) {
+                /*$('#texto-modal').html('Incorrecto, la respuesta no es una circunstancia que se puede dar en los movimientos de activos en la operación de un restaurante. <span class="intentalo">Inténtalo nuevamente</span>');
+                $('#modal-ahorcado').addClass("intentar");
+                $('#modal-ahorcado').modal("show");
+                ahorcado.reiniciar();*/
+                var modalID = "#calificacionModal";
+                var exito = false;
+                var mensaje = "Inténtalo nuevamente.";
+                // registrarActividad(puntaje);
+                mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
+                    
+                });
+            }
+        } else {
+            ahorcado.dibujarTodo();
+            if (this.gano()) {
+                /*$('#texto-modal').html('Correcto, los movimientos de activos en la operación de un restaurante se pueden dar por esta circunstancia.<br> Descubre en que otras circunstancias se pueden dar.');
+                $('#modal-ahorcado').removeClass("intentar");
+                $('#modal-ahorcado').modal("show");
+                for (var b = 0; b < btn.length; b++) {
+                    btn[b].setAttribute("disabled", "disabled");
+                }*/
+                var modalID = "#calificacionModal";
+                var exito = true;
+                var mensaje = "¡Felicitaciones";
+                // registrarActividad(puntaje);
+                mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
+                    
+                });
+            }
+        }
+
+        /*if (!flag) {
+            ahorcado.trazar();
+            if (!ahorcado.vivo) {
                 $('#texto-modal').html('Incorrecto, <span class="intentalo">Inténtalo nuevamente</span>');
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
@@ -382,7 +416,7 @@ function init_recurso_1() {
                     btn[b].setAttribute("disabled", "disabled");
                 }
             }
-        }
+        }*/
     };
 
     Ahorcado.prototype.gano = function () {
