@@ -1,6 +1,9 @@
 $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
     $(".menu2").removeClass('d-none');
+    $( ".ov-personaje").hide();
+    star_uni = 2;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
