@@ -2,6 +2,10 @@ var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
 var star_uni = 0;
+var paso = true;
+$('.unidades_ap').on('click', function () {
+    paso = true;
+});
 if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 }else{

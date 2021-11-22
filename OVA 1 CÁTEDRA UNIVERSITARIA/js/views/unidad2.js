@@ -3,7 +3,10 @@ $( document ).ready(function() {
     $(".menu2").removeClass('d-none');
     $( ".ov-personaje").hide();
     star_uni = 2;
+    paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
+            
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
