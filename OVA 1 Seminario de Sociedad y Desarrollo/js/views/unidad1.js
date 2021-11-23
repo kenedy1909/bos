@@ -140,7 +140,11 @@ function controlSlides(num) {
         case 6:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             break;
-
+        case 7:
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            break;
         default:
             break;
     }
