@@ -1,5 +1,7 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
+    $(".menu1").removeClass('c-show');
+    $(".menu2").removeClass('c-show');
     $(".menu3").removeClass('d-none');
     $(".pedfs").addClass('d-none');
     console.log(tema);
