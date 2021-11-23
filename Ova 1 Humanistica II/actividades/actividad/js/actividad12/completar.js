@@ -223,20 +223,25 @@ function calificar(){
 	}
 	if (puntaje == 100) {
 		
-	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%;">');
+	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin: auto;">');
 	  $('.puntaje').text(puntaje+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;background: #C8AD45; color:white;">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
 		
-	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%;">');
+	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin: auto;">');
 	  $('.puntaje').text(Math.round(puntaje)+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;background: #C8AD45; color:white;">cerrar</button>');
 	}else{
-	  $('.img_res').html('<img src="../img/img12/mal.png" style="max-width: 90%;">');
+	  $('.img_res').html('<img src="../img/img12/mal.png" style="max-width: 90%; margin: auto;">');
 	  $('.mensaje').text("¡Puedes hacerlo mejor!");
 	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;background: #C8AD45; color:white;">cerrar</button><button style="font-size: 15px;background: #C8AD45; color:white;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
 	}
+}
+
+
+function reiniciar(){
+  location.reload();
 }
