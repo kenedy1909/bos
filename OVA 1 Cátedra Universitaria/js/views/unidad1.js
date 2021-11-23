@@ -279,7 +279,7 @@ function funcionalidad_1(num) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 " id="funcionalidad_1_2" style="min-height: 570px!important;">
+                                            <div class="col-md-12 " id="funcionalidad_1_2" style="min-height: 490px!important;">
 
                                             </div>
                                             <div class="col-md-12 mx-auto mt-auto">
@@ -401,9 +401,11 @@ function scroll_horizontal(num){
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">En 1965, surge la huelga en la Universidad de Antioquia, para destituir al Rector Ignacio Vélez Escobar.</p>
                                         <br>
-                                        <p class="text-right p_black">Universidad de Antioquia</p>
+                                        <div style="position: relative;top: 122px">
+                                            <p class="text-right p_black color-text-o">Universidad de Antioquia</p>
+                                        </div>
                                     </div>
-                                    <div class="img-30">
+                                    <div class="img-30 d-flex align-items-start flex-column">
                                         <img src="assets/img/img_ova/Imagen9.jpg" class="img-100 m-auto">
                                     </div>
                                 </div>
@@ -429,7 +431,7 @@ function scroll_horizontal(num){
                                     </div>
                                     <div class="img-50 my-auto px-3 border-left-color-c">
                                         <div class="col-md-12 d-flex">
-                                            <div class="img-50 p-3">
+                                            <div class="img-70">
                                                 <img src="assets/img/img_ova/Imagen10.jpg" class="img-100 m-auto">
                                             </div>
                                             <div class="img-50 p-3">
@@ -556,7 +558,7 @@ function scroll_horizontal(num){
             break;
         case 10:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">El 7 de agosto de 1966, se hace la posesión de Carlos Lleras Restrepo como presidente.</p>
                                     </div>
@@ -637,37 +639,37 @@ function funcionalidad_1_2(num) {
     switch (parseInt(num)) {
         case 1:
             $('.funcionalidad_1_2-1').html(`
-                                <p class="p_white justificado">Denuncia de anomalías académicas, administrativas y de extensión, así como violaciones de los estatutos y de los reglamentos universitarios.</p>
+                                <p class="p_white justificado" style="height: 90px;overflow: auto;">Denuncia de anomalías académicas, administrativas y de extensión, así como violaciones de los estatutos y de los reglamentos universitarios.</p>
                                 `);
             break;
         case 2:
             $('.funcionalidad_1_2-2').html(`
-                                <p class="p_white justificado">Suspensión de los Consejos Consultivos de las Facultades, conformados por profesores y estudiantes.</p>
+                                <p class="p_white justificado" style="height: 90px;overflow: auto;">Suspensión de los Consejos Consultivos de las Facultades, conformados por profesores y estudiantes.</p>
                                 `);
             break;
         case 3:
             $('.funcionalidad_1_2-3').html(`
-                                <p class="p_white justificado">Rechazo a la expulsión, inadmisión y matrícula condicional de estudiantes por discriminación política e ideológica.</p>
+                                <p class="p_white justificado" style="height: 90px;overflow: auto;">Rechazo a la expulsión, inadmisión y matrícula condicional de estudiantes por discriminación política e ideológica.</p>
                                 `);
             break;
         case 4:
             $('.funcionalidad_1_2-4').html(`
-                                <p class="p_white justificado">Nivel académico mediocre; improvisación en el nombramiento de profesores, muchos de ellos no titulados.</p>
+                                <p class="p_white justificado" style="height: 90px;overflow: auto;">Nivel académico mediocre; improvisación en el nombramiento de profesores, muchos de ellos no titulados.</p>
                                 `);
             break;
         case 5:
             $('.funcionalidad_1_2-5').html(`
-                                <p class="p_white justificado">Demora en la provisión de profesores.</p>
+                                <p class="p_white justificado" style="height: 90px;overflow: auto;">Demora en la provisión de profesores.</p>
                                 `);
             break;
         case 6:
             $('.funcionalidad_1_2-6').html(`
-                                <p class="p_white justificado">Rechazo de docentes idóneos por razones políticas e ideológicas.</p>
+                                <p class="p_white justificado" style="height: 90px;overflow: auto;">Rechazo de docentes idóneos por razones políticas e ideológicas.</p>
                                 `);
             break;
         case 7:
             $('.funcionalidad_1_2-7').html(`
-                                <ul class="p_white">
+                                <ul class="p_white" style="height: 135px;overflow: auto;">
                                     <li>Exigir el retiro del Rector Juan Peláez Sierra.</li>
                                     <li>Levantamiento de las sanciones impuestas a los estudiantes por motivos ideológicos.</li>
                                     <li>Consagración definitiva de la libertad de cátedra y de expresión (Escudo de la U. de M.: “libertad y Ciencia”).</li>
@@ -677,7 +679,7 @@ function funcionalidad_1_2(num) {
             break;
         case 8:
             $('.funcionalidad_1_2-8').html(`
-                                <ul class="p_white">
+                                <ul class="p_white" style="height: 135px;overflow: auto;">
                                     <li>Apoyo al movimiento estudiantil de la U. de A. en la lucha por la derogatoria de la ordenanza 036 del 66.</li>
                                     <li>Elevación del nivel académico, cultural y de bienestar estudiantil.</li>
                                     <li>Participación de los estudiantes en el gobierno universitario y en la elección de directivos y profesores (antecedente del cogobierno).</li>
