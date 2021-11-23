@@ -10,7 +10,7 @@ window.onload = function () {
       allQuestions = {
         '¿Cuales son los términos profesionales y académicos de la educación contable?' : ['La ética, la responsabilidad para los usuarios y para el trabajo a ejercer, y tener un buen juicio. ', 'Los términos son solo hacer un buen trabajo', 0],
         
-        '¿Cuál es la función principal de la educación?' : ['E hacer personas las cuales acepten lo que las sociedad les da y no participen ni transformen su entorno', 'Es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola', 1],
+        '¿Cuál es la función principal de la educación?' : ['Es hacer personas las cuales acepten lo que las sociedad les da y no participen ni transformen su entorno', 'Es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola', 1],
         
         '¿A qué se orienta los perfiles profesionales y ocupacionales de un contador publico? ' : ['Responder con suficientes demandas empresariales mas que sociales por lo cual se considera fundamental revisar las interacciones formativas y los fines de los usuarios.', 'Transformar la sociedad y no revisar oficialmente las cuentas', 0]
       };
@@ -29,6 +29,15 @@ window.onload = function () {
   // This function loads all the possible answers of the given question
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
+  if (curr==0) {
+    $('.cantidad').html("1/3");
+  }else if (curr==1) {
+    $('.cantidad').html("2/3");
+  }else if (curr==2) {
+    $('.cantidad').html("3/3");
+  }else if (curr==3) {
+    $('.cantidad').html("3/3");
+  }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
@@ -118,15 +127,15 @@ function calificar(){
     }
   }
   if (puntaje == 100) {
-    $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%; margin: auto;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;background: #C8AD45; color:white;">cerrar</button>');
   }else{
-    $('.img_res').html('<img src="../img/img11/mal.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img11/mal.png" style="max-width: 90%; margin: auto;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
-    $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;background: #C8AD45; color:white;">cerrar</button><button id="add" class="btn" style="background: #C8AD45; color:white;" onclick="reiniciar();">reiniciar</button>');
   }
 }
 

@@ -395,7 +395,17 @@ p, button{
 	position: relative;
 	height: 150px;
 }
-.custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18, .custom-scrollbar__bar19, .custom-scrollbar__bar20, .custom-scrollbar__bar21{
+.custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14{
+	position: absolute;
+    top: 22px;
+    bottom: 45px;
+    background: #ffffff;
+    width: 3px;
+    right: -3px;
+    border-radius: 4px;
+    height: 150px;
+}
+.custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18, .custom-scrollbar__bar19, .custom-scrollbar__bar20, .custom-scrollbar__bar21{
 	position: absolute;
     top: 22px;
     bottom: 45px;
@@ -424,16 +434,16 @@ p, button{
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
-.custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
+/*.custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
 	height: 100%;
-	padding-right: 55px;
+	padding-right: 20px;
 	overflow-y: auto;
 	overflow: hidden;
-	-webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;*/
 }
 .custom-scrollbar__inner11, .custom-scrollbar__inner10{
 	height: 100%;
-	padding-right: 20px;
+	padding-right: 55px;
 	overflow-y: auto;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -448,7 +458,7 @@ p, button{
 }
 .custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
 	height: 50%;
-	padding-right: 55px;
+	padding-right: 20px;
 	overflow-y: auto;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -980,8 +990,8 @@ navegacion pantalla1*/
 .circulo_ffffff{
     background: white;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
     margin-top: 20px;
 }
 
@@ -1115,7 +1125,7 @@ input[type=range]::-ms-fill-upper {
     background: white;
     border-radius: 50px;
     padding: 50px 30px 26px 25px;
-    border: solid #548135;
+    border: solid #548135 5px;
     margin-bottom: 10px;
 }
 
@@ -1130,63 +1140,63 @@ input[type=range]::-ms-fill-upper {
 .brazos{
 	z-index: 1000;
 	background: transparent;
-	height: 80px;
-	width: 200px;
-	position: absolute;
-	left: 237px;
-	top: 76%;
+	height: 170px;
+  width: 230px;
+  position: absolute;
+  left: 108px;
+  top: 42%;
 }
 
 .pantalla{
 	z-index: 1000;
-	width: 175px;
-	height: 81px;
-	background: transparent;
-	position: absolute;
-	top: 11%;
-	left: 262px;
+	width: 207px;
+  height: 88px;
+  background: transparent;
+  position: absolute;
+  top: 8%;
+  left: 122px;
 }
 .taza{
 	z-index: 1000;
 	background: transparent;
-	height: 80px;
-	width: 52px;
-	position: absolute;
-	top: 26%;
-	left: 164px;
+	height: 64px;
+  width: 74px;
+  position: absolute;
+  top: 26%;
+  left: 36px;
 }
 
 .calculadora{
 	z-index: 1000;
-	width: 52px;
-	height: 77px;
-	background: transparent;
-	position: absolute;
-	top: 189px;
-	left: 158px;
+	width: 64px;
+  height: 89px;
+  background: transparent;
+  position: absolute;
+  top: 181px;
+  left: 32px;
 }
 .cuaderno{
 	z-index: 1000;
-	width: 51px;
-	height: 81px;
-	background: transparent;
-	position: absolute;
-	left: 462px;
-	top: 63px;
+	width: 67px;
+  height: 81px;
+  background: transparent;
+  position: absolute;
+  left: 353px;
+  top: 63px;
 }
 .regla{
 	z-index: 1000;
-	width: 90px;
-	height: 65px;
-	background: transparent;
-	left: 455px;
-	position: absolute;
-	top: 181px;
+	width: 104px;
+  height: 65px;
+  background: transparent;
+  left: 340px;
+  position: absolute;
+  top: 181px;
 }
 
 .position_abs{
 	position: absolute;
-	left: 137px;
+	left: 15px;
 }
 
 .banner_17{

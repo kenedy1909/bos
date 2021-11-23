@@ -218,7 +218,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
             <tbody>\
                 {% for question in form.questions %}\
                 <tr>\
-                    <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
+                    <td style="text-align: justify;">{{ question.question_txt }}  <img src="{{question.img }}"></td>\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\

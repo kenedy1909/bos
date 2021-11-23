@@ -21,14 +21,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
-
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
@@ -57,6 +54,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+        actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -195,7 +193,7 @@ function controlSlides(num){
             break;
         case 16:
             $('.pantallas16').html('');
-            $('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');
+            /*$('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');*/
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             /*$("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;*/
@@ -259,9 +257,11 @@ function controlSlides(num){
 
 function imprime16(){
     var text = `
-            <div style="padding: 28px 25px 25px 25px;">
+            <div class="px-3 py-2">
               <p class="justificado text-black">No obstante, los perfiles de formación profesionales y ocupacionales de los contadores públicos, continúan estando orientados a responder con suficiencia a las demandas empresariales más que a las sociales, por tanto se considera fundamental revisar de manera reflexiva las intenciones formativas, los fines y usuarios de la formación contable y los propósitos y filosofías institucionales como aspectos que posibilitan la incorporación de las dimensiones no incluidas en la educación contable tradicional.</p>
-              <button class="btn btnpant16" data-toggle="modal" data-target="#modaltable">ver</button>
+                <div class="d-flex">
+                  <button class="btn btnpant16 ml-auto px-4" data-toggle="modal" data-target="#modaltable">ver</button>
+                </div>
             </div>
     `;
     $('.16_imprime').html(text);
@@ -715,43 +715,43 @@ function funcion_vanvas() {
 function pantalla13(num){
     switch (parseInt(num)) {
         case 1:
-            var text = `<p class="justificado text-black">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
+            var text = `<p class="justificado m-auto text-black">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 2:
-            var text = `<p class="justificado text-black">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
+            var text = `<p class="justificado m-auto text-black">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 3:
-            var text = `<p class="justificado text-black">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
+            var text = `<p class="justificado m-auto text-black">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 4:
-            var text = `<p class="justificado text-black">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
+            var text = `<p class="justificado m-auto text-black">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 5:
-            var text = `<p class="justificado text-black">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
+            var text = `<p class="justificado m-auto text-black">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 6:
-            var text = `<p class="justificado text-black">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
-                              <iframe id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen>`;
+            var text = `<div class="m-auto"><p class="justificado text-black">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
+                              <iframe id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen></div>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
@@ -962,48 +962,48 @@ function pantallas16(num){
             break;
         case 1:
             var pantalla = `
-            <div class="banner_16">
-              <p class="justificado text-black">El pedagogo brasileño Paulo Freire, quien ha sido uno de los principales exponentes de la pedagogía crítica latinoamericana, considera que “(...) la función principal de la educación es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola” (Ayuste, 2006, p. 42).</p>
+            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+              <p class="justificado p_black m-auto">El pedagogo brasileño Paulo Freire, quien ha sido uno de los principales exponentes de la pedagogía crítica latinoamericana, considera que “(...) la función principal de la educación es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola” (Ayuste, 2006, p. 42).</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
             break;
         case 2:
             var pantalla = `
-            <div class="banner_16">
-              <p class="justificado text-black">Y que a partir de esa educación, el concepto de liberación cobra toda significancia posible tanto  desde  el  punto de vista de las ciencias sociales como en las aplicadas, especialmente para el particular de este trabajo, la contabilidad.</p>
+            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+              <p class="justificado p_black m-auto">Y que a partir de esa educación, el concepto de liberación cobra toda significancia posible tanto  desde  el  punto de vista de las ciencias sociales como en las aplicadas, especialmente para el particular de este trabajo, la contabilidad.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
             break;
         case 3:
             var pantalla = `
-            <div class="banner_16">
-              <p class="justificado text-black">Siguiendo con Gómez (2012) Las disciplinas científicas, incluso aquellas que se especializan en problemas de conocimientos tecnológicos y técnicos, requieren una comprensión del medio en el cual se desata la transmisión de saberes, de tal forma que pueda desarrollarse favorablemente el proceso.</p>
+            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+              <p class="justificado p_black m-auto">Siguiendo con Gómez (2012) Las disciplinas científicas, incluso aquellas que se especializan en problemas de conocimientos tecnológicos y técnicos, requieren una comprensión del medio en el cual se desata la transmisión de saberes, de tal forma que pueda desarrollarse favorablemente el proceso.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
             break;
         case 4:
             var pantalla = `
-            <div class="banner_16">
-              <p class="justificado text-black">Lo anterior implica un estudio juicioso y comprometido de quienes aprenden, enseñan y educan de forma coherente con las necesidades de la sociedad y no únicamente con aquellas derivadas del mercado de capitales.</p>
+            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+              <p class="justificado p_black m-auto">Lo anterior implica un estudio juicioso y comprometido de quienes aprenden, enseñan y educan de forma coherente con las necesidades de la sociedad y no únicamente con aquellas derivadas del mercado de capitales.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
             break;
         case 5:
             var pantalla = `
-            <div class="banner_16">
-              <p class="justificado text-black">Según lo expresado por Sánchez (2015) la necesidad de profesionalización contable es producto de esfuerzos gremiales y gubernamentales por otorgar el estatus de saber disciplinar a la contabilidad; su marcado uso en el mundo de los negocios y el tecnicismo asociado a su práctica, ha  legado la percepción social de la contabilidad como saber hacer en contraposición a la concepción social del saber contable.</p>
+            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+              <p class="justificado p_black m-auto">Según lo expresado por Sánchez (2015) la necesidad de profesionalización contable es producto de esfuerzos gremiales y gubernamentales por otorgar el estatus de saber disciplinar a la contabilidad; su marcado uso en el mundo de los negocios y el tecnicismo asociado a su práctica, ha  legado la percepción social de la contabilidad como saber hacer en contraposición a la concepción social del saber contable.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);
             break;
         case 6:
             var pantalla = `
-            <div class="banner_16">
-              <p class="justificado text-black">En tanto resultado de las dinámicas y modificaciones en las relaciones sociales y económicas, la contabilidad se encuentra convocada a mejorar sus conceptualizaciones, formas de representación, medición y presentación, que complementen más que sustituyan las financieras tradicionales.</p>
+            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+              <p class="justificado p_black m-auto">En tanto resultado de las dinámicas y modificaciones en las relaciones sociales y económicas, la contabilidad se encuentra convocada a mejorar sus conceptualizaciones, formas de representación, medición y presentación, que complementen más que sustituyan las financieras tradicionales.</p>
             </div>`;
             
             $('.pantallas16').html(pantalla);

@@ -1,5 +1,6 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
 
     console.log(tema);
