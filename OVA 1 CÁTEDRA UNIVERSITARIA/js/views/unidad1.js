@@ -44,6 +44,8 @@ $( document ).ready(function() {
     knob = "";
     bar = "";
     container = "";
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+    $('.zoom_img2').elevateZoom({zoomWindowPosition: 20});
 
     slide_link(tema);
     setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
@@ -251,34 +253,16 @@ function Input(num) {
 function funcionalidad_1(num) {
     switch(parseInt(num)){
         case 1:
-            $("#funcionalidad-1").html(`
-                                          <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                                            <div class="position-relative d-flex" style="width: 700px; height: 445px;">
-                                                <img src="assets/img/img_ova/linea.png" class="img-100 m-auto">
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 4px;" onclick="funcionalidad_1_1(1)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 256px; top: 4px;" onclick="funcionalidad_1_1(2)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 391px; top: 4px;" onclick="funcionalidad_1_1(3)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 531px; top: 4px;" onclick="funcionalidad_1_1(4)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 645px; top: 67px;" onclick="funcionalidad_1_1(5)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 535px; top: 139px;" onclick="funcionalidad_1_1(6)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 319px; top: 139px;" onclick="funcionalidad_1_1(7)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 139px;" onclick="funcionalidad_1_1(8)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 8px; top: 209px;" onclick="funcionalidad_1_1(9)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 275px;" onclick="funcionalidad_1_1(10)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 319px; top: 275px;" onclick="funcionalidad_1_1(11)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 535px; top: 275px;" onclick="funcionalidad_1_1(12)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 643px; top: 332px;" onclick="funcionalidad_1_1(13)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 535px; top: 407px;" onclick="funcionalidad_1_1(14)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 319px; top: 407px;" onclick="funcionalidad_1_1(15)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 407px;" onclick="funcionalidad_1_1(16)"></div>
-                                                <div id="info_funcionalidad_1" class="position-absolute d-none img-45"></div>
-                                                <div id="info_funcionalidad_2" class="position-absolute d-none img-45"></div>
-                                            </div>
-                                          </div>
-                                        `);
+            $("#funcionalidad-1").html(``);
+            $('.grande1').addClass('d-none');
+            $('.grande2').removeClass('d-none');
             scroll_uno();
             break;
         case 2:
+            $('.grande1').addClass('d-none');
+            $('.custom-scrollbar_uno').addClass('d-none');
+            $('.grande2').removeClass('d-none');
+            
             $("#funcionalidad-1").html(`
                                         <div class="row d-flex align-items-start flex-column">
                                             <div class="col-md-12 p-3">
@@ -325,6 +309,78 @@ function funcionalidad_1(num) {
             }
             break;
         default:
+            break;
+    }
+}
+
+function functions1(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.globos').addClass('d-none');
+            $('.globos1').removeClass('d-none');
+            break;
+        case 2:
+            $('.globos').addClass('d-none');
+            $('.globos2').removeClass('d-none');
+            break;
+        case 3:
+            $('.globos').addClass('d-none');
+            $('.globos3').removeClass('d-none');
+            break;
+        case 4:
+            $('.globos').addClass('d-none');
+            $('.globos4').removeClass('d-none');
+            break;
+        case 5:
+            $('.globos').addClass('d-none');
+            $('.globos5').removeClass('d-none');
+            break;
+        case 6:
+            $('.globos').addClass('d-none');
+            $('.globos8').removeClass('d-none');
+            break;
+        case 7:
+            $('.globos').addClass('d-none');
+            $('.globos7').removeClass('d-none');
+            break;
+        case 8:
+            $('.globos').addClass('d-none');
+            $('.globos6').removeClass('d-none');
+            break;
+        case 9:
+            $('.globos').addClass('d-none');
+            $('.globos9').removeClass('d-none');
+            break;
+        case 10:
+            $('.globos').addClass('d-none');
+            $('.globos10').removeClass('d-none');
+            break;
+        case 11:
+            $('.globos').addClass('d-none');
+            $('.globos11').removeClass('d-none');
+            break;
+        case 12:
+            $('.globos').addClass('d-none');
+            $('.globos12').removeClass('d-none');
+            break;
+        case 13:
+            $('.globos').addClass('d-none');
+            $('.globos13').removeClass('d-none');
+            break;
+        case 14:
+            $('.globos').addClass('d-none');
+            $('.globos16').removeClass('d-none');
+            break;
+        case 15:
+            $('.globos').addClass('d-none');
+            $('.globos15').removeClass('d-none');
+            break;
+        case 16:
+            $('.globos').addClass('d-none');
+            $('.globos14').removeClass('d-none');
+            break;
+        default:
+            // statements_def
             break;
     }
 }
