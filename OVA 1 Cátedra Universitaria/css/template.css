@@ -118,7 +118,7 @@ iframe{
 }
 
 .titulo-ova h3{
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .c-body{
@@ -1050,4 +1050,19 @@ svg circle:nth-child(2){
 }
 .img-100{
   width: 100%;
+}
+
+.m_l5{
+  margin-left: 5px;
+}
+.w-50px{
+  width: 50px;
+}
+
+.uni_gray{
+  background: #999999;
+      width: 142px;
+      height: 142px;
+      border-radius: 50%;
+      margin-top: 4px;
 }

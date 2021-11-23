@@ -242,3 +242,80 @@ input[type=range]::-ms-fill-upper {
     border-bottom: 19px solid transparent;
 }
 
+.borde_das{
+      border: dashed #FF0000 2px;
+}
+
+.linea_fun{
+  background-image: url('../assets/img/img_ova/linea.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 470px;
+  width: 685px;
+  margin-top: 15%;
+}
+.btn_aqua{
+  background: transparent;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      z-index: 100;
+}
+.globo1{
+  background: #911d30; width: 57%;padding: 6px;border-radius: 10px;height: 53px;
+}
+.indica1{
+  width: 0;height: 0;border-left: 74px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 30%;
+}
+.size_13{
+  font-size: 13px;
+}
+.globo2{
+  background: #911d30;width: 40%;padding: 13px;border-radius: 20px;height: 137px;margin-top: 13%;margin-left: 15%;
+}
+.indica2{
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -35px;
+}
+.indica3{
+      width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 0px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 35px solid #911d30;
+    margin-left: 267px;
+    position: relative;
+    top: -39px;
+}
+.indica4{
+      width: 0;
+    height: 0;
+    border-right: 26px solid transparent;
+    border-top: 38px solid transparent;
+    border-left: 24px solid transparent;
+    border-bottom: 30px solid #911d30;
+    margin-left: 267px;
+    position: relative;
+    top: -41px;
+    left: 90px;
+}
+
+.indica5{
+  width: 0;
+    height: 0;
+    border-right: 39px solid transparent;
+    border-top: 38px solid transparent;
+    border-left: 3px solid transparent;
+    border-bottom: 30px solid #911d30;
+    margin-left: 267px;
+    position: relative;
+    top: -42px;
+    transform: scaleX(-1);
+    left: -81%;
+}
+
+.white{
+  height: 490px;
+}

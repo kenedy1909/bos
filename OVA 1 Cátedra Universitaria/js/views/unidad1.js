@@ -1,5 +1,12 @@
-$( document ).ready(function() {
-    $( ".zoomContainer" ).remove();
+$( document ).ready(function() {        
+    $(".zoomContainer" ).remove();
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    star_uni = 1;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
+            
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -37,8 +44,11 @@ $( document ).ready(function() {
     knob = "";
     bar = "";
     container = "";
+    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+    $('.zoom_img2').elevateZoom({zoomWindowPosition: 20});
 
     slide_link(tema);
+    setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
@@ -240,37 +250,24 @@ function Input(num) {
   });
 }
 
+function salir(){
+    $('.grande2').addClass('d-none');
+    $('.grande1').removeClass('d-none');
+}
 function funcionalidad_1(num) {
     switch(parseInt(num)){
         case 1:
-            $("#funcionalidad-1").html(`
-                                          <div class="d-flex justify-content-center align-items-center w-100 h-100">
-                                            <div class="position-relative d-flex" style="width: 700px; height: 445px;">
-                                                <img src="assets/img/img_ova/linea.png" class="img-100 m-auto">
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 4px;" onclick="funcionalidad_1_1(1)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 256px; top: 4px;" onclick="funcionalidad_1_1(2)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 391px; top: 4px;" onclick="funcionalidad_1_1(3)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 531px; top: 4px;" onclick="funcionalidad_1_1(4)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 645px; top: 67px;" onclick="funcionalidad_1_1(5)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 535px; top: 139px;" onclick="funcionalidad_1_1(6)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 319px; top: 139px;" onclick="funcionalidad_1_1(7)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 139px;" onclick="funcionalidad_1_1(8)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 8px; top: 209px;" onclick="funcionalidad_1_1(9)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 275px;" onclick="funcionalidad_1_1(10)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 319px; top: 275px;" onclick="funcionalidad_1_1(11)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 535px; top: 275px;" onclick="funcionalidad_1_1(12)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 643px; top: 332px;" onclick="funcionalidad_1_1(13)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 535px; top: 407px;" onclick="funcionalidad_1_1(14)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 319px; top: 407px;" onclick="funcionalidad_1_1(15)"></div>
-                                                <div class="position-absolute radius-50" style="width: 32px; height: 32px; left: 100px; top: 407px;" onclick="funcionalidad_1_1(16)"></div>
-                                                <div id="info_funcionalidad_1" class="position-absolute d-none img-45"></div>
-                                                <div id="info_funcionalidad_2" class="position-absolute d-none img-45"></div>
-                                            </div>
-                                          </div>
-                                        `);
+            $("#funcionalidad-1").html(``);
+            $('.grande1').addClass('d-none');
+            $('.grande2').removeClass('d-none');
+            $('.custom-scrollbar_uno').removeClass('d-none');
             scroll_uno();
             break;
         case 2:
+            $('.grande1').addClass('d-none');
+            $('.custom-scrollbar_uno').addClass('d-none');
+            $('.grande2').removeClass('d-none');
+
             $("#funcionalidad-1").html(`
                                         <div class="row d-flex align-items-start flex-column">
                                             <div class="col-md-12 p-3">
@@ -282,7 +279,7 @@ function funcionalidad_1(num) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 p-3 d-flex align-items-center" id="funcionalidad_1_2" style="min-height: 570px!important;">
+                                            <div class="col-md-12 " id="funcionalidad_1_2" style="min-height: 570px!important;">
 
                                             </div>
                                             <div class="col-md-12 mx-auto mt-auto">
@@ -321,6 +318,78 @@ function funcionalidad_1(num) {
     }
 }
 
+function functions1(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.globos').addClass('d-none');
+            $('.globos1').removeClass('d-none');
+            break;
+        case 2:
+            $('.globos').addClass('d-none');
+            $('.globos2').removeClass('d-none');
+            break;
+        case 3:
+            $('.globos').addClass('d-none');
+            $('.globos3').removeClass('d-none');
+            break;
+        case 4:
+            $('.globos').addClass('d-none');
+            $('.globos4').removeClass('d-none');
+            break;
+        case 5:
+            $('.globos').addClass('d-none');
+            $('.globos5').removeClass('d-none');
+            break;
+        case 6:
+            $('.globos').addClass('d-none');
+            $('.globos8').removeClass('d-none');
+            break;
+        case 7:
+            $('.globos').addClass('d-none');
+            $('.globos7').removeClass('d-none');
+            break;
+        case 8:
+            $('.globos').addClass('d-none');
+            $('.globos6').removeClass('d-none');
+            break;
+        case 9:
+            $('.globos').addClass('d-none');
+            $('.globos9').removeClass('d-none');
+            break;
+        case 10:
+            $('.globos').addClass('d-none');
+            $('.globos10').removeClass('d-none');
+            break;
+        case 11:
+            $('.globos').addClass('d-none');
+            $('.globos11').removeClass('d-none');
+            break;
+        case 12:
+            $('.globos').addClass('d-none');
+            $('.globos12').removeClass('d-none');
+            break;
+        case 13:
+            $('.globos').addClass('d-none');
+            $('.globos13').removeClass('d-none');
+            break;
+        case 14:
+            $('.globos').addClass('d-none');
+            $('.globos16').removeClass('d-none');
+            break;
+        case 15:
+            $('.globos').addClass('d-none');
+            $('.globos15').removeClass('d-none');
+            break;
+        case 16:
+            $('.globos').addClass('d-none');
+            $('.globos14').removeClass('d-none');
+            break;
+        default:
+            // statements_def
+            break;
+    }
+}
+
 function scroll_horizontal(num){
     switch (parseInt(num)) {
         case 0:
@@ -328,7 +397,7 @@ function scroll_horizontal(num){
             break;
         case 1:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">En 1965, surge la huelga en la Universidad de Antioquia, para destituir al Rector Ignacio Vélez Escobar.</p>
                                         <br>
@@ -342,7 +411,7 @@ function scroll_horizontal(num){
             break;
         case 2:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">Simultáneamente se dan las protestas de las universidades a nivel nacional, por la invasión de los “marines” americanos a Santo Domingo, ambas causas apoyadas por la FUN, creada en 1962.</p>
                                     </div>
@@ -354,7 +423,7 @@ function scroll_horizontal(num){
             break;
         case 3:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 m-auto px-3">
                                         <p class="justificado p_black">En 1965 se decreta el estado de sitio por el presidente Guillermo León Valencia y prolongado durante los años siguientes por el presidente Carlos Lleras Restrepo./p>
                                     </div>
@@ -381,7 +450,7 @@ function scroll_horizontal(num){
             break;
         case 4:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">En el año 1966 aparece el Decreto 2128  y otras drásticas medidas como el juzgamiento de los delitos de secuestro, asonada y asociación para delinquir, por la Justicia Penal Militar, aunque fueran cometidos por civiles.</p>
                                     </div>
@@ -393,7 +462,7 @@ function scroll_horizontal(num){
             break;
         case 5:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">El 12 de agosto de 1966, se dá la manifestación de FEDETA y sus filiales por mejores salarios y por cátedra libre, bajo la consigna “unidad obrero estudiantil”.</p>
                                     </div>
@@ -405,7 +474,7 @@ function scroll_horizontal(num){
             break;
         case 6:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">El 28 de julio de 1966, la asamblea General de la Universidad de Medellín, decreta paro indefinido, en solidaridad con la Universidad de Antioquia y por los problemas propios (comunicado antes mencionado).</p>
                                     </div>
@@ -417,7 +486,7 @@ function scroll_horizontal(num){
             break;
         case 7:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 row">
+                                <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
                                         <p class="justificado p_black">El 22 de mayo de 1966 sale el comunicado estudiantil el cual contiene los siguientes puntos relevantes que va a poder visualizar al dar clic sobre cada tarjeta:</p>
                                     </div>
@@ -456,7 +525,7 @@ function scroll_horizontal(num){
             break;
         case 8:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 row">
+                                <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
                                         <p class="justificado p_black">El 22 de mayo de 1966 sale el comunicado estudiantil el cual contiene los siguientes puntos relevantes que va a poder visualizar al dar clic sobre cada tarjeta:</p>
                                     </div>
@@ -475,7 +544,7 @@ function scroll_horizontal(num){
             break;
         case 9:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">Creación de la Universidad de Medellín del comité pro-defensa como grupo de choque, aliado con la defensa civil y la fuerza pública en contra de los estudiantes huelguistas.</p>
                                     </div>
@@ -499,7 +568,7 @@ function scroll_horizontal(num){
             break;
         case 11:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">Toma de las instalaciones de la Universidad de Medellín y de las de Estudios Generales por parte de los huelguistas.</p>
                                     </div>
@@ -511,7 +580,7 @@ function scroll_horizontal(num){
             break;
         case 12:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">En Agosto 12, se emite el comunicado del Comité Central de Paro a la opinión pública rechazando el Comité Pro-Defensa.</p>
                                         <br>
@@ -525,7 +594,7 @@ function scroll_horizontal(num){
             break;
         case 13:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 row">
+                                <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
                                         <p class="justificado p_black">Debido a estos sucesos se toman drásticas medidas en contra de los huelguistas, las cuales fueron:</p>
                                     </div>
