@@ -341,3 +341,7 @@ input[type=range]::-ms-fill-upper {
 .mostradas{
   visibility: visible;
 }
+
+.scrul{
+  height: 200px;overflow: auto;
+}
