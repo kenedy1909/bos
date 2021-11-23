@@ -315,3 +315,7 @@ input[type=range]::-ms-fill-upper {
     transform: scaleX(-1);
     left: -81%;
 }
+
+.white{
+  height: 490px;
+}

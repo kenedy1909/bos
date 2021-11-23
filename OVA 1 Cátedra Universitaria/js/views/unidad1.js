@@ -279,7 +279,7 @@ function funcionalidad_1(num) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 p-3 d-flex align-items-center" id="funcionalidad_1_2" style="min-height: 570px!important;">
+                                            <div class="col-md-12 " id="funcionalidad_1_2" style="min-height: 570px!important;">
 
                                             </div>
                                             <div class="col-md-12 mx-auto mt-auto">
@@ -397,7 +397,7 @@ function scroll_horizontal(num){
             break;
         case 1:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">En 1965, surge la huelga en la Universidad de Antioquia, para destituir al Rector Ignacio Vélez Escobar.</p>
                                         <br>
@@ -411,7 +411,7 @@ function scroll_horizontal(num){
             break;
         case 2:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">Simultáneamente se dan las protestas de las universidades a nivel nacional, por la invasión de los “marines” americanos a Santo Domingo, ambas causas apoyadas por la FUN, creada en 1962.</p>
                                     </div>
@@ -423,7 +423,7 @@ function scroll_horizontal(num){
             break;
         case 3:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 m-auto px-3">
                                         <p class="justificado p_black">En 1965 se decreta el estado de sitio por el presidente Guillermo León Valencia y prolongado durante los años siguientes por el presidente Carlos Lleras Restrepo./p>
                                     </div>
@@ -450,7 +450,7 @@ function scroll_horizontal(num){
             break;
         case 4:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">En el año 1966 aparece el Decreto 2128  y otras drásticas medidas como el juzgamiento de los delitos de secuestro, asonada y asociación para delinquir, por la Justicia Penal Militar, aunque fueran cometidos por civiles.</p>
                                     </div>
@@ -462,7 +462,7 @@ function scroll_horizontal(num){
             break;
         case 5:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">El 12 de agosto de 1966, se dá la manifestación de FEDETA y sus filiales por mejores salarios y por cátedra libre, bajo la consigna “unidad obrero estudiantil”.</p>
                                     </div>
@@ -474,7 +474,7 @@ function scroll_horizontal(num){
             break;
         case 6:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">El 28 de julio de 1966, la asamblea General de la Universidad de Medellín, decreta paro indefinido, en solidaridad con la Universidad de Antioquia y por los problemas propios (comunicado antes mencionado).</p>
                                     </div>
@@ -486,7 +486,7 @@ function scroll_horizontal(num){
             break;
         case 7:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 row">
+                                <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
                                         <p class="justificado p_black">El 22 de mayo de 1966 sale el comunicado estudiantil el cual contiene los siguientes puntos relevantes que va a poder visualizar al dar clic sobre cada tarjeta:</p>
                                     </div>
@@ -525,7 +525,7 @@ function scroll_horizontal(num){
             break;
         case 8:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 row">
+                                <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
                                         <p class="justificado p_black">El 22 de mayo de 1966 sale el comunicado estudiantil el cual contiene los siguientes puntos relevantes que va a poder visualizar al dar clic sobre cada tarjeta:</p>
                                     </div>
@@ -544,7 +544,7 @@ function scroll_horizontal(num){
             break;
         case 9:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">Creación de la Universidad de Medellín del comité pro-defensa como grupo de choque, aliado con la defensa civil y la fuerza pública en contra de los estudiantes huelguistas.</p>
                                     </div>
@@ -568,7 +568,7 @@ function scroll_horizontal(num){
             break;
         case 11:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">Toma de las instalaciones de la Universidad de Medellín y de las de Estudios Generales por parte de los huelguistas.</p>
                                     </div>
@@ -580,7 +580,7 @@ function scroll_horizontal(num){
             break;
         case 12:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 d-flex">
+                                <div class="bg-blanco white radius-2 p-3 d-flex">
                                     <div class="img-50 my-auto p-5">
                                         <p class="justificado p_black">En Agosto 12, se emite el comunicado del Comité Central de Paro a la opinión pública rechazando el Comité Pro-Defensa.</p>
                                         <br>
@@ -594,7 +594,7 @@ function scroll_horizontal(num){
             break;
         case 13:
             $('#funcionalidad_1_2').html(`
-                                <div class="bg-blanco radius-2 p-3 row">
+                                <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
                                         <p class="justificado p_black">Debido a estos sucesos se toman drásticas medidas en contra de los huelguistas, las cuales fueron:</p>
                                     </div>
