@@ -42,10 +42,29 @@ function calificarEmparejamiento(event) {
     var exito = false;
     var mensaje = "Puedes hacerlo mejor"
     if (puntaje == 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else if (puntaje >= 75 && puntaje < 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+    }
+    $("#exampleModal").modal("show");
+    /*if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
     }
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
+    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);*/
 
 }
 
@@ -188,3 +207,7 @@ function init_actividad_1() {
     //evento de onready
     $(document).on('ready',init_actividad_1);
 })()
+
+function reload(){
+    location.reload();
+}

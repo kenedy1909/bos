@@ -1,30 +1,32 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+    $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
 
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
-    $('#next').on('click', function () {
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         /*actualizarprogress();*/
 
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
@@ -101,112 +103,113 @@ $( document ).ready(function() {
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);*/
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    controlSlides(stepIndex + 1);
+    actualizarprogress(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
-    
+
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link(num){
-    tema=1;
+function slide_link(num) {
+    tema = 1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Proporcionalidad y semejanza");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Proporcionalidad y semejanza");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 16:
-            
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Circunferencia");
+
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Circunferencia");
             break;
         case 17:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         case 18:
-            
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         case 19:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes","Áreas y volúmenes");
+            setMigaja("Unidades de aprendizaje", "1. Proporcionalidad, semejanza, circunferencia, áreas y volúmenes", "Áreas y volúmenes");
             break;
         default:
             break;
     }
 }
 
-function scroll_uno(){
+function scroll_uno() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -243,53 +246,56 @@ function scroll_tres(){
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
 var bar = document.querySelector('.custom-scrollbar__bar2');
 var container = document.querySelector('.custom-scrollbar__inner2');*/
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
@@ -298,54 +304,54 @@ function scroll(){
 
 
 function Input(num) {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = num;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    scroll_horizontal(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
-  this.actualizar2 = function() {
-    scroll_horizontal2(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+        scroll_horizontal2(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
 }
 
 function ruandas() {
@@ -355,29 +361,29 @@ function ruandas() {
     $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").removeClass('bg-naranja-1');
     $(".ruanda-img-5, .ruanda-img-6, .ruanda-img-7").addClass('bg-color-activi-c');
 
-    if (ruanda_num==1) {
+    if (ruanda_num == 1) {
         $(".ruanda-1").removeClass('d-none');
         $(".ruanda-1").addClass('d-flex');
-    }else if (ruanda_num==2) {
+    } else if (ruanda_num == 2) {
         $(".ruanda-2").removeClass('d-none');
         $(".ruanda-2").addClass('d-flex');
-    }else if (ruanda_num==3) {
+    } else if (ruanda_num == 3) {
         $(".ruanda-3").removeClass('d-none');
         $(".ruanda-3").addClass('d-flex');
-    }else if (ruanda_num==4) {
+    } else if (ruanda_num == 4) {
         $(".ruanda-4").removeClass('d-none');
         $(".ruanda-4").addClass('d-flex');
-    }else if (ruanda_num==5) {
+    } else if (ruanda_num == 5) {
         $(".ruanda-5").removeClass('d-none');
         $(".ruanda-5").addClass('d-flex');
         $(".ruanda-img-5").removeClass('bg-color-activi-c');
         $(".ruanda-img-5").addClass('bg-naranja-1');
-    }else if (ruanda_num==6) {
+    } else if (ruanda_num == 6) {
         $(".ruanda-6").removeClass('d-none');
         $(".ruanda-6").addClass('d-flex');
         $(".ruanda-img-6").removeClass('bg-color-activi-c');
         $(".ruanda-img-6").addClass('bg-naranja-1');
-    }else if (ruanda_num==7) {
+    } else if (ruanda_num == 7) {
         $(".ruanda-7").removeClass('d-none');
         $(".ruanda-7").addClass('d-flex');
         $(".ruanda-img-7").removeClass('bg-color-activi-c');
@@ -402,7 +408,7 @@ function funcionalidad_1(num) {
         $(".funcionalidad_col_1_1_1").addClass('col-md-12');
         $(".funcionalidad_col_1_1_2").removeClass('col-md-5');
         $(".funcionalidad_col_1_1_2").addClass('col-md-12');
-    }else if (num == 2) {
+    } else if (num == 2) {
         $(".funcionalidad_1_2").removeClass('col-md-12');
         $(".funcionalidad_1_2").addClass('col-md-6');
         $(".funcionalidad_oculta_1_2").removeClass('d-none');
@@ -422,31 +428,31 @@ function funcionalidad_2(num) {
         $(".info_funcionalidad_2_1").removeClass('d-none');
         $(".btn_funcionalidad_2_1").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_1").addClass('bg-verde-1');
-    }else if (num == 2) {
+    } else if (num == 2) {
         $(".info_funcionalidad_2_2").removeClass('d-none');
         $(".btn_funcionalidad_2_2").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_2").addClass('bg-verde-1');
-    }else if (num == 3) {
+    } else if (num == 3) {
         $(".info_funcionalidad_2_3").removeClass('d-none');
         $(".btn_funcionalidad_2_3").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_3").addClass('bg-verde-1');
-    }else if (num == 4) {
+    } else if (num == 4) {
         $(".info_funcionalidad_2_4").removeClass('d-none');
         $(".btn_funcionalidad_2_4").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_4").addClass('bg-verde-1');
-    }else if (num == 5) {
+    } else if (num == 5) {
         $(".info_funcionalidad_2_5").removeClass('d-none');
         $(".btn_funcionalidad_2_5").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_5").addClass('bg-verde-1');
-    }else if (num == 6) {
+    } else if (num == 6) {
         $(".info_funcionalidad_2_6").removeClass('d-none');
         $(".btn_funcionalidad_2_6").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_6").addClass('bg-verde-1');
-    }else if (num == 7) {
+    } else if (num == 7) {
         $(".info_funcionalidad_2_7").removeClass('d-none');
         $(".btn_funcionalidad_2_7").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_7").addClass('bg-verde-1');
-    }else if (num == 8) {
+    } else if (num == 8) {
         $(".info_funcionalidad_2_8").removeClass('d-none');
         $(".btn_funcionalidad_2_8").removeClass('bg-color-activi-o');
         $(".btn_funcionalidad_2_8").addClass('bg-verde-1');
@@ -462,23 +468,23 @@ function funcionalidad_3(num) {
         $(".info_funcionalidad_3_1").removeClass('d-none');
         $(".btn_funcionalidad_3_1").removeClass('bg-naranja-1');
         $(".btn_funcionalidad_3_1").addClass('bg-amarrillo-1');
-    }else if (num == 2) {
+    } else if (num == 2) {
         $(".info_funcionalidad_3_2").removeClass('d-none');
         $(".btn_funcionalidad_3_2").removeClass('bg-naranja-1');
         $(".btn_funcionalidad_3_2").addClass('bg-amarrillo-1');
-    }else if (num == 3) {
+    } else if (num == 3) {
         $(".info_funcionalidad_3_3").removeClass('d-none');
         $(".btn_funcionalidad_3_3").removeClass('bg-naranja-1');
         $(".btn_funcionalidad_3_3").addClass('bg-amarrillo-1');
-    }else if (num == 4) {
+    } else if (num == 4) {
         $(".info_funcionalidad_3_4").removeClass('d-none');
         $(".btn_funcionalidad_3_4").removeClass('bg-naranja-1');
         $(".btn_funcionalidad_3_4").addClass('bg-amarrillo-1');
-    }else if (num == 5) {
+    } else if (num == 5) {
         $(".info_funcionalidad_3_5").removeClass('d-none');
         $(".btn_funcionalidad_3_5").removeClass('bg-naranja-1');
         $(".btn_funcionalidad_3_5").addClass('bg-amarrillo-1');
-    }else if (num == 6) {
+    } else if (num == 6) {
         $(".info_funcionalidad_3_6").removeClass('d-none');
         $(".btn_funcionalidad_3_6").removeClass('bg-naranja-1');
         $(".btn_funcionalidad_3_6").addClass('bg-amarrillo-1');
@@ -710,9 +716,9 @@ function instrucciones(num) {
     $(".instrucciones-1, .instrucciones-2, .instrucciones-3").addClass('d-none');
     if (num == 1) {
         $(".instrucciones-1").removeClass('d-none');
-    }else if (num == 2) {
+    } else if (num == 2) {
         $(".instrucciones-2").removeClass('d-none');
-    }else if (num == 3) {
+    } else if (num == 3) {
         $(".instrucciones-3").removeClass('d-none');
     }
 }
@@ -723,16 +729,16 @@ function enter_hover_1(num) {
     if (num == 1) {
         $(".enter_hover_1_1").addClass('bg-color-activi-o');
         $(".enter_hover_1_1").removeClass('bg-color-activi-c');
-    }else if (num == 2) {
+    } else if (num == 2) {
         $(".enter_hover_1_2").addClass('bg-color-activi-o');
         $(".enter_hover_1_2").removeClass('bg-color-activi-c');
-    }else if (num == 3) {
+    } else if (num == 3) {
         $(".enter_hover_1_3").addClass('bg-color-activi-o');
         $(".enter_hover_1_3").removeClass('bg-color-activi-c');
-    }else if (num == 4) {
+    } else if (num == 4) {
         $(".enter_hover_1_4").addClass('bg-color-activi-o');
         $(".enter_hover_1_4").removeClass('bg-color-activi-c');
-    }else if (num == 5) {
+    } else if (num == 5) {
         $(".enter_hover_1_5").addClass('bg-color-activi-o');
         $(".enter_hover_1_5").removeClass('bg-color-activi-c');
     }
@@ -752,7 +758,7 @@ function enter_hover_1(num) {
     }
 }*/
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -778,5 +784,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }

@@ -319,3 +319,25 @@ input[type=range]::-ms-fill-upper {
 .white{
   height: 490px;
 }
+.finaltext{
+  color: #ffaf81;
+  text-align: center;
+  padding-top: 50%;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-weight: bold;
+}
+.gris{
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.indicadores{
+
+}
+.escondidas{
+  visibility: hidden;
+}
+.mostradas{
+  visibility: visible;
+}

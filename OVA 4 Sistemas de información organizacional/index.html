@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,355 +30,393 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://recursos.bosingenieria.com/iconos-main/css/all.min.css">
     <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet">  -->
-    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
-    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
-    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
-    <link href="css/template-geometria.css" rel="stylesheet"> 
-    <link href="css/template.css" rel="stylesheet"> 
-    <link href="css/estilos1.css" rel="stylesheet"> 
-    <link href="css/estilos2.css" rel="stylesheet"> 
-  </head>
-  <body class="c-app">
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet">
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet">
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet">
+    <link href="css/template-geometria.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/estilos1.css" rel="stylesheet">
+    <link href="css/estilos2.css" rel="stylesheet">
+</head>
+
+<body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
-      <div class="c-sidebar-brand d-lg-down-none">
-        <h4>MENU</h4>
-      </div>
-      <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
-          <i class="fad fa-home"></i> Inicio</a>
-        </li>
-        <li class="c-sidebar-nav-title">Contenido</li>
-        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
-          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu1"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>1. Fundamentos del E-commerce</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Fundamentos</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="13" onclick="actualizarprogress(14)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> La cadena de valor del E-commerce</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="16" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Sistemas de recaudo y pasarelas</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="20" onclick="actualizarprogress(21)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Categorías del E-commerce</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="22" onclick="actualizarprogress(23)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Normatividad</a></li>
-          </ul>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu2"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>2. El nuevo modelo de negocio</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress(1+28)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span>El modelo de negocio</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="2" onclick="actualizarprogress(3+28)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Rediseño de los modelo de negocio</a></li>
-          </ul>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu3"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>3. Implementación de la tienda online</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress(1+33)"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span>Implementación de la tienda online</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="text-center ov-personaje">
-          <img src="assets/img/img_ova/personaje.png" style="width:60%">
-      </div>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+        <div class="c-sidebar-brand d-lg-down-none">
+            <h4>MENU</h4>
+        </div>
+        <ul class="c-sidebar-nav">
+            <li class="c-sidebar-nav-item ov-inicio link-menu">
+                <a class="c-sidebar-nav-link" href="#inicio">
+                    <i class="fad fa-home"></i> Inicio</a>
+            </li>
+            <li class="c-sidebar-nav-title">Contenido</li>
+            <li class="c-sidebar-nav-item link-menu">
+                <a class="c-sidebar-nav-link" href="#unidades">
+                    <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none c-show menu1">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>1. Fundamentos del E-commerce</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Fundamentos</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="13" onclick="actualizarprogress(14)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> La cadena de valor del E-commerce</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="16" onclick="actualizarprogress(17)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Sistemas de recaudo y pasarelas</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="20" onclick="actualizarprogress(21)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Categorías del E-commerce</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="22" onclick="actualizarprogress(23)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Normatividad</a></li>
+                </ul>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none c-show menu2">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>2. El nuevo modelo de negocio</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress(1+28)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span>El modelo de negocio</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="2" onclick="actualizarprogress(3+28)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Rediseño de los modelo de negocio</a></li>
+                </ul>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none c-show menu3">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>3. Implementación de la tienda online</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="0" onclick="actualizarprogress(1+33)"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span>Implementación de la tienda online</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="text-center ov-personaje">
+            <img src="assets/img/img_ova/personaje.png" style="width:60%">
+        </div>
+        <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
     <div class="c-wrapper c-fixed-components">
-      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+        <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+            <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
           <i class="fas fa-bars"> </i>
-        </button><a class="c-header-brand d-lg-none" href="#">
-          <svg width="118" height="46" alt="CoreUI Logo">
+        </button>
+            <a class="c-header-brand d-lg-none" href="#">
+                <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
-        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+            <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="c-header-nav d-md-down-none">
-          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
-          <li class="c-header-nav-item ">
-            <div class="box">
-                <div class="porcent">
-                    <svg class="svg_porcent">
+            <ul class="c-header-nav d-md-down-none">
+                <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+                <li class="c-header-nav-item ">
+                    <div class="box">
+                        <div class="porcent">
+                            <svg class="svg_porcent">
                         <circle cx="40" cy="60" r="25" style ="stroke: #da2316;stroke-width: 5px;"/>
                         <circle class="up" cx="40" cy="60" r="25" style="stroke: #da2316;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
                     </svg>
-                    <div class="number">
-                        
+                            <div class="number">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/botonera79.png" alt="" class="icons-menu w-60px"></a>
+                </li>
+                <li class="c-header-nav-item ">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/botonera78.png" alt="" class="icons-menu w-60px modal_scroll10"></a>
+                </li>
+                <li class="c-header-nav-item ">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-30px modal_scroll11"></a>
+                </li>
+            </ul>
+            <ul class="c-header-nav ml-auto">
+                <li class="c-header-nav-item d-md-down-none">
+                    <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+                </li>
+            </ul>
+            <div class="c-subheader px-3">
+                <!-- Breadcrumb-->
+                <ol class="breadcrumb border-0 m-0">
+                    <li class="breadcrumb-item">Menú</li>
+                    <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread3"></li>
+                    <!-- Breadcrumb Menu-->
+                </ol>
+            </div>
+        </header>
+        <div class="c-body">
+            <main class="c-main" id="content-ova">
+
+            </main>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/botonera79.png" style="top: 5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content pdfs">
+                                            <div style="height: 200px;" class="scrol">
+                                                <!-- unidad 1 -->
+                                                <div class="d-none pedfs pedfs1">
+                                                    <p class="p_white">
+                                                        <a href="assets/PDF/UNIDAD1/guia_tienda_online.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">guia_tienda_online <b class="text-cafe"><u>Ver</u></b></a>
+                                                    </p>
+                                                    <p class="p_white">
+                                                        <a href="assets/PDF/UNIDAD1/el_elemento_central_de_la_estrategia.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">el_elemento_central_de_la_estrategia <b class="text-cafe"><u>Ver</u></b></a>
+                                                    </p>
+                                                    <p class="p_white">
+                                                        <a href="assets/PDF/UNIDAD1/cadenaDeValor.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">cadena_De_Valor <b class="text-cafe"><u>Ver</u></b></a>
+                                                    </p>
+                                                    <p class="p_white">
+                                                        <a href="assets/PDF/UNIDAD1/Estatuto_del_Consumidor.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">Estatuto_del_Consumidor <b class="text-cafe"><u>Ver</u></b></a>
+                                                    </p>
+
+                                                    <p class="p_white">
+                                                        <a href="assets/PDF/UNIDAD1/otrasRegulacionesEcommerce.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">otras_Regulaciones_Ecommerce <b class="text-cafe"><u>Ver</u></b></a>
+                                                    </p>
+                                                </div>
+
+                                                <!-- unidad 2 -->
+                                                <div class="d-none pedfs pedfs2">
+                                                    <p class="p_white">
+                                                        <a href="assets/PDF/UNIDAD2/flujoDeIngresos.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">flujo_De_Ingresos<b class="text-cafe"><u>Ver</u></b></a>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/botonera79.png" alt="" class="icons-menu w-60px"></a></li>
-          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/botonera78.png" alt="" class="icons-menu w-60px modal_scroll10"></a></li>
-          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-30px modal_scroll11"></a></li>
-        </ul>
-        <ul class="c-header-nav ml-auto">
-          <li class="c-header-nav-item d-md-down-none">
-            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
-          </li>
-        </ul>
-        <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Menú</li>
-            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread3"></li>
-            <!-- Breadcrumb Menu-->
-          </ol>
-        </div>
-      </header>
-      <div class="c-body">
-        <main class="c-main" id="content-ova">
-          
-        </main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-lg" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-lg" role="document">
+                    <div class="modal-content ">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/botonera79.png" style="top: 5px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content pdfs">
-                              <div style="height: 200px;" class="scrol">
-                                <!-- unidad 1 -->
-                                <div class="d-none pedfs pedfs1">
-                                  <p class="p_white">
-                                        <a href="assets/PDF/UNIDAD1/guia_tienda_online.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">guia_tienda_online <b class="text-cafe"><u>Ver</u></b></a>
-                                  </p>
-                                  <p class="p_white">
-                                        <a href="assets/PDF/UNIDAD1/el_elemento_central_de_la_estrategia.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">el_elemento_central_de_la_estrategia <b class="text-cafe"><u>Ver</u></b></a>
-                                  </p>
-                                  <p class="p_white">
-                                        <a href="assets/PDF/UNIDAD1/cadenaDeValor.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">cadena_De_Valor <b class="text-cafe"><u>Ver</u></b></a>
-                                  </p>
-                                  <p class="p_white">
-                                        <a href="assets/PDF/UNIDAD1/Estatuto_del_Consumidor.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">Estatuto_del_Consumidor <b class="text-cafe"><u>Ver</u></b></a>
-                                  </p>
-                                  
-                                  <p class="p_white">
-                                        <a href="assets/PDF/UNIDAD1/otrasRegulacionesEcommerce.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">otras_Regulaciones_Ecommerce <b class="text-cafe"><u>Ver</u></b></a>
-                                  </p>
-                                </div>
-
-                                <!-- unidad 2 -->
-                                <div class="d-none pedfs pedfs2">
-                                  <p class="p_white">
-                                        <a href="assets/PDF/UNIDAD2/flujoDeIngresos.pdf" target="_blank"> <img class="menu_superiorPd w-40px" src="assets/img/img_template/pdf.png">flujo_De_Ingresos<b class="text-cafe"><u>Ver</u></b></a>
-                                  </p>
-                                </div>
-                                
-                              </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-lg" role="document">
-            <div class="modal-content ">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <div class="m-0 p-0 x-modal">
-                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
-                                    </div>
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="menu_superior img-75" src="assets/img/img_template/botonera78.png" style="top: 25px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content custom-scrollbar10 text-white">
-                            <div class="custom-scrollbar__inner10">
-                              <p class="justificado"> <b class="font-weight-bold">
-                                API: </b> es una sigla en inglés, que traduce “Interfaz de Programación de aplicaciones”, hace referencia a un conjunto de protocolos que se utilizan para desarrollar e integrar un software a las aplicaciones.  En otras palabras, son aplicaciones que permiten que un software se integre o se comunique con otro para facilitar la usabilidad y experiencia del cliente en la navegación. Ejemplo: cuando un botón de pago de un banco o pasarela se integra (enlaza) a una página web, se hace a través de una Api.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                                B2B (Business to Business) “de negocio a negocio”: </b> hace referencia a cuando una empresa (business) le ofrece o vende productos o servicios a otra empresa (business). Por ejemplo, una empresa que vende piezas para automóviles, donde sus clientes terminan siendo otras compañías, en este caso talleres de mecánica, concesionarios, etc.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                                B2C (Business to Consumer):</b> significa “de negocio a consumidor”, hace referencia a cuando una empresa (business) le ofrece o vende productos o servicios directamente al consumidor final (consumer). Por ejemplo, cuando, una empresa que vende ropa para mujer, y sus clientes son las amas de casa, quienes compran para su propio uso.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                                C2C (Consumer to Consumer):</b> significa “de consumidor a consumidor”. Es el comercio entre dos consumidores de un bien o servicio, aquí no intervienen las empresas que produjeron el bien o servicio. Es muy común en subastas o venta directa. Ejemplo, una persona (no empresa) que vende su bicicleta por mercado libre a otro consumidor (no empresa).
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Cadena de Valor:</b> es un modelo, generalmente gráfico, que explica el conjunto de pasos o actividades involucradas en un proceso para crear un producto o servicio; el modelo ilustra de manera secuencial cada paso o actividad, y que permite entender cómo se agrega valor a medida que va avanzando el proceso entre un paso y otro, desde la creación de la demanda hasta su satisfacción final. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="menu_superior img-75" src="assets/img/img_template/botonera78.png" style="top: 25px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content custom-scrollbar10 text-white">
+                                            <div class="custom-scrollbar__inner10">
+                                                <p class="justificado"> <b class="font-weight-bold">
+                                API: </b> es una sigla en inglés, que traduce “Interfaz de Programación de aplicaciones”, hace referencia a un conjunto de protocolos que se utilizan para desarrollar e integrar un software a las aplicaciones.  En otras
+                                                    palabras, son aplicaciones que permiten que un software se integre o se comunique con otro para facilitar la usabilidad y experiencia del cliente en la navegación. Ejemplo: cuando un botón de pago de
+                                                    un banco o pasarela se integra (enlaza) a una página web, se hace a través de una Api.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                                B2B (Business to Business) “de negocio a negocio”: </b> hace referencia a cuando una empresa (business) le ofrece o vende productos o servicios a otra empresa (business). Por ejemplo, una empresa que vende piezas para automóviles,
+                                                    donde sus clientes terminan siendo otras compañías, en este caso talleres de mecánica, concesionarios, etc.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                                B2C (Business to Consumer):</b> significa “de negocio a consumidor”, hace referencia a cuando una empresa (business) le ofrece o vende productos o servicios directamente al consumidor final (consumer). Por ejemplo, cuando,
+                                                    una empresa que vende ropa para mujer, y sus clientes son las amas de casa, quienes compran para su propio uso.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                                C2C (Consumer to Consumer):</b> significa “de consumidor a consumidor”. Es el comercio entre dos consumidores de un bien o servicio, aquí no intervienen las empresas que produjeron el bien o servicio. Es muy común en subastas
+                                                    o venta directa. Ejemplo, una persona (no empresa) que vende su bicicleta por mercado libre a otro consumidor (no empresa).
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Cadena de Valor:</b> es un modelo, generalmente gráfico, que explica el conjunto de pasos o actividades involucradas en un proceso para crear un producto o servicio; el modelo ilustra de manera secuencial cada paso o actividad,
+                                                    y que permite entender cómo se agrega valor a medida que va avanzando el proceso entre un paso y otro, desde la creación de la demanda hasta su satisfacción final.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
                               Comercio electrónico:</b> es el proceso de comprar y vender productos o servicios a través de la web o por medios electrónicos.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Conversión:</b> son acciones clave que un usuario de Internet realiza como: registrarse, comprar, descargar un archivo o instalar una aplicación, hasta convertirse en cliente. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Dirección IP:</b> es el conjunto de números organizados jerárquicamente de acuerdo a unos criterios de zona y ubicación, con los cuales se identifica una empresa en internet. En otras palabras es como el número de teléfono “al cual se marca” cuando se quiere ingresar a una página web. Los dispositivos a través de los cuales los usuarios se conectan a internet (tablet, PC, teléfono móvil, etc) pueden ingresar a cualquier página a través de la dirección IP, que en la mayoría de los casos viene “disfrazada” con el nombre de la página (dominio), esto es porque para los usuarios es más fácil recordar un nombre de dominio que los números de la dirección IP. Una dirección IP nunca está repetida a nivel mundial. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Dominio:</b> el dominio (en una página web) es el nombre que cada página tiene, que la hace única, y que se usa para ser encontrada de manera fácil. En otras palabras es la traducción a un nombre de fácil recordación (normalmente la marca o nombre de la empresa. En otras palabras, si google no tuviera el dominio http://google.com,  los usuarios tendrían que utilizar la dirección IP http://172.217.10.110/ para ser buscada en internet.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              e-Business:</b> es un término que explica o describe la condición de una empresa, cuando todos sus procesos funcionan completamente en la web, no solo la actividad de compra y venta, sino también sus actividades de gestión, operación y funcionamiento. Se podría decir que el e-business engloba o integra el concepto de e-commerce. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Experiencia de Usuario:</b> en informática y el mundo online, el concepto de experiencia de usuario se entiende como interacción satisfactoria que tiene un usuario de un sistema, sitio web o aplicación, dando como resultado una percepción positiva o negativa. Todo sitio web, aplicativo o sistema debe contar con elementos que permitan una experiencia de usuario agradable para el usuario. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Marketplace:</b> son plataformas de compra y venta de todo tipo de productos que permiten a compradores y vendedores relacionarse entre sí para efectuar una transacción comercial. Ejemplos: Amazon, Linio, Mercadolibre, vitrina empresarial.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Mock-Ups:</b> es una imagen que hace las veces de prototipo de un sistema, sitio o aplicación web, y que permite a los diseñadores mostrarle al cliente cómo quedará el producto final. En otras palabras, es una imagen o fotomontaje que permite que el cliente vea cómo quedará la página web o aplicación antes de hacerlo. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Modelo de Negocios:</b> es un esquema que explica la forma o las formas cómo las empresas o negocios obtienen ingresos por parte de sus clientes, a medida que les entregan valor. Según Alexander Osterwalder en su libro La Generación del Modelo de Negocio, lo define como “Es una manera que permite entender cómo una empresa puede generar ingresos mientras crea, distribuye y captura valor a sus clientes”. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Conversión:</b> son acciones clave que un usuario de Internet realiza como: registrarse, comprar, descargar un archivo o instalar una aplicación, hasta convertirse en cliente.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Dirección IP:</b> es el conjunto de números organizados jerárquicamente de acuerdo a unos criterios de zona y ubicación, con los cuales se identifica una empresa en internet. En otras palabras es como el número de teléfono
+                                                    “al cual se marca” cuando se quiere ingresar a una página web. Los dispositivos a través de los cuales los usuarios se conectan a internet (tablet, PC, teléfono móvil, etc) pueden ingresar a cualquier
+                                                    página a través de la dirección IP, que en la mayoría de los casos viene “disfrazada” con el nombre de la página (dominio), esto es porque para los usuarios es más fácil recordar un nombre de dominio
+                                                    que los números de la dirección IP. Una dirección IP nunca está repetida a nivel mundial.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Dominio:</b> el dominio (en una página web) es el nombre que cada página tiene, que la hace única, y que se usa para ser encontrada de manera fácil. En otras palabras es la traducción a un nombre de fácil recordación (normalmente
+                                                    la marca o nombre de la empresa. En otras palabras, si google no tuviera el dominio http://google.com, los usuarios tendrían que utilizar la dirección IP http://172.217.10.110/ para ser buscada en internet.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              e-Business:</b> es un término que explica o describe la condición de una empresa, cuando todos sus procesos funcionan completamente en la web, no solo la actividad de compra y venta, sino también sus actividades de gestión,
+                                                    operación y funcionamiento. Se podría decir que el e-business engloba o integra el concepto de e-commerce.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Experiencia de Usuario:</b> en informática y el mundo online, el concepto de experiencia de usuario se entiende como interacción satisfactoria que tiene un usuario de un sistema, sitio web o aplicación, dando como resultado
+                                                    una percepción positiva o negativa. Todo sitio web, aplicativo o sistema debe contar con elementos que permitan una experiencia de usuario agradable para el usuario.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Marketplace:</b> son plataformas de compra y venta de todo tipo de productos que permiten a compradores y vendedores relacionarse entre sí para efectuar una transacción comercial. Ejemplos: Amazon, Linio, Mercadolibre, vitrina
+                                                    empresarial.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Mock-Ups:</b> es una imagen que hace las veces de prototipo de un sistema, sitio o aplicación web, y que permite a los diseñadores mostrarle al cliente cómo quedará el producto final. En otras palabras, es una imagen o fotomontaje
+                                                    que permite que el cliente vea cómo quedará la página web o aplicación antes de hacerlo.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Modelo de Negocios:</b> es un esquema que explica la forma o las formas cómo las empresas o negocios obtienen ingresos por parte de sus clientes, a medida que les entregan valor. Según Alexander Osterwalder en su libro La
+                                                    Generación del Modelo de Negocio, lo define como “Es una manera que permite entender cómo una empresa puede generar ingresos mientras crea, distribuye y captura valor a sus clientes”.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
                               Multicanal:</b> es la posibilidad de vender utilizando una combinación de canales diferentes: online, teléfonos móviles, tiendas físicas, entre otros.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Navegación Intuitiva:</b> es una cualidad o atributo que debe contar un sitio web, aplicación o sistema de información, que permite que el usuario pueda utilizarlo con autonomía y sin necesidad de consultar o recibir asistencia. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Omnicanalidad:</b> es una estrategia que busca poner a disposición de los clientes de la empresa, diferentes canales y medios de contacto (email, teléfono, sitio web, tienda online, redes sociales, etc), con el fin de mejorar las condiciones de comunicación.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Navegación Intuitiva:</b> es una cualidad o atributo que debe contar un sitio web, aplicación o sistema de información, que permite que el usuario pueda utilizarlo con autonomía y sin necesidad de consultar o recibir asistencia.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Omnicanalidad:</b> es una estrategia que busca poner a disposición de los clientes de la empresa, diferentes canales y medios de contacto (email, teléfono, sitio web, tienda online, redes sociales, etc), con el fin de mejorar
+                                                    las condiciones de comunicación.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
                               Optimización:</b> significa mejorar o perfeccionar un aspecto de un sitio web: a través de buscar eficiencias en variables como: tiempos de carga, navegación, calidad de diseño, registro de compradores, etc.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Pasarelas de pago:</b> son las herramientas seguras que se encargan de procesar los cobros y pagos en una tienda online o e-commerce. En el caso colombiano, se tienen varias pasarelas como PayU, PlacetoPay, E-Payco, PSE, entre otros. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Plugins:</b> son complementos que se instalan en los sitios web para ampliar las posibilidades de alguna herramienta. Pueden ser de diseño, marketing, estadísticas, redes sociales, integración de botones de pago, vinculación a plataformas de envío de paquetes. etc.
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Responsive:</b> es un término que se usa para definir la cualidad de adaptabilidad que el diseño de un sitio web o aplicativo tenga para ser usado adecuadamente en cualquier tipo de dispositivo, como computador, celular, smartwatch o tableta. En otras palabras, es cuando el diseño de la página se adapta de manera automática a los diferentes navegadores, sin desconfigurarse. 
-                              </p><br>
-                              <p class="justificado"> <b class="font-weight-bold">
-                              Video promocional:</b> son vídeos de productos o servicios interactivos que buscan atraer y captar la atención de los visitantes y cuyo principal propósito es promover e impulsar las ventas en redes sociales, tienda online o sitio web.
-                              </p>
-                              
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Pasarelas de pago:</b> son las herramientas seguras que se encargan de procesar los cobros y pagos en una tienda online o e-commerce. En el caso colombiano, se tienen varias pasarelas como PayU, PlacetoPay, E-Payco, PSE,
+                                                    entre otros.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Plugins:</b> son complementos que se instalan en los sitios web para ampliar las posibilidades de alguna herramienta. Pueden ser de diseño, marketing, estadísticas, redes sociales, integración de botones de pago, vinculación
+                                                    a plataformas de envío de paquetes. etc.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Responsive:</b> es un término que se usa para definir la cualidad de adaptabilidad que el diseño de un sitio web o aplicativo tenga para ser usado adecuadamente en cualquier tipo de dispositivo, como computador, celular,
+                                                    smartwatch o tableta. En otras palabras, es cuando el diseño de la página se adapta de manera automática a los diferentes navegadores, sin desconfigurarse.
+                                                </p><br>
+                                                <p class="justificado"> <b class="font-weight-bold">
+                              Video promocional:</b> son vídeos de productos o servicios interactivos que buscan atraer y captar la atención de los visitantes y cuyo principal propósito es promover e impulsar las ventas en redes sociales, tienda online
+                                                    o sitio web.
+                                                </p>
+
+                                            </div>
+                                            <div class="custom-scrollbar__bar10">
+                                                <div class="custom-scrollbar__knob10 cursor">
+                                                    <p class="text-center linea_scroll10">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
                             </div>
-                            <div class="custom-scrollbar__bar10">
-                              <div class="custom-scrollbar__knob10 cursor">
-                                <p class="text-center linea_scroll10">-</p>
-                              </div>
-                            </div>
-                          </div>
-                          
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-lg" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="menu_superior img-50" src="assets/img/img_template/bibliografia.png" style="top: 25px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content custom-scrollbar11 text-white">
-                            <div class="custom-scrollbar__inner11">
-                              <p class="justificado">
-                                Cámara de Comercio de Medellín para Antioquia - Programa e-pymes, Cadena de Valor del Comercio Electrónico, 2020. Recuperado de <a href="http://www.camaramedellin.com.co/quiero-un-servicio-para-mi-empresa/proyectos-y-programas/e-pymes-soluciones-digitales/-programa-de-comercio-electronico-para-mipymes" target="_blank">https://www.camaramedellin.com.co/quiero-un-servicio-para-mi-empresa/proyectos-y-programas/e-pymes-soluciones-digitales/-programa-de-comercio-electronico-para-mipymes</a>   <br><br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="menu_superior img-50" src="assets/img/img_template/bibliografia.png" style="top: 25px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content custom-scrollbar11 text-white">
+                                            <div class="custom-scrollbar__inner11">
+                                                <p class="justificado">
+                                                    Cámara de Comercio de Medellín para Antioquia - Programa e-pymes, Cadena de Valor del Comercio Electrónico, 2020. Recuperado de <a href="http://www.camaramedellin.com.co/quiero-un-servicio-para-mi-empresa/proyectos-y-programas/e-pymes-soluciones-digitales/-programa-de-comercio-electronico-para-mipymes"
+                                                        target="_blank">https://www.camaramedellin.com.co/quiero-un-servicio-para-mi-empresa/proyectos-y-programas/e-pymes-soluciones-digitales/-programa-de-comercio-electronico-para-mipymes</a>   <br><br> CloudBits,
+                                                    “Artículo: Sobre el lienzo canvas y el modelo canvas”, 2021, Recuperado de: <a href="https://www.cloudbits.org.mx/blog/2019/05/sobre-el-lienzo-canvas-y-el-modelo-canvas/" target="_blank" rel="noopener noreferrer">https://www.cloudbits.org.mx/blog/2019/05/sobre-el-lienzo-canvas-y-el-modelo-canvas/  </a>                                                    <br> HUMPHREYS, Edmund; Describir la Cadena de Valor del E-commerce en la República Argentina, Tesis de Maestría, Programa de Maestría en Gestión de Servicios Tecnológicos y de Telecomunicaciones, Universidad
+                                                    de San Andrés, Buenos Aires, 2015.  <br><br> Observatorio e-Commerce (2018). 4° Estudio Transacciones Digitales: e-Commerce & Recaudo Colombia 2016- 2017. Recuperado de: <a href="https://es.slideshare.net/einstituto/4-estudio-transacciones-digitales-ecommerce-recaudo-colombia-2016-2017"
+                                                        target="_blank" rel="noopener noreferrer">https://es.slideshare.net/einstituto/4-estudio-transacciones-digitales-ecommerce-recaudo-colombia-2016-2017</a>   <br><br> OSTERWALDER, Alexander, et al (2011);
+                                                    GENERACIÓN DEL MODELO DE NEGOCIOS, un manual para visionarios, visionarios y retadores. Ed. DEUSTO, primera edición, 285 pp.  <br></br>
 
-                                CloudBits, “Artículo: Sobre el lienzo canvas y el modelo canvas”, 2021, Recuperado de: <a href="https://www.cloudbits.org.mx/blog/2019/05/sobre-el-lienzo-canvas-y-el-modelo-canvas/" target="_blank" rel="noopener noreferrer">https://www.cloudbits.org.mx/blog/2019/05/sobre-el-lienzo-canvas-y-el-modelo-canvas/  </a> <br>
-                                HUMPHREYS, Edmund; Describir la Cadena de Valor del E-commerce en la República Argentina, Tesis de Maestría, Programa de Maestría en Gestión de Servicios Tecnológicos y de Telecomunicaciones, Universidad de San Andrés, Buenos Aires, 2015.  <br><br>
-                                
-                                Observatorio e-Commerce (2018). 4° Estudio Transacciones Digitales: e-Commerce & Recaudo Colombia 2016- 2017. Recuperado de: <a href="https://es.slideshare.net/einstituto/4-estudio-transacciones-digitales-ecommerce-recaudo-colombia-2016-2017" target="_blank" rel="noopener noreferrer">https://es.slideshare.net/einstituto/4-estudio-transacciones-digitales-ecommerce-recaudo-colombia-2016-2017</a>   <br><br>
-                                
-                                OSTERWALDER, Alexander, et al (2011); GENERACIÓN DEL MODELO DE NEGOCIOS, un manual para visionarios, visionarios y retadores. Ed. DEUSTO, primera edición, 285 pp.  <br></br>
-                                
-                                TORRES, H, Muñoz, J, Rivas, F, Lopez, M , Sanz, J, Perez,C, Forriol, A, (s.f). Libro blanco de logística para comercio electrónico [e-book]. Recuperado de: <a href="http://ecommerce.institute/wp-content/uploads/lb-logistica-2016.pdf" target="_blank" rel="noopener noreferrer">http://ecommerce.institute/wp-content/uploads/lb-logistica-2016.pdf</a>  <br><br>
-                                
-                                VendesFácil [Marca Registrada de Coordinadora Mercantil S.A], Artículo: Términos y Condiciones - Ténlos muy presentes para tu tienda virtual (2020). Recuperado de: <a href="https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/" target="_blank" rel="noopener noreferrer">https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/</a>   <br><br>
+                                                    TORRES, H, Muñoz, J, Rivas, F, Lopez, M , Sanz, J, Perez,C, Forriol, A, (s.f). Libro blanco de logística para comercio electrónico [e-book]. Recuperado de: <a href="http://ecommerce.institute/wp-content/uploads/lb-logistica-2016.pdf"
+                                                        target="_blank" rel="noopener noreferrer">http://ecommerce.institute/wp-content/uploads/lb-logistica-2016.pdf</a> <br><br> VendesFácil [Marca Registrada de Coordinadora Mercantil S.A], Artículo: Términos
+                                                    y Condiciones - Ténlos muy presentes para tu tienda virtual (2020). Recuperado de: <a href="https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/"
+                                                        target="_blank" rel="noopener noreferrer">https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/</a> <br><br>
+                                            </div>
+                                            <div class="custom-scrollbar__bar11">
+                                                <div class="custom-scrollbar__knob11 cursor">
+                                                    <p class="text-center linea_scroll11">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
                             </div>
-                            <div class="custom-scrollbar__bar11">
-                              <div class="custom-scrollbar__knob11 cursor">
-                                <p class="text-center linea_scroll11">-</p>
-                              </div>
-                            </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <footer class="c-footer">
+                <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+                <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+            </footer>
         </div>
-        <footer class="c-footer">
-          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
-          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
-        </footer>
-      </div>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="js/coreiu.bundle.min.js"></script>
@@ -393,7 +432,8 @@
     <!--[if IE]><!-->
     <!--<![endif]-->
     <!-- Plugins and scripts required by this view-->
-    
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

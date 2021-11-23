@@ -1,43 +1,46 @@
-$( document ).ready(function() {
-    
+$(document).ready(function() {
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+
     console.log(tema);
-    
+
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
     slide_predeterminado();
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
     });
 
-    $(".p4-1").on("hover", function () {
+    $(".p4-1").on("hover", function() {
         // $(".p4-2").show(1000)
         alert("añldskad")
     })
 
-    $(".circle-verde").on('click' , circles);
-    $(".rec").on('click' , rec);
+    $(".circle-verde").on('click', circles);
+    $(".rec").on('click', rec);
     var slideCount = "";
     var slideWidth = "";
     var slideHeight = "";
@@ -51,7 +54,7 @@ $( document ).ready(function() {
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
     slide_link(tema);
-    
+
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
@@ -68,70 +71,70 @@ function hoverp42(argument) {
     $(".p4-4").show(200)
 }
 
-function slide(){
+function slide() {
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     slideCount = "";
     slideWidth = "";
     slideHeight = "";
     slider_num = "";
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
             slideCount = $('#slider-3 ul li').length;
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
@@ -139,7 +142,7 @@ function controlSlides(num){
             slider_all();
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
             slideCount = $('#slider-4 ul li').length;
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();
@@ -147,16 +150,16 @@ function controlSlides(num){
             slider_4();
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             slideCount = $('#slider-5 ul li').length;
             slideWidth = $('#slider-5 ul li').width();
             slideHeight = $('#slider-5 ul li').height();
@@ -164,16 +167,16 @@ function controlSlides(num){
             slider_5();
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "");
             break;
         default:
             break;
@@ -274,11 +277,11 @@ function cambiacontenido2(opcion){
 
 */
 
-function conjuntos(num){
+function conjuntos(num) {
     $(".info_conjuntos").removeClass('fondo_azul_claro');
-    $(".info_conjuntos"+num).addClass('fondo_azul_claro');
+    $(".info_conjuntos" + num).addClass('fondo_azul_claro');
     $(".info_conjuntos").removeClass('shadow');
-    $(".info_conjuntos"+num).addClass('shadow');
+    $(".info_conjuntos" + num).addClass('shadow');
     if (num == 1) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
@@ -289,7 +292,8 @@ function conjuntos(num){
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
-    }if (num == 2) {
+    }
+    if (num == 2) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b">
@@ -299,7 +303,8 @@ function conjuntos(num){
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
-    }if (num == 3) {
+    }
+    if (num == 3) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b">
@@ -309,7 +314,8 @@ function conjuntos(num){
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
-    }if (num == 4) {
+    }
+    if (num == 4) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b">
@@ -319,7 +325,8 @@ function conjuntos(num){
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
-    }if (num == 5) {
+    }
+    if (num == 5) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b">
@@ -333,8 +340,8 @@ function conjuntos(num){
 }
 
 function poner(num) {
-    
-    $(".texto_efecto"+num).css({
+
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'block',
@@ -346,8 +353,9 @@ function poner(num) {
     //     $(".custom-scrollbar2").css('height','250');
     // }
 }
+
 function quitar(num) {
-    $(".texto_efecto"+num).css({
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         height: '100%',
@@ -364,9 +372,9 @@ function circles() {
     var circle_num = $(this).data('circle');
     $(".circle-verde").removeClass('bg-circle-v-o');
     $(".circle-verde").addClass('bg-circle-v-c');
-    $(".circle-verde-"+circle_num).removeClass('bg-circle-v-c');
-    $(".circle-verde-"+circle_num).addClass('bg-circle-v-o');
-    if (circle_num >2 && circle_num <6) {
+    $(".circle-verde-" + circle_num).removeClass('bg-circle-v-c');
+    $(".circle-verde-" + circle_num).addClass('bg-circle-v-o');
+    if (circle_num > 2 && circle_num < 6) {
         $(".circle-verde-3").removeClass('bg-circle-a-o');
         $(".circle-verde-4").removeClass('bg-circle-a-o');
         $(".circle-verde-5").removeClass('bg-circle-a-o');
@@ -379,38 +387,38 @@ function circles() {
                       Recordemos que en la alta edad media los señores Feudales construían grandes castillos con propósitos de defensa. En torno a estas edificaciones llamadas Burgos, empezaron a crearse pueblos de mercaderes y artesanos que aprovechaban la seguridad brindada por el Feudal, para desempeñar su labor.
                     `;
         $("#info-circle").html(texto);
-    }else if (circle_num == 2) {
+    } else if (circle_num == 2) {
         var texto = `
                       El taller adquiere gran importancia y, debido a los desarrollos científicos, se empiezan a tecnificar hasta convertirse en fábricas. Se inicia así, en el siglo XVIII, la Revolución Industrial: A partir de allí, empieza un proceso de expansión que se extendió hasta finales del siglo XX. <br>
  
                       <a class="btn btn-warning" target="_blank" class=" font13 justificado text-black" href="https://www.youtube.com/watch?v=3LQAnFEADl4&ab_channel=AcademiaPlay">VER VIDEO</a> 
 
                     `;
-       $("#info-circle").html(texto);
-    }else if (circle_num == 3) {
-        $(".circle-verde-"+circle_num).removeClass('bg-circle-a-c');
-        $(".circle-verde-"+circle_num).addClass('bg-circle-a-o');
+        $("#info-circle").html(texto);
+    } else if (circle_num == 3) {
+        $(".circle-verde-" + circle_num).removeClass('bg-circle-a-c');
+        $(".circle-verde-" + circle_num).addClass('bg-circle-a-o');
         var texto = `
                     La guerra civil norteamericana no se libró exclusivamente, como muchos creían, por la cuestión moral de la esclavitud ni por cuestiones económicas tan mezquinas como la relativa a los aranceles. Se libró por una cuestión de alcance mucho mayor: ¿iba a ser gobernado el Nuevo Continente por los granjeros o por los industrializadores?; ¿por las fuerzas de la primera ola o por las de la segunda ola?  Cuando los ejércitos del Norte vencieron, la suerte quedó echada.
                     `;
         $("#info-circle-a").html(texto);
-    }else if (circle_num == 4) {
-        $(".circle-verde-"+circle_num).removeClass('bg-circle-a-c');
-        $(".circle-verde-"+circle_num).addClass('bg-circle-a-o');
+    } else if (circle_num == 4) {
+        $(".circle-verde-" + circle_num).removeClass('bg-circle-a-c');
+        $(".circle-verde-" + circle_num).addClass('bg-circle-a-o');
         var texto = `
                     La Industrialización de los Estados Unidos de América estaba asegurada. A partir de ese momento, en política y en la vida social y cultural, la agricultura fue batiéndose en retirada y comenzó a ganar preponderancia la industria. La primera ola fue perdiendo ímpetu mientras avanzaba, incontenible, la segunda ola (Daros, s.f, pág. 4).
                     `;
         $("#info-circle-a").html(texto);
-    }else if (circle_num == 5) {
-        $(".circle-verde-"+circle_num).removeClass('bg-circle-a-c');
-        $(".circle-verde-"+circle_num).addClass('bg-circle-a-o');
+    } else if (circle_num == 5) {
+        $(".circle-verde-" + circle_num).removeClass('bg-circle-a-c');
+        $(".circle-verde-" + circle_num).addClass('bg-circle-a-o');
         var texto = `
                     Es solo un ejemplo del proceso de expansión de una visión del mundo que ya ajusta más de 500 años, y que parece tan arraigada en nosotros que no se concibe otra forma de pensar nuestra realidad.
                     `;
         $("#info-circle-a").html(texto);
-    }else if (circle_num == 6) {
+    } else if (circle_num == 6) {
         $("#info-circle-t").html(`<img class="img-100" src="assets/img/img_ova/tecnologica1.png">`);
-    }else if (circle_num == 7) {
+    } else if (circle_num == 7) {
         $("#info-circle-t").html(`<img class="img-100" src="assets/img/img_ova/tecnologica2.png">`);
     }
 }
@@ -419,7 +427,7 @@ function rec() {
     var rec_num = $(this).data('rec');
     if (rec_num == 1) {
         $("#rec").html(
-                `<div class="col-md-12">
+            `<div class="col-md-12">
                   <div class="col-md-12 row imprime">
                     <div class="col-md-5">
                       <p class="justificado text-black">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
@@ -435,12 +443,12 @@ function rec() {
                   <div class="circulo_verde activo uno cursor" style="" onclick="circlerec(1);"></div>
                   <div class="circulo_verde dos cursor" style="" onclick="circlerec(2);"></div>
                 </div>`
-            );
-    }else if (rec_num == 2) {
+        );
+    } else if (rec_num == 2) {
         $("#rec").html('<p class="text-center p_black">clic a la imagen</p><img src="assets/img/img_ova/infografia1.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-2">');
-    }else if (rec_num == 3) {
+    } else if (rec_num == 3) {
         $("#rec").html(
-                    `
+            `
                     <p class="text-center p_black">clic a la imagen</p>
                     <div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-5">
 
@@ -490,14 +498,14 @@ function rec() {
                     <div class="col-md-2" style="padding-top: 100px;">
                       <a href="#" class="control_next"><div style="" class="triag_cambiaslide"></div></a>
                     </div>`
-            );
+        );
         slideCount = $('#slider-2 ul li').length;
         slideWidth = $('#slider-2 ul li').width();
         slideHeight = $('#slider-2 ul li').height();
         slider();
-    }else if (rec_num == 4) {
+    } else if (rec_num == 4) {
         $("#rec").html(
-                `<div id="slider" style="" class="d-flex justify-content-center col-md-10">
+            `<div id="slider" style="" class="d-flex justify-content-center col-md-10">
 
                   <ul>
                     <li>
@@ -512,14 +520,14 @@ function rec() {
                 <div class="col-md-2" style="padding-top: 100px;">
                   <a href="#" class="control_next"><div style="" class="triag_cambiaslide"></div></a>
                 </div>`
-            );
+        );
         slideCount = $('#slider ul li').length;
         slideWidth = $('#slider ul li').width();
         slideHeight = $('#slider ul li').height();
         slider2();
-    }else if (rec_num == 5) {
+    } else if (rec_num == 5) {
         $("#rec").html('<p class="justificado text-black p-4 pr-5 mr-4">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
-    }else if (rec_num == 6) {
+    } else if (rec_num == 6) {
         $("#rec").html(
             `<div class="col-md-12 row">
               <div class="col-md-5">
@@ -534,8 +542,8 @@ function rec() {
     }
 }
 
-function circlerec(num){
-    switch(parseInt(num)){
+function circlerec(num) {
+    switch (parseInt(num)) {
         case 1:
             var cont = `
             <div class="col-md-5">
@@ -561,29 +569,29 @@ function circlerec(num){
     }
 }
 
-function slider(){
+function slider() {
 
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
-  
+    $('#checkbox').change(function() {
+        setInterval(function() {
+            moveRight();
+        }, 3000);
+    });
+
     /*var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();*/
     var sliderUlWidth = slideCount * slideWidth;
-    
+
     $('#slider-2').css({ width: '102%', height: '100%' });
-    
-    $('#slider-2 ul').css({ width: '80%', marginLeft: - slideWidth });
-    
+
+    $('#slider-2 ul').css({ width: '80%', marginLeft: -slideWidth });
+
     $('#slider-2 ul li:last-child').prependTo('#slider-2 ul');
 
     function moveLeft() {
         $('#slider-2 ul').animate({
-            left: + slideWidth
-        }, 200, function () {
+            left: +slideWidth
+        }, 200, function() {
             $('#slider-2 ul li:last-child').prependTo('#slider-2 ul');
             $('#slider-2 ul').css('left', '');
         });
@@ -591,105 +599,105 @@ function slider(){
 
     function moveRight() {
         $('#slider-2 ul').animate({
-            left: - slideWidth
-        }, 200, function () {
+            left: -slideWidth
+        }, 200, function() {
             $('#slider-2 ul li:first-child').appendTo('#slider-2 ul');
             $('#slider-2 ul').css('left', '');
         });
     };
 
-    $('a.control_prev').click(function () {
+    $('a.control_prev').click(function() {
         moveLeft();
     });
 
-    $('a.control_next').click(function () {
+    $('a.control_next').click(function() {
         moveRight();
     });
 }
 
-function slider2(){
+function slider2() {
 
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
-  
+    $('#checkbox').change(function() {
+        setInterval(function() {
+            moveRight();
+        }, 3000);
+    });
+
     /*var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();*/
     var sliderUlWidth = slideCount * slideWidth;
-    
+
     $('#slider').css({ width: '100%', height: '350px' });
-    
-    $('#slider ul').css({ width: '100%'});
-    
+
+    $('#slider ul').css({ width: '100%' });
+
     $('#slider ul li:last-child').prependTo('#slider ul');
 
     function moveLeft() {
         $('#slider ul').animate({
-            left: + slideWidth
-        }, 200, function () {
+            left: +slideWidth
+        }, 200, function() {
             $('#slider ul li:last-child').prependTo('#slider ul');
         });
     };
 
     function moveRight() {
         $('#slider ul').animate({
-            left: - slideWidth
-        }, 200, function () {
+            left: -slideWidth
+        }, 200, function() {
             $('#slider ul li:first-child').appendTo('#slider ul');
             $('#slider ul').css('left', '');
         });
     };
 
-    $('a.control_prev').click(function () {
+    $('a.control_prev').click(function() {
         moveLeft();
     });
 
-    $('a.control_next').click(function () {
+    $('a.control_next').click(function() {
         moveRight();
     });
 }
 
 
-function slider_all(){
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
+function slider_all() {
+    $('#checkbox').change(function() {
+        setInterval(function() {
+            moveRight();
+        }, 3000);
+    });
     var sliderUlWidth = "";
     /*var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();*/
     sliderUlWidth = slideCount * slideWidth;
-    
+
     $(slider_num).css({ width: '100%', height: '350px' });
-    
-    $(slider_num+' ul').css({ width: '100%'});
-    
-    $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+
+    $(slider_num + ' ul').css({ width: '100%' });
+
+    $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
 
     function moveLeft() {
-        $(slider_num+' ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+        $(slider_num + ' ul').animate({
+            left: +slideWidth
+        }, 200, function() {
+            $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
         });
     };
 
     function moveRight() {
-        $(slider_num+' ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $(slider_num+' ul li:first-child').appendTo(slider_num+' ul');
-            $(slider_num+' ul').css('left', '');
+        $(slider_num + ' ul').animate({
+            left: -slideWidth
+        }, 200, function() {
+            $(slider_num + ' ul li:first-child').appendTo(slider_num + ' ul');
+            $(slider_num + ' ul').css('left', '');
         });
     };
 
-    $('a.control_prev').off('click').on('click' ,moveLeft);
-    $('a.control_next').off('click').on('click' ,moveRight);
+    $('a.control_prev').off('click').on('click', moveLeft);
+    $('a.control_next').off('click').on('click', moveRight);
     /*$('a.control_prev').click(function () {
         moveLeft();
     });*/
@@ -700,43 +708,43 @@ alert();
     });*/
 }
 
-function slider_5(){
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
+function slider_5() {
+    $('#checkbox').change(function() {
+        setInterval(function() {
+            moveRight();
+        }, 3000);
+    });
     var sliderUlWidth = "";
     /*var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();*/
     sliderUlWidth = slideCount * slideWidth;
-    
+
     $(slider_num).css({ width: '100%', height: '100%' });
-    
-    $(slider_num+' ul').css({ width: '100%'});
-    
-    $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+
+    $(slider_num + ' ul').css({ width: '100%' });
+
+    $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
 
     function moveLeft() {
-        $(slider_num+' ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+        $(slider_num + ' ul').animate({
+            left: +slideWidth
+        }, 200, function() {
+            $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
         });
     };
 
     function moveRight() {
-        $(slider_num+' ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $(slider_num+' ul li:first-child').appendTo(slider_num+' ul');
-            $(slider_num+' ul').css('left', '');
+        $(slider_num + ' ul').animate({
+            left: -slideWidth
+        }, 200, function() {
+            $(slider_num + ' ul li:first-child').appendTo(slider_num + ' ul');
+            $(slider_num + ' ul').css('left', '');
         });
     };
 
-    $('a.control_prev').off('click').on('click' ,moveLeft);
-    $('a.control_next').off('click').on('click' ,moveRight);
+    $('a.control_prev').off('click').on('click', moveLeft);
+    $('a.control_next').off('click').on('click', moveRight);
     /*$('a.control_prev').click(function () {
         moveLeft();
     });*/
@@ -747,43 +755,43 @@ alert();
     });*/
 }
 
-function slider_4(){
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
+function slider_4() {
+    $('#checkbox').change(function() {
+        setInterval(function() {
+            moveRight();
+        }, 3000);
+    });
     var sliderUlWidth = "";
     /*var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();*/
     sliderUlWidth = slideCount * slideWidth;
-    
+
     $(slider_num).css({ width: '100%', height: '100%' });
-    
-    $(slider_num+' ul').css({ width: '100%'});
-    
-    $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+
+    $(slider_num + ' ul').css({ width: '100%' });
+
+    $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
 
     function moveLeft() {
-        $(slider_num+' ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $(slider_num+' ul li:last-child').prependTo(slider_num+' ul');
+        $(slider_num + ' ul').animate({
+            left: +slideWidth
+        }, 200, function() {
+            $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
         });
     };
 
     function moveRight() {
-        $(slider_num+' ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $(slider_num+' ul li:first-child').appendTo(slider_num+' ul');
-            $(slider_num+' ul').css('left', '');
+        $(slider_num + ' ul').animate({
+            left: -slideWidth
+        }, 200, function() {
+            $(slider_num + ' ul li:first-child').appendTo(slider_num + ' ul');
+            $(slider_num + ' ul').css('left', '');
         });
     };
 
-    $('a.control_prev').off('click').on('click' ,moveLeft);
-    $('a.control_next').off('click').on('click' ,moveRight);
+    $('a.control_prev').off('click').on('click', moveLeft);
+    $('a.control_next').off('click').on('click', moveRight);
     /*$('a.control_prev').click(function () {
         moveLeft();
     });*/
