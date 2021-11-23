@@ -333,5 +333,11 @@ input[type=range]::-ms-fill-upper {
 }
 
 .indicadores{
-  
+
+}
+.escondidas{
+  visibility: hidden;
+}
+.mostradas{
+  visibility: visible;
 }
