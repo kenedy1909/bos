@@ -250,19 +250,24 @@ function Input(num) {
   });
 }
 
+function salir(){
+    $('.grande2').addClass('d-none');
+    $('.grande1').removeClass('d-none');
+}
 function funcionalidad_1(num) {
     switch(parseInt(num)){
         case 1:
             $("#funcionalidad-1").html(``);
             $('.grande1').addClass('d-none');
             $('.grande2').removeClass('d-none');
+            $('.custom-scrollbar_uno').removeClass('d-none');
             scroll_uno();
             break;
         case 2:
             $('.grande1').addClass('d-none');
             $('.custom-scrollbar_uno').addClass('d-none');
             $('.grande2').removeClass('d-none');
-            
+
             $("#funcionalidad-1").html(`
                                         <div class="row d-flex align-items-start flex-column">
                                             <div class="col-md-12 p-3">
