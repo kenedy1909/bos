@@ -327,3 +327,11 @@ input[type=range]::-ms-fill-upper {
   padding-right: 15%;
   font-weight: bold;
 }
+.gris{
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.indicadores{
+  
+}
