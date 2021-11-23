@@ -2,6 +2,9 @@ $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
     $(".menu3").removeClass('d-none');
     $( ".ov-personaje").hide();
+    paso = false;
+    setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
+            
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

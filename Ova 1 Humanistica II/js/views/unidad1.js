@@ -119,12 +119,12 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 8:
-            var contenido = `<p class="color-text">Clic en el ícono para visualizar información</p>`;
+            var contenido = `<p class="color-text m-auto"><i>Clic en el ícono para visualizar información</i></p>`;
             $('.imprime_heare').html(contenido);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 9:
-            $('.p_9c').html('<p>Clic en cada círculo para visualizar la información</p>');
+            $('.p_9c').html('<p><i>Clic en cada círculo para visualizar la información</i></p>');
             $('.indicap9').css({ "visibility": "hidden"
                     
                 });
@@ -418,7 +418,7 @@ function pantalla9(num){
     switch (parseInt(num)) {
         case 1:
             var text = `<div class="p9_cont">
-                      <p class="justificado text-black">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
+                      <p class="justificado text-black m-auto">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
                     </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -430,7 +430,7 @@ function pantalla9(num){
             break;
         case 2:
             var text = `<div class="p9_cont">
-                          <p class="justificado text-black">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
+                          <p class="justificado text-black m-auto">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -442,7 +442,7 @@ function pantalla9(num){
             break;
         case 3:
             var text = `<div class="p9_cont">
-                          <p class="justificado text-black">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
+                          <p class="justificado text-black m-auto">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -454,7 +454,7 @@ function pantalla9(num){
             break;
         case 4:
             var text = `<div class="p9_cont">
-                          <p class="justificado text-black">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
+                          <p class="justificado text-black m-auto">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -466,7 +466,7 @@ function pantalla9(num){
             break;
         case 5:
             var text = `<div class="p9_cont">
-                          <p class="justificado text-black">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
+                          <p class="justificado text-black m-auto">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -482,7 +482,7 @@ function pantalla9(num){
 }
 
 function citar(){
-    var contenido = `<div style="height: 248px;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
+    var contenido = `<div style="background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
                     <p class="justificado text-black">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
                   </div>`;
     $('.imprime_heare').html(contenido);
@@ -551,20 +551,23 @@ function pantalla6(num){
             $('.triangulo_yellow').css({ "visibility": "visible"});
             $('.tria_blue1').css({ "visibility": "hidden"});
             $('.tria_blue2').css({ "visibility": "hidden"});
+            $('.content_1').removeClass('invisible');
             break;
         case 2:
-            var texto = `<p style="font-size: 13px;" class="justificado text-black">Era la figura de función política permanente, los pertenecientes a este grupo se elegían cada año por los ciudadanos que contaran con edad mayor a treinta. Entre sus funciones se encontraba preparar las sesiones de la asamblea y el correspondiente orden del día; en aquel tiempo, todo caso debía ser evaluado inicialmente por este consejo para luego ser atendido por la asamblea, así mismo, eran encargados de validar el cumplimiento de los requisitos por parte de quienes integrarían los grupos del gobierno.</p>`;
+            var texto = `<p style="font-size: 13px;" class="justificado text-black m-auto">Era la figura de función política permanente, los pertenecientes a este grupo se elegían cada año por los ciudadanos que contaran con edad mayor a treinta. Entre sus funciones se encontraba preparar las sesiones de la asamblea y el correspondiente orden del día; en aquel tiempo, todo caso debía ser evaluado inicialmente por este consejo para luego ser atendido por la asamblea, así mismo, eran encargados de validar el cumplimiento de los requisitos por parte de quienes integrarían los grupos del gobierno.</p>`;
             $('.boder_white_baner').html(texto);
             $('.triangulo_yellow').css({ "visibility": "hidden"});
             $('.tria_blue1').css({ "visibility": "visible"});
             $('.tria_blue2').css({ "visibility": "hidden"});
+            $('.content_2').removeClass('invisible');
             break;
         case 3:
-            var texto = `<p style="font-size: 13px;" class="justificado text-black">Este grupo era la concentración real del poder político y a su vez el más reconocido, ya que, en él todas las personas con pleno derecho para ejercer participación, tenían potestad de votar en los diversos temas expuestos que previamente habían sido validados por el consejo. Aunque el número de personas que podían asistir y dar su voto era alto, la asistencia real no lo era, lo cual no se distancia mucho de la situación en la actualidad.</p>`;
+            var texto = `<p style="font-size: 13px;" class="justificado text-black m-auto">Este grupo era la concentración real del poder político y a su vez el más reconocido, ya que, en él todas las personas con pleno derecho para ejercer participación, tenían potestad de votar en los diversos temas expuestos que previamente habían sido validados por el consejo. Aunque el número de personas que podían asistir y dar su voto era alto, la asistencia real no lo era, lo cual no se distancia mucho de la situación en la actualidad.</p>`;
             $('.boder_white_baner').html(texto);
             $('.triangulo_yellow').css({ "visibility": "hidden"});
             $('.tria_blue1').css({ "visibility": "hidden"});
             $('.tria_blue2').css({ "visibility": "visible"});
+            $('.content_2').removeClass('invisible');
             break;
         default:
             break;

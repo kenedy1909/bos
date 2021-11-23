@@ -118,7 +118,7 @@ iframe{
 }
 
 .titulo-ova h3{
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .c-body{
@@ -1057,4 +1057,47 @@ svg circle:nth-child(2){
 }
 .w-50px{
   width: 50px;
+}
+
+.uni_gray{
+  background: #999999;
+      width: 142px;
+      height: 142px;
+      border-radius: 50%;
+      margin-top: 4px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+.scrol-color::-webkit-scrollbar-thumb {
+  background-color: #a8bbbf !important;
+}
+.scrol-color::-webkit-scrollbar {
+  width: 20px !important;
+}
+
+.scrol{
+  overflow: auto;
 }
