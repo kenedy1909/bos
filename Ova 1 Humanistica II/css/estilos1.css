@@ -151,9 +151,9 @@
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	position: absolute;
-  height: 12em;
-  width: 70%;
-  left: 42px;
+  height: 8em;
+  width: 75%;
+  left: 27px;
   /* border: solid 2px green; */
   /*margin-left: -30em;*/
   bottom: -6vh;
@@ -395,13 +395,23 @@ p, button{
 	position: relative;
 	height: 150px;
 }
-.custom-scrollbar__bar10, .custom-scrollbar__bar11, .custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18, .custom-scrollbar__bar19, .custom-scrollbar__bar20, .custom-scrollbar__bar21{
+.custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18, .custom-scrollbar__bar19, .custom-scrollbar__bar20, .custom-scrollbar__bar21{
 	position: absolute;
     top: 22px;
     bottom: 45px;
     background: #ffffff;
     width: 3px;
     right: 30px;
+    border-radius: 4px;
+    height: 150px;
+}
+.custom-scrollbar__bar11, .custom-scrollbar__bar10{
+	position: absolute;
+    top: 22px;
+    bottom: 45px;
+    background: #ffffff;
+    width: 3px;
+    right: -10px;
     border-radius: 4px;
     height: 150px;
 }
@@ -414,9 +424,16 @@ p, button{
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
-.custom-scrollbar__inner10, .custom-scrollbar__inner11, .custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
+.custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
 	height: 100%;
 	padding-right: 55px;
+	overflow-y: auto;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.custom-scrollbar__inner11, .custom-scrollbar__inner10{
+	height: 100%;
+	padding-right: 20px;
 	overflow-y: auto;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -921,13 +938,12 @@ navegacion pantalla1*/
 }
 
 .circulo_p9{
-	width: 70px;
-	height: 70px;
+	width: 55px;
+	height: 55px;
 	background: #1E4E79;
 	border-radius: 50%;
-	padding: 25px 1px 1px 27px;
 	color: white;
-	margin-right: 40px;
+	display: flex;
 	z-index: 100;
 	font-size: 18px;
 }
@@ -936,27 +952,29 @@ navegacion pantalla1*/
     background: #1e4e79;
     width: 666px;
     position: relative;
-    top: -35px;
+    top: -8px;
 }
 
 .indicap9{
-	position: absolute;
+	/*position: absolute;
     top: 53px;
-    left: 30px;
+    left: 30px;*/
     width: 0px;
     height: 0px;
-    border-left: 40px solid #1e4e79;
-    border-top: 23px solid transparent;
-    border-bottom: 27px solid transparent;
-    transform: rotate(90deg);
+    border-top: 30px solid #1e4e79;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    /*transform: rotate(90deg);*/
     visibility: hidden;
 }
 
 .p9_cont{
 	background: white;
-    border-radius: 50px;
+    border-radius: 20px;
     border: solid #1e4e79;
     padding: 10px 10px 10px 10px;
+    min-height: 120px;
+    display: flex;
 }
 
 .circulo_ffffff{
