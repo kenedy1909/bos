@@ -297,14 +297,14 @@ function funcionalidad_9(num) {
     if (num == 1) {
         $(".funcionalidad_9_1").html(`
                                     <p class="p_white bg-morado p-3 text-center">Quórum:</p>
-                                    <p class="p_black justificado">Es el número mínimo de miembros que se requieren para que lo actuado en una reunión de un órgano cualquiera, sea válido.</p>
+                                    <p class="p_black justificado" style="height: 90px;overflow: auto;">Es el número mínimo de miembros que se requieren para que lo actuado en una reunión de un órgano cualquiera, sea válido.</p>
                                     `);
         $(".funcionalidad_9_1").removeClass('bg-morado');
         $(".funcionalidad_9_1").addClass('bg-blanco');
     }else if (num == 2) {
         $(".funcionalidad_9_2").html(`
                                     <p class="p_white bg-morado p-3 text-center">La mayoría:</p>
-                                    <p class="p_black justificado">Es el número de votos que se requieren para aprobar una proposición.</p>
+                                    <p class="p_black justificado" style="height: 90px;overflow: auto;">Es el número de votos que se requieren para aprobar una proposición.</p>
                                     `);
         $(".funcionalidad_9_2").removeClass('bg-morado');
         $(".funcionalidad_9_2").addClass('bg-blanco');
@@ -319,10 +319,13 @@ function funcionalidad_10(num) {
                                     <div id="funcionalidad_11">
                                         <p class="p_black justificado"><b>El Quórum: </b></p>
                                         <br>
-                                        <p class="p_black justificado">Es igual para todas las funciones de la Sala. Por regla general es de 30 miembros; y solo tiene una excepción; la cual, se presenta por la muerte de los fundadores a partir del momento en que solo queden 60 de ellos vivos. Esta excepción está consagrada en el inciso 7º del artículo 19. Esta norma no incluyó el evento en el cual haya solo 30 fundadores vivos; pero, como en ese caso, la Sala aún existe y las excepciones no se pueden extender por fuera de los límites de la norma, cuando haya 30 fundadores vivos, el cuórum volverá a ser de 30 miembros.</p>
-                                        <br>
-                                        <p class="p_black justificado">Clic en los círculos para avanzar en la información del Quorum y Mayoría:</p>
-                                        <br>
+                                        <div style="height: 150px; overflow: auto;">
+                                            <p class="p_black justificado">Es igual para todas las funciones de la Sala. Por regla general es de 30 miembros; y solo tiene una excepción; la cual, se presenta por la muerte de los fundadores a partir del momento en que solo queden 60 de ellos vivos. Esta excepción está consagrada en el inciso 7º del artículo 19. Esta norma no incluyó el evento en el cual haya solo 30 fundadores vivos; pero, como en ese caso, la Sala aún existe y las excepciones no se pueden extender por fuera de los límites de la norma, cuando haya 30 fundadores vivos, el cuórum volverá a ser de 30 miembros.</p>
+                                            <br>
+                                            <p class="p_black justificado">Clic en los círculos para avanzar en la información del Quorum y Mayoría:</p>
+                                            <br>
+                                        </div>
+                                        
                                     </div>
                                     <div class="img-100 d-flex">
                                       <div class="m-auto img-50 d-flex">
@@ -351,7 +354,7 @@ function funcionalidad_10(num) {
                                     <div id="funcionalidad_11">
                                         <p class="p_black justificado"><b>Para La Mayoría, la regla general es:  </b></p>
                                         <br>
-                                        <p class="p_black justificado">Que para aprobar cualquier propuesta, en la Sala de Fundadores, se requiere “la mitad más uno de los votos de los asistentes”, pero no siempre se aplica esta regla, ya que la mayoría puede cambiar según la función a la cual se refiera. Por eso, existen varias excepciones, porque para algunas de las funciones de la Sala se exige una mayoría diferente.</p>
+                                        <p class="p_black justificado" style="height: 150px; overflow: auto;">Que para aprobar cualquier propuesta, en la Sala de Fundadores, se requiere “la mitad más uno de los votos de los asistentes”, pero no siempre se aplica esta regla, ya que la mayoría puede cambiar según la función a la cual se refiera. Por eso, existen varias excepciones, porque para algunas de las funciones de la Sala se exige una mayoría diferente.</p>
                                         <br>
                                     </div>
                                     <div class="img-100 d-flex">
@@ -399,10 +402,13 @@ function funcionalidad_11(num) {
         $(".funcionalidad_10_btn1").addClass('bg-rojo-1');
     }else if (num == 2) {
         $("#funcionalidad_11").html(`
-                                    <p class="p_black justificado"><b>El Quórum se refiere siempre a los miembros:</b></p>
-                                    <br>
-                                    <p class="p_black justificado">En la Sala de Fundadores es igual para todas las funciones. Y, a pesar de que la norma citada se refiere al quórum para deliberar, el establecido en ella se requiere también para decidir, porque no existe norma que establezca un quórum diferente para ello. Solo cambia por muerte de los Fundadores.</p>
-                                    <br>
+                                    <div style="height: 150px; overflow: auto;">
+                                        <p class="p_black justificado"><b>El Quórum se refiere siempre a los miembros:</b></p>
+                                        <br>
+                                        <p class="p_black justificado" style="height: 150px; overflow: auto;">En la Sala de Fundadores es igual para todas las funciones. Y, a pesar de que la norma citada se refiere al quórum para deliberar, el establecido en ella se requiere también para decidir, porque no existe norma que establezca un quórum diferente para ello. Solo cambia por muerte de los Fundadores.</p>
+                                        <br>
+                                    </div>
+                                    
                                     `);
         $(".funcionalidad_11_2").removeClass('bg-morado');
         $(".funcionalidad_11_2").addClass('bg-rojo-1');
@@ -412,7 +418,7 @@ function funcionalidad_11(num) {
         $("#funcionalidad_11").html(`
                                     <p class="p_black justificado"><b>Para La Mayoría, la regla general es:  </b></p>
                                     <br>
-                                    <p class="p_black justificado">Que para aprobar cualquier propuesta, en la Sala de Fundadores, se requiere “la mitad más uno de los votos de los asistentes”, pero no siempre se aplica esta regla, ya que la mayoría puede cambiar según la función a la cual se refiera. Por eso, existen varias excepciones, porque para algunas de las funciones de la Sala se exige una mayoría diferente.</p>
+                                    <p class="p_black justificado" style="height: 150px; overflow: auto;">Que para aprobar cualquier propuesta, en la Sala de Fundadores, se requiere “la mitad más uno de los votos de los asistentes”, pero no siempre se aplica esta regla, ya que la mayoría puede cambiar según la función a la cual se refiera. Por eso, existen varias excepciones, porque para algunas de las funciones de la Sala se exige una mayoría diferente.</p>
                                     <br>
                                     `);
         $(".funcionalidad_11_3").removeClass('bg-morado');
@@ -438,6 +444,7 @@ function funcionalidad_11(num) {
         $(".funcionalidad_10_btn2").addClass('bg-rojo-1');
     }else if (num == 5) {
         $("#funcionalidad_11").html(`
+                                <div style="height: 150px; overflow: auto;">
                                     <p class="p_black justificado">La mayoría la constituyen los votos, pero la norma que la determine se puede basar en uno de los siguientes factores:</p>
                                     <br>
                                     <ul class="p_black">
@@ -446,6 +453,8 @@ function funcionalidad_11(num) {
                                         <li>En los asistentes a la reunión.</li>
                                     </ul>
                                     <br>
+                                </div>
+                                    
                                     `);
         $(".funcionalidad_11_5").removeClass('bg-morado');
         $(".funcionalidad_11_5").addClass('bg-rojo-1');

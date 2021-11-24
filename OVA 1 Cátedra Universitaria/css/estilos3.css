@@ -134,3 +134,20 @@ a.control_next {
     top: -32px;
     color: #540F23;
 }
+.blancus{
+  background: #fff;
+      height: 250px;
+      border-radius: 30px;
+}
+.btn_mora{
+  width: 15px;
+  height: 15px;
+  background: #540F23;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.contenttex{
+  height: 210px;
+  padding: 10px;
+  overflow: auto;
+}
