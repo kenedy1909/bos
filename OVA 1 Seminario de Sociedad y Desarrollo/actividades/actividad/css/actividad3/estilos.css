@@ -47,7 +47,6 @@
         min-width: 100px;
         width: 100%;
     }
-
     #actividad-1 ul#grupoA li.list-group-item {
         font-size: 20px;
     }
@@ -155,70 +154,92 @@
     margin: 0;
 }
 
+
 /*encabezado*/
-.info_actividad{
+
+.info_actividad {
     background: rgba(255, 192, 0);
     border-radius: 20px;
     padding: 20px;
 }
-.pt-3{
+
+.pt-3 {
     padding-top: 1.5em;
 }
-.pt-5{
+
+.pt-5 {
     padding-top: 2.5em;
 }
-.pl-3{
+
+.pl-3 {
     padding-left: 1.5em;
 }
-.pr-3{
+
+.pr-3 {
     padding-right: 1.5em;
 }
-.pl-1{
+
+.pl-1 {
     padding-left: 0.5em;
 }
-.pr-1{
+
+.pr-1 {
     padding-right: 0.5em;
 }
-.shadow{
+
+.shadow {
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
+
+
 /*encabezado*/
-.principal{
+
+.principal {
     display: inline-block;
 }
-.secundario{
-    width: 35%;display: inline-block;
+
+.secundario {
+    width: 35%;
+    display: inline-block;
 }
-.terciario{
-    width: 65%;display: inline-block;
+
+.terciario {
+    width: 65%;
+    display: inline-block;
 }
-.div-img{
-    display: inline-block;max-width: 100%;
+
+.div-img {
+    display: inline-block;
+    max-width: 100%;
 }
-.imagen{
+
+.imagen {
     width: 116px;
     height: 116px;
     display: inline-block;
 }
 
-.texto_header{
+.texto_header {
     font-size: 17px;
     display: inline-block;
     width: 50%;
 }
-.texto_header b{
-    color: #375125;
+
+.texto_header b {
+    color: #78201A;
     padding-left: 1px;
     padding-right: 1px;
 }
-.linea_blue{
+
+.linea_blue {
     height: 5px;
-    background: #375125;
+    background: #78201A;
 }
 
 
 /*ejercicio*/
-.circulo_icon{
+
+.circulo_icon {
     position: relative;
     width: 50px;
     height: 50px;
