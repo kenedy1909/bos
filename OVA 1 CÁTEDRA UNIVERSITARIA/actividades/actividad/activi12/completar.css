@@ -58,6 +58,7 @@ label {
 	appearance: none;
 	z-index: 1;
 	background: #FBE5D6;
+	    font-size: 20px;
 }
 .select__button:focus, .select__option:focus {
 	outline: transparent;
@@ -212,9 +213,10 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 200px;
+    height: 150px;
     background: #E32242;
     color: white;
+    overflow: auto;
 }
 
 .seleccionable{
@@ -258,4 +260,29 @@ label {
     background: rgba(255, 192, 0);
     border-radius: 20px;
     padding: 20px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
