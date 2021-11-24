@@ -19,13 +19,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado();
     console.log(tema);
@@ -42,7 +40,7 @@ $( document ).ready(function() {
     var slideHeight = $('#slider2 ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
     
-    $('#slider2').css({ width: '100%', height: '250px' });
+    $('#slider2').css({ width: '100%', height: '370px' });
     
     $('#slider2 ul').css({ width: '90%'});
     
@@ -86,13 +84,13 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe ml-2"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2. Introducción a los Conceptos Básicos de la TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 2. Introducción a los Conceptos Básicos de la TGS.pdf.pdf  <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2. Introducción a los Conceptos Básicos de la TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 2. Introducción a los Conceptos Básicos de la TGS.pdf.pdf  <b class="text-cafe ml-2"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe ml-2"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -100,6 +98,7 @@ $('.pdfs').html(pdf);
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+1+10+17+10);
 }
 
 function scroll5() {
@@ -364,13 +363,13 @@ function scroll_slide(num) {
 
                                   <div class="row mt-2">
                                     <div class="col-md-4">
-                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-objetivos">Objetivos</button>
+                                      <button class="btn p_white bg-azul" data-toggle="modal" data-target="#modal-objetivos">Objetivos</button>
                                     </div>
                                     <div class="col-md-4">
-                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-alcance">Alcance</button>
+                                      <button class="btn p_white bg-azul" data-toggle="modal" data-target="#modal-alcance">Alcance</button>
                                     </div>
                                     <div class="col-md-4">
-                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-justificacion">Justificación</button>
+                                      <button class="btn p_white bg-azul" data-toggle="modal" data-target="#modal-justificacion">Justificación</button>
                                     </div>
                                   </div>
                                 </div>
@@ -439,6 +438,7 @@ function scroll_slide(num) {
         $("#scroll-slide").html(`
                                 <div class="p-3">
                                   <h5 class="text-color-activi-o"><b>Fase 4: Desarrollo del Sistema y Documentación</b></h5>
+                                  <br>
                                   <div>
                                     <p class="justificado p_black">El desarrollo de un sistema consiste en la traducción del diseño de dicho sistema a una forma entendible para la computadora. Esto se logra mediante la generación del código fuente, el cual se puede obtener en algunos casos de manera automatizada (usando herramientas CASE) y en todos los casos usando el talento de los ingenieros o programadores que elaboran dicho código para que satisfaga las especificaciones del diseño.</p>
                                     <br>
@@ -528,7 +528,7 @@ function scroll_slide(num) {
                                                   <div style="width: 70%;">
                                                     <p class="justificado text-black" style="font-size: 13px;">Errores o requerimientos que se dejaron pasar en las fases iniciales.</p>
                                                   </div>
-                                                  <div style="width: 25%;"><img src="assets/img/img_ova/error.png" style="max-width: 100%;"></div>
+                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/error.png" class="m-auto" style="max-width: 100%;"></div>
                                                 </div>
                                               </li>
                                               <li>
@@ -537,7 +537,7 @@ function scroll_slide(num) {
                                                   <div style="width: 70%;">
                                                     <p class="justificado text-black" style="font-size: 13px;">Cambios en los requerimientos de los usuarios originados por cambios en los procesos de la organización, cambios en las normas y leyes existentes, o nuevas inquietudes de los usuarios propias de la evolución misma del negocio. </p>
                                                   </div>
-                                                  <div style="width: 25%;"><img src="assets/img/img_ova/exchange.png" style="max-width: 100%;"></div>
+                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/exchange.png" class="m-auto" style="max-width: 100%;"></div>
                                                 </div>
                                               </li>
                                               <li>
@@ -546,7 +546,7 @@ function scroll_slide(num) {
                                                   <div style="width: 70%;">
                                                     <p class="justificado text-black" style="font-size: 13px;">Cambios tecnológicos, como por ejemplo la instalación de un nuevo hardware, nuevos sistemas operativos, nuevas tecnologías de redes, migración de los sistemas a otros. </p>
                                                   </div>
-                                                  <div style="width: 25%;"><img src="assets/img/img_ova/proceso.png" style="max-width: 100%;"></div>
+                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/proceso.png" class="m-auto" style="max-width: 100%;"></div>
                                                 </div>
                                               </li>
                                               

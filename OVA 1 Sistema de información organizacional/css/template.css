@@ -108,7 +108,14 @@ iframe{
   color: var(--bg-color);
 }
 
+
+.color-text-2{
+  color: var(--bg-color-dark);
+}
+
 .titulo-ova{
+  color: var(--bg-color-dark);
+  font-weight: bold;
   background-image: url(../assets/img/img_ova/boton_principal.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -142,6 +149,14 @@ iframe{
 
 .p_white a{
     color: #FFF;
+}
+
+.p_black{
+    color: #000;
+}
+
+.p_black a{
+    color: #000;
 }
 
 .cover span{

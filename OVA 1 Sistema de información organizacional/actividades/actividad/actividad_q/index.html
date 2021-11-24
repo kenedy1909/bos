@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-7 col-sm-7 terciario" style="width: 55%;">
                     <div class="info_actividad shadow" style="color: #000;">
-                        <p style="color: #FFF;">Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
+                        <p style="color: #FFF; text-align: justify;">Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
                     </div>
                 </div>
             </div>
@@ -45,12 +45,12 @@
                             
                         </div>
                     </div> -->
-                    <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b></spam>
+                    <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}" style="min-height: 450px;">
+                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: justify;"><b>{{pregunta.texto}} </b></spam>
                             <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                         </p>
                         <div class="respuestas-cuestionario">
-                            <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                            <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}" style="text-align: justify;">
                                 <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
                                 {{respuesta.texto}}
                             </div>
@@ -66,7 +66,7 @@
 
                 </div>
                 <div class="btnCalificar">
-                    <button class="btn" style="background: #811111; color: #FFF;" type="button" ng-click="calificar()">Calificar</button>
+                    <button class="btn" style="background: #811111; color: #FFF;" type="button" ng-click="calificar()"><b>Calificar</b></button>
                 </div>
             </div>
         </div>

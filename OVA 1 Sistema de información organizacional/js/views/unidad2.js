@@ -19,13 +19,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado();
     var knob = "";
@@ -57,13 +55,13 @@ $( document ).ready(function() {
 
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1.LaTeoriaGeneraldeSistemas-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> 1.LaTeoriaGeneraldeSistemas-TGS.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1.LaTeoriaGeneraldeSistemas-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 1.LaTeoriaGeneraldeSistemas-TGS.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> 2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> 3-Componentes-de-la-TGS.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 3-Componentes-de-la-TGS.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
@@ -71,6 +69,7 @@ $('.pdfs').html(pdf);
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+1+10);
 }
 
 function slide_predeterminado(){
@@ -141,10 +140,10 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","","");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","","");
             tema = 1;
             break;
         default:
@@ -374,7 +373,7 @@ function comprensiones(num) {
         $(".comprension-circulo-2, .comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").addClass('bg-azul');
     }else if (num == 2) {
         $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
+        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -5px;"><b>H</b></h1>');
         $(".comprension-btn-3, .comprension-btn-4, .comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
         $(".comprension-text-2").removeClass('d-none');
         $(".comprension-text-3, .comprension-text-4, .comprension-text-4").addClass('d-none');
@@ -382,8 +381,8 @@ function comprensiones(num) {
         $(".comprension-circulo-3, .comprension-circulo-4, .comprension-circulo-5").addClass('bg-azul');
     }else if (num == 3) {
         $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto"><b>S</b></h1>');
+        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -5px;"><b>H</b></h1>');
+        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -4px; left: 1px"><b>S</b></h1>');
         $(".comprension-btn-4, .comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
         $(".comprension-text-2, .comprension-text-3").removeClass('d-none');
         $(".comprension-text-4, .comprension-text-5").addClass('d-none');
@@ -391,9 +390,9 @@ function comprensiones(num) {
         $(".comprension-circulo-4, .comprension-circulo-5").addClass('bg-azul');
     }else if (num == 4) {
         $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto"><b>S</b></h1>');
-        $(".comprension-btn-4").html('<h1 class="text-color-activi-o m-auto"><b>M</b></h1>');
+        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -5px;"><b>H</b></h1>');
+        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -4px; left: 1px"><b>S</b></h1>');
+        $(".comprension-btn-4").html('<h1 class="text-color-activi-o m-auto" style="position: relative;top: -4px;"><b>M</b></h1>');
         $(".comprension-btn-5").html('<img src="assets/img/img_ova/more.png" class="img-100">');
         $(".comprension-text-2, .comprension-text-3, .comprension-text-4").removeClass('d-none');
         $(".comprension-text-5").addClass('d-none');
@@ -401,10 +400,10 @@ function comprensiones(num) {
         $(".comprension-circulo-5").addClass('bg-azul');
     }else if (num == 5) {
         $(".comprension-btn-1").html('<h1 class="text-color-activi-o m-auto"><b>D</b></h1>');
-        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto"><b>H</b></h1>');
-        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto"><b>S</b></h1>');
-        $(".comprension-btn-4").html('<h1 class="text-color-activi-o m-auto"><b>M</b></h1>');
-        $(".comprension-btn-5").html('<h1 class="text-color-activi-o m-auto"><b>U</b></h1>');
+        $(".comprension-btn-2").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -5px;"><b>H</b></h1>');
+        $(".comprension-btn-3").html('<h1 class="text-color-activi-o m-auto" style="position: relative; top: -4px; left: 1px"><b>S</b></h1>');
+        $(".comprension-btn-4").html('<h1 class="text-color-activi-o m-auto" style="position: relative;top: -4px;"><b>M</b></h1>');
+        $(".comprension-btn-5").html('<h1 class="text-color-activi-o m-auto" style="position: relative;top: -4px;"><b>U</b></h1>');
         $(".comprension-text-2, .comprension-text-3, .comprension-text-4, .comprension-text-5").removeClass('d-none');
     }
 }
@@ -486,7 +485,7 @@ function cajas(num){
 function informacion(num) {
     if (num == 1) {
         $("#informacion_num").html('<h1 class="m-auto"><b>1</b></h1>');
-        $("#informacion_img").html('<img id="zoom_img1" src="assets/img/img_ova/Entrada.png" data-zoom-image="assets/img/img_ova/Entrada.png" class="img-100 m-auto ">');
+        $("#informacion_img").html('<div><p class="p_black text-center"><i><b>clic a la imagen</b></i></p><img id="zoom_img1" src="assets/img/img_ova/Entrada.png" data-toggle="modal" data-target="#modal-agra1" class="img-100 m-auto"></div>');
         $(".zoomContainer" ).remove();
         $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     }else if (num == 2) {
@@ -517,9 +516,9 @@ function transaccion_1() {
     $(".transacciones-info-1").addClass('img-100');
     $(".transacciones-info-1").html(`
                                     <div class="d-flex transacciones-infoCardss">
-                                        <div class="img-80 m-auto" data-toggle="modal" data-target="#modal-tps">
+                                        <div class="img-100 m-auto" data-toggle="modal" data-target="#modal-tps">
                                           <p class="justificado p_white"><b>Diseño de un TPS</b></p>
-                                          <p class="justificado p_white">(Haz clic aquí para desplegar más información)</p>
+                                          <p class="justificado p_white">(De clic aquí para desplegar más información)</p>
                                         </div>
                                     </div>
                                     `);
@@ -541,7 +540,7 @@ function transaccion_2() {
     $(".transacciones-info-2").addClass('img-100');
     $(".transacciones-info-2").html(`
                                     <div class="d-flex transacciones-infoCardss">
-                                        <div class="img-80">
+                                        <div class="img-100">
                                           <p class="justificado p_white"><b>Identificar Propósito y Funcionalidad</b></p>
                                           <p class="justificado p_white">Esto implica tener certeza de la situación, intención y contexto. Ejemplo: base de datos de clientes para diseñar la estrategia de fidelización de acuerdo con su comportamiento en compras.</p>
                                         </div>
@@ -565,7 +564,7 @@ function transaccion_3() {
     $(".transacciones-info-3").addClass('img-100');
     $(".transacciones-info-3").html(`
                                     <div class="d-flex transacciones-infoCardss">
-                                        <div class="img-80">
+                                        <div class="img-100">
                                           <p class="justificado p_white"><b>Definir Las Entidades</b></p>
                                           <p class="justificado p_white">Implica identificar los grupos de variables con los que contará la base de datos. Ejemplo: 1. Datos Personales Cliente; 2. Ubicación o localización del cliente. 3.  Histórico de compras cliente.</p>
                                         </div>
@@ -589,7 +588,7 @@ function transaccion_4() {
     $(".transacciones-info-4").addClass('img-100');
     $(".transacciones-info-4").html(`
                                     <div class="d-flex transacciones-infoCardss">
-                                        <div class="img-80">
+                                        <div class="img-100">
                                           <p class="justificado p_white"><b>Definir Las Variables</b></p>
                                           <p class="justificado p_white">Se definen los atributos o variables con los que contará cada entidad, y que será objeto de alimentación de la base de datos: Ejemplo: Nombre, Apellido, teléfono, Dirección.</p>
                                         </div>
@@ -648,7 +647,7 @@ function transaccion_6() {
     $(".transacciones-info-6").addClass('img-100');
     $(".transacciones-info-6").html(`
                                     <div class="d-flex transacciones-infoCardss">
-                                        <div class="img-80">
+                                        <div class="img-100">
                                           <p class="justificado p_white"><b>Definir El Esquema De Almacenamiento De Los Datos</b></p>
                                           <p class="justificado p_white">En este último paso, se debe determinar la forma y la fuente de almacenamiento de los datos que se recopilen. Ejemplo: software, datamart, la nube, cubos, etc.</p>
                                         </div>
@@ -750,8 +749,9 @@ function circulos(num) {
                         <div class="img-100 radius-2 bg-blanco py-3 pl-3 pr-5 custom-scrollbar__inner_tres">
                             <div class="mr-5">
                                 <p class="p_black justificado">También conocidos por sus siglas en inglés como Decision Support Systems (DSS), son niveles que responden adecuadamente, tanto para el nivel táctico como para el nivel estratégico. Son sistemas capaces de combinar modelos para intentar resolver problemas de nivel medio-alto, utilizando una interfaz amigable para el usuario. Según LAPIEDRA, 2011, este tipo de sistemas, surgen como respuesta a mayores necesidades de información para tomar decisiones ante entornos más adversos.  Con un DDS, los directivos logran que las tecnologías les ayuden a tratar mucha más información para realizar sus análisis de modo más rápido. (LAPIEDRA, 2011).</p>
+                                <p class="p_black text-center"><i><b>clic a la imagen</b></i></p>
                                 <div class="img-100 d-flex">
-                                    <img src="assets/img/img_ova/Tabla 1.png" class="img-80 m-auto">
+                                    <img src="assets/img/img_ova/Tabla 1.png" class="img-80 m-auto" data-toggle="modal" data-target="#modal-agra2">
                                 </div>
                             </div>
                         </div>
@@ -775,18 +775,19 @@ function circulos(num) {
                                     <p class="p_black justificado">Los sistemas de información para Ejecutivos (EIS), a medida que han ido apareciendo nuevas funcionalidades, tipologías e incluso necesidades, en la gerencia e incluso en la tecnología, también han ido surgiendo nuevas formas de concebirlos desde de las organizaciones; hoy día también son conocidos como sistemas de información estratégicos.</p>
                                 </div>
                             </div>
-                            <div class="row pt-4 mr-5">
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/1.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado p-3">Cambian significativamente el desempeño de un negocio al medirse por uno o más indicadores clave.</p>
+                            <p class="p_black justificado">LAUDON Y LAUDON, 2016, resaltan las siguientes características de este tipo de sistemas de información:</p>
+                            <div class="row pt-4 mr-3">
+                              <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/1.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
+                                <p class="p_black justificado m-auto pl-3">Cambian significativamente el desempeño de un negocio al medirse por uno o más indicadores clave.</p>
                               </div>
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/2.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado p-3">Contribuyen al logro de una meta estratégica.</p>
+                              <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/2.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
+                                <p class="p_black justificado m-auto pl-3">Contribuyen al logro de una meta estratégica.</p>
                               </div>
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/3.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado p-3">Apoyan el proceso de innovación de productos dentro de la empresa.</p>
+                              <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/3.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
+                                <p class="p_black justificado m-auto pl-3">Apoyan el proceso de innovación de productos dentro de la empresa.</p>
                               </div>
-                              <div class="col-md-3 pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/4.png'); background-size: 100% 100%; background-repeat: no-repeat;">
-                                <p class="p_black justificado p-3">Generan cambios en la forma de dirigir una compañía, como compite o interactúa con clientes y proveedores al facilitar información integral.</p>
+                              <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/4.png'); background-size: 100% 100%; background-repeat: no-repeat;">
+                                <p class="p_black justificado m-auto pl-3">Generan cambios en la forma de dirigir una compañía, como compite o interactúa con clientes y proveedores al facilitar información integral.</p>
                               </div>
                             </div>
                         </div>
@@ -831,7 +832,7 @@ function circulos(num) {
         scroll_cinco();
     }else if (num == 5) {
         var texto = `
-                    <div class="col-md-7 p-3">
+                    <div class="col-md-8 p-2">
                       <div>
                          <h5 class="text-color-activi-o"><b>Sistemas de Información Biométricos</b></h5>
                          <br>
@@ -840,8 +841,8 @@ function circulos(num) {
                          <p class="p_black justificado">Este tipo de sistemas es muy usado principalmente para suplir condiciones de seguridad, es por esto que los sistemas de información biométricos se han ido perfeccionando y posicionando como respuesta a la creciente demanda de seguridad existente en la actualidad en los sistemas operativos. Sin embargo, a pesar de eso, y aunque algunos de ellos son altamente fiables, ningún sistema de información biométrico es efectivo al 100%, puesto que también son susceptibles de ser intervenidos.</p>
                        </div> 
                     </div>
-                    <div class="col-md-5 p-3">
-                      <div>
+                    <div class="col-md-4 p-0 d-flex">
+                      <div class="m-auto">
                          <img src="assets/img/img_ova/biometria.png" class="img-100">
                        </div> 
                     </div>
@@ -851,7 +852,7 @@ function circulos(num) {
     }else if (num == 6) {
         var texto = `
                     <div class="col-md-12 p-3 custom-scrollbar_seis">
-                        <h5 class="text-color-activi-o"><b>Sistemas de Información Geográfica (SIG)</b></h5>
+                        <h5 class="text-color-activi-o"><b>¿Qué es la Biometría?</b></h5>
                         <div class="img-100 radius-2 bg-blanco py-3 pl-3 pr-5 custom-scrollbar__inner_seis">
                             <div class="mr-5 row">
                                 <div class="col-md-6 p-4">

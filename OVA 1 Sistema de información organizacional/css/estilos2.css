@@ -590,7 +590,7 @@ p, button{
 
 .custom-scrollbar_tres, .custom-scrollbar_cuatro, .custom-scrollbar_cinco, .custom-scrollbar_seis{
   position: relative;
-  height: 220px;
+  height: 350px;
 }
 
 .custom-scrollbar__inner_tres, .custom-scrollbar__inner_cuatro, .custom-scrollbar__inner_cinco, .custom-scrollbar__inner_seis{
@@ -739,4 +739,8 @@ card flip*/
 @keyframes animationCards {
   from {opacity:0;}
   to {opacity:1;}
+}
+
+.bg-rrr{
+  background: #DA2316;
 }

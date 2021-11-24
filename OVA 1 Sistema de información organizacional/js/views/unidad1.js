@@ -19,14 +19,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
-
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado();
 
@@ -43,13 +40,13 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1.LaTeoriaGeneraldeSistemas-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> 1.LaTeoriaGeneraldeSistemas-TGS.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1.LaTeoriaGeneraldeSistemas-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 1.LaTeoriaGeneraldeSistemas-TGS.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> 2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> 3-Componentes-de-la-TGS.pdf   <b class="text-cafe"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 3-Componentes-de-la-TGS.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
@@ -59,6 +56,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -95,22 +93,22 @@ function controlSlides(num){
             break;
         case 6:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","La empresa como Sistema");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","La empresa como Sistema");
             
             break;
         case 8:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","La empresa como Sistema");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","La empresa como Sistema");
             scroll_set(5);
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Teoría general de los sistemas (TGS)","> La empresa como Sistema");
+            setMigaja("Unidades de aprendizaje","","");
             tema=1;
             break;
         default:
