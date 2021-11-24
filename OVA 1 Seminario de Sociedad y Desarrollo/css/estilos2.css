@@ -404,7 +404,9 @@ button {
 }
 
 .img-circle {
-    padding: 15px;
+    top: -3%;
+    padding: 20px;
+    background-color: #999999 !important;
 }
 
 .img-circle-1 {
@@ -439,11 +441,11 @@ button {
 }
 
 .bg-circle-a-c {
-    background: #FFC000;
+    background: #78201A;
 }
 
 .bg-circle-a-o {
-    background: #7F6000;
+    background: #410e0b;
 }
 
 .w-h-15px {
