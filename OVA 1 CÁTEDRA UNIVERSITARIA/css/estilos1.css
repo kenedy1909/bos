@@ -418,8 +418,24 @@ input[type=range]::-ms-fill-upper {
     border-radius: 25px;
     padding: 10px;
     position: absolute;
-    top: -150px;
-    left: 157px;
+    top: -45px;
+    left: 327px;
+    word-wrap: break-word;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 25px;
+    margin-bottom: 2em;
+    height: 200px;
+}
+.tooltip_example5 {
+    width: 500px;
+    display: none;
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 10px;
+    position: absolute;
+    top: -151px;
+    left: 283px;
     word-wrap: break-word;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -472,6 +488,21 @@ input[type=range]::-ms-fill-upper {
     border-bottom: 66px solid #ffffff;
     margin-left: 429px;
     transform: rotate(182deg);
+}
+.tooltip_example5:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 194px;
+    left: -120px;
+    width: 0;
+    height: 0;
+    border-right: 69px solid transparent;
+    border-top: 53px solid transparent;
+    border-left: -10px solid transparent;
+    border-bottom: 66px solid #ffffff;
+    margin-left: 521px;
+    transform: rotate(172deg);
 }
 
 .opacidad{

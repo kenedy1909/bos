@@ -24,6 +24,7 @@ $( document ).ready(function() {
     $('.tooltip_example2').hide();
     $('.tooltip_example3').hide();
     $('.tooltip_example4').hide();
+    $('.tooltip_example5').hide();
     $('.example2').click(function(){
             var parent = $(this).parent().attr('id');
             if ($('.tooltip_example2').is (':hidden')){
@@ -63,12 +64,26 @@ $( document ).ready(function() {
             }
             return false;
     });
+    $('.example5').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example5').is (':hidden')){
+
+                $('.tooltip_example5').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example5').hide();
+
+            }
+            return false;
+    });
 
     $('.closed').click(function(){
         $('.tooltip_example').hide();
         $('.tooltip_example2').hide();
         $('.tooltip_example3').hide();
         $('.tooltip_example4').hide();
+        $('.tooltip_example5').hide();
         $('.opaco').removeClass('opacidad');
     });
             
