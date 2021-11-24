@@ -105,7 +105,7 @@ input {
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
-    border-left: 30px solid #000;
+    border-left: 30px solid #282F9F;
     border-bottom: 15px solid transparent;
     cursor: pointer;
 }
