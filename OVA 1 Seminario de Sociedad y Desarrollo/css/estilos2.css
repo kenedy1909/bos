@@ -423,7 +423,7 @@ button {
 
 .div-circle {
     padding: 10px;
-    background-color: #6fb14d;
+    background-color: #78201A;
     border-radius: 10%;
 }
 
@@ -433,11 +433,11 @@ button {
 }
 
 .bg-circle-v-c {
-    background: #6FB14D;
+    background: #78201A;
 }
 
 .bg-circle-v-o {
-    background: #375125;
+    background: #410e0b;
 }
 
 .bg-circle-a-c {
@@ -676,7 +676,7 @@ a.control_next {
 .triag_cambiaslide {
     width: 0;
     height: 0;
-    border-left: 50px solid #6fb14d;
+    border-left: 50px solid #78201A;
     border-top: 25px solid transparent;
     border-bottom: 25px solid transparent;
 }
@@ -686,9 +686,9 @@ a.control_next {
 }
 
 .verde-hover:hover {
-    background: #375125;
+    background: #410e0b;
 }
 
 .bg-verde-btn {
-    background: #6FB14D;
+    background: #78201A;
 }
