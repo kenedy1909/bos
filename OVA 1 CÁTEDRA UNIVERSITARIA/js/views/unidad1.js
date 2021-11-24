@@ -130,7 +130,7 @@ $( document ).ready(function() {
     slide_link(tema);
     setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
 });
-var pdf = `<div class="col-md-12">
+/*var pdf = `<div class="col-md-12">
                   <p class="p_white">
                         <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
@@ -141,7 +141,7 @@ var pdf = `<div class="col-md-12">
                         <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
-$('.pdfs').html(pdf);
+$('.pdfs').html(pdf);*/
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })

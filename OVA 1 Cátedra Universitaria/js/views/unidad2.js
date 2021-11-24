@@ -81,7 +81,7 @@ function controlSlides2(num){
             break;
         case 1:
             var pdf = `<p class="p_white">
-                            <a href="assets/PDF/UNIDAD 2/Sentencia-C-337_96.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Sentencia-C-337_96.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD 2/Sentencia-C-337_96.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png"> Sentencia-C-337_96.pdf <b class="text-cafe"><u>Ver</u></b></a>
                       </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
