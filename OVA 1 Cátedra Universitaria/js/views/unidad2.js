@@ -394,10 +394,13 @@ function cerrar(){
 
 function funcionalidad_U2(num) {
     if (num == 1) {
+        $("#info_funcionalidad_3U2_1").html(`
+                                        <img src="assets/img/img_ova/enlace.png" class="img-40 m-auto" onclick="funcionalidad_U2(2)">
+                                        `);
         $("#info_funcionalidad_3U2").html(`
-                                        <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto d-flex">
                                             <div class="p_white p-3 text-center img-50">
-                                              <p>Realice la lectura de la sentencia C-337/96 del PDF “sentencia C-337/96” con el fin de ampliar el contenido. Haga clic en el botón PDF:</p>
+                                              <p class="size_13 justificado">Realice la lectura de la sentencia C-337/96 del PDF “sentencia C-337/96” con el fin de ampliar el contenido. Haga clic en el botón PDF:</p>
                                               <br>
                                               <p>Haga clic en el botón PDF.</p>
                                             </div>
@@ -407,10 +410,13 @@ function funcionalidad_U2(num) {
                                         </div>
                                         `);
     }else if (num == 2) {
+        $("#info_funcionalidad_3U2").html(`
+                                        <img src="assets/img/img_ova/leyendo1.png" class="img-80 m-auto">
+                                        `);
         $("#info_funcionalidad_3U2_1").html(`
-                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row">
-                                            <div class="col-md-12 d-flex">
-                                                <img src="assets/img/img_ova/enlace.png" class="position-relative img-40 m-auto" style="top: -40px;">
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row" style="height: 200px;">
+                                            <div class="col-md-12 d-flex" style="height: 60px;">
+                                                <img src="assets/img/img_ova/enlace.png" class="position-relative img-30 m-auto" style="top: -40px;">
                                             </div>
                                             <div class="p_white text-center col-md-12">
                                               <p>Al mismo tiempo realizar la lectura de “la sentencia T-1127/2003” como lectura complementaria siguiendo el link:</b></p>
