@@ -172,7 +172,7 @@ QuestionsSameAnswers.prototype.score =  function () {
     var puntaje = ((points * 100)/total).toFixed(0);
     var modalID = "#calificacionModal";
     var exito = false;
-    var mensaje = "Inténtalo nuevamente.";
+    /*var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
@@ -180,7 +180,30 @@ QuestionsSameAnswers.prototype.score =  function () {
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
         self.reset(form);
-    });
+    });*/
+    if (puntaje == 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else if (puntaje >= 75 && puntaje < 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+    }
+    $("#exampleModal").modal("show");
+}
+
+function reload(){
+    location.reload();
 }
 
 QuestionsSameAnswers.prototype.prepare_files =  function () {
@@ -209,9 +232,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th style="display: flex;"><img src="img/ansiedad.png" alt="" style="width: 15%; margin: auto;"></th>\
+                    <th style="display: flex;border-bottom: 0px solid #ddd !important;"><img src="img/ansiedad.png" alt="" style="width: 15%; margin: auto;"></th>\
                     {% for answer in form.answers %}\
-                        <th class="title_table">{{ answer.answer_txt }}</th>\
+                        <th class="title_table" style="border-bottom: 0px solid #ddd !important;">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
                 </tr>\
             </thead>\
