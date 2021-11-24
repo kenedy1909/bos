@@ -6,6 +6,86 @@ $( document ).ready(function() {
     paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
+    $('.example').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example').is (':hidden')){
+
+                $('.tooltip_example').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example').hide();
+
+            }
+            return false;
+    });
+
+    $('.tooltip_example').hide();
+    $('.tooltip_example2').hide();
+    $('.tooltip_example3').hide();
+    $('.tooltip_example4').hide();
+    $('.tooltip_example5').hide();
+    $('.example2').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example2').is (':hidden')){
+
+                $('.tooltip_example2').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example2').hide();
+
+            }
+            return false;
+    });
+    $('.example3').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example3').is (':hidden')){
+
+                $('.tooltip_example3').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example3').hide();
+
+            }
+            return false;
+    });
+    $('.example4').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example4').is (':hidden')){
+
+                $('.tooltip_example4').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example4').hide();
+
+            }
+            return false;
+    });
+    $('.example5').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example5').is (':hidden')){
+
+                $('.tooltip_example5').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example5').hide();
+
+            }
+            return false;
+    });
+
+    $('.closed').click(function(){
+        $('.tooltip_example').hide();
+        $('.tooltip_example2').hide();
+        $('.tooltip_example3').hide();
+        $('.tooltip_example4').hide();
+        $('.tooltip_example5').hide();
+        $('.opaco').removeClass('opacidad');
+    });
             
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -1002,13 +1082,13 @@ function funcionalidad_3(num) {
     if (num == 1) {
         $("#info_funcionalidad_3").html(`
                                         <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
-                                            <div class="p_white p-3 text-center img-50">
+                                            <div class="p_white p-3 justidicado img-50">
                                               <p>Con el fin de ampliar la temática del manifiesto de córdoba, realice  la lectura del documento PDF “Manifiesto de córdoba”. Lo anterior permitirá realizar un paralelo de lo que veremos en la unidad 3.</p>
                                               <br>
                                               <p>Haga clic en el botón PDF.</p>
                                             </div>
                                             <div class="img-50 d-flex">
-                                                <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                                <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank" class="img-40 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
                                             </div>
                                         </div>
                                         `);
@@ -1077,7 +1157,7 @@ function funcionalidad_4(num) {
             $(".info_funcionalidad_4_2").addClass('bg-blanco');
             $(".info_funcionalidad_4_2").html(`
                                         <p class="p_white bg-morado p-3 text-center">Manifiesto de córdoba</p>
-                                        <div class="<div class="p-3 d-flex">
+                                        <div class="<div class="p-3 d-flex" style="height: 268px;overflow: auto;">
                                             <ul class="p_black">
                                                 <li>El Manifiesto, lo confiere en principio, a los estudiantes  exclusivamente y luego lo reduce a una mera participación de éstos en los órganos de gobierno.</li>
                                                 <li>El Manifiesto motivó la revolución estudiantil no sólo en Córdoba, sino también en Latinoamérica y en el mundo.</li>
@@ -1100,13 +1180,13 @@ function funcionalidad_5(num) {
     switch(parseInt(num)){
         case 1:
             $("#info-slider").html(`
-                                        <p class="p_black justificado">Por lo anterior, no solo en los aspectos mencionados, sino en su integridad y alcance, en primer lugar, se anunciarán las decisiones tomadas, para luego correlacionarlas, de manera ordenada, con las fundamentaciones que las sustentan y a través de esa correlación, se deducirán los principios que inspiraron a los fundadores para la creación de UNAULA, como una universidad diferente de aquellas contra las cuales ellos protestaron.</p>
+                                        <p class="p_black justificado scrul">Por lo anterior, no solo en los aspectos mencionados, sino en su integridad y alcance, en primer lugar, se anunciarán las decisiones tomadas, para luego correlacionarlas, de manera ordenada, con las fundamentaciones que las sustentan y a través de esa correlación, se deducirán los principios que inspiraron a los fundadores para la creación de UNAULA, como una universidad diferente de aquellas contra las cuales ellos protestaron.</p>
                                         `);
             break;
         case 2:
             $("#info-slider-2").html(`
                                         <div class="radius-2 bg-blanco my-0 p-3 mx-3">
-                                            <p class="p_black justificado">Fundar la Universidad Autónoma Latinoamericana con sede en Medellín, que con base en el cogobierno de estudiantes y profesores, dentro de un ambiente de absoluta libertad científica de estricta disciplina académica. Proporcionar a quienes así lo desearan los medios educativos que, como institución de educación Superior, constituían su objetivo primordial permitir a sus estudiantes formarse como ciudadanos al servicio de la comunidad.</p>
+                                            <p class="p_black justificado" style="height: 200px;overflow: auto;">Fundar la Universidad Autónoma Latinoamericana con sede en Medellín, que con base en el cogobierno de estudiantes y profesores, dentro de un ambiente de absoluta libertad científica de estricta disciplina académica. Proporcionar a quienes así lo desearan los medios educativos que, como institución de educación Superior, constituían su objetivo primordial permitir a sus estudiantes formarse como ciudadanos al servicio de la comunidad.</p>
                                         </div>
                                         `);
             break;
