@@ -197,7 +197,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Ley 489 de diciembre 29 de 1998: Por la cual se dictan normas sobre la organización y funcionamiento de las entidades del orden nacional.</p>
+                        <p class="justificado font14" style="padding: 10px 0px 1px;">Ley 489 de diciembre 29 de 1998: Por la cual se dictan normas sobre la organización y funcionamiento de las entidades del orden nacional.</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC1').addClass('inactive');
@@ -270,7 +270,7 @@ function aparece_abajo(num){
 
             var text = `
                         <p class="justificado font14">Ley 29 de 1990: "Por la cual se dictan disposiciones para el fomento de la investigación científica y el desarrollo tecnológico y se otorgan facultades extraordinarias".</p>
-                        <p class="justificado font14">Tomado de <b class="color-text">mineducación.gov.co </b></p>
+                        <p class="justificado font14" style="text-align: right;">Tomado de <b class="color-text">mineducación.gov.co </b></p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC5').addClass('inactive');
@@ -331,7 +331,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Resolución Nº 000167 del 31 de Mayo de 2006: Icfes, por la cual se formaliza una delegación</p>
+                        <p class="justificado font14" style="padding: 20px 1px 1px;">Resolución Nº 000167 del 31 de Mayo de 2006: Icfes, por la cual se formaliza una delegación</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
@@ -355,7 +355,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Decreto 4675 de 2006: Por el cual se Modifica la Estructura del Ministerio de Educación Nacional</p>
+                        <p class="justificado font14" style="padding: 10px 1px 1px;">Decreto 4675 de 2006: Por el cual se Modifica la Estructura del Ministerio de Educación Nacional</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
