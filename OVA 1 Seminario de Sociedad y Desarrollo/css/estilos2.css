@@ -347,7 +347,7 @@ button {
 }
 
 .back-green {
-    background-color: #6fb14d;
+    background-color: rgba(255, 192, 0);
     padding: 30px;
     border-radius: 30px;
 }
@@ -356,7 +356,7 @@ button {
     margin: 0px;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
-    background: linear-gradient(215deg, #6fb14d, #6fb14d);
+    background: linear-gradient(215deg, #78201A, #78201A);
     width: 120%;
     position: absolute;
     left: -10%;
@@ -382,7 +382,7 @@ button {
 }
 
 .contenido_decorado:hover {
-    height: 30em;
+    height: 33em;
     color: #000000;
     /*display: block;*/
 }
