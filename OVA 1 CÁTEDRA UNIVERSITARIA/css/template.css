@@ -266,7 +266,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 70%;
   position: relative;
   top: 25px;
 }
@@ -1001,7 +1001,8 @@ svg circle:nth-child(2){
   width: 50%;
   height: 86px;
   margin: 0px;
-  padding-top: 30px;
+  padding-top: 47px;
+  padding-left: 21px;
 }
 
 .img_activi{
@@ -1100,4 +1101,15 @@ svg circle:nth-child(2){
 
 .scrol{
   overflow: auto;
+}
+
+.text-cafe {
+    margin-left: 15px;
+}
+.w-30p{
+    width: 35px;
+    margin-top: 5px;
+}
+.pdfs{
+  padding: 10px 80px 20px !important;
 }

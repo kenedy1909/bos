@@ -169,13 +169,17 @@ function controlSlides(num){
         case 1:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
             var pdf = `<p class="p_white">
-                            <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Manifiesto de Córdoba <b class="text-cafe"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD 1/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png"> Manifiesto de Córdoba <b class="text-cafe"><u>Ver</u></b></a>
                       </p>
                       <p class="p_white">
-                          <a href="assets/PDF/UNIDAD 1/pdf-2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Estatutos UNAULA 2018 <b class="text-cafe"><u>Ver</u></b></a>
+                          <a href="assets/PDF/UNIDAD 1/pdf-2.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png"> Estatutos UNAULA 2018 <b class="text-cafe"><u>Ver</u></b></a>
                     </p>
                         <p class="p_white">
-                          <a href="assets/PDF/UNIDAD 1/Reforma-estatutos-UNAULA-2020.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Reforma-estatutos-UNAULA-2020.pdf<b class="text-cafe"><u>Ver</u></b></a>
+                          <a href="assets/PDF/UNIDAD 1/Reforma-estatutos-UNAULA-2020.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png"> Reforma-estatutos-UNAULA-2020.pdf<b class="text-cafe"><u>Ver</u></b></a>
+                    </p>
+                    </p>
+                        <p class="p_white">
+                          <a href="assets/PDF/UNIDAD 1/Estatutos UNAULA 2018.pdf.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png"> Estatutos UNAULA 2018.pdf<b class="text-cafe"><u>Ver</u></b></a>
                     </p>`;
             $('.pdfs').html(pdf);
             break;
@@ -1093,23 +1097,29 @@ function funcionalidad_3(num) {
                                         </div>
                                         `);
     }else if (num == 2) {
+        $("#info_funcionalidad_3_3").html(`
+                                        <img src="assets/img/img_ova/grupo-personas.png" class="img-40 m-auto">
+                                        `);
         $("#info_funcionalidad_3_2").html(`
                                         <div class="bg-color-activi-c radius-2 img-100 m-auto d-flex">
                                             <div class="p_white p-3 text-center img-65">
-                                              <p>Para ampliar el tema tratado realizar la lectura del (Art. 6º, inc. 2º) del PDF <b>“Estatutos UNAULA 2018”</b> el cual servirá para complementar el tema y desarrollar la actividad evaluativa que se encuentra al final de este contenido digital.</p>
+                                              <p class="justificado size_13">Para ampliar el tema tratado realizar la lectura del (Art. 6º, inc. 2º) del PDF <b>“Estatutos UNAULA 2018”</b> el cual servirá para complementar el tema y desarrollar la actividad evaluativa que se encuentra al final de este contenido digital.</p>
                                               <br>
                                               <p>Haga clic en el botón PDF.</p>
                                             </div>
                                             <div class="img-35 d-flex">
-                                                <a href="assets/PDF/UNIDAD 1/pdf-2.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
+                                                <a href="assets/PDF/UNIDAD 1/pdf-2.pdf" target="_blank" class="img-70 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
                                             </div>
                                         </div>
                                         `);
     }else if (num == 3) {
+        $("#info_funcionalidad_3_2").html(`
+                                        <img src="assets/img/img_ova/leyendo1.png" class="img-80 m-auto">
+                                        `);
         $("#info_funcionalidad_3_3").html(`
-                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row">
-                                            <div class="col-md-12 d-flex">
-                                                <img src="assets/img/img_ova/grupo-personas.png" class="position-relative img-40 m-auto" style="top: -40px;">
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto row" style="height: 180px;">
+                                            <div class="col-md-12 d-flex mt-3" style="height: 30px;">
+                                                <img src="assets/img/img_ova/grupo-personas.png" class="position-relative img-20 m-auto" style="top: -51px;">
                                             </div>
                                             <div class="p_white text-center col-md-12">
                                               <p>Con el fin de exponer sus percepciones y puntos de vista acerca del proceso de fundación de la universidad Autónoma Latinoamericana. Visite y participe en el foro <b>“Fundación de la Universidad Autónoma Latinoamericana. UNAULA”.</b></p>

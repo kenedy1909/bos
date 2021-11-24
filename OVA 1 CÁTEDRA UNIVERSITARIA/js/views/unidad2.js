@@ -221,7 +221,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Decreto 644 de 2001: Reglamentación sobre puntajes altos en Exámenes de Estado</p>
+                        <p class="justificado font14" style="padding: 20px 40px 2px;">Decreto 644 de 2001: Reglamentación sobre puntajes altos en Exámenes de Estado</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC2').addClass('inactive');
