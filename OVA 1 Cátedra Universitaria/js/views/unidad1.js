@@ -6,6 +6,71 @@ $( document ).ready(function() {
     paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
+    $('.example').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example').is (':hidden')){
+
+                $('.tooltip_example').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example').hide();
+
+            }
+            return false;
+    });
+
+    $('.tooltip_example').hide();
+    $('.tooltip_example2').hide();
+    $('.tooltip_example3').hide();
+    $('.tooltip_example4').hide();
+    $('.example2').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example2').is (':hidden')){
+
+                $('.tooltip_example2').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example2').hide();
+
+            }
+            return false;
+    });
+    $('.example3').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example3').is (':hidden')){
+
+                $('.tooltip_example3').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example3').hide();
+
+            }
+            return false;
+    });
+    $('.example4').click(function(){
+            var parent = $(this).parent().attr('id');
+            if ($('.tooltip_example4').is (':hidden')){
+
+                $('.tooltip_example4').show();
+                $('.opaco').addClass('opacidad');
+            }else{
+
+                $('.tooltip_example4').hide();
+
+            }
+            return false;
+    });
+
+    $('.closed').click(function(){
+        $('.tooltip_example').hide();
+        $('.tooltip_example2').hide();
+        $('.tooltip_example3').hide();
+        $('.tooltip_example4').hide();
+        $('.opaco').removeClass('opacidad');
+    });
             
     $('#smartwizard').smartWizard({
         loader:"show",
