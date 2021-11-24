@@ -16,6 +16,7 @@
     font-size: 18px;
     position: relative;
     left: -12px;
+        width: 90%
 }
 
 #actividad-1 ul#grupoA li.list-group-item {
@@ -95,7 +96,7 @@
     left: -15px;
     right: -15px;
     bottom: -15px;
-    border: solid #540F23 2px;
+        border: solid #E8687D 10px;
     border-radius: 10px;
     background: transparent;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
@@ -234,4 +235,34 @@
 
 .d-flex{
     display: flex;
+}
+
+.img-70{
+    width: 70px;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+}
+
+.principal_modal{
+  height: 400px;
+  border-radius: 40px;
+  background: #97182f;
+}
+
+.cabeza{
+  background: #79132a;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 125px;
+  width: 125px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
 }

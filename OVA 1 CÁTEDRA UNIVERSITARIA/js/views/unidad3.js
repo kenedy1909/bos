@@ -269,10 +269,10 @@ function funcionalidad_8(num) {
                                     <p class="p_black justificado">En la parte motiva del Acta se consagra como uno de los motivos para fundar a UNAULA, “porque se debe establecer una universidad que acepte la libre investigación científica en todos los campos, acate y defienda los principios consagrados en la Carta de los Derechos Humanos.” Con base en esto, la investigación, como principio fundacional de UNAULA, puede definirse como “la libertad para desarrollar libremente las actividades que se consideren necesarias o convenientes para crear conocimiento en todos los campos del saber, con el debido respeto a los principios consagrados en la Carta de los Derechos Humanos”.</p>
                                     <div class="d-flex">
                                         <div class="my-auto ml-auto img-40">
-                                          <div class="bg-color-activi-c p-3 radius-2" data-toggle="modal" data-target="#actividad-modal5">
-                                            <p class="justificado p_white">Clic en el ícono para conocer la actividad</p>
+                                          <div class="bg-color-activi-c p-3 radius-2" data-toggle="modal" data-target="#actividad-modal5" style="position: relative;top: 60px;left: 28px;border-radius: 1px 1px 32px 1px;">
+                                            <p class="justificado p_white size_13">Clic en el ícono para conocer la actividad</p>
                                             <div class="d-flex">
-                                              <img src="assets/img/img_ova/actividad_general.png" class="img-40 m-auto">
+                                              <img src="assets/img/img_ova/actividad_general.png" class="img-50 m-auto">
                                             </div>
                                           </div>
                                         </div>
