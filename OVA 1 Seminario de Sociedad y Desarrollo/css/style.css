@@ -1711,17 +1711,17 @@ fieldset:disabled a.btn {
 }
 
 .btn-warning {
-    color: #4f5d73;
-    background-color: #f9b115;
-    border-color: #f9b115;
+    color: white;
+    background-color: #78201A;
+    border-color: #78201A;
 }
 
 @media (hover: hover),
 (-ms-high-contrast: none) {
     .btn-warning:hover {
-        color: #4f5d73;
-        background-color: #e29c06;
-        border-color: #d69405;
+        color: white;
+        background-color: #78201A;
+        border-color: #78201A;
     }
 }
 
