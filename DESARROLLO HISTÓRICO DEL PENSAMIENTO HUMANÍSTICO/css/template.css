@@ -102,6 +102,10 @@ iframe{
   color: var(--bg-color);
 }
 
+.color-text-2{
+  color: var(--color-dark);
+}
+
 .titulo-ova{
   background-image: url(../assets/img/img_ova/Seminario-Humanistico-I-03.png);
   background-repeat: no-repeat;
@@ -132,6 +136,14 @@ iframe{
 
 .p_white a{
     color: #FFF;
+}
+
+.p_black{
+    color: #000;
+}
+
+.p_black a{
+    color: #000;
 }
 
 .cover span{
@@ -628,7 +640,7 @@ card flip*/
 }
 /*actividades*/
 .text-img-activi{
-  border-bottom: solid 4px rgb(200 173 69);
+  border-bottom: solid 4px var(--color-dark);
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -641,7 +653,7 @@ card flip*/
 }
 .texto_activi{
   font-size: 18px; 
-  color: rgb(200 173 69);
+  color: var(--color-dark);
 }
 
 .contenedor_indi{

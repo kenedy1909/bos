@@ -433,30 +433,42 @@ function conjuntos(num){
 }
 
 function acuarela(num) {
+    $('.losclick_num_1').removeClass('losclick_1');
+    $('.losclick_num_2').removeClass('losclick_2');
+    $('.losclick_num_3').removeClass('losclick_3');
+    $('.losclick_num_4').removeClass('losclick_4');
+    $('.losclick_num_5').removeClass('losclick_5');
+    $('.losclick_num_6').removeClass('losclick_6');
     switch (parseInt(num)) {
         case 1:
             $('.elcontendio').css({'visibility': 'hidden'});
             $('.cordenada1').css({'visibility': 'visible'});
+            $('.losclick_num_1').addClass('losclick_1');
             break;
         case 2:
             $('.elcontendio').css({'visibility': 'hidden'});
             $('.cordenada2').css({'visibility': 'visible'});
+            $('.losclick_num_2').addClass('losclick_2');
             break;
         case 3:
             $('.elcontendio').css({'visibility': 'hidden'});
             $('.cordenada3').css({'visibility': 'visible'});
+            $('.losclick_num_3').addClass('losclick_3');
             break;
         case 4:
             $('.elcontendio').css({'visibility': 'hidden'});
             $('.cordenada4').css({'visibility': 'visible'});
+            $('.losclick_num_4').addClass('losclick_4');
             break;
         case 5:
             $('.elcontendio').css({'visibility': 'hidden'});
             $('.cordenada5').css({'visibility': 'visible'});
+            $('.losclick_num_5').addClass('losclick_5');
             break;
         case 6:
             $('.elcontendio').css({'visibility': 'hidden'});
             $('.cordenada6').css({'visibility': 'visible'});
+            $('.losclick_num_6').addClass('losclick_6');
             break;
         default:
             break;
@@ -466,7 +478,7 @@ function acuarela(num) {
 function cerebro(num){
     switch (parseInt(num)) {
         case 1:
-            var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 125px;">
+            var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                               <div class="acurela2text" style="">
                                 <p class="justificado" style="font-size: 13px;">Desde múltiples corrientes humanistas se tiene que lo humano es un conjunto de potencias desarrollables en un contexto cultural, es decir, una condición a la que se llega por medio del proceso de enculturación, el cual se realiza a través de procesos formativos</p>
                               </div>
@@ -474,7 +486,7 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 2:
-            var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 125px;">
+            var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                           <div class="acurela2text" style="">
                             <p class="justificado" style="font-size: 13px;">Algunas de las teorías sobre la formación se encuentran basadas principalmente en una imagen de hombre de la cual se parte, un individuo libre de determinaciones culturales, sin conceptos o inclinaciones sociales, cercano al puro instinto, que posteriormente propone una imagen a la cual se debe llegar; un sujeto cultural, con códigos de comportamientos y propósitos sociales.</p>
                           </div>
@@ -482,7 +494,7 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 3:
-            var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 125px;">
+            var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                         <div class="acurela2text" style="">
                           <p class="justificado" style="font-size: 13px;">Esto indica que el proceso del desarrollo formativo implica que el individuo deba generar un tránsito en sí, para sí y en relación con el mejoramiento propio y de la cultura en la cual se desarrolla, con lo que puede adquirir su verdadero valor como ser humano, desarrollando sus potencias. Al respecto, Kant citado por Kanz (2001) declara que</p>
                         </div>
@@ -497,13 +509,13 @@ function cerebro(num){
             break;
         case 4:
             var cont = `
-            <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 125px;">
+            <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                 <div class="acurela2text" style="">
                   <p class="justificado" style="font-size: 13px;">Con esto, es posible entender que el hombre es la única criatura -conocida por el hombre mismo- que posee una condición racional, y, por tanto, tiene la cualidad de adquirir conocimientos y aplicarlos en el mundo. No obstante, se hace necesario que el mayor campo de aplicación de dichos conocimientos sea el hombre mismo, ya que él con su carga racional debe realizar el paso de individuo a sujeto, con la finalidad de adquirir el carácter de ciudadano del mundo; sobre lo que Kanz (2001) dice</p>
                 </div>
               </div>
               <div class="">
-                <div class="mensaje" style="width: 380px;height: 215px;    position: relative;top: -28px;">
+                <div class="mensaje" style="height: 190px; position: relative;top: -28px;">
                   <p class="justificado" style="font-size: 12px;padding: 23px 55px 1px 30px;">El énfasis en la subjetividad humana es un principio básico de la pedagogía universal actual. En virtud de tal principio, se define como sujetos a los implicados en los procesos educativos y formativos, que no pueden instrumentalizarse recíprocamente. La tesis de que todos los hombres son sujetos que no deben utilizarse unos a otros como medios está considerada como la quintaesencia de la filosofía de Kant (pág. 3).</p>
                 </div>
               </div>`;
@@ -511,7 +523,7 @@ function cerebro(num){
             break;
         case 5:
             var cont = `
-            <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 125px;">
+            <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                   <div class="acurela2text" style="">
                     <p class="justificado" style="font-size: 13px;">Socialmente, la vida es entendida como la realización individual del sujeto desde las dos perspectivas señaladas (biológica y social), tal afirmación supone que el hombre se asuma como sujeto cultural, histórico, social, instintivo, pulsional, mental, etc. Sin embargo, es necesario señalar la importancia de la felicidad y la libertad como fundamento de tal realización, pues en estos conceptos se encuentra, según la historia de la cultura, el sentido de la vida.</p>
                   </div>
@@ -520,7 +532,7 @@ function cerebro(num){
             break;
         case 6:
             var cont = `
-            <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 125px;">
+            <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                   <div class="acurela2text" style="">
                     <p class="justificado" style="font-size: 13px;">Así pues, ante tal obligatoriedad, se evidencia una primera dificultad; trascender al individuo, debido a que, si se asume al sujeto realmente como un individuo, se tiene que él debe procurar su propia realización, lo cual indica una finalidad netamente egoísta. En otras palabras, la vida es una constate lucha por sobrevivir y sobreponerse al otro.</p>
                   </div>
@@ -535,7 +547,7 @@ function cerebro(num){
 function cambiatexto(num){
     switch (parseInt(num)) {
         case 1:
-            var cont = `<p class="justificado size_13">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
+            var cont = `<p class="justificado size_13 m-auto p_black">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
             $('.textobanewhite').html(cont);
             $('.circuloabnner').removeClass('prendido');
             $('.circuloabnner').addClass('apagado');
@@ -544,7 +556,7 @@ function cambiatexto(num){
             $('.cambia1').addClass('prendido');
             break;
         case 2:
-            var cont = `<p class="justificado">Para entender al hombre en sociedad es inevitable comprender sus ideales, pues la humanidad proyecta una imagen de perfección delante de sí, señala el camino que los hombres deben seguir. En otras palabras, le dicen al hombre qué debe ser y cómo debe alcanzar tal forma de ser, lo que constituye de inicio una limitación</p>`;
+            var cont = `<p class="justificado m-auto p_black">Para entender al hombre en sociedad es inevitable comprender sus ideales, pues la humanidad proyecta una imagen de perfección delante de sí, señala el camino que los hombres deben seguir. En otras palabras, le dicen al hombre qué debe ser y cómo debe alcanzar tal forma de ser, lo que constituye de inicio una limitación</p>`;
             $('.textobanewhite').html(cont);
             $('.circuloabnner').removeClass('prendido');
             $('.circuloabnner').addClass('apagado');
@@ -553,9 +565,9 @@ function cambiatexto(num){
             $('.cambia2').addClass('prendido');
             break;
         case 3:
-            var cont = `<p class="justificado font14">Este ideal de la sociedad está centrado en la felicidad, entendida como tranquilidad, o ausencia de turbación.</p>
-                        <p class="justificado font14">En numerosas ocasiones se hace presente la misma respuesta: sí, tengo a mi familia, tengo trabajo y tengo comida. Tal respuesta es evidencia de la resignación a la simple permanencia biológica, es decir, a la simple duración del cuerpo, lo que niega la verdadera existencia de la vida social, pues ésta no es más que el medio para la supervivencia del cuerpo.</p><br>
-                        <i><p class="justificado font14">Haga clic en la flecha para continuar con la información</p></i>`;
+            var cont = `<div class="m-auto"><p class="justificado p_black font14">Este ideal de la sociedad está centrado en la felicidad, entendida como tranquilidad, o ausencia de turbación.</p>
+                        <p class="justificado p_black font14">En numerosas ocasiones se hace presente la misma respuesta: sí, tengo a mi familia, tengo trabajo y tengo comida. Tal respuesta es evidencia de la resignación a la simple permanencia biológica, es decir, a la simple duración del cuerpo, lo que niega la verdadera existencia de la vida social, pues ésta no es más que el medio para la supervivencia del cuerpo.</p><br>
+                        <i><p class="justificado p_black font14">Haga clic en la flecha para continuar con la información</p></i></div>`;
             $('.textobanewhite').html(cont);
             $('.circuloabnner').removeClass('prendido');
             $('.circuloabnner').addClass('apagado');
@@ -563,7 +575,7 @@ function cambiatexto(num){
             $('.cambia3').removeClass('apagado');
             $('.cambia3').addClass('prendido');
 
-            $('.aparece_proximo').html('<div onclick="pantallazo(1);" class="triasiguiente cursor" style="margin-top: 170px;margin-left: 10px;"></div>');
+            $('.aparece_proximo').html('<div onclick="pantallazo(1);" class="triasiguiente cursor my-auto" style="margin-top: 170px;margin-left: 10px;"></div>');
             break;
         default:
             break;
@@ -573,7 +585,7 @@ function cambiatexto(num){
 function cambiatexto2(num) {
     switch (parseInt(num)) {
         case 1:
-            var cont = `<p class="justificado font14">Además, la libertad es el medio por el cual el ser humano elije su propia limitación, pues es un sometimiento voluntario a los términos sociales, lo que es la causa que genera la ilusión de una verdadera acción, que al fin y al cabo no pasa de ser una resignación. Vivir se reduce a términos de duración, al temor de perder la vida.</p>`;
+            var cont = `<p class="justificado p_black font14 m-auto">Además, la libertad es el medio por el cual el ser humano elije su propia limitación, pues es un sometimiento voluntario a los términos sociales, lo que es la causa que genera la ilusión de una verdadera acción, que al fin y al cabo no pasa de ser una resignación. Vivir se reduce a términos de duración, al temor de perder la vida.</p>`;
             $('.textobanewhite').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
@@ -582,8 +594,8 @@ function cambiatexto2(num) {
             $('.cambia2_1').addClass('prendido');
             break;
         case 2:
-            var cont = `<p class="justificado size_13">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
-                        <p class="justificado size_13">La moral es el sometimiento a la razón, y ésta, es la que nos permite abandonar la animalidad del cuerpo ¿Acaso no somos cuerpo, acaso no somos animales, acaso el deseo no es propio de nuestra naturaleza?</p>`;
+            var cont = `<div class="m-auto"><p class="justificado p_black size_13">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
+                        <p class="justificado p_black size_13">La moral es el sometimiento a la razón, y ésta, es la que nos permite abandonar la animalidad del cuerpo ¿Acaso no somos cuerpo, acaso no somos animales, acaso el deseo no es propio de nuestra naturaleza?</p></div>`;
             $('.textobanewhite').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
@@ -592,9 +604,9 @@ function cambiatexto2(num) {
             $('.cambia2_2').addClass('prendido');
             break;
         case 3:
-            var cont = `<p class="justificado size_13">Es pertinente pensar por un momento en la felicidad y la libertad como conceptos relativos, el primero puede hacer referencia a un estado interno del sujeto, que depende de factores externos, específicamente de la existencia o no del deseo; el segundo, puede ser un factor interno o externo, es decir, de sensibilidad o de acción.</p>
-                                <p class="justificado size_13">De este modo, ambos conceptos pueden manifestarse en todos los seres humanos; los hombres, las mujeres, los pobres, los ricos, los blancos, los afrodescendientes, los jóvenes, los adultos y los ancianos. Esto depende, en primera medida, de la concepción que cada sujeto tenga sobre tales conceptos, pues ello determina su sentido de felicidad o libertad.</p>
-                                <i><p class="justificado size_13">Haga clic en la flecha para continuar con la información</p></i>`;
+            var cont = `<div class="m-auto"><p class="justificado p_black size_13">Es pertinente pensar por un momento en la felicidad y la libertad como conceptos relativos, el primero puede hacer referencia a un estado interno del sujeto, que depende de factores externos, específicamente de la existencia o no del deseo; el segundo, puede ser un factor interno o externo, es decir, de sensibilidad o de acción.</p>
+                                <p class="justificado p_black size_13">De este modo, ambos conceptos pueden manifestarse en todos los seres humanos; los hombres, las mujeres, los pobres, los ricos, los blancos, los afrodescendientes, los jóvenes, los adultos y los ancianos. Esto depende, en primera medida, de la concepción que cada sujeto tenga sobre tales conceptos, pues ello determina su sentido de felicidad o libertad.</p>
+                                <i><p class="justificado p_black size_13">Haga clic en la flecha para continuar con la información</p></i></div>`;
             $('.textobanewhite').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
@@ -602,7 +614,7 @@ function cambiatexto2(num) {
             $('.cambia2_3').removeClass('apagado');
             $('.cambia2_3').addClass('prendido');
 
-            $('.aparece_proximo').html('<div onclick="pantallazo(3);" class="triasiguiente cursor" style="margin-top: 170px;margin-left: 10px;"></div>');
+            $('.aparece_proximo').html('<div onclick="pantallazo(3);" class="triasiguiente cursor my-auto" style="margin-top: 170px;margin-left: 10px;"></div>');
             break;
         default:
             break;
@@ -632,12 +644,12 @@ function pantallazo(num){
               </div>`;
             $('.seleccionable').html(cont);
             $('.aparece_proximo').html('');
-            var cont = `<p class="justificado font14">Además, la libertad es el medio por el cual el ser humano elije su propia limitación, pues es un sometimiento voluntario a los términos sociales, lo que es la causa que genera la ilusión de una verdadera acción, que al fin y al cabo no pasa de ser una resignación. Vivir se reduce a términos de duración, al temor de perder la vida.</p>`;
+            var cont = `<p class="justificado p_black font14 m-auto">Además, la libertad es el medio por el cual el ser humano elije su propia limitación, pues es un sometimiento voluntario a los términos sociales, lo que es la causa que genera la ilusión de una verdadera acción, que al fin y al cabo no pasa de ser una resignación. Vivir se reduce a términos de duración, al temor de perder la vida.</p>`;
             $('.textobanewhite').html(cont);
             break;
         case 2:
-            var cont = `<p class="justificado font14">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
-                        <p class="justificado font14">La moral es el sometimiento a la razón, y ésta, es la que nos permite abandonar la animalidad del cuerpo ¿Acaso no somos cuerpo, acaso no somos animales, acaso el deseo no es propio de nuestra naturaleza?</p>`;
+            var cont = `<p class="justificado p_black font14">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
+                        <p class="justificado p_black font14">La moral es el sometimiento a la razón, y ésta, es la que nos permite abandonar la animalidad del cuerpo ¿Acaso no somos cuerpo, acaso no somos animales, acaso el deseo no es propio de nuestra naturaleza?</p>`;
             $('.textobanewhite').html(cont);
             $('.circulop2').removeClass('prendido');
             $('.circulop2').addClass('apagado');
@@ -647,8 +659,10 @@ function pantallazo(num){
             break;
         case 3:
             var cont = `<div class="col-md-12">
-                          <p class="justificado">
+                          <p class="justificado p_black">
                             Sin embargo, la concepción que la mayoría de los hombres tienen sobre tales conceptos les es dada a través de ideologías sociales e históricas, y así, el ser humano ha sido domado por la historia, negando a través de la razón, como esencia de la moralidad, su verdadera posibilidad de sentirse vivo en términos no biológicos, es decir, escapar de su resignación por medio de la aceptación del deseo.
+                            <br>
+                            Dar clic en las imágenes para continuar con la información
                           </p>
                         </div>
                         <div class="col-md-12 d-flex justify-content-center row">
@@ -664,7 +678,7 @@ function pantallazo(num){
                         </div>
                         <div class="col-md-12">
                           <div class="contendiocirculos">
-                            <p class="justificado">Se tiene pues, que la felicidad, como producto del deseo, implica la saciedad momentánea de tal pulsión: de ahí que no sea posible concebir esa dicha como eterna, sino parcial, y, por tanto, una presente felicidad será siempre una futura tristeza. Tales estados del hombre son siempre complementarios, pues la humanidad es maestra creando movimientos internos que los llevan de la pena a la gracia, de la sonrisa al llanto; todos actos de egoísmo e intentos de liberación.</p>
+                            <p class="justificado p_black">Se tiene pues, que la felicidad, como producto del deseo, implica la saciedad momentánea de tal pulsión: de ahí que no sea posible concebir esa dicha como eterna, sino parcial, y, por tanto, una presente felicidad será siempre una futura tristeza. Tales estados del hombre son siempre complementarios, pues la humanidad es maestra creando movimientos internos que los llevan de la pena a la gracia, de la sonrisa al llanto; todos actos de egoísmo e intentos de liberación.</p>
                             
                           </div>
                         </div>`;
@@ -675,7 +689,7 @@ function pantallazo(num){
             $('.cambia2_3').removeClass('apagado');
             $('.cambia2_3').addClass('prendido');
 
-            $('.aparece_proximo').html('<div class="triasiguiente cursor" style="margin-top: 170px;margin-left: 10px;"></div>');
+            $('.aparece_proximo').html('<div class="triasiguiente cursor my-auto" style="margin-top: 170px;margin-left: 10px;"></div>');
             break;
         default:
             break;
@@ -686,10 +700,10 @@ function primero(){
     var cont = `<div class="col-md-5 seleccionable">
                   <div class="row p-0 bannerboder" style="">
                     <div class="col-md-8 m-0" style="padding: 25px 10px 16px 10px;">
-                      <p class="justificado size_13">
+                      <p class="justificado p_black size_13">
                         De tal modo, surge la idea de preservación, la cual implica la supervivencia como un medio esencial para la manifestación del Yo; sin embargo, tal conservación de la vida es asumida legalmente como un derecho irrevocable, con lo que se tiene entonces que las sociedades defienden la vida, pero ¿Hasta qué punto es verdad tal afirmación? 
                       </p>
-                      <i><p class="justificado size_13">
+                      <i><p class="justificado p_black size_13">
                         Haga clic en las imágenes para continuar con la información sobre el sentido de la vida.  
                       </p></i>
                     </div>
@@ -708,23 +722,23 @@ function primero(){
 
                 </div>
                 <div class="col-md-7 d-flex justify-content-center">
-                  <div class="textobanewhite" style="">
-                    <p class="justificado font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>
+                  <div class="textobanewhite my-auto d-flex" style="">
+                    <p class="justificado p_black font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>
                   </div>
-                  <div class="aparece_proximo">
+                  <div class="aparece_proximo my-auto d-flex">
                     
                   </div>
                 </div>`;
     $('.bannerverde').html(cont);
     $('.aparece_proximo').html('');
-    var cont = `<p class="justificado font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
+    var cont = `<p class="justificado p_black font14">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
     $('.textobanewhite').html(cont);
 }
 
 function contfinal(num){
     switch (parseInt(num)) {
         case 1:
-            var cont = `<p class="justificado">Se tiene pues, que la felicidad, como producto del deseo, implica la saciedad momentánea de tal pulsión: de ahí que no sea posible concebir esa dicha como eterna, sino parcial, y, por tanto, una presente felicidad será siempre una futura tristeza. Tales estados del hombre son siempre complementarios, pues la humanidad es maestra creando movimientos internos que los llevan de la pena a la gracia, de la sonrisa al llanto; todos actos de egoísmo e intentos de liberación.</p>`;
+            var cont = `<p class="justificado p_black">Se tiene pues, que la felicidad, como producto del deseo, implica la saciedad momentánea de tal pulsión: de ahí que no sea posible concebir esa dicha como eterna, sino parcial, y, por tanto, una presente felicidad será siempre una futura tristeza. Tales estados del hombre son siempre complementarios, pues la humanidad es maestra creando movimientos internos que los llevan de la pena a la gracia, de la sonrisa al llanto; todos actos de egoísmo e intentos de liberación.</p>`;
             $('.contendiocirculos').html(cont);
 
             $('.circuloabnner').removeClass('prendido');
@@ -734,7 +748,7 @@ function contfinal(num){
             $('.circuloabnner1').addClass('prendido');
             break;
         case 2:
-            var cont = `<p class="justificado">La humanidad será siempre un mendigo de su propio placer, pues al no aceptarlos, recibe las migajas que la sociedad le otorga: alimento, placer monogámico, un coche, un móvil, un trabajo, y un lugar donde vivir. <br>
+            var cont = `<p class="justificado p_black">La humanidad será siempre un mendigo de su propio placer, pues al no aceptarlos, recibe las migajas que la sociedad le otorga: alimento, placer monogámico, un coche, un móvil, un trabajo, y un lugar donde vivir. <br>
                         Es posible entonces que la razón no sea el fin, es decir, la felicidad misma, sino un medio para explayar y saciar los deseos del hombre; sin embargo, sólo hay un camino posible hacia sí mismo, el autoconocimiento, el cual implica, esencialmente la aceptación de la animalidad y la conjunción con los elementos de orden social.</p>`;
             $('.contendiocirculos').html(cont);
             $('.circuloabnner').removeClass('prendido');
@@ -747,10 +761,10 @@ function contfinal(num){
             var cont = `
             <div class="row">
               <div class="col-md-10">
-                <p class="justificado">Cada persona lleva un monstruo en su interior, pero también lleva en su historia la carga de la cultura, cada persona tiene algo de locura, pero también la razón como elemento organizador y dador de sentido. El hombre, en muchos casos, no acepta sus pasiones y deseos, por temor a ser rechazado, pero al negarlos, se rechaza a sí mismo, es decir, se niega su propia vida, y se resigna a vivir tras la aceptación de la moralidad ajena.</p>
+                <p class="justificado p_black">Cada persona lleva un monstruo en su interior, pero también lleva en su historia la carga de la cultura, cada persona tiene algo de locura, pero también la razón como elemento organizador y dador de sentido. El hombre, en muchos casos, no acepta sus pasiones y deseos, por temor a ser rechazado, pero al negarlos, se rechaza a sí mismo, es decir, se niega su propia vida, y se resigna a vivir tras la aceptación de la moralidad ajena.</p>
               </div>
               <div class="col-md-2">
-                <button data-toggle="modal" data-target="#modal-esclavo" class="btn" style="background: #963900;width: 100%;color: wheat;font-weight: bold;">¿Soy libre o esclavo?<img src="assets/img/img_ova/buscar.png" style="max-width: 41%;position: absolute;margin-left: -108px;top: 56px;" >Clic para ver</button>
+                <button data-toggle="modal" data-target="#modal-esclavo" class="btn" style="background: #7F6000;width: 100%;color: white;font-weight: bold;">¿Soy libre o esclavo?<img src="assets/img/img_ova/buscar.png" style="max-width: 41%;position: absolute;margin-left: -108px;top: 56px;" >Clic para ver</button>
               </div>
             </div>`;
             $('.contendiocirculos').html(cont);
