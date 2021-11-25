@@ -173,14 +173,36 @@ QuestionsSameAnswers.prototype.score =  function () {
     var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
-    if (puntaje == 100) {
+    /*if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
         self.reset(form);
-    });
+    });*/
+    if (puntaje == 100) {
+        
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else if (puntaje >= 75 && puntaje < 100) {
+        
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+    }
+    $("#exampleModal").modal("show");
+}
+function reload(){
+    location.reload();
 }
 
 QuestionsSameAnswers.prototype.prepare_files =  function () {
@@ -236,6 +258,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn shadow btn-lg" style="background: #97182F; color: #fff;" type="submit" >Calificar</button>\
+        <button class="btn shadow btn-lg" style="background: #b3843c; color: #fff;" type="submit" >Calificar</button>\
     </div>\
 </form>'
