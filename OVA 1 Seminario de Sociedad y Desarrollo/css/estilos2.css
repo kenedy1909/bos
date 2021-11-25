@@ -20,6 +20,38 @@
     width: 65px;
 }
 
+.bgactive2 {
+    background-image: url(../assets/img/img_ova/consumismoActive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 65px;
+}
+
+.bgInactive2 {
+    background-image: url(../assets/img/img_ova/consumismoInactive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+}
+
+.bgactive3 {
+    background-image: url(../assets/img/img_ova/saludableActive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 65px;
+}
+
+.bgInactive3 {
+    background-image: url(../assets/img/img_ova/saludableInactive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+}
+
 .img_nav {
     width: 50px;
 }
