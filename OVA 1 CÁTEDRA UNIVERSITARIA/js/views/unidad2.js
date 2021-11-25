@@ -168,7 +168,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Ley 30 de 1992: Servicio Público de Educación Superior. Expresa normas por medio de las cuales se reglamenta la organización del servicio público de la Educación Superior. (El Congreso de Colombia, 28 de Diciembre de 1992).</p>
+                        <p class="justificado font14"><b>Ley 30 de 1992:</b> Servicio Público de Educación Superior. Expresa normas por medio de las cuales se reglamenta la organización del servicio público de la Educación Superior. (El Congreso de Colombia, 28 de Diciembre de 1992).</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC1').addClass('inactive');
@@ -185,7 +185,7 @@ function aparece_abajo(num){
 
             var text = `<div class="custom-scrollbar_U2_1">
                             <div class="custom-scrollbar__inner_U2_1">
-                              <p class="justificado font14">Ley 115 de 1994: Ley General de Educación. Ordena la organización del Sistema Educativo General Colombiano. Esto es, establece normas generales para regular el Servicio Público de la Educación que cumple una función social acorde con las necesidades e intereses de las personas, de la familia y de la sociedad. Respecto a la Educación Superior, señala que ésta es regulada por ley especial, excepto lo dispuesto en la presente Ley. "Excepto en lo dispuesto en la Ley 115 de 1994, sobre Educación Tecnológica que había sido omitida en la Ley 30 de 1992”. Ver Artículo 213 de la Ley 115.</p>
+                              <p class="justificado font14"><b>Ley 115 de 1994:</b> Ley General de Educación. Ordena la organización del Sistema Educativo General Colombiano. Esto es, establece normas generales para regular el Servicio Público de la Educación que cumple una función social acorde con las necesidades e intereses de las personas, de la familia y de la sociedad. Respecto a la Educación Superior, señala que ésta es regulada por ley especial, excepto lo dispuesto en la presente Ley. "Excepto en lo dispuesto en la Ley 115 de 1994, sobre Educación Tecnológica que había sido omitida en la Ley 30 de 1992”. Ver Artículo 213 de la Ley 115.</p>
                             </div>
                             <div class="custom-scrollbar__bar_U2_1">
                               <div class="custom-scrollbar__knob_U2_1 cursor"><p class="text-center linea_scroll_U2_1">-</p></div>
@@ -209,7 +209,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="padding: 10px 0px 1px;">Ley 489 de diciembre 29 de 1998: Por la cual se dictan normas sobre la organización y funcionamiento de las entidades del orden nacional.</p>
+                        <p class="justificado font14" style="padding: 10px 0px 1px;"><b>Ley 489 de diciembre 29 de 1998:</b> Por la cual se dictan normas sobre la organización y funcionamiento de las entidades del orden nacional.</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC1').addClass('inactive');
@@ -225,7 +225,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Decreto 2230 de 2003: Modificación Estructura Ministerio de Educación Nacional. Sanciona normas por las cuales se modifica la estructura del Ministerio de Educación Nacional, y se dictan otras disposiciones. Dado en Bogotá, D. C., a 8 de agosto de 2003.</p>
+                        <p class="justificado font14"><b>Decreto 2230 de 2003:</b> Modificación Estructura Ministerio de Educación Nacional. Sanciona normas por las cuales se modifica la estructura del Ministerio de Educación Nacional, y se dictan otras disposiciones. Dado en Bogotá, D. C., a 8 de agosto de 2003.</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC2').addClass('inactive');
@@ -241,7 +241,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="padding: 20px 40px 2px;">Decreto 644 de 2001: Reglamentación sobre puntajes altos en Exámenes de Estado</p>
+                        <p class="justificado font14" style="padding: 20px 40px 2px;"><b>Decreto 644 de 2001:</b> Reglamentación sobre puntajes altos en Exámenes de Estado</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC2').addClass('inactive');
@@ -257,7 +257,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Acuerdo No. 01 de Junio 23 de 2005: Consejo Nacional de Educación Superior, CESU, por el cual se expide el reglamento interno de funcionamiento.</p>
+                        <p class="justificado font14"><b>Acuerdo No. 01 de Junio 23 de 2005:</b> Consejo Nacional de Educación Superior, CESU, por el cual se expide el reglamento interno de funcionamiento.</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC2').addClass('inactive');
@@ -273,7 +273,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Decreto 4729 de 2007: Por el cual se otorga la Orden a la Educación Superior y a la Fe Pública "Luis López de Mesa".</p>
+                        <p class="justificado font14"><b>Decreto 4729 de 2007:</b> Por el cual se otorga la Orden a la Educación Superior y a la Fe Pública "Luis López de Mesa".</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC4').addClass('inactive');
@@ -289,7 +289,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Decreto 128 de enero 26 de 1976: Por el cual se dicta el estatuto de inhabilidades, incompatibilidades y responsabilidades de los miembros de las juntas directivas de las entidades descentralizadas y de los representantes legales de estas.</p>
+                        <p class="justificado font14"><b>Decreto 128 de enero 26 de 1976:</b> Por el cual se dicta el estatuto de inhabilidades, incompatibilidades y responsabilidades de los miembros de las juntas directivas de las entidades descentralizadas y de los representantes legales de estas.</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC4').addClass('inactive');
@@ -305,7 +305,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Ley 29 de 1990: "Por la cual se dictan disposiciones para el fomento de la investigación científica y el desarrollo tecnológico y se otorgan facultades extraordinarias".</p>
+                        <p class="justificado font14"><b>Ley 29 de 1990:</b> "Por la cual se dictan disposiciones para el fomento de la investigación científica y el desarrollo tecnológico y se otorgan facultades extraordinarias".</p>
                         <p class="justificado font14" style="text-align: right;">Tomado de <b class="color-text">mineducación.gov.co </b></p>
                         `;
             $('.imprimetext1').html(text);
@@ -330,7 +330,7 @@ function aparece_arriba(num) {
 
             var text = `<div class="custom-scrollbar_U2_1">
                             <div class="custom-scrollbar__inner_U2_1">
-                              <p class="justificado font14">Decreto 1403 de 1993: Reglamentación de Ley 30 de 1992. Establece que mientras se dictaminan los requisitos para la creación y funcionamiento de los programas académicos de pregrado que puedan ofrecer las instituciones de educación superior, estas deberán presentar al Ministerio de Educación Nacional por conducto del Instituto Colombiano para el Fomento de la Educación Superior (ICFES), con el fin de garantizar el cumplimiento de los fines de la educación, la información referida al correspondiente programa. Así también regula lo referido a la autorización de la oferta de programas de Maestría, Doctorado y Postdoctorado, de conformidad con la referida Ley. (Dado el 21 de Julio de 1993 y Publicado en el Diario Oficial N° 41.476 del 5 de agosto de 1994).</p>
+                              <p class="justificado font14"><b>Decreto 1403 de 1993:</b> Reglamentación de Ley 30 de 1992. Establece que mientras se dictaminan los requisitos para la creación y funcionamiento de los programas académicos de pregrado que puedan ofrecer las instituciones de educación superior, estas deberán presentar al Ministerio de Educación Nacional por conducto del Instituto Colombiano para el Fomento de la Educación Superior (ICFES), con el fin de garantizar el cumplimiento de los fines de la educación, la información referida al correspondiente programa. Así también regula lo referido a la autorización de la oferta de programas de Maestría, Doctorado y Postdoctorado, de conformidad con la referida Ley. (Dado el 21 de Julio de 1993 y Publicado en el Diario Oficial N° 41.476 del 5 de agosto de 1994).</p>
                             </div>
                             <div class="custom-scrollbar__bar_U2_1">
                               <div class="custom-scrollbar__knob_U2_1 cursor"><p class="text-center linea_scroll_U2_1">-</p></div>
@@ -355,7 +355,7 @@ function aparece_arriba(num) {
 
             var text = `<div class="custom-scrollbar_U2_1">
                             <div class="custom-scrollbar__inner_U2_1">
-                              <p class="justificado font14">Acuerdo No. 02 de Junio 23 de 2005: Consejo Nacional de Educación Superior, CESU, por el cual se subroga el Acuerdo 001 de 2000 del Consejo Nacional de Educación Superior, CESU, y con el cual se expide el reglamento, se determina la integración y las funciones del Consejo Nacional de Acreditación.</p>
+                              <p class="justificado font14"><b>Acuerdo No. 02 de Junio 23 de 2005:</b> Consejo Nacional de Educación Superior, CESU, por el cual se subroga el Acuerdo 001 de 2000 del Consejo Nacional de Educación Superior, CESU, y con el cual se expide el reglamento, se determina la integración y las funciones del Consejo Nacional de Acreditación.</p>
                             </div>
                             <div class="custom-scrollbar__bar_U2_1">
                               <div class="custom-scrollbar__knob_U2_1 cursor"><p class="text-center linea_scroll_U2_1">-</p></div>
@@ -379,7 +379,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="padding: 20px 1px 1px;">Resolución Nº 000167 del 31 de Mayo de 2006: Icfes, por la cual se formaliza una delegación</p>
+                        <p class="justificado font14" style="padding: 20px 1px 1px;"><b>Resolución Nº 000167 del 31 de Mayo de 2006:</b> Icfes, por la cual se formaliza una delegación</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
@@ -395,7 +395,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Resolución N° 183 de Febrero 2 de 2004: Por la cual se define la organización de la Comisión Nacional Intersectorial de Aseguramiento de la Calidad de la Educación Superior, CONACES.</p>
+                        <p class="justificado font14"><b>Resolución N° 183 de Febrero 2 de 2004:</b> Por la cual se define la organización de la Comisión Nacional Intersectorial de Aseguramiento de la Calidad de la Educación Superior, CONACES.</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
@@ -411,7 +411,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="padding: 10px 1px 1px;">Decreto 4675 de 2006: Por el cual se Modifica la Estructura del Ministerio de Educación Nacional</p>
+                        <p class="justificado font14" style="padding: 10px 1px 1px;"><b>Decreto 4675 de 2006:</b> Por el cual se Modifica la Estructura del Ministerio de Educación Nacional</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
@@ -427,7 +427,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Decreto 4674 de 2006: Por el cual se modifica la Planta Global del Ministerio de Educación Nacional.</p>
+                        <p class="justificado font14"><b>Decreto 4674 de 2006:</b> Por el cual se modifica la Planta Global del Ministerio de Educación Nacional.</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
@@ -443,7 +443,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14">Ley 1286 de 2009: "Por la cual se modifica la ley 29 de 1990, se transforma a Colciencias en departamento administrativo, se fortalece el sistema nacional de ciencia, tecnología e innovación en Colombia y se dictan otras disposiciones".</p>
+                        <p class="justificado font14"><b>Ley 1286 de 2009:</b> "Por la cual se modifica la ley 29 de 1990, se transforma a Colciencias en departamento administrativo, se fortalece el sistema nacional de ciencia, tecnología e innovación en Colombia y se dictan otras disposiciones".</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC5').addClass('inactive');
