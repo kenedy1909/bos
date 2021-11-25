@@ -2,6 +2,8 @@ var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
 var star_uni = 0;
+var paso = true;
+let figura = document.getElementById("ctrflecha");
 if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 } else {
@@ -196,11 +198,11 @@ $('.link-menu').off('click').on('click', function(evt) {
     $("#content-ova").load("base/" + enlace + ".html");
     evt.preventDefault();
 });
-$('.link-menu-tema').off('click').on('click', function(evt) {
+$('.link-menu-tema').off('click').on('click', function(evt){
     active = 1;
     var link_item = $(this).find("a").attr('href');
-    var enlace = link_item.replace('#', '');
-    $("#content-ova").load("base/unidades/" + enlace + ".html");
+    var enlace = link_item.replace('#','');
+    $("#content-ova").load("base/unidades/"+enlace+".html");
     evt.preventDefault();
     tema = $(this).data('id');
     console.log(tema);

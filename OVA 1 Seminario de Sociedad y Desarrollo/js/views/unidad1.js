@@ -1,9 +1,14 @@
 $(document).ready(function() {
-    /*slide_predeterminado();*/
-    // console.log(tema);
+    /**/
+    console.log(tema);
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
 
+    star_uni = 1;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    setMigaja("Unidades de aprendizaje", "1. La importancia de la formación humanística", "");
+            
     $('#smartwizard').smartWizard({
         loader: "show",
         theme: 'arrows',
@@ -18,6 +23,7 @@ $(document).ready(function() {
             easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    
     $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
     $('#next').on('click', function() {
@@ -98,25 +104,7 @@ function slide_link(num) {
 }
 
 
-window.onload = function() {
-document.onkeyup = mostrarInformacionTecla; }
-function mostrarInformacionTecla(evObject) {
 
-    var msg = ''; var teclaPulsada = evObject.keyCode;
-
-    if (teclaPulsada == 37) { 
-        slide();
-        actualizarprogress();
-    }
-
-    else if (teclaPulsada == 39) {
-        slide();
-        actualizarprogress();
-    }
-
-    eventoControlado = false;
-
-}
 function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
@@ -526,3 +514,23 @@ function paraIframe(num) {
     }
 
 }
+
+
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide();
+                actualizarprogress();
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide();
+                actualizarprogress();
+                break;
+        }
+    }
+);
