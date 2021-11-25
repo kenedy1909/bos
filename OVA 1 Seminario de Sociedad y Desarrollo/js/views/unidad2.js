@@ -280,14 +280,14 @@ function cambiacontenido2(opcion){
 */
 
 function conjuntos(num) {
-    $(".info_conjuntos").removeClass('fondo_azul_claro');
-    $(".info_conjuntos" + num).addClass('fondo_azul_claro');
-    $(".info_conjuntos").removeClass('shadow');
-    $(".info_conjuntos" + num).addClass('shadow');
+    //$(".info_conjuntos").removeClass('shadow');
+    //$(".info_conjuntos" + num).addClass('shadow');
     if (num == 1) {
+        $(".info_conjuntos1").addClass('bgactive1');
+        $(".info_conjuntos1").removeClass('bgInactive1');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado text-black font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
                         Para algunos autores como Lyotard (1987), la Postmodernidad más que un momento en tiempo o lugar, se trata de una condición devenida a causa de las promesas rotas y efectos adversos que la modernidad originó, lo cual llevó a la sociedad al escepticismo y desconfianza de aquellos discursos que aseguraban el dominio del mundo y el progreso en todas las esferas. 
 
                       </p>
@@ -296,9 +296,11 @@ function conjuntos(num) {
         $("#info_unidad2").html(conjunto)
     }
     if (num == 2) {
+        $(".info_conjuntos1").removeClass('bgactive1');
+        $(".info_conjuntos1").addClass('bgInactive1');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado text-black font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
                         Al precisar que a través de la razón no se lograba lo esperado, el hombre busca otras maneras de satisfacer sus necesidades, y encuentra respuesta en el placer, placer que debe ser ocupado en el presente, pues el futuro es incierto. Lo anterior conlleva a un aumento del consumismo, ya que, aquellos relatos que prometían un mundo mejor donde existía la paz, la libertad y la igualdad, ya no son creíbles e incluso llevan la desconfianza hacia quien quiera volver a ellos
 
                       </p>
@@ -309,7 +311,7 @@ function conjuntos(num) {
     if (num == 3) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado text-black font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
                         Se deja de lado el uso de la razón; lo importante ahora es el entretenimiento, justificando el hombre que la realidad y el mundo son complejos, y que, a través del razonamiento no es posible dimensionarlos y mucho menos dominarlos; así que ahora cada idea tiene algo de verdad, pero ni siquiera haciendo una suma de ellas, se logra explicar el mundo; no hay un relato absoluto, cada quien tiene su propia perspectiva o subjetividad y es cada uno el encargado de dar sentido o explicación a esa realidad. 
 
                       </p>
@@ -320,7 +322,7 @@ function conjuntos(num) {
     if (num == 4) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado text-black font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
                         Es en la postmodernidad que el ser humano hace una exigencia del reconocimiento de la pluralidad, negando la posibilidad de homogeneización que planteaba la Modernidad, defendiendo la diversidad como algo genuino y aduciendo la necesidad de libertad para decidir el estilo y forma de vida que cada quien decide llevar; esto da paso a  visibilizar las minorías que hasta el momento se encontraban relegadas por no considerarse relevantes para los procesos de avance de la sociedad, pero ahora se les da lugar otorgándoles valor e integrando la diversidad. 
 
                       </p>
@@ -331,7 +333,7 @@ function conjuntos(num) {
     if (num == 5) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
-                      <p class="justificado text-black font13 caja-texto-b">
+                      <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
                         Finalmente, en este estado, el ser humano busca liberarse de estándares y prototipos que de manera sutil le han sido impuestos, y para ello hace uso del arte y realiza manifestaciones en contra de las normas que lo quieren regir y limitar, buscando apartar aquello que quiere indicarle lo que debe y no debe ser.
 
                       </p>
