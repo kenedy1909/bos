@@ -2,37 +2,37 @@
 // la palabra en cuestión y la pista que se presenta al usuario
 const palabras = [
   {
-    pos: [3, 0],
-    sentido: 1,
+    pos: [0, 3],
+    sentido: 0,
     palabra: 'mito cosmogonico',
     pista: 'Relato explicativo sobre las causas del origen del mundo'
   },
   {
-    pos: [10, 0],
+    pos: [3, 0],
     sentido: 1,
     palabra: 'mito teogonico',
     pista: 'Relato explicativo acerca del origen de los dioses'
   },
   {
-    pos: [15, 3],
+    pos: [13, 2],
     sentido: 1,
     palabra: 'mito antropagonico',
     pista: 'Relato explicativo de carácter religioso sobre el origen del humano'
   },
   {
-    pos: [0, 4],
+    pos: [0, 19],
     sentido: 0,
     palabra: 'mitos fundacionales',
     pista: 'Discurso explicativo de carácter mítico sobre el origen de un país'
   },
   {
-    pos: [1, 9],
+    pos: [0, 9],
     sentido: 0,
     palabra: 'mitos morales',
     pista: 'Discurso explicativo generalmente de origen de las ideas del bien y el mal'
   },
   {
-    pos: [7, 9],
+    pos: [0, 14],
     sentido: 0,
     palabra: 'mito escatologico',
     pista: 'Discurso explicativo sobre el fin del mundo'
