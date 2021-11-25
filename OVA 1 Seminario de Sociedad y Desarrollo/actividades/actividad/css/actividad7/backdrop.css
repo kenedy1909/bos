@@ -215,10 +215,10 @@ html{
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('../../img/img7/bien.png') center no-repeat;
+    background: url('./img/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img7/mal.png') center no-repeat;
+    background: url('./img/mal.png') center no-repeat;
 }
 .calificacion .modal-body .mensaje{
     background: #fff;
