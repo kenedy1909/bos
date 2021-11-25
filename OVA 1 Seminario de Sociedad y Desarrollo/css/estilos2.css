@@ -348,8 +348,23 @@ button {
 
 .back-green {
     background-color: rgba(255, 192, 0);
-    padding: 30px;
-    border-radius: 30px;
+    padding: 8px 3px 20px 23px;
+    border-radius: 20px;
+    height: 180px;
+    width: 310px;
+    margin-left: 27px;
+    overflow: auto;
+}
+
+.back-green1 {
+    background-color: rgba(255, 192, 0);
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+    height: 180px;
+    width: 310px;
+    margin-left: 27px;
+    margin-top: -62px;
+    overflow: auto;
 }
 
 .titulo_decorado {
@@ -369,7 +384,7 @@ button {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     position: absolute;
-    height: 15em;
+    height: 110px;
     width: 70%;
     left: 42px;
     /* border: solid 2px green; */
@@ -389,6 +404,21 @@ button {
 
 .margin-auto {
     margin: auto;
+}
+
+
+/*Flechas*/
+
+.triangulo-2 {
+    width: 0;
+    height: 0;
+    transform: rotate(90deg);
+    border-left: 30px solid #78201A;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    margin-left: 152px;
+    position: relative;
+    top: -18px;
 }
 
 .button-green {
