@@ -851,20 +851,48 @@
                               <div class="col-md-12 p-3 d-flex">
                                 <div class="position-relative p-0 m-0 img-40">
                                   <img src="assets/img/img_ova/reunion.png" class="img-100 m-auto">
-                                  <div class="radius-50 d-flex position-absolute bg-morado funcionalidad_10_btn1 cursor shadow"  style="left: 30%; top: 42%; width: 50px; height: 50px;"><h1 class="p_white m-auto"><b>1</b></h1></div>
-                                  <div class="radius-50 d-flex position-absolute bg-morado funcionalidad_10_btn2 cursor shadow"  style="left: 70%; top: 40%; width: 50px; height: 50px;"><h1 class="p_white m-auto"><b>2</b></h1></div>
+                                  <div class="radius-50 d-flex position-absolute bg-morado funcionalidad_10_btn1 cursor shadow"  onclick="aprecer(1)" style="left: 30%; top: 42%; width: 50px; height: 50px;"><h1 class="p_white m-auto"><b>1</b></h1></div>
+                                  <div class="radius-50 d-flex position-absolute bg-morado funcionalidad_10_btn2 cursor shadow"  onclick="aprecer(2)" style="left: 70%; top: 40%; width: 50px; height: 50px;"><h1 class="p_white m-auto"><b>2</b></h1></div>
                                 </div>
                                 <div class="px-0 img-60">
                                     <div class="col-md-12 blancus">
-                                      <div class="contenttex">
-                                        
+                                      <div class="contenttex contx1 d-none">
+                                        <b class="p_black">El Quórum:</b><br>
+                                        <p class="size_13 p_black">Es igual para todas las funciones de la Sala. Por regla general es de 30 miembros; y solo tiene una excepción; la cual, se presenta por la muerte de los fundadores a partir del momento en que solo queden 60 de ellos vivos. Esta excepción está consagrada en el inciso 7º del artículo 19. Esta norma no incluyó el evento en el cual haya solo 30 fundadores vivos; pero, como en ese caso, la Sala aún existe y las excepciones no se pueden extender por fuera de los límites de la norma, cuando haya 30 fundadores vivos, el cuórum volverá a ser de 30 miembros.</p><br>
+                                        <p class="size_13">Clic en los círculos para avanzar en la información del Quorum y Mayoría:</p>
                                       </div>
-                                      <div class="row d-flex justify-content-center">
-                                        <div class="btn_mora"></div>
-                                        <div class="btn_mora"></div>
-                                        <div class="btn_mora"></div>
-                                        <div class="btn_mora"></div>
-                                        <div class="btn_mora"></div>
+                                      <div class="contenttex contx2 d-none">
+                                        <b class="p_black">El Quórum se refiere siempre a los miembros:</b><br><br>
+                                        <p class="size_13 p_black">En la Sala de Fundadores es igual para todas las funciones. Y, a pesar de que la norma citada se refiere al quórum para deliberar, el establecido en ella se requiere también para decidir, porque no existe norma que establezca un quórum diferente para ello. Solo cambia por muerte de los Fundadores.</p>
+                                      </div>
+                                      <div class="contenttex contx3 d-none">
+                                        <b class="p_black">Para La Mayoría, la regla general es:</b><br><br>
+                                        <p class="size_13 p_black">Que para aprobar cualquier propuesta, en la Sala de Fundadores, se requiere “la mitad más uno de los votos de los asistentes”, pero no siempre se aplica esta regla, ya que la mayoría puede cambiar según la función a la cual se refiera. Por eso, existen varias excepciones, porque para algunas de las funciones de la Sala se exige una mayoría diferente.</p>
+                                      </div>
+                                      <div class="contenttex contx4 d-none">
+                                        <b class="p_black">Las excepciones a esa regla general son:</b><br><br>
+                                        <ul>
+                                          <li class="size_13 p_black">La designación de la Comisión Permanente porque se aplica el cociente electoral. (art. 34, inc. 3º).</li>
+                                          <li class="size_13 p_black">La designación de Asociados Honorarios, porque requiere ¾ de los votos de los asistentes. (art.16).</li>
+                                          <li class="size_13 p_black">La reforma de Estatutos, porque requiere 2/3 de los votantes. (art. 19, lit. h).</li>
+                                          <li class="size_13 p_black">La disolución voluntaria de la Corporación, porque requiere 2/3 de los asistentes. (art. 6º, inc. 3º).</li>
+                                          <li class="size_13 p_black">La liquidación de la Corporación si la disolución fue voluntaria, porque requiere mayoría simple. (art. 6º, inciso 5º).</li>
+                                        </ul>
+                                      </div>
+                                      <div class="contenttex contx5 d-none">
+                                        <p class="p_black size_13">La mayoría la constituyen los votos, pero la norma que la determine se puede basar en uno de los siguientes factores:</p><br>
+                                        <ul>
+                                          <li class="size_13 p_black">En el número de miembros que conforman el órgano.</li>
+                                          <li class="size_13 p_black">En los votos que se emitan o.</li>
+                                          <li class="size_13 p_black">En los asistentes a la reunión.</li>
+                                        </ul>
+                                      </div>
+                                      <div class="row d-flex justify-content-center pt-1 botones  escondida">
+                                        <div class="btn_mora mora1 btn_moraInactive" onclick="fun35(1)"></div>
+                                        <div class="btn_mora mora2 btn_moraInactive" onclick="fun35(2)"></div>
+                                        <div class="btn_mora mora3 btn_moraInactive" onclick="fun35(3)"></div>
+                                        <div class="btn_mora mora4 btn_moraInactive" onclick="fun35(4)"></div>
+                                        <div class="btn_mora mora5 btn_moraInactive" onclick="fun35(5)"></div>
                                       </div>
                                     </div>
                                 </div>
@@ -873,30 +901,30 @@
                        </div>
                        <div id="unidad3-6" class="tab-pane" role="tabpanel" style="background: #ffffff;">
                           <div class="row">
-                              <div class="col-md-4 row">
+                              <div class="col-md-5 row">
                                  <img class="img_activi" src="assets/img/img_ova/actividad_general.png" style="">
                                  <div class="text-img-activi">
                                    <b class="texto_activi-o" style="">ACTIVIDAD #9</b>
                                  </div>
                               </div>
-                              <div class="col-md-8 shadow contenedor_indi" style="background: #D9D9D9;">
+                              <div class="col-md-7 shadow contenedor_indi" style="background: #D9D9D9;">
                                   <div class="">
-                                     <p class="row"><img src="assets/img/img_ova/actividad.png" class="logo_copiar" style=""><b style="color: #000;">Actividad de lectura.</b></p> 
+                                     <p class="row"><img src="assets/img/img_ova/actividad.png" class="logo_copiar" style=""><spam style="color: #000;">Actividad de lectura.</spam></p> 
                                   </div>
                                   <div class="">
-                                      <p class="row"><img src="assets/img/img_ova/reloj.png" style="max-width: 33px;"><b style="color: #000;font-size: 15px;width: 70%;">Tiempo estimado: 1 hora.</b></p>
+                                      <p class="row"><img src="assets/img/img_ova/reloj.png" style="max-width: 33px;"><spam style="color: #000;font-size: 15px;width: 70%;">Tiempo estimado: 1 hora.</spam></p>
                                   </div>
                               </div>
                           </div>
                           <div class="row mt-5">
                               <div class="col-md-6 my-3">
                                 <div class="col-md-12 d-flex">
-                                  <div class="img-70 m-auto">
-                                    <p class="bg-color-activi-c p_white p-3 text-center">Clic sobre el círculo para conocer la actividad a desarrollar:</p>
+                                  <div class="img-100 m-auto">
+                                    <p class="bg-color-activi-c p_white p-1 text-center size_13">Clic sobre el círculo para conocer la actividad a desarrollar:</p>
                                   </div>
                                 </div>
                                 <div class="col-md-12 d-flex py-3" id="info_funcionalidad_12_1">
-                                  <img src="assets/img/img_ova/leyendo1.png" class="img-70 m-auto">
+                                  <img src="assets/img/img_ova/leyendo1.png" class="img-80 m-auto">
                                 </div>
                                 <div class="col-md-12 d-flex">
                                      <div style="width: 80%;" class="m-auto position-relative d-flex">
@@ -908,24 +936,24 @@
                               </div>
                               <div class="border-left-color-c col-md-6 my-3">
                                 <div class="col-md-12 d-flex">
-                                  <div class="img-70 m-auto">
-                                    <p class="bg-color-activi-c p_white p-3 text-center">Clic sobre el ícono para continuar con la actividad:</p>
+                                  <div class="img-100 m-auto">
+                                    <p class="bg-color-activi-c p_white p-1 text-center size_13">Clic sobre el ícono para continuar con la actividad:</p>
                                   </div>
                                 </div>
                                 <div class="col-md-12 d-flex py-3 cursor" onclick="funcionalidad_12(2)" id="info_funcionalidad_12_2">
-                                  <img src="assets/img/img_ova/escritura1.png" class="img-70 shadow rounded-circle m-auto">
+                                  <img src="assets/img/img_ova/escritura1.png" class="img-40 shadow rounded-circle m-auto">
                                 </div>
                               </div>
                           </div>
                        </div>
                        <div id="unidad3-7" class="tab-pane" role="tabpanel">
                           <div class="row px-3">
-                              <div class="col-md-4">
+                              <div class="col-md-5">
                                   <div class="d-flex">
                                     <img src="assets/img/img_ova/actividad_complementaria.png" alt="" style="width: 30%;">
                                     <div class="text-center pt-3" style="font-size: 20px;">
-                                      <b style="color: #540F23;">ACTIVIDADES COMPLEMENTARIAS</b>
-                                      <div style="height: 5px; background: #540F23;"></div>
+                                      <b style="color: #811111;">ACTIVIDADES COMPLEMENTARIAS</b>
+                                      <div style="height: 5px; background: #811111;"></div>
                                     </div>
                                   </div>
                                   <div class="px-4 pt-2">
@@ -933,7 +961,7 @@
                                     <p class="p_black mt-2"><i> Este archivo se descargará automáticamente</i></p>
                                   </div>
                               </div>
-                              <div class="col-md-8 border-left-color-c">
+                              <div class="col-md-7 border-left-color-c">
                                   <div class="row">
                                     <div class="col-md-3" style="padding-top: 135px;">
                                       <a href="assets/PDF/DOCUMENTOS_COMPLEMENTARIOS.zip" download="assets/PDF/DOCUMENTOS_COMPLEMENTARIOS.zip"><button class="btn text-white shadow" style="height: fit-content; background: #540F23;"><h2><b>Descargar</b></h2></button></a>

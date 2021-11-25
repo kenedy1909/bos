@@ -466,31 +466,37 @@ function funcionalidad_11(num) {
 function funcionalidad_12(num) {
     if (num == 1) {
         $("#info_funcionalidad_12_1").html(`
-                                        <div class="bg-color-activi-c radius-2 img-90 m-auto d-flex">
+                                        <div class="bg-color-activi-c radius-2 img-100 m-auto d-flex">
                                             <div class="p_white p-3 text-center img-65">
-                                              <p>Con el fin de ampliar el contenido anterior, lea el documento PDF <b><i>“Elecciones de los representantes de los estudiantes y de los profesores en UNAULA”.</i></b></p>
+                                              <p class="size_13 justificado">Con el fin de ampliar el contenido anterior, lea el documento PDF <b><i>“Elecciones de los representantes de los estudiantes y de los profesores en UNAULA”.</i></b></p>
                                               <br>
-                                              <p>Haga clic en el botón PDF.</p>
+                                              <p class="size_13">Haga clic en el botón PDF.</p>
                                             </div>
                                             <div class="img-35 d-flex">
                                                 <a href="assets/PDF/UNIDAD 3/pdf-5.pdf" target="_blank" class="img-60 m-auto"><img src="assets/img/img_ova/pdf.png" class="img-100 m-auto"></a>
                                             </div>
                                         </div>
                                         `);
+        $("#info_funcionalidad_12_2").html(`
+                                        <img src="assets/img/img_ova/escritura1.png" class="img-40 shadow rounded-circle m-auto">
+                                        `);
     }else if (num == 2) {
         /*alert();*/
         $("#info_funcionalidad_12_2").html(`
                                         <div class="radius-2 img-100 m-auto" style="background: #D9D9D9;">
                                             <div class="img-100">
-                                                <div class="img-20 m-2 d-flex">
+                                                <div class="img-15 m-2 d-flex">
                                                     <img src="assets/img/img_ova/escritura1.png" class="img-100 m-auto">
                                                 </div>
                                             </div>
                                             <div class="p_black p-3 text-center img-100">
-                                              <p class="justificado">Después de la lectura, realice un paralelo entre cogobierno de UNAULA y el cogobierno Córdoba, teniendo en cuenta la lectura del documento PDF <b><a href="assets/PDF/UNIDAD 3/pdf-6.pdf" target="_blank" class="p_black">“Manifiesto de córdoba".</a></b></p>
+                                              <p class="justificado size_13">Después de la lectura, realice un paralelo entre cogobierno de UNAULA y el cogobierno Córdoba, teniendo en cuenta la lectura del documento PDF <b><a href="assets/PDF/UNIDAD 3/pdf-6.pdf" target="_blank" class="p_black">“Manifiesto de córdoba".</a></b></p>
                                               <br>
                                             </div>
                                         </div>
+                                        `);
+        $("#info_funcionalidad_12_1").html(`
+                                        <img src="assets/img/img_ova/leyendo1.png" class="img-80 m-auto">
                                         `);
     }
 }
@@ -522,4 +528,141 @@ function paraIframe(num){
             break;
     }
     
+}
+
+function aprecer(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.botones').removeClass('escondida');
+
+            $(".funcionalidad_10_btn1").removeClass('bg-morado');
+            $(".funcionalidad_10_btn1").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn2").addClass('bg-morado');
+            $(".funcionalidad_10_btn2").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx1').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora1').removeClass('btn_moraInactive');
+            $('.mora1').addClass('btn_moraActive');
+            break;
+        case 2:
+            $('.botones').removeClass('escondida');
+
+            $(".funcionalidad_10_btn2").removeClass('bg-morado');
+            $(".funcionalidad_10_btn2").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn1").addClass('bg-morado');
+            $(".funcionalidad_10_btn1").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx3').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora3').removeClass('btn_moraInactive');
+            $('.mora3').addClass('btn_moraActive');
+            break;
+        default:
+            // statements_def
+            break;
+    }
+
+}
+function fun35(num){
+    switch (parseInt(num)) {
+        case 1:
+            $(".funcionalidad_10_btn1").removeClass('bg-morado');
+            $(".funcionalidad_10_btn1").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn2").addClass('bg-morado');
+            $(".funcionalidad_10_btn2").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx1').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora1').removeClass('btn_moraInactive');
+            $('.mora1').addClass('btn_moraActive');
+
+            break;
+        case 2:
+            $(".funcionalidad_10_btn1").removeClass('bg-morado');
+            $(".funcionalidad_10_btn1").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn2").addClass('bg-morado');
+            $(".funcionalidad_10_btn2").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx2').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora2').removeClass('btn_moraInactive');
+            $('.mora2').addClass('btn_moraActive');
+
+            break;
+        case 3:
+            $(".funcionalidad_10_btn2").removeClass('bg-morado');
+            $(".funcionalidad_10_btn2").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn1").addClass('bg-morado');
+            $(".funcionalidad_10_btn1").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx3').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora3').removeClass('btn_moraInactive');
+            $('.mora3').addClass('btn_moraActive');
+
+            break;
+        case 4:
+            $(".funcionalidad_10_btn2").removeClass('bg-morado');
+            $(".funcionalidad_10_btn2").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn1").addClass('bg-morado');
+            $(".funcionalidad_10_btn1").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx4').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora4').removeClass('btn_moraInactive');
+            $('.mora4').addClass('btn_moraActive');
+
+            break;
+        case 5:
+            $(".funcionalidad_10_btn2").removeClass('bg-morado');
+            $(".funcionalidad_10_btn2").addClass('bg-rojo-1');
+
+            $(".funcionalidad_10_btn1").addClass('bg-morado');
+            $(".funcionalidad_10_btn1").removeClass('bg-rojo-1');
+
+            $('.contenttex').addClass('d-none');
+            $('.contx5').removeClass('d-none');
+
+            $('.btn_mora').removeClass('btn_moraActive');
+            $('.btn_mora').addClass('btn_moraInactive');
+            
+            $('.mora5').removeClass('btn_moraInactive');
+            $('.mora5').addClass('btn_moraActive');
+
+            break;
+        default:
+            // statements_def
+            break;
+    }
 }

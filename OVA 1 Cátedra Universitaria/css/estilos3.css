@@ -138,16 +138,26 @@ a.control_next {
   background: #fff;
       height: 250px;
       border-radius: 30px;
+    padding: 10px;
 }
 .btn_mora{
   width: 15px;
   height: 15px;
-  background: #540F23;
   border-radius: 50%;
   margin-left: 15px;
+  cursor: pointer;
+}
+.btn_moraActive{
+  background: #E32242;
+}
+.btn_moraInactive{
+  background: #540F23;
 }
 .contenttex{
   height: 210px;
   padding: 10px;
   overflow: auto;
+}
+.escondida{
+  visibility: hidden;
 }
