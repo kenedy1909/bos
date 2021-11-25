@@ -452,7 +452,7 @@ jQuery(document).ready(function($) {
     var slideHeight = $('#slider-uni-1 ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
 
-    $('#slider-uni-1').css({ width: '100%', height: slideHeight });
+    $('#slider-uni-1').css({ width: '100%', height: '300px' });
 
     $('#slider-uni-1 ul').css({ width: '70%', marginLeft: -slideWidth });
 

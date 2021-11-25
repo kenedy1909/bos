@@ -16,18 +16,19 @@
     <div class="backdrop in">
         <div class="fondo">
             <header>
-                <div class="row">
-                    <div class="col-md-5">
+                <div class="row" style="display: inline-block;">
+                    <div class="col-md-5" style="display: inline-block;width: 40%;">
                         <div class="d-flex">
-                          <img src="../img/img6/actividad_interactiva.png" alt="" style="width: 116px; height: 116px;">
+                          <img src="../img/img6/actividad_interactiva.png" alt="" style="width: 116px; height: 116px;position: relative;top: 25px;">
                           <div class="text-center pt-5" style="font-size: 20px;">
-                            <b class="text-center">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px; background: #004c6d;"></div>
+                            <b class="text-center" style="color: #b3843c;">ACTIVIDAD INTERACTIVA</b>
+                            <div style="height: 5px; background: #b3843c;"></div>
+                            <p class="text-muted"><em>FALSO/VERDADERO</em></p>
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-7 row">
-                        <p class="info_actividad shadow ">
+                    <div class="col-md-7 row" style="display: inline-block;width: 60%;">
+                        <p class="info_actividad shadow " style="font-size: 18px;">
                             Seleccione falso o verdadero según corresponda, al finalizar pulse la opción <b>"Calificar"</b> para conocer su puntuación.
                         </p>
                     </div>
@@ -44,7 +45,7 @@
 
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <!-- <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body center-block">
@@ -57,6 +58,35 @@
                     <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
                         intentar</button>
                     <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="    margin-top: 25%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
+                    </div>
+                    <div class="d-flex justify-content-center" style="justify-content: center;">
+                        <div style="" class="circulo_modal img_res">
+
+                        </div>
+                    </div>
+                    <div style="padding: 10px;">
+                        <div style="color: white;font-size: 15px;display: flex;">
+                          Su puntaje es: <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 15px;">
+                            <p class="mensaje"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                    </div>
                 </div>
             </div>
         </div>
