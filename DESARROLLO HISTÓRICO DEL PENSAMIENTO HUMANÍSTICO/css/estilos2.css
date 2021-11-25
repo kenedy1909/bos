@@ -410,7 +410,7 @@ p, button{
 }
 
 .textobanewhite{
-  min-height: 300px;
+  min-height: 395px;
   width: 80%;
   background: white;
   border-radius: 50px;
@@ -547,8 +547,8 @@ a.control_next {
 
 .btn_video2{
     background: #FFD966;
-    height: 30px;
-    width: 40px;
+    height: 35px;
+    width: 44px;
     font-weight: bold;
     box-shadow: 1px 1px 3px 0px black;
     border-radius: 10px;
@@ -557,6 +557,7 @@ a.control_next {
     top: 25px;
     color: black;
     z-index: 100;
+    padding-top: 5px;
 }
 
 .nota{
@@ -817,4 +818,40 @@ a.control_next {
   margin: 0px;
   padding-top: 20px;
   text-align: center;
+}
+
+.losclick_1{
+  background-image: url('../assets/img/img_ova/flecha1.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_2{
+  background-image: url('../assets/img/img_ova/flecha2.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_3{
+  background-image: url('../assets/img/img_ova/flecha3.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_4{
+  background-image: url('../assets/img/img_ova/flecha4.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_5{
+  background-image: url('../assets/img/img_ova/flecha5.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_6{
+  background-image: url('../assets/img/img_ova/flecha6.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
 }

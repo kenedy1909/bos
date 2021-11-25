@@ -837,7 +837,7 @@ navegacion pantalla1*/
 	top: -20px;
 	width: 0px;
 	height: 0px;
-	border-left: 40px solid #ECC95E;
+	border-left: 40px solid #FFD966;
 	border-top: 23px solid transparent;
 	border-bottom: 27px solid transparent;
 	transform: rotate(90deg);
@@ -857,13 +857,13 @@ navegacion pantalla1*/
 	width: 74px;
 	height: 74px;
 	border-radius: 50%;
-	background: #ECC95E;
+	background: #FFD966;
 	text-align: center;
 	box-shadow: 1px 3px 7px -3px;
 }
 
 .linea_blanca{
-	background: #ECC95E;
+	background: #FFD966;
 	height: 5px;
 	position: relative;
 	top: -37px;
@@ -873,7 +873,7 @@ navegacion pantalla1*/
 
 .contenido_nav_p1{
 	min-height: 200px;
-    background: #ECC95E;
+    background: #FFD966;
     border-radius: 40px;
     margin: 30px 16px 10px 0px;
     padding: 50px 15px 1px 15px;
@@ -1276,16 +1276,17 @@ input[type=range]::-ms-fill-upper {
 
 /*circulo canvas*/
 .circulo_blue_canvas{
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
   border-radius: 50%;
   background: #B3C6E7;
   padding-top: 25px;
   position: absolute;
+  z-index: 2;
 }
 .circulo_morado{
-  height: 350px;
-  width: 350px;
+  height: 340px;
+  width: 340px;
   background: #FEE599;
   border-radius: 50%;
   position: absolute;
@@ -1294,8 +1295,8 @@ input[type=range]::-ms-fill-upper {
   z-index: 100;
 }
 .cont_circle_principal{
-  height: 400px;
-  width: 400px;
+  height: 390px;
+  width: 390px;
 }
 .circulo_blanco_can{
   height: 350px;
@@ -1701,7 +1702,7 @@ a.control_next {
   position: relative;
   margin: 0;
   padding: 0;
-  height: 200px;
+  height: 280px;
   list-style: none;
 }
 
@@ -1919,4 +1920,17 @@ section {
 }
 .activa{
   background: #8B6229;
+}
+
+.btns{
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	background: #833C0B;
+	z-index: 5;
+}
+
+.bg-azu{
+	background: #B3C6E7;
 }
