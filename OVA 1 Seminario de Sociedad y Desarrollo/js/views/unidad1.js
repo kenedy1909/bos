@@ -1,9 +1,8 @@
 $(document).ready(function() {
-    /*slide_predeterminado();*/
-    // console.log(tema);
+    /**/
+    console.log(tema);
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
-    
 
     star_uni = 1;
     paso = false;
@@ -24,6 +23,7 @@ $(document).ready(function() {
             easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    
     $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
     $('#next').on('click', function() {
@@ -516,7 +516,7 @@ function paraIframe(num) {
 }
 
 
-let figura = document.getElementById("ctrflecha");
+figura = document.getElementById("ctrflecha");
 
 document.addEventListener("keydown",
     function(event) {
