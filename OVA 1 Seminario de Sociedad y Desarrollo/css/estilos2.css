@@ -382,7 +382,7 @@ button {
 }
 
 .contenido_decorado:hover {
-    height: 33em;
+    height: 40em;
     color: #000000;
     /*display: block;*/
 }
@@ -404,8 +404,9 @@ button {
 }
 
 .img-circle {
-    top: -3%;
     padding: 20px;
+    width: 100%;
+    height: 105%;
     background-color: #999999 !important;
 }
 
