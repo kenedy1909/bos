@@ -52,6 +52,38 @@
     width: 65px;
 }
 
+.bgactive4 {
+    background-image: url(../assets/img/img_ova/diversidadActive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 65px;
+}
+
+.bgInactive4 {
+    background-image: url(../assets/img/img_ova/diversidadInactive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+}
+
+.bgactive5 {
+    background-image: url(../assets/img/img_ova/inspiracionActive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 65px;
+}
+
+.bgInactive5 {
+    background-image: url(../assets/img/img_ova/inspiracionInactive.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 65px;
+}
+
 .img_nav {
     width: 50px;
 }

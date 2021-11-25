@@ -288,6 +288,15 @@ function conjuntos(num) {
 
         $(".info_conjuntos2").removeClass('bgactive2');
         $(".info_conjuntos2").addClass('bgInactive2');
+
+        $(".info_conjuntos3").removeClass('bgactive3');
+        $(".info_conjuntos3").addClass('bgInactive3');
+
+        $(".info_conjuntos4").removeClass('bgactive4');
+        $(".info_conjuntos4").addClass('bgInactive4');
+
+        $(".info_conjuntos5").removeClass('bgactive5');
+        $(".info_conjuntos5").addClass('bgInactive5');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
@@ -307,6 +316,12 @@ function conjuntos(num) {
 
         $(".info_conjuntos3").removeClass('bgactive3');
         $(".info_conjuntos3").addClass('bgInactive3');
+
+        $(".info_conjuntos4").removeClass('bgactive4');
+        $(".info_conjuntos4").addClass('bgInactive4');
+
+        $(".info_conjuntos5").removeClass('bgactive5');
+        $(".info_conjuntos5").addClass('bgInactive5');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
@@ -326,6 +341,12 @@ function conjuntos(num) {
 
         $(".info_conjuntos3").removeClass('bgInactive3');
         $(".info_conjuntos3").addClass('bgactive3');
+
+        $(".info_conjuntos4").removeClass('bgactive4');
+        $(".info_conjuntos4").addClass('bgInactive4');
+
+        $(".info_conjuntos5").removeClass('bgactive5');
+        $(".info_conjuntos5").addClass('bgInactive5');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
@@ -337,6 +358,20 @@ function conjuntos(num) {
         $("#info_unidad2").html(conjunto)
     }
     if (num == 4) {
+        $(".info_conjuntos1").removeClass('bgactive1');
+        $(".info_conjuntos1").addClass('bgInactive1');
+
+        $(".info_conjuntos2").removeClass('bgactive2');
+        $(".info_conjuntos2").addClass('bgInactive2');
+
+        $(".info_conjuntos3").removeClass('bgactive3');
+        $(".info_conjuntos3").addClass('bgInactive3');
+
+        $(".info_conjuntos4").removeClass('bgInactive4');
+        $(".info_conjuntos4").addClass('bgactive4');
+
+        $(".info_conjuntos5").removeClass('bgactive5');
+        $(".info_conjuntos5").addClass('bgInactive5');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
@@ -348,6 +383,20 @@ function conjuntos(num) {
         $("#info_unidad2").html(conjunto)
     }
     if (num == 5) {
+        $(".info_conjuntos1").removeClass('bgactive1');
+        $(".info_conjuntos1").addClass('bgInactive1');
+
+        $(".info_conjuntos2").removeClass('bgactive2');
+        $(".info_conjuntos2").addClass('bgInactive2');
+
+        $(".info_conjuntos3").removeClass('bgactive3');
+        $(".info_conjuntos3").addClass('bgInactive3');
+
+        $(".info_conjuntos4").removeClass('bgactive4');
+        $(".info_conjuntos4").addClass('bgInactive4');
+
+        $(".info_conjuntos5").removeClass('bgInactive5');
+        $(".info_conjuntos5").addClass('bgactive5');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
