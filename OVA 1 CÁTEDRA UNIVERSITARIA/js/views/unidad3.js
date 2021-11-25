@@ -149,25 +149,25 @@ function controlSlides(num){
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             var pdf = `<p class="p_white">
-                            <a href="assets/PDF/UNIDAD 3/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Código de ética y buen gobierno <b class="text-cafe"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD 3/pdf-1.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Código de ética y buen gobierno <b class="text-cafe"><u>Ver</u></b></a>
                       </p>
                       <p class="p_white">
-                          <a href="assets/PDF/UNIDAD 3/pdf-2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">EL presidente y vicepresidente <b class="text-cafe"><u>Ver</u></b></a>
+                          <a href="assets/PDF/UNIDAD 3/pdf-2.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">EL presidente y vicepresidente <b class="text-cafe"><u>Ver</u></b></a>
                     </p>
                         <p class="p_white">
-                          <a href="assets/PDF/UNIDAD 3/pdf-3.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Elecciones de los representantes de los estudiantes y de los profesores en UNAULA<b class="text-cafe"><u>Ver</u></b></a>
+                          <a href="assets/PDF/UNIDAD 3/pdf-3.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Elecciones de los representantes de los estudiantes y de los profesores en UNAULA<b class="text-cafe"><u>Ver</u></b></a>
                     </p>
                     <p class="p_white">
-                        <a href="assets/PDF/UNIDAD 3/pdf-4.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Manifiesto de Córdoba<b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD 3/pdf-4.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Manifiesto de Córdoba<b class="text-cafe"><u>Ver</u></b></a>
                     </p>
                     <p class="p_white">
-                        <a href="assets/PDF/UNIDAD 3/pdf-5.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Reforma estatutos UNAULA 2018<b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD 3/pdf-5.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Reforma estatutos UNAULA 2018<b class="text-cafe"><u>Ver</u></b></a>
                     </p>
                     <p class="p_white">
-                        <a href="assets/PDF/UNIDAD 3/organos-de-gobierno.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Órganos de gobierno<b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD 3/organos-de-gobierno.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Órganos de gobierno<b class="text-cafe"><u>Ver</u></b></a>
                     </p>
                     <p class="p_white">
-                        <a href="assets/PDF/UNIDAD 1/Reforma-estatutos-UNAULA-2020.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png">Reforma estatutos UNAULA 2020<b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD 1/Reforma-estatutos-UNAULA-2020.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Reforma estatutos UNAULA 2020<b class="text-cafe"><u>Ver</u></b></a>
                     </p>`;
             $('.pdfs').html(pdf);
             break;

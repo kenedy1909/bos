@@ -266,7 +266,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 70%;
+  max-width: 50%;
   position: relative;
   top: 25px;
 }
@@ -1104,12 +1104,13 @@ svg circle:nth-child(2){
 }
 
 .text-cafe {
-    margin-left: 15px;
+    float: right;
 }
 .w-30p{
     width: 35px;
     margin-top: 5px;
+    margin-right: 15px;
 }
 .pdfs{
-  padding: 10px 190px 20px !important;
+      padding: 10px 70px 20px !important;
 }
