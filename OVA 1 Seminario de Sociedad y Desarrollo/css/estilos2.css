@@ -363,7 +363,6 @@ button {
     height: 180px;
     width: 310px;
     margin-left: 27px;
-    margin-top: -62px;
     overflow: auto;
 }
 
@@ -409,7 +408,19 @@ button {
 
 /*Flechas*/
 
-.triangulo-2 {
+.triangulo-21 {
+    width: 0;
+    height: 0;
+    transform: rotate(90deg);
+    border-left: 30px solid #78201A;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    margin-left: 152px;
+    position: relative;
+    top: -18px;
+}
+
+.triangulo-22 {
     width: 0;
     height: 0;
     transform: rotate(90deg);

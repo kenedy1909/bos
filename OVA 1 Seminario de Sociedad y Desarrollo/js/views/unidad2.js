@@ -65,10 +65,12 @@ $('.pdfs').html(pdf);
 
 function hoverp41(argument) {
     $(".p4-2").show(200)
+    $(".triangulo-21").addClass('d-none');
 }
 
 function hoverp42(argument) {
     $(".p4-4").show(200)
+    $(".triangulo-22").addClass('d-none');
 }
 
 function slide() {
