@@ -98,25 +98,7 @@ function slide_link(num) {
 }
 
 
-window.onload = function() {
-document.onkeyup = mostrarInformacionTecla; }
-function mostrarInformacionTecla(evObject) {
 
-    var msg = ''; var teclaPulsada = evObject.keyCode;
-
-    if (teclaPulsada == 37) { 
-        slide();
-        actualizarprogress();
-    }
-
-    else if (teclaPulsada == 39) {
-        slide();
-        actualizarprogress();
-    }
-
-    eventoControlado = false;
-
-}
 function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
@@ -526,3 +508,23 @@ function paraIframe(num) {
     }
 
 }
+
+
+let figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide();
+                actualizarprogress();
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide();
+                actualizarprogress();
+                break;
+        }
+    }
+);
