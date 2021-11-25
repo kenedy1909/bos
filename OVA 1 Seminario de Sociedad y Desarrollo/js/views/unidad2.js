@@ -345,7 +345,8 @@ function poner(num) {
         position: 'relative',
         top: '2px',
         display: 'block',
-        height: '100%',
+        height: '300px',
+        overflow: 'auto',
         'z-index': '100'
     });
     // if (num == 3) {
