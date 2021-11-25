@@ -73,6 +73,7 @@ function slide() {
     controlSlides(stepIndex + 1);
 }
 
+
 function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
@@ -97,7 +98,25 @@ function slide_link(num) {
 }
 
 
+window.onload = function() {
+document.onkeyup = mostrarInformacionTecla; }
+function mostrarInformacionTecla(evObject) {
 
+    var msg = ''; var teclaPulsada = evObject.keyCode;
+
+    if (teclaPulsada == 37) { 
+        slide();
+        actualizarprogress();
+    }
+
+    else if (teclaPulsada == 39) {
+        slide();
+        actualizarprogress();
+    }
+
+    eventoControlado = false;
+
+}
 function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
