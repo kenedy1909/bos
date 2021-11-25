@@ -285,6 +285,9 @@ function conjuntos(num) {
     if (num == 1) {
         $(".info_conjuntos1").addClass('bgactive1');
         $(".info_conjuntos1").removeClass('bgInactive1');
+
+        $(".info_conjuntos2").removeClass('bgactive2');
+        $(".info_conjuntos2").addClass('bgInactive2');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
@@ -298,6 +301,12 @@ function conjuntos(num) {
     if (num == 2) {
         $(".info_conjuntos1").removeClass('bgactive1');
         $(".info_conjuntos1").addClass('bgInactive1');
+
+        $(".info_conjuntos2").removeClass('bgInactive2');
+        $(".info_conjuntos2").addClass('bgactive2');
+
+        $(".info_conjuntos3").removeClass('bgactive3');
+        $(".info_conjuntos3").addClass('bgInactive3');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
@@ -309,6 +318,14 @@ function conjuntos(num) {
         $("#info_unidad2").html(conjunto)
     }
     if (num == 3) {
+        $(".info_conjuntos1").removeClass('bgactive1');
+        $(".info_conjuntos1").addClass('bgInactive1');
+
+        $(".info_conjuntos2").removeClass('bgactive2');
+        $(".info_conjuntos2").addClass('bgInactive2');
+
+        $(".info_conjuntos3").removeClass('bgInactive3');
+        $(".info_conjuntos3").addClass('bgactive3');
         var conjunto = `
                     <div class="col-lg-12 col-md-12">
                       <p class="justificado text-black font13 caja-texto-b" style="margin-top: -40px;">
