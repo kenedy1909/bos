@@ -257,22 +257,11 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 100%;
+  max-width: 60%;
   position: relative;
-  /* top: 5px; */
+  top: 25px;
 }
-.img-uni1{
-  left: 5px;
-  top: 5px;
-}
-.img-uni2{
-  left: -2px;
-  top: -5px;
-}
-.img-uni3{
-  left: 1px;
-  top: -8px;
-}
+
 .card .user .menu_superior{
   background: none;
   display: block;
@@ -366,17 +355,9 @@ iframe{
 }
 
 .img-circle {
-    border-radius: 50%;
+    /border-radius: 50%;/
 }
-.gris_circle {
-  width: 95%;
-  height: 95%;
-  margin-top: 4px;
-  margin-left: 4px;
-  background: #929292;
-  padding-top: 1px;
-  border-radius: 50%;
-}
+
 
 /*modales inicio*/
 .border-white{
