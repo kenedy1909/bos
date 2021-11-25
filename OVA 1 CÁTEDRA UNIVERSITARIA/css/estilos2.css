@@ -80,6 +80,9 @@
     text-align: center;
     cursor: pointer;
 }
+.btn_xActive{
+  background: #ff0008;
+}
 
 .withpx{
   width: 800px;

@@ -158,6 +158,10 @@ function normativas(num){
 function aparece_abajo(num){
     switch (parseInt(num)) {
         case 1:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada1').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -170,6 +174,10 @@ function aparece_abajo(num){
             $('.imgC1').addClass('inactive');
             break;
         case 2:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada3').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -191,6 +199,10 @@ function aparece_abajo(num){
             $('.imgC1').addClass('inactive');
             break;
         case 3:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada4').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -203,6 +215,10 @@ function aparece_abajo(num){
             $('.imgC1').addClass('inactive');
             break;
         case 4:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada5').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -215,6 +231,10 @@ function aparece_abajo(num){
             $('.imgC2').addClass('inactive');
             break;
         case 5:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada6').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -227,6 +247,10 @@ function aparece_abajo(num){
             $('.imgC2').addClass('inactive');
             break;
         case 6:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada7').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -239,6 +263,10 @@ function aparece_abajo(num){
             $('.imgC2').addClass('inactive');
             break;
         case 7:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada13').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -251,6 +279,10 @@ function aparece_abajo(num){
             $('.imgC4').addClass('inactive');
             break;
         case 8:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada14').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -263,6 +295,10 @@ function aparece_abajo(num){
             $('.imgC4').addClass('inactive');
             break;
         case 9:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada16').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW1').removeClass('inactive');
@@ -283,6 +319,10 @@ function aparece_abajo(num){
 function aparece_arriba(num) {
     switch (parseInt(num)) {
         case 1:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada2').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
@@ -304,6 +344,10 @@ function aparece_arriba(num) {
             scroll();
             break;
         case 2:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada8').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
@@ -325,6 +369,10 @@ function aparece_arriba(num) {
             $('.imgC2').addClass('inactive');
             break;
         case 3:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada9').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
@@ -337,6 +385,10 @@ function aparece_arriba(num) {
             $('.imgC3').addClass('inactive');
             break;
         case 4:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada10').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
@@ -349,6 +401,10 @@ function aparece_arriba(num) {
             $('.imgC3').addClass('inactive');
             break;
         case 5:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada11').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
@@ -361,6 +417,10 @@ function aparece_arriba(num) {
             $('.imgC3').addClass('inactive');
             break;
         case 6:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada12').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
@@ -373,6 +433,10 @@ function aparece_arriba(num) {
             $('.imgC3').addClass('inactive');
             break;
         case 7:
+            $('.btn_x').removeClass('btn_xActive');
+            $('.btn_cordenada15').addClass('btn_xActive');
+            
+
             $('.bane_blanco').addClass('inactive');
             $('.bane_blanco').removeClass('active');
             $('.baneW2').removeClass('inactive');
