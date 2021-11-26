@@ -868,7 +868,7 @@ a.control_next {
 .triag_cambiaslide-atras {
     width: 0;
     height: 0;
-    border-right: 45px solid #375125;
+    border-right: 45px solid #78201a;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
 }
@@ -876,7 +876,7 @@ a.control_next {
 .triag_cambiaslide-adelante {
     width: 0;
     height: 0;
-    border-left: 45px solid #375125;
+    border-left: 45px solid #78201a;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
 }
