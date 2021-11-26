@@ -271,7 +271,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 80%;
+  max-width: 60%;
   position: relative;
   top: 10px;
 }
@@ -380,14 +380,13 @@ iframe{
 }
 .radius-gray{
   background: #999999;
-  border-radius: 50%;
-  margin: 1px;
-  padding: 0%;
-  width: 97%;
-  height: 142px;
-  position: relative;
-  top: -2px;
-  left: 2px;
+    border-radius: 50%;
+    padding: 0%;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    top: 2px;
+    text-align: center;
 }
 
 /*.divcerrar{
