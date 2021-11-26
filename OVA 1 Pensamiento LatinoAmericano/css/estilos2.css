@@ -92,3 +92,58 @@
     width: 150px;
     height: 150px;
 }
+
+.border-white-5p-m60 {
+    max-width: 60%;
+    border: solid 5px white!important;
+}
+
+.radius-gray-2 {
+    background: #999999;
+    border-radius: 50%;
+    padding: 0%;
+    width: 140px;
+    height: 140px;
+    position: relative;
+    top: 2px;
+    left: 2px;
+    text-align: center;
+}
+
+.divcerrar-2 {
+    position: relative;
+    top: -13px;
+    left: 7px;
+}
+
+.books-im {
+    margin-left: -47px;
+    width: 380px;
+}
+
+.mar-5 {
+    margin: 2rem !important;
+}
+
+.mar-25 {
+    margin: 1rem !important;
+}
+
+.color-claro-gr {
+    background: #C4E0B2;
+}
+
+.img-lecture {
+    width: 350px;
+    margin-left: -122px;
+    position: relative;
+    top: -9px;
+}
+
+.move-content {
+    margin-left: -50px;
+}
+
+.bg-color-naranja2 {
+    background: #FF6600!important;
+}
