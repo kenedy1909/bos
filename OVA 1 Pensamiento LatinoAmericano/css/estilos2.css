@@ -124,3 +124,26 @@
 .mar-5 {
     margin: 2rem !important;
 }
+
+.mar-25 {
+    margin: 1rem !important;
+}
+
+.color-claro-gr {
+    background: #C4E0B2;
+}
+
+.img-lecture {
+    width: 350px;
+    margin-left: -122px;
+    position: relative;
+    top: -9px;
+}
+
+.move-content {
+    margin-left: -50px;
+}
+
+.bg-color-naranja2 {
+    background: #FF6600!important;
+}
