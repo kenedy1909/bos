@@ -34,10 +34,10 @@ window.onload = function () {
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
   if (curr == 0) {
-    $('.cantidad').html("1/2");
+    $('.cantidad').html("1/5");
   }
   if (curr == 1) {
-    $('.cantidad').html("2/2");
+    $('.cantidad').html("2/5");
   }
 
 
@@ -63,14 +63,14 @@ window.onload = function () {
 
   function Imag() {
     var texto1 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/Indigena3.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/colonialismo.png" style="width: 300%; margin-left:-30px">
                   </div>
                 </div>`;
@@ -79,14 +79,14 @@ window.onload = function () {
 
 // ------------------------ pregunta 2
     var texto3 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/calendario.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
     var texto4 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/calendario.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -95,14 +95,14 @@ window.onload = function () {
 // ------------------------ pregunta 3
 
     var texto5 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/continente.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_0').prepend(texto5);
     var texto6 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/continente.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -111,14 +111,14 @@ window.onload = function () {
 
 // ------------------------ pregunta 4
     var texto7 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/BanderaEuropa.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_3_0').prepend(texto7);
     var texto8 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/BanderaEuropa.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -128,14 +128,14 @@ window.onload = function () {
 // ------------------------ pregunta 5
 
     var texto9 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/Desigual.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_4_0').prepend(texto9);
     var texto10 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+                  <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
                     <img src="../img/img9/Igualdad.png" style="width: 100%;">
                   </div>
                 </div>`;

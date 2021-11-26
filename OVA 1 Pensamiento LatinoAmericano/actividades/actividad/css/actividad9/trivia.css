@@ -7,7 +7,7 @@ body, html {
 }
 
 .wrapper {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   height: 100%;
   padding-top: 0px;
@@ -41,8 +41,8 @@ body, html {
 }
 
 .answers div {
-  padding: 10px 0 0 0;
-  font-size: 16px;
+  padding: 44px 0 0 0;
+  font-size: 15px;
 }
 
 .answers div:hover {
@@ -58,7 +58,7 @@ body, html {
 .answers div {
   width: 50%;
   margin: 0 auto;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
 }
 
 /* .answers div:first-child {
