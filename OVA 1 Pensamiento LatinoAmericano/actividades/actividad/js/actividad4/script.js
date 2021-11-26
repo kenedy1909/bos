@@ -29,7 +29,7 @@ const palabras = [
     pos: [4, 9],
     sentido: 0,
     palabra: 'nacion',
-    pista: 'omunidad social con una organización política común y un territorio y órganos de gobierno propios, que es soberana e independiente políticamente de otras comunidades.'
+    pista: 'Comunidad social con una organización política común y un territorio y órganos de gobierno propios, que es soberana e independiente políticamente de otras comunidades.'
   },
   {
     pos: [3, 13],
@@ -157,16 +157,32 @@ new Vue({
       var modalID = "#calificacionModal";
       var exito = false;
       var mensaje = "Inténtalo nuevamente."
-      if (puntaje >= 90) {
+      /*if (puntaje >= 90) {
           puntaje = 100;
           exito = true;
           mensaje = "¡Felicitaciones!"
       }
       registrarActividad(puntaje);
-      mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);
+      mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);*/
+      if (puntaje >= 100) {
+        $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+        $('.puntaje').text("100%");
+        $('.mensaje').text("¡Felicitaciones!");
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+      }else{
+        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
+        $('.mensaje').text("¡Puedes hacerlo mejor!");
+        $('.puntaje').text("0%");
+        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+      }
+      $("#exampleModal").modal("show");
       /*this.mensaje = `
         Tu puntuación es ${finalScore}%.
       `*/
     }
   }
 })
+
+function reiniciar(){
+    location.reload();
+}
