@@ -34,10 +34,10 @@ window.onload = function () {
   // It grabs the needed answer-array with the help of the current-variable
   // Every answer is added with an 'onclick'-function
   if (curr == 0) {
-    $('.cantidad').html("1/5");
+    $('.cantidad').html("0/5");
   }
   if (curr == 1) {
-    $('.cantidad').html("2/5");
+    $('.cantidad').html("1/5");
   }
 
 
@@ -53,7 +53,7 @@ window.onload = function () {
       createDiv.appendChild(text);
       createDiv.addEventListener("click", checkAnswer(i, answers));
       
-      cantidad = answers.length +1;
+      cantidad = answers.length;
       answerArea.appendChild(createDiv);
     }
     /*$('.cantidad').html("1/"+answers.length);*/
