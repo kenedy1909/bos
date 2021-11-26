@@ -240,3 +240,7 @@ function calificar(){
     }
     $("#exampleModal").modal("show");
 }
+
+function reload(){
+	location.reload();
+}

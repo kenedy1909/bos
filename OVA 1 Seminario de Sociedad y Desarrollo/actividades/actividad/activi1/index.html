@@ -12,11 +12,11 @@
     <link rel="stylesheet" type="text/css" href="../css/actividad1/estilos.css">
 </head>
 
-<body>
-    <div class="backdrop in">
+<body style="overflow: hidden;">
+    <div class="backdrop in" style="overflow: hidden;">
         <div class="fondo">
-            <div class="row" style="margin-left: 1.5em; margin-right: 1.5em;">
-              <div class="col-md-5 row d-flex">
+            <div class="row" style="margin-left: 1.5em; margin-right: 1.5em;display: flex;">
+              <div class="col-md-5 row d-flex" style="width: 45%;">
                  <img src="../img/img1/actividad_interactiva.png" class="img-activi">
                  <div>
                      <div class="content-text-img-activi">
@@ -25,13 +25,13 @@
                      <p class="text-center">AHORCADO</p>
                  </div>
               </div>
-              <div class="col-md-7 shadow content-tarjeta">
+              <div class="col-md-7 shadow content-tarjeta" style="width: 60%;margin-left: 15px;">
                   <p class="pb-2 p_black" style="color: black!important;">Haga clic a las letras para formar la frase que corresponda con la definición y evite formar la figura de ahorcado.</p>
               </div>
             </div>
             <div class="contenido" id="recurso2">
                 <div class="definicion">
-                    <h2 class="pista_titulo">Definición:</h2>
+                    <h2 class="pista_titulo">Pista:</h2>
                     <div id="pista_palabra"></div>
                 </div>
                 <div>
@@ -47,35 +47,35 @@
                     <button type="button" id="reset" class="calificar-completar btn btn-primary">Volver a intentarlo</button>
                 </div>
 
-                <!-- <input type="button" id="reset" value="Volver a intentarlo"> -->
-                <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body center-block">
-                                <div class="mensaje text-center">
-                                    Tu puntaje es: <span class="puntaje">40%</span>
-                                    <span class="texto-puntaje"></span>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document" style="    margin-top: 25%;">
+                        <div class="modal-content tranparente" style="">
+                            <div style="" class="principal_modal">
+                                <div style="" class="cabeza">
+
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                                    intentar</button>
-                                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                                <div class="d-flex justify-content-center" style="justify-content: center;">
+                                    <div style="" class="circulo_modal img_res">
+
+                                    </div>
+                                </div>
+                                <div style="padding: 10px;">
+                                    <div style="color: white;font-size: 15px;display: flex;">
+                                      Su puntaje es: <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;"></p>
+                                    </div>
+                                    <div style="color: white;font-size: 15px;">
+                                        <p class="mensaje" style="text-align: left;"></p>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div id="modal-ahorcado" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <div id="texto-modal"></div>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
             </div>
         </div>
     </div>
