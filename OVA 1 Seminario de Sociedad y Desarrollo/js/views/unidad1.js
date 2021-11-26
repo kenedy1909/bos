@@ -66,7 +66,7 @@ $(document).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
