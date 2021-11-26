@@ -406,7 +406,7 @@ button {
 }
 
 .text-img-activi {
-    border-bottom: solid 3px rgba(0, 91, 139);
+    border-bottom: solid 3px rgb(179 132 60);
     width: 50%;
     height: 86px;
     margin: 0px;
