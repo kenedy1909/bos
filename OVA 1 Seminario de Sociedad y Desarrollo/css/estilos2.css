@@ -815,3 +815,7 @@ a.control_next {
 .carousel-inner .active{
     background: none !important;
 }
+
+.w96{
+    width: 96% !important;
+}
