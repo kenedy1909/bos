@@ -1,29 +1,33 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
-    
-    $('#next').on('click', function () {
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
+
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
@@ -31,37 +35,39 @@ $( document ).ready(function() {
     slide_predeterminado3();
     console.log(tema);
     slide_link3(tema);
-    
+
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides3(stepIndex);
 }
 
-function slide_predeterminado3(){
+function slide_predeterminado3() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides3(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link3(num){
+function slide_link3(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
 
-   
+
     controlSlides3(num);
-    
-    
+
+
 }
-function controlSlides3(num){
+
+function controlSlides3(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 3;
             break;
@@ -75,31 +81,31 @@ function controlSlides3(num){
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","3. Definición del problema ","El problema en la investigación");
-            
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+
             tema = 1;
-            break;    
+            break;
         default:
             break;
     }
@@ -112,43 +118,43 @@ var elementoPadre2 = document.querySelector(".inputDiv.i2");
 var inputsRy = [];
 
 function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 1;
-  this.att.max = 5;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 1;
+    this.att.max = 5;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    pantallas3_1(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
+    this.actualizar = function() {
+        pantallas3_1(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
 }
 
 // setup
@@ -164,14 +170,14 @@ i2.crear(elementoPadre2);
 inputsRy.push(i2);
 
 for (var n = 0; n < inputsRy.length; n++) {
-  (function(n) {
-    inputsRy[n].input.addEventListener("input", function() {
-      inputsRy[n].actualizar();
-    }, false)
-  }(n));
+    (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+            inputsRy[n].actualizar();
+        }, false)
+    }(n));
 }
 
-function pantallas3_1(num){
+function pantallas3_1(num) {
     switch (parseInt(num)) {
         case 1:
             var img = `<img src="assets/img/img_ova/paso1.png" style="max-width: 40%;">`;
@@ -203,7 +209,7 @@ function pantallas3_1(num){
     }
 }
 
-function pantalla3_2(num){
+function pantalla3_2(num) {
     switch (parseInt(num)) {
         case 1:
             var text = `
@@ -232,15 +238,15 @@ function pantalla3_2(num){
               </div>
             </div>`;
 
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav1').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na1').removeClass('inactivo');           
+            $('.na1').removeClass('inactivo');
             $('.na1').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
         case 2:
@@ -254,15 +260,15 @@ function pantalla3_2(num){
             <div class="col-md-6 text-center">
               <img src="assets/img/img_ova/conversation.png" class="" style="width: 34%;">
             </div>`;
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav2').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na2').removeClass('inactivo');           
+            $('.na2').removeClass('inactivo');
             $('.na2').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
         case 3:
@@ -278,15 +284,15 @@ function pantalla3_2(num){
                 <img src="assets/img/img_ova/question.png" class="" style="width: 50%;">
               </div>
             </div>`;
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav3').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na3').removeClass('inactivo');           
+            $('.na3').removeClass('inactivo');
             $('.na3').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
         case 4:
@@ -300,18 +306,18 @@ function pantalla3_2(num){
                 <img src="assets/img/img_ova/preguntas.png" class="" style="width: 50%;">
               </div>
             </div>`;
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav4').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na4').removeClass('inactivo');           
+            $('.na4').removeClass('inactivo');
             $('.na4').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
-        
+
         default:
             break;
     }
@@ -346,11 +352,11 @@ function efect(num) {
             break;
         default:
             break;
-    }           
-    
+    }
+
 }
 
-function removeefect(num){
+function removeefect(num) {
     switch (parseInt(num)) {
         case 1:
             $('.creciente').removeClass('crece');
@@ -378,6 +384,6 @@ function removeefect(num){
             break;
         default:
             break;
-    } 
-    
+    }
+
 }
