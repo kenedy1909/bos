@@ -794,9 +794,10 @@ a.control_next {
 .triag_cambiaslide {
     width: 0;
     height: 0;
-    border-left: 50px solid #78201A;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
+    border-left: 40px solid #78201A;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    cursor: pointer;
 }
 
 .w-w {
@@ -809,4 +810,8 @@ a.control_next {
 
 .bg-verde-btn {
     background: #78201A;
+}
+
+.carousel-inner .active{
+    background: none !important;
 }
