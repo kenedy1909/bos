@@ -1609,9 +1609,11 @@ input[type=range]::-ms-fill-upper {
 
 .fondo{
 	height: 400px;
-	background-image: url("../assets/img/img_ova/social.png");
-	background-repeat: no-repeat;
-	background-size: 400px 400px;
+    width: 400px;
+    background-image: url(../assets/img/img_ova/social.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 1px 100%;
 	
 }
 
@@ -1630,4 +1632,11 @@ input[type=range]::-ms-fill-upper {
 }
 .img-100{
   width: 100%;
+}
+
+.btn_ethos{
+	width: 32px;height: 32px;border-radius: 50%;border: 1px solid;text-align: center;font-weight: bold;padding-top: 3px;box-shadow: 1px 1px 5px 0px;position: relative;
+}
+.btn_ethosActive{
+	background: #BADBA5;
 }
