@@ -110,7 +110,8 @@ iframe{
   background-size: contain;
   width: 380px;
   height: 100px;
-  padding: 30px 122px 20px 124px;
+  /*padding: 30px 122px 20px 124px;*/
+  padding: 30px 151px 20px 95px;
 }
 
 .titulo-ova h3{
@@ -872,4 +873,14 @@ svg circle:nth-child(2){
 }
 .youtubes{
   min-height: 300px !important;
+}
+
+.gris_circle{
+  width: 95%;
+  height: 95%;
+  margin-top: 4px;
+  margin-left: 4px;
+  background: #929292;
+  padding-top: 1px;
+  border-radius: 50%;
 }
