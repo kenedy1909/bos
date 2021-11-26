@@ -2,6 +2,11 @@ $( document ).ready(function() {
     tema = 1;
     slide_predeterminado2();
     console.log(tema);
+
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+
     /*slide_link(tema);*/
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({

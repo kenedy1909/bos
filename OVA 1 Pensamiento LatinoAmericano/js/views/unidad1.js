@@ -1,5 +1,14 @@
 $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
+
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", ">");
+            
+    star_uni = 1;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
