@@ -78,13 +78,13 @@ function controlSlides2(num){
         case 1:
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Epistemologias_del_sur_2018.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Epistemologías del sur.pdf</a>
+                                  <a href="assets/PDF/UNIDAD2/Epistemologias_del_sur_2018.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> Epistemologías del sur.pdf <b class="text-cafe">Ver</b></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/La idea de américa Latina.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La idea de América Latina.pdf</a>
+                                  <a href="assets/PDF/UNIDAD2/La idea de américa Latina.pdf" target="_blank"><img src="assets/img/img_template/pdf.png" class="w40"> La idea de América Latina.pdf <b class="text-cafe">Ver</b></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Modernidad, COLONIALISMO.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Modernidad, Colonialismo y emancipación en América Latina.pdf</a>
+                                  <a href="assets/PDF/UNIDAD2/Modernidad, COLONIALISMO.pdf" target="_blank"><img src="assets/img/img_template/pdf.png" class="w40"> Modernidad, Colonialismo y emancipación en América Latina.pdf <b class="text-cafe">Ver</b></a>
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
@@ -284,3 +284,21 @@ function openTabs(el) {
    btnTarget.classList.add("active");
 }
 
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide();
+                actualizarprogress();
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide();
+                actualizarprogress();
+                break;
+        }
+    }
+);
