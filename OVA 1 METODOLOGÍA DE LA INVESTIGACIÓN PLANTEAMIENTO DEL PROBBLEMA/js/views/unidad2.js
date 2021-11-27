@@ -117,7 +117,7 @@ function pantalla2_1(num) {
                       </div>
                       <div class="col-md-6">
                         <div class="text-center">
-                          <img src="assets/img/img_ova/metodo.png" style="max-width: 50%;">
+                          <img src="assets/img/img_ova/metodo.png" style="max-width: 250px; margin-top: 12%;">
                         </div>
                       </div>`;
             $('.avance_blanco').removeClass('activa');
@@ -138,7 +138,7 @@ function pantalla2_1(num) {
                         </div>
                       </div>
                       <div class="col-md-12">
-                      <p class="text-black">click para observar la imagen</p>
+                      <p class="text-black">clic para observar la imagen</p>
                         <div class="banner3_2 text-center mt-2">
                           <img data-toggle="modal" data-target="#modalimg_2" src="assets/img/img_ova/hechos.png" style="max-width: 100%" class="cursor">
                         </div>
@@ -169,7 +169,7 @@ function pantalla2_1(num) {
                                 <div class="col-md-3 p-0">
                                   <div class="fondotargeta text-center text-center cursor" data-toggle="modal" data-target="#modal2-1_1">
                                     <div class="encabezado" style=""></div>
-                                    <div class="circulotarget" style="">1</div>
+                                    <center><div class="circulotarget" style="">1</div></center>
                                     <div>
                                       <img src="assets/img/img_ova/idea-genial.png" style="max-width: 70%;">
                                     </div>
@@ -179,7 +179,7 @@ function pantalla2_1(num) {
                                 <div class="col-md-3 p-0">
                                   <div class="fondotargeta text-center cursor" data-toggle="modal" data-target="#modal2-1_2">
                                     <div class="encabezado" style=""></div>
-                                    <div class="circulotarget" style="">2</div>
+                                    <center><div class="circulotarget" style="">2</div></center>
                                     <div>
                                       <img src="assets/img/img_ova/negocios-en-linea.png"style="max-width: 70%;">
                                     </div>
@@ -188,7 +188,7 @@ function pantalla2_1(num) {
                                 <div class="col-md-3 p-0">
                                   <div class="fondotargeta text-center cursor" data-toggle="modal" data-target="#modal2-1_3">
                                     <div class="encabezado" style=""></div>
-                                    <div class="circulotarget" style="">3</div>
+                                    <center><div class="circulotarget" style="">3</div></center>
                                     <div>
                                       <img src="assets/img/img_ova/ingeniero.png"style="max-width: 70%;">
                                     </div>
@@ -197,7 +197,7 @@ function pantalla2_1(num) {
                                 <div class="col-md-3 p-0">
                                   <div class="fondotargeta text-center cursor" data-toggle="modal" data-target="#modal2-1_4">
                                     <div class="encabezado" style=""></div>
-                                    <div class="circulotarget" style="">4</div>
+                                    <center><div class="circulotarget" style="">4</div></center>
                                     <div>
                                       <img src="assets/img/img_ova/pareja.png"style="max-width: 70%;">
                                     </div>
