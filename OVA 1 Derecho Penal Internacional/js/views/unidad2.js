@@ -67,6 +67,25 @@ function slide_link(num){
     controlSlides(num);
 }
 
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide();
+                actualizarprogress();
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide();
+                actualizarprogress();
+                break;
+        }
+    }
+);
+
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
