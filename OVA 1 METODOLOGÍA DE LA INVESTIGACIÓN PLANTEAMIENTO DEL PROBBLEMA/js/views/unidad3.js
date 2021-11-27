@@ -353,7 +353,7 @@ function efect(num) {
         case 6:
             $('.creciente6').addClass('crece');
             $('.div_texto6').addClass('visibilidad');
-            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #7a3d74;color: white;font-size: 18px;">Ver aquí ejemplo de preguntas de investigación</button>');
+            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #482649;color: white;font-size: 18px; border-radius: 15px;">Ver aquí ejemplo de preguntas de investigación</button>');
             break;
         default:
             break;
