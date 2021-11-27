@@ -39,7 +39,7 @@ $( document ).ready(function() {
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
     controlSlides(2);
-    
+
     var knob = "";
     var bar = "";
     var container = "";
@@ -834,18 +834,24 @@ function ruandas() {
     $(".ruanda-img-"+ruanda_num).addClass('bg-cafe-activi');
 
     if (ruanda_num==1) {
+        $('.indicativos').addClass('invisible');
+        $('.indis1').removeClass('invisible');
         var texto = `
                     <img src="assets/img/img_ova/Derecho penal internacional-03.png" class="img-20 m-auto">
                     <p class="p_black justificado my-auto pl-4">Es importante destacar que existieron diversos comités creados para redactar un código penal internacional que posteriormente debía ser discutido por los estados, sin embargo, no se presentó interés real para dar vida a un tratado que creará una corte internacional de carácter permanente.</p>
                     `;
         $("#ruanda").html(texto);
     }else if (ruanda_num==2) {
+        $('.indicativos').addClass('invisible');
+        $('.indis2').removeClass('invisible');
         var texto = `
                     <img src="assets/img/img_ova/Derecho penal internacional-07.png" class="img-20 m-auto">
                     <p class="p_black justificado my-auto pl-4">Por lo anterior, las décadas pasaron sin que se volviera a recurrir al derecho penal internacional, aun cuando el contexto geopolítico ha evidenciado diversos conflictos armados, en los que hubiese sido importante contar con un tribunal que juzgará a los responsables de cometerlos y evitar la impunidad frente a graves crímenes internacionales.</p>
                     `;
         $("#ruanda").html(texto);
     }else if (ruanda_num==3) {
+        $('.indicativos').addClass('invisible');
+        $('.indis3').removeClass('invisible');
         var texto = `
                     <img src="assets/img/img_ova/Derecho penal internacional-06.png" class="img-20 m-auto">
                     <p class="p_black justificado my-auto pl-4">Debe finalmente destacarse que, a los dos tribunales en los que se centra el presente tema, fueron creados por el Consejo de Seguridad de Naciones Unidas, en virtud del mandato que le asigna la Carta de la ONU de adoptar las medidas para el mantenimiento y restablecimiento de la paz.</p>
