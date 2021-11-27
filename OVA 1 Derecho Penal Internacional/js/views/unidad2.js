@@ -462,28 +462,28 @@ function cardPara4(num) {
     $("#card4-4").html('<img src="assets/img/img_ova/Derecho penal internacional-02.png" class="img-50 p-4">');
     if (num == 1) {
         var texto = `
-                    <p class="justificado p_black p-4">Se trata en consecuencia, de unas salas especiales (también conocida como paneles) que no fueron creadas propiamente por un Estado, sino por un órgano internacional que para el momento tenía asignada la tarea de administrar Timor Leste.</p>
+                    <p class="justificado p_black p-4" style="height: 150px;overflow: auto;">Se trata en consecuencia, de unas salas especiales (también conocida como paneles) que no fueron creadas propiamente por un Estado, sino por un órgano internacional que para el momento tenía asignada la tarea de administrar Timor Leste.</p>
                     `;
         $("#card4-1").removeClass('bg-cafe-activi');
         $("#card4-1").addClass('bg-blanco');
         $("#card4-1").html(texto);
     }if (num == 2) {
         var texto = `
-                    <p class="justificado p_black p-4">A estas salas especiales les fue asignado el mandato de juzgar a los responsables de los crímenes cometidos entre el 1 de enero de 1999 al 25 de octubre del mismo año, aplicando tanto el derecho penal de Timor Leste, como el derecho internacional humanitario. Estas salas empezaron a funcionar en el año 2000 y culminaron en el 2005, siendo su primera sentencia en el 2001 y teniendo como resultado final la condena de 84 personas y 3 absueltas.</p>
+                    <p class="justificado p_black p-4" style="height: 150px;overflow: auto;">A estas salas especiales les fue asignado el mandato de juzgar a los responsables de los crímenes cometidos entre el 1 de enero de 1999 al 25 de octubre del mismo año, aplicando tanto el derecho penal de Timor Leste, como el derecho internacional humanitario. Estas salas empezaron a funcionar en el año 2000 y culminaron en el 2005, siendo su primera sentencia en el 2001 y teniendo como resultado final la condena de 84 personas y 3 absueltas.</p>
                     `;
         $("#card4-2").removeClass('bg-cafe-mo');
         $("#card4-2").addClass('bg-blanco');
         $("#card4-2").html(texto);
     }if (num == 3) {
         var texto = `
-                    <p class="justificado p_black p-4">Debe destacarse que en Timor Leste se trata de una situación que se originó porque luego de 24 años bajo el control de las fuerzas militares de Indonesia, Timor votó por constituirse como un estado independiente, lo que desató los enfrentamientos entre militares indonesios y grupos de milicias que se oponían al resultado, aun cuando el proceso fue llevado a cabo por la misma ONU.</p>
+                    <p class="justificado p_black p-4" style="height: 150px;overflow: auto;">Debe destacarse que en Timor Leste se trata de una situación que se originó porque luego de 24 años bajo el control de las fuerzas militares de Indonesia, Timor votó por constituirse como un estado independiente, lo que desató los enfrentamientos entre militares indonesios y grupos de milicias que se oponían al resultado, aun cuando el proceso fue llevado a cabo por la misma ONU.</p>
                     `;
         $("#card4-3").removeClass('bg-piel');
         $("#card4-3").addClass('bg-blanco');
         $("#card4-3").html(texto);
     }if (num == 4) {
         var texto = `
-                    <p class="justificado p_black p-4">La jurisdicción de las salas especiales fue exclusiva, es decir que solo esa instancia podía conocer de los hechos ocurridos durante ese periodo de tiempo, a diferencia del resto de los tribunales y salas especiales donde su competencia era concurrente.</p>
+                    <p class="justificado p_black p-4" style="height: 150px;overflow: auto;">La jurisdicción de las salas especiales fue exclusiva, es decir que solo esa instancia podía conocer de los hechos ocurridos durante ese periodo de tiempo, a diferencia del resto de los tribunales y salas especiales donde su competencia era concurrente.</p>
                     `;
         $("#card4-4").removeClass('bg-piel-mo');
         $("#card4-4").addClass('bg-blanco');
