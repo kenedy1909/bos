@@ -264,6 +264,16 @@ function modal_scroll3(){
     container = document.querySelector('.custom-scrollbar__inner3');
     scroll();
 }
+function modal_scrollNuevo(){
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knobNuevo');
+    bar = document.querySelector('.custom-scrollbar__barNuevo');
+    container = document.querySelector('.custom-scrollbar__innerNuevo');
+    scroll();
+}
 
 /*function funcion_vanvas() {
     var canvas = new fabric.Canvas('id_canvas');
@@ -907,13 +917,21 @@ function yugoslavias(num) {
         modal_scroll2();
     }else if (num == 3) {
         var texto = `
-                    <div class="p-3 radius-4 border-cafe-activi shadow">
-                      <div>
+                    
+                    <div class="p-3 radius-4 border-cafe-activi custom-scrollbarNuevo shadow">
+                      <div class="custom-scrollbar__innerNuevo">
+                          
                         <p class="justificado p_black">Uno de los elementos que debe destacarse es que el estatuto no solamente establece la competencia del tribunal para juzgar crímenes de guerra, que son graves infracciones al Derecho Internacional Humanitario, sino que incluye la categoría de crímenes de <span class="text-cafe-activi"><b>lesa humanidad y el genocidio</b></span>, como parte de los crímenes internacionales competencia del tribunal.</p>
+                            
+                      <div class="custom-scrollbar__barNuevo">
+                        <div class="custom-scrollbar__knobNuevo cursor">
+                          <p class="text-center linea_scrollNuevo">-</p>
+                        </div>
                       </div>
                     </div>
                     `;
         $("#tribunal").html(texto);
+        modal_scrollNuevo();
     }else if (num == 4) {
         var texto = `
                     <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3 shadow">
