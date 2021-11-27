@@ -926,3 +926,6 @@ svg circle:nth-child(2){
 .w-60{
   width: 60%;
 }
+.invisible{
+  visibility: hidden;
+}
