@@ -24,7 +24,7 @@
 }
 
 .banner3_2 {
-    min-height: 260px;
+    min-height: 200px;
     background: #cccccc;
     border-radius: 10px;
     border: dashed #994c91;
@@ -38,8 +38,10 @@
 }
 
 .fondotargeta {
-    width: 100px;
+    width: 90%;
     height: 200px;
+    margin-left: 20px;
+    margin-top: 30px;
     background: white;
     border-radius: 20px;
 }
@@ -57,7 +59,7 @@
     border-radius: 50%;
     position: relative;
     top: -20px;
-    left: 31px;
+    /*left: 30%;*/
     font-size: 20px;
     color: white;
     text-align: center;
