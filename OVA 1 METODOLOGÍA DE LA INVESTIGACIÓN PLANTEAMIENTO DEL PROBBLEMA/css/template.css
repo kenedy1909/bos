@@ -682,11 +682,11 @@ card flip*/
 }
 
 .flip-card-back {
-    background: #7a3d78;
+    background: #482649;
     border-radius: 50px;
     color: white;
     transform: rotateY(180deg);
-    padding: 40px 20px 40px 40px;
+    padding: 40px 20px 40px 20px;
 }
 
 .img_card_flip {
