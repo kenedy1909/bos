@@ -81,10 +81,11 @@
 .creciente4,
 .creciente5,
 .creciente6 {
-    background: #7a3d74;
+    background: #482649;
     height: 180px;
     border-radius: 0px 20px 20px 0px;
     position: absolute;
+    padding-left: 12px;
     top: 0px;
     left: 15px;
     z-index: 100;
@@ -114,13 +115,13 @@
 .div_texto5,
 .div_texto6 {
     width: 70%;
-    padding: 25px 1px 25px 0px;
+    padding: 16px 1px 25px 0px;
     visibility: hidden;
 }
 
 @keyframes ascend {
     from {
-        background: #7a3d74;
+        background: #482649;
         height: 180px;
         border-radius: 0px 20px 20px 0px;
         position: absolute;
@@ -130,7 +131,7 @@
         width: 20%;
     }
     to {
-        background: #7a3d74;
+        background: #482649;
         height: 180px;
         border-radius: 0px 20px 20px 0px;
         position: absolute;
