@@ -1109,7 +1109,7 @@ navegacion pantalla1*/
 /*deslizador*/
 
 .inputDiv {
-    width: 80%;
+    width: 100%;
     display: block;
     color: #aaa;
     position: relative;
