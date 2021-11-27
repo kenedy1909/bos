@@ -26,14 +26,14 @@ $( document ).ready(function() {
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
         actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
         actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
@@ -73,9 +73,14 @@ $('.pdfs').html(pdf);
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+function slide(num){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
+    
+    if (num = 1) {
+        controlSlides(stepIndex+2);
+    }else{
+        controlSlides(stepIndex+1);
+    }
 }
 
 function slide_predeterminado(){
@@ -99,12 +104,12 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
+                slide(1);
                 actualizarprogress();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
+                slide(1);
                 actualizarprogress();
                 break;
         }
