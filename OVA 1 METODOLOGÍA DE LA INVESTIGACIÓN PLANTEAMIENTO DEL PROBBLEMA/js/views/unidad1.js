@@ -120,7 +120,7 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje", "1. Inducción Matemática", "Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje", ">", ">");
 
             tema = 1;
             break;
