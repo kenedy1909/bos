@@ -99,7 +99,7 @@ iframe{
 
 .botones-inicio{
     width: auto;
-    height: 120px;
+    height: 100px;
     margin: auto;
     cursor: pointer;
 }
@@ -921,4 +921,8 @@ svg circle:nth-child(2){
 
 .hg{
   height: 209px;
+}
+
+.w-60{
+  width: 60%;
 }
