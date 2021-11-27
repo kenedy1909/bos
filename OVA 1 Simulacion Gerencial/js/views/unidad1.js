@@ -113,7 +113,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación");
+            setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","");
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
                                   <a href="assets/PDF/UNIDAD1/metodologia_para_hacer_prospectiva_quiro.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Metodología para hacer prospectiva quiro</a>
