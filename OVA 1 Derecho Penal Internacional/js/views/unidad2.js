@@ -6,6 +6,8 @@ $( document ).ready(function() {
     star_uni = 2;
     paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
 
     $('#smartwizard').smartWizard({
         loader:"show",

@@ -6,6 +6,8 @@ $( document ).ready(function() {
     star_uni = 1;
     paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            
 
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -36,7 +38,8 @@ $( document ).ready(function() {
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
-
+    controlSlides(2);
+    
     var knob = "";
     var bar = "";
     var container = "";
