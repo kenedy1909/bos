@@ -145,6 +145,9 @@ iframe{
 .p_white{
     color: #FFF;
 }
+.p_brown{
+  color: #771E18;
+}
 
 .p_white a{
     color: #FFF;
@@ -263,11 +266,18 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 60%;
+  max-width: 100%;
   position: relative;
-  top: 25px;
 }
-
+.img-uni1{
+  top: 10px;
+}
+.img-uni2{
+  left: -3px;
+}
+.img-uni3{
+  top: -5px;
+}
 .card .user .menu_superior{
   background: none;
   display: block;
@@ -378,8 +388,8 @@ iframe{
   width: 97%;
   height: 142px;
   position: relative;
-  top: -2px;
-  left: 2px;
+  top: -1.5px;
+  left: 1.5px;
 }
 
 /*.divcerrar{
@@ -753,10 +763,12 @@ svg circle:nth-child(2){
   z-index: 100;
 }
 .titulo_sub{
-  height: 85px;
+  height: 63px;
   border-bottom: solid 4px #811111;
   padding-top: 20px;padding-left: 25px;
   text-align: center;
+  top: 28px;
+  position: relative;
 }
 .titulo_sub p{
   font-size: 20px;
@@ -905,4 +917,8 @@ svg circle:nth-child(2){
 }
 .img-100{
   width: 100%;
+}
+
+.hg{
+  height: 209px;
 }

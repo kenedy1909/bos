@@ -301,12 +301,13 @@ h2.tituloContenedorE {
     color: #000000;
     width: 220px;
     text-align: center;
+    font-size: 15px;
 }
 
 .opcion_circulo_content{
     position: relative;
     display: flex;
-    top: -20%;
+    top: -9%;
 }
 
 .d-flex{
