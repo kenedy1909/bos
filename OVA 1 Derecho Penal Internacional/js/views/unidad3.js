@@ -3,6 +3,8 @@ $( document ).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
+    setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

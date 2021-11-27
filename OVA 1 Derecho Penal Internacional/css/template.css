@@ -777,7 +777,7 @@ svg circle:nth-child(2){
 .banner_activi{
   background: #811111;
   margin-left: 10px;
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 25px 1px 25px 25px;
 }
 
@@ -925,4 +925,7 @@ svg circle:nth-child(2){
 
 .w-60{
   width: 60%;
+}
+.invisible{
+  visibility: hidden;
 }

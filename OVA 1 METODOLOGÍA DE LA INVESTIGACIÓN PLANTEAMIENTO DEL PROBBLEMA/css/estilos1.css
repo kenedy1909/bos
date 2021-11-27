@@ -1429,8 +1429,17 @@ input[type=range]::-ms-fill-upper {
     animation-fill-mode: forwards;
 }
 
-.circulosp3 {
+.circulospInactive {
     background: gray;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.circulospActive {
+    background: #994C91;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1444,11 +1453,11 @@ input[type=range]::-ms-fill-upper {
 }
 
 .banner3 {
-    height: 187px;
+    height: min-content;
     background: #cccccc;
     border-radius: 10px;
     border: dashed #994c91;
-    padding-top: 50px;
+    padding: 20px 10px 20px 10px;
 }
 
 .imagenimp {

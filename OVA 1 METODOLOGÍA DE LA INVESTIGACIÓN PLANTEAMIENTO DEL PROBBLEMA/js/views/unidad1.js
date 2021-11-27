@@ -120,7 +120,7 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje", "1. Inducción Matemática", "Método de demostración por Inducción matemática");
+            setMigaja("Unidades de aprendizaje", ">", ">");
 
             tema = 1;
             break;
@@ -750,7 +750,7 @@ function pant13(num) {
                                 <p style="font-size: 25px;">Es impreciso</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento1.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento1.png" style="max-width: 25%; margin-top: -5%; margin-left: -10%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -759,13 +759,19 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp1').removeClass('circulospInactive');
+            $('.circulosp1').addClass('circulospActive');
             break;
         case 2:
             var contenido = `<div class="col-md-9 banner3 text-center">
                                 <p style="font-size: 25px;">Es inconsistente</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento2.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento2.png" style="max-width: 25%; margin-top: -5%; margin-left: -10%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -774,13 +780,19 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp2').removeClass('circulospInactive');
+            $('.circulosp2').addClass('circulospActive');
             break;
         case 3:
             var contenido = `<div class="col-md-9 banner3 text-center">
                                 <p style="font-size: 25px;">Es subjetivo</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento3.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento3.png" style="max-width: 25%; margin-top: -5%; margin-left: -10%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -789,13 +801,19 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp3').removeClass('circulospInactive');
+            $('.circulosp3').addClass('circulospActive');
             break;
         case 4:
             var contenido = `<div class="col-md-9 banner3 text-center">
                                 <p style="font-size: 25px;">Es acrítico</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento4.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento4.png" style="max-width: 25%; margin-top: -5%; margin-left: -10%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -804,13 +822,19 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp4').removeClass('circulospInactive');
+            $('.circulosp4').addClass('circulospActive');
             break;
         case 5:
             var contenido = `<div class="col-md-9 banner3 text-center">
                                 <p style="font-size: 25px;">Tiene un lenguaje ambiguo</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento5.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento5.png" style="max-width: 25%; margin-top: -5%; margin-left: -10%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -819,13 +843,19 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp5').removeClass('circulospInactive');
+            $('.circulosp5').addClass('circulospActive');
             break;
         case 6:
             var contenido = `<div class="col-md-9 banner3 text-center">
                                 <p style="font-size: 25px;">Es racional en cierto grado</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento6.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento6.png" style="max-width: 25%; margin-top: -5%; margin-left: -18%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -834,13 +864,19 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp6').removeClass('circulospInactive');
+            $('.circulosp6').addClass('circulospActive');
             break;
         case 7:
             var contenido = `<div class="col-md-9 banner3 text-center">
                                 <p style="font-size: 25px;">Es superficial y falible</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento7.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento7.png" style="max-width: 25%; margin-top: -10%; margin-left: -10%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);
@@ -849,6 +885,12 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp2');
             $('.impimg').addClass('imagenimp');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp7').removeClass('circulospInactive');
+            $('.circulosp7').addClass('circulospActive');
             break;
         case 8:
             var contenido = `<div class="col-md-9 banner3 text-center">
@@ -864,6 +906,12 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp');
             $('.impimg').addClass('imagenimp2');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp8').removeClass('circulospInactive');
+            $('.circulosp8').addClass('circulospActive');
             break;
         case 9:
             var contenido = `<div class="col-md-9 banner3 text-center">
@@ -879,6 +927,12 @@ function pant13(num) {
 
             $('.impimg').removeClass('imagenimp');
             $('.impimg').addClass('imagenimp2');
+
+            $('.circulosp').removeClass('circulospActive');
+            $('.circulosp').addClass('circulospInactive');
+
+            $('.circulosp9').removeClass('circulospInactive');
+            $('.circulosp9').addClass('circulospActive');
             break;
         default:
             break;
