@@ -27,13 +27,13 @@ $( document ).ready(function() {
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
         actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
         actualizarprogress();
     });
     slide_predeterminado();
@@ -52,7 +52,11 @@ $( document ).ready(function() {
 
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
-    controlSlides(stepIndex);
+    if (num = 1) {
+        controlSlides(stepIndex+2);
+    }else{
+        controlSlides(stepIndex+1);
+    }
 }
 
 function slide_predeterminado(){
@@ -76,12 +80,12 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
+                slide(1);
                 actualizarprogress();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
+                slide(1);
                 actualizarprogress();
                 break;
         }
