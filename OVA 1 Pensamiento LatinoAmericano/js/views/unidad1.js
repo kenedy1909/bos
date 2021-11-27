@@ -98,13 +98,13 @@ function controlSlides(num){
             // /*scroll();*/
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>Los pueblos indígenas en América Latina. pdf</a>
+                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40">Los pueblos indígenas en América Latina. pdf <b class="text-cafe">Ver</b></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> El Marxismo en América Latina.pdf</a>
+                                  <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> El Marxismo en América Latina.pdf <b class="text-cafe">Ver</b></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf</a>
+                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf <b class="text-cafe">Ver</b></a>
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
@@ -168,6 +168,24 @@ function controlSlides(num){
             break;
     }
 }
+figura = document.getElementById("ctrflecha1");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide();
+                actualizarprogress();
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide();
+                actualizarprogress();
+                break;
+        }
+    }
+);
 
 function scroll_set(num) {
   dragging = "";
@@ -938,6 +956,7 @@ function pant13(num){
 }
 
 
+
 function acordeon(num,estado) {
 
     $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').removeClass('d-block');
@@ -1058,3 +1077,4 @@ function paraIframe(num){
     }
     
 }
+

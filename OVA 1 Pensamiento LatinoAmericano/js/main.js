@@ -3,6 +3,7 @@ var tema = 0;
 var active = 0;
 var star_uni = 0;
 var paso = true;
+let figura = document.getElementById("ctrflecha");
 if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 }else{
@@ -126,7 +127,7 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/28);
+    total_porcentaje = parseInt(((done+active+naveg)*100)/27);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);

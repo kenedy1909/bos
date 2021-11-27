@@ -945,3 +945,13 @@ card flip*/
 .scrol{
   overflow: auto;
 }
+
+.w40{
+  width: 40px;
+}
+.pdfs{
+      padding: 10px 120px 20px !important;
+}
+.text-cafe{
+  float: right;
+}
