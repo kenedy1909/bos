@@ -180,27 +180,27 @@ for (var n = 0; n < inputsRy.length; n++) {
 function pantallas3_1(num) {
     switch (parseInt(num)) {
         case 1:
-            var img = `<img src="assets/img/img_ova/paso1.png" style="max-width: 40%;">`;
+            var img = `<img src="assets/img/img_ova/paso1.png" style="max-width: 80%;">`;
             $('.imp_img').html(img);
             $('.texto').text('1. Objetivos');
             break;
         case 2:
-            var img = `<img src="assets/img/img_ova/paso2.png" style="max-width: 40%;">`;
+            var img = `<img src="assets/img/img_ova/paso2.png" style="max-width: 80%;">`;
             $('.imp_img').html(img);
             $('.texto').text('2. Preguntas para iniciar su investigación.');
             break;
         case 3:
-            var img = `<img src="assets/img/img_ova/paso3.png" style="max-width: 40%;">`;
+            var img = `<img src="assets/img/img_ova/paso3.png" style="max-width: 80%;">`;
             $('.imp_img').html(img);
             $('.texto').text('3. Justificación.');
             break;
         case 4:
-            var img = `<img src="assets/img/img_ova/paso4.png" style="max-width: 40%;">`;
+            var img = `<img src="assets/img/img_ova/paso4.png" style="max-width: 80%;">`;
             $('.imp_img').html(img);
             $('.texto').text('4. Viabilidad.');
             break;
         case 5:
-            var img = `<img src="assets/img/img_ova/paso5.png" style="max-width: 40%;">`;
+            var img = `<img src="assets/img/img_ova/paso5.png" style="max-width: 80%;">`;
             $('.imp_img').html(img);
             $('.texto').text('5. Evaluación.');
             break;
@@ -214,28 +214,33 @@ function pantalla3_2(num) {
         case 1:
             var text = `
             <div class="col-md-6">
-              <p class="justificado text-black">Si tomamos la pregunta sobre “¿Cómo se relacionan los medios de comunicación colectiva con el voto?” </p><br>
+              <p class="justificado text-black" style="margin-top:40px;">Si tomamos la pregunta sobre “¿Cómo se relacionan los medios de comunicación colectiva con el voto?” </p><br>
               <p class="justificado text-black">Analizando cada parte encontramos:</p>
             </div>
             <div class="col-md-6 row">
-              <div class="col-md-6">
+              <div class="col-md-6" style="margin-top:25px;">
                 <div class="arriba">
                   <p class="color-text"><b>Medios de comunicación</b></p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6" style="margin-top:25px;">
                 <div class="arriba">
-                  <p class="color-text"><b>Votos</b></p>
+                  <p class="color-text" style="margin-top: 10px;"><b>Votos</b></p>
                 </div>
               </div>
-              <div class="col-md-6 text-center">
-                <img src="assets/img/img_ova/medio.png" class="img-fluid">
-                
-              </div>
-              <div class="col-md-6 text-center">
-                <img src="assets/img/img_ova/votos.png" class="img-fluid">
-                
-              </div>
+              <div class="col-md-6 text-center" data-toggle="modal" data-target="#modal3-medioscomu">
+                                        <img src="assets/img/img_ova/medio.png" class="img-fluid cursor">
+
+                                    </div>
+                                    <div class="col-md-6 text-center" data-toggle="modal" data-target="#modal3-votos">
+                                        <img src="assets/img/img_ova/votos.png" class="img-fluid cursor" style="margin-top:14px;">
+
+                                    </div>
+                                    <div class="col-md-12">
+                                        <center>
+                                            <p style="font-size: 13px;"><i>Haga clic en la imagen</i></p>
+                                        </center>
+                                    </div>
             </div>`;
 
             $('.avance_blanco').removeClass('activa');
@@ -252,13 +257,13 @@ function pantalla3_2(num) {
         case 2:
             var text = `
             <div class="col-md-6">
-              <p class="justificado text-black">¿Por qué hay más personas satisfechas en su trabajo que otras?</p><br>
+              <p class="justificado text-black" style="margin-top:40px;">¿Por qué hay más personas satisfechas en su trabajo que otras?</p><br>
               <p class="justificado text-black">
                 ¿Cómo se relacionan los medios de comunicación colectiva con el voto?
               </p>
             </div>
             <div class="col-md-6 text-center">
-              <img src="assets/img/img_ova/conversation.png" class="" style="width: 34%;">
+              <img src="assets/img/img_ova/conversation.png" class="" style="width: 40%; margin-top:20px;">
             </div>`;
             $('.avance_blanco').removeClass('activa');
             $('.nav2').addClass('activa');
@@ -274,14 +279,14 @@ function pantalla3_2(num) {
         case 3:
             var text = `
               <div class="col-md-8">
-                <p class="justificado sub_2 text-black">¿Se investigarán los efectos que la difusión de propaganda política a través de estos medios, tienen en la conducta de los votantes?</p><br>
+                <p class="justificado sub_2 text-black" style="margin-top:40px;">¿Se investigarán los efectos que la difusión de propaganda política a través de estos medios, tienen en la conducta de los votantes?</p><br>
                 <p class="justificado sub_2 text-black">
                   ¿Se analizará el papel de los medios como agentes de socialización política de los votantes?
                 </p><br>
                 <p class="justificado text-black">Es decir, no queda claro que se va a investigar.</p>
               </div>
               <div class="col-md-4 text-center">
-                <img src="assets/img/img_ova/question.png" class="" style="width: 50%;">
+                <img src="assets/img/img_ova/question.png" class="" style="width: 150px; margin-top: 40px;">
               </div>
             </div>`;
             $('.avance_blanco').removeClass('activa');
@@ -298,12 +303,12 @@ function pantalla3_2(num) {
         case 4:
             var text = `
               <div class="col-md-8">
-                <p class="justificado text-black">Por lo tanto, se deben plantear preguntas mucho más específicas como</p><br>
+                <p class="justificado text-black" style="margin-top:40px;">Por lo tanto, se deben plantear preguntas mucho más específicas como</p><br>
 
                 <p class="justificado sub_2 text-black">La exposición por parte de los votantes a los debates televisivos de los candidatos a la presidencia de Brasil, ¿Está correlacionada con la decisión de votar o abstenerse?.</p>
               </div>
               <div class="col-md-4 text-center">
-                <img src="assets/img/img_ova/preguntas.png" class="" style="width: 50%;">
+                <img src="assets/img/img_ova/preguntas.png" class="" style="width: 150px; margin-top:40px;">
               </div>
             </div>`;
             $('.avance_blanco').removeClass('activa');
@@ -348,7 +353,7 @@ function efect(num) {
         case 6:
             $('.creciente6').addClass('crece');
             $('.div_texto6').addClass('visibilidad');
-            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #7a3d74;color: white;font-size: 18px;">Ver aquí ejemplo de preguntas de investigación</button>');
+            $('.btn_modal').html('<button data-toggle="modal" data-target="#modal3-4" class="btn" style="background: #482649;color: white;font-size: 18px; border-radius: 15px;">Ver aquí ejemplo de preguntas de investigación</button>');
             break;
         default:
             break;

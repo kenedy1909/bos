@@ -1075,17 +1075,17 @@ a.animated-button.thar-two:before {
 
 .Yugoslavia-2{
   top: -45px;
-  left: 200px;
+    left: 231px;
 }
 
 .Yugoslavia-3{
 	top: -25px;
-  left: 410px;	
+    left: 450px;	
 }
 
 .Yugoslavia-4{
-	top: 150px;
-  left: 420px;
+	top: 182px;
+    left: 455px;
 }
 
 
@@ -1177,13 +1177,13 @@ a.control_next {
 }
 
 /*scroll*/
-.custom-scrollbar1, .custom-scrollbar2, .custom-scrollbar3 {
+.custom-scrollbar1, .custom-scrollbar2, .custom-scrollbar3, .custom-scrollbarNuevo {
   position: relative;
   height: 219px;
   overflow: hidden;
 }
 
-.custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3 {
+.custom-scrollbar__inner1, .custom-scrollbar__inner2, .custom-scrollbar__inner3, .custom-scrollbar__innerNuevo {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
@@ -1197,7 +1197,7 @@ a.control_next {
   max-width: 100%;
 }*/
 
-.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3 {
+.custom-scrollbar__bar1, .custom-scrollbar__bar2, .custom-scrollbar__bar3, .custom-scrollbar__barNuevo {
   position: absolute;
   top: 18px;
   bottom: 20px;
@@ -1208,7 +1208,7 @@ a.control_next {
   border-radius: 4px;
 }
 
-.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3 {
+.custom-scrollbar__knob1, .custom-scrollbar__knob2, .custom-scrollbar__knob3, .custom-scrollbar__knobNuevo {
   position: absolute;
   top: 0;
   left: 50%;
@@ -1220,7 +1220,7 @@ a.control_next {
   will-change: top;
 }
 
-.linea_scroll1, .linea_scroll2, .linea_scroll3 {
+.linea_scroll1, .linea_scroll2, .linea_scroll3, .linea_scrollNuevo {
   font-size: 50px;
     margin: 0px;
     position: relative;

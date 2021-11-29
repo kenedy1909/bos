@@ -46,16 +46,14 @@
     flex-wrap: wrap;
     justify-content: center;
     z-index: 2;
+    width: 100%;
 }
 
 .redi1 .componente {
     cursor: pointer;
     line-height: 1.15;
     transition: transform 0.1s;
-    max-width: 200px;
-    width: calc(16% - 35px);
-    min-width: max-content;
-    min-height: max-content;
+    width: 170px;
     margin: 10px;
     padding: 10px;
     z-index: 50;
@@ -63,6 +61,7 @@
     /*cursor: url(../../img/img3/cursor-grab.cur), url(../../img/img3/cursor-grab.png), pointer;*/
     transition: transform .3s;
     box-sizing: content-box;
+    height: 125px;
 }
 
 .componentesDestino .componente {
@@ -298,16 +297,17 @@ h2.tituloContenedorE {
 }
 
 .opcion_circulo_text{
-    color: #000000;
-    width: 220px;
+        color: #000000;
+    width: 160px;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .opcion_circulo_content{
     position: relative;
-    display: flex;
-    top: -9%;
+    top: -66%;
+    left: 37px;
+    height: 30px;
 }
 
 .d-flex{
@@ -347,4 +347,31 @@ h2.tituloContenedorE {
 }
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+  box-shadow: none !important;
+}
+
+.principal_modal{
+  height: 400px;
+  border-radius: 40px;
+  background: #771e18;
+}
+
+.cabeza{
+  background: #5f1817;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 125px;
+  width: 125px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
 }

@@ -929,3 +929,27 @@ svg circle:nth-child(2){
 .invisible{
   visibility: hidden;
 }
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a8bbbf;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

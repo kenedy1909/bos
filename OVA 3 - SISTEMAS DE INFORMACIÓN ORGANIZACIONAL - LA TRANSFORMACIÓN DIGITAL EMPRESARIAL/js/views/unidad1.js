@@ -1,30 +1,31 @@
-$( document ).ready(function() {
-    $( ".zoomContainer" ).remove();
+$(document).ready(function() {
+    $(".zoomContainer").remove();
     $(".menu1").removeClass('d-none');
+    $(".ov-personaje").hide();
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
-    $('#next').on('click', function () {
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
 
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
@@ -45,29 +46,31 @@ $( document ).ready(function() {
 
 });
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
+    controlSlides(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 var sumaslide = 0;
-function controlSlides(num){
+
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
             var pdf = `<p class="p_white">
@@ -77,44 +80,44 @@ function controlSlides(num){
                             <a href="assets/PDF/UNIDAD1/guia2RedesSociales.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
                         </p>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
-            
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
+
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 6:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
-            
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
+
             break;
         case 8:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
-            
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
+
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
-            
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
+
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
-            
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
+
             break;
         case 12:
             sumaslide++;
@@ -123,17 +126,17 @@ function controlSlides(num){
                 var slideWidth = $('#slider2 ul li').width();
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider2').css({ width: '100%', height: '700' });
-                
-                $('#slider2 ul').css({ width: '90%'});
-                
+
+                $('#slider2 ul').css({ width: '90%' });
+
                 $('#slider2 ul li:last-child').prependTo('#slider2 ul');
 
                 function moveLeft2() {
                     $('#slider2 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
+                        left: +slideWidth
+                    }, 200, function() {
                         $('#slider2 ul li:last-child').prependTo('#slider2 ul');
                         $('#slider2 ul').css('left', '');
                     });
@@ -141,52 +144,52 @@ function controlSlides(num){
 
                 function moveRight2() {
                     $('#slider2 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
+                        left: -slideWidth
+                    }, 200, function() {
                         $('#slider2 ul li:first-child').appendTo('#slider2 ul');
                         $('#slider2 ul').css('left', '');
                     });
                 };
 
-                $('a.control_prev2').click(function (e) {
+                $('a.control_prev2').click(function(e) {
                     moveLeft2();
                     e.preventDefault();
                 });
 
-                $('a.control_next2').click(function (e) {
+                $('a.control_next2').click(function(e) {
                     moveRight2();
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
-            
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
+
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         case 18:
             star_uni = 1;
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
-            setMigaja("Unidades de aprendizaje","1. Tendencias tecnológicas en las organizaciones","> Megatendencias");
+            setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         default:
             break;
     }
 }
 
-function pantalla2(num){
+function pantalla2(num) {
     switch (parseInt(num)) {
         case 1:
 
@@ -245,7 +248,7 @@ function pantalla2(num){
     }
 }
 
-function textoRocas(num){
+function textoRocas(num) {
     switch (parseInt(num)) {
         case 1:
             $('.texto_rocas').addClass('invisible');
@@ -305,7 +308,8 @@ function textoRocas(num){
             break;
     }
 }
-function targetsreds(num){
+
+function targetsreds(num) {
     switch (parseInt(num)) {
         case 1:
             $('.triaTargetRed').addClass('invisible');
@@ -337,7 +341,8 @@ function targetsreds(num){
             break;
     }
 }
-function verman(num){
+
+function verman(num) {
     switch (parseInt(num)) {
         case 1:
 
@@ -360,53 +365,56 @@ function verman(num){
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
 var bar = document.querySelector('.custom-scrollbar__bar2');
 var container = document.querySelector('.custom-scrollbar__inner2');*/
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
@@ -415,58 +423,58 @@ function scroll(){
 
 
 function Input(num) {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = num;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    scroll_horizontal(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
-  this.actualizar2 = function() {
-    scroll_horizontal2(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+        scroll_horizontal2(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
 }
 
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -492,5 +500,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }
