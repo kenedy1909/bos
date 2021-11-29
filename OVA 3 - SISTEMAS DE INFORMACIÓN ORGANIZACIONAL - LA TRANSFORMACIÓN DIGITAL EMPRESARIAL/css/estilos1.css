@@ -195,7 +195,7 @@
 }
 
 .baneactivi {
-    background: #DAE3F3;
+    background: #D8E2F3;
     padding: 20px 10px 10px 10px;
     width: 90%;
     margin-left: 20px;
@@ -561,4 +561,11 @@ a.control_next {
 
 .reversa {
     transform: scaleX(-1);
+}
+
+.card .content2 {
+    background-color: white;
+    box-shadow: none;
+    padding: 10px 20px 20px;
+    border-radius: 0px 0px 30px 30px;
 }
