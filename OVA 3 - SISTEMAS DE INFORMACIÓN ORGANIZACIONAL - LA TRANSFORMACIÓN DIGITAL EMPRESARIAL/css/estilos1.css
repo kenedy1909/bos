@@ -387,7 +387,7 @@
     width: 100px;
     border-radius: 10px;
     box-shadow: -2px 2px 5px -2px black;
-    padding-top: 12px;
+    padding: 12px 12px 12px 32px;
 }
 
 .triaTargetRed {
@@ -408,6 +408,8 @@
     background: #fff;
     padding: 20px;
     border-radius: 30px;
+    height: 222px;
+    width: 620px;
 }
 
 .cuadro-blue {
@@ -419,6 +421,7 @@
     background: #DAE3F3;
     padding: 50px 10px 40px 10px;
     border-radius: 1px 1px 30px 30px;
+    height: 210px;
 }
 
 .img-activi {
