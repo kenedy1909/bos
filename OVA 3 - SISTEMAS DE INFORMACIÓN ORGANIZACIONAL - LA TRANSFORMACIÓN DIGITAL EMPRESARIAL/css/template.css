@@ -1152,7 +1152,7 @@ svg circle {
 }
 
 .text-img-activi {
-    border-bottom: solid 4px rgb(174 28 22);
+    border-bottom: solid 4px #811111;
     ;
     width: 50%;
     height: 86px;
@@ -1166,9 +1166,9 @@ svg circle {
 }
 
 .texto_activi {
+    margin-left: 12px;
     font-size: 18px;
-    color: rgb(174 28 22);
-    ;
+    color: #811111;
 }
 
 .contenedor_indi {

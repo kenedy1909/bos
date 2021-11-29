@@ -200,20 +200,31 @@
     width: 90%;
     margin-left: 20px;
     border-radius: 20px;
-    height: 150px;
+    height: 160px;
 }
 
 .img-baneactivi {
-    width: 150px;
+    width: 160px;
     position: relative;
     left: -80px;
-    top: -22px;
+    top: -19px;
+}
+
+.img-baneactivi2 {
+    width: 160px;
+    position: relative;
+    left: -80px;
+    top: -38px;
 }
 
 .btnClaro {
     background: #7D9AFE;
     color: white;
     font-weight: bold;
+    border-radius: 8px;
+    width: 104px;
+    height: 43px;
+    font-size: 15px;
 }
 
 .linea {
@@ -226,14 +237,17 @@
 .bangris {
     background: #BFBFBF;
     padding: 10px;
+    height: 60px;
 }
 
 .btn_rocas {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: #465FB3;
     border-radius: 50%;
     padding-top: 7px;
+    position: relative;
+    top: -10px;
 }
 
 .bane16 {
@@ -242,6 +256,7 @@
     border-radius: 30px;
     position: relative;
     top: -43px;
+    height: 220px;
 }
 
 .indicador1-1 {
@@ -536,7 +551,8 @@ a.control_next {
 
 .blanqueado {
     background: #fff;
-    border-radius: 30px;
+    width: 104%;
+    border-radius: 20px;
     padding: 10px;
 }
 
