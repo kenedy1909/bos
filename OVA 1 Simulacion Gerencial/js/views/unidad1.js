@@ -1208,3 +1208,34 @@ function paraIframe(num){
     }
     
 }
+
+
+
+function tarjeta(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.txtBody').addClass('esc');
+
+            $('.peru-body').removeClass('esc');
+            $('.peru-body').addClass('vis');
+      
+            break;
+        case 2:
+            $('.txtBody').addClass('esc');
+
+            $('.mexico-body').removeClass('esc');
+            $('.mexico-body').addClass('vis');   
+            break;
+            case 3:
+                $('.txtBody').addClass('esc');
+        
+                $('.libro-body').removeClass('esc');
+                $('.libro-body').addClass('vis');
+        
+                break;
+        default:
+            break;
+    }
+    
+}
+
