@@ -111,7 +111,11 @@ iframe {
 }
 
 .color-text {
-    color: var(--bg-color);
+    color: #811111;
+}
+
+.margin-text {
+    margin-left: 15px;
 }
 
 .titulo-ova {
@@ -1291,4 +1295,14 @@ svg circle {
 
 .img-100 {
     width: 100%;
+}
+
+.gris_circle {
+    width: 95%;
+    height: 95%;
+    margin-top: 4px;
+    margin-left: 4px;
+    background: #929292;
+    padding-top: 1px;
+    border-radius: 50%;
 }
