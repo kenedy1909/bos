@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,301 +30,333 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://recursos.bosingenieria.com/iconos-main/css/all.min.css">
     <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet">  -->
-    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
-    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
-    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
-    <link href="css/template-geometria.css" rel="stylesheet"> 
-    <link href="css/template.css" rel="stylesheet"> 
-    <link href="css/estilos1.css" rel="stylesheet"> 
-    <link href="css/estilos2.css" rel="stylesheet"> 
-    <link href="css/estilos3.css" rel="stylesheet"> 
-    <link href="css/estilos4.css" rel="stylesheet"> 
-  </head>
-  <body class="c-app">
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet">
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet">
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet">
+    <link href="css/template-geometria.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/estilos1.css" rel="stylesheet">
+    <link href="css/estilos2.css" rel="stylesheet">
+    <link href="css/estilos3.css" rel="stylesheet">
+    <link href="css/estilos4.css" rel="stylesheet">
+</head>
+
+<body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
-      <div class="c-sidebar-brand d-lg-down-none">
-        <h4>MENU</h4>
-      </div>
-      <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
-          <i class="fad fa-home"></i> Inicio</a>
-        </li>
-        <li class="c-sidebar-nav-title">Contenido</li>
-        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
-          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu1"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>1. Tendencias tecnológicas en las organizaciones</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Megatendencias</a></li>
-          </ul>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu2"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>2. La ley de habeas data</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Contexto general</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="text-center ov-personaje">
-          <img src="assets/img/img_ova/Sistema-de-información-organizacional.png" style="width:60%">
-      </div>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+        <div class="c-sidebar-brand d-lg-down-none">
+            <h4>MENU</h4>
+        </div>
+        <ul class="c-sidebar-nav">
+            <li class="c-sidebar-nav-item ov-inicio link-menu">
+                <a class="c-sidebar-nav-link" href="#inicio">
+                    <i class="fad fa-home"></i> Inicio</a>
+            </li>
+            <li class="c-sidebar-nav-title">Contenido</li>
+            <li class="c-sidebar-nav-item link-menu">
+                <a class="c-sidebar-nav-link" href="#unidades">
+                    <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu1">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>1. Tendencias tecnológicas en las organizaciones</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Megatendencias</a></li>
+                </ul>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu2">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>2. La ley de habeas data</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Contexto general</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="text-center ov-personaje">
+            <img src="assets/img/img_ova/Sistema-de-información-organizacional.png" style="width:60%">
+        </div>
+        <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
     <div class="c-wrapper c-fixed-components">
-      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+        <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+            <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
           <i class="fas fa-bars"> </i>
-        </button><a class="c-header-brand d-lg-none" href="#">
-          <svg width="118" height="46" alt="CoreUI Logo">
+        </button>
+            <a class="c-header-brand d-lg-none" href="#">
+                <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
-        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+            <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="c-header-nav d-md-down-none">
-          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
-          <li class="c-header-nav-item">
-            <div class="box">
-                <div class="porcent">
-                    <svg class="svg_porcent">
+            <ul class="c-header-nav d-md-down-none">
+                <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+                <li class="c-header-nav-item">
+                    <div class="box">
+                        <div class="porcent">
+                            <svg class="svg_porcent">
                         <circle cx="40" cy="60" r="25" style ="stroke: #DA2316;stroke-width: 5px;"/>
                         <circle class="up" cx="40" cy="60" r="25" style="stroke: #811111;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
                     </svg>
-                    <div class="number">
-                        
+                            <div class="number">
+
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-115.png" alt="" class="icons-menu w-60px"></a>
+                </li>
+                <li class="c-header-nav-item modal_scroll_a">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-114.png" alt="" class="icons-menu w-60px"></a>
+                </li>
+                <li class="c-header-nav-item modal_scroll_b">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px" style="width: 40px;"></a>
+                </li>
+            </ul>
+            <ul class="c-header-nav ml-auto">
+                <li class="c-header-nav-item d-md-down-none">
+                    <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+                </li>
+            </ul>
+            <div class="c-subheader px-3">
+                <!-- Breadcrumb-->
+                <ol class="breadcrumb border-0 m-0">
+                    <li class="breadcrumb-item">Menú</li>
+                    <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread3"></li>
+                    <!-- Breadcrumb Menu-->
+                </ol>
             </div>
-          </li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-115.png" alt="" class="icons-menu w-60px"></a></li>
-          <li class="c-header-nav-item modal_scroll_a"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-114.png" alt="" class="icons-menu w-60px"></a></li>
-          <li class="c-header-nav-item modal_scroll_b"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px" style="width: 40px;"></a></li>
-        </ul>
-        <ul class="c-header-nav ml-auto">
-          <li class="c-header-nav-item d-md-down-none">
-            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
-          </li>
-        </ul>
-        <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Menú</li>
-            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread3"></li>
-            <!-- Breadcrumb Menu-->
-          </ol>
-        </div>
-      </header>
-      <div class="c-body">
-        <main class="c-main" id="content-ova">
-          
-        </main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-lg" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+        </header>
+        <div class="c-body">
+            <main class="c-main" id="content-ova">
+
+            </main>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-115.png">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content pdfs" style="padding: 10px 130px 20px;">
-                            <!-- <p class="p_white">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-115.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content pdfs" style="padding: 10px 130px 20px;">
+                                            <!-- <p class="p_white">
                               <a href="assets/PDF/UNIDAD1/guia1PrincipiosDelMarketingDigital.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                             </p>
                             <p class="p_white">
                               <a href="assets/PDF/UNIDAD1/guia2RedesSociales.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                             </p> -->
 
-                            <!-- unidad 2 -->
+                                            <!-- unidad 2 -->
 
-                            <!-- <p class="p_white">
+                                            <!-- <p class="p_white">
                               <a href="assets/PDF/UNIDAD2/DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                             </p>
                             <p class="p_white">
                               <a href="assets/PDF/UNIDAD2/Ley_1581_de_2012.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Ley_1581_de_2012.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                             </p> -->
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-114.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content p_white custom-scrollbar_a">
+                                            <div class="custom-scrollbar__inner_a">
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">
+                                  Dominio:</b> es un nombre único y exclusivo que se le da a un sitio web en Internet para que cualquiera pueda visitarlo. Va precedido de www.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">
+                                  Google Adwords:</b> es la herramienta publicitaria de Google en la que se realizan campañas de pago para que los productos o servicios de una empresa aparezcan en los
+                                                    primeros resultados de búsqueda de la plataforma.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">
+                                  Industria 4.0:</b> también conocida como la Cuarta Revolución Industrial, son expresiones que intentan denominar una hipotética cuarta mega etapa de la evolución técnico-económica.
+                                                    Hace referencia a la capacidad de la tecnología para lograr mejores niveles de interconectividad, automatización, aprendizaje automático, y entender los datos en tiempo real, para facilitar mejores niveles
+                                                    de productividad y competitividad en las distintas industrias.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">
+                                  Interconectividad:</b> es la capacidad que tienen los dispositivos (máquinas o equipos) para enlazar al menos dos sistemas entre sí para que puedan compartir recursos
+                                                    en tiempo real, especialmente datos que estén en cualquier tipo de formato. Entre mayor cantidad de dispositivos y sistemas conecten al mismo tiempo, mayor interconectados pueden estar.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">Landing Page:</b> es una página web de “aterrizaje” que sirve para destacar información importante. Su objetivo es ofrecer contenido de valor a los visitantes para que realicen
+                                                    una acción o “call to action”, como enviar un mensaje, llamar o comprar.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">RDA (Robotic Process Automation):</b> o Automatización Robótica de Tareas de Escritorio. Hace referencia a la automatización de tareas cotidianas que los usuarios pueden implementar
+                                                    para hacerlas más simples y eficientes, se utiliza principalmente en tareas repetitivas, con cierto grado de dificultad. Normalmente funciona en el equipo de cómputo de un usuario e interactúa solo con
+                                                    las aplicaciones con las que cuenta.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">RPA (Robotic Desktop Automation):</b> o Automatización Robótica de Procesos. Hace referencia a los esfuerzos que realiza la organización, a través de la configuración o parametrización
+                                                    de un software, para automatizar los procesos, especialmente aquellos que son tediosos y repetitivos para su realización. Automatizar en este caso, significa programarlos a través de un programa o instrucción
+                                                    de un computador, para que la misma máquina se encargue de ejecutarlos de manera autónoma.
+                                                </p>
+                                                <p class="justificado">
+                                                    <b class="font-weight-bold">Post:</b> es una entrada o publicación de cualquier tipo en una red social.
+                                                </p>
+                                            </div>
+                                            <div class="custom-scrollbar__bar_a">
+                                                <div class="custom-scrollbar__knob_a cursor">
+                                                    <p class="text-center linea_scroll_a">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-114.png">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content p_white custom-scrollbar_a">
-                            <div class="custom-scrollbar__inner_a">
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                  Dominio:</b> es un nombre único y exclusivo que se le da a un sitio web en Internet para que cualquiera pueda visitarlo. Va precedido de www. 
-                              </p>   
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                  Google Adwords:</b> es la herramienta publicitaria de Google
-                                  en la que se realizan campañas de pago para que los productos o servicios de una empresa aparezcan en los primeros resultados de búsqueda de la plataforma.
-                              </p>
-                              <p class="justificado">
-                                <b class="font-weight-bold">
-                                  Industria 4.0:</b> también conocida como la Cuarta Revolución Industrial, son expresiones que intentan denominar una hipotética cuarta mega etapa de la evolución técnico-económica.  Hace referencia a la capacidad de la tecnología para lograr mejores niveles de interconectividad, automatización, aprendizaje automático, y entender los datos en tiempo real, para facilitar mejores niveles de productividad y competitividad en las distintas industrias. 
-                              </p>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">
-                                  Interconectividad:</b> es la capacidad que tienen los dispositivos (máquinas o equipos) para enlazar al menos dos sistemas entre sí para que puedan compartir recursos en tiempo real, especialmente datos que estén en cualquier tipo de formato. Entre mayor cantidad de dispositivos y sistemas conecten al mismo tiempo, mayor interconectados pueden estar. 
-                              </p>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">Landing Page:</b> es una página web de “aterrizaje” que sirve para destacar información importante. Su objetivo es ofrecer contenido de valor a los visitantes para que realicen una acción o “call to action”, como enviar un mensaje,
-                                llamar o comprar.
-                              </p>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">RDA (Robotic Process Automation):</b> o Automatización Robótica de Tareas de Escritorio. Hace referencia a la automatización de tareas cotidianas que los usuarios pueden implementar para hacerlas más simples y eficientes, se utiliza principalmente en tareas repetitivas, con cierto grado de dificultad. Normalmente funciona en el equipo de cómputo de un usuario e interactúa solo con las aplicaciones con las que cuenta. 
-                              </p>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">RPA (Robotic Desktop Automation):</b>  o Automatización Robótica de Procesos. Hace referencia a los esfuerzos que realiza la organización, a través de la configuración o parametrización de un software, para automatizar los procesos, especialmente aquellos que son tediosos y repetitivos para su realización. Automatizar en este caso, significa programarlos a través de un programa o instrucción de un computador, para que la misma máquina se encargue de ejecutarlos de manera autónoma. 
-                              </p>
-                              <p class="justificado"> 
-                                <b class="font-weight-bold">Post:</b> es una entrada o publicación de cualquier tipo en una red social.
-                              </p>
-                            </div>
-                            <div class="custom-scrollbar__bar_a">
-                              <div class="custom-scrollbar__knob_a cursor"><p class="text-center linea_scroll_a">-</p></div>
-                            </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content p_white custom-scrollbar_b">
+                                            <div class="custom-scrollbar__inner_b">
+                                                <p class="justificado">“Perspectivas extranjeras: De Versalles a Ruanda en 75 años: la necesidad de establecer una corte penal internacional permanente” Bassiouni, M. Cherif, publicado en la Revista de derecho público No 10 de
+                                                    la Universidad de los Andes. https://derechopublico.uniandes.edu.co/components/com_revista/archivos/derechopub/pub225.pdf</p>
+                                                <br>
+                                                <p class="justificado">Amaya, Jairo, Sistemas de Información Gerenciales. “Hardware, Software, Redes, Internet, Diseño”, ECOE Ediciones, Segunda Edición. Bogotá , DC, 2010. </p>
+
+                                                <p class="justificado">Andreu, R., J. Ricart y J. Valor (1996): Estrategia y sistemas de información, McGraw-Hill, Madrid.</p>
+                                                <br>
+
+                                                <p class="justificado">Editorial Definición MX. (07 de 09 de 2014). Definición de Fordismo. Retrieved 18 de 08 de 2019 from Definición MX: https://definicion.mx/fordismo/</p>
+                                                <br>
+
+                                                <p class="justificado">Diana Marcela Restrepo Tejada, Isaías José Navarro Navarro, & Christian Hernán Obando Ibarra. (2020, 01 14). Lineamientos para la Automatización de Robótica de Procesos. Lineamientos para la Automatización
+                                                    de Robótica de Procesos, 11(1), 143-158. https://www.escolme.edu.co/revista/index.php/cies/article/viewFile/286/313</p>
+                                                <br>
+
+                                                <p class="justificado">Informe Nacional de Competitividad 2020-2021, publicado por el Consejo Privado de Competitividad MARIA JOSE DELGADO GOMEZ. (2019, 11 4). PROYECTO AUTOMATIZACION RPA ALPINA PRODUCTOS ALIMENTICIOS S.A. PROYECTO
+                                                    AUTOMATIZACION RPA ALPINA PRODUCTOS ALIMENTICIOS S.A. Retrieved 07 02, 2021, from https://repository.javeriana.edu.co/bitstream/handle/10554/46500/Taller%20de%20grado%202%20Maria%20Jose%20Delgado%20G..pdf?sequence=2&isAllowed=y</p><br>
+
+                                                <p class="justificado">Moreno, E. G. (2001). Automatización de procesos industriales.México: Alfaomega. NiceICE RPA team with Steve Kaelble. (2018). Robotic Process Automation For Dummies.Chichester, West Sussex, United Kingdom:
+                                                    John Wiley & Sons, Ltd.RPA&AI (2017a), “What is Robotic Process Automation?” [online] from: https://irpaai.com/what-is-robotic-process-automation/</p><br>
+
+                                                <p class="justificado">RAE. (01 de 01 de 2019). Real Academia Española. Retrieved 18 de 08 de 2019 from Diccionario de la lengua española : https://dle.rae.es/?id=4TVTwDp</p><br>
+
+                                                <p class="justificado">SALESFORCE LATINOAMÉRICA. (2017, junio 22). Inteligencia Artificial: ¿Qué es? Inteligencia Artificial: ¿Qué es? Retrieved junio 22, 2021, from https://www.salesforce.com/mx/blog/2017/6/Que-es-la-inteligencia-artificial.html</p><br>
+
+                                                <p class="justificado">Sonia Cubas Rodriguez Rodríguez Letty Ventura Fernández, & Letty Ventura Fernández. (2017). La Inteligencia Artificial. Revista Electrónica de los Estudiantes Facultad de Derecho Universidad César Vallejo,
+                                                    2017(92), 97. Retrieved 07 1, 2021, from https://www.ucv.edu.pe/datafiles/derecho/revista-juridica-2017.pdf#page=92</p><br>
+                                            </div>
+                                            <div class="custom-scrollbar__bar_b">
+                                                <div class="custom-scrollbar__knob_b cursor">
+                                                    <p class="text-center linea_scroll_b">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content p_white custom-scrollbar_b">
-                            <div class="custom-scrollbar__inner_b">
-                              <p class="justificado">“Perspectivas extranjeras: De Versalles a Ruanda en 75 años: la necesidad de establecer una corte penal internacional permanente” Bassiouni, M. Cherif, publicado en la Revista de derecho público No 10 de la Universidad de los Andes. https://derechopublico.uniandes.edu.co/components/com_revista/archivos/derechopub/pub225.pdf</p>
-                              <br>
-                              <p class="justificado">Amaya, Jairo, Sistemas de Información Gerenciales. “Hardware, Software, Redes, Internet, Diseño”, ECOE Ediciones, Segunda Edición. Bogotá , DC, 2010. </p>
-
-                              <p class="justificado">Andreu, R., J. Ricart y J. Valor (1996): Estrategia y sistemas de información, McGraw-Hill, Madrid.</p>
-                              <br>
-
-                              <p class="justificado">Editorial Definición MX. (07 de 09 de 2014). Definición de Fordismo. Retrieved 18 de 08 de 2019 from Definición MX: https://definicion.mx/fordismo/</p>
-                              <br>
-
-                              <p class="justificado">Diana Marcela Restrepo Tejada, Isaías José Navarro Navarro, & Christian Hernán Obando Ibarra. (2020, 01 14). Lineamientos para la Automatización de Robótica de Procesos. Lineamientos para la Automatización de Robótica de Procesos, 11(1), 143-158. https://www.escolme.edu.co/revista/index.php/cies/article/viewFile/286/313</p>
-                              <br>
-
-                              <p class="justificado">Informe Nacional de Competitividad 2020-2021, publicado por el Consejo Privado de Competitividad 
-                              MARIA JOSE DELGADO GOMEZ. (2019, 11 4). PROYECTO AUTOMATIZACION RPA ALPINA PRODUCTOS ALIMENTICIOS S.A. PROYECTO AUTOMATIZACION RPA ALPINA PRODUCTOS ALIMENTICIOS S.A. Retrieved 07 02, 2021, from https://repository.javeriana.edu.co/bitstream/handle/10554/46500/Taller%20de%20grado%202%20Maria%20Jose%20Delgado%20G..pdf?sequence=2&isAllowed=y</p><br>
-
-                              <p class="justificado">Moreno, E. G. (2001). Automatización de procesos industriales.México: Alfaomega.
-                              NiceICE RPA team with Steve Kaelble. (2018). Robotic Process Automation For Dummies.Chichester, West Sussex, United Kingdom: John Wiley & Sons, Ltd.RPA&AI (2017a), “What is Robotic Process Automation?” [online] from: https://irpaai.com/what-is-robotic-process-automation/</p><br>
-
-                              <p class="justificado">RAE. (01 de 01 de 2019). Real Academia Española. Retrieved 18 de 08 de 2019 from Diccionario de la lengua española : https://dle.rae.es/?id=4TVTwDp</p><br>
-
-                              <p class="justificado">SALESFORCE LATINOAMÉRICA. (2017, junio 22). Inteligencia Artificial: ¿Qué es? Inteligencia Artificial: ¿Qué es? Retrieved junio 22, 2021, from https://www.salesforce.com/mx/blog/2017/6/Que-es-la-inteligencia-artificial.html</p><br>
-
-                              <p class="justificado">Sonia Cubas Rodriguez Rodríguez Letty Ventura Fernández, & Letty Ventura Fernández. (2017). La Inteligencia Artificial. Revista Electrónica de los Estudiantes Facultad de Derecho Universidad César Vallejo, 2017(92), 97. Retrieved 07 1, 2021, from https://www.ucv.edu.pe/datafiles/derecho/revista-juridica-2017.pdf#page=92</p><br>
-                            </div>
-                            <div class="custom-scrollbar__bar_b">
-                              <div class="custom-scrollbar__knob_b cursor"><p class="text-center linea_scroll_b">-</p></div>
-                            </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <footer class="c-footer">
+                <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+                <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+            </footer>
         </div>
-        <footer class="c-footer">
-          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
-          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
-        </footer>
-      </div>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="js/coreiu.bundle.min.js"></script>
@@ -340,7 +373,8 @@
     <!--[if IE]><!-->
     <!--<![endif]-->
     <!-- Plugins and scripts required by this view-->
-    
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
