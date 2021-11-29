@@ -941,7 +941,7 @@ function scroll_horizontal2(num){
             break;
         case 4:
             var img_scroll = `
-                    <img src="assets/img/img_ova/inversor.png" width="70%">
+                    <img src="assets/img/img_ova/inversor.png" width="70%" style="position: relative; top: -13px;">
                     `;
             var info_scroll = `
                     <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>5</b></a>
@@ -1233,9 +1233,64 @@ function tarjeta(num) {
                 $('.libro-body').addClass('vis');
         
                 break;
+            case 4:
+                $('.contenido-card-body').addClass('esc');
+        
+                $('.contenido1').removeClass('esc');
+                $('.contenido1').addClass('vis');
+        
+                break;
+            case 5:
+                $('.contenido-card-body').addClass('esc');
+        
+                $('.contenido2').removeClass('esc');
+                $('.contenido2').addClass('vis');
+        
+                break;
         default:
             break;
     }
     
 }
+let counter=0;
+function hiddenTxt(num){
+    
+    counter ++;
+    switch (parseInt(num)) {
+        case 1:
+            
+           
+            if (counter == 1) {
+                
+                // $('#collapseOne1').collapse('hide');
+            
+                // $('#collapseOne1').collapse('hide');
+                $('#collapseOne1').removeClass('show');
+                
+            }
+            if (counter ==2) {
+                
+                // $('#collapseOne1').collapse('hide');
+                $('#collapseOne1').add('esc');
+                counter=0;
+            }
+      
+            break;
+        case 2:
+            $('.txtBody').addClass('esc');
 
+            $('.mexico-body').removeClass('esc');
+            $('.mexico-body').addClass('vis');   
+            break;
+            case 3:
+                $('.txtBody').addClass('esc');
+        
+                $('.libro-body').removeClass('esc');
+                $('.libro-body').addClass('vis');
+        
+                break;
+        default:
+            break;
+    }
+
+}

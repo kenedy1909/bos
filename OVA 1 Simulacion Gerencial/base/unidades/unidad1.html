@@ -236,6 +236,7 @@
                             </div><br>
                             <div class="row">
                               <div class="col-md-12">
+                        
                                 <!--Accordion wrapper-->
                                   <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
@@ -243,9 +244,9 @@
                                     <div class="card shadow" style="border-radius: 22px;">
 
                                       <!-- Card header -->
-                                      <div style="background-color: #393a72;" class="card-header" role="tab" id="headingOne1">
+                                      <div style="background-color: #393a72;" class="card-header" role="tab" id="headingOne1" >
                                         <a  data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                                          aria-controls="collapseOne1">
+                                          aria-controls="collapseOne1" onclick="hiddenTxt(1);">
                                           <h5 class="mb-0">
                                             <img class="col-md-1" src="assets/img/img_ova/company.png"> <i class="fas fa-angle-down rotate-icon"></i>
                                           </h5>
@@ -253,9 +254,9 @@
                                       </div>
 
                                       <!-- Card body -->
-                                      <div id="collapseOne1" class="collapse " role="tabpanel" aria-labelledby="headingOne1"
+                                      <div id="collapseOne1" class=" collapse " role="tabpanel" aria-labelledby="headingOne1"
                                         data-parent="#accordionEx">
-                                        <div class="card-body">
+                                        <div class="card-body accordion-body">
 
                                           <div class="row">
                                             <img class="col-md-2" src="assets/img/img_ova/company.png">
@@ -341,8 +342,8 @@
                               <div class="row" >
                                 <div class="col-md-5 row">
                                    <img src="assets/img/img_ova/actividad_general.png" style="width: 116px;height: 100px;">
-                                   <div class="text-img-activi">
-                                     <b style="font-size: 20px; color: rgba(0, 91, 139);">ACTIVIDAD #1</b>
+                                   <div class="text-img-activi" style="border-bottom: solid 3px #E9464F;">
+                                     <b style="font-size: 20px; color: #E9464F;">ACTIVIDAD #1</b>
                                    </div>
                                 </div>
                                 <div class="col-md-6  shadow" style="background: #b13d50; border-radius: 20px;padding-top: 15px;padding-left: 30px;">
@@ -363,8 +364,8 @@
                               <div class="row">
                                 <div class="col-md-6 text-center ">
                                     <button style="width: 100%; white-space: break-spaces;" class="btn btn-danger btn-lg shadow" type="button" data-toggle="collapse"
-                                        data-target="#collapseTarjeta4" aria-expanded="false" aria-controls="collapseTarjeta4" ><img class="img15" src="assets/img/img_ova/contrato.png"></button>
-                                    <div class="collapse multi-collapse" id="collapseTarjeta4">
+                                        data-target="#collapseTarjeta4" aria-expanded="false" aria-controls="collapseTarjeta4" ><img class="img15" src="assets/img/img_ova/contrato.png" onclick="targeta(4);"></button>
+                                    <div class="collapse multi-collapse contenido-card-body contenido1 " id="collapseTarjeta4">
                                         <div class="card card-body justificado">
                                             En un contexto empresarial (empresa con la que considere pertinente hacer el ejercicio) describa en un escrito de mínimo 500 caracteres las siguientes preguntas dentro de lo que usted conoce de ella: <br>
 
@@ -379,9 +380,9 @@
                                 </div>
                                 <div class="col-md-6 text-center">
                                     <button style="width: 100%;" class="btn btn-danger btn-lg shadow" type="button" data-toggle="collapse" data-target="#collapseTarjeta5"
-                                        aria-expanded="false" aria-controls="collapseTarjeta5" ><img class="img15" src="assets/img/img_ova/pdf-file.png"></button>
-                                    <div class="collapse multi-collapse" id="collapseTarjeta5">
-                                        <div class="card card-body justificado">
+                                        aria-expanded="false" aria-controls="collapseTarjeta5" ><img class="img15" src="assets/img/img_ova/pdf-file.png" onclick="tarjeta(5);"></button>
+                                    <div class="collapse multi-collapse contenido-card-body contenido2 " id="collapseTarjeta5">
+                                        <div class="card card-body  justificado">
                                             Realice la lectura del documento “Prospectiva y desarrollo”. <br><br>
 
                                             <div class="row">
@@ -408,10 +409,9 @@
                           <div class="row">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
-                                        <h3>Enfoque prospectivo de </h3>
-                                        <h3>la simulación gerencial</h3>
+                                    <h3 class="color-titulo mt-2">Enfoque prospectivo de <br>la simulación gerencial</h3>
                                     </div>
-                                  <p class="justificado subtitulito h4 my-4">Prospectiva en las organizaciones</p>
+                                  <p class="justificado subtitulito h4 my-4"><b>Prospectiva en las organizaciones</b></p>
 
                                   <p class=" font13 justificado text-black">
                                     Anteriormente hemos revisado como la prospectiva la componen aspectos como la del estudio de futuros, la planificación y el análisis de las políticas, y como estas conforman y crean una orientación al futuro y caminos diferentes de los que normalmente lleva la empresa para generar cambios que beneficien el crecimiento empresarial.  <br> <br>
@@ -420,7 +420,7 @@
 
                                   </p> <br>
 
-                                  <p class="caja-text-b p_white shadow my-3">Deslice la  flechas hacia la derecha para conocer algunas características y ventajas de la prospectiva empresarial:</p>
+                                  <p class="caja-text-b p_white shadow my-3">Deslice el círculo hacia la derecha para conocer algunas características y ventajas de la prospectiva empresarial:</p>
                               </div>
                             </div>
                             <div class="row pl-5">
@@ -450,8 +450,8 @@
                               <div class="row" >
                                 <div class="col-md-5 row">
                                    <img src="assets/img/img_ova/actividad_general.png" style="width: 116px;height: 100px;">
-                                   <div class="text-img-activi">
-                                     <b style="font-size: 20px; color: rgba(0, 91, 139);">ACTIVIDAD #2</b>
+                                   <div class="text-img-activi" style="border-bottom: solid 3px #E9464F;">
+                                     <b style="font-size: 20px; color: #E9464F;">ACTIVIDAD #2</b>
                                    </div>
                                 </div>
                                 <div class="col-md-6  shadow" style="background: #b13d50; border-radius: 20px;padding-top: 15px;padding-left: 30px;">
@@ -1177,7 +1177,7 @@
   </div>
 </div>
 <div class="modal fade" id="modal_vermas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog centered-propio modal-xl" role="document">
+  <div class="modal-dialog centered-propio  modal-lg " role="document">
     <div class="modal-content">
       <div class="">
         <div class="card-container manual-flip">
@@ -1201,9 +1201,9 @@
                     </div>
                   </div>
                   
-                  <div class="content row" style="padding: 30px 30px 30px 30px;">
-                    <div class="col-md-12">
-                      <img  src="assets/img/img_ova/jouvenel.png" class="col-md-6 offset-md-3" >
+                  <div class="content row" style="padding: 20px 20px 20px 20px;">
+                    <div class="col-md-12 ">
+                      <img  src="assets/img/img_ova/jouvenel.png" class="col-md-6 offset-md-3" style="height: 281px;">
                     </div>
                     
                   </div>
