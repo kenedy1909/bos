@@ -377,13 +377,13 @@
                               </div>
                               <div class="d-flex">
                                 <div class="m-auto">
-                                    <div class="text-center pdf_activi cursor img-70 mx-auto" onclick="infoactivi(1);" style="background: #00465E;">
+                                    <div class="text-center position-relative pdf_activi cursor img-70 mx-auto" onclick="infoactivi(1);" style="background: #00465E; z-index: 5;">
                                       <img src="assets/img/img_ova/pdf_white.png" style="max-width: 20%;">
                                     </div>
-                                    <div class="banneactiv_pdf info1 img-70 mx-auto" style="visibility: hidden;">
-                                      <p>Realice la lectura de los siguientes capítulos del libro de Física I:</p><br>
-                                      <p><b>Capítulo 1.6 :</b>Movimiento unidimensional</p>
-                                      <p><b>Capítulo 1.7 :</b>Movimiento en dos dimensiones</p><br>
+                                    <div class="position-relative banneactiv_pdf info1 pt-4 img-70 mx-auto" style="visibility: hidden; border-top-left-radius: 0px; border-top-right-radius: 0px; top: -20px; z-index: 1;">
+                                      <p class="mt.2 p_black justificado">Realice la lectura de los siguientes capítulos del libro de Física I:</p><br>
+                                      <p class="p_black">Capítulo 1.6 :Movimiento unidimensional</p>
+                                      <p class="p_black">Capítulo 1.7 :Movimiento en dos dimensiones</p><br>
                                       <div class="text-center">
                                         <a href="assets/PDF/fisica_general_unad.pdf" target="_blank"><button class="btn btnAzul">Ver PDF</button></a>
                                       </div>
@@ -410,9 +410,9 @@
                                   <h3 class="color-text"><b>Movimiento unidimensional /</b> Velocidad y rapidez instantánea</h3>
                               </div>
                           </div>
-                          <div class="col-md-12">
+                          <div class="col-md-12 p-0">
                             <div class="bannerpiel">
-                              <p class="justificado">Como se mencionó la velocidad media depende de la posición final y de la posición inicial, pero se sabe que en un desplazamiento real el desplazamiento es a ritmos diferentes; ¿Qué pasaría si en un momento especifico se desea saber exactamente la velocidad a la que nos movemos? A esta cantidad es la que llámanos rapidez o velocidad instantáneas; es decir, la velocidad en un instante específico o en un punto específico de la trayectoria.</p>
+                              <p class="p_black justificado">Como se mencionó la velocidad media depende de la posición final y de la posición inicial, pero se sabe que en un desplazamiento real el desplazamiento es a ritmos diferentes; ¿Qué pasaría si en un momento especifico se desea saber exactamente la velocidad a la que nos movemos? A esta cantidad es la que llámanos rapidez o velocidad instantáneas; es decir, la velocidad en un instante específico o en un punto específico de la trayectoria.</p>
                             </div>
                           </div>
                           <div class="col-md-12 mt-3">
@@ -421,7 +421,7 @@
                                 <img src="assets/img/img_ova/velocidad-de-pagina.png" class="img-90">
                               </div>
                               <div class="col-md-9">
-                                <p class="justificado">Para obtener la velocidad instantánea del auto del ejemplo anterior en el punto P1, se mueve el segundo punto P2 cada vez más cerca del primer punto P1 y se calcula la velocidad media para estos desplazamientos y lapsos cada vez más cortos. Tanto ∆𝑥 como ∆𝑡 se hacen muy pequeños; pero su cociente no necesariamente lo hace. En el lenguaje del cálculo, el límite de ∆𝑥/∆𝑡 conforme ∆𝑡 se acerca a cero siendo la derivada de x con respecto a t y se escribe 𝑑𝑥/𝑑𝑡. La velocidad instantánea es el límite de la velocidad media conforme al intervalo de tiempo se acerca a cero; es igual a la tasa instantánea de cambio de posición con el tiempo.</p><br>
+                                <p class="p_black justificado">Para obtener la velocidad instantánea del auto del ejemplo anterior en el punto P1, se mueve el segundo punto P2 cada vez más cerca del primer punto P1 y se calcula la velocidad media para estos desplazamientos y lapsos cada vez más cortos. Tanto ∆𝑥 como ∆𝑡 se hacen muy pequeños; pero su cociente no necesariamente lo hace. En el lenguaje del cálculo, el límite de ∆𝑥/∆𝑡 conforme ∆𝑡 se acerca a cero siendo la derivada de x con respecto a t y se escribe 𝑑𝑥/𝑑𝑡. La velocidad instantánea es el límite de la velocidad media conforme al intervalo de tiempo se acerca a cero; es igual a la tasa instantánea de cambio de posición con el tiempo.</p><br>
                                 <img src="assets/img/img_ova/formula.png" class="img100">
                               </div>
                             </div>
@@ -436,13 +436,15 @@
                                   <h3 class="color-text"><b>Movimiento unidimensional /</b> Velocidad y rapidez instantánea</h3>
                               </div>
                           </div>
-                          <div class="col-md-12 pb-3" style="border-bottom: 1px solid #4472c4;">
-                            <div class="fondo_indica"><b>Ejercicio de ejemplo:</b></div>
+                          <div class="col-md-12 pl-0 pb-3" style="border-bottom: 1px solid #4472c4;">
+                            <br>
+                            <div class="fondo_indica p_black"><b>Ejercicio de ejemplo:</b></div>
                             <div class="row">
-                              <div class="col-md-6">
-                                <p>Un automóvil está detenido ante un semáforo. Después, viaja en línea recta y su distancia con respecto al semáforo está dada por:</p>
+                              <div class="col-md-5 pr-0">
+                                <br>
+                                <p class="justificado p_black">Un automóvil está detenido ante un semáforo. Después, viaja en línea recta y su distancia con respecto al semáforo está dada por:</p>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-7">
                                 <div class="formulablue">
                                   <h2 class="text-white">x(t) = bt<sup>2</sup> - ct<sup>3</sup>, donde b = 2,40 m/s<sup>2</sup> y c = 0,120 m/s<sup>3</sup></h2>
                                 </div>
@@ -451,23 +453,27 @@
                           </div>
                           <div class="row mt-3">
                               <div class="col-md-12">
+                                <p class="p_black justificado">Haga clic en las flechas y modales para continuar</p>
                                   <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-interval="false">
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
                                           <div class="row">
                                                 <div class="col-md-6">
-                                                   <div class="radius-2 bg-amarillo-o py-3 px-5 h-100 equivalencia-content-1 min">
-                                                     <div class="d-flex">
-                                                       <div><p class="justificado p_black equivalencia-1">
-                                                        a) Calcule la velocidad media del automóvil entre el intervalo <br><br>
-                                                        <b class="text-white">t = 0 a t = 10.0 s.</b>
-                                                       </p></div>
-                                                       <div class="position-relative my-auto">
-                                                         <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-1" style="left: 25px;"><img src="assets/img/img_ova/automovil.png" class="img-100 m-auto"></div>
-                                                         <a href="#carouselExampleControls2" role="button" data-slide="next">
-                                                            <div class="position-absolute w-h-50px d-flex img-equivalencia-flecha-1" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto"></div>
-                                                         </a>
-                                                       </div>
+                                                   <div class="radius-2 bg-amarillo-o py-3 px-5 h-100 equivalencia-content-1" style="min-height: 210px;">
+                                                     <div class="d-flex h-100">
+                                                        <div class="m-auto d-flex">
+                                                            
+                                                           <div><p class="justificado p_black equivalencia-1">
+                                                            a) Calcule la velocidad media del automóvil entre el intervalo <br><br>
+                                                            <b class="text-white">t = 0 a t = 10.0 s.</b>
+                                                           </p></div>
+                                                           <div class="position-relative my-auto">
+                                                             <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-1" style="left: 25px; top: -45px;"><img src="assets/img/img_ova/automovil.png" class="img-100 m-auto"></div>
+                                                             <a href="#carouselExampleControls2" role="button" data-slide="next">
+                                                                <div class="position-absolute w-h-50px d-flex img-equivalencia-flecha-1" style="left: 125px; top: -30px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto"></div>
+                                                             </a>
+                                                           </div>
+                                                        </div>
                                                      </div>
                                                      
                                                    </div>
@@ -478,10 +484,10 @@
                                           <div class="row">
                                               <div class="col-md-1">
                                                 <a href="#carouselExampleControls2" role="button" data-slide="prev">
-                                                    <div class="radius-2 bg-amarillo-o py-3 h-100 equivalencia-content-1">
-                                                      <div class="d-flex">
+                                                    <div class="radius-2 d-flex bg-amarillo-o py-3 h-100 equivalencia-content-1">
+                                                      <div class="d-flex my-auto">
                                                         <div class="position-relative my-auto">
-                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-1 d-none" style="z-index: 1;left: 25px;"><img src="assets/img/img_ova/automovil.png" class="img-100 m-auto"></div>
+                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-1 d-none" style="z-index: 1;left: 25px;top: -45px;"><img src="assets/img/img_ova/automovil.png" class="img-100 m-auto"></div>
                                                           
                                                         </div>
                                                       </div>
@@ -490,17 +496,24 @@
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-2">
-                                                <div class="radius-2 bg-cafe-c py-3 px-5 h-100 equivalencia-content-2 min">
-                                                  <div class="d-flex">
+                                                <div class="radius-2 bg-cafe-c py-3 px-5 h-100 equivalencia-content-2" style="min-height: 210px;">
+                                                  <div class="d-flex h-100">
+                                                    <div class="m-auto d-flex">
+                                                        <div>
+                                                            
+                                                            <p class="p_white text-center">RESPUESTA</p>
+                                                            <img src="assets/img/img_ova/actividadvelocidadmedia.png" class="img100" data-toggle="modal" data-target="#agrandar1">
+                                                            <p class="p_white text-center">clic a la imagen</p>
+                                                        </div>
 
-                                                    <img src="assets/img/img_ova/actividadvelocidadmedia.png" class="img100 zoom_img" data-zoom-image="assets/img/img_ova/actividadvelocidadmedia.png">
-
-                                                    <div class="position-relative my-auto">
-                                                      <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="left: 25px;"><img src="assets/img/img_ova/semaforos.png" class="img-100 m-auto"></div>
-                                                      <a href="#carouselExampleControls2" role="button" data-slide="next">
-                                                          <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-2"></div>
-                                                      </a>
+                                                        <div class="position-relative my-auto">
+                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="left: 25px; top: -45px;"><img src="assets/img/img_ova/semaforos.png" class="img-100 m-auto"></div>
+                                                          <a href="#carouselExampleControls2" role="button" data-slide="next">
+                                                              <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: -30px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-2"></div>
+                                                          </a>
+                                                        </div>
                                                     </div>
+
                                                   </div>
                                                 </div>
                                               </div>
@@ -516,29 +529,32 @@
                                               </div>
                                               <div class="col-md-1">
                                                 <a href="#carouselExampleControls2" role="button" data-slide="prev">
-                                                    <div class="radius-2 bg-cafe-c py-3 h-100 equivalencia-content-2">
-                                                      <div class="d-flex">                                                   
+                                                    <div class="radius-2 d-flex bg-cafe-c py-3 h-100 equivalencia-content-2">
+                                                      <div class="d-flex my-auto">                                                   
                                                         <div class="position-relative my-auto">
-                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;"><img src="assets/img/img_ova/semaforos.png" class="img-100 m-auto"></div>
+                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;top: -45px;"><img src="assets/img/img_ova/semaforos.png" class="img-100 m-auto"></div>
                                                         </div>
                                                       </div>
                                                     </div>
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-3">
-                                                 <div class="radius-2 bg-otro-azul-mc py-3 px-5 h-100 equivalencia-content-3 min">
-                                                   <div class="d-flex">
-                                                     <p class="justificado p_black equivalencia-3">
-                                                       <b>Ejercicio de ejemplo:</b><br><br>
-                                                       b) Calcule la velocidad instantánea del automóvil en: <br><br>
-                                                       t = 0, t = 5.0 s y t = 10.0 s
-                                                     </p>
-                                                     <div class="position-relative my-auto">
-                                                       <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-3" style="left: 25px;"><img src="assets/img/img_ova/velocimetro.png" class="img-100 m-auto"></div>
-                                                       <a href="#carouselExampleControls2" role="button" data-slide="next">
-                                                          <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-3"></div>
-                                                       </a>
-                                                     </div>
+                                                 <div class="radius-2 bg-otro-azul-mc py-3 px-5 h-100 equivalencia-content-3" style="min-height: 210px;">
+                                                   <div class="d-flex h-100">
+                                                    <div class="m-auto d-flex">
+                                                        
+                                                         <p class="justificado p_black equivalencia-3">
+                                                           <b>Ejercicio de ejemplo:</b><br><br>
+                                                           b) Calcule la velocidad instantánea del automóvil en: <br><br>
+                                                           t = 0, t = 5.0 s y t = 10.0 s
+                                                         </p>
+                                                         <div class="position-relative my-auto">
+                                                           <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-3" style="left: 25px; top: -45px;"><img src="assets/img/img_ova/velocimetro.png" class="img-100 m-auto"></div>
+                                                           <a href="#carouselExampleControls2" role="button" data-slide="next">
+                                                              <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: -30px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-3"></div>
+                                                           </a>
+                                                         </div>
+                                                    </div>
                                                    </div>
                                                  </div>
                                               </div>
@@ -560,27 +576,34 @@
                                               </div>
                                               <div class="col-md-1">
                                                 <a href="#carouselExampleControls2" role="button" data-slide-to="2">
-                                                    <div class="radius-2 bg-otro-azul-mc py-3 h-100 equivalencia-content-2">
-                                                      <div class="d-flex">                                                   
+                                                    <div class="radius-2 d-flex bg-otro-azul-mc py-3 h-100 equivalencia-content-2">
+                                                      <div class="d-flex my-auto">                                                   
                                                         <div class="position-relative my-auto">
-                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;"><img src="assets/img/img_ova/velocimetro.png" class="img-100 m-auto"></div>
+                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;top: -45px;"><img src="assets/img/img_ova/velocimetro.png" class="img-100 m-auto"></div>
                                                         </div>
                                                       </div>
                                                     </div>
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-4">
-                                                 <div class="radius-2 bg-un-azul-mas py-3 px-5 h-100 equivalencia-content-4 min">
-                                                   <div class="d-flex">
+                                                 <div class="radius-2 bg-un-azul-mas py-3 px-5 h-100 equivalencia-content-4" style="min-height: 210px;">
+                                                   <div class="d-flex h-100">
+                                                    <div class="m-auto d-flex">
+                                                        <div>
+                                                          <p class="p_white text-center">RESPUESTA</p>
+                                                          <img src="assets/img/img_ova/velocidadyrapidez.png" class="img100" data-toggle="modal" data-target="#agrandar2">
+                                                          <p class="p_white text-center">clic a la imagen</p>
+                                                            
+                                                        </div>
 
-                                                      <img src="assets/img/img_ova/velocidadyrapidez.png" class="img100">
+                                                         <div class="position-relative my-auto">
+                                                           <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-4" style="left: 25px; top: -45px;"><img src="assets/img/img_ova/posiciones.png" class="img-100 m-auto"></div>
+                                                           <a href="#carouselExampleControls2" role="button" data-slide="next">
+                                                              <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: -30px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-4"></div>
+                                                           </a>
+                                                         </div>
+                                                    </div>
 
-                                                     <div class="position-relative my-auto">
-                                                       <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-4" style="left: 25px;"><img src="assets/img/img_ova/posicion.png" class="img-100 m-auto"></div>
-                                                       <a href="#carouselExampleControls2" role="button" data-slide="next">
-                                                          <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-4"></div>
-                                                       </a>
-                                                     </div>
                                                    </div>
                                                  </div>
                                               </div>
@@ -609,30 +632,33 @@
                                               <div class="col-md-1">
                                                 <a href="#carouselExampleControls2" role="button" data-slide-to="3">
 
-                                                    <div class="radius-2 bg-un-azul-mas py-3 h-100 equivalencia-content-2">
-                                                      <div class="d-flex">                                                   
+                                                    <div class="radius-2 d-flex bg-un-azul-mas py-3 h-100 equivalencia-content-2">
+                                                      <div class="d-flex my-auto">                                                   
                                                         <div class="position-relative my-auto">
-                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;"><img src="assets/img/img_ova/posicion.png" class="img-100 m-auto"></div>
+                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;top: -45px;"><img src="assets/img/img_ova/posiciones.png" class="img-100 m-auto"></div>
                                                         </div>
                                                       </div>
                                                     </div>
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-5">
-                                                 <div class="radius-2 bg-gris-c py-3 px-5 h-100 equivalencia-content-5 min">
-                                                   <div class="d-flex">
-                                                     <p class="justificado p_black equivalencia-5">
-                                                       <b>Ejercicio de ejemplo:</b><br><br>
-                                                       c) ¿Cuánto tiempo después de que el auto arrancó vuelve a estar detenido?
-                                                       <br><br>
-                                                       (Hugo, 2021).
-                                                     </p>
-                                                     <div class="position-relative my-auto">
-                                                       <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-5" style="left: 25px;"><img src="assets/img/img_ova/cronografo.png" class="img-100 m-auto"></div>
-                                                       <a href="#carouselExampleControls2" role="button" data-slide="next">
-                                                          <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: 15px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-5" ></div>
-                                                        </a>
-                                                     </div>
+                                                 <div class="radius-2 bg-gris-c py-3 px-5 h-100 equivalencia-content-5" style="min-height: 210px;">
+                                                   <div class="d-flex h-100">
+                                                    <div class="m-auto d-flex">
+                                                        
+                                                         <p class="justificado p_black equivalencia-5">
+                                                           <b>Ejercicio de ejemplo:</b><br><br>
+                                                           c) ¿Cuánto tiempo después de que el auto arrancó vuelve a estar detenido?
+                                                           <br><br>
+                                                           (Hugo, 2021).
+                                                         </p>
+                                                         <div class="position-relative my-auto">
+                                                           <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-5" style="left: 25px; top: -45px;"><img src="assets/img/img_ova/cronografo.png" class="img-100 m-auto"></div>
+                                                           <a href="#carouselExampleControls2" role="button" data-slide="next">
+                                                              <div class="position-absolute w-h-50px d-flex" style="left: 125px; top: -30px;"><img src="assets/img/img_ova/flecha-derecha.png" class="img-100 m-auto img-equivalencia-flecha-5" ></div>
+                                                            </a>
+                                                         </div>
+                                                    </div>
                                                    </div>
                                                    
                                                  </div>
@@ -668,19 +694,25 @@
                                               <div class="col-md-1">
                                                 <a href="#carouselExampleControls2" role="button" data-slide-to="4">
 
-                                                    <div class="radius-2 bg-gris-c py-3 h-100 equivalencia-content-2">
-                                                      <div class="d-flex">                                                   
+                                                    <div class="radius-2 d-flex bg-gris-c py-3 h-100 equivalencia-content-2">
+                                                      <div class="d-flex my-auto">                                                   
                                                         <div class="position-relative my-auto">
-                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;"><img src="assets/img/img_ova/cronografo.png" class="img-100 m-auto"></div>
+                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-90px d-flex img-equivalencia-2" style="z-index: 1;left: 25px;top: -45px;"><img src="assets/img/img_ova/cronografo.png" class="img-100 m-auto"></div>
                                                         </div>
                                                       </div>
                                                     </div>
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-5">
-                                                 <div class="radius-2 bg-white-c py-3 px-5 h-100 equivalencia-content-5 min">
-                                                   <div class="d-flex">
-                                                     <img src="assets/img/img_ova/velocidadyrapidez2.png" class="img100 mt-5" >
+                                                 <div class="radius-2 bg-white-c py-3 px-5 h-100 equivalencia-content-5" style="min-height: 210px;">
+                                                   <div class="d-flex h-100">
+                                                    <div class="m-auto d-flex">
+                                                        <div>
+                                                             <p class="p_black text-center">RESPUESTA</p>
+                                                             <img src="assets/img/img_ova/velocidadyrapidez2.png" class="img100 m-auto" data-toggle="modal" data-target="#agrandar3">
+                                                             <p class="p_black text-center">clic a la imagen</p>
+                                                        </div>
+                                                    </div>
                                                    </div>
                                                    
                                                  </div>
@@ -701,14 +733,14 @@
                                   <h3 class="color-text"><b>Movimiento unidimensional /</b> Velocidad relativa</h3>
                               </div>
                           </div>
-                          <div class="col-md-12">
-                            <p class="justificado">En muchas situaciones de la vida cotidiana se experimenta un fenómeno físico curioso y es cuando vamos por ejemplo en el metro, se sabe que esté se desplaza a unos 90 km/h con respecto al suelo, sin embargo, se nota como el tren sobrepasa los autos que viaja paralelos a la vía y en la misma dirección lentamente, digamos a unos 10 km/h; o cuando se encuentra con otro tren que viene en sentido contrario también a 90 km/h, parece que la velocidad es mayor unos 180 km/h. Es por esto que la velocidad que un observador determinado percibe es la velocidad relativa a él, o simplemente la velocidad relativa.</p>
+                          <div class="col-md-12 p-0">
+                            <p class="p_black justificado">En muchas situaciones de la vida cotidiana se experimenta un fenómeno físico curioso y es cuando vamos por ejemplo en el metro, se sabe que esté se desplaza a unos 90 km/h con respecto al suelo, sin embargo, se nota como el tren sobrepasa los autos que viaja paralelos a la vía y en la misma dirección lentamente, digamos a unos 10 km/h; o cuando se encuentra con otro tren que viene en sentido contrario también a 90 km/h, parece que la velocidad es mayor unos 180 km/h. Es por esto que la velocidad que un observador determinado percibe es la velocidad relativa a él, o simplemente la velocidad relativa.</p>
                           </div>
                           <div class="col-md-12">
                             <div class="baneBlue">
                               <div class="banewhite">
-                                <div class="text-center"><img src="assets/img/img_ova/aceleracion.png" class="" style="width: 25%;"></div>
-                                <div><p class="justificado">Dados dos observadores, A y B, cuyas velocidades medidas por un tercer observador (ese observador está quieto con respecto al suelo (se le llama observador inercial) son v<sub>A</sub> y v<sub>B</sub> respectivamente, la velocidad relativa de B con respecto a A se denota como v<sub>BA</sub> = v<sub>B</sub> - v<sub>A</sub>. Naturalmente, la velocidad relativa de A con respecto a B se denota como v<sub>AB</sub> = v<sub>A</sub> – v<sub>B</sub>.  De modo que las velocidades relativas v<sub>BA</sub> y v<sub>AB</sub> tienen el mismo módulo, pero sentidos opuestos.</p></div>
+                                <div class="text-center"><img src="assets/img/img_ova/aceleracion.png" class="" style="width: 40%;"></div>
+                                <div><p class="p_black justificado">Dados dos observadores, A y B, cuyas velocidades medidas por un tercer observador (ese observador está quieto con respecto al suelo (se le llama observador inercial) son v<sub>A</sub> y v<sub>B</sub> respectivamente, la velocidad relativa de B con respecto a A se denota como v<sub>BA</sub> = v<sub>B</sub> - v<sub>A</sub>. Naturalmente, la velocidad relativa de A con respecto a B se denota como v<sub>AB</sub> = v<sub>A</sub> – v<sub>B</sub>.  De modo que las velocidades relativas v<sub>BA</sub> y v<sub>AB</sub> tienen el mismo módulo, pero sentidos opuestos.</p></div>
                               </div>
                             </div>
                           </div>
@@ -2667,6 +2699,116 @@
                   </div>
                   <div class="content text-center">
                     <img src="assets/img/img_ova/movimientobote.png" class="img100">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="agrandar1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content text-center">
+                    <img src="assets/img/img_ova/actividadvelocidadmedia.png" class="img100">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="agrandar2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content text-center">
+                    <img src="assets/img/img_ova/velocidadyrapidez.png" class="img100">
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="agrandar3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog-centered modal-dialog modal-lg d-block" role="document">
+    <div class="modal-content">
+      <div class="">
+        <div class="card-container manual-flip">
+          <div class="card">
+              <div class="front bg-blanco">
+                  <div class="cover" style="overflow: visible;">
+                    <div class="row h-100">
+                      <div class="col-md-3">
+                        
+                      </div>
+                      <div class="col-md-8 d-flex">
+                        
+                      </div>
+                      <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                        <div class="divcerrar">
+                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content text-center">
+                    <img src="assets/img/img_ova/velocidadyrapidez2.png" class="img100">
                   </div>
               </div>
           </div>
