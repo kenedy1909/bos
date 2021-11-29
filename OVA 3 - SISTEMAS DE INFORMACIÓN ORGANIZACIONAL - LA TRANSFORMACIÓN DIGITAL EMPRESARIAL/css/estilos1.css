@@ -122,6 +122,20 @@
     top: -11px;
 }
 
+.indicador3 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #96AFFF;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4px;
+    position: relative;
+    top: -80px;
+    left: 138px;
+}
+
 .size_13 {
     font-size: 13px;
 }
@@ -149,12 +163,18 @@
 
 .banewhite {
     background: #fff;
-    padding: 10px;
+    height: 280px;
+    padding: 25px;
+    border-radius: 10px;
     box-shadow: 1px 1px 5px 0px;
 }
 
 .texto-derecha {
-    text-align: end;
+    text-align: center;
+}
+
+.texto_alinear {
+    margin-left: -20px;
 }
 
 .baneP5 {
@@ -176,7 +196,7 @@
 
 .baneactivi {
     background: #DAE3F3;
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
     width: 90%;
     margin-left: 20px;
     border-radius: 20px;
@@ -184,10 +204,10 @@
 }
 
 .img-baneactivi {
-    width: 115px;
+    width: 150px;
     position: relative;
-    left: -54px;
-    top: -20px;
+    left: -80px;
+    top: -22px;
 }
 
 .btnClaro {

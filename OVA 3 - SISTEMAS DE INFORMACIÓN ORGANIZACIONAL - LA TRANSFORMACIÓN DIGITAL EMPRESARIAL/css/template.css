@@ -124,6 +124,7 @@ iframe {
     background-size: contain;
     width: 380px;
     height: 100px;
+    margin-left: -30px;
     padding: 31px 105px 20px 101px;
 }
 
@@ -824,8 +825,16 @@ svg circle {
     width: 75%;
 }
 
+.img-79 {
+    width: 79%;
+}
+
 .img-85 {
     width: 85%;
+}
+
+.img-90 {
+    width: 90%;
 }
 
 .img-95 {
