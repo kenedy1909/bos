@@ -252,30 +252,39 @@ function eichmann(num) {
     if (num == 1) {
         var texto = `
                     <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit">
-                      <p class="justificado p_black">Se trata del <b>secuestro de Adolf Eichman</b> por parte de la policía secreta de Israel, para ser juzgado por los crímenes cometidos durante la Segunda Guerra Mundial. </p>
-                      <br>
-                      <p class="justificado p_black">Antes de hablar del debate sobre el ejercicio de Jurisdicción Universal, debe aclararse que se dio una discusión en torno a la forma como fue detenido el señor Eichmann, toda vez que Israel ingresó a territorio argentino sin autorización y secuestró al señor Eichmann que se encontraba escondido allí desde el fin de la guerra.</p>
+                        <div style="height: 266px;overflow: auto;">
+                            <p class="justificado p_black">Se trata del <b>secuestro de Adolf Eichman</b> por parte de la policía secreta de Israel, para ser juzgado por los crímenes cometidos durante la Segunda Guerra Mundial. </p>
+                            <br>
+                            <p class="justificado p_black">Antes de hablar del debate sobre el ejercicio de Jurisdicción Universal, debe aclararse que se dio una discusión en torno a la forma como fue detenido el señor Eichmann, toda vez que Israel ingresó a territorio argentino sin autorización y secuestró al señor Eichmann que se encontraba escondido allí desde el fin de la guerra.</p>
+                        </div>
+                      
                     </div>
                     `;
         $("#eichmann").html(texto);
     }else if (num == 2) {
         var texto = `
                     <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit">
-                      <p class="justificado p_black">Esa discusión en torno a la forma <b>como fue “detenido”</b> el señor Eichmann, fue su principal argumento de defensa en la corte de distrito en Israel, sin embargo, el tribunal consideró que lo relacionado con la forma de lograr su comparecencia era un debate entre los Estados en el derecho internacional público, que en nada afectaba el proceso.</p>
-                      <p class="justificado p_black">El juicio se adelantó tomando como base el principio de jurisdicción pasiva, la jurisdicción por razones de seguridad (principio de protección) y principio de jurisdicción universal.</p>
-                      <br>
-                      <p class="justificado p_black">Para profundizar en el análisis  de este  tema, visualice el siguiente video donde se explica este principio y sus casos más emblemáticos.</p>
-                      <div class="bg-cafe-activi ml-auto img-40 radius-2 d-flex p-3" data-toggle="modal" data-target="#modal-eichmann">
-                        <p class="p_white"><b>VER VIDEO</b></p>
-                        <img class="img-65 p-2 my-auto ml-auto" src="assets/img/img_ova/reproductor.png">
-                      </div>
+                        <div style="height: 266px;overflow: auto;overflow-x: hidden;">
+                            <p class="justificado p_black">Esa discusión en torno a la forma <b>como fue “detenido”</b> el señor Eichmann, fue su principal argumento de defensa en la corte de distrito en Israel, sin embargo, el tribunal consideró que lo relacionado con la forma de lograr su comparecencia era un debate entre los Estados en el derecho internacional público, que en nada afectaba el proceso.</p>
+                            <p class="justificado p_black">El juicio se adelantó tomando como base el principio de jurisdicción pasiva, la jurisdicción por razones de seguridad (principio de protección) y principio de jurisdicción universal.</p>
+                            <br>
+                            <p class="justificado p_black">Para profundizar en el análisis  de este  tema, visualice el siguiente video donde se explica este principio y sus casos más emblemáticos.</p>
+                            <div class="bg-cafe-activi ml-auto img-40 radius-2 d-flex p-3" data-toggle="modal" data-target="#modal-eichmann">
+                              <p class="p_white"><b>VER VIDEO</b></p>
+                              <img class="img-65 p-2 my-auto ml-auto" src="assets/img/img_ova/reproductor.png">
+                            </div>
+                        </div>
+                      
                     </div>
                     `;
         $("#eichmann").html(texto);
     }else if (num == 3) {
         var texto = `
                     <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit">
-                      <p class="justificado p_black">De acuerdo con la Corte Distrital, al ser <b>Israel la nación de los judíos</b>, esta tiene un nexo directo con el crimen cometido por Eichmann en contra de judíos, debido a la jurisdicción personal pasiva y a la jurisdicción por razones de seguridad (la identidad del pueblo judío). Acerca de la jurisdicción universal, la Corte Distrital afirmó que la Ley por la que se juzgaba a Eichmann no sólo regulaba crímenes prohibidos en el ordenamiento interno de Israel, sino que también representaba el interés de la comunidad internacional en reprimir una violación al derecho internacional.</p>
+                        <div style="height: 266px;overflow: auto;">
+                            <p class="justificado p_black">De acuerdo con la Corte Distrital, al ser <b>Israel la nación de los judíos</b>, esta tiene un nexo directo con el crimen cometido por Eichmann en contra de judíos, debido a la jurisdicción personal pasiva y a la jurisdicción por razones de seguridad (la identidad del pueblo judío). Acerca de la jurisdicción universal, la Corte Distrital afirmó que la Ley por la que se juzgaba a Eichmann no sólo regulaba crímenes prohibidos en el ordenamiento interno de Israel, sino que también representaba el interés de la comunidad internacional en reprimir una violación al derecho internacional.</p>
+                        </div>
+                      
                     </div>
                     `;
         $("#eichmann").html(texto);
