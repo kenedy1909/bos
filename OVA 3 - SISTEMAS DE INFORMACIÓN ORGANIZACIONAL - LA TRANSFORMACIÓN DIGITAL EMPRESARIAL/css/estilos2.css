@@ -1,64 +1,73 @@
-.baneClaro{
-  background: #DAE3F3;
-  padding: 15px;
-  border-radius: 30px;
+.baneClaro {
+    background: #DAE3F3;
+    padding: 15px;
+    border-radius: 30px;
 }
-.baneTarget{
+
+.baneTarget {
     background: #fff;
     padding: 25px 10px 70px 10px;
     width: 80%;
     box-shadow: 1px 1px 5px 2px;
-    bottom:0;
+    bottom: 0;
     position: absolute;
 }
-.carpeta{
+
+.carpeta {
     position: relative;
     top: -37px;
     height: 229px;
 }
 
 .is-hidden {
-  height:50px;
-  transition: height 1s ease-in-out;
+    height: 50px;
+    transition: height 1s ease-in-out;
 }
 
 .not-hidden {
-  height: 250px;
-  transition: height 1s ease-in-out;
+    height: 260px;
+    transition: height 1s ease-in-out;
 }
+
 .msg {
-  display:none;
+    display: none;
 }
-.btn-carpeta{
-  height: 15px;
-  width: 15px;
-  background: #393A72;
-  border-radius: 50%;
-  margin-left: 5px;
+
+.btn-carpeta {
+    height: 15px;
+    width: 15px;
+    background: #393A72;
+    border-radius: 50%;
+    margin-left: 5px;
 }
-.size_12{
-  font-size: 12px;
+
+.size_12 {
+    font-size: 12px;
 }
-.banner_activiti{
-  width: 90%;
-  background: #7D9AFE;
-  height: 50px;
+
+.banner_activiti {
+    width: 90%;
+    background: #7D9AFE;
+    height: 50px;
 }
-.img-sobre{
-  width: 70px;
-  position:relative;
-  left: -30px;
-  top: -18px;
-  z-index: 1;
+
+.img-sobre {
+    width: 70px;
+    position: relative;
+    left: -30px;
+    top: -18px;
+    z-index: 1;
 }
-.titulo-bane{
-  width: 80%;
-  text-align: center;
-  padding-top: 10px;
+
+.titulo-bane {
+    width: 80%;
+    text-align: center;
+    padding-top: 10px;
 }
-.Ultimotexto{
-  width: 90%;
-  background: #DAE3F3;
-  padding: 10px 15px 10px 15px;
-  border-radius: 1px 1px 30px 30px;
+
+.Ultimotexto {
+    width: 90%;
+    background: #DAE3F3;
+    padding: 10px 15px 10px 15px;
+    border-radius: 1px 1px 30px 30px;
 }
