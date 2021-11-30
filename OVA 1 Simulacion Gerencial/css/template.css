@@ -848,3 +848,11 @@ svg circle:nth-child(2){
 .color-titulo{
   color: #E9464F;
 }
+
+
+.vis{
+  display: block;
+}
+.esc{
+  display: none;
+}

@@ -3,6 +3,8 @@ $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu1").addClass('c-show');
 
+    $(".activacion1").addClass('resalte');
+
     $(".ov-personaje").hide();
 
     paso = false;
@@ -28,14 +30,14 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide(0);
-        actualizarprogress();
+        actualizarprogress(0);
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
-        actualizarprogress();
+        actualizarprogress(0);
     });
     slide_predeterminado();
 
@@ -60,7 +62,7 @@ $(function() {
 function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     if (num = 1) {
-        controlSlides(stepIndex+2);
+        controlSlides(stepIndex+3);
     }else{
         controlSlides(stepIndex+1);
     }
@@ -190,8 +192,9 @@ function controlSlides(num) {
         case 17:
             setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
-        case 18:
+        case 19:
             $(".menu1").addClass('d-none');
+            $(".activacion1").removeClass('resalte');
             setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         default:
@@ -521,12 +524,12 @@ document.addEventListener("keydown",
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
                 slide(1);
-                actualizarprogress();
+                actualizarprogress(1);
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
                 slide(1);
-                actualizarprogress();
+                actualizarprogress(1);
                 break;
         }
     }
