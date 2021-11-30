@@ -52,7 +52,11 @@
                 <input v-model="answer" ref="input" @keyup.enter="corregir" />
                 <button @click="corregir" class="btn btn-primary">Colocar</button>
             </div>
+            <div class="text-center" style="margin-top: 15px;">
+              <p><b>Nota: </b><em>Sólo será aceptada la palabra correcta, recuerde no utilizar espacios, mayúsculas o caracteres especiales ( ´ , * ).</em></p>
+            </div>
             <hr>
+
             <button class="btn" style="background: #282F9F; color: #FFF;" @click="finalizar"><b>Calificar</b></button>
         </div>
         <h3 v-show="false">Cargando....</h3>
