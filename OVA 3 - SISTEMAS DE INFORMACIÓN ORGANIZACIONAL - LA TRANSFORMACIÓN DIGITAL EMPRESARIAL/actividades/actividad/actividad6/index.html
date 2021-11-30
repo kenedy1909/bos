@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="backdrop in">
+    <div class="backdrop in" style="overflow: hidden;">
         <div class="fondo">
             <div class="row" style="padding: 20px;">
               <div class="col-md-4 col-sm-4 row d-flex" style="width: 40%;">
@@ -45,38 +45,50 @@
                 </div>
 
                 <div class="botonCalififcar">
-                    <button type="button" id="reset" class="calificar-completar btn btn-primary">Volver a intentarlo</button>
+                    <button type="button" id="reset" class="calificar-completar btn btn-primary">Reiniciar</button>
                 </div>
 
-                <!-- <input type="button" id="reset" value="Volver a intentarlo"> -->
-                <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body center-block">
-                                <div class="mensaje text-center">
-                                    Tu puntaje es: <span class="puntaje">40%</span>
-                                    <span class="texto-puntaje"></span>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content tranparente" style="    box-shadow: none;">
+                      <div style="" class="principal">
+                        <div style="" class="cabeza">
+                          
+                        </div>
+                        <div class="d-flex" style="justify-content: center;">
+                          <div style="border: 3px solid white;" class="circulo_modal img_res">
+                            
+                          </div>
+                        </div>s
+                        <div style="padding: 10px; position: relative; top: -45px;">
+                          <div style="color: white;font-size: 15px;">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-3" style="text-align: initial;">
+                                    Su puntaje es: 
+                                </div>
+                                <div class="col-md-3 col-sm-3" style="text-align: initial;">
+                                    <b class="puntaje" style="color: #FFC000; font-size: 30px;position: relative; top: -10px; "></b>
+                                </div>
+                                <div class="col-md-5 col-sm-5"></div>
+                            </div>
+                          </div>
+                          <div style="color: white;font-size: 15px;">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5">
+                                    <p class="mensaje" style="text-align: initial;"></p>
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal" id="perdio">Volver a
-                                    intentar</button>
-                                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-                            </div>
+                          </div>
                         </div>
+                        <div class="row btns_modal" style="position: relative; top: -60px;text-align: center;">
+                          
+                          
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-                <div id="modal-ahorcado" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <div id="texto-modal"></div>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
             </div>
         </div>
     </div>
