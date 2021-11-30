@@ -66,7 +66,7 @@ function modal_scroll_b(){
 }
 
 var total = 200;
-function actualizarprogress(){
+function actualizarprogress(num){
     var naveg = 0;
     var done = 0;
     
@@ -83,7 +83,12 @@ function actualizarprogress(){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/23);
+    if (num == 1) {
+        total_porcentaje = parseInt(((done+active+naveg)*100)/22);
+    }else{
+        total_porcentaje = parseInt(((done+active+naveg)*100)/23);
+    }
+    
     if (total_porcentaje <= 100) {
         $(".number").html(total_porcentaje+'%');
     }

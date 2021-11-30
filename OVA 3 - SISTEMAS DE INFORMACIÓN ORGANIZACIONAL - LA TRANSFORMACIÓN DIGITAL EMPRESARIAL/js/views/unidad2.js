@@ -2,6 +2,9 @@ $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
+    $(".menu1").removeClass('c-show');
+    $(".menu2").addClass('c-show');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -20,14 +23,14 @@ $( document ).ready(function() {
     $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
-        slide();
-        actualizarprogress();
+        slide(0);
+        actualizarprogress(0);
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
-        slide();
-        actualizarprogress();
+        slide(0);
+        actualizarprogress(0);
     });
     /*slide_predeterminado();*/
     slide_link(tema);
@@ -62,7 +65,11 @@ $( document ).ready(function() {
 
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
-    controlSlides(stepIndex);
+    if (num = 1) {
+        controlSlides(stepIndex+3);
+    }else{
+        controlSlides(stepIndex);
+    }
 }
 
 function slide_predeterminado(){
@@ -203,3 +210,22 @@ function scroll(){
     });
 }
 
+
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                actualizarprogress(1);
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                actualizarprogress(1);
+                break;
+        }
+    }
+);
