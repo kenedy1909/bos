@@ -199,6 +199,22 @@ function calificarR1() {
          }
 
      }  
+    if (parseInt(puntajeR1) == 100) {
+        exitoR1 = true;
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(parseInt(puntajeR1)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+        exitoR1 = false;
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(parseInt(puntajeR1)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+    }
+    $("#exampleModal").modal("show");
 }
 
 var activityDragR1 = function () {
