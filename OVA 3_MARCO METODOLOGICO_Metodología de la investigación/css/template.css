@@ -26,7 +26,13 @@ iframe {
 
 .divcerrar {
     position: relative;
-    top: -25px;
+    top: 40px;
+    left: 20px;
+}
+
+.divcerrar2 {
+    position: relative;
+    top: -22px;
     left: 20px;
 }
 

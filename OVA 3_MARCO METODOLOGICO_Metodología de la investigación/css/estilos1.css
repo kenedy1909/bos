@@ -1804,6 +1804,13 @@ input[type=range]::-ms-fill-upper {
     font-size: 14px;
 }
 
+.reduct2 {
+    padding: 0px 0px 1px 1px;
+    height: 114px;
+    overflow: auto;
+    font-size: 14px;
+}
+
 .b-clr-dark {
     background: var(--bg-color-dark)!important;
     height: 100px;

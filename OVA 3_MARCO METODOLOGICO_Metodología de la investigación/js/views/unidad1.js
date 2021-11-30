@@ -903,10 +903,10 @@ function cardPara4(num, ventana) {
         $("#card4-2").addClass('hidden')
         $("#card4-3").addClass('hidden')
         $("#card4-4").addClass('hidden')
-        var conjunto = `<div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
-                      <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
-                      <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
-                      <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>`;
+        var conjunto = `<div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,1)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3 cursor" id="img-card4-1"></div>
+                      <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,1)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4 cursor" id="img-card4-2"></div>
+                      <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,1)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4 cursor" id="img-card4-3"></div>
+                      <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,1)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4 cursor" id="img-card4-4"></div>`;
         $("#card4-padre").html(conjunto)
     }
     if (ventana == 1) {
@@ -919,39 +919,39 @@ function cardPara4(num, ventana) {
           <div class="col-6 bg-white border-1 justify-content pt-2 text-black" id="card4-1" onclick="cardPara4(1,0)"> 
             <p class="reduct justificado">Finalmente, el diseño a seleccionar depende del problema a resolver y el contexto del estudio. Igualmente, en la mayoría de las situaciones dentro de una investigación se realiza el estudio a través de una muestra, que son subgrupos de la población del cual se recolectan los datos y debe ser representativo de la población.</p>
           </div>
-          <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
-          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
-          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>
+          <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4 cursor" id="img-card4-2"></div>
+          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4 cursor" id="img-card4-3""></div>
+          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4 cursor" id="img-card4-4"></div>
           `;
             $("#card4-padre").html(conjunto)
         }
         if (num == 2) {
             var conjunto = `
-          <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
+          <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3 cursor" id="img-card4-1"></div>
           <div class="col-6 bg-white border-2 justify-content p-4 text-black" id="card4-2"  onclick="cardPara4(2,0)"> 
-            <p class="reduct justificado">Las “unidades de análisis” son los sujetos, objetos, sucesos o comunidades de estudio que se desprenden del planteamiento de la investigación. Por ejemplo: en el caso de que el objetivo de la investigación sea describir el uso que hacen los niños de la televisión, la unidad de análisis es un “grupo de niños” y también puede ser “los padres de los niños”.</p>
+            <p class="reduct2 justificado">Las “unidades de análisis” son los sujetos, objetos, sucesos o comunidades de estudio que se desprenden del planteamiento de la investigación. Por ejemplo: en el caso de que el objetivo de la investigación sea describir el uso que hacen los niños de la televisión, la unidad de análisis es un “grupo de niños” y también puede ser “los padres de los niños”.</p>
           </div>
-          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
-          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>
+          <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4 cursor" id="img-card4-3"></div>
+          <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4 cursor" id="img-card4-4"></div>
           `;
             $("#card4-padre").html(conjunto)
         }
         if (num == 3) {
             var conjunto = `
-              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
-              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
+              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3 cursor" id="img-card4-1"></div>
+              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4 cursor" id="img-card4-2"></div>
               <div class="col-6 bg-white border-3 justify-content pt-2 text-black" id="card4-3"  onclick="cardPara4(3,0)"> 
                   <p class="reduct justificado">Una vez que se ha definido cuál será la unidad de análisis, se procede a delimitar la población que va a ser estudiada y sobre la cual se pretende generalizar los resultados. Así, una población es el conjunto de todos los casos que concuerdan con una serie de especificaciones Selltiz et al. (1980).</p>
               </div>
-              <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4" id="img-card4-4"></div>
+              <div class="col-6 bg-color-4 text-center border-4" id="card4-4" onclick="cardPara4(4,0)"> <img src="assets/img/img_ova/ideas.png" class="w-50 p-4 cursor" id="img-card4-4"></div>
           `;
             $("#card4-padre").html(conjunto)
         }
         if (num == 4) {
             var conjunto = `
-              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3" id="img-card4-1"></div>
-              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4" id="img-card4-2"></div>
-              <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4" id="img-card4-3"></div>
+              <div class="col-6 bg-color-1 text-center border-1" id="card4-1" onclick="cardPara4(1,0)"> <img src="assets/img/img_ova/pregunta.png" class="w-50 p-3 cursor" id="img-card4-1"></div>
+              <div class="col-6 bg-color-2 text-center border-2" id="card4-2" onclick="cardPara4(2,0)"> <img src="assets/img/img_ova/bombilla.png" class="w-50 p-4 cursor" id="img-card4-2"></div>
+              <div class="col-6 bg-color-3 text-center border-3" id="card4-3" onclick="cardPara4(3,0)"> <img src="assets/img/img_ova/notas.png" class="w-50 p-4 cursor" id="img-card4-3"></div>
               <div class="col-6 bg-white border-4 justify-content pt-2 text-black" id="card4-4" onclick="cardPara4(4,0)"> 
                   <p class="reduct justificado">Es importante tener en cuenta que, una de las carencias que por lo general se suele presentar en proyectos de investigación es la poca o deficiente descripción de los rasgos constitutivos de la población objeto de estudio. Por lo que es de sobresaltar y llamar la atención en referencia a la importancia de desarrollar con claridad las diferentes características constitutivas de la población, para así definir las variables muestrales. </p>
               </div>
