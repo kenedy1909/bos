@@ -1,174 +1,182 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+    $(".ov-personaje").hide();
     $(".menu4").removeClass('d-none');
     $(".pedfs").addClass('d-none');
     $(".pdf4").removeClass('d-none');
-    setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
-            
+    setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
+
     tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    
-    $('#next').on('click', function () {
+
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
 
-    $( ".zoomContainer" ).remove();
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
+    $(".zoomContainer").remove();
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
 
 
     slide_predeterminado4();
     console.log(tema);
     slide_link4(tema);
-    
-    $(".teoria").on('click' , teorias);
-    
+
+    $(".teoria").on('click', teorias);
+
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides4(stepIndex);
-        actualizarprogress(stepIndex+7+3+5);
+    actualizarprogress(stepIndex + 7 + 3 + 5);
 }
 
-function slide_predeterminado4(){
-    
+function slide_predeterminado4() {
+
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides4(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link4(num){
+function slide_link4(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
 
-    
+
     controlSlides4(num);
-    
-    
+
+
 }
-function controlSlides4(num){
+
+function controlSlides4(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
-            
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
+
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             scroll_set(18);
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             scroll_set(18);
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             scroll_set(18);
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","4. Recolección y alanisis de datos","La medición");
+            setMigaja("Unidades de aprendizaje", "4. Recolección y alanisis de datos", "La medición");
             break;
         default:
             break;
     }
 }
+
 function scroll_set(num) {
-  dragging = "";
-  diff = "";
-  newTop = "";
-  scrollOffset = "";
-  knob = document.querySelector('.custom-scrollbar__knob'+num);
-  bar = document.querySelector('.custom-scrollbar__bar'+num);
-  container = document.querySelector('.custom-scrollbar__inner'+num);
-  scroll();
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob' + num);
+    bar = document.querySelector('.custom-scrollbar__bar' + num);
+    container = document.querySelector('.custom-scrollbar__inner' + num);
+    scroll();
 }
 
-function scroll(){
-  // When the container is scrolled
-  container.addEventListener('scroll', () => {
-    // If we are dragging the knob, do nothing
-    if (dragging) return;
+function scroll() {
+    // When the container is scrolled
+    container.addEventListener('scroll', () => {
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-    // Otherwise, set the knob position based on the scroll position
-    knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
-  });
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+    });
 
-  dragging = false;
-
-  knob.addEventListener('mousedown', event => {
-      
-  console.log(knob+" "+bar+" "+container);
-    dragging = {
-      x: event.clientX,
-      y: event.clientY };
-
-  });
-  window.addEventListener('mousemove', event => {
-    if (dragging) {
-      // When dragging
-      event.preventDefault();
-      diff = {
-        x: event.clientX - dragging.x,
-        y: event.clientY - dragging.y };
-
-
-      // Clamp the position of the knob to be a maximum of 
-      // the knobs container, and a minimum of 0
-      newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-      knob.style.top = newTop + 'px';
-
-      // Base the scroll offset on the knobs position
-      // in relation to the knobs container
-      scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-      container.scrollTop = scrollOffset;
-
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
-
-    }
-  });
-  window.addEventListener('mouseup', () => {
     dragging = false;
-  });
+
+    knob.addEventListener('mousedown', event => {
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
+
+    });
+    window.addEventListener('mousemove', event => {
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
+
+
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
+
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
+
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
+
+        }
+    });
+    window.addEventListener('mouseup', () => {
+        dragging = false;
+    });
 }
 
 //dezlizador
@@ -177,43 +185,43 @@ var elementoPadre2 = document.querySelector(".inputDiv.i2");
 var inputsRy = [];
 
 function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 1;
-  this.att.max = 5;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 1;
+    this.att.max = 5;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    pantallas3_1(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
+    this.actualizar = function() {
+        pantallas3_1(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
 }
 
 // setup
@@ -229,61 +237,62 @@ i2.crear(elementoPadre2);
 inputsRy.push(i2);
 
 for (var n = 0; n < inputsRy.length; n++) {
-  (function(n) {
-    inputsRy[n].input.addEventListener("input", function() {
-      inputsRy[n].actualizar();
-    }, false)
-  }(n));
+    (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+            inputsRy[n].actualizar();
+        }, false)
+    }(n));
 }
 
 function slideU4_1(num) {
-  $('.contenidoCentralU4-1').html(``);
-  if (num == 1) {
-    $('.flechaLU4-1').addClass('hidden');
-    $('.flechaRU4-1').removeClass('hidden');
-    
-    var contenido = `
+    $('.contenidoCentralU4-1').html(``);
+    if (num == 1) {
+        $('.flechaLU4-1').addClass('hidden');
+        $('.flechaRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <p class="text-justify text-black">Como se puede ver, para la recolección de datos se dispone de una generosa gama de instrumentos, técnicas y métodos, tanto cualitativas como cuantitativas y las cuales se pueden utilizar sin ningún tipo de discriminación en un mismo estudio.</p>
                     `;
-    $('.flechaRU4-1').attr('onclick',"slideU4_1(2)");
+        $('.flechaRU4-1').attr('onclick', "slideU4_1(2)");
 
-    $('.contenidoCentralU4-1').html(contenido);
-  }else if (num == 2) {
-    $('.flechaLU4-1').removeClass('hidden');
-    $('.flechaRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.contenidoCentralU4-1').html(contenido);
+    } else if (num == 2) {
+        $('.flechaLU4-1').removeClass('hidden');
+        $('.flechaRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <p class="text-justify text-black">En nuestra cotidianidad estamos en un constante medir, es así, como por ejemplo, al levantarnos medimos el tiempo desde que abrimos los ojos hasta prácticamente que nos volvemos a acostar en la noche, medimos la hora constantemente y en diferentes actividades.</p>
                     `;
-    $('.flechaLU4-1').attr('onclick',"slideU4_1(1)");
-    $('.flechaRU4-1').attr('onclick',"slideU4_1(3)");
+        $('.flechaLU4-1').attr('onclick', "slideU4_1(1)");
+        $('.flechaRU4-1').attr('onclick', "slideU4_1(3)");
 
-    $('.contenidoCentralU4-1').html(contenido);
-  }else if (num == 3) {
-    $('.flechaLU4-1').removeClass('hidden');
-    $('.flechaRU4-1').addClass('hidden');
-    
-    var contenido = `
+        $('.contenidoCentralU4-1').html(contenido);
+    } else if (num == 3) {
+        $('.flechaLU4-1').removeClass('hidden');
+        $('.flechaRU4-1').addClass('hidden');
+
+        var contenido = `
                     <p class="text-justify text-black"><b class="color-title">Por ejemplo,</b> en el trabajo tienes cierto tiempo para tomar el descanso e ir a almorzar, entonces te ves en la obligación de medir el tiempo que esto te tomará, después a la hora de salida,  después a la hora de salida, mides el tiempo que te tomará desplazarte a la cita con un amigo o simplemente de regreso a casa, por lo que medir hace parte de nuestra cotidianidad y es este precisamente el tema que a continuación vamos a ver.</p>
                     `;
-    $('.flechaLU4-1').attr('onclick',"slideU4_1(2)");
+        $('.flechaLU4-1').attr('onclick', "slideU4_1(2)");
 
-    $('.contenidoCentralU4-1').html(contenido);
-  }
+        $('.contenidoCentralU4-1').html(contenido);
+    }
 }
-function slideMU4_1(num) {
-  $('.contenidoCentralMU4-1').html(``);
-  $('.circuloM1, .circuloM2, .circuloM3, .circuloM4').addClass('bg-color-3');
-  $('.circuloM1, .circuloM2, .circuloM3, .circuloM4').removeClass('bg-color-1');
-  
-  if (num == 1) {
-    $('.circuloM1').removeClass('bg-color-3');
-    $('.circuloM1').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').addClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+function slideMU4_1(num) {
+    $('.contenidoCentralMU4-1').html(``);
+    $('.circuloM1, .circuloM2, .circuloM3, .circuloM4').addClass('bg-color-3');
+    $('.circuloM1, .circuloM2, .circuloM3, .circuloM4').removeClass('bg-color-1');
+
+    if (num == 1) {
+        $('.circuloM1').removeClass('bg-color-3');
+        $('.circuloM1').addClass('bg-color-1');
+
+        $('.flechaMLU4-1').addClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                   <div class="row">
                     <div class="col-7 p-3">
                       <p><b class="color-title">En primera medida hablaremos de los cuestionarios</b>
@@ -299,17 +308,17 @@ function slideMU4_1(num) {
                     </div>
                   </div>
                     `;
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(2)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(2)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 2) {
-    $('.circuloM1').removeClass('bg-color-3');
-    $('.circuloM1').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 2) {
+        $('.circuloM1').removeClass('bg-color-3');
+        $('.circuloM1').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <h5 class="color-title">En relación a los cuestionarios, estos pueden aplicarse así:</h5>
                     <p class="text-black text-justify">
                       <b class="color-title">Autoadministrado: </b>los entrevistados contestan las preguntas, después de haber recibido el cuestionario. 
@@ -318,35 +327,35 @@ function slideMU4_1(num) {
                       <br><b class="color-title">Autoadministrado: </b>se realiza a través de una llamada telefónica, al tiempo que es una forma económica de recolectar información. 
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(1)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(3)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(1)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(3)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 3) {
-    $('.circuloM1').removeClass('bg-color-3');
-    $('.circuloM1').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 3) {
+        $('.circuloM1').removeClass('bg-color-3');
+        $('.circuloM1').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                       <p class="text-black text-justify mb-4">
                         <b class="color-title">La entrevista : </b>es ideal cuando el grupo focal o la muestra que se tiene, está integrado por personas analfabetas o con bajos niveles educativos o por ejemplo, si son niños que aún no saben leer, aunque también se puede contar con cuestionarios gráficos, en relación al tipo de población antes mencionado; siempre pensando en la comodidad de los entrevistados y en el resultado de los datos que se recolecten para nuestra investigación. Un ejemplo de cuestionario gráfico sería el siguiente:
                       </p>
                       <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM"><b>VER IMAGEN</b></a>
                       `;
-                    
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(2)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 4) {
-    $('.circuloM2').removeClass('bg-color-3');
-    $('.circuloM2').addClass('bg-color-1');
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(2)");
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 4) {
+        $('.circuloM2').removeClass('bg-color-3');
+        $('.circuloM2').addClass('bg-color-1');
+
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-3">
                         <img src="assets/img/img_ova/actitudes.png" width="80%">
@@ -359,51 +368,51 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(3)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(5)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(3)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(5)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 5) {
-    $('.circuloM2').removeClass('bg-color-3');
-    $('.circuloM2').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 5) {
+        $('.circuloM2').removeClass('bg-color-3');
+        $('.circuloM2').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <p class="text-black text-justify mb-4">
                       Es decir, la actitud representa una preferencia o propensión para sentir, percibir, apreciar y por ende comportarse frente a una situación u objeto. Por consiguiente, cuando se habla de escala de medición de actitudes es un elemento que no es cien por ciento verídico, ya que se estaría planteando o partiendo a través de hipótesis, las cuales nos indicarán la intensidad y dirección de lo que se opina frente a un suceso, objeto o situación.
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(4)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(6)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(4)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(6)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 6) {
-    $('.circuloM2').removeClass('bg-color-3');
-    $('.circuloM2').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 6) {
+        $('.circuloM2').removeClass('bg-color-3');
+        $('.circuloM2').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <p class="text-black text-justify mb-4">
                       La escala con la que se trabajan las actitudes, generalmente van: “muy de acuerdo” “muy desacuerdo”. Una escala de actitudes es algo hipotético, es decir, incierto, que señala la intensidad y dirección de la opinión. 
                       <br><br>
                       Los métodos más conocidos para medir por escalas las variables que constituyen actitudes son: <b class="color-title">el método de escalamiento Likert y el diferencial semántico</b>
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(5)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(5)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 7) {
-    $('.circuloM3').removeClass('bg-color-3');
-    $('.circuloM3').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 7) {
+        $('.circuloM3').removeClass('bg-color-3');
+        $('.circuloM3').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-3">
                         <img src="assets/img/img_ova/likert.png" width="80%">
@@ -416,18 +425,18 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(6)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(8)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(6)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(8)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 8) {
-    $('.circuloM3').removeClass('bg-color-3');
-    $('.circuloM3').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 8) {
+        $('.circuloM3').removeClass('bg-color-3');
+        $('.circuloM3').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-3">
                         <img src="assets/img/img_ova/likert.png" width="80%">
@@ -439,35 +448,35 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(7)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(9)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(7)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(9)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 9) {
-    $('.circuloM3').removeClass('bg-color-3');
-    $('.circuloM3').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 9) {
+        $('.circuloM3').removeClass('bg-color-3');
+        $('.circuloM3').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <p class="text-black text-justify">
                       <b class="color-title">Autoadministrada:  </b>se le hace entrega al participante de la escala y este a su vez va marcando de acuerdo a las categorías la que mejor describe su reacción, es decir, de esta manera responde. 
                       <br><b class="color-title">Entrevista:  </b>en este caso una persona encargada de realizar la entrevista, va leyendo las afirmaciones o las diferentes alternativas que corresponden a las diferentes respuestas que el entrevistado va dando y las va anotando y así sucesivamente.
                     </p>
                     `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(8)");
-    /*$('.flechaMRU4-1').attr('onclick',"slideMU4_1(10)");*/
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(8)");
+        /*$('.flechaMRU4-1').attr('onclick',"slideMU4_1(10)");*/
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 10) {
-    $('.circuloM4').removeClass('bg-color-3');
-    $('.circuloM4').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 10) {
+        $('.circuloM4').removeClass('bg-color-3');
+        $('.circuloM4').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').removeClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').removeClass('hidden');
+
+        var contenido = `
                     <div class="row">
                       <div class="col-5 d-flex justify-content-center align-items-center p-4">
                         <img src="assets/img/img_ova/semantico.png" width="80%">
@@ -479,121 +488,121 @@ function slideMU4_1(num) {
                       </div>
                     </div>
                       `;
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(9)");
-    $('.flechaMRU4-1').attr('onclick',"slideMU4_1(11)");
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(9)");
+        $('.flechaMRU4-1').attr('onclick', "slideMU4_1(11)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }else if (num == 11) {
-    $('.circuloM4').removeClass('bg-color-3');
-    $('.circuloM4').addClass('bg-color-1');
+        $('.contenidoCentralMU4-1').html(contenido);
+    } else if (num == 11) {
+        $('.circuloM4').removeClass('bg-color-3');
+        $('.circuloM4').addClass('bg-color-1');
 
-    $('.flechaMLU4-1').removeClass('hidden');
-    $('.flechaMRU4-1').addClass('hidden');
-    
-    var contenido = `
+        $('.flechaMLU4-1').removeClass('hidden');
+        $('.flechaMRU4-1').addClass('hidden');
+
+        var contenido = `
                       <p class="text-black text-justify mb-4">
                         En resumen, lo que el participante debe hacer es calificar al objeto de actitud partiendo de un conjunto de objetivos formulados en escala bipolar, es decir, de manera extrema, de los cuales la persona escogerá la que mejor refleje su actitud. 
                       </p>
                       <a class="w-50 p-3 border-10 bg-color-dark text-white h5 shadow cursor mt-3" data-toggle="modal" data-target="#modalImagenM2"><b>VER IMAGEN</b></a>
                       `;
-                    
-    $('.flechaMLU4-1').attr('onclick',"slideMU4_1(10)");
 
-    $('.contenidoCentralMU4-1').html(contenido);
-  }
+        $('.flechaMLU4-1').attr('onclick', "slideMU4_1(10)");
+
+        $('.contenidoCentralMU4-1').html(contenido);
+    }
 }
 
-function mostrarTarjeta(num,estado) {
+function mostrarTarjeta(num, estado) {
 
-  $('.contenidoMostrar1, .contenidoMostrar2, .contenidoMostrar3, .contenidoMostrar4').addClass('d-none');
-  $('.mostrar1, .mostrar2, .mostrar3, .mostrar4').removeClass('d-none');
+    $('.contenidoMostrar1, .contenidoMostrar2, .contenidoMostrar3, .contenidoMostrar4').addClass('d-none');
+    $('.mostrar1, .mostrar2, .mostrar3, .mostrar4').removeClass('d-none');
 
 
-  if (estado=='mostrar') {
-      if (num==1) {
-          scroll_set(11);
-          $('.padreMostrar1').addClass('ocultarMostrar1');
-          $('.padreMostrar1').removeClass('padreMostrar1');
-          
-          $('.contenidoMostrar1').removeClass('d-none');
-          $('.mostrar1').addClass('d-none');
-          
-          $('.ocultarMostrar1').attr('onclick',"mostrarTarjeta(1,'ocultar')");
-      }else if (num==2) {            
-          $('.padreMostrar2').addClass('ocultarMostrar2');
-          $('.padreMostrar2').removeClass('padreMostrar2');
-          
-          $('.contenidoMostrar2').removeClass('d-none');
-          $('.mostrar2').addClass('d-none');
-          
-          $('.ocultarMostrar2').attr('onclick',"mostrarTarjeta(2,'ocultar')");
-      }else if (num==3) { 
-          scroll_set(15);           
-          $('.padreMostrar3').addClass('ocultarMostrar3');
-          $('.padreMostrar3').removeClass('padreMostrar3');
-          
-          $('.contenidoMostrar3').removeClass('d-none');
-          $('.mostrar3').addClass('d-none');
-          
-          $('.ocultarMostrar3').attr('onclick',"mostrarTarjeta(3,'ocultar')");
-      }else if (num==4) {  
-          scroll_set(17);          
-          $('.padreMostrar4').addClass('ocultarMostrar4');
-          $('.padreMostrar4').removeClass('padreMostrar4');
-          
-          $('.contenidoMostrar4').removeClass('d-none');
-          $('.mostrar4').addClass('d-none');
-          
-          $('.ocultarMostrar4').attr('onclick',"mostrarTarjeta(4,'ocultar')");
-      }
+    if (estado == 'mostrar') {
+        if (num == 1) {
+            scroll_set(11);
+            $('.padreMostrar1').addClass('ocultarMostrar1');
+            $('.padreMostrar1').removeClass('padreMostrar1');
 
-  }else if(estado=='ocultar'){
+            $('.contenidoMostrar1').removeClass('d-none');
+            $('.mostrar1').addClass('d-none');
 
-      if (num==1) {
-          $('.ocultarMostrar1').addClass('padreMostrar1');
-          $('.ocultarMostrar1').removeClass('ocultarMostrar1');
-          
-          $('.contenidoMostrar1').addClass('d-none');
-          $('.mostrar1').removeClass('d-none');
+            $('.ocultarMostrar1').attr('onclick', "mostrarTarjeta(1,'ocultar')");
+        } else if (num == 2) {
+            $('.padreMostrar2').addClass('ocultarMostrar2');
+            $('.padreMostrar2').removeClass('padreMostrar2');
 
-          
-          $('.padreMostrar1').attr('onclick',"mostrarTarjeta(1,'mostrar')");
-      }else if (num==2) {            
-          $('.ocultarMostrar2').addClass('padreMostrar2');
-          $('.ocultarMostrar2').removeClass('ocultarMostrar2');
-          
-          $('.contenidoMostrar2').addClass('d-none');
-          $('.mostrar2').removeClass('d-none');
+            $('.contenidoMostrar2').removeClass('d-none');
+            $('.mostrar2').addClass('d-none');
 
-          
-          $('.padreMostrar2').attr('onclick',"mostrarTarjeta(2,'mostrar')");
-      }else if (num==3) {            
-          $('.ocultarMostrar3').addClass('padreMostrar3');
-          $('.ocultarMostrar3').removeClass('ocultarMostrar3');
-          
-          $('.contenidoMostrar3').addClass('d-none');
-          $('.mostrar3').removeClass('d-none');
+            $('.ocultarMostrar2').attr('onclick', "mostrarTarjeta(2,'ocultar')");
+        } else if (num == 3) {
+            scroll_set(15);
+            $('.padreMostrar3').addClass('ocultarMostrar3');
+            $('.padreMostrar3').removeClass('padreMostrar3');
 
-          
-          $('.padreMostrar3').attr('onclick',"mostrarTarjeta(3,'mostrar')");
-      }else if (num==4) {            
-          $('.ocultarMostrar4').addClass('padreMostrar4');
-          $('.ocultarMostrar4').removeClass('ocultarMostrar4');
-          
-          $('.contenidoMostrar4').addClass('d-none');
-          $('.mostrar4').removeClass('d-none');
+            $('.contenidoMostrar3').removeClass('d-none');
+            $('.mostrar3').addClass('d-none');
 
-          
-          $('.padreMostrar4').attr('onclick',"mostrarTarjeta(4,'mostrar')");
-      }
-  }
+            $('.ocultarMostrar3').attr('onclick', "mostrarTarjeta(3,'ocultar')");
+        } else if (num == 4) {
+            scroll_set(17);
+            $('.padreMostrar4').addClass('ocultarMostrar4');
+            $('.padreMostrar4').removeClass('padreMostrar4');
+
+            $('.contenidoMostrar4').removeClass('d-none');
+            $('.mostrar4').addClass('d-none');
+
+            $('.ocultarMostrar4').attr('onclick', "mostrarTarjeta(4,'ocultar')");
+        }
+
+    } else if (estado == 'ocultar') {
+
+        if (num == 1) {
+            $('.ocultarMostrar1').addClass('padreMostrar1');
+            $('.ocultarMostrar1').removeClass('ocultarMostrar1');
+
+            $('.contenidoMostrar1').addClass('d-none');
+            $('.mostrar1').removeClass('d-none');
+
+
+            $('.padreMostrar1').attr('onclick', "mostrarTarjeta(1,'mostrar')");
+        } else if (num == 2) {
+            $('.ocultarMostrar2').addClass('padreMostrar2');
+            $('.ocultarMostrar2').removeClass('ocultarMostrar2');
+
+            $('.contenidoMostrar2').addClass('d-none');
+            $('.mostrar2').removeClass('d-none');
+
+
+            $('.padreMostrar2').attr('onclick', "mostrarTarjeta(2,'mostrar')");
+        } else if (num == 3) {
+            $('.ocultarMostrar3').addClass('padreMostrar3');
+            $('.ocultarMostrar3').removeClass('ocultarMostrar3');
+
+            $('.contenidoMostrar3').addClass('d-none');
+            $('.mostrar3').removeClass('d-none');
+
+
+            $('.padreMostrar3').attr('onclick', "mostrarTarjeta(3,'mostrar')");
+        } else if (num == 4) {
+            $('.ocultarMostrar4').addClass('padreMostrar4');
+            $('.ocultarMostrar4').removeClass('ocultarMostrar4');
+
+            $('.contenidoMostrar4').addClass('d-none');
+            $('.mostrar4').removeClass('d-none');
+
+
+            $('.padreMostrar4').attr('onclick', "mostrarTarjeta(4,'mostrar')");
+        }
+    }
 }
 
 function teorias(num) {
-  $("#teorico").html(``);
+    $("#teorico").html(``);
 
-  if (num == 1) {
-      var texto = `
+    if (num == 1) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">1</b></p>
                   </div>
@@ -627,10 +636,10 @@ function teorias(num) {
                     </div>
                   </div>
                   `;
-      $("#teorico").html(texto);
-      scroll_set(18);
-  }else if (num == 2) {
-      var texto = `
+        $("#teorico").html(texto);
+        scroll_set(18);
+    } else if (num == 2) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">2</b></p>
                   </div>
@@ -641,9 +650,9 @@ function teorias(num) {
                     </p>
                   </div>
                   `;
-      $("#teorico").html(texto);
-  }else if (num == 3) {
-      var texto = `
+        $("#teorico").html(texto);
+    } else if (num == 3) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">3</b></p>
                   </div>
@@ -672,10 +681,10 @@ function teorias(num) {
                   </div>
                 </div>
                   `;
-      $("#teorico").html(texto);
-      scroll_set(16);
-  }else if (num == 4) {
-      var texto = `
+        $("#teorico").html(texto);
+        scroll_set(16);
+    } else if (num == 4) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">4</b></p>
                   </div>
@@ -702,10 +711,10 @@ function teorias(num) {
                     </div>
                   </div>
                   `;
-      $("#teorico").html(texto);
-      scroll_set(19);
-  }else if (num == 5) {
-      var texto = `
+        $("#teorico").html(texto);
+        scroll_set(19);
+    } else if (num == 5) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">5</b></p>
                   </div>
@@ -718,9 +727,9 @@ function teorias(num) {
                     </div>
                   </div>
                   `;
-      $("#teorico").html(texto);
-  }else if (num == 6) {
-      var texto = `
+        $("#teorico").html(texto);
+    } else if (num == 6) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">6</b></p>
                   </div>
@@ -729,9 +738,9 @@ function teorias(num) {
                     Una vez ejecutados nuestros análisis, es posible que decidamos realizar otros análisis extras o pruebas para confirmar tendencias o preferencias y así poder evaluar los datos desde diferentes ángulos y puntos de vista. 
                   </p>
                   `;
-      $("#teorico").html(texto);
-  }else if (num == 7) {
-      var texto = `
+        $("#teorico").html(texto);
+    } else if (num == 7) {
+        var texto = `
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">7</b></p>
                   </div>
@@ -743,8 +752,8 @@ function teorias(num) {
                     <a class="p-2 border-10 bg-color-dark text-white h6 shadow cursor text-center" style=" width: 110px;" data-toggle="modal" data-target="#modalAcordeonImg2"><b>VER IMAGEN</b></a>  
                   </div>
                   `;
-      $("#teorico").html(texto);
-  }
+        $("#teorico").html(texto);
+    }
 }
 
 /*function pausevideo(num){
@@ -759,7 +768,7 @@ function teorias(num) {
   }
 }*/
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -785,5 +794,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }
