@@ -1319,3 +1319,7 @@ svg circle {
     padding-top: 1px;
     border-radius: 50%;
 }
+
+.resalte{
+    color: #811111 !important;
+}

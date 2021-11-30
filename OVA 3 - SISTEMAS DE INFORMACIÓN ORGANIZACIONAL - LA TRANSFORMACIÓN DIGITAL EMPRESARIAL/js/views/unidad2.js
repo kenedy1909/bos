@@ -5,6 +5,8 @@ $( document ).ready(function() {
     $(".menu1").removeClass('c-show');
     $(".menu2").addClass('c-show');
 
+    $(".activacion2").addClass('resalte');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -109,7 +111,8 @@ function controlSlides(num){
         case 4:
             setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
-        case 5:
+        case 7:
+            $(".activacion2").removeClass('resalte');
             setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
             break;
         default:

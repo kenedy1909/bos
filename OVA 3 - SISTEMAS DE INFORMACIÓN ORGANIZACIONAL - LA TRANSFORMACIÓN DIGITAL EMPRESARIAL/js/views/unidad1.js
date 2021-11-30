@@ -3,6 +3,8 @@ $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu1").addClass('c-show');
 
+    $(".activacion1").addClass('resalte');
+
     $(".ov-personaje").hide();
 
     paso = false;
@@ -192,6 +194,7 @@ function controlSlides(num) {
             break;
         case 19:
             $(".menu1").addClass('d-none');
+            $(".activacion1").removeClass('resalte');
             setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         default:
