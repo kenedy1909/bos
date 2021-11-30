@@ -427,7 +427,9 @@ p, button{
     top: -32px;
     color: #FFFFFF;
 }*/
-
+.hidden{
+	visibility: hidden;
+}
 
 @keyframes catanimation {
   from {
@@ -544,6 +546,19 @@ p, button{
     visibility: visible;
   }
 }
+
+
+
+.triangulo-1 {
+	width: 0;
+    height: 0;
+    border-top: 30px solid #8FAADC;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    margin-left: 1.5rem;
+}
+
+
 .triangulo-abajo1 {
 	margin: 0px;
 	width: 0;

@@ -786,11 +786,15 @@ function listas(){
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 2);
         $(".lista-a").data('lista', 3);
+        $(".lista-a").addClass('hidden');
+        $(".lista-s").removeClass('hidden');
     }else if (lista_num == 2) {
         var text = `
                     <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-02.png" alt="" class="img-80"></p>
                     `;
         $("#lista-1").html(text);
+        $(".lista-s").removeClass('hidden');
+        $(".lista-a").removeClass('hidden');
         $(".lista-s").data('lista', 3);
         $(".lista-a").data('lista', 1);
     }else if (lista_num == 3) {
@@ -799,6 +803,8 @@ function listas(){
                     `;
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 1);
+        $(".lista-s").addClass('hidden');
+        $(".lista-a").removeClass('hidden');
         $(".lista-a").data('lista', 2);
     }
 }
@@ -816,6 +822,8 @@ function disyunciones(){
         var text2 = `
                     <img src="assets/img/img_ova/tabla de disyunción lógica-02.png" alt="" class="img-100">
                     `;
+        $("#triangulo_r").removeClass('hidden');
+        $("#triangulo_l").addClass('hidden');
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
         $(".disyuncion-s").data('disyuncion', 2);
@@ -825,7 +833,7 @@ function disyunciones(){
                     <div class="bg-btn-a-c">
                         <div class="row px-3">
                             <div class="col-md-3 d-flex">
-                                  <img src="assets/img/img_ova/transparencia.png" alt="" class="img-100 m-auto">
+                                  <img src="assets/img/img_ova/transparencia.png" width="130%" class="m-auto">
                             </div>
                             <div class="col-md-9 px-3">
                                   <p class="p_black justificado">Hay un conector, que no es muy utilizado, llamado:</p>
@@ -841,16 +849,18 @@ function disyunciones(){
         var text2 = `
                     <div class="row px-3">
                         <div class="col-md-3 px-3 d-flex">
-                              <img src="assets/img/img_ova/prueba.png" alt="" class="img-100 m-auto">
+                              <img src="assets/img/img_ova/prueba.png" width="130%" class="m-auto">
                         </div>
                         <div class="col-md-9 px-3">
                               <p class="p_black justificado"><b>Por ejemplo:</b> “lo traen vivo o muerto” se podrá tener solo una de las dos.</p>
                               <br>
                               <p class="p_black justificado">En este curso no se profundizará en este conector:</p>
-                              <p class="text-center"><img src="assets/img/img_ova/tabla de disyunción lógica-03.png" alt="" class="img-85"></p>
+                              <p class="text-center"><img src="assets/img/img_ova/tabla de disyunción lógica-03.png" alt="" class="img-100"></p>
                         </div>
                     </div>
                     `;
+        $("#triangulo_l").removeClass('hidden');
+        $("#triangulo_r").addClass('hidden');
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
         $(".disyuncion-s").data('disyuncion', 1);
@@ -869,6 +879,8 @@ function disyunciones(){
                     </div>
                     `;
         $("#disyuncion-3").html(text);
+        $("#triangulo_l_1").removeClass('hidden');
+        $("#triangulo_r_1").addClass('hidden');
         $(".disyuncion-s").data('disyuncion', 4);
         $(".disyuncion-a").data('disyuncion', 4);
     }else if (disyuncion_num == 4) {
@@ -891,6 +903,8 @@ function disyunciones(){
                     </div>
                     `;
         $("#disyuncion-3").html(text);
+        $("#triangulo_l_1").removeClass('hidden');
+        $("#triangulo_r_1").addClass('hidden');
         $(".disyuncion-s").data('disyuncion', 3);
         $(".disyuncion-a").data('disyuncion', 3);
     }
@@ -902,6 +916,8 @@ function conector(){
     $(".conectores").addClass('bg-btn-a-o');
     $(".conectores-"+conectores_num).addClass('bg-btn-a-c');
     $(".conectores-"+conectores_num).removeClass('bg-btn-a-o');
+    $(".triangulo-1").addClass('d-none');
+    $("#triangulo-"+conectores_num).removeClass('d-none');
     $(".conectores").removeClass('p_black');
     $(".conectores").addClass('p_white');
     $(".conectores-"+conectores_num).addClass('p_black');
@@ -911,7 +927,7 @@ function conector(){
                     <div class="col-md-6 px-3">
                           <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
                           <br>
-                          <p class="p_black justificado">“La conjunción de p con q”:      p ^ q, se lee “p y q”</p>
+                          <p class="p_black justificado">“La conjunción de p con q”:    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   p ^ q, se lee “p y q”</p>
                           <br>
                           <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
                     </div>
@@ -923,12 +939,12 @@ function conector(){
     }else if (conectores_num == 2) {
         var text = `
                     <div class="col-md-1 px-3 d-flex">
-                        <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" data-disyuncion="2"></div>
+                        <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor hidden" data-disyuncion="2" id="triangulo_l"></div>
                     </div>
                     <div class="col-md-5 px-3" id="disyuncion-1">
                           <p class="p_black justificado">Cuando se habla de <u>disyunción</u> o también llamada suma lógica, donde al tener una de las proposiciones verdaderas, se convierte el valor de verdad en verdadero.                          </p>
                           <br>
-                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:          𝑝     𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
+                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      𝑝     𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
                           <br>
                           <p class="p_black justificado">La disyunción entre dos proposiciones será verdadera (V) cuando por lo menos una sea verdadera: </p>
                     </div>
@@ -936,7 +952,7 @@ function conector(){
                           <img src="assets/img/img_ova/tabla de disyunción lógica-02.png" alt="" class="img-100">
                     </div>
                     <div class="col-md-1 px-3 d-flex">
-                        <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="2"></div>
+                        <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="2" id="triangulo_r"></div>
                     </div>
                     `;
         $("#info-conectores").html(text);
@@ -944,7 +960,7 @@ function conector(){
     }else if (conectores_num == 3) {
         var text = `
                     <div class="col-md-6 px-3">
-                          <p class="p_black justificado">“La negación de  p”:           ~ p , se lee “no p”</p>
+                          <p class="p_black justificado"><i>“La negación de  p”: &nbsp; &nbsp; &nbsp; ~ p , se lee “no p”</i></p>
                           <br>
                           <p class="p_black justificado">La negación de una proposición tiene el valor de verdad opuesto a la proposición dada </p>
                           <p class="p_black justificado">También se acostumbra el signo “¬”, es decir “¬ p” para la negación o con la escritura “no p”.</p>
@@ -959,14 +975,14 @@ function conector(){
     }else if (conectores_num == 4) {
         var text = `
                      <div class="col-md-1 px-3 d-flex">
-                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" data-disyuncion="4"></div>
+                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor hidden" data-disyuncion="4" id="triangulo_l_1"></div>
                      </div>
                      <div class="col-md-10">
                          <div class="row" id="disyuncion-3">
-                             <div class="col-md-2 px-3 d-flex">
+                            <div class="col-md-3 px-3 d-flex">
                                    <img src="assets/img/img_ova/matematicas5.png" alt="" class="img-100 mt-auto">
                              </div>
-                             <div class="col-md-10 px-3">
+                             <div class="col-md-9 px-3">
                                    <p class="p_black justificado">Al hablar de implicación o también conocida como condicional, se hace referencia a la conjunción “si…entonces…si” como se explica a continuación:</p>
                                    <p class="p_black justificado">“La implicación entre p y q”:     p →q , se lee “si p entonces q” o “p implica q”</p>
                                    <br>
@@ -976,7 +992,7 @@ function conector(){
                          </div>
                      </div>
                      <div class="col-md-1 px-3 d-flex">
-                         <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="4"></div>
+                         <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="4" id="triangulo_r_1"></div>
                      </div>
                     `;
         $("#info-conectores").html(text);
