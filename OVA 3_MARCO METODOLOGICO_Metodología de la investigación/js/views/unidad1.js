@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".ov-personaje").hide();
-    setMigaja("Unidades de aprendizaje", "1. El diseño metodológico de la investigación ", ">");
+    setMigaja("Unidades de aprendizaje", "1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
 
     $(".pedfs").addClass('d-none');
     $(".pdf1").removeClass('d-none');
@@ -749,7 +749,6 @@ function pant13(num) {
     switch (parseInt(num)) {
         case 1:
             var contenido = `<h3 class="color-title">Experimentales</h3>
-                            <br><br>
                             <p class="text-justify">Se utilizan cuando el investigador pretende
                                 establecer el posible efecto de una causa que manipula. Un 
                                 experimento es un estudio donde se manipulan intencionalmente
@@ -767,23 +766,21 @@ function pant13(num) {
             break;
         case 2:
             var contenido = `<h3 class="color-title">Pre-experimentales</h3>
-                            <br><br>
                             <p class="text-justify">Generalmente útiles como primer acercamiento al problema de investigación en la realidad. El grado de control de las variables es mínimo. Son de dos clases: </p>
                             <ol>
                               <li>Estudio de caso con una sola medición.</li>
                               <li>Estudio de caso con una sola medición.</li>
                             </ol>
                             `;
-            var img = `<img src="assets/img/img_ova/pre-experimentos.png" width="100%">`;
+            var img = `<img src="assets/img/img_ova/pre-experimentos.png" width="90%">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.avance2').removeClass('d-none');
             break;
         case 3:
-            var contenido = `<h3 class="color-title">Cuasi-experimentales</h3>
-                            <br><br>
+            var contenido = `<h3 class="color-title" style="margin-top: 30px;">Cuasi-experimentales</h3>
                             <p class="text-justify">Implican el manejo de grupos intactos, es decir, que estaban creados antes del experimento</p>`;
-            var img = `<img src="assets/img/img_ova/cuasi-experimentos.png" width="100%">`;
+            var img = `<img src="assets/img/img_ova/cuasi-experimentos.png" width="80%">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.avance3').removeClass('d-none');
@@ -792,14 +789,13 @@ function pant13(num) {
             var contenido = `<div class="row">
                                 <div class="col-6">
                                     <h3 class="color-title">Experimentos “puros”</h3>
-                                    <br><br>
                                     <p class="text-justify">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
                                         <br></br>
                                         Luego, utilice la flecha para avanzar en la visualización del contenido.
                                     </p>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <img src="assets/img/img_ova/experimentospuros.png" width="90%">
+                                    <img src="assets/img/img_ova/experimentospuros.png" style="margin-top: 44px; width:90%;">
                                     <div class="w-100 d-flex justify-content-center menos-marginT-25">
                                         <h5 class="cursor text-white py-2 px-4 w-75 bg-color-dark border-10 shadow" data-toggle="modal" data-target="#modalimg_U1_3">VER IMAGEN</h5>
                                     </div>
@@ -808,7 +804,7 @@ function pant13(num) {
                             <div class="h-100 d-flex align-items-center">
                                 <i class="fas fa-caret-right text-color-3 display-4 ml-2 cursor" onclick="pant13Al(2)"></i>
                             </div>`;
-            var img = `<img src="assets/img/img_ova/experimentospuros1.png" width="100%">`;
+            var img = `<img src="assets/img/img_ova/experimentospuros1.png" width="90%">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.textU3, .imgU3').addClass('d-flex');
@@ -829,7 +825,6 @@ function pant13Al(num) {
             var contenido = `<div class="row">
                                 <div class="col-6">
                                 <h3 class="color-title">Experimentos “puros”</h3>
-                                <br><br>
                                 <p class="text-justify">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
                                     <br></br>
                                     Luego, utilice la flecha para avanzar en la visualización del contenido.

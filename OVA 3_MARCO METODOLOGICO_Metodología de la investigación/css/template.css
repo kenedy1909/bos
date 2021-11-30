@@ -1089,3 +1089,7 @@ card flip*/
     position: relative;
     top: 10px;
 }
+
+.margin-title {
+    margin-left: 13px;
+}
