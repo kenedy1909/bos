@@ -2088,6 +2088,15 @@ function pantalla21(num) {
     }
 }
 
+function color(num) {
+    $(".notas_1, .notas_2").removeClass('color_nota');
+    if (num == 1) {
+        $(".notas_1").addClass('color_nota');
+    }else if (num == 2) {
+        $(".notas_2").addClass('color_nota');
+    }
+}
+
 function pantalla22(num) {
     switch (parseInt(num)) {
         case 1:
