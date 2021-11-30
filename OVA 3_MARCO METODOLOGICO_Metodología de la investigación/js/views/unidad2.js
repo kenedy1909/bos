@@ -2,7 +2,7 @@ $(document).ready(function() {
     $(".menu2").removeClass('d-none');
 
     $(".ov-personaje").hide();
-    setMigaja("Unidades de aprendizaje", "2. tipos de investigación", "El método");
+    setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
 
     $(".pedfs").addClass('d-none');
 
@@ -76,15 +76,15 @@ function slide_link2(num) {
 function controlSlides2(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje", "2. tipos de investigación", "El método");
+            setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje", "2. tipos de investigación", "El método");
+            setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje", "2. tipos de investigación", "El método");
+            setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             tema = 1;
             star_uni = 2;
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
