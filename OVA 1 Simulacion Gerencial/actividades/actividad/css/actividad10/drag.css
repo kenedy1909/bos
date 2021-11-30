@@ -201,3 +201,8 @@ li.over {
     border-radius: 20px;
     padding: 20px; 
 }
+
+.img_actividad{
+  left: -21%;
+  top: -4px;
+}
