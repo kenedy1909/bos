@@ -527,7 +527,7 @@ a.control_next {
 .posicionamiento {
     float: right;
     position: relative;
-    top: 250px;
+    top: 190px;
     z-index: 1000;
     left: 30px;
 }
