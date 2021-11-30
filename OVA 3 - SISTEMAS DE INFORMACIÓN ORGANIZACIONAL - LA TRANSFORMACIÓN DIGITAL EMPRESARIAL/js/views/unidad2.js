@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
+    $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -84,10 +85,10 @@ function controlSlides(num){
             break;
         case 1:
             var pdf = ` <p class="p_white">
-                            <a href="assets/PDF/UNIDAD2/DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD2/DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdfgris.png"> DECRETO-1377-DEL-27-DE-JUNIO-DE-2013.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
                         </p>
                         <p class="p_white">
-                            <a href="assets/PDF/UNIDAD2/Ley_1581_de_2012.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Ley_1581_de_2012.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD2/Ley_1581_de_2012.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdfgris.png"> Ley_1581_de_2012.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
                         </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. La ley de habeas data","Contexto general");
