@@ -272,7 +272,7 @@ function slideU4_1(num) {
         $('.flechaRU4-1').addClass('hidden');
 
         var contenido = `
-                    <p class="text-justify text-black"><b class="color-title">Por ejemplo,</b> en el trabajo tienes cierto tiempo para tomar el descanso e ir a almorzar, entonces te ves en la obligación de medir el tiempo que esto te tomará, después a la hora de salida,  después a la hora de salida, mides el tiempo que te tomará desplazarte a la cita con un amigo o simplemente de regreso a casa, por lo que medir hace parte de nuestra cotidianidad y es este precisamente el tema que a continuación vamos a ver.</p>
+                    <p class="text-justify text-black" style="margin-top:-30px;"><b class="color-title">Por ejemplo,</b> en el trabajo tienes cierto tiempo para tomar el descanso e ir a almorzar, entonces te ves en la obligación de medir el tiempo que esto te tomará, después a la hora de salida,  después a la hora de salida, mides el tiempo que te tomará desplazarte a la cita con un amigo o simplemente de regreso a casa, por lo que medir hace parte de nuestra cotidianidad y es este precisamente el tema que a continuación vamos a ver.</p>
                     `;
         $('.flechaLU4-1').attr('onclick', "slideU4_1(2)");
 
