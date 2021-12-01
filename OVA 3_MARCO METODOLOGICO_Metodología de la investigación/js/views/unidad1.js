@@ -76,7 +76,7 @@ function slide(num) {
         controlSlides(stepIndex+1);
         actualizarprogress(stepIndex + 1);
     }else{
-        controlSlides(stepIndex + 1);
+        controlSlides(stepIndex);
         actualizarprogress(stepIndex + 1);
     }
 }
