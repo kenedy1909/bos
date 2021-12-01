@@ -1,6 +1,8 @@
 $(document).ready(function() {
 
     $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
     $(".pedfs").addClass('d-none');
     $(".pdf3").removeClass('d-none');
@@ -117,7 +119,9 @@ function controlSlides3(num) {
         case 3:
             setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
             tema = 1;
-            
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");

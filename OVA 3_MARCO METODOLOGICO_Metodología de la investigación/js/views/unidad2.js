@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
 
     $(".ov-personaje").hide();
@@ -116,7 +117,8 @@ function controlSlides2(num) {
         case 2:
             setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             tema = 1;
-            
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
             break;
         default:
             break;

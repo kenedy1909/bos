@@ -73,7 +73,7 @@ function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     
     if (num == 1) {
-        controlSlides(stepIndex+3);
+        controlSlides(stepIndex+1);
         actualizarprogress(stepIndex + 1);
     }else{
         controlSlides(stepIndex + 1);
@@ -151,6 +151,7 @@ function controlSlides(num) {
             scroll();
             break;
         case 6:
+            $(".menu1").addClass('d-none');
             setMigaja("Unidades de aprendizaje", "1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
             tema = 1;
             
