@@ -215,3 +215,10 @@
     background: var(--bg-color-claro)!important;
     padding: 30px;
 }
+
+.color-b-3 {
+    margin-left: 20px;
+    max-width: 190px;
+    background: #7b49ab;
+    height: 190px;
+}

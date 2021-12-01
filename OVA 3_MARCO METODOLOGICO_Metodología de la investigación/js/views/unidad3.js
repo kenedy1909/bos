@@ -586,7 +586,7 @@ function slideModalU3_3(num) {
 
         var contenido = `<div class="d-flex">
                       <div class="w-100 text-center">
-                        <img src="assets/img/img_ova/pregunta.png" width="85%">
+                        <img src="assets/img/img_ova/pregunta.png" style="width: 100%; margin-top: -8px; margin-left: -16px;">
                       </div>
                       <p class="text-justify text-black pr-3">Por lo tanto, cuando se utiliza una muestra probabilística, es fundamental que se pregunte lo siguiente: se cuenta con una población que pertenece a N, si es así, <span class="color-text"><b> ¿cuál es el menor número de compuestos o elementos muestrales? ¿Qué se busca o pretende indagar?</b></span> Para que haga parte de esa muestra n, lo cual aseguraría un resultado adquirido como promedio bajo o leve de error estándar dentro de la investigación. Es el tamaño del error en las predicciones en una muestra probabilística.</p>
                     </div>`;
