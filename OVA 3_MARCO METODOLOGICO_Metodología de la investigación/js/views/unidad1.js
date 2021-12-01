@@ -781,7 +781,7 @@ function pant13(num) {
     switch (parseInt(num)) {
         case 1:
             var contenido = `<h3 class="color-title">Experimentales</h3>
-                            <p class="text-justify">Se utilizan cuando el investigador pretende
+                            <p class="text-justify" style="height: 117px;overflow: auto;">Se utilizan cuando el investigador pretende
                                 establecer el posible efecto de una causa que manipula. Un 
                                 experimento es un estudio donde se manipulan intencionalmente
                                 una o más variables independientes (causas) para analizar las 
