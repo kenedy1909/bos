@@ -1655,54 +1655,68 @@
                                   <h3 class="color-text"><b>Movimiento bidimensional /</b> Vectores de posición, velocidad y aceleración</h3>
                               </div>
                           </div>
-                          <div class="col-md-12 mt-3">
+                          <div class="col-md-12 mt-4">
                             <div class="row fondo_carta" style="height: 110px;">
-                              <div class="text-center imagenCarta" style="">
+                              <div class="text-center imagenCarta" style="left: -10px; width: 17%;">
                                 <img src="assets/img/img_ova/notas.png" class="img-100">
                               </div>
                               <div style="width: 80%;">
-                                <p class="justificado size_14">Para describir el movimiento de una partícula en el espacio, primero se tiene que describir su posición. Se considera una partícula que está en el punto P en cierto instante. El vector de posición 𝑟&#8407; de la partícula en ese instante es un vector que va del origen del sistema de coordenadas al punto P. Las coordenadas cartesianas x, y y z de P son las componentes x, y y z del vector. Si se usa vectores unitarios se puede escribir:</p>
+                                <p class="p_blackjustificado size_14">Para describir el movimiento de una partícula en el espacio, primero se tiene que describir su posición. Se considera una partícula que está en el punto P en cierto instante. El vector de posición 𝑟&#8407; de la partícula en ese instante es un vector que va del origen del sistema de coordenadas al punto P. Las coordenadas cartesianas x, y y z de P son las componentes x, y y z del vector. Si se usa vectores unitarios se puede escribir:</p>
                               </div>
                             </div>
                           </div>
-                          <div class="col-md-12 mt-3">
+                          <div class="col-md-12 mt-4">
                             <b class="color-text">Haga clic en la flecha de la tarjeta para ver la información:</b>
                             <div class="col-md-12 row mt-3">
                               <div class="col-md-5 d-flex justify-content-center">
-                                <div class="text-center targetas27" style="">
-                                  <img src="assets/img/img_ova/imagen1posicion.png" class="img-70">
+                                <div class="text-center targetas27 d-flex" style="min-height: 410px;">
+                                  <img src="assets/img/img_ova/imagen1posicion.png" class="m-auto img-70">
                                 </div>
                               </div>
                               <div class="col-md-1">
                                 <div class="triangulo cursor" style="" onclick="pantalla27(1);"></div>
                               </div>
                               <div class="col-md-6 d-flex justify-content-center">
-                                <div class="targetas27 invisible aparece_target">
-                                  <p style="font-size: 14px;">Durante un intervalo de tiempo ∆t, la partícula se mueve de P1, donde su vector de posición es <img src="assets/img/img_ova/simbolo1.png" style="max-width: 20px;"> a P2, donde su vector de posición es <img src="assets/img/img_ova/simbolo2.png" style="max-width: 20px;"> El cambio de posición durante este intervalo <img src="assets/img/img_ova/simbolo3.png" style="max-width: 109px;"><img src="assets/img/img_ova/simbolo4.png" style="max-width: 230px;">. Se define la velocidad media y la velocidad instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de posición tiene 3 componentes.</p><b class="color-text"> Pase el mouse en los números para ver la información:</b>
-                                  <div class="row">
-                                    <div class="col-md-6"></div>
-                                    <div class="col-md-6 row">
-                                      <div class="btn_targetas27 cursor" style="" onclick="flotantes(1);">1</div>
-                                      <div class="btn_targetas27 cursor" style="margin-left: 5px;" onclick="flotantes(2);">2</div>
-                                      <div class="btn_targetas27 cursor" style="margin-left: 5px;" onclick="flotantes(3);">3</div>
+                                <div class="targetas27 d-flex invisible aparece_target">
+                                    <div class="m-auto">
+                                      <p class="p_black" style="font-size: 14px;">Durante un intervalo de tiempo ∆t, la partícula se mueve de P1, donde su vector de posición es <img src="assets/img/img_ova/simbolo1.png" style="max-width: 20px;"> a P2, donde su vector de posición es <img src="assets/img/img_ova/simbolo2.png" style="max-width: 20px;"> El cambio de posición durante este intervalo <img src="assets/img/img_ova/simbolo3.png" style="max-width: 109px;"><img src="assets/img/img_ova/simbolo4.png" style="max-width: 230px;">. Se define la velocidad media y la velocidad instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de posición tiene 3 componentes.</p><span class="color-text"> Dar clic en los números para ver la información:</span>
+                                      <div class="row">
+                                        <div class="col-md-5"></div>
+                                        <div class="col-md-7 row">
+                                          <div class="btn_targetas27 cursor" style="" onclick="flotantes(1);">1</div>
+                                          <div class="btn_targetas27 cursor" style="margin-left: 5px;" onclick="flotantes(2);">2</div>
+                                          <div class="btn_targetas27 cursor" style="margin-left: 5px;" onclick="flotantes(3);">3</div>
+                                        </div>
+                                      </div>
                                     </div>
-                                  </div>
                                 </div>
                               </div>
                             </div>
                             <div class="col-md-12" style="min-height: 200px;">
-                              <div class="invisible flotante flotante1">
-                                <div class="cerrar_flotante cursor" onclick="flotantes(4);">X</div>
-                                <img src="assets/img/img_ova/textotarget1.png" class="img-100">
-                              </div>
-                              <div class="invisible flotante flotante2 text-center">
-                                <div class="cerrar_flotante cursor" onclick="flotantes(4);">X</div>
-                                <img src="assets/img/img_ova/textotarget2.png" class="img-80">
-                              </div>
-                              <div class="invisible flotante flotante3 text-center">
-                                <div class="cerrar_flotante cursor" onclick="flotantes(4);">X</div>
-                                <img src="assets/img/img_ova/textotarget3.png" class="img-80">
-                              </div>
+                                <div class="d-none flotante flotante1">
+                                  <div class="cerrar_flotante cursor" onclick="flotantes(4);">X</div>
+                                  <div class="text-center d-flex" style="min-height: 90px;">
+                                    <div class="m-auto">
+                                        <img src="assets/img/img_ova/textotarget1.png" class="img-70 m-auto">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="d-none flotante flotante2">
+                                  <div class="cerrar_flotante cursor" onclick="flotantes(4);">X</div>
+                                  <div class="text-center d-flex" style="min-height: 90px;">
+                                    <div class="m-auto">
+                                        <img src="assets/img/img_ova/textotarget2.png" class="img-50 m-auto">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="d-none flotante flotante3">
+                                  <div class="cerrar_flotante cursor" onclick="flotantes(4);">X</div>
+                                  <div class="text-center d-flex" style="min-height: 90px;">
+                                    <div class="m-auto">
+                                        <img src="assets/img/img_ova/textotarget3.png" class="img-70 m-auto">
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                           </div>
                        </div>
@@ -1715,14 +1729,14 @@
                                     <h3 class="color-text"><b>Movimiento bidimensional /</b> Vectores de posición, velocidad y aceleración</h3>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12 p-0">
                                 <div style="background: #006098;padding: 10px;border-radius: 20px;">
                                     <p class="justificado size_14 text-white">Se considera ahora la aceleración de una partícula que se mueve en el espacio. Al igual que en el movimiento rectilíneo, la aceleración describe cómo cambia la velocidad de la partícula; pero como ahora se trata la velocidad como un vector, la aceleración describirá los cambios tanto en la magnitud de la velocidad (es decir, la rapidez) como en la dirección de la velocidad (esto es, la dirección en que se mueve la partícula). Haga clic en la flecha de la tarjeta para ver la información:</p>
                                 </div>
                             </div>
-                            <div class="col-md-12 row mt-2">
-                                <div class="col-md-1" style="margin-top: 25%;">
-                                    <div class="">
+                            <div class="col-md-12 p-0 row mx-0 mt-2">
+                                <div class="col-md-1 p-0 d-flex">
+                                    <div class="my-auto ml-auto">
                                         <a href="#" class="control_prev4"><div class="triag_cambiaslide4" style="transform: scaleX(-1);"></div></a>
                                     </div>
                                 </div>
@@ -1733,7 +1747,7 @@
                                     <div id="slider4" style="" class="d-flex justify-content-center">
                                         <ul>
                                             <li>
-                                                <p class="justificado">Durante un intervalo de tiempo ∆𝑡, la partícula se mueve de P<sub>1</sub>, donde su vector de velocidad es <img src="assets/img/img_ova/vector1.png" style="max-width: 50px;"> donde su vector de velocidad es <img src="assets/img/img_ova/vector2.png" style="    max-width: 25px;"> El cambio de velocidad durante este intervalo es <img src="assets/img/img_ova/vector3.png" style="max-width: 90px;"> Se define la aceleración media y la aceleración instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de velocidad tiene 3 componentes.</p>
+                                                <p class="p_black justificado">Durante un intervalo de tiempo ∆𝑡, la partícula se mueve de P<sub>1</sub>, donde su vector de velocidad es <img src="assets/img/img_ova/vector1.png" style="max-width: 50px;"> donde su vector de velocidad es <img src="assets/img/img_ova/vector2.png" style="    max-width: 25px;"> El cambio de velocidad durante este intervalo es <img src="assets/img/img_ova/vector3.png" style="max-width: 90px;"> Se define la aceleración media y la aceleración instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de velocidad tiene 3 componentes.</p>
                                             </li>
                                             <li>
                                                 <div class="text-center">
@@ -1741,13 +1755,13 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <p class="justificado">Para ilustrar esto se observa la figura en ella se muestra un auto que toma una curva y para no perder el control debe frenar (acelerar), en cada memento sobre la curva tiene una velocidad diferente (menor). Se nota que el vector diferencia ∆𝑣&#8407; apunta hacia adentro de la curva y es diferente de cero.</p>
+                                                <p class="p_black justificado">Para ilustrar esto se observa la figura en ella se muestra un auto que toma una curva y para no perder el control debe frenar (acelerar), en cada memento sobre la curva tiene una velocidad diferente (menor). Se nota que el vector diferencia ∆𝑣&#8407; apunta hacia adentro de la curva y es diferente de cero.</p>
                                             </li>
                                         </ul>  
                                     </div>
                                 </div>
-                                <div class="col-md-1" style="margin-top: 25%;">
-                                    <div class="">
+                                <div class="col-md-1 p-0 d-flex">
+                                    <div class="my-auto mr-auto">
                                         <a href="#" class="control_next4"><div style="" class="triag_cambiaslide4"></div></a>
                                     </div>
                                 </div>
@@ -1762,37 +1776,44 @@
                                     <h3 class="color-text"><b>Movimiento bidimensional /</b> Vectores de posición, velocidad y aceleración</h3>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-3">
+                            <div class="col-md-12 pl-0 mt-3">
                                 <b class="ejercicio_ejemplo p_black">Ejercicio de ejemplo:</b>
                             </div>
-                            <div class="col-md-12 mt-3">
+                            <div class="col-md-12 p-0 mt-3">
                                 <div class="azulsombra">
-                                    <p class="justificado">Cuando el Sol está directamente arriba, un halcón se clava hacia el suelo con una velocidad constante de 5 m/s a 60° bajo la horizontal. Calcule la rapidez de su sombra a nivel del suelo. (J., 2008).</p>
+                                    <p class="p_black justificado">Cuando el Sol está directamente arriba, un halcón se clava hacia el suelo con una velocidad constante de 5 m/s a 60° bajo la horizontal. Calcule la rapidez de su sombra a nivel del suelo. (J., 2008).</p>
                                 </div>
                             </div>
-                            <div class="col-md-12 mt-3">
+                            <div class="col-md-12 pl-0 mt-3">
                                 <b class="ejercicio_ejemplo p_black">Respuesta:</b>
                             </div>
-                            <div class="col-md-12 row mt-3">
-                                <div class="col-md-4 targeticablue">
-                                    <div class="text-center" style="">
-                                        <img src="assets/img/img_ova/solamarillo.png" class="img-70" style="margin-top: 15px;">
-                                    </div>
+                            <div class="col-md-12 mt-3 position-relative">
+                                <div class="position-absolute d-flex img-95 h-100">
+                                    <div style="height: 5px; background: #4472C4;" class="my-auto img-100"></div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class=" targeticawhite" style="">
-                                        <div class="headertargetica" style=""></div>
-                                        <div class="text-center">
-                                            <img src="assets/img/img_ova/grados.jpg" class="img100">
+                                <div class="row">
+                                    <div class="col-md-4 pl-0">
+                                        <div class="targeticablue" style="min-height: 210px;">
+                                            <div class="text-center" style="">
+                                                <img src="assets/img/img_ova/solamarillo.png" class="img-70" style="margin-top: 15px;">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class=" targeticawhite" style="">
-                                        <div class="headertargetica" style=""></div>
-                                        <div class="text-center" style="padding: 5px;">
-                                            <p class="justificado p_black">Teniendo en cuenta el diagrama se muestra que:</p><br>
-                                            <img src="assets/img/img_ova/ultima.png" class="img-100">
+                                    <div class="col-md-4 px-1">
+                                        <div class=" targeticawhite" style="min-height: 210px;">
+                                            <div class="headertargetica" style=""></div>
+                                            <div class="text-center pt-2">
+                                                <img src="assets/img/img_ova/grados.jpg" class="img100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pr-0">
+                                        <div class=" targeticawhite" style="min-height: 210px;">
+                                            <div class="headertargetica" style=""></div>
+                                            <div class="text-center" style="padding: 5px;">
+                                                <p class="justificado p_black">Teniendo en cuenta el diagrama se muestra que:</p><br>
+                                                <img src="assets/img/img_ova/ultima.png" class="img-100">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1809,8 +1830,8 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="row" style="background: #E39D40;border-radius: 20px;padding: 5px;">
-                                    <div class="col-md-2"><img src="assets/img/img_ova/notas.png" class="img-100"></div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-2 p-1 d-flex"><img src="assets/img/img_ova/notas.png" class="img-100 m-auto"></div>
+                                    <div class="col-md-10 p-3">
                                         <p class="justificado text-white size_13">¿Se continúa restringiendo el estudio del movimiento al caso de una partícula que se mueve con aceleración constante, es decir que su magnitud y dirección no cambian durante el movimiento. E1 vector posición de una partícula que se mueve en el plano xy es una función del tiempo. Por definición, la velocidad de la partícula en movimiento en el plano xy es, el cambio de posición en el transcurso del tiempo. Se concluye que el movimiento bidimensional con aceleración constante es equivalente a dos movimientos independientes en las direcciones x e y con aceleraciones constantes ax y ay. A esta propiedad se le llama principio de independencia del movimiento.</p>
                                     </div>
                                 </div>
@@ -1820,14 +1841,14 @@
                             </div>
                             <div class="col-md-12 mt-3">
                                 <div class="row blueavion">
-                                    <div class="col-md-2">
-                                        <img src="assets/img/img_ova/avion.png" class="img-100">
+                                    <div class="col-md-2 p-1 d-flex">
+                                        <img src="assets/img/img_ova/avion2.png" class="img-100 m-auto">
                                     </div>
                                     <div class="col-md-8">
                                         <p class="justificado p_black">Un avión que viaja horizontalmente a 600 mi/h y a 10.000 pies de altura deja caer un paquete que desea entregar a una estación en tierra más adelante en un procedimiento habitual, sin embargo, el piloto no se dio cuenta que un viento sostenido aceleraba el paquete horizontalmente 10 ft/s<sup>2</sup>. ¿A qué distancia cayó el paquete desde el punto donde se soltó? ¿Cuál es la distancia en pies que erró el piloto la entrega del paquete?</p>
                                     </div>
-                                    <div class="col-md-2 text-center">
-                                        <button class="btn btnAzul" data-toggle="modal" data-target="#actividad_avion">Respuesta:</button>
+                                    <div class="col-md-2 text-center d-flex">
+                                        <button class="btn btnAzul m-auto" data-toggle="modal" data-target="#actividad_avion">Respuesta:</button>
                                     </div>
                                 </div>
                             </div>
@@ -1841,7 +1862,7 @@
                                     <h3 class="color-text"><b>Movimiento bidimensional /</b> Movimiento de un proyectil</h3>
                                 </div>
                             </div>
-                            <div class="col-md-12">
+                            <div class="col-md-12 p-0">
                                 <b class="color-text">Haga clic en las flechas blancas para continuar con la información</b>
                             </div>
                             <div class="col-md-12">
@@ -1862,25 +1883,27 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-7">
-                                                        <div class="col-md-12">
-                                                            <b class="size_13 color-text">Pase el mouse por las imágenes para ver información:</b>
-                                                            <div class="container_clicks">
-                                                                <img src="assets/img/img_ova/Mesa1.png" class="img-100">
-                                                                <div class="clicks" style="top: 9px;" onmouseover="mesas(1);"></div>
-                                                                <div class="clicks" style="top: 9px;left: 137px;" onmouseover="mesas(2);"></div>
-                                                                <div class="clicks" style="top: 9px;left: 259px;" onmouseover="mesas(3);"></div>
+                                                        <div class="col-md-12 d-flex">
+                                                            <div class="my-auto">
+                                                                <b class="size_13 color-text">Pase el mouse por las imágenes para ver información:</b>
+                                                                <div class="container_clicks">
+                                                                    <img src="assets/img/img_ova/Mesa1.png" class="img-100">
+                                                                    <div class="clicks" style="top: 9px;" onmouseover="mesas(1);"></div>
+                                                                    <div class="clicks" style="top: 9px;left: 137px;" onmouseover="mesas(2);"></div>
+                                                                    <div class="clicks" style="top: 9px;left: 259px;" onmouseover="mesas(3);"></div>
 
-                                                                <img src="assets/img/img_ova/textmesa1.png" style="" class="mesas cordenadamesa1 invisible">
-                                                                <img src="assets/img/img_ova/textmesa2.png" style="" class="mesas cordenadamesa2 invisible">
-                                                                <img src="assets/img/img_ova/textmesa2.png" style="" class="mesas cordenadamesa3 invisible">
-                                                            </div>
-                                                            <div class="col-md-12">
-                                                                <p class="justificado p_black size_13">Sin gravedad, se podría lanzar una roca en un ángulo hacia el cielo y seguiría una trayectoria en línea recta. Sin embargo, debido a la gravedad, la trayectoria se curva. Una roca lanzada, una pelota de tenis o cualquier objeto que se proyecte por algún medio y siga en movimiento por su propia inercia se llama proyectil. Para los artilleros de siglos anteriores, las trayectorias curvas de los proyectiles parecían muy complejas. <br> 
-                                                                En la actualidad, dichas trayectorias son sorprendentemente simples cuando se observan por separado las componentes horizontal y vertical de la velocidad. </p>
+                                                                    <img src="assets/img/img_ova/textmesa1.png" style="" class="mesas cordenadamesa1 invisible">
+                                                                    <img src="assets/img/img_ova/textmesa2.png" style="" class="mesas cordenadamesa2 invisible">
+                                                                    <img src="assets/img/img_ova/textmesa2.png" style="" class="mesas cordenadamesa3 invisible">
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <p class="justificado p_black size_13">Sin gravedad, se podría lanzar una roca en un ángulo hacia el cielo y seguiría una trayectoria en línea recta. Sin embargo, debido a la gravedad, la trayectoria se curva. Una roca lanzada, una pelota de tenis o cualquier objeto que se proyecte por algún medio y siga en movimiento por su propia inercia se llama proyectil. Para los artilleros de siglos anteriores, las trayectorias curvas de los proyectiles parecían muy complejas. <br> 
+                                                                    En la actualidad, dichas trayectorias son sorprendentemente simples cuando se observan por separado las componentes horizontal y vertical de la velocidad. </p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_next5"><div style="" class="triag_cambiaslide5"></div></a>
@@ -1892,7 +1915,7 @@
                                             </li>
                                             <li>
                                                 <div class="row">
-                                                    <div class="col-md-4" style="z-index: 1;">
+                                                    <div class="col-md-4 p-0" style="z-index: 1;">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_prev5"><div class="triag_cambiaslide5" style="transform: scaleX(-1);"></div></a>
@@ -1906,11 +1929,11 @@
                                                         <div class="linea_base" style="">
                                                             <img src="assets/img/img_ova/Baseballbola.png" style="left: 0%;top: -12px;" class="bolabase">
                                                         </div>
-                                                        <div style="margin-top: 115px;">
-                                                            <p class="justificado p_black size_13">La <b>componente horizontal</b> de la velocidad para un proyectil no es más complicada que la velocidad horizontal de una bola de boliche que rueda libremente sobre la pista. Si el efecto retardador de la fricción puede ignorarse, no hay fuerza horizontal sobre la bola y su velocidad es constante. Rueda con su propia inercia y recorre distancias iguales en intervalos de tiempo iguales. La componente horizontal del movimiento de un proyectil es exactamente igual al movimiento de la bola de boliche sobre la pista.</p>
+                                                        <div class="h-100 d-flex">
+                                                            <p class="justificado m-auto p_black size_13">La <b>componente horizontal</b> de la velocidad para un proyectil no es más complicada que la velocidad horizontal de una bola de boliche que rueda libremente sobre la pista. Si el efecto retardador de la fricción puede ignorarse, no hay fuerza horizontal sobre la bola y su velocidad es constante. Rueda con su propia inercia y recorre distancias iguales en intervalos de tiempo iguales. La componente horizontal del movimiento de un proyectil es exactamente igual al movimiento de la bola de boliche sobre la pista.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_next5"><div style="" class="triag_cambiaslide5"></div></a>
@@ -1922,7 +1945,7 @@
                                             </li>
                                             <li>
                                                 <div class="row">
-                                                    <div class="col-md-4" style="z-index: 1;">
+                                                    <div class="col-md-4 p-0" style="z-index: 1;">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_prev5"><div class="triag_cambiaslide5" style="transform: scaleX(-1);"></div></a>
@@ -1936,11 +1959,11 @@
                                                         <div class="linea_base" style="">
                                                             <img src="assets/img/img_ova/Baseballbola.png" style="left: 18%;top: -12px;" class="bolabase">
                                                         </div>
-                                                        <div style="margin-top: 115px;">
-                                                            <p class="justificado p_black size_13">La <b>componente vertical</b> del movimiento para un proyectil que sigue una trayectoria curva es exactamente igual al movimiento para un objeto en caída libre. La componente vertical es exactamente la misma que para un objeto que cae libremente en línea recta hacia abajo. Cuanto más rápido caiga el objeto, mayor será la distancia recorrida en cada segundo sucesivo. O, si el objeto se proyecta hacia arriba, las distancias verticales de viaje disminuyen con el tiempo en su camino de ascenso.</p>
+                                                        <div class="h-100 d-flex">
+                                                            <p class="justificado my-auto p_black size_13">La <b>componente vertical</b> del movimiento para un proyectil que sigue una trayectoria curva es exactamente igual al movimiento para un objeto en caída libre. La componente vertical es exactamente la misma que para un objeto que cae libremente en línea recta hacia abajo. Cuanto más rápido caiga el objeto, mayor será la distancia recorrida en cada segundo sucesivo. O, si el objeto se proyecta hacia arriba, las distancias verticales de viaje disminuyen con el tiempo en su camino de ascenso.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_next5"><div style="" class="triag_cambiaslide5"></div></a>
@@ -1952,7 +1975,7 @@
                                             </li>
                                             <li>
                                                 <div class="row">
-                                                    <div class="col-md-4" style="z-index: 1;">
+                                                    <div class="col-md-4 p-0" style="z-index: 1;">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_prev5"><div class="triag_cambiaslide5" style="transform: scaleX(-1);"></div></a>
@@ -1966,11 +1989,11 @@
                                                         <div class="linea_base" style="">
                                                             <img src="assets/img/img_ova/Baseballbola.png" style="left: 25%;top: 30px;" class="bolabase">
                                                         </div>
-                                                        <div style="margin-top: 115px;">
-                                                            <p class="justificado p_black size_13">Para analizar este tipo de movimiento tan común, se partirá de un modelo idealizado que representa el proyectil como una partícula con aceleración constante (debida a la gravedad) tanto en magnitud como en dirección. Se ignoran los efectos de la resistencia del aire, así como la curvatura y rotación de la Tierra. Como todos los modelos, este tiene limitaciones. La curvatura de la Tierra debe considerarse en el vuelo de misiles de largo alcance; asimismo, la resistencia del aire es de importancia vital para un paracaidista. No obstante, se puede aprender mucho analizando este modelo sencillo.</p>
+                                                        <div class="h-100 d-flex">
+                                                            <p class="justificado my-auto p_black size_13">Para analizar este tipo de movimiento tan común, se partirá de un modelo idealizado que representa el proyectil como una partícula con aceleración constante (debida a la gravedad) tanto en magnitud como en dirección. Se ignoran los efectos de la resistencia del aire, así como la curvatura y rotación de la Tierra. Como todos los modelos, este tiene limitaciones. La curvatura de la Tierra debe considerarse en el vuelo de misiles de largo alcance; asimismo, la resistencia del aire es de importancia vital para un paracaidista. No obstante, se puede aprender mucho analizando este modelo sencillo.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_next5"><div style="" class="triag_cambiaslide5"></div></a>
@@ -1995,7 +2018,7 @@
                                                             <img src="assets/img/img_ova/Movimientodeunproyectilgrafico1.png" class="img-100">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         <div class="">
                                                             <a href="#" class="control_next5"><div style="" class="triag_cambiaslide5"></div></a>
                                                         </div>
@@ -2017,7 +2040,7 @@
                                                             <img src="assets/img/img_ova/Movimientodeunproyectilgrafico1.png" class="img-100">
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         
                                                     </div>
                                                 </div>
@@ -2025,10 +2048,10 @@
 
                                             <li>
                                                 <div class="row">
-                                                    <div class="col-md-4" style="z-index: 1;">
+                                                    <div class="col-md-4 p-0" style="z-index: 1;">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
-                                                                <a href="#" class="control_prev5"><div class="triag_cambiaslide5" style="transform: scaleX(-1);"></div></a>
+                                                                <!-- <a href="#" class="control_prev5"><div class="triag_cambiaslide5" style="transform: scaleX(-1);"></div></a> -->
                                                             </div>
                                                         </div>
                                                         <div style="height: 200px;width: 100%;">
@@ -2039,15 +2062,15 @@
                                                         <div class="linea_base" style="">
                                                             <img src="assets/img/img_ova/Baseballbola.png" style="left: -21%;" class="bolabase">
                                                         </div>
-                                                        <div style="margin-top: 115px;">
-                                                            <p class="justificado p_black size_13">Un proyectil es un cuerpo que recibe una velocidad inicial y luego sigue una trayectoria determinada por los efectos de la aceleración gravitacional y la resistencia del aire. <br>
+                                                        <div class="h-100 d-flex">
+                                                            <p class="justificado my-auto p_black size_13">Un proyectil es un cuerpo que recibe una velocidad inicial y luego sigue una trayectoria determinada por los efectos de la aceleración gravitacional y la resistencia del aire. <br>
 
                                                             Una pelota bateada, un balón de fútbol lanzado, un paquete que se deja caer desde un avión y una bala disparada por un rifle son proyectiles. <br>
 
                                                             El camino que sigue un proyectil se conoce como su trayectoria. (J., 2008).</p>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-1 p-0">
                                                         <div class="col-md-12" style="height: 200px;">
                                                             <div class="">
                                                                 <a href="#" class="control_next5"><div style="" class="triag_cambiaslide5"></div></a>

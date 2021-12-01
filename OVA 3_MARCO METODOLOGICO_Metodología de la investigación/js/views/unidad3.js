@@ -448,7 +448,7 @@ function tarjertaGU3(num) {
         $('.flechaLU3-1').removeClass('hidden');
         $('.flechaLU3-1').attr('onclick', "tarjertaGU3(3)");
         $('.flechaRU3-1').addClass('hidden');
-        $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/PDF/UNIDAD3/PDFCOMICS.pdf" target="_blank" download>
+        $('.btnDescarga2').html(`<a class="btn clr-dark text-white text-center px-4 py-3 border-10" href="assets/PDF/UNIDAD3/PDFCOMICS.pdf" target="_blank" download>
                                 <h3 class="mx-3">Descargar historieta</h3>
                               </a>`);
 
@@ -620,7 +620,7 @@ function slideModalU3_3(num) {
         var contenido = `<div class="text-center">
                       <p class="text-justify text-black pr-3 w-100">Ahora, analicemos un caso. Haga clic en “ver imagen” para profundizar sobre este tema.</p>
                       <div class="w-100 text-center mt-3 d-flex justify-content-center align-items-center">
-                        <img src="assets/img/img_ova/imagen.png" width="20%">
+                        <img src="assets/img/img_ova/imagen.png" width="17%">
                         <p class="border-10 bg-color-1 py-3 w-25 cursor text-white ml-4" data-toggle="modal" data-target="#modalimg_U3-1_3"><b>VER IMAGEN</b></p>
                       </div>
                     </div>`;

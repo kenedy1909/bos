@@ -761,7 +761,7 @@ button {
 .custom-scrollbar__bar18,
 .custom-scrollbar__bar19 {
     position: absolute;
-    top: 22px;
+    /*top: 22px;*/
     bottom: 45px;
     background: #00000066;
     width: 3px;
