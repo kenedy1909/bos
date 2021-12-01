@@ -50,10 +50,16 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides4(stepIndex);
-    actualizarprogress(stepIndex + 7 + 3 + 5);
+    
+    if (num == 1) {
+        controlSlides4(stepIndex+1);
+        actualizarprogress(stepIndex + 7 + 3 + 5);
+    }else{
+        controlSlides4(stepIndex);
+        actualizarprogress(stepIndex + 7 + 3 + 5);
+    }
 }
 
 function slide_predeterminado4() {
@@ -74,6 +80,25 @@ function slide_link4(num) {
 
 
 }
+
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                
+                break;
+        }
+    }
+);
 
 function controlSlides4(num) {
     switch (parseInt(num)) {
