@@ -1836,3 +1836,26 @@ input[type=range]::-ms-fill-upper {
     padding: 20px;
     background: var(--bg-color-claro)!important;
 }
+
+.trias{
+    width: 0;
+    height: 0;
+    border-left: 19px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: scaleX(-1);
+    position: relative;
+    top: 25px;
+    left: 17px;
+}
+.trias2{
+    width: 0;
+    height: 0;
+    border-left: 19px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: scaleX(-1);
+    position: relative;
+    top: 60px;
+    left: 17px;
+}

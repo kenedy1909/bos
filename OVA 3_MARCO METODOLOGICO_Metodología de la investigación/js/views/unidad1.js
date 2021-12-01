@@ -900,24 +900,44 @@ function pant13Al(num) {
             var contenido = `<div class="row">
                                 <div class="col-12 pl-4">
                                     <p class="text-justify">Los experimentos se pueden dar en dos contextos. Haga clic sobre los botones para ampliar la información.</p>
-                                    <div class="w-100 d-flex justify-content-center align-items-center">
-                                    <div class="w-75">
-                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3" style="height: 40px;">
-                                        <h5 class="w-75">  Experimentos de laboratorio</h5>
-                                        <img src="assets/img/img_ova/experimento.png" width="10%">
+                                    <div class="row">
+                                        <div class="row">
+                                        <div class="d-flex align-items-center" style="width: 65%;">
+                                            <div class="w-100">
+                                                <div class="border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor"  style="height: 40px;width: 100%;" onclick="globi(1);">
+                                                    <h6 class="w-75">  Experimentos de laboratorio</h6>
+                                                    <img src="assets/img/img_ova/experimento.png" width="10%">
+                                                </div>
+                                                <div class="border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" style="height: 40px;width: 100%;" onclick="globi(2);">
+                                                    <h6 class="w-75">  Experimentos de campo</h6>
+                                                    <img src="assets/img/img_ova/ojo.png" width="10%">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3_2" style="height: 40px;">
-                                        <h5 class="w-75">  Experimentos de campo</h5>
-                                        <img src="assets/img/img_ova/ojo.png" width="10%">
+                                        <div style="width: 30%;">
+                                            <div style="height: 0px;">
+                                                <div class="trias tri invisible"></div>
+                                                <div class="trias2 tri invisible"></div>
+                                            </div>
+                                            
+                                            <div style="height: 125px;background: #fff;margin-left: 39px;width: 188px;border-radius: 20px;padding: 10px;" class="invisible cont_globi">
+                                                <p class="size_13 scrol justificado text_globi1 textG d-none" style="height: 90px;overflow: auto;font-size: 13px;">
+                                                    Situaciones construidas artificialmente, en el que el efecto de todas o casi todas las variables independientes influyentes no concernientes al problema de investigación se mantiene reducido lo más posible.
+                                                </p>
+                                                <p class="size_13 scrol justificado text_globi2 textG d-none" style="height: 90px;overflow: auto;font-size: 13px;">
+                                                    Situaciones reales o naturales en las que se manipulan una o más variables. Suelen tener mayor validez externa.
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                     </div>
-                                    </div>
+                                    
                                 </div>
                             </div>`;
             var img = `<div class="h-100 d-flex align-items-center">
                             <i class="fas fa-caret-left text-color-3 display-4 cursor" onclick="pant13Al(2)"></i>
                         </div>
-                        <img src="assets/img/img_ova/experimentospuros1.png" width="100%" class="transition-on">`;
+                        <img src="assets/img/img_ova/experimentospuros1.png" width="70%" class="transition-on">`;
             $('.textU3').html(contenido);
             $('.imgU3').html(img);
             $('.avance4').removeClass('d-none');
@@ -928,6 +948,33 @@ function pant13Al(num) {
     }
 }
 
+function globi(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.tri').addClass('invisible');
+            $('.trias').removeClass('invisible');
+
+            $('.cont_globi').removeClass('invisible');
+
+            $('.textG').addClass('d-none');
+            $('.text_globi1').removeClass('d-none');
+            
+            break;
+        case 2:
+            $('.tri').addClass('invisible');
+            $('.trias2').removeClass('invisible');
+            
+            $('.cont_globi').removeClass('invisible');
+
+            $('.textG').addClass('d-none');
+            $('.text_globi2').removeClass('d-none');
+            
+            break;
+        default:
+            // statements_def
+            break;
+    }
+}
 
 function cardPara4(num, ventana) {
     if (ventana == 0) {
