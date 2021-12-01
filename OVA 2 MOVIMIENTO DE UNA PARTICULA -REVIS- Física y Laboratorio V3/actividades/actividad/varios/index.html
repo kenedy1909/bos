@@ -7,21 +7,21 @@
 </head>
 <body>
 	<div class="holder row">
-		<div class="row col-md-12" style="margin-top: 20px;">
-		    <div class="col-md-5" style="">
-		        <div class="col-lg-12 row" style="">
-		        	<div class="col-md-4" style="z-index: 100;">
-		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
+		<div class=" col-md-12" style="margin-top: 20px; display: flex;">
+		    <div class="col-md-5" style="width: 45%; display: flex;">
+		        <div class="col-lg-12 " style=" display: flex; margin: auto;">
+		        	<div class="col-md-4" style="z-index: 100; margin: auto;">
+		        		<img src="img/actividad_interactiva.png" alt="" style="width: 100%;" class="imagen">
 		        	</div>
-		            <div class="text-center col-md-8" style="padding-top: 10px;">
+		            <div class="text-center col-md-8" style=" margin: auto;">
 			            <b class="pl-1 pr-1" style="color: #003442;">ACTIVIDAD INTERACTIVA</b>
 			            <div class="linea_blue" style="background: #003442;height: 4px;"></div>
 			            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
 		          	</div>
 		        </div>
 		    </div>
-		    <div class="col-md-7 row" style="">
-		        <p class="info_actividad shadow" style="background: #FFC000;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%;">
+		    <div class="col-md-7 row" style="width: 55%;">
+		        <p class="info_actividad shadow" style="background: #FFC000;border-radius: 25px;padding: 25px 25px 25px 25px; text-align: justify;">
 		            Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según correponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
 		        </p>
 		    </div>
@@ -29,11 +29,11 @@
 
 		<div class="col-md-12">
 			<div class="col-md-12 row" style="height: 200px;">
-				<div style="" class="col-md-3">
-					<div style="z-index: 100;position: relative;top: 25px;padding-left: 50px;">
-						<img src="img/entrega-rapida.png" style="max-width: 40%;z-index: 100;">
+				<div style="" class="col-md-3 col-sm-3">
+					<div style="z-index: 100;position: relative;top: 25px;display: flex;">
+						<img src="img/entrega-rapida.png" style="max-width: 45%; margin: auto;z-index: 100;">
 					</div>
-					<div style="height: 166px;">
+					<div style="height: 166px; text-align: center;">
 						<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2" style="font-size: 13px;">
 							Distancia de trayectoria recorrida por unidad de tiempo; también se denomina simplemente rapidez.
 					    </p>
@@ -41,33 +41,33 @@
 					
 					
 				</div>
-				<div style="" class="col-md-3">
-					<div style="z-index: 100;position: relative;top: 25px;padding-left: 50px;">
-						<img src="img/cohete.png" style="max-width: 40%;">
+				<div style="" class="col-md-3 col-sm-3">
+					<div style="z-index: 100;position: relative;top: 25px;display: flex;">
+						<img src="img/cohete.png" style="max-width: 45%; margin: auto;">
 					</div>
-					<div style="height: 166px;">
+					<div style="height: 166px; text-align: center;">
 						<p class="cuatro" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4" style="font-size: 13px;">
 							Rapidez lineal a lo largo de una trayectoria curva
 						</p>
 					</div>
 					
 				</div>
-				<div style="" class="col-md-3">
-					<div style="z-index: 100;position: relative;top: 25px;padding-left: 50px;">
-						<img src="img/ejercicio.png" style="max-width: 40%;">
+				<div style="" class="col-md-3 col-sm-3">
+					<div style="z-index: 100;position: relative;top: 25px;display: flex;">
+						<img src="img/ejercicio.png" style="max-width: 45%; margin: auto;">
 					</div>
-					<div style="height: 166px;">
+					<div style="height: 166px; text-align: center;">
 						<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1" style="font-size: 13px;">
 							Rapidez en cualquier instante.
 						</p>
 					</div>
 					
 				</div>
-				<div style="" class="col-md-3">
-					<div style="z-index: 100;position: relative;top: 25px;padding-left: 50px;">
-						<img src="img/rapido_reloj.png" style="max-width: 40%;">
+				<div style="" class="col-md-3 col-sm-3">
+					<div style="z-index: 100;position: relative;top: 25px;display: flex;">
+						<img src="img/rapido_reloj.png" style="max-width: 45%; margin: auto;">
 					</div>
-					<div style="height: 166px;">
+					<div style="height: 166px; text-align: center;">
 						<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3" style="font-size: 13px;">
 							Distancia de la trayectoria dividida entre el intervalo de tiempo.
 						</p>
@@ -78,24 +78,24 @@
 				
 			</div>
 			<div class="col-md-12 row" style="margin-top: 5%;">
-				<div class="col-md-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="interno cont1">Rapidez instantánea</div>
+						<div class="interno cont1" style="text-align: center;">Rapidez instantánea</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="interno cont2">Rapidez lineal</div>
+						<div class="interno cont2" style="text-align: center;">Rapidez lineal</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="interno cont3">Rapidez promedio</div>
+						<div class="interno cont3" style="text-align: center;">Rapidez promedio</div>
 					</div>
 				</div>
-				<div class="col-md-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="interno cont4">Rapidez tangencial</div>
+						<div class="interno cont4" style="text-align: center;">Rapidez tangencial</div>
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@
 	      		
 	      	</div>
 	      	<div class="d-flex justify-content-center">
-	      		<div style="" class="circulo_modal img_res">
+	      		<div style="display: flex;" class="circulo_modal img_res">
 	      			
 	      		</div>
 	      	</div>
