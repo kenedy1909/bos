@@ -175,18 +175,18 @@ QuestionsSameAnswers.prototype.score =  function () {
     var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
         
-      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;">');
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
         
-      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;">');
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else{
-      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="../img/img1/mal.png" style="max-width: 90%;">');
       $('.mensaje').text("Inténtalo nuevamente.");
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
@@ -249,6 +249,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn" style="background: #7a3d78; color: #fff;" type="submit" >Calificar</button>\
+        <button class="btn" style="background: #7a3d78; color: #fff;width: 170px;font-size: 25px;" type="submit" >Calificar</button>\
     </div>\
 </form>'
