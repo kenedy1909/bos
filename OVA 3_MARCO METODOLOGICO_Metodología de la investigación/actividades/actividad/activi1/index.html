@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <div class="backdrop in">
+    <div class="backdrop in" style="padding: 0px !important;overflow: hidden;">
         <div class="fondo">
             <header>
                 <div class="row">
-                    <div class="col-md-4" style="display: inline-block;width: 45%;">
+                    <div class="col-md-4" style="display: inline-block;width: 42%;">
                         <div class="" style="display: inline-block;">
                           <img src="../img/img1/actividad_interactiva.png" alt="" style="width: 100px;height: 100px;">
-                          <div class="text-center pt-0" style="font-size: 20px;display: inline-block;width: 60%;">
-                            <b class="" style="color: #994c91;">ACTIVIDAD INTERACTIVA</b>
+                          <div class="text-center pt-1" style="font-size: 20px;display: inline-block;width: 60%;position: relative;top: 30px;">
+                            <b class="" style="color: #994c91;font-size: 18px;">ACTIVIDAD INTERACTIVA</b>
                             <div style="height: 5px; background: #994c91;"></div>
-                            <p class="text-muted">FALSO/VERDADERO</p>
+                            <p class="text-muted" style="font-size: 15px;">FALSO/VERDADERO</p>
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-8 row" style="display: inline-block;width: 55%;">
-                        <p class="info_actividad shadow" style="font-size: 20px;">
+                    <div class="col-md-8 row" style="display: inline-block;width: 60%;">
+                        <p class="info_actividad shadow" style="font-size: 16px;">
                             Selecciona falso o verdadero, al finalizar pulsa la opción <b>"Calificar"</b> para conocer tu puntuación.
                         </p>
                     </div>
@@ -43,22 +43,46 @@
 
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content tranparente" style="    box-shadow: none;">
+          <div style="" class="principal">
+            <div style="" class="cabeza">
+              
+            </div>
+            <div class="d-flex" style="justify-content: center;">
+              <div style="border: 3px solid white;" class="circulo_modal img_res">
+                
+              </div>
+            </div>
+            <div style="padding: 10px; position: relative; top: -45px;">
+              <div style="color: white;font-size: 15px;">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3" style="text-align: initial;">
+                        Su puntaje es: 
+                    </div>
+                    <div class="col-md-3 col-sm-3" style="text-align: initial;">
+                        <b class="puntaje" style="color: #FFC000; font-size: 30px;position: relative; top: -10px; "></b>
+                    </div>
+                    <div class="col-md-5 col-sm-5"></div>
+                </div>
+              </div>
+              <div style="color: white;font-size: 15px;">
+                <div class="row" style="display: flex;">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <p class="mensaje" style="text-align: initial;"></p>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-                </div>
+              </div>
             </div>
+            <div class="row btns_modal" style="position: relative; top: -60px;text-align: center;">
+              
+              
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Incluisión de scripts -->
     <script src="../js/jquery.min.js"></script>
