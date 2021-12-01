@@ -821,7 +821,7 @@ function pant13(num) {
             var contenido = `<div class="row">
                                 <div class="col-6">
                                     <h3 class="color-title">Experimentos “puros”</h3>
-                                    <p class="text-justify">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
+                                    <p class="text-justify" style="height: 100px;overflow: auto;">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
                                         <br></br>
                                         Luego, utilice la flecha para avanzar en la visualización del contenido.
                                     </p>
@@ -857,7 +857,7 @@ function pant13Al(num) {
             var contenido = `<div class="row">
                                 <div class="col-6">
                                 <h3 class="color-title">Experimentos “puros”</h3>
-                                <p class="text-justify">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
+                                <p class="text-justify" style="height: 115px;overflow: auto;">Visualice la imagen para conocer las características de este tipo de experimentos y a qué conllevan.
                                     <br></br>
                                     Luego, utilice la flecha para avanzar en la visualización del contenido.
                                 </p>
@@ -881,7 +881,7 @@ function pant13Al(num) {
         case 2:
             var contenido = `<div class="row">
                                 <div class="col-12 pl-4">
-                                    <p class="text-justify">En conclusión, todos los experimentos lo que buscan es la eficacia interna, la garantía de generalizar los resultados de cualquier experimento a escenarios que sean no experimentales, y de igual forma a sujetos y comunidades. Para que su experimento tenga un grado de validez confiable, pregúntese: <span class="color-title"><b> ¿El resultado de mi experimento, lo puedo aplicar a qué tipo de sujetos, en qué contextos, o aplica en grupos o en qué situaciones? Es decir, ¿en qué tipo de situaciones, circunstancias o sujetos, se puede aplicar?</b></span></p>
+                                    <p class="text-justify" style="height: 160px;overflow: auto;">En conclusión, todos los experimentos lo que buscan es la eficacia interna, la garantía de generalizar los resultados de cualquier experimento a escenarios que sean no experimentales, y de igual forma a sujetos y comunidades. Para que su experimento tenga un grado de validez confiable, pregúntese: <span class="color-title"><b> ¿El resultado de mi experimento, lo puedo aplicar a qué tipo de sujetos, en qué contextos, o aplica en grupos o en qué situaciones? Es decir, ¿en qué tipo de situaciones, circunstancias o sujetos, se puede aplicar?</b></span></p>
                                 </div>
                             </div>
                             <div class="h-100 d-flex align-items-center">
@@ -902,11 +902,11 @@ function pant13Al(num) {
                                     <p class="text-justify">Los experimentos se pueden dar en dos contextos. Haga clic sobre los botones para ampliar la información.</p>
                                     <div class="w-100 d-flex justify-content-center align-items-center">
                                     <div class="w-75">
-                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3">
+                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3" style="height: 40px;">
                                         <h5 class="w-75">  Experimentos de laboratorio</h5>
                                         <img src="assets/img/img_ova/experimento.png" width="10%">
                                         </div>
-                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3_2">
+                                        <div class="w-100 border-10 bg-color-1 p-3 text-white d-flex align-items-center m-3 cursor" data-toggle="modal" data-target="#modalText_U1_3_2" style="height: 40px;">
                                         <h5 class="w-75">  Experimentos de campo</h5>
                                         <img src="assets/img/img_ova/ojo.png" width="10%">
                                     </div>
