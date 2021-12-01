@@ -506,30 +506,23 @@ function pantalla27(){
 }
 
 function flotantes(num){
+            $('.flotante').addClass('d-none');
+            $('.flotante').removeClass('visible');
     switch (parseInt(num)) {
         case 1:
-            $('.flotante').addClass('invisible');
-            $('.flotante').removeClass('visible');
 
-            $('.flotante1').removeClass('invisible');
-            $('.flotante1').addClass('visible');
+            $('.flotante1').removeClass('d-none');
             break;
         case 2:
-            $('.flotante').addClass('invisible');
-            $('.flotante').removeClass('visible');
 
-            $('.flotante2').removeClass('invisible');
-            $('.flotante2').addClass('visible');
+            $('.flotante2').removeClass('d-none');
             break;
         case 3:
-            $('.flotante').addClass('invisible');
-            $('.flotante').removeClass('visible');
 
-            $('.flotante3').removeClass('invisible');
-            $('.flotante3').addClass('visible');
+            $('.flotante3').removeClass('d-none');
             break;
         case 4:
-            $('.flotante').addClass('invisible');
+            $('.flotante').addClass('d-none');
             $('.flotante').removeClass('visible');
             break;
         default:
@@ -2085,6 +2078,15 @@ function pantalla21(num) {
             break;
         default:
             break;
+    }
+}
+
+function color(num) {
+    $(".notas_1, .notas_2").removeClass('color_nota');
+    if (num == 1) {
+        $(".notas_1").addClass('color_nota');
+    }else if (num == 2) {
+        $(".notas_2").addClass('color_nota');
     }
 }
 
