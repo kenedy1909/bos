@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".ov-personaje").hide();
+
+    star_uni = 1;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     setMigaja("Unidades de aprendizaje", "1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
 
     $(".pedfs").addClass('d-none');
@@ -17,6 +21,11 @@ $(document).ready(function() {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
             easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
+        },
+        keyboardSettings: {
+              keyNavigation: true, // Enable/Disable keyboard navigation(left and right keys are used if enabled)
+              keyLeft: [37], // Left key code
+              keyRight: [39] // Right key code
         }
     });
     $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
@@ -120,8 +129,7 @@ function controlSlides(num) {
         case 6:
             setMigaja("Unidades de aprendizaje", "1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
             tema = 1;
-            star_uni = 1;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            
             break;
         default:
             break;
