@@ -125,3 +125,25 @@
     background: var(--bg-color-dark)!important;
     left: 50px;
 }
+
+.banner_activi_modal {
+    background: var(--bg-color-medium);
+    margin-left: 140px;
+    border-radius: 30px;
+    padding: 25px 1px 25px 25px;
+}
+
+.titulo_sub_modal {
+    height: 85px;
+    border-bottom: solid 4px #994c91;
+    padding-top: 42px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.clr-b-4 {
+    margin-left: 20px;
+    max-width: 190px;
+    background: #7b49ab;
+    height: 190px;
+}
