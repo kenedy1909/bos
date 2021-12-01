@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".ov-personaje").hide();
-
+    paso = false;
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
@@ -32,13 +32,13 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
 
     $(".zoomContainer").remove();
@@ -69,10 +69,16 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex + 1);
-    actualizarprogress(stepIndex + 1);
+    
+    if (num == 1) {
+        controlSlides(stepIndex+3);
+        actualizarprogress(stepIndex + 1);
+    }else{
+        controlSlides(stepIndex + 1);
+        actualizarprogress(stepIndex + 1);
+    }
 }
 
 function slide_predeterminado() {
@@ -91,6 +97,24 @@ function slide_link(num) {
 
 
 }
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                
+                break;
+        }
+    }
+);
 
 function controlSlides(num) {
     switch (parseInt(num)) {
@@ -968,3 +992,5 @@ function cardPara4(num, ventana) {
         }
     }
 }
+
+

@@ -4,6 +4,11 @@ $(document).ready(function() {
     $(".menu3").removeClass('d-none');
     $(".pedfs").addClass('d-none');
     $(".pdf3").removeClass('d-none');
+    paso = false;
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    
+
     $(".zoomContainer").remove();
     setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
 
@@ -27,12 +32,12 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
 
     $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
@@ -47,10 +52,16 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides3(stepIndex);
-    actualizarprogress(stepIndex + 7 + 3);
+    
+    if (num == 1) {
+        controlSlides3(stepIndex+1);
+        actualizarprogress(stepIndex + 7 + 3);
+    }else{
+        controlSlides3(stepIndex);
+        actualizarprogress(stepIndex + 7 + 3);
+    }
 }
 
 function slide_predeterminado3() {
@@ -71,6 +82,25 @@ function slide_link3(num) {
 
 }
 
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                
+                break;
+        }
+    }
+);
+
 function controlSlides3(num) {
     switch (parseInt(num)) {
         case 0:
@@ -87,8 +117,7 @@ function controlSlides3(num) {
         case 3:
             setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
             tema = 1;
-            star_uni = 3;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");

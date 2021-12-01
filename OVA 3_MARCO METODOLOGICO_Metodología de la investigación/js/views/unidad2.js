@@ -2,7 +2,12 @@ $(document).ready(function() {
     $(".menu2").removeClass('d-none');
 
     $(".ov-personaje").hide();
+    paso = false;
+    star_uni = 2;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
+
 
     $(".pedfs").addClass('d-none');
 
@@ -27,12 +32,12 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     slide_predeterminado2();
     slide_link2(tema);
@@ -50,10 +55,16 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides2(stepIndex);
-    actualizarprogress(stepIndex + 7);
+   
+    if (num == 1) {
+        controlSlides2(stepIndex+1);
+        actualizarprogress(stepIndex + 7);
+    }else{
+        controlSlides2(stepIndex);
+        actualizarprogress(stepIndex + 7);
+    }
 }
 
 function slide_predeterminado2() {
@@ -73,6 +84,25 @@ function slide_link2(num) {
 
 }
 
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                
+                break;
+        }
+    }
+);
+
 function controlSlides2(num) {
     switch (parseInt(num)) {
         case 0:
@@ -86,8 +116,7 @@ function controlSlides2(num) {
         case 2:
             setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             tema = 1;
-            star_uni = 2;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            
             break;
         default:
             break;
