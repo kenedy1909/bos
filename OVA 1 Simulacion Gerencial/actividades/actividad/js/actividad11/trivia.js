@@ -44,7 +44,7 @@ window.onload = function () {
       createDiv.appendChild(text);
       createDiv.addEventListener("click", checkAnswer(i, answers));
       
-      cantidad = answers.length +1;
+      cantidad = answers.length +2;
       answerArea.appendChild(createDiv);
     }
     /*$('.cantidad').html("1/"+answers.length);*/
