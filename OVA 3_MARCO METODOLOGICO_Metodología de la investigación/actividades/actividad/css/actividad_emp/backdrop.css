@@ -177,7 +177,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #003442;
+    background: #7a3d78;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -186,7 +186,7 @@ html{
     border-radius: 20px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: #ffd200;
+    background: #994c91;
     border: none;
     outline: 0;
 }

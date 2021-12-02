@@ -42,16 +42,24 @@ function calificarEmparejamiento(event) {
     var exito = false;
     var mensaje = "Puedes hacerlo mejor"
     if (puntaje == 100) {
-        exito = true;
-        mensaje = "¡Felicitaciones!"
+        
+      $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="../img/img1/mal.png" style="max-width: 90%;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
+    $("#exampleModal").modal("show");
 
 }
 
 function getColor() {
     //'#ad123c', '#ffd200', #49a5aa
-    var colors = ['#rgb(0,0, 0,0.3);'];
+    var colors = ['#rgb(0 0 0 / 0%);'];
     var index = Math.floor(Math.random() * (colors.length - 0)) + 0;
     return colors[index];
 }
@@ -188,3 +196,7 @@ function init_actividad_1() {
     //evento de onready
     $(document).on('ready',init_actividad_1);
 })()
+
+function reload(){
+    location.reload();
+}

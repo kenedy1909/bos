@@ -740,3 +740,17 @@ function tooltip(num) {
     }
 
 }
+
+function control(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.controles').addClass('invisible');
+            break;
+        case 2:
+            $('.controles').removeClass('invisible');
+            break;
+        default:
+            // statements_def
+            break;
+    }
+}
