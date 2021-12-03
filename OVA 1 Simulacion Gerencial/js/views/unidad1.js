@@ -1016,8 +1016,8 @@ function mover(num,estado) {
     if (estado=='arriba') {
         if (num==1) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/similar.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/similar.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Conocer el grado de convergencia y de divergencia entre los actores y el plano de la distancia que existe entre los diferentes objetivos del sistema.</p>
@@ -1032,8 +1032,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(5,'abajo')");
         }else if (num==2) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Identificar los actores que controlan o influyen sobre las variables clave del análisis estructural: listado de actores.</p>
@@ -1048,8 +1048,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(1,'abajo')");
         }else if (num==3) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/objetivos.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/objetivos.png" width="40%" class=" ">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Identificar los objetivos estratégicos de los actores respecto a las variables clave: listado de objetivos.</p>
@@ -1064,8 +1064,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(2,'abajo')");
         }else if (num==4) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/jerarquia.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/jerarquia.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Evaluar las influencias directas entre los actores: jerarquización de actores mediante un cuadro de influencias entre actores (MAA o Matriz de Actores x Actores).</p>
@@ -1080,8 +1080,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(3,'abajo')");
         }else if (num==5) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/emociones.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/emociones.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Conocer el posicionamiento de los actores respecto a los objetivos. Describir la actitud actual de cada actor respecto a cada objetivo (opuesto, neutro, indiferente o favorable). Representación matricial Actores x Objetivos.</p>
@@ -1098,8 +1098,8 @@ function mover(num,estado) {
     }else if(estado=='abajo'){
         if (num==1) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/objetivos.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/objetivos.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Identificar los objetivos estratégicos de los actores respecto a las variables clave: listado de objetivos.</p>
@@ -1114,8 +1114,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(2,'abajo')");
         }else if (num==2) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/jerarquia.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/jerarquia.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Evaluar las influencias directas entre los actores: jerarquización de actores mediante un cuadro de influencias entre actores (MAA o Matriz de Actores x Actores).</p>
@@ -1130,8 +1130,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(3,'abajo')");
         }else if (num==3) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/emociones.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/emociones.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Conocer el posicionamiento de los actores respecto a los objetivos. Describir la actitud actual de cada actor respecto a cada objetivo (opuesto, neutro, indiferente o favorable). Representación matricial Actores x Objetivos.</p>
@@ -1146,8 +1146,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(4,'abajo')");
         }else if (num==4) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/similar.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/similar.png" width="40%" class="">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Conocer el grado de convergencia y de divergencia entre los actores y el plano de la distancia que existe entre los diferentes objetivos del sistema.</p>
@@ -1162,8 +1162,8 @@ function mover(num,estado) {
             $('#moverAbajo').attr('onclick',"mover(5,'abajo')");
         }else if (num==5) {
             $('#contenedorSlideN').html(``);
-            var contenido = `<div class="w-100 h-25 py-5 rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
-                                <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class=" mt-5">
+            var contenido = `<div class="w-100 h-25 py-5 ovalo rounded-circle bg-white d-flex align-items-center justify-content-center shadow">
+                                <img src="assets/img/img_ova/mesa_trabajo.png" width="40%" class=" ">
                             </div>
                             <div class="w-100 pt-5 pb-4 px-4 bg-white shadow menos-margin-50">
                                 <p class="text-justify text-black pt-5 zindex">Identificar los actores que controlan o influyen sobre las variables clave del análisis estructural: listado de actores.</p>
