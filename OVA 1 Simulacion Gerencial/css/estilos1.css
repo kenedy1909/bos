@@ -1233,4 +1233,7 @@ p, button{
 	  background: #FF9900;
 	  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
-  
+  .ovalo {
+	  position: relative;
+	  z-index: 2;
+  }

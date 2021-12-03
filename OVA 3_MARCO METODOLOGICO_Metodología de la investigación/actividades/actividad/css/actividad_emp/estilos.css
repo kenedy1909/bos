@@ -24,7 +24,8 @@
     font-size: 26px;
     font-weight: 600;
     display: table;
-    background: rgba(255, 255, 255, 0.33);
+    background: transparent;
+    border: none;
     height: 100px;
     width: 125%;
     position: relative;
@@ -102,7 +103,7 @@
 }
 
 #actividad-1 ul#grupoB li.active:after {
-    background: rgb(0 52 66);
+    background: rgb(159 76 151);
 }
 
 #actividad-1 ul#grupoB li.active {
@@ -144,8 +145,7 @@
 }
 #item-2, .list-group-item1{
     position: relative!important; 
-    left: -25px!important; 
-    top: 10px!important; 
+    
 }
 #item-0, .list-group-item2{
     position: relative!important; 
@@ -153,9 +153,7 @@
     top: -28px!important;
 }
 #item-1, .list-group-item3{
-    position: relative!important; 
-    right: -165px!important; 
-    top: 64px!important; 
+    position: relative!important;  
 }
 .ficha-texto p {
     display: list-item;
@@ -242,5 +240,65 @@
     background: url(../../img/img_emp/rueda.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 390px 330px;
+        background-size: 313px 271px;
+    width: 339px;
+    height: 460px;
+}
+.posicion1{
+    top: 122px !important;left: -90px !important;
+}
+.posicion2{
+    top: -37px !important;left: 215px !important;
+}
+
+/* custom scrollbar */
+
+.modal-dialog-scrollable .modal-content {
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+}
+
+.principal1{
+  height: 400px;
+  border-radius: 40px;
+  background: #994c91;
+}
+
+.cabeza{
+  background: #7a3d78;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 170px;
+  width: 170px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
 }

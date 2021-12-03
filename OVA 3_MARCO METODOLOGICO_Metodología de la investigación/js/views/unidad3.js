@@ -521,7 +521,7 @@ function slideModalU3_3(num) {
         $('.numerosSlide4').html(img4);
         $('.numerosSlide5').html(img5);
 
-        var contenido = `<p class="text-justify text-black">
+        var contenido = `<p class="text-justify text-black" style="height: 116px;overflow: auto;">
                       De igual forma, este tipo de muestras son fundamentales en los procesos de investigación transeccionales, tanto en los descriptivos como en los correlacionales – causales estos son, por ejemplo: las encuestas de opinión, en las cuales lo que se busca es hacer apreciaciones de diferentes variables en la población objeto de estudio, las cuales se miden y examinan a través de estadísticas, donde todos los factores analizados se supone, tienen la misma probabilidad, por tal razón son llamados o denominadas muestras probabilísticas. Las estimaciones y la precisión de los resultados dependen en gran medida del muestreo.  
                     </p>`;
         $('.contenidoNumeros').html(contenido);
@@ -542,11 +542,11 @@ function slideModalU3_3(num) {
 
         var contenido = `<p class="text-justify text-black">Para lo anterior es necesario entender los siguientes términos:</p>
                       <div class="row d-flex justify-content-end mt-3">
-                        <div class="col-5 mr-3 border-10 p-3 bg-color-1">
-                          <p class="text-white text-justify">Que la población a la que generalmente se le denomina  <b> N.</b>, significa un conjunto de elementos</p>
+                        <div class="col-5 mr-3 border-10 p-2 bg-color-1" style="height: 90px;">
+                          <p class="text-white text-justify" style="    font-size: 13px;">Que la población a la que generalmente se le denomina  <b> N.</b>, significa un conjunto de elementos</p>
                         </div>
-                        <div class="col-5 ml-3 border-10 p-3 bg-color-1">
-                          <p class="text-white text-justify">Que la muestra a la que generalmente se le denomina n, es un subconjunto de la población <b> N.</b> </p>
+                        <div class="col-5 ml-3 border-10 p-2 bg-color-1" style="height: 90px;">
+                          <p class="text-white text-justify" style="    font-size: 13px;">Que la muestra a la que generalmente se le denomina n, es un subconjunto de la población <b> N.</b> </p>
                         </div>
                       </div>`;
         $('.contenidoNumeros').html(contenido);
@@ -566,7 +566,7 @@ function slideModalU3_3(num) {
         $('.numerosSlide5').html(img5);
 
         var contenido = `<div class="d-flex">
-                      <p class="text-justify text-black pr-3">Por tal razón, se debe tener en cuenta que en una población N de la cual la delimitación o demarcación responderá a los objetivos planteados desde el inicio de la investigación, se deberán establecer y delimitar valores y características de los elementos constitutivos de dicha población N. Ya que, lo que se busca es determinar, conocer o saber, los valores de porcentaje o promedio en dicha población, por lo que lo anterior, se expresaría de la siguiente forma (ver imagen): </p>
+                      <p class="text-justify text-black pr-3" style="height: 115px;overflow: auto;">Por tal razón, se debe tener en cuenta que en una población N de la cual la delimitación o demarcación responderá a los objetivos planteados desde el inicio de la investigación, se deberán establecer y delimitar valores y características de los elementos constitutivos de dicha población N. Ya que, lo que se busca es determinar, conocer o saber, los valores de porcentaje o promedio en dicha población, por lo que lo anterior, se expresaría de la siguiente forma (ver imagen): </p>
                       <div class="w-100 text-center">
                         <img src="assets/img/img_ova/imagen.png" width="60%">
                         <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_1"><b>VER IMAGEN</b></p>
@@ -592,7 +592,7 @@ function slideModalU3_3(num) {
                       <div class="w-100 text-center">
                         <img src="assets/img/img_ova/pregunta.png" style="width: 100%; margin-top: -8px; margin-left: -16px;">
                       </div>
-                      <p class="text-justify text-black pr-3">Por lo tanto, cuando se utiliza una muestra probabilística, es fundamental que se pregunte lo siguiente: se cuenta con una población que pertenece a N, si es así, <span class="color-text"><b> ¿cuál es el menor número de compuestos o elementos muestrales? ¿Qué se busca o pretende indagar?</b></span> Para que haga parte de esa muestra n, lo cual aseguraría un resultado adquirido como promedio bajo o leve de error estándar dentro de la investigación. Es el tamaño del error en las predicciones en una muestra probabilística.</p>
+                      <p class="text-justify text-black pr-3" style="overflow: auto;height: 135px;">Por lo tanto, cuando se utiliza una muestra probabilística, es fundamental que se pregunte lo siguiente: se cuenta con una población que pertenece a N, si es así, <span class="color-text"><b> ¿cuál es el menor número de compuestos o elementos muestrales? ¿Qué se busca o pretende indagar?</b></span> Para que haga parte de esa muestra n, lo cual aseguraría un resultado adquirido como promedio bajo o leve de error estándar dentro de la investigación. Es el tamaño del error en las predicciones en una muestra probabilística.</p>
                     </div>`;
         $('.contenidoNumeros').html(contenido);
 
@@ -610,7 +610,7 @@ function slideModalU3_3(num) {
         $('.numerosSlide4').html(img4);
         $('.numerosSlide5').html(img5);
 
-        var contenido = `<p class="text-justify text-black">La respuesta a esta pregunta busca encontrar la probabilidad de ocurrencia de <i>𝑌 ̅,</i> así como que mi estado <i> 𝑦 ̅ </i>se acerque a <i>𝑌 ̅,</i> el valor real de la población. Si establecemos el error estándar y lo fijamos en 0.01, sugerimos que esta fluctuación promedio de nuestro estimado <i> 𝑦 ̅ </i> con respecto a los valores reales de la población <i> 𝑌 ̅ </i> no sea > 0.01, es decir, que de 100 casos, 99 veces mi predicción sea correcta y que el valor <i> 𝑦 ̅ </i>se sitúe en un intervalo de confianza que comprenda el valor de <i> 𝑌 ̅.</i></p>`;
+        var contenido = `<p class="text-justify text-black" style="font-size: 13px;">La respuesta a esta pregunta busca encontrar la probabilidad de ocurrencia de <i>𝑌 ̅,</i> así como que mi estado <i> 𝑦 ̅ </i>se acerque a <i>𝑌 ̅,</i> el valor real de la población. Si establecemos el error estándar y lo fijamos en 0.01, sugerimos que esta fluctuación promedio de nuestro estimado <i> 𝑦 ̅ </i> con respecto a los valores reales de la población <i> 𝑌 ̅ </i> no sea > 0.01, es decir, que de 100 casos, 99 veces mi predicción sea correcta y que el valor <i> 𝑦 ̅ </i>se sitúe en un intervalo de confianza que comprenda el valor de <i> 𝑌 ̅.</i></p>`;
         $('.contenidoNumeros').html(contenido);
 
         $('.flechaNumModalL').attr('onclick', "slideModalU3_3(5)");
@@ -631,7 +631,7 @@ function slideModalU3_3(num) {
                         <p class="text-justify text-black pr-3">En conclusión, para una variación establecida (V) de Y. La pregunta sería: ¿De qué tamaño debe ser la muestra? Por lo que el resultado estaría dado a través de (haga clic para visualizar la imagen):</p>
                         <div class="w-50 text-center">
                           <img src="assets/img/img_ova/imagen.png" width="60%">
-                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2" ><b>VER IMAGEN</b></p>
+                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2" data-dismiss="modal" aria-label="Close"><b>VER IMAGEN</b></p>
                         </div>
                       </div>`;
         $('.contenidoNumeros').html(contenido);
@@ -654,7 +654,7 @@ function slideModalU3_3(num) {
                       <p class="text-justify text-black pr-3 w-100">Ahora, analicemos un caso. Haga clic en “ver imagen” para profundizar sobre este tema.</p>
                       <div class="w-100 text-center mt-3 d-flex justify-content-center align-items-center">
                         <img src="assets/img/img_ova/imagen.png" width="17%">
-                        <p class="border-10 bg-color-1 py-3 w-25 cursor text-white ml-4" data-toggle="modal" data-target="#modalimg_U3-1_3"><b>VER IMAGEN</b></p>
+                        <p class="border-10 bg-color-1 py-3 w-25 cursor text-white ml-4" data-toggle="modal" data-target="#modalimg_U3-1_3" data-dismiss="modal" aria-label="Close"><b>VER IMAGEN</b></p>
                       </div>
                     </div>`;
         $('.contenidoNumeros').html(contenido);
@@ -692,7 +692,7 @@ function slideModalU3_3(num) {
         $('.numerosSlide5').html(img5);
 
         var contenido = `
-                <div class="content custom-scrollbar18">
+                <div class="content custom-scrollbar18" style="height: 190px;">
                   <div class="custom-scrollbar__inner18">
                     <p class="text-justify text-black">La estratificación aumenta la precisión de la muestra e implica el uso deliberado de diferentes tamaños de muestra para cada estrato, a fin de lograr reducir la varianza de cada unidad de la media muestral (Kish, 1995).
                       <br></br>
@@ -739,4 +739,18 @@ function tooltip(num) {
         $('#tooltip9').addClass('show');
     }
 
+}
+
+function control(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.controles').addClass('invisible');
+            break;
+        case 2:
+            $('.controles').removeClass('invisible');
+            break;
+        default:
+            // statements_def
+            break;
+    }
 }

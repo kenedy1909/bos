@@ -179,6 +179,8 @@
 .cardU3-3:hover {
     background: #472b63!important;
     min-height: 220px!important;
+    box-shadow: 1px 1px 10px 1px!important;
+    width: 111%!important;
 }
 
 .cardActiva {
@@ -205,7 +207,7 @@
 }
 
 .b-clr-1 {
-    height: 180px;
+    height: 125px;
     background: #472b63;
 }
 
