@@ -661,16 +661,20 @@ function scroll_horizontal(num){
     switch (parseInt(num)) {
         case 0:
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
-            $('#scroll-img').html(pantalla);
+            /*$('#scroll-img').html(pantalla);*/
 
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion2.png">`;
-            $('#scroll-img2').html(pantalla);
+            /*$('#scroll-img2').html(pantalla);*/
 
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion3.png">`;
-            $('#scroll-img3').html(pantalla);
+            /*$('#scroll-img3').html(pantalla);*/
 
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion4.png">`;
-            $('#scroll-img4').html(pantalla);
+            /*$('#scroll-img4').html(pantalla);*/
+            $('#scroll-img').html(``);
+            $('#scroll-img2').html(``);
+            $('#scroll-img3').html(``);
+            $('#scroll-img4').html(``);
             break;
         case 1:  
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
@@ -1394,6 +1398,8 @@ function scroll_horizontal3(num) {
 
 /*pantallas 1*/
 function carpeta(num){
+  $('.btn-carpeta').removeClass('color-ca');
+  $('.carpe1, .carpe2, .carpe3, .carpe4, .carpe5, .carpe6, .carpe7, .carpe8').addClass('color-mo');
   switch (parseInt(num)) {
       case 1:
           $('.baneTarget').addClass('is-hidden');
@@ -1401,6 +1407,8 @@ function carpeta(num){
 
           $('.target1').removeClass('is-hidden');
           $('.target1').addClass('not-hidden');
+          $('.carpe1').removeClass('color-mo');
+          $('.carpe1').addClass('color-ca');
           break;
       case 2:
           $('.baneTarget').addClass('is-hidden');
@@ -1408,6 +1416,9 @@ function carpeta(num){
 
           $('.target2').removeClass('is-hidden');
           $('.target2').addClass('not-hidden');
+
+          $('.carpe2').removeClass('color-mo');
+          $('.carpe2').addClass('color-ca');
           break;
       case 3:
           $('.baneTarget').addClass('is-hidden');
@@ -1415,6 +1426,9 @@ function carpeta(num){
 
           $('.target3').removeClass('is-hidden');
           $('.target3').addClass('not-hidden');
+
+          $('.carpe3').removeClass('color-mo');
+          $('.carpe3').addClass('color-ca');
           break;
       case 4:
           $('.baneTarget').addClass('is-hidden');
@@ -1422,6 +1436,9 @@ function carpeta(num){
 
           $('.target4').removeClass('is-hidden');
           $('.target4').addClass('not-hidden');
+
+          $('.carpe4').removeClass('color-mo');
+          $('.carpe4').addClass('color-ca');
           break;
       case 5:
           $('.baneTarget').addClass('is-hidden');
@@ -1429,6 +1446,9 @@ function carpeta(num){
 
           $('.target5').removeClass('is-hidden');
           $('.target5').addClass('not-hidden');
+
+          $('.carpe5').removeClass('color-mo');
+          $('.carpe5').addClass('color-ca');
           break;
       case 6:
           $('.baneTarget').addClass('is-hidden');
@@ -1436,6 +1456,9 @@ function carpeta(num){
 
           $('.target6').removeClass('is-hidden');
           $('.target6').addClass('not-hidden');
+
+          $('.carpe6').removeClass('color-mo');
+          $('.carpe6').addClass('color-ca');
           break;
       case 7:
           $('.baneTarget').addClass('is-hidden');
@@ -1443,6 +1466,9 @@ function carpeta(num){
 
           $('.target7').removeClass('is-hidden');
           $('.target7').addClass('not-hidden');
+
+          $('.carpe7').removeClass('color-mo');
+          $('.carpe7').addClass('color-ca');
           break;
       case 8:
           $('.baneTarget').addClass('is-hidden');
@@ -1450,6 +1476,9 @@ function carpeta(num){
 
           $('.target8').removeClass('is-hidden');
           $('.target8').addClass('not-hidden');
+
+          $('.carpe8').removeClass('color-mo');
+          $('.carpe8').addClass('color-ca');
           break;
       default:
           break;
