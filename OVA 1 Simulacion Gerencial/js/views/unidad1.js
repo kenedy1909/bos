@@ -721,8 +721,8 @@ function acordeon(num,estado) {
 }
 function textCard19(num,estado) {
 
-    $('.contenidoTextCard1, .contenidoTextCard2').removeClass('d-block');
-    $('.contenidoTextCard1, .contenidoTextCard2').addClass('d-none');
+    // $('.contenidoTextCard1, .contenidoTextCard2').removeClass('d-block');
+    // $('.contenidoTextCard1, .contenidoTextCard2').addClass('d-none');
 
 
     if (estado=='abrir') {
@@ -732,6 +732,9 @@ function textCard19(num,estado) {
             
             $('.btnTextCard1').addClass('ocultarTextCardPadre1');
             $('.btnTextCard1').removeClass('btnTextCard1');
+
+            // $('.ocultarTextCardPadre2').addClass('btnTextCard2');
+            // $('.ocultarTextCardPadre2').removeClass('ocultarTextCardPadre2');
             
             $('.contenidoTextCard1').removeClass('d-none');
             $('.contenidoTextCard1').addClass('d-block');
@@ -741,12 +744,16 @@ function textCard19(num,estado) {
             $('.textCardPadre2').removeClass('d-block');
             $('.textCardPadre2').addClass('d-none');
             
+            // $('.ocultarTextCardPadre1').addClass('btnTextCard1');
+            // $('.ocultarTextCardPadre1').removeClass('ocultarTextCardPadre1');
 
             $('.btnTextCard2').addClass('ocultarTextCardPadre2');
             $('.btnTextCard2').removeClass('btnTextCard2');
             
             $('.contenidoTextCard2').removeClass('d-none');
             $('.contenidoTextCard2').addClass('d-block');
+
+            
             
             $('.ocultarTextCardPadre2').attr('onclick',"textCard19(2,'ocultar')");
         }
@@ -770,6 +777,7 @@ function textCard19(num,estado) {
 
             $('.ocultarTextCardPadre2').addClass('btnTextCard2');
             $('.ocultarTextCardPadre2').removeClass('ocultarTextCardPadre2');
+            
             
             $('.contenidoTextCard2').removeClass('d-block');
             $('.contenidoTextCard2').addClass('d-none');
