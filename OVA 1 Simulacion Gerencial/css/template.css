@@ -893,3 +893,15 @@ svg circle:nth-child(2){
 .scroll-modal::-webkit-scrollbar-track:active {
 background: #d4d4d4;
 }
+
+.circulo-blue{
+  
+  position: relative;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  left: 8px;
+  top: 8px;
+  background-color: #393A72;
+}
