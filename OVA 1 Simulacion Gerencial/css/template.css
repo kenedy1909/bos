@@ -323,14 +323,17 @@ iframe{
 .card .cover img{
   width: 100%;
 }
+
+
 .card .user{
   border-radius: 50%;
   display: block;
-  height: 150px;
+  height: 100px;
   margin: -70px auto 0;
   overflow: hidden;
-  width: 150px;
-  background: white;
+  width: 100px;
+  background: gray;
+  border: 2px solid white;
 }
 .card .user img{
   background: none;
@@ -344,7 +347,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 100%;
   position: relative;
   top: 25px;
 }
@@ -855,4 +858,38 @@ svg circle:nth-child(2){
 }
 .esc{
   display: none;
+}
+
+
+.scroll-modal::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 100px;    /* Tamaño del scroll en horizontal */
+  /* display: none;  Ocultar scroll */
+}
+.scroll-modal::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scroll-modal::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.scroll-modal::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.scroll-modal::-webkit-scrollbar-track {
+  background: #E9464F;
+  border-radius: 4px;
+  margin-top: -10px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+.scroll-modal::-webkit-scrollbar-track:hover,
+.scroll-modal::-webkit-scrollbar-track:active {
+background: #d4d4d4;
 }
