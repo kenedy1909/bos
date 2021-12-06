@@ -24,6 +24,9 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
+        $('#collapseThree3').addClass('ocultar');
+        $('#collapseTwo2').addClass('ocultar');
+        $('#collapseOne1').addClass('ocultar');
 
     });
     
@@ -49,6 +52,7 @@ $( document ).ready(function() {
     $(".btn-unidad1-4").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-4").show(500);
+       
     })
     $(".btn-unidad1-5").on("click", function () {
         $(".divcircle").hide();
@@ -1266,24 +1270,62 @@ function hiddenTxt(num){
     counter ++;
     switch (parseInt(num)) {
         case 1:
-            
+            console.log(counter);
            
             if (counter == 1) {
                 
                 // $('#collapseOne1').collapse('hide');
             
                 // $('#collapseOne1').collapse('hide');
-                $('#collapseOne1').removeClass('show');
+                $('#collapseOne1').removeClass('ocultar');
                 
             }
             if (counter ==2) {
                 
                 // $('#collapseOne1').collapse('hide');
-                $('#collapseOne1').add('esc');
+                $('#collapseOne1').addClass('ocultar');
                 counter=0;
             }
       
             break;
+            case 3:
+                console.log(counter);
+               
+                if (counter == 1) {
+                    
+                    // $('#collapseOne1').collapse('hide');
+                
+                    // $('#collapseOne1').collapse('hide');
+                    $('#collapseTwo2').removeClass('ocultar');
+                    
+                }
+                if (counter ==2) {
+                    
+                    // $('#collapseOne1').collapse('hide');
+                    $('#collapseTwo2').addClass('ocultar');
+                    counter=0;
+                }
+          
+                break;
+                case 4:
+                    console.log(counter);
+                   
+                    if (counter == 1) {
+                        
+                        // $('#collapseOne1').collapse('hide');
+                    
+                        // $('#collapseOne1').collapse('hide');
+                        $('#collapseThree3').removeClass('ocultar');
+                        
+                    }
+                    if (counter ==2) {
+                        
+                        // $('#collapseOne1').collapse('hide');
+                        $('#collapseThree3').addClass('ocultar');
+                        counter=0;
+                    }
+              
+                    break;
         case 2:
             $('.txtBody').addClass('esc');
 
