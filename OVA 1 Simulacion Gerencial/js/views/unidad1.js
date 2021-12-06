@@ -1221,9 +1221,10 @@ function paraIframe(num){
     
 }
 
-
+let count=0;
 
 function tarjeta(num) {
+    count ++;
     switch (parseInt(num)) {
         case 1:
             $('.txtBody').addClass('esc');
@@ -1238,27 +1239,65 @@ function tarjeta(num) {
             $('.mexico-body').removeClass('esc');
             $('.mexico-body').addClass('vis');   
             break;
-            case 3:
-                $('.txtBody').addClass('esc');
+        case 3:
+            $('.txtBody').addClass('esc');
         
-                $('.libro-body').removeClass('esc');
-                $('.libro-body').addClass('vis');
+            $('.libro-body').removeClass('esc');
+            $('.libro-body').addClass('vis');
         
-                break;
-            case 4:
-                $('.contenido-card-body').addClass('esc');
-        
+            break;
+        case 4:
+            // $('.contenido-card-body').addClass('esc');
+            // console.log(count);
+            if (count == 1) {
+                // $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
                 $('.contenido1').removeClass('esc');
                 $('.contenido1').addClass('vis');
+            
+                
+            }
+            if (count == 2) {
+                $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
+                // $('.contenido1').removeClass('esc');
+                // $('.contenido1').addClass('vis');
+                count=0;
+                
+            }
+           
         
-                break;
-            case 5:
-                $('.contenido-card-body').addClass('esc');
+            break;
+        case 5:
+            // $('.contenido-card-body').addClass('esc');
+            $('.contenido1').addClass('esc');
+            $('.contenido2').addClass('esc');
         
+            $('.contenido2').removeClass('esc');
+            $('.contenido2').addClass('vis');
+
+            if (count == 1) {
+                $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
                 $('.contenido2').removeClass('esc');
                 $('.contenido2').addClass('vis');
+            
+                
+            }
+            if (count == 2) {
+                $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
+                // $('.contenido1').removeClass('esc');
+                // $('.contenido1').addClass('vis');
+                count=0;
+                
+            }
         
-                break;
+            break;
         default:
             break;
     }
@@ -1270,7 +1309,7 @@ function hiddenTxt(num){
     counter ++;
     switch (parseInt(num)) {
         case 1:
-            console.log(counter);
+            // console.log(counter);
            
             if (counter == 1) {
                 
@@ -1289,7 +1328,7 @@ function hiddenTxt(num){
       
             break;
             case 3:
-                console.log(counter);
+                // console.log(counter);
                
                 if (counter == 1) {
                     
