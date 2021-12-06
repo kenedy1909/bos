@@ -18842,3 +18842,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+.flipster__button--next svg{
+  border: 1px solid red;
+  display: none;
+} 
+.flipster__button--prev svg{
+  display: none;
+
+}

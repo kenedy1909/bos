@@ -236,6 +236,16 @@
                             </div><br>
                             <div class="row">
                               <div class="col-md-12">
+
+                                
+                                <div class="collapse" id="collapseExample">
+                                  <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                  </div>
+                                </div>
+
+
+
                         
                                 <!--Accordion wrapper-->
                                   <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
@@ -254,7 +264,7 @@
                                       </div>
 
                                       <!-- Card body -->
-                                      <div id="collapseOne1" class=" collapse " role="tabpanel" aria-labelledby="headingOne1"
+                                      <div id="collapseOne1" class="  ocultar" role="tabpanel" aria-labelledby="headingOne1"
                                         data-parent="#accordionEx">
                                         <div class="card-body accordion-body">
 
@@ -276,7 +286,7 @@
                                       <!-- Card header -->
                                       <div style="background-color: #393a72;" class="card-header" role="tab" id="headingTwo2">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                                          aria-expanded="false" aria-controls="collapseTwo2">
+                                          aria-expanded="false" aria-controls="collapseTwo2" onclick="hiddenTxt(3);">
                                           <h5 class="mb-0">
                                             <img class="col-md-1" src="assets/img/img_ova/future.png"><i class="fas fa-angle-down rotate-icon"></i>
                                           </h5>
@@ -284,7 +294,7 @@
                                       </div>
 
                                       <!-- Card body -->
-                                      <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                                      <div id="collapseTwo2" class=" ocultar" role="tabpanel" aria-labelledby="headingTwo2"
                                         data-parent="#accordionEx">
                                         <div class="card-body">
                                            <div class="row">
@@ -308,7 +318,7 @@
                                       <!-- Card header -->
                                       <div style="background-color: #393a72;" class="card-header" role="tab" id="headingThree3">
                                         <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                                          aria-expanded="false" aria-controls="collapseThree3">
+                                          aria-expanded="false" aria-controls="collapseThree3" onclick="hiddenTxt(4);">
                                           <h5 class="mb-0">
                                             <img class="col-md-1" src="assets/img/img_ova/manager.png"><i class="fas fa-angle-down rotate-icon"></i>
                                           </h5>
@@ -316,12 +326,12 @@
                                       </div>
 
                                       <!-- Card body -->
-                                      <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+                                      <div id="collapseThree3" class="ocultar" role="tabpanel" aria-labelledby="headingThree3"
                                         data-parent="#accordionEx">
                                         <div class="card-body">
                                           <div class="row">
                                             <img class="col-md-2" src="assets/img/img_ova/manager.png">
-                                            <p class="col-md-10 font13 font-weight-bold text-black">Como se observa, la prospectiva lo que requiere es generar planeación a largo plazo, proyectando futuros diferentes del presente para crear algo completamente nuevo en un espacio relativamente estable en el entorno.
+                                            <p class="col-md-10 font13 font-weight-bold text-black" style="top:27px;">Como se observa, la prospectiva lo que requiere es generar planeación a largo plazo, proyectando futuros diferentes del presente para crear algo completamente nuevo en un espacio relativamente estable en el entorno.
                                             </p>
                                           </div>
                                         </div>
@@ -364,8 +374,8 @@
                               <div class="row">
                                 <div class="col-md-6 text-center ">
                                     <button style="width: 100%; white-space: break-spaces;" class="btn btn-danger btn-lg shadow" type="button" data-toggle="collapse"
-                                        data-target="#collapseTarjeta4" aria-expanded="false" aria-controls="collapseTarjeta4" ><img class="img15" src="assets/img/img_ova/contrato.png" onclick="targeta(4);"></button>
-                                    <div class="collapse multi-collapse contenido-card-body contenido1 " id="collapseTarjeta4">
+                                        data-target="#collapseTarjeta4" aria-expanded="false" aria-controls="collapseTarjeta4" onclick="tarjeta(4);"><img class="img15" src="assets/img/img_ova/contrato.png" ></button>
+                                    <div class="  contenido-card-body contenido1 esc" id="collapseTarjeta4">
                                         <div class="card card-body justificado">
                                             En un contexto empresarial (empresa con la que considere pertinente hacer el ejercicio) describa en un escrito de mínimo 500 caracteres las siguientes preguntas dentro de lo que usted conoce de ella: <br>
 
@@ -380,17 +390,17 @@
                                 </div>
                                 <div class="col-md-6 text-center">
                                     <button style="width: 100%;" class="btn btn-danger btn-lg shadow" type="button" data-toggle="collapse" data-target="#collapseTarjeta5"
-                                        aria-expanded="false" aria-controls="collapseTarjeta5" ><img class="img15" src="assets/img/img_ova/pdf-file.png" onclick="tarjeta(5);"></button>
-                                    <div class="collapse multi-collapse contenido-card-body contenido2 " id="collapseTarjeta5">
+                                        aria-expanded="false" aria-controls="collapseTarjeta5" onclick="tarjeta(5);"><img class="img15" src="assets/img/img_ova/pdf-file.png" ></button>
+                                    <div class="collapse  contenido-card-body contenido2 " id="collapseTarjeta5">
                                         <div class="card card-body  justificado">
                                             Realice la lectura del documento “Prospectiva y desarrollo”. <br><br>
 
                                             <div class="row">
                                               <div class="col-md-6">
-                                                <p class="subtitulito">Clic aquí para ver PDF.</p>
+                                                <b><p class="subtitulito" style="top: 30px; position: relative;">Clic aquí para ver PDF.</p></b>
                                               </div>
                                               <div class="col-md-6">
-                                                <a class="col-md-6 "  target="_blank" href="assets/PDF/UNIDAD1/prospectiva_y_desarrollo.pdf"><img  src="assets/img/img_template/pdf.png"></a>
+                                                <a class="col-md-6 "  target="_blank" href="assets/PDF/UNIDAD1/prospectiva_y_desarrollo.pdf"><img  src="assets/img/img_template/pdf2.png" width="50%"></a>
                                               </div>
                                             </div>
                                         </div>

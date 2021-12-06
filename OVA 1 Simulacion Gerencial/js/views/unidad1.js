@@ -24,6 +24,9 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
+        $('#collapseThree3').addClass('ocultar');
+        $('#collapseTwo2').addClass('ocultar');
+        $('#collapseOne1').addClass('ocultar');
 
     });
     
@@ -49,6 +52,7 @@ $( document ).ready(function() {
     $(".btn-unidad1-4").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-4").show(500);
+       
     })
     $(".btn-unidad1-5").on("click", function () {
         $(".divcircle").hide();
@@ -1217,9 +1221,10 @@ function paraIframe(num){
     
 }
 
-
+let count=0;
 
 function tarjeta(num) {
+    count ++;
     switch (parseInt(num)) {
         case 1:
             $('.txtBody').addClass('esc');
@@ -1234,27 +1239,65 @@ function tarjeta(num) {
             $('.mexico-body').removeClass('esc');
             $('.mexico-body').addClass('vis');   
             break;
-            case 3:
-                $('.txtBody').addClass('esc');
+        case 3:
+            $('.txtBody').addClass('esc');
         
-                $('.libro-body').removeClass('esc');
-                $('.libro-body').addClass('vis');
+            $('.libro-body').removeClass('esc');
+            $('.libro-body').addClass('vis');
         
-                break;
-            case 4:
-                $('.contenido-card-body').addClass('esc');
-        
+            break;
+        case 4:
+            // $('.contenido-card-body').addClass('esc');
+            // console.log(count);
+            if (count == 1) {
+                // $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
                 $('.contenido1').removeClass('esc');
                 $('.contenido1').addClass('vis');
+            
+                
+            }
+            if (count == 2) {
+                $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
+                // $('.contenido1').removeClass('esc');
+                // $('.contenido1').addClass('vis');
+                count=0;
+                
+            }
+           
         
-                break;
-            case 5:
-                $('.contenido-card-body').addClass('esc');
+            break;
+        case 5:
+            // $('.contenido-card-body').addClass('esc');
+            $('.contenido1').addClass('esc');
+            $('.contenido2').addClass('esc');
         
+            $('.contenido2').removeClass('esc');
+            $('.contenido2').addClass('vis');
+
+            if (count == 1) {
+                $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
                 $('.contenido2').removeClass('esc');
                 $('.contenido2').addClass('vis');
+            
+                
+            }
+            if (count == 2) {
+                $('.contenido1').addClass('esc');
+                $('.contenido2').addClass('esc');
+            
+                // $('.contenido1').removeClass('esc');
+                // $('.contenido1').addClass('vis');
+                count=0;
+                
+            }
         
-                break;
+            break;
         default:
             break;
     }
@@ -1266,24 +1309,62 @@ function hiddenTxt(num){
     counter ++;
     switch (parseInt(num)) {
         case 1:
-            
+            // console.log(counter);
            
             if (counter == 1) {
                 
                 // $('#collapseOne1').collapse('hide');
             
                 // $('#collapseOne1').collapse('hide');
-                $('#collapseOne1').removeClass('show');
+                $('#collapseOne1').removeClass('ocultar');
                 
             }
             if (counter ==2) {
                 
                 // $('#collapseOne1').collapse('hide');
-                $('#collapseOne1').add('esc');
+                $('#collapseOne1').addClass('ocultar');
                 counter=0;
             }
       
             break;
+            case 3:
+                // console.log(counter);
+               
+                if (counter == 1) {
+                    
+                    // $('#collapseOne1').collapse('hide');
+                
+                    // $('#collapseOne1').collapse('hide');
+                    $('#collapseTwo2').removeClass('ocultar');
+                    
+                }
+                if (counter ==2) {
+                    
+                    // $('#collapseOne1').collapse('hide');
+                    $('#collapseTwo2').addClass('ocultar');
+                    counter=0;
+                }
+          
+                break;
+                case 4:
+                    console.log(counter);
+                   
+                    if (counter == 1) {
+                        
+                        // $('#collapseOne1').collapse('hide');
+                    
+                        // $('#collapseOne1').collapse('hide');
+                        $('#collapseThree3').removeClass('ocultar');
+                        
+                    }
+                    if (counter ==2) {
+                        
+                        // $('#collapseOne1').collapse('hide');
+                        $('#collapseThree3').addClass('ocultar');
+                        counter=0;
+                    }
+              
+                    break;
         case 2:
             $('.txtBody').addClass('esc');
 
