@@ -147,3 +147,45 @@
     background: #7b49ab;
     height: 190px;
 }
+.fondo1{
+    background-image: url('../assets/img/img_ova/fondo1.png');
+    height: 170px;
+    width: 170px;
+    background-size: 100% 100%;
+}
+.btn_rec{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-top: 6px;
+    cursor: pointer;
+}
+.btn_recActive{
+    background: #472B63;
+}
+.btn_recInactive{
+    background: #7B49AB;
+}
+.moracio{
+        background: #CABBD8;
+    height: 205px;
+    width: 90%;
+    border-radius: 30px;
+        padding: 20px;
+}
+
+.btn_m{
+        background: #482649;
+    color: white;
+    font-weight: bold;
+}
+.avanzadores{
+    width: 0;
+    height: 0;
+    border-left: 35px solid #7b49ab;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
