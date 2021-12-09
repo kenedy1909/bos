@@ -23,8 +23,8 @@ iframe{
 }
 .divcerrar{
   position: relative;
-  top: -37px;
-  left: 37px;
+  top: -15px;
+  left: 9px;
 }
 .img_closeds{
   width: 60px;
@@ -243,17 +243,18 @@ iframe{
 .card .user{
   border-radius: 50%;
   display: block;
-  height: 150px;
+  height: 120px;
   margin: -70px auto 0;
   overflow: hidden;
-  width: 150px;
-  background: white;
+  width: 120px;
+  background: #999999;
+  border: 3px solid white;
 }
 .card .user img{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 80%;
+  max-width: 65%;
   position: relative;
   top: 10px;
 }
