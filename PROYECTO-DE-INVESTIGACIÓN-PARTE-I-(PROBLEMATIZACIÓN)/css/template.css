@@ -105,10 +105,10 @@ iframe{
 .titulo-ova{
   background-image: url(../assets/img/img_ova/Investigación-III-03.png);
   background-repeat: no-repeat;
-  background-size: 423px;
+  background-size: 350px;
   width: 410px;
   height: 147px;
-  padding: 44px 90px 0px 136px;
+  padding: 44px 111px 0px 136px;
 }
 
 .c-body{
@@ -951,4 +951,8 @@ card flip*/
 }
 .img-100{
   width: 100%;
+}
+
+.esc{
+  display: none !important;
 }

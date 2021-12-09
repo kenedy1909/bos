@@ -262,4 +262,23 @@ function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
 }
 
+function esconder(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.contenido').addClass('esc');
+            
+            break;
+        case 2:
+            $('.contenido1').removeClass('esc');
+            $('.ov-personaje').addClass('esc');
+            
+                
+            break;
+    
+        default:
+            break;
+    }
+   
+    
+}
 
