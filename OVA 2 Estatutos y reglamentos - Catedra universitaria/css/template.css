@@ -961,6 +961,17 @@ svg circle:nth-child(2){
 .card-inactiva-c{
   background: #484848 !important;
 }
+.radius-gray-2{
+  background: #999999;
+  border-radius: 50%;
+  margin: 1px;
+  padding: 0%;
+  width: 142px;
+  height: 142px;
+  position: relative;
+  top: -2px;
+  left: 2px;
+}
 .radius-gray{
   background: #999999;
   border-radius: 50%;

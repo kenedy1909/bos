@@ -1,7 +1,16 @@
 $(document).ready(function() {
     $(".zoomContainer").remove();
     $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
+
+    $(".activacion1").addClass('resalte');
+
     $(".ov-personaje").hide();
+
+    paso = false;
+    star_uni = 1;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $('#smartwizard').smartWizard({
         loader: "show",
         theme: 'arrows',
@@ -20,15 +29,15 @@ $(document).ready(function() {
     $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
-        actualizarprogress();
+        slide(0);
+        actualizarprogress(0);
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
-        actualizarprogress();
+        slide(0);
+        actualizarprogress(0);
     });
     slide_predeterminado();
 
@@ -50,9 +59,13 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex + 1);
+    if (num = 1) {
+        controlSlides(stepIndex+3);
+    }else{
+        controlSlides(stepIndex+1);
+    }
 }
 
 function slide_predeterminado() {
@@ -74,10 +87,10 @@ function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
             var pdf = `<p class="p_white">
-                            <a href="assets/PDF/UNIDAD1/guia1PrincipiosDelMarketingDigital.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD1/guia1PrincipiosDelMarketingDigital.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdfgris.png"> GuÍa1_Principios del marketing digital.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
                         </p>
                         <p class="p_white">
-                            <a href="assets/PDF/UNIDAD1/guia2RedesSociales.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
+                            <a href="assets/PDF/UNIDAD1/guia2RedesSociales.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdfgris.png"> Guía2_Redes Sociales.pdf    <b class="text-cafe" style="float: right;"><u>Ver</u></b></a>
                         </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
@@ -179,9 +192,9 @@ function controlSlides(num) {
         case 17:
             setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
-        case 18:
-            star_uni = 1;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+        case 19:
+            $(".menu1").addClass('d-none');
+            $(".activacion1").removeClass('resalte');
             setMigaja("Unidades de aprendizaje", "1. Tendencias tecnológicas en las organizaciones", "> Megatendencias");
             break;
         default:
@@ -502,3 +515,22 @@ function paraIframe(num) {
     }
 
 }
+
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                actualizarprogress(1);
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                actualizarprogress(1);
+                break;
+        }
+    }
+);

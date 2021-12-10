@@ -506,30 +506,23 @@ function pantalla27(){
 }
 
 function flotantes(num){
+            $('.flotante').addClass('d-none');
+            $('.flotante').removeClass('visible');
     switch (parseInt(num)) {
         case 1:
-            $('.flotante').addClass('invisible');
-            $('.flotante').removeClass('visible');
 
-            $('.flotante1').removeClass('invisible');
-            $('.flotante1').addClass('visible');
+            $('.flotante1').removeClass('d-none');
             break;
         case 2:
-            $('.flotante').addClass('invisible');
-            $('.flotante').removeClass('visible');
 
-            $('.flotante2').removeClass('invisible');
-            $('.flotante2').addClass('visible');
+            $('.flotante2').removeClass('d-none');
             break;
         case 3:
-            $('.flotante').addClass('invisible');
-            $('.flotante').removeClass('visible');
 
-            $('.flotante3').removeClass('invisible');
-            $('.flotante3').addClass('visible');
+            $('.flotante3').removeClass('d-none');
             break;
         case 4:
-            $('.flotante').addClass('invisible');
+            $('.flotante').addClass('d-none');
             $('.flotante').removeClass('visible');
             break;
         default:
@@ -541,10 +534,10 @@ function p39(num){
     switch (parseInt(num)) {
         case 1:
             $('.text-p39').addClass('invisible');
-            $('.text-p39').removeClass('visible');
+            $('.text-p39').removeClass('d-flex');
 
             $('.p39-1').removeClass('invisible');
-            $('.p39-1').addClass('visible');
+            $('.p39-1').addClass('d-flex');
 
             $('.btn_shadowAmarillo').addClass('shadow_inactive');
             $('.btn_shadowAmarillo').removeClass('shadow_active');
@@ -553,14 +546,14 @@ function p39(num){
             $('.sha1').addClass('shadow_active');
 
             $('.banner39').removeClass('invisible');
-            $('.banner39').addClass('visible');
+            $('.banner39').addClass('d-flex');
             break;
         case 2:
             $('.text-p39').addClass('invisible');
-            $('.text-p39').removeClass('visible');
+            $('.text-p39').removeClass('d-flex');
 
             $('.p39-2').removeClass('invisible');
-            $('.p39-2').addClass('visible');
+            $('.p39-2').addClass('d-flex');
 
             $('.btn_shadowAmarillo').addClass('shadow_inactive');
             $('.btn_shadowAmarillo').removeClass('shadow_active');
@@ -569,14 +562,14 @@ function p39(num){
             $('.sha2').addClass('shadow_active');
 
             $('.banner39').removeClass('invisible');
-            $('.banner39').addClass('visible');
+            $('.banner39').addClass('d-flex');
             break;
         case 3:
             $('.text-p39').addClass('invisible');
-            $('.text-p39').removeClass('visible');
+            $('.text-p39').removeClass('d-flex');
 
             $('.p39-3').removeClass('invisible');
-            $('.p39-3').addClass('visible');
+            $('.p39-3').addClass('d-flex');
 
             $('.btn_shadowAmarillo').addClass('shadow_inactive');
             $('.btn_shadowAmarillo').removeClass('shadow_active');
@@ -585,14 +578,14 @@ function p39(num){
             $('.sha3').addClass('shadow_active');
 
             $('.banner39').removeClass('invisible');
-            $('.banner39').addClass('visible');
+            $('.banner39').addClass('d-flex');
             break;
         case 4:
             $('.text-p39').addClass('invisible');
-            $('.text-p39').removeClass('visible');
+            $('.text-p39').removeClass('d-flex');
 
             $('.p39-4').removeClass('invisible');
-            $('.p39-4').addClass('visible');
+            $('.p39-4').addClass('d-flex');
 
             $('.btn_shadowAmarillo').addClass('shadow_inactive');
             $('.btn_shadowAmarillo').removeClass('shadow_active');
@@ -601,14 +594,14 @@ function p39(num){
             $('.sha4').addClass('shadow_active');
 
             $('.banner39').removeClass('invisible');
-            $('.banner39').addClass('visible');
+            $('.banner39').addClass('d-flex');
             break;
         case 5:
             $('.text-p39').addClass('invisible');
-            $('.text-p39').removeClass('visible');
+            $('.text-p39').removeClass('d-flex');
 
             $('.p39-5').removeClass('invisible');
-            $('.p39-5').addClass('visible');
+            $('.p39-5').addClass('d-flex');
 
             $('.btn_shadowAmarillo').addClass('shadow_inactive');
             $('.btn_shadowAmarillo').removeClass('shadow_active');
@@ -617,7 +610,7 @@ function p39(num){
             $('.sha5').addClass('shadow_active');
 
             $('.banner39').removeClass('invisible');
-            $('.banner39').addClass('visible');
+            $('.banner39').addClass('d-flex');
             break;
         default:
             break;
@@ -836,7 +829,7 @@ function espacial(num) {
             $('.espacial2').addClass('visible');
             $('.espacial2').removeClass('invisible');
 
-            $('.baneformnav').addClass('visible');
+            $('.baneformnav').addClass('d-flex');
             $('.baneformnav').removeClass('invisible');
 
             $('.formula_nave').addClass('invisible');
@@ -861,7 +854,7 @@ function espacial(num) {
             $('.espacial3').addClass('visible');
             $('.espacial3').removeClass('invisible');
 
-            $('.baneformnav').addClass('visible');
+            $('.baneformnav').addClass('d-flex');
             $('.baneformnav').removeClass('invisible');
 
             $('.formula_nave').addClass('invisible');
@@ -886,7 +879,7 @@ function espacial(num) {
             $('.espacial4').addClass('visible');
             $('.espacial4').removeClass('invisible');
 
-            $('.baneformnav').addClass('visible');
+            $('.baneformnav').addClass('d-flex');
             $('.baneformnav').removeClass('invisible');
 
             $('.formula_nave').addClass('invisible');
@@ -1145,7 +1138,7 @@ function svg_img(num) {
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
                                   <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-verde" style="background: #1f4e79;">
+                                      <div class="m-0 p-0 x-modal-verde" style="background: #1f4e79; width: 40px; height: 40px;">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
@@ -1167,7 +1160,7 @@ function svg_img(num) {
                                 </div>
                                 `);
             $("#svg-info").removeClass('d-none');
-            $("#svg-info").attr('style', "left: 0px; bottom: 0px;");
+            $("#svg-info").attr('style', "left: 0px; bottom: 50px;");
             $(".cerrar-svg").on('click', cerrar_svg);
             modal_scroll_uno();
             break;
@@ -1176,7 +1169,7 @@ function svg_img(num) {
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
                                   <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-azul" style="background: #1f4e79;">
+                                      <div class="m-0 p-0 x-modal-azul" style="background: #1f4e79; width: 40px; height: 40px;">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
@@ -1184,8 +1177,9 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
+                                        <p class="p_black text-center">clic a la imagen</p>
                                         <div class="text-center">
-                                           <img src="assets/img/img_ova/imagenejemploparticula.png" class="img-100">
+                                           <img src="assets/img/img_ova/imagenejemploparticula.png" class="img-100" data-toggle="modal" data-target="#agran1">
                                         </div>
                                       </div>
                                       <div class="custom-scrollbar__bar_uno">
@@ -1196,7 +1190,7 @@ function svg_img(num) {
                                 </div>
                                 `);
             $("#svg-info").removeClass('d-none');
-            $("#svg-info").attr('style', "right: 40px; bottom: 0px;");
+            $("#svg-info").attr('style', "right: 40px; bottom: 50px;");
             $(".cerrar-svg").on('click', cerrar_svg);
             modal_scroll_uno();
             break;
@@ -1205,7 +1199,7 @@ function svg_img(num) {
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
                                   <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-verde-o" style="background: #1f4e79;">
+                                      <div class="m-0 p-0 x-modal-verde-o" style="background: #1f4e79; width: 40px; height: 40px;">
                                         <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                       </div>
                                     </button>
@@ -1226,7 +1220,7 @@ function svg_img(num) {
                                 </div>
                                 `);
             $("#svg-info").removeClass('d-none');
-            $("#svg-info").attr('style', "left: 0px; bottom: 0px;");
+            $("#svg-info").attr('style', "left: 0px; bottom: 50px;");
             $(".cerrar-svg").on('click', cerrar_svg);
             modal_scroll_uno();
             break;
@@ -2085,6 +2079,15 @@ function pantalla21(num) {
             break;
         default:
             break;
+    }
+}
+
+function color(num) {
+    $(".notas_1, .notas_2").removeClass('color_nota');
+    if (num == 1) {
+        $(".notas_1").addClass('color_nota');
+    }else if (num == 2) {
+        $(".notas_2").addClass('color_nota');
     }
 }
 

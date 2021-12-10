@@ -83,6 +83,17 @@
 	height: 100%;
 	width: 50%;
 }
+#unidad1-7{
+	background-image: url(../assets/img/img_ova/fondo_actividades.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+	height: 100%;
+	width: 50%;
+}
+#unidad1-3{
+	height: 780px;
+}
 .menos-margin-b-25{
 	margin-bottom: -25px;
 }
@@ -1225,4 +1236,11 @@ p, button{
 	  background: #FF9900;
 	  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
-  
+  .ovalo {
+	  position: relative;
+	  z-index: 2;
+  }
+
+  .ocultar {
+	  display: none;
+  }

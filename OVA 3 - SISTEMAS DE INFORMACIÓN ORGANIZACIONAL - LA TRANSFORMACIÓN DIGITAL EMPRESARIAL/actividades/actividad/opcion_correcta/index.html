@@ -17,7 +17,7 @@
                         <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
                             <b class="" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
                             <div style="height: 5px;background: #811111;"></div>
-                            <i><p class="text-muted">COMPLETAR ESPACIOS</p></i>
+                            <p class="text-muted" style="font-size: 15px;"><i>COMPLETAR ESPACIOS</i></p>
                         </div>
                     </div>
                 </div>
@@ -141,33 +141,44 @@
         <button onclick="calificar();" style="background: #811111;color: white;font-size: 18px;border-radius: 10px;" data-toggle="modal" data-target="#exampleModal" class="btn">Calificar</button>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content tranparente" style="">
-                <div style="" class="principal">
-                    <div style="" class="cabeza">
-
+      <div class="modal-dialog" role="document">
+        <div class="modal-content tranparente" style="    box-shadow: none;">
+          <div style="" class="principal">
+            <div style="" class="cabeza">
+              
+            </div>
+            <div class="d-flex" style="justify-content: center;">
+              <div style="border: 3px solid white;" class="circulo_modal img_res">
+                
+              </div>
+            </div>
+            <div style="padding: 10px; position: relative; top: -45px;">
+              <div style="color: white;font-size: 15px;">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3" style="text-align: initial;">
+                        Su puntaje es: 
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <div style="" class="circulo_modal img_res">
-
-                        </div>
+                    <div class="col-md-3 col-sm-3" style="text-align: initial;">
+                        <b class="puntaje" style="color: #FFC000; font-size: 30px;position: relative; top: -10px; "></b>
                     </div>
-                    <div style="padding: 10px;">
-                        <div style="color: white;font-size: 15px;display: flex;">
-                            Su puntaje es:
-                            <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;"></p>
-                        </div>
-                        <div style="color: white;font-size: 15px;">
-                            <p class="mensaje"></p>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-center btns_modal">
-
-
+                    <div class="col-md-5 col-sm-5"></div>
+                </div>
+              </div>
+              <div style="color: white;font-size: 15px;">
+                <div class="row" style="display: flex;">
+                    <div class="col-md-5">
+                        <p class="mensaje" style="text-align: initial;"></p>
                     </div>
                 </div>
+              </div>
             </div>
+            <div class="row btns_modal" style="position: relative; top: -60px;justify-content: center;">
+              
+              
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

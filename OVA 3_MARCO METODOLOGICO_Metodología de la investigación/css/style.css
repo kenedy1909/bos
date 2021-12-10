@@ -13100,7 +13100,7 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
 
 .tooltip.show {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 1.9;
 }
 .tooltip-arrow {
   width: 50%!important;

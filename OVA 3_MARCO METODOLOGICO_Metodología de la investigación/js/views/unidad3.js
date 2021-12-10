@@ -1,108 +1,146 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
     $(".pedfs").addClass('d-none');
     $(".pdf3").removeClass('d-none');
-    $( ".zoomContainer" ).remove();
-    setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
-            
+    paso = false;
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    
+
+    $(".zoomContainer").remove();
+    setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
+
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
-    });
-    
-    $('#prev').on('click', function () {
-        $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
 
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
-    
+    $('#prev').on('click', function() {
+        $('#smartwizard').smartWizard("prev");
+        slide(0);
+    });
+
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
+
     slide_predeterminado3();
     console.log(tema);
     slide_link3(tema);
-    
-    
+
+
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides3(stepIndex);
-        actualizarprogress(stepIndex+7+3);
+    
+    if (num == 1) {
+        controlSlides3(stepIndex+1);
+        actualizarprogress(stepIndex + 7 + 3);
+    }else{
+        controlSlides3(stepIndex);
+        actualizarprogress(stepIndex + 7 + 3);
+    }
 }
 
-function slide_predeterminado3(){
+function slide_predeterminado3() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides3(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link3(num){
+function slide_link3(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
 
-   
+
     controlSlides3(num);
-    
-    
+
+
 }
-function controlSlides3(num){
+
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                
+                break;
+        }
+    }
+);
+
+function controlSlides3(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 3;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
+            setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
             tema = 1;
-            star_uni = 3;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
-            break;    
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            break;
         case 4:
-            setMigaja("Unidades de aprendizaje","Parármetros muestrales","La muestra");
-            
-            break;    
+            setMigaja("Unidades de aprendizaje", "Parármetros muestrales", "La muestra");
+
+            break;
         default:
             break;
     }
 }
+
 function scroll_set(num) {
-  dragging = "";
-  diff = "";
-  newTop = "";
-  scrollOffset = "";
-  knob = document.querySelector('.custom-scrollbar__knob'+num);
-  bar = document.querySelector('.custom-scrollbar__bar'+num);
-  container = document.querySelector('.custom-scrollbar__inner'+num);
-  scroll();
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob' + num);
+    bar = document.querySelector('.custom-scrollbar__bar' + num);
+    container = document.querySelector('.custom-scrollbar__inner' + num);
+    scroll();
 }
 
 //dezlizador
@@ -111,43 +149,43 @@ var elementoPadre2 = document.querySelector(".inputDiv.i2");
 var inputsRy = [];
 
 function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 1;
-  this.att.max = 5;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 1;
+    this.att.max = 5;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    pantallas3_1(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
+    this.actualizar = function() {
+        pantallas3_1(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
 }
 
 // setup
@@ -163,14 +201,14 @@ i2.crear(elementoPadre2);
 inputsRy.push(i2);
 
 for (var n = 0; n < inputsRy.length; n++) {
-  (function(n) {
-    inputsRy[n].input.addEventListener("input", function() {
-      inputsRy[n].actualizar();
-    }, false)
-  }(n));
+    (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+            inputsRy[n].actualizar();
+        }, false)
+    }(n));
 }
 
-function pantallas3_1(num){
+function pantallas3_1(num) {
     switch (parseInt(num)) {
         case 1:
             var img = `<img src="assets/img/img_ova/paso1.png" style="max-width: 40%;">`;
@@ -202,7 +240,7 @@ function pantallas3_1(num){
     }
 }
 
-function pantalla3_2(num){
+function pantalla3_2(num) {
     switch (parseInt(num)) {
         case 1:
             var text = `
@@ -231,15 +269,15 @@ function pantalla3_2(num){
               </div>
             </div>`;
 
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav1').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na1').removeClass('inactivo');           
+            $('.na1').removeClass('inactivo');
             $('.na1').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
         case 2:
@@ -253,15 +291,15 @@ function pantalla3_2(num){
             <div class="col-md-6 text-center">
               <img src="assets/img/img_ova/conversation.png" class="" style="width: 34%;">
             </div>`;
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav2').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na2').removeClass('inactivo');           
+            $('.na2').removeClass('inactivo');
             $('.na2').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
         case 3:
@@ -277,15 +315,15 @@ function pantalla3_2(num){
                 <img src="assets/img/img_ova/question.png" class="" style="width: 50%;">
               </div>
             </div>`;
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav3').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na3').removeClass('inactivo');           
+            $('.na3').removeClass('inactivo');
             $('.na3').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
         case 4:
@@ -299,18 +337,18 @@ function pantalla3_2(num){
                 <img src="assets/img/img_ova/preguntas.png" class="" style="width: 50%;">
               </div>
             </div>`;
-            $('.avance_blanco').removeClass('activa');            
+            $('.avance_blanco').removeClass('activa');
             $('.nav4').addClass('activa');
 
             $('.opcion_p2_2').removeClass('encendido');
             $('.opcion_p2_2').addClass('inactivo');
 
-            $('.na4').removeClass('inactivo');           
+            $('.na4').removeClass('inactivo');
             $('.na4').addClass('encendido');
-            
+
             $('.cont3_2').html(text);
             break;
-        
+
         default:
             break;
     }
@@ -345,11 +383,11 @@ function efect(num) {
             break;
         default:
             break;
-    }           
-    
+    }
+
 }
 
-function removeefect(num){
+function removeefect(num) {
     switch (parseInt(num)) {
         case 1:
             $('.creciente').removeClass('crece');
@@ -377,284 +415,284 @@ function removeefect(num){
             break;
         default:
             break;
-    } 
-    
+    }
+
 }
 
 function tarjertaGU3(num) {
-  $('.imgCentral').addClass('d-none');
-  
-  if (num == 1) {
-    $('.imgCentral1').removeClass('d-none');
-    $('.flechaLU3-1').addClass('hidden');
-    $('.flechaRU3-1').removeClass('hidden');
+    $('.imgCentral').addClass('d-none');
+
+    if (num == 1) {
+        $('.imgCentral1').removeClass('d-none');
+        $('.flechaLU3-1').addClass('hidden');
+        $('.flechaRU3-1').removeClass('hidden');
 
 
-    $('.btnDescarga1').removeClass('d-none');
-    $('.btnDescarga1').addClass('d-flex');
-    $('.btnDescarga2').removeClass('d-flex');
-    $('.btnDescarga2').addClass('d-none');
-    
-    $('.flechaRU3-1').attr('onclick',"tarjertaGU3(2)");
-    
-  }else if (num == 2) {
-    $('.imgCentral2').removeClass('d-none');
-    $('.imgCentral3').removeClass('d-none');
+        $('.btnDescarga1').removeClass('d-none');
+        $('.btnDescarga1').addClass('d-flex');
+        $('.btnDescarga2').removeClass('d-flex');
+        $('.btnDescarga2').addClass('d-none');
+
+        $('.flechaRU3-1').attr('onclick', "tarjertaGU3(2)");
+
+    } else if (num == 2) {
+        $('.imgCentral2').removeClass('d-none');
+        $('.imgCentral3').removeClass('d-none');
 
 
-    $('.btnDescarga2').removeClass('d-none');
-    $('.btnDescarga2').addClass('d-flex');
-    $('.btnDescarga1').removeClass('d-flex');
-    $('.btnDescarga1').addClass('d-none');
-
-    
-    $('.flechaLU3-1').removeClass('hidden');
-    $('.flechaRU3-1').removeClass('hidden');
-    
-    $('.flechaLU3-1').attr('onclick',"tarjertaGU3(1)");
-    $('.flechaRU3-1').attr('onclick',"tarjertaGU3(3)");
-    
-  }else if (num ==3) {
-    $('.imgCentral4').removeClass('d-none');
-
-    
-    $('.btnDescarga2').removeClass('d-none');
-    $('.btnDescarga2').addClass('d-flex');
-    $('.btnDescarga1').removeClass('d-flex');
-    $('.btnDescarga1').addClass('d-none');
-
-    
-    $('.flechaLU3-1').removeClass('hidden');
-    $('.flechaRU3-1').removeClass('hidden');
-    $('.flechaLU3-1').attr('onclick',"tarjertaGU3(2)");
-    $('.flechaRU3-1').attr('onclick',"tarjertaGU3(4)");
-    
-  }else if (num ==4) {
-    $('.imgCentral5').removeClass('d-none');
-    $('.imgCentral6').removeClass('d-none');
+        $('.btnDescarga2').removeClass('d-none');
+        $('.btnDescarga2').addClass('d-flex');
+        $('.btnDescarga1').removeClass('d-flex');
+        $('.btnDescarga1').addClass('d-none');
 
 
-    $('.btnDescarga2').removeClass('d-none');
-    $('.btnDescarga2').addClass('d-flex');
-    $('.btnDescarga1').removeClass('d-flex');
-    $('.btnDescarga1').addClass('d-none');
+        $('.flechaLU3-1').removeClass('hidden');
+        $('.flechaRU3-1').removeClass('hidden');
 
-    
-    $('.flechaLU3-1').removeClass('hidden');
-    $('.flechaLU3-1').attr('onclick',"tarjertaGU3(3)");
-    $('.flechaRU3-1').addClass('hidden');
-    $('.btnDescarga2').html(`<a class="btn bg-color-dark text-white text-center px-4 py-3 border-10" href="assets/PDF/UNIDAD3/PDFCOMICS.pdf" target="_blank" download>
+        $('.flechaLU3-1').attr('onclick', "tarjertaGU3(1)");
+        $('.flechaRU3-1').attr('onclick', "tarjertaGU3(3)");
+
+    } else if (num == 3) {
+        $('.imgCentral4').removeClass('d-none');
+
+
+        $('.btnDescarga2').removeClass('d-none');
+        $('.btnDescarga2').addClass('d-flex');
+        $('.btnDescarga1').removeClass('d-flex');
+        $('.btnDescarga1').addClass('d-none');
+
+
+        $('.flechaLU3-1').removeClass('hidden');
+        $('.flechaRU3-1').removeClass('hidden');
+        $('.flechaLU3-1').attr('onclick', "tarjertaGU3(2)");
+        $('.flechaRU3-1').attr('onclick', "tarjertaGU3(4)");
+
+    } else if (num == 4) {
+        $('.imgCentral5').removeClass('d-none');
+        $('.imgCentral6').removeClass('d-none');
+
+
+        $('.btnDescarga2').removeClass('d-none');
+        $('.btnDescarga2').addClass('d-flex');
+        $('.btnDescarga1').removeClass('d-flex');
+        $('.btnDescarga1').addClass('d-none');
+
+
+        $('.flechaLU3-1').removeClass('hidden');
+        $('.flechaLU3-1').attr('onclick', "tarjertaGU3(3)");
+        $('.flechaRU3-1').addClass('hidden');
+        $('.btnDescarga2').html(`<a class="btn clr-dark text-white text-center px-4 py-3 border-10" href="assets/PDF/UNIDAD3/PDFCOMICS.pdf" target="_blank" download>
                                 <h3 class="mx-3">Descargar historieta</h3>
                               </a>`);
-    
-  }
+
+    }
 }
 
 function slideModalU3_3(num) {
-  if (num == 1) {
-    var img1 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
-    var img2 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<p class="text-justify text-black"><b class="h3 color-title"> No probabilísticas o dirigidas: </b> subgrupo de la población en el que la elección de los elementos no depende de la probabilidad sino de las características de la investigación.  
+    if (num == 1) {
+        var img1 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+        var img2 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<p class="text-justify text-black"><b class="h3 color-title"> No probabilísticas o dirigidas: </b> subgrupo de la población en el que la elección de los elementos no depende de la probabilidad sino de las características de la investigación.  
                       <br><br>
                       <b class="h3 color-title">Probabilísticas: </b>subgrupo de la población en el que todos los elementos de esta tienen la misma posibilidad de ser elegidos. 
                     </p>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(10)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(2)");
-  }else if (num == 2) {
-    var img1 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<p class="text-justify text-black">
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(10)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(2)");
+    } else if (num == 2) {
+        var img1 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<p class="text-justify text-black" style="height: 116px;overflow: auto;">
                       De igual forma, este tipo de muestras son fundamentales en los procesos de investigación transeccionales, tanto en los descriptivos como en los correlacionales – causales estos son, por ejemplo: las encuestas de opinión, en las cuales lo que se busca es hacer apreciaciones de diferentes variables en la población objeto de estudio, las cuales se miden y examinan a través de estadísticas, donde todos los factores analizados se supone, tienen la misma probabilidad, por tal razón son llamados o denominadas muestras probabilísticas. Las estimaciones y la precisión de los resultados dependen en gran medida del muestreo.  
                     </p>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(1)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(3)");
-  }else if (num == 3) {
-    var img1 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<p class="text-justify text-black">Para lo anterior es necesario entender los siguientes términos:</p>
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(1)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(3)");
+    } else if (num == 3) {
+        var img1 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<p class="text-justify text-black">Para lo anterior es necesario entender los siguientes términos:</p>
                       <div class="row d-flex justify-content-end mt-3">
-                        <div class="col-5 mr-3 border-10 p-3 bg-color-1">
-                          <p class="text-white text-justify">Que la población a la que generalmente se le denomina  <b> N.</b>, significa un conjunto de elementos</p>
+                        <div class="col-5 mr-3 border-10 p-2 bg-color-1" style="height: 90px;">
+                          <p class="text-white text-justify" style="    font-size: 13px;">Que la población a la que generalmente se le denomina  <b> N.</b>, significa un conjunto de elementos</p>
                         </div>
-                        <div class="col-5 ml-3 border-10 p-3 bg-color-1">
-                          <p class="text-white text-justify">Que la muestra a la que generalmente se le denomina n, es un subconjunto de la población <b> N.</b> </p>
+                        <div class="col-5 ml-3 border-10 p-2 bg-color-1" style="height: 90px;">
+                          <p class="text-white text-justify" style="    font-size: 13px;">Que la muestra a la que generalmente se le denomina n, es un subconjunto de la población <b> N.</b> </p>
                         </div>
                       </div>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(2)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(4)");
-  }else if (num == 4) {
-    var img1 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<div class="d-flex">
-                      <p class="text-justify text-black pr-3">Por tal razón, se debe tener en cuenta que en una población N de la cual la delimitación o demarcación responderá a los objetivos planteados desde el inicio de la investigación, se deberán establecer y delimitar valores y características de los elementos constitutivos de dicha población N. Ya que, lo que se busca es determinar, conocer o saber, los valores de porcentaje o promedio en dicha población, por lo que lo anterior, se expresaría de la siguiente forma (ver imagen): </p>
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(2)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(4)");
+    } else if (num == 4) {
+        var img1 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<div class="d-flex">
+                      <p class="text-justify text-black pr-3" style="height: 115px;overflow: auto;">Por tal razón, se debe tener en cuenta que en una población N de la cual la delimitación o demarcación responderá a los objetivos planteados desde el inicio de la investigación, se deberán establecer y delimitar valores y características de los elementos constitutivos de dicha población N. Ya que, lo que se busca es determinar, conocer o saber, los valores de porcentaje o promedio en dicha población, por lo que lo anterior, se expresaría de la siguiente forma (ver imagen): </p>
                       <div class="w-100 text-center">
                         <img src="assets/img/img_ova/imagen.png" width="60%">
                         <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_1"><b>VER IMAGEN</b></p>
                       </div>
                     </div>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(3)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(5)");
-  }else if (num == 5) {
-    var img1 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<div class="d-flex">
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(3)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(5)");
+    } else if (num == 5) {
+        var img1 = `<img src="assets/img/img_ova/4.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<div class="d-flex">
                       <div class="w-100 text-center">
-                        <img src="assets/img/img_ova/pregunta.png" width="85%">
+                        <img src="assets/img/img_ova/pregunta.png" style="width: 100%; margin-top: -8px; margin-left: -16px;">
                       </div>
-                      <p class="text-justify text-black pr-3">Por lo tanto, cuando se utiliza una muestra probabilística, es fundamental que se pregunte lo siguiente: se cuenta con una población que pertenece a N, si es así, <span class="color-text"><b> ¿cuál es el menor número de compuestos o elementos muestrales? ¿Qué se busca o pretende indagar?</b></span> Para que haga parte de esa muestra n, lo cual aseguraría un resultado adquirido como promedio bajo o leve de error estándar dentro de la investigación. Es el tamaño del error en las predicciones en una muestra probabilística.</p>
+                      <p class="text-justify text-black pr-3" style="overflow: auto;height: 135px;">Por lo tanto, cuando se utiliza una muestra probabilística, es fundamental que se pregunte lo siguiente: se cuenta con una población que pertenece a N, si es así, <span class="color-text"><b> ¿cuál es el menor número de compuestos o elementos muestrales? ¿Qué se busca o pretende indagar?</b></span> Para que haga parte de esa muestra n, lo cual aseguraría un resultado adquirido como promedio bajo o leve de error estándar dentro de la investigación. Es el tamaño del error en las predicciones en una muestra probabilística.</p>
                     </div>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(4)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(6)");
-  }else if (num == 6) {
-    var img1 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<p class="text-justify text-black">La respuesta a esta pregunta busca encontrar la probabilidad de ocurrencia de <i>𝑌 ̅,</i> así como que mi estado <i> 𝑦 ̅ </i>se acerque a <i>𝑌 ̅,</i> el valor real de la población. Si establecemos el error estándar y lo fijamos en 0.01, sugerimos que esta fluctuación promedio de nuestro estimado <i> 𝑦 ̅ </i> con respecto a los valores reales de la población <i> 𝑌 ̅ </i> no sea > 0.01, es decir, que de 100 casos, 99 veces mi predicción sea correcta y que el valor <i> 𝑦 ̅ </i>se sitúe en un intervalo de confianza que comprenda el valor de <i> 𝑌 ̅.</i></p>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(4)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(6)");
+    } else if (num == 6) {
+        var img1 = `<img src="assets/img/img_ova/5.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(5)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(7)");
-  }else if (num == 7) {
-    var img1 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<div class="d-flex">
+        var contenido = `<p class="text-justify text-black" style="font-size: 13px;">La respuesta a esta pregunta busca encontrar la probabilidad de ocurrencia de <i>𝑌 ̅,</i> así como que mi estado <i> 𝑦 ̅ </i>se acerque a <i>𝑌 ̅,</i> el valor real de la población. Si establecemos el error estándar y lo fijamos en 0.01, sugerimos que esta fluctuación promedio de nuestro estimado <i> 𝑦 ̅ </i> con respecto a los valores reales de la población <i> 𝑌 ̅ </i> no sea > 0.01, es decir, que de 100 casos, 99 veces mi predicción sea correcta y que el valor <i> 𝑦 ̅ </i>se sitúe en un intervalo de confianza que comprenda el valor de <i> 𝑌 ̅.</i></p>`;
+        $('.contenidoNumeros').html(contenido);
+
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(5)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(7)");
+    } else if (num == 7) {
+        var img1 = `<img src="assets/img/img_ova/6.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<div class="d-flex">
                         <p class="text-justify text-black pr-3">En conclusión, para una variación establecida (V) de Y. La pregunta sería: ¿De qué tamaño debe ser la muestra? Por lo que el resultado estaría dado a través de (haga clic para visualizar la imagen):</p>
                         <div class="w-50 text-center">
                           <img src="assets/img/img_ova/imagen.png" width="60%">
-                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2" ><b>VER IMAGEN</b></p>
+                          <p class="border-10 bg-color-1 py-3 w-100 cursor text-white" data-toggle="modal" data-target="#modalimg_U3-1_2" data-dismiss="modal" aria-label="Close"><b>VER IMAGEN</b></p>
                         </div>
                       </div>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(6)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(8)");
-  }else if (num == 8) {
-    var img1 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
-    var img5 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<div class="text-center">
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(6)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(8)");
+    } else if (num == 8) {
+        var img1 = `<img src="assets/img/img_ova/7.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+        var img5 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `<div class="text-center">
                       <p class="text-justify text-black pr-3 w-100">Ahora, analicemos un caso. Haga clic en “ver imagen” para profundizar sobre este tema.</p>
                       <div class="w-100 text-center mt-3 d-flex justify-content-center align-items-center">
-                        <img src="assets/img/img_ova/imagen.png" width="20%">
-                        <p class="border-10 bg-color-1 py-3 w-25 cursor text-white ml-4" data-toggle="modal" data-target="#modalimg_U3-1_3"><b>VER IMAGEN</b></p>
+                        <img src="assets/img/img_ova/imagen.png" width="17%">
+                        <p class="border-10 bg-color-1 py-3 w-25 cursor text-white ml-4" data-toggle="modal" data-target="#modalimg_U3-1_3" data-dismiss="modal" aria-label="Close"><b>VER IMAGEN</b></p>
                       </div>
                     </div>`;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(7)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(9)");
-  }else if (num == 9) {
-    var img1 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
-    var img3 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
-    var img4 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `<p class="text-justify text-black">Cuando se requiere hacer análisis de minorías, es necesario utilizar muestras probabilísticas estratificadas, que son un subgrupo en el que la población se divide en segmentos y se selecciona una muestra para cada segmento. Por ejemplo, en el caso de niveles de escolaridad: transición, primaria, secundaria, universitario y posgrados.</p>`;
-    
-    $('.contenidoNumeros').html(contenido);
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(7)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(9)");
+    } else if (num == 9) {
+        var img1 = `<img src="assets/img/img_ova/8.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+        var img3 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+        var img4 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(8)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(10)");
-  }else if (num == 10) {
-    var img1 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
-    var img2 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
-    var img3 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
-    var img4 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
-    var img5 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
-    $('.numerosSlide1').html(img1);
-    $('.numerosSlide2').html(img2);
-    $('.numerosSlide3').html(img3);
-    $('.numerosSlide4').html(img4);
-    $('.numerosSlide5').html(img5);
-    
-    var contenido = `
-                <div class="content custom-scrollbar18">
+        var contenido = `<p class="text-justify text-black">Cuando se requiere hacer análisis de minorías, es necesario utilizar muestras probabilísticas estratificadas, que son un subgrupo en el que la población se divide en segmentos y se selecciona una muestra para cada segmento. Por ejemplo, en el caso de niveles de escolaridad: transición, primaria, secundaria, universitario y posgrados.</p>`;
+
+        $('.contenidoNumeros').html(contenido);
+
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(8)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(10)");
+    } else if (num == 10) {
+        var img1 = `<img src="assets/img/img_ova/9.png" width="70%" class="my-2">`;
+        var img2 = `<img src="assets/img/img_ova/10.png" width="100%" class="my-3">`;
+        var img3 = `<img src="assets/img/img_ova/1.png" width="70%" class="my-2">`;
+        var img4 = `<img src="assets/img/img_ova/2.png" width="70%" class="my-2">`;
+        var img5 = `<img src="assets/img/img_ova/3.png" width="70%" class="my-2">`;
+        $('.numerosSlide1').html(img1);
+        $('.numerosSlide2').html(img2);
+        $('.numerosSlide3').html(img3);
+        $('.numerosSlide4').html(img4);
+        $('.numerosSlide5').html(img5);
+
+        var contenido = `
+                <div class="content custom-scrollbar18" style="height: 190px;">
                   <div class="custom-scrollbar__inner18">
                     <p class="text-justify text-black">La estratificación aumenta la precisión de la muestra e implica el uso deliberado de diferentes tamaños de muestra para cada estrato, a fin de lograr reducir la varianza de cada unidad de la media muestral (Kish, 1995).
                       <br></br>
@@ -670,35 +708,49 @@ function slideModalU3_3(num) {
                   </div>
                 </div>
                     `;
-    $('.contenidoNumeros').html(contenido);
+        $('.contenidoNumeros').html(contenido);
 
-    $('.flechaNumModalL').attr('onclick',"slideModalU3_3(9)");
-    $('.flechaNumModalR').attr('onclick',"slideModalU3_3(1)");
-    scroll_set(18);
-  }
+        $('.flechaNumModalL').attr('onclick', "slideModalU3_3(9)");
+        $('.flechaNumModalR').attr('onclick', "slideModalU3_3(1)");
+        scroll_set(18);
+    }
 }
 
 function tooltip(num) {
-  $('.tooltip').removeClass('show');
+    $('.tooltip').removeClass('show');
 
-  if (num == 1) {
-    $('#tooltip1').addClass('show');
-  }else if (num == 2) {
-    $('#tooltip2').addClass('show');
-  }else if (num == 3) {
-    $('#tooltip3').addClass('show');
-  }else if (num == 4) {
-    $('#tooltip4').addClass('show');
-  }else if (num == 5) {
-    $('#tooltip5').addClass('show');
-  }else if (num == 6) {
-    $('#tooltip6').addClass('show');
-  }else if (num == 7) {
-    $('#tooltip7').addClass('show');
-  }else if (num == 8) {
-    $('#tooltip8').addClass('show');
-  }else if (num == 9) {
-    $('#tooltip9').addClass('show');
-  }
+    if (num == 1) {
+        $('#tooltip1').addClass('show');
+    } else if (num == 2) {
+        $('#tooltip2').addClass('show');
+    } else if (num == 3) {
+        $('#tooltip3').addClass('show');
+    } else if (num == 4) {
+        $('#tooltip4').addClass('show');
+    } else if (num == 5) {
+        $('#tooltip5').addClass('show');
+    } else if (num == 6) {
+        $('#tooltip6').addClass('show');
+    } else if (num == 7) {
+        $('#tooltip7').addClass('show');
+    } else if (num == 8) {
+        $('#tooltip8').addClass('show');
+    } else if (num == 9) {
+        $('#tooltip9').addClass('show');
+    }
 
+}
+
+function control(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.controles').addClass('invisible');
+            break;
+        case 2:
+            $('.controles').removeClass('invisible');
+            break;
+        default:
+            // statements_def
+            break;
+    }
 }

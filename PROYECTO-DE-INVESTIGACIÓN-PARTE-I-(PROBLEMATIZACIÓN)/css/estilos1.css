@@ -1363,10 +1363,14 @@ input[type=range]::-ms-fill-upper {
 }
 .cont_imagen{
 	width: 15%;
+	border-radius: 50%;
+	background-color: #FFC000;
+	position: relative;
+	left: 12px;
 }
 .div_pasos{
 	width: 70%;
-	background: #ba236d;
+	background: #8B1C64;
 	border-radius: 20px;
 	box-shadow: 1px 1px 5px 1px;
 	padding: 9px 8px 7px 15px;
@@ -1374,7 +1378,7 @@ input[type=range]::-ms-fill-upper {
 .banner_cont{
 	background: #FBD9EA;
 	border-radius: 50px;
-	height: 425px;
+	height: 336x;
 	padding: 25px 25px 25px 25px;
 }
 
@@ -1384,10 +1388,10 @@ input[type=range]::-ms-fill-upper {
 	left: 100px;top: -40px;
 }
 .paso{
-	background: #ba236d;
-	width: 125px;
+	background: #8E1D66;
+	width: 130px;
 	height: 125px;
-	padding: 25px 8px 8px 8px;
+	padding: 33px 8px 8px 8px;
 	box-shadow: 4px 9px 6px 0px #f0dea8;
 	margin-top: 50px;
 }

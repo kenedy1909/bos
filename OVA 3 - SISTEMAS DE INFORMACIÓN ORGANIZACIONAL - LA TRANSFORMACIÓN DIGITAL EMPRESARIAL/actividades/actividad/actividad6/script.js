@@ -462,3 +462,6 @@ function init_recurso_1() {
     });
 
 }
+ function reload(){
+    location.reload();
+ }

@@ -1,36 +1,44 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+    $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
-    setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
-            
+
+    $(".ov-personaje").hide();
+    paso = false;
+    star_uni = 2;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
+    setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
+
+
     $(".pedfs").addClass('d-none');
 
     $(".pdf2").removeClass('d-none');
     console.log(tema);
     /*slide_link2(tema);*/
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
-    
-    $('#next').on('click', function () {
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
+
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     slide_predeterminado2();
     slide_link2(tema);
@@ -42,58 +50,85 @@ $( document ).ready(function() {
     /*$(".t_1").on('click', cambiacontenido2(1));
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
-    
+
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides2(stepIndex);
-        actualizarprogress(stepIndex+7);
+   
+    if (num == 1) {
+        controlSlides2(stepIndex+1);
+        actualizarprogress(stepIndex + 7);
+    }else{
+        controlSlides2(stepIndex);
+        actualizarprogress(stepIndex + 7);
+    }
 }
 
-function slide_predeterminado2(){
+function slide_predeterminado2() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides2(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link2(num){
+function slide_link2(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
 
-    
+
     controlSlides2(num);
-    
+
 }
-function controlSlides2(num){
+
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                
+                break;
+        }
+    }
+);
+
+function controlSlides2(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
+            setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
+            setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. tipos de investigación","El método");
+            setMigaja("Unidades de aprendizaje", "2. Tipos de investigación", "El método");
             tema = 1;
-            star_uni = 2;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
             break;
         default:
             break;
     }
 }
 
-function pantalla2_1(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `<div class="col-md-6">
+function pantalla2_1(num) {
+    switch (parseInt(num)) {
+        case 1:
+            var text = `<div class="col-md-6">
                         <div style="background: #E2C4DF;border-radius: 50px;height: 150px;padding: 25px 25px 25px 25px;">
                           <p class="justificado">El método en economía, como en cualquier otra área del conocimiento, tiene que ver con el procedimiento del cual se sirve la disciplina para desarrollar un nuevo conocimiento.</p>
                         </div>
@@ -106,19 +141,19 @@ function pantalla2_1(num){
                           <img src="assets/img/img_ova/metodo.png" style="max-width: 50%;">
                         </div>
                       </div>`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav1').addClass('activa');
+            $('.avance_blanco').removeClass('activa');
+            $('.nav1').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na1').removeClass('inactivo');           
-          $('.na1').addClass('encendido');
-          
-          $('.cont2_1').html(text);
-          break;
-      case 2:
-          var text = `<div class="col-md-12">
+            $('.na1').removeClass('inactivo');
+            $('.na1').addClass('encendido');
+
+            $('.cont2_1').html(text);
+            break;
+        case 2:
+            var text = `<div class="col-md-12">
                         <div class="banner_crema">
                           <p class="justificado">La comprobación empírica de la economía se hace mediante la econometría y la estadística. Y en el avance de los métodos cuantitativos aplicados han ocurrido los siguientes hechos:</p>
                         </div>
@@ -129,19 +164,19 @@ function pantalla2_1(num){
                           <img data-toggle="modal" data-target="#modalimg_2" src="assets/img/img_ova/hechos.png" style="max-width: 100%" class="cursor">
                         </div>
                       </div>`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2').addClass('activa');
+            $('.avance_blanco').removeClass('activa');
+            $('.nav2').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na2').removeClass('inactivo');           
-          $('.na2').addClass('encendido');
-          
-          $('.cont2_1').html(text);
-          break;
-      case 3:
-          var text = `<div class="col-md-6">
+            $('.na2').removeClass('inactivo');
+            $('.na2').addClass('encendido');
+
+            $('.cont2_1').html(text);
+            break;
+        case 3:
+            var text = `<div class="col-md-6">
                               <div class="banner_crema">
                                 <p class="justificado">Si fuese posible establecer un común denominador de los desarrollos contemporáneos de la teoría económica y de sus componentes metodológicos, podríamos señalar que los mismos se enmarcan en la necesidad de explicar fenómenos altamente complejos y, en consecuencia y en mayor o menor grado, ciertos niveles de interdisciplinariedad. <br>
                                 Así, la economía encuentra explicaciones más competentes a sus temas de estudio a partir de su relación con disciplinas como la política, el derecho, la filosofía, la psicología, la sociología, la antropología, entre otras</p>
@@ -191,21 +226,21 @@ function pantalla2_1(num){
                                 </div>
                               </div>
                             </div>`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav3').addClass('activa');
+            $('.avance_blanco').removeClass('activa');
+            $('.nav3').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na3').removeClass('inactivo');           
-          $('.na3').addClass('encendido');
-          
-          $('.cont2_1').html(text);
-          break;
-      
-      default:
-          break;
-  }
+            $('.na3').removeClass('inactivo');
+            $('.na3').addClass('encendido');
+
+            $('.cont2_1').html(text);
+            break;
+
+        default:
+            break;
+    }
 }
 
 // tabs
@@ -215,37 +250,37 @@ var tabContent = document.querySelectorAll(".tabcontent");
 
 
 tabLinks.forEach(function(el) {
-   el.addEventListener("click", openTabs);
+    el.addEventListener("click", openTabs);
 });
 
 
 function openTabs(el) {
-   var btnTarget = el.currentTarget;
-   var country = btnTarget.dataset.country;
+    var btnTarget = el.currentTarget;
+    var country = btnTarget.dataset.country;
 
-   tabContent.forEach(function(el) {
-      el.classList.remove("active");
-   });
+    tabContent.forEach(function(el) {
+        el.classList.remove("active");
+    });
 
-   tabLinks.forEach(function(el) {
-      el.classList.remove("active");
-   });
+    tabLinks.forEach(function(el) {
+        el.classList.remove("active");
+    });
 
-   document.querySelector("#" + country).classList.add("active");
-   
-   btnTarget.classList.add("active");
+    document.querySelector("#" + country).classList.add("active");
+
+    btnTarget.classList.add("active");
 }
 
 function tarjetaU2_1(num) {
-  $('.hijaTarjeta1, .hijaTarjeta2').addClass('d-none');
-  $('.hijaTarjeta1, .hijaTarjeta2').removeClass('d-flex');
-  if (num == 1) {
-    $('.hijaTarjeta1').removeClass('d-none');
-    $('.hijaTarjeta1').addClass('d-flex');
-    
-  }else if (num == 2) {
-    $('.hijaTarjeta2').removeClass('d-none');
-    $('.hijaTarjeta2').addClass('d-flex');
-    
-  }
+    $('.hijaTarjeta1, .hijaTarjeta2').addClass('d-none');
+    $('.hijaTarjeta1, .hijaTarjeta2').removeClass('d-flex');
+    if (num == 1) {
+        $('.hijaTarjeta1').removeClass('d-none');
+        $('.hijaTarjeta1').addClass('d-flex');
+
+    } else if (num == 2) {
+        $('.hijaTarjeta2').removeClass('d-none');
+        $('.hijaTarjeta2').addClass('d-flex');
+
+    }
 }

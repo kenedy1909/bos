@@ -1,47 +1,52 @@
-.titulo3{
-	padding: 7px 25px 25px 25px;
-	height: 30px;
-}
-.circulo3_1{
-	background: #000000;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	margin-top: 4%;
-	position: relative;
-	left: 15px;
-	z-index: 100;
-	color: white;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
-	padding-top: 10px;
+.titulo3 {
+    padding: 7px 25px 25px 25px;
+    height: 30px;
 }
 
-.banner3_1{
-	background: #65AFF0;
-	height: 100px;
-	border-radius: 20px;
-	padding: 25px 25px 25px 25px;
+.circulo3_1 {
+    background: #000000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 4%;
+    position: relative;
+    left: 15px;
+    z-index: 100;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
 }
-.div_button{
-	position: relative;
-	top: -9px;
-	text-align: center;
+
+.banner3_1 {
+    background: #65AFF0;
+    height: 100px;
+    border-radius: 20px;
+    padding: 25px 25px 25px 25px;
 }
-.btn3_1{
-	background: #7a3d78;
-	color: white;
-	font-size: 18px;
+
+.div_button {
+    position: relative;
+    top: -9px;
+    text-align: center;
 }
-.circulo_desliza{
-	height: 150px;
+
+.btn3_1 {
+    background: #7a3d78;
+    color: white;
+    font-size: 18px;
+}
+
+.circulo_desliza {
+    height: 150px;
     width: 150px;
     border-radius: 50%;
     background: #33435A;
 }
-.banner_dashed3{
-	height: 50px;
+
+.banner_dashed3 {
+    height: 50px;
     background: #d0d0d0;
     border: dashed #994c91;
     border-radius: 5px;
@@ -49,28 +54,34 @@
     padding-top: 10px;
 }
 
-.arriba{
-	background: #E2C4DF;
+.arriba {
+    background: #E2C4DF;
     height: 63px;
     border-radius: 10px;
     text-align: center;
     padding: 9px 1px 1px 1px;
 }
-.sub_2{
-	background: #65AFF0;
+
+.sub_2 {
+    background: #65AFF0;
     border-radius: 5px;
     padding: 5px;
 }
 
-.target_3-4{
-	background: white;
-	height: 180px;
-	border-radius: 0px 20px 20px 0px;
-	box-shadow: 2px 1px 14px -2px;
+.target_3-4 {
+    background: white;
+    height: 180px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 2px 1px 14px -2px;
 }
 
-.creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
-	background: #7a3d74;
+.creciente,
+.creciente2,
+.creciente3,
+.creciente4,
+.creciente5,
+.creciente6 {
+    background: #7a3d74;
     height: 180px;
     border-radius: 0px 20px 20px 0px;
     position: absolute;
@@ -80,90 +91,136 @@
     width: 20%;
 }
 
-.div_textonum, .div_textonum2, .div_textonum3, .div_textonum4, .div_textonum5, .div_textonum6{
-	width: 10%;
-	padding: 60px 1px 1px 1px;
-	text-align: center;
+.div_textonum,
+.div_textonum2,
+.div_textonum3,
+.div_textonum4,
+.div_textonum5,
+.div_textonum6 {
+    width: 10%;
+    padding: 60px 1px 1px 1px;
+    text-align: center;
 }
-.div_textonum p{
-	color: white;font-size: 30px;
+
+.div_textonum p {
+    color: white;
+    font-size: 30px;
 }
-.div_texto, .div_texto2, .div_texto3, .div_texto4, .div_texto5, .div_texto6{
-	width: 70%;
-	padding: 25px 1px 25px 0px;
-	visibility: hidden;
+
+.div_texto,
+.div_texto2,
+.div_texto3,
+.div_texto4,
+.div_texto5,
+.div_texto6 {
+    width: 70%;
+    padding: 25px 1px 25px 0px;
+    visibility: hidden;
 }
 
 @keyframes ascend {
-  from {
-    background: #7a3d74;
-    height: 180px;
-    border-radius: 0px 20px 20px 0px;
-    position: absolute;
-    top: 0px;
-    left: 21px;
-    z-index: 100;
-    width: 20%;
-
-    
-  }
-
-  to {
-  	background: #7a3d74;
-    height: 180px;
-    border-radius: 0px 20px 20px 0px;
-    position: absolute;
-    top: 0px;
-    left: 21px;
-    z-index: 100;
-    width: 90%;
-
-    
-  }
+    from {
+        background: #7a3d74;
+        height: 180px;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        top: 0px;
+        left: 21px;
+        z-index: 100;
+        width: 20%;
+    }
+    to {
+        background: #7a3d74;
+        height: 180px;
+        border-radius: 0px 20px 20px 0px;
+        position: absolute;
+        top: 0px;
+        left: 21px;
+        z-index: 100;
+        width: 90%;
+    }
 }
 
 @keyframes vis {
-  from {
-    visibility: hidden;
-  }
-
-  to {
-  	visibility: visible;
-  }
+    from {
+        visibility: hidden;
+    }
+    to {
+        visibility: visible;
+    }
 }
 
-
-.crece{
-	animation-duration: 2s;
-    animation-name:ascend;
-	animation-iteration-count: 1;
-	animation-delay: 0s;
-	animation-fill-mode: forwards;
+.crece {
+    animation-duration: 2s;
+    animation-name: ascend;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
 }
 
-.visibilidad{
-	animation-duration: 2s;
-    animation-name:vis;
-	animation-iteration-count: 1;
-	animation-delay: 1s;
-	animation-fill-mode: forwards;
+.visibilidad {
+    animation-duration: 2s;
+    animation-name: vis;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
-
-.hidden{
-	visibility: hidden!important;
+.hidden {
+    visibility: hidden!important;
 }
 
-.cardU3-3{
-	max-height: 200px!important;
-	height: 200px;
-	margin-bottom: 20px;
+.cardU3-3 {
+    max-height: 200px!important;
+    height: 200px;
+    margin-bottom: 20px;
 }
-.cardU3-3:hover{
-	background: #472b63!important;
-	min-height: 220px!important;
+
+.cardU3-3:hover {
+    background: #472b63!important;
+    min-height: 220px!important;
+    box-shadow: 1px 1px 10px 1px!important;
+    width: 111%!important;
 }
-.cardActiva{
-	background: #472b63!important;
-	min-height: 220px;
+
+.cardActiva {
+    background: #472b63!important;
+    min-height: 220px;
+}
+
+.bg-white2 {
+    padding: 20px;
+    height: 435px;
+    background-color: #fff !important;
+    width: auto;
+}
+
+.clr-dark {
+    border-radius: 10px;
+    background: var(--bg-color-dark)!important;
+    height: 60px;
+}
+
+.b-clr-3 {
+    background: #7b49ab;
+    height: 197px;
+}
+
+.b-clr-1 {
+    height: 125px;
+    background: #472b63;
+}
+
+.b-clr-claro {
+    border-radius: 25px;
+    height: 200px;
+    background: var(--bg-color-claro)!important;
+    padding: 30px;
+}
+
+.color-b-3 {
+    margin-left: 20px;
+    max-width: 190px;
+    background: #7b49ab;
+    height: 190px;
 }
