@@ -369,6 +369,7 @@ function init_recurso_1() {
             ahorcado.trazar();
             if (!ahorcado.vivo) {
                 $('#texto-modal').html('Incorrecto, <span class="intentalo">Inténtalo nuevamente</span>');
+                $("#img-circulo").attr("src","../../../assets/img/img_ova/mal.png");
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
                 ahorcado.reiniciar();
@@ -376,7 +377,8 @@ function init_recurso_1() {
         } else {
             ahorcado.dibujarTodo();
             if (this.gano()) {
-                $('#texto-modal').html('Felicitaciones, Su puntaje es 100%.');
+                $('#texto-modal').html('Su puntaje es <b> 100%.<b/><br> ¡Felicitaciones!');
+               
                 $('#modal-ahorcado').removeClass("intentar");
                 $('#modal-ahorcado').modal("show");
                 for (var b = 0; b < btn.length; b++) {

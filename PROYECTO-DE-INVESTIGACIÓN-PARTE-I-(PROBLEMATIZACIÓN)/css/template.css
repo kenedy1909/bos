@@ -810,10 +810,12 @@ card flip*/
 }
 
 .bannerclaro{
-  background: #F7E448;
+  background: #FFC000;
   border-radius: 20px;
-  min-height: 200px;
-  padding: 50px 50px 25px 70px;
+  min-height: 152px;
+  position: relative;
+  padding: 43px 154px 26px 115px;
+  top: 41px;
 }
 
 .card_activi{
@@ -928,12 +930,15 @@ card flip*/
   border-radius: 50%;
   text-align: center;
   position: relative;left: 50px;
+  z-index: 2;
 }
 .text_entre{
-  background: #f7e448;
-  height: 100px;
-  padding: 39px 20px 15px 55px;
+  background: #FFC000;
+  height: 65px;
+  padding: 20px 20px 15px 55px;
   border-radius: 15px;
+  position: relative;
+  top: 18px;
 }
 
 .card-inactiva-o{
