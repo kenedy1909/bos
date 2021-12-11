@@ -54,7 +54,7 @@ a:hover {
 body {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
-    color: #666;
+    color: white;
     height: 100%;
 }
 button.close{
@@ -191,39 +191,39 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #ffd200;
+    background: withe;
     border: none;
-    border-radius: 0;
-    color: #ad123c;
+    border-radius: 1;
+    color: #8B1C64;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
     padding: 6px 30px;
 }
 .btn-secundary:active, .btn-secundary:active:focus, .btn-secundary:focus, .btn-secundary:hover{
-    background: #49a5aa;
+    background: whitesmoke;
     border: none;
-    color: #fff;
+    color: #8B1C64;
     outline: 0;
 }
 .calificacion .modal-content{
-    background-color: transparent;
+    /* background-color: transparent; */
     border: none;
     box-shadow: none;
 }
 .calificacion .modal-body{
     background-size: cover;
-    height: 386px;
+    /* height: 386px; */
     width: 300px;
 }
-.calificacion .modal-body.exito{
+/* .calificacion .modal-body.exito{
     background: url('../../img/img1/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
     background: url('../../img/img1/mal.png') center no-repeat;
-}
+} */
 .calificacion .modal-body .mensaje{
-    background: #fff;
+   
     border-radius: 8px;
     font-size: 20px;
     line-height: normal;
@@ -231,7 +231,7 @@ html{
     padding: 5px;
     position: relative;
 }
-.calificacion .modal-body .mensaje:after{
+/* .calificacion .modal-body .mensaje:after{
     bottom: -30px;
     border-color: #fff transparent transparent;
     border-style: solid;
@@ -239,7 +239,7 @@ html{
     content: "";
     left: calc(50% - 15px);
     position: absolute;
-}
+} */
 .calificacion .modal-body .mensaje .texto-puntaje{
     display: block;
 }
@@ -248,10 +248,10 @@ html{
     font-weight: bold;
 }
 .calificacion .modal-body.exito .mensaje .puntaje{
-    color: #8eb936;
+    color: white;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #ad123c;
+    color: white;
 }
 @keyframes wobble {
     0% {
@@ -304,4 +304,74 @@ html{
 .calificacion .modal-footer {
     border: none;
     text-align: center;
+}
+
+.divcerrar {
+	position: relative;
+    top: -20px;
+    left: 94%;
+}
+
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 22px;
+    outline: 0;
+    /* background-color: transparent; */
+    border-color: rgba(0, 0, 21, 0.0);
+}
+.card-container, .front, .back {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    background: #E22C82;
+}
+.card-container {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card .user {
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -70px auto 0;
+    overflow: hidden;
+    width: 120px;
+    background: #999999;
+    border: 3px solid white;
+}
+.card .content {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .user img {
+    background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 90%;
+    position: relative;
+    
+    border: 5px solid yellow;
+}
+.card .cover {
+    height: 105px;
+    overflow: hidden;
+    border-radius: 22px 22px 0 0;
+    background: #8E1D66;
+}
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
 }
