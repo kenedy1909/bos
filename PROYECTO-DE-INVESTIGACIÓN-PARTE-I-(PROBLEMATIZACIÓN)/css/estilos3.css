@@ -155,7 +155,7 @@
 	width: 125px;
 }
 .linea-y{
-	background: #e82c88;
+	background: #8B1C64;
 	width: 1px;
 	height: 275px;
 	position: absolute;
@@ -164,11 +164,11 @@
 .linea-x{
 	height: 1px;
 	width: 60px;
-	background: #e82c88;
+	background: #8B1C64;
 	position: absolute;
 }
 .circulo_punto{
-	background: #e82c88;
+	background: #8B1C64;
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
@@ -218,12 +218,13 @@
 	z-index: 100;
 }
 .bannertitle{
-	border: solid 1px #e82c88;
+	border: solid 1px #8B1C64;
 	border-radius: 50px;
 	width: 25%;
 	position: relative;
 	left: -20px;
 	padding: 25px 20px 25px 25px;
+	text-align: center;
 }
 
 .titulo_border{
@@ -242,14 +243,25 @@
 }
 
 .banner_pregunta{
-	background: #e82c88;
+	/* background: #e82c88;
     border-radius: 0px 48px 48px 0px;
     width: 79%;
     padding: 15px 1px 15px 35px;
     color: white;
     position: relative;
     left: -29px;
+    margin-bottom: 25px; */
+
+	background: #e82c88;
+    border-radius: 0px 48px 48px 0px;
+    width: 192%;
+    padding: 4px 1px 4px 28px;
+    color: white;
+    position: relative;
+    left: -7px;
     margin-bottom: 25px;
+    top: 6px;
+    height: 54px;
 }
 
 .button_mas{
