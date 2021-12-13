@@ -26,9 +26,15 @@ function siguente(){
 		$("#atras").removeData('slide');*/
 	if (slide == 1) {
 		$("#siguente").data('slide', 2);
+		$("#btn-calificar").hide();
+		
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
 		$("#siguente").data('slide', 1);
+		$("#siguente").hide();
+		$("#btn-calificar").show();
+		$("#punto3").hide();
+		$("#punto4").show();
 		/*$("#atras").data('slide', 1);*/
 	}
 }

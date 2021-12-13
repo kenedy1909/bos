@@ -467,10 +467,10 @@ p, button{
 	background-color: #01414b;
 	min-height: 100px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 0.5s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 2.5s;
+	animation-delay: 0.2s;
 	animation-fill-mode: forwards;
 }
 .card_flecha2{
@@ -482,10 +482,10 @@ p, button{
 	background-color: #01414b;
 	min-height: 100px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 0.5s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 3s;
+	animation-delay: 0.3s;
 	animation-fill-mode: forwards;
 }
 .card_flecha3{
@@ -497,10 +497,10 @@ p, button{
 	background-color: #01414b;
 	min-height: 100px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 0.5s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 3.5s;
+	animation-delay: 0.6s;
 	animation-fill-mode: forwards;
 }
 .card_flecha4{
@@ -512,10 +512,10 @@ p, button{
 	background-color: #01414b;
 	min-height: 100px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 0.5s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 4s;
+	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
 
@@ -553,10 +553,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 2.5s;
+	animation-delay: 0.4s;
 	animation-fill-mode: forwards;
 
 }
@@ -569,10 +569,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 3s;
+	animation-delay: 0.6s;
 	animation-fill-mode: forwards;
 
 }
@@ -585,10 +585,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 3.5s;
+	animation-delay: 0.7s;
 	animation-fill-mode: forwards;
 
 }
@@ -601,10 +601,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 4s;
+	animation-delay: 1s;
 	animation-fill-mode: forwards;
 
 }
@@ -941,6 +941,11 @@ p, button{
 	transform: rotate(-90deg);
 }
 
+.w-h-35px{
+	width: 35px;
+	height: 35px;
+}
+
 .w-h-55px{
 	width: 55px;
 	height: 55px;
@@ -951,17 +956,26 @@ p, button{
 	height: 65px !important;
 }
 
+.w-h-75px-i{
+	width: 75px !important;
+	height: 75px !important;
+}
+
 
 .border-bottom-actividad{
 	border-bottom: solid 3px #005B8B;
 }
 
 .img-activi{
-	width: 116px;height: 116px;
+	width: 106px;height: 106px;
+}
+
+.img-activi1{
+	width: 60px;height: 60px; z-index: 2;
 }
 
 .text-img-actividad{
-	font-size: 20px;
+	font-size: 14px;
 	color: #005B8B;
 }
 
@@ -979,7 +993,7 @@ p, button{
   width: 50%;
   height: 86px;
   margin: 0px;
-  padding-top: 20px;
+  padding-top: 25px;
   text-align: center;
 }
 
@@ -1008,7 +1022,7 @@ p, button{
 .content-text-activi-4{
 	background: #FFC000;
 	border-radius: 20px;
-	padding: 30px;
+	padding: 10px;
 }
 
 .content-text-activi-2{
@@ -1147,9 +1161,8 @@ p, button{
   background: #8FAADC;
   border: none;
 }
-.contenido_decorado:hover{
-  height: 18em;
-  display: block;
+.hand {
+	cursor: hand;
 }
 
 .widih_card{
@@ -1166,6 +1179,18 @@ p, button{
 	height: 300px;
 }
 
+.h-200px{
+	height: 200px;
+}
+
+.h-250px{
+	height: 250px;
+}
+
+.w-200px{
+	width: 200px;
+}
+
 .h-189px{
 	height: 189px;
 }
@@ -1176,7 +1201,7 @@ p, button{
 .fondo-1{
 	background-image: url(../assets/img/img_ova/botones4.png);
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 200px;
 }
 
 .card_flecha{
@@ -1239,30 +1264,20 @@ card flip*/
   width: 100%;
   min-height: 300px;
   border-radius: 50px;
-  perspective: 1000px;
 }
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
 
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-}
+} */
 
-.flip-card-front, .flip-card-back {
+/* .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   min-height: 360px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
+} */
 
 .flip-card-front {
   background-color: #8FAADC;
@@ -1275,10 +1290,24 @@ card flip*/
   background: #DAE3F3;
   border-radius: 50px;
   color: white;
-  transform: rotateY(180deg);
   padding: 40px 40px 40px 40px;
 }
 
 .p-15px{
 	padding: 15px;
+}
+
+.img-100px{
+	width: 100px;
+}
+
+.img-60px{
+	width: 60px;
+}
+.img-70px{
+	width: 70px;
+}
+
+.img-50px{
+	width: 50px;
 }

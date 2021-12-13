@@ -236,4 +236,8 @@ function calificar(){
 	  $('.puntaje').text(Math.round(puntaje)+"%");
 	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
 	}
-}
+} 
+
+function reiniciar(){
+	location.reload();
+  }

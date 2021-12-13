@@ -33,9 +33,13 @@ window.onload = function () {
   // Every answer is added with an 'onclick'-function
   if (curr == 0) {
     $('.cantidad').html('1/4');
+    
+    
   }
   if (curr == 3) {
+    console.log("ultima");
     $('.cantidad').html('4/4');
+    $('#calActi4').show();
   }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];

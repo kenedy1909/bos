@@ -93,14 +93,16 @@ function inicioRecurso() {
       }
       var total = 28;
       var puntaje = ((points * 100)/total).toFixed(0);
-      var modalID = "#calificacionModal";
+    //   var modalID = "#calificacionModal";
       var exito = false;
-      var mensaje = "Inténtalo nuevamente.";
+    //   var mensaje = "Inténtalo nuevamente.";
       if (puntaje == 100) {
           exito = true;
-          mensaje = "¡Felicitaciones!"
+        //   mensaje = "¡Felicitaciones!"
       }
       registrarActividad(puntaje);
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
       });
+
+      
   }

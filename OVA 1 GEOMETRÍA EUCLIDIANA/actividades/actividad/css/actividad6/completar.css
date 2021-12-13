@@ -214,7 +214,7 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 110px;
+    height: 80px;
 }
 
 .seleccionable{
@@ -497,7 +497,7 @@ label {
 .content-tarjeta{
   background: #FFC000;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .max-w-30px{

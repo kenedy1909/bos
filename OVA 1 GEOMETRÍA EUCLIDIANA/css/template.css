@@ -1,6 +1,10 @@
 .icons-menu{
   width: 65px;
 }
+
+.icons-menu60px{
+  width: 60px;
+}
 iframe{
     width: 100%;
     overflow: hidden; 
@@ -235,17 +239,17 @@ iframe{
 .card .user{
   border-radius: 50%;
   display: block;
-  height: 150px;
+  height: 120px;
   margin: -70px auto 0;
   overflow: hidden;
-  width: 150px;
+  width: 120px;
   background: white;
 }
 .card .user img{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 60%;
+  max-width: 70%;
   position: relative;
   top: 25px;
 }
@@ -254,7 +258,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 80%;
   position: relative;
   top: 25px;
 }
@@ -343,7 +347,7 @@ iframe{
 }
 
 .img-circle {
-    /border-radius: 50%;/
+  border-radius: 50%;
 }
 
 
@@ -360,8 +364,8 @@ iframe{
   border-radius: 50%;
   margin: 1px;
   padding: 0%;
-  width: 97%;
-  height: 142px;
+  width: 95%;
+  height: 112px;
   position: relative;
   top: -2px;
   left: 2px;
@@ -667,6 +671,10 @@ svg circle:nth-child(2){
   width:100% ;
 }
 
+.img-120{
+  width:120% ;
+}
+
 .radius-1{
   border-radius: 0.5rem;
 }
@@ -710,4 +718,32 @@ svg circle:nth-child(2){
 
 .bg-pantalla{
   background: #EAEAEA;
+}
+
+.text-10px {
+  font-size: 10px;
+}
+
+.text-11px {
+  font-size: 11px;
+}
+
+.text-12px {
+  font-size: 12px;
+}
+
+.text-14px {
+  font-size: 14px;
+}
+
+.text-15px {
+  font-size: 15px;
+}
+
+.text-16px {
+  font-size: 16px;
+}
+
+.pt-150px {
+  padding-top: 150px;
 }

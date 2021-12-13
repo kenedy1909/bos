@@ -1,6 +1,6 @@
 #recurso2 {
 	text-align: center;
-	font-size: 22px;
+	font-size: 15px;
 	max-width: 1000px;
 	width: 100%;
 	overflow: initial;
@@ -18,7 +18,7 @@
 	border: none;
 	border-radius: 0;
 	font-family: 'Barmeno', sans-serif;
-	font-size: 21px;
+	font-size: 15px;
 	padding: 6px 20px;
 }
 
@@ -32,7 +32,7 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	color: #65b2b6;
-	font-size: 25px;
+	font-size: 18px;
 }
 
 .letra {
@@ -53,7 +53,7 @@
 	max-width: 450px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
 	#container_abecedario {
 		width: 100%;
 	}
@@ -104,7 +104,7 @@
 	margin: 20px auto 10px;
 }
 
-@media (max-width: 767px)
+@media (max-width: 700px)
 {
 	#container_palabra {
 		display: block;
@@ -134,7 +134,7 @@
 
 .pista_titulo {
 	font-family: 'Barmeno', sans-serif;
-	font-size: 32px;
+	font-size: 22px;
 	color: #ad123c;
 	font-weight: 600;
 	margin-top: 10px;
@@ -143,12 +143,12 @@
 #pista_palabra {
 	padding-bottom: 10px;
 	color: #333;
-	font-size: 24px;
+	font-size: 18px;
 	line-height: 1.3;
 }
 
 .linea {
-	font-size: 35px;
+	font-size: 30px;
 	color: #49a5aa;
 	display: inline-block;
 	margin-left: 4px;
@@ -167,7 +167,7 @@
 	color: #f57921;
 	position: relative;
 	display: inline-block;
-	font-size: 35px;
+	font-size: 20px;
 	width: 0;
 	left: 10px;
 	padding-bottom: 5px;
@@ -179,7 +179,7 @@
 	}
 
 	.letra-palabra {
-		font-size: 22px;
+		font-size: 18px;
 		left: 5px;
 	}
 }
@@ -187,7 +187,7 @@
 #modal-ahorcado {
 	text-align: center;
 	color: #fff;
-	font-size: 28px;
+	font-size: 20px;
 	box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -229,7 +229,7 @@
 }
 
 #texto-modal {
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.3;
 }
 
@@ -239,14 +239,14 @@
     margin-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
 	#texto-modal {
-		font-size: 24px;
+		font-size: 18px;
 		line-height: 1.3;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
 	.espacio::before {
 		content: '\A';
 		white-space: pre;
@@ -258,17 +258,17 @@
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 
 .content-text-img-activi{
   border-bottom: solid 3px #005B8B;
-  height: 86px;
+  height: 66px;
   margin: 0px;
   padding-top: 45px;
   text-align: center;
@@ -277,7 +277,7 @@
 .content-text-img-activi-2{
   border-bottom: solid 3px #005B8B;
   width: 50%;
-  height: 86px;
+  height: 66px;
   margin: 0px;
   padding-top: 20px;
   text-align: center;
@@ -286,7 +286,7 @@
 .content-tarjeta{
   background: #FFC000;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .max-w-30px{
@@ -296,13 +296,13 @@
 .content-text-activi{
     background: #DAE3F3;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .content-text-activi-2{
     border: solid 2px #79CAF3;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .d-flex{

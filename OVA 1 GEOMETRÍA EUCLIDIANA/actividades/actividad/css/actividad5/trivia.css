@@ -14,7 +14,7 @@ body, html {
 }
 
 #quiz {
-  margin-top: 20px; 
+  margin-top: 15px; 
   background-color: #D3DCEB;
   /*height: 324px;*/
   padding-bottom: 60px;
@@ -28,11 +28,11 @@ body, html {
 #quiz > h1 {
   text-align: center;
   padding-top: 25px;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .questions {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 700;
   font-style: italic;
   border-top: 1px solid #FFFFFF;
@@ -42,7 +42,7 @@ body, html {
 
 .answers div {
   padding: 10px 0 0 0;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .answers div:hover {
@@ -130,7 +130,7 @@ body, html {
   background: #9b59b6;
   color: white;
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .border-bottom-actividad{
@@ -138,11 +138,11 @@ body, html {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 

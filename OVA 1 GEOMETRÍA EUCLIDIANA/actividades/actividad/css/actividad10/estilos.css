@@ -2,9 +2,9 @@
     max-width: 1200px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     .backdrop header h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
 }
 
@@ -18,12 +18,12 @@
 
 table {
     color: #fff;
-    font-size: 22px;
+    font-size: 14px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     table {
-        font-size: 18px;
+        font-size: 12px;
     }
 }
 
@@ -40,8 +40,8 @@ table {
     left: 45%;
     right: 50%;
     margin: auto;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     display: none;
     opacity: 0;
 }
@@ -84,7 +84,7 @@ table .fa-circle {
 
 table.tabla-actividad2 td,
 .table td {
-    padding: 2px;
+    padding: 1px;
     vertical-align: middle;
     border-top: 1px solid #ddd;
 }
@@ -131,20 +131,20 @@ span.checked svg.svg2 {
     justify-content: center;*/
     /*padding: 20px 50px 100px;
     border-radius: 10px;*/
-    background-size: 90px, 920px;
+    background-size: 10px, 50px;
     background-position: bottom center;
     background-repeat: no-repeat, repeat-x;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background-color: #0075a8;
     animation: fondo 10s linear infinite;
     overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
 
     .fondoContenido {
-        padding: 20px 20px 100px;
-        margin-bottom: 30px;
+        padding: 20px 20px 14px;
+        margin-bottom: 10px;
     }
 }
 
@@ -154,6 +154,13 @@ span.checked svg.svg2 {
     border-radius: 20px;
     padding: 20px;
 }
+
+.content-tarjeta1{
+    background: #FFC000;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+  }
 
 .d-flex{
     display: flex;
@@ -175,7 +182,7 @@ span.checked svg.svg2 {
 .border_punteado{
     border: dashed #FFFFFF 5px;
     border-radius: 85px;
-    padding: 1em;
+    padding: 0.6em;
 }
 
 .shadow{
@@ -183,7 +190,7 @@ span.checked svg.svg2 {
 }
 
 .w-137px{
-    width: 87px;
+    width: 20px;
 }
 
 .p_black{
@@ -239,7 +246,7 @@ span.checked svg.svg2 {
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 
@@ -280,4 +287,13 @@ span.checked svg.svg2 {
     border: solid 2px #79CAF3;
     border-radius: 20px;
     padding: 30px;
+}
+
+.triangulo_der3 {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #003442;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
 }

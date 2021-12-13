@@ -138,11 +138,11 @@ body, html {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 
@@ -166,7 +166,7 @@ body, html {
 .content-tarjeta{
   background: #FFC000;
   border-radius: 20px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .max-w-30px{
@@ -176,13 +176,13 @@ body, html {
 .content-text-activi{
     background: #DAE3F3;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .content-text-activi-2{
     border: solid 2px #79CAF3;
     border-radius: 20px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .d-flex{

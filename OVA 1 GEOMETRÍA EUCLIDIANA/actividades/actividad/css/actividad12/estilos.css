@@ -2,7 +2,7 @@
     max-width: 1200px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     .backdrop header h1 {
         font-size: 40px;
     }
@@ -11,19 +11,19 @@
 .qwsa-form label {
     display: block;
     width: 100%;
-    text-align: center;
+    text-align: center; 
     height: 100%;
     cursor: pointer
 }
 
 table {
     color: #fff;
-    font-size: 22px;
+    font-size: 15px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     table {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -40,8 +40,8 @@ table {
     left: 45%;
     right: 50%;
     margin: auto;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     display: none;
     opacity: 0;
 }
@@ -126,7 +126,7 @@ span.checked svg.svg2 {
     /* background-image: url(../img/carro.png), url(../img/fondo5.png); */
     padding: 25px;
     border-radius: 85px;
-    background-size: 90px, 920px;
+    background-size: 90px, 92px;
     /*padding: 20px 50px 100px;
     border-radius: 10px;*/
     background-position: bottom center;
@@ -137,11 +137,11 @@ span.checked svg.svg2 {
     overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
 
     .fondoContenido {
-        padding: 20px 20px 100px;
-        margin-bottom: 30px;
+        padding: 20px 20px 14px;
+        margin-bottom: 10px;
     }
 }
 
@@ -183,11 +183,11 @@ span.checked svg.svg2 {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 

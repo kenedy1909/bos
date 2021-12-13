@@ -17,7 +17,11 @@
     <div class="backdrop in">
         <div class="fondo">
             <header>
-                <div class="row">
+
+
+
+
+                <div class="row px-3">
                     <div class="col-md-5">
                         <div class="d-flex">
                           <img src="../img/img1/actividad_general.png" alt="" style="width: 116px; height: 116px;">
@@ -25,18 +29,19 @@
                               <div class="content-text-img-activi">
                                 <b class="text-img-actividad">ACTIVIDAD # 1</b>
                               </div>
-                              <p class="text-center">FALSO/VERDADERO</p>
+                              <p class="text-center" style="font-size: small;">FALSO/VERDADERO</p> 
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <p class="info_actividad shadow">
+                    <div class="shadow content-tarjeta1" style="float: right; margin-top: -15%;">
+                        <p  style="font-size: small;">
                             Escribe F para falso o V para  verdadero, según corresponda, al finalizar pulse la opción "<b>Calificar</b>" para conocer su puntuación.
                         </p>
                     </div>
-                    <div class="col-md-12">
-                        <p class="p_black">Compare las tablas de valores de verdad de las proposiciones anteriores (con verdadero y falso), haciendo la tabla con 4 posibles combinaciones de valores de verdad y responda la pregunta final.</p>
-                    </div>
+                    
+                </div>
+                <div>
+                    <p class="p_black mt-4" style="font-size: small;">Compare las tablas de valores de verdad de las proposiciones anteriores (con verdadero y falso), haciendo la tabla con 4 posibles combinaciones de valores de verdad y responda la pregunta final.</p>
                 </div>
                 
                 <!-- <h1>Reducción y aprovechamiento de empaques y envases</h1> -->
@@ -44,29 +49,41 @@
             </header>
             <div class="contenido">
                 
-                <!-- <div id="cuestionario-actividad2"></div> -->
-                    <div class="fondoContenido">
-                      <div class="border_punteado">
-                        <table class="table tabla-actividad2 ">
-                            <thead>
-                                <tr class="text-white">
-                                    <th class="title_table">p</th>
-                                    <th class="title_table">q</th>
-                                    <th class="title_table">~ q</th>
-                                    <th class="title_table">~ p</th>
-                                    <th class="title_table">p → q</th>
-                                    <th class="title_table">~ q →~ p</th>
-                                    <th class="title_table">q → p</th>
-                                </tr>
-                            </thead>
-                            <tbody id="body_opciones">
-                            </tbody>
-                        </table>
+                <div class="row">
+                    <div class="col-md-1">
+                        <p class="m-auto" style="color: #FFC000; font-size: 40px;"><b>2</b></p>
+                    </div>
+
+                     <!-- <div id="cuestionario-actividad2"></div> -->
+                     <div class="col-md-5 fondoContenido">
+                        <div class="border_punteado">
+                          <table class="table tabla-actividad2 ">
+                              <thead>
+                                  <tr class="text-white">
+                                      <th class="title_table">p</th>
+                                      <th class="title_table">q</th>
+                                      <th class="title_table">~ q</th>
+                                      <th class="title_table">~ p</th>
+                                      <th class="title_table">p → q</th>
+                                      <th class="title_table">~ q →~ p</th>
+                                      <th class="title_table">q → p</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="body_opciones">
+                              </tbody>
+                          </table>
+                        </div>
                       </div>
+
+                      <div class="m-auto px-3 col-md-2" style="float: right;">
+                        <div class="triangulo_der3" onclick="tabla()"></div>
                     </div>
-                    <div class="text-center">
+                </div>
+
+               
+                    <!-- <div class="text-center">
                         <button class="btn btn-primary enviar_tabla" onclick="tabla()" >Calificar</button>
-                    </div>
+                    </div> -->
             </div>
         </div>
 

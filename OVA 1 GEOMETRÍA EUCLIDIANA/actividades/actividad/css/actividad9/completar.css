@@ -14,7 +14,7 @@ body, button {
 	line-height: 1.5;
 }
 body {
-	
+
 	background-position: 50% 0;
 	background-size: 1.5em 1.5em;
 }
@@ -23,7 +23,7 @@ form, .select__button, .select__options {
 }
 form {
 	margin: auto;
-	
+
 }
 label {
 	display: block;
@@ -214,7 +214,7 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 110px;
+    height: 100px;
 }
 
 .seleccionable{
@@ -234,7 +234,7 @@ label {
 }
 
 .principal{
-  height: 400px;
+  height: 390px;
   border-radius: 40px;
   background: #006092;
 }
@@ -310,7 +310,7 @@ label {
     padding-right: 1px;
 }
 .linea_blue{
-    height: 5px; 
+    height: 5px;
     background: #004c6d;
 }
 
@@ -324,7 +324,7 @@ label {
 .slider ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;    
+    padding: 0;
 }
 
 .slider ul li  {
@@ -349,7 +349,7 @@ label {
     text-align: center;
     color: #fff;
 }
-/* buttons */
+/* buttons
 .slider .buttons  {
     display: inline-block;
     width: 10%;
@@ -357,25 +357,25 @@ label {
     margin-top: 20%;
 }
 .slider .buttons .next {
-    
+
     /*right: 0;
     position: absolute;*/
-    cursor: pointer;
+    /* cursor: pointer;
     width: 0px;
     height: 0px;
     border-left: 35px solid #003442;
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     margin-left: 15px
-}    
+}
 .slider .buttons .prev {
-    font-size: 2rem;
+    font-size: 2rem; */
     /*left: 0;
     position: absolute;*/
-    cursor: pointer;
+    /* cursor: pointer;
     width: 50px;
-    text-align: center;
-}   
+    text-align: center; */
+}
 /*.slider .buttons .next:hover {
     background: hsl(0, 0%, 25%);
 }
@@ -385,15 +385,15 @@ label {
 }*/
 
 /* slider animation */
-.slider ul li {
+/* .slider ul li {
     animation-name: fade;
     animation-duration: 2.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .2} 
+} */ */
+
+/* @keyframes fade {
+    from {opacity: .2}
     to {opacity: 1}
-}
+} */
 
 .size_15{
     font-size: 15px;
