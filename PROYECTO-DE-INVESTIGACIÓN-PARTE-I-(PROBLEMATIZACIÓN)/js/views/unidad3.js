@@ -2,6 +2,11 @@ $( document ).ready(function() {
     tema = 1;
     console.log(tema);
     /**/
+
+    
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
