@@ -56,6 +56,7 @@ $(function () {
 })
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
+    console.log(stepIndex);
     controlSlides(stepIndex+0);
 }
 
@@ -76,6 +77,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
             dragging = "";
             diff = "";
@@ -93,11 +95,13 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 2:
+            esconderPersonaje();
             scroll_p11();
             $('.pasos').removeClass('efectos');
             setMigaja("Unidades de aprendizaje","Contextualización", ">");          
             break;
         case 3:
+            esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             var pdf = `<div class="col-md-12">
@@ -108,10 +112,12 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 4:
+            esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             break;
         case 5:
+            esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             dragging = "";
             diff = "";
@@ -123,10 +129,11 @@ function controlSlides(num){
             scroll();
             break;
         case 6:
+           mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             tema = 1;
             break;
-        
+      
         default:
             break;
     }
@@ -782,4 +789,14 @@ function toggleBanner(num) {
       break;
   }
   
-} 
+}
+
+function mostrarPersonaje() {
+  $('.ov-personaje').removeClass('esc');
+  
+}
+
+function esconderPersonaje() {
+  $('.ov-personaje').addClass('esc');
+  
+}

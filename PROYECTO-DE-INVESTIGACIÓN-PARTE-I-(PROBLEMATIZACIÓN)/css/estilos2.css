@@ -73,26 +73,28 @@
 .carta_morada1{
   background: #8B1C64;
   color: white;
-  width: 75%;
+  width: 82%;
   height: 80px;
   padding: 10px 10px 10px 50px;
   position: relative;left: -40px;
   z-index: 1;
+  border-radius: 0px 17px 0px 0px;
 }
 .carta_morada2{
   background: #8B1C64;
   color: white;
-  width: 75%;
+  width: 82%;
   height: 80px;
   padding: 10px 10px 10px 5px;
   position: relative;
   left: 37px;
   z-index: 1;
+  border-radius: 17px 0px 0px 0px;
 }
 
 
 #prueba{
-    width: 75%;
+    width: 82%;
     min-height: 133px;
     background-color: #eaeaea;
     position: relative;
@@ -104,7 +106,7 @@
     padding: 50px 12px 25px 12px;
 }
 #prueba2{
-    width: 75%;
+    width: 82%;
     min-height: 133px;
     background-color: #eaeaea;
     position: relative;

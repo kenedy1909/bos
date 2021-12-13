@@ -274,6 +274,14 @@ function esconder(num) {
             
                 
             break;
+        case 3:
+            $('.contenido').addClass('esc');
+            $('.contenido1').removeClass('esc');
+            $('.contenido2').removeClass('esc');
+            $('.ov-personaje').addClass('esc');
+                
+                    
+                break;
     
         default:
             break;
