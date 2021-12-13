@@ -746,3 +746,40 @@ function pant13(num){
     }
 }
 
+function toggleBanner(num) {
+  let contador=1;
+  contador= contador++;
+  console.log('clik'+ contador);
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-3').addClass('esc');
+        $('.banner2U1-3').removeClass('esc');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-3').addClass('esc');
+        $('.banner1U1-3').removeClass('esc'); 
+        $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-3').addClass('esc');
+        $('.banner4U1-3').removeClass('esc');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-3').addClass('esc');
+        $('.banner1U1-3').removeClass('esc'); 
+        $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+  
+    default:
+      break;
+  }
+  
+} 
