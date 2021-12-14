@@ -95,7 +95,10 @@ function controlSlides3(num){
 }
 
 function pant3_1() {
-  var contenido = `<div class="row">
+  var contenido = `<div><p style="color:#AD6287; text-align:center; font-size:17px;"><em>(Pase el cursor por cada botón para visualizar la información) </em></p></div>
+  
+                         <div class="row">
+                          
                           <div class="col-md-4 p-3 cursor">
                             <div class="flip-card" style="">
                               <div class="flip-card-inner" style="border-radius: 50px;">
@@ -113,8 +116,9 @@ function pant3_1() {
                                   </div>
                                 </div>
                                 <div class="flip-card-back">
-                                  <p class="font_15 justificado">Usted debe traer a colación argumentos que lleven a mostrar la importancia social de esa investigación. Debe convencer al posible lector que esta investigación es fundamental para el mundo social en que se desenvuelve, que si ello se realiza son muchas las ganancias sociales, al punto que es posible que la sociedad sea otra y que cambie de manera positiva</p>
-                                  
+                                  <div style="border: dashed; padding:10px; border-radius:30px" >
+                                    <p class="font_15 justificado">Usted debe traer a colación argumentos que lleven a mostrar la importancia social de esa investigación. Debe convencer al posible lector que esta investigación es fundamental para el mundo social en que se desenvuelve, que si ello se realiza son muchas las ganancias sociales, al punto que es posible que la sociedad sea otra y que cambie de manera positiva</p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -136,8 +140,9 @@ function pant3_1() {
                                   </div>
                                 </div>
                                 <div class="flip-card-back2">
-                                  <p class="font_15 justificado">Argumentos que muestren la importancia para la disciplina jurídica, es decir, se debe mostrar, que para una ciencia como el derecho esa investigación ofrece múltiples posibilidades, que puede solucionar muchos problemas jurídicos y que la disciplina se enriquecería teórica o prácticamente si se lleva a cabo.</p>
-                                  
+                                  <div style="border: dashed; padding:10px; border-radius:30px">
+                                    <p class="font_15 justificado">Argumentos que muestren la importancia para la disciplina jurídica, es decir, se debe mostrar, que para una ciencia como el derecho esa investigación ofrece múltiples posibilidades, que puede solucionar muchos problemas jurídicos y que la disciplina se enriquecería teórica o prácticamente si se lleva a cabo.</p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -154,13 +159,14 @@ function pant3_1() {
                                   
                                   <div class="d-flex justify-content-center">
                                     <div class="textocadrds3" style="">
-                                      <div>Argumento<br>jurídico</div>
+                                      <div>Argumento<br>personal</div>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="flip-card-back3">
-                                  <p class="font_15 justificado">Argumentos que muestren qué le ofrecería esta investigación al equipo investigador: es decir, en qué los enriquecería a ellos, cómo el equipo puede crecer y en qué sentidos, si se lleva a cabo. Es arriesgarse a involucrarse, a sentir que lo hecho transforma la propia vida y que la investigación es una forma de vida. </p>
-                                  
+                                  <div style="border: dashed; padding:10px; border-radius:30px">
+                                    <p class="font_15 justificado">Argumentos que muestren qué le ofrecería esta investigación al equipo investigador: es decir, en qué los enriquecería a ellos, cómo el equipo puede crecer y en qué sentidos, si se lleva a cabo. Es arriesgarse a involucrarse, a sentir que lo hecho transforma la propia vida y que la investigación es una forma de vida. </p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
