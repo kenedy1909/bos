@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+
+    //iniciar y esconder personaje
+    $( ".ov-personaje").hide();
+    //para menu izquierda
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
     
     console.log(tema);
     
@@ -54,7 +60,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/La creación de la modernidad.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png">La creación de la modernidad.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 2/La creación de la modernidad.pdf" target="_blank"> <img class="menu_superior w-40px mr-2" src="assets/img/img_template/pdf.png">La creación de la modernidad.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -419,16 +425,16 @@ function rec() {
     if (rec_num == 1) {
         $("#rec").html(
                 `<div class="col-md-12">
-                  <div class="col-md-12 row imprime">
-                    <div class="col-md-5">
-                      <p class="justificado">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
-                    </div>
-                    <div class="col-md-7">
-                       <p class="text-center p_black">clic a la imagen</p>
-                      <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
-                    </div>
+                <div class="col-md-12 row imprime">
+                  <div class="col-md-4">
+                    <p class="justificado text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+                  </div>
+                  <div class="col-md-8">
+                     <p class="text-center p_black">clic a la imagen</p>
+                    <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
                   </div>
                 </div>
+              </div>
                 
                 <div class="col-md-12 d-flex justify-content-center">
                   <div class="circulo_verde activo uno cursor" style="" onclick="circlerec(1);"></div>
@@ -444,19 +450,6 @@ function rec() {
                     <div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-5">
 
                       <ul class="img-100">
-                        <li>
-                          <div class="row" data-toggle="modal" data-target="#modal-img-3">
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 80%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 80%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 80%;">
-                            </div>
-                          </div>
-                        </li>
                         <li>
                           <div class="row" data-toggle="modal" data-target="#modal-img-4">
                             <div class="col-md-12">
@@ -483,6 +476,19 @@ function rec() {
                             </div>
                           </div>
                         </li>
+                        <li>
+                          <div class="row" data-toggle="modal" data-target="#modal-img-3">
+                            <div class="col-md-12">
+                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 80%;">
+                            </div>
+                            <div class="col-md-12">
+                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 80%;">
+                            </div>
+                            <div class="col-md-12">
+                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 80%;">
+                            </div>
+                          </div>
+                        </li>
                       </ul>  
                       
                     </div>
@@ -500,10 +506,10 @@ function rec() {
 
                   <ul>
                     <li>
-                      <p class="justificado">El hombre se emancipa de la autoridad religiosa y ahora presenta un anhelo por hacer de la razón su fundamento para explorar y conocer la vida, en un sentimiento de libertad, comprende que a través de su razón puede aprender y actuar sin una coacción externa. En la Revista de Artes y Humanidades UNICA, Ávila (2010) menciona que “La idea de modernidad sustituye, en el centro de la sociedad, a Dios por la ciencia y deja las creencias religiosas para el seno de la vida privada” (p. 168). Lo anterior comprendiendo que la religión ejercía dominio sobre el pensamiento, lo que incluso genera dificultad en este nuevo actuar independiente del hombre, llegando al punto de considerarse el razonamiento como herejía (Revuelta, 1990); no obstante, se avanza en una pretensión de descubrir.</p>
+                      <p class="justificado text-14px">El hombre se emancipa de la autoridad religiosa y ahora presenta un anhelo por hacer de la razón su fundamento para explorar y conocer la vida, en un sentimiento de libertad, comprende que a través de su razón puede aprender y actuar sin una coacción externa. En la Revista de Artes y Humanidades UNICA, Ávila (2010) menciona que “La idea de modernidad sustituye, en el centro de la sociedad, a Dios por la ciencia y deja las creencias religiosas para el seno de la vida privada” (p. 168). Lo anterior comprendiendo que la religión ejercía dominio sobre el pensamiento, lo que incluso genera dificultad en este nuevo actuar independiente del hombre, llegando al punto de considerarse el razonamiento como herejía (Revuelta, 1990); no obstante, se avanza en una pretensión de descubrir.</p>
                     </li>
                     <li>
-                      <p class="justificado">El culto a la racionalidad deriva en una racionalización de la vida colectiva y personal; surge así la regulación y el control como un proceso subyacente a todas las esferas. La tecnificación de los procesos productivos se extiende hacia la tecnificación de todas las acciones personales; la planificación, la burocracia y la deshumanización de los procesos surgen como resultado del culto a la eficiencia.</p>
+                      <p class="justificado text-14px">El culto a la racionalidad deriva en una racionalización de la vida colectiva y personal; surge así la regulación y el control como un proceso subyacente a todas las esferas. La tecnificación de los procesos productivos se extiende hacia la tecnificación de todas las acciones personales; la planificación, la burocracia y la deshumanización de los procesos surgen como resultado del culto a la eficiencia.</p>
                     </li>
                     
                   </ul>
@@ -517,12 +523,12 @@ function rec() {
         slideHeight = $('#slider ul li').height();
         slider2();
     }else if (rec_num == 5) {
-        $("#rec").html('<p class="justificado p-4">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
+        $("#rec").html('<p class="justificado p-4 text-14px">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
     }else if (rec_num == 6) {
         $("#rec").html(
             `<div class="col-md-12 row">
               <div class="col-md-5">
-                <p>6.   Naturalización de la vida social tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
+                <p class="text-12px">6.   Naturalización de la vida social tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
               </div>
               <div class="col-md-7">
               <p class="text-center p_black">clic a la imagen</p>
@@ -537,20 +543,21 @@ function circlerec(num){
     switch(parseInt(num)){
         case 1:
             var cont = `
-            <div class="col-md-5">
-              <p class="justificado">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
-            </div>
-            <div class="col-md-7">
-               <p class="text-center p_black">clic a la imagen</p>
-              <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
-            </div>`;
+            <div class="col-md-4">
+                                             <p class="justificado text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+                                           </div>
+                                           <div class="col-md-8">
+                                              <p class="text-center p_black">clic a la imagen</p>
+                                             <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
+                                           </div>`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
             $('.uno').addClass('active');
             break;
         case 2:
             var cont = `
-            <img src="assets/img/img_ova/comentario3.png" style="max-width: 100%;">`;
+            <p class="text-center p_black">clic a la imagen</p>
+            <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-7" style="max-width: 100%;">`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
             $('.dos').addClass('active');

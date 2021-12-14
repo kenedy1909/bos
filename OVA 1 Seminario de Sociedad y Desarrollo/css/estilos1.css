@@ -29,6 +29,9 @@
 	background: #B7CBD9;
 }
 
+.coloryellow {
+	color: var(--bg-color);
+}
 .card1{
 	padding: 0px;
 	border-radius: 45px;
@@ -467,10 +470,10 @@ p, button{
 	background-color: #a9d18e;
 	min-height: 300px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 1s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 2.5s;
+	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
 .card_flecha2{
@@ -482,10 +485,10 @@ p, button{
 	background-color: #a9d18e;
 	min-height: 300px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 1s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 	animation-fill-mode: forwards;
 }
 .card_flecha3{
@@ -497,10 +500,10 @@ p, button{
 	background-color: #a9d18e;
 	min-height: 300px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 1s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 3.5s;
+	animation-delay: 1.7s;
 	animation-fill-mode: forwards;
 }
 .card_flecha4{
@@ -512,10 +515,10 @@ p, button{
 	background-color: #a9d18e;
 	min-height: 300px;
 	visibility: hidden;
-	animation-duration: 2s;
+	animation-duration: 1s;
     animation-name:catanimation;
 	animation-iteration-count: 1;
-	animation-delay: 4s;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
 }
 
@@ -553,10 +556,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 2.5s;
+	animation-delay: 1s;
 	animation-fill-mode: forwards;
 
 }
@@ -569,10 +572,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 3s;
+	animation-delay: 2s;
 	animation-fill-mode: forwards;
 
 }
@@ -585,10 +588,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 3.5s;
+	animation-delay: 2.5s;
 	animation-fill-mode: forwards;
 
 }
@@ -601,10 +604,10 @@ p, button{
 	border-top: 30px solid #01414b;
 	
     visibility: hidden;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name:aparecertriangulo;
 	animation-iteration-count: 1;
-	animation-delay: 4s;
+	animation-delay: 3s;
 	animation-fill-mode: forwards;
 
 }
@@ -800,7 +803,7 @@ a.control_prev, a.control_next {
   height: auto;
   text-decoration: none;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   opacity: 0.8;
   cursor: pointer;
 }

@@ -2,6 +2,11 @@ $( document ).ready(function() {
     /*slide_predeterminado();*/
     // console.log(tema);
     
+    //iniciar y esconder personaje
+    $( ".ov-personaje").hide();
+    //para menu izquierda
+    $(".menu1").removeClass('d-none');
+    
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -57,7 +62,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px pr-2" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -405,9 +410,9 @@ function circles() {
     $(".circle-verde-"+circle_num).removeClass('bg-circle-v-c');
     $(".circle-verde-"+circle_num).addClass('bg-circle-v-o');
     if (circle_num == 1) {
-        $("#info-circle").html('<p style="padding: 20px; background-color: #f6ba0a; margin-top: 50px;" class="justificado p_black">El pensamiento grecolatino reviste un interés filosófico para áreas de lo más diverso. Aristóteles, por ejemplo, ofrece a los especialistas en las sociedades modernas una serie de recursos muy ricos para reflexionar acerca de la vulnerabilidad y la prosperidad humanas, asuntos a los que los poetas trágicos prestaron mucha atención. Gracias a él aprendemos que los bienes humanos son plurales y no individuales, al tiempo que nos dota de argumentos para criticar el actual pensamiento utilitario.</p>');
+        $("#info-circle").html('<p style="padding: 12px; background-color: #f6ba0a; height: 180px;" class="justificado p_black mt-1 text-14px">El pensamiento grecolatino reviste un interés filosófico para áreas de lo más diverso. Aristóteles, por ejemplo, ofrece a los especialistas en las sociedades modernas una serie de recursos muy ricos para reflexionar acerca de la vulnerabilidad y la prosperidad humanas, asuntos a los que los poetas trágicos prestaron mucha atención. Gracias a él aprendemos que los bienes humanos son plurales y no individuales, al tiempo que nos dota de argumentos para criticar el actual pensamiento utilitario.</p>');
     }else if (circle_num == 2) {
-        $("#info-circle").html('<p style="padding: 20px; background-color: #f6ba0a; margin-top: 50px;" class="justificado p_black">Algunos distinguidos textos clásicos plantean desafíos a nuestros modelos actuales de pensamiento y suelen ser mejores y más ricos que los últimos artículos periodísticos, que, en su mayoría serán olvidados en menos de un año, por no hablar de en los próximos dos mil años (Citada por Lozano, 2013).</p>');
+        $("#info-circle").html('<p style="padding: 12px; background-color: #f6ba0a; height: 180px;" class="justificado p_black mt-1 text-14px">Algunos distinguidos textos clásicos plantean desafíos a nuestros modelos actuales de pensamiento y suelen ser mejores y más ricos que los últimos artículos periodísticos, que, en su mayoría serán olvidados en menos de un año, por no hablar de en los próximos dos mil años (Citada por Lozano, 2013).</p>');
     }else if (circle_num == 3) {
         var texto = `
                     0
@@ -436,6 +441,7 @@ jQuery(document).ready(function ($) {
     $('#slider-uni-1 ul li:last-child').prependTo('#slider-uni-1 ul');
 
     function moveLeft() {
+        
         $('#slider-uni-1 ul').animate({
             left: + slideWidth
         }, 200, function () {
@@ -445,6 +451,7 @@ jQuery(document).ready(function ($) {
     };
 
     function moveRight() {
+        
         $('#slider-uni-1 ul').animate({
             left: - slideWidth
         }, 200, function () {
@@ -455,10 +462,12 @@ jQuery(document).ready(function ($) {
 
     $('a.control_prev').click(function () {
         moveLeft();
+        
     });
 
     $('a.control_next').click(function () {
         moveRight();
+        
     });
 
 });

@@ -13,7 +13,7 @@
     vertical-align: middle;
     display: table-cell;
     z-index: 1008;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
     left: -12px;
 }
@@ -21,7 +21,7 @@
 #actividad-1 ul#grupoA li.list-group-item {
     color: #fff;
     font-family: 'Barmeno', sans-serif;
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 600;
     display: table;
     background: transparent;
@@ -49,7 +49,7 @@
     }
 
     #actividad-1 ul#grupoA li.list-group-item {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -63,7 +63,7 @@
 #actividad-1 ul#grupoB li {
     color: rgb(0 52 66);
     font-family: 'PT Sans', sans-serif;
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.3;
     font-weight: 400;
     display: table;
@@ -84,7 +84,7 @@
 @media (max-width: 767px) {
     #actividad-1 ul#grupoB li {
         padding-left: 10px;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -190,19 +190,19 @@
     width: 35%;display: inline-block;
 }
 .terciario{
-    width: 65%;display: inline-block;
+    width: 55%;display: inline-block;
 }
 .div-img{
     display: inline-block;max-width: 100%;
 }
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
 .texto_header{
-    font-size: 17px;
+    font-size: 14px;
     display: inline-block;
     width: 50%;
 }

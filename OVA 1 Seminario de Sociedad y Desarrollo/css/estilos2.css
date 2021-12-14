@@ -329,7 +329,7 @@ p, button{
 }
 
 .back-green{
-  background-color: #6fb14d;
+  background-color: var(--bg-color);
   padding: 30px;
   border-radius: 30px;
   
@@ -447,8 +447,16 @@ p, button{
     height: 50px;
 }
 
+.w-200px{
+  width: 200px;
+}
+
 .w-220px{
   width: 220px;
+}
+
+.w-420px{
+  width: 420px;
 }
 
 .rec-1{

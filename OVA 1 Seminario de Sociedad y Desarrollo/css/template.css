@@ -103,9 +103,9 @@
   background-image: url(../assets/img/img_ova/titulo_ova_desarrollo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 380px;
-  height: 100px;
-  padding: 23px 99px 20px 100px;
+  width: 390px;
+  height: 110px;
+  padding:  30px 99px 20px 112px;;
 }
 
 .titulo-ova h3{
@@ -676,6 +676,22 @@ svg circle:nth-child(2){
   width:100% ;
 }
 
+.img-120{
+  width:120% ;
+}
+
+.img-140{
+  width:140% ;
+}
+
+.img-200{
+  width:200% ;
+}
+
+.img-400{
+  width:400% ;
+}
+
 .radius-1{
   border-radius: 0.5rem;
 }
@@ -741,9 +757,41 @@ svg circle:nth-child(2){
   width: 60px;
 }
 
+.w-55px{
+  width: 55px;
+}
+
+.w-50px{
+  width: 50px;
+}
+
 .card-inactiva-o{
   background: #252525 !important;
 }
 .card-inactiva-c{
   background: #484848 !important;
+}
+
+.text-10px {
+  font-size: 10px;
+}
+
+.text-11px {
+  font-size: 11px;
+}
+
+.text-12px {
+  font-size: 12px;
+}
+
+.text-14px {
+  font-size: 14px;
+}
+
+.text-15px {
+  font-size: 15px;
+}
+
+.w-100px {
+  width: 100px;
 }

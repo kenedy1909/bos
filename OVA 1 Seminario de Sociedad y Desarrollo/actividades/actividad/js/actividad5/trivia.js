@@ -125,12 +125,12 @@ function calificar(){
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="../img/img5/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img5/bien.png" style="max-width: 90%; margin-top: 5%">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
   }else{
-    $('.img_res').html('<img src="../img/img5/mal.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img5/mal.png" style="max-width: 70%; margin-top: 10%">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');

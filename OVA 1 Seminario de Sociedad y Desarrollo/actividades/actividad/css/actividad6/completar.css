@@ -294,13 +294,13 @@ label {
     display: inline-block;max-width: 100%;
 }
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
 .texto_header{
-    font-size: 17px;
+    font-size: 15px;
     display: inline-block;
     width: 50%;
 }
