@@ -279,10 +279,28 @@ function esconder(num) {
             $('.contenido').addClass('esc');
             $('.contenido1').removeClass('esc');
             $('.contenido2').removeClass('esc');
-            $('.ov-personaje').addClass('esc');
-                
+            $('.ov-personaje').addClass('esc');      
                     
-                break;
+            break;
+         case 4:
+            $('.contenido').addClass('esc');
+            $('.contenido1').removeClass('esc');
+            $('.contenido2').removeClass('esc');
+            $('.contenido3').removeClass('esc');
+            $('.ov-personaje').addClass('esc');
+                        
+                            
+            break;
+        case 5:
+            $('.contenido').addClass('esc');
+            $('.contenido1').removeClass('esc');
+            $('.contenido2').removeClass('esc');
+            $('.contenido3').removeClass('esc');
+            $('.contenido4').removeClass('esc');
+            $('.ov-personaje').addClass('esc');
+                        
+                            
+            break;
     
         default:
             break;
