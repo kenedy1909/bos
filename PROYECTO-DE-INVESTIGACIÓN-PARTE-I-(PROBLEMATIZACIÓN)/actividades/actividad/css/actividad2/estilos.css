@@ -121,10 +121,11 @@ input {
 }
 
 .info_actividad{
-    background: #8b1c64;
+    background: #FFC000;
     border-radius: 20px;
     padding: 20px;
-    color: white;
+    color: black;
+    font-size: 17px;
 }
 .pt-3{
     padding-top: 1.5em;
