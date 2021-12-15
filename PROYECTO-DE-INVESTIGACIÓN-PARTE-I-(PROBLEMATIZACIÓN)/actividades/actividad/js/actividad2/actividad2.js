@@ -1,9 +1,11 @@
 $(document).ready(function() {
-	var img1 = `
+	var img1 = `<div class="img_questionario_circle">
 				<img class="img_questionario" src="../img/img2/objetivo_general.png">
+				</div>
 				`;
-	var img2 = `
+	var img2 = `<div class="img_questionario_circle">
 				<img class="img_questionario" src="../img/img2/objetivo_general.png">
+				</div>
 				`;
 	
 	$(".img_questionario1").html(img1);
