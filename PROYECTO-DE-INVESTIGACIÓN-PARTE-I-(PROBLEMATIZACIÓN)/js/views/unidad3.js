@@ -81,6 +81,7 @@ function controlSlides3(num){
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
         case 3:
           esconderPersonaje();
