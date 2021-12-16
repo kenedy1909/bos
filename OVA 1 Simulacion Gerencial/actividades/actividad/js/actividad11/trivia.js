@@ -33,7 +33,6 @@ window.onload = function () {
   // Every answer is added with an 'onclick'-function
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
-    
     answerArea.innerHTML = '';
     
     for (var i = 0; i < answers.length -1; i += 1) {
@@ -119,6 +118,7 @@ window.onload = function () {
       }
       
       if (current < Object.keys(allQuestions).length -1) {
+        console.log(current+"curr");
         current += 1;
         
         loadQuestion(current);
@@ -126,6 +126,7 @@ window.onload = function () {
       } else {
         questionArea.innerHTML = 'Oprime Califica para ver los resultados';
         answerArea.innerHTML = '';
+        $('.cantidad').html("");
       }
                               
     };
@@ -139,7 +140,7 @@ window.onload = function () {
         txt       = document.createTextNode(current + 1);
     
     createDiv.appendChild(txt);
-    $('.cantidad').html((current+1)+"/"+3);
+    $('.cantidad').html((current+2)+"/"+3);
     if (bool) {
       
       createDiv.className += 'correct';
