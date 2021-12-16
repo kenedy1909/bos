@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     console.log(tema);
-    
+    $('.ov-personaje').addClass('d-none');
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
@@ -20,18 +20,16 @@ $( document ).ready(function() {
         }
     });
     /*slide_predeterminado();*/
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href',urlsite+'course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
@@ -61,6 +59,7 @@ function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     console.log(stepIndex);
     controlSlides(stepIndex+0);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){

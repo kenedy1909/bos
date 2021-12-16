@@ -20,13 +20,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado4();
     slide_link4(tema);
@@ -39,6 +37,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides4(stepIndex);
+    actualizarprogress(stepIndex+1+16);
 }
 
 function slide_predeterminado4(){
@@ -62,7 +61,12 @@ function controlSlides4(num){
             tema = 4;
             break;
         case 1:
-            $('.pdfs').html('');
+          var pdf = `<div class="col-md-12">
+            <p class="p_white size_20">
+                <a href="assets/PDF/Problematización.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Problematización.pdf</a>
+            </p>
+            </div>`;
+            $('.pdfs').html(pdf);    
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             break;

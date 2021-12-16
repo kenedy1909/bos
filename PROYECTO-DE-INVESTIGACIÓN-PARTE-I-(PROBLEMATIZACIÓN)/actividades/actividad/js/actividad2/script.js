@@ -37,7 +37,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         },
         getPreguntas = function() {
             return shuffleArray([{
-                texto: "¿Qué preguntas se hacen con el objetivo general?",
+                texto: "Estos verbos nunca se deben usar en el objetivo general: ",
                 respuestas: [{
                     texto: "a. conocer, saber, estudiar, investigar",
                     correcta: true
@@ -52,7 +52,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
                     correcta: false
                 }]
             }, {
-                texto: "Estos verbos nunca se deben usar en el objetivo general:",
+                texto: "¿Qué preguntas se hacen con el objetivo general?",
                 respuestas: [{
                     texto: "a. ¿Dónde, por qué?",
                     correcta: false
@@ -89,9 +89,17 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         puntaje = puntaje.toFixed(0);
         var exito = false;
         var mensaje = "Inténtalo nuevamente."
+        // if (puntaje == 100) {
+        //     exito = true;
+        //     mensaje = "¡Felicitaciones!"
+        // }
         if (puntaje == 100) {
             exito = true;
             mensaje = "¡Felicitaciones!"
+            $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+        }
+        if (puntaje < 100) {
+            $("#img-circulo").attr("src","../../../assets/img/img_ova/mal.png");  
         }
         registrarActividad(puntaje);
         mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, $scope.reset);

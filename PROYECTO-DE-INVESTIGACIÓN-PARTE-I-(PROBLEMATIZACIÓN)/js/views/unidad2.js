@@ -24,13 +24,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado2();
     slide_link2(tema);
@@ -50,6 +48,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides2(stepIndex);
+    actualizarprogress(stepIndex+1+7);
 }
 
 function slide_predeterminado2(){
@@ -74,13 +73,16 @@ $('#mostrar2').click(function(){
   $('#prueba').hide(1000);
 });
 function controlSlides2(num){
+  
     switch (parseInt(num)) {
         case 0:
+          esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
             break;
         case 1:
+          esconderPersonaje();
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
                                   <a href="assets/PDF/Texto_investigacion_salcedo_ova.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Texto_investigación_salcedo ova.pdf</a>
@@ -90,13 +92,16 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             break;
         case 2:
+          esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             break;
         case 3:
+          mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             
             break;
         case 4:
+         
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             
             tema = 1;
@@ -251,4 +256,15 @@ function openTabs(el) {
    
    btnTarget.classList.add("active");
 }
+
+function mostrarPersonaje() {
+  $('.ov-personaje').removeClass('esc');
+  
+}
+
+function esconderPersonaje() {
+  $('.ov-personaje').addClass('esc');
+  
+}
+
 

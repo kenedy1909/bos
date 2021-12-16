@@ -27,13 +27,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado3();
     slide_link3(tema);
@@ -45,6 +43,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides3(stepIndex);
+    actualizarprogress(stepIndex+1+11);
 }
 
 function slide_predeterminado3(){
@@ -61,6 +60,7 @@ function slide_link3(num){
     controlSlides3(num);
 }
 function controlSlides3(num){
+  console.log("side"+num);
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
@@ -68,6 +68,7 @@ function controlSlides3(num){
             tema = 3;
             break;
         case 1:
+          esconderPersonaje();
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
                                   <a href="assets/PDF/Problematización.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Problematización.pdf</a>
@@ -77,12 +78,16 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             break;
         case 2:
+          esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
         case 3:
+          esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             break;
         case 4:
+          mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             break;
         case 5:
@@ -460,4 +465,13 @@ function removeefect(num){
             break;
     } 
     
+}
+function mostrarPersonaje() {
+  $('.ov-personaje').removeClass('esc');
+  
+}
+
+function esconderPersonaje() {
+  $('.ov-personaje').addClass('esc');
+  
 }

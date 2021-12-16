@@ -8,43 +8,33 @@
     <title>Recurso</title>
     <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/css/backdrop.css">
+    <link rel="stylesheet" href="./backdrop.css">
+    <link rel="stylesheet" type="text/css" href="./estilos.css">
     <link rel="stylesheet" type="text/css" href="../css/actividad9/estilos.css">
 </head>
 
 <body>
-    <div class="backdrop recurso in">
+    <div class="backdrop in">
         <div class="fondo">
-            <header>
-                <div class="" style="">
-                    <div class="" style="width: 35%;display: inline-block;">
-                        <div class="" style="width: 100%;display: inline-block;">
-                          <div style="display: inline-block;width: 32%;"><img src="../img/img9/actividad_interactiva.png" alt="" style="width: 90px;/* display: inline-block; */height: 90px; margin-left: 29px;"></div>
-                          <div class="text-center" style="font-size: 20px;display: inline-block;width: 66%;margin-top: 1px;height: 140px;position: relative;top: 25px;">
-                            <b class="" style="color: #994c91;">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px;background: #994c91;"></div>
-                            <i><p class="text-muted">AHORCADO</p></i>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="" style="display: inline-block;width: 60%;">
-                        <p class="info_actividad shadow" style="background: #AD1D73;color: white;">
-                            Haga clic a las letras para formar la frase que corresponda con la definición y evite formar la figura de ahorcado.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- <h1>Reducción y aprovechamiento de empaques y envases</h1> -->
-                
-            </header>
-            <div style="padding-left: 61px;">
-                <p><b>Definición:</b> Mecanismo para restituir los derechos de los seres humanos</p>
+            <div class="row" style="padding: 20px;">
+              <div class="col-md-4 col-sm-4 row d-flex" style="width: 40%;">
+                 <img src="./img/actividad_interactiva.png" class="img-activi">
+                 <div>
+                     <div class="content-text-img-activi-2" style="width: 100%;">
+                       <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
+                     </div>
+                     <p class="text-center">AHORCADO</p>
+                 </div>
+              </div>
+              <div class="col-md-6 col-sm-6 shadow content-tarjeta ml-3" style="margin-left: 3.5rem;background: #AD1D73;color: white;">
+                  <p>Haga clic a las letras para formar la frase que corresponda con la definición y evite formar la figura de ahorcado.</p>
+              </div>
             </div>
             <div class="contenido" id="recurso2">
                 <div class="definicion">
+                    <h2 class="pista_titulo">Pista:</h2>
                     <div id="pista_palabra"></div>
                 </div>
-                
                 <div>
                     <h2 id="container_palabra">_ </h2>
                     <p class="texto-ahorcado">
@@ -59,63 +49,61 @@
                 </div>
 
                 <!-- <input type="button" id="reset" value="Volver a intentarlo"> -->
-
                 <div class="modal fade" id="modal-ahorcado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog centered-propio" role="document">
-                      <div class="modal-content">
-                        <div class="">
-                          <div class="card-container manual-flip">
-                            <div class="card">
-                                <div class="front">
-                                    <div class="cover" style="overflow: visible;">
-                                      <div class="row">
-                                        <div class="col-lg-4">
+                  <div class="modal-dialog centered-propio" role="document">
+                    <div class="modal-content">
+                      <div class="">
+                        <div class="card-container manual-flip">
+                          <div class="card">
+                              <div class="front">
+                                  <div class="cover" style="overflow: visible;">
+                                    <div class="row">
+                                      <div class="col-lg-4">
+                                      </div>
+                                      <div class="col-lg-4 mt-2">
+                                        
+                                      </div>
+                                      <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                        <div class="divcerrar">
+                                          <button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="background-color: transparent;">
+                                            <img src="../../../assets/img/img_ova/btn_closed.png" style="width: 30px;" class="m-0 p-0">
+                                          </button>
                                         </div>
-                                        <div class="col-lg-4 mt-2">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="user">
+                                    <div class="">
+                                      <div class="radius-gray">
+                                          <img class="img-circle" id="img-circulo" src="../../../assets/img/img_ova/bien.png" >
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="content">
+                                      <div style="padding: 10px;">
+                                          <div id="texto-modal" style="text-align: left;"></div>
                                           
-                                        </div>
-                                        <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                          <div class="divcerrar">
-                                            <button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="background-color: transparent;">
-                                              <img src="../../../assets/img/img_ova/btn_closed.png" style="width: 30px;" class="m-0 p-0">
+                                          <button type="button" class="btn cerrar-md" data-dismiss="modal" aria-label="Close" style="color:#8E1D66;">
+                                             cerrar
                                             </button>
-                                          </div>
-                                        </div>
                                       </div>
-                                    </div>
-                                    <div class="user">
-                                      <div class="">
-                                        <div class="radius-gray">
-                                            <img class="img-circle" id="img-circulo" src="../../../assets/img/img_ova/bien.png" >
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="content">
-                                        <div style="padding: 10px;">
-                                            <div id="texto-modal" style="text-align: left;"></div>
-                                            
-                                            <button type="button" class="btn cerrar-md" data-dismiss="modal" aria-label="Close" style="color:#8E1D66;">
-                                               cerrar
-                                              </button>
-                                        </div>
-                                    </div>
-                                    
-                                </div> <!-- end front panel -->
-                            </div> <!-- end card -->
-                          </div>
+                                  </div>
+                                  
+                              </div> <!-- end front panel -->
+                          </div> <!-- end card -->
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  
+                </div>
             </div>
         </div>
     </div>
     <!-- Incluisión de scripts -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/actividad9/script.js"></script>
+    <script src="../js/actividades.js"></script>
+    <script src="./script.js"></script>
     <!-- Fin de scripts -->
 </body>
 
