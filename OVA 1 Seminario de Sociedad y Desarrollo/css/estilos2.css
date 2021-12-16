@@ -2,6 +2,7 @@
     border-bottom: solid 50px #d1d1d1;
     position: relative;
     top: -70px;
+
 }
 
 .bgactive1 {
@@ -406,7 +407,7 @@ button {
 }
 
 .text-img-activi {
-    border-bottom: solid 3px rgb(179 132 60);
+    border-bottom: solid 3px #78201A;
     width: 50%;
     height: 86px;
     margin: 0px;
@@ -818,4 +819,11 @@ a.control_next {
 
 .w96{
     width: 96% !important;
+}
+
+.lineawhite {
+    border: solid 5px white;
+    position: absolute;
+    margin-top: 2%;
+    width: max-content;
 }

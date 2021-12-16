@@ -7951,6 +7951,11 @@ html:not([dir="rtl"]) .input-group > .input-group-prepend > .btn, html:not([dir=
   border-radius: 0.25rem;
 }
 
+.img-reflejo {
+  
+  -webkit-box-reflect: below -1px linear-gradient(transparent, transparent, rgba(255,255,255,0.3));
+}
+
 .figure {
   display: inline-block;
 }

@@ -61,10 +61,10 @@ var pdf = `<div class="col-md-12">
                         <a href="assets/PDF/Unidad 2/La creación de la modernidad.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">La creación de la modernidad.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/Material de apoyo/CARACTERISTICAS DE LA MODERNIDAD.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">CARACTERISTICAS DE LA MODERNIDAD.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 2/Material de apoyo/falta.pdf " target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">El espantoso mundo en que vivimos.pdf      <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/Material de apoyo/las promesas de la modernidad puestas en juego.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">las promesas de la modernidad puestas en juego.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad 2/Material de apoyo/falta.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">ciego toda la vida a todo eso.pdf  <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -82,12 +82,14 @@ function hoverp42(argument) {
 function slide() {
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+    quitarflecha(stepIndex+1);
 }
 
 function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
+    quitarflecha(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
@@ -197,7 +199,25 @@ function controlSlides(num) {
     }
 }
 
+function quitarflecha(num) {
 
+    if (parseInt(num) == 1) {
+        console.log("fuera_flecha");
+        document.getElementById("prev").style.display="none";
+    } else {
+        console.log("come_flecha");
+        document.getElementById("prev").style.display="block";
+    }
+
+    if (parseInt(num) == 18) {
+        console.log("fuera_next_flecha");
+        document.getElementById("next").style.display="none";
+    } else {
+        console.log("come__next_flecha");
+        document.getElementById("next").style.display="block";
+    }
+
+}
 
 /*function cambiacontenido(opcion){
     switch (parseInt(opcion)) {
@@ -513,7 +533,7 @@ function rec() {
             `<div class="col-md-12">
                   <div class="col-md-12 row imprime">
                     <div class="col-md-5">
-                      <p class="justificado text-black">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+                      <p class="justificado text-black text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
                     </div>
                     <div class="col-md-7">
                        <p class="text-center p_black">clic a la imagen</p>
@@ -536,19 +556,6 @@ function rec() {
                     <div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-5">
 
                       <ul class="img-100">
-                        <li>
-                          <div class="row" data-toggle="modal" data-target="#modal-img-3">
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 80%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 80%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 80%;">
-                            </div>
-                          </div>
-                        </li>
                         <li>
                           <div class="row" data-toggle="modal" data-target="#modal-img-4">
                             <div class="col-md-12">
@@ -575,6 +582,19 @@ function rec() {
                             </div>
                           </div>
                         </li>
+                        <li>
+                          <div class="row" data-toggle="modal" data-target="#modal-img-3">
+                            <div class="col-md-12">
+                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 80%;">
+                            </div>
+                            <div class="col-md-12">
+                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 80%;">
+                            </div>
+                            <div class="col-md-12">
+                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 80%;">
+                            </div>
+                          </div>
+                        </li>
                       </ul>  
                       
                     </div>
@@ -591,12 +611,15 @@ function rec() {
             `<div id="slider" style="" class="d-flex justify-content-center col-md-10">
 
                   <ul>
-                    <li>
-                      <p class="justificado text-black">El hombre se emancipa de la autoridad religiosa y ahora presenta un anhelo por hacer de la razón su fundamento para explorar y conocer la vida, en un sentimiento de libertad, comprende que a través de su razón puede aprender y actuar sin una coacción externa. En la Revista de Artes y Humanidades UNICA, Ávila (2010) menciona que “La idea de modernidad sustituye, en el centro de la sociedad, a Dios por la ciencia y deja las creencias religiosas para el seno de la vida privada” (p. 168). Lo anterior comprendiendo que la religión ejercía dominio sobre el pensamiento, lo que incluso genera dificultad en este nuevo actuar independiente del hombre, llegando al punto de considerarse el razonamiento como herejía (Revuelta, 1990); no obstante, se avanza en una pretensión de descubrir.</p>
-                    </li>
+
                     <li>
                       <p class="justificado text-black">El culto a la racionalidad deriva en una racionalización de la vida colectiva y personal; surge así la regulación y el control como un proceso subyacente a todas las esferas. La tecnificación de los procesos productivos se extiende hacia la tecnificación de todas las acciones personales; la planificación, la burocracia y la deshumanización de los procesos surgen como resultado del culto a la eficiencia.</p>
                     </li>
+
+                    <li>
+                      <p class="justificado text-black ">El hombre se emancipa de la autoridad religiosa y ahora presenta un anhelo por hacer de la razón su fundamento para explorar y conocer la vida, en un sentimiento de libertad, comprende que a través de su razón puede aprender y actuar sin una coacción externa. En la Revista de Artes y Humanidades UNICA, Ávila (2010) menciona que “La idea de modernidad sustituye, en el centro de la sociedad, a Dios por la ciencia y deja las creencias religiosas para el seno de la vida privada” (p. 168). Lo anterior comprendiendo que la religión ejercía dominio sobre el pensamiento, lo que incluso genera dificultad en este nuevo actuar independiente del hombre, llegando al punto de considerarse el razonamiento como herejía (Revuelta, 1990); no obstante, se avanza en una pretensión de descubrir.</p>
+                    </li>
+                    
                     
                   </ul>
                 </div>
@@ -614,7 +637,7 @@ function rec() {
         $("#rec").html(
             `<div class="col-md-12 row">
               <div class="col-md-5">
-                <p class="text-black text-justify"> <i><b>6.   Naturalización de la vida social</b></i> tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
+                <p class="text-black text-justify text-12px"> <i><b>6.   Naturalización de la vida social</b></i> tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
               </div>
               <div class="col-md-7">
               <p class="text-center p_black">clic a la imagen</p>
@@ -630,7 +653,7 @@ function circlerec(num) {
         case 1:
             var cont = `
             <div class="col-md-5">
-              <p class="justificado text-black">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+              <p class="justificado text-black text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
             </div>
             <div class="col-md-7">
                <p class="text-center p_black">clic a la imagen</p>
@@ -642,7 +665,8 @@ function circlerec(num) {
             break;
         case 2:
             var cont = `
-            <img src="assets/img/img_ova/comentario3.png" style="max-width: 100%;">`;
+            <p class="text-center p_black">clic a la imagen</p>
+            <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-1-1" style="max-width: 107%;">`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
             $('.dos').addClass('active');

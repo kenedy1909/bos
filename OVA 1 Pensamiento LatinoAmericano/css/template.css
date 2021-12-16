@@ -831,7 +831,7 @@ card flip*/
 }
 
 .imgactividad{
-  width: 120px;
+  width: 100px;
   z-index: 100;
 }
 
@@ -839,14 +839,15 @@ card flip*/
   z-index: 100;
 }
 .titulo_sub{
-  height: 85px;
+  height: 75px;
   border-bottom: solid 4px #00953E;
   padding-top: 40px;
-  padding-left: 25px;
-  text-align: center;
+  padding-left: 35px;
+  width: fit-content;
+  
 }
 .titulo_sub p{
-  font-size: 20px;
+  font-size: 15px;
   color: #00953E;
 }
 .banner_activi{
@@ -954,4 +955,28 @@ card flip*/
 }
 .text-cafe{
   float: right;
+}
+
+.text-10px{
+  font-size: 10px;
+}
+
+.text-11px{
+  font-size: 11px;
+}
+
+.text-12px{
+  font-size: 12px;
+}
+
+.text-14px{
+  font-size: 14px;
+}
+
+.text-15px{
+  font-size: 15px;
+}
+
+.text-16px{
+  font-size: 16px;
 }

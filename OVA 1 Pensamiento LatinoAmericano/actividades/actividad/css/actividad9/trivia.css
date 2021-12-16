@@ -138,11 +138,11 @@ body, html {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 16px;
+    font-size: 15px;
     color: #008F3E;
 }
 
@@ -187,4 +187,8 @@ body, html {
 
 .d-flex{
   display: flex;
+}
+
+.rota-horizontal{
+  transform: scaleX(-1);
 }

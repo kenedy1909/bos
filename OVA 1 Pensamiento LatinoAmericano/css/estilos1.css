@@ -265,7 +265,7 @@
 
 .card3 {
     background: #385723;
-    min-height: 180px;
+    min-height: 210px;
     max-height: 180px;
 }
 
@@ -1650,7 +1650,7 @@ input[type=range]::-ms-fill-upper {
 .banner_inicio {
     background: #BADBA5;
     border-radius: 50px;
-    height: 200px;
+    height: fit-content;
     padding: 25px 25px 25px 25px;
 }
 

@@ -40,6 +40,10 @@ window.onload = function () {
     $('.cantidad').html("1/5");
   }
 
+  if (curr == 5) {
+    $('.showcal').show();
+  }
+
 
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
@@ -64,14 +68,14 @@ window.onload = function () {
   function Imag() {
     var texto1 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/Indigena3.png" style="width: 100%;">
+                    <img src="../img/img9/indigena_actividad.png" style="width: 130%; margin-top: -10%; margin-left: -10%;">
                   </div>
                 </div>`;
 
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/colonialismo.png" style="width: 300%; margin-left:-30px">
+                    <img class="rota-horizontal" src="../img/img9/colonialismo.png" style="width: 300%;margin-left: -80px;margin-top: -23%;">
                   </div>
                 </div>`;
 
@@ -80,14 +84,14 @@ window.onload = function () {
 // ------------------------ pregunta 2
     var texto3 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/calendario.png" style="width: 100%;">
+                    <img src="../img/img9/calendario.png" style="width: 170%;margin-top: -20%;margin-left: -30%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
     var texto4 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/calendario.png" style="width: 100%;">
+                    <img src="../img/img9/calendario.png" style="width: 170%;margin-top: -20%;margin-left: -30%;">
                   </div>
                 </div>`;
 

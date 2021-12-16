@@ -77,6 +77,7 @@ $(function() {
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex + 1);
+    quitarflecha(stepIndex+1);
 }
 
 
@@ -84,6 +85,7 @@ function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
+    quitarflecha(1);
     /*window.location.href ="#unidad1-1";*/
     /*$url =$('.enlaces_ova')
     $url.attr('href',"#unidad1-1");
@@ -154,6 +156,25 @@ function controlSlides(num) {
             break;
         default:
             break;
+    }
+}
+
+function quitarflecha(num) {
+
+    if (parseInt(num) == 1) {
+        console.log("fuera_flecha");
+        document.getElementById("prev").style.display="none";
+    } else {
+        console.log("come_flecha");
+        document.getElementById("prev").style.display="block";
+    }
+
+    if (parseInt(num) == 6) {
+        console.log("fuera_next_flecha");
+        document.getElementById("next").style.display="none";
+    } else {
+        console.log("come__next_flecha");
+        document.getElementById("next").style.display="block";
     }
 }
 

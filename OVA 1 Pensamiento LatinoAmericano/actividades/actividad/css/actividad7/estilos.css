@@ -247,7 +247,7 @@ cursor: pointer;}
 .radiobtn{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 25%;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -310,4 +310,8 @@ cursor: pointer;}
   position: relative;
   top: -60px;
   text-align: center;
+}
+
+th {
+    text-align: center;
 }
