@@ -20,13 +20,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado4();
     slide_link4(tema);
@@ -39,6 +37,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides4(stepIndex);
+    actualizarprogress(stepIndex+1+16);
 }
 
 function slide_predeterminado4(){
