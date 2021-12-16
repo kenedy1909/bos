@@ -193,7 +193,9 @@
     width: 58%;display: inline-block;
 }
 .div-img{
-    display: inline-block;max-width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 1.5rem;
 }
 .imagen{
     width: 116px;
@@ -234,4 +236,86 @@
 
 .d-flex{
     display: flex;
+}
+
+
+.divcerrar {
+	position: relative;
+    top: -20px;
+    left: 94%;
+}
+
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 22px;
+    outline: 0;
+    /* background-color: transparent; */
+    border-color: rgba(0, 0, 21, 0.0);
+}
+.card-container, .front, .back {
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+    background: #00465E;
+}
+.card-container {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card .user {
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -70px auto 0;
+    overflow: hidden;
+    width: 120px;
+    background: #999999;
+    border: 3px solid white;
+}
+.card .content {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .user img {
+    background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 90%;
+    position: relative;
+}
+.card .cover {
+    height: 105px;
+    overflow: hidden;
+    border-radius: 22px 22px 0 0;
+    background: #003442;
+}
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+
+.x-modal{
+  background: #006092;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.x-modal-text{
+  display: block;
+  margin: auto;
 }

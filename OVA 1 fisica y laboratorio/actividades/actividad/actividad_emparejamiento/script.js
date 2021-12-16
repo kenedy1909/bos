@@ -44,6 +44,10 @@ function calificarEmparejamiento(event) {
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","img/bien.png");  
+    }
+    if (puntaje < 100) {
+        $("#img-circulo").attr("src","img/mal.png");  
     }
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
 
