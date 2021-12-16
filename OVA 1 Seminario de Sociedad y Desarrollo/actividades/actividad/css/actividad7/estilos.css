@@ -54,7 +54,7 @@ table {
     height: 35px;
 }
 
-svg.svg-radio-elegant: not(: root) {
+svg.svg-radio-elegant:not(:root) {
     overflow: hidden;
 }
 
@@ -288,6 +288,7 @@ cursor: pointer;}
 .tranparente{
   background: transparent;
   border: none;
+  border-radius: 40px;
 }
 
 .principal_modal{

@@ -66,7 +66,7 @@ $(document).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad1/sinfinesdelucromartha.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -119,6 +119,7 @@ function controlSlides(num) {
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
             scroll();
+            $('#iconInicial').addClass('d-none');
             break;
         case 1:
 
@@ -131,28 +132,35 @@ function controlSlides(num) {
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
             scroll();
+            $('#iconInicial').removeClass('d-none');
             break;
         case 2:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
 
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 7:
             star_uni = 1;
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         default:
             break;

@@ -61,10 +61,7 @@ var pdf = `<div class="col-md-12">
                         <a href="assets/PDF/Unidad 2/La creación de la modernidad.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">La creación de la modernidad.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/Material de apoyo/falta.pdf " target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">El espantoso mundo en que vivimos.pdf      <b class="text-cafe"><u>Ver</u></b></a>
-                  </p>
-                  <p class="p_white">
-                        <a href="assets/PDF/Unidad 2/Material de apoyo/falta.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">ciego toda la vida a todo eso.pdf  <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/columna.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png">El espantoso mundo en que vivimos .pdf<b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
