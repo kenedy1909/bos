@@ -332,7 +332,7 @@ iframe{
   margin: -70px auto 0;
   overflow: hidden;
   width: 100px;
-  background: gray;
+  background: #999999;
   border: 2px solid white;
 }
 .card .user img{
