@@ -127,6 +127,8 @@ window.onload = function () {
         questionArea.innerHTML = 'Oprime Califica para ver los resultados';
         answerArea.innerHTML = '';
         $('.cantidad').html("");
+        $('.btn-calificar').removeClass("d-none");
+
       }
                               
     };
