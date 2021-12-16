@@ -217,9 +217,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th></th>\
+                    <th style="display: flex;border-bottom: 0px solid #ddd !important;"><img src="img/ansiedad.png" alt="" style="width: 15%; margin: auto;"></th>\
                     {% for answer in form.answers %}\
-                        <th class="title_table">{{ answer.answer_txt }}</th>\
+                        <th class="title_table" style="border-bottom: 0px solid #ddd !important;">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
                 </tr>\
             </thead>\
@@ -230,9 +230,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\
-                            <label class="label-container">\
+                            <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radio-elegant">{% if conta==1 %} '+svg_elem1+' {% else %} '+svg_elem2+'{% endif %}{% set conta=conta+1 %}</span>\
+                                <span class="radiobtn"></span>\
                             </label>\
                         </td>\
                     {% endfor %}\
@@ -244,6 +244,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn califica_fv" type="submit" >Calificar</button>\
+        <button class="btn shadow btn-lg" style="background: #97182F; color: #fff;" type="submit" >Calificar</button>\
     </div>\
 </form>'
