@@ -798,12 +798,17 @@ function cambiarContenido(num){
                         <div class="w-100 p-3 text-center"><img src="assets/img/img_ova/analisis1.gif" width="50%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra1").addClass("clicBarra");
+
     }else if (num == 2) {
         var conjunto = `
                         <p class="text-justify">En la Matriz interactúan los factores internos de la organización (los cuales se denominan variables), el fundamento de esta matriz depende de la forma como influyen las diferentes variables entre sí, otorgando una calificación de influencia sobre las otras. La matriz permite visualizar de una forma objetiva la forma como cada una de las variables ejercen una presión sobre las demás.</p>
                         <div class="w-100 p-3 text-center"><img src="assets/img/img_ova/estadisticas_circulo.gif" width="50%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra2").addClass("clicBarra");
     }else if (num == 3) {
         var conjunto = `
                         <p class="text-justify">El resultado muestra  las variables o factores en un cuadrante que nos permite tener una <span class="text-danger"> visión objetiva de la influencia y/o dependencia. </span></p>
@@ -811,12 +816,16 @@ function cambiarContenido(num){
                         <p class="text-justify" style="position: relative;top: -10px;">Es la pregunta fundamental para empezar con el análisis de dependencia - influencia y a partir de aquí, sucesivamente con todas las variables que componen el escenario. </p>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra3").addClass("clicBarra");
     }else if (num == 4) {
         var conjunto = `
                         <p class="text-justify">La calificación de cada variable tiene una escala que va desde  cero (0)  a tres (3), con una calificación P, si la influencia es potencial a presentarse en el futuro  y <span class="text-danger"> determina el grado de intensidad de la conexión o relación. </span> La respuesta se califica: </p>
                         <div class="w-100 p-3 text-center"><img src="assets/img/img_ova/calificacion_rango.png" width="100%" height="100%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra4").addClass("clicBarra");
     }else if (num == 5) {
         var conjunto = `
                         <p class="text-justify ">La calificación ubica las variables en los diferentes cuadrantes del plano cartesiano.</p> <br><br>
@@ -826,6 +835,8 @@ function cambiarContenido(num){
                         <p class="text-justify w-50 p-2 boder-left">Y la <span class="text-danger"> zona de salida </span> corresponde a las variables que son netamente dependientes y se conocen como variables de resultado.</p>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra5").addClass("clicBarra");
     }else if (num == 6) {
         var conjunto = `
                         <p class="text-justify ">Clasificación indirecta, muestra cómo puede variar el comportamiento en el largo plazo.</p>
@@ -839,12 +850,16 @@ function cambiarContenido(num){
                         </div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra6").addClass("clicBarra");
     }else if (num == 7) {
         var conjunto = `
                         <p class="text-justify " style="font-size:13px;">Determinación de los problemas claves. La identificación de los problemas claves constituye un paso importante del método. El programa automatizado brinda en un plano cartesiano (mapa) con cada uno de los problemas, de acuerdo con la valoración del grupo de experto que permite obtener los índices de motricidad y dependencia.</p>
-                        <div class="w-100 p-3 text-center "><img src="assets/img/img_ova/plano_cartesiano.jpg" width="45%"></div>
+                        <div class="w-100 p-3 text-center "><img src="assets/img/img_ova/plano_cartesiano.jpg" width="41%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra7").addClass("clicBarra");
     }else if (num == 8) {
         var conjunto = `
                         <p class="text-justify ">Cualquier acción que se realice sobre ello repercutirá en gran parte del sistema. La prioridad en las acciones a realizar en la solución de los problemas se concentran en:</p>
@@ -860,6 +875,8 @@ function cambiarContenido(num){
                         </div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
+        $(".barras").removeClass("clicBarra");
+        $(".barra8").addClass("clicBarra");
     }
 }
 
