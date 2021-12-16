@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     
     console.log(tema);
-    
+    $('.ov-personaje').addClass('d-none');
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
