@@ -555,7 +555,7 @@ function scroll_horizontal(num){
             $('.scroll-flecha-1').addClass('d-block');
             break;
         case 2:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/trincheras.jpg">`;
+            var pantalla = `<img class="img-70 m-auto" src="assets/img/img_ova/trincheras.jpg">`;
             $('#scroll-img').html(pantalla);
             $('#pdf-anios').html(`<a href="assets/PDF/1916.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
             $('#scroll-text').html('<b>Enfrentamientos entre los ejércitos de Francia y Alemania, representaron las batallas más sangrientas de la Guerra.</b>');
@@ -569,7 +569,7 @@ function scroll_horizontal(num){
             $('.scroll-flecha-2').addClass('d-block');
             break;
         case 3:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/nicolas.jpg">`;
+            var pantalla = `<img class="img-70 m-auto" src="assets/img/img_ova/nicolas.jpg">`;
             $('#scroll-img').html(pantalla);
             $('#pdf-anios').html(`<a href="assets/PDF/1917.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
             $('#scroll-text').html('<b>El inicio en Rusia de la revolución de febrero que generó la abdicación del Zar Nicolás.</b>');
@@ -585,7 +585,7 @@ function scroll_horizontal(num){
             $('.scroll-flecha-3').addClass('d-block');
             break;
         case 4:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/union.jpg">`;
+            var pantalla = `<img class="img-70 m-auto" src="assets/img/img_ova/union.jpg">`;
             $('#scroll-img').html(pantalla);
             $('#pdf-anios').html(`<a href="assets/PDF/1918.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
             $('#scroll-text').html('<b>Se firma el Tratado de Brest-Litovsk, donde el nuevo gobierno socialista de Rusia firma la renuncia a algunos territorios.</b>');
@@ -603,7 +603,7 @@ function scroll_horizontal(num){
             $('.scroll-flecha-4').addClass('d-block');
             break;
         case 5:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/versalles.png">`;
+            var pantalla = `<img class="img-80 m-auto" src="assets/img/img_ova/versalles.png">`;
             $('#scroll-img').html(pantalla);
             $('#pdf-anios').html(`<a href="assets/PDF/1919.pdf" target="_blank" class="mx-auto mt-auto cursor"><img class="img-100" src="assets/img/img_ova/btn-pdf.png"></a>`);
             $('#scroll-text').html('<b>Se da la firma del tratado de Versalles, contempla por primera vez la creación de un tribunal especial en su artículo 227.</b>');
