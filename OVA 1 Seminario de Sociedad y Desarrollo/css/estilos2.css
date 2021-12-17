@@ -140,6 +140,15 @@
 }
 
 
+.fondo_blacoLienaBlanca{
+    border-top: #fff 5px solid;
+    position: relative;
+    top: -100px;
+}
+.info_conjuntos{
+    z-index: 100;
+}
+
 /*.size_13{
 	font-size: 14px;
 }*/
