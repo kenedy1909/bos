@@ -182,3 +182,8 @@ window.onunload = function (){
 function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
 }
+
+function mostrar() {
+    $(".enfoque").removeClass("d-none");
+    
+}

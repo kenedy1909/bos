@@ -53,12 +53,14 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides2(stepIndex);
+    quitarflecha(stepIndex+1)
 }
 
 function slide_predeterminado2(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides2(1);
+    quitarflecha(1)
     // window.location.href ="#unidad2-1";
 }
 
@@ -78,14 +80,14 @@ function controlSlides2(num){
         case 1:
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Epistemologias_del_sur_2018.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> Epistemologías del sur.pdf <b class="text-cafe">Ver</b></a>
+                                  <a href="assets/PDF/UNIDAD2/Epistemologias_del_sur_2018.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> Epistemologías del sur.pdf <em class="text-cafe">Ver</em></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/La idea de américa Latina.pdf" target="_blank"><img src="assets/img/img_template/pdf.png" class="w40"> La idea de América Latina.pdf <b class="text-cafe">Ver</b></a>
+                                  <a href="assets/PDF/UNIDAD2/La idea de américa Latina.pdf" target="_blank"><img src="assets/img/img_template/pdf.png" class="w40"> La idea de América Latina.pdf <em class="text-cafe">Ver</em></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Modernidad, COLONIALISMO.pdf" target="_blank"><img src="assets/img/img_template/pdf.png" class="w40"> Modernidad, Colonialismo y emancipación en América Latina.pdf <b class="text-cafe">Ver</b></a>
-                              </p>
+                                  <a href="assets/PDF/UNIDAD2/Modernidad, COLONIALISMO.pdf" target="_blank"><img src="assets/img/img_template/pdf.png" class="w40"> Modernidad, Colonialismo y emancipación en América Latina.pdf <em class="text-cafe">Ver</em></a>
+                              </p> 
                             </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
@@ -302,3 +304,22 @@ document.addEventListener("keydown",
         }
     }
 );
+
+function quitarflecha(stepIndex) {
+
+  if (stepIndex == 1) {
+      console.log("fuera_flecha");
+      document.getElementById("prev").style.display="none";
+  } else {
+      console.log("come_flecha");
+      document.getElementById("prev").style.display="block";
+  }
+
+  if (stepIndex == 11) {
+      console.log("fuera_next_flecha");
+      document.getElementById("next").style.display="none";
+  } else {
+      console.log("come__next_flecha");
+      document.getElementById("next").style.display="block";
+  }
+}

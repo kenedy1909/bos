@@ -60,7 +60,7 @@ $( document ).ready(function() {
     })
 
 
-    $
+    // $
     /*setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     var knob = "";
@@ -909,7 +909,7 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol3.png" width="100%">
+                            <img src="assets/img/img_ova/scrol3.png" width="25%">
                             <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -936,7 +936,12 @@ function scroll_horizontal2(num){
             break;
         case 1:
             var img_scroll = `
-                    <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">`;
+                    <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">
+                    <div style="position:absolute; top:-12px;">
+                    <p>(pase el puntero sobre la imagen)</p>
+                    </div>
+                    `;
+            
             var info_scroll = `
                     <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
                     <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
@@ -1238,10 +1243,11 @@ function paraIframe(num){
     
 }
 
-let count=0;
+
 
 function tarjeta(num) {
-    count ++;
+    let contar=0;
+    contar ++;
     switch (parseInt(num)) {
         case 1:
             $('.txtBody').addClass('esc');
@@ -1266,7 +1272,7 @@ function tarjeta(num) {
         case 4:
             // $('.contenido-card-body').addClass('esc');
             // console.log(count);
-            if (count == 1) {
+            if (contar == 1) {
                 // $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
@@ -1275,13 +1281,13 @@ function tarjeta(num) {
             
                 
             }
-            if (count == 2) {
+            if (contar == 2) {
                 $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
                 // $('.contenido1').removeClass('esc');
                 // $('.contenido1').addClass('vis');
-                count=0;
+                contar=0;
                 
             }
            
@@ -1295,7 +1301,7 @@ function tarjeta(num) {
             $('.contenido2').removeClass('esc');
             $('.contenido2').addClass('vis');
 
-            if (count == 1) {
+            if (contar == 1) {
                 $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
@@ -1304,13 +1310,13 @@ function tarjeta(num) {
             
                 
             }
-            if (count == 2) {
+            if (contar == 2) {
                 $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
                 // $('.contenido1').removeClass('esc');
                 // $('.contenido1').addClass('vis');
-                count=0;
+                contar=0;
                 
             }
         
@@ -1320,9 +1326,9 @@ function tarjeta(num) {
     }
     
 }
-let counter=0;
+
 function hiddenTxt(num){
-    
+    let counter=0;
     counter ++;
     switch (parseInt(num)) {
         case 1:
