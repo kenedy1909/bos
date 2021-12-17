@@ -60,7 +60,7 @@ $( document ).ready(function() {
     })
 
 
-    $
+    // $
     /*setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     var knob = "";
@@ -1238,10 +1238,10 @@ function paraIframe(num){
     
 }
 
-let count=0;
+let contar=0;
 
 function tarjeta(num) {
-    count ++;
+    contar ++;
     switch (parseInt(num)) {
         case 1:
             $('.txtBody').addClass('esc');
@@ -1266,7 +1266,7 @@ function tarjeta(num) {
         case 4:
             // $('.contenido-card-body').addClass('esc');
             // console.log(count);
-            if (count == 1) {
+            if (contar == 1) {
                 // $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
@@ -1275,13 +1275,13 @@ function tarjeta(num) {
             
                 
             }
-            if (count == 2) {
+            if (contar == 2) {
                 $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
                 // $('.contenido1').removeClass('esc');
                 // $('.contenido1').addClass('vis');
-                count=0;
+                contar=0;
                 
             }
            
@@ -1295,7 +1295,7 @@ function tarjeta(num) {
             $('.contenido2').removeClass('esc');
             $('.contenido2').addClass('vis');
 
-            if (count == 1) {
+            if (contar == 1) {
                 $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
@@ -1304,13 +1304,13 @@ function tarjeta(num) {
             
                 
             }
-            if (count == 2) {
+            if (contar == 2) {
                 $('.contenido1').addClass('esc');
                 $('.contenido2').addClass('esc');
             
                 // $('.contenido1').removeClass('esc');
                 // $('.contenido1').addClass('vis');
-                count=0;
+                contar=0;
                 
             }
         
