@@ -936,7 +936,12 @@ function scroll_horizontal2(num){
             break;
         case 1:
             var img_scroll = `
-                    <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">`;
+                    <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">
+                    <div style="position:absolute; top:-12px;">
+                    <p>(pase el puntero sobre la imagen)</p>
+                    </div>
+                    `;
+            
             var info_scroll = `
                     <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
                     <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
@@ -1238,9 +1243,10 @@ function paraIframe(num){
     
 }
 
-let contar=0;
+
 
 function tarjeta(num) {
+    let contar=0;
     contar ++;
     switch (parseInt(num)) {
         case 1:
@@ -1320,9 +1326,9 @@ function tarjeta(num) {
     }
     
 }
-let counter=0;
+
 function hiddenTxt(num){
-    
+    let counter=0;
     counter ++;
     switch (parseInt(num)) {
         case 1:
