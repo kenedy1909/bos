@@ -98,8 +98,16 @@
     border: solid 5px white!important;
 }
 
+.menos-margin-20 {
+    margin-left: -20px!important;
+}
+
 .menos-margin-25 {
     margin-left: -25px!important;
+}
+
+.menos-margin-45 {
+    margin-left: -45px!important;
 }
 
 .menos-margin-50 {
@@ -158,6 +166,10 @@
     margin-top: -25px!important;
 }
 
+.menos-marginT-30 {
+    margin-top: -30px!important;
+}
+
 .menos-marginT-40 {
     margin-top: -40px!important;
 }
@@ -166,8 +178,16 @@
     margin-top: -50px!important;
 }
 
+.menos-marginT-60 {
+    margin-top: -60px!important;
+}
+
 .menos-marginT-62 {
     margin-top: -62px!important;
+}
+
+.menos-marginT-70 {
+    margin-top: -70px!important;
 }
 
 .menos-marginT-75 {
