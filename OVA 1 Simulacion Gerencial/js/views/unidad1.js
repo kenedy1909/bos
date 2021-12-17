@@ -909,7 +909,7 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol3.png" width="100%">
+                            <img src="assets/img/img_ova/scrol3.png" width="25%">
                             <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
