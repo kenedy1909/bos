@@ -25,13 +25,11 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
 
     $(".p4-1").on("hover", function() {
@@ -79,14 +77,16 @@ function hoverp42(argument) {
 function slide() {
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
+
     quitarflecha(stepIndex+1);
+
+    actualizarprogress(stepIndex+1+6);
 }
 
 function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
-    quitarflecha(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
@@ -95,6 +95,9 @@ function slide_link(num) {
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
+
+  
+    
 }
 
 function controlSlides(num) {
@@ -113,39 +116,69 @@ function controlSlides(num) {
             break;
         case 2:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 6:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 7:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 8:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 9:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 10:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            
             break;
         case 11:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             slideCount = $('#slider-3 ul li').length;
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
@@ -156,6 +189,9 @@ function controlSlides(num) {
             break;
         case 12:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             /*slideCount = $('#slider-4 ul li').length;
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();
@@ -165,12 +201,21 @@ function controlSlides(num) {
         case 13:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            
             break;
         case 14:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 15:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             slideCount = $('#slider-5 ul li').length;
             slideWidth = $('#slider-5 ul li').width();
             slideHeight = $('#slider-5 ul li').height();
@@ -180,15 +225,18 @@ function controlSlides(num) {
         case 16:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            
             break;
         case 17:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "");
-            break;
-        case 19:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "");
             break;
         default:
@@ -197,6 +245,8 @@ function controlSlides(num) {
 }
 
 function quitarflecha(num) {
+
+
 
     if (parseInt(num) == 1) {
         console.log("fuera_flecha");
@@ -556,39 +606,39 @@ function rec() {
                         <li>
                           <div class="row" data-toggle="modal" data-target="#modal-img-4">
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-4.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-4.png" style="max-width: 50%;">
                             </div>
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-5.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-5.png" style="max-width: 50%;">
                             </div>
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-6.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-6.png" style="max-width: 50%;">
                             </div>
                           </div>
                         </li>
                         <li>
                           <div class="row" data-toggle="modal" data-target="#modal-img-5">
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-7.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-7.png" style="max-width: 50%;">
                             </div>
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-8.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-8.png" style="max-width: 50%;">
                             </div>
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-9.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-9.png" style="max-width: 50%;">
                             </div>
                           </div>
                         </li>
                         <li>
                           <div class="row" data-toggle="modal" data-target="#modal-img-3">
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 50%;">
                             </div>
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 50%;">
                             </div>
                             <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 80%;">
+                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 50%;">
                             </div>
                           </div>
                         </li>

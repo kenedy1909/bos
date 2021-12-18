@@ -140,6 +140,15 @@
 }
 
 
+.fondo_blacoLienaBlanca{
+    border-top: #fff 5px solid;
+    position: relative;
+    top: -100px;
+}
+.info_conjuntos{
+    z-index: 100;
+}
+
 /*.size_13{
 	font-size: 14px;
 }*/
@@ -409,7 +418,7 @@ button {
 .text-img-activi {
     border-bottom: solid 3px #78201A;
     width: 50%;
-    height: 65px;
+    height: 70px;
     margin: 0px;
     padding-top: 45px;
 }
@@ -681,7 +690,6 @@ button {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 900px;
     list-style: none;
 }
 

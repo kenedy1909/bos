@@ -756,10 +756,11 @@ p, button{
 /*Deslizador*/
 
 .inputDiv,.inputDiv2 {
-  width: 100%;
-  display:block;
-  color:#aaa;
-  position:relative;
+	width: 90%;
+    display: block;
+    color: #aaa;
+    position: relative;
+    left: 46px;
 }
 .output{display:none; width:40px; text-align:center;}
 
