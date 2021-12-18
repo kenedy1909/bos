@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".unidadclick").addClass('.coloryellow');
     setMigaja("Unidades de aprendizaje","","");
     flat = $("#flat").flipster({
         style: 'flat',

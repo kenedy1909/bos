@@ -1,5 +1,10 @@
 $( document ).ready(function() {
     
+    //iniciar y esconder personaje
+    $( ".ov-personaje").hide();
+    //para menu izquierda
+    $(".menu1").removeClass('d-none');
+    
     console.log(tema);
     
     $('#smartwizard').smartWizard({
@@ -21,16 +26,19 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
+        
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+        
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     slide_predeterminado();
     slide_link(tema);
+    
 
     var knob = "";
     var bar = "";
@@ -55,12 +63,16 @@ function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
         actualizarprogress(stepIndex+1);
+        quitarflecha(stepIndex+1);
+        
 }
 
 function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
+    quitarflecha(1);
+    
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
@@ -327,7 +339,7 @@ function scroll_p21(){
     $('.imp_21delete').html('');
     var cont = `<div class="content custom-scrollbar15">
                     <div class="custom-scrollbar__inner15">
-                      <p class="font_15 justificado" style="margin-left: 10px;">En este contexto, el Manual del Código de Ética para Profesionales de la Contabilidad contiene información que proporciona al contador elementos para responder ante las amenazas «del cumplimiento de los principios fundamentales,es decir, a los hechos que ponen en riesgo del incumplimiento de los principios fundamentales (integridad, objetividad, diligencia y competencia profesional, confidencialidad, y comportamiento profesional).</p>
+                      <p class="text-12px text-black justificado" style="margin-left: 10px;">En este contexto, el Manual del Código de Ética para Profesionales de la Contabilidad contiene información que proporciona al contador elementos para responder ante las amenazas «del cumplimiento de los principios fundamentales,es decir, a los hechos que ponen en riesgo del incumplimiento de los principios fundamentales (integridad, objetividad, diligencia y competencia profesional, confidencialidad, y comportamiento profesional).</p>
                     </div>
                     <div class="custom-scrollbar__bar15">
                       <div class="custom-scrollbar__knob15 cursor">
@@ -349,7 +361,7 @@ function scroll_p22(){
     $('.imp_21delete').html('');
     var cont = `<div class="content custom-scrollbar16">
                     <div class="custom-scrollbar__inner16">
-                      <p class="font_16 justificado" style="margin-left: 10px;">
+                      <p class="text-12px text-black justificado" style="margin-left: 10px;">
                         El Código asiste al contador para cumplir con responsabilidad y lo orienta hacia el interés público, establece diferentes escenarios para reconocer las amenazas, para evaluarlas (párrafo 120.7) y para eliminarlas, esto incluye el probable conflicto de interés (párrafo 120.10).
                       </p>
                     </div>
@@ -373,7 +385,7 @@ function scroll_p23(){
     $('.imp_21delete').html('');
     var cont = `<div class="content custom-scrollbar17">
                     <div class="custom-scrollbar__inner17">
-                      <p class="font_16 justificado" style="margin-left: 10px;">
+                      <p class="text-12px text-black justificado" style="margin-left: 10px;">
                         De acuerdo con Jiménez (2018), el interés público en esta corriente atribuye condiciones éticas, regida por los organismos internacionales de contabilidad y las normas emanadas por la regulación contable, de esta forma, la ética que se constituye para la actuación profesional en las organizaciones y el concepto de interés público que comparten los contadores y auditores y, que está ampliamente aceptado, es el de proteger los derechos de los inversionistas y acreedores.
                       </p>
                     </div>
@@ -397,7 +409,7 @@ function scroll_p24(){
     $('.imp_21delete').html('');
     var cont = `<div class="content custom-scrollbar18">
                     <div class="custom-scrollbar__inner18">
-                      <p class="font_16 justificado" style="margin-left: 10px;">
+                      <p class="text-12px text-black justificado" style="margin-left: 10px;">
                         Expresiones como ética, confianza, responsabilidad social empresarial y corporativa, seguimiento a estándares de información financiera, son acepciones que trabajan insistentemente los organismos internacionales (IFAC; IASB; FASB) en búsqueda de la legitimación del interés público, que podría constituirse en una ideología, en este sentido Baker (2009) manifiesta que “la ideología es entendida como un conjunto de ideas que reflejan los intereses de un grupo o clase particular y, no necesariamente de una clase dominante o gobernante”.
                       </p>
                     </div>
@@ -546,7 +558,7 @@ function imprime(num) {
 function pantalla6(num){
     switch (parseInt(num)){
         case 1:
-            var texto = `<p style="font-size: 13px;" class="justificado text-black">El origen de la palabra democracia viene del griego y su significado es “gobierno del pueblo” o “gobierno popular” (Rodríguez, 2010.), comprendiendo que la palabra hace referencia a un sistema político</p>`;
+            var texto = `<p style="font-size: 12px;" class="justificado text-black pb-2">El origen de la palabra democracia viene del griego y su significado es “gobierno del pueblo” o “gobierno popular” (Rodríguez, 2010.), comprendiendo que la palabra hace referencia a un sistema político</p>`;
             $('.banne_white').html(texto);
             $('.triangulo_yellow').css({ "visibility": "visible"});
             $('.tria_blue1').css({ "visibility": "hidden"});
@@ -715,43 +727,43 @@ function funcion_vanvas() {
 function pantalla13(num){
     switch (parseInt(num)) {
         case 1:
-            var text = `<p class="justificado m-auto text-black">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
+            var text = `<p class="justificado m-auto text-black" style="margin-left: -4% !important">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 2:
-            var text = `<p class="justificado m-auto text-black">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
+            var text = `<p class="justificado m-auto text-black" style="margin-left: -4% !important">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 3:
-            var text = `<p class="justificado m-auto text-black">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
+            var text = `<p class="justificado m-auto text-black" style="margin-left: -4% !important">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 4:
-            var text = `<p class="justificado m-auto text-black">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
+            var text = `<p class="justificado m-auto text-black" style="margin-left: -4% !important">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 5:
-            var text = `<p class="justificado m-auto text-black">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
+            var text = `<p class="justificado m-auto text-black" style="margin-left: -4% !important">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
             $('.pant13').html(text);
             break;
         case 6:
-            var text = `<div class="m-auto"><p class="justificado text-black">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
-                              <iframe id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen></div>`;
+            var text = `<div class="m-auto"><p class="justificado text-black" style="margin-left: -4% !important">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
+                              <iframe style="margin-left: -4% !important" id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen></div>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
@@ -1135,5 +1147,24 @@ function paraIframe(num){
             break;
     }
     
+}
+
+function quitarflecha(stepIndex) {
+    
+    if (stepIndex == 1) {
+        console.log("fuera_flecha");
+        document.getElementById("prev").style.display="none";
+    } else {
+        console.log("come_flecha");
+        document.getElementById("prev").style.display="block";
+    }
+
+    if (stepIndex == 28) {
+        console.log("fuera_next_flecha");
+        document.getElementById("next").style.display="none";
+    } else {
+        console.log("come__next_flecha");
+        document.getElementById("next").style.display="block";
+    }
 }
 

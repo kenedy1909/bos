@@ -224,7 +224,7 @@ function calificar(){
 	if (puntaje == 100) {
 		
 	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin: auto;">');
-	  $('.puntaje').text(puntaje+"%");
+	  $('.puntaje').text(puntaje+"%"); 
 	  $('.mensaje').text("¡Felicitaciones!");
 	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;background: #C8AD45; color:white;">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
