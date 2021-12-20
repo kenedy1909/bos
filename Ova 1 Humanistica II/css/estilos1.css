@@ -976,6 +976,7 @@ navegacion pantalla1*/
     border-right: 15px solid transparent;
     /*transform: rotate(90deg);*/
     visibility: hidden;
+	margin-top: -9px!important;
 }
 
 .p9_cont{
