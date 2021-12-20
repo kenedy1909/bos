@@ -137,6 +137,8 @@ function controlSlides(num){
         case 9:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            scroll_set(10);
+            scroll_set(11);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
@@ -417,7 +419,7 @@ function pantalla9(num){
 }
 
 function citar(){
-    var contenido = `<div style="height: 248px;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
+    var contenido = `<div style="height: fit-content;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
                     <p class="justificado">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
                   </div>`;
     $('.imprime_heare').html(contenido);

@@ -1,7 +1,11 @@
 $( document ).ready(function() {
+<<<<<<< HEAD
 
     $('.linkUnidades').addClass('colorUniLink');
 
+=======
+    $(".unidadclick").addClass('.coloryellow');
+>>>>>>> bc14606fb0051968e33f5f8fe04149abecdc20e1
     setMigaja("Unidades de aprendizaje","","");
     flat = $("#flat").flipster({
         style: 'flat',

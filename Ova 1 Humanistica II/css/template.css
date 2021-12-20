@@ -263,7 +263,11 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
+<<<<<<< HEAD
   max-width: 70%;
+=======
+  max-width: 65%;
+>>>>>>> bc14606fb0051968e33f5f8fe04149abecdc20e1
   position: relative;
   top: 25px;
 }
@@ -575,13 +579,16 @@ svg circle:nth-child(2){
 
 .circle_yellow{
   background: #FFC000;
-  border-radius: 50%;
-  width: 90%;
-  height: 90%;
-  margin-left: 8px;
-  margin-top: 8px;
+    border-radius: 50%;
+    width: 94%;
+    height: 94%;
+    margin-left: 5px;
+    margin-top: 0px;
 }
 
+.coloryellow {
+  color: #FFE14E;
+}
 /*
 card flip*/
 .flip-card {

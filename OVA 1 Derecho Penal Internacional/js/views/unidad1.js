@@ -984,6 +984,14 @@ function videos(num) {
         case 1:
             var videointro1 = document.getElementById('video_intro1');
             videointro1.pause();
+
+            $(document).keyup(function(e) {
+              // console.log(e.key+"code");
+              if (e.key === "Escape") {
+
+                 videointro1.pause();
+             }
+         });
             break;
         default:
             // statements_def
