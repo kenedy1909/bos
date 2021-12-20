@@ -29,13 +29,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*funcion_vanvas();
     funcion_canvas2();*/
@@ -53,7 +51,8 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides2(stepIndex);
-    quitarflecha(stepIndex+1)
+    quitarflecha(stepIndex+1);
+    actualizarprogress(stepIndex+1+18);
 }
 
 function slide_predeterminado2(){
