@@ -440,16 +440,19 @@ function camboyas(num) {
                     <br>
                     <p class="p_black justificado m-auto">Las salas tienen competencia para juzgar los crímenes cometidos en la Kampuchea democrática entre el 17 de abril de 1975 y el 6 de enero de 1979, aplicando tanto la legislación penal interna como el derecho internacional humanitario, y con la posibilidad de aplicar penas incluso de prisión perpetua.</p>
                     `;
+        $(".t100").removeClass('top100');
         $("#camboya").html(texto);
     }else if (num == 2) {
         var texto = `
                     <p class="p_black justificado m-auto">Se debe  recordar que durante el periodo de tiempo que tiene competencia temporal la sala, Camboya se encontró bajo el régimen de los jemeres rojos, liderado por Pol Pot, quien finalmente fallece en 1998, periodo durante el cual se calculan que fueron asesinados cerca de 1.6 millones de personas, en lo que algunos historiadores han denominado un auto genocidio, pues se trataba de un sistema político basado en un “comunismo agrario” en el que los jemeres centraron sus ataques contra intelectuales, líderes políticos opositores, monjes budistas, profesionales, entre otros.</p>
                     `;
+        $(".t100").removeClass('top100');
         $("#camboya").html(texto);
     }else if (num == 3) {
         var texto = `
                     <p class="p_black justificado m-auto">Aunque las salas especiales aún se encuentran en funcionamiento, son pocos los juicios que ha podido culminar, en parte por la avanzada edad de los presuntos responsables.</p>
                     `;
+        $(".t100").addClass('top100');
         $("#camboya").html(texto);
     }
 }
