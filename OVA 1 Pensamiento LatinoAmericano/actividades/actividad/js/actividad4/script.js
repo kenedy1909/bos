@@ -17,13 +17,13 @@ const palabras = [
     pos: [4, 4],
     sentido: 1,
     palabra: 'indianidad',
-    pista: 'Renuevan el aire que respiramosManifestaciones del despertar indígena sean grupos mayoritarios o minoritarios. '
+    pista: 'Manifestaciones del despertar indígena sean grupos mayoritarios o minoritarios. '
   },
   {
     pos: [6, 2],
     sentido: 1,
     palabra: 'clase',
-    pista: 'grupo de personas que dentro de la sociedad tiene condiciones comunes de vida o de trabajo, e intereses y medios económicos iguales o parecidos.'
+    pista: 'Grupo de personas que dentro de la sociedad tiene condiciones comunes de vida o de trabajo, e intereses y medios económicos iguales o parecidos.'
   },
   {
     pos: [4, 9],
@@ -165,15 +165,15 @@ new Vue({
       registrarActividad(puntaje);
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);*/
       if (puntaje >= 100) {
-        $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
+        $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
         $('.puntaje').text("100%");
         $('.mensaje').text("¡Felicitaciones!");
-        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;">cerrar</button>');
       }else{
-        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
+        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;margin-top: 5%;">');
         $('.mensaje').text("¡Puedes hacerlo mejor!");
         $('.puntaje').text("0%");
-        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
       }
       $("#exampleModal").modal("show");
       /*this.mensaje = `

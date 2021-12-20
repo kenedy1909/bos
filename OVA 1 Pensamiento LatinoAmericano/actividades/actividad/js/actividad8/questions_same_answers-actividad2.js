@@ -175,21 +175,21 @@ QuestionsSameAnswers.prototype.score =  function () {
     var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
         
-      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
         
-      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else{
-      $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%;">');
+      $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%;margin-top: 5%;">');
       $('.mensaje').text("Inténtalo nuevamente.");
       $('.puntaje').text(Math.round(puntaje)+"%");
-      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }
     $("#exampleModal").modal("show");
 }
@@ -222,7 +222,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th>Ítem</th>\
+                    <th></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
