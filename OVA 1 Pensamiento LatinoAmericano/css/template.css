@@ -276,6 +276,19 @@ iframe{
   position: relative;
 }
 
+.pinposicion{
+  background: none!important;
+  display: block!important;
+  margin: 0px 7px!important;
+  max-width: 95%!important;
+  position: relative!important;
+  width: 151px!important;
+  height: 157px!important;
+  max-width: 200px!important;
+  top: -8px!important;
+  left: -14px!important;
+}
+
 .card .user .menu_superior{
   background: none;
   display: block;
