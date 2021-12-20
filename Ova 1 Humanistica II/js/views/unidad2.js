@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+
+  $('.linkUnidades').removeClass('colorUniLink');
+
+
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);

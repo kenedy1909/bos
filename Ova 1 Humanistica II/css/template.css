@@ -263,7 +263,7 @@ iframe{
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 60%;
+  max-width: 70%;
   position: relative;
   top: 25px;
 }
@@ -360,9 +360,9 @@ iframe{
   color: #777777;
 }
 
-.img-circle {
+/* .img-circle {
     /border-radius: 50%;/
-}
+} */
 
 
 /*modales inicio*/
@@ -526,7 +526,7 @@ svg circle{
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/
+/* /Claculo para simular el porcent/ */
 svg circle:nth-child(2){
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
@@ -869,4 +869,9 @@ card flip*/
 }
 .img-100{
   width: 100%;
+}
+
+
+.colorUniLink{
+  color: #FFE14E!important;
 }

@@ -200,10 +200,20 @@ html{
     color: #fff;
     outline: 0;
 }
-.calificacion .modal-content{
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+.calificacion .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 22px;
+    outline: 0;
+    /* background-color: transparent; */
+    border-color: rgba(0, 0, 21, 0.0);
 }
 .calificacion .modal-body{
     background-size: cover;

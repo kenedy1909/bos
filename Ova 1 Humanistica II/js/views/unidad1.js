@@ -1,5 +1,9 @@
 $( document ).ready(function() {
     
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $('.linkUnidades').removeClass('colorUniLink');
+
     console.log(tema);
     
     $('#smartwizard').smartWizard({
