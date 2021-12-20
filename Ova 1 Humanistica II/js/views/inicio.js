@@ -1,9 +1,5 @@
 $( document ).ready(function() {
     setMigaja("Inicio","","");
-<<<<<<< HEAD
-=======
-    // $( ".ov-personaje").hide();
->>>>>>> bc14606fb0051968e33f5f8fe04149abecdc20e1
     $( ".c-sidebar-nav > li").show();
     $( ".c-sidebar-nav > .ov-inicio").show();
     $('.linkUnidades').removeClass('colorUniLink');

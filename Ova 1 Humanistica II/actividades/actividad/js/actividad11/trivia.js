@@ -45,7 +45,7 @@ window.onload = function () {
     
     for (var i = 0; i < answers.length -1; i += 1) {
       var createDiv = document.createElement('div');
-      createDiv.className += 'col-md-5 opcion';
+      createDiv.className += 'col-md-5 opcion d-flex align-items-center justify-content-center';
           text = document.createTextNode(answers[i]);
       
       createDiv.appendChild(text);
@@ -120,12 +120,13 @@ function calificar(){
     i++;
   });
 
-  var puntaje = 100;
+  var puntaje = 0;
   for (var i = 0; i < res.length; i++){
     if (res[i] == 'false'){
-      puntaje = puntaje - 33.3;
+      puntaje = puntaje + 33.3;
     }
   }
+  puntaje=Math.round(puntaje);
   if (puntaje == 100) {
     $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%; margin: auto;">');
     $('.puntaje').text(puntaje+"%");

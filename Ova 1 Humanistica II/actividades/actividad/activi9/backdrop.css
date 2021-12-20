@@ -101,6 +101,7 @@ html{
     left: -100%;
     overflow: auto;
     padding: 15px;
+    padding-top: 40px!important;
     position: fixed;
     right: 100%;
     top: 0;
