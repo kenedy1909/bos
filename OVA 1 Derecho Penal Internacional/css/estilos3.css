@@ -390,7 +390,7 @@ p, button{
 }
 
 .bg-amarillo-c{
-  background-color: #FFD966;
+  background-color: #FEE599;
 }
 
 .bg-dorado-o{
@@ -449,7 +449,11 @@ p, button{
   background-repeat: no-repeat;
   min-height: 400px;
   background-position: center;
-  border-radius: 17%;
+  border-radius: 30px;
+  left: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
 }
 
 .fondo-7{
