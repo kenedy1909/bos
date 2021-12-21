@@ -631,10 +631,10 @@ function scroll_horizontal2(num){
         case 0:
             var img_scroll = `
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bunker (1).png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/bunker (1).png" class="img-70 m-auto">
                              </div>
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/muerte.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/muerte.png" class="img-70 m-auto">
                              </div>
                              `;
             var info_scroll = `El primero de estos conflictos que debe llamar la atención es el ocurrido en la <span class="text-cafe-activi"><b>República Federativa de Yugoslavia</b></span>, la cual, después de integrar durante décadas pueblos con profundas diferencias étnicas, religiosas y de identidad nacional, comienza a desintegrarse a partir de la muerte del general Josip Broz Tito en 1980, quien durante treinta y cinco años gobernó la hoy extinta Yugoslavia.`;
@@ -646,10 +646,10 @@ function scroll_horizontal2(num){
         case 1:
             var img_scroll = `
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/punto.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/punto.png" class="img-70 m-auto">
                              </div>
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/balas.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/balas.png" class="img-70 m-auto">
                              </div>
                              `;
             var info_scroll = `A raíz de la muerte del general tito se retomó el ánimo de varios pueblos por lograr su independencia y constituirse como un Estado soberano, lo que <span class="text-cafe-activi"><b>dio inicio a la confrontación,</b></span> especialmente cuando Bosnia Herzegovina empezó su proceso de independencia, ante la negativa de los Bosnios Serbios de apoyar el proceso, con el respaldo de Serbia, en cabeza de Slodovan Milosevic que se hizo al poder en la década del 90.`;
@@ -665,16 +665,16 @@ function scroll_horizontal2(num){
                                       </div>
                                       <br>
                                       <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
+                                      <h4 class="text-cafe-activi pt-1"><b>Trabajo autónomo</b></h4>
                                     </div>
                                     <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
+                                      <div class="pr-3 justificado">
                                         <p class="p_black pl-3">Para un recorrido rápido al conflicto de Yugoslavia, visualice el siguiente video haciendo clic en el botón YouTube:</p>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
+                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5" style="position:relative; top:-23px;">
+                                    <div class="col-md-5 d-flex">
                                       <div class="m-auto bg-cafe-activi radius-2 p-3">
                                         <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
                                       </div>
@@ -683,7 +683,7 @@ function scroll_horizontal2(num){
                                       <div class="img-45 m-auto">
                                         <img src="assets/img/img_ova/reloj.png" class="img-100">
                                       </div>
-                                      <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>6 minutos</b></p>
+                                      <p class="p_black pl-3 m-auto" style="font-size:13px;">Tiempo sugerido: <b>6 minutos</b></p>
                                     </div>
                                   </div>
                                 </div>
@@ -695,10 +695,10 @@ function scroll_horizontal2(num){
         case 2:
             var img_scroll = `
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/explosion.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/explosion.png" class="img-70 m-auto">
                              </div>
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/africa.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/africa.png" class="img-70 m-auto">
                              </div>
                              `;
             var info_scroll = `Por otra parte, en 1994 se tiene un conflicto interno que se desarrolla en el continente africano que llama la atención de la comunidad internacional por su <span class="text-cafe-activi"><b>grado tan elevado de violencia</b></span> entre dos grupos étnicos que habitan en la república de Ruanda.`;
@@ -710,10 +710,10 @@ function scroll_horizontal2(num){
         case 3:
             var img_scroll = `
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/belgica.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/belgica.png" class="img-70 m-auto">
                              </div>
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/granada.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/granada.png" class="img-70 m-auto">
                              </div>
                              `;
             var info_scroll = `Estamos haciendo referencia al conflicto surgido como consecuencia de un proceso histórico de <span class="text-cafe-activi"><b>discriminación fomentado por Bélgica</b></span> que colonizó Ruanda, en el cual, estableció diferencias entre los Tutsis y los Hutus; los primeros considerados como una etnia superior que controlaba las principales fuentes de producción, lo que sembró un resentimiento que por décadas se alimentó y que fue en últimas lo que desembocó en el genocidio presentado en el año de 1994.`;
@@ -729,26 +729,26 @@ function scroll_horizontal2(num){
                                       </div>
                                       <br>
                                       <br>
-                                      <h2 class="text-cafe-activi"><b>Trabajo autónomo</b></h2>
+                                      <h4 class="text-cafe-activi pt-1"><b>Trabajo autónomo</b></h4>
                                     </div>
                                     <div class="col-md-12 banner_activi bg-amarillo-c">
-                                      <div class="pr-3">
+                                      <div class="pr-3 justificado">
                                         <p class="p_black pl-3">Para comprender el tema visto es  indispensable ver el documental que nos muestra el antes y durante del conflicto étnico que se vivió. Haga clic en el botón YouTube:</p>
                                       </div>
                                     </div>
                                   </div>
-                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5">
-                                    <div class="col-md-6 d-flex">
+                                  <div class="col-md-12 row d-flex justify-content-center mt-2 mb-5" style="position:relative;top:-23px;">
+                                    <div class="col-md-5 d-flex">
                                       <div class="m-auto bg-cafe-activi radius-2 p-3">
                                         <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
                                       </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 pt-4">
                                       <div class="d-flex">
                                           <div class="img-45 m-auto">
                                             <img src="assets/img/img_ova/reloj.png" class="img-100">
                                           </div>
-                                          <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>54 minutos</b></p>
+                                          <p class="p_black pl-3 m-auto" style="font-size:13px">Tiempo sugerido: <b>54 minutos</b></p>
                                       </div>
                                       <div class="d-flex">
                                         <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
@@ -764,10 +764,10 @@ function scroll_horizontal2(num){
         case 4:
             var img_scroll = `
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/casco.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/casco.png" class="img-70 m-auto">
                              </div>
                              <div class="col-md-6 px-2 d-flex">
-                               <img src="assets/img/img_ova/bala2.png" class="img-90 m-auto">
+                               <img src="assets/img/img_ova/bala2.png" class="img-70 m-auto">
                              </div>
                              `;
             var info_scroll = `Es importante señalar que las cifras oficiales dan cuenta de más de <span class="text-cafe-activi"><b>800.000 victimas</b></span> del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses, periodo de mayor crueldad de los ataques de los Hutus contra el pueblo Tutsi.`;
@@ -984,6 +984,14 @@ function videos(num) {
         case 1:
             var videointro1 = document.getElementById('video_intro1');
             videointro1.pause();
+
+            $(document).keyup(function(e) {
+              // console.log(e.key+"code");
+              if (e.key === "Escape") {
+
+                 videointro1.pause();
+             }
+         });
             break;
         default:
             // statements_def

@@ -484,3 +484,8 @@ p, button{
 .border-bottom-cafe{
   border-bottom: solid #420F05 2px;
 }
+
+.top100{
+  position: relative;
+  top: 100px;
+}

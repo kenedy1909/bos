@@ -30,14 +30,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     
@@ -69,6 +67,7 @@ function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
     quitarflecha(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -115,60 +114,115 @@ function controlSlides(num){
         case 2:
             $('.pasos').removeClass('efectos');
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 9:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             scroll_set(10);
             scroll_set(11);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 11:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
+
+            $(".menu1").removeClass('d-none');
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block"; 
+            
+            $(".menu1").removeClass('d-none');
+            
             break;
-            tema = 1;
         default:
             break;
     }

@@ -237,6 +237,11 @@
 .hr-verde-oscuro {
     border-top: 7px solid var(--bg-color-dark)!important;
 }
+.linkSinDecoration:hover{
+    text-decoration: none!important;
+    outline: none!important;
+}
+
 
 .card1 {
     border-radius: 45px;
@@ -650,7 +655,6 @@ button {
 }
 
 .custom-scrollbar__bar10,
-.custom-scrollbar__bar11,
 .custom-scrollbar__bar12,
 .custom-scrollbar__bar13,
 .custom-scrollbar__bar14,
@@ -666,6 +670,17 @@ button {
     right: 30px;
     border-radius: 4px;
     height: 150px;
+}
+
+.custom-scrollbar__bar11 {
+    position: absolute;
+    top: 22px;
+    bottom: 45px;
+    background: #ffffff;
+    width: 3px;
+    right: 30px;
+    border-radius: 4px;
+    height: 190px;
 }
 
 .custom-scrollbar__inner3,

@@ -411,7 +411,7 @@ p, button{
     bottom: 45px;
     background: #ffffff;
     width: 3px;
-    right: 30px;
+    right: 18px;
     border-radius: 4px;
     height: 150px;
 }
@@ -423,7 +423,7 @@ p, button{
     width: 3px;
     right: -10px;
     border-radius: 4px;
-    height: 150px;
+    height: 130px;
 }
 
 .custom-scrollbar__inner3, .custom-scrollbar__inner4, .custom-scrollbar__inner5{
@@ -439,18 +439,18 @@ p, button{
 	padding-right: 20px;
 	overflow-y: auto;
 	overflow: hidden;
-	-webkit-overflow-scrolling: touch;*/
-}
+	-webkit-overflow-scrolling: touch;
+}*/
 .custom-scrollbar__inner11, .custom-scrollbar__inner10{
 	height: 100%;
-	padding-right: 55px;
-	overflow-y: auto;
+	padding-right: 18px;
+	overflow-y: hidden;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
 }
 .custom-scrollbar__inner15, .custom-scrollbar__inner16, .custom-scrollbar__inner17, .custom-scrollbar__inner19, .custom-scrollbar__inner20, .custom-scrollbar__inner21{
-	height: 80%;
-	padding-right: 55px;
+	height: 90%;
+	padding-right: 40px;
 	overflow-y: auto;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -464,8 +464,8 @@ p, button{
 	-webkit-overflow-scrolling: touch;
 }
 .custom-scrollbar__inner15, .custom-scrollbar__inner16, .custom-scrollbar__inner17, .custom-scrollbar__inner18, .custom-scrollbar__inner19, .custom-scrollbar__inner20, .custom-scrollbar__inner21{
-	height: 87%;
-	padding-right: 55px;
+	height: 90%;
+	padding-right: 40px;
 	overflow-y: auto;
 	overflow: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -976,6 +976,7 @@ navegacion pantalla1*/
     border-right: 15px solid transparent;
     /*transform: rotate(90deg);*/
     visibility: hidden;
+	margin-top: -9px!important;
 }
 
 .p9_cont{

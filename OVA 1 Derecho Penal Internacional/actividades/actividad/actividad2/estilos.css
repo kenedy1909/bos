@@ -374,4 +374,5 @@ h2.tituloContenedorE {
   position: relative;
   top: -60px;
   text-align: center;
+  border: 3px solid white;
 }

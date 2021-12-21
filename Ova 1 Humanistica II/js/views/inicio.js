@@ -1,8 +1,10 @@
 $( document ).ready(function() {
     setMigaja("Inicio","","");
-    // $( ".ov-personaje").hide();
     $( ".c-sidebar-nav > li").show();
     $( ".c-sidebar-nav > .ov-inicio").show();
+    $('.linkUnidades').removeClass('colorUniLink');
+
+
     var knob = "";
     var bar = "";
     var container = "";

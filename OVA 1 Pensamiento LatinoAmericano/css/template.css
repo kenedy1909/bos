@@ -240,7 +240,7 @@ iframe{
 .card-container, .front, .back {
   width: 100%;
   height: auto;
-  border-radius: 22px;
+  border-radius: 30px;
   background: var(--bg-color);
 }
 .frontwhite{
@@ -270,10 +270,23 @@ iframe{
 .card .user img{
   background: none;
   display: block;
-  margin: 5px auto;
-  max-width: 60%;
+  margin: 0px 7px;
+  top: 4%;
+  max-width: 95%;
   position: relative;
-  top: 10px;
+}
+
+.pinposicion{
+  background: none!important;
+  display: block!important;
+  margin: 0px 7px!important;
+  max-width: 95%!important;
+  position: relative!important;
+  width: 151px!important;
+  height: 157px!important;
+  max-width: 200px!important;
+  top: -8px!important;
+  left: -14px!important;
 }
 
 .card .user .menu_superior{

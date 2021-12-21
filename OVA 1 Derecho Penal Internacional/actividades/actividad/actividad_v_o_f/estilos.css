@@ -173,7 +173,7 @@ span.checked svg.svg2 {
 }
 
 .border_punteado{
-    border: dashed #FFFFFF 5px;
+    border: dashed #771E18 5px;
     border-radius: 85px;
     padding: 1em;
 }
@@ -315,7 +315,7 @@ cursor: pointer;}
 
 /* When the radio button is checked, add a blue background */
 .checkcontainer input:checked ~ .radiobtn{
-  background-color: #2196F3;
+  background-color: #771E18;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -365,4 +365,12 @@ cursor: pointer;}
   position: relative;
   top: -60px;
   text-align: center;
+  border: 3px solid white;
+
+}
+
+ .title_table:last-child{
+     position: relative;
+    left: -5px !important;
+    /* border: 1px solid red; */
 }

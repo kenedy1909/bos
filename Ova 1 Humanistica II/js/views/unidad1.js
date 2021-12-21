@@ -1,10 +1,9 @@
 $( document ).ready(function() {
     
-    //iniciar y esconder personaje
     $( ".ov-personaje").hide();
-    //para menu izquierda
     $(".menu1").removeClass('d-none');
-    
+    $('.linkUnidades').removeClass('colorUniLink');
+
     console.log(tema);
     
     $('#smartwizard').smartWizard({
@@ -97,10 +96,16 @@ function controlSlides(num){
             /*scroll();*/
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Importancia de la formación humanística");            
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Importancia de la formación humanística");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";            
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Importancia de la formación humanística");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             
             break;
         case 4:
@@ -109,9 +114,15 @@ function controlSlides(num){
                             
                         });
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             dragging = "";
             diff = "";
             newTop = "";
@@ -123,15 +134,24 @@ function controlSlides(num){
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 7:
             
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 8:
             var contenido = `<p class="color-text m-auto"><i>Clic en el ícono para visualizar información</i></p>`;
             $('.imprime_heare').html(contenido);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 9:
             $('.p_9c').html('<p><i>Clic en cada círculo para visualizar la información</i></p>');
@@ -139,9 +159,15 @@ function controlSlides(num){
                     
                 });
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 11:
             sumaslide++;
@@ -186,9 +212,15 @@ function controlSlides(num){
                 });
             }
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 13:
             $('.wite_ban_13').css({ "background": "transparent"
@@ -196,17 +228,29 @@ function controlSlides(num){
                 });
             $('.pant13').html('');
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 16:
             $('.pantallas16').html('');
             /*$('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');*/
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             /*$("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;*/
             break;
@@ -224,43 +268,79 @@ function controlSlides(num){
             $('.banner_17').html('');
             $('.banner_17').css({'visibility': 'hidden'});
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 19:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 20:
             $('.pant20').html(text);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 21:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 22:
             $('.imp_21delete').html('');
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 23:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 24:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 25:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 26:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 27:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 28:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         default:
             break;
@@ -272,7 +352,7 @@ function imprime16(){
             <div class="px-3 py-2">
               <p class="justificado text-black">No obstante, los perfiles de formación profesionales y ocupacionales de los contadores públicos, continúan estando orientados a responder con suficiencia a las demandas empresariales más que a las sociales, por tanto se considera fundamental revisar de manera reflexiva las intenciones formativas, los fines y usuarios de la formación contable y los propósitos y filosofías institucionales como aspectos que posibilitan la incorporación de las dimensiones no incluidas en la educación contable tradicional.</p>
                 <div class="d-flex">
-                  <button class="btn btnpant16 ml-auto px-4" data-toggle="modal" data-target="#modaltable">ver</button>
+                  <button class="btn btnpant16 ml-auto px-4 btn-lg" data-toggle="modal" data-target="#modaltable">ver</button>
                 </div>
             </div>
     `;
@@ -763,7 +843,7 @@ function pantalla13(num){
             break;
         case 6:
             var text = `<div class="m-auto"><p class="justificado text-black" style="margin-left: -4% !important">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
-                              <iframe style="margin-left: -4% !important" id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen></div>`;
+                              <iframe style="margin-left: -4% !important;min-height:80px!important;width:80%!important;" id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen></div>`;
             $('.wite_ban_13').css({ "background": "white"
                     
                 });
@@ -974,7 +1054,7 @@ function pantallas16(num){
             break;
         case 1:
             var pantalla = `
-            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+            <div class="banner_16 p-3 d-flex" style="min-height: 200px;">
               <p class="justificado p_black m-auto">El pedagogo brasileño Paulo Freire, quien ha sido uno de los principales exponentes de la pedagogía crítica latinoamericana, considera que “(...) la función principal de la educación es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola” (Ayuste, 2006, p. 42).</p>
             </div>`;
             
@@ -982,7 +1062,7 @@ function pantallas16(num){
             break;
         case 2:
             var pantalla = `
-            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+            <div class="banner_16 p-3 d-flex" style="min-height: 200px;">
               <p class="justificado p_black m-auto">Y que a partir de esa educación, el concepto de liberación cobra toda significancia posible tanto  desde  el  punto de vista de las ciencias sociales como en las aplicadas, especialmente para el particular de este trabajo, la contabilidad.</p>
             </div>`;
             
@@ -990,7 +1070,7 @@ function pantallas16(num){
             break;
         case 3:
             var pantalla = `
-            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+            <div class="banner_16 p-3 d-flex" style="min-height: 200px;">
               <p class="justificado p_black m-auto">Siguiendo con Gómez (2012) Las disciplinas científicas, incluso aquellas que se especializan en problemas de conocimientos tecnológicos y técnicos, requieren una comprensión del medio en el cual se desata la transmisión de saberes, de tal forma que pueda desarrollarse favorablemente el proceso.</p>
             </div>`;
             
@@ -998,7 +1078,7 @@ function pantallas16(num){
             break;
         case 4:
             var pantalla = `
-            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+            <div class="banner_16 p-3 d-flex" style="min-height: 200px;">
               <p class="justificado p_black m-auto">Lo anterior implica un estudio juicioso y comprometido de quienes aprenden, enseñan y educan de forma coherente con las necesidades de la sociedad y no únicamente con aquellas derivadas del mercado de capitales.</p>
             </div>`;
             
@@ -1006,7 +1086,7 @@ function pantallas16(num){
             break;
         case 5:
             var pantalla = `
-            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+            <div class="banner_16 p-3 d-flex" style="min-height: 200px;">
               <p class="justificado p_black m-auto">Según lo expresado por Sánchez (2015) la necesidad de profesionalización contable es producto de esfuerzos gremiales y gubernamentales por otorgar el estatus de saber disciplinar a la contabilidad; su marcado uso en el mundo de los negocios y el tecnicismo asociado a su práctica, ha  legado la percepción social de la contabilidad como saber hacer en contraposición a la concepción social del saber contable.</p>
             </div>`;
             
@@ -1014,7 +1094,7 @@ function pantallas16(num){
             break;
         case 6:
             var pantalla = `
-            <div class="banner_16 p-3 d-flex" style="min-height: 270px;">
+            <div class="banner_16 p-3 d-flex" style="min-height: 200px;">
               <p class="justificado p_black m-auto">En tanto resultado de las dinámicas y modificaciones en las relaciones sociales y económicas, la contabilidad se encuentra convocada a mejorar sus conceptualizaciones, formas de representación, medición y presentación, que complementen más que sustituyan las financieras tradicionales.</p>
             </div>`;
             
