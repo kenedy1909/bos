@@ -998,3 +998,47 @@ function videos(num) {
             break;
     }
 }
+
+function toggleBanner(num) {
+  let contador=1;
+  contador= contador++;
+  // console.log('clik'+ contador);
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner2U1-8').removeClass('d-none');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner1U1-8').removeClass('d-none'); 
+        $('.banner3U1-8').removeClass('d-none');
+        $('.banner5U1-8').removeClass('d-none'); 
+        $('.banner7U1-8').removeClass('d-none');  
+        // $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner4U1-8').removeClass('d-none');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner6U1-8').removeClass('d-none');  
+      break;
+      case 5:
+    
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner8U1-8').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
+}
