@@ -27,12 +27,18 @@
                      <p class="text-center">CUESTIONARIO</p>
                  </div>
               </div>
-              <div class="col-md-7 shadow content-tarjeta">
-                  <p class="pb-2 p_black">Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
+              <div class="col-md-7 ml-3 shadow content-tarjeta">
+                  <p class="pb-1" style="color: black; font-size: small;">Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 mt-5">
                   <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
+
+                    <div class="col-md-1">
+                        <p id="punto3" style="color: #FFC000; font-size: 40px; "><b>3</b></p>
+                        <p id="punto4" style="color: #FFC000; font-size: 40px; display: none;"><b>4</b></p>
+                    </div>
+
                       <div class="preguntas">
 
                           <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">

@@ -287,3 +287,12 @@ span.checked svg.svg2 {
     border-radius: 20px;
     padding: 30px;
 }
+
+.triangulo_der3 {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #003442;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
+}

@@ -36,6 +36,7 @@ window.onload = function () {
   }
   if (curr == 3) {
     $('.cantidad').html('4/4');
+    $('#calActi4').show();
   }
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];

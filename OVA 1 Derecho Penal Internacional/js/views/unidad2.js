@@ -497,3 +497,47 @@ function cardPara4(num) {
         $("#card4-4").html(texto);
     }
 }
+
+function toggleBanner2(num) {
+    let contador=1;
+    contador= contador++;
+    // console.log('clik'+ contador);
+    switch (parseInt(num)) {
+      case 1:
+        
+          $('.bannerU2-4').addClass('d-none');
+          $('.banner2U2-4').removeClass('d-none');     
+        
+        break;
+        case 2:
+      
+          $('.bannerU2-4').addClass('d-none');
+          $('.banner1U2-4').removeClass('d-none'); 
+          $('.banner3U2-4').removeClass('d-none');
+          $('.banner5U2-4').removeClass('d-none'); 
+          $('.banner7U2-4').removeClass('d-none');  
+          // $('.banner3U1-3').removeClass('esc'); 
+        
+        break;
+        case 3:
+        
+          $('.bannerU2-4').addClass('d-none');
+          $('.banner4U2-4').removeClass('d-none');     
+        
+        break;
+        case 4:
+      
+          $('.bannerU2-4').addClass('d-none');
+          $('.banner6U2-4').removeClass('d-none');  
+        break;
+        case 5:
+      
+          $('.bannerU2-4').addClass('d-none');
+          $('.banner8U2-4').removeClass('d-none');  
+        break;
+    
+      default:
+        break;
+    }
+    
+  }
