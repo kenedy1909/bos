@@ -185,13 +185,26 @@
                                 <div class="col-md-9">
                                     <p class="p_black justificado">La lógica estudia la forma del razonamiento, donde se determina si un argumento es válido o no utilizando técnicas y reglas. El orden en que se presenta esta unidad es el siguiente:</p>
                                     <br>
-                                    <div class="radius-3 p-3 bg-amarillo row shadow">
-                                        <div id="carouselExampleControls" class="carousel slide row" data-ride="carousel">
+                                    <div class="radius-3 bg-amarillo row shadow p-0" style="height: 100px;">
+                                        <div class="col-12 row d-flex align-items-center m-0">
+                                            <div class="col-1 d-flex justify-content-start">
+                                                <!-- <i class="fas fa-angle-left h1 p_black cursor d-none botonAnimation" id="cIzquierda" onclick="carouselP1(1)"></i> -->
+                                                <h1 class="p_black cursor d-none botonAnimation" id="cIzquierda" onclick="carouselP1(1)">X</h1>
+                                            </div>
+                                            <div class="col-10 p-2" id="textCarouselAnimate">
+                                                <p class="p_black justificado textAnimation">Inicialmente se define el concepto de proposición y se establece el significado e interpretación de los “<b>conectores lógicos</b>” (conjunción, disyunción, negación, implicación y la doble implicación) para formar proposiciones compuestas.</p>
+                                            </div>
+                                            <div class="col-1 d-flex justify-content-end">
+                                                <!-- <i class="fas fa-angle-right h1 p_black cursor botonAnimation" id="cDerecha" onclick="carouselP1(2)"></i> -->
+                                                <h1 class="p_black cursor botonAnimation" id="cDerecha" onclick="carouselP1(2)">X</h1>
+                                            </div>
+                                        </div>
+                                        <!-- <div id="carouselExampleControls" class="carousel slide row" data-ride="carousel">
                                           <a class="carousel-control-prev col-md-1" href="#carouselExampleControls" role="button" data-slide="prev">
                                             <span class="triangulo_izq" aria-hidden="true"></span>
                                             <span class="sr-only">Previous</span>
                                           </a>
-                                          <div class="carousel- col-md-10">
+                                          <div class="carousel col-md-10">
                                             <div class="carousel-item active">
                                               <p class="p_black justificado">Inicialmente se define el concepto de proposición y se establece el significado e interpretación de los “<b>conectores lógicos</b>” (conjunción, disyunción, negación, implicación y la doble implicación) para formar proposiciones compuestas.</p>
                                             </div>
@@ -209,7 +222,7 @@
                                             <span class="triangulo_der" aria-hidden="true"></span>
                                             <span class="sr-only">Next</span>
                                           </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -229,9 +242,9 @@
                                     <div class="titulo-ova">
                                         <h3><b>Lógica matemática</b> </h3>
                                     </div>
-                                    <h3 class="text-color-o my-4">Proposiciones simples y compuestas /Introducción</h3>
+                                    <h3 class="text-color-o my-5">Proposiciones simples y compuestas /Introducción</h3>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 mt-3">
                                     <p class="p_black justificado">El objetivo es aprender a razonar demostraciones formales por el método directo y el método por contradicción. Se considera que si el alumno aprende lógica matemática no tendrá problemas para aprender ciencias exactas y será capaz de programar computadoras, ya que un programa de computadora no es otra cosa que una secuencia de pasos lógicos, que la persona establece para resolver un problema determinado.  </p>
                                     <br>
                                     <p class="p_black justificado">(José Rodolfo, Karla,Rosario, Julio, Leticia, 2016)</p>
@@ -261,7 +274,7 @@
                                     <div class="titulo-ova">
                                         <h3 class="text-weight-bold">Lógica matemática</h3>
                                     </div>
-                                    <h3 class="text-color-o my-3">Proposiciones simples y compuestas/ Definición de proposiciones y valores de verdad</h3>
+                                    <h3 class="text-color-o my-5">Proposiciones simples y compuestas/ Definición de proposiciones y valores de verdad</h3>
                                 </div>
                                 <div class="col-md-6">
                                     <p class="p_black justificado text-12px">Se entiende por proposición un enunciado del cual se pueda emitir un juicio de valor; es decir afirmar que es verdadero (V) o falso (F), pero no ambos.  A este juicio de valor se le conoce como el valor de verdad de dicha proposición.  Para nombrar o denotar una proposición se acostumbra a usar letras p,q,r,s,t,u,w, etc., normalmente minúsculas.</p>
@@ -329,6 +342,7 @@
                                             <div class="img-100 bg-amarillo rombo position-absolute p-15px"></div>
                                         </div>
                                         <p class="mt-auto mb-auto mr-auto">Conjunción</p>
+                                        <div class="trianguloP4 trianguloP41"></div>
                                       </div>
                                     </div>
                                     <div class="col-md-3 col-sm-3 pl-5 p-3">
@@ -337,6 +351,7 @@
                                             <div class="img-100 bg-amarillo rombo position-absolute p-15px"></div>
                                         </div>
                                         <p class="mt-auto mb-auto mr-auto">Disyunción</p>
+                                        <div class="trianguloP4 trianguloP42 d-none"></div>
                                       </div>
                                     </div>
                                     <div class="col-md-3 col-sm-3 pl-5 p-3">
@@ -345,6 +360,7 @@
                                             <div class="img-100 bg-amarillo rombo position-absolute p-15px"></div>
                                         </div>
                                         <p class="mt-auto mb-auto mr-auto">Negación</p>
+                                        <div class="trianguloP4 trianguloP43 d-none"></div>
                                       </div>
                                     </div>
                                     <div class="col-md-3 col-sm-3 pl-5 p-3">
@@ -353,6 +369,7 @@
                                             <div class="img-100 bg-amarillo rombo position-absolute p-15px"></div>
                                         </div>
                                         <p class="mt-auto mb-auto mr-auto">Implicación</p>
+                                        <div class="trianguloP4 trianguloP44 d-none"></div>
                                       </div>
                                     </div>
                                 </div>
@@ -363,7 +380,7 @@
                                       <div class="col-md-6 px-3">
                                             <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
                                             <br>
-                                            <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:      p ^ q, se lee “p y q”</p>
+                                            <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   p ^ q, se lee “p y q”</p>
                                             <br>
                                             <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
                                       </div>
