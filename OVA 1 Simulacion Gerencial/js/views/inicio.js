@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+
+    $(".enfoque").addClass("d-none");
+
     setMigaja("Inicio","","");
     $( ".ov-personaje").hide();
     $( ".c-sidebar-nav > li").show();
