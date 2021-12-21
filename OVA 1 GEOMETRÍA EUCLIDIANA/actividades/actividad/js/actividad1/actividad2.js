@@ -27,10 +27,14 @@ function siguente(){
 	if (slide == 1) {
 		$("#siguente").data('slide', 2);
 		$("#btnCalificar").hide();
+		$("#punto3").show();
+		$("#punto4").hide();
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
 		$("#siguente").data('slide', 1); 
 		$("#btnCalificar").show();
+		$("#punto3").hide();
+		$("#punto4").show();
 		/*$("#atras").data('slide', 1);*/
 	}
 }

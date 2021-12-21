@@ -294,8 +294,8 @@ label {
     display: inline-block;max-width: 100%;
 }
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
@@ -469,11 +469,11 @@ label {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 

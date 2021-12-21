@@ -104,3 +104,4 @@ function inicioRecurso() {
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
       });
   }
+  

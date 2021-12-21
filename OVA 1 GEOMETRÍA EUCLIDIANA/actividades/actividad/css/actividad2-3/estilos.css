@@ -18,7 +18,7 @@
     border-bottom-left-radius: 42px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .pregunta-cuestionario {
         width: 100%;
         height: auto !important;
@@ -32,20 +32,20 @@
     margin: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
     min-height: 250px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .respuestas-cuestionario {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
 .texto-pregunta {
     background: #003442;
     /*border-radius: 10px;*/
-    font-size: 15px;
+    font-size: 14px;
     /*margin: 10px;*/
     padding: 5px 15px;
     color: #fff;
@@ -54,10 +54,10 @@
     min-height: 80px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .texto-pregunta {
         margin: 5px;
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -82,7 +82,7 @@ input {
 }
 
 .img_questionario {
-    width: 110px;
+    width: 100px;
     position: relative;
     top: -35px;
     right: -65px;
@@ -151,11 +151,11 @@ input {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 
@@ -196,4 +196,8 @@ input {
     border: solid 2px #79CAF3;
     border-radius: 20px;
     padding: 30px;
+}
+
+.p_black {
+    color: black;
 }
