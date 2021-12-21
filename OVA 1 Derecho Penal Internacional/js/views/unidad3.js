@@ -53,7 +53,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD 3/jurisdicción universal la perspectiva.pdf" style="color:white;" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> Jurisdicción universal.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -237,7 +237,7 @@ function juicio(num) {
     }else if (num == 2) {
         $("#juicio").html('<p class="justificado p_black">El principio de Jurisdicción Universal aun cuando no es de amplia aceptación por los estados sí existe un importante número de casos de su ejercicio, al igual que existe legislación nacional y tratados internacionales que reconoce el principio de jurisdicción e incluye las reglas procesales para su aplicación.</p><p class="justificado p_black">Resulta pertinente el análisis que hace la Corte Constitucional de Colombia en sentencia C-1189 del 2000 sobre el principio de Jurisdicción Universal.</p><br><a href="assets/PDF/analisis1.pdf" target="p_black"><button class="p_white ml-auto btn bg-cafe-activi"><img class="img-10 m-auto" src="assets/img/img_ova/pdf-file.png"><b>Ver análisis</b></button></a>');
     }else if (num == 3) {
-        $("#juicio").html('<p class="justificado p_black">Por otra parte, el código penal colombiano reconoce el principio de jurisdicción universal de forma expresa en su artículo 16 numeral 6, estableciendo los requisitos para su aplicación. </p><p class="justificado p_black">Para visualizar el artículo, haga clic en Ver imagen.</p><br><div><button class="p_white ml-auto btn bg-cafe-activi" data-toggle="modal" data-target="#modal-juicio"><b>Ver imagen</b></button></div>');
+        $("#juicio").html('<p class="justificado p_black">Por otra parte, el código penal colombiano reconoce el principio de jurisdicción universal de forma expresa en su artículo 16 numeral 6, estableciendo los requisitos para su aplicación. </p><p class="justificado p_black">Para visualizar el artículo, haga clic en Ver imagen.</p><br><div style="float:right;"><button class="p_white ml-auto btn bg-cafe-activi" data-toggle="modal" data-target="#modal-juicio"><b>Ver imagen</b></button></div>');
     }else if (num == 4) {
         $("#juicio").html('<p class="justificado p_black">Finalmente, se destaca que aun cuando Colombia no ha activado la aplicación del principio de Jurisdicción Universal, nada obsta para que en el futuro se pueda realizar, pues existen los fundamentos jurídicos para ello..</p>');
     }
@@ -269,9 +269,9 @@ function eichmann(num) {
                             <p class="justificado p_black">El juicio se adelantó tomando como base el principio de jurisdicción pasiva, la jurisdicción por razones de seguridad (principio de protección) y principio de jurisdicción universal.</p>
                             <br>
                             <p class="justificado p_black">Para profundizar en el análisis  de este  tema, visualice el siguiente video donde se explica este principio y sus casos más emblemáticos.</p>
-                            <div class="bg-cafe-activi ml-auto img-40 radius-2 d-flex p-3" data-toggle="modal" data-target="#modal-eichmann">
-                              <p class="p_white"><b>VER VIDEO</b></p>
-                              <img class="img-65 p-2 my-auto ml-auto" src="assets/img/img_ova/reproductor.png">
+                            <div class="bg-cafe-activi ml-auto img-40 radius-2 d-flex p-3" data-toggle="modal" data-target="#modal-eichmann" style="height:58px;with:126px ">
+                              <p class="p_white" style="position: relative; top:-11px;"><b>VER VIDEO</b></p>
+                              <img class="img-60 p-2 my-auto ml-auto" style="position:relative;top:-9px" src="assets/img/img_ova/reproductor.png">
                             </div>
                         </div>
                       
