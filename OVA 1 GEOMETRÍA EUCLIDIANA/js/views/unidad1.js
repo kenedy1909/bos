@@ -836,8 +836,14 @@ function disyunciones(){
                     `;
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
-        $(".disyuncion-s").data('disyuncion', 2);
-        $(".disyuncion-a").data('disyuncion', 2);
+        // $(".disyuncion-s").data('disyuncion', 2);
+        // $(".disyuncion-a").data('disyuncion', 2);
+        $('.disyuncion-a').css(
+                    'display','none'
+        );
+        $('.disyuncion-s').css(
+                    'display','block'
+        );
     }else if (disyuncion_num == 2) {
         var text1 = `
         <div class="row">
@@ -871,11 +877,17 @@ function disyunciones(){
             </div>
         </div>
         `;
-$("#disyuncion-1").html(text1);
-$("#disyuncion-2").html(text2);
-$(".disyuncion-s").hide();
-$(".disyuncion-a").show();
-$(".disyuncion-a").data('disyuncion', 1);
+        $("#disyuncion-1").html(text1);
+        $("#disyuncion-2").html(text2);
+        // $(".disyuncion-s").hide();
+        // $(".disyuncion-a").show();
+        $('.disyuncion-a').css(
+                                'display','block'
+        );
+        $('.disyuncion-s').css(
+                                'display','none'
+        );
+        $(".disyuncion-a").data('disyuncion', 1);
     }else if (disyuncion_num == 3) {
         var text = `
         <div class="col-md-3 px-3 d-flex">
@@ -923,11 +935,11 @@ $(".disyuncion-a").data('disyuncion', 1);
   </div>
   `;
 
-  $(".disyuncion-s").hide();
-$(".disyuncion-a").show();
-$("#disyuncion-3").html(text);
-$(".disyuncion-s").data('disyuncion', 3);
-$(".disyuncion-a").data('disyuncion', 3);
+    $(".disyuncion-s").hide();
+    $(".disyuncion-a").show();
+    $("#disyuncion-3").html(text);
+    $(".disyuncion-s").data('disyuncion', 3);
+    $(".disyuncion-a").data('disyuncion', 3);
     }
 }
 
@@ -946,7 +958,7 @@ function conector(){
                     <div class="col-md-6 px-3">
                           <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
                           <br>
-                          <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:      p ^ q, se lee “p y q”</p>
+                          <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   p ^ q, se lee “p y q”</p>
                           <br>
                           <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
                     </div>
@@ -961,12 +973,12 @@ function conector(){
     }else if (conectores_num == 2) {
         var text = `
                     <div class="col-md-1 px-3 d-flex">
-                        <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" style="display:none;" data-disyuncion="2"></div>
+                        <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" style="display:none;" data-disyuncion="1"></div>
                     </div>
                     <div class="col-md-5 px-3" id="disyuncion-1">
                           <p class="p_black justificado">Cuando se habla de <u>disyunción</u> o también llamada suma lógica, donde al tener una de las proposiciones verdaderas, se convierte el valor de verdad en verdadero.                          </p>
                           <br>
-                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:          𝑝 V 𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
+                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     𝑝 V 𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
                           <br>
                           <p class="p_black justificado">La disyunción entre dos proposiciones será verdadera (V) cuando por lo menos una sea verdadera: </p>
                     </div>
@@ -985,7 +997,7 @@ function conector(){
     }else if (conectores_num == 3) {
         var text = `
                     <div class="col-md-6 px-3 mt-3">
-                          <p class="p_black justificado" style="font-style: oblique;">“La negación de  p”: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   ~ p , se lee “no p”</p>
+                          <p class="p_black justificado" style="font-style: oblique;">“La negación de  p”: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ~ p , se lee “no p”</p>
                           <br>
                           <p class="p_black justificado">La negación de una proposición tiene el valor de verdad opuesto a la proposición dada </p>
                           <p class="p_black justificado">También se acostumbra el signo “¬”, es decir “¬ p” para la negación o con la escritura “no p”.</p>
@@ -1012,7 +1024,7 @@ function conector(){
                              </div>
                              <div class="col-md-9 px-3">
                              <p class="p_black justificado text-14px" style="font-style: oblique;">Al hablar de <u>implicación</u> o también conocida como <u>condicional</u>, se hace referencia a la conjunción “si…entonces…si” como se explica a continuación:</p>
-                             <p class="p_black justificado text-14px" style="font-style: oblique;">“La implicación entre p y q”:     p →q , se lee “si p entonces q” o “p implica q”</p>
+                             <p class="p_black justificado text-14px" style="font-style: oblique;">“La implicación entre p y q”:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   p →q , se lee “si p entonces q” o “p implica q”</p>
                              <br>
                              <p class="p_black justificado text-14px">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
                              <p class="p_black justificado text-14px">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
