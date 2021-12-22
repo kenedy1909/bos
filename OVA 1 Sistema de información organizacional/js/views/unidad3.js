@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    $(".menu3").removeClass('d-none');
+
+    star_uni = 3;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",

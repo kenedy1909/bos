@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  $(".menu4").removeClass('d-none');
+
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
