@@ -99,6 +99,7 @@ label {
 	opacity: 0;
 	text-decoration: none;
 	transition: opacity 0s var(--foldDur) steps(1);
+    font-size: 20px;
 }
 .select__option:first-child {
 	box-shadow:
