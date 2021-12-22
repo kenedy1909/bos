@@ -229,7 +229,7 @@ function calificar(){
 	  $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:7px;">');
 	  $('.puntaje').text(puntaje+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 12px;">cerrar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 12px;" onclick="reiniciar()">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
 		
 	  $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:7px;">');
