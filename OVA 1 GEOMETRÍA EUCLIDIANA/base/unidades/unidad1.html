@@ -392,16 +392,16 @@
                           </div>
                        </div>
                        <!--actividad 1-->
-                       <div id="unidad1-5" class="tab-pane" role="tabpanel">
-                        <div class="row px-3">
+                       <div id="unidad1-5" class="tab-pane" role="tabpanel" style="background-color: white; height: 800px !important;">
+                        <div class="row px-3 mt-5" id="actividad1P5">
                           <div class="col-md-12 p-2">
                             <div class="row border-bottom-actividad">
-                              <div class="col-md-5 row">
-                                 <img src="assets/img/img_ova/actividad_general.png" class="img-activi">
-                                 <div class="content-text-img-activi">
-                                   <b class="text-img-actividad">ACTIVIDAD # 1</b>
+                                <div class="col-md-5 row">
+                                    <img src="assets/img/img_ova/actividad_general.png" class="img-activi" style="margin-right: -24px;z-index: 9;">
+                                    <div class="content-text-img-activi">
+                                      <b class="text-img-actividad">ACTIVIDAD # 1</b>
+                                    </div>
                                  </div>
-                              </div>
                               <div class="col-md-7 shadow content-tarjeta">
                                   <p class="pb-2 p_black"><img src="assets/img/img_ova/actividad.png" class="max-w-30px">  Actividad de indagación y profundización.</p>
                                   <p class="p_black"><img src="assets/img/img_ova/reloj.png" class="max-w-30px">  Tiempo sugerido: 47 minutos.</p>
@@ -440,7 +440,7 @@
                                           </div>
                                         </div>
                                         <div class="m-auto px-3">
-                                            <div class="triangulo_der3" onclick="avanzarA1();"></div>
+                                            <div class="triangulo_der3" onclick="avanzarA1(2);"></div>
                                         </div>
                                       </div>
                                   </div>
@@ -449,25 +449,28 @@
                             </div>
                           </div>
                         </div>
-                       </div>
-                       <!--actividad 1-1-->
-                       <div id="unidad1-6" class="tab-pane" role="tabpanel">
-                           <div class="row">
-                               <div class="col-md-11">
+                        <div class="row d-none" id="actividad2P5">
+                            <div class="col-md-1 d-flex mt-5 pt-3">
+                                <div class="triangulo_izq1 cursor" onclick="avanzarA1(1);" style="margin-top: 300px;"></div>
+                            </div>
+                            <div class="col-md-10">
                                 <iframe src="actividades/actividad/activi10/index.html" frameborder="0"></iframe>
-                               </div>
+                            </div>
+                            <div class="col-md-1 d-flex mt-5 pt-3">
+                                <div class="triangulo_der3 cursor" onclick="avanzarA1(3);" style="margin-top: 300px;"></div>
+                            </div>
 
-                               <div class="col-md-1 mt-5 d-flex">
-                                <div class="triangulo_der3 cursor" onclick="avanzarA1();" style="margin-top: 300px;"></div>
-                               </div>
-                           </div>
-                            
+                        </div>
+                        <div class="row d-none" id="actividad3P5">
+                            <div class="col-md-1 d-flex mt-5 pt-3">
+                                <div class="triangulo_izq1 cursor" onclick="avanzarA1(2);" style="margin-top: 300px;"></div>
+                            </div>
+                            <div class="col-11">
+                                <iframe src="actividades/actividad/activi1/index.html" frameborder="0"></iframe>
+                            </div>
+                        </div>
                        </div>
-                       <!--actividad 1-3-->
-                       <div id="unidad1-7" class="tab-pane" role="tabpanel">
-                            <iframe src="actividades/actividad/activi1/index.html" frameborder="0"></iframe>
-                       </div>
-                       <div id="unidad1-8" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-6" class="tab-pane" role="tabpanel">
                           <div class="row px-4">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
@@ -530,7 +533,7 @@
                               </div>
                           </div>
                        </div>
-                       <div id="unidad1-9" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-7" class="tab-pane" role="tabpanel">
                           <div class="row px-4 pb-5">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
@@ -586,7 +589,7 @@
                               </div>
                           </div>
                        </div>
-                       <div id="unidad1-10" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-8" class="tab-pane" role="tabpanel">
                             <div id="carouselPantallas" class="carousel slide" data-bs-ride="carousel" data-interval="false">
                               <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -700,7 +703,7 @@
                               </div>                                     
                             </div>
                        </div>
-                       <div id="unidad1-11" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-9" class="tab-pane" role="tabpanel">
                           <div class="row px-4">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
@@ -749,10 +752,10 @@
                               </div>
                           </div>
                        </div>
-                       <div id="unidad1-12" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-10" class="tab-pane" role="tabpanel">
                         <iframe src="actividades/actividad/activi4/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-13" class="tab-pane" role="tabpanel" style="background-color: white;">
+                       <div id="unidad1-11" class="tab-pane" role="tabpanel" style="background-color: white;">
                           <div class="row px-3 m-4">
                             <div class="col-md-12 p-2">
                               <div class="row border-bottom-actividad">
@@ -801,7 +804,7 @@
                             </div>
                           </div>
                        </div>
-                       <div id="unidad1-14" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-12" class="tab-pane" role="tabpanel">
                           <div class="row px-4">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
@@ -845,10 +848,10 @@
                               </div>
                           </div>
                        </div>
-                       <div id="unidad1-15" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-13" class="tab-pane" role="tabpanel">
                             <iframe src="actividades/actividad/activi12/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-16" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-14" class="tab-pane" role="tabpanel">
                           <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -912,7 +915,7 @@
                                 </div>
                             </div>
                        </div>
-                       <div id="unidad1-17" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-15" class="tab-pane" role="tabpanel">
                           <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -950,7 +953,7 @@
                                 </div>
                             </div>
                        </div>
-                       <div id="unidad1-18" class="tab-pane" role="tabpanel" style="background-color: white;">
+                       <div id="unidad1-16" class="tab-pane" role="tabpanel" style="background-color: white;">
                         <div class="row px-3 m-4">
                             <div class="col-md-12 p-2">
                               <div class="row">
@@ -985,7 +988,7 @@
                        </div>
                           <div style="height: 150px;"></div>
                        </div>
-                       <div id="unidad1-19" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-17" class="tab-pane" role="tabpanel">
                           <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -1045,7 +1048,7 @@
                                 </div>
                             </div>
                        </div>
-                       <div id="unidad1-20" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-18" class="tab-pane" role="tabpanel">
                            <div class="row">
                                <div class="col-md-10">
                                 <iframe src="actividades/actividad/activi5/index.html" frameborder="0"></iframe>
@@ -1057,7 +1060,7 @@
                            </div>
                           
                        </div>
-                       <div id="unidad1-21" class="tab-pane" role="tabpanel" style="background-color: white;">
+                       <div id="unidad1-19" class="tab-pane" role="tabpanel" style="background-color: white;">
                           <div class="row px-3 m-4">
                             <div class="col-md-12 p-2">
                               <div class="row border-bottom-actividad">
@@ -1107,7 +1110,7 @@
                             </div>
                           </div>
                        </div>
-                       <div id="unidad1-22" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-20" class="tab-pane" role="tabpanel">
                           <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -1155,7 +1158,7 @@
                                 </div>
                             </div>
                        </div>
-                       <div id="unidad1-23" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-21" class="tab-pane" role="tabpanel">
                         <div class="row pr-4">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
@@ -1314,7 +1317,7 @@
                               </div>
                           </div>
                         </div>
-                        <div id="unidad1-24" class="tab-pane" role="tabpanel">
+                        <div id="unidad1-22" class="tab-pane" role="tabpanel">
                             <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -1351,10 +1354,10 @@
                                 </div>
                             </div>
                         </div>
-                       <div id="unidad1-25" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-23" class="tab-pane" role="tabpanel">
                           <iframe src="actividades/actividad/activi6/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-26" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-24" class="tab-pane" role="tabpanel">
                             <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -1424,13 +1427,13 @@
                                 </div>
                             </div>
                        </div>
-                       <div id="unidad1-27" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-25" class="tab-pane" role="tabpanel">
                           <iframe src="actividades/actividad/activi8/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-28" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-26" class="tab-pane" role="tabpanel">
                           <iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-29" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-27" class="tab-pane" role="tabpanel">
                         <div class="row pr-4">
                             <div class="col-md-12">
                                 <div class="titulo-ova">
@@ -1461,10 +1464,10 @@
                             </div>
                         </div>
                        </div>
-                       <div id="unidad1-30" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-28" class="tab-pane" role="tabpanel">
                           <iframe src="actividades/actividad/activi9/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-31" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-29" class="tab-pane" role="tabpanel">
                         <div class="row pr-4">
                             <div class="col-md-12">
                                 <div class="titulo-ova">
@@ -1598,7 +1601,7 @@
                             </div>
                         </div>
                        </div>
-                       <div id="unidad1-32" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-30" class="tab-pane" role="tabpanel">
                     <div class="row px-3">
                       <div class="col-md-12 p-2">
                         <div class="row">
@@ -1662,7 +1665,7 @@
                       </div>
                     </div>
                        </div>
-                       <div id="unidad1-33" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-31" class="tab-pane" role="tabpanel">
                             <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -1743,7 +1746,7 @@
                             </div>
                             <div style="height: 100px;"></div>
                        </div>
-                       <div id="unidad1-34" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-32" class="tab-pane" role="tabpanel">
                             <div class="row pr-4">
                                 <div class="col-md-12">
                                     <div class="titulo-ova">
@@ -1775,7 +1778,7 @@
                             </div>
                             <div style="height: 50px;"></div>
                        </div>
-                       <div id="unidad1-35" class="tab-pane" role="tabpanel" style="background-color: white;">
+                       <div id="unidad1-33" class="tab-pane" role="tabpanel" style="background-color: white;">
                             <div class="row px-3">
                               <div class="col-md-12 p-2">
                                 <div class="row">
@@ -1807,7 +1810,7 @@
                             </div>
                             <div style="height: 150px;"></div>
                        </div>
-                       <div id="unidad1-36" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-34" class="tab-pane" role="tabpanel">
                         <div class="row pr-4">
                             <div class="col-md-12">
                                 <div class="titulo-ova">
@@ -1888,7 +1891,7 @@
                               </div>
                             </div>
                        </div> -->
-                       <div id="unidad1-37" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-35" class="tab-pane" role="tabpanel">
                         <div class="row px-3">
                           <div class="col-md-12 p-2">
                             <div class="row">
@@ -1922,7 +1925,7 @@
                           </div>
                         </div>
                        </div>
-                       <div id="unidad1-38" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-36" class="tab-pane" role="tabpanel">
                           <div class="row px-3">
                               <div class="col-md-5">
                                   <div class="d-flex">
@@ -1948,7 +1951,7 @@
                               </div>
                           </div>
                        </div>
-                       <div id="unidad1-39" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-37" class="tab-pane" role="tabpanel">
                           <div class="row px-3">
                               <div class="col-md-6 offset-md-3">
                                   <h1 class="text-center">¡FELICITACIONES! <img src="assets/img/img_ova/felicitaciones.png" alt="" class="img-15"></h1>

@@ -1071,11 +1071,20 @@ function conector(){
     }
 }
 
-function avanzarA1() {
-    console.log("next");
-    $('#smartwizard').smartWizard("next");
-        slide();
-        actualizarprogress();
+function avanzarA1(num) {
+    if (num == 1) {
+        $('#actividad1P5').removeClass('d-none');
+        $('#actividad2P5').addClass('d-none');
+        $('#actividad3P5').addClass('d-none');
+    }else if (num == 2) {
+        $('#actividad1P5').addClass('d-none');
+        $('#actividad2P5').removeClass('d-none');
+        $('#actividad3P5').addClass('d-none');
+    }else if (num == 3) {
+        $('#actividad1P5').addClass('d-none');
+        $('#actividad2P5').addClass('d-none');
+        $('#actividad3P5').removeClass('d-none');
+    }
 }
 
 function opciones(){

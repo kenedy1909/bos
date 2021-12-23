@@ -853,6 +853,15 @@ p, button{
     cursor: pointer;
 }
 
+.triangulo_izq1 {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #003442;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
+}
+
 .triangulo_der2 {
     width: 0;
     height: 0;
