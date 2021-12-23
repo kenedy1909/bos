@@ -72,7 +72,7 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <!-- <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body center-block">
@@ -88,7 +88,62 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    
+    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="">
+                  <div class="card-container manual-flip">
+                    <div class="card" style="background-color: transparent; border-radius: 30px;">
+                        <div class="front">
+                            <div class="cover" style="overflow: visible;">
+                              <div class="row">
+                                <div class="col-lg-4">
+                                </div>
+                                <div class="col-lg-4 mt-2">
+                                  
+                                </div>
+                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                  <div class="divcerrar">
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="background-color: transparent;">
+                                      <img src="../../../assets/img/img_ova/close.png" style="width: 40px;" class="m-0 p-0">
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="">
+                                <div class="radius-gray">
+                                    <img class="img-circle" id="img-circulo" src="../../../assets/img/img_ova/bien.png" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <div class="modal-body">
+                                    <div class="mensaje ">
+                                        Tu puntaje es: <span class="puntaje">40%</span>
+                                        <span class="texto-puntaje"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secundary calificacion-intentar" style="border-radius: 9px;" data-dismiss="modal" onclick="reiniciar(); ">Volver a
+                                        intentar</button>
+                                    <button type="button" class="btn btn-secundary calificacion-cerrar" style="border-radius: 9px;" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    
+    
+    
     <!-- Incluisión de scripts -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
