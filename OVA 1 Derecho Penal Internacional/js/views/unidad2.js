@@ -28,13 +28,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide(0);
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide(0);
-        actualizarprogress();
     });
     slide_predeterminado();
     console.log(tema);
@@ -57,6 +55,7 @@ function slide(){
     }else{
         controlSlides(stepIndex+1);
     }
+    actualizarprogress(stepIndex+1+16);
 }
 
 function slide_predeterminado(){
@@ -81,12 +80,10 @@ document.addEventListener("keydown",
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
                 slide(1);
-                actualizarprogress();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
                 slide(1);
-                actualizarprogress();
                 break;
         }
     }

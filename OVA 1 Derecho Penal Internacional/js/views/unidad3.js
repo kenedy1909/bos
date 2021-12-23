@@ -23,13 +23,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide(0);
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide(0);
-        actualizarprogress();
     });
     slide_predeterminado();
     console.log(tema);
@@ -65,6 +63,7 @@ function slide(){
     }else{
         controlSlides(stepIndex+1);
     }
+    actualizarprogress(stepIndex+1+25);
 }
 
 function modal_scroll10(){
@@ -100,12 +99,10 @@ document.addEventListener("keydown",
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
                 slide(1);
-                actualizarprogress();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
                 slide(1);
-                actualizarprogress();
                 break;
         }
     }
@@ -251,7 +248,7 @@ function eichmann(num) {
 
     if (num == 1) {
         var texto = `
-                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit">
+                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit animacionCardYellow">
                         <div style="height: 266px;overflow: auto;">
                             <p class="justificado p_black">Se trata del <b>secuestro de Adolf Eichman</b> por parte de la policía secreta de Israel, para ser juzgado por los crímenes cometidos durante la Segunda Guerra Mundial. </p>
                             <br>
@@ -263,7 +260,7 @@ function eichmann(num) {
         $("#eichmann").html(texto);
     }else if (num == 2) {
         var texto = `
-                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit">
+                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit animacionCardYellow">
                         <div style="height: 266px;overflow: auto;overflow-x: hidden;">
                             <p class="justificado p_black">Esa discusión en torno a la forma <b>como fue “detenido”</b> el señor Eichmann, fue su principal argumento de defensa en la corte de distrito en Israel, sin embargo, el tribunal consideró que lo relacionado con la forma de lograr su comparecencia era un debate entre los Estados en el derecho internacional público, que en nada afectaba el proceso.</p>
                             <p class="justificado p_black">El juicio se adelantó tomando como base el principio de jurisdicción pasiva, la jurisdicción por razones de seguridad (principio de protección) y principio de jurisdicción universal.</p>
@@ -280,7 +277,7 @@ function eichmann(num) {
         $("#eichmann").html(texto);
     }else if (num == 3) {
         var texto = `
-                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit">
+                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit animacionCardYellow">
                         <div style="height: 266px;overflow: auto;">
                             <p class="justificado p_black">De acuerdo con la Corte Distrital, al ser <b>Israel la nación de los judíos</b>, esta tiene un nexo directo con el crimen cometido por Eichmann en contra de judíos, debido a la jurisdicción personal pasiva y a la jurisdicción por razones de seguridad (la identidad del pueblo judío). Acerca de la jurisdicción universal, la Corte Distrital afirmó que la Ley por la que se juzgaba a Eichmann no sólo regulaba crímenes prohibidos en el ordenamiento interno de Israel, sino que también representaba el interés de la comunidad internacional en reprimir una violación al derecho internacional.</p>
                         </div>
@@ -290,7 +287,7 @@ function eichmann(num) {
         $("#eichmann").html(texto);
     }else if (num == 4) {
         var texto = `
-                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit custom-scrollbar10">
+                    <div class="p-4 bg-amarillo-c border-t-r border-b-r h-fit animacionCardYellow custom-scrollbar10">
                         <div class="custom-scrollbar__inner10">
                           <p class="justificado p_black">Se considera que, en el derecho internacional no se restringe que un Estado en ausencia de una Corte Penal Internacional, pueda juzgar a los responsables de crímenes internacionales, porque, atendiendo a la magnitud del daño, la jurisdicción de estos crímenes es universal.</p>
                           <br>

@@ -27,14 +27,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide(0);
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide(0);
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
@@ -81,6 +79,8 @@ function slide(num){
     }else{
         controlSlides(stepIndex+1);
     }
+    
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -105,12 +105,10 @@ document.addEventListener("keydown",
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
                 slide(1);
-                actualizarprogress();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
                 slide(1);
-                actualizarprogress();
                 break;
         }
     }
@@ -679,11 +677,11 @@ function scroll_horizontal2(num){
                                         <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
                                       </div>
                                     </div>
-                                    <div class="col-md-6 d-flex">
-                                      <div class="img-45 m-auto">
+                                    <div class="col-md-7 d-flex">
+                                      <div class="img-30 m-auto">
                                         <img src="assets/img/img_ova/reloj.png" class="img-100">
                                       </div>
-                                      <p class="p_black pl-3 m-auto" style="font-size:13px;">Tiempo sugerido: <b>6 minutos</b></p>
+                                      <p class="p_black pl-3 m-auto" style="font-size:13px;">Tiempo sugerido: <br> <b>6 minutos</b></p>
                                     </div>
                                   </div>
                                 </div>
@@ -743,12 +741,12 @@ function scroll_horizontal2(num){
                                         <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
                                       </div>
                                     </div>
-                                    <div class="col-md-6 pt-4">
+                                    <div class="col-md-7 pt-4">
                                       <div class="d-flex">
-                                          <div class="img-45 m-auto">
+                                          <div class="img-30 m-auto">
                                             <img src="assets/img/img_ova/reloj.png" class="img-100">
                                           </div>
-                                          <p class="p_black pl-3 m-auto" style="font-size:13px">Tiempo sugerido: <b>54 minutos</b></p>
+                                          <p class="p_black pl-3 m-auto" style="font-size:13px">Tiempo sugerido: <br> <b>54 minutos</b></p>
                                       </div>
                                       <div class="d-flex">
                                         <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
