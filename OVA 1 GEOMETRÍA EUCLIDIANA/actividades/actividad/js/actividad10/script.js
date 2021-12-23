@@ -96,12 +96,24 @@ function inicioRecurso() {
       var modalID = "#calificacionModal";
       var exito = false;
       var mensaje = "Inténtalo nuevamente.";
-      if (puntaje == 100) {
-          exito = true;
-          mensaje = "¡Felicitaciones!"
+
+      if (puntaje == 29) {
+          puntaje = 0;
       }
+
+      if (puntaje == 100) {
+        exito = true;
+        mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../img/img10/bien.png");
+    }
+    if (puntaje < 100) {
+        $("#img-circulo").attr("src","../img/img10/mal.png"); 
+    }
       registrarActividad(puntaje);
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
       });
   }
   
+  function reload() {
+	location.reload();
+  }
