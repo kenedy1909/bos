@@ -112,34 +112,80 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
+
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 9;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
+            break;
+        case 8:
+            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
+            break;
+        case 9:
+            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
+
             break;
         default:
             break;

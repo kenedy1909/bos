@@ -27,12 +27,12 @@ $( document ).ready(function() {
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
-        slide(0);
+        slide();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
-        slide(0);
+        slide();
     });
     slide_predeterminado();
     console.log(tema);
@@ -50,11 +50,8 @@ $( document ).ready(function() {
 
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
-    if (num = 1) {
-        controlSlides(stepIndex+2);
-    }else{
-        controlSlides(stepIndex+1);
-    }
+    
+    controlSlides(stepIndex+1);
     actualizarprogress(stepIndex+1+16);
 }
 
@@ -79,11 +76,11 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide(1);
+                slide();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide(1);
+                slide();
                 break;
         }
     }
@@ -91,39 +88,70 @@ document.addEventListener("keydown",
 
 function controlSlides(num){
     switch (parseInt(num)) {
-        case 0:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 16;
-            break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            break;
+        case 9:
+            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            break;
+        case 10:
+            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             break;
         default:
             break;

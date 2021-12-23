@@ -131,6 +131,8 @@ function controlSlides(num){
             slideHeight = $('#slider-5 ul li').height();
             slider_num = "#slider-5";
             slider_all();*/
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
@@ -156,40 +158,60 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Segunda Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             $(".i3").html('')    
@@ -217,15 +239,33 @@ function controlSlides(num){
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             break;
         default:
             break;
