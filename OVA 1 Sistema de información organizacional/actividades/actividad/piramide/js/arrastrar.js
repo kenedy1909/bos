@@ -62,7 +62,7 @@ function calificar(){
 	    $('.mensaje').text("¡Felicitaciones!");
 	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
 	}else{
-	    $('.img_res').html('<img src="img/mal.png" style="max-width: 90%; margin: auto;">');
+	    $('.img_res').html('<img src="img/mal.png" style="max-width: 90%; margin: auto; background-color:#FFC000; border-radius:50%; padding:3px;">');
 	    $('.mensaje').text("¡Puedes hacerlo mejor!");
 	    $('.puntaje').text(Math.round(puntaje)+"%");
 	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');

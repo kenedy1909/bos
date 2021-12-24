@@ -119,6 +119,7 @@
 	position: relative;
 	top: -60px;
 	text-align: center;
+    border: 3px solid white;
 }
 
 .boton_inc{
