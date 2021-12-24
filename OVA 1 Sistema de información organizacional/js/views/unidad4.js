@@ -346,8 +346,8 @@ function scroll_slide(num) {
         $(".scroll_slide-1").removeClass('bg-azul');
         $(".scroll_slide-1").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="pt-3">
-                                  <h3 class="color-text">Fase 1: Planeación del Proyecto o Sistema</h3>
+                                <div class="pt-3 mt-4" style="    border: 2px dashed #595EB2; padding: 20px; border-radius: 30px;">
+                                  <h3 class="color-text" style="color:#811111;"><b> Fase 1: Planeación del Proyecto o Sistema </b></h3>
                                   <div class="pt-3 custom-scrollbar5">
                                     <div class="row custom-scrollbar__inner5 padding_scroll" style="padding: 0px 70px 1px 25px;">
                                       
@@ -365,13 +365,13 @@ function scroll_slide(num) {
 
                                   <div class="row mt-2">
                                     <div class="col-md-4">
-                                      <button class="btn p_white bg-azul" data-toggle="modal" data-target="#modal-objetivos">Objetivos</button>
+                                      <button class="btn p_white bg-azul btn_md btn_md1" data-toggle="modal" data-target="#modal-objetivos" onclick="colorBtn(1);">Objetivos</button>
                                     </div>
                                     <div class="col-md-4">
-                                      <button class="btn p_white bg-azul" data-toggle="modal" data-target="#modal-alcance">Alcance</button>
+                                      <button class="btn p_white bg-azul btn_md btn_md2" data-toggle="modal" data-target="#modal-alcance" onclick="colorBtn(2);">Alcance</button>
                                     </div>
                                     <div class="col-md-4">
-                                      <button class="btn p_white bg-azul" data-toggle="modal" data-target="#modal-justificacion">Justificación</button>
+                                      <button class="btn p_white bg-azul btn_md btn_md3" data-toggle="modal" data-target="#modal-justificacion" onclick="colorBtn(3);">Justificación</button>
                                     </div>
                                   </div>
                                 </div>
@@ -382,22 +382,22 @@ function scroll_slide(num) {
         $(".scroll_slide-2").removeClass('bg-azul');
         $(".scroll_slide-2").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="pt-3">
+                                <div class="pt-3 mt-4">
                                   <div>
-                                    <h3 class="color-text">Fase 2: Análisis del Sistema</h3><br>
+                                    <h3 class="text-color-activi-o"><b>Fase 2: Análisis del Sistema</b></h3><br>
                                     <p class="justificado text-black">Una vez desarrollada la planeación del sistema (proyecto) en donde se definió qué es lo que se quiere hacer, la programación y el presupuesto, se puede proceder con la etapa de análisis del sistema. En esta fase se <b>analiza la viabilidad o factibilidad</b> del sistema, además, se <b>definen los requerimientos técnicos</b> para el desarrollo de este, <b>se estructura el flujo de los datos</b> y se determina <b>el método de almacenamiento</b> de los datos y la información generada.</p><br>
                                     <b class="text-black">haga clic en cada botón azul para desplegar la información.</b>
                                   </div>
                                   
                                   <div class="row mt-2">
                                     <div class="col-md-4">
-                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-analisis">Análisis de viabilidad o factibilidad.</button>
+                                      <button class="btn btn_fases btn_md btn_md1" data-toggle="modal" data-target="#modal-analisis" onclick="colorBtn(1);">Análisis de viabilidad o factibilidad.</button>
                                     </div>
                                     <div class="col-md-4">
-                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-Definición">Definición de requerimientos técnicos.</button>
+                                      <button class="btn btn_fases btn_md btn_md2" data-toggle="modal" data-target="#modal-Definición" onclick="colorBtn(2);">Definición de requerimientos técnicos.</button>
                                     </div>
                                     <div class="col-md-4">
-                                      <button class="btn btn_fases" data-toggle="modal" data-target="#modal-Determinación">Determinación del método de almacenamiento</button>
+                                      <button class="btn btn_fases btn_md btn_md3" data-toggle="modal" data-target="#modal-Determinación" onclick="colorBtn(3);">Determinación del método de almacenamiento</button>
                                     </div>
                                   </div>
                                 </div>
@@ -407,8 +407,8 @@ function scroll_slide(num) {
         $(".scroll_slide-3").removeClass('bg-azul');
         $(".scroll_slide-3").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="p-3">
-                                  <h5 class="text-color-activi-o"><b>Fase 3: Diseño del Sistema</b></h5>
+                                <div class="p-3 mt-4">
+                                  <h5 class="text-color-activi-o"><b>Fase 3: Diseño del Sistema</b></h5><br>
                                   <div class="content p_white custom-scrollbar_siete pr-5">
                                     <div class="custom-scrollbar__inner_siete">
                                       <p class="justificado p_black">El diseño de un sistema de información consiste en construir o esbozar el plan o modelo general de ese sistema. Al igual que los planos que usa el arquitecto para diagramar una edificación, el diseño contiene todas las especificaciones que dan al sistema su forma y estructura.</p>
@@ -419,7 +419,7 @@ function scroll_slide(num) {
                                       <div class="custom-scrollbar__knob_siete cursor"><p class="text-center linea_scroll_siete">-</p></div>
                                     </div>
                                   </div>
-                                  <div class="col-md-12 d-flex">
+                                  <div class="col-md-12 d-flex mt-3">
                                     <div class="img-20">
                                       <img src="assets/img/img_ova/entrar.png" class="img-100">
                                     </div>
@@ -438,7 +438,7 @@ function scroll_slide(num) {
         $(".scroll_slide-4").removeClass('bg-azul');
         $(".scroll_slide-4").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="p-3">
+                                <div class="p-3 mt-4">
                                   <h5 class="text-color-activi-o"><b>Fase 4: Desarrollo del Sistema y Documentación</b></h5>
                                   <br>
                                   <div>
@@ -453,8 +453,8 @@ function scroll_slide(num) {
         $(".scroll_slide-5").removeClass('bg-azul');
         $(".scroll_slide-5").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="p-3">
-                                  <h5 class="text-color-activi-o"><b>Fase 5: Pruebas del Sistema</b></h5>
+                                <div class="p-3 mt-4">
+                                  <h5 class="text-color-activi-o"><b>Fase 5: Pruebas del Sistema</b></h5><br>
                                   <div class="content p_white custom-scrollbar_ocho pr-5">
                                     <div class="custom-scrollbar__inner_ocho">
                                       <p class="justificado p_black">Una vez desarrollado un sistema de información se podría esperar que ya estuviese listo para entrar en operación, No obstante, es absolutamente necesario que se le realicen pruebas, pues es inusual que un sistema quede completamente listo y a satisfacción de los usuarios después de finalizada su etapa de desarrollo.</p>
@@ -483,8 +483,8 @@ function scroll_slide(num) {
         $(".scroll_slide-6").removeClass('bg-azul');
         $(".scroll_slide-6").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="p-3">
-                                  <h5 class="text-color-activi-o"><b>Fase 6: La Implantación del Sistema</b></h5>
+                                <div class="p-3 mt-4">
+                                  <h5 class="text-color-activi-o"><b>Fase 6: La Implantación del Sistema</b></h5><br>
                                   <div class="content p_white custom-scrollbar_nueve pr-5">
                                     <div class="custom-scrollbar__inner_nueve">
                                       <p class="justificado p_black">Una vez se ha definido que el producto está terminado, probado y para entrega, se procede con la fase de implantación, que consiste en ubicar el software en el servidor, efectuando el proceso de instalación. Una vez finalizada la instalación, comenzar con el proceso de preparación de la información que se incluirá inicialmente para que arranque el sistema. </p>
@@ -509,9 +509,9 @@ function scroll_slide(num) {
         $(".scroll_slide-7").removeClass('bg-azul');
         $(".scroll_slide-7").addClass('bg-blanco');
         $("#scroll-slide").html(`
-                                <div class="pt-3">
-                                  <h3 class="color-text">Fase 7: el mantenimiento del Sistema</h3>
-                                  <div class="pt-3 custom-scrollbar20">
+                                <div class="pt-3 mt-4">
+                                  <h3 class="text-color-activi-o"><b>Fase 7: el mantenimiento del Sistema</b></h3><br>
+                                  <div class="pt-3 custom-scrollbar20" style="height:500px">
                                     <div class="row custom-scrollbar__inner20 padding_scroll" style="padding: 0px 70px 1px 25px;">
                                       
                                       <p class="justificado text-black">Esta es la fase que más tiempo toma, además es la más costosa para la organización, incluso más costosa que el mismo diseño y desarrollo. Se puede decir que la fase de mantenimiento existirá mientras el sistema tenga vida. Implica la dedicación de capacidad profesional o del área a cargo de los sistemas (TICs, Informática, sistemas, etc), durante todo el tiempo de vida del software, pues requiere hacer correcciones, modificaciones o incluso actualizaciones de acuerdos con los cambios de la tecnología y de los cambios en los de la empresa, esto también se conoce como soporte técnico al sistema.</p>
@@ -520,35 +520,35 @@ function scroll_slide(num) {
                                         <div class="img-15 d-flex">
                                             <a href="#" class="control_prev3 m-auto"><div style="" class="triag_cambiaslide2rigth"></div></a>
                                         </div>
-                                        <div class="img-70 d-flex">
+                                        <div class="img-100 d-flex">
                                           <div id="slider3" style="" class="m-auto d-flex justify-content-center">
-                                            <ul>
+                                            <ul >
                                               
                                               <li>
                                                 <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
                                                   
                                                   <div style="width: 70%;">
-                                                    <p class="justificado text-black" style="font-size: 13px;">Errores o requerimientos que se dejaron pasar en las fases iniciales.</p>
+                                                    <p class="justificado text-black mt-4" style="font-size: 13px; position:relative; top:11px;">Errores o requerimientos que se dejaron pasar en las fases iniciales.</p>
                                                   </div>
-                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/error.png" class="m-auto" style="max-width: 100%;"></div>
+                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/error.png" class="m-auto" style="max-width: 100%; position:relative; left:15px;"></div>
+                                                </div>
+                                              </li>
+                                              <li>
+                                                <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
+                                                  
+                                                  <div style="width: 70%;" >
+                                                    <p class="justificado text-black" style="font-size: 10.5px;">Cambios en los requerimientos de los usuarios originados por cambios en los procesos de la organización, cambios en las normas y leyes existentes, o nuevas inquietudes de los usuarios propias de la evolución misma del negocio. </p>
+                                                  </div>
+                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/exchange.png" class="m-auto" style="max-width: 100%; position:relative; left:15px;"></div>
                                                 </div>
                                               </li>
                                               <li>
                                                 <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
                                                   
                                                   <div style="width: 70%;">
-                                                    <p class="justificado text-black" style="font-size: 13px;">Cambios en los requerimientos de los usuarios originados por cambios en los procesos de la organización, cambios en las normas y leyes existentes, o nuevas inquietudes de los usuarios propias de la evolución misma del negocio. </p>
+                                                    <p class="justificado text-black" style="font-size: 12px;">Cambios tecnológicos, como por ejemplo la instalación de un nuevo hardware, nuevos sistemas operativos, nuevas tecnologías de redes, migración de los sistemas a otros. </p>
                                                   </div>
-                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/exchange.png" class="m-auto" style="max-width: 100%;"></div>
-                                                </div>
-                                              </li>
-                                              <li>
-                                                <div class="row p-3" style="background: white;height: 170px;border-radius: 20px;border: solid #282f9f;">
-                                                  
-                                                  <div style="width: 70%;">
-                                                    <p class="justificado text-black" style="font-size: 13px;">Cambios tecnológicos, como por ejemplo la instalación de un nuevo hardware, nuevos sistemas operativos, nuevas tecnologías de redes, migración de los sistemas a otros. </p>
-                                                  </div>
-                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/proceso.png" class="m-auto" style="max-width: 100%;"></div>
+                                                  <div style="width: 25%;" class="d-flex"><img src="assets/img/img_ova/proceso.png" class="m-auto" style="max-width: 100%; position:relative; left:15px;"></div>
                                                 </div>
                                               </li>
                                               
@@ -562,7 +562,7 @@ function scroll_slide(num) {
                                       
                                       
                                     </div>
-                                    <div class="custom-scrollbar__bar20">
+                                    <div class="custom-scrollbar__bar20 d-none">
                                       <div class="custom-scrollbar__knob20 cursor"><p class="text-white text-center linea_scroll20">-</p></div>
                                     </div>
                                   </div>
@@ -571,4 +571,27 @@ function scroll_slide(num) {
          scroll6();
          slide_aparece();
     }
+}
+
+
+function colorBtn(num) {
+  switch (parseInt(num)) {
+    case 1:
+      $('.btn_md').removeClass('btn_color');
+      $('.btn_md1').addClass('btn_color');
+      break;
+    case 2:
+      $('.btn_md').removeClass('btn_color');
+      $('.btn_md2').addClass('btn_color');
+      break;
+    case 3:
+      $('.btn_md').removeClass('btn_color');
+      $('.btn_md3').addClass('btn_color');
+      break;
+  
+    default:
+      break;
+  }
+ 
+  
 }

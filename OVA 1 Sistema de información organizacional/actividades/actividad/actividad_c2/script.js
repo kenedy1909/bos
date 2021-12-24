@@ -161,7 +161,11 @@ new Vue({
           puntaje = 100;
           exito = true;
           mensaje = "¡Felicitaciones!"
-      }
+          $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+    }
+    if (puntaje < 100) {
+        $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");  
+    }
       registrarActividad(puntaje);
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);
       /*this.mensaje = `
