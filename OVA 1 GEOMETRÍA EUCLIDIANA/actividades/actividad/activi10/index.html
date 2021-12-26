@@ -20,7 +20,7 @@
             <header>
                 <div class="row px-3">
                     <div class="col-md-5">
-                        <div class="d-flex">
+                        <div class="d-flex align-items-center">
                           <img src="../img/img1/actividad_general.png" alt="" style="width: 100px; height: 100px;">
                           <div>
                               <div class="content-text-img-activi">
@@ -30,15 +30,15 @@
                           </div>
                         </div>
                     </div>
-                    <div class="shadow info_actividad" style="float: right; width: 50%;">
-                        <p  style="font-size: small; color: black;">
-                            Escribe F para falso o V para  verdadero, según corresponda, al finalizar pulse la opción "<b>Calificar</b>" para conocer su puntuación.
+                    <div class="col-7 shadow info_actividad d-flex align-items-center" style="float: right;">
+                        <p style="font-size: 18px;color: black;text-align: justify;">
+                            Escribe en minúscula (f) para falso o (v) para  verdadero, según corresponda, al finalizar pulse la opción "<b>Calificar</b>" para conocer su puntuación.
                         </p>
                     </div>
                     
                 </div>
                 <div>
-                    <p class="p_black mt-5" style="font-size: small;">Compare las tablas de valores de verdad de las proposiciones anteriores (con verdadero y falso), haciendo la tabla con 4 posibles combinaciones de valores de verdad y responda la pregunta final.</p>
+                    <p class="p_black mt-5" style="font-size: 18px;">Compare las tablas de valores de verdad de las proposiciones anteriores (con verdadero y falso), haciendo la tabla con 4 posibles combinaciones de valores de verdad y responda la pregunta final.</p>
                 </div>
                 
                 <!-- <h1>Reducción y aprovechamiento de empaques y envases</h1> -->
@@ -75,28 +75,65 @@
                 </div>
 
 
-                    <!-- <div class="text-center">
+                    <div class="text-center">
                         <button class="btn btn-primary enviar_tabla" onclick="tabla()" >Calificar</button>
-                    </div> -->
+                    </div>
             </div>
         </div>
     </div>
     <!-- Modal -->
     <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document" style="z-index: 10000;">
+        <div class="modal-dialog " role="document" style="z-index: 1200;">
             <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+                <div class="">
+                  <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover" style="overflow: visible;">
+                              <div class="row">
+                                <div class="col-lg-4">
+                                </div>
+                                <div class="col-lg-4 mt-2">
+                                  
+                                </div>
+                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                    <div class="divcerrar">
+                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="background-color: transparent;">
+                                          <div class="m-0 p-0 x-modal">
+                                            <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                          </div>
+                                        </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="">
+                                <div class="radius-gray">
+                                    <img class="img-circle" id="img-circulo" src="../img/img10/mal.png" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <div class="modal-body my-4">
+                                    <div class="mensaje ">
+                                        Tu puntaje es: <span class="puntaje">40%</span>
+                                        <span class="texto-puntaje"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
+                                        intentar</button>
+                                    <button type="button" class="btn btn-secundary calificacion-cerrar" onclick="reload()" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            
+                        </div> 
                     </div>
+                  </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+              </div>
         </div>
     </div>
     <!-- Incluisión de scripts -->

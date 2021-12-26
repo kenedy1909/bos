@@ -54,7 +54,7 @@ table {
     height: 35px;
 }
 
-svg.svg-radio-elegant: not(: root) {
+svg.svg-radio-elegant:not(:root) {
     overflow: hidden;
 }
 
@@ -253,7 +253,7 @@ span.checked svg.svg2 {
   border-bottom: solid 3px #005B8B;
   height: 86px;
   margin: 0px;
-  padding-top: 45px;
+  padding-top: 30px;
   text-align: center;
 }
 

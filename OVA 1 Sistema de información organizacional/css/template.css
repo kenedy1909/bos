@@ -262,11 +262,12 @@ iframe{
 .card .user{
   border-radius: 50%;
   display: block;
-  height: 150px;
+  height: 130px;
   margin: -70px auto 0;
   overflow: hidden;
-  width: 150px;
-  background: white;
+  width: 130px;
+  background: #999999;
+  border: 3px solid white;
 }
 .card .user img{
   background: none;

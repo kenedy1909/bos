@@ -222,7 +222,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th>Ítem</th>\
+                    <th></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table" style="position:relative;left:-23px;">{{ answer.answer_txt }}</th>\
                     {% endfor %}\

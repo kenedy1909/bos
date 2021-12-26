@@ -381,6 +381,30 @@ p, button{
   width: 10px;
 }*/
 
+@keyframes animacionCard {
+  from {
+    margin-right: 140%;
+    margin-left: -100%;
+    visibility: hidden;
+  }
+
+  to {
+    margin-right: 0%;
+    margin-left: 0%;
+    visibility: visible;
+  }
+}
+
+.animacionCardYellow{
+  visibility: hidden;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+  animation-name:animacionCard;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+
 .cursor{
   cursor: pointer;
 }
@@ -390,7 +414,7 @@ p, button{
 }
 
 .bg-amarillo-c{
-  background-color: #FFD966;
+  background-color: #FEE599;
 }
 
 .bg-dorado-o{
@@ -449,7 +473,11 @@ p, button{
   background-repeat: no-repeat;
   min-height: 400px;
   background-position: center;
-  border-radius: 17%;
+  border-radius: 30px;
+  left: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
 }
 
 .fondo-7{

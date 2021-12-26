@@ -23,7 +23,7 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        
         $('#collapseThree3').addClass('ocultar');
         $('#collapseTwo2').addClass('ocultar');
         $('#collapseOne1').addClass('ocultar');
@@ -33,7 +33,7 @@ $( document ).ready(function() {
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
+        
     });
 
 
@@ -96,6 +96,8 @@ function scroll_set(num) {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    mostrarAcordeon(1,'ocultartodo');
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -130,21 +132,45 @@ function controlSlides(num){
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
+
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");            
+            setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");  
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";          
+
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -170,21 +196,45 @@ function controlSlides(num){
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Algunas herramientas para el diseño prospectivo");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Algunas herramientas para el diseño prospectivo");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Algunas herramientas para el diseño prospectivo");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
@@ -212,12 +262,24 @@ function controlSlides(num){
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -228,18 +290,38 @@ function controlSlides(num){
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
+
             break;
         default:
             break;
@@ -821,7 +903,7 @@ function cambiarContenido(num){
     }else if (num == 4) {
         var conjunto = `
                         <p class="text-justify">La calificación de cada variable tiene una escala que va desde  cero (0)  a tres (3), con una calificación P, si la influencia es potencial a presentarse en el futuro  y <span class="text-danger"> determina el grado de intensidad de la conexión o relación. </span> La respuesta se califica: </p>
-                        <div class="w-100 p-3 text-center"><img src="assets/img/img_ova/calificacion_rango.png" width="100%" height="100%"></div>
+                        <div class="w-100 text-center"><img src="assets/img/img_ova/calificacion_rango.png" width="100%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
         $(".barras").removeClass("clicBarra");
@@ -841,11 +923,11 @@ function cambiarContenido(num){
         var conjunto = `
                         <p class="text-justify ">Clasificación indirecta, muestra cómo puede variar el comportamiento en el largo plazo.</p>
                         <div class="w-100 p-3 text-center d-flex align-items-center mt-3">
-                            <img src="assets/img/img_ova/multiplicacion.png" width="20%">
+                            <img src="assets/img/img_ova/multiplicacion.png" width="23%">
                             <p class="w-57 pl-3 text-justify" style="font-size:13px;">Se obtiene mediante la multiplicación de la matriz obtenida en la clasificación directa por ella misma tantas veces como los porcentajes de motricidad y dependencia se mantengan constantes. </p>
                         </div>
                         <div class="w-100 p-3 text-center d-flex align-items-center">
-                            <img src="assets/img/img_ova/igual.png" width="20%">
+                            <img src="assets/img/img_ova/igual.png" width="23%">
                             <p class="w-57 pl-3 text-justify" style="font-size:13px;">Se obtiene mediante la multiplicación de la matriz obtenida en la clasificación directa por ella misma tantas veces como los porcentajes de motricidad y dependencia se mantengan constantes. </p></p>
                         </div>
                         `;
@@ -855,7 +937,7 @@ function cambiarContenido(num){
     }else if (num == 7) {
         var conjunto = `
                         <p class="text-justify " style="font-size:13px;">Determinación de los problemas claves. La identificación de los problemas claves constituye un paso importante del método. El programa automatizado brinda en un plano cartesiano (mapa) con cada uno de los problemas, de acuerdo con la valoración del grupo de experto que permite obtener los índices de motricidad y dependencia.</p>
-                        <div class="w-100 p-3 text-center "><img src="assets/img/img_ova/plano_cartesiano.jpg" width="41%"></div>
+                        <div class="w-100 p-3 text-center "><img src="assets/img/img_ova/plano_cartesiano.jpg" width="50%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
         $(".barras").removeClass("clicBarra");
@@ -909,7 +991,7 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol3.png" width="25%">
+                            <img src="assets/img/img_ova/scrol3.png" width="40%">
                             <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -1330,6 +1412,7 @@ function tarjeta(num) {
 function hiddenTxt(num){
     let counter=0;
     counter ++;
+
     switch (parseInt(num)) {
         case 1:
             // console.log(counter);
@@ -1403,6 +1486,60 @@ function hiddenTxt(num){
                 break;
         default:
             break;
+    }
+
+}
+
+
+function mostrarAcordeon(num,accion) {
+    
+    $('#collapseOne, #collapseTwo, #collapseThree').removeClass('show');
+
+    if (accion == 'mostrar') {
+
+        if (num == 1) {
+            $('#collapseOne').addClass('show');
+            $('#acordeonB1').attr('onclick',"mostrarAcordeon(1,'ocultar')");
+            $('#acordeonB2').attr('onclick',"mostrarAcordeon(2,'mostrar')");
+            $('#acordeonB3').attr('onclick',"mostrarAcordeon(3,'mostrar')");
+
+        }else if (num == 2) {
+            $('#collapseTwo').addClass('show');
+            $('#acordeonB2').attr('onclick',"mostrarAcordeon(2,'ocultar')");
+            $('#acordeonB1').attr('onclick',"mostrarAcordeon(1,'mostrar')");
+            $('#acordeonB3').attr('onclick',"mostrarAcordeon(3,'mostrar')");
+
+    
+        }else if (num == 3) {
+            $('#collapseThree').addClass('show');
+            $('#acordeonB3').attr('onclick',"mostrarAcordeon(3,'ocultar')");
+            $('#acordeonB1').attr('onclick',"mostrarAcordeon(1,'mostrar')");
+            $('#acordeonB2').attr('onclick',"mostrarAcordeon(2,'mostrar')");
+
+    
+        }
+    }else if (accion == 'ocultar') {
+
+        if (num == 1) {
+            $('#collapseOne').removeClass('show');
+            $('#acordeonB1').attr('onclick',"mostrarAcordeon(1,'mostrar')");
+    
+        }else if (num == 2) {
+            $('#collapseTwo').removeClass('show');
+            $('#acordeonB2').attr('onclick',"mostrarAcordeon(2,'mostrar')");
+    
+        }else if (num == 3) {
+            $('#collapseThree').removeClass('show');
+            $('#acordeonB3').attr('onclick',"mostrarAcordeon(3,'mostrar')");
+    
+        }
+    }else if (accion == 'ocultartodo') {
+        $('#collapseOne, #collapseTwo, #collapseThree').removeClass('show');
+
+        $('#acordeonB1').attr('onclick',"mostrarAcordeon(1,'mostrar')");
+        $('#acordeonB2').attr('onclick',"mostrarAcordeon(2,'mostrar')");
+        $('#acordeonB3').attr('onclick',"mostrarAcordeon(3,'mostrar')");
+
     }
 
 }

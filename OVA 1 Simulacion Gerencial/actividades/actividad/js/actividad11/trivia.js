@@ -13,8 +13,6 @@ window.onload = function () {
         'Una de las herramientas para el diseño prospectivo que visualiza el futuro como una serie de pasos o decisiones (nodos) causales, interrelacionados, y que conducen hacia algún estado futuro:' : ['Análisis estructural', 'Análisis de impacto secuencias tecnológicas', 1],
 
         'Una de las herramientas para el diseño prospectivo que utiliza el método MACTOR con seis etapas respectivas. ' : ['Análisis de actores', 'Análisis de impacto de tendencias ', 0]
-        
-        
       };
       
   function loadQuestion(curr) {
@@ -168,12 +166,15 @@ function calificar(){
     i++;
   });
 
-  var puntaje = 100;
+  var puntaje = 0;
   for (var i = 0; i < res.length; i++){
-    if (res[i] == 'false'){
-      puntaje = puntaje - 33.3;
+    if (res[i] == 'correct'){
+      puntaje = puntaje + 33.3;
     }
   }
+
+  puntaje = Math.round(puntaje);
+
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
     $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%;">');

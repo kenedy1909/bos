@@ -457,6 +457,59 @@ p, button{
   }
 }
 
+@keyframes animationText {
+  from {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 20px;
+    visibility: visible;
+  }
+
+  to {
+  	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	margin: 0px;
+	visibility: visible;
+  }
+}
+
+@keyframes animationBoton {
+  from {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2.5rem;
+    margin-top: 20px;
+    visibility: visible;
+  }
+
+  to {
+  	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	margin: 0px;
+	visibility: visible;
+  }
+}
+
+.textAnimation{
+	visibility: hidden;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+    animation-name:animationText;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.botonAnimation{
+	visibility: hidden;
+	animation-duration: 2s;
+	animation-delay: 0.5s;
+    animation-name:animationBoton;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
 
 .card_flecha1{
 	padding-left: 1.5rem;
@@ -608,6 +661,17 @@ p, button{
 	animation-fill-mode: forwards;
 
 }
+
+.trianguloP4 {
+	width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 40px solid #8FAADC;
+    position: absolute;
+    top: 60px; 
+}
+
 @keyframes aparecerpunto {
   from {
     width: 0px;
@@ -785,6 +849,15 @@ p, button{
     height: 0;
     border-top: 15px solid transparent;
     border-right: 30px solid #2F5597;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
+}
+
+.triangulo_izq1 {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid #003442;
     border-bottom: 15px solid transparent;
     cursor: pointer;
 }

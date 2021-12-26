@@ -58,6 +58,7 @@ label {
 	appearance: none;
 	z-index: 1;
 	background: #E9CD4A;
+	font-size: 20px;
 }
 .select__button:focus, .select__option:focus {
 	outline: transparent;
@@ -96,6 +97,7 @@ label {
 	opacity: 0;
 	text-decoration: none;
 	transition: opacity 0s var(--foldDur) steps(1);
+	font-size: 20px;
 }
 .select__option:first-child {
 	box-shadow:

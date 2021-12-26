@@ -3,7 +3,7 @@ $( document ).ready(function() {
     flat = $("#flat").flipster({
         style: 'flat',
         spacing: -0.25,
-        buttons: true,
+        buttons: false,
         start: 0,
         buttonNext: 'Siguiente',
         onItemSwitch: function (currentItem,previousItem,index) {

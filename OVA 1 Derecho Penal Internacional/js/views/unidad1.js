@@ -27,14 +27,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide(0);
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide(0);
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
@@ -66,7 +64,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
-                        <a class="p_white" href="assets/PDF/UNIDAD 1/tratado-de-versalles.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf.png"> Tratado de versalles.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a class="p_white" href="assets/PDF/UNIDAD 1/tratado-de-versalles.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> Tratado de versalles.pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -81,6 +79,8 @@ function slide(num){
     }else{
         controlSlides(stepIndex+1);
     }
+    
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -105,12 +105,10 @@ document.addEventListener("keydown",
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
                 slide(1);
-                actualizarprogress();
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
                 slide(1);
-                actualizarprogress();
                 break;
         }
     }
@@ -133,6 +131,8 @@ function controlSlides(num){
             slideHeight = $('#slider-5 ul li').height();
             slider_num = "#slider-5";
             slider_all();*/
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
@@ -158,40 +158,60 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Segunda Guerra Mundial");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             $(".i3").html('')    
@@ -219,15 +239,33 @@ function controlSlides(num){
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            break;
+        case 16:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            break;
+        case 17:
+            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             break;
         default:
             break;
@@ -679,11 +717,11 @@ function scroll_horizontal2(num){
                                         <a href="https://www.youtube.com/watch?v=Cr2GlX4DRHk" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
                                       </div>
                                     </div>
-                                    <div class="col-md-6 d-flex">
-                                      <div class="img-45 m-auto">
+                                    <div class="col-md-7 d-flex">
+                                      <div class="img-30 m-auto">
                                         <img src="assets/img/img_ova/reloj.png" class="img-100">
                                       </div>
-                                      <p class="p_black pl-3 m-auto" style="font-size:13px;">Tiempo sugerido: <b>6 minutos</b></p>
+                                      <p class="p_black pl-3 m-auto" style="font-size:13px;">Tiempo sugerido: <br> <b>6 minutos</b></p>
                                     </div>
                                   </div>
                                 </div>
@@ -743,12 +781,12 @@ function scroll_horizontal2(num){
                                         <a href="https://www.youtube.com/watch?v=YRiJYQLh1vE" target="_blank"><img src="assets/img/img_ova/youtube-logo.png" style="max-width: 100%;"></a>
                                       </div>
                                     </div>
-                                    <div class="col-md-6 pt-4">
+                                    <div class="col-md-7 pt-4">
                                       <div class="d-flex">
-                                          <div class="img-45 m-auto">
+                                          <div class="img-30 m-auto">
                                             <img src="assets/img/img_ova/reloj.png" class="img-100">
                                           </div>
-                                          <p class="p_black pl-3 m-auto" style="font-size:13px">Tiempo sugerido: <b>54 minutos</b></p>
+                                          <p class="p_black pl-3 m-auto" style="font-size:13px">Tiempo sugerido: <br> <b>54 minutos</b></p>
                                       </div>
                                       <div class="d-flex">
                                         <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
@@ -997,4 +1035,48 @@ function videos(num) {
             // statements_def
             break;
     }
+}
+
+function toggleBanner(num) {
+  let contador=1;
+  contador= contador++;
+  // console.log('clik'+ contador);
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner2U1-8').removeClass('d-none');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner1U1-8').removeClass('d-none'); 
+        $('.banner3U1-8').removeClass('d-none');
+        $('.banner5U1-8').removeClass('d-none'); 
+        $('.banner7U1-8').removeClass('d-none');  
+        // $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner4U1-8').removeClass('d-none');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner6U1-8').removeClass('d-none');  
+      break;
+      case 5:
+    
+        $('.bannerU1-8').addClass('d-none');
+        $('.banner8U1-8').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
 }
