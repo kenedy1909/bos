@@ -33,7 +33,7 @@ $(document).ready(function() {
         slide();
         actualizarprogress();
     });
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", ">");
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);

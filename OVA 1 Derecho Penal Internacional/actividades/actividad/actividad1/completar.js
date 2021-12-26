@@ -222,7 +222,7 @@ function calificar(){
 		if (res[i] == 'incorrecta') {
 			puntaje = puntaje - 16.6;
 			
-		}
+		} 
 	}
 	if (puntaje == 100) {
 		

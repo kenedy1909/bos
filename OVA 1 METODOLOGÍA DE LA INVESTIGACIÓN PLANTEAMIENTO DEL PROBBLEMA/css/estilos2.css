@@ -20,7 +20,7 @@
 }
 
 .inactivo {
-    color: #e2c4df;
+    color: rgb(177, 174, 174);
 }
 
 .banner3_2 {
@@ -64,4 +64,10 @@
     color: white;
     text-align: center;
     padding-top: 4px;
+}
+
+.subrayado1 {
+    background: #994c91;
+    color: white;
+    border-radius: 25px;
 }

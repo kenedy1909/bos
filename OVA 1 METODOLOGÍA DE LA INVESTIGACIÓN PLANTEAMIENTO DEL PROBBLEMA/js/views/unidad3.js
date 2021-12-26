@@ -74,12 +74,14 @@ function controlSlides3(num) {
         case 1:
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD3/Elementos_fundamentales_para_plantear_un_problema.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Elementos fundamentales para plantear un problema.pdf</a>
+                                  <a class="p_white size_20" href="assets/PDF/UNIDAD3/Elementos_fundamentales_para_plantear_un_problema.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> Elementos fundamentales para plantear un problema <b class="text-cafe"><u>Ver</u></b></a>
                               </p>
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD3/La_idea_en_la_investigación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> La idea en la investigación.pdf</a>
-                              </p>
+                              <p class="p_white">
+                                 <a class="p_white size_20" href="assets/PDF/UNIDAD3/La_idea_en_la_investigación.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> La idea en la investigación    <b class="text-cafe"><u>Ver</u></b></a>
+                              </p>  
                             </div>`;
+
+                            
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             break;
@@ -180,27 +182,27 @@ for (var n = 0; n < inputsRy.length; n++) {
 function pantallas3_1(num) {
     switch (parseInt(num)) {
         case 1:
-            var img = `<img src="assets/img/img_ova/paso1.png" style="max-width: 80%;">`;
+            var img = `<img src="assets/img/img_ova/paso1.png" style="max-width: 100%;">`;
             $('.imp_img').html(img);
             $('.texto').text('1. Objetivos');
             break;
         case 2:
-            var img = `<img src="assets/img/img_ova/paso2.png" style="max-width: 80%;">`;
+            var img = `<img src="assets/img/img_ova/paso2.png" style="max-width: 100%;">`;
             $('.imp_img').html(img);
             $('.texto').text('2. Preguntas para iniciar su investigación.');
             break;
         case 3:
-            var img = `<img src="assets/img/img_ova/paso3.png" style="max-width: 80%;">`;
+            var img = `<img src="assets/img/img_ova/paso3.png" style="max-width: 100%;">`;
             $('.imp_img').html(img);
             $('.texto').text('3. Justificación.');
             break;
         case 4:
-            var img = `<img src="assets/img/img_ova/paso4.png" style="max-width: 80%;">`;
+            var img = `<img src="assets/img/img_ova/paso4.png" style="max-width: 100%;">`;
             $('.imp_img').html(img);
             $('.texto').text('4. Viabilidad.');
             break;
         case 5:
-            var img = `<img src="assets/img/img_ova/paso5.png" style="max-width: 80%;">`;
+            var img = `<img src="assets/img/img_ova/paso5.png" style="max-width: 100%;">`;
             $('.imp_img').html(img);
             $('.texto').text('5. Evaluación.');
             break;
@@ -279,6 +281,7 @@ function pantalla3_2(num) {
         case 3:
             var text = `
               <div class="col-md-8">
+                <p class="justificado text-black">Formular este tipo de preguntas origina una gran cantidad de dudas:</p>
                 <p class="justificado sub_2 text-black" style="margin-top:40px;">¿Se investigarán los efectos que la difusión de propaganda política a través de estos medios, tienen en la conducta de los votantes?</p><br>
                 <p class="justificado sub_2 text-black">
                   ¿Se analizará el papel de los medios como agentes de socialización política de los votantes?

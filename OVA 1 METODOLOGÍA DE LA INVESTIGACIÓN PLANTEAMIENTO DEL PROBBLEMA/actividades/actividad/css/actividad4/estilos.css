@@ -35,7 +35,7 @@
 }
 
 #actividad-1 ul#grupoA li.active:after {
-    background: rgb(122 61 120);
+    background: #482649
 }
 
 #actividad-1 ul#grupoA li.active {
@@ -61,7 +61,7 @@
 }
 
 #actividad-1 ul#grupoB li {
-    color: rgb(0 52 66);
+    color: #994c91;
     font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     line-height: 1.3;
@@ -73,7 +73,7 @@
     width: 100%;
     height: 100px;
     position: relative;
-    border: 2px dashed rgb(0 52 66);
+    border: 2px dashed #994c91;
     padding-left: 20px;
     margin: 10px 0px 50px 0px;
     z-index: 1006;
@@ -95,7 +95,7 @@
     left: -15px;
     right: -15px;
     bottom: -15px;
-    border: solid rgb(0 52 66) 2px;
+    border: solid #994c91;
     border-radius: 10px;
     background: transparent;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
@@ -103,11 +103,11 @@
 }
 
 #actividad-1 ul#grupoB li.active:after {
-    background: rgb(122 61 120);
+    background: white;
 }
 
 #actividad-1 ul#grupoB li.active {
-    color: #fff;
+    color: #994c91;
 }
 
 #actividad-1 ul#grupoA {
@@ -123,9 +123,9 @@
     left: -15px;
     right: -15px;
     bottom: -15px;
-    border: solid rgb(122 61 120) 2px;
+    border: solid #482649;
     border-radius: 10px;
-    background-color: rgb(122 61 120);
+    background-color: #482649;
     background-image: url(../img/r1-contenedorC.png);
     background-repeat: repeat;
     box-shadow: 9px 9px 5px 0px rgba(0, 0, 0, 0.3);
@@ -134,7 +134,7 @@
 }
 
 #actividad-1 ul#grupoA li.active:after {
-    background: rgb(122 61 120);
+    background: #482649;
 }
 
 #actividad-1 ul#grupoA li.active {
@@ -160,6 +160,7 @@
     background: #E2C4DF;
     border-radius: 20px;
     padding: 20px;
+    color: black
 }
 .pt-3{
     padding-top: 1.5em;
@@ -196,8 +197,8 @@
     display: inline-block;max-width: 100%;
 }
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
@@ -207,13 +208,13 @@
     width: 50%;
 }
 .texto_header b{
-    color: #004c6d;
+    color: #994c91;
     padding-left: 1px;
     padding-right: 1px;
 }
 .linea_blue{
     height: 5px; 
-    background: #004c6d;
+    background: #994c91;
 }
 
 
