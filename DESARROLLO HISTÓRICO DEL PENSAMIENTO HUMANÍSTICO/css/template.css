@@ -106,6 +106,10 @@ iframe{
   color: var(--color-dark);
 }
 
+.color-text-3{
+  color: #8F5025;
+}
+
 .titulo-ova{
   background-image: url(../assets/img/img_ova/Seminario-Humanistico-I-03.png);
   background-repeat: no-repeat;

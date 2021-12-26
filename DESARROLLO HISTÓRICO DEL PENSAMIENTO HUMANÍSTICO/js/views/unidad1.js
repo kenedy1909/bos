@@ -1,7 +1,11 @@
 $( document ).ready(function() {
-    
+    $( ".ov-personaje").hide();
+    $( ".menu1").removeClass('d-none');
     console.log(tema);
-    
+
+    //aparece en los otros ovas
+    // $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -17,16 +21,19 @@ $( document ).ready(function() {
         }
     });
 
+    //aparece en los otros ovas
+    // $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
+
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
     });
-    
+
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
     slide_predeterminado();
 
     slide_link(tema);
@@ -44,9 +51,9 @@ $( document ).ready(function() {
     $(".citar").on('click', citar);
     funcion_vanvas();
 
-    
-    
-    
+
+
+
 });
 
 $(function () {
@@ -74,6 +81,7 @@ var sumaslide = 0;
 var sumaslide2 = 0;
 function controlSlides(num){
     switch (parseInt(num)) {
+
         case 1:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             dragging = "";
@@ -86,16 +94,16 @@ function controlSlides(num){
             /*scroll();*/
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            setMigaja("Unidades de aprendizaje","1. Introducción al humanismo 2", "¿Qué es el humanismo?");
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
-            
+
             break;
         case 4:
             $("#cont_imp").html('');
             $('.triangulo_indica').css({ "visibility": "hidden"
-                            
+
                         });
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
@@ -125,7 +133,7 @@ function controlSlides(num){
         case 9:
             $('.p_9c').html('<p>Clic en cada círculo para visualizar la información</p>');
             $('.indicap9').css({ "visibility": "hidden"
-                    
+
                 });
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
@@ -137,13 +145,14 @@ function controlSlides(num){
             if (sumaslide < 2) {
                 var slideCount = $('#slider2 ul li').length;
                 var slideWidth = $('#slider2 ul li').width();
+                console.log(slideWidth, slideCount);
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider2').css({ width: '100%', height: '480px' });
-                
+
                 $('#slider2 ul').css({ width: '90%'});
-                
+
                 $('#slider2 ul li:last-child').prependTo('#slider2 ul');
 
                 function moveLeft2() {
@@ -153,6 +162,8 @@ function controlSlides(num){
                         $('#slider2 ul li:last-child').prependTo('#slider2 ul');
                         $('#slider2 ul').css('left', '');
                     });
+
+
                 };
 
                 function moveRight2() {
@@ -166,13 +177,38 @@ function controlSlides(num){
 
                 $('a.control_prev2').click(function () {
                     moveLeft2();
+                    if (sumaslide != 0) {
+                        sumaslide--;
+                    } else {
+                        sumaslide=7;
+                    }
+
+                    console.log(sumaslide);
+                    $('a.control_next2').removeClass('d-none');
                 });
 
                 $('a.control_next2').click(function () {
+                    $('a.control_prev2').removeClass('d-none');
                     moveRight2();
+                    sumaslide++;
+                    console.log(sumaslide);
+                    if (sumaslide==8) {
+                        sumaslide= sumaslide-8;
+                        $('a.control_next2').addClass('d-none');
+                    } else {
+                        $('a.control_next2').removeClass('d-none');
+                    }
                 });
+
+                if ("#slider2 ul li:last-child") {
+                    console.log("work");
+                    $('a.control_prev2').addClass('d-none');
+
+                }
             }
-            
+
+
+
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 12:
@@ -182,11 +218,11 @@ function controlSlides(num){
                 var slideWidth = $('#slider3 ul li').width();
                 var slideHeight = $('#slider3 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider3').css({ width: '100%', height: '400px' });
-                
+
                 $('#slider3 ul').css({ width: '90%'});
-                
+
                 $('#slider3 ul li:last-child').prependTo('#slider3 ul');
 
                 function moveLeft3() {
@@ -195,6 +231,7 @@ function controlSlides(num){
                     }, 200, function () {
                         $('#slider3 ul li:last-child').prependTo('#slider3 ul');
                         $('#slider3 ul').css('left', '');
+
                     });
                 };
 
@@ -215,19 +252,86 @@ function controlSlides(num){
                     moveRight3();
                 });
             }
-            
-            carruselimagenes();
+            var num = 1;
+
+            $(".control_previmg").click(function () {
+                $(".img1").addClass('d-none'); $(".img2").addClass('d-none'); $(".img3").addClass('d-none');
+                $(".img4").addClass('d-none'); $(".img5").addClass('d-none'); $(".img6").addClass('d-none');
+                if (num == 1) {
+                    num= 6;
+                } else {
+                    num--;
+                }
+
+                switch (num) {
+                    case 1: $(".img1").removeClass('d-none'); break;
+                    case 2: $(".img2").removeClass('d-none'); break;
+                    case 3: $(".img3").removeClass('d-none'); break;
+                    case 4: $(".img4").removeClass('d-none'); break;
+                    case 5: $(".img5").removeClass('d-none'); break;
+                    case 6: $(".img6").removeClass('d-none'); break;
+                }
+
+            });
+
+            $(".control_nextimg").click(function () {
+                console.log("contador " +num)
+                $(".img1").addClass('d-none'); $(".img2").addClass('d-none'); $(".img3").addClass('d-none');
+                $(".img4").addClass('d-none'); $(".img5").addClass('d-none'); $(".img6").addClass('d-none');
+                if (num == 6) {
+                    num= 1;
+                } else {
+                    num++;
+                }
+
+                switch (num) {
+                    case 1: $(".img1").removeClass('d-none'); break;
+                    case 2: $(".img2").removeClass('d-none'); break;
+                    case 3: $(".img3").removeClass('d-none'); break;
+                    case 4: $(".img4").removeClass('d-none'); break;
+                    case 5: $(".img5").removeClass('d-none'); break;
+                    case 6: $(".img6").removeClass('d-none'); break;
+                }
+
+            });
+
+            console.log("contador " +num)
+            // carruselimagenes();
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
             break;
         case 13:
             $('.wite_ban_13').css({ "background": "transparent"
-                    
+
                 });
             $('.pant13').html('');
+
+            $(".out1").click(function(){
+                $(".p1").addClass('d-none');
+                $(".front13").removeClass('d-none');
+                $(".p2").addClass('d-none'); $(".p3").addClass('d-none');
+            });
+
+            $(".click1").click(function(){
+                $(".p1").removeClass('d-none');
+                $(".front13").addClass('d-none');
+                $(".p2").addClass('d-none'); $(".p3").addClass('d-none');
+            });
+
+            $(".click2").click(function(){
+                $(".p2").removeClass('d-none');
+                $(".front13").addClass('d-none');
+                $(".p1").addClass('d-none'); $(".p3").addClass('d-none');
+            });
+
+            $(".click3").click(function(){
+                $(".p3").removeClass('d-none');
+                $(".front13").addClass('d-none');
+                $(".p2").addClass('d-none'); $(".p1").addClass('d-none');
+            });
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 14:
-            
+
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 15:
@@ -238,16 +342,16 @@ function controlSlides(num){
             var slideWidth2 = $('#slider4 ul li').width();
             var slideHeight2 = $('#slider4 ul li').height();
             var sliderUlWidth2 = slideCount2 * slideWidth2;
-            
+
             $('#slider4').css({ width: '100%', height: '360px' });
-            
-            $('#slider4 ul').css({ width: '90%'});
-            
+
+            $('#slider4 ul').css({ width: '88%'});
+
             $('#slider4 ul li:last-child').prependTo('#slider4 ul');
 
             function moveLeft4() {
                 $('#slider4 ul').animate({
-                    left: + slideWidth2
+                    left: - slideWidth2
                 }, 200, function () {
                     $('#slider4 ul li:last-child').prependTo('#slider4 ul');
                     $('#slider4 ul').css('left', '');
@@ -265,11 +369,15 @@ function controlSlides(num){
 
             $('a.control_prev4').click(function () {
                 moveLeft4();
+                $('a.control_prev4').addClass('d-none');
+                $('a.control_next4').removeClass('d-none');
             });
 
             $('a.control_next4').click(function () {
                 moveRight4();
-            }); 
+                $('a.control_prev4').removeClass('d-none');
+                $('a.control_next4').addClass('d-none');
+            });
             break;
         case 16:
             $('.pantallas16').html('');
@@ -279,7 +387,7 @@ function controlSlides(num){
             tema = 1;*/
             break;
         case 17:
-            
+
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             break;
         case 18:
@@ -292,15 +400,17 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             tema = 1;
             break;
-        
+
         default:
             break;
     }
 }
 
+
+
 function slidep11(num){
     if (num <= 1) {
-        
+
     }
 }
 
@@ -322,10 +432,10 @@ function pantalla9(num){
                       <p class="justificado">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
                     </div>`;
             $('.indicap9').css({ "visibility": "hidden"
-                    
+
                 });
             $('.indi_1').css({ "visibility": "visible"
-                    
+
                 });
             $('.p_9c').html(text);
             break;
@@ -334,10 +444,10 @@ function pantalla9(num){
                           <p class="justificado">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
-                    
+
                 });
             $('.indi_2').css({ "visibility": "visible"
-                    
+
                 });
             $('.p_9c').html(text);
             break;
@@ -346,10 +456,10 @@ function pantalla9(num){
                           <p class="justificado">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
-                    
+
                 });
             $('.indi_3').css({ "visibility": "visible"
-                    
+
                 });
             $('.p_9c').html(text);
             break;
@@ -358,10 +468,10 @@ function pantalla9(num){
                           <p class="justificado">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
-                    
+
                 });
             $('.indi_4').css({ "visibility": "visible"
-                    
+
                 });
             $('.p_9c').html(text);
             break;
@@ -370,10 +480,10 @@ function pantalla9(num){
                           <p class="justificado">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
-                    
+
                 });
             $('.indi_5').css({ "visibility": "visible"
-                    
+
                 });
             $('.p_9c').html(text);
             break;
@@ -394,17 +504,17 @@ function imprime(num) {
     var cont = 0;
     switch (parseInt(num)) {
         case 1:
-            text = `<p class="justificado p_black m-auto">El humanismo es comprendido como una expresión de la cultura que entiende al ser humano como el eje central del desarrollo histórico y social, poseedor de características específicas que lo elevan sobre las demás criaturas existentes, dándole así un lugar privilegiado. 
+            text = `<p class="justificado p_black m-auto">El humanismo es comprendido como una expresión de la cultura que entiende al ser humano como el eje central del desarrollo histórico y social, poseedor de características específicas que lo elevan sobre las demás criaturas existentes, dándole así un lugar privilegiado.
                     <br>De tal modo, el humanismo propende por un desarrollo humano en todos sus niveles y dimensiones, logrando que sean los mismos individuos quienes por medio de una participación activa en la esfera social puedan generar un auto desarrollo acorde a sus gustos, intereses, pasiones y formas de entender la vida misma.</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
-                    
+
                 });
             cont = 1;
             break;
         case 2:
             text= `<p class="justificado p_black m-auto">Como concepto, abarca diferentes características e ideas que implican preguntas de término existencial que el hombre mismo se realiza, como ¿Quién soy?, ¿por qué estoy aquí?, ¿quiénes son los que están a mi alrededor?, integrando esferas entre las que se ubicarían lo teológico, sociológico, antropológico, teleológico y demás; es por esto, que autores como Palacio (2016) señalan que, desde la existencia del hombre, al humanismo se le ha otorgado un matiz cambiante transitando por diferentes momentos de la historia y recibiendo su interpretación como un movimiento filosófico que ha presentado variaciones de acuerdo a las épocas que van ejerciendo influencia y realizan sus propios aportes.</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
-                    
+
                 });
             cont = 2;
             break;
@@ -424,28 +534,28 @@ function imprime(num) {
                         <a href="assets/PDF/que_es.pdf" target="_blank"><img src="assets/img/img_ova/humanistica1_1.png" class="m-auto" style="width: 100%;"></a>
                     </div>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
-                    
+
                 });
             cont = 3;
             break;
         case 4:
-            text = `<p class="justificado p_black">Son fundamentales para la democracia (en la que los estudiantes deben participar con conocimiento y de manera activa, y esta participación, dada por la formación de una educación superior que los hace competentes); sin embargo, señala la autora que, en la actualidad, aunque libertad, amor y creatividad son fundamentales para el desarrollo del pensamiento crítico, se han olvidado relegando su importancia en el proceso de educación.</p>`; 
+            text = `<p class="justificado p_black">Son fundamentales para la democracia (en la que los estudiantes deben participar con conocimiento y de manera activa, y esta participación, dada por la formación de una educación superior que los hace competentes); sin embargo, señala la autora que, en la actualidad, aunque libertad, amor y creatividad son fundamentales para el desarrollo del pensamiento crítico, se han olvidado relegando su importancia en el proceso de educación.</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
-                    
+
                 });
             cont = 4;
             break;
         case 5:
             text =  `<p class="justificado p_black">A lo anterior, Nussbaum (2010) lo ha denominado “crisis silenciosa” por considerar que sucede de manera desapercibida para la sociedad, siendo así el hombre despojado de su capacidad de participación y reduciéndolo a una simple utilidad.</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
-                    
+
                 });
             cont = 5;
             break;
         case 6:
             text = `<p class="justificado p_black">Todo lo anterior, para fundamentar la importancia de la educación en el vivir del individuo, pues a la vez que una universidad tiene como compromiso el educar, también debe desempeñar el rol de formar, entendiendo que la educación repercute directamente en el estilo de vida; en palabras de Esquivel (2004) “se educa para ser y se vive de acuerdo con cómo se es” (p. 310).</p>`;
             $('.triangulo_indica').css({ "visibility": "hidden"
-                    
+
                 });
             cont = 6;
             break;
@@ -454,7 +564,7 @@ function imprime(num) {
     }
     $("#cont_imp").html(text);
     $('.triangulo_indica'+cont+'').css({ "visibility": "visible"
-                    
+
                 });
 }
 
@@ -494,35 +604,35 @@ function pantalla13(num){
         case 1:
             var text = `<p class="justificado">En lo anterior se diferencia entonces la visión tradicional que menciona únicamente los aspectos económicos como factores que condicionan el desarrollo y la percepción de ser países con un mejor nivel de calidad de vida</p>`;
             $('.wite_ban_13').css({ "background": "white"
-                    
+
                 });
             $('.pant13').html(text);
             break;
         case 2:
             var text = `<p class="justificado">Las posturas menos tradicionales proporcionan una mayor participación a los Gobiernos en la posibilidad de garantizar confianza y mejora en las condiciones de vida de la población; es así como Piketty, Stiglitz, entre otros autores institucionalistas otorgan un rol protagónico no sólo a la existencia sino también a la participación ciudadana en las decisiones que la política pública genera sobre las posibilidades de desarrollo de los países.</p>`;
             $('.wite_ban_13').css({ "background": "white"
-                    
+
                 });
             $('.pant13').html(text);
             break;
         case 3:
             var text = `<p class="justificado">Sin embargo, la representación de la realidad como la complejidad de la vida social, arroja a la paradoja sobre tener mayor volumen de datos, tener mejores herramientas, instituciones o modelos y una decadente humanidad.</p>`;
             $('.wite_ban_13').css({ "background": "white"
-                    
+
                 });
             $('.pant13').html(text);
             break;
         case 4:
             var text = `<p class="justificado">La falta de comprensión de ser parte del todo social y de manera cómo somos influenciados, a la vez que lo hacemos con nuestras actuaciones, requiere un mayor grado de acercamiento a la práctica de generar desarrollo desde las personas para las personas.</p>`;
             $('.wite_ban_13').css({ "background": "white"
-                    
+
                 });
             $('.pant13').html(text);
             break;
         case 5:
             var text = `<p class="justificado">Autores como Amartya Sen, Manfred Max Neef, Martha Nussbaum así lo han propuesto desde las teorías de las capacidades, las necesidades, la economía descalza y/o a escala humana.</p>`;
             $('.wite_ban_13').css({ "background": "white"
-                    
+
                 });
             $('.pant13').html(text);
             break;
@@ -530,7 +640,7 @@ function pantalla13(num){
             var text = `<p class="justificado">Para comprender el rol de la educación que modifica el modo de entender el desarrollo al servicio de las personas y no a la inversa, invitamos al Maestro Max Neef (Q.E.P.D) para que nos ilustre su pensamiento en la siguiente entrevista: Manfred Max Neef: Economía a escala humana. Rumbo 360 TV.</p>
                               <iframe id="ytplayer" type="text/html" width="220" height="200" style="min-height: fit-content;" src="https://www.youtube.com/embed/Ye3XqX09IUo" frameborder="0" allowfullscreen>`;
             $('.wite_ban_13').css({ "background": "white"
-                    
+
                 });
             $('.pant13').html(text);
             var player;
@@ -564,7 +674,7 @@ function scroll(){
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
+
     console.log(knob+" "+bar+" "+container);
       dragging = {
         x: event.clientX,
@@ -580,7 +690,7 @@ function scroll(){
           y: event.clientY - dragging.y };
 
 
-        // Clamp the position of the knob to be a maximum of 
+        // Clamp the position of the knob to be a maximum of
         // the knobs container, and a minimum of 0
         newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
         knob.style.top = newTop + 'px';
@@ -603,7 +713,7 @@ function scroll(){
 
 
 function poner(num) {
-    
+
     $(".texto_efecto"+num).css({
         position: 'relative',
         top: '15px',
@@ -677,7 +787,7 @@ function Input() {
     // y el contenido (innerHTML) de este
     this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
+    // inserta los dos elementos creados al final  del elemento Padre
     elementoPadre.appendChild(this.input);
     elementoPadre.appendChild(this.output);
   }
@@ -711,7 +821,7 @@ for (var n = 0; n < inputsRy.length; n++) {
 
 /* Draw
 function Draw(){
- requestId = window.requestAnimationFrame(Draw); 
+ requestId = window.requestAnimationFrame(Draw);
   for( var n = 0; n< inputsRy.length; n++){
     inputsRy[n].update();
   }
@@ -726,7 +836,7 @@ requestId = window.requestAnimationFrame(Draw);
 
 function img_17(num){
     switch (parseInt(num)) {
-        
+
         case 1:
             var text = `<p class="justificado">
                           Producto de las corrientes dominantes, la educación contable concentra sus esfuerzos en dotar al estudiante de competencias y conocimientos que le permitan insertarse al mundo laboral, por desgracia, el excesivo enfoque en esta visión pragmática y poco humanizadora del contable, desemboca precisamente en la crisis de confianza frente a la formación de un sujeto ético y moral, que visione el efecto de sus actuaciones en protección del interés público y de la fe pública que le ha sido encomendada.
@@ -788,7 +898,7 @@ function img_17(num){
 
 function pantalla20(num){
     switch (parseInt(num)) {
-        
+
         case 1:
             var text = `<div class="banner20">
                         <p class="justificado text-white">Desde la óptica positivo-instrumental, las teorías contables terminan propiciando solo descripciones, cuyas enunciaciones adscriben los juicios a decir simplemente una verdad instrumental, desplazando la rectitud o la verdad moral.</p>
@@ -867,7 +977,7 @@ function funcion_vanvas() {
         canvas.add(oImg);
 
         oImg.on('mouseup', function() {
-            //console.log('selected a circle');  
+            //console.log('selected a circle');
             contenido2_3(1);
         });
     });
@@ -880,10 +990,10 @@ function funcion_vanvas() {
         canvas.add(oImg2);
 
         oImg2.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(2);            
+            //console.log('selected a circle');
+             contenido2_3(2);
         });
-        
+
     });*/
     fabric.Image.fromURL(imgElement3, function(oImg3) {
         oImg3.left=360;
@@ -894,10 +1004,10 @@ function funcion_vanvas() {
         canvas.add(oImg3);
 
         oImg3.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(2);            
+            //console.log('selected a circle');
+             contenido2_3(2);
         });
-        
+
     });
     fabric.Image.fromURL(imgElement4, function(oImg4) {
         oImg4.left=370;
@@ -908,8 +1018,8 @@ function funcion_vanvas() {
         canvas.add(oImg4);
 
         oImg4.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(3);            
+            //console.log('selected a circle');
+             contenido2_3(3);
         });
     });
     /*fabric.Image.fromURL(imgElement5, function(oImg5) {
@@ -921,8 +1031,8 @@ function funcion_vanvas() {
         canvas.add(oImg5);
 
         oImg5.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(5);           
+            //console.log('selected a circle');
+             contenido2_3(5);
         });
     });*/
     fabric.Image.fromURL(imgElement6, function(oImg6) {
@@ -934,8 +1044,8 @@ function funcion_vanvas() {
         canvas.add(oImg6);
 
         oImg6.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(4);            
+            //console.log('selected a circle');
+             contenido2_3(4);
         });
     });
     /*fabric.Image.fromURL(imgElement7, function(oImg7) {
@@ -947,8 +1057,8 @@ function funcion_vanvas() {
         canvas.add(oImg7);
 
         oImg7.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(7);            
+            //console.log('selected a circle');
+             contenido2_3(7);
         });
     });*/
     fabric.Image.fromURL(imgElement8, function(oImg8) {
@@ -960,8 +1070,8 @@ function funcion_vanvas() {
         canvas.add(oImg8);
 
         oImg8.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(5);            
+            //console.log('selected a circle');
+             contenido2_3(5);
         });
     });
     fabric.Image.fromURL(imgElement9, function(oImg9) {
@@ -973,8 +1083,8 @@ function funcion_vanvas() {
         canvas.add(oImg9);
 
         oImg9.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(6);            
+            //console.log('selected a circle');
+             contenido2_3(6);
         });
     });
     /*fabric.Image.fromURL(imgElement10, function(oImg10) {
@@ -986,8 +1096,8 @@ function funcion_vanvas() {
         canvas.add(oImg10);
 
         oImg10.on('mouseup', function() {
-            //console.log('selected a circle');  
-             contenido2_3(10);            
+            //console.log('selected a circle');
+             contenido2_3(10);
         });
     });*/
 }
@@ -999,31 +1109,31 @@ function contenido2_3(num) {
                             <div class="text-center"><img src="assets/img/img_ova/hablar.png" style="max-width: 30%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
-                                    <b>Tradición oral:</b> Son expresiones culturales que sirven para transmitir contenidos fundamentales que debían ser conservados. Estos contenidos determinaban las formas de comportamiento, las normas de vinculación social, referentes religiosos y demás elementos importantes que generan cohesión cultural. 
+                                    <b>Tradición oral:</b> Son expresiones culturales que sirven para transmitir contenidos fundamentales que debían ser conservados. Estos contenidos determinaban las formas de comportamiento, las normas de vinculación social, referentes religiosos y demás elementos importantes que generan cohesión cultural.
 
                                 </p>
                             </div>
                         </div>`;
             $('#circle_can').html(cont);
             $(".btns_1").addClass('bg-azu');
-            
+
             break;
         case 2:
             var cont = `<div>
                             <div class="text-center"><img src="assets/img/img_ova/mitos.png" style="max-width: 20%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
-                                    <b>Mitos cosmogónicos:</b> Son discursos explicativos de corte mágico-religioso que dan cuenta del origen del mundo. Es importante señalar que las culturas primitivas tenían creencias en diferentes deidades, las cuales eran animistas, es decir, tenían el poder de controlar o encarnar las fuerzas naturales, éstas mismas creencias determinaban la relación de los seres humanos con su entorno. Lo anterior indica que las creencias religiosas intervienen de manera directa en los procesos de socialización. 
+                                    <b>Mitos cosmogónicos:</b> Son discursos explicativos de corte mágico-religioso que dan cuenta del origen del mundo. Es importante señalar que las culturas primitivas tenían creencias en diferentes deidades, las cuales eran animistas, es decir, tenían el poder de controlar o encarnar las fuerzas naturales, éstas mismas creencias determinaban la relación de los seres humanos con su entorno. Lo anterior indica que las creencias religiosas intervienen de manera directa en los procesos de socialización.
 
                                 </p>
                             </div>
                         </div>`;
             $('#circle_can').html(cont);
             $(".btns_2").addClass('bg-azu');
-            
+
             break;
         case 3:
-            var cont = `<div class="p-2">
+            var cont = `<div class="p-2 mt-3">
                             <div class="text-center"><img src="assets/img/img_ova/religion.png" style="max-width: 30%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
@@ -1033,10 +1143,10 @@ function contenido2_3(num) {
                         </div>`;
             $('#circle_can').html(cont);
             $(".btns_3").addClass('bg-azu');
-            
+
             break;
         case 4:
-            var cont = `<div class="p-2">
+            var cont = `<div class="p-2 mt-3">
                             <div class="text-center"><img src="assets/img/img_ova/red.png" style="max-width: 30%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
@@ -1052,7 +1162,7 @@ function contenido2_3(num) {
                             <div class="text-center"><img src="assets/img/img_ova/ecosistema.png" style="max-width: 20%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
-                                    <b>Manipulación del medio:</b> A medida que los pueblos se van adaptado a las circunstancias naturales, van creando herramientas que les permiten manipular las condiciones de vida, por ejemplo, ya no se ven en la necesidad de cazar y recolectar alimento para un momento concreto, sino que ven la posibilidad de generar un asiento que les permite cosecharlo, facilitando así un lugar estable de vida, el cual será el inicio de las ciudades que permiten el florecimiento de la cultura. 
+                                    <b>Manipulación del medio:</b> A medida que los pueblos se van adaptado a las circunstancias naturales, van creando herramientas que les permiten manipular las condiciones de vida, por ejemplo, ya no se ven en la necesidad de cazar y recolectar alimento para un momento concreto, sino que ven la posibilidad de generar un asiento que les permite cosecharlo, facilitando así un lugar estable de vida, el cual será el inicio de las ciudades que permiten el florecimiento de la cultura.
 
                                 </p>
                             </div>
@@ -1062,13 +1172,13 @@ function contenido2_3(num) {
             break;
         case 6:
             var cont = `<div class="p-2">
-                            <div class="text-center"><img src="assets/img/img_ova/Seminario-Humanistico-I-02.png" style="max-width: 65%;" class="mt-3"></div>
-                            <div class="pt-2 px-4">
+                            <div class="text-center"><img src="assets/img/img_ova/Seminario-Humanistico-I-02.png" style="max-width: 68%;" class="mt-3"></div>
+                            <div class="pt-2 px-4 mt-2">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Identidad colectiva:</b> Es el conjunto de representaciones simbólicas compartidas por una comunidad que determinan la imagen que tienen de sí mismos. Dichas representaciones se manifiestan por medio de acciones, rituales, tradiciones o imaginarios sociales.
                                 </p>
-                                <div>
-                                    <button data-toggle="modal" data-target="#modaltable" class="btn" style="background: #833C0B;width: 40%;color: white;font-weight: bold;"><img src="assets/img/img_ova/buscar.png" style="max-width: 10%;position: absolute;margin-left: -45px;" >ver</button>
+                                <div class="mt-4">
+                                    <button data-toggle="modal" data-target="#modaltable" class="btn" style="background: #714F21;width: 40%;color: white;font-weight: bold;"><img src="assets/img/img_ova/buscar.png" style="max-width: 10%;position: absolute;margin-left: -45px;" >ver</button>
                                 </div>
                             </div>
                         </div>`;
@@ -1087,11 +1197,11 @@ function generalidades(num){
                 <p class="justificado" style="font-size: 12px;">Las polis griegas eran consideradas ciudades estados, esto es, ciudades que pertenecen a una misma nación, pero que tienen un gobierno independiente, leyes propias y libertad de adoración a un dios particular. </p>
                 <p class="justificado" style="font-size: 12px;">
                     De tal modo, cada ciudad-estado podría configurar sus relaciones sociales por medio de las decisiones políticas y religiosas. En este punto es <b style="background: #833c0b;color: white;border-radius: 5px;">importante señalar la importancia de la religión</b>
-                    pues en tanto cada ciudad-estado adoraba a un dios en particular, podía asimilar como propias las características del dios de la ciudad. 
+                    pues en tanto cada ciudad-estado adoraba a un dios en particular, podía asimilar como propias las características del dios de la ciudad.
                 </p>
                 <p class="justificado" style="font-size: 12px;">Es así como por ejemplo Atenas, ciudad que brindaba culto a la diosa Palas Atenea, diosa de la sabiduría, la estrategia militar y la civilización, apropiaba características de esta diosa como elementos de la identidad de la Polis. También es conocido el caso de Esparta, ciudad reconocida por sus valientes guerreros, la cual estaba consagrada al culto de Ares, el dios de la guerra</p>
             </div>`;
-            
+
             $('.generalidades').html(pantalla);
             /*$('.btnredondo').css();*/
             $('.btnredondo').css({'background': '#833C0B'});
@@ -1108,7 +1218,7 @@ function generalidades(num){
                 <p class="justificado" style="font-size: 12px;">En este sentido, resalta entre todas las obras la Ilíada y la Odisea, que son atribuidas a Homero. Dichas obras gozaron de un valor importante en la configuración del ideal del comportamiento humano, pues sus personajes considerados héroes como Aquiles, Agamenón, Héctor, Paris, entre otros, por medio de sus acciones o palabras, fueron considerados ejemplos para toda la Hélade (región).</p>
                 <p></p>
             </div>`;
-            
+
             $('.generalidades').html(pantalla);
             $('.btnredondo').css({'background': '#833C0B'});
             $('.gene2').css({'background': '#B3C6E7'});
@@ -1123,7 +1233,7 @@ function generalidades(num){
                 <p class="justificado" style="font-size: 12px;">Además, es importante resaltar el valor de los poetas líricos, quienes en sus composiciones exaltaban la esencia del valor en la batalla, la condición fugaz de la existencia humana, la vida exenta de lujos como vía para alcanzar la libertad, ideas de patriotismo o exaltación a los dioses.</p><br>
                 <p class="justificado" style="font-size: 12px;">Todo ello hacía de la cultura griega un conjunto de elementos fundamentales que proponían diferentes formas de entender lo humano, siendo así importantes para el desarrollo del humanismo. Gran parte del componente pedagógico y social fue dado por la literatura.</p>
             </div>`;
-            
+
             $('.generalidades').html(pantalla);
             $('.btnredondo').css({'background': '#833C0B'});
             $('.gene3').css({'background': '#B3C6E7'});
@@ -1139,7 +1249,7 @@ function generalidades(num){
 
                 <p class="justificado" style="font-size: 12px;">El impacto que supuso tal forma de gobierno se vio manifiesta en la posibilidad que tenían los seres humanos de tomar las propias decisiones que regían sus vidas, además, la educación, en términos de <b style="background: #833c0b;color: white;border-radius: 5px;">Paideia</b> también fue importante para el desarrollo de la idea de ciudadano griego, pues este término hace referencia a la <b style="background: #833c0b;color: white;border-radius: 5px;">transmisión de saberes y valores</b> que los ciudadanos debían poseer. </p>
             </div>`;
-            
+
             $('.generalidades').html(pantalla);
             $('.btnredondo').css({'background': '#833C0B'});
             $('.gene4').css({'background': '#B3C6E7'});
@@ -1154,7 +1264,7 @@ function generalidades(num){
                 <p class="justificado" style="font-size: 12px;">En ese sentido, el arte, en relación con la filosofía y la escultura fueron un componente elemental para el desarrollo y transmisión de los contenidos considerados esenciales para la cultura griega, delimitando las dimensiones comportamentales del ser humano.</p><br>
                 <p class="justificado" style="font-size: 12px;">A su vez, la religión cumplía la misma función, pues los diferentes dioses, los cuales tenían su función simbólica, servían también a los seres humanos para delimitar la base de identidad de una ciudad o estado concreta.</p>
             </div>`;
-            
+
             $('.generalidades').html(pantalla);
             $('.btnredondo').css({'background': '#833C0B'});
             $('.gene5').css({'background': '#B3C6E7'});
@@ -1172,7 +1282,7 @@ function generalidades(num){
                 <p class="justificado" style="font-size: 12px;">En ese sentido, el arte, en relación con la filosofía y la escultura fueron un componente elemental para el desarrollo y transmisión de los contenidos considerados esenciales para la cultura griega, delimitando las dimensiones comportamentales del ser humano.</p><br>
                 <p class="justificado" style="font-size: 12px;">A su vez, la religión cumplía la misma función, pues los diferentes dioses, los cuales tenían su función simbólica, servían también a los seres humanos para delimitar la base de identidad de una ciudad o estado concreta.</p>
             </div>`;
-            
+
             $('.generalidades').html(pantalla);
             $('.btnredondo').css({'background': '#833C0B'});
             $('.gene6').css({'background': '#B3C6E7'});
@@ -1212,12 +1322,12 @@ function p15(num){
                     <p class="justificado" style="font-size: 12px;">Las polis griegas eran consideradas ciudades estados, esto es, ciudades que pertenecen a una misma nación, pero que tienen un gobierno independiente, leyes propias y libertad de adoración a un dios particular. </p>
                     <p class="justificado" style="font-size: 12px;">
                         De tal modo, cada ciudad-estado podría configurar sus relaciones sociales por medio de las decisiones políticas y religiosas. En este punto es <b style="background: #833c0b;color: white;border-radius: 5px;">importante señalar la importancia de la religión</b>
-                        pues en tanto cada ciudad-estado adoraba a un dios en particular, podía asimilar como propias las características del dios de la ciudad. 
+                        pues en tanto cada ciudad-estado adoraba a un dios en particular, podía asimilar como propias las características del dios de la ciudad.
                     </p>
                     <p class="justificado" style="font-size: 12px;">Es así como por ejemplo Atenas, ciudad que brindaba culto a la diosa Palas Atenea, diosa de la sabiduría, la estrategia militar y la civilización, apropiaba características de esta diosa como elementos de la identidad de la Polis. También es conocido el caso de Esparta, ciudad reconocida por sus valientes guerreros, la cual estaba consagrada al culto de Ares, el dios de la guerra</p>
                 </div>
             </div>`;
-            
+
             $('.p1-5').html(pantalla);
             break;
         case 2:
@@ -1235,7 +1345,7 @@ function p15(num){
                     <div class="text-center img1-5" style=""><img src="assets/img/img_ova/casco-romano.png" style="max-width: 35%;"></div>
                     <div class="text-center divtextgriego" style="background: #833C0B;"><p class="p_black"><b>La cultura romana </b></p></div>
                 </div>
-            </div> 
+            </div>
 
             <div class="col-md-12 row" style="height: fit-content;">
                 <div class="col-md-2 d-flex">
@@ -1243,40 +1353,40 @@ function p15(num){
                 </div>
                 <div class="contenedor_activi_1 d-flex p-4 col-md-10" style="min-height: auto; border-radius: 20px; background: #FFE8D1;">
                     <div class="m-auto">
-                        <p>Realice la lectura del texto humanismo en la antigua Grecia</p><br>
                         <p>Diríjase al ícono de PDF que se encuentra en la parte superior de la pantalla, descargue y realice la lectura correspondiente al texto Humanismo en la antigua Grecia.</p>
                         <div class="d-flex justify-content-end">
-                            <div class="row" style="width: 60%;">
+                            <div class="row mt-4" style="width: 60%;">
                                 <div style="width: 10%;">
                                     <img src="assets/img/img_ova/reloj.png" style="max-width: 100%;">
                                 </div>
                                 <div style="width: 80%;"><p>Tiempo sugerido: 30 minutos</p></div>
-                                
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            
+
             `;
             $('.p1-5').html(pantalla);
             break;
         case 3:
+            $("#textoclic").addClass('d-none');
             var pantalla = `
-            <div class="col-md-3 roma">
-                
+            <div class="col-md-4 roma mt-5">
+
             </div>
-            <div class="col-md-9 ">
+            <div class="col-md-8">
                 <div class="img-100">
                     <div class="row img-100">
-                        <div class="col-md-4 offset-md-4" style="position: relative;top: 25px;z-index: 100;">
+                        <div class="col-md-4 offset-md-4" style="position: relative;top: -30px;z-index: 100;">
                             <div class="text-center img1-5" style=""><img src="assets/img/img_ova/casco-romano.png" style="max-width: 35%;"></div>
                             <div class="text-center divtextgriego" style="background: #833C0B;"><p class="p_black"><b>La cultura romana </b></p></div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex" style="margin-top:-65px">
                     <div style="background: #833c0b;height: 4px; width: 90%;"></div>
                     <div class="cursor" style="background: #833c0b;height: 30px;width: 30px;color: #ffffff;text-align: center;padding: 3px;font-weight: bold;border-radius: 50%;position: relative;top: -15px;" onclick="inicio();">x</div>
                 </div>
@@ -1309,13 +1419,13 @@ function p15(num){
                         <div>
                             <p class="justificado" style="font-size: 12px;">En el contexto romano, los aportes también fueron significativos, nuevas formas de gobierno basadas en la república, el uso de la epístola como medio de expresión pedagógica, la profundización y continuación de elementos griegos por medio del sincretismo cultural y nuevas formas de reflexión filosófica ayudaron a dar continuidad a un pensamiento centrado en la condición racional humana. </p><br>
                             <p class="justificado" style="font-size: 12px;"><b style="background: #833c0b;color: white;border-radius: 5px;">Autores como Séneca</b>, quien, por medio de reflexiones sobre la brevedad de la vida, las características del sabio, la condición moral del ser humano y el uso del tiempo libre, delimitaban cada vez más un ambiente que sirve en épocas posteriores a la consolidación de una visión de lo humano. No se pueden dejar de lado los aportes realizados por Cicerón, Quinto Horacio Flaco, e incluso el mismo Marco Aurelio, quienes, desde diferentes campos de conocimiento y expresión artística, hicieron contribuciones relevantes sobre ideas como el orden, la razón, el libre albedrío, las virtudes del ciudadano, el cultivo del intelecto y el disfrute de la vida.</p>
-                            
+
                         </div>
                     </li>
-                  </ul>  
+                  </ul>
                 </div>
             </div>`;
-            
+
             $('.p1-5').html(pantalla);
             carrusel();
             break;
@@ -1351,7 +1461,7 @@ function pantallas16(num){
             <div class="banner_16">
               <p class="justificado">El pedagogo brasileño Paulo Freire, quien ha sido uno de los principales exponentes de la pedagogía crítica latinoamericana, considera que “(...) la función principal de la educación es hacer personas libres y autónomas, capaces de analizar la realidad que les rodea, participando en ella y transformándola” (Ayuste, 2006, p. 42).</p>
             </div>`;
-            
+
             $('.pantallas16').html(pantalla);
             break;
         case 2:
@@ -1359,7 +1469,7 @@ function pantallas16(num){
             <div class="banner_16">
               <p class="justificado">Y que a partir de esa educación, el concepto de liberación cobra toda significancia posible tanto  desde  el  punto de vista de las ciencias sociales como en las aplicadas, especialmente para el particular de este trabajo, la contabilidad.</p>
             </div>`;
-            
+
             $('.pantallas16').html(pantalla);
             break;
         case 3:
@@ -1367,7 +1477,7 @@ function pantallas16(num){
             <div class="banner_16">
               <p class="justificado">Siguiendo con Gómez (2012) Las disciplinas científicas, incluso aquellas que se especializan en problemas de conocimientos tecnológicos y técnicos, requieren una comprensión del medio en el cual se desata la transmisión de saberes, de tal forma que pueda desarrollarse favorablemente el proceso.</p>
             </div>`;
-            
+
             $('.pantallas16').html(pantalla);
             break;
         case 4:
@@ -1375,7 +1485,7 @@ function pantallas16(num){
             <div class="banner_16">
               <p class="justificado">Lo anterior implica un estudio juicioso y comprometido de quienes aprenden, enseñan y educan de forma coherente con las necesidades de la sociedad y no únicamente con aquellas derivadas del mercado de capitales.</p>
             </div>`;
-            
+
             $('.pantallas16').html(pantalla);
             break;
         case 5:
@@ -1383,7 +1493,7 @@ function pantallas16(num){
             <div class="banner_16">
               <p class="justificado">Según lo expresado por Sánchez (2015) la necesidad de profesionalización contable es producto de esfuerzos gremiales y gubernamentales por otorgar el estatus de saber disciplinar a la contabilidad; su marcado uso en el mundo de los negocios y el tecnicismo asociado a su práctica, ha  legado la percepción social de la contabilidad como saber hacer en contraposición a la concepción social del saber contable.</p>
             </div>`;
-            
+
             $('.pantallas16').html(pantalla);
             break;
         case 6:
@@ -1391,7 +1501,7 @@ function pantallas16(num){
             <div class="banner_16">
               <p class="justificado">En tanto resultado de las dinámicas y modificaciones en las relaciones sociales y económicas, la contabilidad se encuentra convocada a mejorar sus conceptualizaciones, formas de representación, medición y presentación, que complementen más que sustituyan las financieras tradicionales.</p>
             </div>`;
-            
+
             $('.pantallas16').html(pantalla);
             break;
         default:
@@ -1400,23 +1510,23 @@ function pantallas16(num){
 }
 // slide
 function carrusel(){
-    
+
 
     $('#checkbox').change(function(){
         setInterval(function () {
             moveRight(s);
         }, 3000);
     });
-  
+
     var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();
     var sliderUlWidth = slideCount * slideWidth;
-    
+
     $('#slider').css({ width: '100%', height: '300px' });
-    
+
     $('#slider ul').css({ width: '70%'});
-    
+
     $('#slider ul li:last-child').prependTo('#slider ul');
 
     function moveLeft() {
@@ -1443,7 +1553,7 @@ function carrusel(){
 
     $('a.control_next').click(function () {
         moveRight();
-    });   
+    });
 }
 
 
@@ -1454,7 +1564,7 @@ function renasentismo(num){
             <div class="text-center m-auto px-5">
                 <p class="justificado p_black">El humanismo florece en el renacimiento. El ser humano, después de estar sometido a las determinaciones de la iglesia, fija la vista en sí mismo y en la historia para comenzar a rescatar algunos pensamientos que sirvan para dar nueva forma a una época, y con ello a su ser en el mundo. </p>
             </div>`;
-            
+
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
             $('.gif2').css({'visibility': 'visible'});
@@ -1464,7 +1574,7 @@ function renasentismo(num){
             <div class="text-center m-auto px-5">
                 <p class="justificado p_black" style="font-size: 12px;">La relectura de los filósofos clásicos griegos ayuda a restaurar la visión del ser humano como un ser racional, y es allí donde se enfocan los esfuerzos de la cultura en instaurar el reinado de la razón. Lentamente se van dejando de lado muchas de las visiones medievales sobre la naturaleza concedida del ser humano, para dar nuevamente respuesta a la pregunta por la naturaleza del ser del hombre. A medida que la racionalidad se instaura como referencia de humanidad, comienzan a darse una serie de cambios socioculturales que elevarán la posición del ser humano en sus diferentes dimensiones.</p>
             </div>`;
-            
+
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
             $('.gif3').css({'visibility': 'visible'});
@@ -1474,7 +1584,7 @@ function renasentismo(num){
             <div class="text-center m-auto px-5">
                 <p class="justificado p_black" style="font-size: 12px;">Se comienza a buscar una serie de nuevos saberes en los campos de la filosofía, las ciencias físicas, las ciencias naturales y la astronomía, lo cual sirvió para comprender la vida y el mundo desde una nueva posición. El ser humano se desligó de los imperativos éticos religiosos, para dar paso a una ética de carácter intelectualista, basados también en la función de la razón como elemento rector de la vida. Paulatinamente fue surgiendo un optimismo existencial, pues se pensaba que el ser humano podía ser el dueño de su destino, y que la razón sería la llave que abriría la puerta de la verdad universal, se piensa que la naturaleza humana puede ser concebida en términos de cultura. </p>
             </div>`;
-            
+
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
             $('.gif4').css({'visibility': 'visible'});
@@ -1484,7 +1594,7 @@ function renasentismo(num){
             <div class="text-center m-auto px-5">
                 <p class="justificado p_black" style="font-size: 12px;">Surgen pensadores como Immanuel Kant, quien veía al hombre como un ser dotado de razón, capaz de conocer la realidad por medio de ella, este pensador señaló también que la razón llevaría al hombre a la emancipación, una vez secularizado, libre de las ataduras de la ignorancia, podría alcanzar la ilustración. A su vez, indicó que no conocemos las cosas en sí mismas, sino que las conocemos mediatizadas por nuestro sistema de conocimiento experiencial, no vemos el mundo, vemos nuestro mundo.</p>
             </div>`;
-            
+
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
             $('.gif5').css({'visibility': 'visible'});
@@ -1494,7 +1604,7 @@ function renasentismo(num){
             <div class="text-center m-auto px-5">
                 <p class="justificado p_black" style="font-size: 12px;">En un texto llamado, respuesta a la pregunta ¿Qué es la ilustración?, Kant (1989) nos cuenta que el hombre es libre y tiene la capacidad de razonar, de pensar por sí mismo; pero prefiere no hacerlo ya que tal vez no lo encuentra necesario, no tiene que cuestionarse la idea de dios o preguntarse de donde viene y cuál es su destino, pues su religión se lo dice, lo determina. Lo que implica que el ser humano debe hacer uso de la razón, pensar por sí mismo, para alcanzar su verdadera potencia y nivel de desarrollo. </p>
             </div>`;
-            
+
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
             $('.gif6').css({'visibility': 'visible'});
@@ -1504,7 +1614,7 @@ function renasentismo(num){
             <div class="text-center m-auto px-5">
                 <p class="justificado p_black" style="">Es así como una gran cantidad de teorías sobre la formación humana proponen que el sujeto debe generar un tránsito en sí, para sí y en relación con el mejoramiento de la cultura en la cual se desenvuelve, con lo que puede adquirir su verdadero valor. </p>
             </div>`;
-            
+
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
             $('.gif7').css({'visibility': 'visible'});
@@ -1512,7 +1622,7 @@ function renasentismo(num){
         case 7:
             var pantalla = `
             <div class="text-center m-auto px-5">
-                <img src="assets/img/img_ova/humanismo-renacentista.png" style="max-width: 60%;">
+            <img src="assets/img/img_ova/humanismo-renacentista.png" style="max-width: 90%; border-radius: 150px;">
             </div>`;
             $('.circulop-19').html(pantalla);
             $('.escondido1').css({'visibility': 'hidden'});
@@ -1522,6 +1632,7 @@ function renasentismo(num){
             break;
     }
 }
+
 
 function revolucion(num){
     switch (parseInt(num)) {
@@ -1557,7 +1668,7 @@ function revolucion(num){
                     De la misma manera La Revolución Industrial implicó cambios en la dinámica laboral y social, pues para  para generar acción en las fábricas se requería que las personas permanecieran allí gran parte de su jornada.
                 </p>
             </div>`;
-            
+
             $('.revolucion').html(pantalla);
             break;
         case 2:
@@ -1592,7 +1703,7 @@ function revolucion(num){
                     La burguesía tomó tanta fuerza, que, como comenta Galbiatti (s.f) logró desalojar a la nobleza, y dándose también otros casos donde la industrialización se globalizó y no se desalojó la clase noble ni el clero, sino que se llegó a compartir el poder.
                 </p>
             </div>`;
-            
+
             $('.revolucion').html(pantalla);
             break;
         default:
@@ -1607,7 +1718,7 @@ function dinacircles(num){
             <p class="justificado"bstyle="font-size: 14px;">
                 De la misma manera La Revolución Industrial implicó cambios en la dinámica laboral y social, pues para  para generar acción en las fábricas se requería que las personas permanecieran allí gran parte de su jornada.
             </p>`;
-            
+
             $('.dinacircles').html(pantalla);
             break;
         case 2:
@@ -1615,7 +1726,7 @@ function dinacircles(num){
             <p class="justificado" style="font-size: 14px;">
                 Se inicia entonces el surgimiento de nuevos grupos sociales como por ejemplo la clase <b>obrera </b>que recibía el sustento del salario pagado por su trabajo en la fábrica.
             </p>`;
-            
+
             $('.dinacircles').html(pantalla);
             break;
         case 3:
@@ -1623,7 +1734,7 @@ function dinacircles(num){
             <p class="justificado" style="font-size: 14px;">
                 Otro grupo sería una modificación del ya existente burguesía, aquí se conocerían como la <b>burguesía industrial</b>, que se constituía por los dueños de las fábricas y máquinas y eran quienes determinaban las formas de trabajo para sus empleados, los pagos, el costo de sus productos y demás, sin necesidad de consultarlo con otros.
             </p>`;
-            
+
             $('.dinacircles').html(pantalla);
             break;
         case 4:
@@ -1644,7 +1755,7 @@ function dinacircles(num){
                     </div>
                 </div>
             </div>`;
-            
+
             $('.revolucion').html(pantalla);
             break;
         default:
@@ -1656,9 +1767,9 @@ function burgecircles(num){
         case 1:
             var pantalla = `
             <p class="justificado">
-                La burguesía tomó tanta fuerza, que, como comenta Galbiatti (s.f) logró desalojar a la nobleza, y dándose también otros casos donde la industrialización se globalizó y no se desalojó la clase noble ni el clero, sino que se llegó a compartir el poder. 
+                La burguesía tomó tanta fuerza, que, como comenta Galbiatti (s.f) logró desalojar a la nobleza, y dándose también otros casos donde la industrialización se globalizó y no se desalojó la clase noble ni el clero, sino que se llegó a compartir el poder.
             </p>`;
-            
+
             $('.burgecircles').html(pantalla);
             break;
         case 2:
@@ -1666,7 +1777,7 @@ function burgecircles(num){
             <p class="justificado">
                 Esta población burguesa industrial, sería la que le daría vigor al capitalismo como forma de economía.
             </p>`;
-            
+
             $('.burgecircles').html(pantalla);
             break;
         case 3:
@@ -1674,7 +1785,7 @@ function burgecircles(num){
             <p class="justificado">
                 No obstante, era un aspecto que mostraba grandes desventajas, principalmente en la clase obrera que se sometía al trabajo por jornadas realmente extensas.
             </p>`;
-            
+
             $('.burgecircles').html(pantalla);
             break;
         case 4:
@@ -1695,7 +1806,7 @@ function burgecircles(num){
                     </div>
                 </div>
             </div>`;
-            
+
             $('.revolucion').html(pantalla);
             break;
         default:
@@ -1707,8 +1818,8 @@ function francesa(num){
     switch (parseInt(num)) {
         case 1:
             var pantalla = `
-            <p class="justificado p_black" style="font-size: 12px;">Cansados de las limitaciones para acceder a determinados privilegios y bajo un mandato que, en un periodo cambiante, se mostraba inflexible por no responder a las necesidades del pueblo y por ende generar estancamiento en la sociedad (Valenzuela, 2008), la clase burgués de Francia decide alzarse en contra de la nobleza y el clero, pero reconocía su condición de desventaja, lo que le lleva a unir fuerzas con las clases populares que también tenían el anhelo de luchar por la igualdad. Esta revolución, según Valenzuela (2008) dio lugar al surgimiento de nuevos grupos como los gremios, las corporaciones, las ligas y otros.</p>`;
-            
+            <p class="justificado p_black" style="font-size: 12px; margin-top: -45%">Cansados de las limitaciones para acceder a determinados privilegios y bajo un mandato que, en un periodo cambiante, se mostraba inflexible por no responder a las necesidades del pueblo y por ende generar estancamiento en la sociedad (Valenzuela, 2008), la clase burgués de Francia decide alzarse en contra de la nobleza y el clero, pero reconocía su condición de desventaja, lo que le lleva a unir fuerzas con las clases populares que también tenían el anhelo de luchar por la igualdad. Esta revolución, según Valenzuela (2008) dio lugar al surgimiento de nuevos grupos como los gremios, las corporaciones, las ligas y otros.</p>`;
+
             $('.francesa').html(pantalla);
 
             $('.cuerpoflecha').removeClass('cuerpoactive');
@@ -1723,8 +1834,8 @@ function francesa(num){
             break;
         case 2:
             var pantalla = `
-            <p class="justificado p_black">De la misma manera dio lugar a un nuevo funcionamiento económico que incluía la concepción de préstamos, letras de cambio y créditos, lo que, se alineaba a ese nuevo movimiento capitalista que ya había surgido en Inglaterra. Así mismo, señala Valenzuela (2008) que La Revolución Francesa propició la constitución de universidades como respuesta de la necesidad de educación.</p>`;
-            
+            <p class="justificado p_black" style="font-size: 12px; margin-top: -40%">De la misma manera dio lugar a un nuevo funcionamiento económico que incluía la concepción de préstamos, letras de cambio y créditos, lo que, se alineaba a ese nuevo movimiento capitalista que ya había surgido en Inglaterra. Así mismo, señala Valenzuela (2008) que La Revolución Francesa propició la constitución de universidades como respuesta de la necesidad de educación.</p>`;
+
             $('.francesa').html(pantalla);
             $('.cuerpoflecha').removeClass('cuerpoactive');
             $('.triaflecha').removeClass('triactive');
@@ -1738,8 +1849,8 @@ function francesa(num){
             break;
         case 3:
             var pantalla = `
-            <p class="justificado p_black" style="font-size: 12px;">Aunque esta revolución generó impacto en lo económico y político, se muestra como eje principal el afectar el pensamiento del individuo, de allí que se conozca el enunciado de <b>“todos los hombres nacen libres e iguales ante la ley”</b> (Argentina. Ministerio de Educación de la Nación, 2015). Por este modo de pensar, el clero tuvo que ceder el poder al Estado, pasando a quedar subordinado y dando inicio al proceso de <b>separación entre iglesia y Estado</b>, lo cual permitiría el surgimiento de lo conocido como <b>libertad de culto y de expresión.</b></p>`;
-            
+            <p class="justificado p_black" style="font-size: 12px; margin-top: -45%;">Aunque esta revolución generó impacto en lo económico y político, se muestra como eje principal el afectar el pensamiento del individuo, de allí que se conozca el enunciado de <b>“todos los hombres nacen libres e iguales ante la ley”</b> (Argentina. Ministerio de Educación de la Nación, 2015). Por este modo de pensar, el clero tuvo que ceder el poder al Estado, pasando a quedar subordinado y dando inicio al proceso de <b>separación entre iglesia y Estado</b>, lo cual permitiría el surgimiento de lo conocido como <b>libertad de culto y de expresión.</b></p>`;
+
             $('.francesa').html(pantalla);
             $('.cuerpoflecha').removeClass('cuerpoactive');
             $('.triaflecha').removeClass('triactive');
@@ -1751,7 +1862,7 @@ function francesa(num){
             $('.cuerpo3').addClass('cuerpoactive');
             $('.triafle3').addClass('triactive');
             break;
-        
+
         default:
             break;
     }
@@ -1787,7 +1898,7 @@ function cambiatargeta(num){
                                 <img src="assets/img/img_ova/estudio.png" style="max-width: 50%;">
                             </div>`;
             $('.libro').html(pantalla);
-            $('.estudio').html(estudio);
+            // $('.estudio').html(estudio);
             break;
         case 3:
             var estudio = `<div class="text-center">
@@ -1829,7 +1940,7 @@ function cambiatargeta2(num){
             var hablar = `<div class="text-center">
                             <img src="assets/img/img_ova/hablar.png" style="max-width: 50%;">
                         </div>`;
-            
+
             $('.diversidad').html(pantalla);
 
             $('.hablar').html(hablar);
@@ -1862,11 +1973,26 @@ function cambiatargeta2(num){
                 <div class="senal" style=""></div>
             </div>`;
 
-            var diversidad = `<div class="text-center">
-                                <img src="assets/img/img_ova/diversidad.png" style="max-width: 50%;">
-                            </div>`;
+            var diversidad = `
+            <div class="d-flex justify-content-center">
+                <div class="targetaverde" style="">
+                    <div class="content custom-scrollbar10">
+                        <div class="custom-scrollbar__inner10">
+                            <p class="justificado">Al entender lo anterior, es explícito que la esfera social y cultural se ven afectadas desde el campo de la educación, ya que en la manera en que el ser humano se defina (su ser) terminará resolviendo los parámetros de su modo de existir, habitar y convivir, lo que afectará sustancialmente la cultura y sociedad; sin embargo, funciona igual en lo contrario, pues también la cultura y sociedad van señalando el ciudadano que se pretende formar; como se vio en diferentes momentos de la historia, pasa desde la formación de un individuo que logre sujetarse a los mandatos de otros sin hacer uso de su razón y limitándose a obedecer, hasta el desarrollo de un individuo capaz de pensar y decidir por sí mismo para contribuir al avance de su sociedad y cultura; por ende, el ciudadano que se desee formar diferirá tanto del momento histórico, como de la cultura, que en cada región puede presentar variaciones. Por lo anterior, educación y cultura estarían interrelacionados, influyendo una en la otra</p>
+                        </div>
+                        <div class="custom-scrollbar__bar10">
+                            <div class="custom-scrollbar__knob10 cursor">
+                              <p class="text-center linea_scroll10">-</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="senal" style=""></div>
+            </div>`;
             $('.hablar').html(pantalla);
-            $('.diversidad').html(diversidad);
+            // $('.diversidad').html(diversidad);
             dragging = "";
             diff = "";
             newTop = "";
@@ -1894,30 +2020,30 @@ function cambiatargeta2(num){
 function pantalla2_1(num){
   switch (parseInt(num)) {
       case 1:
-          var text = `<div class="col-md-3 d-flex">
-                        <img src="assets/img/img_ova/unido.png" style="max-width: 90%;" class="mx-auto mb-auto">
-                    </div>
-                    <div class="col-md-9">
-                        <p class="justificado">
-                            Rodríguez (2018) cita a Vygotsky para señalar que la educación es un proceso mediador entre lo histórico-cultural y el desarrollo del ser humano, ejerciendo como función principal la transferencia de conocimientos y experiencias que la historia y la cultura han generado a lo largo del tiempo, facilitando que un estudiante pueda revivir y reconstruir sucesos de tiempos pasados al desempeñar un papel activo.
-                        </p>
-                    </div>`;
-          $('.avance_blanco').removeClass('activa');            
+          var text = ` <div class="col-md-3 d-flex" style= "margin-top: 5rem;">
+          <img src="assets/img/img_ova/unido.png" style="max-width: 100%;" class="mx-auto mb-auto">
+      </div>
+      <div class="col-md-9">
+          <p class="justificado" style="margin-top: 15%;">
+              Rodríguez (2018) cita a Vygotsky para señalar que la educación es un proceso mediador entre lo histórico-cultural y el desarrollo del ser humano, ejerciendo como función principal la transferencia de conocimientos y experiencias que la historia y la cultura han generado a lo largo del tiempo, facilitando que un estudiante pueda revivir y reconstruir sucesos de tiempos pasados al desempeñar un papel activo.
+          </p>
+      </div>`;
+          $('.avance_blanco').removeClass('activa');
           $('.nav1').addClass('activa');
 
           $('.opcion_p2_2').removeClass('encendido');
           $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na1').removeClass('inactivo');           
+          $('.na1').removeClass('inactivo');
           $('.na1').addClass('encendido');
-          
+
           $('.cont2_1').html(text);
           break;
       case 2:
-          var text = `<div class="col-md-3 d-flex">
-                            <img src="assets/img/img_ova/educacion-en-linea.png" style="max-width: 90%;" class="mx-auto mb-auto">
+          var text = `<div class="col-md-3 d-flex" style= "margin-top: 5rem;">
+                            <img src="assets/img/img_ova/educacion-en-linea.png" style="max-width: 100%;" class="mx-auto mb-auto">
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-9" style="margin-top: 10%;">
                             <div class="content custom-scrollbar19">
                                 <div class="custom-scrollbar__inner19">
                                     <p class="justificado">Con la definición anterior, pareciera que la educación se detiene en proporcionar conocimiento e información en campos específicos, como es el caso de la educación superior, instruyendo para aprobar evaluaciones, avanzar en los niveles establecidos y finalmente obtener un título que les haga aptos para iniciar su vida laboral; no obstante, autores como Esquivel (2004) señalan que educar debe adjudicar la formación a su proceso, pues esta no se limita a instruir para el sistema económico o político, sino que considera las diferentes esferas mencionadas (amor, libertad, consciencia, afectividad, capacidad de decisión, juicio crítico, desarrollo del ser, etc.) que incumben al ser humano y lo contempla como un ser integral, por ende propone una formación igualmente integral donde además el estudiante posea la capacidad de poner en práctica el conocimiento obtenido.</p>
@@ -1932,15 +2058,15 @@ function pantalla2_1(num){
                                 </div>
                             </div>
                         </div>`;
-          $('.avance_blanco').removeClass('activa');            
+          $('.avance_blanco').removeClass('activa');
           $('.nav2').addClass('activa');
 
           $('.opcion_p2_2').removeClass('encendido');
           $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na2').removeClass('inactivo');           
+          $('.na2').removeClass('inactivo');
           $('.na2').addClass('encendido');
-          
+
           $('.cont2_1').html(text);
             dragging = "";
             diff = "";
@@ -1952,24 +2078,24 @@ function pantalla2_1(num){
             scroll();
           break;
       case 3:
-          var text = `<div class="col-md-3 d-flex">
-                        <img src="assets/img/img_ova/derecho-a-la-educacion.png" style="max-width: 90%;" class="mx-auto mb-auto">
+          var text = `<div class="col-md-3 d-flex" style= "margin-top: 5rem;">
+                        <img src="assets/img/img_ova/derecho-a-la-educacion.png" style="max-width: 100%;" class="mx-auto mb-auto">
                     </div>
                     <div class="col-md-9">
-                        <p class="justificado">Como lo plantean Ramos y López (s.f.), la educación se enfrenta al reto de formar personas capacitadas para la vida y la convivencia en armonía, que sean poseedoras de iniciativas transformadoras, empleando su imaginación y generando cambios innovadores.</p>
+                        <p class="justificado" style="margin-top: 20%;">Como lo plantean Ramos y López (s.f.), la educación se enfrenta al reto de formar personas capacitadas para la vida y la convivencia en armonía, que sean poseedoras de iniciativas transformadoras, empleando su imaginación y generando cambios innovadores.</p>
                     </div>`;
-          $('.avance_blanco').removeClass('activa');            
+          $('.avance_blanco').removeClass('activa');
           $('.nav3').addClass('activa');
 
           $('.opcion_p2_2').removeClass('encendido');
           $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na3').removeClass('inactivo');           
+          $('.na3').removeClass('inactivo');
           $('.na3').addClass('encendido');
-          
+
           $('.cont2_1').html(text);
           break;
-      
+
       default:
           break;
   }
@@ -2001,5 +2127,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }

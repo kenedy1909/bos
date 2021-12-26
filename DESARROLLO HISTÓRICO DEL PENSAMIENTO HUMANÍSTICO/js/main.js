@@ -2,6 +2,15 @@ var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
 
+if (typeof parent.scormplayerdata == 'undefined') {
+    var courseid = 1;
+}else{
+    var courseid = parent.scormplayerdata.courseid;
+}
+var urlsite_1 = location.href.split('/pluginfile',1);
+var urlsite = urlsite_1[0];
+
+
 $( document ).ready(function() {
     $("#content-ova").load("base/portada.html");
     $(".modal_scroll8").on('click', modal_scroll8);

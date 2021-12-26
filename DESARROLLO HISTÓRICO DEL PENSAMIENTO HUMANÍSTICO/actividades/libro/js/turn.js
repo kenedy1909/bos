@@ -1931,3 +1931,9 @@ $.extend($.fn, {
 $.isTouch = isTouch;
 
 })(jQuery);
+
+function abrir_libro() {
+	console.log("ok");
+	$("#flipbook").removeClass('d-none');
+	$(".portada").addClass('d-none');
+}

@@ -1,6 +1,10 @@
 $( document ).ready(function() {
-    
+  $( ".ov-personaje").hide();
+  $( ".menu1").removeClass('d-none');
+  $( ".menu2").removeClass('d-none');
     console.log(tema);
+
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
     
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -338,7 +342,7 @@ function conjuntos(num){
                         
                       </div>
                     </div>
-                    `;
+                    `; 
         $("#info_unidad2").html(conjunto)
     }if (num == 3) {
         var conjunto = `
@@ -475,8 +479,16 @@ function acuarela(num) {
 }
 
 function cerebro(num){
+  $(".btn1").removeClass('btn_cerebroclick'); $(".btn2").removeClass('btn_cerebroclick'); $(".btn3").removeClass('btn_cerebroclick');
+  $(".btn4").removeClass('btn_cerebroclick'); $(".btn5").removeClass('btn_cerebroclick'); $(".btn6").removeClass('btn_cerebroclick');
+  
+  $(".btn1").addClass('btn_cerebro'); $(".btn2").addClass('btn_cerebro'); $(".btn3").addClass('btn_cerebro');
+  $(".btn4").addClass('btn_cerebro'); $(".btn5").addClass('btn_cerebro'); $(".btn6").addClass('btn_cerebro');
+
     switch (parseInt(num)) {
         case 1:
+          $(".btn1").removeClass('btn_cerebro');
+          $(".btn1").addClass('btn_cerebroclick');
             var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                               <div class="acurela2text" style="">
                                 <p class="justificado" style="font-size: 13px;">Desde múltiples corrientes humanistas se tiene que lo humano es un conjunto de potencias desarrollables en un contexto cultural, es decir, una condición a la que se llega por medio del proceso de enculturación, el cual se realiza a través de procesos formativos</p>
@@ -485,6 +497,8 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 2:
+          $(".btn2").removeClass('btn_cerebro');
+          $(".btn2").addClass('btn_cerebroclick');
             var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                           <div class="acurela2text" style="">
                             <p class="justificado" style="font-size: 13px;">Algunas de las teorías sobre la formación se encuentran basadas principalmente en una imagen de hombre de la cual se parte, un individuo libre de determinaciones culturales, sin conceptos o inclinaciones sociales, cercano al puro instinto, que posteriormente propone una imagen a la cual se debe llegar; un sujeto cultural, con códigos de comportamientos y propósitos sociales.</p>
@@ -493,6 +507,8 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 3:
+          $(".btn3").removeClass('btn_cerebro');
+          $(".btn3").addClass('btn_cerebroclick');
             var cont = `<div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                         <div class="acurela2text" style="">
                           <p class="justificado" style="font-size: 13px;">Esto indica que el proceso del desarrollo formativo implica que el individuo deba generar un tránsito en sí, para sí y en relación con el mejoramiento propio y de la cultura en la cual se desarrolla, con lo que puede adquirir su verdadero valor como ser humano, desarrollando sus potencias. Al respecto, Kant citado por Kanz (2001) declara que</p>
@@ -507,6 +523,8 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 4:
+          $(".btn4").removeClass('btn_cerebro');
+          $(".btn4").addClass('btn_cerebroclick');
             var cont = `
             <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                 <div class="acurela2text" style="">
@@ -521,6 +539,8 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 5:
+          $(".btn5").removeClass('btn_cerebro');
+          $(".btn5").addClass('btn_cerebroclick');
             var cont = `
             <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                   <div class="acurela2text" style="">
@@ -530,6 +550,8 @@ function cerebro(num){
             $('.p2-2').html(cont);
             break;
         case 6:
+          $(".btn6").removeClass('btn_cerebro');
+          $(".btn6").addClass('btn_cerebroclick');
             var cont = `
             <div class="acuarelacer" style="min-height: 250px;padding: 32px 0px 11px 80px;">
                   <div class="acurela2text" style="">
@@ -546,13 +568,14 @@ function cerebro(num){
 function cambiatexto(num){
     switch (parseInt(num)) {
         case 1:
-            var cont = `<p class="justificado size_13 m-auto p_black">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
+            var cont = `<p class="justificado size_13 mt-4 p_black">Para responder la anterior pregunta, es necesario pensar más allá de lo habitual, ir más allá de un dualismo que, como se dijo anteriormente, delimita al hombre desde dos esferas (biológica y social). Así pues, se tiene que la vida es deducida de términos fisiológicos a través de movimientos aparentes, tales como la respiración, el palpitar del corazón, la movilidad, entre otros; los cuales denotan que un cuerpo tiene vida en términos biológicos; ahora bien, ¿Y la vida en términos sociales?</p>`;
             $('.textobanewhite').html(cont);
             $('.circuloabnner').removeClass('prendido');
             $('.circuloabnner').addClass('apagado');
 
             $('.cambia1').removeClass('apagado');
             $('.cambia1').addClass('prendido');
+            $('.aparece_proximo').html('<div></div>')
             break;
         case 2:
             var cont = `<p class="justificado m-auto p_black">Para entender al hombre en sociedad es inevitable comprender sus ideales, pues la humanidad proyecta una imagen de perfección delante de sí, señala el camino que los hombres deben seguir. En otras palabras, le dicen al hombre qué debe ser y cómo debe alcanzar tal forma de ser, lo que constituye de inicio una limitación</p>`;
@@ -562,11 +585,12 @@ function cambiatexto(num){
 
             $('.cambia2').removeClass('apagado');
             $('.cambia2').addClass('prendido');
+            $('.aparece_proximo').html('<div></div>')
             break;
         case 3:
             var cont = `<div class="m-auto"><p class="justificado p_black font14">Este ideal de la sociedad está centrado en la felicidad, entendida como tranquilidad, o ausencia de turbación.</p>
                         <p class="justificado p_black font14">En numerosas ocasiones se hace presente la misma respuesta: sí, tengo a mi familia, tengo trabajo y tengo comida. Tal respuesta es evidencia de la resignación a la simple permanencia biológica, es decir, a la simple duración del cuerpo, lo que niega la verdadera existencia de la vida social, pues ésta no es más que el medio para la supervivencia del cuerpo.</p><br>
-                        <i><p class="justificado p_black font14">Haga clic en la flecha para continuar con la información</p></i></div>`;
+                        <br><br>><p class="justificado p_black font14">Haga clic en la flecha para continuar con la información</p></div>`;
             $('.textobanewhite').html(cont);
             $('.circuloabnner').removeClass('prendido');
             $('.circuloabnner').addClass('apagado');
@@ -591,6 +615,7 @@ function cambiatexto2(num) {
 
             $('.cambia2_1').removeClass('apagado');
             $('.cambia2_1').addClass('prendido');
+            $('.aparece_proximo').html('<div></div>')
             break;
         case 2:
             var cont = `<div class="m-auto"><p class="justificado p_black size_13">Ahora bien, es indispensable señalar otro concepto clave en relación con la vida, la libertad y la felicidad; el deseo, que desde el psicoanálisis se comprende como una pulsión, entendiendo ésta como un impulso del inconsciente, y desde la biología como una manifestación de nuestro instinto animal; ambas concepciones son inaceptables para la teología, pues lo animal y lo inconsciente suponen lo oscuro, lo inmoral, lo que debe ser rechazado; de tal modo, surge la moralidad como medio por el cual el hombre niega sus deseos, ya oscuros, ya animales.</p>
@@ -601,6 +626,7 @@ function cambiatexto2(num) {
 
             $('.cambia2_2').removeClass('apagado');
             $('.cambia2_2').addClass('prendido');
+            $('.aparece_proximo').html('<div></div>')
             break;
         case 3:
             var cont = `<div class="m-auto"><p class="justificado p_black size_13">Es pertinente pensar por un momento en la felicidad y la libertad como conceptos relativos, el primero puede hacer referencia a un estado interno del sujeto, que depende de factores externos, específicamente de la existencia o no del deseo; el segundo, puede ser un factor interno o externo, es decir, de sensibilidad o de acción.</p>
@@ -639,7 +665,7 @@ function pantallazo(num){
               </div>
 
               <div style="margin-top: 15px;">
-                <i><p>Habla clic en las imágenes para continuar con la información sobre el sentido de la vida.</p></i>
+                <p>Habla clic en las imágenes para continuar con la información sobre el sentido de la vida.</p>
               </div>`;
             $('.seleccionable').html(cont);
             $('.aparece_proximo').html('');
@@ -701,10 +727,10 @@ function primero(){
                     <div class="col-md-8 m-0" style="padding: 25px 10px 16px 10px;">
                       <p class="justificado p_black size_13">
                         De tal modo, surge la idea de preservación, la cual implica la supervivencia como un medio esencial para la manifestación del Yo; sin embargo, tal conservación de la vida es asumida legalmente como un derecho irrevocable, con lo que se tiene entonces que las sociedades defienden la vida, pero ¿Hasta qué punto es verdad tal afirmación? 
-                      </p>
-                      <i><p class="justificado p_black size_13">
+                      </p><br><br>
+                      <p class="justificado p_black size_13">
                         Haga clic en las imágenes para continuar con la información sobre el sentido de la vida.  
-                      </p></i>
+                      </p>
                     </div>
                     <div class="col-md-4">
                       <div class="circuloabnner text-center prendido cambia1 cursor" style="" onclick="cambiatexto(1);">
@@ -806,6 +832,7 @@ function slideactivi9(num){
             }, 200, function () {
                 $('#slider5 ul li:first-child').appendTo('#slider5 ul');
                 $('#slider5 ul').css('left', '');
+
             });
         };
 
@@ -815,6 +842,7 @@ function slideactivi9(num){
 
         $('a.control_next5').click(function () {
             moveRight5();
+            $('a.control_next5').addClass('d-none');
         });
     }
         
@@ -825,6 +853,8 @@ function slideactivi9(num){
 function mitos(num){
     switch (parseInt(num)) {
         case 1:
+
+        
             $('.desplegar').removeClass('desplegado');
             $('.desplegar').addClass('contraido');
 

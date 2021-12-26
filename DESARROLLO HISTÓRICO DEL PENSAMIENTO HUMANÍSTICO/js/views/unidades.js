@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
 $('.init-unidad').off('click').on('click', function(evt){
     var item = $(this).attr('data-id');
-    tema = 1;
+    console.log(item);
     $("#content-ova").load("base/unidades/unidad"+item+".html");
     evt.preventDefault();
 });
@@ -27,4 +27,4 @@ $('.card_animada').click(function () {
     $('#cardBack_' + numeroTarjeta).toggleClass('card-flip');
     cardanimada(numeroTarjeta);
 });
-
+ 
