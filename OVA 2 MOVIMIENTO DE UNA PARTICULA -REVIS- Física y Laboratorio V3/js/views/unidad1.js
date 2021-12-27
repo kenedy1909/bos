@@ -2136,6 +2136,20 @@ function pantalla22(num) {
             break;
     }
 }
+
+function aparecer(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.control_prev2').removeClass('d-none');
+            break;
+        case 2:
+            $('.control_prev2').addClass('d-none');
+            break;
+        default:
+            break;
+    }
+}
+
 //dezlizador
 var elementoPadre1 = document.querySelector(".inputDiv.i1");
 var elementoPadre2 = document.querySelector(".inputDiv.i2");

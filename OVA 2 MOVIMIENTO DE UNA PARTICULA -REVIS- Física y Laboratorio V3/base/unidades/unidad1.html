@@ -211,7 +211,7 @@
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="row mt-3 px-3">
-                                                    <div class="col-md-2 p-0" style="background: #8FAADC;">
+                                                    <div class="col-md-2 p-0" style="background: #8FAADC; margin-right: 10px; margin-left: 10px; max-width: 60px;">
                                                     </div>
                                                     <div class="col-md-8 p-0">
                                                         <div class="bg-amarillo-o p-3" style="min-height: 525px;">
@@ -232,7 +232,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-2 p-0 d-flex" style="background: #8FAADC;">
+                                                    <div class="col-md-2 p-0 d-flex" style="background: #8FAADC; margin-right: 10px; margin-left: 10px; max-width: 60px;">
                                                         <a class="right m-auto carousel-control" href="#carouselExampleControls" role="button" data-slide="next">
                                                             <div style="" class="triag_cambiaslide2"></div>
                                                         </a>
@@ -241,7 +241,7 @@
                                             </div>
                                             <div class="carousel-item">
                                                 <div class="row mt-3 px-3">
-                                                    <div class="col-md-2 p-0 d-flex" style="background: #8FAADC;">
+                                                    <div class="col-md-2 p-0 d-flex" style="background: #8FAADC; margin-right: 10px; margin-left: 10px; max-width: 60px;">
                                                         <a class="left m-auto carousel-control" href="#carouselExampleControls" role="button" data-slide="prev">
                                                             <div class="triag_cambiaslide2" style="transform: scaleX(-1);"></div>
                                                         </a>
@@ -256,7 +256,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="col-md-2 p-0" style="background: #8FAADC;">
+                                                    <div class="col-md-2 p-0" style="background: #8FAADC; margin-right: 10px; margin-left: 10px; max-width: 60px;">
 
                                                     </div>
                                                 </div>
@@ -284,14 +284,14 @@
                             <div class="col-md-12">
                                 <div class="row">
                                     <div class="col-md-1 p-0 d-flex">
-                                        <div class="contavance d-flex m-auto p-0">
-                                            <a href="#" class="control_prev2 m-auto">
+                                        <div class="contavance d-flex m-auto p-0 ">
+                                            <a href="#" class="control_prev2 m-auto d-none" onclick="aparecer(2);">
                                                 <div class="triag_cambiaslide2 m-auto" style="transform: scaleX(-1);"></div>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col-md-10 bannerslide">
-                                        <div id="slider2" style="" class="d-flex justify-content-center">
+                                        <div id="slider2" class="d-flex justify-content-center">
                                             <ul>
                                                 <li>
                                                     <p class="p_black justificado">Se puede describir el movimiento de la partícula que representa el vehículo en términos del cambio en su posición (coordenada x) durante un intervalo de tiempo. Se supone que 1 s después del arranque,
@@ -310,7 +310,7 @@
                                                 <li>
                                                     <p class="p_black justificado">Note que ∆x, es solo un símbolo que significa “el cambio en la cantidad x”. Siempre se usará la letra griega mayúscula ∆, (delta) para representar un cambio en una cantidad que se calcula restando el
                                                         valor inicial del valor final, y nunca a la inversa. Asimismo, el intervalo de tiempo de t<sub>1</sub> a t<sub>2</sub> es con ∆t, el cambio en la cantidad t (tiempo final menos tiempo inicial).</p>
-                                                    <div class="text-center pt-4">
+                                                    <div class="text-center pt-4 mt-4">
                                                         <button class="btn btnAzul" data-toggle="modal" data-target="#nota">Nota</button>
                                                     </div>
                                                 </li>
@@ -331,9 +331,9 @@
                                         </div>
                                     </div>
                                     <div class="col-md-1 p-0 d-flex">
-                                        <div class="contavance d-flex m-auto p-0">
+                                        <div class="contavance d-flex m-auto p-0" onclick="aparecer(1);">
                                             <a href="#" class="control_next2 m-auto">
-                                                <div style="" class="triag_cambiaslide2 m-auto"></div>
+                                                <div class="triag_cambiaslide2 m-auto"></div>
                                             </a>
                                         </div>
                                     </div>
@@ -367,7 +367,7 @@
                                 </div>
                                 <div class="col-md-6 d-flex justify-content-center">
                                     <div class="bannercafe">
-                                        <div class="text-center"><button class="btn btnAzul" data-toggle="modal" data-target="#respuesta">Ver  respuesta</button></div>
+                                        <div class="text-center mt-4"><button class="btn btnAzul" data-toggle="modal" data-target="#respuesta">Ver  respuesta</button></div>
                                         <div class="text-center mt-5"><img src="assets/img/img_ova/Respuesta.png" class="img-50"></div>
 
                                     </div>
@@ -435,7 +435,8 @@
                                 <div class="bannerpiel">
                                     <p class="p_black justificado">Como se mencionó la velocidad media depende de la posición final y de la posición inicial, pero se sabe que en un desplazamiento real el desplazamiento es a ritmos diferentes; ¿Qué pasaría si en un momento especifico
                                         se desea saber exactamente la velocidad a la que nos movemos? A esta cantidad es la que llámanos rapidez o velocidad instantáneas; es decir, la velocidad en un instante específico o en un punto específico de la
-                                        trayectoria.</p>
+                                        trayectoria.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-12 mt-3">
@@ -974,7 +975,8 @@
                                             <div style="padding: 1px 25px 1px 25px;">
                                                 <p class="p_black justificado size_13">En algunas situaciones el valor de la aceleración promedio puede ser diferente durante distintos intervalos de tiempo. Por lo tanto, es útil definir la aceleración instantánea como el límite de la aceleración
                                                     promedio conforme ∆𝑡 tiende a cero. Este concepto es análogo a la definición de velocidad instantánea discutida en el subtema 2. Si se considera que el punto P<sub>2</sub> se acerca más y más al punto
-                                                    P<sub>1</sub> y toma el límite de ∆𝑣<sub>𝑥</sub>/∆𝑡 conforme ∆𝑡 tiende a cero, se obtiene la aceleración instantánea en el punto P<sub>1</sub>:</p>
+                                                    P
+                                                    <sub>1</sub> y toma el límite de ∆𝑣<sub>𝑥</sub>/∆𝑡 conforme ∆𝑡 tiende a cero, se obtiene la aceleración instantánea en el punto P<sub>1</sub>:</p>
                                                 <div class="text-center">
                                                     <img src="assets/img/img_ova/formulacafe.png" class="img-80">
                                                 </div>
@@ -1757,9 +1759,9 @@
                                         <div class="targetas27 d-flex invisible aparece_target">
                                             <div class="m-auto">
                                                 <p class="p_black" style="font-size: 14px;">Durante un intervalo de tiempo ∆t, la partícula se mueve de P1, donde su vector de posición es <img src="assets/img/img_ova/simbolo1.png" style="max-width: 20px;"> a P2, donde su vector de posición es
-                                                    <img
-                                                        src="assets/img/img_ova/simbolo2.png" style="max-width: 20px;"> El cambio de posición durante este intervalo <img src="assets/img/img_ova/simbolo3.png" style="max-width: 109px;"><img src="assets/img/img_ova/simbolo4.png" style="max-width: 230px;">. Se define la velocidad
-                                                        media y la velocidad instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de posición tiene 3 componentes.</p><span class="color-text"> Dar clic en los números para ver la información:</span>
+                                                    <img src="assets/img/img_ova/simbolo2.png" style="max-width: 20px;"> El cambio de posición durante este intervalo <img src="assets/img/img_ova/simbolo3.png" style="max-width: 109px;"><img src="assets/img/img_ova/simbolo4.png"
+                                                        style="max-width: 230px;">. Se define la velocidad media y la velocidad instantánea durante este intervalo igual que en el movimiento rectilíneo, la única diferencia es que en este caso el vector de
+                                                    posición tiene 3 componentes.</p><span class="color-text"> Dar clic en los números para ver la información:</span>
                                                 <div class="row">
                                                     <div class="col-md-5"></div>
                                                     <div class="col-md-7 row">
@@ -2574,7 +2576,8 @@
                                         <div class="m-auto">
                                             <p class="justificado p_white">Las razones de los lados correspondientes en triángulos semejantes son iguales, así que <img src="assets/img/img_ova/formulas39-1.png" style="max-width: 150px;">.<br> Se agrega el subíndice “r” para recordar
                                                 que la dirección de la aceleración instantánea en cualquier punto siempre se encuentra a lo largo de un radio del círculo (hacia el centro). En conclusión, en el movimiento circular uniforme, la magnitud
-                                                𝑎<sub>𝑟</sub> de la aceleración instantánea es perpendicular a v y hacia adentro sobre el radio.
+                                                𝑎
+                                                <sub>𝑟</sub> de la aceleración instantánea es perpendicular a v y hacia adentro sobre el radio.
                                             </p>
                                         </div>
                                     </div>
@@ -2759,7 +2762,7 @@
                 <div class="card-container manual-flip">
                     <div class="card">
                         <div class="front bg-blanco">
-                            <div class="cover" style="overflow: visible;">
+                            <div class="cover" style="overflow: visible; height: 80px;">
                                 <div class="row h-100">
                                     <div class="col-md-3">
 
@@ -2846,7 +2849,7 @@
                 <div class="card-container manual-flip">
                     <div class="card">
                         <div class="front bg-blanco">
-                            <div class="cover" style="overflow: visible;">
+                            <div class="cover" style="overflow: visible; height: 80px;">
                                 <div class="row h-100">
                                     <div class="col-md-3">
 
