@@ -44,9 +44,20 @@ function calificarEmparejamiento(event) {
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
-    }
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
 
+        $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 80%; margin-top: 10%;margin-left: 1px;">');
+        $('.puntaje').text("100%");
+        $('.mensaje').text("¡Felicitaciones!");
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #00384f;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
+        $("#exampleModal").modal("show");
+    }else{
+        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%;margin-top: 10%;margin-left: 1px;">');
+        $('.mensaje').text("Inténtalo nuevamente.");
+        $('.puntaje').text(puntaje+"%");
+        $('.btns_modal').html('<button style="font-size: 20px;color: #00384f;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+        $("#exampleModal").modal("show");
+        mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
+    }
 }
 
 function getColor() {
@@ -188,3 +199,7 @@ function init_actividad_1() {
     //evento de onready
     $(document).on('ready',init_actividad_1);
 })()
+
+function reload(){
+    location.reload();
+}
