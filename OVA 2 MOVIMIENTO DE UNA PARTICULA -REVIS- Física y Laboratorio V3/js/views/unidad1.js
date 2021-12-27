@@ -3,6 +3,9 @@ $(document).ready(function() {
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $(".zoomContainer").remove();
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".zoomContainer").remove();
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
         loader: "show",
