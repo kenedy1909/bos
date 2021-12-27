@@ -1,31 +1,33 @@
-$( document ).ready(function() {
+$(document).ready(function() {
     // console.log(tema);
-    $( ".zoomContainer" ).remove();
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".zoomContainer").remove();
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 20});
-    $('.zoom_img2').elevateZoom({zoomWindowPosition: 15});
-    $('#next').on('click', function () {
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 20 });
+    $('.zoom_img2').elevateZoom({ zoomWindowPosition: 15 });
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
@@ -39,7 +41,7 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    $(".teoria").on('click' , teorias);
+    $(".teoria").on('click', teorias);
     /*
     $(".modal_scroll2").on('click', modal_scroll2);
     $(".modal_scroll3").on('click', modal_scroll3);
@@ -57,33 +59,35 @@ $( document ).ready(function() {
 
 
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    controlSlides(stepIndex + 1);
+    actualizarprogress(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 var sumaslide = 0;
 var sumaslide1 = 0;
 var sumaslide2 = 0;
 var sumaslide3 = 0;
-function controlSlides(num){
+
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
             sumaslide++;
@@ -92,17 +96,17 @@ function controlSlides(num){
                 var slideWidth = $('#slider2 ul li').width();
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider2').css({ width: '100%', height: '250px' });
-                
-                $('#slider2 ul').css({ width: '90%'});
-                
+
+                $('#slider2 ul').css({ width: '90%' });
+
                 $('#slider2 ul li:last-child').prependTo('#slider2 ul');
 
                 function moveLeft2() {
                     $('#slider2 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
+                        left: +slideWidth
+                    }, 200, function() {
                         $('#slider2 ul li:last-child').prependTo('#slider2 ul');
                         $('#slider2 ul').css('left', '');
                     });
@@ -110,60 +114,60 @@ function controlSlides(num){
 
                 function moveRight2() {
                     $('#slider2 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
+                        left: -slideWidth
+                    }, 200, function() {
                         $('#slider2 ul li:first-child').appendTo('#slider2 ul');
                         $('#slider2 ul').css('left', '');
                     });
                 };
 
-                $('a.control_prev2').click(function (e) {
+                $('a.control_prev2').click(function(e) {
                     moveLeft2();
                     e.preventDefault();
                 });
 
-                $('a.control_next2').click(function (e) {
+                $('a.control_next2').click(function(e) {
                     moveRight2();
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 14:
             sumaslide1++;
@@ -172,17 +176,17 @@ function controlSlides(num){
                 var slideWidth = $('#slider3 ul li').width();
                 var slideHeight = $('#slider3 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider3').css({ width: '100%', height: '200px' });
-                
-                $('#slider3 ul').css({ width: '90%'});
-                
+
+                $('#slider3 ul').css({ width: '90%' });
+
                 $('#slider3 ul li:last-child').prependTo('#slider3 ul');
 
                 function moveLeft3() {
                     $('#slider3 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
+                        left: +slideWidth
+                    }, 200, function() {
                         $('#slider3 ul li:last-child').prependTo('#slider3 ul');
                         $('#slider3 ul').css('left', '');
                     });
@@ -190,65 +194,65 @@ function controlSlides(num){
 
                 function moveRight3() {
                     $('#slider3 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
+                        left: -slideWidth
+                    }, 200, function() {
                         $('#slider3 ul li:first-child').appendTo('#slider3 ul');
                         $('#slider3 ul').css('left', '');
                     });
                 };
 
-                $('a.control_prev3').click(function (e) {
+                $('a.control_prev3').click(function(e) {
                     moveLeft3();
                     e.preventDefault();
                 });
 
-                $('a.control_next3').click(function (e) {
+                $('a.control_next3').click(function(e) {
                     moveRight3();
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 16:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
-        case 18: 
+        case 18:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 25:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Unidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 26:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 27:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 28:
             sumaslide2++;
@@ -257,17 +261,17 @@ function controlSlides(num){
                 var slideWidth = $('#slider4 ul li').width();
                 var slideHeight = $('#slider4 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider4').css({ width: '100%', height: '150px' });
-                
-                $('#slider4 ul').css({ width: '90%'});
-                
+
+                $('#slider4 ul').css({ width: '90%' });
+
                 $('#slider4 ul li:last-child').prependTo('#slider4 ul');
 
                 function moveLeft4() {
                     $('#slider4 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
+                        left: +slideWidth
+                    }, 200, function() {
                         $('#slider4 ul li:last-child').prependTo('#slider4 ul');
                         $('#slider4 ul').css('left', '');
                     });
@@ -275,31 +279,31 @@ function controlSlides(num){
 
                 function moveRight4() {
                     $('#slider4 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
+                        left: -slideWidth
+                    }, 200, function() {
                         $('#slider4 ul li:first-child').appendTo('#slider4 ul');
                         $('#slider4 ul').css('left', '');
                     });
                 };
 
-                $('a.control_prev4').click(function (e) {
+                $('a.control_prev4').click(function(e) {
                     moveLeft4();
                     e.preventDefault();
                 });
 
-                $('a.control_next4').click(function (e) {
+                $('a.control_next4').click(function(e) {
                     moveRight4();
                     e.preventDefault();
                 });
             }
 
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 29:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 30:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 31:
             sumaslide3++;
@@ -308,17 +312,17 @@ function controlSlides(num){
                 var slideWidth = $('#slider5 ul li').width();
                 var slideHeight = $('#slider5 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
-                
+
                 $('#slider5').css({ width: '100%', height: '400px' });
-                
-                $('#slider5 ul').css({ width: '100%'});
-                
+
+                $('#slider5 ul').css({ width: '100%' });
+
                 $('#slider5 ul li:last-child').prependTo('#slider5 ul');
 
                 function moveLeft5() {
                     $('#slider5 ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
+                        left: +slideWidth
+                    }, 200, function() {
                         $('#slider5 ul li:last-child').prependTo('#slider5 ul');
                         $('#slider5 ul').css('left', '');
                     });
@@ -326,70 +330,70 @@ function controlSlides(num){
 
                 function moveRight5() {
                     $('#slider5 ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
+                        left: -slideWidth
+                    }, 200, function() {
                         $('#slider5 ul li:first-child').appendTo('#slider5 ul');
                         $('#slider5 ul').css('left', '');
                     });
                 };
 
-                $('a.control_prev5').click(function (e) {
+                $('a.control_prev5').click(function(e) {
                     moveLeft5();
                     e.preventDefault();
                 });
 
-                $('a.control_next5').click(function (e) {
+                $('a.control_next5').click(function(e) {
                     moveRight5();
                     e.preventDefault();
                 });
             }
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 32:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 33:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 34:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 35:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento Bidimensional");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 36:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 37:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 38:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 39:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 40:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 41:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 42:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 43:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 44:
-            setMigaja("Unidades de aprendizaje","1. Movimiento de una  partícula","Movimiento  Circular");
+            setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         default:
             break;
     }
 }
 
-function modal_scroll_uno(){
+function modal_scroll_uno() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -402,13 +406,13 @@ function modal_scroll_uno(){
 
 function infoactivi(num) {
     switch (parseInt(num)) {
-        
+
         case 1:
-            $('.info1').css({'visibility': 'visible'});
-            
+            $('.info1').css({ 'visibility': 'visible' });
+
             break;
         case 2:
-            $('.info2').css({'visibility': 'visible'});
+            $('.info2').css({ 'visibility': 'visible' });
             break;
         default:
             break;
@@ -436,7 +440,7 @@ function ejemplos(num) {
     }
 }
 
-function targetas(num){
+function targetas(num) {
     switch (parseInt(num)) {
         case 1:
             $('.deplegar').addClass('recogido');
@@ -498,16 +502,16 @@ function targetas(num){
         default:
             break;
     }
-}   
-
-function pantalla27(){
-    $('.aparece_target').addClass('visible');
-    $('.aparece_target').removeClass('invisible');           
 }
 
-function flotantes(num){
-            $('.flotante').addClass('d-none');
-            $('.flotante').removeClass('visible');
+function pantalla27() {
+    $('.aparece_target').addClass('visible');
+    $('.aparece_target').removeClass('invisible');
+}
+
+function flotantes(num) {
+    $('.flotante').addClass('d-none');
+    $('.flotante').removeClass('visible');
     switch (parseInt(num)) {
         case 1:
 
@@ -529,8 +533,8 @@ function flotantes(num){
             break;
     }
 }
-    
-function p39(num){
+
+function p39(num) {
     switch (parseInt(num)) {
         case 1:
             $('.text-p39').addClass('invisible');
@@ -617,7 +621,7 @@ function p39(num){
     }
 }
 
-function mesas(num){
+function mesas(num) {
     switch (parseInt(num)) {
         case 1:
             $('.mesas').addClass('invisible');
@@ -645,7 +649,7 @@ function mesas(num){
     }
 }
 
-function banners(num){
+function banners(num) {
     switch (parseInt(num)) {
         case 1:
             $('.formulas_flecha').addClass('invisible');
@@ -679,7 +683,7 @@ function banners(num){
             $('.siguiente2').addClass('triangulo_active');
             $('.siguiente2').removeClass('triangulo_inactive');
 
-            
+
             $('.banflechascafe').addClass('invisible');
             $('.banflechascafe').removeClass('visible');
 
@@ -697,7 +701,7 @@ function banners(num){
     }
 }
 
-function desplega(num){
+function desplega(num) {
     switch (parseInt(num)) {
         case 1:
             $('.siguiente').addClass('visible');
@@ -760,7 +764,7 @@ function desplega(num){
     }
 }
 
-function retroceder(num){
+function retroceder(num) {
     switch (parseInt(num)) {
         case 1:
             $('.siguiente').addClass('visible');
@@ -931,53 +935,56 @@ function agrandar(num) {
     }
 }
 
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
@@ -986,64 +993,65 @@ function scroll(){
 
 
 function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = 5;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = 5;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    scroll_horizontal(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
 }
 
 // setup
 
 
 function poner(num) {
-    
-    $(".texto_efecto"+num).css({
+
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'block',
         'z-index': '100'
     });
     if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','block');
-        $(".custom-scrollbar2").css('height','250');
+        $(".custom-scrollbar__bar2").css('display', 'block');
+        $(".custom-scrollbar2").css('height', '250');
     }
 }
+
 function quitar(num) {
     // $(".texto_efecto"+num).css({
     //     position: 'relative',
@@ -1052,16 +1060,16 @@ function quitar(num) {
     //     'z-index': '100'
     // });
     if (num == 1) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
     if (num == 2) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
     if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
 }
 
@@ -1070,17 +1078,17 @@ function quitar(num) {
 function funcionalidad_1(num) {
     $(".dimensional").removeClass('bg-azul-mc');
     $(".dimensional").addClass('bg-azul');
-    $(".dimensional-"+num).removeClass('bg-azul');
-    $(".dimensional-"+num).addClass('bg-azul-mc');
-    switch(parseInt(num)){
+    $(".dimensional-" + num).removeClass('bg-azul');
+    $(".dimensional-" + num).addClass('bg-azul-mc');
+    switch (parseInt(num)) {
         case 1:
             $("#dimensional").html(`
                                     <div class="p-3 d-flex">
                                       <img src="assets/img/img_ova/laboratoriotexto.png" class="img-100 m-auto zoom_img" data-zoom-image="assets/img/img_ova/laboratoriotexto.png">
                                     </div>
                                     `);
-            $( ".zoomContainer" ).remove();
-            $('.zoom_img').elevateZoom({zoomWindowPosition: 50});
+            $(".zoomContainer").remove();
+            $('.zoom_img').elevateZoom({ zoomWindowPosition: 50 });
             break;
         case 2:
 
@@ -1110,9 +1118,9 @@ function funcionalidad_1(num) {
 function dimensional_opcion(num) {
     $(".dimensional_opcion").removeClass('bg-amarillo');
     $(".dimensional_opcion").addClass('bg-cafe-c');
-    $(".dimensional_opcion-"+num).removeClass('bg-cafe-c');
-    $(".dimensional_opcion-"+num).addClass('bg-amarillo');
-    switch(parseInt(num)){
+    $(".dimensional_opcion-" + num).removeClass('bg-cafe-c');
+    $(".dimensional_opcion-" + num).addClass('bg-amarillo');
+    switch (parseInt(num)) {
         case 1:
             $("#dimensional_info").html(`<p class="p_black justificado" style="font-size: 13px;">Las unidades derivadas son aquellas unidades que pueden formarse combinando las unidades básicas según relaciones algebraicas escogidas que liguen las magnitudes correspondientes, como, por ejemplo: velocidad, aceleración, fuerza, potencia, volumen. (S., 2015)</p>`);
             break;
@@ -1131,8 +1139,8 @@ function dimensional_opcion(num) {
 }
 
 function svg_img(num) {
-            $("#svg-info").addClass('d-none');
-    switch(parseInt(num)){
+    $("#svg-info").addClass('d-none');
+    switch (parseInt(num)) {
         case 1:
             $("#svg-info").html(`
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
@@ -1233,7 +1241,7 @@ function cerrar_svg() {
     $('#svg-info').addClass('d-none');
 }
 
-function pant9(num){
+function pant9(num) {
     switch (parseInt(num)) {
         case 1:
             var texto = `
@@ -1267,13 +1275,13 @@ function pant9(num){
             $('.circulo3').addClass('activo');
             break;
         default:
-            
+
             break;
     }
 }
 
 function equivalencias(num) {
-    switch(parseInt(num)){
+    switch (parseInt(num)) {
         case 1:
             $("#equivalencia-1").removeClass('col-md-6');
             $("#equivalencia-1").addClass('col-md-1');
@@ -1436,14 +1444,14 @@ function aviones(num) {
     $("#avion").removeClass('fondo-5');
     $("#avion").removeClass('fondo-6');
     $("#avion").addClass('fondo-1');
-    switch(parseInt(num)){
+    switch (parseInt(num)) {
         case 1:
             $("#avion").removeClass('fondo-1');
             $(".avion-content").removeClass('mx-auto mt-auto');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-2');
-            $("#avion").attr('onclick','aviones(2)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('onclick', 'aviones(2)');
+            $("#avion").attr('style', 'width: 700px; height: 475px;');
             $(".avion-content").html(`<p class="p_black justificado">Algunas cantidades físicas, como el tiempo, la temperatura, la masa y la densidad se pueden describir completamente con un solo número y una unidad. No obstante, en física muchas otras cantidades importantes están asociadas con una dirección y no pueden describirse con un solo número.</p>`);
             break;
         case 2:
@@ -1451,8 +1459,8 @@ function aviones(num) {
             $(".avion-content").removeClass('mx-auto mt-auto');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-3');
-            $("#avion").attr('onclick','aviones(3)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('onclick', 'aviones(3)');
+            $("#avion").attr('style', 'width: 700px; height: 475px;');
             $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
             break;
         case 3:
@@ -1460,8 +1468,8 @@ function aviones(num) {
             $(".avion-content").removeClass('mx-auto mt-auto');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-4');
-            $("#avion").attr('onclick','aviones(4)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('onclick', 'aviones(4)');
+            $("#avion").attr('style', 'width: 700px; height: 475px;');
             $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
             break;
         case 4:
@@ -1469,8 +1477,8 @@ function aviones(num) {
             $(".avion-content").removeClass('m-auto');
             $(".avion-content").addClass('mx-auto mt-auto');
             $("#avion").addClass('fondo-5');
-            $("#avion").attr('onclick','aviones(5)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('onclick', 'aviones(5)');
+            $("#avion").attr('style', 'width: 700px; height: 475px;');
             $(".avion-content").html(`
                                         <p class="p_black justificado">Cuando una cantidad física se describe con un solo número, se dice que es una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>escalar.</b></span> En cambio, una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>vectorial</b></span> incluye tanto una magnitud (la cual indica “qué tanto” o “qué tan grande”) como una dirección en el espacio. </p>
                                         <br>
@@ -1482,8 +1490,8 @@ function aviones(num) {
             $(".avion-content").removeClass('m-auto');
             $(".avion-content").addClass('mx-auto mt-auto');
             $("#avion").addClass('fondo-6');
-            $("#avion").attr('onclick','aviones(6)');
-            $("#avion").attr('style','width: 780px; height: 475px;');
+            $("#avion").attr('onclick', 'aviones(6)');
+            $("#avion").attr('style', 'width: 780px; height: 475px;');
             $(".avion-content").html(`
                                         <div class="d-flex">
                                           <img src="assets/img/img_ova/profesor (3).png" class="img-45 m-auto">
@@ -1498,8 +1506,8 @@ function aviones(num) {
             $(".avion-content").removeClass('mx-auto mt-auto');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-1');
-            $("#avion").attr('onclick','aviones(1)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('onclick', 'aviones(1)');
+            $("#avion").attr('style', 'width: 700px; height: 475px;');
             $(".avion-content").html(`
                                     <div class="d-flex">
                                       <img src="assets/img/img_ova/profesor (2).png" class="img-45 m-auto">
@@ -1515,11 +1523,11 @@ function aviones(num) {
 function actividadrecogible(num) {
     switch (parseInt(num)) {
         case 1:
-            $('.bg-recogible').css({'width': '12%'});
-            $('.img_recogible1').css({'max-width': '125%'})
+            $('.bg-recogible').css({ 'width': '12%' });
+            $('.img_recogible1').css({ 'max-width': '125%' })
             break;
         default:
-            
+
             break;
     }
 }
@@ -1554,11 +1562,11 @@ function efect(num) {
             break;
         default:
             break;
-    }           
-    
+    }
+
 }
 
-function removeefect(num){
+function removeefect(num) {
     switch (parseInt(num)) {
         case 1:
             $('.creciente').removeClass('crece');
@@ -1586,11 +1594,11 @@ function removeefect(num){
             break;
         default:
             break;
-    } 
-    
+    }
+
 }
 
-function removeefect(num){
+function removeefect(num) {
     switch (parseInt(num)) {
         case 1:
             $('.creciente').removeClass('crece');
@@ -1618,12 +1626,12 @@ function removeefect(num){
             break;
         default:
             break;
-    } 
-}  
+    }
+}
 
 function ruta(num) {
     $("#ruta-info").addClass('d-none');
-    switch(parseInt(num)){
+    switch (parseInt(num)) {
         case 1:
             $("#ruta-info").html(`
                                 <div class="radius-2 img-100 border-azul-o bg-azul-c p-3">
@@ -1789,6 +1797,7 @@ function ruta(num) {
             break;
     }
 }
+
 function cerrar_ruta() {
     $('#ruta-info').addClass('d-none');
 
@@ -1798,8 +1807,8 @@ function teorias() {
     var teorias_num = $(this).data('teoria');
     $(".teoria-flecha").removeClass('d-block');
     $(".teoria-flecha").addClass('d-none');
-    $(".teoria-flecha-"+teorias_num).removeClass('d-none');
-    $(".teoria-flecha-"+teorias_num).addClass('d-block');
+    $(".teoria-flecha-" + teorias_num).removeClass('d-none');
+    $(".teoria-flecha-" + teorias_num).addClass('d-block');
 
     if (teorias_num == 1) {
         var texto = `
@@ -1817,7 +1826,7 @@ function teorias() {
                         </div>
                     `;
         $("#teoria").html(texto);
-    }else if (teorias_num == 2) {
+    } else if (teorias_num == 2) {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
@@ -1833,7 +1842,7 @@ function teorias() {
                     </div>
                     `;
         $("#teoria").html(texto);
-    }else if (teorias_num == 3) {
+    } else if (teorias_num == 3) {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
@@ -1849,7 +1858,7 @@ function teorias() {
                     </div>
                     `;
         $("#teoria").html(texto);
-    }else if (teorias_num == 4) {
+    } else if (teorias_num == 4) {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
@@ -1869,7 +1878,7 @@ function teorias() {
                     </div>
                     `;
         $("#teoria").html(texto);
-    }else if (teorias_num == 5) {
+    } else if (teorias_num == 5) {
         var texto = `
                     <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                         <div class="bg-azul-o h-6px m-auto">
@@ -1893,27 +1902,27 @@ function teorias() {
                     </div>
                     `;
         $("#teoria").html(texto);
-        $( ".zoomContainer" ).remove();
-        $('.zoom_img').elevateZoom({zoomWindowPosition: 50});
+        $(".zoomContainer").remove();
+        $('.zoom_img').elevateZoom({ zoomWindowPosition: 50 });
     }
 }
 
-function activi3(num){
+function activi3(num) {
     switch (parseInt(num)) {
         case 1:
-            $('.contraer1').css({'height': '20%'});
-            $('.imagenactivi1').css({'visibility':'hidden'});
+            $('.contraer1').css({ 'height': '20%' });
+            $('.imagenactivi1').css({ 'visibility': 'hidden' });
             break;
         case 2:
-            $('.contraer2').css({'height': '20%'});
-            $('.imagenactivi2').css({'visibility':'hidden'});
+            $('.contraer2').css({ 'height': '20%' });
+            $('.imagenactivi2').css({ 'visibility': 'hidden' });
             break;
         case 3:
-            $('.contraer3').css({'height': '20%'});
-            $('.imagenactivi3').css({'visibility':'hidden'});
+            $('.contraer3').css({ 'height': '20%' });
+            $('.imagenactivi3').css({ 'visibility': 'hidden' });
             break;
         default:
-            
+
             break;
     }
 }
@@ -1946,7 +1955,7 @@ function pantallas18(num) {
     }
 }
 
-function btns_modal(num){
+function btns_modal(num) {
     switch (parseInt(num)) {
         case 1:
             $('.btnmodal').addClass('btn_inactive');
@@ -1967,7 +1976,7 @@ function btns_modal(num){
     }
 }
 
-function formulas_unidimencionales(num){
+function formulas_unidimencionales(num) {
     switch (parseInt(num)) {
         case 1:
             $('.form_uni').addClass('invisible');
@@ -2086,7 +2095,7 @@ function color(num) {
     $(".notas_1, .notas_2").removeClass('color_nota');
     if (num == 1) {
         $(".notas_1").addClass('color_nota');
-    }else if (num == 2) {
+    } else if (num == 2) {
         $(".notas_2").addClass('color_nota');
     }
 }
@@ -2130,43 +2139,43 @@ var elementoPadre2 = document.querySelector(".inputDiv.i2");
 var inputsRy = [];
 
 function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = 2;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = 2;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    pantallas18(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
+    this.actualizar = function() {
+        pantallas18(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
 }
 
 // setup
@@ -2182,11 +2191,11 @@ i2.crear(elementoPadre2);
 inputsRy.push(i2);
 
 for (var n = 0; n < inputsRy.length; n++) {
-  (function(n) {
-    inputsRy[n].input.addEventListener("input", function() {
-      inputsRy[n].actualizar();
-    }, false)
-  }(n));
+    (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+            inputsRy[n].actualizar();
+        }, false)
+    }(n));
 }
 
 /* Draw
@@ -2212,7 +2221,7 @@ requestId = window.requestAnimationFrame(Draw);
   }
 }*/
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -2238,5 +2247,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }
