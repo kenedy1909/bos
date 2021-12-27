@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <meta name="description" content="Fullscreen Pageflip Layout with BookBlock">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/actividad5/animate.css">
+    <link rel="stylesheet" href="../css/actividad5/backdrop.css">
+    <link rel="stylesheet" type="text/css" href="../css/actividad5/estilos.css">
+</head>
+
+<body>
+    <div class="backdrop actividad in">
+        <div class="fondo">
+            <div class="row principal" style="">
+                <div class="col-md-4 secundario" style="">
+                    <div class="d-flex div-img" style="">
+                      <img src="../img/img2/actividad_interactiva.png" alt="" style="" class="imagen">
+                      <div class="text-center texto_header" style="">
+                        <b class="pl-1 pr-1" style="">ACTIVIDAD INTERACTIVA</b>
+                        <div class="linea_blue" style=""></div>
+                        <i><p class="text-center text-muted" style="font-size: 17px;">CUESTIONARIO</p></i>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-8 row terciario" style="">
+                    <p class="info_actividad shadow">
+                        Seleccione las respuestas correctas y presione la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+                    </p>
+                </div>
+            </div>
+            
+            <div style="display: inline-block;width: 100%;" class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
+                <div style="display: inline-block;width: 50%;padding-top: 20px;padding-left: 5px;">
+                    <p class="size_15">Considere los conjuntos (es preferible que los represente por extensión, si lo considera necesario)</p>
+                    <p class="size_15"><b style="color: blue;">𝑨</b> es el conjunto que contiene los primeros 20 números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑩</b> es el conjunto que contiene los múltiplos de 3 entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑪</b> es el conjunto que contiene los múltiplos de 5 entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑫</b> es el conjunto que contiene a todos los números pares entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑬</b> es el conjunto que contiene a todos los números impares entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑭</b> es el conjunto que contiene a todos los múltiplos de cuatro (4) entre los 20 primeros números naturales.</p>
+                    <p class="size_15"><b style="color: blue;">𝑮</b> es el conjunto que contiene a todos los números primos entre los 20 primeros números naturales.</p>
+                </div>
+                <div class="slider" style="display: inline-block;width: 49%; position: fixed;">
+                    <ul class="preguntas slides" style="width: 88%;display: inline-block;">
+                        <div style="width: 90px;height: 90px;position: relative;z-index: 100;border-radius: 50%;background: white;left: 27px;top: -30px;justify-content: center;box-shadow: -1px 3px 17px black;padding-top: 10px;padding-left: 10px;float: right;">
+                                                    <img style="max-width: 80%;" src="../img/img2/numeros_actividad.png">
+                                                </div>
+                        <li class="pregunta-cuestionario" ng-repeat="pregunta in preguntas">
+                            <p class="texto-pregunta">{{pregunta.texto}}</p>
+                            <div class="respuestas-cuestionario">
+                                <div class="radio opciones" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                    <input name="radio{{$parent.$index}}" type="checkbox" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
+                                    {{respuesta.texto}}
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="buttons">
+                        <div class="next"></div>
+                    </div>
+                </div>
+                <div class="btnCalificar">
+                    <button class="btn btn-primary" style="background: #003442;color: white;width: 100px;font-size: 22px;padding: 5px;border-radius: 15px;" type="button" ng-click="calificar()">Calificar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body center-block">
+                    <div class="mensaje text-center">
+                        Tu puntaje es: <span class="puntaje">40%</span>
+                        <span class="texto-puntaje"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
+                        intentar</button>
+                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Incluisión de scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/actividad5/angular.min.js"></script>
+    <script src="../js/actividades.js"></script>
+    <script src="../js/actividad5/script.js"></script>
+    <script src="../js/actividad5/slide.js"></script>
+    <!-- Fin de scripts -->
+</body>
+
+</html>
