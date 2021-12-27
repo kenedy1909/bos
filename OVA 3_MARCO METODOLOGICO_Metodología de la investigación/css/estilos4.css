@@ -189,4 +189,5 @@
     border-top: 18px solid transparent;
     border-bottom: 18px solid transparent;
     cursor: pointer;
+    z-index: 1;
 }
