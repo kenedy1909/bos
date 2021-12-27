@@ -117,10 +117,10 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
+            setMigaja("Unidades de aprendizaje","","");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
+            setMigaja("Unidades de aprendizaje","","");
             tema = 1;
             break;
         default:
