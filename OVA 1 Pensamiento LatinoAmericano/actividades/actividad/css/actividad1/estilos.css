@@ -305,6 +305,9 @@
     padding: 30px;
 }
 
+
+
+
 .d-flex{
 	display: flex;
 }
@@ -316,7 +319,7 @@
 }
 
 .principal_modal{
-  height: 400px;
+  height: 355px;
   border-radius: 40px;
   background: #008f3e;
 }
@@ -327,11 +330,12 @@
   border-radius: 40px 40px 0px 0px;
 }
 .circulo_modal{
-  height: 125px;
-  width: 125px;
+  height: 150px;
+  width: 150px;
   background: gray;
   border-radius: 50%;
   position: relative;
   top: -60px;
   text-align: center;
+  border: solid white;
 }

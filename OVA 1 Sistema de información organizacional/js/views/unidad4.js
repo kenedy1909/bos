@@ -217,37 +217,39 @@ function slide_predeterminado(){
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num -1);
+    $('#smartwizard').smartWizard("goToStep", num-1 );
     controlSlides(num);
+    
 }
 
 function controlSlides(num){
+  // console.log((num-1)+" slide");
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 10;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+          setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","Fases del diseño de un sistema  ");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+           setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+           setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+           setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+           setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+           setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+          setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
             break;
         default:
             break;
