@@ -393,7 +393,7 @@ function init_recurso_1() {
                 });*/
                 var puntaje = 0;
                 
-                $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;">');
                 $('.mensaje').text("Inténtalo nuevamente.");
                 $('.puntaje').text(Math.round(puntaje)+"%");
                 $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
@@ -419,7 +419,7 @@ function init_recurso_1() {
                     
                 var puntaje = 100;
 
-                $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="img/bien.png" style="max-width: 80%;">');
                 $('.puntaje').text(puntaje+"%");
                 $('.mensaje').text("¡Felicitaciones!");
                 $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');

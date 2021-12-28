@@ -357,8 +357,8 @@ function funcionalidad_1(num) {
                                             <div class="col-md-12 p-3">
                                                 <div class="row">
                                                     <div class="col-md-12 py-3">
-                                                        <h2 class="color-text-o">Antecedentes a Nivel Local:</h2>
-                                                        <br>
+                                                        <h2 class="color-text-o size_15">Antecedentes a Nivel Local:</h2>
+                                                        
                                                         <p class="justificado p-black">A continuación se presentan los acontecimientos más relevantes a nivel local que surgieron entre los años 1953 y 1966, clic sostenido y deslice el botón por la línea para conocerlos:</p>
                                                     </div>
                                                 </div>
@@ -613,7 +613,8 @@ function scroll_horizontal(num){
             $('#funcionalidad_1_2').html(`
                                 <div class="bg-blanco white radius-2 p-3 row">
                                     <div class="col-md-12 my-auto p-5">
-                                        <p class="justificado p_black">El 22 de mayo de 1966 sale el comunicado estudiantil el cual contiene los siguientes puntos relevantes que va a poder visualizar al dar clic sobre cada tarjeta:</p>
+                                        <p class="justificado p_black">El 28 de julio de 1966 se toman las siguientes decisiones por parte de la asamblea, para visualizarlas de clic sobre cada tarjeta:
+                                        </p>
                                     </div>
                                     <div class="col-md-6 my-auto p-3">
                                         <div class="bg-color-activi-c radius-2 p-3 d-flex funcionalidad_1_2-7" onclick="funcionalidad_1_2(7)">
@@ -1086,8 +1087,8 @@ function funcionalidad_3(num) {
     if (num == 1) {
         $("#info_funcionalidad_3").html(`
                                         <div class="bg-color-activi-c radius-2 img-70 m-auto d-flex">
-                                            <div class="p_white p-3 justidicado img-50">
-                                              <p>Con el fin de ampliar la temática del manifiesto de córdoba, realice  la lectura del documento PDF “Manifiesto de córdoba”. Lo anterior permitirá realizar un paralelo de lo que veremos en la unidad 3.</p>
+                                            <div class="p_white p-3 justificado img-50 ml-3">
+                                              <p>Con el fin de ampliar la temática del manifiesto de córdoba, realice  la lectura del documento PDF “Manifiesto de córdoba”. Lo anterior permitirá realizar un paralelo de lo que que se verá en la unidad 3.</p>
                                               <br>
                                               <p>Haga clic en el botón PDF.</p>
                                             </div>
@@ -1121,7 +1122,7 @@ function funcionalidad_3(num) {
                                             <div class="col-md-12 d-flex mt-3" style="height: 30px;">
                                                 <img src="assets/img/img_ova/grupo-personas.png" class="position-relative img-20 m-auto" style="top: -51px;">
                                             </div>
-                                            <div class="p_white text-center col-md-12">
+                                            <div class="p_white text-center col-md-12 justificado">
                                               <p>Con el fin de exponer sus percepciones y puntos de vista acerca del proceso de fundación de la universidad Autónoma Latinoamericana. Visite y participe en el foro <b>“Fundación de la Universidad Autónoma Latinoamericana. UNAULA”.</b></p>
                                             </div>
                                         </div>
@@ -1189,14 +1190,16 @@ function funcionalidad_5(num) {
      $("#info-slider-2").html('');
     switch(parseInt(num)){
         case 1:
+            $(".flechaL").addClass('d-none');
             $("#info-slider").html(`
                                         <p class="p_black justificado scrul">Por lo anterior, no solo en los aspectos mencionados, sino en su integridad y alcance, en primer lugar, se anunciarán las decisiones tomadas, para luego correlacionarlas, de manera ordenada, con las fundamentaciones que las sustentan y a través de esa correlación, se deducirán los principios que inspiraron a los fundadores para la creación de UNAULA, como una universidad diferente de aquellas contra las cuales ellos protestaron.</p>
                                         `);
             break;
         case 2:
+            $(".flechaL").removeClass('d-none');
             $("#info-slider-2").html(`
                                         <div class="radius-2 bg-blanco my-0 p-3 mx-3">
-                                            <p class="p_black justificado" style="height: 200px;overflow: auto;">Fundar la Universidad Autónoma Latinoamericana con sede en Medellín, que con base en el cogobierno de estudiantes y profesores, dentro de un ambiente de absoluta libertad científica de estricta disciplina académica. Proporcionar a quienes así lo desearan los medios educativos que, como institución de educación Superior, constituían su objetivo primordial permitir a sus estudiantes formarse como ciudadanos al servicio de la comunidad.</p>
+                                            <p class="p_black justificado justificado scrul">Fundar la Universidad Autónoma Latinoamericana con sede en Medellín, que con base en el cogobierno de estudiantes y profesores, dentro de un ambiente de absoluta libertad científica de estricta disciplina académica. Proporcionar a quienes así lo desearan los medios educativos que, como institución de educación Superior, constituían su objetivo primordial permitir a sus estudiantes formarse como ciudadanos al servicio de la comunidad.</p>
                                         </div>
                                         `);
             break;
