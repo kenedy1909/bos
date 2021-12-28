@@ -8,9 +8,9 @@ window.onload = function () {
      // An object that holds all the questions + possible answers.
      // In the array --> last digit gives the right answer position
       allQuestions = {
-        'Cuando una cantidad física se describe con un solo número, se dice que es una cantidad:' : ['Escalante', 'Vectorial', 0],
+        'Cuando una cantidad física se describe con un solo número, se dice que es una cantidad:' : ['Escalar', 'Vectorial', 0],
         
-        'Una cantidad que incluye tanto una magnitud como una dirección en el espacio se denomina:' : ['Escalante', 'Vectorial', 1]
+        'Una cantidad que incluye tanto una magnitud como una dirección en el espacio se denomina:' : ['Escalar', 'Vectorial', 1]
       };
       
   function loadQuestion(curr) {
