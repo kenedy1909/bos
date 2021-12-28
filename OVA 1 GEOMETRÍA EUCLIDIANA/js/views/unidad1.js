@@ -801,6 +801,12 @@ function listas(){
                     `;
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 2);
+<<<<<<< HEAD
+        $(".lista-a").data('lista', 3);
+        $(".lista-a").addClass('hidden');
+        $(".lista-s").removeClass('hidden');
+=======
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
     }else if (lista_num == 2) {
         $(".lista-a").show();
         $(".lista-s").show();
@@ -808,6 +814,8 @@ function listas(){
                     <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-02.png" alt="" class="img-85"></p>
                     `;
         $("#lista-1").html(text);
+        $(".lista-s").removeClass('hidden');
+        $(".lista-a").removeClass('hidden');
         $(".lista-s").data('lista', 3);
         $(".lista-a").data('lista', 1);
     }else if (lista_num == 3) {
@@ -817,6 +825,12 @@ function listas(){
                     <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-03.png" alt="" class="img-85"></p>
                     `;
         $("#lista-1").html(text);
+<<<<<<< HEAD
+        $(".lista-s").data('lista', 1);
+        $(".lista-s").addClass('hidden');
+        $(".lista-a").removeClass('hidden');
+=======
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
         $(".lista-a").data('lista', 2);
     }
 }
@@ -834,6 +848,8 @@ function disyunciones(){
         var text2 = `
                     <img src="assets/img/img_ova/tabla de disyunción lógica-02.png" alt="" class="img-100">
                     `;
+        $("#triangulo_r").removeClass('hidden');
+        $("#triangulo_l").addClass('hidden');
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
         // $(".disyuncion-s").data('disyuncion', 2);
@@ -846,6 +862,39 @@ function disyunciones(){
         );
     }else if (disyuncion_num == 2) {
         var text1 = `
+<<<<<<< HEAD
+                    <div class="bg-btn-a-c">
+                        <div class="row px-3">
+                            <div class="col-md-3 d-flex">
+                                  <img src="assets/img/img_ova/transparencia.png" width="130%" class="m-auto">
+                            </div>
+                            <div class="col-md-9 px-3">
+                                  <p class="p_black justificado">Hay un conector, que no es muy utilizado, llamado:</p>
+                                  <br>
+                                  <p class="p_black justificado">“<i>La disyunción <u>exclusiva o fuerte</u></i> de “p con q”:    p V q,  y se lee “O  p o q”</p>
+                                  <br>
+                                  <p class="p_black justificado">La disyunción exclusiva (fuerte) entre dos proposiciones será verdadera (V) cuando solo</p>
+                                  <p class="p_black justificado">una sea verdadera; no admite la opción de que ambas sean verdaderas, para ser verdadera.</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        var text2 = `
+                    <div class="row px-3">
+                        <div class="col-md-3 px-3 d-flex">
+                              <img src="assets/img/img_ova/prueba.png" width="130%" class="m-auto">
+                        </div>
+                        <div class="col-md-9 px-3">
+                              <p class="p_black justificado"><b>Por ejemplo:</b> “lo traen vivo o muerto” se podrá tener solo una de las dos.</p>
+                              <br>
+                              <p class="p_black justificado">En este curso no se profundizará en este conector:</p>
+                              <p class="text-center"><img src="assets/img/img_ova/tabla de disyunción lógica-03.png" alt="" class="img-100"></p>
+                        </div>
+                    </div>
+                    `;
+        $("#triangulo_l").removeClass('hidden');
+        $("#triangulo_r").addClass('hidden');
+=======
         <div class="row">
 
         <div class="col-md-2 d-flex" style="z-index: 1000;">
@@ -877,6 +926,7 @@ function disyunciones(){
             </div>
         </div>
         `;
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
         // $(".disyuncion-s").hide();
@@ -902,12 +952,41 @@ function disyunciones(){
   </div>
                     `;
         $("#disyuncion-3").html(text);
+<<<<<<< HEAD
+        $("#triangulo_l_1").removeClass('hidden');
+        $("#triangulo_r_1").addClass('hidden');
+=======
         $(".disyuncion-s").show();
         $(".disyuncion-a").hide();
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
         $(".disyuncion-s").data('disyuncion', 4);
         $(".disyuncion-a").data('disyuncion', 4);
     }else if (disyuncion_num == 4) {
         var text = `
+<<<<<<< HEAD
+                    <div class="col-md-7 px-3">
+                          <p class="p_black justificado">La implicación entre dos proposiciones será falsa (F) solo cuando el antecedente (hipótesis) sea verdadero y el consecuente (conclusión) falso.</p>
+                          <p class="text-center"><img src="assets/img/img_ova/tabla implicación.png" alt="" class="img-65"></p>
+                          <p class="p_black justificado">Las proposiciones resultantes de p →q, como son</p>
+                          <p class="p_black justificado">q → p, ~ p → ~ q y  ~ q→ ~ p, reciben los nombres de recíproco, contrario y contrarrecíproco de p → q,  respectivamente.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row px-3 bg-btn-a-o radius-2">
+                            <div class="col-md-4 d-flex">
+                                  <img src="assets/img/img_ova/vision.png" alt="" class="img-100 m-auto">
+                            </div>
+                            <div class="col-md-8 p-3">
+                                  <p class="p_white justificado"Use la flecha > para poner en práctica los conocimientos aprendidos a través de la siguiente actividad y luego debe continuar con los demás conectores lógicos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+        $("#disyuncion-3").html(text);
+        $("#triangulo_l_1").removeClass('hidden');
+        $("#triangulo_r_1").addClass('hidden');
+        $(".disyuncion-s").data('disyuncion', 3);
+        $(".disyuncion-a").data('disyuncion', 3);
+=======
         <div class="col-md-6 px-3">
         <p class="p_black justificado text-14px">La implicación entre dos proposiciones será falsa (F) solo cuando el antecedente (hipótesis) sea verdadero y el consecuente (conclusión) falso.</p>
         <p class="text-center"><img src="assets/img/img_ova/tabla implicación.png" alt="" class="img-65"></p>
@@ -940,6 +1019,7 @@ function disyunciones(){
     $("#disyuncion-3").html(text);
     $(".disyuncion-s").data('disyuncion', 3);
     $(".disyuncion-a").data('disyuncion', 3);
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
     }
 }
 
@@ -949,6 +1029,8 @@ function conector(){
     $(".conectores").addClass('bg-btn-a-o');
     $(".conectores-"+conectores_num).addClass('bg-btn-a-c');
     $(".conectores-"+conectores_num).removeClass('bg-btn-a-o');
+    $(".triangulo-1").addClass('d-none');
+    $("#triangulo-"+conectores_num).removeClass('d-none');
     $(".conectores").removeClass('p_black');
     $(".conectores").addClass('p_white');
     $(".conectores-"+conectores_num).addClass('p_black');
@@ -958,7 +1040,11 @@ function conector(){
                     <div class="col-md-6 px-3">
                           <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
                           <br>
+<<<<<<< HEAD
+                          <p class="p_black justificado">“La conjunción de p con q”:    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   p ^ q, se lee “p y q”</p>
+=======
                           <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   p ^ q, se lee “p y q”</p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                           <br>
                           <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
                     </div>
@@ -973,12 +1059,20 @@ function conector(){
     }else if (conectores_num == 2) {
         var text = `
                     <div class="col-md-1 px-3 d-flex">
+<<<<<<< HEAD
+                        <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor hidden" data-disyuncion="2" id="triangulo_l"></div>
+=======
                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" style="display:none;" data-disyuncion="1"></div>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                     </div>
                     <div class="col-md-5 px-3" id="disyuncion-1">
                           <p class="p_black justificado">Cuando se habla de <u>disyunción</u> o también llamada suma lógica, donde al tener una de las proposiciones verdaderas, se convierte el valor de verdad en verdadero.                          </p>
                           <br>
+<<<<<<< HEAD
+                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      𝑝     𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
+=======
                           <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     𝑝 V 𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                           <br>
                           <p class="p_black justificado">La disyunción entre dos proposiciones será verdadera (V) cuando por lo menos una sea verdadera: </p>
                     </div>
@@ -986,7 +1080,7 @@ function conector(){
                           <img src="assets/img/img_ova/tabla de disyunción lógica-02.png" alt="" class="img-100">
                     </div>
                     <div class="col-md-1 px-3 d-flex">
-                        <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="2"></div>
+                        <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="2" id="triangulo_r"></div>
                     </div>
                     `;
         $("#info-conectores").html(text);
@@ -996,8 +1090,13 @@ function conector(){
         $('.trianguloP42').removeClass('d-none');
     }else if (conectores_num == 3) {
         var text = `
+<<<<<<< HEAD
+                    <div class="col-md-6 px-3">
+                          <p class="p_black justificado"><i>“La negación de  p”: &nbsp; &nbsp; &nbsp; ~ p , se lee “no p”</i></p>
+=======
                     <div class="col-md-6 px-3 mt-3">
                           <p class="p_black justificado" style="font-style: oblique;">“La negación de  p”: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ~ p , se lee “no p”</p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                           <br>
                           <p class="p_black justificado">La negación de una proposición tiene el valor de verdad opuesto a la proposición dada </p>
                           <p class="p_black justificado">También se acostumbra el signo “¬”, es decir “¬ p” para la negación o con la escritura “no p”.</p>
@@ -1015,6 +1114,21 @@ function conector(){
     }else if (conectores_num == 4) {
         var text = `
                      <div class="col-md-1 px-3 d-flex">
+<<<<<<< HEAD
+                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor hidden" data-disyuncion="4" id="triangulo_l_1"></div>
+                     </div>
+                     <div class="col-md-10">
+                         <div class="row" id="disyuncion-3">
+                            <div class="col-md-3 px-3 d-flex">
+                                   <img src="assets/img/img_ova/matematicas5.png" alt="" class="img-100 mt-auto">
+                             </div>
+                             <div class="col-md-9 px-3">
+                                   <p class="p_black justificado">Al hablar de implicación o también conocida como condicional, se hace referencia a la conjunción “si…entonces…si” como se explica a continuación:</p>
+                                   <p class="p_black justificado">“La implicación entre p y q”:     p →q , se lee “si p entonces q” o “p implica q”</p>
+                                   <br>
+                                   <p class="p_black justificado">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
+                                   <p class="p_black justificado">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
+=======
                          <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" style="display:none; data-disyuncion="4"></div>
                      </div>
                      <div class="col-md-10">
@@ -1028,11 +1142,12 @@ function conector(){
                              <br>
                              <p class="p_black justificado text-14px">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
                              <p class="p_black justificado text-14px">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                              </div>
                          </div>
                      </div>
                      <div class="col-md-1 px-3 d-flex">
-                         <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="4"></div>
+                         <div class="triangulo_der m-auto disyuncion disyuncion-s cursor" data-disyuncion="4" id="triangulo_r_1"></div>
                      </div>
                     `;
         $("#info-conectores").html(text);
