@@ -667,7 +667,8 @@
 }
 
 .agrandado{
-  width: 82%;
+  width: 84%;
+  z-index: 2;
 }
 .cortico{
   width: 25%;
@@ -681,13 +682,17 @@
 	display: none;
 }
 .numerito{
-  width: 30px;height: 30px;
+  width: 40px;
+  height: 40px;
   background: #965b0c;
   border-radius: 50%;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 8px;
+  position: relative;
+  top: 13px;
+  left: 10%;
 }
 
 
@@ -695,17 +700,20 @@
   background: #965B0C;
   width: 90%;
   border-radius: 20px;
-  height: 80px;
+  height: 112px;
 }
 
 .img_target{
   margin-left: 129px;
   padding-top: 12px;
+  left: 10%;
+  position: relative;
 }
 .texto-target{
-  width: 65%;
+  width: 56%;
   position: relative;
-  left: 70px;
+  left: 33%;
+  text-align: justify;
 }
 
 .content-tarjeta{

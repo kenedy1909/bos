@@ -46,6 +46,7 @@
     padding: 15px 15px 15px 15px;
     color: #fff;
     min-height: 143px;
+    text-align: justify;
 }
 
 @media (max-width: 767px) {
@@ -207,4 +208,9 @@ input {
 
 .d-none{
     display: none;
+}
+.position-center{
+    position: relative;
+    top: 17px;
+  
 }
