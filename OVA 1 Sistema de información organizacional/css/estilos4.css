@@ -762,8 +762,18 @@ a.control_next {
 }
 
 .btn_fases{
-    background: #143668;
+    background: #282F9F;
     color: white;
+}
+
+.btn_md:hover{
+  color: #282F9F;
+  background-color: white;
+}
+
+.btn_color{
+  color: #282F9F;
+  background-color: white;
 }
 .triag_cambiaslide2{
   width: 0;

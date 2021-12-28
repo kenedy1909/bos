@@ -110,7 +110,7 @@ var has3d,
 
 	pagesInDOM = 6,
 	
-	pagePosition = {0: {top: 0, left: 0, right: 'auto', bottom: 'auto'},
+	pagePosition = {0: {top: 0, left: 17, right: 'auto', bottom: 'auto'},
 					1: {top: 0, right: 0, left: 'auto', bottom: 'auto'}},
 
 	// Gets basic attributes for a layer

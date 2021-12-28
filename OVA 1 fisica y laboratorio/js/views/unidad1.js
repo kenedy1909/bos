@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     // console.log(tema);
+    $('.menu1').removeClass('d-none');
     $( ".zoomContainer" ).remove();
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({

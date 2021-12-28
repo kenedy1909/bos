@@ -1,6 +1,10 @@
 .icons-menu{
   width: 65px;
 }
+
+.icons-menu60px {
+  width: 60px;
+}
 iframe{
     width: 100%;
     overflow: hidden; 
@@ -723,4 +727,28 @@ svg circle:nth-child(2){
 }
 .img-100{
   width: 100%;
+}
+
+.text-10px {
+  font-size: 10px;
+}
+
+.text-11px {
+  font-size: 11px;
+}
+
+.text-12px {
+  font-size: 12px;
+}
+
+.text-14px {
+  font-size: 14px;
+}
+
+.text-15px {
+  font-size: 15px;
+}
+
+.text-16px {
+  font-size: 16px;
 }

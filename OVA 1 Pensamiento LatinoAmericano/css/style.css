@@ -2190,7 +2190,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .btn-link:disabled, .btn-link.disabled {
@@ -7949,6 +7949,11 @@ html:not([dir="rtl"]) .input-group > .input-group-prepend > .btn, html:not([dir=
   background-color: #ebedef;
   border: 1px solid #c4c9d0;
   border-radius: 0.25rem;
+}
+
+.img-reflejo {
+  
+  -webkit-box-reflect: below -1px linear-gradient(transparent, transparent, rgba(255,255,255,0.3));
 }
 
 .figure {

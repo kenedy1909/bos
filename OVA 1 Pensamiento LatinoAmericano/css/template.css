@@ -240,7 +240,7 @@ iframe{
 .card-container, .front, .back {
   width: 100%;
   height: auto;
-  border-radius: 22px;
+  border-radius: 30px;
   background: var(--bg-color);
 }
 .frontwhite{
@@ -270,10 +270,23 @@ iframe{
 .card .user img{
   background: none;
   display: block;
-  margin: 5px auto;
-  max-width: 60%;
+  margin: 0px 7px;
+  top: 4%;
+  max-width: 95%;
   position: relative;
-  top: 10px;
+}
+
+.pinposicion{
+  background: none!important;
+  display: block!important;
+  margin: 0px 7px!important;
+  max-width: 95%!important;
+  position: relative!important;
+  width: 151px!important;
+  height: 157px!important;
+  max-width: 200px!important;
+  top: -8px!important;
+  left: -14px!important;
 }
 
 .card .user .menu_superior{
@@ -831,7 +844,7 @@ card flip*/
 }
 
 .imgactividad{
-  width: 120px;
+  width: 100px;
   z-index: 100;
 }
 
@@ -839,14 +852,15 @@ card flip*/
   z-index: 100;
 }
 .titulo_sub{
-  height: 85px;
+  height: 75px;
   border-bottom: solid 4px #00953E;
   padding-top: 40px;
-  padding-left: 25px;
-  text-align: center;
+  padding-left: 35px;
+  width: fit-content;
+  
 }
 .titulo_sub p{
-  font-size: 20px;
+  font-size: 15px;
   color: #00953E;
 }
 .banner_activi{
@@ -954,4 +968,28 @@ card flip*/
 }
 .text-cafe{
   float: right;
+}
+
+.text-10px{
+  font-size: 10px;
+}
+
+.text-11px{
+  font-size: 11px;
+}
+
+.text-12px{
+  font-size: 12px;
+}
+
+.text-14px{
+  font-size: 14px;
+}
+
+.text-15px{
+  font-size: 15px;
+}
+
+.text-16px{
+  font-size: 16px;
 }

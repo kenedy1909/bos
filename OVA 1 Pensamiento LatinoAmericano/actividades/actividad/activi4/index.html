@@ -20,11 +20,11 @@
                <div class="content-text-img-activi-2" style="width: 100%;">
                  <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                </div>
-               <p class="text-center">CRUCIGRAMA</p>
+               <p class="text-center" style="font-size: 12px;">CRUCIGRAMA</p>
            </div>
         </div>
         <div class="col-md-8 col-sm-8 terciario" style="">
-            <p class="info_actividad shadow">
+            <p class="info_actividad shadow text-justify" style="font-size: 12px;">
                 Complete el crucigrama con palabras respectivas de acuerdo con las pistas que se brindaran al oprimir cada numero. Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
             </p>
         </div>
@@ -36,7 +36,7 @@
       <div class="content">{{mensaje}}</div>
       <button @click="mensaje = undefined" class="btn btn-primary">OK</button>
     </div>  -->
-    <table>
+    <table style="margin-top: -10%;">
       <tr v-for="(row, y) in matrix" :key="y">
         <td v-for="(cell, x) in row" :class="{empty: cell.empty, start: !!cell.start, selected: cell.words.includes(selected)}" @click="selectWord(cell.start)">
           <label v-if="!!cell.start">{{cell.start}}</label>
@@ -79,7 +79,7 @@
                           <p class="mensaje" style="text-align: left;"></p>
                       </div>
                   </div>
-                  <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+                  <div class="row d-flex justify-content-center btns_modal mt-4" style="justify-content: center;">
 
 
                   </div>

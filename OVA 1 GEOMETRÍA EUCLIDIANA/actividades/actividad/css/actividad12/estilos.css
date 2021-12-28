@@ -2,7 +2,7 @@
     max-width: 1200px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     .backdrop header h1 {
         font-size: 40px;
     }
@@ -18,12 +18,12 @@
 
 table {
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
     table {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -137,7 +137,7 @@ span.checked svg.svg2 {
     overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
 
     .fondoContenido {
         padding: 20px 20px 100px;
@@ -183,11 +183,11 @@ span.checked svg.svg2 {
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
+    font-size: 15px;
     color: #005B8B;
 }
 

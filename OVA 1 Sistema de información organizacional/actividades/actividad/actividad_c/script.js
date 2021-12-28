@@ -158,10 +158,19 @@ new Vue({
       var exito = false;
       var mensaje = "Inténtalo nuevamente."
       if (puntaje >= 90) {
-          puntaje = 100;
-          exito = true;
-          mensaje = "¡Felicitaciones!"
-      }
+        puntaje = 100;
+        exito = true;
+        mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+    }
+    if (puntaje < 100) {
+        $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");  
+    }
+      // if (puntaje >= 90) {
+      //     puntaje = 100;
+      //     exito = true;
+      //     mensaje = "¡Felicitaciones!"
+      // }
       registrarActividad(puntaje);
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);
       /*this.mensaje = `
@@ -170,3 +179,7 @@ new Vue({
     }
   }
 })
+
+function reiniciar(){
+  location.reload();
+}

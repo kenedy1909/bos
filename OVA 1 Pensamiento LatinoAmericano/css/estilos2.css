@@ -80,10 +80,10 @@
 .card .user .pinposicion {
     background: none;
     display: block;
-    max-width: 148px;
+    max-width: 149px;
     position: relative;
-    top: -10px;
-    left: -4px;
+    top: -9px;
+    left: -12px;
 }
 
 .border-green {

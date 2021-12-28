@@ -389,6 +389,7 @@ function init_recurso_1() {
                 var modalID = "#calificacionModal";
                 var exito = false;
                 var mensaje = "Inténtalo nuevamente.";
+                $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");
                 // registrarActividad(puntaje);
                 mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
                     
@@ -407,6 +408,7 @@ function init_recurso_1() {
                     var modalID = "#calificacionModal";
                     var exito = true;
                     var mensaje = "¡Felicitaciones";
+                    $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png"); 
                     // registrarActividad(puntaje);
                     mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                         

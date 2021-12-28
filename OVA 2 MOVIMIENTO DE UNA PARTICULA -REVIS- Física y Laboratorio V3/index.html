@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +27,46 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Main styles for this application-->
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://recursos.bosingenieria.com/iconos-main/css/all.min.css">
     <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet">  -->
-    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
-    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
-    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
-    <link href="css/template-geometria.css" rel="stylesheet"> 
-    <link href="css/template.css" rel="stylesheet"> 
-    <link href="css/estilos1.css" rel="stylesheet"> 
-    <link href="css/estilos2.css" rel="stylesheet"> 
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet">
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet">
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet">
+    <link href="css/template-geometria.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/estilos1.css" rel="stylesheet">
+    <link href="css/estilos2.css" rel="stylesheet">
     <link href="css/estilos3.css" rel="stylesheet">
     <!-- <link href="scss/style.scss" rel="stylesheet">  -->
-  </head>
-  <body class="c-app">
+</head>
+
+<body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
+        <div class="c-sidebar-brand d-lg-down-none">
+            <h4>MENU</h4>
+        </div>
+        <ul class="c-sidebar-nav">
+            <li class="c-sidebar-nav-item ov-inicio link-menu">
+                <a class="c-sidebar-nav-link" href="#inicio">
+                    <i class="fad fa-home"></i> Inicio</a>
+            </li>
+            <li class="c-sidebar-nav-title">Contenido</li>
+            <li class="c-sidebar-nav-item link-menu">
+                <a class="c-sidebar-nav-link" href="#unidades">
+                    <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+            </li>
+            <li class="c-sidebar-nav-item menu1 d-none c-sidebar-nav-dropdown">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>1. Movimiento de una partícula</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Movimiento Unidimensional</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="26" onclick="actualizarprogress(26)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Movimiento Bidimensional</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="36" onclick="actualizarprogress(36)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Movimiento  Circular</a></li>
+                </ul>
+            </li>
+            <!-- <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+=======
       <div class="c-sidebar-brand d-lg-down-none">
         <h4>MENU</h4>
       </div>
@@ -52,7 +78,7 @@
         <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
           <i class="fad fa-books"></i> Unidades de aprendizaje</a>
         </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown menu1 d-none"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
           <i class="fas fa-bookmark"></i>1. Movimiento de una partícula</a>
           <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Movimiento Unidimensional</a></li>
@@ -61,6 +87,7 @@
           </ul>
         </li>
         <!-- <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+>>>>>>> c76a137bbe2df8fdca5e08abc1b21dbefd412e9f
           <i class="fas fa-bookmark"></i>2. La sociedad moderna </a>
           <ul class="c-sidebar-nav-dropdown-items">
             <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Formación de la sociedad moderna </a></li>
@@ -74,288 +101,283 @@
             <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad3"><span class="c-sidebar-nav-icon"></span> Formación de la sociedad moderna </a></li>
           </ul>
         </li> -->
-      </ul>
-      <div class="text-center ov-personaje">
-          <img src="assets/img/img_ova/personaje.png" class="w-50">
-      </div>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+        </ul>
+        <div class="text-center ov-personaje">
+            <img src="assets/img/img_ova/personaje.png" class="w-50">
+        </div>
+        <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
     <div class="c-wrapper c-fixed-components">
-      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+        <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+            <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
           <i class="fas fa-bars"> </i>
-        </button><a class="c-header-brand d-lg-none" href="#">
-          <svg width="118" height="46" alt="CoreUI Logo">
+        </button>
+            <a class="c-header-brand d-lg-none" href="#">
+                <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
-        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+            <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="c-header-nav d-md-down-none">
-          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
-          <li class="c-header-nav-item ">
-            <div class="box">
-                <div class="porcent">
-                    <svg class="svg_porcent">
+            <ul class="c-header-nav d-md-down-none">
+                <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+                <li class="c-header-nav-item ">
+                    <div class="box">
+                        <div class="porcent">
+                            <svg class="svg_porcent">
                         <circle cx="40" cy="60" r="25" style ="stroke: #006095;stroke-width: 5px;"/>
                         <circle class="up" cx="40" cy="60" r="25" style="stroke: #003140;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
                     </svg>
-                    <div class="number">
-                        
+                            <div class="number">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-97.png" alt="" class="icons-menu"></a>
+                </li>
+                <li class="c-header-nav-item modal_scroll9">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-14.png" alt="" class="icons-menu w-60px"></a>
+                </li>
+                <li class="c-header-nav-item modal_scroll10">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px"></a>
+                </li>
+            </ul>
+            <ul class="c-header-nav ml-auto">
+                <li class="c-header-nav-item d-md-down-none">
+                    <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+                </li>
+            </ul>
+            <div class="c-subheader px-3">
+                <!-- Breadcrumb-->
+                <ol class="breadcrumb border-0 m-0">
+                    <li class="breadcrumb-item">Menú</li>
+                    <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread3"></li>
+                    <!-- Breadcrumb Menu-->
+                </ol>
+            </div>
+        </header>
+        <div class="c-body">
+            <main class="c-main" id="content-ova">
+
+            </main>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-97.png" style="top: 5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <p class="p_white">
+                                                <a href="assets/PDF/Actividades-complementarias-OVA2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" style="    width: 40px;" src="assets/img/img_template/pdf.png"> Actividades-complementarias <b class="p_white"><u>Ver</u></b></a>
+                                            </p>
+                                            <p class="p_white">
+                                                <a href="assets/PDF/fisica_general_unad.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" style="    width: 40px;" src="assets/img/img_template/pdf.png"> fisica_general_unad <b class="p_white"><u>Ver</u></b></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-97.png" alt="" class="icons-menu"></a></li>
-          <li class="c-header-nav-item modal_scroll9"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-14.png" alt="" class="icons-menu w-60px"></a></li>
-          <li class="c-header-nav-item modal_scroll10"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu w-60px"></a></li>
-        </ul>
-        <ul class="c-header-nav ml-auto">
-          <li class="c-header-nav-item d-md-down-none">
-            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
-          </li>
-        </ul>
-        <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Menú</li>
-            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread3"></li>
-            <!-- Breadcrumb Menu-->
-          </ol>
-        </div>
-      </header>
-      <div class="c-body">
-        <main class="c-main" id="content-ova">
-          
-        </main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-14.png" style="top: 15px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content custom-scrollbar9 p_white">
+                                            <div class="custom-scrollbar__inner9">
+
+                                                <p class="justificado"><b class="font-weight-bold">Caída libre:</b> Movimiento que está sólo bajo la influencia de la gravedad.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Eje:</b> Líneas rectas para referencia en una gráfica; por lo general el eje x mide el desplazamiento horizontal y el eje y mide el desplazamiento vertical.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Marco de referencia:</b> Sitio (por lo general un conjunto de ejes coordenados) con respecto al cual pueden describirse la posición y el movimiento.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Marco de referencia inercial:</b> Sitio que no sufre aceleración y donde se sostienen con exactitud las leyes de Newton.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Movimiento lineal:</b> Movimiento en línea recta, a diferencia del movimiento circular, angular o rotacional.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Movimiento oscilatorio:</b> Repetición del movimiento vibratorio de ida y vuelta, como el de un péndulo.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Polea:</b> Rueda que actúa como una palanca utilizada para cambiar la dirección de una fuerza. Una polea o sistema de poleas también puede multiplicar fuerzas.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Proyectil:</b> Cualquier objeto que se mueva a través del aire o del espacio, sobre el que sólo actúa la gravedad (y la resistencia del aire, si la hay).</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Rapidez:</b> Qué tan rápido se mueve algo; la distancia que recorre un objeto por unidad de tiempo; la magnitud de la velocidad. Véanse también rapidez promedio, rapidez lineal,
+                                                    rapidez rotacional y rapidez tangencia.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Rapidez instantánea:</b> Rapidez en cualquier instante.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Rapidez lineal:</b> Distancia de trayectoria recorrida por unidad de tiempo; también se denomina simplemente rapidez.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Rapidez promedio:</b> Distancia de la trayectoria dividida entre el intervalo de tiempo.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Rapidez tangencial:</b> Rapidez lineal a lo largo de una trayectoria curva.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Resistencia del aire:</b> Fricción, o arrastre, que actúa sobre algo que se mueve a través del aire.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Revolución:</b> Movimiento de un objeto que da vueltas alrededor de un eje que yace fuera del objeto.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Rotación:</b> Movimiento de giro que ocurre cuando un objeto rota en torno a un eje ubicado dentro del objeto (por lo general un eje que atraviesa su centro de masa).</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Tangente:</b> Línea que toca una curva sólo en un lugar y es paralela a la curva en dicho punto.</p>
+                                                <br>
+                                                <p class="justificado"><b class="font-weight-bold">Velocidad tangencial:</b>Velocidad tangente a la trayectoria de un proyectil
+                                                </p>
+                                            </div>
+                                            <div class="custom-scrollbar__bar9">
+                                                <div class="custom-scrollbar__knob9 cursor">
+                                                    <p class="text-center linea_scroll9">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-97.png" style="top: 5px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content">
-                              <p class="p_white">
-                                    <a href="assets/PDF/Actividades-complementarias-OVA2.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" style="    width: 40px;" src="assets/img/img_template/pdf.png"> Actividades-complementarias <b class="p_white"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_white">
-                                    <a href="assets/PDF/fisica_general_unad.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" style="    width: 40px;" src="assets/img/img_template/pdf.png"> fisica_general_unad <b class="p_white"><u>Ver</u></b></a>
-                              </p>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-14.png" style="top: 15px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content custom-scrollbar9 p_white">
-                            <div class="custom-scrollbar__inner9">
-                              
-                              <p class="justificado"><b class="font-weight-bold">Caída libre:</b> Movimiento que está sólo bajo la influencia de la gravedad.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Eje:</b> Líneas rectas para referencia en una gráfica; por lo general el eje x mide el desplazamiento horizontal y el eje y mide el desplazamiento vertical.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Marco de referencia:</b> Sitio (por lo general un conjunto de ejes coordenados) con respecto al cual pueden describirse la posición y el movimiento.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Marco de referencia inercial:</b> Sitio que no sufre aceleración y donde se sostienen con exactitud las leyes de Newton.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Movimiento lineal:</b> Movimiento en línea recta, a diferencia del movimiento circular, angular o rotacional.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Movimiento oscilatorio:</b> Repetición del movimiento vibratorio de ida y vuelta, como el de un péndulo.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Polea:</b> Rueda que actúa como una palanca utilizada para cambiar la dirección de una fuerza. Una polea o sistema de poleas también puede multiplicar fuerzas.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Proyectil:</b> Cualquier objeto que se mueva a través del aire o del espacio, sobre el que sólo actúa la gravedad (y la resistencia del aire, si la hay).</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Rapidez:</b> Qué tan rápido se mueve algo; la distancia que recorre un 
-                              objeto por unidad de tiempo; la magnitud de la velocidad. Véanse 
-                              también rapidez promedio, rapidez lineal, rapidez rotacional y rapidez tangencia.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Rapidez instantánea:</b> Rapidez en cualquier instante.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Rapidez lineal:</b> Distancia de trayectoria recorrida por unidad de tiempo; también se denomina simplemente rapidez.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Rapidez promedio:</b> Distancia de la trayectoria dividida entre el intervalo de tiempo.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Rapidez tangencial:</b> Rapidez lineal a lo largo de una trayectoria curva.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Resistencia del aire:</b> Fricción, o arrastre, que actúa sobre algo que se 
-                              mueve a través del aire.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Revolución:</b> Movimiento de un objeto que da vueltas alrededor de 
-                              un eje que yace fuera del objeto.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Rotación:</b> Movimiento de giro que ocurre cuando un objeto rota en 
-                              torno a un eje ubicado dentro del objeto (por lo general un eje que 
-                              atraviesa su centro de masa).</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Tangente:</b> Línea que toca una curva sólo en un lugar y es paralela a la 
-                              curva en dicho punto.</p>
-                              <br>
-                              <p class="justificado"><b class="font-weight-bold">Velocidad tangencial:</b>Velocidad tangente a la trayectoria de un
-                              proyectil</p>
-                            </div>
-                            <div class="custom-scrollbar__bar9">
-                              <div class="custom-scrollbar__knob9 cursor"><p class="text-center linea_scroll9">-</p></div>
-                            </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <div class="m-0 p-0 x-modal">
-                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="top: 20px; width: 70%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content p_white">
+                                            <div class="content custom-scrollbar10 p_white">
+                                                <div class="custom-scrollbar__inner10">
+
+                                                    <p class="justificado">Raymond A. Serway y John W. Jewett, Jr. Física para ciencias e ingeniería. Volumen 1. Séptima edición. ISBN-13: 978-607-481-357-9 ISBN-10: 607-481-357-4</p><br>
+
+                                                    <p class="justificado">Young, Hugh D. College physics. 9th ed ISBN 10: 0-321-73317-7</p><br>
+
+                                                    <p class="justificado">Paul G. Hewitt Física conceptual. 12ª edición Pearson Educación de México, S.A. de C.V., México, 2016 ISBN: 978-607-32-3822-9</p><br>
+
+                                                    <p class="justificado">YOUNG, HUGH D. y FREEDMAN, ROGER A. Física universitaria volumen 1 Décimo tercera edición PEARSON, México, 2013 ISBN: 978-607-32-2124-5</p><br>
+
+                                                    <p class="justificado">Aiken. (2019). Course hero.</p><br>
+
+                                                    <p class="justificado">Alexa. (23 de 11 de 2013). </p><br>
+
+                                                    <p class="justificado">Club Ensayos. Obtenido de https://www.clubensayos.com/Ciencia/Movimiento-De-Preyectiles/1311451.html</p><br>
+
+                                                    <p class="justificado">Hugo, A. (06 de 2021). Course Hero. </p><br>
+
+                                                    <p class="justificado">Obtenido de Course Hero: https://www.coursehero.com/file/95439524/Taller-4pdf/ J., S. R. (2008). </p><br>
+
+                                                    <p class="justificado">Física para ciencias e ingeniería. EDITEC S.A de C.V. S., G. (2015). </p><br>
+
+                                                    <p class="justificado">Unidades de magnitudes físicas. Obtenido de http://www.fisica.uns.edu.ar/albert/archivos/118/269/4211650694_clase_unidades_2015.pdf Young, Zemansky, Sears. (2009). Física Universitaria. Pearson.</p><br>
+                                                </div>
+                                                <div class="custom-scrollbar__bar10">
+                                                    <div class="custom-scrollbar__knob10 cursor">
+                                                        <p class="text-center linea_scroll10">-</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                  </button>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="top: 20px; width: 70%;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content p_white">
-                            <div class="content custom-scrollbar10 p_white">
-                              <div class="custom-scrollbar__inner10">
-                                
-                                <p class="justificado">Raymond A. Serway y John W. Jewett, Jr.
-                                Física para ciencias e ingeniería. Volumen 1. 
-                                Séptima edición.
-                                ISBN-13: 978-607-481-357-9
-                                ISBN-10: 607-481-357-4</p><br>
-
-                                <p class="justificado">Young, Hugh D.
-                                College physics. 9th ed
-                                ISBN 10: 0-321-73317-7</p><br>
-
-                                <p class="justificado">Paul G. Hewitt
-                                Física conceptual. 12ª edición
-                                Pearson Educación de México, S.A. de C.V., México, 2016
-                                ISBN: 978-607-32-3822-9</p><br>
-
-                                <p class="justificado">YOUNG, HUGH D. y FREEDMAN, ROGER A.
-                                Física universitaria volumen 1
-                                Décimo tercera edición
-                                PEARSON, México, 2013
-                                ISBN: 978-607-32-2124-5</p><br>
-
-                                <p class="justificado">Aiken. (2019). Course hero.</p><br>
-
-                                <p class="justificado">Alexa. (23 de 11 de 2013). </p><br>
-
-                                <p class="justificado">Club Ensayos. Obtenido de https://www.clubensayos.com/Ciencia/Movimiento-De-Preyectiles/1311451.html</p><br>
-
-                                <p class="justificado">Hugo, A. (06 de 2021). Course Hero. </p><br>
-
-                                <p class="justificado">Obtenido de Course Hero: https://www.coursehero.com/file/95439524/Taller-4pdf/
-                                J., S. R. (2008). </p><br>
-
-                                <p class="justificado">Física para ciencias e ingeniería. EDITEC S.A de C.V.
-                                S., G. (2015). </p><br>
-
-                                <p class="justificado">Unidades de magnitudes físicas. Obtenido de http://www.fisica.uns.edu.ar/albert/archivos/118/269/4211650694_clase_unidades_2015.pdf
-                                Young, Zemansky, Sears. (2009). Física Universitaria. Pearson.</p><br>
-                              </div>
-                              <div class="custom-scrollbar__bar10">
-                                <div class="custom-scrollbar__knob10 cursor"><p class="text-center linea_scroll10">-</p></div>
-                              </div>
-                            </div>
-                              
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <footer class="c-footer">
+                <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+                <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+            </footer>
         </div>
-        <footer class="c-footer">
-          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
-          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
-        </footer>
-      </div>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="js/coreiu.bundle.min.js"></script>
@@ -372,7 +394,8 @@
     <!--[if IE]><!-->
     <!--<![endif]-->
     <!-- Plugins and scripts required by this view-->
-    
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

@@ -211,25 +211,25 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-    height: 386px;
     width: 300px;
 }
-.calificacion .modal-body.exito{
+/* .calificacion .modal-body.exito{
     background: url('../../img/img1/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
     background: url('../../img/img1/mal.png') center no-repeat;
-}
+} */
 .calificacion .modal-body .mensaje{
-    background: #fff;
+    /* background: #fff; */
     border-radius: 8px;
     font-size: 20px;
     line-height: normal;
     margin: 0 25px;
     padding: 5px;
     position: relative;
+    color: white;
 }
-.calificacion .modal-body .mensaje:after{
+/* .calificacion .modal-body .mensaje:after{
     bottom: -30px;
     border-color: #fff transparent transparent;
     border-style: solid;
@@ -237,7 +237,7 @@ html{
     content: "";
     left: calc(50% - 15px);
     position: absolute;
-}
+} */
 .calificacion .modal-body .mensaje .texto-puntaje{
     display: block;
 }
@@ -310,4 +310,88 @@ html{
     border-radius: 20px;
     -webkit-box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
     box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
+}
+
+
+.divcerrar {
+	position: relative;
+    top: -20px;
+}
+.x-modal{
+    background: #2F5597;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.x-modal-text{
+    display: block;
+    margin: auto;
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 22px;
+    outline: 0;
+    /* background-color: transparent; */
+    border-color: rgba(0, 0, 21, 0.0);
+}
+.card-container, .front, .back {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    background: #004c6d;
+}
+.card-container {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card .user {
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -70px auto 0;
+    overflow: hidden;
+    width: 120px;
+    background: #999999;
+    border: 3px solid white;
+}
+.card .content {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .user img {
+    background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 90%;
+    position: relative;
+    
+    border: 5px solid yellow;
+}
+.card .cover {
+    height: 105px;
+    overflow: hidden;
+    border-radius: 22px 22px 0 0;
+    background: #004c6d;
+}
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+.card {
+    background-color: #0075A8!important;
+    border-radius: 3.25rem!important;
 }

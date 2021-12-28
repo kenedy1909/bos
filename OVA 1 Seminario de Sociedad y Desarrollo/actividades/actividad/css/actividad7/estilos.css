@@ -54,7 +54,7 @@ table {
     height: 35px;
 }
 
-svg.svg-radio-elegant: not(: root) {
+svg.svg-radio-elegant:not(:root) {
     overflow: hidden;
 }
 
@@ -247,7 +247,7 @@ cursor: pointer;}
 .radiobtn{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 25px;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -288,6 +288,7 @@ cursor: pointer;}
 .tranparente{
   background: transparent;
   border: none;
+  border-radius: 40px;
 }
 
 .principal_modal{

@@ -29,14 +29,12 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
@@ -66,7 +64,7 @@ $(document).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/Unidad 1/sin fines de lucro   martha-nussbaum.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                        <a href="assets/PDF/Unidad1/sinfinesdelucromartha.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
@@ -77,6 +75,8 @@ $(function() {
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex + 1);
+    quitarflecha(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 
@@ -84,6 +84,7 @@ function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
+    quitarflecha(1);
     /*window.location.href ="#unidad1-1";*/
     /*$url =$('.enlaces_ova')
     $url.attr('href',"#unidad1-1");
@@ -116,7 +117,9 @@ function controlSlides(num) {
             knob = document.querySelector('.custom-scrollbar__knob8');
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
+            quitarflecha(1);
             scroll();
+            $('#iconInicial').addClass('d-none');
             break;
         case 1:
 
@@ -128,32 +131,59 @@ function controlSlides(num) {
             knob = document.querySelector('.custom-scrollbar__knob8');
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
+            quitarflecha(1);
             scroll();
+            $('#iconInicial').removeClass('d-none');
             break;
         case 2:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
 
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         case 7:
             star_uni = 1;
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
+            $('#iconInicial').removeClass('d-none');
             break;
         default:
             break;
+    }
+}
+
+function quitarflecha(num) {
+
+    if (parseInt(num) == 1) {
+        console.log("fuera_flecha");
+        document.getElementById("prev").style.display="none";
+    } else {
+        console.log("come_flecha");
+        document.getElementById("prev").style.display="block";
+    }
+
+    if (parseInt(num) == 6) {
+        console.log("fuera_next_flecha");
+        document.getElementById("next").style.display="none";
+    } else {
+        console.log("come__next_flecha");
+        document.getElementById("next").style.display="block";
     }
 }
 

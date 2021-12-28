@@ -1,0 +1,119 @@
+.navegation{
+    border-top: solid #994c91;
+    border-left: solid #994c91;
+    border-right: solid #994c91;
+    height: 50px;
+    padding: 5px 0px 1px 10px;
+}
+
+.activas{
+  height: 4px;
+  background: #994c91;
+}
+.font20{
+  font-size: 20px;
+}
+.encendido{
+  color: #994c91;
+}
+.inactivo{
+  color: #e2c4df;
+}
+
+.banner3_2{
+  min-height: 260px;
+  background: #cccccc;
+  border-radius: 10px;
+  border: dashed #994c91;
+  
+}
+.banner_crema{
+  background: #E2C4DF;
+  min-height: 100px;
+  border-radius: 30px;
+  padding: 25px 25px 25px 25px
+}
+.fondotargeta{
+  width: 100px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+}
+
+.encabezado{
+  height: 40px;
+  background: #7a3d74;
+  border-radius: 15px 15px 0px 0px;
+}
+.circulotarget{
+  height: 40px;
+  width: 40px;
+  background: #994c91;
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  left: 31px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding-top: 4px;
+}
+.imagen_circular{
+  width: 80px;
+  height: 80px;
+  background: #FFC000;
+  border-radius: 50%;
+  z-index: 100;
+  text-align: center;
+}
+.imagen_circular img {
+  max-width: 85%;
+}
+
+.carta_morada1{
+  background: #8B1C64;
+  color: white;
+  width: 82%;
+  height: 80px;
+  padding: 10px 10px 10px 50px;
+  position: relative;left: -40px;
+  z-index: 1;
+  border-radius: 0px 17px 0px 0px;
+}
+.carta_morada2{
+  background: #8B1C64;
+  color: white;
+  width: 82%;
+  height: 80px;
+  padding: 10px 10px 10px 5px;
+  position: relative;
+  left: 37px;
+  z-index: 1;
+  border-radius: 17px 0px 0px 0px;
+}
+
+
+#prueba{
+    width: 82%;
+    min-height: 133px;
+    background-color: #eaeaea;
+    position: relative;
+    display: none;
+    top: -42px;
+    left: 38px;
+    border: solid #e82c88;
+    border-radius: 0px 0px 50px 50px;
+    padding: 50px 12px 25px 12px;
+}
+#prueba2{
+    width: 82%;
+    min-height: 133px;
+    background-color: #eaeaea;
+    position: relative;
+    display: none;
+    top: -42px;
+    left: 38px;
+    border: solid #e82c88;
+    border-radius: 0px 0px 50px 50px;
+    padding: 50px 12px 25px 12px;
+}

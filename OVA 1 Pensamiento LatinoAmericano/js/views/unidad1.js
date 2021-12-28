@@ -30,14 +30,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     
@@ -68,12 +66,15 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    quitarflecha(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
+    quitarflecha(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
@@ -82,12 +83,13 @@ function slide_link(num){
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
+    
 }
 
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", ">");
+            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos”" );
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -97,14 +99,14 @@ function controlSlides(num){
             // container = document.querySelector('.custom-scrollbar__inner');
             // /*scroll();*/
             var pdf = `<div class="col-md-12">
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40">Los pueblos indígenas en América Latina. pdf <b class="text-cafe">Ver</b></a>
+                              <p class="p_white size_20"> 
+                                  <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40">Los pueblos indígenas en América Latina. pdf <em class="text-cafe">Ver</em></a>
                               </p>
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> El Marxismo en América Latina.pdf <b class="text-cafe">Ver</b></a>
+                                  <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> El Marxismo en América Latina.pdf <em class="text-cafe">Ver</em></a>
                               </p>
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf <b class="text-cafe">Ver</b></a>
+                              <p class="p_white text-16px">
+                                  <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf <em class="text-cafe">Ver</em></a>
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
@@ -112,58 +114,115 @@ function controlSlides(num){
         case 2:
             $('.pasos').removeClass('efectos');
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 9:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
+            scroll_set(10);
+            scroll_set(11);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 11:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block"; 
+
+            $(".menu1").removeClass('d-none');
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block"; 
+            
+            $(".menu1").removeClass('d-none');
+            
             break;
-            tema = 1;
         default:
             break;
     }
@@ -414,7 +473,7 @@ function pantalla9(num){
 }
 
 function citar(){
-    var contenido = `<div style="height: 248px;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
+    var contenido = `<div style="height: fit-content;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
                     <p class="justificado">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
                   </div>`;
     $('.imprime_heare').html(contenido);
@@ -553,7 +612,7 @@ function pantalla13(num){
             $('.ethos1').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">SITUACIÓN</h3>
-                          <p class="font-weight-bold text-black">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
+                          <p class="font-weight-bold text-black" style="font-size: 12px;">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
                        </div>
                        `;
             
@@ -574,7 +633,7 @@ function pantalla13(num){
             $('.ethos2').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">“TERRA NULLIUS”</h3>
-                          <p class="font-weight-bold text-black">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
+                          <p class="font-weight-bold text-black" style="font-size: 12px;">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
                        </div>
                        `;
             
@@ -595,7 +654,7 @@ function pantalla13(num){
             $('.ethos3').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">“TRANSFORMACIÓN”</h3>
-                          <p class="font-weight-bold text-black">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
+                          <p class="font-weight-bold text-black" style="font-size: 12px;">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
                        </div>
                        `;
             
@@ -617,7 +676,7 @@ function pantalla13(num){
             $('.ethos4').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">PROBLEMAS</h3>
-                           <p class="font-weight-bold text-black">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
+                           <p class="font-weight-bold text-black" style="font-size: 12px;">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
                        </div>
                        `;
             
@@ -1078,3 +1137,22 @@ function paraIframe(num){
     
 }
 
+function quitarflecha(stepIndex) {
+
+    if (stepIndex == 1) {
+        console.log("fuera_flecha");
+        document.getElementById("prev").style.display="none";
+    } else {
+        console.log("come_flecha");
+        document.getElementById("prev").style.display="block";
+    }
+
+    if (stepIndex == 18) {
+        console.log("fuera_next_flecha");
+        document.getElementById("next").style.display="none";
+        $(".menu1").addClass('d-none');
+    } else {
+        console.log("come__next_flecha");
+        document.getElementById("next").style.display="block";
+    }
+}

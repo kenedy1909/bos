@@ -79,9 +79,9 @@ function controlSlides2(num) {
             break;
         case 1:
             var pdf = `<div class="col-md-12">
-                              <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Cómo_investigan_los_economistas.pdf</a>
-                              </p>
+            <p class="p_white">
+            <a class="p_white size_20" href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> Cómo investigan los economistas    <b class="text-cafe"><u>Ver</u></b></a>
+            </p>             
                             </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
@@ -112,7 +112,7 @@ function pantalla2_1(num) {
                           <p class="justificado text-black">El método en economía, como en cualquier otra área del conocimiento, tiene que ver con el procedimiento del cual se sirve la disciplina para desarrollar un nuevo conocimiento.</p>
                         </div>
                         <div class="mt-2">
-                          <p class="justificado text-black">Por otra parte, la metodología ha sido un tema de preocupación desde los economistas clásicos hasta las corrientes contemporáneas de la economía, por lo que el método es indispensable en cualquier área del conocimiento, pero sobre todo en economía, donde el <b class="subrayado">método rige los estados y ámbitos del proceso numérico.</b></p>
+                          <p class="justificado text-black">Por otra parte, la metodología ha sido un tema de preocupación desde los economistas clásicos hasta las corrientes contemporáneas de la economía, por lo que el método es indispensable en cualquier área del conocimiento, pero sobre todo en economía, donde el <div class="subrayado1 pl-2"><b class="justificado">método rige los estados y ámbitos del proceso numérico.</b></div></p>
                         </div>
                       </div>
                       <div class="col-md-6">
@@ -171,7 +171,7 @@ function pantalla2_1(num) {
                                     <div class="encabezado" style=""></div>
                                     <center><div class="circulotarget" style="">1</div></center>
                                     <div>
-                                      <img src="assets/img/img_ova/idea-genial.png" style="max-width: 70%;">
+                                      <img src="assets/img/img_ova/idea-genial.png" style="max-width: 100%;">
                                     </div>
                                   </div>
                                 </div>
@@ -181,7 +181,7 @@ function pantalla2_1(num) {
                                     <div class="encabezado" style=""></div>
                                     <center><div class="circulotarget" style="">2</div></center>
                                     <div>
-                                      <img src="assets/img/img_ova/negocios-en-linea.png"style="max-width: 70%;">
+                                      <img src="assets/img/img_ova/negocios-en-linea.png"style="max-width: 100%;">
                                     </div>
                                   </div>
                                 </div>
@@ -190,7 +190,7 @@ function pantalla2_1(num) {
                                     <div class="encabezado" style=""></div>
                                     <center><div class="circulotarget" style="">3</div></center>
                                     <div>
-                                      <img src="assets/img/img_ova/ingeniero.png"style="max-width: 70%;">
+                                      <img src="assets/img/img_ova/ingeniero.png"style="max-width: 100%;">
                                     </div>
                                   </div>
                                 </div>
@@ -199,7 +199,7 @@ function pantalla2_1(num) {
                                     <div class="encabezado" style=""></div>
                                     <center><div class="circulotarget" style="">4</div></center>
                                     <div>
-                                      <img src="assets/img/img_ova/pareja.png"style="max-width: 70%;">
+                                      <img src="assets/img/img_ova/pareja.png"style="max-width: 100%;">
                                     </div>
                                   </div>
                                 </div>

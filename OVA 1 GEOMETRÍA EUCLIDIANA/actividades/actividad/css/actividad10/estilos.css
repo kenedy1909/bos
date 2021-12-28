@@ -54,7 +54,7 @@ table {
     height: 35px;
 }
 
-svg.svg-radio-elegant: not(: root) {
+svg.svg-radio-elegant:not(:root) {
     overflow: hidden;
 }
 
@@ -253,7 +253,7 @@ span.checked svg.svg2 {
   border-bottom: solid 3px #005B8B;
   height: 86px;
   margin: 0px;
-  padding-top: 45px;
+  padding-top: 30px;
   text-align: center;
 }
 
@@ -286,4 +286,13 @@ span.checked svg.svg2 {
     border: solid 2px #79CAF3;
     border-radius: 20px;
     padding: 30px;
+}
+
+.triangulo_der3 {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid #003442;
+    border-bottom: 15px solid transparent;
+    cursor: pointer;
 }

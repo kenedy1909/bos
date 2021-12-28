@@ -410,8 +410,8 @@ label {
 }
 
 .imagen {
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
@@ -429,7 +429,7 @@ label {
 
 .linea_blue {
     height: 5px;
-    background: #004c6d;
+    background: #78201A;;
 }
 
 
@@ -610,17 +610,17 @@ label {
 }
 
 .img-activi {
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
 }
 
 .text-img-actividad {
-    font-size: 20px;
-    color: #b3843c;
+    font-size: 14px;
+    color: #78201A;;
 }
 
 .content-text-img-activi {
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 3px #78201A;;
     height: 86px;
     margin: 0px;
     padding-top: 45px;
@@ -628,9 +628,9 @@ label {
 }
 
 .content-text-img-activi-2 {
-    border-bottom: solid 3px #b3843c;
+    border-bottom: solid 3px #78201A;
     width: 50%;
-    height: 86px;
+    height: 55px;
     margin: 0px;
     padding-top: 8px;
     text-align: center;

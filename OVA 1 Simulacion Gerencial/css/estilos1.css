@@ -91,9 +91,6 @@
 	height: 100%;
 	width: 50%;
 }
-#unidad1-3{
-	height: 780px;
-}
 .menos-margin-b-25{
 	margin-bottom: -25px;
 }
@@ -223,6 +220,10 @@
 .barras:hover{
 	padding-left: 16px;
 	transition: .4s ;
+}
+.clicBarra{
+	padding-left: 16px;
+	transition: .4s;
 }
 
 .badge1, .badge2, .badge3, .badge4{

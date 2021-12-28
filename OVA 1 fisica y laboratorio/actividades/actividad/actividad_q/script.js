@@ -123,6 +123,10 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         if (puntaje == 100) {
             exito = true;
             mensaje = "¡Felicitaciones!"
+            $("#img-circulo").attr("src","img/bien.png");  
+        }
+        if (puntaje < 100) {
+            $("#img-circulo").attr("src","img/mal.png");  
         }
         registrarActividad(puntaje);
         mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, $scope.reset);

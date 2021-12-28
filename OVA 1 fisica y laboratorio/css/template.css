@@ -104,6 +104,10 @@ iframe{
   color: var(--bg-color);
 }
 
+.color-title{
+  color: var(--bg-color-dark);
+}
+
 .titulo-ova{
   background-image: url(../assets/img/img_ova/titulo-ova.png);
   background-repeat: no-repeat;
@@ -350,9 +354,9 @@ iframe{
   color: #777777;
 }
 
-.img-circle {
+/* .img-circle {
     /border-radius: 50%;/
-}
+} */
 
 
 /*modales inicio*/
@@ -514,7 +518,7 @@ svg circle{
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/
+/* /Claculo para simular el porcent/ */
 svg circle:nth-child(2){
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
@@ -810,7 +814,7 @@ svg circle:nth-child(2){
 .text-img-activi{
   border-bottom: solid 4px rgb(255 255 255);
   width: 45%;
-  height: 86px;
+  height: 65px;
   margin: 0px;
   padding-top: 30px;
 }

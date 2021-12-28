@@ -67,7 +67,7 @@ var arrOrigenR1 = [
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><img src="./img/granada.png" style="width: 60%;"></div><div class="opcion_circulo_text">Cifras oficiales dan cuenta de más de 800.000 victimas del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses.</div>\n'+
+        '<div class="opcion_circulo_content"><img src="./img/granada.png" style="width: 60%;"></div><div class="opcion_circulo_text">Cifras oficiales dan cuenta de más de 800.000 víctimas del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses.</div>\n'+
         '</div>\n'
     }/*,
     {
@@ -202,14 +202,14 @@ function calificarR1() {
     if (parseInt(puntajeR1) == 100) {
         exitoR1 = true;
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
-      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; position:relative; top:6px;">');
       $('.puntaje').text(parseInt(puntajeR1)+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else{
         exitoR1 = false;
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
-      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;  background-color: #FFC000;border-radius: 50%;padding:2px; position:relative; top:6px;">');
       $('.mensaje').text("Inténtalo nuevamente.");
       $('.puntaje').text(parseInt(puntajeR1)+"%");
       $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');

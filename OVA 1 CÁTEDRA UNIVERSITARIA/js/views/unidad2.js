@@ -482,7 +482,7 @@ function funcionalidad_U2(num) {
                                             <div class="col-md-12 d-flex" style="height: 60px;">
                                                 <img src="assets/img/img_ova/enlace.png" class="position-relative img-30 m-auto" style="top: -40px;">
                                             </div>
-                                            <div class="p_white text-center col-md-12">
+                                            <div class="p_white text-center col-md-12 justificado">
                                               <p>Al mismo tiempo realizar la lectura de “la sentencia T-1127/2003” como lectura complementaria siguiendo el link:</b></p>
                                                 <a href="https://www.corteconstitucional.gov.co/relatoria/2003/T-1127-03.htm" target="_blank"><button class="btn" style="background: #540F23;color: white;">Clic aquí</button></a>
                                             </div>

@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    $(".menu3").removeClass('d-none');
+
+    star_uni = 3;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -41,7 +47,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD 3 - EL CRM Y EL ERP/TEMA 1 - Los CRM/El CRM como herramienta para el servicio al cliente.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png">El CRM como herramienta para el servicio al cliente.pdf   <b class="text-cafe ml-2"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD 3 - EL CRM Y EL ERP/TEMA 1 - Los CRM/El CRM como herramienta para el servicio al cliente.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png">El CRM como herramienta para el servicio al cliente.pdf   <b class="text-cafe ml-4"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
@@ -111,10 +117,10 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
+            setMigaja("Unidades de aprendizaje","","");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP","Los sistemas para la planeación de los recursos empresariales (ERP)");
+            setMigaja("Unidades de aprendizaje","","");
             tema = 1;
             break;
         default:

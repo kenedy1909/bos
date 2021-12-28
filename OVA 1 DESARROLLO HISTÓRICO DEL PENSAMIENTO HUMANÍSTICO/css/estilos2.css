@@ -1,0 +1,866 @@
+.fondo_gris_morado{
+	background: #d1d1d1;
+}
+.fondo_azul_claro{
+	background: #929cb7;
+}
+.img_nav{
+	width: 50px;
+}
+
+.cont_nav{
+	padding: 5px;
+}
+
+.text_morado{
+	color: #45073d;
+}
+
+.justificado{
+	text-align: justify;
+}
+
+.bg-principal{
+  background: var(--bg-color);
+}
+
+.banner{
+	background-image: url(../assets/img/img_ova/banner_azul.png);
+  padding: 12px;
+  background-size: 180px;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 180px;
+  background-position-x: center;
+  display: flex;
+
+}
+
+.content-banner{
+  width:50%;
+  display: block;
+  margin: auto;
+}
+
+.text-banner{
+  width: min-content;
+  text-align: center;
+  margin: auto;
+}
+
+.carta_azul{
+	width: 18rem;
+	border-right: solid 1px #0075a2;
+	border-radius: 10%;
+}
+
+.cards_blue{
+	border: solid 1px #0075b0;
+	max-width: 18em;
+}
+.card_body_blue{
+	background: #0075b0;
+}
+
+/*.size_13{
+	font-size: 14px;
+}*/
+.fondo_canvas{
+	background-image: url('../assets/img/img_ova/clasificacion_conjuntos_fondo.png');
+	width: 1122px;
+    height: 479px;
+    background-size: cover;
+}
+.radius_modal{
+	border-radius: 30px;
+}
+
+.transparente{
+	background: #fff0;
+}
+
+.btn_claro{
+	background-image: url('../assets/img/img_ova/btn_claro.png');
+	max-width: 100%;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+}
+.btn_oscuro{
+	background-image: url('../assets/img/img_ova/btn_oscuro.png');
+	max-width: 100%;
+    margin-bottom: 4px;
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+}
+.div_claro{
+	background: #c4e2ff;
+}
+
+.content_aqua{
+	border: none;
+  	border-radius: 40px 10px;
+  	background: #89d8ff;
+  	height: 190px;
+}
+.circulo_blue{
+	background-image: url('../assets/img/img_ova/circulo_fondo.png');
+	width: 50%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.triangulo{
+	background-image: url(../assets/img/img_ova/triangulo1.png);
+    height: 26%;
+    width: 39%;
+    background-size: 100%;
+    margin-top: 48px;
+    position: absolute;
+    cursor: pointer;
+}
+.t_1{
+
+}
+.t_2{
+	background-image: url(../assets/img/img_ova/triangulo2.png);
+	margin-left: 27px;
+    margin-top: 78px;
+}
+.t_3{
+	background-image: url(../assets/img/img_ova/triangulo3.png);
+	margin-left: 51px;
+}
+.celda_clara{
+	background: #c6d2d4;
+}
+.celda_azul{
+	background: #98bec4;
+}
+.celda_clarascura{
+	background: #8ca6aa;
+}
+.celda_oscura{
+	background: #47747c;
+}
+#hexagono3 {
+  height: 20em;
+  margin: -6.5em 0;
+  overflow: hidden;
+  transform: rotate(120deg);
+  visibility: hidden;
+  width: 10em;
+  
+}
+#hexagono3-1 {
+  height: 100%;
+  overflow: hidden;
+  transform: rotate(-60deg);
+  width: 100%;
+  
+}
+#hexagono3-2 {
+  height: 100%;
+  transform: rotate(-60deg); 
+  visibility: visible ;
+
+  width: 100%;
+  
+}
+.color-example{
+	background: #c6d2d4;
+	
+}
+
+.text_panal{
+	/*font-size: 12px;*/
+	/*margin-top: 25px;
+	margin-left: 9px;*/
+	color: #ffffff;
+	width: 75%;
+}
+
+.panal{
+	background-size: cover;
+  width: 195px;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-top: 20px;
+}
+p, button{
+	font-size: 15px;
+}
+
+.rueda1{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 12%;
+    top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.rueda2{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 23%;
+    top: 51%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.rueda3{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 72%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.rueda4{
+	  width: 150px;
+	  height: 150px;
+    margin: 0px;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.cursor{
+	cursor: pointer;
+}
+
+.blanco{
+  background: #ffffff;
+}
+.header_card{
+  background: #0075b0;
+  max-height: 25px;
+    font-size: 10px;
+    border-radius: 3px;
+}
+.close{
+  cursor: pointer;
+}
+
+.size_16{
+  font-size: 16px;
+}
+
+.borde_azul{
+  border: solid 1px #321fdb;
+}
+.borde_azul_left{
+  border-left: solid 1px #321fdb;
+}
+
+.card1-2{
+  padding: 0px;
+  border-radius: 45px;
+  border: solid rgba(0, 117, 168, 1);
+  min-height: 380px;
+}
+
+.card_top2{
+  margin: 0px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  min-height: 190px;
+  border-bottom-right-radius: 42px;
+  border-bottom-left-radius: 42px;
+}
+
+.card1_bottom2{
+  margin: 0px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  min-height: 190px;
+  border-bottom-right-radius: 42px;
+  border-bottom-left-radius: 42px;
+  background-color: rgba(0, 117, 168, 1);
+}
+
+.azul_card{
+  background: #0075b0;
+}
+
+
+
+.content-img-actividad{
+  z-index: 100;
+  padding-top: 32px;
+  width: 100%;
+}
+
+.img-activi{
+    max-width: 100%;
+    z-index: 100;
+}
+
+.acuarela{
+  background-image: url('../assets/img/img_ova/acuarela3.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+.losclick{
+  position: relative;
+  background: #00ffff00;
+  height: 39px;
+  width: 39px;
+}
+
+.elcontendio{
+  position: relative;
+  background: #c55a1152;
+  min-height: 90px;
+  font-size: 13px;
+  width: 43%;
+  visibility: hidden;
+  padding: 5px;
+}
+
+.cordenada1{
+  top: -575px;left: -145px;
+}
+.cordenada2{
+  top: -684px;left: -145px;
+}
+.cordenada3{
+  top: -873px;left: -145px;
+}
+.cordenada4{
+  top: -1248px;left: 424px;
+}
+.cordenada5{
+  top: -1462px;left: 424px;
+}
+.cordenada6{
+  top: -1745px;left: 423px;
+}
+.btn_cerebro{
+  height: 20px;
+  width: 20px;
+  background: #B3C6E7;
+  border-radius: 50%;
+  border: solid #b17e2c;
+  margin-right: 10px;
+}
+
+.btn_cerebroclick{
+  height: 20px;
+  width: 20px;
+  background: #b17e2c;
+  border-radius: 50%;
+  border: solid #B3C6E7;
+  margin-right: 10px;
+}
+
+.acuarelacer{
+  background-image: url('../assets/img/img_ova/acurela2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.acurela2text{
+  width: 71%;
+  min-height: 200px;
+  background: #ffd39585;
+  border-radius: 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.mensaje{
+  background-image: url('../assets/img/img_ova/nota2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.bannerverde{
+  background: #D1E3BE;
+  height: 450px;
+}
+
+.bannerboder{
+  border: 4px solid #C29D1F;
+  height: 400px;
+  width: 100%;
+  border-radius: 0px 50% 50% 0px;
+}
+
+.textobanewhite{
+  min-height: 395px;
+  width: 80%;
+  background: white;
+  border-radius: 50px;
+  margin-top: 50px;
+  padding: 25px 25px 25px 25px;
+}
+
+.circuloabnner{
+  width: 100px;
+  height: 100px;
+  
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.apagado{
+  background: white;
+}
+.prendido{
+  background: #548135;
+}
+.triasiguiente{
+  margin: 0px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #548135;
+  transform: rotate(-90deg);
+
+}
+.font14{
+  font-size: 14px;
+}
+
+.circulo-border{
+  height: 250px;
+  width: 250px;
+  border: solid #BF9000;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+.circulop2{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.contendiocirculos{
+  background: white;
+  padding: 15px 15px 15px 15px;
+  border-radius: 20px;
+}
+
+.titulo_modal{
+  background: #ad8f2d;
+  height: 70px;
+  border-radius: 20px;
+  padding: 15px 15px 15px 15px;
+}
+
+.triag_cambiaslide2{
+  width: 0;
+  height: 0;
+  border-left: 37px solid #684712;;
+  border-top: 25px solid transparent;
+  border-bottom: 26px solid transparent;
+}
+.ind_2carrusel{
+  height: 53px;
+  background: #9f4c97;
+}
+
+#slider5 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider5 ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider5 ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 500px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+a.control_prev5, a.control_next5 {
+  
+  width: auto;
+  height: auto;
+  
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider5_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+.btn_video2{
+    background: #FFD966;
+    height: 35px;
+    width: 44px;
+    font-weight: bold;
+    box-shadow: 1px 1px 3px 0px black;
+    border-radius: 10px;
+    margin-right: 25px;
+    position: relative;
+    top: 25px;
+    color: black;
+    z-index: 100;
+    padding-top: 5px;
+}
+
+.nota{
+  background-image: url('../assets/img/img_ova/nota2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 240px;
+  padding: 30px 15px 45px 15px;
+}
+
+.contraido{
+  height: 250px;
+  width: 10%;
+  background: #FFC000;
+  box-shadow: 3px 2px 9px -2px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.desplegado{
+  height: 250px;
+  width: 40%;
+  background: #F4B081;
+  box-shadow: 3px 2px 9px -2px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.imagen_mito{
+  position: absolute;
+  margin-top: 10%;
+}
+
+.cont_textomito{
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 13%;
+}
+
+.escondido{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+
+/*scroll*/
+.custom-scrollbarUno, .custom-scrollbarDos, .custom-scrollbarTres, .custom-scrollbarCuatro, .custom-scrollbarCinco{
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+.custom-scrollbarB1, .custom-scrollbarB2, .custom-scrollbarB3, .custom-scrollbarB4{
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.custom-scrollbar__innerUno, .custom-scrollbar__innerDos, .custom-scrollbar__innerTres, .custom-scrollbar__innerCuatro, .custom-scrollbar__innerCinco{
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.custom-scrollbar__innerB1, .custom-scrollbar__innerB2, .custom-scrollbar__innerB3, .custom-scrollbar__innerB4{
+  height: 100%;
+  width: calc(100% + 40px);
+  padding-right: 75px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.custom-scrollbar__barUno,  .custom-scrollbar__barDos, .custom-scrollbar__barTres, .custom-scrollbar__barCuatro, .custom-scrollbar__barCinco{
+  position: absolute;
+  top: 18px;
+  bottom: 20px;
+  background:#FFFFFF;
+  width: 3px;
+  right: 30px;
+  /*right: 8px;*/
+  border-radius: 4px;
+}
+.custom-scrollbar__barB1, .custom-scrollbar__barB2, .custom-scrollbar__barB3, .custom-scrollbar__barB4{
+  position: absolute;
+    top: 18px;
+    bottom: 20px;
+    background: #dd9d37;
+    width: 3px;
+    right: 15px;
+    /* right: 8px; */
+    border-radius: 4px;
+}
+.custom-scrollbar__knobUno, .custom-scrollbar__knobDos, .custom-scrollbar__knobTres, .custom-scrollbar__knobCuatro, .custom-scrollbar__knobCinco{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  transform: translate(-50%, -50%);
+  will-change: top;
+}
+
+.custom-scrollbar__knobB1, .custom-scrollbar__knobB2, .custom-scrollbar__knobB3, .custom-scrollbar__knobB4{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #dd9d37;
+    transform: translate(-50%, -50%);
+    will-change: top;
+}
+
+.linea_scrollUno, .linea_scrollDos, .linea_scrollTres, .linea_scrollCuatro, .linea_scrollCinco{
+  font-size: 50px;
+  margin: 0px;
+  position: relative;
+  top: -32px;
+  color: #00414c;
+}
+
+.linea_scrollB1, .linea_scrollB2, .linea_scrollB3, .linea_scrollB4{
+  font-size: 50px;
+  margin: 0px;
+  position: relative;
+  top: -32px;
+  color: #ffffff;
+}
+
+.normal1{
+  background: #8DA9DB;
+  height: 200px;
+  border: solid 1px;
+}
+.normal2{
+  background: #A8D08C;
+  height: 200px;
+  border: solid 1px;
+}
+.normal3{
+  background: #F4B081;
+  height: 200px;
+  border: solid 1px;
+}
+
+.normal4{
+  background: #FFD966;
+  height: 200px;
+  border: solid 1px;
+}
+
+.activada{
+  background: #ffffff;
+  border: solid 1px;
+}
+
+.imgSaberes{
+  max-width: 40%;
+  margin-top: 25px;
+  margin-left: 25%;
+}
+
+.oculta{
+  display: none;
+}
+.hoja{
+  background-image: url('../assets/img/img_ova/hoja2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 407px;
+  height: 399px;
+  padding-top: 20px;
+}
+
+.hoja3{
+  background-image: url('../assets/img/img_ova/hoja2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 150px;
+  padding: 1px 38px 1px 46px;
+}
+
+.btn_letra{
+  
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  color: #A07D38;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 1px;
+  padding-top: 5px;
+}
+.btn_letraactive{
+  background: #F4B081;
+}
+.btn_letrainactive{
+  background: #FFD966;
+}
+
+.cont_posturas{
+  background: #EDD9CB;
+  padding: 10px;
+  min-height: 341px;
+}
+
+.btnmodalredondo{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.btnmodalActive{
+  background: #7F6000;
+}
+.btnmodalInactive{
+  background: #BF9000;
+}
+
+.imginfografia{
+  max-width: 100%;
+}
+
+.recogible{
+  width: 50%;
+  height: 300px;
+  background: #FEE599;
+  border-radius: 30px;
+}
+
+.textorecogible{
+  padding: 100px 15px 0px 120px;
+  width: 90%;
+}
+
+.bg-recogible{
+  width: 48%;
+  height: 300px;
+  background: #B86008;
+  border-radius: 20px 20px 20px 20px;
+  position: absolute;
+}
+.text-img-actividad{
+  font-size: 20px;
+  color: #005B8B;
+}
+.content-text-img-activi-2{
+  border-bottom: solid 3px #005B8B;
+  width: 50%;
+  height: 86px;
+  margin: 0px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.losclick_1{
+  background-image: url('../assets/img/img_ova/flecha1.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
+
+.losclick_2{
+  background-image: url('../assets/img/img_ova/flecha2.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_3{
+  background-image: url('../assets/img/img_ova/flecha3.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_4{
+  background-image: url('../assets/img/img_ova/flecha4.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_5{
+  background-image: url('../assets/img/img_ova/flecha5.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.losclick_6{
+  background-image: url('../assets/img/img_ova/flecha6.png'); 
+  background-size: contain;
+  background-repeat: no-repeat;
+}

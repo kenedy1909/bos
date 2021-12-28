@@ -98,8 +98,16 @@
     border: solid 5px white!important;
 }
 
+.menos-margin-20 {
+    margin-left: -20px!important;
+}
+
 .menos-margin-25 {
     margin-left: -25px!important;
+}
+
+.menos-margin-45 {
+    margin-left: -45px!important;
 }
 
 .menos-margin-50 {
@@ -158,6 +166,10 @@
     margin-top: -25px!important;
 }
 
+.menos-marginT-30 {
+    margin-top: -30px!important;
+}
+
 .menos-marginT-40 {
     margin-top: -40px!important;
 }
@@ -166,8 +178,16 @@
     margin-top: -50px!important;
 }
 
+.menos-marginT-60 {
+    margin-top: -60px!important;
+}
+
 .menos-marginT-62 {
     margin-top: -62px!important;
+}
+
+.menos-marginT-70 {
+    margin-top: -70px!important;
 }
 
 .menos-marginT-75 {
@@ -217,6 +237,11 @@
 .hr-verde-oscuro {
     border-top: 7px solid var(--bg-color-dark)!important;
 }
+.linkSinDecoration:hover{
+    text-decoration: none!important;
+    outline: none!important;
+}
+
 
 .card1 {
     border-radius: 45px;
@@ -265,7 +290,7 @@
 
 .card3 {
     background: #385723;
-    min-height: 180px;
+    min-height: 210px;
     max-height: 180px;
 }
 
@@ -630,7 +655,6 @@ button {
 }
 
 .custom-scrollbar__bar10,
-.custom-scrollbar__bar11,
 .custom-scrollbar__bar12,
 .custom-scrollbar__bar13,
 .custom-scrollbar__bar14,
@@ -646,6 +670,17 @@ button {
     right: 30px;
     border-radius: 4px;
     height: 150px;
+}
+
+.custom-scrollbar__bar11 {
+    position: absolute;
+    top: 22px;
+    bottom: 45px;
+    background: #ffffff;
+    width: 3px;
+    right: 30px;
+    border-radius: 4px;
+    height: 190px;
 }
 
 .custom-scrollbar__inner3,
@@ -1650,7 +1685,7 @@ input[type=range]::-ms-fill-upper {
 .banner_inicio {
     background: #BADBA5;
     border-radius: 50px;
-    height: 200px;
+    height: fit-content;
     padding: 25px 25px 25px 25px;
 }
 

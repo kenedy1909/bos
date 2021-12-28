@@ -120,12 +120,12 @@ function calificar(){
   var puntaje = 0;
   for (var i = 0; i < res.length; i++){
     if (res[i] == 'correct'){
-      puntaje = puntaje + 33.3;
+      puntaje = puntaje + 50;
     }
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="../img/img5/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img5/bien.png" style="max-width: 90%;margin-top: 0%;margin-left: 1%;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');

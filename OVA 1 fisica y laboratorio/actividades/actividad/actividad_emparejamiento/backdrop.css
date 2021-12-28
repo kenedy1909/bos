@@ -213,25 +213,26 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-    height: 386px;
+    height: 150px;
     width: 300px;
 }
-.calificacion .modal-body.exito{
+/* .calificacion .modal-body.exito{
     background: url('./img/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
     background: url('./img/mal.png') center no-repeat;
-}
+} */
 .calificacion .modal-body .mensaje{
-    background: #fff;
+    background: none;
     border-radius: 8px;
     font-size: 20px;
     line-height: normal;
     margin: 0 25px;
     padding: 5px;
     position: relative;
+    color: white;
 }
-.calificacion .modal-body .mensaje:after{
+/* .calificacion .modal-body .mensaje:after{
     bottom: -30px;
     border-color: #fff transparent transparent;
     border-style: solid;
@@ -239,7 +240,7 @@ html{
     content: "";
     left: calc(50% - 15px);
     position: absolute;
-}
+} */
 .calificacion .modal-body .mensaje .texto-puntaje{
     display: block;
 }
@@ -251,8 +252,9 @@ html{
     color: #8eb936;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #ad123c;
+    color: #ff6a6a;
 }
+
 @keyframes wobble {
     0% {
         -webkit-transform: none;

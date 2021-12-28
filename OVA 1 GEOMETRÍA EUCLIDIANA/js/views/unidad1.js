@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-    
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -26,7 +27,7 @@ $( document ).ready(function() {
         actualizarprogress();
 
     });
-    
+
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
@@ -396,7 +397,7 @@ function slide_link(num){
     if (parseInt(num) > 0) {
         controlSlides(num);
     }
-    
+
 }
 
 function controlSlides(num){
@@ -406,7 +407,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");            
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 3:
             paraIframe(0);
@@ -440,7 +441,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");            
+            setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Lógica matemática","Proposiciones simples y compuestas /Introducción");
@@ -561,7 +562,7 @@ function modal_scroll4(){
 /*function funcion_vanvas() {
     var canvas = new fabric.Canvas('id_canvas');
     var imgElement = 'assets/img/uno.png';
-    var imgElement2 = 'assets/img/dos.png'; 
+    var imgElement2 = 'assets/img/dos.png';
     var imgElement3 = 'assets/img/tres.png';
     var imgElement4 = 'assets/img/cuatro.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
@@ -573,8 +574,8 @@ function modal_scroll4(){
         canvas.add(oImg);
 
         oImg.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito1").modal("show");            
+            console.log('selected a circle');
+            $("#modal_circuito1").modal("show");
         });
         oImg.on('mousemove', function() {
           console.log('hover a circle');
@@ -589,8 +590,8 @@ function modal_scroll4(){
         canvas.add(oImg2);
 
         oImg2.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito2").modal("show");            
+            console.log('selected a circle');
+            $("#modal_circuito2").modal("show");
         });
         oImg2.on('mousemove', function() {
           console.log('hover a circle');
@@ -605,8 +606,8 @@ function modal_scroll4(){
         canvas.add(oImg3);
 
         oImg3.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito3").modal("show");            
+            console.log('selected a circle');
+            $("#modal_circuito3").modal("show");
         });
         oImg3.on('mousemove', function() {
           console.log('hover a circle');
@@ -621,8 +622,8 @@ function modal_scroll4(){
         canvas.add(oImg4);
 
         oImg4.on('mouseup', function() {
-            console.log('selected a circle');  
-            $("#modal_circuito4").modal("show");            
+            console.log('selected a circle');
+            $("#modal_circuito4").modal("show");
         });
         oImg4.on('mousemove', function() {
           console.log('hover a circle');
@@ -680,7 +681,7 @@ function scroll(){
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
+
     console.log(knob+" "+bar+" "+container);
       dragging = {
         x: event.clientX,
@@ -696,7 +697,7 @@ function scroll(){
           y: event.clientY - dragging.y };
 
 
-        // Clamp the position of the knob to be a maximum of 
+        // Clamp the position of the knob to be a maximum of
         // the knobs container, and a minimum of 0
         newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
         knob.style.top = newTop + 'px';
@@ -752,16 +753,29 @@ function scroll(){
 }*/
 
 function poner(num) {
-    
+
     $(".texto_efecto"+num).css({
         position: 'relative',
         top: '2px',
         display: 'block',
         'z-index': '100'
     });
+
+    $(".texto_efecto"+(num-1)).css({
+        position: 'relative',
+        top: '2px',
+        display: 'none',
+        'z-index': '100'
+    });
+
     if (num == 3) {
         $(".custom-scrollbar__bar2").css('display','block');
         $(".custom-scrollbar2").css('height','250');
+    }
+
+    if (num == 4) {
+        $(".custom-scrollbar__bar2").css('display','none');
+        $(".custom-scrollbar2").css('height','180px');
     }
 }
 function quitar(num) {
@@ -780,17 +794,24 @@ function quitar(num) {
 function listas(){
     var lista_num = $(this).data('lista');
     if (lista_num == 1) {
+        $(".lista-a").hide();
+        $(".lista-s").show();
         var text = `
-                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-01.png" alt="" class="img-80"></p>
+                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-01.png" alt="" class="img-85"></p>
                     `;
         $("#lista-1").html(text);
         $(".lista-s").data('lista', 2);
+<<<<<<< HEAD
         $(".lista-a").data('lista', 3);
         $(".lista-a").addClass('hidden');
         $(".lista-s").removeClass('hidden');
+=======
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
     }else if (lista_num == 2) {
+        $(".lista-a").show();
+        $(".lista-s").show();
         var text = `
-                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-02.png" alt="" class="img-80"></p>
+                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-02.png" alt="" class="img-85"></p>
                     `;
         $("#lista-1").html(text);
         $(".lista-s").removeClass('hidden');
@@ -798,13 +819,18 @@ function listas(){
         $(".lista-s").data('lista', 3);
         $(".lista-a").data('lista', 1);
     }else if (lista_num == 3) {
+        $(".lista-a").show();
+        $(".lista-s").hide();
         var text = `
-                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-03.png" alt="" class="img-80"></p>
+                    <p class="text-center"><img src="assets/img/img_ova/ejemploproposiciones-03.png" alt="" class="img-85"></p>
                     `;
         $("#lista-1").html(text);
+<<<<<<< HEAD
         $(".lista-s").data('lista', 1);
         $(".lista-s").addClass('hidden');
         $(".lista-a").removeClass('hidden');
+=======
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
         $(".lista-a").data('lista', 2);
     }
 }
@@ -815,7 +841,7 @@ function disyunciones(){
         var text1 = `
                     <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
                     <br>
-                    <p class="p_black justificado">“La conjunción de p con q”:      p ^ q, se lee “p y q”</p>
+                    <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:    &nbsp; &nbsp; &nbsp; &nbsp;    p ^ q, se lee “p y q”</p>
                     <br>
                     <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
                     `;
@@ -826,10 +852,17 @@ function disyunciones(){
         $("#triangulo_l").addClass('hidden');
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
-        $(".disyuncion-s").data('disyuncion', 2);
-        $(".disyuncion-a").data('disyuncion', 2);
+        // $(".disyuncion-s").data('disyuncion', 2);
+        // $(".disyuncion-a").data('disyuncion', 2);
+        $('.disyuncion-a').css(
+                    'display','none'
+        );
+        $('.disyuncion-s').css(
+                    'display','block'
+        );
     }else if (disyuncion_num == 2) {
         var text1 = `
+<<<<<<< HEAD
                     <div class="bg-btn-a-c">
                         <div class="row px-3">
                             <div class="col-md-3 d-flex">
@@ -861,30 +894,76 @@ function disyunciones(){
                     `;
         $("#triangulo_l").removeClass('hidden');
         $("#triangulo_r").addClass('hidden');
+=======
+        <div class="row">
+
+        <div class="col-md-2 d-flex" style="z-index: 1000;">
+            <img src="assets/img/img_ova/transparencia.png" alt="" style="width: 60px; height:60px; margin-top:300%;">
+        </div>
+        <div class="bg-btn-a-c col-md-10">
+
+                <div class="px-2 pt-3">
+                      <p class="p_black justificado" style="font-size: 11px;">Hay un conector, que no es muy utilizado, llamado:</p>
+                      <br>
+                      <p class="p_black justificado" style="font-size: 11px; font-style: oblique;">“La <u>disyunción exclusiva o fuerte</u> de “p con q”:   &nbsp; &nbsp; &nbsp; &nbsp;  p V q,  y se lee “O  p o q”</p>
+                      <br>
+                      <p class="p_black justificado" style="font-size: 11px;">La disyunción exclusiva (fuerte) entre dos proposiciones será verdadera (V) cuando solo una sea verdadera; no admite la opción de que ambas sean verdaderas, para ser verdadera.</p>
+
+                </div>
+
+        </div>
+        `;
+        var text2 = `
+        <div class="row px-3">
+            <div class="col-md-3 px-3 d-flex">
+                  <img src="assets/img/img_ova/prueba.png" alt="" class="m-auto" style="width: 160%">
+            </div>
+            <div class="col-md-9 px-3">
+                  <p class="p_black justificado" style="font-size: 11px;"><b>Por ejemplo:</b> “lo traen vivo o muerto” se podrá tener solo una de las dos.</p>
+                  <br>
+                  <p class="p_black justificado" style="font-size: 11px;">En este curso no se profundizará en este conector:</p>
+                  <p class="text-center"><img src="assets/img/img_ova/tabla de disyunción lógica-03.png" alt="" class="img-100"></p>
+            </div>
+        </div>
+        `;
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
         $("#disyuncion-1").html(text1);
         $("#disyuncion-2").html(text2);
-        $(".disyuncion-s").data('disyuncion', 1);
+        // $(".disyuncion-s").hide();
+        // $(".disyuncion-a").show();
+        $('.disyuncion-a').css(
+                                'display','block'
+        );
+        $('.disyuncion-s').css(
+                                'display','none'
+        );
         $(".disyuncion-a").data('disyuncion', 1);
     }else if (disyuncion_num == 3) {
         var text = `
-                    <div class="col-md-3 px-3 d-flex">
-                          <img src="assets/img/img_ova/matematicas5.png" alt="" class="img-100 mt-auto">
-                    </div>
-                    <div class="col-md-9 px-3">
-                          <p class="p_black justificado">Al hablar de implicación o también conocida como condicional, se hace referencia a la conjunción “si…entonces…si” como se explica a continuación:</p>
-                          <p class="p_black justificado">“La implicación entre p y q”:     p →q , se lee “si p entonces q” o “p implica q”</p>
-                          <br>
-                          <p class="p_black justificado">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
-                          <p class="p_black justificado">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
-                    </div>
+        <div class="col-md-3 px-3 d-flex">
+        <img src="assets/img/img_ova/matematicas5.png" alt="" class="img-100 mt-auto">
+  </div>
+  <div class="col-md-9 px-3">
+        <p class="p_black justificado text-14px" style="font-style: oblique;">Al hablar de <u>implicación</u> o también conocida como <u>condicional</u>, se hace referencia a la conjunción “si…entonces…si” como se explica a continuación:</p>
+        <p class="p_black justificado text-14px" style="font-style: oblique;">“La implicación entre p y q”:   &nbsp; &nbsp; &nbsp; &nbsp;   p →q , se lee “si p entonces q” o “p implica q”</p>
+        <br>
+        <p class="p_black justificado text-14px">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
+        <p class="p_black justificado text-14px">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
+  </div>
                     `;
         $("#disyuncion-3").html(text);
+<<<<<<< HEAD
         $("#triangulo_l_1").removeClass('hidden');
         $("#triangulo_r_1").addClass('hidden');
+=======
+        $(".disyuncion-s").show();
+        $(".disyuncion-a").hide();
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
         $(".disyuncion-s").data('disyuncion', 4);
         $(".disyuncion-a").data('disyuncion', 4);
     }else if (disyuncion_num == 4) {
         var text = `
+<<<<<<< HEAD
                     <div class="col-md-7 px-3">
                           <p class="p_black justificado">La implicación entre dos proposiciones será falsa (F) solo cuando el antecedente (hipótesis) sea verdadero y el consecuente (conclusión) falso.</p>
                           <p class="text-center"><img src="assets/img/img_ova/tabla implicación.png" alt="" class="img-65"></p>
@@ -907,6 +986,40 @@ function disyunciones(){
         $("#triangulo_r_1").addClass('hidden');
         $(".disyuncion-s").data('disyuncion', 3);
         $(".disyuncion-a").data('disyuncion', 3);
+=======
+        <div class="col-md-6 px-3">
+        <p class="p_black justificado text-14px">La implicación entre dos proposiciones será falsa (F) solo cuando el antecedente (hipótesis) sea verdadero y el consecuente (conclusión) falso.</p>
+        <p class="text-center"><img src="assets/img/img_ova/tabla implicación.png" alt="" class="img-65"></p>
+        <p class="p_black justificado text-14px">Las proposiciones resultantes de p →q, como son</p>
+        <p class="p_black justificado text-14px">q → p, ~ p → ~ q y  ~ q→ ~ p, reciben los nombres de recíproco, contrario y contrarrecíproco de p → q,  respectivamente.</p>
+  </div>
+  <div class="col-md-6">
+
+  <div class="row">
+
+  <div class="col-md-4 d-flex">
+  <img src="assets/img/img_ova/vision.png" alt="" class="img-100 m-auto">
+</div>
+
+<div class="col-md-8 bg-btn-a-o radius-2">
+
+<div class="col-md-12 p-3">
+  <p class="p_white justificado text-12px"> Use la flecha > para poner en práctica los conocimientos aprendidos a través de la siguiente actividad y luego debe continuar con los demás conectores lógicos.</p>
+</div>
+</div>
+
+  </div>
+
+
+  </div>
+  `;
+
+    $(".disyuncion-s").hide();
+    $(".disyuncion-a").show();
+    $("#disyuncion-3").html(text);
+    $(".disyuncion-s").data('disyuncion', 3);
+    $(".disyuncion-a").data('disyuncion', 3);
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
     }
 }
 
@@ -927,7 +1040,11 @@ function conector(){
                     <div class="col-md-6 px-3">
                           <p class="p_black justificado">Dadas dos proposiciones p ,q se definen, o se pueden formar una conjunción lógica.</p>
                           <br>
+<<<<<<< HEAD
                           <p class="p_black justificado">“La conjunción de p con q”:    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   p ^ q, se lee “p y q”</p>
+=======
+                          <p class="p_black justificado" style="font-style: oblique;">“La conjunción de p con q”:   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   p ^ q, se lee “p y q”</p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                           <br>
                           <p class="p_black justificado">La conjunción entre dos proposiciones será verdadera (V) y se debe cumplir solo cuando ambas sean verdaderas:</p>
                     </div>
@@ -936,15 +1053,26 @@ function conector(){
                     </div>
                     `;
         $("#info-conectores").html(text);
+        
+        $('.trianguloP42, .trianguloP43, .trianguloP44').addClass('d-none');
+        $('.trianguloP41').removeClass('d-none');
     }else if (conectores_num == 2) {
         var text = `
                     <div class="col-md-1 px-3 d-flex">
+<<<<<<< HEAD
                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor hidden" data-disyuncion="2" id="triangulo_l"></div>
+=======
+                        <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" style="display:none;" data-disyuncion="1"></div>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                     </div>
                     <div class="col-md-5 px-3" id="disyuncion-1">
                           <p class="p_black justificado">Cuando se habla de <u>disyunción</u> o también llamada suma lógica, donde al tener una de las proposiciones verdaderas, se convierte el valor de verdad en verdadero.                          </p>
                           <br>
+<<<<<<< HEAD
                           <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;      𝑝     𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
+=======
+                          <p class="p_black justificado"><i>“La disyunción de  𝑝 con 𝑞”:     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     𝑝 V 𝑞 , se lee “𝑝 𝑜 𝑞”</i></p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                           <br>
                           <p class="p_black justificado">La disyunción entre dos proposiciones será verdadera (V) cuando por lo menos una sea verdadera: </p>
                     </div>
@@ -957,10 +1085,18 @@ function conector(){
                     `;
         $("#info-conectores").html(text);
         $(".disyuncion").on('click',disyunciones);
+        
+        $('.trianguloP41, .trianguloP43, .trianguloP44').addClass('d-none');
+        $('.trianguloP42').removeClass('d-none');
     }else if (conectores_num == 3) {
         var text = `
+<<<<<<< HEAD
                     <div class="col-md-6 px-3">
                           <p class="p_black justificado"><i>“La negación de  p”: &nbsp; &nbsp; &nbsp; ~ p , se lee “no p”</i></p>
+=======
+                    <div class="col-md-6 px-3 mt-3">
+                          <p class="p_black justificado" style="font-style: oblique;">“La negación de  p”: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ~ p , se lee “no p”</p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                           <br>
                           <p class="p_black justificado">La negación de una proposición tiene el valor de verdad opuesto a la proposición dada </p>
                           <p class="p_black justificado">También se acostumbra el signo “¬”, es decir “¬ p” para la negación o con la escritura “no p”.</p>
@@ -972,9 +1108,13 @@ function conector(){
                     </div>
                     `;
         $("#info-conectores").html(text);
+        
+        $('.trianguloP41, .trianguloP42, .trianguloP44').addClass('d-none');
+        $('.trianguloP43').removeClass('d-none');
     }else if (conectores_num == 4) {
         var text = `
                      <div class="col-md-1 px-3 d-flex">
+<<<<<<< HEAD
                          <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor hidden" data-disyuncion="4" id="triangulo_l_1"></div>
                      </div>
                      <div class="col-md-10">
@@ -988,6 +1128,21 @@ function conector(){
                                    <br>
                                    <p class="p_black justificado">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
                                    <p class="p_black justificado">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
+=======
+                         <div class="triangulo_izq m-auto disyuncion disyuncion-a cursor" style="display:none; data-disyuncion="4"></div>
+                     </div>
+                     <div class="col-md-10">
+                         <div class="row" id="disyuncion-3">
+                             <div class="col-md-3 px-3 d-flex">
+                                   <img src="assets/img/img_ova/matematicas5.png" alt="" class="img-100 mt-auto">
+                             </div>
+                             <div class="col-md-9 px-3">
+                             <p class="p_black justificado text-14px" style="font-style: oblique;">Al hablar de <u>implicación</u> o también conocida como <u>condicional</u>, se hace referencia a la conjunción “si…entonces…si” como se explica a continuación:</p>
+                             <p class="p_black justificado text-14px" style="font-style: oblique;">“La implicación entre p y q”:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   p →q , se lee “si p entonces q” o “p implica q”</p>
+                             <br>
+                             <p class="p_black justificado text-14px">Donde la primera proposición recibe el nombre de antecedente o hipótesis y la segunda el nombre de consecuente o tesis.  </p>
+                             <p class="p_black justificado text-14px">Solo se estudiarán los casos en que la segunda proposición sea consecuencia lógica de la primera, casos como: “si estamos en la universidad entonces la manzana es roja”, no serán casos de estudio, ya que no se observa ninguna consecuencia lógica entre ellos.</p>
+>>>>>>> e0482835af30c9c0f05de2835f50df07a68ca204
                              </div>
                          </div>
                      </div>
@@ -997,18 +1152,21 @@ function conector(){
                     `;
         $("#info-conectores").html(text);
         $(".disyuncion").on('click',disyunciones);
+        
+        $('.trianguloP41, .trianguloP42, .trianguloP43').addClass('d-none');
+        $('.trianguloP44').removeClass('d-none');
     }else if (conectores_num == 5) {
         var text = `
                      <div class="col-md-4 px-3">
                          <div class="card-azul-o">
-                             <p class="p_white justificado">Recuerde que en la sección anterior se conceptualizó sobre los conectores lógicos: </p>
-                             <p class="p_white justificado">conjunción, disyunción, negación e implicación. Ahora debe continuar con los demás.</p>
+                             <p class="p_white justificado text-12px">Recuerde que en la sección anterior se conceptualizó sobre los conectores lógicos: </p>
+                             <p class="p_white justificado text-12px">conjunción, disyunción, negación e implicación. Ahora debe continuar con los demás.</p>
                          </div>
                      </div>
-                     <div class="col-md-4 px-3">
-                         <p class="p_black justificado">Proposiciones equivalentes son aquellas proposiciones compuestas que tengan los mismos valores de verdad sin importar el valor de verdad que tomen las proposiciones simples que intervengan, en otras palabras, que “siempre” tengan los mismos valores de verdad.</p>
+                     <div class="col-md-3 px-2 mt-2">
+                         <p class="p_black justificado text-12px">Proposiciones equivalentes son aquellas proposiciones compuestas que tengan los mismos valores de verdad sin importar el valor de verdad que tomen las proposiciones simples que intervengan, en otras palabras, que “siempre” tengan los mismos valores de verdad.</p>
                      </div>
-                     <div class="col-md-4 px-3">
+                     <div class="col-md-5 px-2 mt-4">
                          <img src="assets/img/img_ova/Geometria euclidiana-02.png" alt="" class="img-100">
                      </div>
                     `;
@@ -1016,15 +1174,31 @@ function conector(){
     }else if (conectores_num == 6) {
         var text = `
                      <div class="col-md-6 px-3">
-                             <p class="p_black justificado">Al hablar de doble implicación o bicondicional, su función es en doble sentido de la siguiente manera:</p>
-                             <p class="p_black text-center my-2 bg-btn-a-c p-2 radius-2">“El bicondicional entre  𝑝 y 𝑞”:   𝑝 ↔ 𝑞, se lee “𝑝 si y solo si 𝑞”</p>
-                             <p class="p_black justificado bg-btn-a-c p-2 radius-2">El bicondicional entre dos proposiciones será verdadero (𝑽) cuando ambas proposiciones tengan el mismo valor de verdad.</p>
+                             <p class="p_black justificado text-12px">Al hablar de doble implicación o bicondicional, su función es en doble sentido de la siguiente manera:</p>
+                             <p class="p_black text-center my-2 bg-btn-a-c p-2 radius-2 text-12px">“El bicondicional entre  𝑝 y 𝑞”:   𝑝 ↔ 𝑞, se lee “𝑝 si y solo si 𝑞”</p>
+                             <p class="p_black justificado bg-btn-a-c p-2 radius-2 text-12px">El bicondicional entre dos proposiciones será verdadero (𝑽) cuando ambas proposiciones tengan el mismo valor de verdad.</p>
                      </div>
                      <div class="col-md-6 px-3">
-                        <p class="text-center"><img src="assets/img/img_ova/tabla bicondiconal.png" alt="" class="img-60"></p>
+                        <p class="text-center"><img src="assets/img/img_ova/tabla bicondiconal.png" alt="" class="img-80"></p>
                      </div>
                     `;
         $("#info-conectores-2").html(text);
+    }
+}
+
+function avanzarA1(num) {
+    if (num == 1) {
+        $('#actividad1P5').removeClass('d-none');
+        $('#actividad2P5').addClass('d-none');
+        $('#actividad3P5').addClass('d-none');
+    }else if (num == 2) {
+        $('#actividad1P5').addClass('d-none');
+        $('#actividad2P5').removeClass('d-none');
+        $('#actividad3P5').addClass('d-none');
+    }else if (num == 3) {
+        $('#actividad1P5').addClass('d-none');
+        $('#actividad2P5').addClass('d-none');
+        $('#actividad3P5').removeClass('d-none');
     }
 }
 
@@ -1034,29 +1208,30 @@ function opciones(){
     $(".opcion-circular"+opciones_num).addClass('opcion-circular-select');
     if (opciones_num == 1) {
         var text = `
-                        <p class="p_black justificado"><b>Ejemplo:</b></p>
-                        <p class="p_black justificado">Las dos proposiciones ( p ∧ q ) →r,  p ∧ ( q → r )  no tienen el mismo valor de verdad o “significado”; no son equivalentes, aun teniendo los mismos conectores.  Se halla la tabla de valores de verdad para compararlos.</p>
-                        <p class="p_black text-right"><button class="btn-descarga-pdf btn p-2"  data-toggle="modal" data-target="#modal-posiciones">Ver tabla</button></p>
+        <p class="p_black justificado text-12px"><b>Ejemplo:</b></p>
+        <p class="p_black justificado text-12px">Las dos proposiciones ( p ∧ q ) →r,  p ∧ ( q → r )  no tienen el mismo valor de verdad o “significado”; no son equivalentes, aun teniendo los mismos conectores.  Se halla la tabla de valores de verdad para compararlos.</p>
+        <p class="p_black text-right"><button class="btn-descarga-pdf btn p-2" data-toggle="modal" data-target="#modal-posiciones">Ver tabla</button></p>
                    `;
         $("#info-posiciones").html(text);
     }else if (opciones_num == 2) {
         var text = `
-                        <p class="p_black justificado"><b>Ejemplo:</b></p>
-                        <p class="p_black justificado">Tampoco las tres proposiciones siguientes son equivalentes (ningún par de ellas)</p>
-                        <br>
-                        <p class="p_black justificado">[ ( 𝑝 → 𝑞 ) ∧ ( 𝑞 → 𝑝 ) ] ,  [ [𝑝 →( 𝑞 ∧ 𝑞 )] → 𝑝 ] ,  𝑝 → [ 𝑞 ∧ ( 𝑞 → 𝑝 ) ]</p>
+        <p class="p_black justificado text-12px"><b>Ejemplo:</b></p>
+        <p class="p_black justificado text-12px">Tampoco las tres proposiciones siguientes son equivalentes (ningún par de ellas)</p>
+        <br>
+        <p class="p_black justificado text-12px">[ ( 𝑝 → 𝑞 ) ∧ ( 𝑞 → 𝑝 ) ] ,  [ [𝑝 →( 𝑞 ∧ 𝑞 )] → 𝑝 ] ,  𝑝 → [ 𝑞 ∧ ( 𝑞 → 𝑝 ) ]</p>
+        <br>
                    `;
         $("#info-posiciones").html(text);
     }else if (opciones_num == 3) {
         var text = `
-                        <p class="p_black justificado">Para indicar la equivalencia entre dos proposiciones se acostumbra a usar un bicondicional “resaltado” o especial.  “⇔” </p>
-                        <p class="p_black justificado"><b>Ejemplo:</b></p>
-                        <p class="p_black text-center">(𝑝 →𝑞)   ⇔  (~ 𝑞 →~ 𝑝)</p>
-                        <p class="p_black text-center">(𝑝 ↔ 𝑞)   ⇔  {(𝑝 → 𝑞) ∧ (𝑞 → 𝑝)}</p>
-                        <p class="p_black text-center">(𝑝 → ~𝑞)   ⇔  ~ (𝑝∧𝑞)</p>
-                        <p class="p_black justificado">Los valores de verdad de las equivalencias formadas con proposiciones “equivalentes” serán en todos los casos (𝑉).</p>
-                        <br>
-                        <p class="p_black justificado">Para los valores de verdad de proposiciones compuestas se halla primero los de las proposiciones agrupadas más internamente.</p>
+                        <p class="p_black justificado text-10px">Para indicar la equivalencia entre dos proposiciones se acostumbra a usar un bicondicional “resaltado” o especial.  “⇔” </p>
+                        <p class="p_black justificado text-10px"><b>Ejemplo:</b></p>
+                        <p class="p_black text-center text-10px">(𝑝 →𝑞)   ⇔  (~ 𝑞 →~ 𝑝)</p>
+                        <p class="p_black text-center text-10px">(𝑝 ↔ 𝑞)   ⇔  {(𝑝 → 𝑞) ∧ (𝑞 → 𝑝)}</p>
+                        <p class="p_black text-center text-10px">(𝑝 → ~𝑞)   ⇔  ~ (𝑝∧𝑞)</p>
+                        <p class="p_black justificado text-10px">Los valores de verdad de las equivalencias formadas con proposiciones “equivalentes” serán en todos los casos (𝑉).</p>
+
+                        <p class="p_black justificado text-10px mt-2 mb-1">Para los valores de verdad de proposiciones compuestas se halla primero los de las proposiciones agrupadas más internamente.</p>
                    `;
         $("#info-posiciones").html(text);
     }
@@ -1103,57 +1278,57 @@ function card_amarillo_info(){
         $("#info-ley").html(text);
     }if (ley_num == 2) {
         var text = `
-                   <div class="row">
-                        <div class="col-md-6">
-                            <p class="p_white radius-2 bg-btn-a-o w-fit m-auto pr-4"><img src="assets/img/img_ova/diapositivas.png" alt="" class="w-h-65px-i">    Tabla de leyes proposicional</p>
-                        </div>
-                        <div class="col-md-6 d-flex">
-                            <div class="m-0 p-0 x-modal my-auto mover-derecha cursor" id="cerrar-info">
-                                <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
-                            </div>
-                            <div class="bg-btn-a-o my-auto w-100 h-6px">
-                            </div>
-                        </div>
-                        <div class="col-md-4 offset-md-1 d-flex">
-                            <p class="text-center"><img src="assets/img/img_ova/sin-parar.png" alt="" class="img-50"></p>
-                        </div>
-                        <div class="col-md-6 col-sm-6 d-flex">
-                            <div class="bg-btn-a-o radius-3 p-4 m-auto img-100">
-                                <p class="p_white justificado">Para ver el video explicativo de leyes del álgebra proposicional, visite la carpeta <a href="https://drive.google.com/file/d/ 1iTLEmlZEozwEAQcUewMFL9RmrJKxyojQ/view?usp=sharing" target="_blank">DRIVE</a>  de la plataforma y de clic en <b>leyes de álgebra proposicional.</b></p>
-                            </div>
-                        </div>
-                   </div>
+        <div class="row">
+        <div class="col-md-6 mt-2">
+            <p class="p_white radius-2 bg-btn-a-o w-fit m-auto pr-4"><img src="assets/img/img_ova/diapositivas.png" alt="" class="w-h-65px-i">    Tabla de leyes proposicional</p>
+        </div>
+        <div class="col-md-6 d-flex">
+            <div class="m-0 p-0 x-modal my-auto mover-derecha cursor" id="cerrar-info">
+                <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+            </div>
+            <div class="bg-btn-a-o my-auto w-100 h-6px">
+            </div>
+        </div>
+        <div class="col-md-4 offset-md-1 d-flex mt-5">
+            <p class="text-center"><img src="assets/img/img_ova/sin-parar.png" alt="" class="img-50"></p>
+        </div>
+        <div class="col-md-6 col-sm-6 d-flex">
+            <div class="bg-btn-a-o radius-3 p-4 m-auto img-100">
+                <p class="p_white justificado">Para ver el video explicativo de leyes del álgebra proposicional, click en <a href="https://drive.google.com/file/d/1iTLEmlZEozwEAQcUewMFL9RmrJKxyojQ/view?usp=sharing" target="_blank">DRIVE</a></b></p>
+            </div>
+        </div>
+   </div>
                    `;
         $("#info-ley").html(text);
     }if (ley_num == 3) {
         var text = `
-                   <div class="row">
-                        <div class="col-md-6">
-                            <p class="p_white radius-2 bg-btn-a-o w-fit m-auto pr-4"><img src="assets/img/img_ova/prueba.png" alt="" class="w-h-65px-i">    Ejemplos de las leyes del álgebra proposicional</p>
-                        </div>
-                        <div class="col-md-6 d-flex">
-                            <div class="m-0 p-0 x-modal my-auto mover-derecha cursor" id="cerrar-info">
-                                <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
-                            </div>
-                            <div class="bg-btn-a-o my-auto w-100 h-6px">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <p class="p_black text-center">En una proposición compuesta se puede sustituir una proposición por otra que sea equivalente a ella, donde se obtiene una composición equivalente a la inicial.</p>
-                        </div>
-                        <div class="col-md-2 px-3 d-flex">
-                              <p class="p_black justificado mt-auto">Use las flechas <> para navegar por la información.</p>
-                        </div>
-                        <div class="col-md-1 px-3 d-flex">
-                            <div class="triangulo_izq m-auto tabla tabla-a cursor" data-tabla="3"></div>
-                        </div>
-                        <div class="col-md-8 px-3" id="tabla-img">
-                              <p class="text-center"><img src="assets/img/img_ova/ejemplo ley1.png" alt="" class="img-100"></p>
-                        </div>
-                        <div class="col-md-1 px-3 d-flex">
-                            <div class="triangulo_der m-auto tabla tabla-s cursor" data-tabla="2"></div>
-                        </div>
-                   </div>
+        <div class="row">
+        <div class="col-md-7 mt-2">
+            <p class="p_white radius-2 bg-btn-a-o w-fit m-auto pr-4 text-12px"><img src="assets/img/img_ova/prueba.png" alt="" class="w-h-75px-i">    Ejemplos de las leyes del álgebra proposicional</p>
+        </div>
+        <div class="col-md-5 d-flex">
+            <div class="m-0 p-0 x-modal my-auto mover-derecha cursor" id="cerrar-info">
+                <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+            </div>
+            <div class="bg-btn-a-o my-auto w-100 h-6px">
+            </div>
+        </div>
+        <div class="col-md-12">
+            <p class="p_black text-center mt-2 ml-3">En una proposición compuesta se puede sustituir una proposición por otra que sea equivalente a ella, donde se obtiene una composición equivalente a la inicial.</p>
+        </div>
+        <div class="col-md-2 px-3 d-flex text-12px">
+              <p class="p_black justificado mt-auto">Use las flechas <> para navegar por la información.</p>
+        </div>
+        <div class="col-md-1 px-3 d-flex">
+            <div class="triangulo_izq m-auto tabla tabla-a cursor" style="display:none;" data-tabla="3"></div>
+        </div>
+        <div class="col-md-8 px-3" id="tabla-img">
+              <p class="text-center"><img src="assets/img/img_ova/ejemplo ley1.png" alt="" class="img-100"></p>
+        </div>
+        <div class="col-md-1 px-3 d-flex">
+            <div class="triangulo_der m-auto tabla tabla-s cursor" data-tabla="2"></div>
+        </div>
+   </div>
                    `;
         $("#info-ley").html(text);
         $(".tabla").on('click',tablas);
@@ -1212,7 +1387,8 @@ function tablas(){
                     `;
         $("#tabla-img").html(text);
         $(".tabla-s").data('tabla', 2);
-        $(".tabla-a").data('tabla', 3);
+        $(".tabla-a").hide();
+        $(".tabla-s").show();
     }else if (tabla_num == 2) {
         var text = `
                     <p class="text-center"><img src="assets/img/img_ova/ejemplo ley2.png" alt="" class="img-100"></p>
@@ -1220,13 +1396,16 @@ function tablas(){
         $("#tabla-img").html(text);
         $(".tabla-s").data('tabla', 3);
         $(".tabla-a").data('tabla', 1);
+        $(".tabla-a").show();
+        $(".tabla-s").show();
     }else if (tabla_num == 3) {
         var text = `
                     <p class="text-center"><img src="assets/img/img_ova/ejemplo ley3.png" alt="" class="img-100"></p>
                     `;
         $("#tabla-img").html(text);
-        $(".tabla-s").data('tabla', 1);
         $(".tabla-a").data('tabla', 2);
+        $(".tabla-a").show();
+        $(".tabla-s").hide();
     }
 }
 
@@ -1236,6 +1415,7 @@ function abrir_card(){
     $(".card-ampliar-1").removeClass('col-md-2');
     $(".card-ampliar-1").addClass('col-md-12');
     $(".card-oculta").removeClass('d-none');
+    $("#1click").addClass('d-none');
 }
 
 function argumentos(){
@@ -1291,30 +1471,81 @@ function argumentos(){
 
 function formulas(num){
     if (num == 1) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" data-toggle="modal" data-target="#modalfor1" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/solucion1.png" data-toggle="modal" data-target="#modalfor1" style="cursor: pointer;position:relative;left:-50px;" title="Clic para zoom" width="130%"></p>';
         $("#info-formula").html(info);
     }else if (num == 2) {
-        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/formulasolucion2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;position:relative;left:-90px;" title="Clic para zoom" width="130%"></p>';
+        var info = '<p class="text-center pt-3"><img src="assets/img/img_ova/formulasolucion2.png" data-toggle="modal" data-target="#modalfor2" style="cursor: pointer;position:relative;left:-50px;" title="Clic para zoom" width="130%"></p>';
         $("#info-formula").html(info);
     }
 }
 
+function showFlipcard(num) {
+
+    if (num == 1) {
+        var text = `
+    <div class="flip-card-back">
+        <div id="text2" class="p_black d-flex">
+            <img src="assets/img/img_ova/prueba.png" alt="" class="w-h-55px">
+            <div class="ml-3">
+                <p class="text-left"><b>Ejemplos:</b></p>
+                <p class="text-left">Ley del Modus Ponendo Ponens</p>
+            </div>
+        </div>
+        <div id="girar-info">
+            <p class="p_black justificado">Se plantea un ejemplo donde se considera el siguiente argumento:</p>
+            <br>
+            <p class="p_black justificado">(1) Si hay fuego entonces hay presencia de oxígeno</p>
+            <p class="p_black justificado">(2)  Hay fuego                                                            .</p>
+            <p class="p_black justificado">(3) ¿ _____________________?   ¿Cuál será la conclusión? </p>
+            <p class="p_black text-right">                       RTA.    Hay presencia de oxígeno</p>
+            <p class="p_white p-4 mt-2 bg-btn-a-o">Rta/ Hay presencia de Oxigeno</p>
+        </div>
+        <div class="col-md-12 px-3 d-flex justify-content-between">
+            <div class="triangulo_izq m-auto giro giro-a cursor" style="display: none;" data-giro="2"></div>
+            <div class="triangulo_der m-auto giro giro-s cursor" data-giro="2"></div>
+        </div>
+    </div> `;
+
+
+    
+    $(".text1").html(text);
+    $(".giro").on('click',rodar);
+    } else if (num == 2) {
+        var text = `
+        <div class="flip-card-back">
+        <div class="p_black d-flex">
+            <img src="assets/img/img_ova/estudio.png" alt="" class="w-h-55px">
+            <div class="ml-3">
+                <p class="text-left"><b>Premisa:</b></p>
+                <p class="text-left">Ley del Modus Ponendo Ponens</p>
+            </div>
+      </div>
+        <p class="p_black justificado">“Siempre que se tenga una proposición condicional y que se dé el antecedente entonces se dará el consecuente”</p>
+    </div> `;
+    $(".text2").html(text);
+    }
+    
+}
+
 function rodar(){
     var giro_num = $(this).data('giro');
+    console.log("giro_num: "+giro_num);
     if (giro_num == 1) {
         var text = `
-                    <p class="p_black justificado">Se plantea un ejemplo donde se considera el siguiente argumento:</p>
-                    <br>
-                    <p class="p_black justificado">(1) Si hay fuego entonces hay presencia de oxígeno</p>
-                    <p class="p_black justificado">(2)  Hay fuego                                                            .</p>
-                    <p class="p_black justificado">(3) ¿ _____________________?   ¿Cuál será la conclusión? </p>
-                    <p class="p_black text-right">                       RTA.    Hay presencia de oxígeno</p>
-                    <p class="p_white p-4 mt-2 bg-btn-a-o">Rta/ Hay presencia de Oxigeno</p>
+        <p class="p_black justificado">Se plantea un ejemplo donde se considera el siguiente argumento:</p>
+        <br>
+        <p class="p_black justificado">(1) Si hay fuego entonces hay presencia de oxígeno</p>
+        <p class="p_black justificado">(2)  Hay fuego                                                            .</p>
+        <p class="p_black justificado">(3) ¿ _____________________?   ¿Cuál será la conclusión? </p>
+        <p class="p_black text-right">                       RTA.    Hay presencia de oxígeno</p>
+        <p class="p_white p-4 mt-2 bg-btn-a-o">Rta/ Hay presencia de Oxigeno</p>
                    `;
         $("#girar-info").html(text);
-        $(".giro-a").data('giro', 2);
+        $(".giro-a").hide();
+        $(".giro-s").show();
         $(".giro-s").data('giro', 2);
     }else if (giro_num == 2) {
+        console.log("entro en el if 2");
         var text = `
                     <p class="p_black justificado">En términos de variables proposicionales</p>
                     <p class="p_black justificado"> tenemos:  𝑝 →𝑞  ,  𝑝  / 𝑞</p>
@@ -1326,7 +1557,8 @@ function rodar(){
                    `;
         $("#girar-info").html(text);
         $(".giro-a").data('giro', 1);
-        $(".giro-s").data('giro', 1);
+        $(".giro-a").show();
+        $(".giro-s").hide();
     }
 }
 
@@ -1338,10 +1570,10 @@ function demostraciones(){
     $(".demostracion-"+demostracion_num).addClass('bg-circle-a');
     if (demostracion_num == 1) {
         var text = `
-                   <div class="col-md-2">
+                   <div class="col-md-2 mt-4">
                        <p class="text-center"><img src="assets/img/img_ova/prueba.png" alt="" class="img-100"></p>
                    </div>
-                   <div class="col-md-10">
+                   <div class="col-md-10 mt-4">
                        <p class="p_black justificado"><b>Ejemplo:</b> seguir paso a paso la demostración de Q</p>
                        <br>
                        <p class="p_black">(1)  A       premisa dada</p>
@@ -1359,8 +1591,8 @@ function demostraciones(){
                    <div class="col-md-12">
                        <p class="p_black justificado"><b>Ley del Modus Tollendo Tollens</b></p>
                    </div>
-                   <div class="col-md-1">
-                        <div class="triangulo_izq m-auto validez validez-a cursor" data-validez="3"></div>
+                   <div class="col-md-1 mt-5">
+                        <div class="triangulo_izq m-auto validez validez-a cursor" style="display: none;" data-validez="3"></div>
                    </div>
                    <div class="col-md-2" id="info-validez-img">
                        <p class="text-center"><img src="assets/img/img_ova/prueba.png" alt="" class="img-100"></p>
@@ -1373,7 +1605,7 @@ function demostraciones(){
                        <p class="p_black ">  3) ¿_________________ ?   ¿Cuál es la conclusión?</p>
                        <p class="p_white p-4 mt-2 bg-btn-a-o text-center">Rta/ No hay fuego</p>
                    </div>
-                   <div class="col-md-1">
+                   <div class="col-md-1 mt-5">
                         <div class="triangulo_der m-auto validez validez-s cursor" data-validez="2"></div>
                    </div>
                    `;
@@ -1382,21 +1614,21 @@ function demostraciones(){
     }else if (demostracion_num == 3) {
         var text = `
                    <div class="col-md-12 d-flex" data-toggle="modal" data-target="#modal-actividad">
-                       <div class="col-md-8 row m-auto">
+                       <div class="col-md-8 row mt-5 mb-2 ml-5">
                           <img src="assets/img/img_ova/actividad_general.png" class="img-activi">
                           <div class="content-text-img-activi">
                             <b class="text-img-actividad">ACTIVIDAD # 6</b>
                           </div>
                        </div>
-                       <p class="p_black text-right mt-auto"><b>Clic para realizar la actividad </b></p>
+                       <p class="p_black text-right mt-5"><b>Clic para realizar la actividad </b></p>
                    </div>
                    `;
         $("#demostracion-info").html(text);
         $(".validez").on('click',validar);
     }else if (demostracion_num == 4) {
         var text = `
-                   <div class="col-md-1">
-                        <div class="triangulo_izq m-auto validez validez-a cursor" data-validez="6"></div>
+                   <div class="col-md-1 mt-5">
+                        <div class="triangulo_izq m-auto validez validez-a cursor" style="display: none;" data-validez="6"></div>
                    </div>
                    <div class="col-md-10">
                        <div class="row" id="info-validez-2">
@@ -1413,7 +1645,7 @@ function demostraciones(){
                            </div>
                        </div>
                    </div>
-                   <div class="col-md-1">
+                   <div class="col-md-1 mt-5">
                         <div class="triangulo_der m-auto validez validez-s cursor" data-validez="5"></div>
                    </div>
                    `;
@@ -1438,8 +1670,9 @@ function validar(){
                    `;
         $("#info-validez").html(info);
         $("#info-validez-img").html(img);
+        $(".validez-s").show();
         $(".validez-s").data('validez', 2);
-        $(".validez-a").data('validez', 3);
+        $(".validez-a").hide();
     }else if (validez_num == 2) {
         var info = `
                    <p class="p_black justificado">En términos de variables proposicionales tenemos:   𝑝 → 𝑞 ,  ~ 𝑞  / ~ 𝑝</p>
@@ -1455,6 +1688,8 @@ function validar(){
         $("#info-validez-img").html(img);
         $(".validez-s").data('validez', 3);
         $(".validez-a").data('validez', 1);
+        $(".validez-s").show();
+        $(".validez-a").show();
     }else if (validez_num == 3) {
         var info = `
                    <p class="p_black justificado">La Ley Modus Tollendo Tollens establece:</p>
@@ -1466,7 +1701,8 @@ function validar(){
                    `;
         $("#info-validez").html(info);
         $("#info-validez-img").html(img);
-        $(".validez-s").data('validez', 1);
+        $(".validez-s").hide();
+        $(".validez-a").show();
         $(".validez-a").data('validez', 2);
     }else if (validez_num == 4) {
         var info = `
@@ -1483,8 +1719,9 @@ function validar(){
                        </div>
                    `;
         $("#info-validez-2").html(info);
+        $(".validez-s").show();
         $(".validez-s").data('validez', 5);
-        $(".validez-a").data('validez', 6);
+        $(".validez-a").hide();
     }else if (validez_num == 5) {
         var info = `
                        <div class="col-md-12">
@@ -1504,6 +1741,8 @@ function validar(){
         $("#info-validez-2").html(info);
         $(".validez-s").data('validez', 6);
         $(".validez-a").data('validez', 4);
+        $(".validez-s").show();
+        $(".validez-a").show();
     }else if (validez_num == 6) {
         var info = `
                        <div class="col-md-2">
@@ -1516,7 +1755,8 @@ function validar(){
                        </div>
                    `;
         $("#info-validez-2").html(info);
-        $(".validez-s").data('validez', 4);
+        $(".validez-s").hide();
+        $(".validez-a").show();
         $(".validez-a").data('validez', 5);
     }
 }
@@ -1585,6 +1825,52 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }
 
+
+function carouselP1(num) {
+
+    if (num == 1) {
+        $('#cIzquierda').addClass('d-none');
+
+        var text =  `<p class="p_black justificado textAnimation">Inicialmente se define el concepto de proposición y se establece el significado e interpretación de los “<b>conectores lógicos</b>” (conjunción, disyunción, negación, implicación y la doble implicación) para formar proposiciones compuestas.</p>`;
+
+        $('#textCarouselAnimate').html(text);
+        
+        $('#cDerecha').attr('onclick','carouselP1(2)');
+
+    }else if (num == 2) {
+        $('#cIzquierda').removeClass('d-none');
+        $('#cDerecha').removeClass('d-none');
+
+        var text =  `<p class="p_black justificado textAnimation">Luego, se abordan las proposiciones equivalentes; se define proposiciones lógicamente equivalentes, donde se conocen y se profundizan en tablas de verdad, tautología, contradicción y proposiciones inciertas.</p>`;
+
+        $('#textCarouselAnimate').html(text);
+        
+        $('#cIzquierda').attr('onclick','carouselP1(1)');
+        $('#cDerecha').attr('onclick','carouselP1(3)');
+
+    }else if (num == 3) {
+        $('#cIzquierda').removeClass('d-none');
+        $('#cDerecha').removeClass('d-none');
+
+        var text =  `<p class="p_black justificado textAnimation">Con lo anterior se analizará validez (o no) de un argumento o reglas de inferencia y se proporciona una lista de los argumentos válidos más comúnmente utilizados.</p>`;
+
+        $('#textCarouselAnimate').html(text);
+
+        $('#cIzquierda').attr('onclick','carouselP1(2)');
+        $('#cDerecha').attr('onclick','carouselP1(4)');
+
+    }else if (num == 4) {
+        $('#cDerecha').addClass('d-none');
+
+        var text =  `<p class="p_black justificado textAnimation">Para finalizar se abordan los métodos de demostración: directo y por contradicción, en donde se recurre a dichas reglas de inferencia.</p>`;
+
+        $('#textCarouselAnimate').html(text);
+
+        $('#cIzquierda').attr('onclick','carouselP1(3)');
+
+    }
+    
+}
