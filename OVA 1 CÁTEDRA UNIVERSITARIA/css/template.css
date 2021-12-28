@@ -721,6 +721,10 @@ svg circle:nth-child(2){
   width:100% ;
 }
 
+.img-110 {
+  width: 110%;
+}
+
 .radius-1{
   border-radius: 0.5rem;
 }
@@ -997,7 +1001,7 @@ svg circle:nth-child(2){
 }
 
 .text-img-activi{
-  border-bottom: solid 4px rgb(174 28 22);;
+  border-bottom: solid 4px #540F23;
   width: 50%;
   height: 86px;
   margin: 0px;

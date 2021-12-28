@@ -232,6 +232,10 @@
   width:100% ;
 }
 
+.img-110 {
+    width: 110%;
+  }
+
 .d-flex{
     display: flex;
 }
