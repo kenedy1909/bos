@@ -1124,7 +1124,8 @@ a.control_next {
 }
 
 .recogido {
-    height: 130px;
+    padding-top: 47px;
+    height: 170px;
 }
 
 .desplegado {
@@ -1586,6 +1587,7 @@ a.control_next {
 .bannerpielslide {
     background: #FFE699;
     padding: 25px;
+    height: 485px;
     border-radius: 50px;
     box-shadow: 3px 4px 6px -1px;
 }
@@ -1728,18 +1730,18 @@ a.control_next {
 }
 
 .cordenadamesa1 {
-    top: 28px;
-    left: 16px;
+    top: 17px;
+    left: 120px;
 }
 
 .cordenadamesa2 {
-    top: 28px;
-    left: 139px;
+    top: 7px;
+    left: 300px;
 }
 
 .cordenadamesa3 {
-    top: 28px;
-    left: 260px;
+    top: 6px;
+    left: 458px;
 }
 
 .blancobanner {
