@@ -1241,7 +1241,7 @@ function ruta(num) {
                                         <p class="p_black justificado">¿Cuáles son las componentes x y y del vector en la figura? La magnitud del vector es D = 3.00 m y el ángulo es α = 45°.</p>
                                       </div>
                                       <div>
-                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto img-100">
+                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto " style="width: 82%; position: relative; left: 8%;">
                                       </div>
                                     </div>
                                   </div>
