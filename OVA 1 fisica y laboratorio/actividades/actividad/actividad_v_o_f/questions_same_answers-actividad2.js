@@ -218,10 +218,10 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
             <tbody>\
                 {% for question in form.questions %}\
                 <tr>\
-                    <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
+                    <td style="text-align: justify;">{{ question.question_txt }}  <img src="{{question.img }}"></td>\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
-                        <td >\
+                        <td style="position:relative; left:40px; top:35px;" >\
                             <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
                                 <span class="radiobtn"></span>\

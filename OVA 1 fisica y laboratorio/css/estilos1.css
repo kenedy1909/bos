@@ -164,15 +164,16 @@
 }
 
 .triangulo-abajo{
-  border-left: solid 15px transparent;
+  border-left: solid 35px transparent;
   border-top: solid 40px #FFFFFF;
-  border-right: solid 15px transparent;
+  border-right: solid 35px transparent;
 }
 
 .subir-triangulo{
   position: relative;
-  top: -4px;
+  top: 2px;
   width: 0px;
+  left: 12px;
 }
 
 .bg-azul-mc{
