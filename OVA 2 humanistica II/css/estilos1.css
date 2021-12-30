@@ -4,8 +4,8 @@
     left: 320px;
 }
 
-.radius_modal_90 {
-    border-radius: 90px;
+.radius_modal_70 {
+    border-radius: 70px;
 }
 
 
@@ -22,8 +22,7 @@
     background-image: url(../assets/img/img_ova/fondo_vertientes_moral.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: inherit;
-    height: 456px;
+    height: 380px;
     width: 900px;
 }
 
@@ -210,18 +209,19 @@
 }
 
 .content-opcion-info1 {
-    top: 210px;
-    left: -430px;
+    top: 120px;
+    left: -355px;
 }
 
 .content-opcion-info2 {
     top: 90px;
-    left: -430px;
+    left: -374px;
 }
 
 .content-opcion-info3 {
-    top: 10px;
-    left: -430px;
+    top: -4px;
+    width: 500px;
+    left: -230px;
 }
 
 .content-opcion-info4 {
