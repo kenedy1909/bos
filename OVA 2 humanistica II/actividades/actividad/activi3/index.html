@@ -17,20 +17,19 @@
     <div class="backdrop in">
         <div class="fondo">
             <div class="row principal" style="padding: 20px;">
-                <div class="col-md-4 col-sm-4 row d-flex">
-                   <img src="../img/img3/actividad_interactiva.png" class="img-activi">
-                   <div>
-                       <div class="content-text-img-activi-2" style="width: 100%;">
-                         <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
-                       </div>
-                       <p class="text-center">CUESTIONARIO</p>
-                   </div>
+                <div class="col-md-5 col-sm-5 row d-flex">
+                    <img src="../img/img3/actividad_interactiva.png" class="img-activi">
+                    <div>
+                        <div class="content-text-img-activi-2" style="width: 100%;">
+                            <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
+                        </div>
+                        <p class="text-center">CUESTIONARIO</p>
+                    </div>
                 </div>
-                <div class="col-md-8 col-sm-8 terciario" style="">
-                    <p class="info_actividad shadow" style="color: #000;">
-                        Leer el cuento <a href="https://www.literatura.us/tellez/espuma.html" target="_blank" style="color: #000;"><u>“Espuma nada más”</u></a>; en el caso de la lectura indique respecto del barbero: 
-                        <br>
-                        Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
+                <div class="col-md-7 col-sm-7 terciario">
+                    <p class="info_actividad shadow" style="color: #000; text-align: justify;">
+                        Leer el cuento <a href="https://www.literatura.us/tellez/espuma.html" target="_blank" style="color: #000;"><u>“Espuma nada más”</u></a>; en el caso de la lectura indique respecto del barbero:
+                        <br> Seleccione la respuesta correcta y presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
                     </p>
                 </div>
             </div>
@@ -45,19 +44,19 @@
                         </div>
                     </div> -->
                     <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b></spam>
+                        <p class="texto-pregunta d-flex">
+                            <spam style="width: -webkit-fill-available; text-align: center;"><b>{{pregunta.texto}} </b></spam>
                             <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                         </p>
                         <div class="respuestas-cuestionario">
                             <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
-                                <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
-                                {{respuesta.texto}}
+                                <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)"> {{respuesta.texto}}
                             </div>
                         </div>
                     </div>
                     <div class="content_triangulo_der">
-                        <div class="triangulo_der" id="siguente"  data-slide="2">
-                            
+                        <div class="triangulo_der" id="siguente" data-slide="2">
+
                         </div>
                     </div>
 
