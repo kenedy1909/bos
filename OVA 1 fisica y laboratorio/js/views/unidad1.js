@@ -1241,7 +1241,7 @@ function ruta(num) {
                                         <p class="p_black justificado">¿Cuáles son las componentes x y y del vector en la figura? La magnitud del vector es D = 3.00 m y el ángulo es α = 45°.</p>
                                       </div>
                                       <div>
-                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto img-100">
+                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto " style="width: 82%; position: relative; left: 8%;">
                                       </div>
                                     </div>
                                   </div>
@@ -1361,8 +1361,14 @@ function teorias() {
                     `;
         $("#teoria").html(texto);
     }else if (teorias_num == 5) {
-        var texto = `
-                    <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+        var texto = `<div class="col-md-12" style="text-align: center;">
+                    <span style="position: relative;top: 22px;">Dar clic en la imagen</span>
+                     </div>
+                    <div class="w-100 py-5 d-flex" style="min-height: 310px;">
+                    <div class="row center">
+                    
+                    
+                    </div>
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -130px;">
                                 <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
@@ -1372,8 +1378,9 @@ function teorias() {
                                     <p class="p_black justificado">En el caso de dos vectores 𝐴&#8407 y 𝐵&#8407 la suma o resultante seria 𝑅&#8407.</p>
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
-                                <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
+                                <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex" data-toggle="modal" data-target="#sumaV-modal">
                                     <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80 zoom_img" data-teoria="5" data-zoom-image="assets/img/img_ova/grafica 7.png">
+                                    
                                 </div>
                                 <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se puede ampliar este procedimiento para calcular la suma de cualquier cantidad de vectores. Si es la suma vectorial de entonces, las componentes son:</p>

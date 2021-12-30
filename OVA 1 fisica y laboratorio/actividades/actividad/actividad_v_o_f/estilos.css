@@ -335,3 +335,8 @@ cursor: pointer;}
   border-radius: 50%;
   background: white;
 }
+
+td:last-child{
+    position: relative;
+    left: 17px !important;
+}
