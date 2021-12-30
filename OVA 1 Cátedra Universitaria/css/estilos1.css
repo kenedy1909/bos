@@ -19,6 +19,9 @@
   color: black!important;
 }
 
+.border-bottom-0{
+  border-radius: 0.5rem 0.5rem 0 0!important;
+}
 
 .triangulo-abajo{
 	border-right: solid transparent 25px;

@@ -106,14 +106,12 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     /*slide_predeterminado();*/
 
@@ -148,6 +146,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -182,35 +181,45 @@ function controlSlides(num){
                           <a href="assets/PDF/UNIDAD 1/Estatutos UNAULA 2018.pdf.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png"> Estatutos UNAULA 2018.pdf<b class="text-cafe"><u>Ver</u></b></a>
                     </p>`;
             $('.pdfs').html(pdf);
+            $(".menu1").removeClass('d-none');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
+            $(".menu1").removeClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
+            $(".menu1").removeClass('d-none');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
+            $(".menu1").removeClass('d-none');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Influencia del movimiento estudiantil de Córdoba (1918)");
+            $(".menu1").removeClass('d-none');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Influencia del movimiento estudiantil de Córdoba (1918)");
+            $(".menu1").removeClass('d-none');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
+            $(".menu1").removeClass('d-none');
             
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
+            $(".menu1").removeClass('d-none');
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
+            $(".menu1").removeClass('d-none');
              
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
+            $(".menu1").addClass('d-none');
             tema=1;
             break;
         default:
@@ -1122,7 +1131,7 @@ function funcionalidad_3(num) {
                                             <div class="col-md-12 d-flex mt-3" style="height: 30px;">
                                                 <img src="assets/img/img_ova/grupo-personas.png" class="position-relative img-20 m-auto" style="top: -51px;">
                                             </div>
-                                            <div class="p_white text-center col-md-12 justificado">
+                                            <div class="p_white col-md-12 justificado">
                                               <p>Con el fin de exponer sus percepciones y puntos de vista acerca del proceso de fundación de la universidad Autónoma Latinoamericana. Visite y participe en el foro <b>“Fundación de la Universidad Autónoma Latinoamericana. UNAULA”.</b></p>
                                             </div>
                                         </div>
@@ -1230,7 +1239,15 @@ function funcionalidad_6(num) {
 }
 
 function funcionalidad_7(num) {
-     $(".funcionalidad_7_1, .funcionalidad_7_2, .funcionalidad_7_3, .funcionalidad_7_4, .funcionalidad_7_5, .funcionalidad_7_6").addClass('d-none');
+    $('.tooltip_example').hide();
+    $('.tooltip_example2').hide();
+    $('.tooltip_example3').hide();
+    $('.tooltip_example4').hide();
+    $('.tooltip_example5').hide();
+    $('.opaco').removeClass('opacidad');
+
+    $(".funcionalidad_7_1, .funcionalidad_7_2, .funcionalidad_7_3, .funcionalidad_7_4, .funcionalidad_7_5, .funcionalidad_7_6").addClass('d-none');
+    
     switch(parseInt(num)){
         case 1:
             $(".funcionalidad_7_1").removeClass('d-none');
