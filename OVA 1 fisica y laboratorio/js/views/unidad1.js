@@ -1520,3 +1520,47 @@ function acordeon(num1, num2) {
     }
 }
 
+function toggleBanner(num) {
+ 
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner2U1-16').removeClass('d-none');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner1U1-16').removeClass('d-none'); 
+        $('.banner3U1-16').removeClass('d-none');
+        $('.banner5U1-16').removeClass('d-none'); 
+        // $('.banner7U1-16').removeClass('d-none');  
+        // $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner1U1-16').removeClass('d-none');  
+        $('.banner4U1-16').removeClass('d-none');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner1U1-16').removeClass('d-none');  
+        $('.banner3U1-16').removeClass('d-none');  
+        $('.banner6U1-16').removeClass('d-none');  
+      break;
+      case 5:
+    
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner16U1-16').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
+}
