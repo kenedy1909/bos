@@ -115,6 +115,7 @@
 }
 
 .borde-right-azul {
+    padding: 0px 15px 0px 0px;
     border-right: #4573C4 2px solid;
 }
 
@@ -366,6 +367,11 @@
 .img-activi {
     width: 116px;
     height: 116px;
+}
+
+.img-fluid2 {
+    width: 203px;
+    height: 473px;
 }
 
 .text-img-actividad {
