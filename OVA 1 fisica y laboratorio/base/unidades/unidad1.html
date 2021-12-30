@@ -411,16 +411,16 @@
                                   <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-interval="false">
                                     <div class="carousel-inner">
                                       <div class="carousel-item active">
-                                          <div class="row">
-                                                <div class="col-md-6">
-                                                   <div class="radius-2 bg-amarillo-o py-3 pl-5 pr-4 h-100 equivalencia-content-1" style="min-height: 385px;">
+                                          <div class="row" style="height: 312px;">
+                                                <div class="col-md-6" style="height: 292px;">
+                                                   <div class="radius-2 bg-amarillo-o py-3 pl-5 pr-4 h-100 equivalencia-content-1" style="min-height: 280px;">
                                                      <div class="d-flex pr-3 h-100">
                                                       <div class="m-auto">
                                                         <p class="justificado p_black equivalencia-1">Es por eso por lo que se hace necesario contar con tablas que contengan tales equivalencias entre los diferentes sistemas de medidas y poder realizar los cálculos en unidades homogéneas. También ocurre con mucha frecuencia que la unidad misma en un sistema dado sea inadecuada ya sea por grande o por pequeña, es ahí donde entra los múltiplos y submúltiplos de la unidad, normalmente usando potencias de 10, como se muestra en las siguientes tablas.</p>
                                                         <br>
-                                                         <div class="d-flex equivalencia-1">
+                                                         <!-- <div class="d-flex equivalencia-1">
                                                            <button class="p_white btn ml-auto px-5" style="background: #1F3864;" data-toggle="modal" data-target="#equivalencia-modal">Ver tabla</button>
-                                                         </div>
+                                                         </div> -->
                                                       </div>
                                                        <div class="position-relative mt-5">
                                                          <div class="position-absolute radius-50 bg-blanco p-3 w-h-100px d-flex img-equivalencia-1" style="left: 10px;"><img src="assets/img/img_ova/altura.png" class="img-100 m-auto"></div>
@@ -430,6 +430,10 @@
                                                        </div>
                                                      </div>
                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="d-flex equivalencia-1 ver-tabla-position">
+                                                  <button class="p_white btn ml-auto px-5" style="background: #1F3864;" data-toggle="modal" data-target="#equivalencia-modal">Ver tabla</button>
                                                 </div>
                                           </div>
                                       </div>
@@ -449,7 +453,7 @@
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-2">
-                                                <div class="radius-2 bg-cafe-c py-3 pl-5 pr-4 h-100 equivalencia-content-2" style="min-height: 385px;">
+                                                <div class="radius-2 bg-cafe-c py-3 pl-5 pr-4 h-100 equivalencia-content-2" style="min-height: 280px;">
                                                   <div class="d-flex pl-3 h-100">
                                                     <div class="m-auto">
                                                       <p class="justificado p_white equivalencia-2">En el SI, por ejemplo, el metro en la unidad de longitud, pero resulta pequeño para medir el diámetro del Sol, pues seria 1.392.680.000 m, que sería lo mismo que 1.392.680 km o mejor 1,39268 Gm. En el otro sentido de la tabla de tamaños también es aplicable, por ejemplo, si algo mide 0,0000000015 m sería mejor expresarlo como 1,5 nm (que es lo mismos que 1,5x10<sup>-9</sup> m).</p>
@@ -485,7 +489,7 @@
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-3">
-                                                 <div class="radius-2 bg-otro-azul-mc py-3 pl-5 pr-4 h-100 equivalencia-content-3" style="min-height: 385px;">
+                                                 <div class="radius-2 bg-otro-azul-mc py-3 pl-5 pr-4 h-100 equivalencia-content-3" style="min-height: 280px;">
                                                    <div class="d-flex pl-3 h-100">
                                                     <div class="m-auto">
                                                       <p class="justificado p_black equivalencia-3">Como se había comentado en muchas ocasiones se debe resolver problemas en los que interviene las mismas cantidades físicas pero expresadas en diferentes sistemas de unidades y para facilitar los cálculos se requiere homogenizarlos. Para conseguir esto se puede utilizar los denominados factores de conversión. Un factor de conversión es una fracción que es igual a 1, por lo que al multiplicarlo (por eso se llama factor) por la cantidad original está en realidad no cambia físicamente solo la forma de representarla.</p>
@@ -502,7 +506,7 @@
                                           </div>
                                       </div>
                                       <div class="carousel-item">
-                                          <div class="row">
+                                          <div class="row" style="height: 312px;">
                                               <div class="col-md-1">
                                                 <a href="#carouselExampleControls2" role="button" data-slide-to="0">
                                                     <div class="radius-2 bg-amarillo-o py-3 h-100 equivalencia-content-1">                                                
@@ -526,15 +530,15 @@
                                                     </div>
                                                 </a>
                                               </div>
-                                              <div class="col-md-6" id="equivalencia-4">
-                                                 <div class="radius-2 bg-un-azul-mas py-3 pl-5 pr-4 h-100 equivalencia-content-4" style="min-height: 385px;">
+                                              <div class="col-md-6" style="height: 292px;" id="equivalencia-4">
+                                                 <div class="radius-2 bg-un-azul-mas py-3 pl-5 pr-4 h-100 equivalencia-content-4" style="min-height: 280px;">
                                                    <div class="d-flex pl-3 h-100">
                                                     <div class="m-auto">
                                                       <p class="justificado p_black equivalencia-4">De la siguiente tabla se puede ver que 1 m es igual a 3,281 pies, lo que quiere decir que (1 m / 3,281 pies) = 1. Entonces si se tiene 425,78 pies y se requiere en metros se podría simplemente multiplicar este valor por el factor adecuado en este caso (1 m / 3,281 pies) así las cosas 425,78 pies x (1 m / 3,281 pies) = 129,77 m (nótese que los pies se cancelan y solo queda en el denominador m).</p>
                                                       <br>
-                                                       <div class="d-flex equivalencia-4">
+                                                       <!-- <div class="d-flex equivalencia-4">
                                                          <button class="p_white btn ml-auto px-5" style="background: #1F3864;" data-toggle="modal" data-target="#equivalencia-modal-2">Ver tabla</button>
-                                                       </div>
+                                                       </div> -->
                                                     </div>
                                                      <div class="position-relative mt-5">
                                                        <div class="position-absolute radius-50 bg-blanco p-3 w-h-100px d-flex img-equivalencia-4" style="left: 10px;"><img src="assets/img/img_ova/regla-y-lapiz.png" class="img-100 m-auto"></div>
@@ -544,6 +548,9 @@
                                                      </div>
                                                    </div>
                                                  </div>
+                                              </div>
+                                              <div class="d-flex equivalencia-4 ver-tabla-position">
+                                                <button class="p_white btn ml-auto px-5" style="background: #1F3864;" data-toggle="modal" data-target="#equivalencia-modal-2">Ver tabla</button>
                                               </div>
                                           </div>
                                       </div>
@@ -580,7 +587,7 @@
                                                 </a>
                                               </div>
                                               <div class="col-md-6" id="equivalencia-5">
-                                                 <div class="radius-2 bg-gris-c py-3 pl-5 pr-4 h-100 equivalencia-content-5" style="min-height: 385px;">
+                                                 <div class="radius-2 bg-gris-c py-3 pl-5 pr-4 h-100 equivalencia-content-5" style="min-height: 280px;">
                                                    <div class="d-flex pl-3 h-100">
                                                     <div class="m-auto">
                                                       <p class="justificado p_black equivalencia-5">Con la información de esta tabla se puede encontrar con facilidad a cuantos m/s equivale una velocidad de 225 millas/hora, se muestra:</p>
@@ -847,7 +854,7 @@
                        <div id="unidad1-15" class="tab-pane" role="tabpanel">
                           <iframe src="actividades/actividad/actividad_v_o_f/index.html" frameborder="0"></iframe>
                        </div>
-                       <div id="unidad1-16" class="tab-pane" role="tabpanel">
+                       <div id="unidad1-16" class="tab-pane h-px" role="tabpanel" style="">
                           <div class="row">
                               <div class="col-md-12">
                                   <div class="titulo-ova">
@@ -857,10 +864,179 @@
                                   <br>
                               </div>
                           </div>
-                          <div class="row pr-4">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <p class="p_black justificado">Como se acaba de observar en el ejercicio anterior, las magnitudes de estas componentes son las longitudes de los dos lados de un triángulo rectángulo con una hipotenusa de longitud D. Debido a esto, la magnitud y la dirección de D se relacionan con sus componentes mediante las expresiones. Pase el mouse por las tarjetas para ampliar la información</p>
+                          </div>
+
+                          </div>
+                        <br>
+                          <div class="mt-2 row bannerU1-16 banner1U1-16 cursor" onclick="toggleBanner(1);">
+                            <div class="col-md-12">
+                              <div class="banner" style="background-color: #4472C4">
+                                <div class="row">
+                                  <div class="col-md-1 p-2 ml-4">
+                                    <div class="imagen_acordeon " style="">
+                                      <img src="assets/img/img_ova/neuromarketing.png" style="max-width: 90%;">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-1 pl-4" style="top:34px;">
+                                    <div class="triangulocordeon" style="">      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-md-8">
+                                    <!-- <p class="textocordeon" style="position: relative; top: 34px;">Situaciones sociales problemáticas como objeto del investigador</p> -->
+                                  </div>
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class=" mt-2 row bannerU1-16 banner2U1-16 cursor d-none" onclick="toggleBanner(2);">
+                            <div class="col-md-12">
+                              <div class="banner" style="background-color: #E39D40; height: 316px;">
+                                <div class="row">
+                                  <div class="col-md-1 p-2 ml-4">
+                                    <div class="imagen_acordeon " style="">
+                                      <img src="assets/img/img_ova/neuromarketing.png" style="max-width: 90%;">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-1 pl-4" style="top:34px;">
+                                    <div class="triangulocordeon2" style="">      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-md-8">
+                                    <p class="textocordeon" style="position: relative; top: 114px; left: -56px; color: black;">Los vectores unitarios proporcionan una notación conveniente para muchas expresiones que implican componentes de vectores. Para diferenciar estos vectores unitarios de los demás en los libros se usan diferentes notaciones para evitar confusiones. </p>
+                                  </div>
+                                  
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+
+
+                          
+                          <div class="mt-2 row bannerU1-16 banner3U1-16 cursor" onclick="toggleBanner(3);">
+                            <div class="col-md-12">
+                              <div class="banner" style="background-color: #4472C4">
+                                <div class="row">
+                                  <div class="col-md-1 p-2 ml-4">
+                                    <div class="imagen_acordeon " style="">
+                                      <img src="assets/img/img_ova/flecha-correcta.png" style="max-width: 90%;">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-1 pl-4" style="top:34px;">
+                                    <div class="triangulocordeon" style="">      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-md-8">
+                                    <!-- <p class="textocordeon" style="position: relative; top: 34px;">Situaciones sociales problemáticas como objeto del investigador</p> -->
+                                  </div>
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="mt-2 row bannerU1-16 banner4U1-16 d-none cursor" onclick="toggleBanner(2);">
+                            <div class="col-md-12">
+                              <div class="banner" style="background-color: #E39D40; height: 316px;">
+                                <div class="row">
+                                  <div class="col-md-1 p-2 ml-4">
+                                    <div class="imagen_acordeon " style="">
+                                      <img src="assets/img/img_ova/flecha-correcta" style="max-width: 90%;">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-1 pl-4" style="top:34px;">
+                                    <div class="triangulocordeon2" style="">      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-md-8">
+                                    <p class="textocordeon justificado" style="position: relative; top: 114px; color: black;">por ejemplo en algunos libros se usa el ascento circunflejo o "sombrero" (^), en otros puntos sobre el nombre en otros simplemente los vectores <b>i, j y k</b></p>
+                                        <div class="text-center mt-5 pt-5">
+                                          <img src="assets/img/img_ova/nota33.png" style="max-width: 70%;">
+                                        </div>
+                                  </div>
+                                  
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+                          
+
+
+
+
+                          <div class="mt-2 row bannerU1-16 banner5U1-16 cursor" onclick="toggleBanner(4);">
+                            <div class="col-md-12">
+                              <div class="banner" style="background-color: #4472C4">
+                                <div class="row">
+                                  <div class="col-md-1 p-2 ml-4">
+                                    <div class="imagen_acordeon" style="">
+                                      <p style="color: #FFD966;font-size: 55px;">^</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-1 pl-4" style="top:34px;">
+                                    <div class="triangulocordeon" style="">      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-md-8">
+                                    <!-- <p class="textocordeon" style="position: relative; top: 34px;">Situaciones sociales problemáticas como objeto del investigador</p> -->
+                                  </div>
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="mt-2 row bannerU1-16 banner6U1-16 d-none cursor" onclick="toggleBanner(2);">
+                            <div class="col-md-12">
+                              <div class="banner" style="background-color: #E39D40;">
+                                <div class="row">
+                                  <div class="col-md-1 p-2 ml-4">
+                                    <div class="imagen_acordeon" style="">
+                                      <p style="color: #FFD966;font-size: 55px;">^</p>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-1 pl-4" style="top:34px;">
+                                    <div class="triangulocordeon2" style="">      
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="col-md-8">
+                                    <div class="row" style="padding: 15px 15px 15px 15px;">
+                                      <div class="col-md-6">
+                                        <img src="assets/img/img_ova/texto2.png" style="max-width: 100%;">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <img src="assets/img/img_ova/nota34.png" style="max-width: 70%;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>        
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                          <!-- <div class="row pr-4">
                               <div class="col-md-12">
                                   <p class="p_black justificado">Como se acaba de observar en el ejercicio anterior, las magnitudes de estas componentes son las longitudes de los dos lados de un triángulo rectángulo con una hipotenusa de longitud D. Debido a esto, la magnitud y la dirección de D se relacionan con sus componentes mediante las expresiones. Pase el mouse por las tarjetas para ampliar la información</p>
                               </div>
+
+                             
+    
+
+
+
                               <div class="acordeon mt-3">
                                   <div class="acordeon__item">
                                     <input type="radio" name="acordeon" id="item1">
@@ -950,7 +1126,7 @@
                               <div style="height: 180px;">
                                 
                               </div>
-                          </div>
+                          </div> -->
                        </div>
                        <div id="unidad1-17" class="tab-pane" role="tabpanel">
                           <div class="row px-4">
