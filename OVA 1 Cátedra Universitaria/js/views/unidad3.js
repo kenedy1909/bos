@@ -1,5 +1,7 @@
 $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
     $( ".ov-personaje").hide();
     paso = false;
@@ -24,13 +26,11 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado();
 
@@ -99,6 +99,7 @@ function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     
     controlSlides(stepIndex);
+    actualizarprogress(stepIndex+1+17);
 
 }
 
@@ -297,14 +298,14 @@ function funcionalidad_9(num) {
     if (num == 1) {
         $(".funcionalidad_9_1").html(`
                                     <p class="p_white bg-morado p-3 text-center">Quórum:</p>
-                                    <p class="p_black justificado" style="height: 100px;overflow: auto;">Es el número mínimo de miembros que se requieren para que lo actuado en una reunión de un órgano cualquiera, sea válido.</p>
+                                    <p class="p_black justificado" style="height: 110px;overflow: auto;">Es el número mínimo de miembros que se requieren para que lo actuado en una reunión de un órgano cualquiera, sea válido.</p>
                                     `);
         $(".funcionalidad_9_1").removeClass('bg-morado');
         $(".funcionalidad_9_1").addClass('bg-blanco');
     }else if (num == 2) {
         $(".funcionalidad_9_2").html(`
                                     <p class="p_white bg-morado p-3 text-center">La mayoría:</p>
-                                    <p class="p_black justificado" style="height: 100px;overflow: auto;">Es el número de votos que se requieren para aprobar una proposición.</p>
+                                    <p class="p_black justificado" style="height: 110px;overflow: auto;">Es el número de votos que se requieren para aprobar una proposición.</p>
                                     `);
         $(".funcionalidad_9_2").removeClass('bg-morado');
         $(".funcionalidad_9_2").addClass('bg-blanco');

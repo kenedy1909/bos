@@ -1,29 +1,31 @@
-$( document ).ready(function() {
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
+$(document).ready(function() {
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
 
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
@@ -56,131 +58,132 @@ var pdf = `<div class="col-md-12">
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
+    controlSlides(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             limpiar_pantalla(4);
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Desarrollo del juicio y criterio profesional","Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             $('#video_2').attr('src', $('#video_2').attr('src'));
             break;
         case 25:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 26:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             $('#video_2').attr('src', $('#video_2').attr('src'));
             break;
         case 27:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 28:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 29:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 30:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 31:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 32:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             break;
         case 33:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística","El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
             /*$("#content-ova").load("base/unidades/unidad2.html");*/
             tema = 1;
             break;
@@ -189,10 +192,10 @@ function controlSlides(num){
     }
 }
 
-function opciones_circulares(){
+function opciones_circulares() {
     var opcion_num = $(this).data('opcion');
     $(".opcion-circular").removeClass('opcion-circular-select');
-    $(".opcion-circular"+opcion_num).addClass('opcion-circular-select');
+    $(".opcion-circular" + opcion_num).addClass('opcion-circular-select');
     var informacion = "La filosofía moral es también conocida como ética moral, esto debido a que comparte uno de sus fundamentos qué es la reflexión, ya que la filosofía o ética moral busca reflexionar desde diversos ángulos aquello que se considera moral. Haga clic en cada botón debajo de la imagen para conocer más información:";
     $("#info-1").html(informacion);
     $(".btn-opcion-info").addClass('d-none');
@@ -208,13 +211,13 @@ function opciones_circulares(){
                     `;
         $(".content-opcion-info").html(texto);
         $(".content-opcion-info").addClass('content-opcion-info1');
-    }else if (opcion_num == 2) {
+    } else if (opcion_num == 2) {
         var texto = `
                         <p class="p_black justificado">La Ética, como dimensión de la filosofía, dice Cortina reflexiona y aclara qué es lo moral y sus rasgos, la fundamenta, indaga las razones para que los hombres se comporten moralmente y da reglas para la acción que se aplican a la vida social. (2013)</p>
                     `;
         $(".content-opcion-info").html(texto);
         $(".content-opcion-info").addClass('content-opcion-info2');
-    }else if (opcion_num == 3) {
+    } else if (opcion_num == 3) {
         var texto = `
                         <div class="row">
                             <div class="col-md-9">
@@ -227,7 +230,7 @@ function opciones_circulares(){
                     `;
         $(".content-opcion-info").html(texto);
         $(".content-opcion-info").addClass('content-opcion-info3');
-    }else if (opcion_num == 4) {
+    } else if (opcion_num == 4) {
         var texto = `
                         <div class="row">
                             <div class="col-md-6 d-flex align-items-end flex-column">
@@ -246,7 +249,7 @@ function opciones_circulares(){
                     `;
         $(".content-opcion-info").html(texto);
         $(".content-opcion-info").addClass('content-opcion-info4');
-    }else if (opcion_num == 5) {
+    } else if (opcion_num == 5) {
         var texto = `
                         <div class="row">
                             <div class="col-md-12">
@@ -268,7 +271,7 @@ function opciones_circulares(){
     }
 }
 
-function opciones_parques(){
+function opciones_parques() {
     var opcion_num = $(this).data('parque');
     /*alert(opcion_num);*/
     if (opcion_num <= 6) {
@@ -278,32 +281,32 @@ function opciones_parques(){
         $(".fondo-parque").removeClass('fondo-parque-4');
         $(".fondo-parque").removeClass('fondo-parque-5');
         $(".fondo-parque").removeClass('fondo-parque-6');
-        $(".fondo-parque").addClass('fondo-parque-'+(opcion_num+1));
-        if(opcion_num == 6){
+        $(".fondo-parque").addClass('fondo-parque-' + (opcion_num + 1));
+        if (opcion_num == 6) {
             $(".btn-parque").addClass('d-none');
         }
-    } 
+    }
     $(".btn-parque").removeClass('d-block');
     $(".btn-parque").addClass('d-none');
     if (opcion_num == 1) {
         $(".btn-parque-2").removeClass('d-none');
         $(".btn-parque-2").addClass('d-block');
-    }else if (opcion_num == 2) {
+    } else if (opcion_num == 2) {
         $(".btn-parque-3").removeClass('d-none');
         $(".btn-parque-3").addClass('d-block');
-    }else if (opcion_num == 3) {
+    } else if (opcion_num == 3) {
         $(".btn-parque-4").removeClass('d-none');
         $(".btn-parque-4").addClass('d-block');
-    }else if (opcion_num == 4) {
+    } else if (opcion_num == 4) {
         $(".btn-parque-5").removeClass('d-none');
         $(".btn-parque-5").addClass('d-block');
-    }else if (opcion_num == 5) {
+    } else if (opcion_num == 5) {
         $(".btn-parque-6").removeClass('d-none');
         $(".btn-parque-6").addClass('d-block');
     }
 }
 
-function hojas_arbol(){
+function hojas_arbol() {
     var hoja_num = $(this).data('hoja');
     $(".fondo-arbol").removeClass('fondo-arbol-1');
     $(".fondo-arbol").removeClass('fondo-arbol-2');
@@ -311,34 +314,34 @@ function hojas_arbol(){
     $(".fondo-arbol").removeClass('fondo-arbol-4');
     $(".fondo-arbol").removeClass('fondo-arbol-5');
     $(".fondo-arbol").removeClass('fondo-arbol-6');
-    $(".fondo-arbol").addClass('fondo-arbol-'+hoja_num);
+    $(".fondo-arbol").addClass('fondo-arbol-' + hoja_num);
 
     if (hoja_num == 1) {
         var hoja_titulo = `La introspección`;
         var hoja_texto = `Proceso de análisis hacia la persona misma, este debe ser un proceso consciente e intencional, buscando la exploración de un aspecto particular que inquiete a la persona y permitiéndole obtener una conclusión del proceso de exploración interna.`;
         $("#arbol_titulo").html(hoja_titulo);
         $("#arbol_texto").html(hoja_texto);
-    }else if (hoja_num == 2) {
+    } else if (hoja_num == 2) {
         var hoja_titulo = `Reflexión`;
         var hoja_texto = `Abordar un tema que no es interno, pero en el que igualmente debe ser consciente y donde se busca obtener respuestas o conclusiones.`;
         $("#arbol_titulo").html(hoja_titulo);
         $("#arbol_texto").html(hoja_texto);
-    }else if (hoja_num == 3) {
+    } else if (hoja_num == 3) {
         var hoja_titulo = `Concentración`;
         var hoja_texto = `Semejante a las anteriores debe ser consciente, pero hay un objeto específico sobre el cual se dispone a enfocar la atención.`;
         $("#arbol_titulo").html(hoja_titulo);
         $("#arbol_texto").html(hoja_texto);
-    }else if (hoja_num == 4) {
+    } else if (hoja_num == 4) {
         var hoja_titulo = `Visualización`;
         var hoja_texto = `Esta puede realizarse de manera individual o la conocida como guiada, y puede ser utilizada con diversos objetivos, desde traer sentimientos de paz, tranquilidad y satisfacción, hasta generar ánimo para la obtención de una meta.`;
         $("#arbol_titulo").html(hoja_titulo);
         $("#arbol_texto").html(hoja_texto);
-    }else if (hoja_num == 5) {
+    } else if (hoja_num == 5) {
         var hoja_titulo = `Meditación`;
         var hoja_texto = `Aunque su concepto puede ser fácilmente confundido; tomando bases desde la psicología cognitivo-conductual, la meditación se trataría de una autoobservación en diferentes dimensiones (en los pensamientos, emociones, fisiológicamente, etc.) pero no se hace intervención en ellos, simplemente se observa, y se diferenciaría de los anteriores en que sería más de término pasivo, además que no busca obtener respuestas ni llegar a conclusiones.`;
         $("#arbol_titulo").html(hoja_titulo);
         $("#arbol_texto").html(hoja_texto);
-    }else if (hoja_num == 6) {
+    } else if (hoja_num == 6) {
         var hoja_titulo = `Relajación muscular`;
         var hoja_texto = `
                          Existen diversos ejercicios que permiten que una persona lleve cada músculo de su cuerpo a la relajación cuando este se encuentra tensionado, incluyendo las conocidas técnicas de respiración que no aplicarían sólo a lo físico, sino también a lo emocional y cognitivo.
@@ -353,7 +356,7 @@ function hojas_arbol(){
     }
 }
 
-function nubes(){
+function nubes() {
     $("#nube").removeClass('d-none');
     var nube_num = $(this).data('nube');
     if (nube_num == 1) {
@@ -361,17 +364,17 @@ function nubes(){
                         <p class="justificado">El autoconcepto <b><u>físico</u></b> contemplaría la habilidad y apariencia física.</p>
                    `;
         $("#nube").html(text);
-    }else if (nube_num == 2) {
+    } else if (nube_num == 2) {
         var text = `
                         <p>El <b><u>personal</u></b> abarcaría lo afectivo-emocional y ético-moral, además de la autorrealización.</p>
                    `;
         $("#nube").html(text);
-    }else if (nube_num == 3) {
+    } else if (nube_num == 3) {
         var text = `
                         <p>El auto concepto <b><u>social</u></b> sería la aceptación social percibida por la persona misma.</p>
                    `;
         $("#nube").html(text);
-    }else if (nube_num == 4) {
+    } else if (nube_num == 4) {
         var text = `
                         <p>Y por último el auto concepto <b><u>académico</u></b> sería la percepción propia del sujeto frente a sus competencias académicas.</p>
                    `;
@@ -379,7 +382,7 @@ function nubes(){
     }
 }
 
-function elementos(){
+function elementos() {
     var element_num = $(this).data('element');
     var elements = `
                     <div class="row p-0 m-0">
@@ -434,7 +437,7 @@ function elementos(){
                    `;
         $(".content_element_1").html(gif);
         $("#element-info").html(text);
-    }else if (element_num == 2) {
+    } else if (element_num == 2) {
         var gif = `
                     <img src="assets/img/img_ova/elemento_fuego.gif" class="img-100 h-100 cursor element element_2" data-element="2">
                   `;
@@ -469,7 +472,7 @@ function elementos(){
                    `;
         $(".content_element_2").html(gif);
         $("#element-info").html(text);
-    }else if (element_num == 3) {
+    } else if (element_num == 3) {
         var gif = `
                     <img src="assets/img/img_ova/elemento_agua.gif" class="img-100 h-100 cursor element element_3" data-element="3">
                   `;
@@ -503,7 +506,7 @@ function elementos(){
                    `;
         $(".content_element_3").html(gif);
         $("#element-info").html(text);
-    }else if (element_num == 4) {
+    } else if (element_num == 4) {
         var gif = `
                     <img src="assets/img/img_ova/elemento_tierra.gif" class="img-100 h-100 cursor element element_4" data-element="4">
                   `;
@@ -580,12 +583,12 @@ function limpiar_pantalla(pantallita) {
 
 
 
-function cerrar_vide_1(){
+function cerrar_vide_1() {
     var videointro = document.getElementById('video_1');
-            videointro.pause();
+    videointro.pause();
 }
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -611,5 +614,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }

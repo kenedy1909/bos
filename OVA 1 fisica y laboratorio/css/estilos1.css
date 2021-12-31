@@ -164,15 +164,16 @@
 }
 
 .triangulo-abajo{
-  border-left: solid 15px transparent;
+  border-left: solid 35px transparent;
   border-top: solid 40px #FFFFFF;
-  border-right: solid 15px transparent;
+  border-right: solid 35px transparent;
 }
 
 .subir-triangulo{
   position: relative;
-  top: -4px;
+  top: 2px;
   width: 0px;
+  left: 12px;
 }
 
 .bg-azul-mc{
@@ -457,7 +458,7 @@
 }
 
 .textotema{
-	padding-top: 25%;
+	padding-top: 17%;
 	font-size: 20px;
 	padding-left: 50px;
 	width: 60%;
@@ -509,7 +510,7 @@
   text-align: center;
   padding-top: 0px;
   position: relative;
-  top: -15px;
+  top: -8px;
   left: -10px;
 }
 .triangulocordeon{
@@ -519,6 +520,14 @@
   border-top: 16px solid transparent;
   border-bottom: 16px solid transparent;
   transform: rotate(90deg);
+}
+.triangulocordeon2{
+  width: 0;
+  height: 0;
+  border-left: 30px solid #eaeaea;
+  border-top: 16px solid transparent;
+  border-bottom: 16px solid transparent;
+  transform: rotate(270deg);
 }
 .textocordeon{
   font-weight: bold;
@@ -667,7 +676,8 @@
 }
 
 .agrandado{
-  width: 82%;
+  width: 84%;
+  z-index: 2;
 }
 .cortico{
   width: 25%;
@@ -681,13 +691,17 @@
 	display: none;
 }
 .numerito{
-  width: 30px;height: 30px;
+  width: 40px;
+  height: 40px;
   background: #965b0c;
   border-radius: 50%;
   color: white;
   font-weight: bold;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 8px;
+  position: relative;
+  top: 13px;
+  left: 10%;
 }
 
 
@@ -695,21 +709,45 @@
   background: #965B0C;
   width: 90%;
   border-radius: 20px;
-  height: 80px;
+  height: 112px;
 }
 
 .img_target{
   margin-left: 129px;
   padding-top: 12px;
+  left: 10%;
+  position: relative;
 }
 .texto-target{
-  width: 65%;
+  width: 56%;
   position: relative;
-  left: 70px;
+  left: 33%;
+  text-align: justify;
 }
 
 .content-tarjeta{
   background: #E39D40;
   border-radius: 20px;
   padding: 15px;
+}
+
+.t54{
+  position: relative;
+  top: 54px;
+}
+
+.t145{
+  position: relative;
+  top: 145px;
+}
+
+.h-px{
+  height: 850px;
+}
+
+.ver-tabla-position{
+  height: 38px;
+    position: relative;
+    top: 260px;
+    left: -158px;
 }

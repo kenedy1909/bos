@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,344 +27,369 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Main styles for this application-->
-    <link rel="stylesheet" href="css/style.css"> 
-    <link href="https://recursos.bosingenieria.com/iconos-main/css/all.min.css" rel="stylesheet"> 
-    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
-    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
-    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
-    <link href="css/template-geometria.css" rel="stylesheet"> 
-    <link href="css/template.css" rel="stylesheet"> 
-    <link href="css/estilos1.css" rel="stylesheet"> 
-    <link href="css/estilos2.css" rel="stylesheet"> 
-  </head>
-  <body class="c-app">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://recursos.bosingenieria.com/iconos-main/css/all.min.css" rel="stylesheet">
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet">
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet">
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet">
+    <link href="css/template-geometria.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/estilos1.css" rel="stylesheet">
+    <link href="css/estilos2.css" rel="stylesheet">
+</head>
+
+<body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
-      <div class="c-sidebar-brand d-lg-down-none">
-        <h4>MENU</h4>
-      </div>
-      <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
-          <i class="fad fa-home"></i> Inicio</a>
-        </li>
-        <li class="c-sidebar-nav-title">Contenido</li>
-        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
-          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>1. Desarrollo del juicio y criterio profesional</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Aspectos éticos en la formación del sujeto moral.</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="22" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> El cuidado de sí</a></li>
-          </ul>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>2. Bioética para la protección de la vida</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Bioética o ética para la vida</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="4" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> La ecosensibilidad</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="7" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> La bio contabilidad o contabilidad para la vida</a></li>
-          </ul>
-        </li>
-      </ul>
-      <div class="text-center ov-personaje">
-          <img src="assets/img/img_ova/personaje.png" class="w-75">
-      </div>
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+        <div class="c-sidebar-brand d-lg-down-none">
+            <h4>MENU</h4>
+        </div>
+        <ul class="c-sidebar-nav">
+            <li class="c-sidebar-nav-item ov-inicio link-menu">
+                <a class="c-sidebar-nav-link" href="#inicio">
+                    <i class="fad fa-home"></i> Inicio</a>
+            </li>
+            <li class="c-sidebar-nav-title">Contenido</li>
+            <li class="c-sidebar-nav-item link-menu">
+                <a class="c-sidebar-nav-link" href="#unidades">
+                    <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown menu1 d-none">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>1. Desarrollo del juicio y criterio profesional</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> Aspectos éticos en la formación del sujeto moral.</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="22" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> El cuidado de sí</a></li>
+                </ul>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown menu2 d-none">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>2. Bioética para la protección de la vida</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> Bioética o ética para la vida</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="4" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> La ecosensibilidad</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="7" onclick="actualizarprogress()"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> La bio contabilidad o contabilidad para la vida</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="text-center ov-personaje">
+            <img src="assets/img/img_ova/personaje.png" style="width: 60%;">
+        </div>
+        <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
     <div class="c-wrapper c-fixed-components">
-      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+        <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+            <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
           <i class="fas fa-bars"> </i>
-        </button><a class="c-header-brand d-lg-none" href="#">
-          <svg width="118" height="46" alt="CoreUI Logo">
+        </button>
+            <a class="c-header-brand d-lg-none" href="#">
+                <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
-        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+            <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="c-header-nav d-md-down-none">
-          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
-          <li class="c-header-nav-item ">
-            <div class="box">
-                <div class="porcent">
-                    <svg class="svg_porcent">
+            <ul class="c-header-nav d-md-down-none">
+                <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+                <li class="c-header-nav-item ">
+                    <div class="box">
+                        <div class="porcent">
+                            <svg class="svg_porcent">
                         <circle class="circle_porcent_1" x="40" cy="60" r="25"/>
                         <circle class="up circle_porcent_2" cx="40" cy="60" r="25"/>
                     </svg>
-                    <div class="number">
-                        
+                            <div class="number">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-34.png" alt="" class="icons-menu"></a>
+                </li>
+                <li class="c-header-nav-item ">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-33.png" alt="" class="icons-menu"></a>
+                </li>
+                <li class="c-header-nav-item ">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" style="width: 50px;"></a>
+                </li>
+            </ul>
+            <ul class="c-header-nav ml-auto">
+                <li class="c-header-nav-item d-md-down-none">
+                    <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+                </li>
+            </ul>
+            <div class="c-subheader px-3">
+                <!-- Breadcrumb-->
+                <ol class="breadcrumb border-0 m-0">
+                    <li class="breadcrumb-item">Menú</li>
+                    <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread3"></li>
+                    <!-- Breadcrumb Menu-->
+                </ol>
+            </div>
+        </header>
+        <div class="c-body">
+            <main class="c-main" id="content-ova">
+
+            </main>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <div class="m-0 p-0 x-modal">
+                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    </div>
+                                  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/icon-pdf.png" style="top: 5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content pdfs">
+                                            <p class="p_black">
+                                                <a href="assets/PDF/Unidad 1/actividad_complementaria1.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                                            </p>
+                                            <p class="p_black">
+                                                <a href="assets/PDF/Unidad 1/actividad_complementaria2.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                                            </p>
+                                            <p class="p_black">
+                                                <a href="assets/PDF/Unidad 1/actividad_complementaria3.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria3.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                                            </p>
+                                            <p class="p_black">
+                                                <a href="assets/PDF/Unidad 1/actividad_complementaria4.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria4.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                                            </p>
+                                            <p class="p_black">
+                                                <a href="assets/PDF/Unidad 1/actividad_complementaria5.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria5.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                                            </p>
+                                            <p class="p_black">
+                                                <a href="assets/PDF/Unidad 1/etica_como_esencia.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Etica_como_esencia.pdf <b class="text-cafe"><u>Ver</u></b></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-34.png" alt="" class="icons-menu"></a></li>
-          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-33.png" alt="" class="icons-menu"></a></li>
-          <li class="c-header-nav-item "><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu"></a></li>
-        </ul>
-        <ul class="c-header-nav ml-auto">
-          <li class="c-header-nav-item d-md-down-none">
-            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
-          </li>
-        </ul>
-        <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Menú</li>
-            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread3"></li>
-            <!-- Breadcrumb Menu-->
-          </ol>
-        </div>
-      </header>
-      <div class="c-body">
-        <main class="c-main" id="content-ova">
-          
-        </main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-33.png" style="top: 5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content p_black custom-scrollbar4">
+                                            <div class="custom-scrollbar__inner4">
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Antropocentrismo: </b> Significa centrado en el hombre, bajo esta óptica el ser humano es un fin y la naturaleza con sus especies – animal y vegetal – es un medio; el hombre
+                                                    tiene deberes indirectos con la naturaleza en la medida que proporcione bienestar humano. Mientras que, para el ecocentrismo, cortar un bosque tropical es malo porque puede causar la extinción de especies
+                                                    vegetales y animales, para el antropocentrismo es inadecuado porque puede contener curaciones potenciales para enfermedades humanas (Kortenkamp; Moore, 2001, p. 262).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Otredad: </b> Es la capacidad de tomar consciencia de la individualidad de sí propio mirándose desde una perspectiva ajena a sí mismo (Significados,2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Bioética: </b> La bioética o ética de la vida, implica una visión integradora del conocimiento, cuyo propósito trasciende la discusión por el campo disciplinar y sitúa al
+                                                    sujeto en su responsabilidad frente a sus actuaciones para con la sostenibilidad y permanencia de toda forma de vida en el planeta (Londoño, C. et al.l, 2019).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Bio contabilidad: </b> Entendida como campo del saber que contribuye a la preservación dinámica de las condiciones naturales óptimas para la conservación de la vida en condiciones
+                                                    de dignidad para todas las especies, incluyendo al ser humano como parte de estas.
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Carácter: </b> Conjunto de cualidades o circunstancias propias de una cosa, de una persona o de una colectividad, que las distingue, por su modo de ser u obrar, de las demás
+                                                    (DRAE, 2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Criterio: </b> Es la capacidad que debe tener el Contador, para que, aplicando sus conocimientos técnicos, los resultados de su experiencia y las características especiales
+                                                    de cada caso en concreto, pueda resolver la problemática que se de en la formación del criterio profesional del contador y su importancia en el campo laboral -28- plantea “seleccionando de entre diferentes
+                                                    alternativas posibles, la que más se adecue a las necesidades y deseos de quien recurre a sus servicios o asesoramiento, dentro del marco normativo, jurídico y técnico, que regulan las materias bajo
+                                                    su ámbito de incumbencia profesional.” (Tkaczek, 2009: 4)
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Convivencia: </b> Es acto de convivir. La palabra convivencia es de origen latín, formado por el prefijo “con” y, la palabra “vivencia”, que significa acto de existir de
+                                                    forma respetuosa hacia las demás personas. La convivencia necesita una pluralidad de personas (Significados,2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Contabilidad ambiental: </b> Informa la incidencia de la contaminación, pero también proponer soluciones para el adecuado manejo de los recursos naturales y el manejo medioambiental;
+                                                    en tanto esto sea posible estaremos hablando de empresas sostenibles. Un aporte de la contabilidad ambiental permitirá la valoración de cómo se asignan indiscriminadamente los recursos que cada vez son
+                                                    más escasos. También permitirá a través de métodos de análisis medir las modificaciones que el uso y abuso está produciendo en la sociedad (Agudelo y Viloria, 2009).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Persona Moral: </b> Toda aquella entidad de existencia jurídica, que está constituida por grupos u organizaciones de personas, y que es reconocida como instancia unitaria
+                                                    con capacidad para ejercer derechos y contraer obligaciones. Las personas morales no tienen existencia material o concreta; no existen como individuo sino como institución, pues son una ficción de derecho
+                                                    para dar reconocimiento a una entidad individual e independiente, que está sujeta a obligaciones y dotada de derechos, tal como una persona física(Significados,2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Ecocentrismo: </b> Predispone a los individuos a valorar la naturaleza por su propio bien, considerando que merece protección dado su valor intrínseco sin tener en cuenta
+                                                    su utilidad para los humanos. El ecocentrismo es paralelo a la orientación biosférica del valor, los individuos están más dispuestos a proteger el ambiente sin importar que eso implique su molestia y
+                                                    gastos (Casey; Scott, 2006, p. 58).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Normas morales: </b> Son definidas por modelos de conducta aceptados por la sociedad en que se vive. Se entiende por normas un conjunto de reglas, por lo tanto, las normas
+                                                    morales son regulaciones sobre la conducta del hombre en una determinada sociedad. (significados.com, 2021)
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Juicio profesional: </b> El profesional de la contaduría tiene que decidir sobre cómo aplicará la norma contable, atendiendo las situaciones específicas, buscando mostrar
+                                                    una información financiera confiable, veraz que presente la mejor posición financiera de la organización (DRAE, 2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- La socio contabilidad: </b> Busca medir la riqueza social; y la contabilidad económica se centra en la valoración de la riqueza económica (Mejía & Ceballos et al., 2016:
+                                                    220).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Libre albedrío: </b> Es la potestad que el ser humano tiene de obrar según considere y elija. Esto significa que las personas tienen naturalmente libertad para tomar sus
+                                                    propias decisiones, sin estar sujetas a presiones, necesidades o limitaciones, o a una predeterminación divina (Significados,2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Conducta: </b> Tiene como base biológica la conducta refleja que indica las formas y métodos para la ejecución de funciones vitales de cada organismo. De ahí, la conducta
+                                                    es moldeada por el entorno y por los procesos internos de los estímulos hasta crear un cierto tipo de comportamiento (Significados,2021).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Otredad: </b> Permite la visualización del sujeto periférico desde ópticas distintas, reconoce la ampliación del radio conceptual y la generación de nuevos planteamientos,
+                                                    desde una voz que adquiere competencias para resignificar con un pensamiento antroposocial, que reconoce la existencia de diferentes niveles de la realidad regido por diferentes lógicas (Sosa, 2009).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Personalidad: </b> Conjunto de pensamientos, sentimientos y comportamientos profundamente incorporados, que persisten en el tiempo y nos hacen únicos e irrepetibles (Rodríguez,2015).
+                                                </p>
+                                                <br>
+                                                <p class="p_black justificado">
+                                                    <b class="font-weight-bold">- Individuo: </b> Designamos aquello que es individual, que no puede ser dividido. Se usa para referirse al ser humano, a la persona, considerada como unidad, independiente
+                                                    de las demás. La palabra, como tal, proviene del latín individŭus, que significa ‘indivisible’ (Significados,2021).
+                                                </p>
+                                            </div>
+                                            <div class="custom-scrollbar__bar4">
+                                                <div class="custom-scrollbar__knob4 cursor">
+                                                    <p class="text-center linea_scroll4">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/icon-pdf.png" style="top: 5px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content pdfs">
-                              <p class="p_black">
-                                    <a href="assets/PDF/Unidad 1/actividad_complementaria1.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_black">
-                                    <a href="assets/PDF/Unidad 1/actividad_complementaria2.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria2.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_black">
-                                    <a href="assets/PDF/Unidad 1/actividad_complementaria3.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria3.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_black">
-                                    <a href="assets/PDF/Unidad 1/actividad_complementaria4.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria4.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_black">
-                                    <a href="assets/PDF/Unidad 1/actividad_complementaria5.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria5.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                              </p>
-                              <p class="p_black">
-                                    <a href="assets/PDF/Unidad 1/etica_como_esencia.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Etica_como_esencia.pdf    <b class="text-cafe"><u>Ver</u></b></a>
-                              </p>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <div class="m-0 p-0 x-modal">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                     </div>
                                   </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-33.png" style="top: 5px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content p_black custom-scrollbar4">
-                            <div class="custom-scrollbar__inner4">
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Antropocentrismo: </b>
-                                Significa centrado en el hombre, bajo esta óptica el ser humano es un fin y la naturaleza con sus especies – animal y vegetal – es un medio; el hombre tiene deberes indirectos con la naturaleza en la medida que proporcione bienestar humano. Mientras que, para el ecocentrismo, cortar un bosque tropical es malo porque puede causar la extinción de especies vegetales y animales, para el antropocentrismo es inadecuado porque puede contener curaciones potenciales para enfermedades humanas (Kortenkamp; Moore, 2001, p. 262).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Otredad: </b>
-                                Es la capacidad de tomar consciencia de la individualidad de sí propio mirándose desde una perspectiva ajena a sí mismo (Significados,2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Bioética: </b>
-                                La bioética o ética de la vida, implica una visión integradora del conocimiento, cuyo propósito trasciende la discusión por el campo disciplinar y sitúa al sujeto en su responsabilidad frente a sus actuaciones para con la sostenibilidad y permanencia de toda forma de vida en el planeta (Londoño, C. et al.l, 2019).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Bio contabilidad: </b>
-                                Entendida como campo del saber que contribuye a la preservación dinámica de las condiciones naturales óptimas para la conservación de la vida en condiciones de dignidad para todas las especies, incluyendo al ser humano como parte de estas.
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Carácter: </b>
-                                Conjunto de cualidades o circunstancias propias de una cosa, de una persona o de una colectividad, que las distingue, por su modo de ser u obrar, de las demás (DRAE, 2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Criterio: </b>
-                                Es la capacidad que debe tener el Contador, para que, aplicando sus conocimientos técnicos, los resultados de su experiencia y las características especiales de cada caso en concreto, pueda resolver la problemática que se de en la formación del criterio profesional del contador y su importancia en el campo laboral -28- plantea “seleccionando de entre diferentes alternativas posibles, la que más se adecue a las necesidades y deseos de quien recurre a sus servicios o asesoramiento, dentro del marco normativo, jurídico y técnico, que regulan las materias bajo su ámbito de incumbencia profesional.” (Tkaczek, 2009: 4)
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Convivencia: </b>
-                                Es acto de convivir. La palabra convivencia es de origen latín, formado por el prefijo “con” y, la palabra “vivencia”, que significa acto de existir de forma respetuosa hacia las demás personas. La convivencia necesita una pluralidad de personas  (Significados,2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Contabilidad ambiental: </b>
-                                Informa la incidencia de la contaminación, pero también proponer soluciones para el adecuado manejo de los recursos naturales y el manejo medioambiental; en tanto esto sea posible estaremos hablando de empresas sostenibles. Un aporte de la contabilidad ambiental permitirá la valoración de cómo se asignan indiscriminadamente los recursos que cada vez son más escasos. También permitirá a través de métodos de análisis medir las modificaciones que el uso y abuso está produciendo en la sociedad (Agudelo y Viloria, 2009).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Persona Moral: </b>
-                                Toda aquella entidad de existencia jurídica, que está constituida por grupos u organizaciones de personas, y que es reconocida como instancia unitaria con capacidad para ejercer derechos y contraer obligaciones. Las personas morales no tienen existencia material o concreta; no existen como individuo sino como institución, pues son una ficción de derecho para dar reconocimiento a una entidad individual e independiente, que está sujeta a obligaciones y dotada de derechos, tal como una persona física(Significados,2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Ecocentrismo: </b>
-                                Predispone a los individuos a valorar la naturaleza por su propio bien, considerando que merece protección dado su valor intrínseco sin tener en cuenta su utilidad para los humanos. El ecocentrismo es paralelo a la orientación biosférica del valor, los individuos están más dispuestos a proteger el ambiente sin importar que eso implique su molestia y gastos (Casey; Scott, 2006, p. 58).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Normas morales: </b>
-                                Son definidas por modelos de conducta aceptados por la sociedad en que se vive. Se entiende por normas un conjunto de reglas, por lo tanto, las normas morales son regulaciones sobre la conducta del hombre en una determinada sociedad. (significados.com, 2021)
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Juicio profesional: </b>
-                                El profesional de la contaduría tiene que decidir sobre cómo aplicará la norma contable, atendiendo las situaciones específicas, buscando mostrar una información financiera confiable, veraz que presente la mejor posición financiera de la organización (DRAE, 2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- La socio contabilidad: </b>
-                                Busca medir la riqueza social; y la contabilidad económica se centra en la valoración de la riqueza económica (Mejía & Ceballos et al., 2016: 220).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Libre albedrío: </b>
-                                Es la potestad que el ser humano tiene de obrar según considere y elija. Esto significa que las personas tienen naturalmente libertad para tomar sus propias decisiones, sin estar sujetas a presiones, necesidades o limitaciones, o a una predeterminación divina (Significados,2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Conducta: </b>
-                                Tiene como base biológica la conducta refleja que indica las formas y métodos para la ejecución de funciones vitales de cada organismo. De ahí, la conducta es moldeada por el entorno y por los procesos internos de los estímulos hasta crear un cierto tipo de comportamiento (Significados,2021).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Otredad: </b>
-                                Permite la visualización del sujeto periférico desde ópticas distintas, reconoce la ampliación del radio conceptual y la generación de nuevos planteamientos, desde una voz que adquiere competencias para resignificar con un pensamiento antroposocial, que reconoce la existencia de diferentes niveles de la realidad regido por diferentes lógicas (Sosa, 2009).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Personalidad: </b>
-                                Conjunto de pensamientos, sentimientos y comportamientos profundamente incorporados, que persisten en el tiempo y nos hacen únicos e irrepetibles (Rodríguez,2015).
-                              </p>
-                              <br>
-                              <p class="p_black justificado"> 
-                                <b class="font-weight-bold">- Individuo: </b>
-                                Designamos aquello que es individual, que no puede ser dividido. Se usa para referirse al ser humano, a la persona, considerada como unidad, independiente de las demás. La palabra, como tal, proviene del latín individŭus, que significa ‘indivisible’ (Significados,2021).
-                              </p>
-                            </div>
-                            <div class="custom-scrollbar__bar4">
-                              <div class="custom-scrollbar__knob4 cursor"><p class="text-center linea_scroll4">-</p></div>
-                            </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <div class="m-0 p-0 x-modal">
-                                      <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior img-70" src="assets/img/img_template/bibliografia.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content p_black">
+                                            <p class="justificado">Londoño, C. et al. capítulo de libro , "LA RESIGNIFICACIÓN DEL SUJETO COMO CAMINO A LA BIOÉTICA CONTABLE" La ética como esencia en el ejercicio profesional de la Contaduría Pública, sus devenires y prácticas
+                                                sociales . En: Venezuela ISBN: 978-958-5495-34-0 ed: Universidad De Los Andes Mérida , v. , p.32 - 47 ,2020</p>
+                                            <p class="justificado">Unaula. PEI. Documento 2020. Disponible en línea en: https://www.unaula.edu.co/node/28</p>
+                                            <br>
+                                            <p class="justificado">Leonard, A. Video: La historia de las cosas. En lìnea en: https://www.youtube.com/watch?v=lrz8FH4PQPU</p>
+                                            <p class="justificado">Mejía Soto, E.(2019).Reportes organizacionales no financieros y biocontabilidad: superando la contabilidad ambiental. Revista Visión Contable, 20, 97-120. doi: 10.24142/rvc.n20a31</p>
+                                            <br>
+                                            <p class="justificado">"Normas morales". En: Significados.com. Disponible en: https://www.significados.com/normas-morales/ Consultado: 22 de mayo de 2021, 10:26 am.</p>
+                                        </div>
                                     </div>
-                                  </button>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior img-70" src="assets/img/img_template/bibliografia.png">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content p_black">
-                              <p class="justificado">Londoño, C. et al. capítulo de libro , "LA RESIGNIFICACIÓN DEL SUJETO COMO CAMINO A LA BIOÉTICA CONTABLE" La ética como esencia en el ejercicio profesional de la Contaduría Pública, sus devenires y prácticas sociales . En: Venezuela  ISBN: 978-958-5495-34-0  ed: Universidad De Los Andes Mérida , v. , p.32 - 47  ,2020</p>
-                              <p class="justificado">Unaula. PEI. Documento 2020. Disponible en línea en: https://www.unaula.edu.co/node/28</p>
-                              <br>
-                              <p class="justificado">Leonard, A. Video: La historia de las cosas. En lìnea en: https://www.youtube.com/watch?v=lrz8FH4PQPU</p>
-                              <p class="justificado">Mejía Soto, E.(2019).Reportes organizacionales no financieros y biocontabilidad: superando la contabilidad ambiental. Revista Visión Contable, 20, 97-120. doi: 10.24142/rvc.n20a31</p>
-                              <br>
-                              <p class="justificado">"Normas morales". En: Significados.com. Disponible en: https://www.significados.com/normas-morales/ Consultado: 22 de mayo de 2021, 10:26 am.</p>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <footer class="c-footer">
+                <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+                <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
+            </footer>
         </div>
-        <footer class="c-footer">
-          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
-          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos</a></div>
-        </footer>
-      </div>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="js/coreiu.bundle.min.js"></script>
@@ -375,12 +401,13 @@
     <script src="js/SCORM_API_wrapper.js"></script>
     <script src="assets/componentes/flipster/jquery.flipster.min.js"></script>
     <script src="assets/componentes/percircle/percircle.js"></script>
-    <script src="js/jquery.elevatezoom.js"></script> 
+    <script src="js/jquery.elevatezoom.js"></script>
     <script src="assets/componentes/jquery-smartwizard-master/src/js/jquery.smartWizard.min.js"></script>
     <!--[if IE]><!-->
     <!--<![endif]-->
     <!-- Plugins and scripts required by this view-->
-    
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

@@ -934,38 +934,38 @@ function aviones(num) {
     switch(parseInt(num)){
         case 1:
             $("#avion").removeClass('fondo-1');
-            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").removeClass('mx-auto mt-auto t145');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-2');
             $("#avion").attr('onclick','aviones(2)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
             $(".avion-content").html(`<p class="p_black justificado">Algunas cantidades físicas, como el tiempo, la temperatura, la masa y la densidad se pueden describir completamente con un solo número y una unidad. No obstante, en física muchas otras cantidades importantes están asociadas con una dirección y no pueden describirse con un solo número.</p>`);
             break;
         case 2:
             $("#avion").removeClass('fondo-1');
-            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").removeClass('mx-auto mt-auto t145');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-3');
             $("#avion").attr('onclick','aviones(3)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
-            $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
+            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
+            $(".avion-content").html(`<p class="p_black justificado t54"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
             break;
         case 3:
             $("#avion").removeClass('fondo-1');
-            $(".avion-content").removeClass('mx-auto mt-auto');
+            $(".avion-content").removeClass('mx-auto mt-auto t145');
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-4');
             $("#avion").attr('onclick','aviones(4)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
-            $(".avion-content").html(`<p class="p_black justificado"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
+            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
+            $(".avion-content").html(`<p class="p_black justificado t54"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
             break;
         case 4:
             $("#avion").removeClass('fondo-1');
             $(".avion-content").removeClass('m-auto');
-            $(".avion-content").addClass('mx-auto mt-auto');
+            $(".avion-content").addClass('mx-auto t145');
             $("#avion").addClass('fondo-5');
             $("#avion").attr('onclick','aviones(5)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
             $(".avion-content").html(`
                                         <p class="p_black justificado">Cuando una cantidad física se describe con un solo número, se dice que es una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>escalar.</b></span> En cambio, una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>vectorial</b></span> incluye tanto una magnitud (la cual indica “qué tanto” o “qué tan grande”) como una dirección en el espacio. </p>
                                         <br>
@@ -974,11 +974,11 @@ function aviones(num) {
             break;
         case 5:
             $("#avion").removeClass('fondo-1');
-            $(".avion-content").removeClass('m-auto mx-auto');
-            $(".avion-content").addClass('ml-4 mt-auto');
+            $(".avion-content").removeClass('m-auto mx-auto t145');
+            $(".avion-content").addClass('ml-4 ');
             $("#avion").addClass('fondo-6');
             $("#avion").attr('onclick','aviones(6)');
-            $("#avion").attr('style','width: 780px; height: 475px;');
+            $("#avion").attr('style','width: 780px; height: 475px; position: relative; left: 6%;');
             $(".avion-content").html(`
                                         <div class="d-flex">
                                           <img src="assets/img/img_ova/profesor (3).png" class="img-35 m-auto">
@@ -994,7 +994,7 @@ function aviones(num) {
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-1');
             $("#avion").attr('onclick','aviones(1)');
-            $("#avion").attr('style','width: 700px; height: 475px;');
+            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
             $(".avion-content").html(`
                                     <div class="d-flex">
                                       <img src="assets/img/img_ova/profesor (2).png" class="img-50 m-auto">
@@ -1241,7 +1241,7 @@ function ruta(num) {
                                         <p class="p_black justificado">¿Cuáles son las componentes x y y del vector en la figura? La magnitud del vector es D = 3.00 m y el ángulo es α = 45°.</p>
                                       </div>
                                       <div>
-                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto img-100">
+                                        <img src="assets/img/img_ova/grafica 4.png" class="m-auto " style="width: 82%; position: relative; left: 8%;">
                                       </div>
                                     </div>
                                   </div>
@@ -1361,8 +1361,14 @@ function teorias() {
                     `;
         $("#teoria").html(texto);
     }else if (teorias_num == 5) {
-        var texto = `
-                    <div class="w-100 py-5 d-flex" style="min-height: 350px;">
+        var texto = `<div class="col-md-12" style="text-align: center;">
+                    <span style="position: relative;top: 22px;">Dar clic en la imagen</span>
+                     </div>
+                    <div class="w-100 py-5 d-flex" style="min-height: 310px;">
+                    <div class="row center">
+                    
+                    
+                    </div>
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -130px;">
                                 <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
@@ -1372,8 +1378,9 @@ function teorias() {
                                     <p class="p_black justificado">En el caso de dos vectores 𝐴&#8407 y 𝐵&#8407 la suma o resultante seria 𝑅&#8407.</p>
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
-                                <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex">
+                                <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex" data-toggle="modal" data-target="#sumaV-modal">
                                     <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80 zoom_img" data-teoria="5" data-zoom-image="assets/img/img_ova/grafica 7.png">
+                                    
                                 </div>
                                 <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se puede ampliar este procedimiento para calcular la suma de cualquier cantidad de vectores. Si es la suma vectorial de entonces, las componentes son:</p>
@@ -1513,3 +1520,47 @@ function acordeon(num1, num2) {
     }
 }
 
+function toggleBanner(num) {
+ 
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner2U1-16').removeClass('d-none');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner1U1-16').removeClass('d-none'); 
+        $('.banner3U1-16').removeClass('d-none');
+        $('.banner5U1-16').removeClass('d-none'); 
+        // $('.banner7U1-16').removeClass('d-none');  
+        // $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner1U1-16').removeClass('d-none');  
+        $('.banner4U1-16').removeClass('d-none');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner1U1-16').removeClass('d-none');  
+        $('.banner3U1-16').removeClass('d-none');  
+        $('.banner6U1-16').removeClass('d-none');  
+      break;
+      case 5:
+    
+        $('.bannerU1-16').addClass('d-none');
+        $('.banner16U1-16').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
+}
