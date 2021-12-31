@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
     
     console.log(tema);
     
@@ -158,7 +162,7 @@ $( document ).ready(function() {
     var slider_num = "";
     /*funcion_vanvas();
     funcion_canvas2();*/
-    /*setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");*/
+    setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
     /*slide_predeterminado();*/
 
     /*$(".t_1").on('click', cambiacontenido2(1));
@@ -212,44 +216,44 @@ function controlSlides(num){
     slider_num = "";
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             slideCount = $('#slider-3 ul li').length;
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
@@ -279,7 +283,7 @@ function controlSlides(num){
             }  
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             slideCount = $('#slider-4 ul li').length;
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();
@@ -310,7 +314,7 @@ function controlSlides(num){
             }  
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -335,19 +339,19 @@ function controlSlides(num){
             }  
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         case 15:
             
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
             break;
         
         default:

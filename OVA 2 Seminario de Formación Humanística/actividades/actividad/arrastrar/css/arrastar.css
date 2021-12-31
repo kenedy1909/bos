@@ -33,22 +33,25 @@
     width: 140px;
     text-align: center;
     padding: 4px 1px 6px 15px;
+    border-radius: 15px;
 }
 #dragtarget2{
     cursor: pointer;
     background: #ab751d;
     color: white;
-    height: 30px;
+    height: 60px;
     width: 140px;
     padding: 4px 1px 6px 15px;
+    border-radius: 15px;
 }
 #dragtarget3{
     cursor: pointer;
     background: #ab751d;
     color: white;
-    height: 30px;
+    height: 60px;
     width: 140px;
     padding: 4px 1px 6px 15px;
+    border-radius: 15px;
 }
 #dragtarget4{
     cursor: pointer;
@@ -58,6 +61,7 @@
     height: 30px;
     width: 125px;
     padding: 4px 1px 6px 15px;
+    border-radius: 15px;
 }
 #dragtarget5{
     cursor: pointer;
@@ -67,6 +71,7 @@
     height: 30px;
     width: 125px;
     padding: 4px 1px 6px 15px;
+    
 }
 #dragtarget6{
     cursor: pointer;

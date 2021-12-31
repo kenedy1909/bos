@@ -1,6 +1,8 @@
 $( document ).ready(function() {
     /*slide_predeterminado();*/
     // console.log(tema);
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -16,6 +18,9 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid); 
+    
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -89,7 +94,7 @@ $( document ).ready(function() {
     $(".p13").on("click", function() {
         $(".globo").show();
     })
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","");
 
     var knob = "";
     var bar = "";
@@ -149,7 +154,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","");
             dragging = "";
             diff = "";
             newTop = "";
@@ -160,7 +165,7 @@ function controlSlides(num){
             scroll();
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La importancia de la formación humanística","");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","");
             dragging = "";
             diff = "";
             newTop = "";
@@ -171,14 +176,14 @@ function controlSlides(num){
             scroll();
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");            
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo neurofisiológico");            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo neurofisiológico");
             
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo cognitivo: inteligencia y creatividad");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -203,17 +208,17 @@ function controlSlides(num){
             }  
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo cognitivo: inteligencia y creatividad");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             break;
 
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo psicológico, afectivo y social.");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Introducción al curso","La importancia de la formación humanística");
+            setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo psicológico, afectivo y social.");
             
             dragging = "";
             diff = "";
@@ -223,9 +228,12 @@ function controlSlides(num){
             bar = document.querySelector('.custom-scrollbar__bar11');
             container = document.querySelector('.custom-scrollbar__inner11');    
             scroll();
-        
+            break;
+        case 18: 
+        setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano ","Desarrollo moral, ético y de valores");
         default:
             break;
+
     }
 }
 

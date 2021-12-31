@@ -147,7 +147,7 @@ input {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 3px #ab751d;
 }
 
 .img-activi{
@@ -156,11 +156,11 @@ input {
 
 .text-img-actividad{
     font-size: 20px;
-    color: #005B8B;
+    color: #ab751d;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #ab751d;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -168,7 +168,7 @@ input {
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #ab751d;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -193,7 +193,7 @@ input {
 }
 
 .content-text-activi-2{
-    border: solid 2px #79CAF3;
-    border-radius: 20px;
+    border: solid 2px #ab751d;
+    border-radius: 20px; 
     padding: 30px;
 }
