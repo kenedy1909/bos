@@ -269,8 +269,8 @@ div {
 }
 
 .drop4{
-  top: 283px;
-  left: 145px;
+  top: 285px;
+  left: 146px;
   height: 93px;
   width: 72px;
 }
@@ -337,7 +337,7 @@ div {
 }
 
 .img-actividad{
-  width: 100px;
+  width: 80px;
 }
 
 .cursor{
@@ -376,4 +376,8 @@ div {
 
 .h-55px-i{
   height: 55px !important;
+}
+
+.d-none{
+  display: none;
 }

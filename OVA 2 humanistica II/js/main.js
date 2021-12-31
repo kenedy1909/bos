@@ -38,7 +38,6 @@ $( document ).ready(function() {
     bar = document.querySelector('.custom-scrollbar__bar4');
     container = document.querySelector('.custom-scrollbar__inner4');
     scroll();
-    alert("Para una mejor experiencia de usuario en el objeto virtual de aprendizaje le recomendamos utilizar los navegadores Chrome o Edge.");
 });
 
 var total = 200;
