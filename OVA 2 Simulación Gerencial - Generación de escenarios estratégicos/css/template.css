@@ -253,16 +253,43 @@ iframe{
   margin: -70px auto 0;
   overflow: hidden;
   width: 150px;
-  background: white;
+  background: #999999;
+  border: 4px solid white;
 }
-.card .user img{
+/* .card .user img{
   background: none;
   display: block;
   margin: 5px auto;
   max-width: 60%;
   position: relative;
   top: 25px;
+} */
+
+.card .user img{
+  background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 75%;
+    position: relative;
+    top: 7px;
 }
+.bg-azul{
+  background-color: #393A72;
+  height: 124px;
+    width: 124px;
+    border-radius: 50%;
+    left: 10px;
+    position: relative;
+    top: 3%;
+}
+/* .img-U1{
+  background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 75%;
+    position: relative;
+    top: 7px;
+} */
 
 .card .user .menu_superior{
   background: none;
@@ -996,4 +1023,14 @@ svg circle:nth-child(2){
 }
 .img-100{
   width: 100%;
+}
+
+.w-70px{
+  width: 70px;
+}
+.w-80px{
+  width: 80px;
+}
+.w-50px{
+  width: 50px;
 }
