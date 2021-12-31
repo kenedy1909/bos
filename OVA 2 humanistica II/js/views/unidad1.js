@@ -40,6 +40,9 @@ $(document).ready(function() {
     console.log(tema);
     slide_link(tema);
 });
+function modal_iframe() {
+    alert();
+}
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
                         <a href="assets/PDF/Unidad 1/actividad_complementaria1.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="text-cafe"><u>Ver</u></b></a>
