@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="overflow: hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -13,15 +13,15 @@
 </head>
 
 <body>
-    <div class="backdrop in">
+    <div class="backdrop in" style="overflow: hidden;">
         <div class="row px-3">
           <div class="col-md-12 p-2">
-            <div class="row border-bottom-actividad" style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em;">
+            <div class="row" style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em;">
                 <div style="display: flex;">
                     
                   <div class="col-md-5 row d-flex" style="width: 45%;">
-                     <img src="../img/img1/actividad_general.png" class="img-activi">
-                     <div>
+                     <img src="../img/img1/actividad_interactiva.png" class="img-activi" style="margin: auto;">
+                     <div style="margin: auto;">
                          <div class="content-text-img-activi">
                            <b class="text-img-actividad" style="color: #78201A;">ACTIVIDAD INTERACTIVA</b>
                          </div>
@@ -29,10 +29,14 @@
                      </div>
                   </div>
                   <div class="col-md-7 shadow content-tarjeta" style="width: 55%; margin-left: 1em;">
-                      <p class="pb-2 p_black" style="font-size: 13px; color: black;">Las siguientes preguntas se responden con base en el título “necesidades en el modelo de desarrollo Neoliberal” (pág. 10 -11). <br><br>
+                      <p class="pb-2 p_black" style="font-size: 13px; color: black; text-align: justify;">Para este cuestionario específico, se trabajará el capítulo titulado “Las necesidades y visiones del desarrollo” el cual se encuentra entre la página 5 y la 15 (tener en cuenta la numeración del PDF no la del texto).  <br><br>
 
                       Seleccione la respuesta correcta y al finalizar presione la opción "Calificar" para obtener el puntaje de esta actividad.
                       </p>
+                      <!-- <p class="pb-2 p_black" style="font-size: 13px; color: black;">Las siguientes preguntas se responden con base en el título “necesidades en el modelo de desarrollo Neoliberal” (pág. 10 -11). <br><br>
+
+                      Seleccione la respuesta correcta y al finalizar presione la opción "Calificar" para obtener el puntaje de esta actividad.
+                      </p> -->
                   </div>
                 </div>
 
@@ -40,12 +44,12 @@
                   <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                       <div class="preguntas">
 
-                          <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                              <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available;">{{pregunta.texto}} </spam>
-                                  <spam class="img_questionario{{$index+1}}"></spam>
+                          <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}" style="min-height: 550px;">
+                              <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available;" class="titulo-text">{{pregunta.texto}} </spam>
+                                  <spam class="img_questionario{{$index+1}} titulo-img"></spam>
                               </p>
                               <div class="respuestas-cuestionario">
-                                  <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                  <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}" style="text-align: justify;">
                                       <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
                                       {{respuesta.texto}}
                                   </div>
