@@ -109,6 +109,9 @@ iframe{
 .color-text{
   color: var(--bg-color);
 }
+.color-subtitulo{
+  color: var(--bg-color-dark);
+}
 
 .titulo-ova{
   background-image: url(../assets/img/img_ova/titulo_ova.png);
@@ -241,7 +244,7 @@ iframe{
   height: 105px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
-  background: #811111;
+  background: var(--bg-color-dark);
 }
 .card .cover img{
   width: 100%;

@@ -130,7 +130,7 @@
 	background: #EDCC66;
 	border-radius: 50%;
 	text-align: center;
-	border: solid #C69D18;
+	border: 4px solid #C69D18;
 	box-shadow: 3px 2px 5px -1px;
 }
 
@@ -502,4 +502,21 @@
 .globo4{
 	top: -480px;
 	left: -164px;
+}
+
+.pr-leftU1-1{
+	position: relative;
+    left: -9px;
+}
+
+.text-black{
+	color: black;
+}
+
+.img-titulo{
+	position: relative;
+    top: -90px;
+    left: 5px;
+	width: 79px;
+    height: 79px;
 }
