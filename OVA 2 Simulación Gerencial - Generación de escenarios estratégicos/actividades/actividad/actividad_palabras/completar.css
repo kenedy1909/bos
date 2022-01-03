@@ -253,6 +253,7 @@ label {
   position: relative;
   top: -60px;
   text-align: center;
+  border: 3px solid white;
 }
 
 .info_actividad{
@@ -264,4 +265,9 @@ label {
 
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+.top-20px{
+	position: relative;
+    top: -20px;
 }
