@@ -152,6 +152,7 @@ function controlSlides(num) {
             break;
         case 6:
             $(".menu1").addClass('d-none');
+            $(".ov-personaje").show();
             setMigaja("Unidades de aprendizaje", "1. El diseño metodológico de la investigación ", "Tipos de diseño de investigación");
             tema = 1;
             

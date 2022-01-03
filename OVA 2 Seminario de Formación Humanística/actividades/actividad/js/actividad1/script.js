@@ -431,6 +431,7 @@ function init_recurso_1() {
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
         this.iniciar();
+
         //console.clear();
     }
 
@@ -439,6 +440,7 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
+        location.reload();
         ahorcado.reiniciar();
     });
 
