@@ -34,12 +34,14 @@ $(document).ready(function() {
     /*slide_predeterminado();*/
     $(".opcion-circular").on('click', opciones_circulares);
     /*$(".btn-parque").on('click', opciones_parques);
-*/    $(".hoja").on('click', hojas_arbol);
+     */
+    $(".hoja").on('click', hojas_arbol);
     $(".opcion_nube").on('click', nubes);
     $(".element").on('click', elementos);
     console.log(tema);
     slide_link(tema);
 });
+
 function modal_iframe() {
     alert();
 }
@@ -381,7 +383,7 @@ function hojas_arbol() {
         var hoja_titulo = `Relajación muscular`;
         var hoja_texto = `
                          Existen diversos ejercicios que permiten que una persona lleve cada músculo de su cuerpo a la relajación cuando este se encuentra tensionado, incluyendo las conocidas técnicas de respiración que no aplicarían sólo a lo físico, sino también a lo emocional y cognitivo.
-                         <div class="d-flex">
+                         <div class="d-flex mt-5">
                              <div class="btn-leer-bombillo pl-2 width-fit m-auto p_white" data-toggle="modal" data-target="#modal-bombillo3">
                                  <p>Ventajas   <img src="assets/img/img_ova/bombilla.gif" alt="" class="w-40px"></p>
                              </div>

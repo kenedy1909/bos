@@ -29,8 +29,8 @@
 .fondo-arbol {
     background-repeat: no-repeat;
     background-size: cover;
-    height: 461px;
-    width: 300px;
+    height: 400px;
+    width: 240px;
 }
 
 .fondo-arbol-0 {
@@ -474,8 +474,8 @@
     position: relative;
     width: 87px;
     height: 90px;
-    top: 144px;
-    left: 145px;
+    top: 125px;
+    left: 126px;
     border-top-left-radius: 104px;
     border-bottom-right-radius: 118px;
     cursor: pointer;
@@ -485,8 +485,8 @@
     position: relative;
     width: 86px;
     height: 100px;
-    top: 43px;
-    left: 57px;
+    top: 35px;
+    left: 39px;
     border-top-right-radius: 104px;
     border-bottom-left-radius: 118px;
     cursor: pointer;
@@ -496,8 +496,8 @@
     position: relative;
     width: 57px;
     height: 66px;
-    top: -111px;
-    left: 145px;
+    top: -131px;
+    left: 126px;
     border-top-left-radius: 104px;
     border-bottom-right-radius: 118px;
     cursor: pointer;
@@ -507,8 +507,8 @@
     position: relative;
     width: 55px;
     height: 59px;
-    top: -170px;
-    left: 88px;
+    top: -184px;
+    left: 68px;
     border-top-right-radius: 104px;
     border-bottom-left-radius: 118px;
     cursor: pointer;
@@ -518,8 +518,8 @@
     position: relative;
     width: 43px;
     height: 43px;
-    top: -292px;
-    left: 144px;
+    top: -297px;
+    left: 126px;
     border-top-left-radius: 104px;
     border-bottom-right-radius: 118px;
     cursor: pointer;
@@ -530,7 +530,7 @@
     width: 42px;
     height: 44px;
     top: -336px;
-    left: 103px;
+    left: 82px;
     border-top-right-radius: 104px;
     border-bottom-left-radius: 118px;
     cursor: pointer;
