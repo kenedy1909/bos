@@ -3,6 +3,12 @@ $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
+
+    
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
+
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
