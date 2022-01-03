@@ -4,6 +4,9 @@ $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     setMigaja("Unidades de aprendizaje", "La ciencia: concepto y definición", ">");
 
+    star_uni = 1;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     $('#smartwizard').smartWizard({
         loader: "show",
         theme: 'arrows',
@@ -91,22 +94,38 @@ function controlSlides(num) {
             knob = document.querySelector('.custom-scrollbar__knob');
             bar = document.querySelector('.custom-scrollbar__bar');
             container = document.querySelector('.custom-scrollbar__inner');
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
+
             /*scroll();*/
             break;
         case 2:
             $('.pasos').removeClass('efectos');
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Método hipotético");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Actividad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             dragging = "";
             diff = "";
             newTop = "";
@@ -117,10 +136,19 @@ function controlSlides(num) {
             scroll();
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición", "Función social de la universidad");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje", ">", ">");
+            setMigaja("Unidades de aprendizaje", "", "");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
+            
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
 
             tema = 1;
             break;

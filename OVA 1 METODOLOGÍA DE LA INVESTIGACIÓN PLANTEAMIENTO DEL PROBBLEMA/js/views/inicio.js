@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+    $(".menu1").addClass('d-none');
+    $(".menu2").addClass('d-none');
+    $(".menu3").addClass('d-none');
+    $(".menu4").addClass('d-none');
+
     setMigaja("Inicio", "", "");
     $(".c-sidebar-nav > li").show();
     $(".c-sidebar-nav > .ov-inicio").show();
