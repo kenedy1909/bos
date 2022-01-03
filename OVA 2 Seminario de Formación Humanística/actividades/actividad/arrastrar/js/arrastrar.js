@@ -47,22 +47,22 @@ function calificar(){
 	});
 	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'uno' || res1[i] == 'dos'|| res4[i] == 'tres'){
+	  if (res1[i] == 'uno'){
 	    puntaje = puntaje + 25;
 	  }
 	}
 	for (var i = 0; i < res2.length; i++){
-	  if (res2[i] == 'dos' || res2[i] == 'tres' ){
+	  if (res2[i] == 'dos' ){
 	    puntaje = puntaje + 25;
 	  }
 	}
 	for (var i = 0; i < res3.length; i++){
-	  if (res3[i] == 'uno' || res3[i] == 'tres'){
+	  if (res3[i] == 'tres'){
 	    puntaje = puntaje + 25;
 	  }
 	}
 	for (var i = 0; i < res4.length; i++){
-	  if (res4[i] == 'uno' || res4[i] == 'dos' || res4[i] == 'tres'){
+	  if (res4[i] == 'cuatro'){
 	    puntaje = puntaje + 25;
 	  }
 	}
