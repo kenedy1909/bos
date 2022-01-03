@@ -238,7 +238,7 @@ iframe{
   width: 100%;
   height: auto;
   border-radius: 22px;
-  background: #DA2316;
+  background: #E3464F;
 }
 .card .cover{
   height: 105px;
@@ -790,7 +790,7 @@ svg circle:nth-child(2){
 }
 
 .x-modal{
-  background: #DA2316;
+  background: #E3464F;
   border-radius: 50%;
   width: 50px;
   height: 50px;
