@@ -1087,7 +1087,7 @@ a.control_next {
  .creciente, .creciente2, .creciente3, .creciente4, .creciente5, .creciente6{
 	background: #78201A;
     height: 180px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px;
     position: absolute;
     top: 0px;
     left: 15px;

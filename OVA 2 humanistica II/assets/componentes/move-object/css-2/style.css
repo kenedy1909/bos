@@ -228,43 +228,43 @@ div {
 }
 
 .drop1 {
-    top: 154px;
-    left: 117px;
+    top: 14px;
+    left: 72px;
     height: 29px;
     width: 24px;
 }
 
 .drop2 {
-    top: 191px;
-    left: 145px;
+    top: 50px;
+    left: 100px;
     height: 31px;
     width: 21px;
 }
 
 .drop3 {
-    top: 226px;
-    left: 74px;
+    top: 85px;
+    left: 29px;
     height: 34px;
     width: 22px;
 }
 
 .drop4 {
-    top: 264px;
-    left: 48px;
+    top: 123px;
+    left: 3px;
     height: 32px;
     width: 29px;
 }
 
 .drop5 {
-    top: 299px;
-    left: 123px;
+    top: 158px;
+    left: 78px;
     height: 31px;
     width: 22px;
 }
 
 .drop6 {
-    top: 332px;
-    left: 192px;
+    top: 190px;
+    left: 146px;
     height: 30px;
     width: 26px;
 }
@@ -476,4 +476,8 @@ div {
 
 .menos-t-30px {
     top: -30px;
+}
+
+.d-none{
+    display: none;
 }
