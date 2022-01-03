@@ -14,16 +14,16 @@
 <div id="app" class="" @keyup.escape="selected = undefined">
   <div class="table-container" style="display:none;" v-show="true">
     <div class="d-flex principal" style="padding: 20px;">
-        <div class="col-md-5 col-sm-5 d-flex" style="width: 45%;">
+        <div class="col-md-5 col-sm-5 d-flex" style="width: 30%;">
            <img src="./img/actividad_interactiva.png" class="img-activi">
            <div>
                <div class="content-text-img-activi-2" style="width: 80%;">
                  <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                </div>
-               <p class="text-center">CRUCIGRAMA</p>
+               <p class="text-center font-italic font-weight-bold" style="color: lightgrey; font-size: 15px;">CRUCIGRAMA</p>
            </div>
         </div>
-        <div class="col-md-7 col-sm-7 terciario" style="width: 65%;">
+        <div class="col-md-7 col-sm-7 terciario" style="width: 70%;">
             <div class="info_actividad shadow" style="background: #DDEAF6;">  
                 <p style="color: #000;">Complete el crucigrama con palabras respectivas de acuerdo con las pistas brindadas.</p>
                 <p style="color: #000;">Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
@@ -31,7 +31,7 @@
         </div>
     </div>
         <div class="col-md-12 col-sm-12">
-            <p class="text-center p-4 p_black"><i>oprimir cada número para ver una pista</i></p>
+            <p class="text-center p-4 p_black font-weight-bold"><i>oprimir cada número para ver una pista</i></p>
         </div>
     <!-- <div class="mensaje" v-if="mensaje !== undefined">
       <div class="content">{{mensaje}}</div>

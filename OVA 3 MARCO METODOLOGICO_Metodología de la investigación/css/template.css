@@ -26,13 +26,19 @@ iframe {
 
 .divcerrar {
     position: relative;
-    top: 40px;
+    top:  40px;
     left: 20px;
 }
 
 .divcerrar2 {
     position: relative;
     top: -22px;
+    left: 20px;
+}
+
+.divcerrar3 {
+    position: relative;
+    top: -25px;
     left: 20px;
 }
 
@@ -1091,7 +1097,7 @@ card flip*/
     background: none;
     display: block;
     margin: 5px auto;
-    max-width: 75%;
+    max-width: 80%;
     position: relative;
     top: 10px;
 }
