@@ -165,11 +165,11 @@ jQuery(document).ready(function($) {
           $("[data-value="+parseInt(imageValue)+"]").css('visibility', 'hidden');
 
           if (parseInt(imageValue) == 1) {
-            $(".text-drag1").css({
+            /*$(".text-drag1").css({
               'top':'282px',
               'z-index':'100',
               'left':'93px'
-            });
+            });*/
             $(".drop1 img").css('visibility', 'visible');
             var texto = `
                           <div class="p-3 col-md-12">
@@ -177,40 +177,61 @@ jQuery(document).ready(function($) {
                           </div>
                         `;
             $("#info").html(texto);
+            $(".drop2").removeClass('d-none');
           }else if (parseInt(imageValue) == 2) {
-            $(".text-drag2").css({
+            /*$(".text-drag2").css({
               'top':'255px',
               'z-index':'100',
               'left':'157px'
-            });
+            });*/
             $(".drop2 img").css('visibility', 'visible');
             var texto = `
+                          <div class="p-3 col-md-12">
+                            <p class="p_black justificado">Desde una visión más enfocada en los derechos de tercera generación (colectivos y del ambiente) una de las principales exponentes es Adela Cortina, quien advierte ya no solo la existencia del ser humano como ser social, sino de las organizaciones como sistemas sociales vivos que intercambian con diferentes grupos de interés motivaciones y formas de vida.</p>
+                          </div>
                           <div class="p-3 col-md-12">
                             <p class="p_black justificado">En tal sentido, pensar el sujeto inserto en estas dinámicas socio-culturales implica dotarlo de elementos que permitan establecer juicios y criterios para discernir las rutas de actuación correctas.</p>
                           </div>
                         `;
             $("#info").html(texto);
+            $(".drop3").removeClass('d-none');
           }else if (parseInt(imageValue) == 3) {
-            $(".text-drag3").css({
+            /*$(".text-drag3").css({
               'top':'336px',
               'z-index':'100',
               'left':'116px'
-            });
+            });*/
             $(".drop3 img").css('visibility', 'visible');
             var texto = `
+                          <div class="p-3 col-md-12">
+                            <p class="p_black justificado">Desde una visión más enfocada en los derechos de tercera generación (colectivos y del ambiente) una de las principales exponentes es Adela Cortina, quien advierte ya no solo la existencia del ser humano como ser social, sino de las organizaciones como sistemas sociales vivos que intercambian con diferentes grupos de interés motivaciones y formas de vida.</p>
+                          </div>
+                          <div class="p-3 col-md-12">
+                            <p class="p_black justificado">En tal sentido, pensar el sujeto inserto en estas dinámicas socio-culturales implica dotarlo de elementos que permitan establecer juicios y criterios para discernir las rutas de actuación correctas.</p>
+                          </div>
                           <div class="p-3 d-flex justify-content-center">
                             <img src="../img/nota3_12.png" alt="" class="img-90">
                           </div>
                         `;
             $("#info").html(texto);
+            $(".drop4").removeClass('d-none');
           }else if (parseInt(imageValue) == 4) {
-            $(".text-drag4").css({
+            /*$(".text-drag4").css({
               'top':'319px',
               'z-index':'100',
               'left':'173px'
-            });
+            });*/
             $(".drop4 img").css('visibility', 'visible');
             var texto = `
+                          <div class="p-3 col-md-12">
+                            <p class="p_black justificado">Desde una visión más enfocada en los derechos de tercera generación (colectivos y del ambiente) una de las principales exponentes es Adela Cortina, quien advierte ya no solo la existencia del ser humano como ser social, sino de las organizaciones como sistemas sociales vivos que intercambian con diferentes grupos de interés motivaciones y formas de vida.</p>
+                          </div>
+                          <div class="p-3 col-md-12">
+                            <p class="p_black justificado">En tal sentido, pensar el sujeto inserto en estas dinámicas socio-culturales implica dotarlo de elementos que permitan establecer juicios y criterios para discernir las rutas de actuación correctas.</p>
+                          </div>
+                          <div class="p-3 d-flex justify-content-center">
+                            <img src="../img/nota3_12.png" alt="" class="img-90">
+                          </div>
                           <div class="p-3 col-md-12">
                             <p class="p_black justificado">Es precisamente en este eje en que se va a desarrollar la práctica de sí mismo, lo que constituye algo evidentemente capital. El individuo siempre está a tiempo de corregirse, incluso si no lo hizo en su época de juventud, siempre existen medios para volver al buen camino, aún si se está endurecido; siempre la persona puede corregirse a sí misma para llegar a convertirse en lo que se debería ser y no se ha sido nunca (p. 27).</p>
                           </div>

@@ -1,5 +1,9 @@
 $( document ).ready(function() {
     
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
     console.log(tema);
     
     $('#smartwizard').smartWizard({
@@ -96,47 +100,47 @@ function controlSlides(num){
     slider_num = "";
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura "," La ética humanística");
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             scroll_set(5);
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             $("#content").html('');
             $("#img_cont").html('');
             scroll_set(5);
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             scroll_set(5);
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Formación de la sociedad moderna");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Formación de la sociedad moderna");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Promesas y crisis de la modernidad");
             slideCount = $('#slider-3 ul li').length;
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
@@ -144,7 +148,7 @@ function controlSlides(num){
             slider_all();
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Promesas y crisis de la modernidad");
             slideCount = $('#slider-4 ul li').length;
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();
@@ -152,7 +156,7 @@ function controlSlides(num){
             slider_4();
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Promesas y crisis de la modernidad");
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -177,13 +181,13 @@ function controlSlides(num){
             }  
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","La postmodernidad");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","La postmodernidad");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","La postmodernidad");
             slideCount = $('#slider-5 ul li').length;
             slideWidth = $('#slider-5 ul li').width();
             slideHeight = $('#slider-5 ul li').height();
@@ -191,16 +195,16 @@ function controlSlides(num){
             slider_5();
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","La postmodernidad");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","La postmodernidad");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","");
             break;
         default:
             break;

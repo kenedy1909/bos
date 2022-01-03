@@ -418,7 +418,7 @@ function init_recurso_1() {
                 });*/
                 var puntaje = 100;
 
-                $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin-top: 5%">');
                 $('.puntaje').text(puntaje+"%");
                 $('.mensaje').text("¡Felicitaciones!");
                 $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');

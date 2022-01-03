@@ -167,38 +167,43 @@ jQuery(document).ready(function($) {
           if (parseInt(imageValue) == 1) {
             $(".drop1 img").css('visibility', 'visible');
             var texto = `
-                            <p class="p_white text-center">Eje del dilema (foco)</p>
+                            <p class="p_white text-center m-auto">Eje del dilema (foco)</p>
                         `;
             $("#info").html(texto);
+            $(".drop2").removeClass('d-none');
           }else if (parseInt(imageValue) == 2) {
             $(".drop2 img").css('visibility', 'visible');
             var texto = `
-                            <p class="p_white text-center">Personaje central</p>
+                            <p class="p_white text-center m-auto">Personaje central</p>
                        `;
             $("#info").html(texto);
+            $(".drop3").removeClass('d-none');
           }else if (parseInt(imageValue) == 3) {
             $(".drop3 img").css('visibility', 'visible');
             var texto = `
-                            <p class="p_white text-center">Posibilidad real de escoger</p>
+                            <p class="p_white text-center m-auto">Posibilidad real de escoger</p>
                         `;
             $("#info").html(texto);
+            $(".drop4").removeClass('d-none');
           }else if (parseInt(imageValue) == 4) {
             $(".drop4 img").css('visibility', 'visible');
             var texto = `
-                            <p class="p_white text-center">Pregunta central</p>
+                            <p class="p_white text-center m-auto">Pregunta central</p>
                         `;
             $("#info").html(texto);
+            $(".drop5").removeClass('d-none');
           }else if (parseInt(imageValue) == 5) {
             $(".drop5 img").css('visibility', 'visible');
             var texto = `
-                            <p class="p_white text-center">Conflicto moral o valorativo</p>
+                            <p class="p_white text-center m-auto">Conflicto moral o valorativo</p>
                         `;
             $("#info").html(texto);
+            $(".drop6").removeClass('d-none');
           }else if (parseInt(imageValue) == 6) {
             $(".drop6 img").css('visibility', 'visible');
             var texto = `
-                            <p class="p_white text-center mr-3 mt-auto mb-auto">Análisis del dilema</p>
-                            <div id="btn-1" class="w-40px"></div>
+                            <p class="p_white text-center m-auto mr-3 mt-auto mb-auto">Análisis del dilema</p>
+                            <div id="btn-1" class="w-40px m-auto"></div>
                         `;
             var btn_texto =`<div class="d-flex align-items-center w-40px h-40px bg-btn-plus rounded-circle btn-gif cursor"><img src="../img/img-2/plus.png" data-toggle="modal" data-target="#modal-actividad" width="40px" alt="" class="btn-gif"></div>`;
             $("#info").html(texto);

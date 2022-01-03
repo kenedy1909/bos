@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	var img1 = `
-				<img class="img_questionario" src="../../../assets/img/img_ova/sabermas.webp">
+				<div class="img_questionario"><img class="img_quest" src="../../../assets/img/img_ova/sabermas.webp"></div>
 				`;
 	var img2 = `
-				<img class="img_questionario" src="../../../assets/img/img_ova/sabermas.webp">
+				<div class="img_questionario"><img class="img_quest" src="../../../assets/img/img_ova/sabermas.webp"></div>
 				`;
 	$(".img_questionario1").html(img1);
 	$(".img_questionario2").html(img2);

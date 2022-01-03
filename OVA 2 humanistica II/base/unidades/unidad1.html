@@ -249,12 +249,12 @@
                                 </div>
                                 <div class="col-md-12 col-sm-12 d-flex justify-content-center">
                                     <div class="fondo-parque fondo-parque-1 p-3">
-                                        <div class="btn-parque btn-parque-1 d-block" data-parque="1" data-toggle="modal" data-target="#modal-parque-1"></div>
-                                        <div class="btn-parque btn-parque-2 d-none" data-parque="2" data-toggle="modal" data-target="#modal-parque-2"></div>
-                                        <div class="btn-parque btn-parque-3 d-none" data-parque="3" data-toggle="modal" data-target="#modal-parque-3"></div>
-                                        <div class="btn-parque btn-parque-4 d-none" data-parque="4" data-toggle="modal" data-target="#modal-parque-4"></div>
-                                        <div class="btn-parque btn-parque-5 d-none" data-parque="5" data-toggle="modal" data-target="#modal-parque-5"></div>
-                                        <div class="btn-parque btn-parque-6 d-none" data-parque="6" data-toggle="modal" data-target="#modal-parque-6"></div>
+                                        <div class="btn-parque btn-parque-1 d-block" onclick="opciones_parques(1)" data-toggle="modal" data-target="#modal-parque-1"></div>
+                                        <div class="btn-parque btn-parque-2 d-none" onclick="opciones_parques(2)" data-toggle="modal" data-target="#modal-parque-2"></div>
+                                        <div class="btn-parque btn-parque-3 d-none" onclick="opciones_parques(3)" data-toggle="modal" data-target="#modal-parque-3"></div>
+                                        <div class="btn-parque btn-parque-4 d-none" onclick="opciones_parques(4)" data-toggle="modal" data-target="#modal-parque-4"></div>
+                                        <div class="btn-parque btn-parque-5 d-none" onclick="opciones_parques(5)" data-toggle="modal" data-target="#modal-parque-5"></div>
+                                        <div class="btn-parque btn-parque-6 d-none" onclick="opciones_parques(6)" data-toggle="modal" data-target="#modal-parque-6"></div>
                                     </div>
                                 </div>
                             </div>
@@ -356,18 +356,18 @@
                                 <div class="col-md-6 col-sm-6">
                                     <iframe src="assets/componentes/move-object/mover-2/index.html" frameborder="0" class="height-iframe-1"></iframe>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-6 col-sm-6 p-0">
                                     <div class="borde-left-v-o pl-2">
                                         <p class="p_black justificado">Igualmente, Meza (2008) citando a Barrios, señala que es posible hablar de dos dilemas morales, a saber:</p>
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-6 pt-4">
+                                        <div class="row" style="left: 10px; position: relative;">
+                                            <div class="col-md-6 col-sm-6 pt-4 px-1">
                                                 <div class="p-3 bg-verde-c">
                                                     <p class="p_white text-center bg-azul-o radius-8 titulo-elevado p-2"><i><b>Hipotéticos</b></i> <img src="assets/img/img_ova/unicorn.png" alt="" width="50px"></p>
                                                     <p class="p_black justificado min-h-160px">Se muestran dilemas de forma abstracta y general y se dificulta posicionarlos con claridad en lo tangible o en lo real que vivencia la persona, indica Meza que pueden extraerse de la literatura, medios
                                                         de comunicación o de la imaginación, y aunque no son de la realidad, el sujeto puede asemejarlo a su entorno o a personas cercanas. En un ámbito educativo aportan al razonamiento y la habilidad discursiva.</p>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-sm-6 pt-4">
+                                            <div class="col-md-6 col-sm-6 pt-4 px-1">
                                                 <div class="p-3 bg-verde-c">
                                                     <p class="p_white text-center bg-azul-o radius-8 titulo-elevado p-2"><i><b>Reales</b></i> <img src="assets/img/img_ova/horse.png" alt="" width="50px"></p>
                                                     <p class="p_black justificado min-h-160px">Se muestran como aspectos de la cotidianidad fundamentados en la realidad del sujeto y problemas concretos de su día a día. En un ámbito educativo este tipo de dilemas aportan a la participación activa
@@ -1825,4 +1825,5 @@
 </div>
 
 <script src="js/views/unidad1.js"></script>
+<script src="assets/componentes/move-object/js-2/script.js"></script>
 <script src="js/views/unidades.js"></script>

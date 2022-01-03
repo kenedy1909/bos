@@ -254,7 +254,7 @@
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 3px #ab751d;
 }
 
 .img-activi{
@@ -263,19 +263,19 @@
 
 .text-img-actividad{
     font-size: 20px;
-    color: #005B8B;
+    color: #ab751d;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
-  height: 86px;
+  border-bottom: solid 3px #ab751d;
+  height: 96px;
   margin: 0px;
   padding-top: 45px;
   text-align: center;
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #ab751d;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -310,4 +310,8 @@
 }
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+.p_black {
+	color: black;
 }

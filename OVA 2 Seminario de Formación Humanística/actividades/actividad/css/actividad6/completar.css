@@ -214,7 +214,7 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 185px;
+    height: 100px;
 }
 
 .seleccionable{
@@ -311,7 +311,7 @@ label {
 }
 .linea_blue{
     height: 5px; 
-    background: #004c6d;
+    background: #ab751d;
 }
 
 /*slide*/
@@ -465,7 +465,7 @@ label {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 3px #ab751d;
 }
 
 .img-activi{
@@ -474,11 +474,11 @@ label {
 
 .text-img-actividad{
     font-size: 20px;
-    color: #005B8B;
+    color: #ab751d;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #ab751d;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -486,7 +486,7 @@ label {
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #ab751d;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -511,7 +511,7 @@ label {
 }
 
 .content-text-activi-2{
-    border: solid 2px #79CAF3;
+    border: solid 2px #ab751d;
     border-radius: 20px;
     padding: 30px;
 }

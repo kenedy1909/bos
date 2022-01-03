@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+    $('.menu1').removeClass('d-none');
+    $('.menu1').addClass('c-show');
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -62,6 +64,7 @@ function slide_link(num){
 
 function controlSlides(num){
     switch (parseInt(num)) {
+        
         case 1:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
             

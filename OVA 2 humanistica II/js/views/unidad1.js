@@ -33,13 +33,16 @@ $(document).ready(function() {
 
     /*slide_predeterminado();*/
     $(".opcion-circular").on('click', opciones_circulares);
-    $(".btn-parque").on('click', opciones_parques);
-    $(".hoja").on('click', hojas_arbol);
+    /*$(".btn-parque").on('click', opciones_parques);
+*/    $(".hoja").on('click', hojas_arbol);
     $(".opcion_nube").on('click', nubes);
     $(".element").on('click', elementos);
     console.log(tema);
     slide_link(tema);
 });
+function modal_iframe() {
+    alert();
+}
 var pdf = `<div class="col-md-12">
                   <p class="p_black">
                         <a href="assets/PDF/Unidad 1/actividad_complementaria1.pdf" target="_blank"> <img class="img-circle mr-3 menu_superior w-40px" src="assets/img/img_template/pdf.png"> Actividad_complementaria1.pdf    <b class="text-cafe"><u>Ver</u></b></a>
@@ -271,38 +274,71 @@ function opciones_circulares() {
     }
 }
 
-function opciones_parques() {
-    var opcion_num = $(this).data('parque');
+function opciones_parques(num) {
+    /*var opcion_num = $(this).data('parque');*/
     /*alert(opcion_num);*/
-    if (opcion_num <= 6) {
+    if (num < 6) {
         $(".fondo-parque").removeClass('fondo-parque-1');
         $(".fondo-parque").removeClass('fondo-parque-2');
         $(".fondo-parque").removeClass('fondo-parque-3');
         $(".fondo-parque").removeClass('fondo-parque-4');
         $(".fondo-parque").removeClass('fondo-parque-5');
         $(".fondo-parque").removeClass('fondo-parque-6');
-        $(".fondo-parque").addClass('fondo-parque-' + (opcion_num + 1));
-        if (opcion_num == 6) {
-            $(".btn-parque").addClass('d-none');
+        $(".fondo-parque").addClass('fondo-parque-' + (num + 1));
+        if (num == 6) {
+            $(".fondo-parque").addClass('fondo-parque-1');
         }
     }
     $(".btn-parque").removeClass('d-block');
     $(".btn-parque").addClass('d-none');
-    if (opcion_num == 1) {
+    if (num == 1) {
+        $(".btn-parque-1").removeClass('d-none');
+        $(".btn-parque-1").addClass('d-block');
         $(".btn-parque-2").removeClass('d-none');
         $(".btn-parque-2").addClass('d-block');
-    } else if (opcion_num == 2) {
+    } else if (num == 2) {
+        $(".btn-parque-1").removeClass('d-none');
+        $(".btn-parque-1").addClass('d-block');
+        $(".btn-parque-2").removeClass('d-none');
+        $(".btn-parque-2").addClass('d-block');
         $(".btn-parque-3").removeClass('d-none');
         $(".btn-parque-3").addClass('d-block');
-    } else if (opcion_num == 3) {
+    } else if (num == 3) {
+        $(".btn-parque-1").removeClass('d-none');
+        $(".btn-parque-1").addClass('d-block');
+        $(".btn-parque-2").removeClass('d-none');
+        $(".btn-parque-2").addClass('d-block');
+        $(".btn-parque-3").removeClass('d-none');
+        $(".btn-parque-3").addClass('d-block');
         $(".btn-parque-4").removeClass('d-none');
         $(".btn-parque-4").addClass('d-block');
-    } else if (opcion_num == 4) {
+    } else if (num == 4) {
+        $(".btn-parque-1").removeClass('d-none');
+        $(".btn-parque-1").addClass('d-block');
+        $(".btn-parque-2").removeClass('d-none');
+        $(".btn-parque-2").addClass('d-block');
+        $(".btn-parque-3").removeClass('d-none');
+        $(".btn-parque-3").addClass('d-block');
+        $(".btn-parque-4").removeClass('d-none');
+        $(".btn-parque-4").addClass('d-block');
         $(".btn-parque-5").removeClass('d-none');
         $(".btn-parque-5").addClass('d-block');
-    } else if (opcion_num == 5) {
+    } else if (num == 5) {
+        $(".btn-parque-1").removeClass('d-none');
+        $(".btn-parque-1").addClass('d-block');
+        $(".btn-parque-2").removeClass('d-none');
+        $(".btn-parque-2").addClass('d-block');
+        $(".btn-parque-3").removeClass('d-none');
+        $(".btn-parque-3").addClass('d-block');
+        $(".btn-parque-4").removeClass('d-none');
+        $(".btn-parque-4").addClass('d-block');
+        $(".btn-parque-5").removeClass('d-none');
+        $(".btn-parque-5").addClass('d-block');
         $(".btn-parque-6").removeClass('d-none');
         $(".btn-parque-6").addClass('d-block');
+    } else if (num == 6) {
+        $(".btn-parque-1").removeClass('d-none');
+        $(".btn-parque-1").addClass('d-block');
     }
 }
 
