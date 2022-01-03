@@ -688,10 +688,10 @@ function teorias(num) {
                   <div class="custom-scrollbar__inner16">
                     <div class="row">
                       <div class="col-md-12">
-                          <p class="color-title"><b>Marco legal</b></p>
+                          <p class="color-title"><b>Inspeccionar los datos</b></p>
                       </div>
                       <div class="col-md-12 p-3" id="info-circle">
-                          <p class="text-black pb-4 border-b-mm-o justificado">Como su nombre lo indica, el marco legal hace referencia al conjunto de leyes, normas y reglamentos que le dan validez a tu investigación. Por lo que, llegados a este punto, lo que se debe hacer es una selección juiciosa y rigurosa de aquellos artículos que tengan de una u otra forma relación con nuestro tema de investigación, posterior a esto, se deben referenciar de manera correcta en nuestro marco legal.</p>
+                          <p class="text-black pb-4 border-b-mm-o justificado">En este paso, se inicia el análisis de los datos. Dicho análisis depende de tres elementos: a) Nivel de medición de las variables. b) Forma como se hayan formulado las hipótesis o suposiciones. c) Interés del investigador. </p>
                       </div>
                       <div class="col-md-12 d-flex">
                           <div class="m-auto w-80px d-flex justify-content-evenly text-black">
@@ -716,8 +716,8 @@ function teorias(num) {
                   <div class="h-75 px-2 py-5 mr-4 d-flex justify-content-center align-items-center menos-margin-25 border-10 bg-color-3">
                     <p class="h5"><b id="indiceLT">4</b></p>
                   </div>
-                  <div class="content custom-scrollbar19 mr-3">
-                    <div class="custom-scrollbar__inner19">
+                  <div class="content custom-scrollbar19 mr-3 mt-5">
+                    <div class="custom-scrollbar__inner19" style="margin-top: -8%">
                       <p class="justificado text-black">
                         <b class="color-title">Valorar la seguridad y eficacia alcanzada por la herramienta de medición</b>
                         <br> Determinamos las puntuaciones o valores obtenidos por los casos (participantes. 
