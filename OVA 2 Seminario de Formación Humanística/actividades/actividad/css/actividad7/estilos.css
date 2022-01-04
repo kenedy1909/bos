@@ -320,3 +320,47 @@ cursor: pointer;}
 th {
     text-align: center;
 }
+
+
+.optciones{
+    display: inline-block;
+    width: 60%;
+}
+
+.tranparente{
+    background: transparent;
+    border: none;
+}
+
+
+.principal_modal{
+  height: 355px;
+  border-radius: 40px;
+  background: #E0A546;
+}
+
+.cabeza{
+    background: #8B6229;
+    height: 100px;
+    border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 150px;
+  width: 150px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
+  border: solid white;
+}
+
+.boton_inc{
+    background: #ab751d;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
