@@ -1,6 +1,8 @@
 $( document ).ready(function() {
     /*slide_predeterminado();*/
     // console.log(tema);
+    $( ".ov-personaje").hide();
+    $( ".menu1").removeClass('d-none');
     
     $('#smartwizard').smartWizard({
         loader:"show",
