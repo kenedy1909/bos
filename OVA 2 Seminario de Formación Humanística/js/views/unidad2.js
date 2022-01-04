@@ -130,6 +130,7 @@ $( document ).ready(function() {
     $(".p10inicio").on("click", function() {
         $(".pantalla3").hide();
         $(".pantalla4").hide();
+        $(".pantalla5").hide();
         $(".btninicio").show();
     })
 
