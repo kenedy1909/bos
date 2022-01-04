@@ -892,9 +892,9 @@ svg circle:nth-child(2){
 .cardRosa{
   background-image: url(../assets/img/img_ova/Nota.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%;
-  /*height: 400px;*/
+  height: 500px;
   padding: 70px 65px;
 }
 
