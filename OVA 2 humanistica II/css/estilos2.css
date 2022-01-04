@@ -444,7 +444,7 @@ p, button{
 .content-text-img-activi-2 {
     border-bottom: solid 3px #A48E39;
     width: 50%;
-    height: 66px;
+    height: 60px;
     margin: 0px;
     padding-top: 20px;
     text-align: center;
@@ -467,6 +467,7 @@ p, button{
 }
 
 .content-text-activi-2 {
+    background: white;
     border: solid 2px #79CAF3;
     border-radius: 20px;
     padding: 30px;
@@ -491,10 +492,11 @@ p, button{
 .content-card-azul {
     border-radius: 1em;
     border: solid 2px #2599BD;
-    padding: 10px;
+    padding: 4px;
 }
 
 .bg-blanco {
+    height: 200px;
     background: #FFFFFF;
 }
 

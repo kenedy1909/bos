@@ -3,6 +3,9 @@ $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
 
+    star_uni = 2;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
     console.log(tema);
     /*slide_link2(tema);*/
     $('#smartwizard').smartWizard({
@@ -76,6 +79,9 @@ function controlSlides2(num) {
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 1:
             var pdf = `<div class="col-md-12">
@@ -84,17 +90,32 @@ function controlSlides2(num) {
             </p>             
                             </div>`;
             $('.pdfs').html(pdf);
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 2:
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "2. Conjuntos", "Definición, notación, determinación y clasificación de conjuntos");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
 
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "2. Conjuntos", "Definición, notación, determinación y clasificación de conjuntos");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
 
             tema = 1;
             break;
