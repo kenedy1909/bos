@@ -4,6 +4,7 @@ $( document ).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
     star_uni = 2;
+    paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     console.log(tema);
     
