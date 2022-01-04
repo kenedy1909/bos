@@ -446,11 +446,11 @@ function elementos() {
                   `;
         var text = `
                         <div class="card-amarillo-c col-md-12">
-                            <p class="p_black">El sanguíneo es alegre, enérgico, vigoroso, con potencia. Son personas de buen humor, apasionados y que brindan confianza.</p>
+                            <p class="p_black" style="text-align:justify;">El sanguíneo es alegre, enérgico, vigoroso, con potencia. Son personas de buen humor, apasionados y que brindan confianza.</p>
                         </div>
                         <div class="col-md-6 mt-3">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Debilidades</b></button></p>
-                            <p class="p_black pl-4">Voluble</p>
+                            <p class="p_black pl-4 mt-3">Voluble</p>
                             <p class="p_black pl-4">Impulsivo</p>
                             <p class="p_black pl-4">Egocéntrico</p>
                             <p class="p_black pl-4">Violento</p>
@@ -462,7 +462,7 @@ function elementos() {
                         </div>
                         <div class="col-md-6 mt-3 borde-left-azul">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Fortalezas</b></button></p>
-                            <p class="p_black pl-4">Atento</p>
+                            <p class="p_black pl-4 mt-3">Atento</p>
                             <p class="p_black pl-4">Cálido</p>
                             <p class="p_black pl-4">Amistoso</p>
                             <p class="p_black pl-4">Estusiasta</p>
@@ -481,11 +481,11 @@ function elementos() {
                   `;
         var text = `
                         <div class="card-amarillo-c col-md-12">
-                            <p class="p_black">El colérico es perseverante, rápido en sus decisiones, que aspira a lo grande, activo y extrovertido. Son personas ambiciosas, individualistas y exigentes consigo mismas.</p>
+                            <p class="p_black" style="text-align:justify;">El colérico es perseverante, rápido en sus decisiones, que aspira a lo grande, activo y extrovertido. Son personas ambiciosas, individualistas y exigentes consigo mismas.</p>
                         </div>
                         <div class="col-md-6 mt-3">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Debilidades</b></button></p>
-                            <p class="p_black pl-4">Impaciente</p>
+                            <p class="p_black pl-4 mt-3">Impaciente</p>
                             <p class="p_black pl-4">Prepotente</p>
                             <p class="p_black pl-4">Intolerante</p>
                             <p class="p_black pl-4">Vanidoso</p>
@@ -497,7 +497,7 @@ function elementos() {
                         </div>
                         <div class="col-md-6 mt-3 borde-left-azul">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Fortalezas</b></button></p>
-                            <p class="p_black pl-4">Enérgico</p>
+                            <p class="p_black pl-4 mt-3">Enérgico</p>
                             <p class="p_black pl-4">Resolutivo</p>
                             <p class="p_black pl-4">Optimista</p>
                             <p class="p_black pl-4">Independiente</p>
@@ -516,11 +516,11 @@ function elementos() {
                   `;
         var text = `
                         <div class="card-amarillo-c col-md-12">
-                            <p class="p_black">El melancólico es inquieto, muy reflexivo, inestable y ansioso. Adoran el silencio y la soledad, se olvidan de su entorno y se distraen fácilmente.</p>
+                            <p class="p_black" style="text-align:justify;">El melancólico es inquieto, muy reflexivo, inestable y ansioso. Adoran el silencio y la soledad, se olvidan de su entorno y se distraen fácilmente.</p>
                         </div>
                         <div class="col-md-6 mt-3">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Debilidades</b></button></p>
-                            <p class="p_black pl-4">Susceptible</p>
+                            <p class="p_black pl-4 mt-3">Susceptible</p>
                             <p class="p_black pl-4">Variable</p>
                             <p class="p_black pl-4">Crítico</p>
                             <p class="p_black pl-4">Negativo</p>
@@ -532,7 +532,7 @@ function elementos() {
                         </div>
                         <div class="col-md-6 mt-3 borde-left-azul">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Fortalezas</b></button></p>
-                            <p class="p_black pl-4">Sensible</p>
+                            <p class="p_black pl-4 mt-3">Sensible</p>
                             <p class="p_black pl-4">Creativo</p>
                             <p class="p_black pl-4">Idealista</p>
                             <p class="p_black pl-4">Leal</p>
@@ -550,11 +550,11 @@ function elementos() {
                   `;
         var text = `
                         <div class="card-amarillo-c col-md-12">
-                            <p class="p_black">El hombre flemático es reflexivo, tranquilo, muy justo e incorruptible, poco comprometido, simpáticos. Adoran la buena vida y les gusta poco el trabajo.</p>
+                            <p class="p_black" style="text-align:justify;">El hombre flemático es reflexivo, tranquilo, muy justo e incorruptible, poco comprometido, simpáticos. Adoran la buena vida y les gusta poco el trabajo.</p>
                         </div>
                         <div class="col-md-6 mt-3">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Debilidades</b></button></p>
-                            <p class="p_black pl-4">Indeciso</p>
+                            <p class="p_black pl-4 mt-3">Indeciso</p>
                             <p class="p_black pl-4">Desconfiado</p>
                             <p class="p_black pl-4">Pretencioso</p>
                             <p class="p_black pl-4">Calculador</p>
@@ -565,7 +565,7 @@ function elementos() {
                         </div>
                         <div class="col-md-6 mt-3 borde-left-azul">
                             <p class="text-center"><button class="btn btn-verde p_white"><b>Fortalezas</b></button></p>
-                            <p class="p_black pl-4">Tranquilo</p>
+                            <p class="p_black pl-4 mt-3">Tranquilo</p>
                             <p class="p_black pl-4">Cumplidor</p>
                             <p class="p_black pl-4">Eficiente</p>
                             <p class="p_black pl-4">Diplomático</p>

@@ -337,7 +337,7 @@ p, button{
 }
 
 .fondo-4 {
-    background-image: url(../assets/img/img_ova/fondo_paneles.png);
+    background-image: url(../assets/img/img_ova/fondo_paneles2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -348,7 +348,7 @@ p, button{
     background-repeat: no-repeat;
     background-size: cover;
     height: inherit;
-    height: 456px;
+    height: 370px;
     width: 900px;
 }
 
@@ -500,6 +500,11 @@ p, button{
     background: #FFFFFF;
 }
 
+.bg-blanco2 {
+    height: 305px;
+    background: #FFFFFF;
+}
+
 .bg-card-verde {
     background: #028B79;
 }
@@ -544,7 +549,7 @@ p, button{
 
 .custom-scrollbar3 {
     position: relative;
-    width: 800px;
+    width: 780px;
     height: 444px;
 }
 
@@ -635,23 +640,27 @@ p, button{
 }
 
 .content-opcion-info-ambiente1 {
-    top: 210px;
-    left: -260px;
+    top: 95px;
+    width: 290px;
+    left: 9px;
 }
 
 .content-opcion-info-ambiente2 {
-    top: 10px;
-    left: -260px;
+    top: 20px;
+    width: 457px;
+    left: 20px;
 }
 
 .content-opcion-info-ambiente3 {
     top: 10px;
-    left: 0px;
+    left: 155px;
+    width: 466px;
 }
 
 .content-opcion-info-ambiente4 {
     top: 90px;
-    left: 0px;
+    width: 595px;
+    left: 88px;
 }
 
 .opcion-circular-social {
