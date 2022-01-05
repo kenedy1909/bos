@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
     $('.menu1').removeClass('d-none');
     $( ".ov-personaje").hide();
     star_uni = 1;

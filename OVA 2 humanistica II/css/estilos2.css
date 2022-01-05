@@ -337,7 +337,7 @@ p, button{
 }
 
 .fondo-4 {
-    background-image: url(../assets/img/img_ova/fondo_paneles.png);
+    background-image: url(../assets/img/img_ova/fondo_paneles2.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -348,7 +348,7 @@ p, button{
     background-repeat: no-repeat;
     background-size: cover;
     height: inherit;
-    height: 456px;
+    height: 370px;
     width: 900px;
 }
 
@@ -444,7 +444,7 @@ p, button{
 .content-text-img-activi-2 {
     border-bottom: solid 3px #A48E39;
     width: 50%;
-    height: 66px;
+    height: 60px;
     margin: 0px;
     padding-top: 20px;
     text-align: center;
@@ -467,6 +467,7 @@ p, button{
 }
 
 .content-text-activi-2 {
+    background: white;
     border: solid 2px #79CAF3;
     border-radius: 20px;
     padding: 30px;
@@ -491,10 +492,16 @@ p, button{
 .content-card-azul {
     border-radius: 1em;
     border: solid 2px #2599BD;
-    padding: 10px;
+    padding: 4px;
 }
 
 .bg-blanco {
+    height: 200px;
+    background: #FFFFFF;
+}
+
+.bg-blanco2 {
+    height: 305px;
     background: #FFFFFF;
 }
 
@@ -542,7 +549,7 @@ p, button{
 
 .custom-scrollbar3 {
     position: relative;
-    width: 800px;
+    width: 780px;
     height: 444px;
 }
 
@@ -633,23 +640,27 @@ p, button{
 }
 
 .content-opcion-info-ambiente1 {
-    top: 210px;
-    left: -260px;
+    top: 95px;
+    width: 290px;
+    left: 9px;
 }
 
 .content-opcion-info-ambiente2 {
-    top: 10px;
-    left: -260px;
+    top: 20px;
+    width: 457px;
+    left: 20px;
 }
 
 .content-opcion-info-ambiente3 {
     top: 10px;
-    left: 0px;
+    left: 155px;
+    width: 466px;
 }
 
 .content-opcion-info-ambiente4 {
     top: 90px;
-    left: 0px;
+    width: 595px;
+    left: 88px;
 }
 
 .opcion-circular-social {

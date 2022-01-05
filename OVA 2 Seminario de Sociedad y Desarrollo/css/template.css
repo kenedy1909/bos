@@ -829,3 +829,11 @@ svg circle:nth-child(2){
 .img-100{
   width: 100%;
 }
+
+.card-inactiva-o {
+    background: #252525 !important;
+}
+
+.card-inactiva-c {
+    background: #484848 !important;
+}

@@ -70,12 +70,12 @@ function calificar(){
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
 	    $('.puntaje').text(Math.round(puntaje)+"%");
 	    $('.mensaje').text("¡Felicitaciones!");
-	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #8b6229;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
 	}else{
 	    $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
 	    $('.mensaje').text("¡Puedes hacerlo mejor!");
 	    $('.puntaje').text(Math.round(puntaje)+"%");
-	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	    $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
 	}
 }
 

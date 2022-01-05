@@ -1,27 +1,29 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         actualizarprogress();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
@@ -58,41 +60,41 @@ $( document ).ready(function() {
     /*$(".t_1").on('click', cambiacontenido2(1));
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
-    
+
     console.log(tema);
     slide_link(tema);
 });
 
-function slide(){
+function slide() {
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
 
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
-function slide_link(num){
-    tema=1;
+function slide_link(num) {
+    tema = 1;
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
-    controlSlides(num+1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
+    controlSlides(num + 1);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","Bioética o ética para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "Bioética o ética para la vida");
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 32;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","Bioética o ética para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "Bioética o ética para la vida");
             dragging = "";
             diff = "";
             newTop = "";
@@ -103,7 +105,7 @@ function controlSlides(num){
             scroll();
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","Bioética o ética para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "Bioética o ética para la vida");
             dragging = "";
             diff = "";
             newTop = "";
@@ -114,33 +116,33 @@ function controlSlides(num){
             scroll();
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Necesidad de la formación Humanística");
+            setMigaja("Unidades de aprendizaje", "2. Necesidad de la formación Humanística");
             /*$("#content").html('');
             $("#img_cont").html('');*/
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La ecosensibilidad");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La ecosensibilidad");
             //$("#pregunta_cont").html('');
             /*$("#contenido2").html('');
             $("#img_2").html('');*/
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La ecosensibilidad");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La ecosensibilidad");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La ecosensibilidad");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La ecosensibilidad");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La bio contabilidad o contabilidad para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La bio contabilidad o contabilidad para la vida");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La bio contabilidad o contabilidad para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La bio contabilidad o contabilidad para la vida");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La bio contabilidad o contabilidad para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La bio contabilidad o contabilidad para la vida");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. Bioética para la protección de la vida","La bio contabilidad o contabilidad para la vida");
+            setMigaja("Unidades de aprendizaje", "2. Bioética para la protección de la vida", "La bio contabilidad o contabilidad para la vida");
             break;
         case 11:
             setMigaja("Unidades de aprendizaje");
@@ -153,53 +155,56 @@ function controlSlides(num){
     }
 }
 
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
@@ -470,10 +475,10 @@ function conjuntos(num){
     }
 }*/
 
-function opciones_circulares(){
+function opciones_circulares() {
     var opcion_num = $(this).data('opcion');
     $(".opcion-circular-ambiente").removeClass('opcion-circular-select');
-    $(".opcion-circular-ambiente"+opcion_num).addClass('opcion-circular-select');
+    $(".opcion-circular-ambiente" + opcion_num).addClass('opcion-circular-select');
     $(".content-opcion-info-ambiente").removeClass('d-none');
     $(".content-opcion-info-ambiente").removeClass('content-opcion-info-ambiente1');
     $(".content-opcion-info-ambiente").removeClass('content-opcion-info-ambiente2');
@@ -485,19 +490,19 @@ function opciones_circulares(){
                     `;
         $(".content-opcion-info-ambiente").html(texto);
         $(".content-opcion-info-ambiente").addClass('content-opcion-info-ambiente1');
-    }else if (opcion_num == 2) {
+    } else if (opcion_num == 2) {
         var texto = `
                         <p class="p_black justificado">Al partir del supuesto de que cada cultura arraiga un conjunto de costumbres y valores, es evidente que los problemas éticos y morales que han provocado una crisis en la sociedad deben abordarse específicamente bajo las particularidades de los supuestos básicos que rigen los comportamientos de los individuos en cada región, a fin de sentar nuevas bases civilizatorias permeadas por conductas estoicas y altruistas.</p>
                     `;
         $(".content-opcion-info-ambiente").html(texto);
         $(".content-opcion-info-ambiente").addClass('content-opcion-info-ambiente2');
-    }else if (opcion_num == 3) {
+    } else if (opcion_num == 3) {
         var texto = `
                         <p class="p_black justificado">Ante esta apremiante necesidad de un cambio cultural en el sentido de un pensamiento colectivo que respeta la vida en todas sus formas, limitando sus usos e intervenciones a los límites ecos temáticamente posibles, se considera su importancia dentro del planeta y pasando de un pensamiento racional a un pensamiento ambiental, pues tal como lo advierte Ángel (1991)</p>
                     `;
         $(".content-opcion-info-ambiente").html(texto);
         $(".content-opcion-info-ambiente").addClass('content-opcion-info-ambiente3');
-    }else if (opcion_num == 4) {
+    } else if (opcion_num == 4) {
         var texto = `
                         <p class="p_black justificado">El pensamiento racional colocó por fuera la naturaleza., en la tierra la reemplazó por el pensamiento científico, es un instrumento más adecuado para manejar las transacciones comerciales y estimular el dominio tecnológico del medio natural, la ciencia y la investigación como formas de conocimiento deben considerar a la vida no como un objeto en sí mismo sino como su propósito y prioridad; sólo la protección de la vida con criterios éticos, dentro de los límites socialmente deseados y con un respeto profundo por los derechos de cada especie a ser y existir.</p>
                     `;
@@ -506,10 +511,10 @@ function opciones_circulares(){
     }
 }
 
-function opciones_circulares_sociales(){
+function opciones_circulares_sociales() {
     var opcion_num = $(this).data('opcion');
     $(".opcion-circular-social").removeClass('opcion-circular-select');
-    $(".opcion-circular-social"+opcion_num).addClass('opcion-circular-select');
+    $(".opcion-circular-social" + opcion_num).addClass('opcion-circular-select');
     $(".content-opcion-info-social").removeClass('d-none');
     $(".content-opcion-info-social").removeClass('content-opcion-info-social1');
     $(".content-opcion-info-social").removeClass('content-opcion-info-social2');
@@ -532,7 +537,7 @@ function opciones_circulares_sociales(){
         $(".content-opcion-info-social").html(texto);
         $(".content-opcion-info-social").addClass('content-opcion-info-social1');
         $(".fondo-social").addClass('fondo-social-1');
-    }else if (opcion_num == 2) {
+    } else if (opcion_num == 2) {
         var texto = `
                         <div class="row">
                             <div class="col-md-5">
@@ -550,7 +555,7 @@ function opciones_circulares_sociales(){
         $(".content-opcion-info-social").html(texto);
         $(".content-opcion-info-social").addClass('content-opcion-info-social2');
         $(".fondo-social").addClass('fondo-social-2');
-    }else if (opcion_num == 3) {
+    } else if (opcion_num == 3) {
         var texto = `
                         <div class="row">
                             <div class="col-md-12">
@@ -564,7 +569,7 @@ function opciones_circulares_sociales(){
         $(".content-opcion-info-social").html(texto);
         $(".content-opcion-info-social").addClass('content-opcion-info-social3');
         $(".fondo-social").addClass('fondo-social-3');
-    }else if (opcion_num == 4) {
+    } else if (opcion_num == 4) {
         var texto = `
                         <div class="row">
                             <div class="col-md-12 pb-3">
@@ -594,14 +599,14 @@ function opciones_circulares_sociales(){
         $(".content-opcion-info-social").html(texto);
         $(".content-opcion-info-social").addClass('content-opcion-info-social4');
         $(".fondo-social").addClass('fondo-social-4');
-    }else if (opcion_num == 5) {
+    } else if (opcion_num == 5) {
         var texto = `
                         <p class="p_black justificado">Las voces contables en respuesta a este panorama descrito suben su tono para fijar nuevos rumbos que permitan a los profesionales en formación y en ejercicio, vislumbrar posibilidades más allá de las tendencias hegemónicas financieras, ante la evidente insuficiencia que esta información a nivel organizacional permite para capturar con confianza la amplia y compleja trama de relaciones que encierra la vida social y ambiental.</p>
                     `;
         $(".content-opcion-info-social").html(texto);
         $(".content-opcion-info-social").addClass('content-opcion-info-social5');
         $(".fondo-social").addClass('fondo-social-5');
-    }else if (opcion_num == 6) {
+    } else if (opcion_num == 6) {
         var texto = `
                         <div class="row">
                             <div class="col-md-8">
@@ -619,22 +624,22 @@ function opciones_circulares_sociales(){
     }
 }
 
-function hover_v1(){
+function hover_v1() {
     $(".hover_card_v1").removeClass('w-fit');
     $(".hover_card_v1 span").removeClass('d-none');
 }
 
-function hover_v2(){
+function hover_v2() {
     $(".hover_card_v2").removeClass('w-fit');
     $(".hover_card_v2 span").removeClass('d-none');
 }
 
-function hover_v3(){
+function hover_v3() {
     $(".hover_card_v3").removeClass('w-fit');
     $(".hover_card_v3 span").removeClass('d-none');
 }
 
-function leave_v(){
+function leave_v() {
     $(".hover_card_v1").addClass('w-fit');
     $(".hover_card_v1 span").addClass('d-none');
     $(".hover_card_v2").addClass('w-fit');

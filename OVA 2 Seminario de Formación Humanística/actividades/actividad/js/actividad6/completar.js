@@ -223,22 +223,21 @@ function calificar(){
 			
 		}
 	}
-	if (puntaje == 100) {
-		
-	  $('.img_res').html('<img src="../img/img6/bien.png" style="max-width: 90%;">');
-	  $('.puntaje').text(puntaje+"%");
-	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
-	}else if (puntaje >= 75 && puntaje < 100) {
-		
-	  $('.img_res').html('<img src="../img/img6/bien.png" style="max-width: 90%;">');
-	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	if (puntaje >= 75) {
+	    $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+	    $('.puntaje').text(Math.round(puntaje)+"%");
+	    $('.mensaje').text("¡Felicitaciones!");
+	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #8b6229;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
+	    $('#exampleModal').modal('show');
 	}else{
-	  $('.img_res').html('<img src="../img/img6/mal.png" style="max-width: 90%;">');
-	  $('.mensaje').text("¡Puedes hacerlo mejor!");
-	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	    $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
+	    $('.mensaje').text("¡Puedes hacerlo mejor!");
+	    $('.puntaje').text(Math.round(puntaje)+"%");
+	    $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+	    $('#exampleModal').modal('show');
 	}
+}
+
+function reiniciar() {
+	location.reload();
 }
