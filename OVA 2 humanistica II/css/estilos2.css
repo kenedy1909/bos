@@ -419,12 +419,12 @@ p, button{
 }
 
 .border-bottom-actividad {
-    border-bottom: solid 3px #C8AD45;
+    border-bottom: solid 5px #A48E39;
 }
 
 .img-activi {
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
 }
 
 .text-img-actividad {
@@ -715,4 +715,8 @@ p, button{
 
 .h-fit {
     height: fit-content;
+}
+
+.borde-rigth-azul2 {
+    border-right: #4573C4 2px solid;
 }
