@@ -2,6 +2,8 @@ $(document).ready(function() {
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
+    $(".menu4").removeClass('d-none');
 
     star_uni = 2;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
@@ -27,13 +29,11 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado2();
     slide_link2(tema);
@@ -54,6 +54,7 @@ $(function() {
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides2(stepIndex);
+    actualizarprogress(stepIndex+7);
 }
 
 function slide_predeterminado2() {
@@ -78,7 +79,6 @@ function controlSlides2(num) {
         case 0:
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
             $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 5;
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="none";
@@ -92,7 +92,7 @@ function controlSlides2(num) {
             $('.pdfs').html(pdf);
             
             document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            document.getElementById("prev").style.display="none";
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
             
             document.getElementById("next").style.display="block";
@@ -117,6 +117,10 @@ function controlSlides2(num) {
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
 
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             tema = 1;
             break;
 

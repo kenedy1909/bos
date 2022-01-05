@@ -756,6 +756,9 @@ p, button{
 .bg-color-claro2{
 	background: var(--bg-color-claro2)!important;
 }
+.bg-color-claro3{
+	background: var(--bg-color-claro3)!important;
+}
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
 }
@@ -1048,7 +1051,7 @@ p, button{
 	top: -100px;
 }
 .top-menos110{
-	top: -110px;
+	top: -118px;
 }
 .top-menos150{
 	top: -150px;
@@ -1232,7 +1235,7 @@ p, button{
 }
 @media (max-height: 720px) {
 	.triangulo-equilatero-bottom, .triangulo-equilatero-bottom2, .triangulo-equilatero-bottom3{
-		top: 165px!important;
+		top: 155px!important;
 	}
 }
 /* 
@@ -2120,4 +2123,18 @@ a.control_next {
     margin-left: 5px;
     border: solid 1px #97182f;
   
+}
+
+.pr-top-35{
+	position: relative;
+    top: -35px;
+}
+
+.pr-left15{
+	position: relative;
+    left: 15px;
+}
+.top-30px{
+	position: relative;
+    top: -30px;
 }

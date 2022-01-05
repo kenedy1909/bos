@@ -2,6 +2,9 @@ $(document).ready(function() {
     $(".zoomContainer").remove();
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
+    $(".menu4").removeClass('d-none');
     setMigaja("Unidades de aprendizaje", "La ciencia: concepto y definición", ">");
 
     star_uni = 1;
@@ -27,14 +30,12 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", ">");
     slide_predeterminado();
@@ -64,6 +65,7 @@ $(function() {
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex + 1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado() {
@@ -149,6 +151,8 @@ function controlSlides(num) {
             
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
 
             tema = 1;
             break;
