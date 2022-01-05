@@ -756,6 +756,9 @@ p, button{
 .bg-color-claro2{
 	background: var(--bg-color-claro2)!important;
 }
+.bg-color-claro3{
+	background: var(--bg-color-claro3)!important;
+}
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
 }
@@ -1048,7 +1051,7 @@ p, button{
 	top: -100px;
 }
 .top-menos110{
-	top: -110px;
+	top: -118px;
 }
 .top-menos150{
 	top: -150px;
@@ -2130,4 +2133,8 @@ a.control_next {
 .pr-left15{
 	position: relative;
     left: 15px;
+}
+.top-30px{
+	position: relative;
+    top: -30px;
 }
