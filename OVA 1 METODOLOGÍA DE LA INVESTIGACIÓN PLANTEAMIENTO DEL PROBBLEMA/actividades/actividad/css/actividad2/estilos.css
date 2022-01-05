@@ -148,3 +148,54 @@ input {
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
+
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+}
+
+.principal{
+  height: 400px;
+  border-radius: 40px;
+  background: #994c91;
+}
+
+.cabeza{
+  background: #7a3d78;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 170px;
+  width: 170px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
+}

@@ -15,6 +15,9 @@ function inicioRecurso() {
     }
     // tamanoCuadros()
 }
+function reload(){
+    location.reload();
+}
 
 angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, $log) {
     "use strict";
@@ -90,9 +93,24 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         var exito = false;
         var mensaje = "Inténtalo nuevamente."
         if (puntaje == 100) {
-            exito = true;
-            mensaje = "¡Felicitaciones!"
-        }
+        
+            $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;margin-top: 5%;">');
+            $('.puntaje').text(puntaje+"%");
+            $('.mensaje').text("¡Felicitaciones!");
+            $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" onclick="reload()">cerrar</button>');
+          }else if (puntaje >= 75 && puntaje < 100) {
+              
+            $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;margin-top: 5%;">');
+            $('.puntaje').text(Math.round(puntaje)+"%");
+            $('.mensaje').text("¡Felicitaciones!");
+            $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+          }else{
+            $('.img_res').html('<img src="../img/img1/mal.png" style="max-width: 90%;">');
+            $('.mensaje').text("Inténtalo nuevamente.");
+            $('.puntaje').text(Math.round(puntaje)+"%");
+            $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+          }
+          $("#calificacionModal").modal("show");
         registrarActividad(puntaje);
         mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, $scope.reset);
     };
@@ -109,4 +127,5 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
 
         });
     };
+    
 });
