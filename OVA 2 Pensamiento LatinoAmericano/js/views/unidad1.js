@@ -1560,7 +1560,7 @@ function scroll_horizontal(num) {
             $('.scroll-flecha-2').addClass('d-block');
             break;
         case 3:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/capitalismo1.png" width="80%" height="80%">`;
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/Capitalismo1.png" width="80%" height="80%">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">No existe una igualdad en el marco del capitalismo, porque se ve al hombre como sujeto incorpóreo donde lo único que importa es la lógica de la acumulación que solo propone una solución individual a las contradicciones sistémicas. </p>');
             $('.scroll-flecha-0').removeClass('d-none');
@@ -1588,7 +1588,7 @@ function scroll_horizontal(num) {
             $('.scroll-flecha-4').addClass('d-block');
             break;
         case 5:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/capitalismo3.png" width="100%" height="100%">`;
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/Capitalismo3.png" width="100%" height="100%">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">los problemas han suscitado la importancia de nuevos planteamientos sobre otros modos de producir, consumir y organizar la vida y es allí donde se hace necesaria la intervención de la reflexión filosófica.</p>');
             $('.scroll-flecha-0').removeClass('d-none');
