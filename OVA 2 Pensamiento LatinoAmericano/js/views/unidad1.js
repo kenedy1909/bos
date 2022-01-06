@@ -1713,7 +1713,7 @@ function tarjetasU14(num, posicion) {
                             <p class="color-title ">Haga clic en la flecha para continuar con la información</p>
                         </div>
                         <div class="w-100 d-flex justify-content-end menos-marginT-25">
-                            <i class="fas fa-caret-right color-text h1 cursor" onclick="tarjetasU14(2,'t')"></i>
+                            <i class="fas fa-caret-right color-text h1 cursor" style="font-size:70px;" onclick="tarjetasU14(2,'t')"></i>
                         </div>
                         </div>
                     </div>
@@ -1767,7 +1767,7 @@ function tarjetasU14(num, posicion) {
                         <div class="col-5 mb-5 pb-3">
                         <img src="assets/img/img_ova/ancestro.png" width="70%" height="70%" class="py-2 px-3">
                         <div class="col-12 d-flex justify-content-end menos-marginT-50">
-                            <i class="fas fa-caret-left color-text h1 cursor"  onclick="tarjetasU14(2,'p')"></i>
+                            <i class="fas fa-caret-left color-text h1 cursor" style="font-size:70px;" onclick="tarjetasU14(2,'p')"></i>
                         </div>
                         </div>
                     </div>

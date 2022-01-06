@@ -159,7 +159,7 @@
 }
 
 .border-rd {
-    border-right: 1px solid var(--bg-color)!important;
+    border-right: 3px solid var(--bg-color)!important;
 }
 
 .border-b {
