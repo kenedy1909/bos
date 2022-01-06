@@ -2,9 +2,6 @@ $(document).ready(function() {
     $(".zoomContainer").remove();
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
-    $(".menu2").removeClass('d-none');
-    $(".menu3").removeClass('d-none');
-    $(".menu4").removeClass('d-none');
     setMigaja("Unidades de aprendizaje", "La ciencia: concepto y definición", ">");
 
     star_uni = 1;

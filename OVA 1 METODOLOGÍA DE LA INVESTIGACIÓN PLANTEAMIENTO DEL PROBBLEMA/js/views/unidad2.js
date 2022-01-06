@@ -1,9 +1,6 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
-    $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
-    $(".menu3").removeClass('d-none');
-    $(".menu4").removeClass('d-none');
 
     star_uni = 2;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
