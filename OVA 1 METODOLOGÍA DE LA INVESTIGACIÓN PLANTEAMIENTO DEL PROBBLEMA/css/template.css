@@ -397,7 +397,8 @@ iframe {
 }
 
 .img-circle {
-    border-radius: 50%;
+    /border-radius: 50%;
+    /
 }
 
 
@@ -584,7 +585,7 @@ svg circle {
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent svg circle:nth-child(2) {
+/Claculo para simular el porcent/ svg circle:nth-child(2) {
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
 }
