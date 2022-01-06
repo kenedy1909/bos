@@ -397,8 +397,7 @@ iframe {
 }
 
 .img-circle {
-    /border-radius: 50%;
-    /
+    border-radius: 50%;
 }
 
 
@@ -526,6 +525,7 @@ iframe {
     box-shadow: inset 0 0 50px #fff;
     background: rgb(200 200 200);
     z-index: 1000;
+    overflow: hidden;
 }
 
 .porcent .number {
@@ -584,7 +584,7 @@ svg circle {
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/ svg circle:nth-child(2) {
+/Claculo para simular el porcent svg circle:nth-child(2) {
     stroke-dasharray: 200;
     stroke-dashoffset: 200;
 }
