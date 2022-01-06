@@ -1,36 +1,38 @@
-$( document ).ready(function() {
-    $( ".zoomContainer" ).remove();
+$(document).ready(function() {
+    $(".zoomContainer").remove();
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
         /*actualizarprogress();*/
 
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
-    
+
     slide_predeterminado();
 
     var knob = "";
@@ -52,33 +54,34 @@ $( document ).ready(function() {
     slide_link(tema);
 });
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
-        actualizarprogress(stepIndex+1);
+    controlSlides(stepIndex + 1);
+    actualizarprogress(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", ">");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", ">");
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -106,26 +109,26 @@ function controlSlides(num){
             break;
         case 2:
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "Ecología de saberes");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "Ecología de saberes");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "Ecología de saberes");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "Ecología de saberes");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","Ecología de saberes");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "Ecología de saberes");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
-            $(".i1").html('')    
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
+            $(".i1").html('')
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
+            var inputsRy = [];
             var i = new Input(5);
             i.crear(elementoPadre1);
             inputsRy.push(i);
@@ -138,58 +141,58 @@ function controlSlides(num){
             inputsRy.push(i2);
 
             for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  
+                (function(n) {
+                    inputsRy[n].input.addEventListener("input", function() {
+                        inputsRy[n].actualizar();
+                    }, false)
+                }(n));
+            }
 
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 9:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             /*var videointro = document.getElementById('video_intro1');
             videointro.pause(); */
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 11:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             /*var videointro = document.getElementById('video_intro1');
             videointro.pause();*/
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género","El buen vivir");
+            setMigaja("Unidades de aprendizaje", "1. La articulación compleja de contradicciones múltiples: nación, etnia, clase y género", "El buen vivir");
             break;
         default:
             break;
@@ -197,69 +200,70 @@ function controlSlides(num){
 }
 
 function scroll_set(num) {
-  dragging = "";
-  diff = "";
-  newTop = "";
-  scrollOffset = "";
-  knob = document.querySelector('.custom-scrollbar__knob'+num);
-  bar = document.querySelector('.custom-scrollbar__bar'+num);
-  container = document.querySelector('.custom-scrollbar__inner'+num);
-  scroll();
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob' + num);
+    bar = document.querySelector('.custom-scrollbar__bar' + num);
+    container = document.querySelector('.custom-scrollbar__inner' + num);
+    scroll();
 }
 //dezlizador
 
 
 function Input(num) {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = num;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    scroll_horizontal(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
-  this.actualizar2 = function() {
-    scroll_horizontal2(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+        scroll_horizontal2(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
 }
-function scroll_p10(){
+
+function scroll_p10() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -270,7 +274,7 @@ function scroll_p10(){
     scroll();
 }
 
-function scroll_p11(){
+function scroll_p11() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -281,7 +285,7 @@ function scroll_p11(){
     scroll();
 }
 
-function scroll_p12(){
+function scroll_p12() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -291,7 +295,8 @@ function scroll_p12(){
     container = document.querySelector('.custom-scrollbar__inner12');
     scroll();
 }
-function scroll_p13(){
+
+function scroll_p13() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -301,7 +306,8 @@ function scroll_p13(){
     container = document.querySelector('.custom-scrollbar__inner13');
     scroll();
 }
-function scroll_p14(){
+
+function scroll_p14() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -312,7 +318,7 @@ function scroll_p14(){
     scroll();
 }
 
-function scroll_p21(){
+function scroll_p21() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -334,7 +340,8 @@ function scroll_p21(){
     container = document.querySelector('.custom-scrollbar__inner15');
     scroll();
 }
-function scroll_p22(){
+
+function scroll_p22() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -358,7 +365,8 @@ function scroll_p22(){
     container = document.querySelector('.custom-scrollbar__inner16');
     scroll();
 }
-function scroll_p23(){
+
+function scroll_p23() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -382,7 +390,8 @@ function scroll_p23(){
     container = document.querySelector('.custom-scrollbar__inner17');
     scroll();
 }
-function scroll_p24(){
+
+function scroll_p24() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -407,66 +416,76 @@ function scroll_p24(){
     scroll();
 }
 
-function pantalla9(num){
+function pantalla9(num) {
     switch (parseInt(num)) {
         case 1:
             var text = `<div class="p9_cont">
                       <p class="justificado">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
                     </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_1').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_1').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 2:
             var text = `<div class="p9_cont">
                           <p class="justificado">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_2').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_2').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 3:
             var text = `<div class="p9_cont">
                           <p class="justificado">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_3').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_3').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 4:
             var text = `<div class="p9_cont">
                           <p class="justificado">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_4').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_4').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 5:
             var text = `<div class="p9_cont">
                           <p class="justificado">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_5').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_5').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         default:
@@ -474,14 +493,14 @@ function pantalla9(num){
     }
 }
 
-function citar(){
+function citar() {
     var contenido = `<div style="height: 248px;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
                     <p class="justificado">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
                   </div>`;
     $('.imprime_heare').html(contenido);
 }
 
-function modal_scroll2(){
+function modal_scroll2() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -491,7 +510,8 @@ function modal_scroll2(){
     container = document.querySelector('.custom-scrollbar__inner3');
     scroll();
 }
-function modal_scroll3(){
+
+function modal_scroll3() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -501,7 +521,8 @@ function modal_scroll3(){
     container = document.querySelector('.custom-scrollbar__inner4');
     scroll();
 }
-function modal_scroll4(){
+
+function modal_scroll4() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -512,7 +533,7 @@ function modal_scroll4(){
     scroll();
 }
 
-function modal_scroll7(){
+function modal_scroll7() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -523,7 +544,7 @@ function modal_scroll7(){
     scroll();
 }
 
-function modal_scroll8(){
+function modal_scroll8() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -537,93 +558,93 @@ function modal_scroll8(){
 function funcion_vanvas() {
     var canvas = new fabric.Canvas('canvas_unid1');
     var imgElement = 'assets/img/img_ova/uno.png';
-    var imgElement2 = 'assets/img/img_ova/dos.png'; 
+    var imgElement2 = 'assets/img/img_ova/dos.png';
     var imgElement3 = 'assets/img/img_ova/tres.png';
     var imgElement4 = 'assets/img/img_ova/cuatro.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
-        oImg.left=50;
-        oImg.top=70;
+        oImg.left = 50;
+        oImg.top = 70;
         oImg.scaleToHeight(50);
         oImg.scaleToWidth(50);
         oImg.selectable = false;
         canvas.add(oImg);
 
         oImg.on('mouseup', function() {
-            pantalla13(1);            
+            pantalla13(1);
         });
         oImg.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
     fabric.Image.fromURL(imgElement2, function(oImg2) {
-        oImg2.left=125;
-        oImg2.top=35;
+        oImg2.left = 125;
+        oImg2.top = 35;
         oImg2.scaleToHeight(50);
         oImg2.scaleToWidth(50);
         oImg2.selectable = false;
         canvas.add(oImg2);
 
         oImg2.on('mouseup', function() {
-            pantalla13(2);            
+            pantalla13(2);
         });
         oImg2.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
     fabric.Image.fromURL(imgElement3, function(oImg3) {
-        oImg3.left=200;
-        oImg3.top=35;
+        oImg3.left = 200;
+        oImg3.top = 35;
         oImg3.scaleToHeight(50);
         oImg3.scaleToWidth(50);
         oImg3.selectable = false;
         canvas.add(oImg3);
 
         oImg3.on('mouseup', function() {
-            pantalla13(3);           
+            pantalla13(3);
         });
         oImg3.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
     fabric.Image.fromURL(imgElement4, function(oImg4) {
-        oImg4.left=280;
-        oImg4.top=70;
+        oImg4.left = 280;
+        oImg4.top = 70;
         oImg4.scaleToHeight(50);
         oImg4.scaleToWidth(50);
         oImg4.selectable = false;
         canvas.add(oImg4);
 
-        oImg4.on('mouseup', function() { 
-            pantalla13(4);           
+        oImg4.on('mouseup', function() {
+            pantalla13(4);
         });
         oImg4.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
-    
+
 }
 
-function pantalla13(num){
+function pantalla13(num) {
     switch (parseInt(num)) {
         case 1:
             var text = `
                           <h3 class="text-center py-1 font-weight-bold">SITUACIÓN</h3>
                           <p class="font-weight-bold">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.wite_ban_13').css({ "background": "white" });
+
+            $('.contenedor').css({
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -632,16 +653,16 @@ function pantalla13(num){
                           <h3 class="text-center py-1 font-weight-bold">“TERRA NULLIUS”</h3>
                           <p class="font-weight-bold">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.wite_ban_13').css({ "background": "white" });
+
+            $('.contenedor').css({
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -650,17 +671,17 @@ function pantalla13(num){
                           <h3 class="text-center py-1 font-weight-bold">“TRANSFORMACIÓN”</h3>
                           <p class="font-weight-bold">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
+            $('.wite_ban_13').css({ "background": "white" });
 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.contenedor').css({
+
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -669,16 +690,16 @@ function pantalla13(num){
                           <h3 class="text-center py-1 font-weight-bold">PROBLEMAS</h3>
                            <p class="font-weight-bold">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.wite_ban_13').css({ "background": "white" });
+
+            $('.contenedor').css({
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -687,80 +708,84 @@ function pantalla13(num){
     }
 }
 
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
 
 function poner(num) {
-    
-    $(".texto_efecto"+num).css({
+
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'block',
         'z-index': '100'
     });
     if (num == 4) {
-        $(".custom-scrollbar__bar2").css('display','block');
-        $(".custom-scrollbar2").css('height','250');
+        $(".custom-scrollbar__bar2").css('display', 'block');
+        $(".custom-scrollbar2").css('height', '250');
     }
 }
+
 function quitar(num) {
-    $(".texto_efecto"+num).css({
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'none',
         'z-index': '100'
     });
     if (num == 4) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
 }
 
@@ -778,45 +803,45 @@ function Input(num) {
     this.att.step = "1";
     this.input;
     this.output;
-  
+
     this.crear = function(elementoPadre) {
-      // crea un nuevo elemento input
-      this.input = document.createElement("input");
-      //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-      for (var name in this.att) {
-        if (this.att.hasOwnProperty(name)) {
-          this.input.setAttribute(name, this.att[name]);
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
         }
-      }
-      // crea un nuevo elemento div
-      this.output = document.createElement("div");
-      // establece el valor del atributo class del nuevo div
-      this.output.setAttribute("class", "output");
-      // y el contenido (innerHTML) de este
-      this.output.innerHTML = this.att.value;
-  
-      // inserta los dos elementos creados al final  del elemento Padre 
-      elementoPadre.appendChild(this.input);
-      elementoPadre.appendChild(this.output);
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-  
+
     this.actualizar = function() {
-      scroll_horizontal(this.input.value);
-      this.output.innerHTML = this.input.value;
-      this.att.value = this.input.value;
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
     }
-    $("input[type=range]").on('change', function () {
+    $("input[type=range]").on('change', function() {
         /*alert();*/
     });
     this.actualizar2 = function() {
-      scroll_horizontal2(this.input.value);
-      this.output.innerHTML = this.input.value;
-      this.att.value = this.input.value;
+        scroll_horizontal2(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
     }
-    $("input[type=range]").on('change', function () {
+    $("input[type=range]").on('change', function() {
         /*alert();*/
     });
-  }
+}
 
 
 /* Draw
@@ -832,7 +857,7 @@ requestId = window.requestAnimationFrame(Draw);
 // JavaScript Document
 
 
-function pasos(num){
+function pasos(num) {
     switch (parseInt(num)) {
         case 1:
             $('.paso1').addClass('efectos');
@@ -846,13 +871,13 @@ function pasos(num){
         case 4:
             $('.paso4').addClass('efectos');
             break;
-        
+
         default:
             break;
     }
 }
 
-function pant13(num){
+function pant13(num) {
     switch (parseInt(num)) {
         case 1:
             var contenido = `<div class="col-md-9 banner3 text-center">
@@ -995,98 +1020,99 @@ function pant13(num){
 }
 
 
-function acordeon(num,estado) {
+function acordeon(num, estado) {
 
     $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').removeClass('d-block');
     $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').addClass('d-none');
 
 
-    if (estado=='acordeon') {
-        if (num==1) {
+    if (estado == 'acordeon') {
+        if (num == 1) {
             $('.acordeon2').addClass('d-none');
             $('.acordeon3').addClass('d-none');
             $('.acordeon2').removeClass('d-flex');
             $('.acordeon3').removeClass('d-flex');
-            
+
             $('.acordeon1').addClass('ocultarAcordeon1');
             $('.acordeon1').removeClass('acordeon1');
-            
+
             $('.contenidoAcordeon1').removeClass('d-none');
             $('.contenidoAcordeon1').addClass('d-block');
-            
-            $('.ocultarAcordeon1').attr('onclick',"acordeon(1,'ocultar')");
-        }else if (num==2) {
+
+            $('.ocultarAcordeon1').attr('onclick', "acordeon(1,'ocultar')");
+        } else if (num == 2) {
             $('.acordeon1').addClass('d-none');
             $('.acordeon3').addClass('d-none');
             $('.acordeon1').removeClass('d-flex');
             $('.acordeon3').removeClass('d-flex');
-            
+
             $('.acordeon2').addClass('ocultarAcordeon2');
             $('.acordeon2').removeClass('acordeon2');
-            
+
             $('.contenidoAcordeon2').removeClass('d-none');
             $('.contenidoAcordeon2').addClass('d-block');
-            
-            $('.ocultarAcordeon2').attr('onclick',"acordeon(2,'ocultar')");
-        }else if (num==3) {
+
+            $('.ocultarAcordeon2').attr('onclick', "acordeon(2,'ocultar')");
+        } else if (num == 3) {
             $('.acordeon2').addClass('d-none');
             $('.acordeon1').addClass('d-none');
             $('.acordeon2').removeClass('d-flex');
             $('.acordeon1').removeClass('d-flex');
-            
+
             $('.acordeon3').addClass('ocultarAcordeon3');
             $('.acordeon3').removeClass('acordeon3');
-            
+
             $('.contenidoAcordeon3').removeClass('d-none');
             $('.contenidoAcordeon3').addClass('d-block');
-            
-            $('.ocultarAcordeon3').attr('onclick',"acordeon(3,'ocultar')");
+
+            $('.ocultarAcordeon3').attr('onclick', "acordeon(3,'ocultar')");
         }
 
-    }else if(estado=='ocultar'){
+    } else if (estado == 'ocultar') {
 
-        if (num==1) {
+        if (num == 1) {
             $('.acordeon2').addClass('d-flex');
             $('.acordeon3').addClass('d-flex');
             $('.acordeon2').removeClass('d-none');
             $('.acordeon3').removeClass('d-none');
-            
+
             $('.ocultarAcordeon1').addClass('acordeon1');
             $('.ocultarAcordeon1').removeClass('ocultarAcordeon1');
-            
+
             $('.contenidoAcordeon1').removeClass('d-block');
             $('.contenidoAcordeon1').addClass('d-none');
-            
-            $('.acordeon1').attr('onclick',"acordeon(1,'acordeon')");
-        }else if (num==2) {
+
+            $('.acordeon1').attr('onclick', "acordeon(1,'acordeon')");
+        } else if (num == 2) {
             $('.acordeon1').addClass('d-flex');
             $('.acordeon3').addClass('d-flex');
             $('.acordeon1').removeClass('d-none');
             $('.acordeon3').removeClass('d-none');
-            
+
             $('.ocultarAcordeon2').addClass('acordeon2');
             $('.ocultarAcordeon2').removeClass('ocultarAcordeon2');
-            
+
             $('.contenidoAcordeon2').removeClass('d-block');
             $('.contenidoAcordeon2').addClass('d-none');
-            
-            $('.acordeon2').attr('onclick',"acordeon(2,'acordeon')");
-        }else if (num==3) {
+
+            $('.acordeon2').attr('onclick', "acordeon(2,'acordeon')");
+        } else if (num == 3) {
             $('.acordeon2').addClass('d-flex');
             $('.acordeon1').addClass('d-flex');
             $('.acordeon2').removeClass('d-none');
             $('.acordeon1').removeClass('d-none');
-            
+
             $('.ocultarAcordeon3').addClass('acordeon3');
             $('.ocultarAcordeon3').removeClass('ocultarAcordeon3');
-            
+
             $('.contenidoAcordeon3').removeClass('d-block');
             $('.contenidoAcordeon3').addClass('d-none');
-            
-            $('.acordeon3').attr('onclick',"acordeon(3,'acordeon')");
+
+            $('.acordeon3').attr('onclick', "acordeon(3,'acordeon')");
         }
     }
 }
+
 function efect(num) {
     switch (parseInt(num)) {
         case 1:
@@ -1116,11 +1142,11 @@ function efect(num) {
             break;
         default:
             break;
-    }           
-    
+    }
+
 }
 
-function removeefect(num){
+function removeefect(num) {
     switch (parseInt(num)) {
         case 1:
             $('.creciente').removeClass('crece');
@@ -1148,13 +1174,13 @@ function removeefect(num){
             break;
         default:
             break;
-    } 
-    
+    }
+
 }
 
 // funcion primera pantalla para mostrar el contenido
-function agregarContenido(num,estado) {
-    
+function agregarContenido(num, estado) {
+
 
     // $('').addClass('d-none');
     $('.contenidoAgregar1,.contenidoAgregar2').addClass('hidden');
@@ -1162,256 +1188,257 @@ function agregarContenido(num,estado) {
     $('.cambiarBGtargeta1, .cambiarBGtargeta2').addClass('bg-color-claro');
     $('.cambiarBGtargeta1, .cambiarBGtargeta2').removeClass('bg-color');
 
-    if (estado=='agregar') {
-        if (num==1) {
+    if (estado == 'agregar') {
+        if (num == 1) {
             $('.agregar1').addClass('ocultarAgregar1');
             $('.agregar1').removeClass('agregar1');
-            
+
             $('.contenidoAgregar1').removeClass('hidden');
             $('.contenidoAgregar1').addClass('position-absolute');
-            
+
             $('.cambiarBGtargeta1').removeClass('bg-color-claro');
             $('.cambiarBGtargeta1').addClass('bg-color');
-            
-            $('.ocultarAgregar1').attr('onclick',"agregarContenido(1,'ocultar')");
+
+            $('.ocultarAgregar1').attr('onclick', "agregarContenido(1,'ocultar')");
 
 
             $('.ocultarAgregar2').addClass('agregar2');
             $('.ocultarAgregar2').removeClass('ocultarAgregar2');
             $('.contenidoAgregar2').addClass('hidden');
-            $('.agregar2').attr('onclick',"agregarContenido(2,'agregar')");
+            $('.agregar2').attr('onclick', "agregarContenido(2,'agregar')");
 
-        }else if (num==2) {
+        } else if (num == 2) {
             $('.agregar2').addClass('ocultarAgregar2');
             $('.agregar2').removeClass('agregar2');
-            
+
             $('.contenidoAgregar2').removeClass('hidden');
             $('.contenidoAgregar2').addClass('position-absolute');
-            
+
             $('.cambiarBGtargeta2').removeClass('bg-color-claro');
             $('.cambiarBGtargeta2').addClass('bg-color');
-            
-            $('.ocultarAgregar2').attr('onclick',"agregarContenido(2,'ocultar')");
+
+            $('.ocultarAgregar2').attr('onclick', "agregarContenido(2,'ocultar')");
 
 
             $('.ocultarAgregar1').addClass('agregar1');
             $('.ocultarAgregar1').removeClass('ocultarAgregar1');
             $('.contenidoAgregar1').addClass('hidden');
-            $('.agregar1').attr('onclick',"agregarContenido(1,'agregar')");
+            $('.agregar1').attr('onclick', "agregarContenido(1,'agregar')");
         }
 
-    }else if(estado=='ocultar'){
+    } else if (estado == 'ocultar') {
 
-        if (num==1) {
+        if (num == 1) {
             $('.ocultarAgregar1').addClass('agregar1');
             $('.ocultarAgregar1').removeClass('ocultarAgregar1');
             $('.contenidoAgregar1').addClass('hidden');
             $('.contenidoAgregar1').removeClass('position-absolute');
-            $('.agregar1').attr('onclick',"agregarContenido(1,'agregar')");
-        }else if (num==2) {            
+            $('.agregar1').attr('onclick', "agregarContenido(1,'agregar')");
+        } else if (num == 2) {
             $('.ocultarAgregar2').addClass('agregar2');
             $('.ocultarAgregar2').removeClass('ocultarAgregar2');
             $('.contenidoAgregar2').addClass('hidden');
             $('.contenidoAgregar2').removeClass('position-absolute');
-            $('.agregar2').attr('onclick',"agregarContenido(2,'agregar')");
+            $('.agregar2').attr('onclick', "agregarContenido(2,'agregar')");
         }
     }
 }
 
 
 // funcion segunda pantalla para mostrar el contenido
-function agregarTarjeta(num,estado) {
+function agregarTarjeta(num, estado) {
 
     $('.contenidoAgregar1_1, .contenidoAgregar2_1, .contenidoAgregar3, .contenidoAgregar4').addClass('hidden');
     $('.imgTarg3').addClass('d-none');
 
-    if (estado=='agregar') {
-        if (num==1) {
+    if (estado == 'agregar') {
+        if (num == 1) {
             $('.contenidoAgregar1_1').removeClass('hidden');
-            
-            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'ocultar')");
-            
-            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
-            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
-            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
 
-        }else if (num==2) {            
+            $('.agregar1_1').attr('onclick', "agregarTarjeta(1,'ocultar')");
+
+            $('.agregar2_1').attr('onclick', "agregarTarjeta(2,'agregar')");
+            $('.agregar3').attr('onclick', "agregarTarjeta(3,'agregar')");
+            $('.agregar4').attr('onclick', "agregarTarjeta(4,'agregar')");
+
+        } else if (num == 2) {
             $('.contenidoAgregar2_1').removeClass('hidden');
-            
-            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'ocultar')");
 
-            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
-            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
-            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+            $('.agregar2_1').attr('onclick', "agregarTarjeta(2,'ocultar')");
 
-        }else if (num==3) {            
+            $('.agregar1_1').attr('onclick', "agregarTarjeta(1,'agregar')");
+            $('.agregar3').attr('onclick', "agregarTarjeta(3,'agregar')");
+            $('.agregar4').attr('onclick', "agregarTarjeta(4,'agregar')");
+
+        } else if (num == 3) {
             $('.contenidoAgregar3').removeClass('hidden');
             $('.imgTarg3').removeClass('d-none');
-            
-            $('.agregar3').attr('onclick',"agregarTarjeta(3,'ocultar')");
 
-            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
-            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
-            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+            $('.agregar3').attr('onclick', "agregarTarjeta(3,'ocultar')");
 
-        }else if (num==4) {            
+            $('.agregar1_1').attr('onclick', "agregarTarjeta(1,'agregar')");
+            $('.agregar2_1').attr('onclick', "agregarTarjeta(2,'agregar')");
+            $('.agregar4').attr('onclick', "agregarTarjeta(4,'agregar')");
+
+        } else if (num == 4) {
             $('.contenidoAgregar4').removeClass('hidden');
-            
-            $('.agregar4').attr('onclick',"agregarTarjeta(4,'ocultar')");
 
-            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
-            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
-            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
+            $('.agregar4').attr('onclick', "agregarTarjeta(4,'ocultar')");
+
+            $('.agregar1_1').attr('onclick', "agregarTarjeta(1,'agregar')");
+            $('.agregar2_1').attr('onclick', "agregarTarjeta(2,'agregar')");
+            $('.agregar3').attr('onclick', "agregarTarjeta(3,'agregar')");
 
         }
 
-    }else if(estado=='ocultar'){
+    } else if (estado == 'ocultar') {
 
-        if (num==1) {
+        if (num == 1) {
             $('.contenidoAgregar1_1').addClass('hidden');
 
-            $('.agregar1_1').attr('onclick',"agregarTarjeta(1,'agregar')");
-        }else if (num==2) {
+            $('.agregar1_1').attr('onclick', "agregarTarjeta(1,'agregar')");
+        } else if (num == 2) {
             $('.contenidoAgregar2_1').addClass('hidden');
 
-            $('.agregar2_1').attr('onclick',"agregarTarjeta(2,'agregar')");
-        }else if (num==3) {
+            $('.agregar2_1').attr('onclick', "agregarTarjeta(2,'agregar')");
+        } else if (num == 3) {
             $('.contenidoAgregar3').addClass('hidden');
 
-            $('.agregar3').attr('onclick',"agregarTarjeta(3,'agregar')");
-        }else if (num==4) {
+            $('.agregar3').attr('onclick', "agregarTarjeta(3,'agregar')");
+        } else if (num == 4) {
             $('.contenidoAgregar4').addClass('hidden');
 
-            $('.agregar4').attr('onclick',"agregarTarjeta(4,'agregar')");
+            $('.agregar4').attr('onclick', "agregarTarjeta(4,'agregar')");
         }
     }
 }
 
-function mostrarTarjeta(num,estado) {
+function mostrarTarjeta(num, estado) {
 
     $('.contenidoMostrar1, .contenidoMostrar3, .contenidoMostrar4').addClass('d-none');
     $('.contenidoMostrar2').addClass('hidden');
     $('.mostrar1, .mostrar2, .mostrar3, .mostrar4').removeClass('d-none');
 
 
-    if (estado=='mostrar') {
-        if (num==1) {
+    if (estado == 'mostrar') {
+        if (num == 1) {
             scroll_set(11);
             $('.padreMostrar1').addClass('ocultarMostrar1');
             $('.padreMostrar1').removeClass('padreMostrar1');
-            
+
             $('.contenidoMostrar1').removeClass('d-none');
             $('.mostrar1').addClass('d-none');
-            
-            $('.ocultarMostrar1').attr('onclick',"mostrarTarjeta(1,'ocultar')");
-        }else if (num==2) {            
+
+            $('.ocultarMostrar1').attr('onclick', "mostrarTarjeta(1,'ocultar')");
+        } else if (num == 2) {
             $('.padreMostrar2').addClass('ocultarMostrar2');
             $('.padreMostrar2').removeClass('padreMostrar2');
-            
+
             $('.contenidoMostrar2').removeClass('hidden');
             $('.mostrar2').addClass('d-none');
-            
-            $('.ocultarMostrar2').attr('onclick',"mostrarTarjeta(2,'ocultar')");
-        }else if (num==3) {            
+
+            $('.ocultarMostrar2').attr('onclick', "mostrarTarjeta(2,'ocultar')");
+        } else if (num == 3) {
             $('.padreMostrar3').addClass('ocultarMostrar3');
             $('.padreMostrar3').removeClass('padreMostrar3');
-            
+
             $('.contenidoMostrar3').removeClass('d-none');
             $('.mostrar3').addClass('d-none');
-            
-            $('.ocultarMostrar3').attr('onclick',"mostrarTarjeta(3,'ocultar')");
-        }else if (num==4) {  
-            scroll_set(12);          
+
+            $('.ocultarMostrar3').attr('onclick', "mostrarTarjeta(3,'ocultar')");
+        } else if (num == 4) {
+            scroll_set(12);
             $('.padreMostrar4').addClass('ocultarMostrar4');
             $('.padreMostrar4').removeClass('padreMostrar4');
-            
+
             $('.contenidoMostrar4').removeClass('d-none');
             $('.mostrar4').addClass('d-none');
-            
-            $('.ocultarMostrar4').attr('onclick',"mostrarTarjeta(4,'ocultar')");
-        }else if (num==5) { 
-            scroll_set(13);           
+
+            $('.ocultarMostrar4').attr('onclick', "mostrarTarjeta(4,'ocultar')");
+        } else if (num == 5) {
+            scroll_set(13);
             $('.padreMostrar5').addClass('ocultarMostrar5');
             $('.padreMostrar5').removeClass('padreMostrar5');
-            
+
             $('.contenidoMostrar5').removeClass('d-none');
             $('.mostrar5').addClass('d-none');
-            
-            $('.ocultarMostrar5').attr('onclick',"mostrarTarjeta(5,'ocultar')");
+
+            $('.ocultarMostrar5').attr('onclick', "mostrarTarjeta(5,'ocultar')");
         }
 
-    }else if(estado=='ocultar'){
+    } else if (estado == 'ocultar') {
 
-        if (num==1) {
+        if (num == 1) {
             $('.ocultarMostrar1').addClass('padreMostrar1');
             $('.ocultarMostrar1').removeClass('ocultarMostrar1');
-            
+
             $('.contenidoMostrar1').addClass('d-none');
             $('.mostrar1').removeClass('d-none');
 
-            
-            $('.padreMostrar1').attr('onclick',"mostrarTarjeta(1,'mostrar')");
-        }else if (num==2) {            
+
+            $('.padreMostrar1').attr('onclick', "mostrarTarjeta(1,'mostrar')");
+        } else if (num == 2) {
             $('.ocultarMostrar2').addClass('padreMostrar2');
             $('.ocultarMostrar2').removeClass('ocultarMostrar2');
-            
+
             $('.contenidoMostrar2').addClass('hidden');
             $('.mostrar2').removeClass('d-none');
 
-            
-            $('.padreMostrar2').attr('onclick',"mostrarTarjeta(2,'mostrar')");
-        }else if (num==3) {            
+
+            $('.padreMostrar2').attr('onclick', "mostrarTarjeta(2,'mostrar')");
+        } else if (num == 3) {
             $('.ocultarMostrar3').addClass('padreMostrar3');
             $('.ocultarMostrar3').removeClass('ocultarMostrar3');
-            
+
             $('.contenidoMostrar3').addClass('d-none');
             $('.mostrar3').removeClass('d-none');
 
-            
-            $('.padreMostrar3').attr('onclick',"mostrarTarjeta(3,'mostrar')");
-        }else if (num==4) {            
+
+            $('.padreMostrar3').attr('onclick', "mostrarTarjeta(3,'mostrar')");
+        } else if (num == 4) {
             $('.ocultarMostrar4').addClass('padreMostrar4');
             $('.ocultarMostrar4').removeClass('ocultarMostrar4');
-            
+
             $('.contenidoMostrar4').addClass('d-none');
             $('.mostrar4').removeClass('d-none');
 
-            
-            $('.padreMostrar4').attr('onclick',"mostrarTarjeta(4,'mostrar')");
-        }else if (num==5) {            
+
+            $('.padreMostrar4').attr('onclick', "mostrarTarjeta(4,'mostrar')");
+        } else if (num == 5) {
             $('.ocultarMostrar5').addClass('padreMostrar5');
             $('.ocultarMostrar5').removeClass('ocultarMostrar5');
-            
+
             $('.contenidoMostrar5').addClass('d-none');
             $('.mostrar5').removeClass('d-none');
 
-            
-            $('.padreMostrar5').attr('onclick',"mostrarTarjeta(5,'mostrar')");
+
+            $('.padreMostrar5').attr('onclick', "mostrarTarjeta(5,'mostrar')");
         }
     }
 }
+
 function pasarTarjetas(num) {
 
-    if (num==1) {
+    if (num == 1) {
         $('#diapositiva1U5').addClass('d-none');
         $('#diapositiva2U5').removeClass('d-none');
         $('.fa-caret-right').addClass('d-none');
         $('.fa-caret-left').removeClass('d-none');
-    }else if (num==2) {
+    } else if (num == 2) {
         $('#diapositiva2U5').addClass('d-none');
         $('#diapositiva1U5').removeClass('d-none');
         $('.fa-caret-left').addClass('d-none');
         $('.fa-caret-right').removeClass('d-none');
     }
-    
+
 }
 
-function mapaU6(num,estado) {
+function mapaU6(num, estado) {
 
-    
-    
-    if (estado==1) {
-        if (num==1) {
+
+
+    if (estado == 1) {
+        if (num == 1) {
             $('#contenedorMapa1U6').html(``);
 
             var data = `
@@ -1427,7 +1454,7 @@ function mapaU6(num,estado) {
                         `;
 
             $('#contenedorMapa1U6').html(data);
-        }else if (num==2) {
+        } else if (num == 2) {
             $('#contenedorMapa2U6').html(``);
 
             var data = `
@@ -1440,9 +1467,9 @@ function mapaU6(num,estado) {
                             </div>
                         </div>
                         `;
-            
+
             $('#contenedorMapa2U6').html(data);
-        }else if (num==3) {            
+        } else if (num == 3) {
             $('#contenedorMapa3U6').html(``);
 
             var data = `
@@ -1458,11 +1485,11 @@ function mapaU6(num,estado) {
                             </div>
                         </div>
                         `;
-            
+
             $('#contenedorMapa3U6').html(data);
         }
-    }else if (estado == 2) {
-        if (num==1) {
+    } else if (estado == 2) {
+        if (num == 1) {
             $('#contenedorMapa1U6').html(``);
 
             var data = `
@@ -1472,7 +1499,7 @@ function mapaU6(num,estado) {
                         `;
 
             $('#contenedorMapa1U6').html(data);
-        }else if (num==2) {
+        } else if (num == 2) {
             $('#contenedorMapa2U6').html(``);
 
             var data = `
@@ -1480,9 +1507,9 @@ function mapaU6(num,estado) {
                             <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial2 cursor" onclick="mapaU6(2,1)">2</h1>
                         </div>
                         `;
-            
+
             $('#contenedorMapa2U6').html(data);
-        }else if (num==3) {            
+        } else if (num == 3) {
             $('#contenedorMapa3U6').html(``);
 
             var data = `
@@ -1490,7 +1517,7 @@ function mapaU6(num,estado) {
                             <h1 class="py-2 px-4 bg-color-rojo1 rounded-circle text-white inicial3 cursor" onclick="mapaU6(3,1)">3</h1>
                         </div>
                         `;
-            
+
             $('#contenedorMapa3U6').html(data);
         }
     }
@@ -1499,8 +1526,8 @@ function mapaU6(num,estado) {
 
 // deslizador
 
-function scroll_horizontal(num){
-    
+function scroll_horizontal(num) {
+
     $('.scroll-flecha').removeClass('d-block');
     $('.scroll-flecha').addClass('d-none');
     switch (parseInt(num)) {
@@ -1508,7 +1535,7 @@ function scroll_horizontal(num){
             var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/comunidad1.png" width="100%" height="100%">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">Es un concepto que reafirma la importancia de la razón en la vida en tanto comunidad y cosmos y busca llevar a los hombres a un bienestar superior a los alcances del desarrollo capitalista (Gómez, 2018, 6).</p>');
-            
+
             $('.scroll-flecha-0').removeClass('d-none');
             $('.scroll-flecha-0').addClass('d-block');
             break;
@@ -1584,10 +1611,10 @@ function scroll_horizontal(num){
 
 
 function pestanias(num) {
-    
+
     $('.pesta1, .pesta2, .pesta3, .pesta4, .pesta5, .pesta6').addClass('bg-color-claro');
     $('.pesta1, .pesta2, .pesta3, .pesta4, .pesta5, .pesta6').removeClass('bg-color-rojo1');
-    
+
     if (num == 1) {
         $('.pesta1').removeClass('bg-color-claro');
         $('.pesta1').addClass('bg-color-rojo1');
@@ -1599,7 +1626,7 @@ function pestanias(num) {
                     <img src="assets/img/img_ova/americano1.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
-    }else if (num == 2) {
+    } else if (num == 2) {
         $('.pesta2').removeClass('bg-color-claro');
         $('.pesta2').addClass('bg-color-rojo1');
 
@@ -1612,7 +1639,7 @@ function pestanias(num) {
                     </p>
                     `;
         $('#contenidoCaractU9').html(data);
-    }else if (num == 3) {
+    } else if (num == 3) {
         $('.pesta3').removeClass('bg-color-claro');
         $('.pesta3').addClass('bg-color-rojo1');
 
@@ -1623,7 +1650,7 @@ function pestanias(num) {
                     <img src="assets/img/img_ova/orgullo1.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
-    }else if (num == 4) {
+    } else if (num == 4) {
         $('.pesta4').removeClass('bg-color-claro');
         $('.pesta4').addClass('bg-color-rojo1');
 
@@ -1635,7 +1662,7 @@ function pestanias(num) {
                     <p class="text-justify pb-3 transition-on">El bien es algo subjetivo. “En lo que respecta a la conceptualización de las áreas morales, el bien se halla incorporado en realidades concretas y lo bueno es lo conveniente, lo honesto, lo correcto o útil para la vida” (Rojas Quiceno 2013, 35). </p>
                     `;
         $('#contenidoCaractU9').html(data);
-    }else if (num == 5) {
+    } else if (num == 5) {
         $('.pesta5').removeClass('bg-color-claro');
         $('.pesta5').addClass('bg-color-rojo1');
 
@@ -1646,7 +1673,7 @@ function pestanias(num) {
                     <img src="assets/img/img_ova/pensamiento-positivo.png" width="60%" class="transition-on">
                     `;
         $('#contenidoCaractU9').html(data);
-    }else if (num == 6) {
+    } else if (num == 6) {
         $('.pesta6').removeClass('bg-color-claro');
         $('.pesta6').addClass('bg-color-rojo1');
 
@@ -1660,7 +1687,7 @@ function pestanias(num) {
     }
 }
 
-function tarjetasU14(num,posicion) {
+function tarjetasU14(num, posicion) {
     if (posicion == 'p') {
         if (num == 1) {
             $('#tarjeta1U14').html(``);
@@ -1676,7 +1703,7 @@ function tarjetasU14(num,posicion) {
                     </div>
                     `;
             $('#tarjeta1U14').html(data);
-        }else if (num == 2) {
+        } else if (num == 2) {
             $('#tarjeta2U14').html(``);
             var data = `
                     <div class="row bg-white px-5 py-3 h-200 w-100 cursor">
@@ -1693,7 +1720,7 @@ function tarjetasU14(num,posicion) {
                         `;
             $('#tarjeta2U14').html(data);
         }
-    }else if (posicion == 's') {
+    } else if (posicion == 's') {
         if (num == 1) {
             $('#tarjeta1U14').html(``);
             var data = `
@@ -1710,7 +1737,7 @@ function tarjetasU14(num,posicion) {
                 </div>
                     `;
             $('#tarjeta1U14').html(data);
-        }else if (num == 2) {
+        } else if (num == 2) {
             $('#tarjeta2U14').html(``);
             var data = `
                     <div class="row bg-color-verde3 px-5 py-3 h-200 w-100 cursor" onclick="tarjetasU14(2,'p')">
@@ -1727,7 +1754,7 @@ function tarjetasU14(num,posicion) {
                         `;
             $('#tarjeta2U14').html(data);
         }
-    }else if (posicion == 't') {
+    } else if (posicion == 't') {
         if (num == 2) {
             $('#tarjeta2U14').html(``);
             var data = `
@@ -1751,63 +1778,63 @@ function tarjetasU14(num,posicion) {
 }
 
 function cambiarImgU16(num) {
-    if (num==1) {
+    if (num == 1) {
         $('#img1U16').removeClass('bg-color');
         $('#img1U16').html(``);
         var data = `
                     <img src="assets/img/img_ova/nota3.png" width="100%" height="100%">
                     `;
         $('#img1U16').html(data);
-        $('#img1U16').attr('onclick',"cambiarImgU16(2)");
-    }else if (num==2) {
+        $('#img1U16').attr('onclick', "cambiarImgU16(2)");
+    } else if (num == 2) {
         $('#img1U16').addClass('bg-color');
         $('#img1U16').html(``);
         var data = `
                     <img src="assets/img/img_ova/medioAmbiente.png" width="100%">
                     `;
         $('#img1U16').html(data);
-        $('#img1U16').attr('onclick',"cambiarImgU16(1)");
+        $('#img1U16').attr('onclick', "cambiarImgU16(1)");
     }
 }
 
 function abrirMapa(num) {
     $('.mapaConc').addClass('d-none');
     if (num == 1) {
-        $('#contentMapaBG').removeClass('mapaBG3') ;
-        $('#contentMapaBG').addClass('mapaBG1') ;
+        $('#contentMapaBG').removeClass('mapaBG3');
+        $('#contentMapaBG').addClass('mapaBG1');
         $('.mapaConc-1, .mapaConc-2').removeClass('d-none');
-    }else if (num == 2) {
-        $('.mapaConc-1, .mapaConc-2, .mapaConc-3').removeClass('d-none'); 
-    }else if (num == 3) {
-        $('.mapaConc-1, .mapaConc-2, .mapaConc-3, .mapaConc-4').removeClass('d-none'); 
-    }else if (num == 4) {
-        $('.mapaConc-1, .mapaConc-2, .mapaConc-3, .mapaConc-4, .mapaConc-5').removeClass('d-none'); 
-    }else if (num == 5) {
-        $('#contentMapaBG').removeClass('mapaBG1') ;
-        $('#contentMapaBG').addClass('mapaBG2') ;
+    } else if (num == 2) {
+        $('.mapaConc-1, .mapaConc-2, .mapaConc-3').removeClass('d-none');
+    } else if (num == 3) {
+        $('.mapaConc-1, .mapaConc-2, .mapaConc-3, .mapaConc-4').removeClass('d-none');
+    } else if (num == 4) {
+        $('.mapaConc-1, .mapaConc-2, .mapaConc-3, .mapaConc-4, .mapaConc-5').removeClass('d-none');
+    } else if (num == 5) {
+        $('#contentMapaBG').removeClass('mapaBG1');
+        $('#contentMapaBG').addClass('mapaBG2');
         $('.mapaConc-6').removeClass('d-none');
-    }else if (num == 6) {
-        $('.mapaConc-6, .mapaConc-7').removeClass('d-none'); 
-    }else if (num == 7) {
-        $('.mapaConc-6, .mapaConc-7, .mapaConc-8').removeClass('d-none'); 
-    }else if (num == 8) {
-        $('.mapaConc-6, .mapaConc-7, .mapaConc-8, .mapaConc-9').removeClass('d-none'); 
-    }else if (num == 9) {
-        $('#contentMapaBG').removeClass('mapaBG2') ;
-        $('#contentMapaBG').addClass('mapaBG3') ;
+    } else if (num == 6) {
+        $('.mapaConc-6, .mapaConc-7').removeClass('d-none');
+    } else if (num == 7) {
+        $('.mapaConc-6, .mapaConc-7, .mapaConc-8').removeClass('d-none');
+    } else if (num == 8) {
+        $('.mapaConc-6, .mapaConc-7, .mapaConc-8, .mapaConc-9').removeClass('d-none');
+    } else if (num == 9) {
+        $('#contentMapaBG').removeClass('mapaBG2');
+        $('#contentMapaBG').addClass('mapaBG3');
         $('.mapaConc-10').removeClass('d-none');
-    }else if (num == 10) {
-        $('.mapaConc-10, .mapaConc-11').removeClass('d-none'); 
-    }else if (num == 11) {
-        $('.mapaConc-10, .mapaConc-11, .mapaConc-12').removeClass('d-none'); 
-    }else if (num == 12) {
-        $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13').removeClass('d-none'); 
-    }else if (num == 13) {
-        $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13, .mapaConc-14').removeClass('d-none'); 
+    } else if (num == 10) {
+        $('.mapaConc-10, .mapaConc-11').removeClass('d-none');
+    } else if (num == 11) {
+        $('.mapaConc-10, .mapaConc-11, .mapaConc-12').removeClass('d-none');
+    } else if (num == 12) {
+        $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13').removeClass('d-none');
+    } else if (num == 13) {
+        $('.mapaConc-10, .mapaConc-11, .mapaConc-12, .mapaConc-13, .mapaConc-14').removeClass('d-none');
     }
 }
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -1833,5 +1860,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }
