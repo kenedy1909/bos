@@ -2229,3 +2229,67 @@ function cardTarjetas(num) {
     $('.card4Contenido').addClass('d-flex');
   }
 }
+
+function contenidoNum(num) {
+  switch (parseInt(num)) {
+    case 1:
+      $('.contenidoNum').addClass('d-none');
+      $('.contenidoNum1').removeClass('d-none');
+      
+      break;
+      case 2:
+      $('.contenidoNum').addClass('d-none');
+      $('.contenidoNum2').removeClass('d-none');
+      
+      break;
+  
+    default:
+      break;
+  }
+  
+}
+
+
+function toggleBanner(num) {
+  let contador=1;
+  contador= contador++;
+  // console.log('clik'+ contador);
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner2U1-11').removeClass('d-none');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner1U1-11').removeClass('d-none'); 
+        $('.banner3U1-11').removeClass('d-none');
+        $('.banner5U1-11').removeClass('d-none'); 
+        $('.banner7U1-11').removeClass('d-none');  
+        // $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner4U1-11').removeClass('d-none');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner6U1-11').removeClass('d-none');  
+      break;
+      case 5:
+    
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner8U1-11').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
+}
