@@ -1854,7 +1854,7 @@ function activi5(num) {
     $('#activiPosterior5').addClass('d-flex');
 
     $('#padreActivi5').removeClass('bg-color');
-    $('#padreActivi5').addClass('bg-color-claro');
+    $('#padreActivi5').addClass('bg-color-claro2');
     $('#padreActivi5').attr('onclick','activi5(2)');
 
   }else if (num == 2) {
@@ -1876,7 +1876,7 @@ function activi5(num) {
     $('#activiPosterior5_2').addClass('d-flex');
 
     $('#padreActivi5_2').removeClass('bg-color');
-    $('#padreActivi5_2').addClass('bg-color-claro');
+    $('#padreActivi5_2').addClass('bg-color-claro2');
     $('#padreActivi5_2').attr('onclick','activi5(4)');
 
   }else if (num == 4) {
@@ -1906,7 +1906,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/tribunal.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>1</b></p>
                     `;
     var bodyCont13 = `
@@ -1920,7 +1920,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/habla.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/habla.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>2</b></p>
                     `;
     var bodyCont13 = `
@@ -1934,7 +1934,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/icono_tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/icono_tribunal.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>3</b></p>
                     `;
     var bodyCont13 = `
@@ -1948,7 +1948,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/buscar.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/buscar.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>4</b></p>
                     `;
     var bodyCont13 = `
