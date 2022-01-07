@@ -1612,12 +1612,14 @@ function scroll_horizontal(num) {
 
 function pestanias(num) {
 
-    $('.pesta1, .pesta2, .pesta3, .pesta4, .pesta5, .pesta6').addClass('bg-color-claro');
-    $('.pesta1, .pesta2, .pesta3, .pesta4, .pesta5, .pesta6').removeClass('bg-color-rojo1');
+    $('.pesta1, .pesta2, .pesta3').addClass('bg-color-claro1');
+    $('.pesta4, .pesta5, .pesta6').addClass('bg-color-claro2');
+    $('.pesta1, .pesta2, .pesta3').removeClass('bg-color-rojoa');
+    $('.pesta4, .pesta5, .pesta6').removeClass('bg-color-rojob');
 
     if (num == 1) {
-        $('.pesta1').removeClass('bg-color-claro');
-        $('.pesta1').addClass('bg-color-rojo1');
+        $('.pesta1').removeClass('bg-color-claro1');
+        $('.pesta1').addClass('bg-color-rojoa');
 
         $('#contenidoCaractU9').html(``);
 
@@ -1627,8 +1629,8 @@ function pestanias(num) {
                     `;
         $('#contenidoCaractU9').html(data);
     } else if (num == 2) {
-        $('.pesta2').removeClass('bg-color-claro');
-        $('.pesta2').addClass('bg-color-rojo1');
+        $('.pesta2').removeClass('bg-color-claro1');
+        $('.pesta2').addClass('bg-color-rojoa');
 
         $('#contenidoCaractU9').html(``);
 
@@ -1640,8 +1642,8 @@ function pestanias(num) {
                     `;
         $('#contenidoCaractU9').html(data);
     } else if (num == 3) {
-        $('.pesta3').removeClass('bg-color-claro');
-        $('.pesta3').addClass('bg-color-rojo1');
+        $('.pesta3').removeClass('bg-color-claro1');
+        $('.pesta3').addClass('bg-color-rojoa');
 
         $('#contenidoCaractU9').html(``);
 
@@ -1651,8 +1653,8 @@ function pestanias(num) {
                     `;
         $('#contenidoCaractU9').html(data);
     } else if (num == 4) {
-        $('.pesta4').removeClass('bg-color-claro');
-        $('.pesta4').addClass('bg-color-rojo1');
+        $('.pesta4').removeClass('bg-color-claro2');
+        $('.pesta4').addClass('bg-color-rojob');
 
         $('#contenidoCaractU9').html(``);
 
@@ -1663,8 +1665,8 @@ function pestanias(num) {
                     `;
         $('#contenidoCaractU9').html(data);
     } else if (num == 5) {
-        $('.pesta5').removeClass('bg-color-claro');
-        $('.pesta5').addClass('bg-color-rojo1');
+        $('.pesta5').removeClass('bg-color-claro2');
+        $('.pesta5').addClass('bg-color-rojob');
 
         $('#contenidoCaractU9').html(``);
 
@@ -1674,8 +1676,8 @@ function pestanias(num) {
                     `;
         $('#contenidoCaractU9').html(data);
     } else if (num == 6) {
-        $('.pesta6').removeClass('bg-color-claro');
-        $('.pesta6').addClass('bg-color-rojo1');
+        $('.pesta6').removeClass('bg-color-claro2');
+        $('.pesta6').addClass('bg-color-rojob');
 
         $('#contenidoCaractU9').html(``);
 
