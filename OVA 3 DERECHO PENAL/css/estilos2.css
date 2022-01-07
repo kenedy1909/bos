@@ -360,6 +360,8 @@
   height: 50px;
   width: 50px;
   position: relative;
+  top: 35px;
+  left: -137px;
 }
 
 .icon-arrow-size{
@@ -472,4 +474,8 @@
 #btn8ImgJuicio {
   top: 8%;
   left: 3%;
+}
+
+.w-90{
+  width: 90%;
 }
