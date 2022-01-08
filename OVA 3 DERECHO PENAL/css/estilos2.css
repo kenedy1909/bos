@@ -479,3 +479,13 @@
 .w-90{
   width: 90%;
 }
+
+.btn-claro{
+  background-color: var( --bg-color-claro2);
+  border-color: var(--bg-color-claro2);
+  color: black;
+}
+
+.w1060px{
+  width: 1060px;
+}

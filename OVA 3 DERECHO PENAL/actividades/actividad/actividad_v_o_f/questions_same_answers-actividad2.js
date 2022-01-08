@@ -173,9 +173,17 @@ QuestionsSameAnswers.prototype.score =  function () {
     var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
+    // if (puntaje == 100) {
+    //     exito = true;
+    //     mensaje = "¡Felicitaciones!"
+    // }
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_template/bien.png");  
+    }
+    if (puntaje < 100) {
+        $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");  
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
