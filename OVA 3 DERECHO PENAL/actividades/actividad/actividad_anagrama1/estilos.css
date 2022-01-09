@@ -150,9 +150,10 @@ span.checked svg.svg2 {
 
 
 .info_actividad{
-    background: #393A72;
+    background: #DDEAF6;
     border-radius: 20px;
     padding: 20px;
+    color: black;
 }
 
 .d-flex{

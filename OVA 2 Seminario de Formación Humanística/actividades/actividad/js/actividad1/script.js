@@ -389,9 +389,14 @@ function init_recurso_1() {
                 var exito = false;
                 var mensaje = "Inténtalo nuevamente.";
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
+                /*mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
                     
-                });
+                });*/
+                $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
+                $('.mensaje').text("¡Puedes hacerlo mejor!");
+                $('.puntaje').text("25%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+                $('#exampleModal').modal('show');
             }
         } else {
             ahorcado.dibujarTodo();
@@ -406,9 +411,14 @@ function init_recurso_1() {
                 var exito = true;
                 var mensaje = "¡Felicitaciones";
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
+                /*mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                     
-                });
+                });*/
+                $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
+                $('.mensaje').text("¡Puedes hacerlo mejor!");
+                $('.puntaje').text("100%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+                $('#exampleModal').modal('show');
             }
         }
     };
@@ -431,6 +441,7 @@ function init_recurso_1() {
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
         this.iniciar();
+        location.reload();
         //console.clear();
     }
 
@@ -439,6 +450,7 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
+        location.reload();
         ahorcado.reiniciar();
     });
 
@@ -446,4 +458,8 @@ function init_recurso_1() {
         $("#unidad1-28").html('<iframe src="actividades/actividad/activi1/index.html" frameborder="0"></iframe>')
     })
 
+}
+
+function reiniciar() {
+    location.reload();
 }

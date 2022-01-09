@@ -1,9 +1,7 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
-    $(".menu1").removeClass('d-none');
-    $(".menu2").removeClass('d-none');
-    $(".menu3").removeClass('d-none');
     $(".menu4").removeClass('d-none');
+
     tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({
@@ -25,13 +23,11 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado4();
     console.log(tema);
@@ -46,6 +42,7 @@ $(function() {
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides4(stepIndex);
+    actualizarprogress(stepIndex+19);
 }
 
 function slide_predeterminado4() {
@@ -71,6 +68,8 @@ function controlSlides4(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
             break;
@@ -78,18 +77,32 @@ function controlSlides4(num) {
 
             $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 2:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             break;
 
         default:

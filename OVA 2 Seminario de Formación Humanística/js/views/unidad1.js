@@ -3,7 +3,9 @@ $( document ).ready(function() {
     // console.log(tema);
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
-    
+    star_uni = 1;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

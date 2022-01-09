@@ -174,15 +174,28 @@ QuestionsSameAnswers.prototype.score =  function () {
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
-        exito = true;
-        mensaje = "¡Felicitaciones!"
+        
+      $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;margin-top: 5%;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" onclick="reload()">cerrar</button>');
+    }else if (puntaje >= 75 && puntaje < 100) {
+        
+      $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;margin-top: 5%;">');
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="../img/img1/mal.png" style="max-width: 90%;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }
-    registrarActividad(puntaje);
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
-        self.reset(form);
-    });
+    $("#exampleModal").modal("show");
 }
-
+function reload(){
+    location.reload();
+}
 QuestionsSameAnswers.prototype.prepare_files =  function () {
     /* Crea y carga los archivos necesarios para que el módulo funcione */
 
@@ -209,7 +222,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th></th>\
+                    <th style="text-align: center;"><p style="color: white;"></p><b>Ítem</b></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
@@ -222,9 +235,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\
-                            <label class="label-container">\
+                            <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radio-elegant">{% if conta==1 %} '+svg_elem1+' {% else %} '+svg_elem2+'{% endif %}{% set conta=conta+1 %}</span>\
+                                <span class="radiobtn"></span>\
                             </label>\
                         </td>\
                     {% endfor %}\
@@ -236,6 +249,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn califica_fv shadow" type="submit" >Calificar</button>\
+        <button class="btn" style="background: #7a3d78; color: #fff;width: 170px;font-size: 25px;" type="submit" >Calificar</button>\
     </div>\
 </form>'

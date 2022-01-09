@@ -756,6 +756,9 @@ p, button{
 .bg-color-claro2{
 	background: var(--bg-color-claro2)!important;
 }
+.bg-color-claro3{
+	background: var(--bg-color-claro3)!important;
+}
 .bg-color-secondary{
 	background: var(--bg-color-secondary)!important;
 }
@@ -909,7 +912,7 @@ p, button{
 	margin-left: -120px!important;
 }
 .menos-margin-150{
-	margin-left: -150px!important;
+	margin-left: -140px!important;
 }
 .menos-marginR-10{
 	margin-right: -10px!important;
@@ -1048,7 +1051,7 @@ p, button{
 	top: -100px;
 }
 .top-menos110{
-	top: -110px;
+	top: -118px;
 }
 .top-menos150{
 	top: -150px;
@@ -1232,7 +1235,7 @@ p, button{
 }
 @media (max-height: 720px) {
 	.triangulo-equilatero-bottom, .triangulo-equilatero-bottom2, .triangulo-equilatero-bottom3{
-		top: 165px!important;
+		top: 155px!important;
 	}
 }
 /* 
@@ -2120,4 +2123,94 @@ a.control_next {
     margin-left: 5px;
     border: solid 1px #97182f;
   
+}
+
+.pr-top-35{
+	position: relative;
+    top: -35px;
+}
+
+.pr-left15{
+	position: relative;
+    left: 15px;
+}
+.top-30px{
+	position: relative;
+    top: -30px;
+}
+
+.wh100{
+	width: 100px;
+    height: 100px;
+}
+
+.left-9px{
+	position: relative;
+    left: -9px;
+}
+
+.top-105px{
+	position: relative;
+    top: -105px;
+}
+
+.top50px{
+	position: relative;
+    top: 50px;
+}
+
+.top-80px{
+	position: relative;
+    top: -80px;
+}
+
+.triangulo{
+	width: 0;
+    height: 0;
+    border-left: 24px solid #771E18;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(90deg);
+}
+.trianguloIvertido{
+	width: 0;
+    height: 0;
+    border-left: 24px solid #771E18;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    transform: rotate(270deg);
+}
+
+.imagen-acordeon2{
+	background: white;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.teletrabajo{
+	/* background-color: red; */
+    height: 300px;
+    position: relative;
+    top: -50px;
+    left: -75px;
+    border-radius: 20px;
+}
+
+.soldados{
+	position: relative;
+    left: -66px;
+    top: 25px;
+}
+
+.flecha{
+	position: relative;
+    left: 55%;
+    top: -332px;
+}
+
+.menos-marginT-116 {
+    margin-top: -116px!important;
 }

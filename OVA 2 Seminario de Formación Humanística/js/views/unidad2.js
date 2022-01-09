@@ -3,7 +3,9 @@ $( document ).ready(function() {
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
-    
+    star_uni = 2;
+    paso = false;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     console.log(tema);
     
     $('#smartwizard').smartWizard({
@@ -129,6 +131,7 @@ $( document ).ready(function() {
     $(".p10inicio").on("click", function() {
         $(".pantalla3").hide();
         $(".pantalla4").hide();
+        $(".pantalla5").hide();
         $(".btninicio").show();
     })
 

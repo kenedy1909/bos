@@ -1,26 +1,28 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+    $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
@@ -51,74 +53,74 @@ $( document ).ready(function() {
     // console.log(tema);
     slide_link(tema);
 
-  /* -------------------- hover unidad 1 -8-------------------- */
-    $(".targetasHover1").hover(function(){
+    /* -------------------- hover unidad 1 -8-------------------- */
+    $(".targetasHover1").hover(function() {
         $('.targetasHover1').removeClass('bg-color-secondary');
         $('.targetasHover1').removeClass('text-white');
         $('.targetasHover1').addClass('targetitas');
         $('.hoverTriangulo1').removeClass('hidden');
-      }, function(){
+    }, function() {
         $('.targetasHover1').removeClass('targetitas');
         $('.targetasHover1').addClass('bg-color-secondary');
         $('.targetasHover1').addClass('text-white');
         $('.hoverTriangulo1').addClass('hidden');
     });
-    $(".targetasHover2").hover(function(){
+    $(".targetasHover2").hover(function() {
         $('.targetasHover2').removeClass('bg-color-secondary');
         $('.targetasHover2').removeClass('text-white');
         $('.targetasHover2').addClass('targetitas');
         $('.hoverTriangulo2').removeClass('hidden');
-      }, function(){
+    }, function() {
         $('.targetasHover2').removeClass('targetitas');
         $('.targetasHover2').addClass('bg-color-secondary');
         $('.targetasHover2').addClass('text-white');
         $('.hoverTriangulo2').addClass('hidden');
     });
-    $(".targetasHover3").hover(function(){
+    $(".targetasHover3").hover(function() {
         $('.targetasHover3').removeClass('bg-color-secondary');
         $('.targetasHover3').removeClass('text-white');
         $('.targetasHover3').addClass('targetitas');
         $('.hoverTriangulo3').removeClass('hidden');
-      }, function(){
+    }, function() {
         $('.targetasHover3').removeClass('targetitas');
         $('.targetasHover3').addClass('bg-color-secondary');
         $('.targetasHover3').addClass('text-white');
         $('.hoverTriangulo3').addClass('hidden');
     });
-    $(".targetasHover4").hover(function(){
+    $(".targetasHover4").hover(function() {
         $('.targetasHover4').removeClass('bg-color-secondary');
         $('.targetasHover4').removeClass('text-white');
         $('.targetasHover4').addClass('targetitas');
         $('.hoverTriangulo4').removeClass('hidden');
-      }, function(){
+    }, function() {
         $('.targetasHover4').removeClass('targetitas');
         $('.targetasHover4').addClass('bg-color-secondary');
         $('.targetasHover4').addClass('text-white');
         $('.hoverTriangulo4').addClass('hidden');
     });
-    $(".targetasHover5").hover(function(){
+    $(".targetasHover5").hover(function() {
         $('.targetasHover5').removeClass('bg-color-secondary');
         $('.targetasHover5').removeClass('text-white');
         $('.targetasHover5').addClass('targetitas');
         $('.hoverTriangulo5').removeClass('hidden');
-      }, function(){
+    }, function() {
         $('.targetasHover5').removeClass('targetitas');
         $('.targetasHover5').addClass('bg-color-secondary');
         $('.targetasHover5').addClass('text-white');
         $('.hoverTriangulo5').addClass('hidden');
     });
-    $(".targetasHover6").hover(function(){
+    $(".targetasHover6").hover(function() {
         $('.targetasHover6').removeClass('bg-color-secondary');
         $('.targetasHover6').removeClass('text-white');
         $('.targetasHover6').addClass('targetitas');
         $('.hoverTriangulo6').removeClass('hidden');
-      }, function(){
+    }, function() {
         $('.targetasHover6').removeClass('targetitas');
         $('.targetasHover6').addClass('bg-color-secondary');
         $('.targetasHover6').addClass('text-white');
         $('.hoverTriangulo6').addClass('hidden');
     });
-  /* ------------------- */
+    /* ------------------- */
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
@@ -135,33 +137,34 @@ var pdf = `<div class="col-md-12">
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    controlSlides(stepIndex + 1);
+    actualizarprogress(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -175,21 +178,21 @@ function controlSlides(num){
             slideHeight = $('#slider-5 ul li').height();
             slider_num = "#slider-5";
             slider_all();*/
-            
+
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");  
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
-            
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
+
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
-            $(".i1").html('')    
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
+            $(".i1").html('')
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
-            var inputsRy = [];  
+            var inputsRy = [];
             var i = new Input(4);
             i.crear(elementoPadre1);
             inputsRy.push(i);
@@ -202,46 +205,46 @@ function controlSlides(num){
             inputsRy.push(i2);
 
             for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar();
-                }, false)
-              }(n));
-            }  
+                (function(n) {
+                    inputsRy[n].input.addEventListener("input", function() {
+                        inputsRy[n].actualizar();
+                    }, false)
+                }(n));
+            }
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento administrativo");
-            
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
+
             break;
         case 6:
-          setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
-            
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
+
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");  
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
-            
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
+
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
-            $(".i3").html('')    
+            $(".i3").html('')
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
-            var inputsRy = [];  
+            var inputsRy = [];
             var i = new Input(3);
             i.crear(elementoPadre1);
             inputsRy.push(i);
@@ -254,37 +257,37 @@ function controlSlides(num){
             inputsRy.push(i2);
 
             for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar2();
-                }, false)
-              }(n));
-            }  
+                (function(n) {
+                    inputsRy[n].input.addEventListener("input", function() {
+                        inputsRy[n].actualizar2();
+                    }, false)
+                }(n));
+            }
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 15:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             var videointro = document.getElementById('video_intro1');
             videointro.pause();
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 17:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             var videointro = document.getElementById('video_intro1');
             videointro.pause();
-            $(".i3").html('')    
+            $(".i3").html('')
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
             var inputsRy = [];
@@ -300,16 +303,16 @@ function controlSlides(num){
             inputsRy.push(i2);
 
             for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar2();
-                }, false)
-              }(n));
+                (function(n) {
+                    inputsRy[n].input.addEventListener("input", function() {
+                        inputsRy[n].actualizar2();
+                    }, false)
+                }(n));
             }
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
-            $(".i5").html('')    
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
+            $(".i5").html('')
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
             var elementoPadre2 = document.querySelector(".inputDiv2.i6");
             var inputsRy = [];
@@ -325,56 +328,57 @@ function controlSlides(num){
             inputsRy.push(i2);
 
             for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar3();
-                }, false)
-              }(n));
+                (function(n) {
+                    inputsRy[n].input.addEventListener("input", function() {
+                        inputsRy[n].actualizar3();
+                    }, false)
+                }(n));
             }
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Estatutos de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento académico");
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento académico");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento académico");
             break;
         case 25:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento disciplinario");
             break;
         case 26:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento disciplinario");
             break;
         case 27:
-            setMigaja("Unidades de aprendizaje","1. Régimen estatutario y reglamentario","Reglamento disciplinario");
+            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento disciplinario");
             break;
         default:
             break;
     }
 }
+
 function scroll_set(num) {
-  dragging = "";
-  diff = "";
-  newTop = "";
-  scrollOffset = "";
-  knob = document.querySelector('.custom-scrollbar__knob'+num);
-  bar = document.querySelector('.custom-scrollbar__bar'+num);
-  container = document.querySelector('.custom-scrollbar__inner'+num);
-  scroll();
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob' + num);
+    bar = document.querySelector('.custom-scrollbar__bar' + num);
+    container = document.querySelector('.custom-scrollbar__inner' + num);
+    scroll();
 }
 
-function modal_scroll1(){
+function modal_scroll1() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -384,7 +388,8 @@ function modal_scroll1(){
     container = document.querySelector('.custom-scrollbar__inner1');
     scroll();
 }
-function modal_scroll2(){
+
+function modal_scroll2() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -394,7 +399,8 @@ function modal_scroll2(){
     container = document.querySelector('.custom-scrollbar__inner2');
     scroll();
 }
-function modal_scroll3(){
+
+function modal_scroll3() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -514,53 +520,56 @@ function unidad1_pantalla6_accion4(){
 /*var knob = document.querySelector('.custom-scrollbar__knob2');
 var bar = document.querySelector('.custom-scrollbar__bar2');
 var container = document.querySelector('.custom-scrollbar__inner2');*/
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
@@ -569,72 +578,73 @@ function scroll(){
 
 
 function Input(num) {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = num;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    scroll_horizontal(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
-  this.actualizar2 = function() {
-    scroll_horizontal2(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
-  $("input[type=range]").on('change', function () {
-      /*alert();*/
-  });
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
+    this.actualizar2 = function() {
+        scroll_horizontal2(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        /*alert();*/
+    });
 }
 
 // setup
 
 
 function poner(num) {
-    
-    $(".texto_efecto"+num).css({
+
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'block',
         'z-index': '100'
     });
     if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','block');
-        $(".custom-scrollbar2").css('height','250');
+        $(".custom-scrollbar__bar2").css('display', 'block');
+        $(".custom-scrollbar2").css('height', '250');
     }
 }
+
 function quitar(num) {
     // $(".texto_efecto"+num).css({
     //     position: 'relative',
@@ -643,21 +653,21 @@ function quitar(num) {
     //     'z-index': '100'
     // });
     if (num == 1) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
     if (num == 2) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
     if (num == 3) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
 }
 
-function scroll_horizontal(num){
-  
+function scroll_horizontal(num) {
+
     switch (parseInt(num)) {
         case 0:
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
@@ -676,7 +686,7 @@ function scroll_horizontal(num){
             $('#scroll-img3').html(``);
             $('#scroll-img4').html(``);
             break;
-        case 1:  
+        case 1:
             var pantalla = `<img class="m-auto" width="95%" src="assets/img/img_ova/accion1.png">`;
             $('#scroll-img').html(pantalla);
 
@@ -707,7 +717,7 @@ function scroll_horizontal(num){
             $('#scroll-img').html(``);
             $('#scroll-img2').html(``);
             $('#scroll-img3').html(``);
-            
+
             var pantalla = `<img class="m-auto transition-on" width="95%" src="assets/img/img_ova/accion4.png">`;
             $('#scroll-img4').html(pantalla);
             break;
@@ -715,7 +725,8 @@ function scroll_horizontal(num){
             break;
     }
 }
-function scroll_horizontal2(num){
+
+function scroll_horizontal2(num) {
     switch (parseInt(num)) {
         case 0:
             var img_scroll = `
@@ -870,86 +881,86 @@ function scroll_horizontal2(num){
     }
 }
 
-function cajas(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav1').addClass('activa');
+function cajas(num) {
+    switch (parseInt(num)) {
+        case 1:
+            var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
+            $('.avance_blanco').removeClass('activa');
+            $('.nav1').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na1').removeClass('inactivo');           
-          $('.na1').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 2:
-          var text = `<img src="assets/img/img_ova/Ruanda-2.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2').addClass('activa');
+            $('.na1').removeClass('inactivo');
+            $('.na1').addClass('encendido');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('#infografia').html(text);
+            break;
+        case 2:
+            var text = `<img src="assets/img/img_ova/Ruanda-2.png" class="m-auto img-100">`;
+            $('.avance_blanco').removeClass('activa');
+            $('.nav2').addClass('activa');
 
-          $('.na2').removeClass('inactivo');           
-          $('.na2').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 3:
-          var text = `<img src="assets/img/img_ova/Ruanda-3.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav3').addClass('activa');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.na2').removeClass('inactivo');
+            $('.na2').addClass('encendido');
 
-          $('.na3').removeClass('inactivo');           
-          $('.na3').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      case 4:
-          var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav4').addClass('activa');
+            $('#infografia').html(text);
+            break;
+        case 3:
+            var text = `<img src="assets/img/img_ova/Ruanda-3.png" class="m-auto img-100">`;
+            $('.avance_blanco').removeClass('activa');
+            $('.nav3').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na4').removeClass('inactivo');           
-          $('.na4').addClass('encendido');
-          
-          $('#infografia').html(text);
-          break;
-      
-      default:
-          break;
-  }
+            $('.na3').removeClass('inactivo');
+            $('.na3').addClass('encendido');
+
+            $('#infografia').html(text);
+            break;
+        case 4:
+            var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
+            $('.avance_blanco').removeClass('activa');
+            $('.nav4').addClass('activa');
+
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
+
+            $('.na4').removeClass('inactivo');
+            $('.na4').addClass('encendido');
+
+            $('#infografia').html(text);
+            break;
+
+        default:
+            break;
+    }
 }
 
 function ruandas() {
     var ruanda_num = $(this).data('ruanda');
     $(".ruanda-img").removeClass('bg-cafe-activi');
     $(".ruanda-img").addClass('bg-amarillo-c');
-    $(".ruanda-img-"+ruanda_num).removeClass('bg-amarillo-c');
-    $(".ruanda-img-"+ruanda_num).addClass('bg-cafe-activi');
+    $(".ruanda-img-" + ruanda_num).removeClass('bg-amarillo-c');
+    $(".ruanda-img-" + ruanda_num).addClass('bg-cafe-activi');
 
-    if (ruanda_num==1) {
+    if (ruanda_num == 1) {
         var texto = `
                     <img src="assets/img/img_ova/Derecho penal internacional-03.png" class="img-20 m-auto">
                     <p class="p_black justificado my-auto pl-4">Es importante destacar que existieron diversos comités creados para redactar un código penal internacional que posteriormente debía ser discutido por los estados, sin embargo, no se presentó interés real para dar vida a un tratado que creará una corte internacional de carácter permanente.</p>
                     `;
         $("#ruanda").html(texto);
-    }else if (ruanda_num==2) {
+    } else if (ruanda_num == 2) {
         var texto = `
                     <img src="assets/img/img_ova/Derecho penal internacional-07.png" class="img-20 m-auto">
                     <p class="p_black justificado my-auto pl-4">Por lo anterior, las décadas pasaron sin que se volviera a recurrir al derecho penal internacional, aun cuando el contexto geopolítico ha evidenciado diversos conflictos armados, en los que hubiese sido importante contar con un tribunal que juzgará a los responsables de cometerlos y evitar la impunidad frente a graves crímenes internacionales.</p>
                     `;
         $("#ruanda").html(texto);
-    }else if (ruanda_num==3) {
+    } else if (ruanda_num == 3) {
         var texto = `
                     <img src="assets/img/img_ova/Derecho penal internacional-06.png" class="img-20 m-auto">
                     <p class="p_black justificado my-auto pl-4">Debe finalmente destacarse que, a los dos tribunales en los que se centra el presente tema, fueron creados por el Consejo de Seguridad de Naciones Unidas, en virtud del mandato que le asigna la Carta de la ONU de adoptar las medidas para el mantenimiento y restablecimiento de la paz.</p>
@@ -961,8 +972,8 @@ function ruandas() {
 function yugoslavias(num) {
     $(".yugoslavia-info").removeClass('bg-amarillo-c');
     $(".yugoslavia-info").addClass('bg-cafe-mo');
-    $(".yugoslavia-info-"+num).removeClass('bg-cafe-mo');
-    $(".yugoslavia-info-"+num).addClass('bg-amarillo-c');
+    $(".yugoslavia-info-" + num).removeClass('bg-cafe-mo');
+    $(".yugoslavia-info-" + num).addClass('bg-amarillo-c');
     if (num == 1) {
         var texto = `
                     <div class="p-3 radius-4 border-cafe-activi custom-scrollbar1">
@@ -981,7 +992,7 @@ function yugoslavias(num) {
                     `;
         $("#tribunal").html(texto);
         modal_scroll1();
-    }else if (num == 2) {
+    } else if (num == 2) {
         var texto = `
                     <div class="p-3 radius-4 border-cafe-activi custom-scrollbar2">
                       <div class="custom-scrollbar__inner2">
@@ -998,7 +1009,7 @@ function yugoslavias(num) {
                     `;
         $("#tribunal").html(texto);
         modal_scroll2();
-    }else if (num == 3) {
+    } else if (num == 3) {
         var texto = `
                     <div class="p-3 radius-4 border-cafe-activi">
                       <div>
@@ -1007,7 +1018,7 @@ function yugoslavias(num) {
                     </div>
                     `;
         $("#tribunal").html(texto);
-    }else if (num == 4) {
+    } else if (num == 4) {
         var texto = `
                     <div class="p-3 radius-4 border-cafe-activi custom-scrollbar3">
                       <div class="custom-scrollbar__inner3">
@@ -1025,529 +1036,530 @@ function yugoslavias(num) {
     }
 }
 
-function cardsPeq(num,estado) {
+function cardsPeq(num, estado) {
 
-  $('.textoCards1,.textoCards2,.textoCards3,.textoCards4').removeClass('d-flex');
-  $('.textoCards1,.textoCards2,.textoCards3,.textoCards4').addClass('d-none');
+    $('.textoCards1,.textoCards2,.textoCards3,.textoCards4').removeClass('d-flex');
+    $('.textoCards1,.textoCards2,.textoCards3,.textoCards4').addClass('d-none');
 
-  $('.tarjCard1,.tarjCard2,.tarjCard3,.tarjCard4').removeClass('d-none');
-  $('.tarjCard1,.tarjCard2,.tarjCard3,.tarjCard4').addClass('d-flex');
+    $('.tarjCard1,.tarjCard2,.tarjCard3,.tarjCard4').removeClass('d-none');
+    $('.tarjCard1,.tarjCard2,.tarjCard3,.tarjCard4').addClass('d-flex');
 
 
-  if (estado=='abrir') {
-      if (num==1) {
-        $('.tarjCard1').removeClass('d-flex');
-        $('.tarjCard1').addClass('d-none');
+    if (estado == 'abrir') {
+        if (num == 1) {
+            $('.tarjCard1').removeClass('d-flex');
+            $('.tarjCard1').addClass('d-none');
 
-        $('.textoCards1').removeClass('d-none');
-        $('.textoCards1').addClass('d-flex');
-      }else if (num==2) {
-        $('.tarjCard2').removeClass('d-flex');
-        $('.tarjCard2').addClass('d-none');
+            $('.textoCards1').removeClass('d-none');
+            $('.textoCards1').addClass('d-flex');
+        } else if (num == 2) {
+            $('.tarjCard2').removeClass('d-flex');
+            $('.tarjCard2').addClass('d-none');
 
-        $('.textoCards2').removeClass('d-none');
-        $('.textoCards2').addClass('d-flex');
-          
-      }else if (num==3) {
-        $('.tarjCard3').removeClass('d-flex');
-        $('.tarjCard3').addClass('d-none');
+            $('.textoCards2').removeClass('d-none');
+            $('.textoCards2').addClass('d-flex');
 
-        $('.textoCards3').removeClass('d-none');
-        $('.textoCards3').addClass('d-flex');
-          
-      }else if (num==4) {
-        $('.tarjCard4').removeClass('d-flex');
-        $('.tarjCard4').addClass('d-none');
+        } else if (num == 3) {
+            $('.tarjCard3').removeClass('d-flex');
+            $('.tarjCard3').addClass('d-none');
 
-        $('.textoCards4').removeClass('d-none');
-        $('.textoCards4').addClass('d-flex');
-          
-      }
+            $('.textoCards3').removeClass('d-none');
+            $('.textoCards3').addClass('d-flex');
 
-  }else if(estado=='ocultar'){
+        } else if (num == 4) {
+            $('.tarjCard4').removeClass('d-flex');
+            $('.tarjCard4').addClass('d-none');
 
-      if (num==1) {
-        $('.tar1Card11').addClass('d-flex');
-        $('.tar1Card11').removeClass('d-none');
+            $('.textoCards4').removeClass('d-none');
+            $('.textoCards4').addClass('d-flex');
 
-        $('.text1Cards1').addClass('d-none');
-        $('.text1Cards1').removeClass('d-flex');
-          
-      }else if (num==2) {
-        $('.tarjCard2').addClass('d-flex');
-        $('.tarjCard2').removeClass('d-none');
+        }
 
-        $('.textoCards2').addClass('d-none');
-        $('.textoCards2').removeClass('d-flex');
-          
-      }else if (num==3) {
-        $('.tarjCard3').addClass('d-flex');
-        $('.tarjCard3').removeClass('d-none');
+    } else if (estado == 'ocultar') {
 
-        $('.textoCards3').addClass('d-none');
-        $('.textoCards3').removeClass('d-flex');
-          
-      }else if (num==4) {
-        $('.tarjCard4').addClass('d-flex');
-        $('.tarjCard4').removeClass('d-none');
+        if (num == 1) {
+            $('.tar1Card11').addClass('d-flex');
+            $('.tar1Card11').removeClass('d-none');
 
-        $('.textoCards4').addClass('d-none');
-        $('.textoCards4').removeClass('d-flex');
-          
-      }
-  }
+            $('.text1Cards1').addClass('d-none');
+            $('.text1Cards1').removeClass('d-flex');
+
+        } else if (num == 2) {
+            $('.tarjCard2').addClass('d-flex');
+            $('.tarjCard2').removeClass('d-none');
+
+            $('.textoCards2').addClass('d-none');
+            $('.textoCards2').removeClass('d-flex');
+
+        } else if (num == 3) {
+            $('.tarjCard3').addClass('d-flex');
+            $('.tarjCard3').removeClass('d-none');
+
+            $('.textoCards3').addClass('d-none');
+            $('.textoCards3').removeClass('d-flex');
+
+        } else if (num == 4) {
+            $('.tarjCard4').addClass('d-flex');
+            $('.tarjCard4').removeClass('d-none');
+
+            $('.textoCards4').addClass('d-none');
+            $('.textoCards4').removeClass('d-flex');
+
+        }
+    }
 }
 
-function acordeon(num,estado) {
+function acordeon(num, estado) {
 
-  $('#conjuntoText1,#conjuntoText2,#conjuntoText3,#conjuntoText4,#conjuntoText5').addClass('d-none');
+    $('#conjuntoText1,#conjuntoText2,#conjuntoText3,#conjuntoText4,#conjuntoText5').addClass('d-none');
 
-  if (estado=='abrir') {
-      if (num==1) {
-        $('#conjuntoText1').removeClass('d-none');
+    if (estado == 'abrir') {
+        if (num == 1) {
+            $('#conjuntoText1').removeClass('d-none');
 
-        $('#padreAcordeon').addClass('menos-marginT-100');
-        $('#padreAcordeon').removeClass('menos-margin-100');
-      }else if (num==2) {
-        $('#conjuntoText2').removeClass('d-none');
+            $('#padreAcordeon').addClass('menos-marginT-100');
+            $('#padreAcordeon').removeClass('menos-margin-100');
+        } else if (num == 2) {
+            $('#conjuntoText2').removeClass('d-none');
 
-        $('#padreAcordeon').addClass('menos-marginT-100');
-        $('#padreAcordeon').removeClass('menos-margin-100');
-          
-      }else if (num==3) {
-        $('#conjuntoText3').removeClass('d-none');
+            $('#padreAcordeon').addClass('menos-marginT-100');
+            $('#padreAcordeon').removeClass('menos-margin-100');
 
-        $('#padreAcordeon').addClass('menos-marginT-100');
-        $('#padreAcordeon').removeClass('menos-margin-100');
-          
-      }else if (num==4) {
-        $('#conjuntoText4').removeClass('d-none');
+        } else if (num == 3) {
+            $('#conjuntoText3').removeClass('d-none');
 
-        $('#padreAcordeon').addClass('menos-marginT-100');
-        $('#padreAcordeon').removeClass('menos-margin-100');
-      }else if (num==5) {
-        $('#conjuntoText5').removeClass('d-none');
-        
-        $('#padreAcordeon').addClass('menos-marginT-100');
-        $('#padreAcordeon').removeClass('menos-margin-100');
-      }
+            $('#padreAcordeon').addClass('menos-marginT-100');
+            $('#padreAcordeon').removeClass('menos-margin-100');
 
-  }else if(estado=='ocultar'){
+        } else if (num == 4) {
+            $('#conjuntoText4').removeClass('d-none');
 
-      if (num==1) {
-        $('#conjuntoText1').addClass('d-none');
+            $('#padreAcordeon').addClass('menos-marginT-100');
+            $('#padreAcordeon').removeClass('menos-margin-100');
+        } else if (num == 5) {
+            $('#conjuntoText5').removeClass('d-none');
 
-        $('#padreAcordeon').removeClass('menos-marginT-100');
-        $('#padreAcordeon').addClass('menos-margin-100');
-          
-      }else if (num==2) {
-        $('#conjuntoText2').addClass('d-none');
+            $('#padreAcordeon').addClass('menos-marginT-100');
+            $('#padreAcordeon').removeClass('menos-margin-100');
+        }
 
-        $('#padreAcordeon').removeClass('menos-marginT-100');
-        $('#padreAcordeon').addClass('menos-margin-100');
-          
-      }else if (num==3) {
-        $('#conjuntoText3').addClass('d-none');
+    } else if (estado == 'ocultar') {
 
-        $('#padreAcordeon').removeClass('menos-marginT-100');
-        $('#padreAcordeon').addClass('menos-margin-100');
-          
-      }else if (num==4) {
-        $('#conjuntoText4').addClass('d-none');
+        if (num == 1) {
+            $('#conjuntoText1').addClass('d-none');
 
-        $('#padreAcordeon').removeClass('menos-marginT-100');
-        $('#padreAcordeon').addClass('menos-margin-100');
-        
-      }else if (num==5) {
-        $('#conjuntoText5').addClass('d-none');
+            $('#padreAcordeon').removeClass('menos-marginT-100');
+            $('#padreAcordeon').addClass('menos-margin-100');
 
-        $('#padreAcordeon').removeClass('menos-marginT-100');
-        $('#padreAcordeon').addClass('menos-margin-100');
-          
-      }
-  }
+        } else if (num == 2) {
+            $('#conjuntoText2').addClass('d-none');
+
+            $('#padreAcordeon').removeClass('menos-marginT-100');
+            $('#padreAcordeon').addClass('menos-margin-100');
+
+        } else if (num == 3) {
+            $('#conjuntoText3').addClass('d-none');
+
+            $('#padreAcordeon').removeClass('menos-marginT-100');
+            $('#padreAcordeon').addClass('menos-margin-100');
+
+        } else if (num == 4) {
+            $('#conjuntoText4').addClass('d-none');
+
+            $('#padreAcordeon').removeClass('menos-marginT-100');
+            $('#padreAcordeon').addClass('menos-margin-100');
+
+        } else if (num == 5) {
+            $('#conjuntoText5').addClass('d-none');
+
+            $('#padreAcordeon').removeClass('menos-marginT-100');
+            $('#padreAcordeon').addClass('menos-margin-100');
+
+        }
+    }
 }
 
 function lineaDir(num) {
-  $('.lineaDir').removeClass('pl-3');
-  $('.textContentP').html(``);
-  if (num == 1) {
-    var contenido =`
+    $('.lineaDir').removeClass('pl-3');
+    $('.textContentP').html(``);
+    if (num == 1) {
+        var contenido = `
                   <p class="text-justify">Órganos de gobierno, los cuales toman las decisiones fundamentales para la dirección de la Universidad, el presidente del consejo superior también se considera como un órgano de gobierno (literal g, art. 22.4 – estatutos UNAULA). </p>
                   `;
-    $('.lineaDir1').addClass('pl-3');
-    $('.textContentP').html(contenido);
+        $('.lineaDir1').addClass('pl-3');
+        $('.textContentP').html(contenido);
 
-  }else if (num == 2) {
-    var contenido =`
+    } else if (num == 2) {
+        var contenido = `
                   <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
                   `;
-    $('.lineaDir2').addClass('pl-3');
-    $('.textContentP').html(contenido);
-    
-  }else if (num == 3) {
-    var contenido =`
+        $('.lineaDir2').addClass('pl-3');
+        $('.textContentP').html(contenido);
+
+    } else if (num == 3) {
+        var contenido = `
                   <p class="text-justify">Órganos Unipersonales: una persona ejerce las funciones. </p>
                   `;
-    $('.lineaDir3').addClass('pl-3');
-    $('.textContentP').html(contenido);
-    
-  }else if (num == 4) {
-    var contenido =`
+        $('.lineaDir3').addClass('pl-3');
+        $('.textContentP').html(contenido);
+
+    } else if (num == 4) {
+        var contenido = `
                   <p class="text-justify">Órganos Colegiados: están integrados por varias personas que pertenecen a los órganos y/o asociados, (artículo 10, estatutos UNAULA). </p>
                   `;
-    $('.lineaDir4').addClass('pl-3');
-    $('.textContentP').html(contenido);
-    
-  }else if (num == 5) {
-    var contenido =`
+        $('.lineaDir4').addClass('pl-3');
+        $('.textContentP').html(contenido);
+
+    } else if (num == 5) {
+        var contenido = `
                   <p class="text-justify">Órganos de Cogobierno, el cual se encuentra conformado por profesores, estudiantes y egresados exclusivamente. </p>
                   `;
-    $('.lineaDir5').addClass('pl-3');
-    $('.textContentP').html(contenido);
-    
-  }else if (num == 6) {
-    var contenido =`
+        $('.lineaDir5').addClass('pl-3');
+        $('.textContentP').html(contenido);
+
+    } else if (num == 6) {
+        var contenido = `
                   <p class="text-justify">Órganos de Elección, los cuales en su conformación tienen representantes de estudiantes y de profesores o de profesores, estudiantes y egresados, están conformados exclusivamente por estos, así como son los del cogobierno. </p>
                   `;
-    $('.lineaDir6').addClass('pl-3');
-    $('.textContentP').html(contenido);
-    
-  }
+        $('.lineaDir6').addClass('pl-3');
+        $('.textContentP').html(contenido);
+
+    }
 }
 
 function lineaDir2(num) {
-  $('.listContentPest').removeClass('bg-color-secondary-dark');
-  $('#textoContPes1,#textoContPes2,#textoContPes3').addClass('d-none');
-  $('#pestanita1,#pestanita2,#pestanita3').addClass('d-none');
+    $('.listContentPest').removeClass('bg-color-secondary-dark');
+    $('#textoContPes1,#textoContPes2,#textoContPes3').addClass('d-none');
+    $('#pestanita1,#pestanita2,#pestanita3').addClass('d-none');
 
-  if (num == 1) {
-    $('.listContentPest1').addClass('bg-color-secondary-dark');
-    $('#textoContPes1').removeClass('d-none');
-    $('#pestanita1').removeClass('d-none');
+    if (num == 1) {
+        $('.listContentPest1').addClass('bg-color-secondary-dark');
+        $('#textoContPes1').removeClass('d-none');
+        $('#pestanita1').removeClass('d-none');
 
-  }else if (num == 2) {
-    $('.listContentPest2').addClass('bg-color-secondary-dark');
-    $('#textoContPes2').removeClass('d-none');
-    $('#pestanita2').removeClass('d-none');
+    } else if (num == 2) {
+        $('.listContentPest2').addClass('bg-color-secondary-dark');
+        $('#textoContPes2').removeClass('d-none');
+        $('#pestanita2').removeClass('d-none');
 
-  }else if (num == 3) {
-    $('.listContentPest3').addClass('bg-color-secondary-dark');
-    $('#textoContPes3').removeClass('d-none');
-    $('#pestanita3').removeClass('d-none');
+    } else if (num == 3) {
+        $('.listContentPest3').addClass('bg-color-secondary-dark');
+        $('#textoContPes3').removeClass('d-none');
+        $('#pestanita3').removeClass('d-none');
 
-  }
+    }
 }
 
 function cambiarFondoLibro(num) {
-  
-  if (num == 1) {
-    var contenido = `
+
+    if (num == 1) {
+        var contenido = `
                 <p class="text-white">Si varios órganos pretenden ejercer unas mismas competencias.</p>
                 `;
-    $('.contedorLibro').html(contenido);
-    $('#fondoLibro').removeClass('fondoLibro1');
-    $('#fondoLibro').removeClass('fondoLibro3');
-    $('#fondoLibro').addClass('fondoLibro2');
-  }else if (num == 2) {
-    var contenido = `
+        $('.contedorLibro').html(contenido);
+        $('#fondoLibro').removeClass('fondoLibro1');
+        $('#fondoLibro').removeClass('fondoLibro3');
+        $('#fondoLibro').addClass('fondoLibro2');
+    } else if (num == 2) {
+        var contenido = `
                 <p class="text-white">Si ninguno de varios órganos, aparentemente competentes, aceptan ejercer la competencia de una función determinada.</p>
                 `;
-    $('.contedorLibro').html(contenido);
-    $('#fondoLibro').removeClass('fondoLibro1');
-    $('#fondoLibro').removeClass('fondoLibro3');
-    $('#fondoLibro').addClass('fondoLibro3');
-  }
+        $('.contedorLibro').html(contenido);
+        $('#fondoLibro').removeClass('fondoLibro1');
+        $('#fondoLibro').removeClass('fondoLibro3');
+        $('#fondoLibro').addClass('fondoLibro3');
+    }
 }
 
 function scroll_horizontal2(num) {
-  switch (parseInt(num)) {
-      case 0:
-          $('.cont-slideH').addClass('oculto-on');
-          $('.cont-slideH').removeClass('oculto-off');
+    switch (parseInt(num)) {
+        case 0:
+            $('.cont-slideH').addClass('oculto-on');
+            $('.cont-slideH').removeClass('oculto-off');
 
-          $('.ordinaria').removeClass('oculto-on');
-          $('.ordinaria').addClass('oculto-off');
+            $('.ordinaria').removeClass('oculto-on');
+            $('.ordinaria').addClass('oculto-off');
 
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
 
-          $('.comodin').removeClass('comodinInactive');
-          $('.comodin').addClass('comodinActive');
-          break;
-      case 1:
-          $('.cont-slideH').addClass('oculto-on');
-          $('.cont-slideH').removeClass('oculto-off');
+            $('.comodin').removeClass('comodinInactive');
+            $('.comodin').addClass('comodinActive');
+            break;
+        case 1:
+            $('.cont-slideH').addClass('oculto-on');
+            $('.cont-slideH').removeClass('oculto-off');
 
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
-          break;
-      case 2:
-          $('.cont-slideH').addClass('oculto-on');
-          $('.cont-slideH').removeClass('oculto-off');
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
+            break;
+        case 2:
+            $('.cont-slideH').addClass('oculto-on');
+            $('.cont-slideH').removeClass('oculto-off');
 
-          $('.extraordinaria').removeClass('oculto-on');
-          $('.extraordinaria').addClass('oculto-off');
+            $('.extraordinaria').removeClass('oculto-on');
+            $('.extraordinaria').addClass('oculto-off');
 
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
 
-          $('.comodin2').removeClass('comodinInactive');
-          $('.comodin2').addClass('comodinActive');
-          break;
-      default:
-          break;
-  }
-}
-function Input2(num) {
-  /* <input type="range" value="35" min="0" max="100" autocomplete="off" step="1"> */
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 1;
-  this.att.min = 0;
-  this.att.max = num;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
-
-  this.crear = function(elementoPadre) {
-  // crea un nuevo elemento input
-  this.input = document.createElement("input");
-  //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-  for (var name in this.att) {
-    if (this.att.hasOwnProperty(name)) {
-      this.input.setAttribute(name, this.att[name]);
+            $('.comodin2').removeClass('comodinInactive');
+            $('.comodin2').addClass('comodinActive');
+            break;
+        default:
+            break;
     }
-  }
-  // crea un nuevo elemento div
-  this.output = document.createElement("div");
-  // establece el valor del atributo class del nuevo div
-  this.output.setAttribute("class", "output");
-  // y el contenido (innerHTML) de este
-  this.output.innerHTML = this.att.value;
-
-  // inserta los dos elementos creados al final  del elemento Padre 
-  elementoPadre.appendChild(this.input);
-  elementoPadre.appendChild(this.output);
 }
 
-this.actualizar = function() {
-  scroll_horizontal(this.input.value);
-  this.output.innerHTML = this.input.value;
-  this.att.value = this.input.value;
-}
-$("input[type=range]").on('change', function () {
-    // alert();
-});
-this.actualizar2 = function() {
-  scroll_horizontal2(this.input.value);
-  this.output.innerHTML = this.input.value;
-  this.att.value = this.input.value;
-}
-this.actualizar3 = function() {
-  scroll_horizontal3(this.input.value);
-  this.output.innerHTML = this.input.value;
-  this.att.value = this.input.value;
-}
-$("input[type=range]").on('change', function () {
-    // alert();
-});
+function Input2(num) {
+    /* <input type="range" value="35" min="0" max="100" autocomplete="off" step="1"> */
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 1;
+    this.att.min = 0;
+    this.att.max = num;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
+
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
+    }
+
+    this.actualizar = function() {
+        scroll_horizontal(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        // alert();
+    });
+    this.actualizar2 = function() {
+        scroll_horizontal2(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    this.actualizar3 = function() {
+        scroll_horizontal3(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
+    $("input[type=range]").on('change', function() {
+        // alert();
+    });
 }
 
 function scroll_horizontal3(num) {
-  switch (parseInt(num)) {
-      case 0:
-          $('.tablas').addClass('oculto-on');
-          $('.tablas').removeClass('oculto-off');
+    switch (parseInt(num)) {
+        case 0:
+            $('.tablas').addClass('oculto-on');
+            $('.tablas').removeClass('oculto-off');
 
-          $('.tabla1').removeClass('oculto-on');
-          $('.tabla1').addClass('oculto-off');
+            $('.tabla1').removeClass('oculto-on');
+            $('.tabla1').addClass('oculto-off');
 
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
 
-          $('.comodin').removeClass('comodinInactive');
-          $('.comodin').addClass('comodinActive');
-          break;
-      case 1:
-          $('.tablas').addClass('oculto-on');
-          $('.tablas').removeClass('oculto-off');
+            $('.comodin').removeClass('comodinInactive');
+            $('.comodin').addClass('comodinActive');
+            break;
+        case 1:
+            $('.tablas').addClass('oculto-on');
+            $('.tablas').removeClass('oculto-off');
 
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
-          break;
-      case 2:
-          $('.tablas').addClass('oculto-on');
-          $('.tablas').removeClass('oculto-off');
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
+            break;
+        case 2:
+            $('.tablas').addClass('oculto-on');
+            $('.tablas').removeClass('oculto-off');
 
-          $('.tabla2').removeClass('oculto-on');
-          $('.tabla2').addClass('oculto-off');
+            $('.tabla2').removeClass('oculto-on');
+            $('.tabla2').addClass('oculto-off');
 
-          $('.comodines').addClass('comodinInactive');
-          $('.comodines').removeClass('comodinActive');
+            $('.comodines').addClass('comodinInactive');
+            $('.comodines').removeClass('comodinActive');
 
-          $('.comodin').removeClass('comodinInactive');
-          $('.comodin').addClass('comodinActive');
-          break;
-      default:
-          break;
-  }
+            $('.comodin').removeClass('comodinInactive');
+            $('.comodin').addClass('comodinActive');
+            break;
+        default:
+            break;
+    }
 }
 
 
 /*pantallas 1*/
-function carpeta(num){
-  $('.btn-carpeta').removeClass('color-ca');
-  $('.carpe1, .carpe2, .carpe3, .carpe4, .carpe5, .carpe6, .carpe7, .carpe8').addClass('color-mo');
-  switch (parseInt(num)) {
-      case 1:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+function carpeta(num) {
+    $('.btn-carpeta').removeClass('color-ca');
+    $('.carpe1, .carpe2, .carpe3, .carpe4, .carpe5, .carpe6, .carpe7, .carpe8').addClass('color-mo');
+    switch (parseInt(num)) {
+        case 1:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target1').removeClass('is-hidden');
-          $('.target1').addClass('not-hidden');
-          $('.carpe1').removeClass('color-mo');
-          $('.carpe1').addClass('color-ca');
-          break;
-      case 2:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.target1').removeClass('is-hidden');
+            $('.target1').addClass('not-hidden');
+            $('.carpe1').removeClass('color-mo');
+            $('.carpe1').addClass('color-ca');
+            break;
+        case 2:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target2').removeClass('is-hidden');
-          $('.target2').addClass('not-hidden');
+            $('.target2').removeClass('is-hidden');
+            $('.target2').addClass('not-hidden');
 
-          $('.carpe2').removeClass('color-mo');
-          $('.carpe2').addClass('color-ca');
-          break;
-      case 3:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.carpe2').removeClass('color-mo');
+            $('.carpe2').addClass('color-ca');
+            break;
+        case 3:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target3').removeClass('is-hidden');
-          $('.target3').addClass('not-hidden');
+            $('.target3').removeClass('is-hidden');
+            $('.target3').addClass('not-hidden');
 
-          $('.carpe3').removeClass('color-mo');
-          $('.carpe3').addClass('color-ca');
-          break;
-      case 4:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.carpe3').removeClass('color-mo');
+            $('.carpe3').addClass('color-ca');
+            break;
+        case 4:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target4').removeClass('is-hidden');
-          $('.target4').addClass('not-hidden');
+            $('.target4').removeClass('is-hidden');
+            $('.target4').addClass('not-hidden');
 
-          $('.carpe4').removeClass('color-mo');
-          $('.carpe4').addClass('color-ca');
-          break;
-      case 5:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.carpe4').removeClass('color-mo');
+            $('.carpe4').addClass('color-ca');
+            break;
+        case 5:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target5').removeClass('is-hidden');
-          $('.target5').addClass('not-hidden');
+            $('.target5').removeClass('is-hidden');
+            $('.target5').addClass('not-hidden');
 
-          $('.carpe5').removeClass('color-mo');
-          $('.carpe5').addClass('color-ca');
-          break;
-      case 6:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.carpe5').removeClass('color-mo');
+            $('.carpe5').addClass('color-ca');
+            break;
+        case 6:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target6').removeClass('is-hidden');
-          $('.target6').addClass('not-hidden');
+            $('.target6').removeClass('is-hidden');
+            $('.target6').addClass('not-hidden');
 
-          $('.carpe6').removeClass('color-mo');
-          $('.carpe6').addClass('color-ca');
-          break;
-      case 7:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.carpe6').removeClass('color-mo');
+            $('.carpe6').addClass('color-ca');
+            break;
+        case 7:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target7').removeClass('is-hidden');
-          $('.target7').addClass('not-hidden');
+            $('.target7').removeClass('is-hidden');
+            $('.target7').addClass('not-hidden');
 
-          $('.carpe7').removeClass('color-mo');
-          $('.carpe7').addClass('color-ca');
-          break;
-      case 8:
-          $('.baneTarget').addClass('is-hidden');
-          $('.baneTarget').removeClass('not-hidden');
+            $('.carpe7').removeClass('color-mo');
+            $('.carpe7').addClass('color-ca');
+            break;
+        case 8:
+            $('.baneTarget').addClass('is-hidden');
+            $('.baneTarget').removeClass('not-hidden');
 
-          $('.target8').removeClass('is-hidden');
-          $('.target8').addClass('not-hidden');
+            $('.target8').removeClass('is-hidden');
+            $('.target8').addClass('not-hidden');
 
-          $('.carpe8').removeClass('color-mo');
-          $('.carpe8').addClass('color-ca');
-          break;
-      default:
-          break;
-  }
+            $('.carpe8').removeClass('color-mo');
+            $('.carpe8').addClass('color-ca');
+            break;
+        default:
+            break;
+    }
 }
 
 
 function funcionalidad_1(num) {
-  $(".fun_img_0, .fun_img_1, .fun_img_2, .fun_img_3, .fun_img_4, .fun_img_5, .fun_img_6, .content_1_text_1, .content_1_text_2, .content_1_text_3, .content_1_text_4, .content_1_text_5, .content_1_text_6, .content_2_text_1, .content_2_text_2, .content_2_text_3, .content_2_text_4, .content_2_text_5, .content_2_text_6").addClass("d-none");
-  if (num == 1) {
-      $(".fun_img_1, .content_1_text_1, .content_2_text_1").removeClass("d-none");
-      $(".content_1").css({
-          "top" : "235px",
-          "left" : "-200px"
-      });
-  }else if (num == 2) {
-      $(".fun_img_2, .content_1_text_2, .content_2_text_2").removeClass("d-none");
-      $(".content_1").css({
-          "top" : "115px",
-          "left" : "-200px"
-      });
-  }else if (num == 3) {
-      $(".fun_img_3, .content_1_text_3, .content_2_text_3").removeClass("d-none");
-      $(".content_1").css({
-          "top" : "0px",
-          "left" : "-200px"
-      });
-  }else if (num == 4) {
-      $(".fun_img_4, .content_1_text_4, .content_2_text_4").removeClass("d-none");
-      $(".content_1").css({
-          "top" : "0px",
-          "left" : "520px"
-      });
-  }else if (num == 5) {
-      $(".fun_img_5, .content_1_text_5, .content_2_text_5").removeClass("d-none");
-      $(".content_1").css({
-          "top" : "115px",
-          "left" : "520px"
-      });
-  }else if (num == 6) {
-      $(".fun_img_6, .content_1_text_6, .content_2_text_6").removeClass("d-none");
-      $(".content_1").css({
-          "top" : "235px",
-          "left" : "520px"
-      });
-  }
+    $(".fun_img_0, .fun_img_1, .fun_img_2, .fun_img_3, .fun_img_4, .fun_img_5, .fun_img_6, .content_1_text_1, .content_1_text_2, .content_1_text_3, .content_1_text_4, .content_1_text_5, .content_1_text_6, .content_2_text_1, .content_2_text_2, .content_2_text_3, .content_2_text_4, .content_2_text_5, .content_2_text_6").addClass("d-none");
+    if (num == 1) {
+        $(".fun_img_1, .content_1_text_1, .content_2_text_1").removeClass("d-none");
+        $(".content_1").css({
+            "top": "235px",
+            "left": "-200px"
+        });
+    } else if (num == 2) {
+        $(".fun_img_2, .content_1_text_2, .content_2_text_2").removeClass("d-none");
+        $(".content_1").css({
+            "top": "115px",
+            "left": "-200px"
+        });
+    } else if (num == 3) {
+        $(".fun_img_3, .content_1_text_3, .content_2_text_3").removeClass("d-none");
+        $(".content_1").css({
+            "top": "0px",
+            "left": "-200px"
+        });
+    } else if (num == 4) {
+        $(".fun_img_4, .content_1_text_4, .content_2_text_4").removeClass("d-none");
+        $(".content_1").css({
+            "top": "0px",
+            "left": "520px"
+        });
+    } else if (num == 5) {
+        $(".fun_img_5, .content_1_text_5, .content_2_text_5").removeClass("d-none");
+        $(".content_1").css({
+            "top": "115px",
+            "left": "520px"
+        });
+    } else if (num == 6) {
+        $(".fun_img_6, .content_1_text_6, .content_2_text_6").removeClass("d-none");
+        $(".content_1").css({
+            "top": "235px",
+            "left": "520px"
+        });
+    }
 }
 
 function pestaniasBig(num) {
-  $('.cTPBig').addClass('d-none');
-  $('.pestaniaNuev').removeClass('bg-white text-black border-color');
-  $('.pestaniaNuev').addClass('bg-color-secondary-dark text-white');
-  
-  if (num==1) {
-    $('.pestaniaNuev1').removeClass('bg-color-secondary-dark text-white');
-    $('.pestaniaNuev1').addClass('bg-white text-black border-color');
-    $('.contenedorPest1').removeClass('d-none');
-  }else if (num==2) {
-    $('.pestaniaNuev2').removeClass('bg-color-secondary-dark text-white');
-    $('.pestaniaNuev2').addClass('bg-white text-black border-color');
-    $('.contenedorPest2').removeClass('d-none');
-  }else if (num==3) {
-    $('.pestaniaNuev3').removeClass('bg-color-secondary-dark text-white');
-    $('.pestaniaNuev3').addClass('bg-white text-black border-color');
-    $('.contenedorPest3').removeClass('d-none');
-  }
+    $('.cTPBig').addClass('d-none');
+    $('.pestaniaNuev').removeClass('bg-white text-black border-color');
+    $('.pestaniaNuev').addClass('bg-color-secondary-dark text-white');
+
+    if (num == 1) {
+        $('.pestaniaNuev1').removeClass('bg-color-secondary-dark text-white');
+        $('.pestaniaNuev1').addClass('bg-white text-black border-color');
+        $('.contenedorPest1').removeClass('d-none');
+    } else if (num == 2) {
+        $('.pestaniaNuev2').removeClass('bg-color-secondary-dark text-white');
+        $('.pestaniaNuev2').addClass('bg-white text-black border-color');
+        $('.contenedorPest2').removeClass('d-none');
+    } else if (num == 3) {
+        $('.pestaniaNuev3').removeClass('bg-color-secondary-dark text-white');
+        $('.pestaniaNuev3').addClass('bg-white text-black border-color');
+        $('.contenedorPest3').removeClass('d-none');
+    }
 }
 
-function paraIframe(num){
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -1573,5 +1585,5 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }

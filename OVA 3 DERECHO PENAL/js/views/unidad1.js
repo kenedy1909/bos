@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+
     $('.menu1').removeClass('d-none');
     $( ".ov-personaje").hide();
     star_uni = 1;
@@ -362,8 +363,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 23:
-            
-            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+          $('.menu1').addClass('d-none');
+            setMigaja("Unidades de aprendizaje","","");
             break;
         default:
             break;
@@ -1853,7 +1854,7 @@ function activi5(num) {
     $('#activiPosterior5').addClass('d-flex');
 
     $('#padreActivi5').removeClass('bg-color');
-    $('#padreActivi5').addClass('bg-color-claro');
+    $('#padreActivi5').addClass('bg-color-claro2');
     $('#padreActivi5').attr('onclick','activi5(2)');
 
   }else if (num == 2) {
@@ -1875,7 +1876,7 @@ function activi5(num) {
     $('#activiPosterior5_2').addClass('d-flex');
 
     $('#padreActivi5_2').removeClass('bg-color');
-    $('#padreActivi5_2').addClass('bg-color-claro');
+    $('#padreActivi5_2').addClass('bg-color-claro2');
     $('#padreActivi5_2').attr('onclick','activi5(4)');
 
   }else if (num == 4) {
@@ -1905,7 +1906,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/tribunal.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>1</b></p>
                     `;
     var bodyCont13 = `
@@ -1919,7 +1920,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/habla.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/habla.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>2</b></p>
                     `;
     var bodyCont13 = `
@@ -1933,7 +1934,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/icono_tribunal.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/icono_tribunal.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>3</b></p>
                     `;
     var bodyCont13 = `
@@ -1947,7 +1948,7 @@ function ModalContenidoPant13(num) {
     $('#pantallaPrin13').addClass('d-none');
     $('#pantallaSec13').removeClass('d-none');
     var headCont13 = `
-                    <img src="assets/img/img_ova/buscar.png" width="120px" class="position-absolute" style="left: -30px;">
+                    <img src="assets/img/img_ova/buscar.png" width="100px" class="position-absolute" style="left: -8px;">
                     <p class="text-white pl-5 h4 mx-4"><b>4</b></p>
                     `;
     var bodyCont13 = `
@@ -2227,4 +2228,90 @@ function cardTarjetas(num) {
     $('.card4Contenido').removeClass('d-none');
     $('.card4Contenido').addClass('d-flex');
   }
+}
+
+function contenidoNum(num) {
+  switch (parseInt(num)) {
+    case 1:
+      $('.contenidoNum').addClass('d-none');
+      $('.contenidoNum1').removeClass('d-none');
+      
+      break;
+      case 2:
+      $('.contenidoNum').addClass('d-none');
+      $('.contenidoNum2').removeClass('d-none');
+      
+      break;
+  
+    default:
+      break;
+  }
+  
+}
+
+
+function toggleBanner(num) {
+  let contador=1;
+  contador= contador++;
+  // console.log('clik'+ contador);
+  switch (parseInt(num)) {
+    case 1:
+      
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner2U1-11').removeClass('d-none');     
+      
+      break;
+      case 2:
+    
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner1U1-11').removeClass('d-none'); 
+        $('.banner3U1-11').removeClass('d-none');
+        $('.banner5U1-11').removeClass('d-none'); 
+        $('.banner7U1-11').removeClass('d-none');  
+        // $('.banner3U1-3').removeClass('esc'); 
+      
+      break;
+      case 3:
+      
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner4U1-11').removeClass('d-none');     
+      
+      break;
+      case 4:
+    
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner6U1-11').removeClass('d-none');  
+      break;
+      case 5:
+    
+        $('.bannerU1-11').addClass('d-none');
+        $('.banner8U1-11').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
+}
+
+
+function colapsar(num) {
+  switch (parseInt(num)) {
+    case 1:
+      $('#textCollapse2').collapse('hide');
+      $('#textCollapse3').collapse('hide');
+      break;
+    case 2:
+      $('#textCollapse1').collapse('hide');
+      $('#textCollapse3').collapse('hide');
+      break;
+    case 3:
+      $('#textCollapse1').collapse('hide');
+      $('#textCollapse2').collapse('hide');
+      break;
+  
+    default:
+      break;
+  }
+  
 }

@@ -892,9 +892,9 @@ svg circle:nth-child(2){
 .cardRosa{
   background-image: url(../assets/img/img_ova/Nota.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%;
-  /*height: 400px;*/
+  height: 500px;
   padding: 70px 65px;
 }
 
@@ -980,4 +980,28 @@ svg circle:nth-child(2){
 .cardwhite3 {
   background-color: white;
   border-radius: 25px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }

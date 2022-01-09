@@ -173,14 +173,23 @@ QuestionsSameAnswers.prototype.score =  function () {
     var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
-    if (puntaje == 100) {
-        exito = true;
-        mensaje = "¡Felicitaciones!"
+    if (puntaje >= 75) {
+        $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+        $('.puntaje').text(Math.round(puntaje)+"%");
+        $('.mensaje').text("¡Felicitaciones!");
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #8b6229;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
+        $('#exampleModal').modal('show');
+    }else{
+        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
+        $('.mensaje').text("¡Puedes hacerlo mejor!");
+        $('.puntaje').text(Math.round(puntaje)+"%");
+        $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+        $('#exampleModal').modal('show');
     }
-    registrarActividad(puntaje);
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
-        self.reset(form);
-    });
+}
+
+function reiniciar() {
+    location.reload();
 }
 
 QuestionsSameAnswers.prototype.prepare_files =  function () {
@@ -222,9 +231,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\
-                            <label class="label-container">\
+                            <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radio-elegant">{% if conta==1 %} '+svg_elem1+' {% else %} '+svg_elem2+'{% endif %}{% set conta=conta+1 %}</span>\
+                                <span class="radiobtn"></span>\
                             </label>\
                         </td>\
                     {% endfor %}\

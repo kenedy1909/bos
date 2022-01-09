@@ -1,8 +1,12 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
-    $(".menu1").removeClass('d-none');
-    $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
+
+    
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+
+
     tema = 1;
     /*slide_link3(tema);*/
     $('#smartwizard').smartWizard({
@@ -24,13 +28,11 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
     slide_predeterminado3();
     console.log(tema);
@@ -43,7 +45,8 @@ $(function() {
 
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides3(stepIndex);
+    controlSlides3(stepIndex); 
+    actualizarprogress(stepIndex+11);
 }
 
 function slide_predeterminado3() {
@@ -68,6 +71,9 @@ function controlSlides3(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 3;
             break;
@@ -84,28 +90,56 @@ function controlSlides3(num) {
                             
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 2:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 6:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 7:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             break;
         case 8:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
 
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             tema = 1;
             break;
         default:
