@@ -202,7 +202,7 @@ function calificarR1() {
     if (parseInt(puntajeR1) == 100) {
         exitoR1 = true;
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
-      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin-top: 6%">');
       $('.puntaje').text(parseInt(puntajeR1)+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');

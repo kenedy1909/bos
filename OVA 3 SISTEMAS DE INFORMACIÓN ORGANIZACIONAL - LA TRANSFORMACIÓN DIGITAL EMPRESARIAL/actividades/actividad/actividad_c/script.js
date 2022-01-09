@@ -159,13 +159,13 @@ new Vue({
       var mensaje = "Inténtalo nuevamente."
       
       if (puntaje >= 90) {
-        $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;">');
+        $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin-top: 6%;">');
         $('.puntaje').text(puntaje+"%");
         $('.mensaje').text("¡Felicitaciones!");
         $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #811111;font-weight: bold;margin-top: 0px;">cerrar</button>');
         $('#exampleModal').modal("show");
       }else{
-        $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+        $('.img_res').html('<img src="img/mal.png" style="max-width: 80%; margin-top: 5%;">');
         $('.mensaje').text("Inténtalo nuevamente.");
         $('.puntaje').text(Math.round(puntaje)+"%");
         $('.btns_modal').html('<button data-dismiss="modal" style="font-size: 20px;color: #811111;font-weight: bold;margin-top: 0px;" id="add" class="btn" onclick="reiniciar();">Volver a intentar</button>');
