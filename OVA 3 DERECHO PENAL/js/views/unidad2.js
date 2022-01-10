@@ -1,4 +1,16 @@
 $( document ).ready(function() {
+    star_uni = 0;
+    flat = $("#flat").flipster({
+        style: 'flat',
+        spacing: -0.25,
+        buttons: true,
+        start: star_uni,
+        buttonNext: 'Siguiente',
+        onItemSwitch: function (currentItem,previousItem,index) {
+            var slide = $(currentItem).attr("data-flip-title");
+        }
+    });
+
     $('.menu2').removeClass('d-none');
     $( ".ov-personaje").hide();
     $('#smartwizard').smartWizard({
@@ -917,6 +929,8 @@ $("#btnPris5").click(function() {
 // unidad2-7
 // inicio box1
 $("#box1Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box1Img").addClass('d-none');
     $("#box1ImgP").removeClass('d-none');
 });
@@ -929,6 +943,8 @@ $("#box1ImgP").click(function () {
 
 // inicio box2
 $("#box2Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box2Img").addClass('d-none');
     $("#box2ImgP").removeClass('d-none');
 });
@@ -941,6 +957,8 @@ $("#box2ImgP").click(function () {
 
 // inicio box3
 $("#box3Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box3Img").addClass('d-none');
     $("#box3ImgP").removeClass('d-none');
 });
