@@ -2204,3 +2204,13 @@ a.control_next {
     left: -66px;
     top: 25px;
 }
+
+.flecha{
+	position: relative;
+    left: 55%;
+    top: -332px;
+}
+
+.menos-marginT-116 {
+    margin-top: -116px!important;
+}

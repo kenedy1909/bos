@@ -21,7 +21,7 @@
                         <div class="" style="display: inline-block;">
                             <img src="img/actividad_interactiva.png" alt="" style="width: 100px;height: 100px;">
                             <div class="text-center pt-0" style="font-size: 20px;display: inline-block;">
-                                <b class="" style="color: #5f1817;font-size: 18px;">ACTIVIDAD INTERACTIVA</b>
+                                <b class="" style="color: #5f1817;font-size: 18px;">ACTIVIDAD <br> INTERACTIVA</b>
                                 <div style="height: 5px; background: #003442;"></div>
                                 <p class="text-muted" style="font-size: 17px;">FALSO/VERDADERO</p>
                             </div>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog"
+    <!-- <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog"
         aria-labelledby="calificacionModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -61,6 +61,60 @@
                         data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+        </div>
+    </div> -->
+
+    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="">
+                  <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover" style="overflow: visible;">
+                              <div class="row">
+                                <div class="col-lg-4">
+                                </div>
+                                <div class="col-lg-4 mt-2">
+                                  
+                                </div>
+                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                    <div class="divcerrar">
+                                        <button type="button" class="btn btn-cerrar" style="background-color: transparent; color: white;" data-dismiss="modal" aria-label="Close">
+                                          <div class="m-0 p-0 x-modal">
+                                            <h4 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                          </div>
+                                        </button>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="">
+                                <div class="radius-gray">
+                                    <img class="" id="img-circulo" src="../../../assets/img/img_template/bien.png" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <div class="modal-body">
+                                    <div class="mensaje" style="text-align: justify;">
+                                        Tu puntaje es: <span class="puntaje">40%</span>
+                                        <span class="texto-puntaje"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal" onclick="reiniciar();">Volver a
+                                        intentar </button>
+                                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal" onclick="reiniciar();">Cerrar</button>
+                                </div>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
     <!-- Incluisión de scripts -->

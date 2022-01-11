@@ -214,7 +214,7 @@ label {
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
     padding: 12px 20px 10px 20px;
-    height: 180px;
+    height: 145px;
 }
 
 .seleccionable{
@@ -256,6 +256,7 @@ label {
   position: relative;
   top: -60px;
   text-align: center;
+  border: 3px solid white;
 }
 
 .info_actividad{

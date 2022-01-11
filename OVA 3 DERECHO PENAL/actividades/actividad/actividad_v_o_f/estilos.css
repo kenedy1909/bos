@@ -313,7 +313,7 @@ cursor: pointer;}
 
 /* When the radio button is checked, add a blue background */
 .checkcontainer input:checked ~ .radiobtn{
-  background-color: #2196F3;
+  background-color: #801111;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -336,4 +336,19 @@ cursor: pointer;}
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+tr td {
+    text-align: justify;
+}
+
+tr td:nth-child(2n){
+
+    /* border: 2px solid blue; */
+    padding-left: 40px !important;
+}
+tr td:nth-child(3n){
+
+    /* border: 2px solid blue; */
+    padding-left: 21px !important;
 }

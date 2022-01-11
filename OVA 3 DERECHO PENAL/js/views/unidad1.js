@@ -363,8 +363,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             break;
         case 23:
-            
-            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+          $('.menu1').addClass('d-none');
+            setMigaja("Unidades de aprendizaje","","");
             break;
         default:
             break;
@@ -2286,6 +2286,28 @@ function toggleBanner(num) {
     
         $('.bannerU1-11').addClass('d-none');
         $('.banner8U1-11').removeClass('d-none');  
+      break;
+  
+    default:
+      break;
+  }
+  
+}
+
+
+function colapsar(num) {
+  switch (parseInt(num)) {
+    case 1:
+      $('#textCollapse2').collapse('hide');
+      $('#textCollapse3').collapse('hide');
+      break;
+    case 2:
+      $('#textCollapse1').collapse('hide');
+      $('#textCollapse3').collapse('hide');
+      break;
+    case 3:
+      $('#textCollapse1').collapse('hide');
+      $('#textCollapse2').collapse('hide');
       break;
   
     default:

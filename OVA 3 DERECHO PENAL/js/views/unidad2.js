@@ -1,4 +1,16 @@
 $( document ).ready(function() {
+    star_uni = 0;
+    flat = $("#flat").flipster({
+        style: 'flat',
+        spacing: -0.25,
+        buttons: true,
+        start: star_uni,
+        buttonNext: 'Siguiente',
+        onItemSwitch: function (currentItem,previousItem,index) {
+            var slide = $(currentItem).attr("data-flip-title");
+        }
+    });
+
     $('.menu2').removeClass('d-none');
     $( ".ov-personaje").hide();
     $('#smartwizard').smartWizard({
@@ -653,11 +665,15 @@ $("#btn-carousel").click(function() {
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
     $("#contentBtn7").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn1Carcel").addClass('btn-claro');
  });
 
  $("#btn1-a").click(function() {
     $("#content1-a").removeClass('d-none');
     $("#content1-b").addClass('d-none');
+    
+    
  });
 
  $("#btn1-b").click(function() {
@@ -675,6 +691,8 @@ $("#btn-carousel").click(function() {
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
     $("#contentBtn7").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn2Carcel").addClass('btn-claro');
  });
 
  $("#btn2-a").click(function() {
@@ -727,6 +745,8 @@ $("#btn3Carcel").click(function() {
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
     $("#contentBtn7").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn3Carcel").addClass('btn-claro');
  });
 
  $("#btn3-a").click(function() {
@@ -757,6 +777,8 @@ $("#btn4Carcel").click(function() {
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
     $("#contentBtn7").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn4Carcel").addClass('btn-claro');
  });
 // fin btn4
 
@@ -769,6 +791,8 @@ $("#btn5Carcel").click(function() {
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
     $("#contentBtn7").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn5Carcel").addClass('btn-claro');
  });
 // fin btn5
 
@@ -781,6 +805,8 @@ $("#btn6Carcel").click(function() {
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn7").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn6Carcel").addClass('btn-claro');
  });
 // fin btn6
 
@@ -793,6 +819,8 @@ $("#btn7Carcel").click(function() {
     $("#contentBtn4").addClass('d-none');
     $("#contentBtn5").addClass('d-none');
     $("#contentBtn6").addClass('d-none');
+    $(".btnCarcel").removeClass('btn-claro');
+    $("#btn7Carcel").addClass('btn-claro');
  });
 
  $("#btn7-a").click(function() {
@@ -830,9 +858,9 @@ $("#btn7Carcel").click(function() {
 $("#btnPris1").click(function() {
    $("#contentBtnPris1").removeClass('d-none');
    $(".arrowRight").removeClass('w60px');
-   $(".arrowRight").removeClass('w990px');
+   $(".arrowRight").removeClass('w1060px');
    $(".arrowRight").addClass('w60px');
-   $("#arrow1").addClass('w990px');
+   $("#arrow1").addClass('w1060px');
    $("#contentBtnPris2").addClass('d-none');
    $("#contentBtnPris3").addClass('d-none');
    $("#contentBtnPris4").addClass('d-none');
@@ -845,9 +873,9 @@ $("#btnPris1").click(function() {
 $("#btnPris2").click(function() {
     $("#contentBtnPris2").removeClass('d-none');
     $(".arrowRight").removeClass('w60px');
-    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").removeClass('w1060px');
     $(".arrowRight").addClass('w60px');
-    $("#arrow2").addClass('w990px');
+    $("#arrow2").addClass('w1060px');
     $("#contentBtnPris1").addClass('d-none');
     $("#contentBtnPris3").addClass('d-none');
     $("#contentBtnPris4").addClass('d-none');
@@ -859,9 +887,9 @@ $("#btnPris2").click(function() {
 $("#btnPris3").click(function() {
     $("#contentBtnPris3").removeClass('d-none');
     $(".arrowRight").removeClass('w60px');
-    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").removeClass('w1060px');
     $(".arrowRight").addClass('w60px');
-    $("#arrow3").addClass('w990px');
+    $("#arrow3").addClass('w1060px');
     $("#contentBtnPris1").addClass('d-none');
     $("#contentBtnPris2").addClass('d-none');
     $("#contentBtnPris4").addClass('d-none');
@@ -873,9 +901,9 @@ $("#btnPris3").click(function() {
 $("#btnPris4").click(function() {
     $("#contentBtnPris4").removeClass('d-none');
     $(".arrowRight").removeClass('w60px');
-    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").removeClass('w1060px');
     $(".arrowRight").addClass('w60px');
-    $("#arrow4").addClass('w990px');
+    $("#arrow4").addClass('w1060px');
     $("#contentBtnPris1").addClass('d-none');
     $("#contentBtnPris2").addClass('d-none');
     $("#contentBtnPris3").addClass('d-none');
@@ -887,9 +915,9 @@ $("#btnPris4").click(function() {
 $("#btnPris5").click(function() {
     $("#contentBtnPris5").removeClass('d-none');
     $(".arrowRight").removeClass('w60px');
-    $(".arrowRight").removeClass('w990px');
+    $(".arrowRight").removeClass('w1060px');
     $(".arrowRight").addClass('w60px');
-    $("#arrow5").addClass('w990px');;
+    $("#arrow5").addClass('w1060px');;
     $("#contentBtnPris1").addClass('d-none');
     $("#contentBtnPris2").addClass('d-none');
     $("#contentBtnPris3").addClass('d-none');
@@ -901,6 +929,8 @@ $("#btnPris5").click(function() {
 // unidad2-7
 // inicio box1
 $("#box1Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box1Img").addClass('d-none');
     $("#box1ImgP").removeClass('d-none');
 });
@@ -913,6 +943,8 @@ $("#box1ImgP").click(function () {
 
 // inicio box2
 $("#box2Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box2Img").addClass('d-none');
     $("#box2ImgP").removeClass('d-none');
 });
@@ -925,6 +957,8 @@ $("#box2ImgP").click(function () {
 
 // inicio box3
 $("#box3Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box3Img").addClass('d-none');
     $("#box3ImgP").removeClass('d-none');
 });

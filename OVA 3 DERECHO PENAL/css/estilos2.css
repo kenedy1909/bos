@@ -360,6 +360,8 @@
   height: 50px;
   width: 50px;
   position: relative;
+  top: 35px;
+  left: -137px;
 }
 
 .icon-arrow-size{
@@ -472,4 +474,33 @@
 #btn8ImgJuicio {
   top: 8%;
   left: 3%;
+}
+
+.w-90{
+  width: 90%;
+}
+
+.btn-claro{
+  background-color: var( --bg-color-claro2);
+  border-color: var(--bg-color-claro2);
+  color: black;
+}
+
+.w1060px{
+  width: 1060px;
+}
+
+.titulo-activity8{
+  border-bottom: solid 4px rgb(121 19 38);
+  width: 50%;
+  height: 71px;
+  margin: 0px;
+  padding-top: 30px;
+}
+.text-img-activi9 {
+  border-bottom: solid 4px rgb(121 19 38);
+  width: 50%;
+  height: 71px;
+  margin: 0px;
+  padding-top: 30px;
 }

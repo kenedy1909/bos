@@ -173,9 +173,17 @@ QuestionsSameAnswers.prototype.score =  function () {
     var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
+    // if (puntaje == 100) {
+    //     exito = true;
+    //     mensaje = "¡Felicitaciones!"
+    // }
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_template/bien.png");  
+    }
+    if (puntaje < 100) {
+        $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");  
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
@@ -209,9 +217,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th style="text-align: center;"><p style="color: white;"></p><b>Item:</b></th>\
+                    <th  style="text-align: center; font-size:20px; "><p style="color: white;"></p><b>Item:</b></th>\
                     {% for answer in form.answers %}\
-                        <th class="title_table">{{ answer.answer_txt }}</th>\
+                        <th class="title_table" style="text-align: center; font-size:20px; ">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
                 </tr>\
             </thead>\
@@ -224,7 +232,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                         <td>\
                             <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radiobtn"></span>\
+                                <span class="radiobtn" ></span>\
                             </label>\
                         </td>\
                     {% endfor %}\
