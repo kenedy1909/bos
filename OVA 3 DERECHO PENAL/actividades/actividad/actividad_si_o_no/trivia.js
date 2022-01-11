@@ -43,6 +43,8 @@ window.onload = function () {
   if (curr == 3) {
     $('.cantidad').html('4/4');
   }
+ 
+ 
   
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
@@ -50,7 +52,7 @@ window.onload = function () {
     
     for (var i = 0; i < answers.length -1; i += 1) {
       var createDiv = document.createElement('div');
-      createDiv.className += ('col-md-5 opcion img_option_'+curr+'_'+i);
+      createDiv.className += ('col-md-5 mt-3 h155 opcion img_option_'+curr+'_'+i);
           text = document.createTextNode(answers[i]);
       
       createDiv.appendChild(text);
@@ -64,15 +66,15 @@ window.onload = function () {
   }
 
   function Imag() {
-    var texto1 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto1 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/manualDeFunciones.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_0_0').prepend(texto1);
-    var texto2 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto2 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/confidencialidad.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -80,15 +82,15 @@ window.onload = function () {
     $('.img_option_0_1').prepend(texto2);
 
 // ------------------------ pregunta 2
-    var texto3 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto3 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/leer.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
-    var texto4 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto4 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/testigo.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -96,15 +98,15 @@ window.onload = function () {
     $('.img_option_1_1').prepend(texto4);
 // ------------------------ pregunta 3
 
-    var texto5 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto5 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/icono_tribunal.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_0').prepend(texto5);
-    var texto6 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto6 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/forma4.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -112,15 +114,15 @@ window.onload = function () {
     $('.img_option_2_1').prepend(texto6);
 // ------------------------ pregunta 4
 
-    var texto7 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto7 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/icono_tribunal.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_3_0').prepend(texto7);
-    var texto8 = `<div style="width: 100%; position: relative; display: flex;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -65px; left:38%;">
+    var texto8 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
                     <img src="./img/forma4.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -165,9 +167,12 @@ window.onload = function () {
           txt       = document.createTextNode(current + 1);
       
       createDiv.appendChild(txt);
-      if ((current+2) != 4) {
-        $('.cantidad').html((current+2)+"/"+cantidad);
-      }
+      // if ((current+2) != 4) {
+      //   $('.cantidad').html((current+2)+"/"+cantidad);
+      // }
+      // if (current == 4) {
+      //   $('.cantidad').html('');
+      // }
       if (bool) {
         
         createDiv.className += 'correct';
@@ -202,7 +207,7 @@ function calificar(){
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%; position: relative;top: 6px;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
     $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
@@ -210,7 +215,7 @@ function calificar(){
     $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
-    $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn" onclick="reiniciar();">Volver a intentar</button>');
+    $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px; width: 171px; height: 42px;" id="add" class="btn" onclick="reiniciar();">Volver a intentar</button>');
   }
 }
 
