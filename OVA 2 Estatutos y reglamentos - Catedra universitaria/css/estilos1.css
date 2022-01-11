@@ -919,8 +919,16 @@ p, button{
     margin-left: -25px!important;
 }
 
+.menos-margin-40 {
+    margin-left: -40px!important;
+}
+
 .menos-margin-50 {
     margin-left: -50px!important;
+}
+
+.menos-margin-70 {
+    margin-left: -70px!important;
 }
 
 .menos-margin-75 {
@@ -1328,7 +1336,7 @@ p, button{
     width: 0;
     height: 0;
     border-left: 30px solid transparent;
-    border-top: 18px solid var(--bg-color-secondary);
+    border-top: 18px solid var(--bg-color-secondary-dark);
     border-right: 30px solid transparent;
     margin-bottom: -34px;
 }
