@@ -19,12 +19,12 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
@@ -122,6 +122,24 @@ $(document).ready(function() {
     });
     /* ------------------- */
 });
+figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+
+                break;
+        }
+    }
+);
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
                   <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior mr-3 w-40px" src="assets/img/img_template/pdf.png"> reglamento_administrativo_unaula.pdf    <b class="text-cafe"><u>Ver</u></b></a>
@@ -141,10 +159,15 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex + 1);
-    actualizarprogress(stepIndex + 1);
+    if (num == 1) {
+        controlSlides(stepIndex + 1);
+        actualizarprogress(stepIndex + 1);
+    } else {
+        controlSlides(stepIndex);
+        actualizarprogress(stepIndex + 1);
+    }
 }
 
 function slide_predeterminado() {
@@ -245,11 +268,11 @@ function controlSlides(num) {
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
             var inputsRy = [];
-            var i = new Input(3);
+            var i = new Input(2);
             i.crear(elementoPadre1);
             inputsRy.push(i);
 
-            var i2 = new Input(3);
+            var i2 = new Input(2);
             i2.att.value = 70;
             i2.att.min = 20;
             i2.att.max = 120;
@@ -279,10 +302,10 @@ function controlSlides(num) {
             var videointro = document.getElementById('video_intro1');
             videointro.pause();
             break;
+            /*case 16:
+                setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
+                break;*/
         case 16:
-            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
-            break;
-        case 17:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             var videointro = document.getElementById('video_intro1');
@@ -310,7 +333,7 @@ function controlSlides(num) {
                 }(n));
             }
             break;
-        case 18:
+        case 17:
             setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Estatutos de la universidad");
             $(".i5").html('')
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
@@ -581,7 +604,7 @@ function Input(num) {
     //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
     this.att = {};
     this.att.type = "range";
-    this.att.value = 0;
+    this.att.value = 1;
     this.att.min = 0;
     this.att.max = num;
     this.att.autocomplete = "off";
@@ -1254,7 +1277,7 @@ function cambiarFondoLibro(num) {
 
     if (num == 1) {
         var contenido = `
-                <p class="text-white">Si varios órganos pretenden ejercer unas mismas competencias.</p>
+                <p class="text-white" style="text-align:justify;">Si varios órganos pretenden ejercer unas mismas competencias.</p>
                 `;
         $('.contedorLibro').html(contenido);
         $('#fondoLibro').removeClass('fondoLibro1');
@@ -1262,7 +1285,7 @@ function cambiarFondoLibro(num) {
         $('#fondoLibro').addClass('fondoLibro2');
     } else if (num == 2) {
         var contenido = `
-                <p class="text-white">Si ninguno de varios órganos, aparentemente competentes, aceptan ejercer la competencia de una función determinada.</p>
+                <p class="text-white" style="text-align:justify;">Si ninguno de varios órganos, aparentemente competentes, aceptan ejercer la competencia de una función determinada.</p>
                 `;
         $('.contedorLibro').html(contenido);
         $('#fondoLibro').removeClass('fondoLibro1');
@@ -1399,8 +1422,8 @@ function scroll_horizontal3(num) {
             $('.comodines').addClass('comodinInactive');
             $('.comodines').removeClass('comodinActive');
 
-            $('.comodin').removeClass('comodinInactive');
-            $('.comodin').addClass('comodinActive');
+            $('.comodin2').removeClass('comodinInactive');
+            $('.comodin2').addClass('comodinActive');
             break;
         default:
             break;
