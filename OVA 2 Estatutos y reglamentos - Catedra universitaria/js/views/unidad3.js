@@ -1,26 +1,29 @@
-$( document ).ready(function() {
+$(document).ready(function() {
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
@@ -42,7 +45,7 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    
+
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
@@ -51,13 +54,13 @@ var pdf = `<div class="col-md-12">
             </div>`;
 $('.pdfs').html(pdf);
 
-function slide(){
+function slide() {
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
-    actualizarprogress(stepIndex+1+27+8);
+    actualizarprogress(stepIndex + 1 + 27 + 8);
 }
 
-function modal_scroll10(){
+function modal_scroll10() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -68,21 +71,21 @@ function modal_scroll10(){
     scroll();
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
             /*setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
@@ -90,37 +93,37 @@ function controlSlides(num){
             tema = 7;*/
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
+            setMigaja("Unidades de aprendizaje", "3. El principio de la jurisdicción universal", "Evolución y aplicación");
             break;
         default:
             break;
     }
 }
 
-function clicks(num){
+function clicks(num) {
     switch (parseInt(num)) {
         case 1:
 

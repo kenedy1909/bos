@@ -1,4 +1,16 @@
 $( document ).ready(function() {
+    star_uni = 0;
+    flat = $("#flat").flipster({
+        style: 'flat',
+        spacing: -0.25,
+        buttons: true,
+        start: star_uni,
+        buttonNext: 'Siguiente',
+        onItemSwitch: function (currentItem,previousItem,index) {
+            var slide = $(currentItem).attr("data-flip-title");
+        }
+    });
+
     $('.menu2').removeClass('d-none');
     $( ".ov-personaje").hide();
     $('#smartwizard').smartWizard({
@@ -917,6 +929,8 @@ $("#btnPris5").click(function() {
 // unidad2-7
 // inicio box1
 $("#box1Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box1Img").addClass('d-none');
     $("#box1ImgP").removeClass('d-none');
 });
@@ -929,6 +943,8 @@ $("#box1ImgP").click(function () {
 
 // inicio box2
 $("#box2Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box2Img").addClass('d-none');
     $("#box2ImgP").removeClass('d-none');
 });
@@ -941,6 +957,8 @@ $("#box2ImgP").click(function () {
 
 // inicio box3
 $("#box3Img").click(function () {
+    $(".box").removeClass('d-none');
+    $(".boxp").addClass('d-none');
     $("#box3Img").addClass('d-none');
     $("#box3ImgP").removeClass('d-none');
 });
@@ -960,48 +978,65 @@ $(function () {
 $("#btn1ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn1").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn1ImgJuicio").addClass('border-imgJuicio');
+    
 });
 
 // btn2
 $("#btn2ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn2").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn2ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn3
 $("#btn3ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn3").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn3ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn4
 $("#btn4ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn4").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn4ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn5
 $("#btn5ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn5").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn5ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn6
 $("#btn6ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn6").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn6ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn7
 $("#btn7ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn7").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn7ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn8
 $("#btn8ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn8").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn8ImgJuicio").addClass('border-imgJuicio');
 });
  
 

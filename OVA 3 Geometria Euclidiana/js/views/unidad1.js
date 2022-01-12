@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -96,6 +98,20 @@ $( document ).ready(function() {
     // console.log(tema);
     slide_link(tema);
     $('.menu1').removeClass('d-none');
+    $('.menu1').addClass('c-show');
+    // $('.menu-a').addClass('menuSelect');
+
+  
+    $('.menu-a').on('click', function () {
+     
+      menuA();
+      
+    });
+    $('.menu-b').on('click', function () {
+     
+      menuB();
+    });
+     
 });
 /*var pdf = `<div class="col-md-12">
                   <p class="p_black">
@@ -128,6 +144,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            menuA();
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 2:
@@ -184,11 +201,13 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 19:
+          menuA();
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
             break;
         case 20:
             /*setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");*/
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
+            menuB();
             break;
         case 21:
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Triángulos y cuadriláteros");
@@ -1301,4 +1320,12 @@ function funcionalidad_9(num) {
     }else if (num == 4) {
         $(".info_funcionalidad_9_4").removeClass('d-none');
     }
+}
+function menuA(params) {
+  $('.menu-a').addClass('menuSelect');
+$('.menu-b').removeClass('menuSelect');
+}
+function menuB(params) {
+  $('.menu-b').addClass('menuSelect');
+  $('.menu-a').removeClass('menuSelect');
 }

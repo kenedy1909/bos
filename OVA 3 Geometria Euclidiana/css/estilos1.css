@@ -680,3 +680,8 @@ a.control_next {
     font-size: 100%;
     text-align: center;
 }
+
+.menuSelect{
+    color: #fff;
+    background: rgba(0, 0, 21, 0.2);
+}

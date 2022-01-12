@@ -432,48 +432,48 @@
   position: absolute;
   width: 140px;
   height: 125px;
-  border: solid 1px ghostwhite;
-  opacity: 0.1;
+  /* border: solid 1px ghostwhite;
+  opacity: 0.1; */
 }
 
 #btn1ImgJuicio {
-  top: -4%;
-  left: 38%;
+  top: -5%;
+    left: 35%;
 }
 
 #btn2ImgJuicio {
-  top: 6%;
-  left: 71%;
+  top: 5%;
+  left: 68%;
 }
 
 #btn3ImgJuicio {
-  top: 42%;
-  left: 74%;
+  top: 39%;
+  left: 70%;
 }
 
 #btn4ImgJuicio {
-  top: 76%;
-  left: 72%;
+  top: 74%;
+  left: 69%;
 }
 
 #btn5ImgJuicio {
-  top: 76%;
-  left: 37%;
+  top: 75%;
+  left: 34%;
 }
 
 #btn6ImgJuicio {
-  top: 74%;
-  left: 2%;
-}
-
-#btn7ImgJuicio {
-  top: 41%;
+  top: 71%;
   left: 1%;
 }
 
+#btn7ImgJuicio {
+  top: 38%;
+  left: -2%;
+}
+
 #btn8ImgJuicio {
-  top: 8%;
-  left: 3%;
+  top: 5%;
+  left: 2%;
 }
 
 .w-90{
@@ -488,4 +488,24 @@
 
 .w1060px{
   width: 1060px;
+}
+
+.titulo-activity8{
+  border-bottom: solid 4px rgb(121 19 38);
+  width: 50%;
+  height: 71px;
+  margin: 0px;
+  padding-top: 30px;
+}
+.text-img-activi9 {
+  border-bottom: solid 4px rgb(121 19 38);
+  width: 50%;
+  height: 71px;
+  margin: 0px;
+  padding-top: 30px;
+}
+
+.border-imgJuicio{
+  border: 3px solid brown;
+  border-radius: 50%;
 }
