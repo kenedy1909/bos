@@ -978,48 +978,65 @@ $(function () {
 $("#btn1ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn1").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn1ImgJuicio").addClass('border-imgJuicio');
+    
 });
 
 // btn2
 $("#btn2ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn2").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn2ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn3
 $("#btn3ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn3").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn3ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn4
 $("#btn4ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn4").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn4ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn5
 $("#btn5ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn5").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn5ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn6
 $("#btn6ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn6").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn6ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn7
 $("#btn7ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn7").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn7ImgJuicio").addClass('border-imgJuicio');
 });
 
 // btn8
 $("#btn8ImgJuicio").click(function() {
     $(".contentJuicio").addClass('d-none');
     $("#contentJBtn8").removeClass('d-none');
+    $(".btnImgJuicio").removeClass('border-imgJuicio');
+    $("#btn8ImgJuicio").addClass('border-imgJuicio');
 });
  
 

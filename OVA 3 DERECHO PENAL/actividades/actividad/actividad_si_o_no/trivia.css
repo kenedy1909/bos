@@ -124,6 +124,7 @@ body, html {
   position: relative;
   top: -60px;
   text-align: center;
+  border: 3px solid white;
 }
 
 .boton_inc{
@@ -191,4 +192,8 @@ body, html {
 
 .p_white{
   color: #FFFFFF;
+}
+
+.h155{
+  height: 155px;
 }
