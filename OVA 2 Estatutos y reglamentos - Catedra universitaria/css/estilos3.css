@@ -1,155 +1,178 @@
-.tria3{
-  width: 0;
-  height: 0;
-  border-left: 80px solid #D3D6F9;
-  border-top: 80px solid transparent;
-  border-bottom: 80px solid transparent;
+.tria3 {
+    width: 0;
+    height: 0;
+    border-left: 80px solid #D3D6F9;
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
 }
-.fondo-flechas{
-  width: 321px;
-  position: relative;
-  left: -188px;
+
+.fondo-flechas {
+    width: 321px;
+    position: relative;
+    left: -188px;
 }
-.bannerflecha1{
-  width: 80%;
-  background: #D3D6F9;
-  height: 125px;
-  position: relative;
-  top: 18px;
-  padding: 10px;
-  border-radius: 30px 0px 0px 30px;
+
+.bannerflecha1 {
+    width: 80%;
+    background: #D3D6F9;
+    height: 125px;
+    position: relative;
+    top: 18px;
+    padding: 10px;
+    border-radius: 30px 0px 0px 30px;
 }
-.bannerflecha2{
-  width: 80%;
-  background: #D3D6F9;
-  height: 125px;
-  position: relative;
-  top: 18px;
-  padding: 10px;
-  border-radius: 0px 30px 30px 0px;
+
+.bannerflecha2 {
+    width: 80%;
+    background: #D3D6F9;
+    height: 125px;
+    position: relative;
+    top: 18px;
+    padding: 10px;
+    border-radius: 0px 30px 30px 0px;
 }
-.btn-imagen{
+
+.btn-imagen {
     width: 600px;
     height: 108px;
     background-image: url('../assets/img/img_ova/circulos.png');
     background-repeat: no-repeat;
     background-size: 100%;
 }
-.click-imagen{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: relative;
+
+.click-imagen {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
 }
-.click1{
-  top: 3px;
-  left: 17px;
+
+.click1 {
+    top: 3px;
+    left: 17px;
 }
-.click2{
-  top: 2px;
-  left: 67px;
+
+.click2 {
+    top: 2px;
+    left: 67px;
 }
-.click3{
-  top: -97px;
-  left: 118px;
+
+.click3 {
+    top: -97px;
+    left: 118px;
 }
-.click4{
-  top: -97px;
-  left: 168px;
+
+.click4 {
+    top: -97px;
+    left: 168px;
 }
-.click5{
-  top: -198px;
-  left: 221px;
+
+.click5 {
+    top: -198px;
+    left: 221px;
 }
-.click6{
-  top: -196px;
-  left: 275px;
+
+.click6 {
+    top: -196px;
+    left: 275px;
 }
-.textoClicks{
-  height: 99px;
-  width: 436px;
-  background: #9c182f;
-  position: relative;
-  left: -179px;
-  border-radius: 15px;
-  box-shadow: 1px 1px 3px 1px;
-  padding: 10px;
+
+.textoClicks {
+    height: 99px;
+    width: 436px;
+    background: #9c182f;
+    position: relative;
+    left: -179px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px 1px;
+    padding: 10px;
 }
-.no-visible{
-  display: none;
+
+.no-visible {
+    display: none;
 }
-.si-visible{
-  display: block;
+
+.si-visible {
+    display: block;
 }
-.banneactiv_pdf{
+
+.banneactiv_pdf {
     background: #dad6d6;
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
 }
 
-.pdf_activi{
-  background: #282f9f;
-  height: 100px;
-  border-radius: 20px;
-  padding-top: 10px;
-  margin-top: 25px;
+.pdf_activi {
+    background: #282f9f;
+    height: 100px;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin-top: 25px;
 }
 
-.logo_copiar{
-  max-width: 33px;
+.logo_copiar {
+    max-width: 33px;
 }
 
-.text-img-activi{
-  border-bottom: solid 4px rgb(121 19 38);
-  width: 50%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 30px;
+.text-img-activi {
+    border-bottom: solid 4px rgb(121 19 38);
+    width: 34%;
+    height: 60px;
+    margin: 0px;
+    padding-top: 30px;
+    margin-left: 7px;
 }
 
-.img_activi{
-  width: 116px;
-  height: 116px;
-}
-.texto_activi{
-  font-size: 18px; 
-  color: rgb(121 19 38);
+.img_activi {
+    width: 116px;
+    height: 116px;
 }
 
-.contenedor_indi{
+.texto_activi {
+    font-size: 18px;
+    color: rgb(121 19 38);
+}
+
+.contenedor_indi {
     background: #D8D8D8;
     border-radius: 20px;
     padding-top: 30px;
     padding-left: 29px;
     box-shadow: 1px 2px 5px 0px;
 }
-.instruccionlectura{
-  background-image: url('../assets/img/img_ova/lectura.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 225px;
-  width: 755px;
+
+.instruccionlectura {
+    background-image: url('../assets/img/img_ova/lectura.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 240px;
+    width: 830px;
 }
-.texto-indi-download{
-  width: 30%;
-  position: relative;
-  top: 44px;
-  left: 200px;
+
+.texto-indi-download {
+    width: 30%;
+    position: relative;
+    top: 44px;
+    left: 200px;
 }
-.size_12{
-  font-size: 12px;
+
+.size_12 {
+    font-size: 12px;
 }
-.bannerBlueactivi{
-  background: #525DE9;
-  padding: 15px;
-  border-radius: 20px;
+
+.bannerBlueactivi {
+    background: #525DE9;
+    padding: 15px;
+    border-radius: 20px;
 }
-.book{
-  border-bottom: solid 1px #97182f;
-  padding-bottom: 2px;
+
+.book {
+    border-bottom: solid 1px #97182f8f;
+    padding-bottom: 2px;
 }
-.subraye_red{
-  font-size: 13px;
+
+.subraye_red {
+    font-size: 13px;
     color: white;
     background: #97182f;
     padding: 3px;
