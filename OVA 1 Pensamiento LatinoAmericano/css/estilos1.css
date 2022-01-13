@@ -58,6 +58,10 @@
     border-radius: 45px;
 }
 
+.border-35 {
+    border-radius: 35px;
+}
+
 .border-25 {
     border-radius: 25px;
 }
@@ -237,11 +241,11 @@
 .hr-verde-oscuro {
     border-top: 7px solid var(--bg-color-dark)!important;
 }
-.linkSinDecoration:hover{
+
+.linkSinDecoration:hover {
     text-decoration: none!important;
     outline: none!important;
 }
-
 
 .card1 {
     border-radius: 45px;
@@ -1684,9 +1688,9 @@ input[type=range]::-ms-fill-upper {
 
 .banner_inicio {
     background: #BADBA5;
-    border-radius: 50px;
+    border-radius: 30px;
     height: fit-content;
-    padding: 25px 25px 25px 25px;
+    padding: 10px;
 }
 
 
@@ -1810,12 +1814,14 @@ input[type=range]::-ms-fill-upper {
 }
 
 .fondo {
+    position: relative;
     height: 400px;
     width: 400px;
     background-image: url(../assets/img/img_ova/social.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 1px 100%;
+    top: -80px;
 }
 
 .contenedor {

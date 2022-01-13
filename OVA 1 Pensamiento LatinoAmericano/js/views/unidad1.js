@@ -1,44 +1,44 @@
-$( document ).ready(function() {
-    $( ".zoomContainer" ).remove();
+$(document).ready(function() {
+    $(".zoomContainer").remove();
 
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
-    setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", ">");
-            
+    setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", ">");
+
     star_uni = 1;
     paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
 
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});  
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
 
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
-    
+
     slide_predeterminado();
 
     var knob = "";
@@ -60,17 +60,18 @@ $( document ).ready(function() {
     slide_link(tema);
 });
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+
+function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex+1);
-    quitarflecha(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    controlSlides(stepIndex + 1);
+    quitarflecha(stepIndex + 1);
+    actualizarprogress(stepIndex + 1);
 }
 
-function slide_predeterminado(){
+function slide_predeterminado() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
@@ -78,18 +79,18 @@ function slide_predeterminado(){
     $('#smartwizard').smartWizard("goToStep", 0);
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num-1);
+    $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
-    
+
 }
 
-function controlSlides(num){
+function controlSlides(num) {
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos”" );
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos”");
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -113,115 +114,115 @@ function controlSlides(num){
             break;
         case 2:
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La cuestión del origen del “ethnos” latinoamericano");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La cuestión del origen del “ethnos” latinoamericano");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 9:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             scroll_set(10);
             scroll_set(11);
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 11:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block"; 
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "block";
+            document.getElementById("prev").style.display = "block";
 
             $(".menu1").removeClass('d-none');
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","1. Fundamentación del pensamiento latinoamericano","La mirada europea: América como otro");
-            
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block"; 
-            
+            setMigaja("Unidades de aprendizaje", "1. Fundamentación del pensamiento latinoamericano", "La mirada europea: América como otro");
+
+            document.getElementById("next").style.display = "none";
+            document.getElementById("prev").style.display = "block";
+
             $(".menu1").removeClass('d-none');
-            
+
             break;
         default:
             break;
@@ -247,17 +248,17 @@ document.addEventListener("keydown",
 );
 
 function scroll_set(num) {
-  dragging = "";
-  diff = "";
-  newTop = "";
-  scrollOffset = "";
-  knob = document.querySelector('.custom-scrollbar__knob'+num);
-  bar = document.querySelector('.custom-scrollbar__bar'+num);
-  container = document.querySelector('.custom-scrollbar__inner'+num);
-  scroll();
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob' + num);
+    bar = document.querySelector('.custom-scrollbar__bar' + num);
+    container = document.querySelector('.custom-scrollbar__inner' + num);
+    scroll();
 }
 
-function scroll_p10(){
+function scroll_p10() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -268,7 +269,7 @@ function scroll_p10(){
     scroll();
 }
 
-function scroll_p11(){
+function scroll_p11() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -279,7 +280,7 @@ function scroll_p11(){
     scroll();
 }
 
-function scroll_p12(){
+function scroll_p12() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -289,7 +290,8 @@ function scroll_p12(){
     container = document.querySelector('.custom-scrollbar__inner12');
     scroll();
 }
-function scroll_p13(){
+
+function scroll_p13() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -299,7 +301,8 @@ function scroll_p13(){
     container = document.querySelector('.custom-scrollbar__inner13');
     scroll();
 }
-function scroll_p14(){
+
+function scroll_p14() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -310,7 +313,7 @@ function scroll_p14(){
     scroll();
 }
 
-function scroll_p21(){
+function scroll_p21() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -332,7 +335,8 @@ function scroll_p21(){
     container = document.querySelector('.custom-scrollbar__inner15');
     scroll();
 }
-function scroll_p22(){
+
+function scroll_p22() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -356,7 +360,8 @@ function scroll_p22(){
     container = document.querySelector('.custom-scrollbar__inner16');
     scroll();
 }
-function scroll_p23(){
+
+function scroll_p23() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -380,7 +385,8 @@ function scroll_p23(){
     container = document.querySelector('.custom-scrollbar__inner17');
     scroll();
 }
-function scroll_p24(){
+
+function scroll_p24() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -405,66 +411,76 @@ function scroll_p24(){
     scroll();
 }
 
-function pantalla9(num){
+function pantalla9(num) {
     switch (parseInt(num)) {
         case 1:
             var text = `<div class="p9_cont">
                       <p class="justificado">Reflexionar contemplando y analizando aspectos de la política que influyen en el país</p>
                     </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_1').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_1').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 2:
             var text = `<div class="p9_cont">
                           <p class="justificado">Reconocer al otro como semejante a sí mismo, extendiendo respeto y dejando de lado distintivos de raza, religión, género u otros y entendiendo que el otro no es un medio para llegar a un fin.</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_2').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_2').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 3:
             var text = `<div class="p9_cont">
                           <p class="justificado">Imaginar la cantidad de características que contemplan el desarrollo de una vida, donde existen diferentes momentos como la infancia y adolescencia y aspectos como la enfermedad y la muerte</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_3').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_3').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 4:
             var text = `<div class="p9_cont">
                           <p class="justificado">Emitir un juicio crítico sobre quienes gobiernan un país, manteniendo una idea realista de los recursos y posibilidades que tiene a su alcance.</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_4').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_4').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         case 5:
             var text = `<div class="p9_cont">
                           <p class="justificado">Concebir su Estado como algo complejo que en determinadas situaciones debe acudir a soluciones provenientes de lo externo o internacional.</p>
                         </div>`;
-            $('.indicap9').css({ "visibility": "hidden"
-                    
-                });
-            $('.indi_5').css({ "visibility": "visible"
-                    
-                });
+            $('.indicap9').css({
+                "visibility": "hidden"
+
+            });
+            $('.indi_5').css({
+                "visibility": "visible"
+
+            });
             $('.p_9c').html(text);
             break;
         default:
@@ -472,14 +488,14 @@ function pantalla9(num){
     }
 }
 
-function citar(){
+function citar() {
     var contenido = `<div style="height: fit-content;background: white;border-radius: 50px;padding: 25px 35px 35px 35px;">
                     <p class="justificado">Como lo menciona López (2010), la importancia de la democracia trasciende el solo hecho de contar con un sistema político que permita el voto para  elección de representantes, pues la forma en que ese sistema se desarrolle genera influencia en las condiciones y estilo de vida de los ciudadanos; es por esto que no debería considerarse democracia únicamente la opción de voto, sino el hecho de facilitar espacios de participación  donde las personas logren ejercer un rol activo y que incluso sean los ciudadanos quienes formulen los modos de participación.</p>
                   </div>`;
     $('.imprime_heare').html(contenido);
 }
 
-function modal_scroll2(){
+function modal_scroll2() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -489,7 +505,8 @@ function modal_scroll2(){
     container = document.querySelector('.custom-scrollbar__inner3');
     scroll();
 }
-function modal_scroll3(){
+
+function modal_scroll3() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -499,7 +516,8 @@ function modal_scroll3(){
     container = document.querySelector('.custom-scrollbar__inner4');
     scroll();
 }
-function modal_scroll4(){
+
+function modal_scroll4() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -510,7 +528,7 @@ function modal_scroll4(){
     scroll();
 }
 
-function modal_scroll7(){
+function modal_scroll7() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -521,7 +539,7 @@ function modal_scroll7(){
     scroll();
 }
 
-function modal_scroll8(){
+function modal_scroll8() {
     dragging = "";
     diff = "";
     newTop = "";
@@ -535,96 +553,97 @@ function modal_scroll8(){
 function funcion_vanvas() {
     var canvas = new fabric.Canvas('canvas_unid1');
     var imgElement = 'assets/img/img_ova/uno.png';
-    var imgElement2 = 'assets/img/img_ova/dos.png'; 
+    var imgElement2 = 'assets/img/img_ova/dos.png';
     var imgElement3 = 'assets/img/img_ova/tres.png';
     var imgElement4 = 'assets/img/img_ova/cuatro.png';
     fabric.Image.fromURL(imgElement, function(oImg) {
-        oImg.left=50;
-        oImg.top=70;
+        oImg.left = 50;
+        oImg.top = 70;
         oImg.scaleToHeight(50);
         oImg.scaleToWidth(50);
         oImg.selectable = false;
         canvas.add(oImg);
 
         oImg.on('mouseup', function() {
-            pantalla13(1);            
+            pantalla13(1);
         });
         oImg.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
     fabric.Image.fromURL(imgElement2, function(oImg2) {
-        oImg2.left=125;
-        oImg2.top=35;
+        oImg2.left = 125;
+        oImg2.top = 35;
         oImg2.scaleToHeight(50);
         oImg2.scaleToWidth(50);
         oImg2.selectable = false;
         canvas.add(oImg2);
 
         oImg2.on('mouseup', function() {
-            pantalla13(2);            
+            pantalla13(2);
         });
         oImg2.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
     fabric.Image.fromURL(imgElement3, function(oImg3) {
-        oImg3.left=200;
-        oImg3.top=35;
+        oImg3.left = 200;
+        oImg3.top = 35;
         oImg3.scaleToHeight(50);
         oImg3.scaleToWidth(50);
         oImg3.selectable = false;
         canvas.add(oImg3);
 
         oImg3.on('mouseup', function() {
-            pantalla13(3);           
+            pantalla13(3);
         });
         oImg3.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
     fabric.Image.fromURL(imgElement4, function(oImg4) {
-        oImg4.left=280;
-        oImg4.top=70;
+        oImg4.left = 280;
+        oImg4.top = 70;
         oImg4.scaleToHeight(50);
         oImg4.scaleToWidth(50);
         oImg4.selectable = false;
         canvas.add(oImg4);
 
-        oImg4.on('mouseup', function() { 
-            pantalla13(4);           
+        oImg4.on('mouseup', function() {
+            pantalla13(4);
         });
         oImg4.on('mousemove', function() {
-          console.log('hover a circle');
-          
+            console.log('hover a circle');
+
         });
     });
-    
+
 }
 
-function pantalla13(num){
+function pantalla13(num) {
     switch (parseInt(num)) {
         case 1:
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos1').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">SITUACIÓN</h3>
-                          <p class="font-weight-bold text-black" style="font-size: 12px;">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
+                          <p class="font-weight-bold text-black" style="font-size: 12px; text-align: justify;">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
                        </div>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.wite_ban_13').css({ "background": "white" });
+
+            $('.contenedor').css({
+                "height": "310px",
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -633,19 +652,20 @@ function pantalla13(num){
             $('.ethos2').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">“TERRA NULLIUS”</h3>
-                          <p class="font-weight-bold text-black" style="font-size: 12px;">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
+                          <p class="font-weight-bold text-black" style="font-size: 12px;text-align: justify;">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
                        </div>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.wite_ban_13').css({ "background": "white" });
+
+            $('.contenedor').css({
+                "height": "310px",
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -653,21 +673,21 @@ function pantalla13(num){
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos3').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
-                          <h3 class="text-center py-1 font-weight-bold text-black">“TRANSFORMACIÓN”</h3>
-                          <p class="font-weight-bold text-black" style="font-size: 12px;">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
+                          <h3 class="text-center py-1 font-weight-bold text-black mt-4">“TRANSFORMACIÓN”</h3>
+                          <p class="font-weight-bold text-black" style="font-size: 12px;text-align: justify;">La mitad del Siglo XX significó para las etnias latinoamericanas una nueva transformación, esta vez, se centró en la desterritorialización de los pueblos indígenas a través de la presión extractivista de los recursos naturales, estas prácticas generaron impactos negativos en los ecosistemas y en el buen vivir de los pueblos indígenas, afectó su sistema de vida a nivel biológico y así mismo en sus cosmovisiones asociadas a la relación con la tierra. </p>
                        </div>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
+            $('.wite_ban_13').css({ "background": "white" });
 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.contenedor').css({
+                "height": "310px",
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -676,19 +696,20 @@ function pantalla13(num){
             $('.ethos4').addClass('btn_ethosActive');
             var text = `<div style="height: 325px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">PROBLEMAS</h3>
-                           <p class="font-weight-bold text-black" style="font-size: 12px;">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
+                           <p class="font-weight-bold text-black" style="font-size: 12px;text-align: justify;">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
                        </div>
                        `;
-            
-            $('.wite_ban_13').css({ "background": "white"});
 
-            $('.contenedor').css({ 
-                                    "background": "white",
-                                    "border": "5px solid #385723",
-                                    "border-style": "dashed",
-                                    "border-radius": "58px"
-                                });
-                
+            $('.wite_ban_13').css({ "background": "white" });
+
+            $('.contenedor').css({
+                "height": "310px",
+                "background": "white",
+                "border": "5px solid #385723",
+                "border-style": "dashed",
+                "border-radius": "58px"
+            });
+
 
             $('.contenedor').html(text);
             break;
@@ -697,80 +718,84 @@ function pantalla13(num){
     }
 }
 
-function scroll(){
+function scroll() {
     // When the container is scrolled
     container.addEventListener('scroll', () => {
-      // If we are dragging the knob, do nothing
-      if (dragging) return;
+        // If we are dragging the knob, do nothing
+        if (dragging) return;
 
-      // Otherwise, set the knob position based on the scroll position
-      knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
+        // Otherwise, set the knob position based on the scroll position
+        knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
     dragging = false;
 
     knob.addEventListener('mousedown', event => {
-        
-    console.log(knob+" "+bar+" "+container);
-      dragging = {
-        x: event.clientX,
-        y: event.clientY };
+
+        console.log(knob + " " + bar + " " + container);
+        dragging = {
+            x: event.clientX,
+            y: event.clientY
+        };
 
     });
     window.addEventListener('mousemove', event => {
-      if (dragging) {
-        // When dragging
-        event.preventDefault();
-        diff = {
-          x: event.clientX - dragging.x,
-          y: event.clientY - dragging.y };
+        if (dragging) {
+            // When dragging
+            event.preventDefault();
+            diff = {
+                x: event.clientX - dragging.x,
+                y: event.clientY - dragging.y
+            };
 
 
-        // Clamp the position of the knob to be a maximum of 
-        // the knobs container, and a minimum of 0
-        newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
-        knob.style.top = newTop + 'px';
+            // Clamp the position of the knob to be a maximum of 
+            // the knobs container, and a minimum of 0
+            newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
+            knob.style.top = newTop + 'px';
 
-        // Base the scroll offset on the knobs position
-        // in relation to the knobs container
-        scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
-        container.scrollTop = scrollOffset;
+            // Base the scroll offset on the knobs position
+            // in relation to the knobs container
+            scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
+            container.scrollTop = scrollOffset;
 
-        dragging = {
-          x: event.clientX,
-          y: event.clientY };
+            dragging = {
+                x: event.clientX,
+                y: event.clientY
+            };
 
-      }
+        }
     });
     window.addEventListener('mouseup', () => {
-      dragging = false;
+        dragging = false;
     });
 }
 
 
 function poner(num) {
-    
-    $(".texto_efecto"+num).css({
+
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'block',
         'z-index': '100'
     });
     if (num == 4) {
-        $(".custom-scrollbar__bar2").css('display','block');
-        $(".custom-scrollbar2").css('height','250');
+        $(".custom-scrollbar__bar2").css('display', 'block');
+        $(".custom-scrollbar2").css('height', '250');
     }
 }
+
 function quitar(num) {
-    $(".texto_efecto"+num).css({
+    $(".texto_efecto" + num).css({
         position: 'relative',
         top: '2px',
         display: 'none',
         'z-index': '100'
     });
     if (num == 4) {
-        $(".custom-scrollbar__bar2").css('display','none');
-        $(".custom-scrollbar2").css('height','180px');
+        $(".custom-scrollbar__bar2").css('display', 'none');
+        $(".custom-scrollbar2").css('height', '180px');
     }
 }
 
@@ -780,43 +805,43 @@ var elementoPadre2 = document.querySelector(".inputDiv.i2");
 var inputsRy = [];
 
 function Input() {
-  //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
-  this.att = {};
-  this.att.type = "range";
-  this.att.value = 0;
-  this.att.min = 0;
-  this.att.max = 6;
-  this.att.autocomplete = "off";
-  this.att.step = "1";
-  this.input;
-  this.output;
+    //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
+    this.att = {};
+    this.att.type = "range";
+    this.att.value = 0;
+    this.att.min = 0;
+    this.att.max = 6;
+    this.att.autocomplete = "off";
+    this.att.step = "1";
+    this.input;
+    this.output;
 
-  this.crear = function(elementoPadre) {
-    // crea un nuevo elemento input
-    this.input = document.createElement("input");
-    //para cada propiedad del objeto att establece un nuevo atributo del elemento input
-    for (var name in this.att) {
-      if (this.att.hasOwnProperty(name)) {
-        this.input.setAttribute(name, this.att[name]);
-      }
+    this.crear = function(elementoPadre) {
+        // crea un nuevo elemento input
+        this.input = document.createElement("input");
+        //para cada propiedad del objeto att establece un nuevo atributo del elemento input
+        for (var name in this.att) {
+            if (this.att.hasOwnProperty(name)) {
+                this.input.setAttribute(name, this.att[name]);
+            }
+        }
+        // crea un nuevo elemento div
+        this.output = document.createElement("div");
+        // establece el valor del atributo class del nuevo div
+        this.output.setAttribute("class", "output");
+        // y el contenido (innerHTML) de este
+        this.output.innerHTML = this.att.value;
+
+        // inserta los dos elementos creados al final  del elemento Padre 
+        elementoPadre.appendChild(this.input);
+        elementoPadre.appendChild(this.output);
     }
-    // crea un nuevo elemento div
-    this.output = document.createElement("div");
-    // establece el valor del atributo class del nuevo div
-    this.output.setAttribute("class", "output");
-    // y el contenido (innerHTML) de este
-    this.output.innerHTML = this.att.value;
 
-    // inserta los dos elementos creados al final  del elemento Padre 
-    elementoPadre.appendChild(this.input);
-    elementoPadre.appendChild(this.output);
-  }
-
-  this.actualizar = function() {
-    pantallas16(this.input.value);
-    this.output.innerHTML = this.input.value;
-    this.att.value = this.input.value;
-  }
+    this.actualizar = function() {
+        pantallas16(this.input.value);
+        this.output.innerHTML = this.input.value;
+        this.att.value = this.input.value;
+    }
 }
 
 // setup
@@ -832,11 +857,11 @@ i2.crear(elementoPadre2);
 inputsRy.push(i2);
 
 for (var n = 0; n < inputsRy.length; n++) {
-  (function(n) {
-    inputsRy[n].input.addEventListener("input", function() {
-      inputsRy[n].actualizar();
-    }, false)
-  }(n));
+    (function(n) {
+        inputsRy[n].input.addEventListener("input", function() {
+            inputsRy[n].actualizar();
+        }, false)
+    }(n));
 }
 
 /* Draw
@@ -852,7 +877,7 @@ requestId = window.requestAnimationFrame(Draw);
 // JavaScript Document
 
 
-function pasos(num){
+function pasos(num) {
     switch (parseInt(num)) {
         case 1:
             $('.paso1').addClass('efectos');
@@ -866,13 +891,13 @@ function pasos(num){
         case 4:
             $('.paso4').addClass('efectos');
             break;
-        
+
         default:
             break;
     }
 }
 
-function pant13(num){
+function pant13(num) {
     switch (parseInt(num)) {
         case 1:
             var contenido = `<div class="col-md-9 banner3 text-center">
@@ -1016,99 +1041,100 @@ function pant13(num){
 
 
 
-function acordeon(num,estado) {
+function acordeon(num, estado) {
 
     $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').removeClass('d-block');
     $('.contenidoAcordeon1, .contenidoAcordeon2, .contenidoAcordeon3').addClass('d-none');
 
 
-    if (estado=='acordeon') {
-        if (num==1) {
+    if (estado == 'acordeon') {
+        if (num == 1) {
             $('.acordeon2').addClass('d-none');
             $('.acordeon3').addClass('d-none');
             $('.acordeon2').removeClass('d-flex');
             $('.acordeon3').removeClass('d-flex');
-            
+
             $('.acordeon1').addClass('ocultarAcordeon1');
             $('.acordeon1').removeClass('acordeon1');
-            
+
             $('.contenidoAcordeon1').removeClass('d-none');
             $('.contenidoAcordeon1').addClass('d-block');
-            
-            $('.ocultarAcordeon1').attr('onclick',"acordeon(1,'ocultar')");
-        }else if (num==2) {
+
+            $('.ocultarAcordeon1').attr('onclick', "acordeon(1,'ocultar')");
+        } else if (num == 2) {
             $('.acordeon1').addClass('d-none');
             $('.acordeon3').addClass('d-none');
             $('.acordeon1').removeClass('d-flex');
             $('.acordeon3').removeClass('d-flex');
-            
+
             $('.acordeon2').addClass('ocultarAcordeon2');
             $('.acordeon2').removeClass('acordeon2');
-            
+
             $('.contenidoAcordeon2').removeClass('d-none');
             $('.contenidoAcordeon2').addClass('d-block');
-            
-            $('.ocultarAcordeon2').attr('onclick',"acordeon(2,'ocultar')");
-        }else if (num==3) {
+
+            $('.ocultarAcordeon2').attr('onclick', "acordeon(2,'ocultar')");
+        } else if (num == 3) {
             $('.acordeon2').addClass('d-none');
             $('.acordeon1').addClass('d-none');
             $('.acordeon2').removeClass('d-flex');
             $('.acordeon1').removeClass('d-flex');
-            
+
             $('.acordeon3').addClass('ocultarAcordeon3');
             $('.acordeon3').removeClass('acordeon3');
-            
+
             $('.contenidoAcordeon3').removeClass('d-none');
             $('.contenidoAcordeon3').addClass('d-block');
-            
-            $('.ocultarAcordeon3').attr('onclick',"acordeon(3,'ocultar')");
+
+            $('.ocultarAcordeon3').attr('onclick', "acordeon(3,'ocultar')");
         }
 
-    }else if(estado=='ocultar'){
+    } else if (estado == 'ocultar') {
 
-        if (num==1) {
+        if (num == 1) {
             $('.acordeon2').addClass('d-flex');
             $('.acordeon3').addClass('d-flex');
             $('.acordeon2').removeClass('d-none');
             $('.acordeon3').removeClass('d-none');
-            
+
             $('.ocultarAcordeon1').addClass('acordeon1');
             $('.ocultarAcordeon1').removeClass('ocultarAcordeon1');
-            
+
             $('.contenidoAcordeon1').removeClass('d-block');
             $('.contenidoAcordeon1').addClass('d-none');
-            
-            $('.acordeon1').attr('onclick',"acordeon(1,'acordeon')");
-        }else if (num==2) {
+
+            $('.acordeon1').attr('onclick', "acordeon(1,'acordeon')");
+        } else if (num == 2) {
             $('.acordeon1').addClass('d-flex');
             $('.acordeon3').addClass('d-flex');
             $('.acordeon1').removeClass('d-none');
             $('.acordeon3').removeClass('d-none');
-            
+
             $('.ocultarAcordeon2').addClass('acordeon2');
             $('.ocultarAcordeon2').removeClass('ocultarAcordeon2');
-            
+
             $('.contenidoAcordeon2').removeClass('d-block');
             $('.contenidoAcordeon2').addClass('d-none');
-            
-            $('.acordeon2').attr('onclick',"acordeon(2,'acordeon')");
-        }else if (num==3) {
+
+            $('.acordeon2').attr('onclick', "acordeon(2,'acordeon')");
+        } else if (num == 3) {
             $('.acordeon2').addClass('d-flex');
             $('.acordeon1').addClass('d-flex');
             $('.acordeon2').removeClass('d-none');
             $('.acordeon1').removeClass('d-none');
-            
+
             $('.ocultarAcordeon3').addClass('acordeon3');
             $('.ocultarAcordeon3').removeClass('ocultarAcordeon3');
-            
+
             $('.contenidoAcordeon3').removeClass('d-block');
             $('.contenidoAcordeon3').addClass('d-none');
-            
-            $('.acordeon3').attr('onclick',"acordeon(3,'acordeon')");
+
+            $('.acordeon3').attr('onclick', "acordeon(3,'acordeon')");
         }
     }
 }
-function paraIframe(num){
+
+function paraIframe(num) {
     switch (parseInt(num)) {
         case 0:
             $('.vid').attr('src', $('.vid').attr('src'));
@@ -1134,25 +1160,25 @@ function paraIframe(num){
         default:
             break;
     }
-    
+
 }
 
 function quitarflecha(stepIndex) {
 
     if (stepIndex == 1) {
         console.log("fuera_flecha");
-        document.getElementById("prev").style.display="none";
+        document.getElementById("prev").style.display = "none";
     } else {
         console.log("come_flecha");
-        document.getElementById("prev").style.display="block";
+        document.getElementById("prev").style.display = "block";
     }
 
     if (stepIndex == 18) {
         console.log("fuera_next_flecha");
-        document.getElementById("next").style.display="none";
+        document.getElementById("next").style.display = "none";
         $(".menu1").addClass('d-none');
     } else {
         console.log("come__next_flecha");
-        document.getElementById("next").style.display="block";
+        document.getElementById("next").style.display = "block";
     }
 }
