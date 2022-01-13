@@ -494,7 +494,7 @@ function poner(num) {
         position: 'relative',
         top: '2px',
         display: 'block',
-        height: '300px',
+        height: '360px',
         overflow: 'auto',
         'z-index': '100'
     });
@@ -599,53 +599,41 @@ function rec() {
     } else if (rec_num == 3) {
         $("#rec").html(
             `
-                    <p class="text-center p_black">clic a la imagen</p>
-                    <div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-5">
+                    <p class="text-center p_black">clic en la flecha para ver mas</p>
+                    <div id="slider-2" style="" class="d-flex justify-content-end col-md-11 pr-5">
 
-                      <ul class="img-100">
-                        <li>
-                          <div class="row" data-toggle="modal" data-target="#modal-img-4">
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-4.png" style="max-width: 50%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-5.png" style="max-width: 50%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-6.png" style="max-width: 50%;">
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="row" data-toggle="modal" data-target="#modal-img-5">
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-7.png" style="max-width: 50%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-8.png" style="max-width: 50%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-9.png" style="max-width: 50%;">
-                            </div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="row" data-toggle="modal" data-target="#modal-img-3">
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-1.png" style="max-width: 50%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-2.png" style="max-width: 50%;">
-                            </div>
-                            <div class="col-md-12">
-                              <img src="assets/img/img_ova/circulo-3.png" style="max-width: 50%;">
-                            </div>
-                          </div>
-                        </li>
+                      <ul>
+                      <li style="background: none;">
+                      <img src="assets/img/img_ova/circulo-2.png" class="img-130">
+                  </li>
+                  <li style="background: none;">
+                      <img src="assets/img/img_ova/circulo-3.png" class="img-130">
+                  </li>
+                  <li style="background: none;">
+                      <img src="assets/img/img_ova/circulo-4.png" class="img-130">
+                  </li>
+                  <li style="background: none;">
+                  <img src="assets/img/img_ova/circulo-5.png" class="img-130">
+              </li>
+              <li style="background: none;">
+                  <img src="assets/img/img_ova/circulo-6.png" class="img-130">
+              </li>
+              <li style="background: none;">
+                  <img src="assets/img/img_ova/circulo-7.png" class="img-130">
+              </li>
+              <li style="background: none;">
+              <img src="assets/img/img_ova/circulo-8.png" class="img-130">
+          </li>
+          <li style="background: none;">
+              <img src="assets/img/img_ova/circulo-9.png" class="img-130">
+          </li>
+          <li style="background: none;">
+              <img src="assets/img/img_ova/circulo-1.png" class="img-130">
+          </li>
                       </ul>  
                       
                     </div>
-                    <div class="col-md-2" style="padding-top: 100px;">
+                    <div class="col-md-1" style="padding-top: 100px;">
                       <a href="#" class="control_next"><div style="" class="triag_cambiaslide"></div></a>
                     </div>`
         );
@@ -1000,6 +988,8 @@ alert();
     });
 
 });*/
+
+
 
 figura = document.getElementById("ctrflecha");
 
