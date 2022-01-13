@@ -40,23 +40,33 @@ $( document ).ready(function() {
     $(".btn-unidad1-1").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-1").show(500);
+        $(".btn-circle").removeClass("color-num");
+        $(".btn-unidad1-1").addClass("color-num");
     })
     $(".btn-unidad1-2").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-2").show(500);
+        $(".btn-circle").removeClass("color-num");
+        $(".btn-unidad1-2").addClass("color-num");
     })
     $(".btn-unidad1-3").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-3").show(500);
+        $(".btn-circle").removeClass("color-num");
+        $(".btn-unidad1-3").addClass("color-num");
     })
     $(".btn-unidad1-4").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-4").show(500);
+        $(".btn-circle").removeClass("color-num");
+        $(".btn-unidad1-4").addClass("color-num");
        
     })
     $(".btn-unidad1-5").on("click", function () {
         $(".divcircle").hide();
         $(".div-circle-5").show(500);
+        $(".btn-circle").removeClass("color-num");
+        $(".btn-unidad1-5").addClass("color-num");
     })
 
 
@@ -1017,12 +1027,18 @@ function scroll_horizontal2(num){
             $('#info-scroll').html(info_scroll);
             break;
         case 1:
+            // var img_scroll = `
+            //         <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">
+            //         <div style="position:absolute; top:-12px;">
+            //         <p>(pase el puntero sobre la imagen)</p>
+            //         </div>
+            //         `;
             var img_scroll = `
-                    <img src="assets/img/img_ova/prospectiva_empresarial.png" data-zoom-image="assets/img/img_ova/prospectiva_empresarial.png" class="zoom_img" style="width:70%">
-                    <div style="position:absolute; top:-12px;">
-                    <p>(pase el puntero sobre la imagen)</p>
-                    </div>
-                    `;
+            <img src="assets/img/img_ova/prospectiva_empresarial.png" data-toggle="modal" data-target="#prospectiva"  class="cursor" style="width:70%">
+            <div style="position:absolute; top:-12px;">
+            <p>(clic sobre la imagen para ver mejor)</p>
+            </div>
+            `;
             
             var info_scroll = `
                     <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
