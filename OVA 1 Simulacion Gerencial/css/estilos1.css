@@ -1245,3 +1245,30 @@ p, button{
   .ocultar {
 	  display: none;
   }
+
+  .contenido5{
+	background-color: #E9464F;
+    width: 351px;
+    padding-left: 22px;
+    padding-top: 6px;
+    /* padding-bottom: 6px; */
+    height: 60px;
+    position: relative;
+    top: -33px;
+    left: -98px;
+    border-radius: 16px;
+    color: white;
+  }
+  .color-num{
+	  background-color: #F18B90;
+  }
+  .z2{
+	  z-index: 2;
+  }
+
+  .card-content{
+	background: none repeat scroll 0 0 #E7E6E6;
+    border-radius: 0px 0px 50px 50px;
+    color: black;
+	height: 253px;
+  }
