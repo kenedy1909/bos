@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     // console.log(tema);
     $( ".zoomContainer" ).remove();
+    $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({

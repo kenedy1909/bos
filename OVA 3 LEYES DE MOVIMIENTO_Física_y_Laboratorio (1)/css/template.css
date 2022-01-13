@@ -114,7 +114,7 @@ iframe{
 }
 
 .titulo-ova h3{
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .c-body{
@@ -231,11 +231,13 @@ iframe{
   border-radius: 22px;
   background: #006092;
 }
+
+
 .card .cover{
   height: 115px;
   overflow: hidden;
   border-radius: 22px 22px 0 0;
-  background: #1E4E79;
+  background: #003442;
 }
 .card .cover img{
   width: 100%;
@@ -369,7 +371,7 @@ iframe{
   height: 142px;
   position: relative;
   top: -2px;
-  left: 2px;
+  left: 1px;
 }
 
 /*.divcerrar{
@@ -568,8 +570,38 @@ svg circle:nth-child(2){
   color: #000000;
 }
 
+.font10{
+  font-size: 10px;
+  text-align: justify;
+}
+
+.font11{
+  font-size: 11px;
+  text-align: justify;
+}
+
+.font12{
+  font-size: 12px;
+  text-align: justify;
+}
+
 .font13{
   font-size: 13px;
+  text-align: justify;
+}
+
+.font14{
+  font-size: 14px;
+  text-align: justify;
+}
+
+.font15{
+  font-size: 15px;
+  text-align: justify;
+}
+
+.font16{
+  font-size: 16px;
   text-align: justify;
 }
 
@@ -661,6 +693,34 @@ svg circle:nth-child(2){
 }
 .img-100{
   width:100% ;
+}
+
+.img-110{
+  width:110% ;
+}
+
+.img-120{
+  width:120% ;
+}
+
+.img-140{
+  width:140% ;
+}
+
+.img-150{
+  width:150% ;
+}
+
+.img-280{
+  width:280% ;
+}
+
+.img-300{
+  width:300% ;
+}
+
+.img-320{
+  width:320% ;
 }
 
 .radius-1{
@@ -829,11 +889,11 @@ svg circle:nth-child(2){
 
 .text-img-actividad{
     font-size: 20px;
-    color: #005B8B;
+    color: #003442;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #003442;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
@@ -841,7 +901,7 @@ svg circle:nth-child(2){
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #003442;
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -873,4 +933,20 @@ svg circle:nth-child(2){
 
 .youtubes{
   min-height: 300px !important;
+}
+
+.uni_gray{
+  background: #999999;
+      width: 142px;
+      height: 142px;
+      border-radius: 50%;
+      margin-top: 4px;
+}
+
+.margin-text {
+  margin-left: 15px;
+}
+
+.lineaV {
+  border-left: solid #1F3864 2px;
 }

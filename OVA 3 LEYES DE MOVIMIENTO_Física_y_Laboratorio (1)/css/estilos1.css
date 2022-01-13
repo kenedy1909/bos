@@ -221,7 +221,7 @@
 
 .text-img-actividad{
 	font-size: 20px;
-	color: #005B8B;
+	color: #003442
 }
 
 .content-text-img-activi{
@@ -234,7 +234,7 @@
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #005B8B;
+  border-bottom: solid 3px #003442
   width: 50%;
   height: 86px;
   margin: 0px;
@@ -357,6 +357,10 @@ a.control_next {
 }
 .margin-t-400{
   margin-top: 400%;
+}
+
+.margin-t-500{
+  margin-top: 500%;
 }
 
 
@@ -492,7 +496,7 @@ a.control_next {
 }
 
 .logo_copiar{
-  max-width: 33px;
+  max-width: 23px;
 }
 
 .text-img-activi{
@@ -500,7 +504,7 @@ a.control_next {
   width: 50%;
   height: 86px;
   margin: 0px;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 .img_activi{
@@ -2169,22 +2173,24 @@ a.control_next {
   padding: 20px 0px 0px 25px;
   position: absolute;
   height: 100%;
+  border: 2px solid #FCD966;
 }
 
 .agrandado{
-  width: 65%;
+  width: 70%;
 }
 .cortico{
   width: 25%;
 }
 .numerito{
-  width: 40px;height: 40px;
+  width: 60px;height: 60px;
   background: #FCD966;
   border-radius: 50%;
-  color: white;
+  color: black;
   font-weight: bold;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 8px;
+  font-size: 25px;
 }
 
 .img_target{
@@ -2192,9 +2198,9 @@ a.control_next {
   padding-top: 12px;
 }
 .texto-target{
-  width: 120px;
+  width: 160px;
   position: relative;
-  left: 70px;
+  left: 80px;
 }
 .imagen22{
   width: 125%;
