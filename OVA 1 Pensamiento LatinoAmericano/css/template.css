@@ -956,12 +956,12 @@ card flip*/
     height: 75px;
     border-bottom: solid 4px #00953E;
     padding-top: 40px;
-    padding-left: 35px;
+    padding-left: 4px;
     width: fit-content;
 }
 
 .titulo_sub p {
-    font-size: 15px;
+    font-size: 18px;
     color: #00953E;
 }
 
