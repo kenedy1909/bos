@@ -14,10 +14,10 @@
                   <div class="" style="width: 35%;display: inline-block;margin-top: -50px;">
                       <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
                         <div style="display: inline-block;width: 25%;"><img src="../img/img10/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
-                        <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
+                        <div class="text-center" style="font-size: 20px;display: inline-block;width: 49%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
                           <b class="" style="color: #963445;">ACTIVIDAD INTERACTIVA</b>
                           <div style="height: 5px;background: #963445;"></div>
-                          <i><p class="text-muted">OPCIÓN CORRECTA</p></i>
+                          <i><p class="text-muted" style="font-size: 15px;">OPCIÓN CORRECTA</p></i>
                         </div>
                       </div>
                   </div>
@@ -60,11 +60,11 @@
       </div>
     </div>
     <div style="text-align: center;margin-top: 20px; " class="d-none btn-calificar">
-      <button onclick="calificar();" style="background: #963445;color: white;font-size: 18px;border-radius: 10px;box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);" data-toggle="modal" data-target="#exampleModal" class="btn btn-lg shadow">Calificar</button>
+      <button onclick="calificar();" style="background: #963445;color: white;font-size: 18px;border-radius: 10px;box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);" data-toggle="modal" data-target="#calificacionModal" class="btn btn-lg shadow">Calificar</button>
     </div>
   </div>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content tranparente" style="">
         <div style="" class="principal">
@@ -91,7 +91,67 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+
+  <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="">
+              <div class="card-container manual-flip">
+                <div class="card" style="border-radius: 22px;border: 0;">
+                    <div class="front">
+                        <div class="cover" style="overflow: visible;">
+                          <div class="row">
+                            <div class="col-lg-4">
+                            </div>
+                            <div class="col-lg-4 mt-2">
+                              
+                            </div>
+                            <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                    <button type="button" class="btn btn-cerrar" style="background-color: transparent; color: white;" data-dismiss="modal" aria-label="Close">
+                                      <div class="m-0 p-0 x-modal">
+                                        <h4 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="user">
+                          <div class="">
+                            <div class="radius-gray">
+                                <img class="" id="img-circulo" src="assets/img/img_template/bien.png" >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                            <div class="modal-body">
+                                <div class="mensaje" style="text-align: justify;">
+                                    Su puntaje es: <span class="puntaje">40%</span>
+                                    <div class=" texto-puntaje"></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal" onclick="reiniciar();">Cerrar
+                                    </button>
+                                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal" onclick="reiniciar();">Cerrar</button> -->
+                                <div class="row d-flex justify-content-center btns_modal" style="margin: auto;">
+            
+            
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

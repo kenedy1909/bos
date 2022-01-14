@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     
+    
     // console.log(tema);
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
@@ -317,7 +318,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
@@ -834,6 +835,21 @@ function textCard19(num,estado) {
             
             $('.contenidoTextCard1').removeClass('d-none');
             $('.contenidoTextCard1').addClass('d-block');
+
+
+            $('.textCardPadre2').removeClass('d-none');
+            $('.textCardPadre2').addClass('d-block');
+
+            $('.ocultarTextCardPadre2').addClass('btnTextCard2');
+            $('.ocultarTextCardPadre2').removeClass('ocultarTextCardPadre2');
+            
+            
+            $('.contenidoTextCard2').removeClass('d-block');
+            $('.contenidoTextCard2').addClass('d-none');
+
+
+
+            
             
             $('.ocultarTextCardPadre1').attr('onclick',"textCard19(1,'ocultar')");
         }else if (num==2) {
@@ -848,6 +864,16 @@ function textCard19(num,estado) {
             
             $('.contenidoTextCard2').removeClass('d-none');
             $('.contenidoTextCard2').addClass('d-block');
+
+
+            $('.textCardPadre1').removeClass('d-none');
+            $('.textCardPadre1').addClass('d-block');
+            
+            $('.ocultarTextCardPadre1').addClass('btnTextCard1');
+            $('.ocultarTextCardPadre1').removeClass('ocultarTextCardPadre1');
+            
+            $('.contenidoTextCard1').removeClass('d-block');
+            $('.contenidoTextCard1').addClass('d-none');
 
             
             
@@ -867,6 +893,7 @@ function textCard19(num,estado) {
             $('.contenidoTextCard1').addClass('d-none');
             
             $('.btnTextCard1').attr('onclick',"textCard19(1,'abrir')");
+            
         }else if (num==2) {
             $('.textCardPadre2').removeClass('d-none');
             $('.textCardPadre2').addClass('d-block');
@@ -978,8 +1005,26 @@ function scroll_horizontal(num){
             var img_scroll = `
                             <h3>1</h1>
                              `;
+            // var info_scroll = `
+            //                  <img src="assets/img/img_ova/scroll1.png" width="40%">
+            //                 <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
+            //                 `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol1.png" width="70%">
+                                <div class="row" style="width: 115%; position: relative; left: 18px;">
+                                <div class="col-md-6">
+                                <!-- <div class="base"></div> -->
+                                <img src="assets/img/img_ova/onee.png"  style="width: 78%;" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                <img src="assets/img/img_ova/abaco.png" style="width: 94%;left: -36px;position: relative;" alt="">
+                                </div>
+                                <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+                                Inventario
+                                </div>
+                                <div class="col-md-10" style="font-size: 12px; left: -10px;" >
+                                de variables / factores
+                                </div>
+                            </div>
                             <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -990,7 +1035,21 @@ function scroll_horizontal(num){
                             <h3>2</h1>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol2.png" width="90%">
+            <div class="row" style="width: 130%; position: relative; left: 18px;">
+            <div class="col-md-6">
+            <!-- <div class="base"></div> -->
+            <img src="assets/img/img_ova/two.png"  style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-6">
+            <img src="assets/img/img_ova/lista.png" style="width: 100%;left: -28px;top:5px; position: relative;" alt="">
+            </div>
+            <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+            Descripción
+            </div>
+            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            de las relaciones entre variables.
+            </div>
+        </div>
                             <p class="pl-3 text-justify">Durante esta segunda etapa, el punto es reconstituir y describir la red de relaciones entre las variables / factores.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -1001,8 +1060,22 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol3.png" width="40%">
-                            <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+            <div class="row" style="width: 250%; position: relative; left: 18px;">
+            <div class="col-md-6">
+            <!-- <div class="base"></div> -->
+            <img src="assets/img/img_ova/three.png"  style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-6">
+            <img src="assets/img/img_ova/fingerprint.png" style="width: 100%;left: -28px;top:5px; position: relative;" alt="">
+            </div>
+            <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+            Identificación
+            </div>
+            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            de variables esenciales
+            </div>
+        </div>
+                            <p class="pl-3 text-justify" style="font-size:12px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
             $('#info-scroll1').html(info_scroll);
