@@ -148,7 +148,7 @@ html {
 }
 
 .text-img-actividad {
-    font-size: 15px;
+    font-size: 22px;
     color: #78201A;;
 }
 
@@ -156,7 +156,7 @@ html {
     border-bottom: solid 3px #78201A;;
     height: 86px;
     margin: 0px;
-    padding-top: 45px;
+    padding-top: 5px;
     text-align: center;
 }
 
@@ -165,7 +165,7 @@ html {
     width: 50%;
     height: 75px;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 5px;
     text-align: center;
 }
 
