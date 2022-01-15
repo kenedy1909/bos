@@ -615,15 +615,16 @@ label {
 }
 
 .text-img-actividad {
-    font-size: 16px;
+    font-size: 22px;
     color: #78201A;;
 }
 
 .content-text-img-activi {
-    border-bottom: solid 3px #78201A;;
-    height: 86px;
+    border-bottom: solid 3px #78201A;
+    width: 100%;
+    height: 88px;
     margin: 0px;
-    padding-top: 45px;
+    padding-top: 5px;
     text-align: center;
 }
 
