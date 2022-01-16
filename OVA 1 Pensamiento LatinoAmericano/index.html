@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <base href="./">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,383 +27,390 @@
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Main styles for this application-->
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://recursos.bosingenieria.com/iconos-main/css/all.min.css">
-    <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet"> --> 
+    <!-- <link href="assets/fontawesome/css/all.css" rel="stylesheet"> -->
 
-    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet"> 
-    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet"> 
-    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet"> 
-    <link href="css/template-geometria.css" rel="stylesheet"> 
-    <link href="css/template.css" rel="stylesheet"> 
-    <link href="css/estilos1.css" rel="stylesheet"> 
+    <link href="assets/componentes/flipster/jquery.flipster.min.css" rel="stylesheet">
+    <link href="assets/componentes/percircle/percircle.css" rel="stylesheet">
+    <link href="assets/componentes/jquery-smartwizard-master/src/css/smart_wizard_all.min.css" rel="stylesheet">
+    <link href="css/template-geometria.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
+    <link href="css/estilos1.css" rel="stylesheet">
     <link href="css/estilos2.css" rel="stylesheet">
-  </head>
-  <body class="c-app">
+</head>
+
+<body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show primary-bg" id="sidebar">
-      <div class="c-sidebar-brand d-lg-down-none">
-        <h4>MENU</h4>
-      </div>
-      <ul class="c-sidebar-nav">
-        <li class="c-sidebar-nav-item ov-inicio link-menu"><a class="c-sidebar-nav-link" href="#inicio">
-          <i class="fad fa-home"></i> Inicio</a>
-        </li>
-        <li class="c-sidebar-nav-item link-menu"><a class="c-sidebar-nav-link" href="#unidades">
-          <i class="fad fa-books"></i> Unidades de aprendizaje</a>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu1"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>1. Fundamentación del pensamiento latinoamericano</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> La cuestión del origen del “ethnos” latinoamericano</a></li>
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> La mirada europea: América como otro </a></li>
-            
-          </ul>
-        </li>
-        <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu2"><a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
-          <i class="fas fa-bookmark"></i>2. Fundamentación del pensamiento autónomo</a>
-          <ul class="c-sidebar-nav-dropdown-items">
-            <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1+18)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> La idea de America Latina</a></li>
-            
-          </ul>
-        </li>
-        
-        
-      </ul>
-      <div class="text-center ov-personaje">
-          <img src="assets/img/img_ova/personaje.png" class="w-75">
-      </div>
-      
-      <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
+        <div class="c-sidebar-brand d-lg-down-none">
+            <h4>MENU</h4>
+        </div>
+        <ul class="c-sidebar-nav">
+            <li class="c-sidebar-nav-item ov-inicio link-menu">
+                <a class="c-sidebar-nav-link" href="#inicio">
+                    <i class="fad fa-home"></i> Inicio</a>
+            </li>
+            <li class="c-sidebar-nav-item link-menu">
+                <a class="c-sidebar-nav-link" href="#unidades">
+                    <i class="fad fa-books"></i> Unidades de aprendizaje</a>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu1">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>1. Fundamentación del pensamiento latinoamericano</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> La cuestión del origen del “ethnos” latinoamericano</a></li>
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="9" onclick="actualizarprogress(9)"><a class="c-sidebar-nav-link" href="#unidad1"><span class="c-sidebar-nav-icon"></span> La mirada europea: América como otro </a></li>
+
+                </ul>
+            </li>
+            <li class="c-sidebar-nav-item c-sidebar-nav-dropdown d-none menu2">
+                <a class="c-sidebar-nav-link c-sidebar-nav-dropdown-toggle" href="#">
+                    <i class="fas fa-bookmark"></i>2. Fundamentación del pensamiento autónomo</a>
+                <ul class="c-sidebar-nav-dropdown-items">
+                    <li class="c-sidebar-nav-item link-menu-tema" data-id="1" onclick="actualizarprogress(1+18)"><a class="c-sidebar-nav-link" href="#unidad2"><span class="c-sidebar-nav-icon"></span> La idea de America Latina</a></li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+        <div class="text-center ov-personaje">
+            <img src="assets/img/img_ova/personaje.png" class="w-75">
+        </div>
+
+        <button class="c-sidebar-minimizer c-class-toggler" type="button" data-target="_parent" data-class="c-sidebar-minimized"></button>
     </div>
     <div class="c-wrapper c-fixed-components">
-      <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
-        <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
+        <header class="c-header c-header-light c-header-fixed c-header-with-subheader">
+            <button class="c-header-toggler c-class-toggler d-lg-none mfe-auto" type="button" data-target="#sidebar" data-class="c-sidebar-show">
           <i class="fas fa-bars"> </i>
-        </button><a class="c-header-brand d-lg-none" href="#">
-          <svg width="118" height="46" alt="CoreUI Logo">
+        </button>
+            <a class="c-header-brand d-lg-none" href="#">
+                <svg width="118" height="46" alt="CoreUI Logo">
             <use xlink:href="assets/brand/coreui.svg#full"></use>
           </svg></a>
-        <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
+            <button class="c-header-toggler c-class-toggler mfs-3 d-md-down-none" type="button" data-target="#sidebar" data-class="c-sidebar-lg-show" responsive="true">
           <i class="fas fa-bars"></i>
         </button>
-        <ul class="c-header-nav d-md-down-none ul_buttons">
-          <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
-          <li class="c-header-nav-item ">
-            <div class="box">
-                <div class="porcent">
-                    <svg class="svg_porcent">
+            <ul class="c-header-nav d-md-down-none ul_buttons">
+                <!-- <li class="c-header-nav-item" style="width: 65px; height: 100%;" id="porcentaje_unidad"></li> -->
+                <li class="c-header-nav-item ">
+                    <div class="box">
+                        <div class="porcent">
+                            <svg class="svg_porcent">
                         <circle cx="40" cy="60" r="25" style ="stroke: #008F3E;stroke-width: 5px;"/>
                         <circle class="up" cx="40" cy="60" r="25" style="stroke: #00441B;stroke-width: 10px;stroke-dasharray: 200px;stroke-dashoffset: 200px;"/>
                     </svg>
-                    <div class="number">
-                        
+                            <div class="number">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-106.png" alt="" class="icons-menu"></a>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-105.png" alt="" class="icons-menu modal_scroll8"></a>
+                </li>
+                <li class="c-header-nav-item z-index-pdf">
+                    <a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu modal_scroll9" style="max-width: 28%;"></a>
+                </li>
+            </ul>
+            <ul class="c-header-nav ml-auto">
+                <li class="c-header-nav-item d-md-down-none">
+                    <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
+                </li>
+            </ul>
+            <div class="c-subheader px-3">
+                <!-- Breadcrumb-->
+                <ol class="breadcrumb border-0 m-0">
+                    <li class="breadcrumb-item">Menú</li>
+                    <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
+                    <li class="breadcrumb-item bread3"></li>
+                    <!-- Breadcrumb Menu-->
+                </ol>
+            </div>
+        </header>
+        <div class="c-body">
+            <main class="c-main" id="content-ova">
+
+            </main>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
+                                  </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white d-flex justify-content-center">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-106.png" style="top: 5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content pdfs">
+                                            <p class="p_white size_20">
+                                                <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40">Los pueblos indígenas en América Latina. pdf <em class="text-cafe">Ver</em></a>
+                                            </p>
+                                            <p class="p_white size_20">
+                                                <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> El Marxismo en América Latina.pdf <em class="text-cafe">Ver</em></a>
+                                            </p>
+                                            <p class="p_white text-16px">
+                                                <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf <em class="text-cafe">Ver</em></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-          </li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#exampleModal"><img src="assets/img/img_template/Botonera-106.png" alt="" class="icons-menu"></a></li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalGlosario"><img src="assets/img/img_template/Botonera-105.png" alt="" class="icons-menu modal_scroll8"></a></li>
-          <li class="c-header-nav-item z-index-pdf"><a class="c-header-nav-link" href="#" data-toggle="modal" data-target="#modalReferencias"><img src="assets/img/img_template/bibliografia.png" alt="" class="icons-menu modal_scroll9" style="max-width: 30%;"></a></li>
-        </ul>
-        <ul class="c-header-nav ml-auto">
-          <li class="c-header-nav-item d-md-down-none">
-            <img src="assets/img/img_template/logo-unaula.png" alt="" class="logo-menu">
-          </li>
-        </ul>
-        <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Menú</li>
-            <li class="breadcrumb-item bread1">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread2">Unidades de Aprendizaje</li>
-            <li class="breadcrumb-item bread3"></li>
-            <!-- Breadcrumb Menu-->
-          </ol>
-        </div>
-      </header>
-      <div class="c-body">
-        <main class="c-main" id="content-ova">
-          
-        </main>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
                                   </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white d-flex justify-content-center">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-105.png" style="top: 10px;left: 5px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content custom-scrollbar8">
+                                            <div class="custom-scrollbar__inner8">
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Buen Vivir: </b><br> principio constitucional basado en el ´Sumak Kawsay´, que recoge una visión del mundo centrada en el ser humano, como parte de un entorno natural y social.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Clase: </b><br> grupo de personas que dentro de la sociedad tiene condiciones comunes de vida o de trabajo, e intereses y medios económicos iguales o parecidos.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Ecología de saberes: </b><br> reconocimiento de diversos saberes rigurosos y válidos en el marco de la pluriculturalidad.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Epistemologías del sur: </b><br> formas de producir conocimiento y pensamiento propias de América Latina. Concepto atribuido a Boaventura de Sousa Santos.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Ethnos: </b><br> grupo étnico.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Etnia: </b><br> conjunto de personas que pertenecen a una misma raza y, generalmente, a una misma comunidad lingüística y cultural
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Eurocentrismo:</b><br> conocimiento del mundo desde la perspectiva de Europa Occidental.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Feminismo: </b><br> principio de igualdad de derechos de la mujer y el hombre.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Género: </b><br> grupo al que pertenecen los seres humanos de cada sexo, entendido este desde un punto de vista sociocultural en lugar de exclusivamente biológico.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Identidad: </b><br> características que distinguen unas cosas de otras, que las particularizan.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Indianidad: </b><br> manifestaciones del despertar indígena sean grupos mayoritarios o minoritarios.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Nación: </b><br> comunidad social con una organización política común y un territorio y órganos de gobierno propios, que es soberana e independiente políticamente de otras
+                                                    comunidades.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Pedagogía de la liberación: </b><br> propuesta de liberación de la pedagogía bancaria ideada por Paulo Freire en su texto La Pedagogía del Oprimido.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Subalternidad: </b><br> aquellos que se encuentran en sectores marginalizados y en las clases inferiores de la sociedad.
+                                                </p><br>
+
+                                                <p class="justificado text-white">
+                                                    <b class="font-weight-bold">Teoría Crítica: </b><br> doctrina de pensamiento que se funda en la crítica al Marxismo (Neo Marxismo) desarrollada en la Escuela de Frankfurt.
+                                                </p><br>
+                                            </div>
+                                            <div class="custom-scrollbar__bar8">
+                                                <div class="custom-scrollbar__knob8 cursor">
+                                                    <p class="text-center linea_scroll8">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white d-flex justify-content-center">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-106.png" style="top: 5px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content pdfs">
-                            <p class="p_white size_20"> 
-                                <a href="assets/PDF/UNIDAD1/Los Pueblos indígenas.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40">Los pueblos indígenas en América Latina. pdf <em class="text-cafe">Ver</em></a>
-                            </p>
-                            <p class="p_white size_20">
-                                <a href="assets/PDF/UNIDAD1/el-marxismo-en-america-latina.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> El Marxismo en América Latina.pdf <em class="text-cafe">Ver</em></a>
-                            </p>
-                            <p class="p_white text-16px">
-                                <a href="assets/PDF/UNIDAD1/La larga lucha.pdf" target="_blank"> <img src="assets/img/img_template/pdf.png" class="w40"> La larga lucha de los pubelos indígenas en defensa de sus derechos. pdf <em class="text-cafe">Ver</em></a>
-                            </p>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalGlosario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+            <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog centered-propio modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="">
+                            <div class="card-container manual-flip">
+                                <div class="card">
+                                    <div class="front">
+                                        <div class="cover" style="overflow: visible;">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                </div>
+                                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                                    <div class="divcerrar">
+                                                        <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
                                     <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
                                   </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user">
+                                            <div class="border-white d-flex justify-content-center">
+                                                <div class="radius-gray">
+                                                    <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="max-width: 60%;top: 16px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content custom-scrollbar9">
+                                            <div class="custom-scrollbar__inner9">
+                                                <p class="justificado text-white">Amnistía Internacional. (2014). La larga lucha de los pueblos indígenas en América en defensa de sus derechos. Madrid. https://www.amnesty.org/download/Documents/4000/amr010022014es.pdf</p><br>
+                                                <p class="justificado text-white">CEPAL. (2014). Los pueblos indígenas en América Latina. https://repositorio.cepal.org/bitstream/handle/11362/37050/4/S1420783_es.pdf
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    De Sousa Santos, B, Meneses, M , Rufer, M, Antonacci, Ferreira, Bidaceca, K, Nunes, J, Gimeno, J, Castaño, A, Lino, N, Tolosa, J, Fernandes, J, Hernandez, R, Araujo, S, Aragín, O, Tzul Tzul, G, Cruz e Silva, T, Avritzer, L y Ramos, A. (2018). Epistemologías
+                                                    del sur. Clacso. Centro de Estudios Sociales.http://biblioteca.clacso.edu.ar/clacso/se/20181124092336/Epistemologias_del_sur_2018.pdf
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    De Sousa Santos, B. (2014) Epistemologies of the South. Justice against Epistemicide (Boulder/Londres: Paradigm Publishers).
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Garduño, E. (2010). La Conquista de América. El problema del otro. En: Culturales vol.6 no.12 Mexicali jul./dic
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Goldman, N. (2000). “La revolución de Mayo: Moreno, Castelli y Monteagudo. Sus discursos políticos.” En Historia y lenguaje, los discursos de la Revolución de Mayo.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Löwy, M. (2007). Puntos de referencia para una historia del marxismo en América Latina. En El marxismo en América Latina: Antología desde 1909 hasta nuestros días. Santiago de Chile: Lom Ediciones. Disponible en: http://books.google.com.ar/books?id=EG0w0C_AzYcC&pg=PA9&hl=es&source=gbs_
+                                                    toc_r&cad=3#v=onepage&q&f=false (20/10/15).
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Martí, J. (2002). Nuestra América, edición crítica. Universidad de Guadalajara. Centro de estudios Martianos.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Méndez Reyes, J.  (2012). Pensamiento crítico latinoamericano y opción descolonial. la necesidad de superar el paradigma de la modernidad-colonialidad. revista venezolana de tecnología y sociedad instituto universitario de tecnología de Maracaibo vol.
+                                                    6 No. 1 enero - Junio pp 89-103. http://bdigital.ula.ve/storage/pdf/rvtsoc/v6n1/art07.pdf
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Mignolo, De Walder. (2007). La idea de América Latina. Barcelona: Editorial Gedisa.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Ministerio de Educación del Ecuador. (2009 - 2013). ¿Qué es el Buen vivir? Disponible en: https://educacion.gob.ec/que-es-el-buen-vivir/
+                                                </p><br><br><br>
+                                                <p class="justificado text-white">
+                                                    Mires, F. (1991). Discurso de la Indianidad. Ecuador.  Ediciones Abya Ayala.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Pochón, Soto. (2016). La crítica del eurocentrismo y el pensamiento emergente en América Latina. Universidad Nanzan. Nagoya.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Pinto Rodríguez, J. (2017). Estados en crisis, agudización de los conflictos étnicos-sociales en América latina, 1980-2016. Quinto Sol: Revista de Historia Regional, 21(3), 1–8. https://doi.org/10.19137/qs.v21i3.2112
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Quijano, A. (2014). La tensión del pensamiento latinoamericano. Cuestiones y horizontes: de la dependencia histórico-estructural a la colonialidad/descolonialidad del poder.  Buenos Aires. CLACSO.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Real Academia Española. Definición de Feminismo. Disponible en: https://dle.rae.es/feminismo?m=form
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Romero, J. L. (Comp.) (1988). Pensamiento político de la emancipación (1790-1825). Prólogo. Caracas: Biblioteca Ayacucho.
+                                                </p><br><br><br>
+                                                <p class="justificado text-white">
+                                                    Ruiz Muñoz, M. M., & Ortiz Flores, L. O. (2018). El pensamiento latinoamericano ante sus desafíos históricos: aportes para el derecho a la educación. (Spanish). Revista Latinoamericana de Estudios Educativos, 48(2), 7–44.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Sierra Caballero, F. (2016). Comunicación y Buen Vivir. Nuevas matrices teóricas del pensamiento latinoamericano. Chasqui (13901079), 131, 9–18.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Todorov, T. (2007). La conquista de América el problema del otro.  Siglo XXI, México, 2007
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Zea, L. (1971). Latinoamérica: Emancipación y neocolonialismo. Ensayos. Caracas: Editorial Tiempo Nuevo.
+                                                </p><br>
+                                                <p class="justificado text-white">
+                                                    Zea, L. (1978). Filosofía de la historia americana. México: Fondo de Cultura Económica.
+                                                </p><br>
+                                            </div>
+                                            <div class="custom-scrollbar__bar9">
+                                                <div class="custom-scrollbar__knob9 cursor">
+                                                    <p class="text-center linea_scroll9">-</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end front panel -->
                                 </div>
-                              </div>
+                                <!-- end card -->
                             </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white d-flex justify-content-center">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/Botonera-105.png" style="top: 10px;left: 5px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content custom-scrollbar8">
-                            <div class="custom-scrollbar__inner8">
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Buen Vivir: </b><br>
-                                principio constitucional basado en el ´Sumak Kawsay´, que recoge una visión del mundo centrada en el ser humano, como parte de un entorno natural y social.
-                              </p><br>
-                              
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Clase: </b><br>
-                              grupo de personas que dentro de la sociedad tiene condiciones comunes de vida o de trabajo, e intereses y medios económicos iguales o parecidos.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Ecología de saberes: </b><br>
-                              reconocimiento de diversos saberes rigurosos y válidos en el marco de la pluriculturalidad.
-                              </p><br>  
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Epistemologías del sur: </b><br>
-                              formas de producir conocimiento y pensamiento propias de América Latina. Concepto atribuido a Boaventura de Sousa Santos.
-                              </p><br> 
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Ethnos: </b><br>
-                              grupo étnico.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Etnia: </b><br>
-                              conjunto de personas que pertenecen a una misma raza y, generalmente, a una misma comunidad lingüística y cultural
-                              </p><br>
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Eurocentrismo:</b><br> 
-                              conocimiento del mundo desde la perspectiva de Europa Occidental.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Feminismo: </b><br>
-                              principio de igualdad de derechos de la mujer y el hombre.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Género: </b><br>
-                              grupo al que pertenecen los seres humanos de cada sexo, entendido este desde un punto de vista sociocultural en lugar de exclusivamente biológico.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Identidad: </b><br>
-                              características que distinguen unas cosas de otras, que las particularizan. 
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Indianidad: </b><br>
-                              manifestaciones del despertar indígena sean grupos mayoritarios o minoritarios.  
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Nación: </b><br>
-                              comunidad social con una organización política común y un territorio y órganos de gobierno propios, que es soberana e independiente políticamente de otras comunidades.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Pedagogía de la liberación: </b><br>
-                              propuesta de liberación de la pedagogía bancaria ideada por Paulo Freire en su texto La Pedagogía del Oprimido.
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Subalternidad: </b><br>
-                              aquellos que se encuentran en sectores marginalizados y en las clases inferiores de la sociedad. 
-                              </p><br>
-
-                              <p class="justificado text-white"> 
-                                <b class="font-weight-bold">Teoría Crítica: </b><br>
-                              doctrina de pensamiento que se funda en la crítica al Marxismo (Neo Marxismo) desarrollada en la Escuela de Frankfurt.
-                              </p><br>
-                            </div>
-                            <div class="custom-scrollbar__bar8">
-                              <div class="custom-scrollbar__knob8 cursor">
-                                <p class="text-center linea_scroll8">-</p>
-                              </div>
-                            </div>
-                          </div>
-                          
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            <footer class="c-footer">
+                <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
+                <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos </a></div>
+            </footer>
         </div>
-        <div class="modal fade" id="modalReferencias" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog centered-propio modal-xl" role="document">
-            <div class="modal-content">
-              <div class="">
-                <div class="card-container manual-flip">
-                  <div class="card">
-                      <div class="front">
-                          <div class="cover" style="overflow: visible;">
-                            <div class="row">
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4">
-                              </div>
-                              <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
-                                <div class="divcerrar">
-                                  <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
-                                    <img src="assets/img/img_ova/btn_closed_blue.png" style="width: 50px;" class="m-0 p-0">
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="user">
-                            <div class="border-white d-flex justify-content-center">
-                              <div class="radius-gray">
-                                  <img class="img-circle menu_superior" src="assets/img/img_template/bibliografia.png" style="max-width: 60%;top: 16px;">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="content custom-scrollbar9">
-                            <div class="custom-scrollbar__inner9">
-                              <p class="justificado text-white">Amnistía Internacional. (2014). La larga lucha de los pueblos indígenas en América en defensa de sus derechos. Madrid. https://www.amnesty.org/download/Documents/4000/amr010022014es.pdf</p><br>
-                              <p class="justificado text-white">CEPAL. (2014). Los pueblos indígenas en América Latina. https://repositorio.cepal.org/bitstream/handle/11362/37050/4/S1420783_es.pdf
-                              </p><br>
-                              <p class="justificado text-white">
-                                De Sousa Santos, B, Meneses, M , Rufer, M,  Antonacci, Ferreira, Bidaceca, K, Nunes, J, Gimeno, J,  Castaño, A, Lino, N, Tolosa, J, Fernandes, J, Hernandez, R, Araujo, S, Aragín, O, Tzul Tzul, G, Cruz e Silva, T, Avritzer, L y Ramos, A. (2018). Epistemologías del sur. Clacso. Centro de Estudios Sociales.http://biblioteca.clacso.edu.ar/clacso/se/20181124092336/Epistemologias_del_sur_2018.pdf
-                              </p><br>
-                              <p class="justificado text-white">
-                                De Sousa Santos, B. (2014) Epistemologies of the South. Justice against Epistemicide (Boulder/Londres: Paradigm Publishers).
-                              </p><br>
-                              <p class="justificado text-white">
-                                Garduño, E. (2010). La Conquista de América. El problema del otro. En: Culturales vol.6 no.12 Mexicali jul./dic
-                              </p><br>
-                              <p class="justificado text-white">
-                                Goldman, N. (2000). “La revolución de Mayo: Moreno, Castelli y Monteagudo. Sus discursos políticos.” En Historia y lenguaje, los discursos de la Revolución de Mayo.
-                              </p><br>
-                              <p class="justificado text-white">
-                                Löwy, M. (2007). Puntos de referencia para una historia del marxismo en América Latina. En El marxismo en América Latina: Antología desde 1909 hasta nuestros días. Santiago de Chile: Lom Ediciones. Disponible en: http://books.google.com.ar/books?id=EG0w0C_AzYcC&pg=PA9&hl=es&source=gbs_ toc_r&cad=3#v=onepage&q&f=false (20/10/15).
-                              </p><br>
-                              <p class="justificado text-white">
-                                Martí, J. (2002). Nuestra América, edición crítica. Universidad de Guadalajara. Centro de estudios Martianos. 
-                              </p><br>
-                              <p class="justificado text-white">
-                                Méndez Reyes, J.  (2012). Pensamiento crítico latinoamericano y opción descolonial. la necesidad de superar el paradigma de la modernidad-colonialidad. revista venezolana de tecnología y sociedad instituto universitario de tecnología de Maracaibo vol. 6 No. 1 enero - Junio pp 89-103. http://bdigital.ula.ve/storage/pdf/rvtsoc/v6n1/art07.pdf
-                              </p><br>
-                              <p class="justificado text-white">
-                                Mignolo, De Walder. (2007). La idea de América Latina. Barcelona: Editorial Gedisa.
-                              </p><br>
-                              <p class="justificado text-white">
-                                Ministerio de Educación del Ecuador. (2009 - 2013). ¿Qué es el Buen vivir? Disponible en: https://educacion.gob.ec/que-es-el-buen-vivir/
-                              </p><br><br><br>
-                              <p class="justificado text-white">
-                                Mires, F. (1991). Discurso de la Indianidad. Ecuador.  Ediciones Abya Ayala. 
-                              </p><br>
-                              <p class="justificado text-white">
-                                Pochón, Soto. (2016). La crítica del eurocentrismo y el pensamiento emergente en América Latina. Universidad Nanzan. Nagoya. 
-                              </p><br>
-                              <p class="justificado text-white">
-                                Pinto Rodríguez, J. (2017). Estados en crisis, agudización de los conflictos étnicos-sociales en América latina, 1980-2016. Quinto Sol: Revista de Historia Regional, 21(3), 1–8. https://doi.org/10.19137/qs.v21i3.2112
-                              </p><br>
-                              <p class="justificado text-white">
-                                Quijano, A. (2014). La tensión del pensamiento latinoamericano. Cuestiones y horizontes: de la dependencia histórico-estructural a la colonialidad/descolonialidad del poder.  Buenos Aires. CLACSO. 
-                              </p><br>
-                              <p class="justificado text-white">
-                                Real Academia Española. Definición de Feminismo. Disponible en: https://dle.rae.es/feminismo?m=form
-                              </p><br>
-                              <p class="justificado text-white">
-                                Romero, J. L. (Comp.) (1988). Pensamiento político de la emancipación (1790-1825). Prólogo. Caracas: Biblioteca Ayacucho. 
-                              </p><br><br><br>
-                              <p class="justificado text-white">
-                                Ruiz Muñoz, M. M., & Ortiz Flores, L. O. (2018). El pensamiento latinoamericano ante sus desafíos históricos: aportes para el derecho a la educación. (Spanish). Revista Latinoamericana de Estudios Educativos, 48(2), 7–44.
-                              </p><br>
-                              <p class="justificado text-white">
-                               Sierra Caballero, F. (2016). Comunicación y Buen Vivir. Nuevas matrices teóricas del pensamiento latinoamericano. Chasqui (13901079), 131, 9–18.
-                              </p><br>
-                              <p class="justificado text-white">
-                                Todorov, T. (2007). La conquista de América el problema del otro.  Siglo XXI, México, 2007
-                              </p><br>
-                              <p class="justificado text-white">
-                                Zea, L. (1971). Latinoamérica: Emancipación y neocolonialismo. Ensayos. Caracas: Editorial Tiempo Nuevo. 
-                              </p><br>
-                              <p class="justificado text-white">
-                                Zea, L. (1978). Filosofía de la historia americana. México: Fondo de Cultura Económica.
-                              </p><br>
-                            </div>
-                            <div class="custom-scrollbar__bar9">
-                              <div class="custom-scrollbar__knob9 cursor">
-                                <p class="text-center linea_scroll9">-</p>
-                              </div>
-                            </div>
-                          </div>
-                      </div> <!-- end front panel -->
-                  </div> <!-- end card -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="c-footer">
-          <div><a href="#">CoreUI</a> &copy; 2020 creativeLabs.</div>
-          <div class="ml-auto">Powered by&nbsp;<a href="#">AZ Proyectos Educativos </a></div>
-        </footer>
-      </div>
     </div>
     <!-- CoreUI and necessary plugins-->
     <script src="js/coreiu.bundle.min.js"></script>
@@ -419,7 +427,8 @@
     <!--[if IE]><!-->
     <!--<![endif]-->
     <!-- Plugins and scripts required by this view-->
-    
+
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>

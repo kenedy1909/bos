@@ -39,12 +39,17 @@ window.onload = function () {
   if (curr == 1) {
     $('.cantidad').html("2/5");
   }
-
-  if (curr == 4) {
-    $('.showcal').show();
+  if (curr == 2) {
+    $('.cantidad').html("3/5");
   }
-
-
+  if (curr == 3) {
+    $('.cantidad').html("4/5");
+  }
+  if (curr == 4) {
+    $('.cantidad').html("5/5");
+  }
+  
+  
     var answers = allQuestions[Object.keys(allQuestions)[curr]];
     
     answerArea.innerHTML = '';
@@ -84,14 +89,14 @@ window.onload = function () {
 // ------------------------ pregunta 2
     var texto3 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/calendario.png" style="width: 170%;margin-top: -20%;margin-left: -30%;">
+                    <img src="../img/img9/calendario.png" style="width: 170%;margin-top: -25%;margin-left: -23%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
     var texto4 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/calendario.png" style="width: 170%;margin-top: -20%;margin-left: -30%;">
+                    <img src="../img/img9/calendario.png" style="width: 170%;margin-top: -25%;margin-left: -23%;">
                   </div>
                 </div>`;
 
@@ -133,7 +138,7 @@ window.onload = function () {
 
     var texto9 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 100px;height: 100px;background: white;border-radius: 50%;padding: 12px;margin: auto;position: absolute;top: -55px;left: 38%;">
-                    <img src="../img/img9/Desigual.png" style="width: 115%;">
+                    <img src="../img/img9/Desigual.png" style="width: 115%;margin-left: -6%;">
                   </div>
                 </div>`;
 
@@ -171,6 +176,7 @@ window.onload = function () {
       } else {
         questionArea.innerHTML = 'Oprime Califica para ver los resultados';
         answerArea.innerHTML = '';
+        $('.showcal').show();
       }
                               
     };
@@ -218,15 +224,15 @@ function calificar(){
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
+    $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top:5%;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 0px;" onclick="reiniciar()">cerrar</button>');
   }else{
-    $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%;margin-top: 5%;">');
+    $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%;margin-top:5%;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
-    $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+    $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 0px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
   }
 }
 

@@ -1067,7 +1067,7 @@ p, button{
   
   input[type='range'] {
 	display: inline-block;
-	width: 100%;
+	width: 109%;
   }
   
   input[type='range']:focus {
@@ -1271,4 +1271,26 @@ p, button{
     border-radius: 0px 0px 50px 50px;
     color: black;
 	height: 253px;
+  }
+
+  .base {
+	background: red;
+    display: inline-block;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+    width: 38px;
+    transform: rotate(180deg);
+  }
+  .base:before {
+    border-bottom: 22px solid red;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    content: "";
+    height: 0px;
+    left: 0px;
+    position: absolute;
+    top: -22px;
+    width: 0;
   }

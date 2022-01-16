@@ -604,31 +604,31 @@ function rec() {
 
                       <ul>
                       <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-2.png" class="img-130">
+                      <img src="assets/img/img_ova/circulo-2.png" class="img-100">
                   </li>
                   <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-3.png" class="img-130">
+                      <img src="assets/img/img_ova/circulo-3.png" class="img-100">
                   </li>
                   <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-4.png" class="img-130">
+                      <img src="assets/img/img_ova/circulo-4.png" class="img-100">
                   </li>
                   <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-5.png" class="img-130">
+                  <img src="assets/img/img_ova/circulo-5.png" class="img-100">
               </li>
               <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-6.png" class="img-130">
+                  <img src="assets/img/img_ova/circulo-6.png" class="img-100">
               </li>
               <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-7.png" class="img-130">
+                  <img src="assets/img/img_ova/circulo-7.png" class="img-100">
               </li>
               <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-8.png" class="img-130">
+              <img src="assets/img/img_ova/circulo-8.png" class="img-100">
           </li>
           <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-9.png" class="img-130">
+              <img src="assets/img/img_ova/circulo-9.png" class="img-100">
           </li>
           <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-1.png" class="img-130">
+              <img src="assets/img/img_ova/circulo-1.png" class="img-100">
           </li>
                       </ul>  
                       

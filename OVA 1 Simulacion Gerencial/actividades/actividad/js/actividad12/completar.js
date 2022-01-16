@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded",() => {
 		op_3 = new SelectDropdown({ id: "op_3" }),
 		op_4 = new SelectDropdown({ id: "op_4" }),
 		op_5 = new SelectDropdown({ id: "op_5" });
+	
 });
 
 class SelectDropdown {
@@ -243,6 +244,17 @@ function calificar(){
 	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
 	}
 }
+// $( document ).ready(function() {
+// $('#prev').on('click', function () {
+// 	reiniciar();
+// 	alert(1);
+	
+// });
+// $('#next').on('click', function () {
+// 	reiniciar();
+// 	alert(1);
+// });
+// });
 
 function reiniciar(){
 	location.reload();

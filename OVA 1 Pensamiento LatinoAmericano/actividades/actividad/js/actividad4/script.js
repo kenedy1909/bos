@@ -168,12 +168,12 @@ new Vue({
         $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
         $('.puntaje').text("100%");
         $('.mensaje').text("¡Felicitaciones!");
-        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;">cerrar</button>');
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 4%;" onclick="reiniciar()">cerrar</button>');
       }else{
-        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;margin-top: 5%;">');
+        $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 90%;">');
         $('.mensaje').text("¡Puedes hacerlo mejor!");
         $('.puntaje').text("0%");
-        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 4%;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
       }
       $("#exampleModal").modal("show");
       /*this.mensaje = `
