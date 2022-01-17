@@ -4,37 +4,37 @@ const palabras = [
   {
     pos: [5, 9],
     sentido: 1,
-    palabra: 'LIMA',
+    palabra: 'lima',
     pista: 'Ciudad capital donde se realizó el séptimo Congreso de la Sociedad Interamericana de planificación con el fin de reflexionar sobre la posible situación regional en el año 2000'
   },
   {
     pos: [13, 0],
     sentido: 1,
-    palabra: 'MÉXICO',
+    palabra: 'mexico',
     pista: 'País donde se creó la fundación Javier Barros Sierra, primera institución regional dedicada exclusiva y sistemáticamente a la prospectiva'
   },
   {
     pos: [8, 1],
     sentido: 0,
-    palabra: '¿QUÉ CAMBIA?',
+    palabra: '¿que cambia?',
     pista: 'Uno de los 5 interrogantes que se debe tener en cuenta en el ejercicio de la prospectiva. '
   },
   {
     pos: [3, 2],
     sentido: 1,
-    palabra: 'PROSPECTIVA',
+    palabra: 'prospectiva',
     pista: 'Disciplina que diseña y moldea el futuro'
   },
   {
     pos: [0, 5],
     sentido: 0,
-    palabra: 'PLANIFICACIÓN ESTRATÉGICA',
+    palabra: 'planificacion estrategica',
     pista: 'Una de las tres etapas de la prospectiva'
   },
   {
     pos: [8, 10],
     sentido: 0,
-    palabra: 'GASTON BERGER',
+    palabra: 'gaston berger',
     pista: 'Autor a quien se le atribuye el origen de la prospectiva'
   }
 
@@ -158,7 +158,9 @@ new Vue({
       var modalID = "#calificacionModal";
       var exito = false;
       var mensaje = "Inténtalo nuevamente."
+      $("#img-circulo").attr("src","./img/mal.png");
       if (puntaje >= 90) {
+        $("#img-circulo").attr("src","./img/bien.png");
           puntaje = 100;
           exito = true;
           mensaje = "¡Felicitaciones!"

@@ -21,14 +21,14 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        // actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
+        // actualizarprogress();
     });
     slide_predeterminado();
 
@@ -38,6 +38,23 @@ $( document ).ready(function() {
     scroll();
 
     slide_link(tema);
+    
+document.addEventListener("keydown",
+function(event) {
+    switch (event.key) {
+        case "Left": // IE/Edge specific value
+        case "ArrowLeft":
+            slide(1);
+
+            break;
+        case "Right": // IE/Edge specific value
+        case "ArrowRight":
+            slide(1);
+
+            break;
+    }
+}
+);
 });
 
 $(function () {
@@ -46,6 +63,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){

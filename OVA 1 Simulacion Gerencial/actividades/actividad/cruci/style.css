@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 
 table {
   border-collapse: collapse;
@@ -82,32 +82,32 @@ td.start.selected:hover {
 }
 
 .border-bottom-actividad{
-    border-bottom: solid 3px #811111;
+    border-bottom: solid 3px #005B8B;
 }
 
 .img-activi{
-    width: 116px;height: 116px;
+    width: 100px;height: 100px;
 }
 
 .text-img-actividad{
-    font-size: 20px;
-    color: #811111;
+    font-size: 22px;
+    color: #78201A;;
 }
 
 .content-text-img-activi{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #78201A;
   height: 86px;
   margin: 0px;
-  padding-top: 45px;
+  padding-top: 5px;
   text-align: center;
 }
 
 .content-text-img-activi-2{
-  border-bottom: solid 3px #811111;
+  border-bottom: solid 3px #78201A;
   width: 50%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 20px;
+  height: 70px;
+  margin: 2px;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -172,7 +172,28 @@ td.start.selected:hover {
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
 
-.btn-mostaza{
-    background: #A38D38;
-    color: #fff;
+.tranparente{
+  background: transparent;
+  border: none;
+}
+
+.principal_modal{
+  height: 400px;
+  border-radius: 40px;
+  background: #e0a546;
+}
+
+.cabeza{
+  background: #b3843c;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 125px;
+  width: 125px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
 }
