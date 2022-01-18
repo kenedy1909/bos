@@ -16,6 +16,7 @@ $('.init-unidad').off('click').on('click', function(evt){
     tema = 1;
     var item = $(this).attr('data-id');
     $("#content-ova").load("base/unidades/unidad"+item+".html");
+    setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
     evt.preventDefault();
 });
 
