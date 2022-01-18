@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-   
     $('.menu1').removeClass('d-none');
     $('.menu1').addClass('c-show');
     $( ".zoomContainer" ).remove();
@@ -17,6 +16,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     $('#next').on('click', function () {
@@ -31,7 +31,7 @@ $( document ).ready(function() {
         slide();
         // actualizarprogress();
     });
-    slide_predeterminado();
+    
    knob = document.querySelector('.custom-scrollbar__knob_U2_1');
     bar = document.querySelector('.custom-scrollbar__bar_U2_1');
     container = document.querySelector('.custom-scrollbar__inner_U2_1');
@@ -64,11 +64,10 @@ function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
     actualizarprogress(stepIndex+1);
-  
 }
 
 function slide_predeterminado(){
-  
+ 
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
