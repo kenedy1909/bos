@@ -17,6 +17,16 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // EditarLocation(getPos());
+        moveBarPorcentaje(stepIndex);
+        console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
 
     slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
@@ -95,12 +105,13 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide(1);
+                slide();
 
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide(1);
+                slide();
+               
 
                 break;
         }
@@ -330,6 +341,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            $("#actividad18").removeAttr("src");
 
             break;
         case 18:
@@ -337,14 +349,17 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-            
+            console.log('prueba 18');
+            // $('#actividad18').src( $('#actividad18').attr('src'));
+            $("#actividad18").attr("src", "actividades/actividad/activi12/index.html");
+
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $("#actividad18").removeAttr("src");
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
