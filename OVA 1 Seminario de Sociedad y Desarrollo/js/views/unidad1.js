@@ -553,13 +553,12 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
-                actualizarprogress();
+                slide(1);
+                
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
         }
     }

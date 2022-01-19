@@ -81,20 +81,25 @@ function controlSlides3(num){
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
+            
             break;
         case 3:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            $('#unidad3-4').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
         case 4:
           mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             break;
         case 5:
+            setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            tema = 1;
+            break; 
+        case 6:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             tema = 1;
-            break;    
+            break;   
         default:
             break;
     }

@@ -231,7 +231,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th style="display: flex;border-bottom: 0px solid #ddd !important;"><img src="img/ansiedad.png" alt="" style="width: 15%; margin: auto;"></th>\
+                    <th style="display: flex;border-bottom: 0px solid #ddd !important;"></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table" style="border-bottom: 0px solid #ddd !important;">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
