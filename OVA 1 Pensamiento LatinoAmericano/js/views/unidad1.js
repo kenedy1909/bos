@@ -29,13 +29,13 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
@@ -64,11 +64,19 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex + 1);
     quitarflecha(stepIndex + 1);
     actualizarprogress(stepIndex + 1);
+    if (num == 1) {
+        controlSlides(stepIndex+1);
+        actualizarprogress(stepIndex + 1);
+    }else{
+        controlSlides(stepIndex + 1);
+        quitarflecha(stepIndex + 1);
+        actualizarprogress(stepIndex + 1);
+    }
 }
 
 function slide_predeterminado() {
@@ -235,13 +243,11 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
         }
     }
