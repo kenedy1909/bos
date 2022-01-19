@@ -2,39 +2,39 @@
 // la palabra en cuestión y la pista que se presenta al usuario
 const palabras = [
   {
-    pos: [5, 9],
-    sentido: 1,
-    palabra: 'LIMA',
+    pos: [9, 6],
+    sentido: 0,
+    palabra: 'lima',
     pista: 'Ciudad capital donde se realizó el séptimo Congreso de la Sociedad Interamericana de planificación con el fin de reflexionar sobre la posible situación regional en el año 2000'
   },
   {
-    pos: [13, 0],
-    sentido: 1,
-    palabra: 'MÉXICO',
+    pos: [7, 4],
+    sentido: 0,
+    palabra: 'méxico',
     pista: 'País donde se creó la fundación Javier Barros Sierra, primera institución regional dedicada exclusiva y sistemáticamente a la prospectiva'
   },
   {
-    pos: [8, 1],
+    pos: [7, 13],
     sentido: 0,
-    palabra: '¿QUÉ CAMBIA?',
+    palabra: '¿quécambia?',
     pista: 'Uno de los 5 interrogantes que se debe tener en cuenta en el ejercicio de la prospectiva. '
   },
   {
-    pos: [3, 2],
-    sentido: 1,
-    palabra: 'PROSPECTIVA',
+    pos: [0, 8],
+    sentido: 0,
+    palabra: 'prospectiva',
     pista: 'Disciplina que diseña y moldea el futuro'
   },
   {
-    pos: [0, 5],
-    sentido: 0,
-    palabra: 'PLANIFICACIÓN ESTRATÉGICA',
+    pos: [10, 0],
+    sentido: 1,
+    palabra: 'planificaciónestratégica',
     pista: 'Una de las tres etapas de la prospectiva'
   },
   {
-    pos: [8, 10],
-    sentido: 0,
-    palabra: 'GASTON BERGER',
+    pos: [3, 6],
+    sentido: 1,
+    palabra: 'gastonberger',
     pista: 'Autor a quien se le atribuye el origen de la prospectiva'
   }
 
@@ -125,8 +125,9 @@ new Vue({
     // Se fija si la palabra ingresada es correcta y de ser así, modifica el arreglo de palabras completas
     corregir () {
       const solucion = palabras[this.selected].palabra
-      const answer = this.answer.toLowerCase()
-      if (answer === solucion) {
+      let answer = this.answer.toLowerCase()
+      let answerCorrect= answer.replace(/ /g, "");
+      if (answerCorrect === solucion) {
         this.completed[this.selected] = true
         this.selected = undefined
       }
@@ -158,7 +159,9 @@ new Vue({
       var modalID = "#calificacionModal";
       var exito = false;
       var mensaje = "Inténtalo nuevamente."
+      $("#img-circulo").attr("src","./img/mal.png");
       if (puntaje >= 90) {
+        $("#img-circulo").attr("src","./img/bien.png");
           puntaje = 100;
           exito = true;
           mensaje = "¡Felicitaciones!"

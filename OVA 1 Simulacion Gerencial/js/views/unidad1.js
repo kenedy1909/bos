@@ -88,6 +88,25 @@ $( document ).ready(function() {
 
     slide_link(tema);
 
+    // figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+
+                break;
+        }
+    }
+);
+
     
 });
 $(function () {
@@ -1632,3 +1651,6 @@ function mostrarAcordeon(num,accion) {
     }
 
 }
+
+
+

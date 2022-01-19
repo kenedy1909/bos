@@ -139,9 +139,11 @@ $('#add').on('click', function() {
   });
 
   if (num_p > 3 || num_p < 1) {
-      $('.img_res').html('<img src="../img/img10/mal.png" style="max-width: 90%;">');
-      $('.mensaje').text("¡Puedes hacerlo mejor!");
+    $("#img-circulo").attr("src","../img/img10/mal.png");
+      // $('.img-circulo').html('<img src="../img/img10/mal.png" style="max-width: 90%;">');
+      $('.texto-puntaje').text("¡Puedes hacerlo mejor!");
       $('.puntaje').text("0%");
+      $('.calificacion-cerrar').addClass("d-none");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
       die();
   }
@@ -151,19 +153,26 @@ $('#add').on('click', function() {
     }
   }
   if (puntaje == 100 && num_p == 3) {
-    $('.img_res').html('<img src="../img/img10/bien.png" style="max-width: 90%;">');
+    $("#img-circulo").attr("src","../img/img10/bien.png");
+    // $('.img-circulo').html('<img src="../img/img10/bien.png" style="max-width: 90%;">');
     $('.puntaje').text(puntaje+"%");
-    $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+    $('.texto-puntaje').text("¡Felicitaciones!");
+    $('.calificacion-cerrar').removeClass("d-none");
+    $('.calificacion-intentar').addClass("d-none");
+    // $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
   }else if (puntaje == 50){
-    $('.img_res').html('<img src="../img/img10/mal.png" style="max-width: 90%;">');
-    $('.mensaje').text("¡Puedes hacerlo mejor!");
+    // $('.img-circulo').html('<img src="../img/img10/mal.png" style="max-width: 90%;">');
+    $("#img-circulo").attr("src","../img/img10/mal.png");
+    $('.texto-puntaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(puntaje+"%");
-    $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+    $('.calificacion-cerrar').addClass("d-none");
+    // $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
   }else{
-    $('.img_res').html('<img src="../img/img10/mal.png" style="max-width: 90%;">');
-    $('.mensaje').text("¡Puedes hacerlo mejor!");
+    // $('.img-circulo').html('<img src="../img/img10/mal.png" style="max-width: 90%;">');
+    $("#img-circulo").attr("src","../img/img10/mal.png");
+    $('.texto-puntaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text("50%");
+    $('.calificacion-cerrar').addClass("d-none");
     $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
   }
   

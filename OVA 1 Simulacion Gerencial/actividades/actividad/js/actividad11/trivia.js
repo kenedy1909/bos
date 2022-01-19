@@ -122,7 +122,7 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = 'Oprime Califica para ver los resultados';
+        questionArea.innerHTML = 'Oprime Calificar para ver los resultados';
         answerArea.innerHTML = '';
         $('.cantidad').html("");
         $('.btn-calificar').removeClass("d-none");

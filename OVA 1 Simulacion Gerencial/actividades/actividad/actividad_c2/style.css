@@ -24,8 +24,8 @@ td {
 }
 
 td.empty {
-  background: #ff9f55;
-  visibility: hidden;
+  border: white;
+  visibility: hidden !important;
 }
 
 td.selected {
