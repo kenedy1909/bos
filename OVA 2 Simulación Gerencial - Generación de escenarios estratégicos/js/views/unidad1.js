@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    paso = false;
     $('.menu1').removeClass('d-none');
     $('.menu1').addClass('c-show');
     $( ".zoomContainer" ).remove();
@@ -86,7 +87,6 @@ function controlSlides(num){
         
         case 1:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
-            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
