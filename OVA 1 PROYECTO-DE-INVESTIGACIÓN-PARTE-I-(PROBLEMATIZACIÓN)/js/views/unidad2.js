@@ -85,7 +85,7 @@ function controlSlides2(num){
           esconderPersonaje();
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/Texto_investigacion_salcedo_ova.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Texto_investigación_salcedo ova.pdf</a>
+                                  <a href="assets/PDF/Texto_investigacion_salcedo_ova.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b> Texto investigación salcedo ova.pdf </b> <em>ver</em> </a>
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);

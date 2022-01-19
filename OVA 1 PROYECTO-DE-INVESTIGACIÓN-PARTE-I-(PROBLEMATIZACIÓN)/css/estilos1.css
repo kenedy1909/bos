@@ -1369,11 +1369,12 @@ input[type=range]::-ms-fill-upper {
 	left: 12px;
 }
 .div_pasos{
-	width: 70%;
+	width: 75%;
 	background: #8B1C64;
 	border-radius: 20px;
 	box-shadow: 1px 1px 5px 1px;
 	padding: 9px 8px 7px 15px;
+	height: fit-content;
 }
 .banner_cont{
 	background: #FBD9EA;
@@ -1394,6 +1395,7 @@ input[type=range]::-ms-fill-upper {
 	padding: 33px 8px 8px 8px;
 	box-shadow: 4px 9px 6px 0px #f0dea8;
 	margin-top: 50px;
+	border: solid 2px yellow;
 }
 .content_texto{
 	padding-top: 35px;

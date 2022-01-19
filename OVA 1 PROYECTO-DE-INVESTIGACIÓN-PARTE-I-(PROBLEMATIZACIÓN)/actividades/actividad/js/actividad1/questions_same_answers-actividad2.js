@@ -172,7 +172,7 @@ QuestionsSameAnswers.prototype.score =  function () {
     var puntaje = ((points * 100)/total).toFixed(0);
     var modalID = "#calificacionModal";
     var exito = false;
-    var mensaje = "Inténtalo nuevamente.";
+    var mensaje = "Inténtelo nuevamente.";
     // if (puntaje == 100) {
     //     exito = true;
     //     mensaje = "¡Felicitaciones!"
@@ -180,10 +180,10 @@ QuestionsSameAnswers.prototype.score =  function () {
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
-        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien_naranja.png");  
     }
     if (puntaje < 100) {
-        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal.png");  
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal_naranja.png");  
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
@@ -244,6 +244,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn shadow btn-lg" style="background: #97182F; color: #fff;" type="submit" >Calificar</button>\
+        <button class="btn shadow btn-lg" style="background: #AD1D73; color: #fff;" type="submit" >Calificar</button>\
     </div>\
 </form>'

@@ -40,14 +40,14 @@ function calificarEmparejamiento(event) {
     puntaje = puntaje.toFixed(0);
     console.log('Puntaje ' + puntaje);
     var exito = false;
-    var mensaje = "Puedes hacerlo mejor"
+    var mensaje = "Intentelo nuevamente"
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
-        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien_naranja.png");  
     }
     if (puntaje < 100) {
-        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal.png");  
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal_naranja.png");  
     }
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
 
