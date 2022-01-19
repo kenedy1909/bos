@@ -28,12 +28,12 @@ $( document ).ready(function() {
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     /*funcion_vanvas();
     funcion_canvas2();*/
@@ -48,18 +48,27 @@ $( document ).ready(function() {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(){
+function slide(num){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides2(stepIndex);
     quitarflecha(stepIndex+1);
     actualizarprogress(stepIndex+1+18);
+    if (num == 1) {
+        controlSlides2(stepIndex+1);
+        quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1+19);
+    }else{
+        controlSlides2(stepIndex);
+        quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1+18);
+    }
 }
 
 function slide_predeterminado2(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides2(1);
-    quitarflecha(1)
+    quitarflecha(1);
     // window.location.href ="#unidad2-1";
 }
 
@@ -73,7 +82,7 @@ function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
-            $("#content-ova").load("base/unidades/unidad1.html");
+            /*$("#content-ova").load("base/unidades/unidad1.html");*/
             tema = 6;
             break;
         case 1:
@@ -292,13 +301,11 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
         }
     }

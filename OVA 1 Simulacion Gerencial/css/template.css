@@ -1,6 +1,8 @@
 .icons-menu{
 }
-
+.sw-theme-arrows>.nav {
+  display: none;
+}
 .tab-pane iframe{
   width: 100%;
   overflow: hidden;
