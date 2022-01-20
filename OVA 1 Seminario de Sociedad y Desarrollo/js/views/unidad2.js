@@ -599,7 +599,7 @@ function rec() {
     } else if (rec_num == 3) {
         $("#rec").html(
             `
-                    <p class="text-center p_black">clic en la flecha para ver mas</p>
+                    <p class="text-center p_black offset-md-4">clic en la flecha para ver mas</p>
                     <div id="slider-2" style="" class="d-flex justify-content-end col-md-11 pr-5">
 
                       <ul>

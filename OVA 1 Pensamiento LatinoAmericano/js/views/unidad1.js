@@ -66,9 +66,9 @@ $(function() {
 
 function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex + 1);
-    quitarflecha(stepIndex + 1);
-    actualizarprogress(stepIndex + 1);
+    // controlSlides(stepIndex + 1);
+    // quitarflecha(stepIndex + 1);
+    // actualizarprogress(stepIndex + 1);
     if (num == 1) {
         controlSlides(stepIndex+1);
         actualizarprogress(stepIndex + 1);

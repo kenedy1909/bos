@@ -413,7 +413,7 @@ function init_recurso_1() {
                 /*mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                     
                 });*/
-                $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 100%;">');
                 $('.puntaje').text("100%");
                 $('.mensaje').text("¡Felicitaciones!");
                 $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
