@@ -172,6 +172,7 @@ function calificarR1() {
     if(parseInt(puntajeR1) == 100) {
         mensajeR1 = '¡Felicitaciones!';
         exitoR1 = true;
+        $('.circulo-naranja').css('background-color', 'transparent');
         $("#img-circulo").attr("src","../img/img11/bien.png");
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
      } else {
