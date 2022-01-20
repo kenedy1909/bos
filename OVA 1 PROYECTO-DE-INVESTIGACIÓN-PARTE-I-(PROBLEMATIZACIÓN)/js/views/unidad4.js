@@ -99,7 +99,7 @@ function pantallas4_1(num){
                         <div class="col-md-2">
                           <div>
                             <div class="ejemplos" style="">Ejemplos</div>
-                            <div class="row mt-2">
+                            <div class="row mt-2" style="margin-left: -5%;">
                               <div class="eje1 cursor" style="" data-toggle="modal" data-target="#ejemplo1"></div>
                               <div class="eje2 cursor" style="" data-toggle="modal" data-target="#ejemplo2"></div>
                               <div class="eje3 cursor" style="" data-toggle="modal" data-target="#ejemplo3"></div>
@@ -109,7 +109,7 @@ function pantallas4_1(num){
                         <div class="col-md-10">
                           <div class="row">
                             <div class="fijadoimg" style=""><img src="assets/img/img_ova/notas-adhesivas.png" style="max-width: 100%;"></div>
-                            <div class="bannernota" style=""><p style="font-size: 13px;">En términos evaluativos, quien lea los resultados de la investigación podrá decir si se alcanzaron o no esos objetivos y, además, si se abordó adecuadamente la pregunta que se formuló.  Haga clic en cada círculo para ver los ejemplos:</p></div>
+                            <div class="bannernota" style=""><p style="font-size: 13px; color: black; margin-left: 2%;">En términos evaluativos, quien lea los resultados de la investigación podrá decir si se alcanzaron o no esos objetivos y, además, si se abordó adecuadamente la pregunta que se formuló.  Haga clic en cada círculo para ver los ejemplos:</p></div>
                           </div>
                         </div>
                       </div>`;

@@ -255,9 +255,10 @@ cursor: pointer;}
 
 /* Create a custom radio button */
 .radiobtn{
-  position: absolute;
+  /* position: absolute; */
+  display: block;
   top: 0;
-  left: 1px;
+  /* left: 20px; */
   height: 25px;
   width: 25px;
   background-color: #eee;

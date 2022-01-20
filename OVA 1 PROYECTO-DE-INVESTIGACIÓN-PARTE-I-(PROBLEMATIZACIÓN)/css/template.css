@@ -1025,3 +1025,14 @@ card flip*/
   width: 50px;
 }
 
+.borderDsh {
+  border: dashed 2px #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  width: 105%;
+  height: 105%;
+  border-radius: 25px;
+  margin-left: -2%;
+  margin-top: -2%;
+}
+

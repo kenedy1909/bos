@@ -94,7 +94,7 @@ function controlSlides3(num){
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            tema = 1;
+            
             break; 
         case 6:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
