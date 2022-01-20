@@ -120,17 +120,15 @@ function actualizarprogress(num){
     // var done = 0;
     
     // var unidad = $(".container-fluid").data("unidad");
-    // if(unidad == 1){
-    //     naveg = 0;
-    // }else if(unidad == 2){
-    //     naveg = 15;
-    // }else if(unidad == 3){
-    //     naveg = 23;
-    // }
-    // done = $(".done").length;
-    // if(unidad == 2){
-    //     done--;
-    // }
+    /*if(unidad == 1){
+        naveg = 0;
+    }else if(unidad == 2){
+        naveg = 15;
+    }
+    done = $(".done").length;
+    if(unidad == 2){
+        done--;
+    }*/
     /*alert(naveg);
     alert(done);
     alert(active);*/
