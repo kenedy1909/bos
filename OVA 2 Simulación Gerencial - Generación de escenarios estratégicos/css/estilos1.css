@@ -264,15 +264,15 @@
 }
 
 .numerador{
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	background: #5355a7;
-	text-align: center;
-	padding-top: 5px;
-	position: relative;
-	top: 142px;
-	left: -13px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #5355a7;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    top: 110px;
+    left: 17px;
 }
 
 .titulofondo{
@@ -488,20 +488,28 @@
 	position: relative;
 }
 .globo1{
-	top: -238px;
-	left: -164px;
+	/* top: -238px;
+	left: -164px; */
+	top: -247px;
+    left: -186px;
 }
 .globo2{
-	top: -333px;
-	left: -162px;
+	/* top: -333px;
+	left: -162px; */
+	top: -345px;
+    left: -186px;
 }
 .globo3{
-	top: -373px;
-	left: -161px;
+	/* top: -373px;
+	left: -161px; */
+	top: -392px;
+    left: -188px;
 }
 .globo4{
-	top: -480px;
-	left: -164px;
+	/* top: -480px;
+	left: -164px; */
+	top: -509px;
+    left: -190px;
 }
 
 .pr-leftU1-1{

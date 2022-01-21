@@ -28,19 +28,19 @@ function mostrarCalificacion(modalID, puntaje, mensaje, exito, resetcallback) {
         $(modalID).find('.modal-body').addClass('exito');
         $(modalID).find('.calificacion-intentar').addClass('hide');
         $(modalID).find('.calificacion-cerrar').removeClass('hide');
-        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien_naranja.png");
     } else {
         $(modalID).find('.modal-body').removeClass('exito');
         $(modalID).find('.modal-body').addClass('parcial');
         $(modalID).find('.calificacion-intentar').removeClass('hide').on('click', resetcallback);
         $(modalID).find('.calificacion-cerrar').addClass('hide');
-        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal.png");
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal_naranja.png");
     }
     setTimeout(function(){
         $(modalID).modal({
             backdrop: 'static',
             show: true
-        });
+        }); 
         $(modalID).find('.mensaje').addClass('animated wobble');
     },100);
 }

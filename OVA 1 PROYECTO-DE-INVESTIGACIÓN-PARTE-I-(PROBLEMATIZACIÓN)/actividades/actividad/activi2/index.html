@@ -16,25 +16,23 @@
 <body>
     <div class="backdrop in">
         <div class="fondo">
-            <header style="padding: 0px;">
-                <div class="row" style="display: inline-block;">
-                    <div class="col-md-3" style="width: 35%;display: inline-block;">
-                        <div class="d-flex">
-                          <img src="../img/img2/actividad_interactiva.png" alt="" style="width: 116px; height: 116px;">
-                          <div class="text-center pt-3" style="font-size: 20px;">
-                            <b class="pl-1 pr-1" style="color: #ba2371;">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px; background: #ba2371;"></div>
-                            <p class="text-center text-muted">CUESTIONARIO</p>
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7 row" style="display: inline-block;width: 65%;">
-                        <p class="info_actividad shadow">
-                            Seleccione la respuesta correcta y presione la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
-                        </p>
+            <div class="row principal" style="">
+                <div class="col-md-4 secundario" style="">
+                    <div class="d-flex div-img" style="">
+                      <img src="../img/img2/actividad_interactiva.png" alt="" style="" class="imagen ml-1">
+                      <div class="text-center texto_header pt-2" style="">
+                        <b class="pl-1 pr-1" style="color: #ad1d73;">ACTIVIDAD INTERACTIVA</b>
+                        <div class="linea_blue" style=""></div>
+                        <i><p class="text-center text-muted" style="font-size: 17px;">CUESTIONARIO</p></i>
+                      </div>
                     </div>
                 </div>
-            </header>
+                <div class="col-md-8 row terciario">
+                    <p class="info_actividad shadow">
+                        Seleccione la respuesta correcta y presione la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+                    </p>
+                </div>
+            </div>
             <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                 <div class="preguntas">
 
@@ -104,8 +102,8 @@
                             </div>
                             <div class="content">
                                 <div class="modal-body">
-                                    <div class="mensaje ">
-                                        Tu puntaje es: <span class="puntaje">40%</span>
+                                    <div class="mensaje">
+                                        Su puntaje es: <span class="puntaje">40%</span>
                                         <span class="texto-puntaje"></span>
                                     </div>
                                 </div>

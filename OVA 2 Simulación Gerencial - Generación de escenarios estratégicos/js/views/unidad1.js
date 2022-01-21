@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    paso = false;
     $('.menu1').removeClass('d-none');
     $('.menu1').addClass('c-show');
     $( ".zoomContainer" ).remove();
@@ -16,28 +17,61 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+0);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+    slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        // actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
+        // actualizarprogress();
     });
-    slide_predeterminado();
-
-    knob = document.querySelector('.custom-scrollbar__knob_U2_1');
+    
+   knob = document.querySelector('.custom-scrollbar__knob_U2_1');
     bar = document.querySelector('.custom-scrollbar__bar_U2_1');
     container = document.querySelector('.custom-scrollbar__inner_U2_1');
     scroll();
 
     slide_link(tema);
+    
+// document.addEventListener("keydown",
+// function(event) {
+//     switch (event.key) {
+//         case "Left": // IE/Edge specific value
+//         case "ArrowLeft":
+//             slide(1);
+
+//             break;
+//         case "Right": // IE/Edge specific value
+//         case "ArrowRight":
+//             slide(1);
+
+//             break;
+//     }
+// }
+// );
 });
 
 $(function () {
@@ -46,9 +80,11 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
+    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
+ 
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
@@ -67,7 +103,6 @@ function controlSlides(num){
         
         case 1:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
-            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");

@@ -658,9 +658,30 @@ card flip*/
   margin-top: 10px;
   max-width: 90%;
 }
+.font_10{
+  font-size: 10px;
+}  
+
+.font_11{
+  font-size: 11px;
+}
+
+.font_12{
+  font-size: 12px;
+}
+
+.font_14{
+  font-size: 14px;
+}
+
 .font_15{
   font-size: 15px;
 }
+
+.font_16{
+  font-size: 16px;
+}
+
 .info{
   border-top: solid 6px #a08a37;
   margin-top: 20px;
@@ -691,7 +712,7 @@ card flip*/
 }
 
 .logo_copiar{
-  max-width: 40px;
+  max-width: 30px;
 }
 
 .contenedor_activi_1{
@@ -964,6 +985,19 @@ card flip*/
 .img-70{
   width: 70% !important;
 }
+
+.img-80{
+  width: 80% !important;
+}
+
+.img-85{
+  width: 85% !important;
+}
+
+.img-90{
+  width: 90% !important;
+}
+
 .img-100{
   width: 100%;
 }
@@ -971,3 +1005,34 @@ card flip*/
 .esc{
   display: none !important;
 }
+
+.vertical_line {
+  border-right: 2px solid #8E1D66;
+  margin-top: 2%;
+}
+
+.p_black {
+  color: #000;
+
+  color: #420F05;
+}
+
+.w-40px { 
+  width: 40px;
+}
+
+.w-50px { 
+  width: 50px;
+}
+
+.borderDsh {
+  border: dashed 2px #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  width: 105%;
+  height: 105%;
+  border-radius: 25px;
+  margin-left: -2%;
+  margin-top: -2%;
+}
+

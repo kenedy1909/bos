@@ -178,7 +178,7 @@ QuestionsSameAnswers.prototype.score =  function () {
       $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
-      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" onclick="reload()">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
         
       $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;">');
@@ -231,7 +231,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
             <tbody>\
                 {% for question in form.questions %}\
                 <tr>\
-                    <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
+                    <td style="text-align:justify">{{ question.question_txt }}  <img src="{{question.img }}"></td>\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\

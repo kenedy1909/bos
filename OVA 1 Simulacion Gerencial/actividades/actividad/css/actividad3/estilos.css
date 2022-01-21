@@ -145,7 +145,7 @@ h2.tituloContenedorE {
 .redi1 .contenedorC,
 .redi1 .contenedorD,
 .redi1 .contenedorE {
-    min-height: 240px;
+    min-height: 200px;
     transform: scale(1);
     transition: transform .3s;
     border-radius: 20px;
@@ -232,7 +232,7 @@ h2.tituloContenedorE {
 }
 
 .componentesDestino__content {
-    width: 33%;
+    width: 50%;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;

@@ -122,7 +122,7 @@ window.onload = function () {
         loadQuestion(current);
         loadAnswers(current);
       } else {
-        questionArea.innerHTML = 'Oprime Califica para ver los resultados';
+        questionArea.innerHTML = 'Oprime Calificar para ver los resultados';
         answerArea.innerHTML = '';
         $('.cantidad').html("");
         $('.btn-calificar').removeClass("d-none");
@@ -177,15 +177,20 @@ function calificar(){
 
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%;">');
+    // $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%;">');
+    $("#img-circulo").attr("src","../img/img11/bien.png");
     $('.puntaje').text(puntaje+"%");
-    $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+    $('.texto-puntaje').text("¡Felicitaciones!");
+    // $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+    $('.btns_modal').html(' <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal" onclick="reiniciar();">Cerrar</button> ');
   }else{
-    $('.img_res').html('<img src="../img/img11/mal.png" style="max-width: 90%;">');
-    $('.mensaje').text("¡Puedes hacerlo mejor!");
+    // $('.img_res').html('<img src="../img/img11/mal.png" style="max-width: 90%;">');
+    $("#img-circulo").attr("src","../img/img11/mal.png");
+    $("#img-circulo").addClass("circulo-naranja");
+    $('.texto-puntaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+  //  }$('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+    $('.btns_modal').html('<button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal" onclick="reiniciar();">Volver a intentar </button>');
   }
 }
 

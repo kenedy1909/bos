@@ -307,3 +307,70 @@
 	padding: 9px 1px 1px 1px;
 }
 
+.flip-card4 {
+    background-color: transparent;
+    width: 100%;
+    min-height: 380px;
+    border-radius: 50px;
+    perspective: 1000px;
+}
+
+.img_card {
+	background: white;
+    border-radius: 40px;
+    height: 65%;
+    width: 90%;
+    
+}
+
+.flip-card-inner4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.flip-card-front4 {
+    
+    color: black;
+    border-radius: 50px;
+    height: 380px;
+}
+
+.flip-card4:hover .flip-card-inner4 {
+	transform: rotateY(180deg);
+  }
+
+.flip-card-front4, .flip-card-back4 {
+	position: absolute;
+	width: 100%;
+	min-height: 380px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-card-front4, .flip-card-back4 {
+	position: absolute;
+	width: 100%;
+	min-height: 380px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-card-back4 {
+	
+	border-radius: 50px;
+	color: white;
+	transform: rotateY(180deg);
+	padding: 40px 40px 40px 40px;
+	height: 380px;
+}
+
+.boton4 {
+	border-radius: 50px;
+	width: 80%;
+	height: fit-content;
+}

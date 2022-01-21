@@ -28,16 +28,31 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex + 1);
+        quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
     var knob = "";
     var bar = "";
     var container = "";
@@ -59,9 +74,26 @@ $(document).ready(function() {
     $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
 
     /*scroll();*/
-    slide_link(tema);
+    
 
 });
+/*figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": 
+            case "ArrowLeft":
+                slide(1);
+                
+                break;
+            case "Right": 
+            case "ArrowRight":
+                slide(1);
+                break;
+        }
+    }
+);*/
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
                         <a href="assets/PDF/Unidad1/sinfinesdelucromartha.pdf" target="_blank"> <img class="menu_superior w-40px" style="width: 40px;margin-right: 10px;" src="assets/img/img_template/pdf.png"> Sin fines de lucro  Martha Nussbaum. pdf    <b class="text-cafe"><u>Ver</u></b></a>
@@ -72,11 +104,22 @@ $(function() {
     $('[data-toggle="tooltip"]').tooltip()
 })
 
-function slide() {
+
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides(stepIndex + 1);
+    /*controlSlides(stepIndex + 1);
     quitarflecha(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    actualizarprogress(stepIndex+1);*/
+
+    if (num == 1) {
+        controlSlides(stepIndex+1);
+        actualizarprogress(stepIndex + 1);
+        quitarflecha(stepIndex+1);
+    }else{
+        controlSlides(stepIndex + 1);
+        quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+    }
 }
 
 
@@ -330,12 +373,10 @@ function unidad1_pantalla6_accion4(){
 var bar = document.querySelector('.custom-scrollbar__bar2');
 var container = document.querySelector('.custom-scrollbar__inner2');*/
 function scroll() {
-    // When the container is scrolled
+    
     container.addEventListener('scroll', () => {
-        // If we are dragging the knob, do nothing
         if (dragging) return;
 
-        // Otherwise, set the knob position based on the scroll position
         knob.style.top = container.scrollTop / (container.scrollHeight - container.offsetHeight) * 100 + '%';
     });
 
@@ -352,21 +393,13 @@ function scroll() {
     });
     window.addEventListener('mousemove', event => {
         if (dragging) {
-            // When dragging
             event.preventDefault();
             diff = {
                 x: event.clientX - dragging.x,
                 y: event.clientY - dragging.y
             };
-
-
-            // Clamp the position of the knob to be a maximum of 
-            // the knobs container, and a minimum of 0
             newTop = Math.max(0, Math.min(knob.offsetTop + diff.y, bar.offsetHeight));
             knob.style.top = newTop + 'px';
-
-            // Base the scroll offset on the knobs position
-            // in relation to the knobs container
             scrollOffset = newTop / bar.offsetHeight * (container.scrollHeight - container.offsetHeight);
             container.scrollTop = scrollOffset;
 
@@ -546,21 +579,3 @@ function paraIframe(num) {
 }
 
 
-figura = document.getElementById("ctrflecha");
-
-document.addEventListener("keydown",
-    function(event) {
-        switch (event.key) {
-            case "Left": // IE/Edge specific value
-            case "ArrowLeft":
-                slide();
-                actualizarprogress();
-                break;
-            case "Right": // IE/Edge specific value
-            case "ArrowRight":
-                slide();
-                actualizarprogress();
-                break;
-        }
-    }
-);

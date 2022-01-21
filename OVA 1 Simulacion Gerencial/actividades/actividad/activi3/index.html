@@ -20,8 +20,8 @@
           <div class="" style="">
               <div class="" style="width: 42%;display: inline-block;margin-top: 0px;">
                   <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
-                    <div style="display: inline-block;width: 25%;"><img src="../img/img3/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
-                    <div class="text-center" style="font-size: 18px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
+                    <div style="display: inline-block;width: 25%;"><img src="../img/img3/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px; position: relative; top: -10px;"></div>
+                    <div class="text-center" style="font-size: 17px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
                       <b class="" style="color: #e3464f;">ACTIVIDAD INTERACTIVA</b>
                       <div style="height: 5px;background: #e3464f;"></div>
                       <i><p class="text-muted">ORDENAMIENTO CON IMÁGENES</p></i>
@@ -56,20 +56,20 @@
               </div>
             </div>
             <div class="componentesDestino__content">
-              <div id="contenedorC" class="contenedorC container-draggable list-connected" data-order-destino="contenedorC">
+              <div id="contenedorC" class="contenedorC container-draggable list-connected" style="left: 50%;" data-order-destino="contenedorC">
                 <h2 class="tituloContenedor tituloContenedorC">ETAPA 3</h2>
               </div>
             </div>
           </div>
         </div>
-        <div class="text-center" style="position: relative; left: 19%;top: -10px;" >
-          <button type="button" id="calificar" class="btn btn-primary">Calificar</button>
+        <div class="text-center" style="position: relative; top: -10px; " >
+          <button type="button" id="calificar" class="btn btn-primary2" style="border-radius: 9px;">Calificar</button>
         </div>
       </div>
     </div>
   </div>
   <!-- Modal -->
-  <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+  <!-- <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-body center-block">
@@ -85,7 +85,63 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="">
+              <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover" style="overflow: visible;">
+                          <div class="row">
+                            <div class="col-lg-4">
+                            </div>
+                            <div class="col-lg-4 mt-2">
+                              
+                            </div>
+                            <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                    <button type="button" class="btn btn-cerrar" style="background-color: transparent; color: white;" data-dismiss="modal" aria-label="Close">
+                                      <div class="m-0 p-0 x-modal">
+                                        <h4 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="user">
+                          <div class="">
+                            <div class="radius-gray">
+                              <div class="circulo-naranja">
+                                <img class="" id="img-circulo" src="../../actividad/img/img2/bien.png" >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                            <div class="modal-body">
+                                <div class="mensaje" style="text-align: justify;">
+                                    Tu puntaje es: <span class="puntaje">40%</span>
+                                    <span class="texto-puntaje" style="position: relative; top: 10px;"></span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal" onclick="reiniciar();">Volver a
+                                    intentar </button>
+                                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal" onclick="reiniciar();">Cerrar</button>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
   <!-- Incluisión de scripts -->
   <script src="../js/jquery.min.js"></script>
   <script src="../js/actividad3/jquery-ui.min.js"></script>

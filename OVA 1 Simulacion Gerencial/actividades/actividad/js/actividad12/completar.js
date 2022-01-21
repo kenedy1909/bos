@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded",() => {
 		op_3 = new SelectDropdown({ id: "op_3" }),
 		op_4 = new SelectDropdown({ id: "op_4" }),
 		op_5 = new SelectDropdown({ id: "op_5" });
+	
 });
 
 class SelectDropdown {
@@ -225,24 +226,43 @@ function calificar(){
 	puntaje = Math.round(puntaje);
 
 	if (puntaje == 100) {
-		
-	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin-top:5%;">');
+		$("#img-circulo").attr("src","../img/img12/bien.png");
+		$('.circulo-naranja').css('background-color', 'transparent');
+	//   $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin-top:5%;">');
 	  $('.puntaje').text(puntaje+"%");
-	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;" onclick="reiniciar();">cerrar</button>');
+	  $('.texto-puntaje').text("¡Felicitaciones!");
+	  $('.calificacion-cerrar').removeClass("d-none");
+      $('.calificacion-intentar').addClass("d-none");
+	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;" onclick="reiniciar();">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
-		
-	  $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin-top:5%;">');
+		$("#img-circulo").attr("src","../img/img12/bien.png");
+		$('.circulo-naranja').css('background-color', 'transparent');
+	//   $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin-top:5%;">');
 	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;" onclick="reiniciar();">cerrar</button>');
+	  $('.texto-puntaje').text("¡Felicitaciones!");
+	  $('.calificacion-cerrar').removeClass("d-none");
+	  $('.calificacion-intentar').addClass("d-none");
+	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;" onclick="reiniciar();">cerrar</button>');
 	}else{
-	  $('.img_res').html('<img src="../img/img12/mal.png" style="max-width: 90%;">');
-	  $('.mensaje').text("¡Puedes hacerlo mejor!");
+		$("#img-circulo").attr("src","../img/img12/mal.png");
+	//   $('.img_res').html('<img src="../img/img12/mal.png" style="max-width: 90%;">');
+	  $('.texto-puntaje').text("¡Puedes hacerlo mejor!");
 	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	  $('.calificacion-cerrar').addClass("d-none");
+	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
 	}
 }
+// $( document ).ready(function() {
+// $('#prev').on('click', function () {
+// 	reiniciar();
+// 	alert(1);
+	
+// });
+// $('#next').on('click', function () {
+// 	reiniciar();
+// 	alert(1);
+// });
+// });
 
 function reiniciar(){
 	location.reload();

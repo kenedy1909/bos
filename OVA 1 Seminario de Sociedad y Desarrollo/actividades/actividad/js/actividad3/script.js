@@ -48,13 +48,13 @@ function calificarEmparejamiento(event) {
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);*/
     if (puntaje == 100) {
         
-      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 100%;">');
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
         
-      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;">');
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 100%;">');
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');

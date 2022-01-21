@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     
+    
     // console.log(tema);
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
@@ -14,6 +15,16 @@ $( document ).ready(function() {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+        }
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // EditarLocation(getPos());
+        moveBarPorcentaje(stepIndex);
+        console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
         }
     });
 
@@ -86,6 +97,26 @@ $( document ).ready(function() {
 
 
     slide_link(tema);
+
+    // figura = document.getElementById("ctrflecha");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide();
+
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide();
+               
+
+                break;
+        }
+    }
+);
 
     
 });
@@ -310,6 +341,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            $("#actividad18").removeAttr("src");
 
             break;
         case 18:
@@ -317,6 +349,9 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            console.log('prueba 18');
+            // $('#actividad18').src( $('#actividad18').attr('src'));
+            $("#actividad18").attr("src", "actividades/actividad/activi12/index.html");
 
             break;
         case 19:
@@ -324,7 +359,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $("#actividad18").removeAttr("src");
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
@@ -834,6 +869,21 @@ function textCard19(num,estado) {
             
             $('.contenidoTextCard1').removeClass('d-none');
             $('.contenidoTextCard1').addClass('d-block');
+
+
+            $('.textCardPadre2').removeClass('d-none');
+            $('.textCardPadre2').addClass('d-block');
+
+            $('.ocultarTextCardPadre2').addClass('btnTextCard2');
+            $('.ocultarTextCardPadre2').removeClass('ocultarTextCardPadre2');
+            
+            
+            $('.contenidoTextCard2').removeClass('d-block');
+            $('.contenidoTextCard2').addClass('d-none');
+
+
+
+            
             
             $('.ocultarTextCardPadre1').attr('onclick',"textCard19(1,'ocultar')");
         }else if (num==2) {
@@ -848,6 +898,16 @@ function textCard19(num,estado) {
             
             $('.contenidoTextCard2').removeClass('d-none');
             $('.contenidoTextCard2').addClass('d-block');
+
+
+            $('.textCardPadre1').removeClass('d-none');
+            $('.textCardPadre1').addClass('d-block');
+            
+            $('.ocultarTextCardPadre1').addClass('btnTextCard1');
+            $('.ocultarTextCardPadre1').removeClass('ocultarTextCardPadre1');
+            
+            $('.contenidoTextCard1').removeClass('d-block');
+            $('.contenidoTextCard1').addClass('d-none');
 
             
             
@@ -867,6 +927,7 @@ function textCard19(num,estado) {
             $('.contenidoTextCard1').addClass('d-none');
             
             $('.btnTextCard1').attr('onclick',"textCard19(1,'abrir')");
+            
         }else if (num==2) {
             $('.textCardPadre2').removeClass('d-none');
             $('.textCardPadre2').addClass('d-block');
@@ -978,8 +1039,26 @@ function scroll_horizontal(num){
             var img_scroll = `
                             <h3>1</h1>
                              `;
+            // var info_scroll = `
+            //                  <img src="assets/img/img_ova/scroll1.png" width="40%">
+            //                 <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
+            //                 `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol1.png" width="70%">
+                                <div class="row" style="width: 115%; position: relative; left: 18px;">
+                                <div class="col-md-6">
+                                <!-- <div class="base"></div> -->
+                                <img src="assets/img/img_ova/onee.png"  style="width: 78%;" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                <img src="assets/img/img_ova/abaco.png" style="width: 94%;left: -36px;position: relative;" alt="">
+                                </div>
+                                <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+                                Inventario
+                                </div>
+                                <div class="col-md-10" style="font-size: 12px; left: -10px;" >
+                                de variables / factores
+                                </div>
+                            </div>
                             <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -990,7 +1069,21 @@ function scroll_horizontal(num){
                             <h3>2</h1>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol2.png" width="90%">
+            <div class="row" style="width: 130%; position: relative; left: 18px;">
+            <div class="col-md-6">
+            <!-- <div class="base"></div> -->
+            <img src="assets/img/img_ova/two.png"  style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-6">
+            <img src="assets/img/img_ova/lista.png" style="width: 100%;left: -28px;top:5px; position: relative;" alt="">
+            </div>
+            <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+            Descripción
+            </div>
+            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            de las relaciones entre variables.
+            </div>
+        </div>
                             <p class="pl-3 text-justify">Durante esta segunda etapa, el punto es reconstituir y describir la red de relaciones entre las variables / factores.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -1001,8 +1094,22 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-                            <img src="assets/img/img_ova/scrol3.png" width="40%">
-                            <p class="pl-3 text-justify">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+            <div class="row" style="width: 250%; position: relative; left: 18px;">
+            <div class="col-md-6">
+            <!-- <div class="base"></div> -->
+            <img src="assets/img/img_ova/three.png"  style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-6">
+            <img src="assets/img/img_ova/fingerprint.png" style="width: 100%;left: -28px;top:5px; position: relative;" alt="">
+            </div>
+            <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+            Identificación
+            </div>
+            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            de variables esenciales
+            </div>
+        </div>
+                            <p class="pl-3 text-justify" style="font-size:12px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
                             `;
             $('#img-scroll1').html(img_scroll);
             $('#info-scroll1').html(info_scroll);
@@ -1020,7 +1127,7 @@ function scroll_horizontal2(num){
                             <img src="assets/img/img_ova/tutor.png" width="70%">
                             `;
             var info_scroll = `
-                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>1</b></a>
+                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50" style="width:38%;"><b>1</b></a>
                             <p class="pl-3 text-justify">La prospectiva empresarial es una disciplina que cada día toma más relevancia por parte de los estrategas empresariales donde las empresas deben centrar la preocupación de <span class="text-danger"> diseñar un futuro </span> y los gerentes están en constante búsqueda del desarrollo de planes, programas y proyectos, que sean acordes a la dinámica de los entornos, externos e internos de las empresas.</p>
                             `;
             $('#img-scroll').html(img_scroll);
@@ -1041,7 +1148,7 @@ function scroll_horizontal2(num){
             `;
             
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:21%;"><b>2</b></a>
                     <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
                     `;
                 
@@ -1054,7 +1161,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/satellite.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>3</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:38%;"><b>3</b></a>
                     <p class="pl-3 text-justify p-3">La prospectiva induce a la identificación de necesidades o problemáticas de la población y de las empresas en la sociedad futura, donde las <span class="text-danger"> tecnologías logran tener un papel importante en satisfacer dichas necesidades, </span> los diferentes programas de investigación y desarrollo de nuevas tecnologías, en caso que no exista una tecnología emergente en el momento.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1065,7 +1172,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/future2.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>4</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:30%;"><b>4</b></a>
                     <p class="pl-3 text-justify">Las empresas no deben de contemplar el futuro como la prolongación del pasado, se debe de entender que los <span class="text-danger"> futuros son diversos y múltiples,  </span> para lo cual Godet afirma:  “El futuro no está escrito, está por hacer” y que es el momento de desarrollar actividades para la construcción de este.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1076,7 +1183,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/inversor.png" width="70%" style="position: relative; top: -13px;">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>5</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:30%;"><b>5</b></a>
                     <p class="pl-3 text-justify">La prospectiva empresarial se desarrolla implícitamente cuando la organización empieza a <span class="text-danger"> proyectar y buscar cuáles son los cambios en el sector, </span> cuál es la evolución de la cultura de consumo y cómo puede intervenir para lograr beneficios, mejorando su posición a  mediano y largo plazo.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1087,7 +1194,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/exito.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>6</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:38%;"><b>6</b></a>
                     <p class="pl-3 text-justify">Cuando hablamos de las ventajas o lo que busca la prospectiva organizacional, podemos concluir que esta busca proyectar de manera exponencial a la empresa <span class="text-danger"> generando proyectos que impacten</span> en todas sus áreas y permitan el crecimiento económico y financiero como el desarrollo del conocimiento, previniendo los futuros tropiezos que puedan generarse y la mejor manera de afrontarlos desde diferentes puntos de vista.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1559,3 +1666,6 @@ function mostrarAcordeon(num,accion) {
     }
 
 }
+
+
+

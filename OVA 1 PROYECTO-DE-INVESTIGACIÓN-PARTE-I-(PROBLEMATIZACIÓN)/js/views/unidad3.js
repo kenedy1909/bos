@@ -33,6 +33,23 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+      console.log();
+      controlSlides3(stepIndex+1);
+      // quitarflecha(stepIndex+1);
+      actualizarprogress(stepIndex+12);
+      switch(stepIndex) {
+          case 1:
+              break;
+          default:
+              break;
+          // code block
+      }
+      slideNum = stepIndex;
+  });
+
     slide_predeterminado3();
     slide_link3(tema);
     
@@ -71,7 +88,8 @@ function controlSlides3(num){
           esconderPersonaje();
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/Problematización.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Problematización.pdf</a>
+                              <a href="assets/PDF/Texto_investigacion_salcedo_ova.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Texto investigación salcedo ova.pdf </b> <em>ver</em></a>
+                                  
                               </p>
                             </div>`;
             $('.pdfs').html(pdf);
@@ -80,20 +98,25 @@ function controlSlides3(num){
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
+            
             break;
         case 3:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            $('#unidad3-4').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
         case 4:
           mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             break;
         case 5:
+            setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            
+            break; 
+        case 6:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             tema = 1;
-            break;    
+            break;   
         default:
             break;
     }

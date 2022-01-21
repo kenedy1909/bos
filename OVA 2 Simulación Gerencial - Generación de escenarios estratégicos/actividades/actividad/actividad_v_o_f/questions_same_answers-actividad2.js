@@ -230,9 +230,9 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\
-                            <label class="checkcontainer">\
+                            <label style="display: flex; margin: auto; padding: inherit;" class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radiobtn"></span>\
+                                <span style="margin: auto; position: inherit;" class="radiobtn"></span>\
                             </label>\
                         </td>\
                     {% endfor %}\
@@ -244,6 +244,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn" style="background: #97182F; color: #fff;" type="submit" >Calificar</button>\
+        <button class="btn" style="background: #963445; color: #fff;" type="submit" >Calificar</button>\
     </div>\
 </form>'

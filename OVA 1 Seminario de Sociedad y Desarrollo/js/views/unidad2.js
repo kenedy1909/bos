@@ -32,6 +32,22 @@ $(document).ready(function() {
         slide();
     });
 
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex + 1);
+        quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+7);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+
     $(".p4-1").on("hover", function() {
         // $(".p4-2").show(1000)
         alert("añldskad")
@@ -599,36 +615,36 @@ function rec() {
     } else if (rec_num == 3) {
         $("#rec").html(
             `
-                    <p class="text-center p_black">clic en la flecha para ver mas</p>
+                    <p class="text-center p_black offset-md-4">clic en la flecha para ver mas</p>
                     <div id="slider-2" style="" class="d-flex justify-content-end col-md-11 pr-5">
 
                       <ul>
                       <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-2.png" class="img-130">
+                      <img src="assets/img/img_ova/circulo-2.png" class="img-100">
                   </li>
                   <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-3.png" class="img-130">
+                      <img src="assets/img/img_ova/circulo-3.png" class="img-100">
                   </li>
                   <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-4.png" class="img-130">
+                      <img src="assets/img/img_ova/circulo-4.png" class="img-100">
                   </li>
                   <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-5.png" class="img-130">
+                  <img src="assets/img/img_ova/circulo-5.png" class="img-100">
               </li>
               <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-6.png" class="img-130">
+                  <img src="assets/img/img_ova/circulo-6.png" class="img-100">
               </li>
               <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-7.png" class="img-130">
+                  <img src="assets/img/img_ova/circulo-7.png" class="img-100">
               </li>
               <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-8.png" class="img-130">
+              <img src="assets/img/img_ova/circulo-8.png" class="img-100">
           </li>
           <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-9.png" class="img-130">
+              <img src="assets/img/img_ova/circulo-9.png" class="img-100">
           </li>
           <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-1.png" class="img-130">
+              <img src="assets/img/img_ova/circulo-1.png" class="img-100">
           </li>
                       </ul>  
                       
@@ -991,21 +1007,21 @@ alert();
 
 
 
-figura = document.getElementById("ctrflecha");
+/*figura = document.getElementById("ctrflecha");
 
 document.addEventListener("keydown",
     function(event) {
         switch (event.key) {
-            case "Left": // IE/Edge specific value
+            case "Left": 
             case "ArrowLeft":
                 slide();
                 actualizarprogress();
                 break;
-            case "Right": // IE/Edge specific value
+            case "Right": 
             case "ArrowRight":
                 slide();
                 actualizarprogress();
                 break;
         }
     }
-);
+);*/
