@@ -122,6 +122,10 @@
     margin-left: -75px!important;
 }
 
+.menos-margin-90 {
+    margin-left: -90px!important;
+}
+
 .menos-margin-100 {
     margin-left: -100px!important;
 }
@@ -231,7 +235,7 @@
 }
 
 .hr-negro {
-    border-top: 5px solid black!important;
+    border-top: 5px solid #003442!important;
 }
 
 .hr-verde-claro {
