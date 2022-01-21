@@ -33,6 +33,23 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+      console.log();
+      controlSlides3(stepIndex+1);
+      // quitarflecha(stepIndex+1);
+      actualizarprogress(stepIndex+12);
+      switch(stepIndex) {
+          case 1:
+              break;
+          default:
+              break;
+          // code block
+      }
+      slideNum = stepIndex;
+  });
+
     slide_predeterminado3();
     slide_link3(tema);
     

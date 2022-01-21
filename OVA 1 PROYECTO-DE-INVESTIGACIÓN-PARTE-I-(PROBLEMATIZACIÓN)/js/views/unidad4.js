@@ -26,6 +26,23 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+      console.log();
+      controlSlides3(stepIndex+1);
+      // quitarflecha(stepIndex+1);
+      actualizarprogress(stepIndex+18);
+      switch(stepIndex) {
+          case 1:
+              break;
+          default:
+              break;
+          // code block
+      }
+      slideNum = stepIndex;
+  });
+
     slide_predeterminado4();
     slide_link4(tema);
     
@@ -63,7 +80,8 @@ function controlSlides4(num){
         case 1:
           var pdf = `<div class="col-md-12">
             <p class="p_white size_20">
-                <a href="assets/PDF/Problematización.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Problematización.pdf</a>
+            <a href="assets/PDF/Problematización.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Problematización.pdf </b> <em>ver</em></a>
+            
             </p>
             </div>`;
             $('.pdfs').html(pdf);    
@@ -167,11 +185,11 @@ function pantallas4_1(num){
     case 3:
         var pantalla = `<div class="row">
                           <div class="col-md-9 text-center">
-                            <img data-toggle="modal" data-target="#modalimg_1" src="assets/img/img_ova/Obj-específicos-uinidad4.png" class="img-fluid cursor" style="max-width: 100%">
-                            <p>click en la imagen para visualizar la informacion</p>
+                            <img data-toggle="modal" data-target="#modalimg_1" src="assets/img/img_ova/Obj-específicos-uinidad4.png" class="img-fluid cursor" style="max-width: 105%; height: 200px; margin-top: 10%;">
+                            <p>clic en la imagen para visualizar la informacion</p>
                           </div>
                           <div class="col-md-3">
-                            <img src="assets/img/img_ova/blonde.png" class="img-fluid" style="max-width: 90%;">
+                            <img src="assets/img/img_ova/blonde.png" class="img-fluid" style="max-width: 100%; margin-top: 30%;">
                           </div>
                         </div>`;
         $('.pantalla4-1').html(pantalla);
@@ -187,12 +205,12 @@ function pantallas4_1(num){
         $('#triatres').css({"visibility": "visible"});
         break;
     case 4:
-        var pantalla = `<div class="row">
+        var pantalla = `<div class="row mt-3">
                           <div class="col-md-9 text-center">
                             <img data-toggle="modal" data-target="#modalimg_2" src="assets/img/img_ova/Ejemplos.png" class="img-fluid cursor" style="max-width: 100%">
-                            <p>click en la imagen para visualizar la informacion</p>
+                            <p>clic en la imagen para visualizar la informacion</p>
                           </div>
-                          <div class="col-md-3">
+                          <div class="col-md-3 mt-4">
                             <img src="assets/img/img_ova/pregunta2.png" class="img-fluid" style="max-width: 90%;">
                           </div>
                         </div>`;

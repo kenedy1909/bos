@@ -126,7 +126,7 @@ function actualizarprogress(num){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((num)*100)/21);
+    total_porcentaje = parseInt(((num)*100)/22);
     $(".number").html(total_porcentaje+'%');
     var pixel = parseInt(((total_porcentaje*157)/100)+200);
     /*alert(pixel);

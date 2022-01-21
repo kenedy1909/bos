@@ -97,3 +97,21 @@
 	float: right;position: relative;
 	top: -34px;left: 38px;
 }
+
+.bannerclaro4{
+	background: #FFC000;
+	border-radius: 20px;
+	min-height: 152px;
+	position: relative;
+	padding: 30px 154px 26px 115px;
+	top: 41px;
+  }
+
+.bannerclaro5{
+	background: #FFC000;
+	border-radius: 20px;
+	min-height: 152px;
+	position: relative;
+	padding: 30px 30px 16px 74px;
+	top: 41px;
+}

@@ -173,7 +173,7 @@ html{
     position: relative;
     background-repeat: no-repeat, repeat;
     background-position: right 15px bottom 10px, top left;
-    padding-bottom: 65px;
+    padding-bottom: 0px;
 }
 .btn-primary{
     background: #8B1C64;
@@ -361,7 +361,7 @@ html{
     max-width: 90%;
     position: relative;
     
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
 }
 .card .cover {
     height: 105px;
