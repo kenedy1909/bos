@@ -164,7 +164,8 @@ new Vue({
         $("#img-circulo").attr("src","./img/bien.png");
           puntaje = 100;
           exito = true;
-          mensaje = "¡Felicitaciones!"
+          mensaje = "¡Felicitaciones!";
+          $('.circulo-naranja').css('background-color', 'transparent');
       }
       registrarActividad(puntaje);
       mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);

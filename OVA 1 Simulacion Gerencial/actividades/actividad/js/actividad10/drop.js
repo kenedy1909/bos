@@ -154,6 +154,7 @@ $('#add').on('click', function() {
   }
   if (puntaje == 100 && num_p == 3) {
     $("#img-circulo").attr("src","../img/img10/bien.png");
+    $('.circulo-naranja').css('background-color', 'transparent');
     // $('.img-circulo').html('<img src="../img/img10/bien.png" style="max-width: 90%;">');
     $('.puntaje').text(puntaje+"%");
     $('.texto-puntaje').text("¡Felicitaciones!");

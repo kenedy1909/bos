@@ -1127,7 +1127,7 @@ function scroll_horizontal2(num){
                             <img src="assets/img/img_ova/tutor.png" width="70%">
                             `;
             var info_scroll = `
-                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>1</b></a>
+                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50" style="width:38%;"><b>1</b></a>
                             <p class="pl-3 text-justify">La prospectiva empresarial es una disciplina que cada día toma más relevancia por parte de los estrategas empresariales donde las empresas deben centrar la preocupación de <span class="text-danger"> diseñar un futuro </span> y los gerentes están en constante búsqueda del desarrollo de planes, programas y proyectos, que sean acordes a la dinámica de los entornos, externos e internos de las empresas.</p>
                             `;
             $('#img-scroll').html(img_scroll);
@@ -1148,7 +1148,7 @@ function scroll_horizontal2(num){
             `;
             
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:21%;"><b>2</b></a>
                     <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
                     `;
                 
@@ -1161,7 +1161,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/satellite.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>3</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:38%;"><b>3</b></a>
                     <p class="pl-3 text-justify p-3">La prospectiva induce a la identificación de necesidades o problemáticas de la población y de las empresas en la sociedad futura, donde las <span class="text-danger"> tecnologías logran tener un papel importante en satisfacer dichas necesidades, </span> los diferentes programas de investigación y desarrollo de nuevas tecnologías, en caso que no exista una tecnología emergente en el momento.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1172,7 +1172,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/future2.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>4</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:30%;"><b>4</b></a>
                     <p class="pl-3 text-justify">Las empresas no deben de contemplar el futuro como la prolongación del pasado, se debe de entender que los <span class="text-danger"> futuros son diversos y múltiples,  </span> para lo cual Godet afirma:  “El futuro no está escrito, está por hacer” y que es el momento de desarrollar actividades para la construcción de este.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1183,7 +1183,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/inversor.png" width="70%" style="position: relative; top: -13px;">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>5</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:30%;"><b>5</b></a>
                     <p class="pl-3 text-justify">La prospectiva empresarial se desarrolla implícitamente cuando la organización empieza a <span class="text-danger"> proyectar y buscar cuáles son los cambios en el sector, </span> cuál es la evolución de la cultura de consumo y cómo puede intervenir para lograr beneficios, mejorando su posición a  mediano y largo plazo.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1194,7 +1194,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/exito.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>6</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:38%;"><b>6</b></a>
                     <p class="pl-3 text-justify">Cuando hablamos de las ventajas o lo que busca la prospectiva organizacional, podemos concluir que esta busca proyectar de manera exponencial a la empresa <span class="text-danger"> generando proyectos que impacten</span> en todas sus áreas y permitan el crecimiento económico y financiero como el desarrollo del conocimiento, previniendo los futuros tropiezos que puedan generarse y la mejor manera de afrontarlos desde diferentes puntos de vista.</p>
                     `;
             $('#img-scroll').html(img_scroll);

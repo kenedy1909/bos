@@ -227,6 +227,7 @@ function calificar(){
 
 	if (puntaje == 100) {
 		$("#img-circulo").attr("src","../img/img12/bien.png");
+		$('.circulo-naranja').css('background-color', 'transparent');
 	//   $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin-top:5%;">');
 	  $('.puntaje').text(puntaje+"%");
 	  $('.texto-puntaje').text("¡Felicitaciones!");
@@ -235,6 +236,7 @@ function calificar(){
 	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;" onclick="reiniciar();">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
 		$("#img-circulo").attr("src","../img/img12/bien.png");
+		$('.circulo-naranja').css('background-color', 'transparent');
 	//   $('.img_res').html('<img src="../img/img12/bien.png" style="max-width: 90%; margin-top:5%;">');
 	  $('.puntaje').text(Math.round(puntaje)+"%");
 	  $('.texto-puntaje').text("¡Felicitaciones!");

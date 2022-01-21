@@ -448,7 +448,7 @@ label {
 	background: none;
 	display: block;
 	margin: 5px auto;
-	max-width: 90%;
+	max-width: 97%;
 	position: relative;
 	padding: 7px;
 	
@@ -479,4 +479,14 @@ label {
 	margin: auto;
 	position: relative;
     top: -10px;
+  }
+
+  .circulo-naranja{
+    background-color: #FFC000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 7px;
+    top: 2px;
   }
