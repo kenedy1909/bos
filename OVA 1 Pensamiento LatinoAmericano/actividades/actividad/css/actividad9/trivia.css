@@ -121,13 +121,14 @@ html {
 }
 
 .circulo_modal {
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
     background: gray;
     border-radius: 50%;
     position: relative;
     top: -60px;
     text-align: center;
+    border: solid white;
 }
 
 .boton_inc {
