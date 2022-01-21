@@ -953,7 +953,6 @@ function slider_4() {
     /*$('a.control_prev').click(function () {
         moveLeft();
     });*/
-
     /*$('a.control_next').click(function () {
 alert();
         moveRight();
