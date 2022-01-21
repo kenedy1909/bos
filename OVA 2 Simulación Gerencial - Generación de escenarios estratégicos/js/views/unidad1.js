@@ -17,6 +17,22 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+0);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
     slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
@@ -40,22 +56,22 @@ $( document ).ready(function() {
 
     slide_link(tema);
     
-document.addEventListener("keydown",
-function(event) {
-    switch (event.key) {
-        case "Left": // IE/Edge specific value
-        case "ArrowLeft":
-            slide(1);
+// document.addEventListener("keydown",
+// function(event) {
+//     switch (event.key) {
+//         case "Left": // IE/Edge specific value
+//         case "ArrowLeft":
+//             slide(1);
 
-            break;
-        case "Right": // IE/Edge specific value
-        case "ArrowRight":
-            slide(1);
+//             break;
+//         case "Right": // IE/Edge specific value
+//         case "ArrowRight":
+//             slide(1);
 
-            break;
-    }
-}
-);
+//             break;
+//     }
+// }
+// );
 });
 
 $(function () {
