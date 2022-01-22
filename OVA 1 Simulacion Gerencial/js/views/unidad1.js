@@ -197,16 +197,19 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $(".tab-content").removeClass("h-actividad");
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $(".tab-content").addClass("h-actividad");
+            $(".tab-content").removeClass("h-actividad2");
             break;
         case 6:
+            $(".tab-content").removeClass("h-actividad");
+            $(".tab-content").addClass("h-actividad2");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
             
             document.getElementById("next").style.display="block";
@@ -236,6 +239,7 @@ function controlSlides(num){
             }  
             break;
         case 7:
+            $(".tab-content").removeClass("h-actividad2");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
             
             document.getElementById("next").style.display="block";
@@ -1143,7 +1147,7 @@ function scroll_horizontal2(num){
             var img_scroll = `
             <img src="assets/img/img_ova/prospectiva_empresarial.png" data-toggle="modal" data-target="#prospectiva"  class="cursor" style="width:70%">
             <div style="position:absolute; top:-12px;">
-            <p>(clic sobre la imagen para ver mejor)</p>
+            <p>(Clic sobre la imagen para mejor visualización.)</p>
             </div>
             `;
             
