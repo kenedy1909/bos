@@ -176,9 +176,9 @@ function calificar() {
         }
     }
     /*alert(Math.round(puntaje));*/
-    if (puntaje == 100) {
+    if (puntaje > 98) {
         $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top:5%;">');
-        $('.puntaje').text(puntaje + "%");
+        $('.puntaje').text(Math.round(puntaje) + "%");
         $('.mensaje').text("¡Felicitaciones!");
         $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 0px;" onclick="reiniciar()">cerrar</button>');
     } else {
