@@ -32,7 +32,7 @@ $( document ).ready(function() {
       console.log();
       controlSlides3(stepIndex+1);
       // quitarflecha(stepIndex+1);
-      actualizarprogress(stepIndex+18);
+      actualizarprogress(stepIndex+17);
       switch(stepIndex) {
           case 1:
               break;
