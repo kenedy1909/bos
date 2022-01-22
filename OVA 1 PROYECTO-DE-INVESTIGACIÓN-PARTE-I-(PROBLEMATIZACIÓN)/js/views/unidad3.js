@@ -98,107 +98,99 @@ function controlSlides3(num){
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            
+            $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
+            break;
             break;
         case 3:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            $('#unidad3-4').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
+            
             break;
         case 4:
           mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            break;
-        case 5:
-            setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             
-            break; 
-        case 6:
+        case 5:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
-            tema = 1;
-            break;   
+            tema=1;
+            break; 
+
         default:
             break;
     }
 }
 
 function pant3_1() {
-  var contenido = `<div><p style="color:#AD6287; text-align:center; font-size:17px;"><em>(Pase el cursor por cada botón para visualizar la información) </em></p></div>
+  var contenido = `<div><p class="color-text font-italic text-center" style="position: relative;">(Pase el cursor por cada botón para visualizar la información)</p>
   
-                         <div class="row">
-                          
-                          <div class="col-md-4 p-3 cursor">
-                            <div class="flip-card" style="">
-                              <div class="flip-card-inner" style="border-radius: 50px;">
-                               <div class="flip-card-front">
-                                  <div class="d-flex justify-content-center">
-                                    <div class="cont_cardwhite" style="">
-                                      <img src="assets/img/img_ova/red.png" style="max-width: 115px;">
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="d-flex justify-content-center">
-                                    <div class="textocadrds1" style="">
-                                      <div>Argumento<br>social</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flip-card-back">
-                                  <div style="border: dashed; padding:10px; border-radius:30px" >
-                                    <p class="font_15 justificado">Usted debe traer a colación argumentos que lleven a mostrar la importancia social de esa investigación. Debe convencer al posible lector que esta investigación es fundamental para el mundo social en que se desenvuelve, que si ello se realiza son muchas las ganancias sociales, al punto que es posible que la sociedad sea otra y que cambie de manera positiva</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4 p-3 cursor">
-                            <div class="flip-card" style="">
-                              <div class="flip-card-inner" style="border-radius: 50px;">
-                               <div class="flip-card-front2">
-                                  <div class="d-flex justify-content-center">
-                                    <div class="cont_cardwhite" style="">
-                                      <img src="assets/img/img_ova/jurado.png" style="max-width: 115px;">
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="d-flex justify-content-center">
-                                    <div class="textocadrds2" style="">
-                                      <div>Argumento<br>jurídico</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flip-card-back2">
-                                  <div style="border: dashed; padding:10px; border-radius:30px">
-                                    <p class="font_15 justificado">Argumentos que muestren la importancia para la disciplina jurídica, es decir, se debe mostrar, que para una ciencia como el derecho esa investigación ofrece múltiples posibilidades, que puede solucionar muchos problemas jurídicos y que la disciplina se enriquecería teórica o prácticamente si se lleva a cabo.</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-4 p-3 cursor">
-                            <div class="flip-card" style="">
-                              <div class="flip-card-inner" style="border-radius: 50px;">
-                               <div class="flip-card-front3">
-                                  <div class="d-flex justify-content-center">
-                                    <div class="cont_cardwhite" style="">
-                                      <img src="assets/img/img_ova/personal.png" style="max-width: 115px;">
-                                    </div>
-                                  </div>
-                                  
-                                  <div class="d-flex justify-content-center">
-                                    <div class="textocadrds3" style="">
-                                      <div>Argumento<br>personal</div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="flip-card-back3">
-                                  <div style="border: dashed; padding:10px; border-radius:30px">
-                                    <p class="font_15 justificado">Argumentos que muestren qué le ofrecería esta investigación al equipo investigador: es decir, en qué los enriquecería a ellos, cómo el equipo puede crecer y en qué sentidos, si se lleva a cabo. Es arriesgarse a involucrarse, a sentir que lo hecho transforma la propia vida y que la investigación es una forma de vida. </p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+  <div class="col-md-12 row mt-2">
+  <div class="col-md-4">
+    <div class="flip-card4" style="background: #8B1C64;">
+      <div class="flip-card-inner4" style="border-radius: 50px;">
+        <div class="flip-card-front4 shadow justify-content-center">
+          <div class="img_card" style="margin-top: 4%; margin-left: 5%;">
+            <img src="assets/img/img_ova/red.png" alt="Avatar" class="img-85 mt-4">
+          </div>
+          <div class="boton4 mt-3 ml-4" style="background: #A9216E;">
+            <p class="py-2 size_20 font-weight-bold pl-5 pr-5" style="color: white;">Argumento social</p>
+          </div>
+        </div>
+        <div class="flip-card-back4 shadow p-4">
+          <div class="content borderDsh">
+            
+              <p class="font_14 justificado font-weight-bold p-2 mt-2">Usted debe traer a colación argumentos que lleven a mostrar la importancia social de esa investigación. Debe convencer al posible lector que esta investigación es fundamental para el mundo social en que se desenvuelve, que si ello se realiza son muchas las ganancias sociales, al punto que es posible que la sociedad sea otra y que cambie de manera positiva.
+              </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="flip-card4" style="background: #FFC000;">
+      <div class="flip-card-inner4" style="border-radius: 50px;">
+        <div class="flip-card-front4 shadow justify-content-center">
+          <div class="img_card" style="margin-top: 4%; margin-left: 5%;">
+            <img src="assets/img/img_ova/jurado.png" alt="Avatar" class="img-85 mt-4">
+          </div>
+          <div class="boton4 mt-3 ml-4" style="background: #D78823;">
+            <p class="py-2 size_20 font-weight-bold pl-5 pr-5" style="color: white;">Argumento jurídico</p>
+          </div>
+        </div>
+        <div class="flip-card-back4 shadow p-4">
+          <div class="content borderDsh">
+            
+              <p class="font_14 justificado font-weight-bold p-2 mt-5">Argumentos que muestren la importancia para la disciplina jurídica, es decir, se debe mostrar, que para una ciencia como el derecho esa investigación ofrece múltiples posibilidades, que puede solucionar muchos problemas jurídicos y que la disciplina se enriquecería teórica o prácticamente si se lleva a cabo. 
+              </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="flip-card4" style="background: #E82C88;">
+      <div class="flip-card-inner4" style="border-radius: 50px;">
+        <div class="flip-card-front4 shadow justify-content-center">
+          <div class="img_card" style="margin-top: 4%; margin-left: 5%;">
+            <img src="assets/img/img_ova/personal.png" alt="Avatar" class="img-90 mt-4">
+          </div>
+          <div class="boton4 mt-3 ml-4" style="background: #D72981;">
+            <p class="py-2 size_20 font-weight-bold pl-5 pr-5" style="color: white;">Argumento personal</p>
+          </div>
+        </div>
+        <div class="flip-card-back4 shadow p-4">
+          <div class="content borderDsh">
+            
+              <p class="font_14 justificado font-weight-bold p-2 mt-4">Argumentos que muestren qué le ofrecería esta investigación al equipo investigador: es decir, en qué los enriquecería a ellos, cómo el equipo puede crecer y en qué sentidos, si se lleva a cabo. Es arriesgarse a involucrarse, a sentir que lo hecho transforma la propia vida y que la investigación es una forma de vida. 
+              </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
                    </div>`;
   $('.pantalla3-1').html(contenido);
 }
