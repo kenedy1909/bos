@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='author' content='Escuela Didáctica, info@escueladidactica.com'>
     <title>Actividad</title>
-    
+
     <link media="all" type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
     <link media="all" type="text/css" rel="stylesheet" href="../css/actividad2/animate.css">
     <link media="all" type="text/css" rel="stylesheet" href="../css/actividad2/backdrop.css">
@@ -21,17 +21,17 @@
         <div class="fondo">
             <div class="row principal" style="padding: 20px;">
                 <div class="col-md-4 col-sm-4 row d-flex">
-                   <img src="../img/img2/actividad_interactiva.png" class="img-activi">
-                   <div>
-                       <div class="content-text-img-activi-2" style="width: 100%;">
-                         <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
-                       </div>
-                       <p class="text-center">EMPAREJAMIENTO</p>
-                   </div>
+                    <img src="../img/img2/actividad_interactiva.png" class="img-activi">
+                    <div>
+                        <div class="content-text-img-activi-2" style="width: 100%;">
+                            <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
+                        </div>
+                        <p class="text-center">EMPAREJAMIENTO</p>
+                    </div>
                 </div>
                 <div class="col-md-7 col-sm-7" style=" padding-left: 45px;">
                     <p class="info_actividad shadow">
-                        Haga clic sobre el concepto y luego en la definición correspondiente, al finalizar pulse  la opción "<b>Calificar</b>" para conocer su puntuación.
+                        Haga clic sobre el concepto y luego en la definición correspondiente, al finalizar pulse la opción "<b>Calificar</b>" para conocer su puntuación.
                     </p>
                 </div>
             </div>
@@ -41,21 +41,21 @@
                         <ul id="grupoA" class="list-group connectedSortable">
                             <li class="list-group-item" id="item-0" data-item="0" draggable="false">
                                 <div class="circulo_icon" style=""><img src="../img/img2/manuscrito.png" class="img-95"></div>
-                                <div class="ficha-texto text-amarillo-oscuro">Concepción colonial</div>
+                                <div class="ficha-texto text-amarillo-oscuro" style="margin-left: -30px;">Concepción colonial</div>
                             </li>
                             <li class="list-group-item" id="item-1" data-item="1" draggable="false">
                                 <div class="circulo_icon" style=""><img src="../img/img2/el-planeta-tierra.png" class="img-95"></div>
-                                <div class="ficha-texto text-amarillo-oscuro">Desarrollo de Capitales </div>
+                                <div class="ficha-texto text-amarillo-oscuro" style="margin-left: -40px;">Desarrollo de Capitales </div>
                             </li>
                             <li class="list-group-item" id="item-2" data-item="2" draggable="false">
                                 <div class="circulo_icon" style=""><img src="../img/img2/nativo.png" class="img-95"></div>
-                                <div class="ficha-texto text-amarillo-oscuro">Estado Plurinacional</div>
+                                <div class="ficha-texto text-amarillo-oscuro" style="margin-left: -30px;">Estado Plurinacional</div>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-7 col-xs-offset-1">
                         <ul id="grupoB" class="list-group connectedSortable">
-                            
+
                             <li class="list-group-item" data-item="2" draggable="false">
                                 <div class="ficha-texto">
                                     <p>Supone el reconocimiento de todos los derechos ancestrales de las naciones y pueblos indígena originario campesinos.</p>
@@ -81,19 +81,31 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 25%; width: 70% !important; margin-left: 15%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div style="" class="circulo_modal img_res">
+
+                        </div>
+                    </div>
+                    <div style="padding: 8px; margin-left: 5%;">
+                        <div style="color: white;font-size: 18px;display: flex;">
+                            Su puntaje es:
+                            <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 18px; padding-bottom: 5%;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                    </div>
                 </div>
             </div>
         </div>

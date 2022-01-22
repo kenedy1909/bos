@@ -1784,7 +1784,7 @@ function cambiarImgU16(num) {
         $('#img1U16').removeClass('bg-color');
         $('#img1U16').html(``);
         var data = `
-                    <img src="assets/img/img_ova/nota3.png" width="100%" height="100%">
+                    <img src="assets/img/img_ova/nota3.png" style="width: 428px;margin-left: -35px;margin-top: 45px;">
                     `;
         $('#img1U16').html(data);
         $('#img1U16').attr('onclick', "cambiarImgU16(2)");
