@@ -165,7 +165,7 @@ QuestionsSameAnswers.prototype.score =  function () {
 
     var total = 0;
 
-    for (var a = 0; a < this.forms.length; a++) {
+    for (var a = 0; a < this.forms.length; a++) { 
         total = total + this.forms[a].questions.length
     };
 
@@ -176,6 +176,7 @@ QuestionsSameAnswers.prototype.score =  function () {
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien_naranja.png");
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {

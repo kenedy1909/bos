@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
+    $(".menu4").removeClass('d-none');
     
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -27,6 +33,22 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+16);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
 
     $(".p4-1").on("hover", function () {
@@ -68,11 +90,13 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            var pdf = `<p class="p_white">
-                                  <a href="assets/PDF/UNIDAD2/Epistemologia-hernando-salcedo.pdf"> <i class="fas fa-file-pdf fa-2x"></i> Epistemologia-hernando-salcedo</a>
+            var pdf = `<p class="p_white"> 
+            <a href="assets/PDF/UNIDAD4/Epistemologia-hernando-salcedo.pdf" target="_blank"> <img class="menu_superior w-50px" src="assets/img/img_ova/Botonera-15.png"> <b>Epistemologia hernando salcedo.pdf</b>  <em>ver</em> </a>
+                                  
                       </p>
                       <p class="p_white">
-                          <a href="assets/PDF/UNIDAD2/Tendencias-de-la-enseñanza-investigacion.pdf"> <i class="fas fa-file-pdf fa-2x"></i> Tendencias-de-la-enseñanza-investigacion </a>
+                      <a href="assets/PDF/UNIDAD4/Tendencias-de-la-enseñanza-investigacion.pdf" target="_blank"> <img class="menu_superior w-50px" src="assets/img/img_ova/Botonera-15.png"> <b>Tendencias de la enseñanza investigacion.pdf</b>  <em>ver</em> </a>
+                         
                       </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");

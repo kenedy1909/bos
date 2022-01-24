@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+  $( ".ov-personaje").hide();
+  $(".menu1").removeClass('d-none');
+  $(".menu2").removeClass('d-none');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -29,6 +33,22 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+      console.log(e);
+      controlSlides(stepIndex);
+      // quitarflecha(stepIndex+1);
+      actualizarprogress(stepIndex+8);
+      switch(stepIndex) {
+          case 1:
+              break;
+          default:
+              break;
+          // code block
+      }
+      slideNum = stepIndex;
+  });
 
     $(".p4-1").on("hover", function () {
         // $(".p4-2").show(1000)
@@ -79,7 +99,9 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","","");
-            
+            $( ".ov-personaje").show();
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","","");
@@ -90,6 +112,7 @@ function controlSlides(num){
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
+            
             break;
         
         default:
@@ -103,7 +126,7 @@ function svg_img(num) {
     switch(parseInt(num)){
         case 1:
             $("#svg-info").html(`
-                                <div class="radius-2 img-100 border-verde-o bg-verde-c opacity-7" style="background: #c929808a;border: solid #c92980;">
+                                <div class="radius-2 img-100 border-verde-o bg-verde-c opacity-7" style="background: #EEBBD4;border: solid #c92980;">
                                   <div class="img-100 d-flex" style="opacity: initial;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-verde" style="background: #c92980;height: 40px;width: 40px;border-radius: 50%;">
@@ -111,7 +134,7 @@ function svg_img(num) {
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="m-3 img-100" style="opacity: initial;">
+                                  <div class="m-3 img-100" style="opacity: initial; margin-top: -10% !important;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
                                         <p class="p_black justificado">Cuando se inicia el trabajo del marco teórico, nos encontramos en ocasiones, en disyuntivas sobre hacia dónde dirigir nuestro tema de investigación, o a veces encontramos demasiados aportes y se nos dificulta delimitar los temas; este es uno de los mayores obstáculos que se encuentran en la elaboración del marco teórico, el cómo empezar, pero la clave está en delimitar, cuáles son las investigaciones anteriores que se han hecho en relación a nuestro tema de investigación.</p>
@@ -141,7 +164,7 @@ function svg_img(num) {
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="m-3 img-100" style="opacity: initial;">
+                                  <div class="m-3 img-100" style="opacity: initial; margin-top: -10% !important;">
                                     <div class="custom-scrollbar_uno pr-3">
                                       <div class="custom-scrollbar__inner_uno">
                                         <p class="p_black justificado">El marco teórico es fundamental en una investigación, ya que es la guía y la referencia bibliográfica de nuestra investigación.</p>
@@ -176,12 +199,12 @@ function svg_img(num) {
                                     </button>
                                   </div>
                                   <div class="m-3 img-100" style="opacity: initial;">
-                                    <div class="custom-scrollbar_uno pr-3">
-                                      <div class="custom-scrollbar__inner_uno">
+                                    <div class="pr-5">
+                                      <div class="">
                                         <p class="p_black justificado">Lo importante es que con esta revisión se vaya perfilando ya la forma como vamos a encarar los resultados encontrados, dado que podemos en cierta manera desde el Marco Teórico predecir estados futuros.</p>
                                       </div>
-                                      <div class="custom-scrollbar__bar_uno">
-                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
+                                      <div class="">
+                                        <div class=""><p class="">-</p></div>
                                       </div>
                                     </div>
                                   </div>

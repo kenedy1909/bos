@@ -15,7 +15,7 @@
     <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/emparejamiento.css">
     <link media="all" type="text/css" rel="stylesheet" href="../css/actividad4/estilos.css">
 </head>
-
+ 
 <body>
     <div class="backdrop actividad in" id="actividad-1">
         <div class="fondo">
@@ -91,22 +91,57 @@
     </div>
     <!-- Modal -->
     <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog " role="document">
             <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+                <div class="">
+                  <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover" style="overflow: visible;">
+                              <div class="row">
+                                <div class="col-lg-4">
+                                </div>
+                                <div class="col-lg-4 mt-2">
+                                  
+                                </div>
+                                <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                  <div class="divcerrar">
+                                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close" style="background-color: transparent;">
+                                      <img src="../../../assets/img/img_ova/btn_closed_rosado.png" style="width: 30px;" class="m-0 p-0">
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="user">
+                              <div class="">
+                                <div class="radius-gray">
+                                    <img class="img-circle" id="img-circulo" src="../../../assets/img/img_ova/mal_naranja.png" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <div class="modal-body">
+                                    <div class="mensaje">
+                                        Su puntaje es: <span class="puntaje">40%</span>
+                                        <span class="texto-puntaje"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
+                                        intentar</button>
+                                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            
+                        </div> 
                     </div>
+                  </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+              </div>
         </div>
     </div>
+    
     <!-- Incluisión de scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

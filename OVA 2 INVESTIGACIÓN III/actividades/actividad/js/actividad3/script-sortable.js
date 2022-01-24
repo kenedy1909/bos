@@ -28,6 +28,7 @@ function mostrarCalificacion(modalID, puntaje, mensaje, exito, resetcallback) {
         $(modalID).find('.modal-body').addClass('exito');
         $(modalID).find('.calificacion-intentar').addClass('hide');
         $(modalID).find('.calificacion-cerrar').removeClass('hide');
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien_naranja.png"); 
     } else {
         $(modalID).find('.modal-body').removeClass('exito');
         $(modalID).find('.modal-body').addClass('parcial');
@@ -58,17 +59,17 @@ var contenedorCR1 = ".contenedorC";
 var arrOrigenR1 = [
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="../../../assets/img/img_ova/votacion.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 80%"  src="../../../assets/img/img_ova/votacion.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="../../../assets/img/img_ova/multitud.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 80%"  src="../../../assets/img/img_ova/multitud.png" ></div></div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 110%"  src="../../../assets/img/img_ova/observacion.png" ></div></div>\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text"><img style="max-width: 80%"  src="../../../assets/img/img_ova/observacion.png" ></div></div>\n'+
         '</div>\n'
     },
 ];
