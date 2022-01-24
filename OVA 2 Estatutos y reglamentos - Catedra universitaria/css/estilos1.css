@@ -23,7 +23,7 @@
 }
 
 .bg-color-secondary-claro1 {
-    background: #989ff5ab!important;
+    background: #a3a9f3e0!important;
 }
 
 .bg-color-secondary-dark {
@@ -924,7 +924,7 @@ a.animated-button.thar-two:before {
     background-image: url(../assets/img/img_ova/pluma.png);
     background-size: 40%;
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: center bottom;
 }
 
 .FondoForo {
@@ -943,7 +943,7 @@ a.animated-button.thar-two:before {
 
 .fondoBalanza {
     background-image: url(../assets/img/img_ova/balanza.png);
-    background-size: 30%;
+    background-size: 35%;
     background-repeat: no-repeat;
     background-position: left bottom;
 }
