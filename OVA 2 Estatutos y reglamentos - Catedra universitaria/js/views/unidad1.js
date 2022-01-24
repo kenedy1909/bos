@@ -206,11 +206,11 @@ function controlSlides(num) {
         case 2:
             setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
             break;
-        case 3:
-            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
+            // case 3:
+            //     setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
 
-            break;
-        case 4:
+            //     break;
+        case 3:
             setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
             $(".i1").html('')
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
@@ -604,7 +604,7 @@ function Input(num) {
     //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
     this.att = {};
     this.att.type = "range";
-    this.att.value = 1;
+    this.att.value = 0;
     this.att.min = 0;
     this.att.max = num;
     this.att.autocomplete = "off";
