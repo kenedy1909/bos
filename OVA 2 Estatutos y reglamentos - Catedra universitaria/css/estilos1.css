@@ -618,6 +618,10 @@
     margin-top: -1px;
 }
 
+.circulos1 {
+    color: var(--bg-color-dark);
+}
+
 .circulos1:hover {
     background: var(--bg-color-dark);
     color: white;

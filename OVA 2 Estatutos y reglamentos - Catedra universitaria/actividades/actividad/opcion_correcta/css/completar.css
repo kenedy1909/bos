@@ -327,26 +327,27 @@ label {
     border: none;
 }
 
-.principal {
+.principal_modal {
     height: 400px;
     border-radius: 40px;
-    background: #D42316;
+    background: #96182F;
 }
 
 .cabeza {
-    background: #811111;
+    background: #540F23;
     height: 100px;
     border-radius: 40px 40px 0px 0px;
 }
 
 .circulo_modal {
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
     background: gray;
     border-radius: 50%;
     position: relative;
     top: -60px;
     text-align: center;
+    border: solid white;
 }
 
 .info_actividad {

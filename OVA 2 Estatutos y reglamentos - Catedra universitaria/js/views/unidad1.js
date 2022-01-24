@@ -1214,7 +1214,7 @@ function lineaDir(num) {
 
     } else if (num == 2) {
         var contenido = `
-                  <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
+                  <p class="text-justify" style="    width: 260px;">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control (art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
                   `;
         $('.lineaDir2').addClass('pl-3');
         $('.textContentP').html(contenido);
