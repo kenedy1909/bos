@@ -313,6 +313,7 @@ function controlSlides(num){
 
             break;
         case 14:
+            $(".tab-content").removeClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -320,6 +321,7 @@ function controlSlides(num){
 
             break;
         case 15:
+            $(".tab-content").addClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -334,6 +336,7 @@ function controlSlides(num){
             // container = document.querySelector('.custom-scrollbar__inner33');
             break;
         case 16:
+            $(".tab-content").removeClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -960,7 +963,7 @@ function cambiarContenido(num){
 
     }else if (num == 2) {
         var conjunto = `
-                        <p class="text-justify">En la Matriz interactúan los factores internos de la organización (los cuales se denominan variables), el fundamento de esta matriz depende de la forma como influyen las diferentes variables entre sí, otorgando una calificación de influencia sobre las otras. La matriz permite visualizar de una forma objetiva la forma como cada una de las variables ejercen una presión sobre las demás.</p>
+                        <p class="text-justify" style="font-size: 14px;">En la Matriz interactúan los factores internos de la organización (los cuales se denominan variables), el fundamento de esta matriz depende de la forma como influyen las diferentes variables entre sí, otorgando una calificación de influencia sobre las otras. La matriz permite visualizar de una forma objetiva la forma como cada una de las variables ejercen una presión sobre las demás.</p>
                         <div class="w-100 p-3 text-center"><img src="assets/img/img_ova/estadisticas_circulo.gif" width="50%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
@@ -985,11 +988,11 @@ function cambiarContenido(num){
         $(".barra4").addClass("clicBarra");
     }else if (num == 5) {
         var conjunto = `
-                        <p class="text-justify ">La calificación ubica las variables en los diferentes cuadrantes del plano cartesiano.</p> <br><br>
-                        <p class="text-justify w-50 boder-bottom p-2">La <span class="text-danger"> zona de autónoma </span> corresponde a las variables que tienen poca o  nula  dependencia e influencia.</p>
-                        <p class="text-justify w-50 boder-bottom boder-left p-2">La <span class="text-danger"> zona de poder </span> corresponde a las variables que tienen mucha influencia y muy poca dependencia.</p>
-                        <p class="text-justify w-50 p-2">La <span class="text-danger"> zona de conflicto </span> corresponde a las variables que poseen mucha dependencia y tienen influencia sobre las demás</p>
-                        <p class="text-justify w-50 p-2 boder-left">Y la <span class="text-danger"> zona de salida </span> corresponde a las variables que son netamente dependientes y se conocen como variables de resultado.</p>
+                        <p class="text-justify" style="font-size: 13px;">La calificación ubica las variables en los diferentes cuadrantes del plano cartesiano.</p> <br><br>
+                        <p class="text-justify w-50 boder-bottom p-2" style="font-size: 13px;">La <span class="text-danger"> zona de autónoma </span> corresponde a las variables que tienen poca o  nula  dependencia e influencia.</p>
+                        <p class="text-justify w-50 boder-bottom boder-left p-2" style="font-size: 13px;">La <span class="text-danger"> zona de poder </span> corresponde a las variables que tienen mucha influencia y muy poca dependencia.</p>
+                        <p class="text-justify w-50 p-2" style="font-size: 13px;">La <span class="text-danger"> zona de conflicto </span> corresponde a las variables que poseen mucha dependencia y tienen influencia sobre las demás</p>
+                        <p class="text-justify w-50 p-2 boder-left" style="font-size: 13px;">Y la <span class="text-danger"> zona de salida </span> corresponde a las variables que son netamente dependientes y se conocen como variables de resultado.</p>
                         `;
         $("#ContenedorTexto14").html(conjunto)
         $(".barras").removeClass("clicBarra");
@@ -997,7 +1000,7 @@ function cambiarContenido(num){
     }else if (num == 6) {
         var conjunto = `
                         <p class="text-justify ">Clasificación indirecta, muestra cómo puede variar el comportamiento en el largo plazo.</p>
-                        <div class="w-100 p-3 text-center d-flex align-items-center mt-3">
+                        <div class="w-100 p-3 text-center d-flex align-items-center mt-3" style="height: 120px;">
                             <img src="assets/img/img_ova/multiplicacion.png" width="23%">
                             <p class="w-57 pl-3 text-justify" style="font-size:13px;">Se obtiene mediante la multiplicación de la matriz obtenida en la clasificación directa por ella misma tantas veces como los porcentajes de motricidad y dependencia se mantengan constantes. </p>
                         </div>
@@ -1021,14 +1024,14 @@ function cambiarContenido(num){
         var conjunto = `
                         <p class="text-justify ">Cualquier acción que se realice sobre ello repercutirá en gran parte del sistema. La prioridad en las acciones a realizar en la solución de los problemas se concentran en:</p>
                         <div class="w-100 p-3 d-flex align-items-center" style="font-size: 13px;">
-                            <div class="w-75 mr-3">
+                            <div class="w-90 mr-3" style="text-align: justify;">
                                 <ol style="position: relative;top: -6px;">
                                     <li>En primer lugar en la <span class="text-danger">zona de poder</span>, porque su efecto se hará sentir de inmediato sobre el resto; </li>
                                     <br> <li>Y en segundo lugar, los de la <span class="text-danger">zona de conflicto</span>, porque cumplen una función de enlace entre la zona de poder y los restantes </li>
                                     <br> <li>Y, además, porque sus consecuencias se sentirán en los problemas ubicados en la <span class="text-danger">zona de salida.</span> </li>
                                 </ol>
                             </div>
-                            <img src="assets/img/img_ova/tonalidad.png" width="12%" height="100%" style="position: relative;top: -17px;">
+                            <img src="assets/img/img_ova/tonalidad.png" width="12%" height="90%" style="position: relative;top: -17px;">
                         </div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
@@ -1059,7 +1062,7 @@ function scroll_horizontal(num){
                                 <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
                                 Inventario
                                 </div>
-                                <div class="col-md-10" style="font-size: 12px; left: -10px;" >
+                                <div class="col-md-10" style="font-size: 12px; left: -10px;width: 176px;" >
                                 de variables / factores
                                 </div>
                             </div>
@@ -1084,7 +1087,7 @@ function scroll_horizontal(num){
             <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
             Descripción
             </div>
-            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center; width: 150px;" >
             de las relaciones entre variables.
             </div>
         </div>
@@ -1098,7 +1101,7 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-            <div class="row" style="width: 250%; position: relative; left: 18px;">
+            <div class="row" style="width: 48%; position: relative; left: 18px;">
             <div class="col-md-6">
             <!-- <div class="base"></div> -->
             <img src="assets/img/img_ova/three.png"  style="width: 100%;" alt="">
@@ -1109,11 +1112,14 @@ function scroll_horizontal(num){
             <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
             Identificación
             </div>
-            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            <div class="col-md-10" style="font-size: 12px; left: -10px; text-align: center; width=150px"; >
             de variables esenciales
             </div>
         </div>
-                            <p class="pl-3 text-justify" style="font-size:12px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+        
+        
+        <p class=" text-justify" style="font-size:12px;width: 260px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+        
                             `;
             $('#img-scroll1').html(img_scroll);
             $('#info-scroll1').html(info_scroll);
