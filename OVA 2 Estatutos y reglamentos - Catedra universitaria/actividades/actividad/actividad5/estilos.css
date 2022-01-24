@@ -14,6 +14,7 @@
     display: table-cell;
     z-index: 1008;
     font-size: 18px;
+    color: black;
     position: relative;
     left: -12px;
 }
@@ -47,7 +48,6 @@
         min-width: 100px;
         width: 100%;
     }
-
     #actividad-1 ul#grupoA li.list-group-item {
         font-size: 20px;
     }
@@ -151,74 +151,96 @@
 
 .ficha-texto p {
     display: list-item;
-    text-align: left;
+    text-align: justify;
     margin: 0;
 }
 
+
 /*encabezado*/
-.info_actividad{
+
+.info_actividad {
     background: rgba(255, 192, 0);
     border-radius: 20px;
     padding: 20px;
 }
-.pt-3{
+
+.pt-3 {
     padding-top: 1.5em;
 }
-.pt-5{
+
+.pt-5 {
     padding-top: 2.5em;
 }
-.pl-3{
+
+.pl-3 {
     padding-left: 1.5em;
 }
-.pr-3{
+
+.pr-3 {
     padding-right: 1.5em;
 }
-.pl-1{
+
+.pl-1 {
     padding-left: 0.5em;
 }
-.pr-1{
+
+.pr-1 {
     padding-right: 0.5em;
 }
-.shadow{
+
+.shadow {
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
+
+
 /*encabezado*/
-.principal{
+
+.principal {
     display: inline-block;
 }
-.secundario{
-    width: 35%;display: inline-block;
+
+.secundario {
+    width: 35%;
+    display: inline-block;
 }
-.terciario{
-    width: 65%;display: inline-block;
+
+.terciario {
+    width: 65%;
+    display: inline-block;
 }
-.div-img{
-    display: inline-block;max-width: 100%;
+
+.div-img {
+    display: inline-block;
+    max-width: 100%;
 }
-.imagen{
+
+.imagen {
     width: 116px;
     height: 116px;
     display: inline-block;
 }
 
-.texto_header{
+.texto_header {
     font-size: 17px;
     display: inline-block;
     width: 50%;
 }
-.texto_header b{
+
+.texto_header b {
     color: #540F23;
     padding-left: 1px;
     padding-right: 1px;
 }
-.linea_blue{
-    height: 5px; 
+
+.linea_blue {
+    height: 5px;
     background: #540F23;
 }
 
 
 /*ejercicio*/
-.circulo_icon{
+
+.circulo_icon {
     position: relative;
     width: 65px;
     height: 65px;
@@ -226,25 +248,48 @@
     border-radius: 20%;
     top: 15px;
     left: -44px;
-    box-shadow: 1px 0px 11px -2px black;
     padding: 10px;
 }
 
-.bg-piel-mc{
-  background-color: #F7CAAC;
+.bg-piel-mc {
+    background-color: #F7CAAC;
 }
 
-.bg-cafe-activi{
-  background: #540F23;
-}
-.text-cafe-activi{
-  color: #540F23;
+.bg-cafe-activi {
+    background: #540F23;
 }
 
-.img-100{
-  width:100% ;
+.text-cafe-activi {
+    color: #540F23;
 }
 
-.d-flex{
+.img-100 {
+    width: 100%;
+}
+
+.d-flex {
     display: flex;
+}
+
+.principal_modal {
+    height: 400px;
+    border-radius: 40px;
+    background: #96182F;
+}
+
+.cabeza {
+    background: #540F23;
+    height: 100px;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.circulo_modal {
+    height: 150px;
+    width: 150px;
+    background: gray;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    border: solid white;
 }

@@ -1294,3 +1294,10 @@ p, button{
     top: -22px;
     width: 0;
   }
+
+  .h-actividad{
+	  height: 850px !important;
+  }
+  .h-actividad2{
+	height: 720px !important;
+}

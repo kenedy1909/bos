@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 </head>
-<body>
+<body style="overflow: hidden;">
 <!-- partial:index.partial.html -->
 <div id="app" class="" @keyup.escape="selected = undefined">
   <div class="table-container" style="display:none;" v-show="true">
     <div class="d-flex principal" style="padding: 20px;">
-        <div class="col-md-5 col-sm-5 d-flex" style="width: 45%;">
-           <img src="./img/actividad_interactiva.png" class="img-activi">
+        <div class="col-md-5 col-sm-5 d-flex" style="width: 45%;position: relative;top: 10px; ">
+           <img src="./img/actividad_interactiva.png" class="img-activi" style="margin-right: 23px;">
            <div>
-               <div class="content-text-img-activi-2" style="width: 80%;">
+               <div class="content-text-img-activi-2" style="width: 100%;">
                  <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                </div>
-               <p class="text-center" style="position: relative; left: -23px;"><i>CRUCIGRAMA</i></p>
+               <p class="text-center" style="position: relative; left: 0; font-size: 17px;"><i>CRUCIGRAMA</i></p>
            </div>
         </div>
         <div class="col-md-7 col-sm-7 terciario" style="width: 65%;">
@@ -53,7 +53,7 @@
       <button @click="corregir" class="btn btn-primary">Colocar</button>
     </div>
     <hr>
-    <button class="btn btn-lg shadow" style="background: #811111; color: #FFF;" @click="finalizar"><b>Calificar</b></button>
+    <button class="btn btn-lg shadow" style="background: #811111; color: #FFF; position: relative; top: -30px;" @click="finalizar"><b>Calificar</b></button>
   </div>  
   <h3 v-show="false">Cargando....</h3>
 </div>

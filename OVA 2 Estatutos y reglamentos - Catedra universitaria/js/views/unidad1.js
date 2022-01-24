@@ -206,11 +206,11 @@ function controlSlides(num) {
         case 2:
             setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
             break;
-        case 3:
-            setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
+            // case 3:
+            //     setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
 
-            break;
-        case 4:
+            //     break;
+        case 3:
             setMigaja("Unidades de aprendizaje", "1. Régimen estatutario y reglamentario", "Reglamento administrativo");
             $(".i1").html('')
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
@@ -604,7 +604,7 @@ function Input(num) {
     //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
     this.att = {};
     this.att.type = "range";
-    this.att.value = 1;
+    this.att.value = 0;
     this.att.min = 0;
     this.att.max = num;
     this.att.autocomplete = "off";
@@ -1214,7 +1214,7 @@ function lineaDir(num) {
 
     } else if (num == 2) {
         var contenido = `
-                  <p class="text-justify">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control ( art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
+                  <p class="text-justify" style="    width: 260px;">Órganos que no son de gobierno: Revisor Fiscal, de vigilancia y control (art 18), Consejo de Planeación, órgano asesor, (artículo 31), órgano Electoral.</p>
                   `;
         $('.lineaDir2').addClass('pl-3');
         $('.textContentP').html(contenido);
