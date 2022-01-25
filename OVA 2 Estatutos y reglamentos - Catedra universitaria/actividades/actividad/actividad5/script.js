@@ -41,11 +41,23 @@
         console.log('Puntaje ' + puntaje);
         var exito = false;
         var mensaje = "Puedes hacerlo mejor"
+            /*if (puntaje == 100) {
+                exito = true;
+                mensaje = "¡Felicitaciones!"
+            }
+            mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);*/
         if (puntaje == 100) {
-            exito = true;
-            mensaje = "¡Felicitaciones!"
+            $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;margin-top: 5%;">');
+            $('.puntaje').text("100%");
+            $('.mensaje').text("¡Felicitaciones!");
+            $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -25px;" onclick="reiniciar()">cerrar</button>');
+        } else {
+            $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;margin-top: 5%;">');
+            $('.mensaje').text("¡Puedes hacerlo mejor!");
+            $('.puntaje').text(Math.round(puntaje) + "%");
+            $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -25px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
         }
-        mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
+        $("#calificacionModal").modal("show");
 
     }
 
