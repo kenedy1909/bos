@@ -29,6 +29,16 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
 
@@ -320,54 +330,54 @@ function controlSlides(num){
         case 17:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
             cambiarColorMenu(21);
-            $(".i3").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv2.i3");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i4");
-            var inputsRy = [];
-            var i = new Input2(2);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
+            // $(".i3").html('')    
+            // var elementoPadre1 = document.querySelector(".inputDiv2.i3");
+            // var elementoPadre2 = document.querySelector(".inputDiv2.i4");
+            // var inputsRy = [];
+            // var i = new Input2(2);
+            // i.crear(elementoPadre1);
+            // inputsRy.push(i);
 
-            var i2 = new Input2(2);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
+            // var i2 = new Input2(2);
+            // i2.att.value = 70;
+            // i2.att.min = 20;
+            // i2.att.max = 120;
+            // i2.crear(elementoPadre2);
+            // inputsRy.push(i2);
 
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar2();
-                }, false)
-              }(n));
-            }
+            // for (var n = 0; n < inputsRy.length; n++) {
+            //   (function(n) {
+            //     inputsRy[n].input.addEventListener("input", function() {
+            //       inputsRy[n].actualizar2();
+            //     }, false)
+            //   }(n));
+            // }
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             cambiarColorMenu(31);
-            $(".i5").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
-            var inputsRy = [];
-            var i = new Input2(2);
-            i.crear(elementoPadre1);
-            inputsRy.push(i);
+            // $(".i5").html('')    
+            // var elementoPadre1 = document.querySelector(".inputDiv2.i5");
+            // var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            // var inputsRy = [];
+            // var i = new Input2(2);
+            // i.crear(elementoPadre1);
+            // inputsRy.push(i);
 
-            var i2 = new Input2(2);
-            i2.att.value = 70;
-            i2.att.min = 20;
-            i2.att.max = 120;
-            i2.crear(elementoPadre2);
-            inputsRy.push(i2);
+            // var i2 = new Input2(2);
+            // i2.att.value = 70;
+            // i2.att.min = 20;
+            // i2.att.max = 120;
+            // i2.crear(elementoPadre2);
+            // inputsRy.push(i2);
 
-            for (var n = 0; n < inputsRy.length; n++) {
-              (function(n) {
-                inputsRy[n].input.addEventListener("input", function() {
-                  inputsRy[n].actualizar3();
-                }, false)
-              }(n));
-            }
+            // for (var n = 0; n < inputsRy.length; n++) {
+            //   (function(n) {
+            //     inputsRy[n].input.addEventListener("input", function() {
+            //       inputsRy[n].actualizar3();
+            //     }, false)
+            //   }(n));
+            // }
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
@@ -1686,167 +1696,85 @@ function ModalContenidoPant(num) {
     $('.cardSelect3').removeClass('d-none');
     $('.cardSelect1, .cardSelect2').addClass('d-none');
   
-  }else if (num == 4) {
-    $('.abrirCollapse1').removeClass('d-flex');
+  }
+}
+
+function colapseFlechas(num) {
+
+  $('.abrirCollapse1, .abrirCollapse2, .abrirCollapse3').removeClass('d-none');
+  $('.contentFlecha1, .contentFlecha2, .contentFlecha3').removeClass('d-none');
+
+  $('.abrirCollapse1_1, .abrirCollapse2_1, .abrirCollapse3_1').addClass('d-none');
+  $('.contentFlecha1_1, .contentFlecha2_1, .contentFlecha3_1').addClass('d-none');
+  
+  $('.contentFlecha1, .contentFlecha2, .contentFlecha3').addClass('h-33');
+  $('.contentFlecha1, .contentFlecha2, .contentFlecha3').removeClass('min-h');
+  
+  $('.contentFlecha1, .contentFlecha2, .contentFlecha3').removeClass('mt-auto');
+  
+  $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
+
+
+  $('.abrirCollapse1_1, .abrirCollapse2_1, .abrirCollapse3_1').addClass('m-auto');
+  $('.abrirCollapse1_1, .abrirCollapse2_1, .abrirCollapse3_1').removeClass('mt-auto mb-auto');
+
+
+
+  
+  if (num == 4) {
     $('.abrirCollapse1').addClass('d-none');
+    $('.contentFlecha1').addClass('d-none');
 
     $('.abrirCollapse1_1').removeClass('d-none');
-    $('.abrirCollapse1_1').addClass('d-flex');
+    $('.contentFlecha1_1').removeClass('d-none');
 
-    $('.abrirCollapse2_1').removeClass('d-flex');
-    $('.abrirCollapse2_1').addClass('d-none');
-
-    $('.abrirCollapse3_1').removeClass('d-flex');
-    $('.abrirCollapse3_1').addClass('d-none');
-
-    $('.abrirCollapse2').addClass('hidden');
-    $('.abrirCollapse3').addClass('top-100');
-    $('.abrirCollapse1').removeClass('top-menos110');
-    $('.abrirCollapse2').removeClass('top-menos190');
+    $('.abrirCollapse2_1, .abrirCollapse3_1').addClass('d-none');
     
-    $('.abrirCollapsePadre3').removeClass('my-5 pt-5');
+    $('.contentFlecha1, .contentFlecha2, .contentFlecha3').removeClass('h-33');
+    $('.contentFlecha1, .contentFlecha2, .contentFlecha3').addClass('min-h');
+    
+    $('.contentFlecha2').addClass('mt-auto');
+    $('.abrirCollapse1_1').addClass('mb-auto');
+    $('.abrirCollapse1_1').removeClass('m-auto');
     
     $('.contenidoCollapse1').removeClass('d-none');
-    $('.contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
-    
 
-  }else if (num == '4_1') {
-    $('.abrirCollapse1').removeClass('d-none');
-    $('.abrirCollapse1').addClass('d-flex');
+  }else if (num == 5) { 
 
-    $('.abrirCollapse1_1').removeClass('d-flex');
-    $('.abrirCollapse1_1').addClass('d-none');
-    
-    $('.abrirCollapse2_1').removeClass('d-flex');
-    $('.abrirCollapse2_1').addClass('d-none');
-
-    $('.abrirCollapse2').removeClass('d-none');
-    $('.abrirCollapse2').addClass('d-flex');
-
-    $('.abrirCollapse2').removeClass('hidden');
-    $('.abrirCollapse3').removeClass('top-100');
-    $('.abrirCollapse1').removeClass('top-menos80');
-    
-    $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
-    $('.abrirCollapsePadre1').addClass('mb-5');
-    $('.abrirCollapsePadre3').addClass('my-5 pt-5');
-    $('.abrirCollapse3').addClass('my-5');
-
-
-  }else if (num == 5) {
-    $('.abrirCollapse2').removeClass('d-flex');
     $('.abrirCollapse2').addClass('d-none');
+    $('.contentFlecha2').addClass('d-none');
 
-    $('.abrirCollapse1').removeClass('d-none');
-    $('.abrirCollapse1').addClass('d-flex');
-
-    $('.abrirCollapse3').removeClass('d-none');
-    $('.abrirCollapse3').addClass('d-flex');
-    
     $('.abrirCollapse2_1').removeClass('d-none');
-    $('.abrirCollapse2_1').addClass('d-flex');
+    $('.contentFlecha2_1').removeClass('d-none');
 
-    $('.abrirCollapse1_1').removeClass('d-flex');
-    $('.abrirCollapse1_1').addClass('d-none');
-
-    $('.abrirCollapse3_1').removeClass('d-flex');
-    $('.abrirCollapse3_1').addClass('d-none');
+    $('.abrirCollapse1_1, .abrirCollapse3_1').addClass('d-none');
     
-    $('.abrirCollapse3').addClass('top-100');   
-    $('.abrirCollapse1').removeClass('top-menos110');
-    $('.abrirCollapse2').removeClass('top-menos190');
-
-    $('.abrirCollapsePadre1').removeClass('mb-5');
-    $('.abrirCollapsePadre3').removeClass('my-5 pt-5');
+    $('.contentFlecha1, .contentFlecha2_1, .contentFlecha3').removeClass('h-33');
+    $('.contentFlecha1, .contentFlecha2_1, .contentFlecha3').addClass('min-h');
+    
+    $('.contentFlecha2_1').addClass('mb-auto');
+    $('.contentFlecha3').addClass('mt-auto');
+    $('.contentFlecha3, .contentFlecha2_1').removeClass('m-auto');
     
     $('.contenidoCollapse2').removeClass('d-none');
-    $('.contenidoCollapse1, .contenidoCollapse3').addClass('d-none');
-
-  }else if (num == '5_1') {
-    $('.abrirCollapse2').removeClass('d-none');
-    $('.abrirCollapse2').addClass('d-flex');
-    
-    $('.abrirCollapse1_1').removeClass('d-flex');
-    $('.abrirCollapse1_1').addClass('d-none');
-    
-    $('.abrirCollapse2_1').removeClass('d-flex');
-    $('.abrirCollapse2_1').addClass('d-none');
-
-    $('.abrirCollapse2').removeClass('d-none');
-    $('.abrirCollapse2').addClass('d-flex');
-    
-    $('.abrirCollapse3').removeClass('top-100');
-    $('.abrirCollapse1').removeClass('top-menos80');
-    $('.abrirCollapse2').removeClass('hidden');
-
-    $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
-    $('.abrirCollapsePadre1').addClass('mb-5');
-    $('.abrirCollapsePadre3').addClass('my-5 pt-5');
-    $('.abrirCollapse3').addClass('my-5');
 
   }else if (num == 6) {
-    $('.abrirCollapse3').removeClass('d-flex');
+    
     $('.abrirCollapse3').addClass('d-none');
-    
-    $('.abrirCollapse2').removeClass('d-none');
-    $('.abrirCollapse2').addClass('d-flex');
-    $('.abrirCollapse2').removeClass('hidden');
-    
-    $('.abrirCollapse1').removeClass('d-none');
-    $('.abrirCollapse1').addClass('d-flex');
-    
+    $('.contentFlecha3').addClass('d-none');
+
     $('.abrirCollapse3_1').removeClass('d-none');
-    $('.abrirCollapse3_1').addClass('d-flex');
+    $('.contentFlecha3_1').removeClass('d-none');
 
-    $('.abrirCollapse2_1').removeClass('d-flex');
-    $('.abrirCollapse2_1').addClass('d-none');
-
-    $('.abrirCollapse1_1').removeClass('d-flex');
-    $('.abrirCollapse1_1').addClass('d-none');
+    $('.abrirCollapse1_1, .abrirCollapse2_1').addClass('d-none');
     
-    $('.abrirCollapse1').addClass('top-menos110');
-    $('.abrirCollapse2').addClass('top-menos190');
+    $('.contentFlecha1, .contentFlecha2, .contentFlecha3_1').removeClass('h-33');
+    $('.contentFlecha1, .contentFlecha2, .contentFlecha3_1').addClass('min-h');
+    
+    $('.contentFlecha3_1').addClass('mb-auto');
+    $('.contentFlecha3_1').removeClass('m-auto');
     
     $('.contenidoCollapse3').removeClass('d-none');
-    $('.contenidoCollapse1, .contenidoCollapse2').addClass('d-none');
-
-
-  }else if (num == '6_1') {
-    $('.abrirCollapse3').removeClass('d-none');
-    $('.abrirCollapse3').addClass('d-flex');
-    
-    $('.abrirCollapse2').removeClass('d-none');
-    $('.abrirCollapse2').addClass('d-flex');
-    $('.abrirCollapse2').removeClass('hidden');
-    
-    $('.abrirCollapse1').removeClass('d-none');
-    $('.abrirCollapse1').addClass('d-flex');
-
-    $('.abrirCollapse3_1').removeClass('d-flex');
-    $('.abrirCollapse3_1').addClass('d-none');
-    
-    $('.abrirCollapse2_1').removeClass('d-flex');
-    $('.abrirCollapse2_1').addClass('d-none');
-    
-    $('.abrirCollapse1_1').removeClass('d-flex');
-    $('.abrirCollapse1_1').addClass('d-none');;
-    
-    $('.abrirCollapse1').removeClass('top-menos110');
-    $('.abrirCollapse2').removeClass('top-menos190');
-    
-    $('.contenidoCollapse3').removeClass('d-none');
-    $('.contenidoCollapse1, .contenidoCollapse2').addClass('d-none');
-
-    $('.abrirCollapse2').removeClass('d-none');
-    $('.abrirCollapse2').addClass('d-flex');
-    
-    $('.abrirCollapse2_1').removeClass('d-flex');
-    $('.abrirCollapse2_1').addClass('d-none');
-    
-    $('.abrirCollapse3').removeClass('top-100');
-    $('.abrirCollapse1').removeClass('top-menos80');
-
-    $('.contenidoCollapse1, .contenidoCollapse2, .contenidoCollapse3').addClass('d-none');
 
   }
 }

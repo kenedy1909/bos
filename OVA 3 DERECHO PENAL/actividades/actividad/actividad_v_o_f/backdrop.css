@@ -185,7 +185,7 @@ html{
     border-radius: 9px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: white;
+    background: #5f18179f;
     /* background: #ffd200; */
     border: none;
     outline: 0;
@@ -202,7 +202,7 @@ html{
     border-radius: 9px;
 }
 .btn-secundary:active, .btn-secundary:active:focus, .btn-secundary:focus, .btn-secundary:hover{
-    background: white;
+    background: rgb(200, 200, 200);
     border: none;
     color: #771E18;
     outline: 0;

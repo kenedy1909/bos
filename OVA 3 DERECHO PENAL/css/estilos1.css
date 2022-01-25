@@ -745,7 +745,7 @@ p, button{
 	background: var(--bg-color)!important;
 }
 .bg-color-trasparente{
-	background: #771e18a1!important;
+	background: #771e18de!important;
 }
 .bg-color-dark{
 	background: var(--bg-color-dark)!important;
@@ -1084,6 +1084,14 @@ p, button{
 	color: var(--bg-color)!important;
 }
 
+.min-h{
+	height: fit-content;
+}
+
+.h-33{
+	height: 33.33% ;
+}
+
   
   .banner_16{
 	min-height: 200px;
@@ -1195,7 +1203,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 270px solid transparent;
+    border-top: 280px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1216,7 +1224,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 270px solid transparent;
+    border-top: 280px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1226,7 +1234,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 270px solid transparent;
+    border-top: 280px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -2196,7 +2204,7 @@ a.control_next {
     height: 300px;
     position: relative;
     top: -50px;
-    left: -75px;
+    left: -85px;
     border-radius: 20px;
 }
 

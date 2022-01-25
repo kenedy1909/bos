@@ -741,7 +741,7 @@ function scroll_horizontal2(num){
                                       <div class="img-30 m-auto">
                                         <img src="assets/img/img_ova/reloj.png" class="img-100">
                                       </div>
-                                      <p class="p_black pl-3 m-auto" style="font-size:13px;">Tiempo sugerido: <br> <b>6 minutos</b></p>
+                                      <p class="p_black pl-3 m-auto" style="font-size:13px; width: 171px;">Tiempo sugerido: <br> <b>6 minutos</b></p>
                                     </div>
                                   </div>
                                 </div>
@@ -806,9 +806,9 @@ function scroll_horizontal2(num){
                                           <div class="img-30 m-auto">
                                             <img src="assets/img/img_ova/reloj.png" class="img-100">
                                           </div>
-                                          <p class="p_black pl-3 m-auto" style="font-size:13px">Tiempo sugerido: <br> <b>54 minutos</b></p>
+                                          <p class="p_black pl-3 m-auto" style="font-size:13px; width: 171px;">Tiempo sugerido: <br> <b>54 minutos</b></p>
                                       </div>
-                                      <div class="d-flex">
+                                      <div class="mt-2 d-flex">
                                         <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-foro"><b>CLIC AQUÍ</b></button>
                                       </div>
                                     </div>
