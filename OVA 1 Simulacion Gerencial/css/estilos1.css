@@ -1270,7 +1270,7 @@ p, button{
 	background: none repeat scroll 0 0 #E7E6E6;
     border-radius: 0px 0px 50px 50px;
     color: black;
-	height: 253px;
+	height: 273px;
   }
 
   .base {
@@ -1294,3 +1294,10 @@ p, button{
     top: -22px;
     width: 0;
   }
+
+  .h-actividad{
+	  height: 850px !important;
+  }
+  .h-actividad2{
+	height: 720px !important;
+}

@@ -1,4 +1,9 @@
 $( document ).ready(function() {
+
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
     
     
     
@@ -30,6 +35,22 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+11);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
 
     $(".p4-1").on("hover", function () {

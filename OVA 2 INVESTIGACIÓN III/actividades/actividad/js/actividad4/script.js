@@ -44,6 +44,7 @@ function calificarEmparejamiento(event) {
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/bien_naranja.png"); 
     }
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
 

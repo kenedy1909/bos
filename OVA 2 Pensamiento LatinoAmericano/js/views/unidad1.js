@@ -1347,7 +1347,6 @@ function mostrarTarjeta(num, estado) {
 
             $('.ocultarMostrar3').attr('onclick', "mostrarTarjeta(3,'ocultar')");
         } else if (num == 4) {
-            scroll_set(12);
             $('.padreMostrar4').addClass('ocultarMostrar4');
             $('.padreMostrar4').removeClass('padreMostrar4');
 
@@ -1356,7 +1355,6 @@ function mostrarTarjeta(num, estado) {
 
             $('.ocultarMostrar4').attr('onclick', "mostrarTarjeta(4,'ocultar')");
         } else if (num == 5) {
-            scroll_set(13);
             $('.padreMostrar5').addClass('ocultarMostrar5');
             $('.padreMostrar5').removeClass('padreMostrar5');
 
@@ -1444,7 +1442,7 @@ function mapaU6(num, estado) {
             var data = `
                         <div class="border-25 bg-color-claro p-2 shadow ">
                             <div class="w-25 py-2">
-                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial1 cursor" onclick="mapaU6(1,2)">1</h5>
+                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial1 cursor" onclick="mapaU6(1,2)" style="height:38px">1</h5>
                             </div>
                             <div class="w-100 text-center">
                             <p class="px-2 text-justify w-100">Lea el libro “De las dualidades a las ecologías” De Sousa</p>
@@ -1460,7 +1458,7 @@ function mapaU6(num, estado) {
             var data = `
                         <div class="border-25 bg-color-claro px-2 pt-2 pb-4 shadow">
                             <div class="w-25 py-2">
-                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial2 cursor" onclick="mapaU6(2,2)">2</h5>
+                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial2 cursor" onclick="mapaU6(2,2)" style="height:38px">2</h5>
                             </div>
                             <div class="w-100 text-center pt-2">
                             <p class="px-2 text-justify w-100">Realice un cuadro sinóptico del libro.</p>
@@ -1475,7 +1473,7 @@ function mapaU6(num, estado) {
             var data = `
                         <div class="border-25 bg-color-claro px-2 pt-2 pb-4 shadow">
                             <div class="w-25 py-2">
-                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial3 cursor" onclick="mapaU6(3,2)">3</h5>
+                            <h5 class="w-50 pr-4 pl-3 py-2 bg-color-rojo1 rounded-circle text-white inicial3 cursor" onclick="mapaU6(3,2)" style="height:38px">3</h5>
                             </div>
                             <div class="w-100 text-center">
                             <p class="px-2 text-justify w-100 mb-4 "><b>Ayuda pedagógica </b></p>
@@ -1784,7 +1782,7 @@ function cambiarImgU16(num) {
         $('#img1U16').removeClass('bg-color');
         $('#img1U16').html(``);
         var data = `
-                    <img src="assets/img/img_ova/nota3.png" width="100%" height="100%">
+                    <img src="assets/img/img_ova/nota3.png" style="width: 428px;margin-left: -35px;margin-top: 45px;">
                     `;
         $('#img1U16').html(data);
         $('#img1U16').attr('onclick', "cambiarImgU16(2)");

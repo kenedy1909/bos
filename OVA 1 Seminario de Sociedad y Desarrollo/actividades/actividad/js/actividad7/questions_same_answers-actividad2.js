@@ -183,13 +183,13 @@ QuestionsSameAnswers.prototype.score =  function () {
     });*/
     if (puntaje == 100) {
         
-      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
         
-      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
+      $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
@@ -231,7 +231,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th style="display: flex;border-bottom: 0px solid #ddd !important;"><img src="img/ansiedad.png" alt="" style="width: 15%; margin: auto;"></th>\
+                    <th style="display: flex;border-bottom: 0px solid #ddd !important;"></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table" style="border-bottom: 0px solid #ddd !important;">{{ answer.answer_txt }}</th>\
                     {% endfor %}\

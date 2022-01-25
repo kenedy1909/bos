@@ -250,7 +250,7 @@ label {
 .circulo_modal{
   height: 125px;
   width: 125px;
-  background: gray;
+  background: #999999;
   border-radius: 50%;
   position: relative;
   top: -60px;
@@ -273,3 +273,24 @@ label {
 	position: relative;
     top: -20px;
 }
+
+
+.x-modal{
+	background: #E3464F;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: flex;
+  }
+  
+  .x-modal-text{
+	display: block;
+	margin: auto;
+  }
+
+  .divcerrar {
+	position: relative;
+    top: -33px;
+    left: 4%;
+	}
+	

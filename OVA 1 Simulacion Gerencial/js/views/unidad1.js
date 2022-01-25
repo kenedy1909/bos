@@ -17,6 +17,16 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // EditarLocation(getPos());
+        moveBarPorcentaje(stepIndex);
+        console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
 
     slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
@@ -95,12 +105,13 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide(1);
+                slide();
 
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide(1);
+                slide();
+               
 
                 break;
         }
@@ -186,16 +197,19 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $(".tab-content").removeClass("h-actividad");
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Marco referencial de la prospectiva");
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $(".tab-content").addClass("h-actividad");
+            $(".tab-content").removeClass("h-actividad2");
             break;
         case 6:
+            $(".tab-content").removeClass("h-actividad");
+            $(".tab-content").addClass("h-actividad2");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
             
             document.getElementById("next").style.display="block";
@@ -225,6 +239,7 @@ function controlSlides(num){
             }  
             break;
         case 7:
+            $(".tab-content").removeClass("h-actividad2");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Prospectiva en las organizaciones");
             
             document.getElementById("next").style.display="block";
@@ -298,6 +313,7 @@ function controlSlides(num){
 
             break;
         case 14:
+            $(".tab-content").removeClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -305,6 +321,7 @@ function controlSlides(num){
 
             break;
         case 15:
+            $(".tab-content").addClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -319,6 +336,7 @@ function controlSlides(num){
             // container = document.querySelector('.custom-scrollbar__inner33');
             break;
         case 16:
+            $(".tab-content").removeClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -330,6 +348,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            $("#actividad18").removeAttr("src");
 
             break;
         case 18:
@@ -337,14 +356,17 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-            
+            console.log('prueba 18');
+            // $('#actividad18').src( $('#actividad18').attr('src'));
+            $("#actividad18").attr("src", "actividades/actividad/activi12/index.html");
+
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            $("#actividad18").removeAttr("src");
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
@@ -941,7 +963,7 @@ function cambiarContenido(num){
 
     }else if (num == 2) {
         var conjunto = `
-                        <p class="text-justify">En la Matriz interactúan los factores internos de la organización (los cuales se denominan variables), el fundamento de esta matriz depende de la forma como influyen las diferentes variables entre sí, otorgando una calificación de influencia sobre las otras. La matriz permite visualizar de una forma objetiva la forma como cada una de las variables ejercen una presión sobre las demás.</p>
+                        <p class="text-justify" style="font-size: 14px;">En la Matriz interactúan los factores internos de la organización (los cuales se denominan variables), el fundamento de esta matriz depende de la forma como influyen las diferentes variables entre sí, otorgando una calificación de influencia sobre las otras. La matriz permite visualizar de una forma objetiva la forma como cada una de las variables ejercen una presión sobre las demás.</p>
                         <div class="w-100 p-3 text-center"><img src="assets/img/img_ova/estadisticas_circulo.gif" width="50%"></div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
@@ -966,11 +988,11 @@ function cambiarContenido(num){
         $(".barra4").addClass("clicBarra");
     }else if (num == 5) {
         var conjunto = `
-                        <p class="text-justify ">La calificación ubica las variables en los diferentes cuadrantes del plano cartesiano.</p> <br><br>
-                        <p class="text-justify w-50 boder-bottom p-2">La <span class="text-danger"> zona de autónoma </span> corresponde a las variables que tienen poca o  nula  dependencia e influencia.</p>
-                        <p class="text-justify w-50 boder-bottom boder-left p-2">La <span class="text-danger"> zona de poder </span> corresponde a las variables que tienen mucha influencia y muy poca dependencia.</p>
-                        <p class="text-justify w-50 p-2">La <span class="text-danger"> zona de conflicto </span> corresponde a las variables que poseen mucha dependencia y tienen influencia sobre las demás</p>
-                        <p class="text-justify w-50 p-2 boder-left">Y la <span class="text-danger"> zona de salida </span> corresponde a las variables que son netamente dependientes y se conocen como variables de resultado.</p>
+                        <p class="text-justify" style="font-size: 13px;">La calificación ubica las variables en los diferentes cuadrantes del plano cartesiano.</p> <br><br>
+                        <p class="text-justify w-50 boder-bottom p-2" style="font-size: 13px;">La <span class="text-danger"> zona de autónoma </span> corresponde a las variables que tienen poca o  nula  dependencia e influencia.</p>
+                        <p class="text-justify w-50 boder-bottom boder-left p-2" style="font-size: 13px;">La <span class="text-danger"> zona de poder </span> corresponde a las variables que tienen mucha influencia y muy poca dependencia.</p>
+                        <p class="text-justify w-50 p-2" style="font-size: 13px;">La <span class="text-danger"> zona de conflicto </span> corresponde a las variables que poseen mucha dependencia y tienen influencia sobre las demás</p>
+                        <p class="text-justify w-50 p-2 boder-left" style="font-size: 13px;">Y la <span class="text-danger"> zona de salida </span> corresponde a las variables que son netamente dependientes y se conocen como variables de resultado.</p>
                         `;
         $("#ContenedorTexto14").html(conjunto)
         $(".barras").removeClass("clicBarra");
@@ -978,7 +1000,7 @@ function cambiarContenido(num){
     }else if (num == 6) {
         var conjunto = `
                         <p class="text-justify ">Clasificación indirecta, muestra cómo puede variar el comportamiento en el largo plazo.</p>
-                        <div class="w-100 p-3 text-center d-flex align-items-center mt-3">
+                        <div class="w-100 p-3 text-center d-flex align-items-center mt-3" style="height: 120px;">
                             <img src="assets/img/img_ova/multiplicacion.png" width="23%">
                             <p class="w-57 pl-3 text-justify" style="font-size:13px;">Se obtiene mediante la multiplicación de la matriz obtenida en la clasificación directa por ella misma tantas veces como los porcentajes de motricidad y dependencia se mantengan constantes. </p>
                         </div>
@@ -1002,14 +1024,14 @@ function cambiarContenido(num){
         var conjunto = `
                         <p class="text-justify ">Cualquier acción que se realice sobre ello repercutirá en gran parte del sistema. La prioridad en las acciones a realizar en la solución de los problemas se concentran en:</p>
                         <div class="w-100 p-3 d-flex align-items-center" style="font-size: 13px;">
-                            <div class="w-75 mr-3">
+                            <div class="w-90 mr-3" style="text-align: justify;">
                                 <ol style="position: relative;top: -6px;">
                                     <li>En primer lugar en la <span class="text-danger">zona de poder</span>, porque su efecto se hará sentir de inmediato sobre el resto; </li>
                                     <br> <li>Y en segundo lugar, los de la <span class="text-danger">zona de conflicto</span>, porque cumplen una función de enlace entre la zona de poder y los restantes </li>
                                     <br> <li>Y, además, porque sus consecuencias se sentirán en los problemas ubicados en la <span class="text-danger">zona de salida.</span> </li>
                                 </ol>
                             </div>
-                            <img src="assets/img/img_ova/tonalidad.png" width="12%" height="100%" style="position: relative;top: -17px;">
+                            <img src="assets/img/img_ova/tonalidad.png" width="12%" height="90%" style="position: relative;top: -17px;">
                         </div>
                         `;
         $("#ContenedorTexto14").html(conjunto)
@@ -1040,7 +1062,7 @@ function scroll_horizontal(num){
                                 <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
                                 Inventario
                                 </div>
-                                <div class="col-md-10" style="font-size: 12px; left: -10px;" >
+                                <div class="col-md-10" style="font-size: 12px; left: -10px;width: 176px;" >
                                 de variables / factores
                                 </div>
                             </div>
@@ -1065,7 +1087,7 @@ function scroll_horizontal(num){
             <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
             Descripción
             </div>
-            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center; width: 150px;" >
             de las relaciones entre variables.
             </div>
         </div>
@@ -1079,7 +1101,7 @@ function scroll_horizontal(num){
                             <h3>3</h3>
                              `;
             var info_scroll = `
-            <div class="row" style="width: 250%; position: relative; left: 18px;">
+            <div class="row" style="width: 48%; position: relative; left: 18px;">
             <div class="col-md-6">
             <!-- <div class="base"></div> -->
             <img src="assets/img/img_ova/three.png"  style="width: 100%;" alt="">
@@ -1090,11 +1112,14 @@ function scroll_horizontal(num){
             <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
             Identificación
             </div>
-            <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center;" >
+            <div class="col-md-10" style="font-size: 12px; left: -10px; text-align: center; width=150px"; >
             de variables esenciales
             </div>
         </div>
-                            <p class="pl-3 text-justify" style="font-size:12px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+        
+        
+        <p class=" text-justify" style="font-size:12px;width: 260px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+        
                             `;
             $('#img-scroll1').html(img_scroll);
             $('#info-scroll1').html(info_scroll);
@@ -1112,7 +1137,7 @@ function scroll_horizontal2(num){
                             <img src="assets/img/img_ova/tutor.png" width="70%">
                             `;
             var info_scroll = `
-                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>1</b></a>
+                            <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50" style="width:38%;"><b>1</b></a>
                             <p class="pl-3 text-justify">La prospectiva empresarial es una disciplina que cada día toma más relevancia por parte de los estrategas empresariales donde las empresas deben centrar la preocupación de <span class="text-danger"> diseñar un futuro </span> y los gerentes están en constante búsqueda del desarrollo de planes, programas y proyectos, que sean acordes a la dinámica de los entornos, externos e internos de las empresas.</p>
                             `;
             $('#img-scroll').html(img_scroll);
@@ -1128,12 +1153,12 @@ function scroll_horizontal2(num){
             var img_scroll = `
             <img src="assets/img/img_ova/prospectiva_empresarial.png" data-toggle="modal" data-target="#prospectiva"  class="cursor" style="width:70%">
             <div style="position:absolute; top:-12px;">
-            <p>(clic sobre la imagen para ver mejor)</p>
+            <p>(Clic sobre la imagen para mejor visualización.)</p>
             </div>
             `;
             
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>2</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:21%;"><b>2</b></a>
                     <p class="pl-3 text-justify p-3">En la siguiente imagen se puede proyectar las posibilidades empresariales las cuales evidencian las  <span class="text-danger"> ventajas de su aplicación en el mundo empresarial.</span> </p>
                     `;
                 
@@ -1146,7 +1171,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/satellite.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>3</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:38%;"><b>3</b></a>
                     <p class="pl-3 text-justify p-3">La prospectiva induce a la identificación de necesidades o problemáticas de la población y de las empresas en la sociedad futura, donde las <span class="text-danger"> tecnologías logran tener un papel importante en satisfacer dichas necesidades, </span> los diferentes programas de investigación y desarrollo de nuevas tecnologías, en caso que no exista una tecnología emergente en el momento.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1157,7 +1182,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/future2.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>4</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:30%;"><b>4</b></a>
                     <p class="pl-3 text-justify">Las empresas no deben de contemplar el futuro como la prolongación del pasado, se debe de entender que los <span class="text-danger"> futuros son diversos y múltiples,  </span> para lo cual Godet afirma:  “El futuro no está escrito, está por hacer” y que es el momento de desarrollar actividades para la construcción de este.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1168,7 +1193,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/inversor.png" width="70%" style="position: relative; top: -13px;">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>5</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:30%;"><b>5</b></a>
                     <p class="pl-3 text-justify">La prospectiva empresarial se desarrolla implícitamente cuando la organización empieza a <span class="text-danger"> proyectar y buscar cuáles son los cambios en el sector, </span> cuál es la evolución de la cultura de consumo y cómo puede intervenir para lograr beneficios, mejorando su posición a  mediano y largo plazo.</p>
                     `;
             $('#img-scroll').html(img_scroll);
@@ -1179,7 +1204,7 @@ function scroll_horizontal2(num){
                     <img src="assets/img/img_ova/exito.png" width="70%">
                     `;
             var info_scroll = `
-                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"><b>6</b></a>
+                    <a class="btn bg-color-second text-white h4 rounded-circle p-3 menos-margin-l-50"style="width:38%;"><b>6</b></a>
                     <p class="pl-3 text-justify">Cuando hablamos de las ventajas o lo que busca la prospectiva organizacional, podemos concluir que esta busca proyectar de manera exponencial a la empresa <span class="text-danger"> generando proyectos que impacten</span> en todas sus áreas y permitan el crecimiento económico y financiero como el desarrollo del conocimiento, previniendo los futuros tropiezos que puedan generarse y la mejor manera de afrontarlos desde diferentes puntos de vista.</p>
                     `;
             $('#img-scroll').html(img_scroll);

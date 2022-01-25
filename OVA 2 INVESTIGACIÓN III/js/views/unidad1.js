@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     
     // console.log(tema);
 
@@ -30,6 +33,22 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         actualizarprogress();
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+1);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
 
 
@@ -122,6 +141,8 @@ function controlSlides(num){
         case 7:
             setMigaja("Unidades de aprendizaje","","");
             tema = 1;
+            $( ".ov-personaje").show();
+            $(".menu1").addClass('d-none');
             break;
             
         

@@ -399,7 +399,7 @@ position: relative;
   background: none;
   display: block;
   margin: 5px auto;
-  max-width: 90%;
+  max-width: 97%;
   position: relative;
   padding: 7px;
   
@@ -428,4 +428,14 @@ position: relative;
 .x-modal-text{
   display: block;
   margin: auto;
+}
+
+.circulo-naranja{
+  background-color: #FFC000;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 7px;
+  top: 2px;
 }

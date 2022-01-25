@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    paso = false;
     $('.menu1').removeClass('d-none');
     $('.menu1').addClass('c-show');
     $( ".zoomContainer" ).remove();
@@ -15,6 +16,22 @@ $( document ).ready(function() {
             speed: '500', // Transion animation speed
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+0);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
     slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
@@ -86,7 +103,6 @@ function controlSlides(num){
         
         case 1:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");
-            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos","Introducción a la Planeación estratégica");

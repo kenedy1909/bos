@@ -191,7 +191,7 @@ function init_recurso_1() {
     Ahorcado.prototype.dibujarPoste = function () {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
-        this.canvas_ahorcado.canvasArea.strokeStyle = "#f57921";
+        this.canvas_ahorcado.canvasArea.strokeStyle = "#AD123C";
         this.canvas_ahorcado.canvasArea.moveTo(150, 100);
         this.canvas_ahorcado.canvasArea.lineTo(150, 50);
         this.canvas_ahorcado.canvasArea.lineTo(400, 50);
@@ -367,7 +367,7 @@ function init_recurso_1() {
         if (!flag) {
             ahorcado.trazar();
             if (!ahorcado.vivo) {
-                $('.img_res').html('<img src="../img/img9/mal.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="../../../assets/img/img_ova/mal_naranja.png" style="max-width: 90%; margin-top: 4%;">');
                 $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
                 $('#texto-modal').html('Incorrecto, <span class="intentalo">Inténtalo nuevamente</span>');
                 $('#modal-ahorcado').addClass("intentar");
@@ -377,7 +377,7 @@ function init_recurso_1() {
         } else {
             ahorcado.dibujarTodo();
             if (this.gano()) {
-                $('.img_res').html('<img src="../img/img9/bien.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="../../../assets/img/img_ova/bien_naranja.png" style="max-width: 90%; margin-top: 4%;">');
                 $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
                 $('#texto-modal').html('Felicitaciones, Su puntaje es 100%.');
                 $('#modal-ahorcado').removeClass("intentar");

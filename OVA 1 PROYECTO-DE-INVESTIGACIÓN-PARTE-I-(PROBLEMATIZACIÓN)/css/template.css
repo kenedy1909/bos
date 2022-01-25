@@ -660,7 +660,7 @@ card flip*/
 }
 .font_10{
   font-size: 10px;
-}
+}  
 
 .font_11{
   font-size: 11px;
@@ -985,6 +985,19 @@ card flip*/
 .img-70{
   width: 70% !important;
 }
+
+.img-80{
+  width: 80% !important;
+}
+
+.img-85{
+  width: 85% !important;
+}
+
+.img-90{
+  width: 90% !important;
+}
+
 .img-100{
   width: 100%;
 }
@@ -1010,5 +1023,16 @@ card flip*/
 
 .w-50px { 
   width: 50px;
+}
+
+.borderDsh {
+  border: dashed 2px #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  width: 105%;
+  height: 105%;
+  border-radius: 25px;
+  margin-left: -2%;
+  margin-top: -2%;
 }
 

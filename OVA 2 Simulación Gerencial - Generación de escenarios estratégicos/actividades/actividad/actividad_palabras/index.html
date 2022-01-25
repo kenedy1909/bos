@@ -12,15 +12,15 @@
                 <div class="" style="width: 38%;display: inline-block;margin-top: -50px;">
                     <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
                       <div style="display: inline-block;width: 25%;"><img src="img/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
-                      <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
-                        <b class="" style="color: #791326;">ACTIVIDAD INTERACTIVA</b>
-                        <div style="height: 5px;background: #791326;"></div>
-                        <i><p class="text-muted">COMPLETAR ESPACIOS</p></i>
+                      <div class="text-center mt-4 ml-4" style="font-size: 20px;display: inline-block;width: 49%;height: 140px;position: relative;top: 25px;">
+                        <b class="" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
+                        <div style="height: 5px;background: #811111;"></div>
+                        <i><p class="text-muted" style="font-size: 15px;" >COMPLETAR ESPACIOS</p></i>
                       </div>
                     </div>
                 </div>
-                <div class="" style="display: inline-block;width: 60%;">
-                    <p class="info_actividad shadow" style="background: #791326;font-family: arial;font-size: 15px; color: #fff;">
+                <div class="mt-1" style="display: inline-block;width: 60%;position: relative;top: 12px;text-align: justify;">
+                    <p class="info_actividad shadow" style="background: #973446;font-family: arial;font-size: 15px; color: #fff;">
                         En cada una de las escenas seleccione la respuesta que corresponde dando clic en la flecha, al finalizar pulse la casilla "<b>Calificar</b>" para conocer su puntuación.
                     </p>
                 </div>
@@ -31,7 +31,7 @@
 		<div class="col-lg-12 row">
 			<div class="col-md-4">
 				<div class="enunciado">
-					<p class="mt-3" style="font-size: 15px; text-align: center; color: #000;"><b>Es la fase previa a la implementación estratégica</b></p>
+					<p class="mt-1" style="font-size: 18px; text-align: center; color: #000;"><b>Es la fase previa a la implementación estratégica</b></p>
 				</div>
 				<div class="seleccionable">
 					<label for="op_0"></label>
@@ -46,7 +46,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="enunciado">
-					<p class="mt-3" style="font-size: 15px; text-align: center; color: #000;"><b>Análisis de la situación externa e interna</b></p>
+					<p class="mt-3" style="font-size: 18px; text-align: center; color: #000;"><b>Análisis de la situación externa e interna</b></p>
 				</div>
 				<div class="seleccionable">
 					<label for="op_1"></label>
@@ -61,7 +61,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="enunciado">
-					<p style="font-size: 15px; text-align: center; color: #000;"><b>Identificación de las diferentes opciones estratégicas, análisis y evaluación</b></p>
+					<p style="font-size: 18px; text-align: center; color: #000;"><b>Identificación de las diferentes opciones estratégicas, análisis y evaluación</b></p>
 				</div>
 				<div class="seleccionable">
 					<label for="op_2"></label>
@@ -78,7 +78,7 @@
 		<div class="col-lg-12 row">
 			<div class="col-md-4 offset-md-2">
 				<div class="enunciado">
-					<p class="mt-3" style="font-size: 15px; text-align: center; color: #000;"><b>La formulación estratégica se estructura en</b></p>
+					<p class="mt-2" style="font-size: 18px; text-align: center; color: #000;"><b>La formulación estratégica se estructura en</b></p>
 				</div>
 				<div class="seleccionable">
 					<label for="op_3"></label>
@@ -93,7 +93,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="enunciado">
-					<p class="mt-2" style="font-size: 15px; text-align: center; color: #000;"><b>La encargada de identificar los medios para la ejecución exitosa</b></p>
+					<p class="" style="font-size: 18px; text-align: center; color: #000;"><b>La encargada de identificar los medios para la ejecución exitosa</b></p>
 				</div>
 				<div class="seleccionable">
 					<label for="op_4"></label>
@@ -109,14 +109,29 @@
 		</div>
 	</form>
 	<div style="text-align: center;margin-top: 20px;">
-	      <button onclick="calificar();" style="background: #540F23;color: white;font-size: 18px;border-radius: 10px; padding: 1em;" data-toggle="modal" data-target="#exampleModal">Calificar</button>
+	      <button onclick="calificar();" style="background: #811111;color: white;font-size: 18px;border-radius: 10px; padding: 1em;" data-toggle="modal" data-target="#exampleModal">Calificar</button>
 	</div>
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content tranparente" style="">
 	      <div style="" class="principal">
 	        <div style="" class="cabeza">
-	          
+				<div class="row">
+					<div class="col-lg-4">
+					</div>
+					<div class="col-lg-4 mt-2">
+					  
+					</div>
+					<div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+						<div class="divcerrar">
+							<button type="button" class="btn btn-cerrar" style="background-color: transparent; color: white;" data-dismiss="modal" aria-label="Close">
+							  <div class="m-0 p-0 x-modal">
+								<h4 class="text-white text-center x-modal-text"><b style="font-size: 31px; top: -7px;position: relative;">X</b></h2>
+							  </div>
+							</button>
+						</div>
+					</div>
+				  </div>
 	        </div>
 	        <div class="d-flex justify-content-center">
 	          <div style="" class="circulo_modal img_res p-1">
@@ -124,10 +139,10 @@
 	          </div>
 	        </div>
 	        <div class="ml-5 top-20px" >
-	          <div style="color: white;font-size: 15px;">
+	          <div class="mb-2" style="color: white;font-size: 20px;">
 	            Su puntaje es: <b><span class="puntaje"></span></b>
 	          </div>
-	          <div style="color: white;font-size: 15px;">
+	          <div style="color: white;font-size: 20px;">
 	            <p class="mensaje"></p>
 	          </div>
 	        </div>

@@ -264,15 +264,15 @@
 }
 
 .numerador{
-	height: 30px;
-	width: 30px;
-	border-radius: 50%;
-	background: #5355a7;
-	text-align: center;
-	padding-top: 5px;
-	position: relative;
-	top: 142px;
-	left: -13px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #5355a7;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    top: 110px;
+    left: 17px;
 }
 
 .titulofondo{
