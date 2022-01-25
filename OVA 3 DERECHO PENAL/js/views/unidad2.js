@@ -77,35 +77,43 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 16;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             break;
         case 4:
             
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             break;
         case 5:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             /*var videointro = document.getElementById('video_intro1');
             videointro.pause();*/
             break;
         case 6:
 
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             break;
         case 7:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             /*var videointro = document.getElementById('video_intro1');
             videointro.pause();*/
             
@@ -134,6 +142,7 @@ function controlSlides(num){
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
+            cambiarColorMenu(12);
             break;
         case 9:
             $(".i3").html('')    
@@ -159,9 +168,11 @@ function controlSlides(num){
               }(n));
             }  
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             // dragging = "";
             // diff = "";
             // newTop = "";
@@ -191,13 +202,16 @@ function controlSlides(num){
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             break;    
         case 12:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             scroll_set(9);
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             $(".i5").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
             var elementoPadre2 = document.querySelector(".inputDiv2.i6");
@@ -223,6 +237,7 @@ function controlSlides(num){
             break;    
         case 14:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             $(".i5").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i5");
             var elementoPadre2 = document.querySelector(".inputDiv2.i6");
@@ -270,9 +285,11 @@ function controlSlides(num){
               }(n));
             }  
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             break;    
         case 16:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
+            cambiarColorMenu(22);
             break;    
         default:
             break;
