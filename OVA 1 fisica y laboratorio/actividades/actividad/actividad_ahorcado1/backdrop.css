@@ -328,7 +328,7 @@ html{
 .card-container, .front, .back {
     width: 100%;
     height: auto;
-    border-radius: 22px;
+    border-radius: 40px;
     background: #006092;
 }
 .card-container {
@@ -363,7 +363,7 @@ html{
 .card .cover {
     height: 105px;
     overflow: hidden;
-    border-radius: 22px 22px 0 0;
+    border-radius: 40px 40px 0 0;
     background: #003442;
 }
 .modal-dialog {
