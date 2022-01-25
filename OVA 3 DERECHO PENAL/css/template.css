@@ -39,6 +39,10 @@ iframe{
     cursor: pointer;
 }
 
+.colorAMenu{
+  color: #ffc000!important;
+}
+
 .controles #next{
     right: -25px;
 }
