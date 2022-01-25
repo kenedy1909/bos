@@ -214,10 +214,10 @@ function calificar() {
     for (var i = 0; i < 6; i++) {
         res[i] = $("#op_" + i).val();
     }
-    var puntaje = 100;
+    var puntaje = 0;
     for (var i = 0; i < res.length; i++) {
-        if (res[i] == 'incorrecta') {
-            puntaje = puntaje - 33.3;
+        if (res[i] == 'correcta') {
+            puntaje = puntaje + 16.6;
 
         }
     }
@@ -237,7 +237,7 @@ function calificar() {
         $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;    margin-top: 10px;">');
         $('.mensaje').text("¡Puedes hacerlo mejor!");
         $('.puntaje').text(Math.round(puntaje) + "%");
-        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+        $('.btns_modal').html('<button style="font-size: 20px; color:#540F23;" id="add" class="btn" onclick="reiniciar();"><b>Volver a intentar</b></button>');
     }
 }
 
