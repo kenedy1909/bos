@@ -191,10 +191,10 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #ffd200;
+    background: white;
     border: none;
-    border-radius: 0;
-    color: #ad123c;
+    border-radius: 10px;
+    color: #006092;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -213,7 +213,7 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-    height: 150px;
+    height: 90px;
     width: 300px;
 }
 /* .calificacion .modal-body.exito{
@@ -249,10 +249,12 @@ html{
     font-weight: bold;
 }
 .calificacion .modal-body.exito .mensaje .puntaje{
-    color: #8eb936;
+    color: white;
+    font-weight: bold;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #ff6a6a;
+    color: white;
+    font-weight: bold;
 }
 
 @keyframes wobble {

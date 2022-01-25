@@ -23,6 +23,16 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+  //   $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+  //     slide();
+  //     // EditarLocation(getPos());
+  //     moveBarPorcentaje(stepIndex);
+  //     console.log(e);
+  //     switch(stepIndex) {
+  //         default:
+  //         // code block
+  //     }
+  // });
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
@@ -117,6 +127,7 @@ document.addEventListener("keydown",
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+          
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             // dragging = "";
             // diff = "";
@@ -135,6 +146,7 @@ function controlSlides(num){
             document.getElementById("prev").style.display="none";
             break;
         case 2:
+      
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
@@ -162,22 +174,28 @@ function controlSlides(num){
             document.getElementById("prev").style.display="block";
             break;
         case 3:
+          // $(".tab-content").removeClass("h-unidad1-5");
+          // $(".tab-content").removeClass("h-unidad1-7");
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 4:
+          // $(".tab-content").removeClass("h-unidad1-5");
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 5:
-            
+            // $(".tab-content").removeClass("h-unidad1-7");
+            // $(".tab-content").addClass("h-unidad1-5");
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 6:
+           $(".tab-content").removeClass("h-unidad1-5");
+           $(".tab-content").removeClass("h-unidad1-7");
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -185,12 +203,14 @@ function controlSlides(num){
             // tema = 1;
             break;
         case 7:
+      
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             
             break;
         case 8:
+         
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Primera Guerra Mundial");  
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";

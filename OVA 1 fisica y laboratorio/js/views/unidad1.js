@@ -1,6 +1,10 @@
 $( document ).ready(function() {
     // console.log(tema);
     $('.menu1').removeClass('d-none');
+    $('.menu1').addClass('c-show');
+    $('.tema1').addClass('team_activo');
+    $( ".ov-personaje").hide();
+
     $( ".zoomContainer" ).remove();
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
@@ -81,35 +85,53 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 2:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");   
             break;
         case 3:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 4:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 5:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 7:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 8:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 9:
+            $('.tema2').removeClass('team_activo');
+            $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 10:
+            $('.tema1').removeClass('team_activo');
+            $('.tema2').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Análisis vectorial");
             break;
         case 11:

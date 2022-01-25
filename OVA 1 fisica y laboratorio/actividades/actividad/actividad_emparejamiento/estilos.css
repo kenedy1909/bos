@@ -153,6 +153,9 @@
     display: list-item;
     text-align: left;
     margin: 0;
+    font-size: 15px;
+    height: 80px;
+    overflow: auto;
 }
 
 /*encabezado*/
@@ -242,7 +245,7 @@
 .divcerrar {
 	position: relative;
     top: -20px;
-    left: 94%;
+    left: 90%;
 }
 
 
@@ -264,8 +267,8 @@
 .card-container, .front, .back {
     width: 100%;
     height: auto;
-    border-radius: 22px;
-    background: #00465E;
+    border-radius: 40px;
+    background: #006092;
 }
 .card-container {
     -webkit-perspective: 800px;
@@ -299,7 +302,7 @@
 .card .cover {
     height: 105px;
     overflow: hidden;
-    border-radius: 22px 22px 0 0;
+    border-radius: 40px 40px 0 0;
     background: #003442;
 }
 .modal-dialog {
@@ -318,4 +321,27 @@
 .x-modal-text{
   display: block;
   margin: auto;
+}
+
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
