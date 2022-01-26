@@ -38,6 +38,18 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+
+    
     slide_predeterminado2();
     var knob = "";
     var bar = "";

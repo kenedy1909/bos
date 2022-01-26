@@ -32,6 +32,17 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+
     slide_predeterminado();
 
 
@@ -143,7 +154,7 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
-            $("#content-ova").load("base/unidades/unidad2.html");
+            // $("#content-ova").load("base/unidades/unidad2.html");
             tema = 7;
             break;
         case 1:
