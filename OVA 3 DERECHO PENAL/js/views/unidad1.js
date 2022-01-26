@@ -2111,7 +2111,7 @@ function selectorOficina(num) {
     $('.imgOficina6').removeClass('filterScale');
 
     var contenido = `
-                  <p class="text-black text-justify pr-3"> Lo que sí resulta relevante recordar, es que si en desarrollo de la conducta planeada, se presentan otras en las cuales el dirigente tenía ese conocimiento de la probabilidad sustancial de que esas otras conductas ocurrieran, será igualmente responsable de las mismas.</p>
+                  <p class="text-black text-justify pr-2"> Lo que sí resulta relevante recordar, es que si en desarrollo de la conducta planeada, se presentan otras en las cuales el dirigente tenía ese conocimiento de la probabilidad sustancial de que esas otras conductas ocurrieran, será igualmente responsable de las mismas.</p>
                     `;
     $('.contenedorOficina').html(contenido);
   }
