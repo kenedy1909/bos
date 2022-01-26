@@ -844,7 +844,7 @@ function scroll_horizontal2(num){
 function cajas(num){
   switch (parseInt(num)) {
       case 1:
-          var text = `<img src="assets/img/img_ova/Ruanda1.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda1.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav1').addClass('activa');
 
@@ -857,7 +857,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 2:
-          var text = `<img src="assets/img/img_ova/Ruanda2.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda2.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav2').addClass('activa');
 
@@ -870,7 +870,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 3:
-          var text = `<img src="assets/img/img_ova/Ruanda3.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda3.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav3').addClass('activa');
 
@@ -883,7 +883,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 4:
-          var text = `<img src="assets/img/img_ova/Ruanda4.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda4.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav4').addClass('activa');
 
