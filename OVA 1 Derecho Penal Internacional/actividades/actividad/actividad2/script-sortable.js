@@ -210,7 +210,7 @@ function calificarR1() {
         exitoR1 = false;
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
       $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;  background-color: #FFC000;border-radius: 50%;padding:2px; position:relative; top:6px;">');
-      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.mensaje').text("Inténtelo nuevamente.");
       $('.puntaje').text(parseInt(puntajeR1)+"%");
       $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }

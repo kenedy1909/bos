@@ -14,39 +14,39 @@
     <!-- partial:index.partial.html -->
     <div id="app" class="" @keyup.escape="selected = undefined">
         <div class="table-container" style="display:none;" v-show="true">
-            <div class="d-flex principal" style="padding: 20px;">
-                <div class="col-md-5 col-sm-5 d-flex" style="width: 45%;">
-                    <img src="./img/actividad_interactiva.png" class="img-activi">
+            <div class="row principal" style="padding: 20px;">
+                <div class="col-md-4 col-sm-4 d-flex">
+                    <img src="img/actividad_interactiva.png" class="img-activi">
                     <div>
-                        <div class="content-text-img-activi-2" style="width: 80%;">
+                        <div class="content-text-img-activi-2" style="width: 100%;">
                             <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                         </div>
-                        <p class="text-center" style="width: 75%;">CRUCIGRAMA</p>
+                        <p class="text-center" style="font-size: 14px;">CRUCIGRAMA</p>
                     </div>
                 </div>
-                <div class="col-md-7 col-sm-7 terciario" style="width: 65%;">
-                    <div class="info_actividad shadow" style="background: #F8D4DA;">
-                        <p style="color: #000;">Complete el crucigrama con palabras respectivas de acuerdo con las pistas brindadas.</p>
-                        <p style="color: #000;">Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.</p>
-                    </div>
+                <div class="col-md-8 col-sm-8 terciario">
+                    <p class="info_actividad shadow text-justify" style="font-size: 14px;">
+                        Complete el crucigrama con palabras respectivas de acuerdo con las pistas que se brindaran al oprimir cada numero. Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
+                    </p>
                 </div>
-            </div>
-            <div class="col-md-12 col-sm-12">
-                <p class="text-center p-4 p_black"><i>oprimir cada numero para ver una pista</i></p>
-                <p class="text-center p-4 p_black"><i><span>(digitar las palabras sin espacios, símbolos y mayúsculas)</span></i></p>
+                <div class="col-md-12 col-sm-12">
+                    <p class="text-center p-4 p_black">
+                        <i>Recuerda escribir todas las palabras en minúscula</i><br>
+                        <i>oprimir cada numero para ver una pista</i></p>
+                </div>
             </div>
             <!-- <div class="mensaje" v-if="mensaje !== undefined">
       <div class="content">{{mensaje}}</div>
-              <button @click="mensaje = undefined" class="btn btn-primary">OK</button>
-           </   div>  -->
-            <table>
+      <button @click="mensaje = undefined" class="btn btn-primary">OK</button>
+    </div>  -->
+            <table style="margin-top: -10%;">
                 <tr v-for="(row, y) in matrix" :key="y">
                     <td v-for="(cell, x) in row" :class="{empty: cell.empty, start: !!cell.start, selected: cell.words.includes(selected)}" @click="selectWord(cell.start)">
                         <label v-if="!!cell.start">{{cell.start}}</label> {{cell.words.some(i => completed[i]) ? cell.letter : ' '}}
                     </td>
                 </tr>
             </table>
-            <div v-if="selected !== undefined" style="text-align: center;">
+            <div v-if="selected !== undefined" style="text-align: center;margin: 25px 0px;">
                 <p class="pista" v-if="pista">
                     {{pista}}
                 </p>
@@ -54,24 +54,38 @@
                 <button @click="corregir" class="btn btn-primary">Colocar</button>
             </div>
             <hr>
-            <button class="btn" style="background: #540F23; color: #FFF;" @click="finalizar"><b>Calificar</b></button>
+            <p><em>Las repuestas no deben llevar caracteres especiales('',.,!), mayusculas ni espacios.</em></p>
+            <button class="btn btn-mostaza shadow btn-lg" @click="finalizar" style="background: #008f3e;
+    color: white;"><b>Calificar</b></button>
         </div>
         <h3 v-show="false">Cargando....</h3>
     </div>
 
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 20%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                    <div class="d-flex justify-content-center" style="justify-content: center;">
+                        <div style="" class="circulo_modal img_res">
+
+                        </div>
+                    </div>
+                    <div style="padding: 10px;margin-left: 10%;margin-top: -7%;">
+                        <div style="color: white;font-size: 19px;display: flex;">
+                            Su puntaje es:
+                            <p class="puntaje" style="font-size: 24px;font-weight: bold;margin-left: 9px;margin-top: -5px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 19px;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal mt-4" style="justify-content: center;">
+
+
+                    </div>
                 </div>
             </div>
         </div>

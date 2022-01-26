@@ -464,7 +464,7 @@
                             </div>
                         </div>
                         <div id="unidad1-7" class="tab-pane" role="tabpanel">
-                            <iframe src="actividades/actividad/opcion_correcta/index.html" frameborder="0"></iframe>
+                            <iframe src="actividades/actividad/opcion_correcta/index.html" frameborder="0" style="min-height: 710px;"></iframe>
                         </div>
                         <div id="unidad1-8" class="tab-pane" role="tabpanel">
                             <div class="row">
@@ -542,7 +542,7 @@
                             </div>
                         </div>
                         <div id="unidad1-9" class="tab-pane" role="tabpanel">
-                            <iframe src="actividades/actividad/actividad5/index.html" frameborder="0"></iframe>
+                            <iframe src="actividades/actividad/actividad5/index.html" frameborder="0" style="min-height: 1050px;"></iframe>
                         </div>
                         <div id="unidad1-10" class="tab-pane" role="tabpanel">
                             <div class="row">
@@ -558,7 +558,10 @@
                                     <p class="text-justify text-black">A continuación, se presenta un resumen de los órganos de gobierno los cuales se encuentran clasificados de la siguiente manera</p>
                                     <div class="row">
                                         <div class="col-9">
-                                            <img src="assets/img/img_ova/organos_degobierno.png" width="100%">
+                                            <div class="cursor" id="modal-nuevo" data-toggle="modal" data-target="#modalOrganos">
+                                                <img src="assets/img/img_ova/organos_degobierno.png" width="100%">
+                                                <p style="font-size: 14px; text-align: center;"><i>Haga clic en la imagen</i></p>
+                                            </div>
                                         </div>
                                         <div class="col-3 mt-3">
                                             <div class="border-10 bg-color-secondary text-white d-flex align-items-center px-3 pt-3 pb-5">
@@ -692,8 +695,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 d-flex align-items-center">
+                                <div class="col-6 mt-4 cursor" data-toggle="modal" data-target="#modalElectoral">
                                     <img src="assets/img/img_ova/cociente_electoral.png" width="100%">
+                                    <p style="font-size: 14px;text-align: center;"><i>Haga clic en la imagen</i></p>
                                 </div>
                             </div>
                             <div style="height: 50px;"></div>
@@ -1486,6 +1490,78 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalOrganos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front bg-blanco">
+                            <div class="cover cover1" style="overflow: visible; height: 65px!important;">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                    </div>
+                                    <div class="col-md-10 d-flex">
+                                        <h6 class="p_white m-auto"><b>Órganos del Gobierno</b></h6>
+                                    </div>
+                                    <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                        <div class="divcerrar">
+                                            <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content d-flex">
+                                <img class="m-auto" src="assets/img/img_ova/organos_degobierno.png" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalElectoral" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front bg-blanco">
+                            <div class="cover cover1" style="overflow: visible; height: 65px!important;">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                    </div>
+                                    <div class="col-md-10 d-flex">
+                                        <h6 class="p_white m-auto"><b>Cociente electoral</b></h6>
+                                    </div>
+                                    <div class="col-md-1 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                        <div class="divcerrar">
+                                            <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+                            <div class="m-0 p-0 x-modal">
+                              <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                            </div>
+                          </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content d-flex">
+                                <img src="assets/img/img_ova/cociente_electoral.png" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="modalEjemploCon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog-centered modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -1547,7 +1623,7 @@
                                 </div>
                             </div>
                             <div class="content d-flex custom-scrollbar7">
-                                <div class="custom-scrollbar__inner7">
+                                <div class="custom-scrollbar__inner7" style="overflow: hidden;">
                                     <ul>
                                         <li>Velar por la legalidad de la institución.</li>
                                         <li>Vigilar el correcto empleo de los recursos.</li>
@@ -1567,9 +1643,9 @@
                                         <li>Sancionar en primera instancia al Presidente de la Universidad, al Revisor Fiscal, al Rector, los Fundadores y a los miembros del Consejo Superior Universitario (art. 32, numeral 2).</li>
                                     </ul>
                                 </div>
-                                <div class="custom-scrollbar__bar7">
-                                    <div class="custom-scrollbar__knob7 cursor">
-                                        <p class="text-center linea_scroll7">-</p>
+                                <div class="custom-scrollbar__bar7" style="    background: var(--bg-color);">
+                                    <div class="custom-scrollbar__knob7 cursor" style="    background: var(--bg-color);">
+                                        <p class="text-center linea_scroll7" style="    color: white;">-</p>
                                     </div>
                                 </div>
                             </div>
@@ -1986,8 +2062,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class=" text-center">
-                                <img src="assets/img/img_ova/asociados_honorarios.png" width="100%">
+                            <div class=" text-center" style="height: 372px;">
+                                <img src="assets/img/img_ova/asociados_honorarios.png" width="100%" style="margin-top: 40px;">
                             </div>
                         </div>
                         <!-- end front panel -->

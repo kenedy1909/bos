@@ -445,3 +445,7 @@ function init_recurso_1() {
     });
 
 }
+
+function reiniciar(){
+    location.reload();
+}

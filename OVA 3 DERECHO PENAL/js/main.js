@@ -43,6 +43,33 @@ $( document ).ready(function() {
 
 });
 
+function cambiarColorMenu(enlace) {
+
+    $('.linkMenu11').removeClass('colorAMenu');
+    $('.linkMenu21').removeClass('colorAMenu');
+    $('.linkMenu31').removeClass('colorAMenu');
+    $('.linkMenu12').removeClass('colorAMenu');
+    $('.linkMenu22').removeClass('colorAMenu');
+
+    if (enlace == 11) {
+        $('.linkMenu11').addClass('colorAMenu');
+    }else if (enlace == 21) {
+        $('.linkMenu21').addClass('colorAMenu');
+    }else if (enlace == 31) {
+        $('.linkMenu31').addClass('colorAMenu');
+    }else if (enlace == 12) {
+        $('.linkMenu12').addClass('colorAMenu');
+    }else if (enlace == 22) {
+        $('.linkMenu22').addClass('colorAMenu');
+    }else{
+        $('.linkMenu11').removeClass('colorAMenu');
+        $('.linkMenu21').removeClass('colorAMenu');
+        $('.linkMenu31').removeClass('colorAMenu');
+        $('.linkMenu12').removeClass('colorAMenu');
+        $('.linkMenu22').removeClass('colorAMenu');
+    }
+}
+
 function modal_scroll4(){
     dragging = "";
     diff = "";
