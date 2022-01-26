@@ -120,7 +120,7 @@ function actualizarprogress(num){
     //     naveg = 23;
     // }
     // done = $(".done").length;
-    // if(unidad == 2){
+    // if(unidad == 2){ 
     //     done--;
     // }
     /*alert(naveg);

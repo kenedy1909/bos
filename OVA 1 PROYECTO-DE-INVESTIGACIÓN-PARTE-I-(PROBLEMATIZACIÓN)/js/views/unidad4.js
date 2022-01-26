@@ -2,6 +2,13 @@ $( document ).ready(function() {
     
     console.log(tema);
     /**/
+
+    $('.ov-personaje').addClass('d-none');
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
+    $(".menu4").removeClass('d-none');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -75,12 +82,13 @@ function controlSlides4(num){
         case 0:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             $("#content-ova").load("base/unidades/unidad3.html");
+            
             tema = 4;
             break;
         case 1:
           var pdf = `<div class="col-md-12">
             <p class="p_white size_20">
-            <a href="assets/PDF/Problematización.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Problematización.pdf </b> <em>ver</em></a>
+            <a href="assets/PDF/problematización.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Problematización.pdf </b> <em>ver</em></a>
             
             </p>
             </div>`;
@@ -100,6 +108,8 @@ function controlSlides4(num){
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            tema = 1;
+            $(".menu4").addClass('d-none');
             break;
         default:
             break;
@@ -127,7 +137,7 @@ function pantallas4_1(num){
                         <div class="col-md-10">
                           <div class="row">
                             <div class="fijadoimg" style=""><img src="assets/img/img_ova/notas-adhesivas.png" style="max-width: 100%;"></div>
-                            <div class="bannernota" style=""><p style="font-size: 13px; color: black; margin-left: 2%;">En términos evaluativos, quien lea los resultados de la investigación podrá decir si se alcanzaron o no esos objetivos y, además, si se abordó adecuadamente la pregunta que se formuló.  Haga clic en cada círculo para ver los ejemplos:</p></div>
+                            <div class="bannernota" style=""><p style="font-size: 13px; color: black; margin-left: 2%; text-align: justify;">En términos evaluativos, quien lea los resultados de la investigación podrá decir si se alcanzaron o no esos objetivos y, además, si se abordó adecuadamente la pregunta que se formuló.  <b>Haga clic en cada círculo para ver los ejemplos:</b></p></div>
                           </div>
                         </div>
                       </div>`;
