@@ -1451,7 +1451,7 @@ function teorias() {
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
                                 <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex" data-toggle="modal" data-target="#sumaV-modal">
-                                    <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80 zoom_img" data-teoria="5" data-zoom-image="assets/img/img_ova/grafica 7.png">
+                                    <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80" data-teoria="5" >
                                     
                                 </div>
                                 <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
