@@ -216,16 +216,22 @@ function controlSlides(num){
             
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");  
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal"); 
+            $('.menu1').removeClass('d-none'); 
+            $('.menu1').addClass('c-show'); 
             cambiarColorMenu(11);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(11);
             
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(11);
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
@@ -253,26 +259,36 @@ function controlSlides(num){
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(11);
             
             break;
         case 6:
           setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
+          $('.menu1').removeClass('d-none');
+          $('.menu1').addClass('c-show');
           cambiarColorMenu(11);
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(11);
             
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");  
+            setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad principal");
+            $('.menu1').removeClass('d-none');  
+            $('.menu1').addClass('c-show');  
             cambiarColorMenu(11);
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
@@ -299,12 +315,16 @@ function controlSlides(num){
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             // $("#content-ova").load("base/unidades/unidad2.html");
             // tema = 1;
@@ -312,26 +332,38 @@ function controlSlides(num){
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad Accesoria");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(21);
             // $(".i3").html('')    
             // var elementoPadre1 = document.querySelector(".inputDiv2.i3");
@@ -358,6 +390,8 @@ function controlSlides(num){
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(31);
             // $(".i5").html('')    
             // var elementoPadre1 = document.querySelector(".inputDiv2.i5");
@@ -384,18 +418,26 @@ function controlSlides(num){
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(31);
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(31);
             break;
         case 21:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(31);
             break;
         case 22:
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
+            $('.menu1').removeClass('d-none');
+            $('.menu1').addClass('c-show');
             cambiarColorMenu(31);
             break;
         case 23:
@@ -1325,7 +1367,7 @@ function scroll_horizontal2(num){
           $('.scroll-flecha-4').addClass('d-block');
           break;
       case 5:
-          var pantalla = `<img src="assets/img/img_ova/genocidio.png" width="250px" class="menos-marginT-100">`;
+          var pantalla = `<img src="assets/img/img_ova/Genocidio.png" width="250px" class="menos-marginT-100">`;
           $('#scroll-img2').html(pantalla);
           $('#scroll-text').html('<b>e) respecto del crimen de genocidio, haga una instigación directa y pública a que se cometa” (Estatuto de Roma, 1998).</b>');
           $('.scroll-flecha-0').removeClass('d-none');
@@ -1793,7 +1835,7 @@ function abrirActivi4() {
                     <p class="text-black text-justify"><b> Haga clic en el icono para descargar.</b></p>
                   </div>
                   <div class="w-100 text-center mt-2 px-5">
-                    <a href="assets/PDF/UNIDAD1/capituloVIFormasDeParticipacion.pdf" target="_blank"><img src="assets/img/img_ova/botonera-43.png" width="25%" class="cursor"></a>
+                    <a href="assets/PDF/UNIDAD1/capituloVIFormasDeParticipacion.pdf" target="_blank"><img src="assets/img/img_ova/Botonera-43.png" width="25%" class="cursor"></a>
                   </div>`;
 
   $('#contenidoActivi4').html(contenido);
@@ -2069,7 +2111,7 @@ function selectorOficina(num) {
     $('.imgOficina6').removeClass('filterScale');
 
     var contenido = `
-                  <p class="text-black text-justify"> Lo que sí resulta relevante recordar, es que si en desarrollo de la conducta planeada, se presentan otras en las cuales el dirigente tenía ese conocimiento de la probabilidad sustancial de que esas otras conductas ocurrieran, será igualmente responsable de las mismas.</p>
+                  <p class="text-black text-justify pr-3"> Lo que sí resulta relevante recordar, es que si en desarrollo de la conducta planeada, se presentan otras en las cuales el dirigente tenía ese conocimiento de la probabilidad sustancial de que esas otras conductas ocurrieran, será igualmente responsable de las mismas.</p>
                     `;
     $('.contenedorOficina').html(contenido);
   }

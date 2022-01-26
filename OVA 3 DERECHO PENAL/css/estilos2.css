@@ -345,11 +345,11 @@
 }
 
 .box-h-20rem{
-  min-height: 20rem;
+  min-height: 22rem;
 }
 
 .box-w-24rem{
-  max-width: 24rem;
+  max-width: 21rem;
 }
 
 .icon-c{
@@ -438,37 +438,40 @@
 
 #btn1ImgJuicio {
   top: -5%;
-    left: 35%;
+  left: 33%;
+  height: 115px;
 }
 
 #btn2ImgJuicio {
-  top: 5%;
-  left: 68%;
+  top: 4%;
+  left: 66%;
 }
 
 #btn3ImgJuicio {
-  top: 39%;
-  left: 70%;
+  top: 35%;
+  left: 68%;
 }
 
 #btn4ImgJuicio {
-  top: 74%;
-  left: 69%;
+  top: 69%;
+  left: 67%;
 }
 
 #btn5ImgJuicio {
-  top: 75%;
-  left: 34%;
+  top: 70%;
+  left: 33%;
 }
 
 #btn6ImgJuicio {
-  top: 71%;
-  left: 1%;
+  top: 54%;
+  left: 3%;
+  width: 110px;
 }
 
 #btn7ImgJuicio {
-  top: 38%;
-  left: -2%;
+  top: 35%;
+  left: 1.5%;
+  width: 100px;
 }
 
 #btn8ImgJuicio {
@@ -487,7 +490,7 @@
 }
 
 .w1060px{
-  width: 1060px;
+  width: 1000px;
 }
 
 .titulo-activity8{

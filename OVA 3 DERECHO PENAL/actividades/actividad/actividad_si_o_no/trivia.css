@@ -16,7 +16,7 @@ body, html {
 #quiz {
   margin-top: 20px; 
   background-color: #F2C7C4;
-  height: 390px;
+  height: 450px;
   padding-bottom: 60px;
   width: 100%;
   border-radius: 63px 63px 63px 63px;
@@ -195,5 +195,5 @@ body, html {
 }
 
 .h155{
-  height: 155px;
+  height: 170px;
 }

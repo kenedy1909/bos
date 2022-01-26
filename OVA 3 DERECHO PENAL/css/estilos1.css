@@ -1203,7 +1203,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 280px solid transparent;
+    border-top: 290px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1224,7 +1224,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 280px solid transparent;
+    border-top: 290px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1234,7 +1234,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 280px solid transparent;
+    border-top: 290px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1454,35 +1454,35 @@ input[type=range]::-ms-fill-upper {
 }
 
 .inputDiv2 input[type=range]::-webkit-slider-thumb {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   width: 35px;
   height: 35px;
-  border: 3px solid #FFC000;
+  border: 3px solid var(--bg-color);
   border-radius: 50%;
   margin-top: -10px;
   cursor: pointer;
 }
 
 .inputDiv2 input[type=range]::-moz-range-thumb {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   width: 35px;
   height: 35px;
-  border: 3px solid #FFC000;
+  border: 3px solid var(--bg-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .inputDiv2 input[type=range]::-ms-thumb {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   width: 35px;
   height: 35px;
-  border: 3px solid #FFC000;
+  border: 3px solid var(--bg-color);
   border-radius: 50%;
   cursor: pointer;
 }
 
 .inputDiv2 input[type=range]::-webkit-slider-runnable-track {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   height: 7px;
 }
 
@@ -1491,23 +1491,23 @@ input[type=range]::-ms-fill-upper {
 }
 
 .inputDiv2 input[type=range]::-moz-range-track {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   height: 7px;
 }
 
 .inputDiv2 input[type=range]::-ms-track {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   height: 7px;
   cursor: pointer;
 }
 
 .inputDiv2 input[type=range]::-ms-fill-lower {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   cursor: pointer;
 }
 
 .inputDiv2 input[type=range]::-ms-fill-upper {
-  background-color: #FFC000;
+  background-color: var(--bg-color);
   cursor: pointer;
 }
 
@@ -2217,7 +2217,7 @@ a.control_next {
 .flecha{
 	position: relative;
     left: 55%;
-    top: -332px;
+    top: -342px;
 }
 
 .menos-marginT-116 {
