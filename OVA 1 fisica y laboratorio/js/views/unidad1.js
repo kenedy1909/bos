@@ -1392,10 +1392,10 @@ function teorias() {
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -160px;">
                                 <div class="bg-blanco radius-2 my-auto mx-3 px-3 py-4">
-                                    <img src="assets/img/img_ova/imagen423.png" style="width:230px;">
+                                    <img src="assets/img/img_ova/imagen423.svg" style="width:230px;">
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3">
-                                    <img src="assets/img/img_ova/imagen322.png" style="width:230px;">
+                                    <img src="assets/img/img_ova/imagen322.svg" style="width:230px;">
                                 </div>
                             </div>
                         </div>
@@ -1408,11 +1408,11 @@ function teorias() {
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -75px;">
                                 <div class="bg-blanco radius-2 my-auto mx-3 p-3 d-flex">
-                                    <div class="img-40">
-                                        <img src="assets/img/img_ova/opinion.png" class="m-auto img-100" data-teoria="3">
+                                    <div class="img-20">
+                                        <img src="assets/img/img_ova/opinion.png" class="m-auto img-90" data-teoria="3">
                                     </div>
                                     <div class="d-flex">
-                                        <p class="m-auto p_black justificado"><img src="assets/img/img_ova/imagen522.png" style="width:100%"></p>
+                                        <p class="m-auto p_black justificado"><img src="assets/img/img_ova/imagen522.svg" style="width: 530px;"></p>
                                     </div>
                                 </div>
                             </div>
