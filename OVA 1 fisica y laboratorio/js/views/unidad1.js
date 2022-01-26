@@ -960,8 +960,8 @@ function aviones(num) {
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-2');
             $("#avion").attr('onclick','aviones(2)');
-            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
-            $(".avion-content").html(`<p class="p_black justificado">Algunas cantidades físicas, como el tiempo, la temperatura, la masa y la densidad se pueden describir completamente con un solo número y una unidad. No obstante, en física muchas otras cantidades importantes están asociadas con una dirección y no pueden describirse con un solo número.</p>`);
+            $("#avion").attr('style','width: 100%; height: 400px; position: relative;');
+            $(".avion-content").html(`<p class="p_black justificado" style="margin-top: 15%;">Algunas cantidades físicas, como el tiempo, la temperatura, la masa y la densidad se pueden describir completamente con un solo número y una unidad. No obstante, en física muchas otras cantidades importantes están asociadas con una dirección y no pueden describirse con un solo número.</p>`);
             break;
         case 2:
             $("#avion").removeClass('fondo-1');
@@ -969,8 +969,8 @@ function aviones(num) {
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-3');
             $("#avion").attr('onclick','aviones(3)');
-            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
-            $(".avion-content").html(`<p class="p_black justificado t54"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
+            $("#avion").attr('style','width: 100%; height: 400px; position: relative;');
+            $(".avion-content").html(`<p class="p_black justificado t54" style="margin-top: 10%;"><span class="p_white radius-2 bg-otro-azul-o"></b>Un ejemplo</b></span> sencillo es el desplazamiento de un avión: se debe indicar no solo qué tan rápidamente se desplaza, sino también en qué dirección. La rapidez del avión combinada con su dirección constituye una cantidad llamada velocidad.</p>`);
             break;
         case 3:
             $("#avion").removeClass('fondo-1');
@@ -978,8 +978,8 @@ function aviones(num) {
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-4');
             $("#avion").attr('onclick','aviones(4)');
-            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
-            $(".avion-content").html(`<p class="p_black justificado t54"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
+            $("#avion").attr('style','width: 100%; height: 400px; position: relative;');
+            $(".avion-content").html(`<p class="p_black justificado t54" style="margin-top: 10%;"><span class="p_white radius-2 bg-otro-azul-o"></b>Otro ejemplo</b></span>, es la fuerza, que en física es un empuje o un tirón aplicado a un cuerpo. Para describir plenamente una fuerza hay que indicar no solo su intensidad, sino también en qué dirección tira o empuja sobre un cuerpo.</p>`);
             break;
         case 4:
             $("#avion").removeClass('fondo-1');
@@ -987,9 +987,9 @@ function aviones(num) {
             $(".avion-content").addClass('mx-auto t145');
             $("#avion").addClass('fondo-5');
             $("#avion").attr('onclick','aviones(5)');
-            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
+            $("#avion").attr('style','width: 100%; height: 400px; position: relative;');
             $(".avion-content").html(`
-                                        <p class="p_black justificado">Cuando una cantidad física se describe con un solo número, se dice que es una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>escalar.</b></span> En cambio, una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>vectorial</b></span> incluye tanto una magnitud (la cual indica “qué tanto” o “qué tan grande”) como una dirección en el espacio. </p>
+                                        <p class="p_black justificado" style="margin-top: 6%;">Cuando una cantidad física se describe con un solo número, se dice que es una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>escalar.</b></span> En cambio, una cantidad <span class="p_white radius-2 bg-otro-azul-o"></b>vectorial</b></span> incluye tanto una magnitud (la cual indica “qué tanto” o “qué tan grande”) como una dirección en el espacio. </p>
                                         <br>
                                         <p class="p_black justificado">Los cálculos que combinan cantidades escalares usan las operaciones aritméticas ordinarias. Por ejemplo, 6 kg + 3 kg = 9 kg, o 4 * 2 s = 8 s. No obstante, la combinación de vectores requiere un conjunto diferente de operaciones.</p>
                                     `);
@@ -1000,7 +1000,7 @@ function aviones(num) {
             $(".avion-content").addClass('ml-4 ');
             $("#avion").addClass('fondo-6');
             $("#avion").attr('onclick','aviones(6)');
-            $("#avion").attr('style','width: 780px; height: 475px; position: relative; left: 6%;');
+            $("#avion").attr('style','width: 100%; height: 400px; position: relative;');
             $(".avion-content").html(`
                                         <div class="d-flex">
                                           <img src="assets/img/img_ova/profesor (3).png" class="img-35 m-auto">
@@ -1016,7 +1016,7 @@ function aviones(num) {
             $(".avion-content").addClass('m-auto');
             $("#avion").addClass('fondo-1');
             $("#avion").attr('onclick','aviones(1)');
-            $("#avion").attr('style','width: 700px; height: 475px; position: relative; left: 6%;');
+            $("#avion").attr('style','width: 100%; height: 400px; position: relative;');
             $(".avion-content").html(`
                                     <div class="d-flex">
                                       <img src="assets/img/img_ova/profesor (2).png" class="img-50 m-auto">
@@ -1025,6 +1025,56 @@ function aviones(num) {
                                     `);
             break;
         default:
+            break;
+    }
+}
+
+function avion(num) {
+    switch (parseInt(num)) {
+        case 1:
+            $('.avion_content').addClass('d-none');
+            $('.avionC1').removeClass('d-none');
+
+            $('.sin_tamaño').addClass('d-none');
+            $('.sint1').removeClass('d-none');
+            break;
+        case 2:
+            $('.avion_content').addClass('d-none');
+            $('.avionC2').removeClass('d-none');
+
+            $('.sin_tamaño').addClass('d-none');
+            $('.sint2').removeClass('d-none');
+            break;
+        case 3:
+            $('.avion_content').addClass('d-none');
+            $('.avionC3').removeClass('d-none');
+
+            $('.sin_tamaño').addClass('d-none');
+            $('.sint3').removeClass('d-none');
+            break;
+        case 4:
+            $('.avion_content').addClass('d-none');
+            $('.avionC4').removeClass('d-none');
+
+            $('.sin_tamaño').addClass('d-none');
+            $('.sint4').removeClass('d-none');
+            break;
+        case 5:
+            $('.avion_content').addClass('d-none');
+            $('.avionC5').removeClass('d-none');
+
+            $('.sin_tamaño').addClass('d-none');
+            $('.sint5').removeClass('d-none');
+            break;
+        case 6:
+            $('.avion_content').addClass('d-none');
+            $('.avionC6').removeClass('d-none');
+
+            $('.sin_tamaño').addClass('d-none');
+            $('.sint6').removeClass('d-none');
+            break;
+        default:
+            // statements_def
             break;
     }
 }
@@ -1204,7 +1254,7 @@ function ruta(num) {
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                  <div class="img-100 d-flex align-items-center" style="opacity: initial; display: flex;height: 330px;">
                                     <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Estos dos vectores se identifican como <b>A</b>x y <b>A</b>y; son los vectores componentes del vector y su suma vectorial es simbólicamente igual a:</p>
@@ -1229,7 +1279,7 @@ function ruta(num) {
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                  <div class="img-100 d-flex align-items-center" style="opacity: initial; display: flex;height: 330px;">
                                     <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Se puede calcular las componentes del vector si se conoce la magnitud <b>A</b> y su dirección. Se describirá la dirección de un vector por su ángulo en relación con una dirección de referencia, medido entre el eje x positivo y el vector.</p>
@@ -1282,7 +1332,7 @@ function ruta(num) {
                                       </div>
                                     </button>
                                   </div>
-                                  <div class="img-100" style="opacity: initial; display: flex;">
+                                  <div class="img-100 d-flex align-items-center" style="opacity: initial; display: flex;height: 330px;">
                                     <div class="m-auto">
                                       <div>
                                         <p class="p_black justificado">Primero note que el ángulo α no es el de referencia, sino que es 360° – α, es decir, 315°, con esto aclarado vemos que <b>D</b>x = D * cos 315° = 3 * (√2)⁄2 = 2,12 m, mientras que <b>D</b>y = D * sen 315° = 3 * (−√2)⁄2 = -2,12 m. </p>
