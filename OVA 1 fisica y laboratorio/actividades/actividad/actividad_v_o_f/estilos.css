@@ -29,6 +29,7 @@ table {
 
 .title_table {
     text-align: center;
+    font-size: 18px;
 }
 
 
@@ -87,6 +88,10 @@ table.tabla-actividad2 td,
     padding: 2px;
     vertical-align: middle;
     border-top: 1px solid #ddd;
+    font-size: 15px;
+}
+..table>thead>tr>th{
+    text-align: center !important;
 }
 
 svg.svg-radio-elegant {
