@@ -305,3 +305,38 @@ html{
     border: none;
     text-align: center;
 }
+
+.divcerrar {
+    position: relative;
+    top: -17px;
+    left: 92%;
+    }
+.x-modal{
+    background: #811111;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+}
+      
+.x-modal-text{
+    display: block;
+    margin: auto;
+}
+      
+.x-modal-text b {
+    font-size: 21px;
+    position: relative;
+    
+}
+
+
+.circulo-naranja{
+    border-radius: 50%;
+    background-color: #FFC000;
+    position: relative;
+    width: 125px;
+    top: 9px;
+    height: 125px;
+    left: 9px;
+}

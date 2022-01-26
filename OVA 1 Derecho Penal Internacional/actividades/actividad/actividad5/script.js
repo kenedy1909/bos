@@ -42,7 +42,8 @@ function calificarEmparejamiento(event) {
     var exito = false;
     var mensaje = "Puedes hacerlo mejor"
     if (puntaje == 100) {
-        $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:7px;">');
+        
+        $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;  border-radius: 50%; position:relative;top:6px;">');
         $('.puntaje').text(puntaje+"%");
         $('.mensaje').text("¡Felicitaciones!");
         $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 12px;">cerrar</button>');
@@ -51,7 +52,7 @@ function calificarEmparejamiento(event) {
     //   $('.mensaje').text("¡Felicitaciones!");
     //   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
-        $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:7px;">');
+        $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:6px;">');
         $('.puntaje').text(Math.round(puntaje)+"%");
         $('.mensaje').text("¡Felicitaciones!");
         $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 12px;">cerrar</button>');
@@ -61,7 +62,7 @@ function calificarEmparejamiento(event) {
     //   $('.mensaje').text("¡Felicitaciones!");
     //   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
     }else{
-        $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:7px;">');
+        $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;  border: 3px solid #FFC000;border-radius: 50%; background-color: #FFC000; position:relative;top:6px;">');
         $('.mensaje').text("¡Puedes hacerlo mejor!");
         $('.puntaje').text(Math.round(puntaje)+"%");
         $('.btns_modal').html('<button style="font-size: 16px;color: #420F0F;font-weight: bold;margin-top: 12px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
