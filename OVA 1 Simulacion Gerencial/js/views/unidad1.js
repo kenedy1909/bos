@@ -352,6 +352,7 @@ function controlSlides(num){
 
             break;
         case 18:
+            $(".tab-content").removeClass("h-actividad");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -362,6 +363,8 @@ function controlSlides(num){
 
             break;
         case 19:
+            $(".tab-content").addClass("h-actividad");
+            $(".tab-content").removeClass("h-final");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="block";
@@ -369,6 +372,7 @@ function controlSlides(num){
             $("#actividad18").removeAttr("src");
             break;
         case 20:
+            $(".tab-content").addClass("h-final");
             setMigaja("Unidades de aprendizaje","1. Enfoque prospectivo de la simulación","Matriz de análisis estructural");
             
             document.getElementById("next").style.display="none";
