@@ -15,7 +15,7 @@ var urlsite = urlsite_1[0];
 $(document).ready(function() {
     $("#content-ova").load("base/portada.html");
     $(".modal_scroll10").on('click', modal_scroll10);
-    $(".modal_scroll11").on('click', modal_scroll11);
+    $(".modal_scroll11").on('click', modal_scroll11); 
     init();
 
     $(function() {

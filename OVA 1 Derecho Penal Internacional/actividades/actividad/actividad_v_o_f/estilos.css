@@ -368,9 +368,3 @@ cursor: pointer;}
   border: 3px solid white;
 
 }
-
- .title_table:last-child{
-     position: relative;
-    left: -5px !important;
-    /* border: 1px solid red; */
-}

@@ -10,7 +10,7 @@ window.onload = function() {
         allQuestions = {
             'Es una de las funciones de la Sala de Fundadores…': ['Elegir Secretario de la Sala. Quien actúa también como Secretario de la Presidencia y de la Comisión Permanente.', 'Ejercer interinamente las funciones de los órganos colegiados de gobierno cuando no estuvieren funcionando.', 0],
 
-            '“Elaborar una terna que enviará al Consejo Superior Universitario para la elección del Rector de la Universidad”': ['Lo indica el artículo 19 para realizar una Reforma de los Estatutos.', 'Lo indica el artículo 6 para realizar una Reforma de los Estatutos.', 0],
+            '“Elaborar una terna que enviará al Consejo Superior Universitario para la elección del Rector de la Universidad”': ['Lo indica el artículo 6 para realizar una Reforma de los Estatutos.', 'Lo indica el artículo 19 para realizar una Reforma de los Estatutos.', 1],
 
             '“Los únicos que pueden apelar una decisión, en proceso disciplinario en UNAULA, son los profesores y los estudiantes.”': ['En una disolución de manera obligatoria', 'En una disolución de manera voluntaria', 0]
         };
@@ -77,14 +77,14 @@ window.onload = function() {
         // ------------------------ pregunta 2
         var texto3 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -53px;     left: 90px;">
-                    <img src="./img/ballot.png" style="width: 100%;">
+                    <img src="./img/certificate.png" style="width: 100%;">
                   </div>
                 </div>`;
 
         $('.img_option_1_0').prepend(texto3);
         var texto4 = `<div style="width: 100%; position: relative; display: flex;">
                   <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -53px;     left: 90px;;">
-                    <img src="./img/certificate.png" style="width: 100%;">
+                    <img src="./img/ballot.png" style="width: 100%;">
                   </div>
                 </div>`;
 
@@ -173,23 +173,23 @@ function calificar() {
         i++;
     });
 
-    var puntaje = 100;
+    var puntaje = 0;
     for (var i = 0; i < res.length; i++) {
-        if (res[i] == 'false') {
-            puntaje = puntaje - 33.3;
+        if (res[i] == 'correct') {
+            puntaje = puntaje + 33.33333333;
         }
     }
     /*alert(Math.round(puntaje));*/
     if (puntaje == 100) {
-        $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;">');
+        $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;margin-top:5%;">');
         $('.puntaje').text(puntaje + "%");
         $('.mensaje').text("¡Felicitaciones!");
-        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 0px;" onclick="reiniciar()">cerrar</button>');
     } else {
-        $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;">');
+        $('.img_res').html('<img src="./img/mal.png" style="max-width: 80%;margin-top:5%;">');
         $('.mensaje').text("¡Puedes hacerlo mejor!");
         $('.puntaje').text(Math.round(puntaje) + "%");
-        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 0px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
     }
 }
 

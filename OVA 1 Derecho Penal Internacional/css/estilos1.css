@@ -1236,3 +1236,9 @@ a.control_next {
 .h-unidad1-7{
 	height: 511px!important;
 }
+
+.h-center{
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+}

@@ -2,6 +2,10 @@ $( document ).ready(function() {
     tema = 1;
     console.log(tema);
 
+    $('.ov-personaje').addClass('d-none');
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+
     star_uni = 2;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
@@ -96,6 +100,7 @@ function controlSlides2(num){
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             $("#content-ova").load("base/unidades/unidad1.html");
+            
             tema = 5;
             break;
         case 1:
@@ -120,6 +125,10 @@ function controlSlides2(num){
         case 4:
          
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
+            $('.ov-personaje').removeClass('d-none');
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            
             
             tema = 1;
             break;

@@ -61,7 +61,7 @@
     /*cursor: url(../../img/img3/cursor-grab.cur), url(../../img/img3/cursor-grab.png), pointer;*/
     transition: transform .3s;
     box-sizing: content-box;
-    height: 125px;
+    height: 175px;
 }
 
 .componentesDestino .componente {
@@ -299,13 +299,13 @@ h2.tituloContenedorE {
 .opcion_circulo_text{
         color: #000000;
     width: 160px;
-    text-align: center;
-    font-size: 13px;
+    text-align: justify;
+    font-size: 15px;
 }
 
 .opcion_circulo_content{
     position: relative;
-    top: -66%;
+    top: -47%;
     left: 37px;
     height: 30px;
 }
