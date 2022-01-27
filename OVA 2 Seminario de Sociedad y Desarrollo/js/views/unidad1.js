@@ -19,6 +19,8 @@ $( document ).ready(function() {
         }
     });
 
+    
+
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -27,6 +29,22 @@ $( document ).ready(function() {
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+1);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
 
     $(".btn-p1").on("click", function() {
@@ -66,7 +84,7 @@ $( document ).ready(function() {
         $(".pantalla23-5").show(300)
     })
 
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+    setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
 
     var knob = "";
     var bar = "";
@@ -144,6 +162,7 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
@@ -155,6 +174,7 @@ function controlSlides(num){
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
@@ -166,33 +186,43 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");            
+            cambiarColorMenu(11);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             $(".i1").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv.i1");
             var elementoPadre2 = document.querySelector(".inputDiv.i2");
@@ -218,63 +248,83 @@ function controlSlides(num){
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 21:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 22:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 23:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            cambiarColorMenu(21);
             break;
         case 24:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            cambiarColorMenu(21);
             break;
         case 25:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            cambiarColorMenu(21);
             break;
         case 26:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            cambiarColorMenu(21);
             break;
         case 27:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            cambiarColorMenu(21);
             break;
         case 28:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
+            cambiarColorMenu(21);
             break;
         case 29:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 30:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
+            cambiarColorMenu(11);
             break;
         case 31:
             setMigaja("Unidades de aprendizaje","","");
+            
             break;
 
             

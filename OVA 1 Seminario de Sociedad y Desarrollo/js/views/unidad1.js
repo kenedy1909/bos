@@ -21,7 +21,7 @@ $(document).ready(function() {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
             easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
-        }
+        } 
     });
 
     $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
@@ -153,6 +153,7 @@ function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje", "1. La importancia de la formación humanística", "");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
@@ -165,7 +166,7 @@ function controlSlides(num) {
             $('#iconInicial').addClass('d-none');
             break;
         case 1:
-
+            cambiarColorMenu(11);
             setMigaja("Unidades de aprendizaje", "1. La importancia de la formación humanística", "");
             dragging = "";
             diff = "";
@@ -179,24 +180,29 @@ function controlSlides(num) {
             $('#iconInicial').removeClass('d-none');
             break;
         case 2:
+            cambiarColorMenu(11);
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             $('#iconInicial').removeClass('d-none');
             break;
         case 3:
+            cambiarColorMenu(11);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             $('#iconInicial').removeClass('d-none');
 
             break;
         case 4:
+            cambiarColorMenu(11);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             $('#iconInicial').removeClass('d-none');
             break;
         case 5:
+            cambiarColorMenu(11);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             $('#iconInicial').removeClass('d-none');
             break;
         case 6:
+            cambiarColorMenu(11);
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             $('#iconInicial').removeClass('d-none');
             break;

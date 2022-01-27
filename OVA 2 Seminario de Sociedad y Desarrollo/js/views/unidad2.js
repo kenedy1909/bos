@@ -31,6 +31,22 @@ $( document ).ready(function() {
         slide();
     });
 
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+31+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+
     $(".p4-1").on("hover", function () {
         // $(".p4-2").show(1000)
         alert("añldskad")
@@ -106,44 +122,54 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
+            cambiarColorMenu(12);
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
+            cambiarColorMenu(12);
             break;
         case 2:
 
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
+            cambiarColorMenu(12);
             break;
         case 3:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
+            cambiarColorMenu(12);
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
             
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","","");
@@ -162,16 +188,20 @@ function controlSlides(num){
             slider_4();
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","Promesas y crisis de la modernidad");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             slideCount = $('#slider-5 ul li').length;
             slideWidth = $('#slider-5 ul li').width();
             slideHeight = $('#slider-5 ul li').height();
@@ -179,16 +209,20 @@ function controlSlides(num){
             slider_5();
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","La postmodernidad");
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","El sujeto neoliberal");
+            cambiarColorMenu(22);
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            cambiarColorMenu(22);
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje","2. La sociedad moderna","");
+            cambiarColorMenu(22);
+            setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","");
             break;
         default:
             break;

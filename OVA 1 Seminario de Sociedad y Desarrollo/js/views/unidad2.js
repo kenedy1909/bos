@@ -124,20 +124,24 @@ function controlSlides(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -146,6 +150,7 @@ function controlSlides(num) {
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -155,36 +160,42 @@ function controlSlides(num) {
             break;
         case 5:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 6:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 7:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 8:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 9:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
+            cambiarColorMenu(12);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 10:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
+            cambiarColorMenu(22);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -192,6 +203,7 @@ function controlSlides(num) {
             break;
         case 11:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
+            cambiarColorMenu(22);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -205,6 +217,7 @@ function controlSlides(num) {
             break;
         case 12:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Promesas y crisis de la modernidad");
+            cambiarColorMenu(22);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -216,6 +229,7 @@ function controlSlides(num) {
             break;
         case 13:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            cambiarColorMenu(23);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -223,12 +237,14 @@ function controlSlides(num) {
             break;
         case 14:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            cambiarColorMenu(23);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 15:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            cambiarColorMenu(23);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -240,6 +256,7 @@ function controlSlides(num) {
             break;
         case 16:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            cambiarColorMenu(23);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -247,6 +264,7 @@ function controlSlides(num) {
             break;
         case 17:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
+            cambiarColorMenu(23);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
