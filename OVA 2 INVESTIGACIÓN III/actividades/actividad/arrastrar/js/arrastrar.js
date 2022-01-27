@@ -21,11 +21,9 @@ function calificar(){
 	var i = 0;
 	var i2 = 0;
 	var i3 = 0;
-	var i4 = 0;
 	var res1 = [];
 	var res2 = [];
 	var res3 = [];
-	var res4 = [];
 	$('.cont1>p').each(function (){
 	    res1[i] = $(this).attr('class');
 	    i++;
@@ -40,37 +38,28 @@ function calificar(){
 	    
 	    i3++;
 	});
-	$('.cont4>p').each(function (){
-	    res4[i4] = $(this).attr('class');
-	    
-	    i4++;
-	});
-	var puntaje = 100;
+	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'dos' || res1[i] == 'tres' || res1[i] == 'cuatro'){
-	    puntaje = puntaje - 25;
+	  if (res1[i] == 'dos'){
+		puntaje = puntaje + 33.33;
 	  }
 	}
 	for (var i = 0; i < res2.length; i++){
-	  if (res2[i] == 'uno' || res2[i] == 'tres' || res2[i] == 'cuatro'){
-	    puntaje = puntaje - 25;
+	  if (res2[i] == 'uno'){
+	    puntaje = puntaje + 33.33;
 	  }
 	}
 	for (var i = 0; i < res3.length; i++){
-	  if (res3[i] == 'uno' || res3[i] == 'dos' || res3[i] == 'cuatro'){
-	    puntaje = puntaje - 25;
+	  if (res3[i] == 'tres'){
+	    puntaje = puntaje + 33.33;
 	  }
 	}
-	for (var i = 0; i < res4.length; i++){
-	  if (res4[i] == 'uno' || res4[i] == 'dos' || res4[i] == 'tres'){
-	    puntaje = puntaje - 25;
-	  }
-	}
-	if (puntaje >= 75) {
+	puntaje = Math.round(puntaje);
+	if (puntaje == 100) {
 	    $('.img_res').html('<img src="../../../assets/img/img_ova/bien_naranja.png" style="max-width: 90%; margin-top: 4%;">'); 
 	    $('.puntaje').text(Math.round(puntaje)+"%");
 	    $('.mensaje').text("¡Felicitaciones!");
-	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+	    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;" onclick="reiniciar();">cerrar</button>');
 	}else{
 	    $('.img_res').html('<img src="../../../assets/img/img_ova/mal_naranja.png" style="max-width: 90%; margin-top: 4%;">');
 	    $('.mensaje').text("¡Puedes hacerlo mejor!");

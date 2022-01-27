@@ -468,7 +468,7 @@ p, button{
 }
 
 .fondo-6{
-  background-image: url(../assets/img/img_ova/nazi.jpg);
+  /* background-image: url(../assets/img/img_ova/nazi.jpg); */
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 400px;
@@ -477,7 +477,7 @@ p, button{
   left: 10px;
   position: relative;
   z-index: 1;
-  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
+  /* -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2)); */
 }
 
 .fondo-7{
@@ -604,4 +604,13 @@ p, button{
     position: relative;
     top: -32px;
     color: #FFFFFF;
+}
+
+.nazi{
+  width: 100%;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    border-radius: 30px;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
 }

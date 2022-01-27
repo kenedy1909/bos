@@ -46,6 +46,10 @@ iframe{
     cursor: pointer;
 }
 
+.colorAMenu{
+  color: #7f6000!important;
+}
+
 .controles #next{
     right: -25px;
 }
@@ -526,7 +530,7 @@ svg circle{
     transform: translate(78px, -14px);
 }
 
-/Claculo para simular el porcent/
+/* /Claculo para simular el porcent/ */
 svg circle:nth-child(2){
     stroke-dasharray: 200;
     stroke-dashoffset: 200;

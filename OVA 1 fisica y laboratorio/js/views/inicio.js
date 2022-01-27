@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $('.menu1').removeClass('c-show');
     setMigaja("Inicio","","");
     
     $( ".c-sidebar-nav > li").show();

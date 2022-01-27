@@ -11,6 +11,9 @@ $( document ).ready(function() {
         }
     });
 
+    $('.menu1').removeClass('d-none');
+    $('.menu1').removeClass('c-show');
+    $('.menu2').addClass('c-show');
     $('.menu2').removeClass('d-none');
     $( ".ov-personaje").hide();
     $('#smartwizard').smartWizard({
@@ -38,6 +41,16 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+    
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+    
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);
@@ -558,7 +571,7 @@ function scroll_horizontal2(num){
     switch (parseInt(num)) {
         case 0:
             var pantalla = `<p class="p_black text-justify size_13">La sala de cuestiones preliminares tiene definido en las
-                                reglas de procedimiento y prueba tanto el procedimiento previo a la audiencia (regla 121), así
+                                reglas de procedimiento y prueba tanto el procedimiento previo a la audiencia <span style="background-color: #801111; color: white;"> (regla 121),</span>, así
                                 como el desarrollo de la audiencia, diferenciando entre la audiencia de confirmación con
                                 presencia del acusado (regla 122), de la audiencia de confirmación en ausencia del acusado
                                 (regla 126), en este caso la ausencia se deriva de la renuncia del acusado en participar en la
@@ -586,11 +599,11 @@ function Input2(num) {
   /*<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">*/
   this.att = {};
   this.att.type = "range";
-  this.att.value = 1;
+  this.att.value = 0;
   this.att.min = 0;
   this.att.max = num;
   this.att.autocomplete = "off";
-  this.att.step = "1";
+  this.att.step = "0";
   this.input;
   this.output;
 

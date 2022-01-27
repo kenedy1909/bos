@@ -1203,7 +1203,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 280px solid transparent;
+    border-top: 290px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1224,7 +1224,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 280px solid transparent;
+    border-top: 290px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -1234,7 +1234,7 @@ p, button{
 	width: 0;
     height: 0;
     border-right: 30px solid transparent;
-    border-top: 280px solid transparent;
+    border-top: 290px solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 19px solid var(--bg-color);
     position: absolute;
@@ -2217,7 +2217,7 @@ a.control_next {
 .flecha{
 	position: relative;
     left: 55%;
-    top: -332px;
+    top: -342px;
 }
 
 .menos-marginT-116 {
