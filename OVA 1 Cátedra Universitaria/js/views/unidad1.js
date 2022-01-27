@@ -383,7 +383,7 @@ function funcionalidad_1(num) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 " id="funcionalidad_1_2" style="min-height: 490px!important;">
+                                            <div class="col-md-12 " id="funcionalidad_1_2" style="min-height: 440px!important;">
 
                                             </div>
                                             <div class="col-md-12 mx-auto mt-auto">
@@ -509,7 +509,7 @@ function scroll_horizontal(num){
                                             <p class="text-right p_black color-text-o">Universidad de Antioquia</p>
                                         </div>
                                     </div>
-                                    <div class="img-30 d-flex align-items-start flex-column">
+                                    <div class="img-30 my-auto">
                                         <img src="assets/img/img_ova/Imagen9.jpg" class="img-100 m-auto">
                                     </div>
                                 </div>
@@ -584,7 +584,7 @@ function scroll_horizontal(num){
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">El 28 de julio de 1966, la asamblea General de la Universidad de Medellín, decreta paro indefinido, en solidaridad con la Universidad de Antioquia y por los problemas propios (comunicado antes mencionado).</p>
                                     </div>
-                                    <div class="img-30">
+                                    <div class="img-30 my-auto">
                                         <img src="assets/img/img_ova/Imagen9.jpg" class="img-100 m-auto">
                                     </div>
                                 </div>
@@ -593,7 +593,7 @@ function scroll_horizontal(num){
         case 7:
             $('#funcionalidad_1_2').html(`
                                 <div class="bg-blanco white radius-2 p-3 row">
-                                    <div class="col-md-12 my-auto p-5">
+                                    <div class="col-md-12 my-auto p-2">
                                         <p class="justificado p_black">El 22 de mayo de 1966 sale el comunicado estudiantil el cual contiene los siguientes puntos relevantes que va a poder visualizar al dar clic sobre cada tarjeta:</p>
                                     </div>
                                     <div class="col-md-4 my-auto p-3">
@@ -655,7 +655,7 @@ function scroll_horizontal(num){
                                     <div class="img-70 my-auto px-3">
                                         <p class="justificado p_black">Creación de la Universidad de Medellín del comité pro-defensa como grupo de choque, aliado con la defensa civil y la fuerza pública en contra de los estudiantes huelguistas.</p>
                                     </div>
-                                    <div class="img-30">
+                                    <div class="img-30 my-auto">
                                         <img src="assets/img/img_ova/Imagen12.png" class="img-100 m-auto">
                                     </div>
                                 </div>
