@@ -187,7 +187,7 @@ QuestionsSameAnswers.prototype.score =  function () {
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
       $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
-    }else if (puntaje >= 75 && puntaje < 100) {
+    }else if (puntaje >= 75 && puntaje < 100) { 
         
       $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
       $('.puntaje').text(Math.round(puntaje)+"%");
