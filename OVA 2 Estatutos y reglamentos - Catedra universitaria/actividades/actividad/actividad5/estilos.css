@@ -215,8 +215,8 @@
 }
 
 .imagen {
-    width: 116px;
-    height: 116px;
+    width: 110px;
+    height: 110px;
     display: inline-block;
 }
 
@@ -234,6 +234,8 @@
 
 .linea_blue {
     height: 5px;
+    margin-left: -12px;
+    width: 151px;
     background: #540F23;
 }
 
