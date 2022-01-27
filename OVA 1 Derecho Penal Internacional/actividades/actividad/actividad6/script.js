@@ -393,7 +393,7 @@ function init_recurso_1() {
                 });*/
                 var puntaje = 0;
                 $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
-                $('.mensaje').text("Inténtalo nuevamente.");
+                $('.mensaje').text("Inténtelo nuevamente.");
                 $('.puntaje').text(Math.round(puntaje)+"%");
                 $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
                 
