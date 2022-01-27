@@ -25,7 +25,7 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        actualizarprogress(); 
 
     });
     

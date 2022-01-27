@@ -278,11 +278,13 @@ function controlSlides(num){
             document.getElementById("prev").style.display="block";
             break;
         case 16:
+          
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 17:
+           $(".menu1").addClass('d-none');
             setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
@@ -842,7 +844,7 @@ function scroll_horizontal2(num){
 function cajas(num){
   switch (parseInt(num)) {
       case 1:
-          var text = `<img src="assets/img/img_ova/Ruanda-1.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda1.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav1').addClass('activa');
 
@@ -855,7 +857,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 2:
-          var text = `<img src="assets/img/img_ova/Ruanda-2.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda2.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav2').addClass('activa');
 
@@ -868,7 +870,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 3:
-          var text = `<img src="assets/img/img_ova/Ruanda-3.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda3.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav3').addClass('activa');
 
@@ -881,7 +883,7 @@ function cajas(num){
           $('#infografia').html(text);
           break;
       case 4:
-          var text = `<img src="assets/img/img_ova/Ruanda-3.png" class="m-auto img-100">`;
+          var text = `<img src="assets/img/img_ova/ruanda4.png" class="m-auto img-100">`;
           $('.avance_blanco').removeClass('activa');            
           $('.nav4').addClass('activa');
 

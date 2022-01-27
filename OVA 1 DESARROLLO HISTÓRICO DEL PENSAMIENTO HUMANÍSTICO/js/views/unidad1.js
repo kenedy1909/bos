@@ -33,6 +33,16 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+    
     setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
     slide_predeterminado();
 
@@ -84,6 +94,7 @@ function controlSlides(num){
 
         case 1:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
@@ -95,9 +106,11 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo 2", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
 
             break;
         case 4:
@@ -106,13 +119,16 @@ function controlSlides(num){
 
                         });
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             inicio();
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 7:
             /*dragging = "";
@@ -124,11 +140,13 @@ function controlSlides(num){
             container = document.querySelector('.custom-scrollbar__inner19');
             scroll();*/
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 8:
             var contenido = `<p class="color-text">Clic en el ícono para visualizar información</p>`;
             $('.imprime_heare').html(contenido);
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 9:
             $('.p_9c').html('<p>Clic en cada círculo para visualizar la información</p>');
@@ -136,9 +154,11 @@ function controlSlides(num){
 
                 });
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 11:
             sumaslide++;
@@ -210,6 +230,7 @@ function controlSlides(num){
 
 
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 12:
             sumaslide2++;
@@ -298,6 +319,7 @@ function controlSlides(num){
             console.log("contador " +num)
             // carruselimagenes();
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo ", "¿Qué es el humanismo?");
+            cambiarColorMenu(11);
             break;
         case 13:
             $('.wite_ban_13').css({ "background": "transparent"
@@ -329,15 +351,18 @@ function controlSlides(num){
                 $(".p2").addClass('d-none'); $(".p1").addClass('d-none');
             });
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             break;
         case 14:
 
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             break;
         case 15:
             cambiatargeta(3);
             cambiatargeta2(3);
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             var slideCount2 = $('#slider4 ul li').length;
             var slideWidth2 = $('#slider4 ul li').width();
             var slideHeight2 = $('#slider4 ul li').height();
@@ -383,21 +408,26 @@ function controlSlides(num){
             $('.pantallas16').html('');
             $('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             /*$("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;*/
             break;
         case 17:
 
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             break;
         case 19:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             break;
         case 20:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
+            cambiarColorMenu(21);
             tema = 1;
             break;
 

@@ -2,6 +2,10 @@ $( document ).ready(function() {
     tema = 1;
     console.log(tema);
     /**/
+    $('.ov-personaje').addClass('d-none');
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
 
     
     star_uni = 3;
@@ -82,6 +86,7 @@ function controlSlides3(num){
         case 0:
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             $("#content-ova").load("base/unidades/unidad2.html");
+            
             tema = 3;
             break;
         case 1:
@@ -100,21 +105,26 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
-            break;
         case 3:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             
             break;
         case 4:
-          mostrarPersonaje();
+          
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
-            
+            break;
         case 5:
-            setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
-            tema=1;
-            break; 
+          setMigaja("Unidades de aprendizaje");
+          
+          $('.ov-personaje').removeClass('d-none');
+              $(".menu1").addClass('d-none');
+              $(".menu2").addClass('d-none');
+              $(".menu3").addClass('d-none');
 
+              tema=1;
+            break; 
+        
         default:
             break;
     }

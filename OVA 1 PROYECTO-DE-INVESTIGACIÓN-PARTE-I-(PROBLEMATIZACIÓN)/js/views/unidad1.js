@@ -2,6 +2,7 @@ $( document ).ready(function() {
     
     console.log(tema);
     $('.ov-personaje').addClass('d-none');
+    $(".menu1").removeClass('d-none');
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
@@ -24,12 +25,14 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
+        actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+        actualizarprogress();
     }); 
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
@@ -74,7 +77,6 @@ function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     console.log(stepIndex);
     controlSlides(stepIndex+0);
-    actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -105,7 +107,7 @@ function controlSlides(num){
             container = document.querySelector('.custom-scrollbar__inner');
             /*scroll();*/
             var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
+                          <p class="p_white size_20" style= "margin-left: -20%;>
                               <a href="assets/PDF/El_proceso_escolar_o_la_muerte_a_la_propensióna_investigar.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b> El proceso escolar o la muerte a la propensión a investigar.pdf </b>  <em>ver</em> </a>
                               
                           </p>
@@ -123,7 +125,7 @@ function controlSlides(num){
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             var pdf = `<div class="col-md-12">
-                          <p class="p_white size_20">
+                          <p class="p_white size_20" style= "margin-left: -20%;>
                           <a href="assets/PDF/El_proceso_escolar_o_la_muerte_a_la_propensióna_investigar.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b> El proceso escolar o la muerte a la propensión a investigar.pdf </b>  <em>ver</em> </a>
                           </p>
                         </div>`;
@@ -150,8 +152,11 @@ function controlSlides(num){
            mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             tema = 1;
+            $('.ov-personaje').removeClass('d-none');
+            $(".menu1").addClass('d-none');
+            
             break;
-      
+
         default:
             break;
     }
