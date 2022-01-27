@@ -2,7 +2,10 @@ $( document ).ready(function() {
 
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
-    
+    $(".menu1").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
     // console.log(tema);
 
     $('#smartwizard').smartWizard({
@@ -121,21 +124,27 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","");
+            cambiarColorMenu(11);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","El marco teórico conceptual");            
+            cambiarColorMenu(11);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Comprensión del marco teórico");
+            cambiarColorMenu(21);
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Inicio del marco teórico referencial");
+            cambiarColorMenu(31);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
+            cambiarColorMenu(41);
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
+            cambiarColorMenu(41);
             
             break;
         case 7:

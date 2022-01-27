@@ -4,6 +4,11 @@ $( document ).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
+
+    $(".menu3").addClass('c-show');
+    $(".menu1").removeClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
     
     
     
@@ -155,15 +160,19 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Tipos de recolección de información");
+            cambiarColorMenu(13);
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Instrumentos de recolección de la información");
+            cambiarColorMenu(23);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Instrumentos de recolección de la información");
+            cambiarColorMenu(23);
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación","");
+            setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Instrumentos de recolección de la información");
+            cambiarColorMenu(23);
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","","");

@@ -5,6 +5,11 @@ $( document ).ready(function() {
     $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
     $(".menu4").removeClass('d-none');
+
+    $(".menu4").addClass('c-show');
+    $(".menu1").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu2").removeClass('c-show');
     
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -100,12 +105,15 @@ function controlSlides(num){
                       </p>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
+            cambiarColorMenu(14);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
+            cambiarColorMenu(14);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
+            cambiarColorMenu(14);
             $("#content").html('');
             $("#img_cont").html('');
             break;

@@ -21,11 +21,12 @@
     cursor: pointer;
 } 
 .interno{
-    min-height: 170px;
+	min-height: 170px;
     border-radius: 50px;
     padding: 50px 10px 10px 10px;
+    display: flex;
 }
-#dragtarget1{
+#dragtarget1, #dragtarget2, #dragtarget3, #dragtarget4, #dragtarget5, #dragtarget6, #dragtarget7{
     cursor: pointer;
     background: #F7E448;
     color: black;
@@ -37,51 +38,47 @@
     box-shadow: 3px 3px 7px -3px black;
     margin-top: 45px;
 }
-#dragtarget2{
+/*#dragtarget2{
     cursor: pointer;
-    background: #F7E448;
+    background: var(--bg-second-2);
     color: black;
-    /* height: 30px; */
-    width: 100%;
-    font-size: 13px;
-    padding: 15px;
+    height: 60px;
+    width: 170px;
     border-radius: 20px;
-    box-shadow: 3px 3px 7px -3px black;
-    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
 }
 #dragtarget3{
     cursor: pointer;
-    background: #F7E448;
+    background: var(--bg-second-2);
     color: black;
-    /* height: 30px; */
-    width: 100%;
-    font-size: 13px;
-    padding: 15px;
+    height: 60px;
+    width: 170px;
     border-radius: 20px;
-    box-shadow: 3px 3px 7px -3px black;
-    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
 }
 #dragtarget4{
     cursor: pointer;
-    background: #F7E448;
+    background: var(--bg-second-2);
     color: black;
-    /* height: 30px; */
-    width: 90%;
-    padding: 15px;
+    height: 60px;
+    width: 170px;
     border-radius: 20px;
-    box-shadow: 3px 3px 7px -3px black;
-    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 15px;
 }
 #dragtarget5{
     cursor: pointer;
-    background: #F7E448;
+    background: var(--bg-second-2);
     color: black;
-    /* height: 30px; */
-    width: 90%;
-    padding: 15px;
+    height: 60px;
+    width: 170px;
     border-radius: 20px;
-    box-shadow: 3px 3px 7px -3px black;
-    margin-top: 45px;
+    font-weight: bold;
+    padding-top: 15px;
 }
 #dragtarget6{
     cursor: pointer;
@@ -94,7 +91,7 @@
 }
 #dragtarget9{
     cursor: pointer;
-}
+}*/
 .img_cont{
 	max-width: 70%;
 }
@@ -110,17 +107,17 @@
 }
 
 .principal{
-	height: 400px;
-	border-radius: 40px;
-	background: #b02477;
+  height: 285px;
+  border-radius: 40px;
+  background: #ffffff;
 }
 
 .cabeza{
-	background: #8E1D66;
-	height: 100px;
-	border-radius: 40px 40px 0px 0px;
+  background: var(--bg-color);
+  height: 70px;
+  border-radius: 40px 40px 0px 0px;
 }
-.circulo_modal{
+/*.circulo_modal{
 	height: 125px;
 	width: 125px;
 	background: gray;
@@ -128,6 +125,16 @@
 	position: relative;
 	top: -60px;
 	text-align: center;
+}*/
+.circulo_modal{
+  height: 125px;
+  width: 125px;
+  /*background: white;
+  border-radius: 50%;
+  border: solid 5px black;*/
+  position: relative;
+  top: 15px;
+  text-align: center;
 }
 
 .boton_inc{
@@ -146,4 +153,34 @@
     padding-top: 15px;
     position: relative;
     top: 60px;
+}
+.btnsModal{
+    background: var(--bg-color-dark);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
