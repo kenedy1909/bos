@@ -1,5 +1,8 @@
 $( document ).ready(function() {
-    setMigaja("Unidades de aprendizaje","","");
+    if (paso) {
+        setMigaja("Unidades de aprendizaje","","");
+    }
+    // setMigaja("Unidades de aprendizaje","","");
     flat = $("#flat").flipster({
         style: 'flat',
         spacing: -0.25,

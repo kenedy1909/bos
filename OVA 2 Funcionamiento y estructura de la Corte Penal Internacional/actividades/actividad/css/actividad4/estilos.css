@@ -26,13 +26,15 @@
     display: table;
     background: transparent;
     height: 50px;
-    width: 125%;
+    width: 169%;
     position: relative;
     border: 2px dashed #ad123c;
     margin: 10px 0px 50px 0px;
     z-index: 1006;
     border-radius: 20px;
     background-color: yellow;
+    position: relative;
+    left: -26px;
 }
 
 #actividad-1 ul#grupoA li.active:after {

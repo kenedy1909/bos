@@ -1951,3 +1951,14 @@ a.control_next {
 .color_nota {
     background: #4472C4;
 }
+
+.indicacion{
+    padding: 0px 80px;
+}
+
+@media only screen and (min-width:1300px)
+{
+    .indicacion{
+        padding: 0px 113px;
+    }
+}

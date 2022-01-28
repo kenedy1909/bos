@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    paso = false;
+    $('.menu1').removeClass('d-none');
+    $('.menu1').addClass('c-show');
+    
+    // $('.menu2').removeClass('d-none');
+    $( ".ov-personaje").hide();
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -102,7 +108,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "Estructura de la Corte Penal Internacional");
+            setMigaja("Unidades de aprendizaje","1. Estatuto de Roma ", "");
             dragging = "";
             diff = "";
             newTop = "";
