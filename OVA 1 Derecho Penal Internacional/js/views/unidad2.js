@@ -148,7 +148,7 @@ function controlSlides(num){
             document.getElementById("prev").style.display="block";
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","","");
             
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
