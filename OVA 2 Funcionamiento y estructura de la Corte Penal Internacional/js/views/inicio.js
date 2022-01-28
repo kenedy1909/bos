@@ -1,6 +1,11 @@
 $( document ).ready(function() {
+  $('.menu1').addClass('d-none');
+  $('.menu2').addClass('d-none');
     setMigaja("Inicio","","");
-    $( ".ov-personaje").hide();
+    // $( ".ov-personaje").hide();
+    // $( ".c-sidebar-nav > li").show();
+    // $( ".c-sidebar-nav > .ov-inicio").show();
+    $( ".ov-personaje").show();
     $( ".c-sidebar-nav > li").show();
     $( ".c-sidebar-nav > .ov-inicio").show();
     var knob = "";

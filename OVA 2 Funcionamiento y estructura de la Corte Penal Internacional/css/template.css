@@ -21,10 +21,17 @@ iframe{
 .justificado{
   text-align: justify;
 }
+.divcerrarLibro{
+  position: relative;
+  top: 34px;
+  left: -63px;
+  z-index: 1;
+}
 .divcerrar{
   position: relative;
   top: -25px;
   left: 20px;
+  
 }
 .img_closeds{
   width: 60px;

@@ -1,5 +1,6 @@
 var scorm = pipwerks.SCORM;
 var tema = 0;
+var star_uni = 0;
 var active = 0;
 let figura = document.getElementById("ctrflecha");
 if (typeof parent.scormplayerdata == 'undefined') {

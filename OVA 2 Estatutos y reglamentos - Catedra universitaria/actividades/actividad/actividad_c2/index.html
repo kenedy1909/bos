@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="es" <h ead>
-<meta charset="UTF-8">
-<title>CodePen - Crucigrama</title>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./backdrop.css">
-<link rel="stylesheet" href="../css/bootstrap.min.css">
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Crucigrama</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./backdrop.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
     <!-- partial:index.partial.html -->
     <div id="app" class="" @keyup.escape="selected = undefined">
         <div class="table-container" style="display:none;" v-show="true">
@@ -26,12 +27,12 @@
                 </div>
                 <div class="col-md-8 col-sm-8 terciario">
                     <p class="info_actividad shadow text-justify" style="font-size: 14px;">
-                        Complete el crucigrama con palabras respectivas de acuerdo con las pistas que se brindaran al oprimir cada numero. Al finalizar presione la opción "<b>Calificar</b>" para obtener el puntaje de esta actividad.
+                        Complete el crucigrama con palabras respectivas de acuerdo con las pistas brindadas. Al finalizar presione la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
                     </p>
                 </div>
                 <div class="col-md-12 col-sm-12">
                     <p class="text-center p-4 p_black">
-                        <i>Recuerda escribir todas las palabras en minúscula</i><br>
+                        <i>Recuerda escribir todas las palabras en minúscula,no utilizar espacios o caracteres especiales ( ´ , * )</i><br>
                         <i>oprimir cada numero para ver una pista</i></p>
                 </div>
             </div>
@@ -39,50 +40,55 @@
       <div class="content">{{mensaje}}</div>
       <button @click="mensaje = undefined" class="btn btn-primary">OK</button>
     </div>  -->
-            <table style="margin-top: -10%;">
+            <table>
                 <tr v-for="(row, y) in matrix" :key="y">
                     <td v-for="(cell, x) in row" :class="{empty: cell.empty, start: !!cell.start, selected: cell.words.includes(selected)}" @click="selectWord(cell.start)">
                         <label v-if="!!cell.start">{{cell.start}}</label> {{cell.words.some(i => completed[i]) ? cell.letter : ' '}}
                     </td>
                 </tr>
             </table>
-            <div v-if="selected !== undefined" style="text-align: center;margin: 25px 0px;">
-                <p class="pista" v-if="pista">
+            <div v-if="selected !== undefined" style="text-align: center;height: 134px;">
+                <p class="pista" v-if="pista" style="height: 90px;padding-top: 19px;">
                     {{pista}}
                 </p>
                 <input v-model="answer" ref="input" @keyup.enter="corregir" />
-                <button @click="corregir" class="btn btn-primary">Colocar</button>
+                <button @click="corregir" class="btn" style="color: white; background: #6F1D46;">Colocar</button>
             </div>
-            <hr>
-            <p><em>Las repuestas no deben llevar caracteres especiales('',.,!), mayusculas ni espacios.</em></p>
-            <button class="btn btn-mostaza shadow btn-lg" @click="finalizar" style="background: #008f3e;
-    color: white;"><b>Calificar</b></button>
+            <div style="position: fixed;top: 84%;width: 60%;">
+                <hr>
+                <div class="text-center">
+                    <button class="btn intento" id="calificar" style="color: white; background: #847770;    border-radius: 30px;
+        width: 140px;" @click="finalizar">Calificar</button>
+                </div>
+
+            </div>
+
         </div>
         <h3 v-show="false">Cargando....</h3>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="margin-top: 20%;">
-            <div class="modal-content tranparente" style="">
-                <div style="" class="principal_modal">
-                    <div style="" class="cabeza">
+    <div class="modal fade" id="modal-ahorcado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="width: 70% !important;">
+            <div class="modal-content" style="background-color: transparent;border-radius: 50px;margin-top: 250px;">
+                <div class="principal_modal">
+                    <div class="cabeza">
 
                     </div>
-                    <div class="d-flex justify-content-center" style="justify-content: center;">
-                        <div style="" class="circulo_modal img_res">
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div class="circulo_modal img_res">
 
                         </div>
                     </div>
-                    <div style="padding: 10px;margin-left: 10%;margin-top: -7%;">
-                        <div style="color: white;font-size: 19px;display: flex;">
+                    <div style="padding: 8px; margin-left: 5%;margin-top: 25px;">
+                        <div style="color: white;font-size: 18px;display: flex;">
                             Su puntaje es:
-                            <p class="puntaje" style="font-size: 24px;font-weight: bold;margin-left: 9px;margin-top: -5px;"></p>
+                            <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
                         </div>
-                        <div style="color: white;font-size: 19px;">
+                        <div style="color: white;font-size: 18px; padding-bottom: 5%;">
                             <p class="mensaje" style="text-align: left;"></p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center btns_modal mt-4" style="justify-content: center;">
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
 
 
                     </div>
@@ -90,16 +96,51 @@
             </div>
         </div>
     </div>
-    <!-- partial -->
-    <scrip src='https://unpkg.com/vue'>
-        </script>
-        <script src="../js/jquery.min.js"></script>
-        <scrit src="../js/bootstrap.min.js">
-            </script>
-            <scrip src="../js/actividades.js">
-                </script>
-                <script src="./script.js"></script>
 
+    <div class="modal fade" id="correctas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content tranparente" style="box-shadow: none;border: none;background: transparent;">
+                <div style="" class="principal">
+                    <div style="" class="cabeza">
+
+                    </div>
+                    <div class="d-flex justify-content-center" style="justify-content: center;">
+                        <div style="" class="circulo_modal img_res">
+                            <img src="img/marca-de-verificacion.png" style="max-width: 90%;">
+                        </div>
+                    </div>
+                    <div style="padding: 10px;">
+                        <div style="color: #6B6B6B;padding: 0px 15px 25px 15px;">
+                            Las respuestas correctas son: </br>
+                            </br>
+                            <b>Vertical</b>
+                            <ul>
+                                <li>supervisorradar</li>
+                                <li>piloto</li>
+                            </ul>
+                            <br>
+                            <b>Horizontal</b>
+                            <ul>
+                                <li>aeronautica</li>
+                                <li>aerodromo</li>
+                                <li>navegacionaerea</li>
+                                <li>atfcm</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center; margin-top: -5%;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://unpkg.com/vue'></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/actividades.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 

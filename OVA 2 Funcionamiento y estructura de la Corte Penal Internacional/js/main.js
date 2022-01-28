@@ -1,6 +1,7 @@
 var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
+let paso = true;
 if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 }else{
