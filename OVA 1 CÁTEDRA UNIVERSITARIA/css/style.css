@@ -10002,6 +10002,7 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
   }
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right) {
     left: auto!important;
+    max-height: 720px;
   }
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-fixed.c-sidebar-right,*[dir="rtl"] .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right) {
     right: 0;
@@ -10469,7 +10470,7 @@ html:not([dir="rtl"]) .c-sidebar-right .c-sidebar-minimizer::before {
     opacity: 0;
   }
   .c-sidebar-minimized .c-sidebar-minimizer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: inherit;
   }
