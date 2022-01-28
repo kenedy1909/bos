@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-md-12 col-sm-12">
                     <p class="text-center p-4 p_black">
-                        <i>Recuerda escribir todas las palabras en minúscula</i><br>
+                        <i>Recuerda escribir todas las palabras en minúscula,no utilizar espacios o caracteres especiales ( ´ , * )</i><br>
                         <i>oprimir cada numero para ver una pista</i></p>
                 </div>
             </div>
@@ -48,16 +48,13 @@
                 </tr>
             </table>
             <div v-if="selected !== undefined" style="text-align: center;height: 134px;">
-                <p class="pista" v-if="pista" style="height: 90px;padding-top: 25px;">
+                <p class="pista" v-if="pista" style="height: 90px;padding-top: 19px;">
                     {{pista}}
                 </p>
                 <input v-model="answer" ref="input" @keyup.enter="corregir" />
                 <button @click="corregir" class="btn" style="color: white; background: #6F1D46;">Colocar</button>
             </div>
-            <div style="position: fixed;top: 83%;width: 60%;">
-                <div class="text-center" style="margin-top: 15px;">
-                    <p><b>Nota: </b><em>Sólo será aceptada la palabra correcta, recuerde no utilizar espacios, mayúsculas o caracteres especiales ( ´ , * ), también tenga presente que cuenta con tres intentos</em></p>
-                </div>
+            <div style="position: fixed;top: 84%;width: 60%;">
                 <hr>
                 <div class="text-center">
                     <button class="btn intento" id="calificar" style="color: white; background: #847770;    border-radius: 30px;
@@ -71,26 +68,28 @@
     </div>
 
     <div class="modal fade" id="modal-ahorcado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content tranparente" style="box-shadow: none;border: none;background: transparent;">
-                <div style="" class="principal_modal">
-                    <div style="" class="cabeza">
+        <div class="modal-dialog" role="document" style="width: 70% !important;">
+            <div class="modal-content" style="background-color: transparent;border-radius: 50px;margin-top: 250px;">
+                <div class="principal_modal">
+                    <div class="cabeza">
 
                     </div>
-                    <div class="d-flex justify-content-center" style="justify-content: center;">
-                        <div style="" class="circulo_modal img_res">
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div class="circulo_modal img_res">
 
                         </div>
                     </div>
-                    <div style="padding: 10px;">
-                        <div style="color: black;">
-                            <div class="puntaje" id="texto-modal" style="height: 90px;color: white;font-size: 22px;"></div>
+                    <div style="padding: 8px; margin-left: 5%;margin-top: 25px;">
+                        <div style="color: white;font-size: 18px;display: flex;">
+                            Su puntaje es:
+                            <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
                         </div>
-                        <div style="color: black;">
-                            <p class="mensaje"></p>
+                        <div style="color: white;font-size: 18px; padding-bottom: 5%;">
+                            <p class="mensaje" style="text-align: left;"></p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center; margin-top: -5%;">
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
 
                     </div>
                 </div>

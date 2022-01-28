@@ -223,15 +223,15 @@ function calificar(){
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%;top: 7px; left: 1px;position: relative;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px; font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">cerrar</button>');
   }else{
-    $('.img_res').html('<img src="../img/img11/mal.png" style="max-width: 90%;">');
-    $('.mensaje').text("¡Puedes hacerlo mejor!");
+    $('.img_res').html('<div class="circulo-naranja"> <img src="../img/img11/mal.png" style="max-width: 90%;"></div>');
+    $('.mensaje').text("Inténtelo nuevamente.");
     $('.puntaje').text(Math.round(puntaje)+"%");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+    $('.btns_modal').html('<button id="add" class="btn" onclick="reiniciar();" style="font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">Volver a intentar</button>');
   }
 }
 
