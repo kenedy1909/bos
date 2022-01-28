@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>drag and drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/arrastar.css">
+</head>
+<body>
+	<div class="holder row" style="width: 100%;">
+		<div class="row col-md-12" style="margin-top: 2%;">
+		    <div class="col-md-5" style="">
+		        <div class="col-lg-12 row" style="">
+		        	<div class="col-md-4" style="z-index: 100;">
+		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
+		        	</div>
+		            <div class="text-center col-md-8" style="padding-top: 10px;">
+			            <b class="pl-1 pr-1" style="color: #ad1d73;">ACTIVIDAD INTERACTIVA</b>
+			            <div class="linea_blue" style="background: #ad1d73;height: 4px;"></div>
+			            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+		          	</div>
+		        </div>
+		    </div>
+		    <div class="col-md-7 row" style="">
+		        <p class="info_actividad shadow" style="background: #8E1D66;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%;color: white;font-size: 14px;">
+		            Haga clic sostenido sobre cada recomendación y arrástrelo hacia el documento del lado de abajo según corresponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
+		        </p>
+		    </div>
+		</div>
+
+		<div class="col-md-12">
+			<div class="col-md-12 row mt-5" style="height: 200px;">
+				
+				<div style="" class="col-md-4"> 
+					
+					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
+						<img src="img/dato.png" style="max-width: 80px;position: relative;left: 40%;top: -60px; margin-bottom: -20%;"><br>
+						Remite a saber las causas que originan un fenómeno.
+					</p>
+				</div>
+				<div style="" class="col-md-4">
+					
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
+						<img src="img/reflexion.png" style="max-width: 80px;position: relative;left: 40%;top: -60px; margin-bottom: -20%;"><br>
+						Son los que hacemos cuando el tema ha sido poco estudiado y no existe mucha información sobre el.
+					</p>
+					
+				</div>
+				<div style="" class="col-md-4">
+					
+					<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
+						<img src="img/verificacion_antecedentes.png" style="max-width: 80px;position: relative;left: 40%;top: -60px; margin-bottom: -20%;"><br>
+						Esculcar cada elemento del objeto, situación o fenómeno y describirlo.
+					</p>
+				</div>
+				
+				
+				
+			</div>
+			<div class="col-md-12 row mt-2">
+				<div class="col-md-4 d-flex justify-content-center">
+					<div style="width: 100%;">
+						<div class="encabezado_target">Estudios exploratorios</div>
+						<div class="droptarget" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
+							<div class="interno cont1"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div style="width: 100%;">
+						<div class="encabezado_target">Estudios explicativos</div>
+						<div class="droptarget" ondrop="drop(event, 2)" ondragover="allowDrop(event)">
+							<div class="interno cont2"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-md-4 d-flex justify-content-center">
+					<div style="width: 100%;">
+						<div class="encabezado_target">Estudios descriptivos</div>
+						<div class="droptarget" ondrop="drop(event, 3)" ondragover="allowDrop(event)">
+							<div class="interno cont3"></div>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		
+
+		<p id="demo" style="visibility: hidden;"></p>
+	</div>
+	<div class="col-md-12 d-flex justify-content-center">
+		<button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="" onclick="calificar();">Calificar</button>
+	</div>
+	
+	
+
+	
+	
+	<!-- Button trigger modal -->
+	
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content tranparente" style="">
+	      <div style="" class="principal">
+	      	<div style="" class="cabeza">
+	      		
+	      	</div>
+	      	<div class="d-flex justify-content-center">
+	      		<div style="" class="circulo_modal img_res">
+	      			
+	      		</div> 
+	      	</div>
+	      	<div style="padding: 10px;">
+	      		<div style="color: white;">
+	      			Su puntaje es: <p class="puntaje"></p>
+	      		</div>
+	      		<div style="color: white;">
+	      			<p class="mensaje"></p>
+	      		</div>
+	      	</div>
+	      	<div class="row d-flex justify-content-center btns_modal">
+	      		
+	      		
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/arrastrar.js"></script>
+</body>
+</html>

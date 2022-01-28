@@ -3,6 +3,10 @@ $( document ).ready(function() {
   $( ".ov-personaje").hide();
   $(".menu1").removeClass('d-none');
   $(".menu2").removeClass('d-none');
+  $(".menu2").addClass('c-show');
+  $(".menu1").removeClass('c-show');
+  $(".menu3").removeClass('c-show');
+  $(".menu4").removeClass('c-show');
 
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -91,11 +95,13 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Elementos generales para la comprensión del Marco Teórico","");
+            cambiarColorMenu(12);
             
             tema = 10;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Elementos generales para la comprensión del Marco Teórico","");
+            cambiarColorMenu(12);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","","");

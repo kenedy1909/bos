@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/arrastar.css">
 </head>
 <body>
-	<div class="holder row">
-		<div class="row col-md-12" style="">
+	<div class="holder row" style="width: 100%;">
+		<div class="row col-md-12" style="margin-top: 2%;">
 		    <div class="col-md-5" style="">
 		        <div class="col-lg-12 row" style="">
 		        	<div class="col-md-4" style="z-index: 100;">
@@ -60,7 +60,7 @@
 				<div class="col-md-4 d-flex justify-content-center">
 					<div style="width: 100%;">
 						<div class="encabezado_target">Estudios exploratorios</div>
-						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="droptarget" ondrop="drop(event, 1)" ondragover="allowDrop(event)">
 							<div class="interno cont1"></div>
 						</div>
 					</div>
@@ -69,7 +69,7 @@
 				<div class="col-md-4 d-flex justify-content-center">
 					<div style="width: 100%;">
 						<div class="encabezado_target">Estudios explicativos</div>
-						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="droptarget" ondrop="drop(event, 2)" ondragover="allowDrop(event)">
 							<div class="interno cont2"></div>
 						</div>
 					</div>
@@ -78,7 +78,7 @@
 				<div class="col-md-4 d-flex justify-content-center">
 					<div style="width: 100%;">
 						<div class="encabezado_target">Estudios descriptivos</div>
-						<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+						<div class="droptarget" ondrop="drop(event, 3)" ondragover="allowDrop(event)">
 							<div class="interno cont3"></div>
 						</div>
 					</div>
@@ -113,11 +113,11 @@
 	      	<div class="d-flex justify-content-center">
 	      		<div style="" class="circulo_modal img_res">
 	      			
-	      		</div>
+	      		</div> 
 	      	</div>
-	      	<div style="padding: 10px;">
+	      	<div style="margin-left: 10%;">
 	      		<div style="color: white;">
-	      			Su puntaje es: <p class="puntaje"></p>
+	      			Su puntaje es: <span class="puntaje" style="font-size: 25px;"><b>40%</b></span>
 	      		</div>
 	      		<div style="color: white;">
 	      			<p class="mensaje"></p>

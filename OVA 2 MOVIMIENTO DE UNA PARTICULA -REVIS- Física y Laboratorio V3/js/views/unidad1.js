@@ -2,6 +2,7 @@ $(document).ready(function() {
     // console.log(tema);
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
     $(".zoomContainer").remove();
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
@@ -58,6 +59,13 @@ $(document).ready(function() {
     $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
 
     /*scroll();*/
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
     slide_link(tema);
 
 
@@ -134,6 +142,8 @@ function controlSlides(num) {
                     e.preventDefault();
                 });
             }
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_1").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 2:
@@ -249,9 +259,13 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 25:
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_1").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 26:
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_26").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 27:
@@ -362,9 +376,13 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 35:
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_26").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Bidimensional");
             break;
         case 36:
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_36").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento  Circular");
             break;
         case 37:

@@ -248,7 +248,7 @@ function controlSlides(num) {
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-            slideCount = $('#slider-5 ul li').length;
+            slideCount = $('#slider-5 ul li').length();
             slideWidth = $('#slider-5 ul li').width();
             slideHeight = $('#slider-5 ul li').height();
             slider_num = "#slider-5";
@@ -256,7 +256,7 @@ function controlSlides(num) {
             break;
         case 16:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "La postmodernidad");
-            cambiarColorMenu(23);
+            cambiarColorMenu(23); 
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";

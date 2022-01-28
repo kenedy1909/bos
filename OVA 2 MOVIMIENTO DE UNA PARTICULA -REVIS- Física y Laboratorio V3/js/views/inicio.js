@@ -1,5 +1,6 @@
 $(document).ready(function() {
     setMigaja("Inicio", "", "");
+    $(".menu1").removeClass('c-show');
 
     // $(".ov-personaje").hide();
     $(".c-sidebar-nav > li").show();
