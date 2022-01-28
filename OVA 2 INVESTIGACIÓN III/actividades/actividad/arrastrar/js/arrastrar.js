@@ -1,25 +1,56 @@
+var ubicar;
+var lugar;
+var num;
 function dragStart(event) {
     event.dataTransfer.setData("Text", event.target.id);
     document.getElementById("demo").innerHTML = "Started to drag the p element";
+
+    for (var i = 1; i <= 3; i++) {
+    	$(".cont"+i).attr('ondrop', 'drop(event, '+i+')');
+    	$(".cont"+i).attr('ondragover', 'allowDrop(event)');
+    }
+    console.log("activo")
+    for (var i = 1; i <= 3; i++) {
+    	ubicar = $("#dragtarget"+i).parent('.droptarget');
+	    lugar = $(ubicar).attr('class');
+    	if (lugar != undefined) {
+	    	num = (lugar.substring(15,16));
+	    	$(".cont"+num).removeAttr('ondrop');
+	    	$(".cont"+num).removeAttr('ondragover');
+    		console.log(num);
+    	}
+    } 
+    console.log("inactivo")
+    
+    ubicar = "";
+    lugar = "";
+    num = "";
 }
 
 function dragEnd(event) {
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
+    
+    for (var i = 1; i <= 3; i++) {
+    	$(".cont"+i).removeAttr('ondrop');
+    	$(".cont"+i).removeAttr('ondragover');
+    }
 }
 
 function allowDrop(event) {
     event.preventDefault();
 }
 
-function drop(event) {
+function drop(event, num) {
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
+
+    /*$(".cont"+num).removeAttr('ondrop ondragover');*/
 }
 
 function calificar(){
 	var i = 0;
-	var i2 = 0;
+	var i2 = 0; 
 	var i3 = 0;
 	var res1 = [];
 	var res2 = [];
