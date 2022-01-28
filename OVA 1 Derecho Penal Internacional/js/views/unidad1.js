@@ -44,6 +44,14 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
     });
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+     });
+    function detenerMultimedia() {
+      $('body').addClass('p-0');
+      // console.log('holaaa');
+      
+     }
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     slide_predeterminado();
     controlSlides(2);
@@ -285,7 +293,7 @@ function controlSlides(num){
             break;
         case 17:
            $(".menu1").addClass('d-none');
-            setMigaja("Unidades de aprendizaje","1. Historia del Derecho Penal Internacional","Tribunales de Yugoslavia y Ruanda");
+            setMigaja("Unidades de aprendizaje","","");
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
             break;
