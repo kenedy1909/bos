@@ -362,3 +362,41 @@ cursor: pointer;}
   top: -60px;
   text-align: center;
 }
+
+.barraBaja{
+    height: 5px; 
+    background: #540F23;
+    width: 111%;
+}
+
+@media (max-width:1156px){ 
+    
+    .barraBaja{
+        width: 130%!important;
+    }
+
+    .titleActive{
+        display: flex!important;
+        margin-left: 30px!important;
+    }
+
+}
+@media (max-width:1280px) { 
+    
+    .barraBaja{
+        width: 115%!important;
+    }
+
+    .titleActive{
+        display: flex!important;
+        margin-left: 30px!important;
+    }
+
+}
+@media (max-width:1366px) { 
+    
+    .barraBaja{
+        width: 112%!important;
+    }
+    
+}
