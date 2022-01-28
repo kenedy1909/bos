@@ -249,13 +249,14 @@ label {
   border-radius: 40px 40px 0px 0px;
 }
 .circulo_modal{
-  height: 125px;
-  width: 125px;
-  background: gray;
-  border-radius: 50%;
-  position: relative;
-  top: -60px;
-  text-align: center;
+    height: 140px;
+    width: 140px;
+    background: gray;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    border: 4px solid white;
 }
 
 .info_actividad{
@@ -541,4 +542,13 @@ label {
   .x-modal-text{
     display: block;
     margin: auto;
+  }
+  .circulo-naranja{
+    background: #FFC000;
+    border-radius: 50%;
+    width: 115px;
+    height: 115px;
+    position: relative;
+    left: 9px;
+    top: 9px;
   }

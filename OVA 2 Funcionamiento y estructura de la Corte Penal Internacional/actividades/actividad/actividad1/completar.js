@@ -223,20 +223,28 @@ function calificar(){
 	}
 	if (puntaje == 100) {
 		
-	  $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;">');
+	  $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;top: 7px; left: 1px;position: relative;">');
 	  $('.puntaje').text(puntaje+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	$('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px; font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
 		
-	  $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;">');
+	  $('.img_res').html('<img src="./img/bien.png"style="max-width: 90%;top: 7px; left: 1px;position: relative;">');
 	  $('.puntaje').text(Math.round(puntaje)+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button>');
+	$('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px; font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">cerrar</button>');
 	}else{
-	  $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;">');
+		$('.img_res').html('<div class="circulo-naranja"> <img src="./img/mal.png" style="max-width: 90%;"></div>');
+	//   $('.img_res').html('<img src="./img/mal.png" style="max-width: 90%;">');
 	  $('.mensaje').text("¡Puedes hacerlo mejor!");
 	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	//   $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px; margin-right: 5px;">cerrar</button><button style="font-size: 15px;" id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+	$('.btns_modal').html('<button id="add" class="btn" onclick="reiniciar();" style="font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">Volver a intentar</button>');
 	}
 }
+
+function reiniciar(){
+	location.reload();
+  }
