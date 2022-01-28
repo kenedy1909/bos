@@ -244,6 +244,7 @@
 .tranparente{
   background: transparent;
   border: none;
+  border-radius: 40px;
 }
 
 .principal_modal{
