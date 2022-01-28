@@ -1,5 +1,9 @@
 // Arreglo de palabras indicando la posición de su inicio, su sentido (vertical u horizontal),
 // la palabra en cuestión y la pista que se presenta al usuario
+
+// 1 vertical
+// 0 horizontal
+var cont = 0;
 const palabras = [{
         pos: [9, 0],
         sentido: 1,
@@ -122,6 +126,16 @@ new Vue({
             if (answer === solucion) {
                 this.completed[this.selected] = true
                 this.selected = undefined
+            } else {
+                cont++;
+            }
+
+            if (cont >= 3) {
+                //$("#calificar").css('display','none');
+                //$("tr").css('pointer-events','none');
+
+                $('#correctas').modal("show");
+                cont = 0;
             }
         },
         // Agrega una letra correcta más a la respuesta actual
@@ -148,28 +162,33 @@ new Vue({
                 this.penalties++
             }
             var puntaje = finalScore;
-            var modalID = "#exampleModal";
+            var modalID = "#calificacionModal";
             var exito = false;
             var mensaje = "Inténtalo nuevamente."
-                /*if (puntaje >= 90) {
-                    puntaje = 100;
-                    exito = true;
-                    mensaje = "¡Felicitaciones!"
-                }
-                registrarActividad(puntaje);
-                mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);*/
-            if (puntaje >= 100) {
-                $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 80%;margin-top: 9%;">');
-                $('.puntaje').text("100%");
-                $('.mensaje').text("¡Felicitaciones!");
-                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 1%;" onclick="reiniciar()">cerrar</button>');
+            if (puntaje >= 90) {
+                $('.img_res').html('<img src="img/fuegos-artificiales.png" style="max-width: 90%;">');
+                $('.btns_modal').html('<button type="button" class="btn intento" data-dismiss="modal">cerrar</button>');
+                $('#texto-modal').html('<p style="font-size: 25px;color: #847770;FONT-WEIGHT: BOLD;">¡FELICITACIONES!</p> Su puntaje es <b class="num_cali">100%</b>');
+                $('#modal-ahorcado').removeClass("intentar");
+                $('#img_mundo').removeClass("d-none");
+                $('#modal-ahorcado').modal("show");
             } else {
-                $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%;margin-top: 11px;">');
-                $('.mensaje').text("¡Puedes hacerlo mejor!");
-                $('.puntaje').text("0%");
-                $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 1%;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+                $('.img_res').html('<img src="img/mala-critica.png" style="max-width: 90%;">');
+                $('.btns_modal').html('<button type="button" class="btn intento" data-dismiss="modal" onclick="">INTÉNTELO NUEVAMENTE</button>');
+                $('#texto-modal').html('Su puntaje es <b class="num_cali">0%</b>');
+                $('#modal-ahorcado').addClass("intentar");
+                $('#modal-ahorcado').modal("show");
+
+                /*$('.img_res').html('<img src="img/fuegos-artificiales.png" style="max-width: 90%;">');
+                $('.btns_modal').html('<button type="button" class="btn intento" data-dismiss="modal">cerrar</button>');
+                $('#texto-modal').html('<p style="font-size: 25px;color: #847770;FONT-WEIGHT: BOLD;">¡FELICITACIONES!</p> Su puntaje es <b class="num_cali">100%</b>');
+                $('#modal-ahorcado').removeClass("intentar");
+                $('#img_mundo').removeClass("d-none");
+                $('#modal-ahorcado').modal("show");*/
+
             }
-            $("#exampleModal").modal("show");
+            registrarActividad(puntaje);
+            mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);
             /*this.mensaje = `
               Tu puntuación es ${finalScore}%.
             `*/
@@ -177,6 +196,6 @@ new Vue({
     }
 })
 
-function reiniciar() {
+function otraves() {
     location.reload();
 }
