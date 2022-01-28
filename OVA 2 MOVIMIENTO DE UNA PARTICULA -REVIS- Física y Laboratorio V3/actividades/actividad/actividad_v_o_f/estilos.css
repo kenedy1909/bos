@@ -29,6 +29,8 @@ table {
 
 .title_table {
     text-align: center;
+    width: 15%;
+    font-size: 18px;
 }
 
 
@@ -125,7 +127,7 @@ span.checked svg.svg2 {
 .fondoContenido {
     /* background-image: url(../img/carro.png), url(../img/fondo5.png); */
     padding: 25px;
-    border-radius: 85px;
+    border-radius: 70px;
     background-size: 90px, 920px;
     /*padding: 20px 50px 100px;
     border-radius: 10px;*/
@@ -169,7 +171,6 @@ span.checked svg.svg2 {
 }
 
 .border_punteado{
-    border: dashed #FFFFFF 5px;
     border-radius: 85px;
     padding: 1em;
 }
@@ -334,4 +335,37 @@ cursor: pointer;}
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+tbody{
+    display: inline-block !important;
+}
+
+.table>thead>tr>th {
+     border-bottom: none !important;
+}
+.table>tbody>tr>th,{
+    border-top: none !important;
+}
+
+.table>tbody+tbody{
+    border-top: none !important;
+}
+table.tabla-actividad2 td, .table td{
+    border-top: none !important;
+    border-bottom: 1px solid #ddd !important;
+    font-size: 17px;
+    font-weight: bold;
+}
+.table>tbody>tr>th{
+    border-top: none;
+
+}
+
+thead{
+    width: 100% !important;
+    display: block !important;
+}
+.table{
+    display: inline-block !important;
 }
