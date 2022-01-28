@@ -8,11 +8,14 @@ html{
 }
 @media only screen and (min-width:1360px)
 {
-    #next{
-        right: calc(((100vw - 1360px)/2) - 25px);
+    .controles #next{
+        right: calc(((100vw - 1360px)/2) - 25px) !important;
     }
-
+    .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right){
+      left: auto !important;
+    }
 }
+
 iframe{
     width: 100%;
     overflow: hidden; 
