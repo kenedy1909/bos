@@ -29,6 +29,14 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
     });
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+       });
+      function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+        
+       }
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);
