@@ -41,11 +41,31 @@ function calificarEmparejamiento(event) {
     console.log('Puntaje ' + puntaje);
     var exito = false;
     var mensaje = "Puedes hacerlo mejor"
+    // if (puntaje == 100) {
+    //     exito = true;
+    //     mensaje = "¡Felicitaciones!"
+    // }
+    // mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
+
     if (puntaje == 100) {
-        exito = true;
-        mensaje = "¡Felicitaciones!"
-    }
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
+        
+        $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
+        $('.puntaje').text(puntaje+"%");
+        $('.mensaje').text("¡Felicitaciones!");
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+      }else if (puntaje >= 75 && puntaje < 100) {
+          
+        $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
+        $('.puntaje').text(Math.round(puntaje)+"%");
+        $('.mensaje').text("¡Felicitaciones!");
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -10px;">cerrar</button>');
+      }else{
+        $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 80%; margin-top: 5%;">');
+        $('.mensaje').text("Inténtalo nuevamente.");
+        $('.puntaje').text(Math.round(puntaje)+"%");
+        $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -10px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+      }
+      $("#calificacionModal").modal("show");
 
 }
 
@@ -186,5 +206,5 @@ function init_actividad_1() {
     }
 
     //evento de onready
-    $(document).on('ready',init_actividad_1);
+    $(document).on('ready',init_actividad_1); 
 })()

@@ -64,7 +64,7 @@ function calificarEmparejamiento(event) {
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }
-    $("#exampleModal").modal("show");
+    $("#exampleModal").modal("show"); 
 
 }
 
