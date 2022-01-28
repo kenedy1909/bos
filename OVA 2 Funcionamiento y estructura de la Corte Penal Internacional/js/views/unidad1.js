@@ -79,6 +79,13 @@ var pdf = `                 <div class="col-md-12">
                               </p>
                             </div>`;
 $('.pdfs').html(pdf);
+$(".modal").on('hidden.modal', function () {
+    detenerMultimedia();
+});
+function detenerMultimedia() {
+    $('body').addClass('p-0');
+    console.log('holaaa');
+}
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -1120,3 +1127,5 @@ function paraIframe(num){
     }
     
 }
+
+
