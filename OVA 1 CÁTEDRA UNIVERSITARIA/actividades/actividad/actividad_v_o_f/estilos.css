@@ -366,10 +366,10 @@ cursor: pointer;}
 .barraBaja{
     height: 5px; 
     background: #540F23;
-    width: 111%;
+    width: 130%;
 }
 
-@media (max-width:1156px){ 
+@media only screen and (min-width:750px){ 
     
     .barraBaja{
         width: 130%!important;
@@ -381,7 +381,8 @@ cursor: pointer;}
     }
 
 }
-@media (max-width:1280px) { 
+
+@media only screen and (min-width:880px) { 
     
     .barraBaja{
         width: 115%!important;
@@ -393,10 +394,16 @@ cursor: pointer;}
     }
 
 }
-@media (max-width:1366px) { 
+
+@media only screen and (min-width:940px) { 
     
     .barraBaja{
         width: 112%!important;
+    }
+    
+    .titleActive{
+        display: flex!important;
+        margin-left: 0px!important;
     }
     
 }
