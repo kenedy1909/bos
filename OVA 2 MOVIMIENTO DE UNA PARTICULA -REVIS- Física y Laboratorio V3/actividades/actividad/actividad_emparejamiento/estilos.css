@@ -160,6 +160,9 @@
     background: #003442;
     border-radius: 20px;
     padding: 20px;
+    color: #fff;
+    text-align: justify;
+    font-size: 15px;
 }
 .pt-3{
     padding-top: 1.5em;
@@ -187,10 +190,10 @@
     display: inline-block;
 }
 .secundario{
-    width: 38%;display: inline-block;
+    width: 38%;display: inline-block;margin-top: auto;margin-bottom: auto;width: 43%;padding-top: 25px;
 }
 .terciario{
-    width: 58%;display: inline-block;
+    width: 70%;display: inline-block;
 }
 .div-img{
     display: inline-block;max-width: 100%;
@@ -199,6 +202,7 @@
     width: 116px;
     height: 116px;
     display: inline-block;
+    margin-top: -26px;
 }
 
 .texto_header{
@@ -226,7 +230,6 @@
     border-radius: 50%;
     top: 15px;
     left: -44px;
-    box-shadow: 1px 0px 11px -2px black;
 }
 .img-100{
   width:100% ;
@@ -265,3 +268,23 @@
   border: solid white;
 }
 
+
+@media only screen and (min-width:900px)
+{
+    .texto_header{
+        font-size: 17px;
+            display: inline-block;
+            width: 60%;
+            margin-top: -15px;
+    }
+    .imagen{
+        width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin-top: -26px;
+    }
+    .terciario{
+        width: 98%;
+        display: inline-block;
+    }
+}
