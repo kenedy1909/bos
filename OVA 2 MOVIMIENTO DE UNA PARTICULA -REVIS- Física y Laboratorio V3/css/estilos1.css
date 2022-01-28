@@ -972,7 +972,7 @@ a.control_next {
 
 .bannercafe2 {
     background: #965B0C;
-    padding: 25px;
+    padding: 35px;
     border-radius: 50px;
 }
 
@@ -1017,15 +1017,15 @@ a.control_next {
 }
 
 .btn_bluecircle {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background: #4472C4;
     border-radius: 50%;
     color: white;
     font-weight: bold;
-    padding: 12px 3px 14px 20px;
+    padding: 18px 3px 14px 24px;
     position: relative;
-    left: -20px;
+    left: -28px;
 }
 
 .visible {
@@ -1961,4 +1961,22 @@ a.control_next {
     .indicacion{
         padding: 0px 113px;
     }
+}
+
+.rectangulo_azul{
+    width: 100%;height: 86px;background: #4472C4;
+}
+
+.content_tria{
+    padding: 30px 1px 1px 23px;
+}
+.img_centro{
+    max-width: 22%;margin-left: -5%;
+}
+.ban_coffe{
+    background: #E39D40;height: 325px;
+}
+.pading_tria{
+    padding: 37px 1px 1px 51px;
+    z-index: 1;
 }

@@ -842,14 +842,14 @@
                                             </div>
                                             <div class="ejemplo2 ejemplos invisible">
                                                 <div class="text-center"><b style="background: #BDD7EE;padding: 5px;border-radius: 5px;">Ejercicio de ejemplo 2:</b></div><br>
-                                                <p class="justificado text-white">Dos autos parten del mismo sitio hacia el mismo destino a través de una carretera recta, si el primer auto viaja a 60 km y el segundo a 60 mi/h, pero sale 3 horas después del primero, ¿A qué distancia del
+                                                <p class="justificado text-white" style="margin-top: 15%;">Dos autos parten del mismo sitio hacia el mismo destino a través de una carretera recta, si el primer auto viaja a 60 km y el segundo a 60 mi/h, pero sale 3 horas después del primero, ¿A qué distancia del
                                                     origen el segundo alcanza el primero?</p><br>
                                                 <div class="text-center">
                                                     <button class="btn btncoffe text-white" data-toggle="modal" data-target="#respuesta3-2">Ver respuesta</button>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div style="width: 0%;padding-top: 34%;">
+                                        <div style="width: 0%;padding-top: 76%;">
                                             <div class="btn_bluecircle cursor" onclick="ejemplos(1);">1</div>
                                             <div class="btn_bluecircle mt-1 cursor" onclick="ejemplos(2);">2</div>
                                         </div>
@@ -875,7 +875,7 @@
                             <div class="col-md-12 p-0" style="border-top: solid #4472C4;">
                                 <b class="color-text">Haga clic en las flechas de las tarjetas para continuar  con la información:</b>
                             </div>
-                            <div class="col-md-12">
+                            <!-- <div class="col-md-12">
                                 <div class="acordeon mt-3">
                                     <div class="acordeon__item mb-2">
                                         <input type="radio" name="acordeon" id="item1">
@@ -992,8 +992,110 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div> -->
+                            <!-- <div style="height: 300px;"></div> -->
+                            <div class="col-md-12 items item_acordeon1 mt-3" style="min-height: 310px;">
+                                <div class="row p-0 m-0 rectangulo_azul">
+                                    <div class="col-md-6 m-0 content_tria">
+                                        <div class="triangulocordeon cursor" onclick="acordeon(2)">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 m-0 p-0">
+                                        <img src="assets/img/img_ova/Movimiento1.png" class="img_centro">
+                                    </div>
+                                </div>
+
+                                <div class="row p-0 m-0 rectangulo_azul mt-2">
+                                    <div class="col-md-6 m-0 content_tria">
+                                        <div class="triangulocordeon cursor" onclick="acordeon(3)">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 m-0 p-0">
+                                        <img src="assets/img/img_ova/Movimiento3.png" class="img_centro">
+                                    </div>
+                                </div>
+
+                                <div class="row p-0 m-0 rectangulo_azul mt-2">
+                                    <div class="col-md-6 m-0 content_tria">
+                                        <div class="triangulocordeon cursor" onclick="acordeon(4)">
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 m-0 p-0">
+                                        <img src="assets/img/img_ova/Movimiento2.png" class="img_centro">
+                                    </div>
+                                </div>
                             </div>
-                            <div style="height: 300px;"></div>
+
+                            <div class="col-md-12 items item_acordeon2 mt-3 d-none">
+                                <div class="ban_coffe">
+                                    <div class="row">
+                                        <div class="col-md-1 pading_tria">
+                                            <div class="triangulocordeon cursor" style="transform: rotate(-90deg);" onclick="acordeon(1)">
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <p class="p_black justificado" style="padding: 30px;">Se sabe que en una situación común la velocidad de una partícula puede cambiar mientras se mueve. Cuando la velocidad de ésta cambia con el tiempo, se dice que la partícula acelera. Por ejemplo, la magnitud de la velocidad de un automóvil aumenta cuando se pisa el acelerador y disminuye cuando se aplican los frenos. Se considera que un objeto representado como una partícula en movimiento a lo largo del eje x tiene una velocidad inicial vi en el tiempo ti y una velocidad final vf en el tiempo tf. La aceleración promedio amed-x de la partícula se define como el cambio en velocidad dividido por el intervalo de tiempo durante el que ocurre el cambio.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9" style="text-align: end;">
+                                            <img src="assets/img/img_ova/aceleracionformula.png" class="img-70">
+                                        </div>
+                                        <div class="col-md-3" style="text-align: end;padding-right: 45px;">
+                                            <img src="assets/img/img_ova/Movimiento1.png" width="30%" style="width: 70px;height: 70px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 items item_acordeon3 mt-3 d-none">
+                                <div class="ban_coffe">
+                                    <div class="row">
+                                        <div class="col-md-1 pading_tria">
+                                            <div class="triangulocordeon cursor" style="transform: rotate(-90deg);margin-top: 70px;" onclick="acordeon(1)">
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="col-md-11" style="padding: 30px;">
+                                            <p class="p_black justificado" style="height: 180px;overflow: auto;">Como con la velocidad, cuando el movimiento a analizar sea unidimensional, se usan los signos positivo y negativo para indicar la dirección de la aceleración. Puesto que las dimensiones de velocidad son [L/T] y la dimensión de tiempo es [T], la aceleración tiene dimensiones de longitud divididas entre el tiempo al cuadrado, o [L/T2]. La unidad del SI de aceleración es metros por segundo al cuadrado (m/s2). Es más sencillo interpretar estas unidades si piensa en ellas como metros sobre segundo por segundo. Por ejemplo, considere que un objeto tiene una aceleración de 10 m/s2. Debe formar una imagen mental del objeto que tiene una velocidad a lo largo de una línea recta y aumenta 10 m/s durante cada intervalo de 1 s. Si el objeto parte del reposo, debe ser capaz de representarlo moviéndose con una velocidad de 10 m/s después de 1 s, a 20 m/s después de 2 s, a 30 m/s después de 3 s, etcétera. (J., 2008).</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-9" style="text-align: end;">
+                                        </div>
+                                        <div class="col-md-3" style="text-align: end;padding-right: 45px;">
+                                            <img src="assets/img/img_ova/Movimiento3.png" width="30%" style="width: 70px;height: 70px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 items item_acordeon4 mt-3 d-none">
+                                <div class="ban_coffe">
+                                    <div class="row">
+                                        <div class="col-md-1 pading_tria" style="height: 210px;z-index: 1;">
+                                            <div class="triangulocordeon cursor" style="transform: rotate(-90deg);margin-top: 196px;" onclick="acordeon(1)">
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="col-md-11" style="padding: 30px;">
+                                            <p class="p_black justificado" style="height: 149px;overflow: auto;">En algunas situaciones el valor de la aceleración promedio puede ser diferente durante distintos intervalos de tiempo. Por lo tanto, es útil definir la aceleración instantánea como el límite de la aceleración promedio conforme ∆𝑡 tiende a cero. Este concepto es análogo a la definición de velocidad instantánea discutida en el subtema 2. Si se considera que el punto P2 se acerca más y más al punto P1 y toma el límite de ∆𝑣_𝑥/∆𝑡  conforme ∆𝑡 tiende a cero, se obtiene la aceleración instantánea en el punto P1:</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-10" style="text-align: end;">
+                                            <img src="assets/img/img_ova/formulacafe.png" class="img-70">
+                                        </div>
+                                        <div class="col-md-2 mt-4" style="text-align: end;padding-right: 45px;">
+                                            <img src="assets/img/img_ova/Movimiento2.png" width="30%" style="width: 70px;height: 70px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="unidad1-13" class="tab-pane" role="tabpanel">
                             <div class="row">

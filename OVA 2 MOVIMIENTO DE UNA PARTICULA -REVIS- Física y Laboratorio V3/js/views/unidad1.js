@@ -2284,3 +2284,26 @@ function paraIframe(num) {
     }
 
 }
+
+function acordeon(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.items').addClass('d-none');
+            $('.item_acordeon1').removeClass('d-none');
+            break;
+        case 2:
+            $('.items').addClass('d-none');
+            $('.item_acordeon2').removeClass('d-none');
+            break;
+        case 3:
+            $('.items').addClass('d-none');
+            $('.item_acordeon3').removeClass('d-none');
+            break;
+        case 4:
+            $('.items').addClass('d-none');
+            $('.item_acordeon4').removeClass('d-none');
+            break;
+        default:
+            break;
+    }
+}
