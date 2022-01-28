@@ -1005,3 +1005,7 @@ svg circle:nth-child(2){
 .w-50px {
   width: 50px;
 }
+
+.colorAMenu{
+  color: #8e1d66!important;
+}
