@@ -166,18 +166,15 @@ new Vue({
             var exito = false;
             var mensaje = "Inténtalo nuevamente."
             if (puntaje >= 90) {
-                $('.img_res').html('<img src="img/bien.png" style="max-width: 80%; margin-top:10px;">');
-                $('.btns_modal').html('<button type="button" class="btn intento" data-dismiss="modal">cerrar</button>');
-                $('#texto-modal').html('<p style="font-size:18px;">Su puntaje es <b class="num_cali" style="font-size:22px;">100%</b></p><p style="font-size: 25px;color: #847770;FONT-WEIGHT: BOLD;">¡FELICITACIONES!</p>');
-                $('#modal-ahorcado').removeClass("intentar");
-                $('#img_mundo').removeClass("d-none");
-                $('#modal-ahorcado').modal("show");
+                $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;margin-top: 5%;">');
+                $('.puntaje').text("100%");
+                $('.mensaje').text("¡Felicitaciones!");
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -25px;" onclick="otraves()">cerrar</button>');
             } else {
-                $('.img_res').html('<img src="img/mal.png" style="max-width: 80%; margin-top:10px;">');
-                $('.btns_modal').html('<button type="button" class="btn intento" data-dismiss="modal" onclick="" style="color:#540F23;font-size: 20px;"><b>Volver a intentar</b></button>');
-                $('#texto-modal').html('Su puntaje es <b class="num_cali">0%</b> <br><br> Inténtelo nuevamente.');
-                $('#modal-ahorcado').addClass("intentar");
-                $('#modal-ahorcado').modal("show");
+                $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;margin-top: 5%;">');
+                $('.mensaje').text("¡Puedes hacerlo mejor!");
+                $('.puntaje').text(Math.round(puntaje) + "%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -25px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="otraves()">Volver a intentar</button>');
 
                 /*$('.img_res').html('<img src="img/fuegos-artificiales.png" style="max-width: 90%;">');
                 $('.btns_modal').html('<button type="button" class="btn intento" data-dismiss="modal">cerrar</button>');
@@ -187,11 +184,7 @@ new Vue({
                 $('#modal-ahorcado').modal("show");*/
 
             }
-            registrarActividad(puntaje);
-            mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);
-            /*this.mensaje = `
-              Tu puntuación es ${finalScore}%.
-            `*/
+            $("#modal-ahorcado").modal("show");
         }
     }
 })
