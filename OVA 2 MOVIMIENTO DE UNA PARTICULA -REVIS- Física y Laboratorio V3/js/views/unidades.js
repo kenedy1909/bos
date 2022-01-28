@@ -1,5 +1,6 @@
 $( document ).ready(function() {
     setMigaja("Unidades de aprendizaje","","");
+    /*$(".menu1").removeClass('c-show');*/
     flat = $("#flat").flipster({
         style: 'flat',
         spacing: -0.25,

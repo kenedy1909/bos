@@ -95,11 +95,14 @@ iframe{
 
 .botones-inicio{
     width: auto;
-    height: 120px;
+    height: 100px;  
     margin: auto;
     cursor: pointer;
 }
 
+.tema_activo{
+  color: #8FAADC !important;
+}
 .color-text{
   color: var(--bg-color);
 }
