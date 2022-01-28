@@ -36,6 +36,9 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+    });
     /*setMigaja("Unidades de aprendizaje","1. Estatuto de Roma","Cuantificadores, sus negaciones y el contraejemplo");*/
     /*slide_predeterminado();*/
     console.log(tema);
@@ -79,6 +82,12 @@ var pdf = `                 <div class="col-md-12">
                               </p>
                             </div>`;
 $('.pdfs').html(pdf);
+
+function detenerMultimedia() {
+    $('body').addClass('p-0');
+    // console.log('holaaa');
+    
+}
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -1120,3 +1129,5 @@ function paraIframe(num){
     }
     
 }
+
+

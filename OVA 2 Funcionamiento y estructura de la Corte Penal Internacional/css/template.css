@@ -1038,3 +1038,17 @@ card flip*/
 .img-100{
   width: 100%;
 }
+
+@media (min-width:1360px) {
+    .controles #next{
+      right: calc(((100vw - 1360px)/2) - 25px);
+  }
+}
+
+@media only screen and (min-width:1360px)
+{
+    #next{
+        right: calc(((100vw - 1360px)/2) - 25px);
+    }
+
+}

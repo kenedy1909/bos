@@ -218,3 +218,7 @@ function init_actividad_1() {
 function reload(){
     location.reload();
 }
+
+function reiniciar(){
+    location.reload();
+}
