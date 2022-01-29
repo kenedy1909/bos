@@ -278,6 +278,7 @@ function controlSlides(num) {
                 var slideWidth = $('#slider4 ul li').width();
                 var slideHeight = $('#slider4 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
+                var numslide = 0;
 
                 $('#slider4').css({ width: '100%', height: '150px' });
 
@@ -286,29 +287,41 @@ function controlSlides(num) {
                 $('#slider4 ul li:last-child').prependTo('#slider4 ul');
 
                 function moveLeft4() {
+                    numslide = numslide - 1;
+                    console.log(slideCount);
                     $('#slider4 ul').animate({
                         left: +slideWidth
                     }, 200, function() {
                         $('#slider4 ul li:last-child').prependTo('#slider4 ul');
                         $('#slider4 ul').css('left', '');
                     });
+                    if (numslide == 0) {
+                        $('.control_prev4').addClass('d-none');
+                    }
                 };
 
                 function moveRight4() {
+                    numslide = numslide + 1;
                     $('#slider4 ul').animate({
                         left: -slideWidth
                     }, 200, function() {
+
                         $('#slider4 ul li:first-child').appendTo('#slider4 ul');
                         $('#slider4 ul').css('left', '');
                     });
+                    if (numslide == slideCount-1) {
+                        $('.control_next4').addClass('d-none');
+                    }
                 };
 
                 $('a.control_prev4').click(function(e) {
+                    $('.control_next4').removeClass('d-none');
                     moveLeft4();
                     e.preventDefault();
                 });
 
                 $('a.control_next4').click(function(e) {
+                    $('.control_prev4').removeClass('d-none');
                     moveRight4();
                     e.preventDefault();
                 });
@@ -664,6 +677,10 @@ function mesas(num) {
 
             $('.cordenadamesa3').removeClass('invisible');
             $('.cordenadamesa3').addClass('visible');
+            break;
+        case 4:
+            $('.mesas').addClass('invisible');
+            $('.mesas').removeClass('visible');
             break;
         default:
             break;
