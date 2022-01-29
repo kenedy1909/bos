@@ -37,6 +37,16 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
     });
+
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     slide_predeterminado();
@@ -656,7 +666,7 @@ function pantalla13(num) {
         case 2:
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos2').addClass('btn_ethosActive');
-            var text = `<div style="height: 273px; overflow: auto;">
+            var text = `<div style="height: 274px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">“TERRA NULLIUS”</h3>
                           <p class="font-weight-bold text-black" style="font-size: 12px;text-align: justify;">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
                        </div>
