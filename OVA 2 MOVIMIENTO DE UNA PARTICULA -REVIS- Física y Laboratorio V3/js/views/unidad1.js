@@ -183,7 +183,7 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 14:
-            sumaslide1++;
+            /*sumaslide1++;
             if (sumaslide1 < 2) {
                 var slideCount = $('#slider3 ul li').length;
                 var slideWidth = $('#slider3 ul li').width();
@@ -223,7 +223,7 @@ function controlSlides(num) {
                     moveRight3();
                     e.preventDefault();
                 });
-            }
+            }*/
             setMigaja("Unidades de aprendizaje", "1. Movimiento de una  partícula", "Movimiento Unidimensional");
             break;
         case 15:
@@ -2302,6 +2302,25 @@ function acordeon(num){
         case 4:
             $('.items').addClass('d-none');
             $('.item_acordeon4').removeClass('d-none');
+            break;
+        default:
+            break;
+    }
+}
+
+function vehiculos(num){
+    switch (parseInt(num)) {
+        case 1:
+            $('.vehiculos').addClass('d-none');
+            $('.vehiulo1').removeClass('d-none');
+            break;
+        case 2:
+            $('.vehiculos').addClass('d-none');
+            $('.vehiulo2').removeClass('d-none');
+            break;
+        case 3:
+            $('.vehiculos').addClass('d-none');
+            $('.vehiulo3').removeClass('d-none');
             break;
         default:
             break;
