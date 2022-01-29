@@ -493,23 +493,59 @@
 	top: -247px;
     left: -186px;
 }
+.globo1-text{
+  position: relative;
+  top: -104px;
+  left: 2px;
+  font-size: 13px;
+  text-align: center;
+  padding: 6px;
+  color: black;
+}
 .globo2{
 	/* top: -333px;
 	left: -162px; */
-	top: -345px;
-    left: -186px;
+  top: -454px;
+  left: -186px;
+}
+.globo2-text{
+  position: relative;
+    top: -93px;
+    left: 2px;
+    font-size: 13px;
+    text-align: center;
+    padding: 6px;
+    color: black;
 }
 .globo3{
 	/* top: -373px;
 	left: -161px; */
-	top: -392px;
+	top: -594px;
     left: -188px;
+}
+.globo3-text{
+  position: relative;
+  top: -103px;
+  left: 2px;
+  font-size: 13px;
+  text-align: center;
+  padding: 6px;
+  color: black;
 }
 .globo4{
 	/* top: -480px;
 	left: -164px; */
-	top: -509px;
-    left: -190px;
+  top: -819px;
+  left: -190px;
+}
+.globo4-text{
+  position: relative;
+    top: -110px;
+    left: -5px;
+    font-size: 13px;
+    text-align: center;
+    padding: 11px;
+    color: black;
 }
 
 .pr-leftU1-1{

@@ -158,15 +158,17 @@ new Vue({
       var exito = false;
       var mensaje = "Inténtalo nuevamente."
       if (puntaje >= 90) {
-          puntaje = 100;
-          exito = true;
-          mensaje = "¡Felicitaciones!"
+          $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
+          $('.puntaje').text(puntaje+"%");
+          $('.mensaje').text("¡Felicitaciones!");
+          $('.btns_modal').html('<button type="button" class="boton_modal" data-dismiss="modal" >cerrar</button>');
+        }else{
+          $('.img_res').html('<img src="img/mal.png" style="max-width: 80%; margin: auto;">');
+          $('.mensaje').text("¡Puedes hacerlo mejor!");
+          $('.puntaje').text(Math.round(puntaje)+"%");
+          $('.btns_modal').html('<button type="button" class="boton_modal" data-dismiss="modal" >Volver a intentar</button>');
       }
-      registrarActividad(puntaje);
-      mostrarCalificacion(modalID, puntaje + '%', mensaje, exito);
-      /*this.mensaje = `
-        Tu puntuación es ${finalScore}%.
-      `*/
+      $('#exampleModal').modal('show');
     }
   }
 })

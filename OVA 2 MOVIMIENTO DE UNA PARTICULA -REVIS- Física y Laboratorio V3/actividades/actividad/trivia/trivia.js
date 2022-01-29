@@ -116,24 +116,25 @@ function calificar(){
     i++;
   });
 
-  var puntaje = 100;
+  var puntaje = 0;
   for (var i = 0; i < res.length; i++){
-    if (res[i] == 'false'){
-      puntaje = puntaje - 75;
+    if (res[i] == 'correct'){
+      puntaje = puntaje + 100;
     }
   }
   /*alert(Math.round(puntaje));*/
   if (puntaje == 100) {
-    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
+    $('.img_res').html('<img src="img/bien.png" style="max-width: 80%; margin: auto;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+    $('.btns_modal').html('<button type="button" class="btn boton_modal" data-dismiss="modal" onclick="reiniciar();">cerrar</button>');
   }else{
     $('.img_res').html('<img src="img/mal.png" style="max-width: 90%; margin: auto;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");
     $('.puntaje').text(Math.round(puntaje)+"%");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button><button id="add" class="btn" onclick="reiniciar();">reiniciar</button>');
+    $('.btns_modal').html('<button type="button" class="btn boton_modal" data-dismiss="modal" onclick="reiniciar();">Volver a intentar</button>');
   }
+
 }
 
 function reiniciar(){
