@@ -1,5 +1,7 @@
 $( document ).ready(function() {
     paso = false;
+    star_uni = 1;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('.menu1').removeClass('d-none');
     $('.menu1').addClass('c-show');
     
@@ -18,6 +20,16 @@ $( document ).ready(function() {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+        }
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // EditarLocation(getPos());
+        actualizarprogress(stepIndex+1);
+        console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
         }
     });
 
