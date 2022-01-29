@@ -13,7 +13,8 @@
     width: 100%;
     text-align: center;
     height: 100%;
-    cursor: pointer
+    cursor: pointer;
+    margin-left: 22px;
 }
 
 table {
@@ -382,7 +383,7 @@ cursor: pointer;}
 
 }
 
-@media only screen and (min-width:880px) { 
+@media only screen and (min-width:860px) { 
     
     .barraBaja{
         width: 115%!important;

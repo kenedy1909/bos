@@ -285,7 +285,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="color:black!important;"><b>Acuerdo No. 01 de Junio 23 de 2005:</b> Consejo Nacional de Educación Superior, CESU, por el cual se expide el reglamento interno de funcionamiento.</p>
+                        <p class="justificado font14 mt-2" style="color:black!important;"><b>Acuerdo No. 01 de Junio 23 de 2005:</b> Consejo Nacional de Educación Superior, CESU, por el cual se expide el reglamento interno de funcionamiento.</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC2').addClass('inactive');
@@ -301,7 +301,7 @@ function aparece_abajo(num){
             $('.baneW1').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="color:black!important;"><b>Decreto 4729 de 2007:</b> Por el cual se otorga la Orden a la Educación Superior y a la Fe Pública "Luis López de Mesa".</p>
+                        <p class="justificado font14 mt-2" style="color:black!important;"><b>Decreto 4729 de 2007:</b> Por el cual se otorga la Orden a la Educación Superior y a la Fe Pública "Luis López de Mesa".</p>
                         `;
             $('.imprimetext1').html(text);
             $('.imgC4').addClass('inactive');
@@ -407,7 +407,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="color:black!important;padding: 20px 1px 1px;"><b>Resolución Nº 000167 del 31 de Mayo de 2006:</b> Icfes, por la cual se formaliza una delegación</p>
+                        <p class="justificado font14" style="color:black!important;padding: 10px 1px 1px;"><b>Resolución Nº 000167 del 31 de Mayo de 2006:</b> Icfes, por la cual se formaliza una delegación</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
@@ -455,7 +455,7 @@ function aparece_arriba(num) {
             $('.baneW2').addClass('active');
 
             var text = `
-                        <p class="justificado font14" style="color:black!important;"><b>Decreto 4674 de 2006:</b> Por el cual se modifica la Planta Global del Ministerio de Educación Nacional.</p>
+                        <p class="justificado font14 mt-2" style="color:black!important;"><b>Decreto 4674 de 2006:</b> Por el cual se modifica la Planta Global del Ministerio de Educación Nacional.</p>
                         `;
             $('.imprimetext2').html(text);
             $('.imgC3').addClass('inactive');
