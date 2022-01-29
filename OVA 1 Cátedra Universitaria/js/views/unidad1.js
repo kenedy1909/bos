@@ -115,14 +115,14 @@ $( document ).ready(function() {
     });
 
     
-    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
-        slide();
-        // console.log(e);
-        switch(stepIndex) {
-            default:
-            // code block
-        }
-    });
+    // $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+    //     slide();
+    //     // console.log(e);
+    //     switch(stepIndex) {
+    //         default:
+    //         // code block
+    //     }
+    // });
     
     /*slide_predeterminado();*/
 
@@ -1290,13 +1290,11 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
-                actualizarprogress();
+                slide(1);
                 break;
         }
     }
