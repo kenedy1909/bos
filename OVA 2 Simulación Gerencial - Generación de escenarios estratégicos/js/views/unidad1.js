@@ -1,7 +1,6 @@
 $( document ).ready(function() {
     paso = false;
     $('.modal').on('hidden.bs.modal', function (event) {
-        alert();
         $('body').addClass('p-0');
     });
     $('.menu1').removeClass('d-none');
