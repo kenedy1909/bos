@@ -1,4 +1,9 @@
 $( document ).ready(function() {
+  $('.menu1').removeClass('c-show');
+    
+    $('.menu2').removeClass('d-none');
+    $('.menu2').addClass('c-show');
+    
     
     console.log(tema);
     /*slide_link2(tema);*/
@@ -16,6 +21,16 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+      slide();
+      // EditarLocation(getPos());
+      actualizarprogress(stepIndex+14);
+      console.log(e);
+      switch(stepIndex) {
+          default:
+          // code block
+      }
+  });
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     
     $('#next').on('click', function () {
@@ -29,6 +44,13 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+     });
+    function detenerMultimedia() {
+      $('body').addClass('p-0');
+      
+     }
     /*slide_predeterminado2();*/
     slide_link2(tema);
     /*funcion_vanvas();
@@ -76,8 +98,14 @@ function controlSlides2(num){
         case 1:
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i> Cómo_investigan_los_economistas.pdf</a>
+                                  <a href="assets/PDF/UNIDAD2/4. Srebrenica_El_camino_a_un_genocidio.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>Srebenica: el camino a un genocidio.pdf</a>
                               </p>
+                              <p class="p_white size_20">
+                              <a href="assets/PDF/UNIDAD2/Caso Almonacid Arellano y otros Vs. Chile.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i> Caso Almonacid Arellano contra Chile.pdf</a>
+                          </p>
+                          <p class="p_white size_20">
+                          <a href="assets/PDF/UNIDAD2/5. Amicus Curiae Violencia Sexual (1).pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i> Amicus Curiae Violencia Sexual.pdf</a>
+                      </p>
                             </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. Desarrollo de cada uno de los crímenes competencia de la Corte ","De los crímenes internacionales");

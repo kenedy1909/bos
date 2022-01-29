@@ -2,6 +2,7 @@ var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
 let paso = true;
+var star_uni = 0;
 if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 }else{
@@ -109,22 +110,22 @@ function scroll(){
 }
 var total = 200;
 function actualizarprogress(num){
-    var naveg = 0;
-    var done = 0;
-    var unidad = $(".container-fluid").data("unidad");
-    if(unidad == 1 || num == 1){
-        naveg = 0;
-    }else if(unidad == 2 || num == 2){
-        naveg = 14;
-    }
-    done = $(".done").length;  
+    // var naveg = 0;
+    // var done = 0;
+    // var unidad = $(".container-fluid").data("unidad");
+    // if(unidad == 1 || num == 1){
+    //     naveg = 0;
+    // }else if(unidad == 2 || num == 2){
+    //     naveg = 14;
+    // }
+    // done = $(".done").length;  
     /*if (unidad == 2) {
         done--;
     }*/
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((done+active+naveg)*100)/20);
+    total_porcentaje = parseInt(((num)*100)/20);
     if(total_porcentaje <= 100){
         $(".number").html(total_porcentaje+'%');
 

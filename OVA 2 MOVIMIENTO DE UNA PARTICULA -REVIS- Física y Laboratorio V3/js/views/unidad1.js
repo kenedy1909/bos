@@ -278,6 +278,7 @@ function controlSlides(num) {
                 var slideWidth = $('#slider4 ul li').width();
                 var slideHeight = $('#slider4 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
+                var numslide = 0;
 
                 $('#slider4').css({ width: '100%', height: '150px' });
 
@@ -286,29 +287,41 @@ function controlSlides(num) {
                 $('#slider4 ul li:last-child').prependTo('#slider4 ul');
 
                 function moveLeft4() {
+                    numslide = numslide - 1;
+                    console.log(slideCount);
                     $('#slider4 ul').animate({
                         left: +slideWidth
                     }, 200, function() {
                         $('#slider4 ul li:last-child').prependTo('#slider4 ul');
                         $('#slider4 ul').css('left', '');
                     });
+                    if (numslide == 0) {
+                        $('.control_prev4').addClass('d-none');
+                    }
                 };
 
                 function moveRight4() {
+                    numslide = numslide + 1;
                     $('#slider4 ul').animate({
                         left: -slideWidth
                     }, 200, function() {
+
                         $('#slider4 ul li:first-child').appendTo('#slider4 ul');
                         $('#slider4 ul').css('left', '');
                     });
+                    if (numslide == slideCount-1) {
+                        $('.control_next4').addClass('d-none');
+                    }
                 };
 
                 $('a.control_prev4').click(function(e) {
+                    $('.control_next4').removeClass('d-none');
                     moveLeft4();
                     e.preventDefault();
                 });
 
                 $('a.control_next4').click(function(e) {
+                    $('.control_prev4').removeClass('d-none');
                     moveRight4();
                     e.preventDefault();
                 });
@@ -664,6 +677,10 @@ function mesas(num) {
 
             $('.cordenadamesa3').removeClass('invisible');
             $('.cordenadamesa3').addClass('visible');
+            break;
+        case 4:
+            $('.mesas').addClass('invisible');
+            $('.mesas').removeClass('visible');
             break;
         default:
             break;
@@ -1166,23 +1183,20 @@ function svg_img(num) {
             $("#svg-info").html(`
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
                                   <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
-                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-verde" style="background: #1f4e79; width: 40px; height: 40px;">
-                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -30px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-verde" style="background: #1f4e79; width: 30px; height: 30px;">
+                                        <h3 class="text-white text-center x-modal-text"><b>X</b></h3>
                                       </div>
                                     </button>
                                   </div>
                                   <div class="m-3 img-100" style="opacity: initial;">
-                                    <div class="custom-scrollbar_uno pr-3">
-                                      <div class="custom-scrollbar__inner_uno">
+                                    <div class="" style="height: 300px;padding: 0px 30px 1px 0px;">
+                                      <div class="">
                                         <p class="p_black justificado">Cuando una partícula se mueve en un círculo con rapidez constante, el movimiento se conoce como movimiento circular uniforme. Un automóvil que da vuelta en una curva de radio constante con rapidez constante, un satélite en órbita circular y un patinador que describe un círculo con rapidez constante son ejemplos de este movimiento</p>
                                         <br>
                                         <div class="text-center">
                                            <img src="assets/img/img_ova/neutrones.png" class="img-25">
                                         </div>
-                                      </div>
-                                      <div class="custom-scrollbar__bar_uno">
-                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
                                       </div>
                                     </div>
                                   </div>
@@ -1191,35 +1205,31 @@ function svg_img(num) {
             $("#svg-info").removeClass('d-none');
             $("#svg-info").attr('style', "left: 0px; bottom: 50px;");
             $(".cerrar-svg").on('click', cerrar_svg);
-            modal_scroll_uno();
             break;
         case 2:
             $("#svg-info").html(`
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
                                   <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
-                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-azul" style="background: #1f4e79; width: 40px; height: 40px;">
-                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -30px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-azul" style="background: #1f4e79; width: 30px; height: 30px;">
+                                        <h3 class="text-white text-center x-modal-text"><b>X</b></h3>
                                       </div>
                                     </button>
                                   </div>
                                   <div class="m-3 img-100" style="opacity: initial;">
-                                    <div class="custom-scrollbar_uno pr-3">
-                                      <div class="custom-scrollbar__inner_uno">
+                                    <div class="" style="height: 270px;">
+                                      <div class="">
                                         <p class="p_black text-center">clic a la imagen</p>
-                                        <div class="text-center">
+                                        <div class="text-center" style='padding-right: 15px;'>
                                            <img src="assets/img/img_ova/imagenejemploparticula.png" class="img-100" data-toggle="modal" data-target="#agran1">
                                         </div>
-                                      </div>
-                                      <div class="custom-scrollbar__bar_uno">
-                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                                 `);
             $("#svg-info").removeClass('d-none');
-            $("#svg-info").attr('style', "right: 40px; bottom: 50px;");
+            $("#svg-info").attr('style', "right: 40px; bottom: 30px;");
             $(".cerrar-svg").on('click', cerrar_svg);
             modal_scroll_uno();
             break;
@@ -1227,22 +1237,19 @@ function svg_img(num) {
             $("#svg-info").html(`
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
                                   <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
-                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -40px; top: -20px;">
-                                      <div class="m-0 p-0 x-modal-verde-o" style="background: #1f4e79; width: 40px; height: 40px;">
-                                        <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                    <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -30px; top: -20px;">
+                                      <div class="m-0 p-0 x-modal-verde-o" style="background: #1f4e79; width: 30px; height: 30px;">
+                                        <h3 class="text-white text-center x-modal-text"><b>X</b></h3>
                                       </div>
                                     </button>
                                   </div>
                                   <div class="m-3 img-100" style="opacity: initial;">
-                                    <div class="custom-scrollbar_uno pr-3">
-                                      <div class="custom-scrollbar__inner_uno">
+                                    <div class="" style='height: 220px;'>
+                                      <div class="" style='padding-right: 30px;'>
                                         <p class="p_black justificado">No hay componente de aceleración paralela (tangente) a la trayectoria; si la hubiera, la rapidez cambiaría. El vector aceleración es perpendicular (normal) a la trayectoria y, por lo tanto, se dirige hacia adentro (¡nunca hacia afuera!), al centro de la trayectoria circular. Esto causa el cambio en la dirección de la velocidad, sin que cambie la rapidez.</p>
                                         <div>
                                             <button class="btn boton_claro" style="" data-toggle="modal" data-target="#Verinformación2-modal">Ver + información</button>
                                         </div>
-                                      </div>
-                                      <div class="custom-scrollbar__bar_uno">
-                                        <div class="custom-scrollbar__knob_uno cursor"><p class="text-center linea_scroll_uno">-</p></div>
                                       </div>
                                     </div>
                                   </div>
