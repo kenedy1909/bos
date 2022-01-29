@@ -614,3 +614,7 @@ p, button{
     border-radius: 30px;
     -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
 }
+
+.scrollHidden{
+  overflow: hidden;
+}
