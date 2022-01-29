@@ -130,6 +130,30 @@ label {
 		-0.05em 0 0 #fff inset;
 	cursor: default;
 	pointer-events: none;
+	position: relative;
+    top: -71px;
+}
+#op_3-options[aria-expanded="true"] {
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	box-shadow:
+		-0.05em -0.1em 0.2em 0 #fff inset,
+		-0.05em 0 0 #fff inset;
+	cursor: default;
+	pointer-events: none;
+	position: relative;
+    top: -100px;
+}
+#op_2-options[aria-expanded="true"] {
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	box-shadow:
+		-0.05em -0.1em 0.2em 0 #fff inset,
+		-0.05em 0 0 #fff inset;
+	cursor: default;
+	pointer-events: none;
+	position: relative;
+    top: -41px;
 }
 .select__button--fold4 {
 	animation-name: fold4;
