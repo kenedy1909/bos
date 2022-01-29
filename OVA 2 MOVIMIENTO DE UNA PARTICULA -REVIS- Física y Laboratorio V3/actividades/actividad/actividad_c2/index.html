@@ -20,7 +20,7 @@
                <div class="content-text-img-activi-2" style="width: 100%;">
                  <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                </div>
-               <p class="text-center">CRUCIGRAMA</p>
+               <p class="text-center" style="font-size: 16px;"><em>CRUCIGRAMA</em></p>
            </div>
         </div>
         <div class="col-md-7 col-sm-7 terciario" style="width: 65%;">
@@ -45,7 +45,7 @@
       </tr>
     </table>
     <div v-if="selected !== undefined" style="text-align: center;">
-      <p class="pista" v-if="pista">
+      <p class="pista mt-5" v-if="pista" style="padding: 1px 20px;">
         {{pista}}
       </p>
       <input v-model="answer" ref="input" @keyup.enter="corregir"/>
@@ -57,23 +57,35 @@
   <h3 v-show="false">Cargando....</h3>
 </div>
 
-<div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body center-block">
-                <div class="mensaje text-center">
-                    Tu puntaje es: <span class="puntaje">40%</span>
-                    <span class="texto-puntaje"></span>
-                </div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content tranparente" style="background: transparent;
+    box-shadow: none;">
+        <div style="" class="principal_1">
+          <div style="" class="cabeza">
+            
+          </div>
+          <div class="d-flex justify-content-center" style="height: 90px;">
+            <div style="display: flex;" class="circulo_modal img_res">
+              
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                    intentar</button>
-                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+          </div>
+          <div style="padding: 10px;">
+            <div style="color: white;font-size: 18px;">
+              Su puntaje es: <b class="puntaje"></b>
             </div>
+            <div style="color: white;font-size: 18px;">
+              <p class="mensaje"></p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center btns_modal">
+            
+            
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 <!-- partial -->
   <script src='https://unpkg.com/vue'></script>
   <script  src="../js/jquery.min.js"></script>
