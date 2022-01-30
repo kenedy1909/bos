@@ -3,6 +3,11 @@ $( document ).ready(function() {
     console.log(tema);
     $('.ov-personaje').addClass('d-none');
     $(".menu1").removeClass('d-none');
+    
+    $(".menu1").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
@@ -98,6 +103,7 @@ function controlSlides(num){
         case 1:
             esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
@@ -118,12 +124,14 @@ function controlSlides(num){
             esconderPersonaje();
             scroll_p11();
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","Contextualización", ">");          
+            setMigaja("Unidades de aprendizaje","Contextualización", ">");      
+            cambiarColorMenu(21);    
             break;
         case 3:
             esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
+            cambiarColorMenu(31);
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20" style= "margin-left: -20%;>
                           <a href="assets/PDF/El_proceso_escolar_o_la_muerte_a_la_propensióna_investigar.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b> El proceso escolar o la muerte a la propensión a investigar.pdf </b>  <em>ver</em> </a>
@@ -135,10 +143,12 @@ function controlSlides(num){
             esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
+            cambiarColorMenu(31);
             break;
         case 5:
             esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
+            cambiarColorMenu(31);
             dragging = "";
             diff = "";
             newTop = "";
@@ -151,9 +161,10 @@ function controlSlides(num){
         case 6:
            mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
+            cambiarColorMenu(31);
             tema = 1;
             $('.ov-personaje').removeClass('d-none');
-            $(".menu1").addClass('d-none');
+            
             
             break;
 

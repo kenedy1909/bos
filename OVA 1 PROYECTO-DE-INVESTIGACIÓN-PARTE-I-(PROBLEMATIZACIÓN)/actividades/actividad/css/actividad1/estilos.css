@@ -1,3 +1,31 @@
+@media only screen and (min-width:700px) and (max-width:800px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+
+	.imagen{
+		width: 90px !important;
+        height: 90px !important; 
+        display: inline-block;
+	}
+
+    .text-img {
+        color: #ad1d73;
+        font-size: 18px !important;
+    }
+
+    .text-muted {
+        font-size: 15px !important;
+    }
+
+    
+}
+
+.text-img {
+    font-size: 20px;
+}
 .contenido {
     max-width: 1200px;
 }
