@@ -196,9 +196,10 @@
 .div-img{
     display: inline-block;max-width: 100%;
 }
+
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 100px;
+    height: 100px;
     display: inline-block;
 }
 
@@ -229,3 +230,10 @@
     left: -44px;
     box-shadow: 1px 0px 11px -2px black;
 }
+
+@media only screen and (min-width:1200px) and (max-width:1360px) {
+    
+    .imagen{
+		width: 116px;height: 116px; display: inline-block;
+	}
+} 

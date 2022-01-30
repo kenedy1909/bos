@@ -420,7 +420,7 @@ function init_recurso_1() {
                 $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
                 $('.puntaje').text("100%");
                 $('.mensaje').text("¡Felicitaciones!");
-                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" onclick="reload()" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
                 $("#calificacionModal").modal("show");
             }
         }
@@ -452,12 +452,12 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
-        location.reload();
+        ahorcado.reiniciar();
     });
 
 
-    $("#reset").on("click", function() {
+    function reload(){
         location.reload();
-    })
+    }
 
 }

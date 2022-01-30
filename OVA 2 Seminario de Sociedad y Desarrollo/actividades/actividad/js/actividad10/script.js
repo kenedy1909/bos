@@ -173,12 +173,19 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
             $('.mensaje').text("¡Felicitaciones!");
             $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #8b6229;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
             $(modalID).modal('show');
+        }else if (puntaje >= 75 && puntaje < 100) {
+          
+            $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
+            $('.puntaje').text(Math.round(puntaje)+"%");
+            $('.mensaje').text("¡Felicitaciones!");
+            $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px; width: 20%;">cerrar</button>');
+            $(modalID).modal('show');
         }else{
-            $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 90%;">');
+            $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 80%; margin-top: 5%;">');
             $('.mensaje').text("¡Puedes hacerlo mejor!");
             $('.puntaje').text(Math.round(puntaje)+"%");
             $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
-            $(modalID).modal('show');
+            $(modalID).modal('show'); 
         }
         
     };
