@@ -1,3 +1,33 @@
+@media only screen and (min-width:900px) and (max-width:1200px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+
+	.imagen{
+		width: 100px;height: 100px;
+	}
+
+    .text-img {
+        color: #ad1d73;
+        font-size: 15px;
+    }
+
+    .text-muted {
+        font-size: 12px;
+    }
+}
+
+.text-img {
+    color: #ad1d73;
+    font-size: 20px;
+}
+
+.text-muted {
+    font-size: 17px;
+}
+
 .mauto {
     margin-left: 10px;
     margin-right: auto;

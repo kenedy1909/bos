@@ -4,7 +4,7 @@ $( document ).ready(function() {
         style: 'flat',
         spacing: -0.25,
         buttons: true,
-        start: 0,
+        start: star_uni,
         buttonNext: 'Siguiente',
         onItemSwitch: function (currentItem,previousItem,index) {
             var slide = $(currentItem).attr("data-flip-title");

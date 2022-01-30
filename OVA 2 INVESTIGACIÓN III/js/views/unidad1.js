@@ -6,6 +6,8 @@ $( document ).ready(function() {
     $(".menu2").removeClass('c-show');
     $(".menu3").removeClass('c-show');
     $(".menu4").removeClass('c-show');
+
+    star_uni = 1;
     // console.log(tema);
 
     $('#smartwizard').smartWizard({

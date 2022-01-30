@@ -8,6 +8,8 @@ $( document ).ready(function() {
   $(".menu3").removeClass('c-show');
   $(".menu4").removeClass('c-show');
 
+  star_uni = 2;
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
