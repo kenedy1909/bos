@@ -349,3 +349,21 @@ span.checked svg.svg2 {
 th {
     text-align: center;
 }
+
+@media only screen and (min-width:700px) {
+    .text-up {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .text-up {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .content-down {
+        margin-top: 10px;
+    }
+}

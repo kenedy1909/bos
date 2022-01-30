@@ -644,7 +644,7 @@ function pantalla13(num) {
         case 1:
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos1').addClass('btn_ethosActive');
-            var text = `<div style="height: 270px; overflow: auto;">
+            var text = `<div style="height: 274px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">SITUACIÓN</h3>
                           <p class="font-weight-bold text-black" style="font-size: 12px; text-align: justify;">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
                        </div>
