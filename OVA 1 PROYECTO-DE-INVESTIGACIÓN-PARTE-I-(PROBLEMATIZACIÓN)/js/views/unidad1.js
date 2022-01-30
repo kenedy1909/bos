@@ -102,9 +102,9 @@ function controlSlides(num){
             diff = "";
             newTop = "";
             scrollOffset = "";
-            knob = document.querySelector('.custom-scrollbar__knob');
-            bar = document.querySelector('.custom-scrollbar__bar');
-            container = document.querySelector('.custom-scrollbar__inner');
+            // knob = document.querySelector('.custom-scrollbar__knob');
+            // bar = document.querySelector('.custom-scrollbar__bar');
+            // container = document.querySelector('.custom-scrollbar__inner');
             /*scroll();*/
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20" style= "margin-left: -20%;>

@@ -4,6 +4,9 @@ $( document ).ready(function() {
     $( ".ov-personaje").hide();
     $( ".menu1").removeClass('d-none');
     $( ".menu2").removeClass('d-none');
+
+    $(".menu2").addClass('c-show');
+    $(".menu1").removeClass('c-show');
     
     $('#smartwizard').smartWizard({
         loader:"show",

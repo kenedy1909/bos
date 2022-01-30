@@ -523,3 +523,15 @@ label {
 .text-verde{
 	color: #6FB14D;
 }
+
+@media only screen and (min-width:900px) and (max-width:1200px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+
+	.img-activi{
+		width: 100px;height: 100px;
+	}
+}

@@ -256,7 +256,7 @@ html {
 .calificacion .modal-content {
     background-color: transparent;
     border: none;
-    box-shadow: none;
+    box-shadow: none; 
 }
 
 .calificacion .modal-body {

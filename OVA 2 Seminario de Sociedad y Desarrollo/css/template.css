@@ -1,3 +1,57 @@
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+  .video-inicial {
+    margin-left: 5%;
+  }
+
+  .img-activi {
+    width: 100px; height: 100px;
+  }
+
+  .texto-activi {
+    color: #78201A; font-size: 18px;
+  }
+
+  .ml-img2 {
+    margin-left: 23%;
+  }
+
+  .boton-ver {
+    flex: 0 0 66.66666667% !important;
+    max-width: 66.66666667% !important;
+  }
+
+  .btn-text {
+    font-size: 0.7rem;
+  }
+
+  
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+
+  .video-inicial {
+    margin-left: 16%;
+  }
+
+  .img-activi {
+    width: 116px; height: 116px;
+  }
+
+  .texto-activi {
+    color: #78201A; font-size: 20px;
+  }
+
+  .ml-img {
+    margin-left: 16%;
+  }
+
+  .ml-img2 {
+    margin-left: 35%;
+  }
+}
+
+
 .icons-menu{
 }
 .tab-pane iframe{
@@ -41,6 +95,194 @@
 .controles #prev{
     margin-left: -50px;
 }
+
+/* @medias para el total de la pantalla */
+
+@media only screen and (min-width:993px) {
+  
+  .controles #next{
+    right: calc(((100vw - 993px)/2) - 0px);
+  }
+  
+
+}
+@media only screen and (min-width:1005px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1005px)/2) - 5px);
+  }
+  
+
+}
+@media only screen and (min-width:1020px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1020px)/2) - 5px);
+  }
+  
+
+}
+@media only screen and (min-width:1045px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1045px)/2) - 5px);
+  }
+  
+
+}
+@media only screen and (min-width:1075px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1075px)/2) - 5px);
+  }
+  
+
+}
+@media only screen and (min-width:1100px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1100px)/2) - 20px);
+  }
+
+  
+
+}
+@media only screen and (min-width:1110px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1110px)/2) - 5px);
+  }
+
+  
+
+}
+@media only screen and (min-width:1125px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1125px)/2) - 5px);
+  }
+
+  
+
+}
+@media only screen and (min-width:1135px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1135px)/2) - 5px);
+  }
+
+  
+
+}
+
+@media only screen and (min-width:1150px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1150px)/2) - 20px);
+  }
+
+  
+
+}
+
+@media only screen and (min-width:1156px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1156px)/2) - 20px);
+  }
+
+  
+
+}
+@media only screen and (min-width:1180px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1180px)/2) - 0px);
+  }
+
+}
+@media only screen and (min-width:1200px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1200px)/2) - 0px);
+  }
+
+}
+@media only screen and (min-width:1220px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1220px)/2) - 0px);
+  }
+
+}
+@media only screen and (min-width:1245px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1245px)/2) - 0px);
+  }
+
+}
+@media only screen and (min-width:1260px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1260px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1280px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1280px)/2) - 20px);
+  }
+
+}
+
+@media only screen and (min-width:1300px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1300px)/2) - 20px);
+  }
+  
+}
+@media only screen and (min-width:1335px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1335px)/2) - 0px);
+  }
+  
+}
+@media only screen and (min-width:1350px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1350px)/2) - 0px);
+  }
+  
+}
+
+@media only screen and (min-width:1360px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1360px)/2) - 0px);
+  }
+  
+}
+
+@media only screen and (min-width:1450px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1360px)/2) - 0px);
+  }
+  
+}
+
+@media only screen and (min-width:1600px) {
+  
+  .controles #next{
+    right: calc(((100vw - 1360px)/2) - 5px);
+  }
+  
+}
+
 
 
 .sw-theme-arrows>.nav{
@@ -786,6 +1028,14 @@ svg circle:nth-child(2){
   width: 50px;
 }
 
+.w-45px{
+  width: 45px;
+}
+
+.w-40px{
+  width: 40px;
+}
+
 .card-inactiva-o{
   background: #252525 !important;
 }
@@ -848,4 +1098,14 @@ svg circle:nth-child(2){
 
 .colorAMenu{
   color: #ffc000!important;
+}
+
+.borderline {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border: solid 2px #78201A;
+  height: 75%;
+  width: 60%;
 }

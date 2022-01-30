@@ -31,6 +31,11 @@ table {
     text-align: center;
 }
 
+.img-activi {
+    width: 116px; 
+    height: 116px;
+}
+
 
 .label-container {
     margin: 0;
@@ -285,4 +290,16 @@ cursor: pointer;}
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+
+	.img-activi{
+		width: 100px;height: 100px;
+	}
 }

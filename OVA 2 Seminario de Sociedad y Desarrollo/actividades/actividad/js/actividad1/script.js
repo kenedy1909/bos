@@ -369,17 +369,17 @@ function init_recurso_1() {
             }
         }
 
-        // var modalID = "#calificacionModal";
-        // var exito = false;
-        // var mensaje = "Inténtalo nuevamente.";
-        // if (puntaje == 100) {
-        //     exito = true;
-        //     mensaje = "¡Felicitaciones!"
-        // }
-        // registrarActividad(puntaje);
-        // mostrarCalificacion(modalID, mensaje, exito, function () {
-        //     self.reset(form);
-        // });
+       /* var modalID = "#calificacionModal";
+        var exito = false;
+        var mensaje = "Inténtalo nuevamente.";
+        if (puntaje == 100) {
+            exito = true;
+            mensaje = "¡Felicitaciones!"
+        }
+        registrarActividad(puntaje);
+        mostrarCalificacion(modalID, mensaje, exito, function () {
+            self.reset(form);
+        });*/
 
         if (!flag) {
             ahorcado.trazar();
@@ -392,10 +392,15 @@ function init_recurso_1() {
                 var exito = false;
                 var mensaje = "Inténtalo nuevamente.";
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
+                /*mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
                     
-                });
-            }
+                });*/
+                $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 80%; margin-top: 5%;">');
+                $('.mensaje').text("Inténtalo nuevamente.");
+                $('.puntaje').text("0%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+                $("#calificacionModal").modal("show");
+            } 
         } else {
             ahorcado.dibujarTodo();
             if (this.gano()) {
@@ -409,9 +414,14 @@ function init_recurso_1() {
                 var exito = true;
                 var mensaje = "¡Felicitaciones";
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
+                /*mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                     
-                });
+                });*/
+                $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
+                $('.puntaje').text("100%");
+                $('.mensaje').text("¡Felicitaciones!");
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" onclick="reload()" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+                $("#calificacionModal").modal("show");
             }
         }
     };
@@ -442,12 +452,12 @@ function init_recurso_1() {
 
 
     document.getElementById('reset').addEventListener('click', function () {
-        location.reload();
+        ahorcado.reiniciar();
     });
 
 
-    $("#reset").on("click", function() {
+    function reload(){
         location.reload();
-    })
+    }
 
 }

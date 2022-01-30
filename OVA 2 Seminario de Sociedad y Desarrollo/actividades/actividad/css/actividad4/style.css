@@ -171,3 +171,14 @@ td.start.selected:hover {
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
+
+@media only screen and (min-width:1140px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+	.img-activi{
+		width: 100px;height: 100px;
+	}
+}

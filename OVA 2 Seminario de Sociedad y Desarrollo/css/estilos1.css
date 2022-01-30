@@ -687,10 +687,12 @@ p, button{
 
 .text-img-activi{
   border-bottom: solid 3px rgba(0, 91, 139);
-  width: 50%;
+  width: 55%;
   height: 86px;
   margin: 0px;
   padding-top: 45px;
+  
+  
 }
 
 .content-img-actividad{
@@ -1097,6 +1099,15 @@ a.control_next {
     padding: 15px;
 }
 
+.cajatexto {
+	color: black;
+    width: 60%;
+    background-color: white;
+	border: solid 1px #78201A;
+    margin-top: 50%;
+    margin-left: 30%;
+}
+
 .div_textonum, .div_textonum2, .div_textonum3, .div_textonum4, .div_textonum5, .div_textonum6{
 	width: 10%;
 	padding: 60px 1px 1px 1px;
@@ -1166,3 +1177,4 @@ a.control_next {
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
 }
+

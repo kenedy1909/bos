@@ -187,7 +187,7 @@ QuestionsSameAnswers.prototype.score =  function () {
         $('.mensaje').text("¡Felicitaciones!");
         $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
       }else{
-        $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 90%;">');
+        $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 80%; margin-top: 5%;">');
         $('.mensaje').text("Inténtalo nuevamente.");
         $('.puntaje').text(Math.round(puntaje)+"%");
         $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');

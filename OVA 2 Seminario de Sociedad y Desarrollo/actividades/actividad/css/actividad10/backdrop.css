@@ -176,7 +176,7 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #0075a8;
+    background: #ab751d;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
@@ -189,7 +189,7 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #337ab7;
+    background: #ab751d;
     border: none;
     border-radius: 0;
     color: #fff;

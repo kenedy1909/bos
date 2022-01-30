@@ -3,7 +3,10 @@ $( document ).ready(function() {
     // console.log(tema);
     $( ".ov-personaje").hide();
     $( ".menu1").removeClass('d-none');
-    
+    $(".menu1").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    start = 1;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -67,22 +70,7 @@ $( document ).ready(function() {
         $(".parrafo").hide();
         $(".pa-5").show(300)
     })
-    $(".btn23-1").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-2").show(300)
-    })
-    $(".btn23-2").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-3").show(300)
-    })
-    $(".btn23-3").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-4").show(300)
-    })
-    $(".btn23-4").on("click", function() {
-        $(".pantalla23").hide();
-        $(".pantalla23-5").show(300)
-    })
+
 
     setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
 
@@ -495,19 +483,19 @@ function Input(num) {
     switch (parseInt(num)) {
         case 0:
             var info_scroll = `
-                            <img class="col-md-8 offset-md-6" src="assets/img/img_ova/antesdespues.jpeg">
+                            <img class="col-md-8 ml-img2" src="assets/img/img_ova/antesdespues.jpeg">
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 1:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img34.png">
+                            <img class="col-md-10 ml-img2" src="assets/img/img_ova/img34.png">
                             `;
             $('#info-scroll').html(info_scroll);
             break;
         case 2:
             var info_scroll = `
-                            <img class="col-md-10 offset-md-6" src="assets/img/img_ova/img35.png">
+                            <img class="col-md-10 ml-img2" src="assets/img/img_ova/img35.png">
                             `;
             $('#info-scroll').html(info_scroll);
             break;
@@ -759,6 +747,7 @@ jQuery(document).ready(function ($) {
         });
     };
 
+
     $('a.control_prev').click(function () {
         moveLeft();
     });
@@ -768,3 +757,34 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+function btn23(num) {
+     $(".btn23-1").replaceWith('<img class="col-md-6 offset-md-3 btn23-1 cursor" onclick="btn23(1);" src="assets/img/img_ova/b1b.png">');
+     $(".btn23-2").replaceWith('<img class="col-md-6 offset-md-3 btn23-2 cursor" onclick="btn23(2);" src="assets/img/img_ova/b2b.png">');
+     $(".btn23-3").replaceWith('<img class="col-md-6 offset-md-3 btn23-3 cursor" onclick="btn23(3);" src="assets/img/img_ova/b3b.png">');
+     $(".btn23-4").replaceWith('<img class="col-md-6 offset-md-3 btn23-4 cursor" onclick="btn23(4);" src="assets/img/img_ova/b4b.png">');
+
+    switch (num) {
+        case 1: 
+            $(".pantalla23").hide();
+            $(".pantalla23-2").show(300);
+            $(".btn23-1").replaceWith('<img class="col-md-6 offset-md-3 btn23-1" src="assets/img/img_ova/b1.png">');                        
+            break;
+        case 2: 
+            $(".pantalla23").hide();
+            $(".pantalla23-3").show(300)
+            $(".btn23-2").replaceWith('<img class="col-md-6 offset-md-3 btn23-2" src="assets/img/img_ova/b2.png">');
+            break;
+        case 3: 
+            $(".pantalla23").hide();
+            $(".pantalla23-4").show(300)
+            $(".btn23-3").replaceWith('<img class="col-md-6 offset-md-3 btn23-3" src="assets/img/img_ova/b3.png">');
+            break;   
+        case 4: 
+            $(".pantalla23").hide();
+            $(".pantalla23-5").show(300)
+            $(".btn23-4").replaceWith('<img class="col-md-6 offset-md-3 btn23-4" src="assets/img/img_ova/b4.png">');
+            break; 
+
+    }
+};
