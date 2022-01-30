@@ -37,6 +37,16 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
     });
+
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     slide_predeterminado();
@@ -70,9 +80,9 @@ function slide(num) {
     // quitarflecha(stepIndex + 1);
     // actualizarprogress(stepIndex + 1);
     if (num == 1) {
-        controlSlides(stepIndex+1);
+        controlSlides(stepIndex + 1);
         actualizarprogress(stepIndex + 1);
-    }else{
+    } else {
         controlSlides(stepIndex + 1);
         quitarflecha(stepIndex + 1);
         actualizarprogress(stepIndex + 1);
@@ -634,7 +644,7 @@ function pantalla13(num) {
         case 1:
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos1').addClass('btn_ethosActive');
-            var text = `<div style="height: 325px; overflow: auto;">
+            var text = `<div style="height: 270px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">SITUACIÓN</h3>
                           <p class="font-weight-bold text-black" style="font-size: 12px; text-align: justify;">La situación étnica actual de los pueblos indígenas es el resultado de un proceso histórico que inició con la llegada de los europeos hace más de cinco siglos, despojandolos de sus territorios y cultura, tal irrupción significó la pérdida de la “territorialidad política” de los pueblos indígenas del continente, de la soberanía sobre sus territorios y fue el inicio de un ciclo de extensa duración histórica, con ellos no solo la guerra resultó determinante en la ocupación europea de América Latina, también la transmisión de enfermedades afectaron gravemente a las poblaciones originarias y el sometimiento laboral centrado en trabajos forzados y castigos inhumanos.</p>
                        </div>
@@ -656,7 +666,7 @@ function pantalla13(num) {
         case 2:
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos2').addClass('btn_ethosActive');
-            var text = `<div style="height: 325px; overflow: auto;">
+            var text = `<div style="height: 274px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">“TERRA NULLIUS”</h3>
                           <p class="font-weight-bold text-black" style="font-size: 12px;text-align: justify;">El argumento de “Terra Nullius” (“Tierra de Nadie”) se sumó al proceso de ocupación y despojo (CEPAL, 2014), a ello se le incorporó la creación constante de instituciones destinadas a explotar el trabajo indígena, un hecho constante que no cesó durante todo este tiempo, con el paso del tiempo la desposesión indígena se profundizó con los procesos independentistas y posteriormente, con la consolidación de los Estados Nación, el despojo siguió aumentando cada vez más y con ello uno de los instrumentos utilizados fue la adopción de marcos jurídicos que favorecieron la propiedad privada y no la colectiva, siendo ésta última un emblema tradicional en los pueblos indígenas.</p>
                        </div>
@@ -700,7 +710,7 @@ function pantalla13(num) {
         case 4:
             $('.btn_ethos').removeClass('btn_ethosActive');
             $('.ethos4').addClass('btn_ethosActive');
-            var text = `<div style="height: 325px; overflow: auto;">
+            var text = `<div style="height: 270px; overflow: auto;">
                           <h3 class="text-center py-1 font-weight-bold text-black">PROBLEMAS</h3>
                            <p class="font-weight-bold text-black" style="font-size: 12px;text-align: justify;">América Latina es un escenario donde se ha normalizado el discurso hegemónico, entre los cuales los conflictos étnicos y la inclusión étnica son un “asunto resuelto” entre los siglos XIX y XX; la dificultad de las luchas étnicas parecía haber desaparecido con el desarrollo occidental y con la asimilación de la idea de la presencia indígena minoritaria dentro de los Estados, sin embargo, el gran problema en América Latina lo plantean GUTIÉRREZ CHONG y su equipo al demostrar que no se trata de problemas de identidades ni de subjetividades étnicas preexistentes, el problema radica en que, el continente americano es un campo contencioso donde intervienen factores estructurales que causan grave desigualdad.</p>
                        </div>

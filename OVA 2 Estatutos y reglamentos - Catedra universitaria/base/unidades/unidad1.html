@@ -530,7 +530,7 @@
                                                 <div class="triangulo-peque-w hoverTriangulo5 hidden"></div>
                                                 <div class="triangulo-peque"></div>
                                             </div>
-                                            <div class="col-3 text-white border-10 bg-color-secondary-dark p-3 text-center ml-3 mb-3 cursor targetasHover6" data-toggle="modal" data-target="#modalRese6">
+                                            <div class="col-3 text-white border-10 bg-color-secondary-dark p-3 text-center ml-sm-1 ml-3 mb-3 cursor targetasHover6" data-toggle="modal" data-target="#modalRese6">
                                                 <div class="img menos-marginT-50">
                                                     <img src="assets/img/img_ova/graduado.png" width="35%" style="position: relative;top: -15px;">
                                                 </div>
@@ -697,9 +697,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6 mt-4 cursor" data-toggle="modal" data-target="#modalElectoral">
-                                    <img src="assets/img/img_ova/cociente_electoral.png" width="100%">
-                                    <p style="font-size: 14px;text-align: center;"><i>Haga clic en la imagen</i></p>
+                                <div class="col-6 mt-4 cursor d-flex align-items-center" data-toggle="modal" data-target="#modalElectoral">
+                                    <div class="w-100">
+                                        <img src="assets/img/img_ova/cociente_electoral.png" width="100%">
+                                        <p style="font-size: 14px;text-align: center;"><i>Haga clic en la imagen</i></p>
+                                    </div>
                                 </div>
                             </div>
                             <div style="height: 50px;"></div>
@@ -740,30 +742,32 @@
                                     <p class="text-justify text-black">Actuar como tribunal de conflictos para dirimir los que llegaren a surgir entre los órganos de Gobierno, los conflictos pueden ser:
                                         <br> Haga clic sobre cada libro para conocer más información</p>
                                 </div>
-                                <div class="col-5">
-                                    <div class="bg-color-secondary border-10 p-3 d-flex justify-content-center align-items-center contedorLibro" style="height: 120px!important;">
+                                <div class="col-md-12 col-sm-12 row">
+                                    <div class="col-md-5 col-sm-4">
+                                        <div class="bg-color-secondary border-10 p-3 d-flex justify-content-center align-items-center contedorLibro" style="height: 120px!important;">
 
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-3 fondoLibro1" id="fondoLibro">
+                                        <div class="p-2 w-75 cursor mt-2" style="height: 60px!important;" onclick="cambiarFondoLibro(1)">
+                                        </div>
+                                        <div class="p-2 w-75 cursor" style="height: 60px!important;" onclick="cambiarFondoLibro(2)">
+                                        </div>
+                                        <div class="menos-margin-75">
+                                            <div class="text-black border-10 bg-white border-secondary-claro p-3 text-center menos-margin-15" style="position: relative;left: 80%;top: -125px;width: 164px;">
+                                                <p class="text-center h6 pb-2">Funciones de la Sala</p>
+                                                <div class="triangulo-peque-w"></div>
+                                                <div class="triangulo-peque2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 d-flex justify-content-center align-items-center">
+                                        <p class="border-10 bg-color-dark py-1 px-3 text-white cursor" data-toggle="modal" data-target="#modalDetallesU1-13" onclick="scroll_set(7)">
+                                            <b>Ver detalle</b>
+                                        </p>
                                     </div>
                                 </div>
-                                <div class="col-4 fondoLibro1" id="fondoLibro">
-                                    <div class="p-2 w-75 cursor" style="height: 60px!important;" onclick="cambiarFondoLibro(1)">
-                                    </div>
-                                    <div class="p-2 w-75 cursor" style="height: 60px!important;" onclick="cambiarFondoLibro(2)">
-                                    </div>
-                                </div>
-                                <div class="menos-margin-75">
-                                    <div class="text-black border-10 bg-white border-secondary-claro p-3 text-center menos-margin-15">
-                                        <p class="text-center h6 pb-2">Funciones de la Sala</p>
-                                        <div class="triangulo-peque-w"></div>
-                                        <div class="triangulo-peque2"></div>
-                                    </div>
-                                </div>
-                                <div class="col-2 d-flex justify-content-center align-items-center">
-                                    <p class="border-10 bg-color-dark py-1 px-3 text-white cursor" data-toggle="modal" data-target="#modalDetallesU1-13" onclick="scroll_set(7)">
-                                        <b>Ver detalle</b>
-                                    </p>
-                                </div>
-                                <div class="col-12 py-1 border_bd mt-2"></div>
+                                <div class="col-12 py-1 border_bd" style="margin-top: -20px;"></div>
                                 <div class="col-12 mt-3 border_bd py-2">
                                     <h5 class="color-title">Presupuesto</h5>
                                     <div class="row">
@@ -821,8 +825,8 @@
                                         <div class="triangulo-peque2"></div>
                                     </div>
                                 </div>
-                                <div class="col-2"></div>
-                                <div class="col-6">
+                                <div class="col-3"></div>
+                                <div class="col-5">
                                     <div class="text-black border-10 bg-white border-secondary-claro p-2 text-center mb-0  position-relative menos-marginB-10">
                                         <p class="text-center h6 my-2 pb-3">Que haya quórum requerido para las reuniones de la Sala: </p>
                                         <div class="triangulo-peque-w" style="    margin-top: -10px;"></div>
@@ -1238,12 +1242,12 @@
                                     <p class="text-justify text-white">Descargue la lectura complementaria “La reforma a los estatutos”, léala y realice un análisis de porqué la importancia de conocer estos. Además responda el cuestionario.</p>
                                     <div class="text-center mt-3 col-md-12">
                                         <div class="row">
-                                            <div class="col-md-5">
-                                                <div class="d-flex justify-content-center">
+                                            <div class="col-md-6 p-0" style="">
+                                                <div class="d-flex justify-content-center" style="">
                                                     <a href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank" class="mt-1 btn bg-color-dark text-white px-3 py-2 h3" style="border-radius: 8px;">Lectura &nbsp; <i class="fas fa-download"></i></a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-7">
+                                            <div class="col-md-6 p-0">
                                                 <div class="d-flex justify-content-center">
                                                     <a href="assets/PDF/cuestionario_reforma_estatutos.pdf" target="_blank" class="mt-1 btn bg-color-dark text-white px-3 py-2 h3" style="border-radius: 8px;">Cuestionario &nbsp; <i class="fas fa-download"></i></a>
                                                 </div>

@@ -972,7 +972,7 @@ a.control_next {
 
 .bannercafe2 {
     background: #965B0C;
-    padding: 25px;
+    padding: 35px;
     border-radius: 50px;
 }
 
@@ -1017,15 +1017,15 @@ a.control_next {
 }
 
 .btn_bluecircle {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background: #4472C4;
     border-radius: 50%;
     color: white;
     font-weight: bold;
-    padding: 12px 3px 14px 20px;
+    padding: 18px 3px 14px 24px;
     position: relative;
-    left: -20px;
+    left: -28px;
 }
 
 .visible {
@@ -1116,7 +1116,7 @@ a.control_next {
 .header_target {
     background: white;
     border-radius: 20px 20px 20px 20px;
-    border: solid 1px #1f4e79;
+    /*border: solid 1px #1f4e79;*/
     position: absolute;
     width: 65%;
     text-align: center;
@@ -1627,7 +1627,7 @@ a.control_next {
 
 #slider5 {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     margin: 20px auto 0 auto;
     border-radius: 4px;
 }
@@ -1647,7 +1647,7 @@ a.control_next {
     margin: 0;
     padding: 10px;
     width: 100%;
-    height: 400px;
+    height: 430px;
     text-align: center;
     border-radius: 30px;
 }
@@ -1875,7 +1875,7 @@ a.control_next {
     border-radius: 50%;
     font-weight: bold;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 7px;
     z-index: 1;
 }
 
@@ -1961,4 +1961,51 @@ a.control_next {
     .indicacion{
         padding: 0px 113px;
     }
+}
+
+.rectangulo_azul{
+    width: 100%;height: 86px;background: #4472C4;
+}
+
+.content_tria{
+    padding: 30px 1px 1px 23px;
+}
+.img_centro{
+    width: 86px;margin-left: -10%;
+}
+.ban_coffe{
+    background: #E39D40;height: 325px;
+}
+.pading_tria{
+    padding: 37px 1px 1px 51px;
+    z-index: 1;
+}
+
+.baner_blue{
+    padding: 15px;
+    width: 100%;
+    height: 200px;
+    background: #4472C4;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.ban_bus{
+    background: #4472C4;height: 50px;border-radius: 12px;
+}
+.camnion{
+    width: 115px;margin-top: -34px;margin-left: 20px;
+}
+
+.ban_cohe{
+    margin-top: 15%;
+    background: #E49E40;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.cohe{
+    width: 93px;
+    margin-top: -24px;
+    margin-left: 20px;
 }

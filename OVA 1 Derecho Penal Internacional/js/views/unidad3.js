@@ -29,6 +29,14 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
     });
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+       });
+      function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+        
+       }
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);
@@ -167,6 +175,7 @@ function controlSlides(num){
 
             break;
         case 7:
+            
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
             
             document.getElementById("next").style.display="block";
@@ -356,7 +365,7 @@ function pinochet(num) {
         $("#pinochet").html('');
     }else if (num == 2) {
         var texto = `
-                    <a href="http://www.derechos.net/doc/pino/lores1.html" target="_blank">
+                   
                         <div class="row pl-3">
                           <div class="col-md-12 row">
                             <div class="col-md-1 p-0 zindex" style="">
@@ -370,7 +379,7 @@ function pinochet(num) {
                             </div>
                             <div class="col-md-12 banner_activi bg-amarillo-c">
                               <div class="pr-3">
-                                <p class="p_black pl-3">Como parte del debate, lea el documento "El análisis de la cámara de los lores" el cual ejemplifica la discusión que al respecto se dio en Inglaterra.</p>
+                                <p class="p_black pl-3 justificado">Como parte del debate, lea el documento "El análisis de la cámara de los lores" el cual ejemplifica la discusión que al respecto se dio en Inglaterra.</p>
                               </div>
                             </div>
                           </div>
@@ -381,9 +390,14 @@ function pinochet(num) {
                                   </div>
                                   <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>40 minutos</b></p>
                               </div>
+                              <div class="d-flex">
+                                <div class="m-auto">
+                                <button class="p_white bg-cafe-activi btn p-2 m-auto" > <a href="http://www.derechos.net/doc/pino/lores1.html" target="_blank"><b>DOCUMENTO</b> </a></button>
+                                </div>
+                          </div>
                           </div>
                         </div>
-                    </a>
+                   
                     `;
         $("#pinochet").html(texto);
     }else if (num == 3) {

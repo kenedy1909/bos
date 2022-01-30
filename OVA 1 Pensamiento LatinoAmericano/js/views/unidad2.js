@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
     tema = 1;
     slide_predeterminado2();
     console.log(tema);
@@ -8,33 +8,43 @@ $( document ).ready(function() {
     $(".menu2").removeClass('d-none');
 
     /*slide_link(tema);*/
-    $( ".zoomContainer" ).remove();
+    $(".zoomContainer").remove();
     $('#smartwizard').smartWizard({
-        loader:"show",
-        theme:'arrows',
+        loader: "show",
+        theme: 'arrows',
         toolbarSettings: {
-              showNextButton: false, // show/hide a Next button
-              showPreviousButton: false, // show/hide a Previous button
-              toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
+            showNextButton: false, // show/hide a Next button
+            showPreviousButton: false, // show/hide a Previous button
+            toolbarExtraButtons: [] // Extra buttons to show on toolbar, array of jQuery input/buttons elements
         },
         transition: {
             animation: 'slide-horizontal', // Effect on navigation, none/fade/slide-horizontal/slide-vertical/slide-swing
             speed: '500', // Transion animation speed
-            easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
+            easing: '' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $('.zoom_img').elevateZoom({zoomWindowPosition: 10});
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+    $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
+    $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
-    $('#next').on('click', function () {
+    $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide(0);
     });
-    
-    $('#prev').on('click', function () {
+
+    $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide(0);
     });
+
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
     /*funcion_vanvas();
     funcion_canvas2();*/
     /*setMigaja("Unidades de aprendizaje","2. Conjuntos",";*/
@@ -43,28 +53,29 @@ $( document ).ready(function() {
     /*$(".t_1").on('click', cambiacontenido2(1));
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
-    
+
 });
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
 })
-function slide(num){
+
+function slide(num) {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides2(stepIndex);
-    quitarflecha(stepIndex+1);
-    actualizarprogress(stepIndex+1+18);
+    quitarflecha(stepIndex + 1);
+    actualizarprogress(stepIndex + 1 + 18);
     if (num == 1) {
-        controlSlides2(stepIndex+1);
-        quitarflecha(stepIndex+1);
-        actualizarprogress(stepIndex+1+19);
-    }else{
+        controlSlides2(stepIndex + 1);
+        quitarflecha(stepIndex + 1);
+        actualizarprogress(stepIndex + 1 + 19);
+    } else {
         controlSlides2(stepIndex);
-        quitarflecha(stepIndex+1);
-        actualizarprogress(stepIndex+1+18);
+        quitarflecha(stepIndex + 1);
+        actualizarprogress(stepIndex + 1 + 18);
     }
 }
 
-function slide_predeterminado2(){
+function slide_predeterminado2() {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides2(1);
@@ -72,16 +83,17 @@ function slide_predeterminado2(){
     // window.location.href ="#unidad2-1";
 }
 
-function slide_link(num){
+function slide_link(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     // window.location.href ="#unidad2-"+num;
     controlSlides2(num);
 }
-function controlSlides2(num){
+
+function controlSlides2(num) {
     switch (parseInt(num)) {
         case 0:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             /*$("#content-ova").load("base/unidades/unidad1.html");*/
             tema = 6;
             break;
@@ -98,61 +110,61 @@ function controlSlides2(num){
                               </p> 
                             </div>`;
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. Fundamentación del pensamiento autónomo","La idea de America Latina");
+            setMigaja("Unidades de aprendizaje", "2. Fundamentación del pensamiento autónomo", "La idea de America Latina");
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 9;
             break;
-        
+
         default:
             break;
     }
 }
 
 function scroll_set(num) {
-  dragging = "";
-  diff = "";
-  newTop = "";
-  scrollOffset = "";
-  knob = document.querySelector('.custom-scrollbar__knob'+num);
-  bar = document.querySelector('.custom-scrollbar__bar'+num);
-  container = document.querySelector('.custom-scrollbar__inner'+num);
-  scroll();
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob' + num);
+    bar = document.querySelector('.custom-scrollbar__bar' + num);
+    container = document.querySelector('.custom-scrollbar__inner' + num);
+    scroll();
 }
 
-function pantalla2_1(num){
-  switch (parseInt(num)) {
-      case 1:
-          var text = `<div class="col-md-6">
+function pantalla2_1(num) {
+    switch (parseInt(num)) {
+        case 1:
+            var text = `<div class="col-md-6">
                         <div style="background: #E2C4DF;border-radius: 50px;height: 150px;padding: 25px 25px 25px 25px;">
                           <p class="justificado">El método en economía, como en cualquier otra área del conocimiento, tiene que ver con el procedimiento del cual se sirve la disciplina para desarrollar un nuevo conocimiento.</p>
                         </div>
@@ -165,19 +177,19 @@ function pantalla2_1(num){
                           <img src="assets/img/img_ova/metodo.png" style="max-width: 50%;">
                         </div>
                       </div>`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav1').addClass('activa');
+            $('.avance_blanco').removeClass('activa');
+            $('.nav1').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na1').removeClass('inactivo');           
-          $('.na1').addClass('encendido');
-          
-          $('.cont2_1').html(text);
-          break;
-      case 2:
-          var text = `<div class="col-md-12">
+            $('.na1').removeClass('inactivo');
+            $('.na1').addClass('encendido');
+
+            $('.cont2_1').html(text);
+            break;
+        case 2:
+            var text = `<div class="col-md-12">
                         <div class="banner_crema">
                           <p class="justificado">La comprobación empírica de la economía se hace mediante la econometría y la estadística. Y en el avance de los métodos cuantitativos aplicados han ocurrido los siguientes hechos:</p>
                         </div>
@@ -187,19 +199,19 @@ function pantalla2_1(num){
                           <img src="assets/img/img_ova/hechos.png" style="max-width: 77%">
                         </div>
                       </div>`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav2').addClass('activa');
+            $('.avance_blanco').removeClass('activa');
+            $('.nav2').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na2').removeClass('inactivo');           
-          $('.na2').addClass('encendido');
-          
-          $('.cont2_1').html(text);
-          break;
-      case 3:
-          var text = `<div class="col-md-6">
+            $('.na2').removeClass('inactivo');
+            $('.na2').addClass('encendido');
+
+            $('.cont2_1').html(text);
+            break;
+        case 3:
+            var text = `<div class="col-md-6">
                               <div class="banner_crema">
                                 <p class="justificado">Si fuese posible establecer un común denominador de los desarrollos contemporáneos de la teoría económica y de sus componentes metodológicos, podríamos señalar que los mismos se enmarcan en la necesidad de explicar fenómenos altamente complejos y, en consecuencia y en mayor o menor grado, ciertos niveles de interdisciplinariedad. <br>
                                 Así, la economía encuentra explicaciones más competentes a sus temas de estudio a partir de su relación con disciplinas como la política, el derecho, la filosofía, la psicología, la sociología, la antropología, entre otras</p>
@@ -249,21 +261,21 @@ function pantalla2_1(num){
                                 </div>
                               </div>
                             </div>`;
-          $('.avance_blanco').removeClass('activa');            
-          $('.nav3').addClass('activa');
+            $('.avance_blanco').removeClass('activa');
+            $('.nav3').addClass('activa');
 
-          $('.opcion_p2_2').removeClass('encendido');
-          $('.opcion_p2_2').addClass('inactivo');
+            $('.opcion_p2_2').removeClass('encendido');
+            $('.opcion_p2_2').addClass('inactivo');
 
-          $('.na3').removeClass('inactivo');           
-          $('.na3').addClass('encendido');
-          
-          $('.cont2_1').html(text);
-          break;
-      
-      default:
-          break;
-  }
+            $('.na3').removeClass('inactivo');
+            $('.na3').addClass('encendido');
+
+            $('.cont2_1').html(text);
+            break;
+
+        default:
+            break;
+    }
 }
 
 // tabs
@@ -273,25 +285,25 @@ var tabContent = document.querySelectorAll(".tabcontent");
 
 
 tabLinks.forEach(function(el) {
-   el.addEventListener("click", openTabs);
+    el.addEventListener("click", openTabs);
 });
 
 
 function openTabs(el) {
-   var btnTarget = el.currentTarget;
-   var country = btnTarget.dataset.country;
+    var btnTarget = el.currentTarget;
+    var country = btnTarget.dataset.country;
 
-   tabContent.forEach(function(el) {
-      el.classList.remove("active");
-   });
+    tabContent.forEach(function(el) {
+        el.classList.remove("active");
+    });
 
-   tabLinks.forEach(function(el) {
-      el.classList.remove("active");
-   });
+    tabLinks.forEach(function(el) {
+        el.classList.remove("active");
+    });
 
-   document.querySelector("#" + country).classList.add("active");
-   
-   btnTarget.classList.add("active");
+    document.querySelector("#" + country).classList.add("active");
+
+    btnTarget.classList.add("active");
 }
 
 figura = document.getElementById("ctrflecha");
@@ -313,19 +325,19 @@ document.addEventListener("keydown",
 
 function quitarflecha(stepIndex) {
 
-  if (stepIndex == 1) {
-      console.log("fuera_flecha");
-      document.getElementById("prev").style.display="none";
-  } else {
-      console.log("come_flecha");
-      document.getElementById("prev").style.display="block";
-  }
+    if (stepIndex == 1) {
+        console.log("fuera_flecha");
+        document.getElementById("prev").style.display = "none";
+    } else {
+        console.log("come_flecha");
+        document.getElementById("prev").style.display = "block";
+    }
 
-  if (stepIndex == 11) {
-      console.log("fuera_next_flecha");
-      document.getElementById("next").style.display="none";
-  } else {
-      console.log("come__next_flecha");
-      document.getElementById("next").style.display="block";
-  }
+    if (stepIndex == 11) {
+        console.log("fuera_next_flecha");
+        document.getElementById("next").style.display = "none";
+    } else {
+        console.log("come__next_flecha");
+        document.getElementById("next").style.display = "block";
+    }
 }

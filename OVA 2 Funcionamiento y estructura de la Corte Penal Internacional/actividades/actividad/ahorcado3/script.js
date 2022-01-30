@@ -367,8 +367,10 @@ function init_recurso_1() {
         if (!flag) {
             ahorcado.trazar();
             if (!ahorcado.vivo) {
-                $('.img_res').html('<img src="../img/img9/mal.png" style="max-width: 90%;">');
-                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+                // $('.img_res').html('<img src="../img/img9/mal.png" style="max-width: 90%;">');
+                $('.img_res').html('<div class="circulo-naranja"> <img src="../img/img9/mal.png" style="max-width: 90%;"></div>');
+                // $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+                $('.btns_modal').html('<button id="add" class="btn" onclick="reiniciar();" style="font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">Volver a intentar</button>');
                 $('#texto-modal').html('Incorrecto, <span class="intentalo">Inténtalo nuevamente</span>');
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
@@ -377,9 +379,11 @@ function init_recurso_1() {
         } else {
             ahorcado.dibujarTodo();
             if (this.gano()) {
-                $('.img_res').html('<img src="../img/img9/bien.png" style="max-width: 90%;">');
-                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
-                $('#texto-modal').html('Felicitaciones, Su puntaje es 100%.');
+                // $('.img_res').html('<img src="../img/img9/bien.png" style="max-width: 90%;">');
+                $('.img_res').html('<img src="../img/img9/bien.png" style="max-width: 90%; top: 6px;position: relative;left: 1px;">');
+                // $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px; font-size:20px; position: relative;top: -25px; color:#811111;font-weight: 600;">cerrar</button>');
+                $('#texto-modal').html('Felicitaciones, <br> Su puntaje es 100%.');
                 $('#modal-ahorcado').removeClass("intentar");
                 $('#modal-ahorcado').modal("show");
                 for (var b = 0; b < btn.length; b++) {
@@ -418,4 +422,7 @@ function init_recurso_1() {
         location.reload();
     });
 
+}
+function reiniciar() {
+    location.reload();
 }

@@ -34,6 +34,15 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+     });
+    function detenerMultimedia() {
+      $('body').addClass('p-0');
+      // console.log('holaaa');
+      
+     }
     slide_predeterminado();
     console.log(tema);
     slide_link(tema);
@@ -148,7 +157,7 @@ function controlSlides(num){
             document.getElementById("prev").style.display="block";
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+            setMigaja("Unidades de aprendizaje","","");
             
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";

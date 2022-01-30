@@ -147,3 +147,20 @@
 .bg-color-naranja2 {
     background: #FF6600!important;
 }
+
+@media only screen and (min-width:1200px) {
+    .mov-pant {
+        left: -75px !important;
+    }
+    .mov-pant-2 {
+        margin-top: 150px !important;
+        margin-left: -160px !important;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .mov-pant-2 {
+        margin-left: -123px;
+        margin-top: 200px;
+    }
+}

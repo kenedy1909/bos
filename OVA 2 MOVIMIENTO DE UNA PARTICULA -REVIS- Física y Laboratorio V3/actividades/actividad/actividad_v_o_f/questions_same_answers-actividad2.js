@@ -173,9 +173,11 @@ QuestionsSameAnswers.prototype.score =  function () {
     var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
+    $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_template/bien.png");
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
@@ -203,35 +205,37 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     {% for form in forms %}\
     <div class="fondoContenido">\
       <div class="border_punteado">\
-        <table class="table tabla-actividad2 ">\
+        <table class="table tabla-actividad2">\
             <thead>\
                 {% if form.title %}\
-                    <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
+                    <tr style="display: flex;"><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
-                <tr>\
-                    <th>Ítem</th>\
+                <tr style="display: flex;">\
+                    <th style="width: 50%;text-align: center;font-size: 18px;margin-right: 20%;">Ítem</th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
                 </tr>\
             </thead>\
-            <tbody>\
+            <tbody style="width: 50%;">\
                 <tr>\
-                    <th style="font-size: 15px;">Un automóvil parte del reposo desde un semáforo O con una aceleración de 0,9 m/s2. Poco tiempo después se encuentra con un autobús que viene en sentido contrario a una velocidad constante de 18 km/h. Sabiendo que el autobús pasó por el punto O, 22 segundos después de que el automóvil partió de allí, determine el tiempo en segundos a partir del momento en que el auto partió del semáforo hasta que se cruzaron los dos vehículos.</th>\
+                    <th style="font-size: 13px;text-align: justify;">Un automóvil parte del reposo desde un semáforo O con una aceleración de 0,9 m/s2. Poco tiempo después se encuentra con un autobús que viene en sentido contrario a una velocidad constante de 18 km/h. Sabiendo que el autobús pasó por el punto O, 22 segundos después de que el automóvil partió de allí, determine el tiempo en segundos a partir del momento en que el auto partió del semáforo hasta que se cruzaron los dos vehículos.</th>\
                 </tr>\
+            </tbody>\
+            <tbody style="width: 40%;margin-left: 40px;">\
                 {% for question in form.questions %}\
-                <tr>\
-                    <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
-                    {% set conta=1 %}\
-                    {% for answer in form.answers %}\
-                        <td>\
-                            <label class="checkcontainer">\
-                                <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radiobtn"></span>\
-                            </label>\
-                        </td>\
-                    {% endfor %}\
-                </tr>\
+                    <tr>\
+                        <td style="width: 48%;">{{ question.question_txt }}  <img src="{{question.img }}"></td>\
+                        {% set conta=1 %}\
+                        {% for answer in form.answers %}\
+                            <td style="width: 40%;">\
+                                <label class="checkcontainer">\
+                                    <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
+                                    <span class="radiobtn"></span>\
+                                </label>\
+                            </td>\
+                        {% endfor %}\
+                    </tr>\
                 {% endfor %}\
             </tbody>\
         </table>\
@@ -239,6 +243,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="" style="background: #003442; border-radius: 10px; color: #FFFFFF; cursor: pointer;" type="submit" >Calificar</button>\
+        <button class="" style="background: #003442;border-radius: 18px;color: #FFFFFF;cursor: pointer;border: none;padding: 10px;width: 17%;;" type="submit" >Calificar</button>\
     </div>\
 </form>'

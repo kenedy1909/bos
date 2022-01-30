@@ -904,6 +904,7 @@ a.animated-button.thar-two:before {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    height: 140px;
 }
 
 .fondoLibro2 {
@@ -911,6 +912,7 @@ a.animated-button.thar-two:before {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    height: 140px;
 }
 
 .fondoLibro3 {
