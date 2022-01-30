@@ -355,8 +355,9 @@ label {
 .info_actividad {
     background: #ddeaf6;
     border-radius: 20px;
-    padding: 20px;
-    font-size: 18px;
+    padding: 10px;
+    height: 137px;
+    font-size: 16px;
 }
 
 .pt-3 {
@@ -628,10 +629,10 @@ label {
 }
 
 .content-text-img-activi-2 {
-    border-bottom: solid 3px #005B8B;
+    border-bottom: solid 4px #005B8B;
     width: 50%;
     margin: 0px;
-    padding-top: 20px;
+    padding-top: 0px;
     text-align: center;
 }
 

@@ -369,7 +369,7 @@
 }
 
 .text-img-actividad {
-    font-size: 20px;
+    font-size: 18px;
     color: #005B8B;
 }
 
@@ -384,7 +384,7 @@
 .content-text-img-activi-2 {
     border-bottom: solid 3px #005B8B;
     width: 50%;
-    height: 86px;
+    height: 80px;
     margin: 0px;
     padding-top: 20px;
     text-align: center;
@@ -1728,8 +1728,8 @@ button {
 }
 
 .img-activi {
-    max-width: 100%;
-    z-index: 100;
+    height: 100px;
+    width: 100px;
 }
 
 .text-abc {
@@ -2401,4 +2401,17 @@ input[type=range]::-ms-fill-upper {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* background-position: center;*/
+}
+
+@media only screen and (min-width:1300px) {
+    .mov-texto {
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .mov-texto {
+        width: 110px;
+        margin-left: -12px;
+    }
 }
