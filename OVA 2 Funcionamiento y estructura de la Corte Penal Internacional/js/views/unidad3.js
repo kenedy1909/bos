@@ -28,6 +28,13 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+     });
+    function detenerMultimedia() {
+      $('body').addClass('p-0');
+      
+     }
     slide_predeterminado3();
     console.log(tema);
     slide_link3(tema);

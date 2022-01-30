@@ -29,6 +29,13 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     });
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+     });
+    function detenerMultimedia() {
+      $('body').addClass('p-0');
+      
+     }
     slide_predeterminado4();
     console.log(tema);
     slide_link4(tema);

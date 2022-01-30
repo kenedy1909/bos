@@ -153,15 +153,15 @@ html {
 }
 
 .content-text-img-activi {
-    border-bottom: solid 3px #008F3E;
+    border-bottom: solid 4px #008F3E;
     height: 86px;
     margin: 0px;
-    padding-top: 45px;
+    padding-top: 27px;
     text-align: center;
 }
 
 .content-text-img-activi-2 {
-    border-bottom: solid 3px #008F3E;
+    border-bottom: solid 4px #008F3E;
     width: 50%;
     height: 86px;
     margin: 0px;
@@ -197,4 +197,39 @@ html {
 
 .rota-horizontal {
     transform: scaleX(-1);
+}
+
+@media only screen and (min-width:700px) {
+    .img-activi {
+        width: 110px;
+        height: 110px;
+    }
+    .content-tarjeta {
+        width: 55%;
+        height: 100px;
+        text-align: justify;
+    }
+    .texto-actividad-mov {
+        width: 54% !important;
+        margin-left: -7px;
+        margin-top: -4px !important;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    .img-activi {
+        width: 105px;
+        height: 105px;
+    }
+    .content-tarjeta {
+        margin-top: 7px;
+        width: 62%;
+        height: 90px;
+        text-align: justify;
+    }
+    .texto-actividad-mov {
+        width: 48% !important;
+        margin-left: -7px;
+        margin-top: -4px !important;
+    }
 }
