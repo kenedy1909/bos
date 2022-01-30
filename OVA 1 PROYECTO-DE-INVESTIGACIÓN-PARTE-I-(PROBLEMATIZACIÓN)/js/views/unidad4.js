@@ -86,6 +86,7 @@ function controlSlides4(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            cambiarColorMenu(14);
             $("#content-ova").load("base/unidades/unidad3.html");
             
             tema = 4;
@@ -100,21 +101,26 @@ function controlSlides4(num){
             $('.pdfs').html(pdf);    
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            cambiarColorMenu(14);
             break;
         case 2:
 
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            cambiarColorMenu(14);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            cambiarColorMenu(14);
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            cambiarColorMenu(14);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
+            cambiarColorMenu(14);
             tema = 1;
-            $(".menu4").addClass('d-none');
+            
             break;
         default:
             break;

@@ -89,6 +89,7 @@ function controlSlides3(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            cambiarColorMenu(13);
             $("#content-ova").load("base/unidades/unidad2.html");
             
             tema = 3;
@@ -103,28 +104,30 @@ function controlSlides3(num){
                             </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            cambiarColorMenu(13);
             break;
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            cambiarColorMenu(13);
             $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
         case 3:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            cambiarColorMenu(13);
             
             break;
         case 4:
           
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
+            cambiarColorMenu(13);
             break;
         case 5:
           setMigaja("Unidades de aprendizaje");
           
           $('.ov-personaje').removeClass('d-none');
-              $(".menu1").addClass('d-none');
-              $(".menu2").addClass('d-none');
-              $(".menu3").addClass('d-none');
+              
 
               tema=1;
             break; 

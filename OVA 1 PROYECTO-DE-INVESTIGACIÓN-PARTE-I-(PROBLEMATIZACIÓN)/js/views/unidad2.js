@@ -104,6 +104,7 @@ function controlSlides2(num){
         case 0:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
+            cambiarColorMenu(12);
             $("#content-ova").load("base/unidades/unidad1.html");
             
             tema = 5;
@@ -117,22 +118,25 @@ function controlSlides2(num){
                             </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
+            cambiarColorMenu(12);
             break;
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
+            cambiarColorMenu(12);
             break;
         case 3:
           mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
+            cambiarColorMenu(12);
             
             break;
         case 4:
          
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
+            cambiarColorMenu(12);
             $('.ov-personaje').removeClass('d-none');
-            $(".menu1").addClass('d-none');
-            $(".menu2").addClass('d-none');
+            
             
             
             tema = 1;
