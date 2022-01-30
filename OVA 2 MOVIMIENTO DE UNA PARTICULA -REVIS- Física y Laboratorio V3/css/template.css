@@ -928,3 +928,15 @@ svg circle:nth-child(2){
 }
 
 
+
+.user2{
+      height: 100px;
+    width: 100px;
+    background: #999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white;
+    margin: -50px auto 0;
+    border-radius: 50%;
+}
