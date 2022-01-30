@@ -25,7 +25,19 @@
     font-size: 0.7rem;
   }
 
-  
+  .text-img-activi{
+    
+    margin-left: -7% !important;
+    padding-left: 25px !important;
+    
+  }
+
+  .text-img-activi2 {
+    
+    margin-left: -7% !important;
+    
+    padding-left: 20px !important;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
