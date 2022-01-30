@@ -5,23 +5,23 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/arrastar.css">
 </head>
-<body>
+<body style="overflow: hidden;">
 	<div class="holder row">
 		<div class=" col-md-12" style="margin-top: 20px; display: flex;">
-		    <div class="col-md-5" style="width: 45%; display: flex;">
-		        <div class="col-lg-12 " style=" display: flex; margin: auto;">
+		    <div class="" style="width: 35%;display: flex;padding: 0px;">
+		        <div class="p-0" style="display: flex;margin-left: -15px;width: 273px;">
 		        	<div class="col-md-4" style="z-index: 100; margin: auto;">
-		        		<img src="img/actividad_interactiva.png" alt="" style="width: 100%;" class="imagen">
+		        		<img src="img/actividad_interactiva.png" alt="" style="width: 100px;margin-top: -30px;" class="imagen">
 		        	</div>
-		            <div class="text-center col-md-8" style=" margin: auto;">
+		            <div class="text-center" style="margin: auto;width: 140px;padding-top: 25px;">
 			            <b class="pl-1 pr-1" style="color: #003442;">ACTIVIDAD INTERACTIVA</b>
 			            <div class="linea_blue" style="background: #003442;height: 4px;"></div>
-			            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+			            <i><p class="text-center text-muted" style="font-size: 15px;">ARRASTRAR Y SOLTAR</p></i>
 		          	</div>
 		        </div>
 		    </div>
-		    <div class="col-md-7 row" style="width: 55%;">
-		        <p class="info_actividad shadow" style="background: #FFC000;border-radius: 25px;padding: 25px 25px 25px 25px; text-align: justify;">
+		    <div class="row" style="width: 65%;">
+		        <p class="info_actividad shadow" style="background: #FFC000;border-radius: 25px;padding: 17px 20px 20px 20px;text-align: justify;font-size: 15px;max-height: 125px;">
 		            Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según correponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
 		        </p>
 		    </div>
@@ -83,17 +83,17 @@
 						<div class="interno cont1" style="text-align: center;">Rapidez instantánea</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center p-0">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
 						<div class="interno cont2" style="text-align: center;">Rapidez lineal</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center p-0">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
 						<div class="interno cont3" style="text-align: center;">Rapidez promedio</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3 d-flex justify-content-center">
+				<div class="col-md-3 col-sm-3 d-flex justify-content-center p-0">
 					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
 						<div class="interno cont4" style="text-align: center;">Rapidez tangencial</div>
 					</div>
@@ -123,16 +123,16 @@
 	      	<div style="" class="cabeza">
 	      		
 	      	</div>
-	      	<div class="d-flex justify-content-center">
+	      	<div class="d-flex justify-content-center" style="height: 60px;">
 	      		<div style="display: flex;" class="circulo_modal img_res">
 	      			
 	      		</div>
 	      	</div>
 	      	<div style="padding: 10px;">
-	      		<div style="color: white;">
-	      			Su puntaje es: <p class="puntaje"></p>
+	      		<div style="color: white;font-size: 17px;">
+	      			Su puntaje es: <b class="puntaje" style="font-size: 22px;"></b>
 	      		</div>
-	      		<div style="color: white;">
+	      		<div style="color: white;font-size: 17px;">
 	      			<p class="mensaje"></p>
 	      		</div>
 	      	</div>
