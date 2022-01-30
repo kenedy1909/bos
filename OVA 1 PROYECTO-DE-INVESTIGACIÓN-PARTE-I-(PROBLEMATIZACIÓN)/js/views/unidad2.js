@@ -6,6 +6,11 @@ $( document ).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
 
+    $(".menu2").addClass('c-show');
+    $(".menu1").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
+
     star_uni = 2;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 

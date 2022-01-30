@@ -9,6 +9,11 @@ $( document ).ready(function() {
     $(".menu3").removeClass('d-none');
     $(".menu4").removeClass('d-none');
 
+    $(".menu4").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu1").removeClass('c-show');
+
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

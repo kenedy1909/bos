@@ -7,6 +7,10 @@ $( document ).ready(function() {
     $(".menu2").removeClass('d-none');
     $(".menu3").removeClass('d-none');
 
+    $(".menu3").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu1").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
     
     star_uni = 3;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
@@ -148,7 +152,7 @@ function pant3_1() {
         <div class="flip-card-back4 shadow p-4">
           <div class="content borderDsh">
             
-              <p class="font_14 justificado font-weight-bold p-2 mt-2">Usted debe traer a colación argumentos que lleven a mostrar la importancia social de esa investigación. Debe convencer al posible lector que esta investigación es fundamental para el mundo social en que se desenvuelve, que si ello se realiza son muchas las ganancias sociales, al punto que es posible que la sociedad sea otra y que cambie de manera positiva.
+              <p class="text-peq font_14 justificado font-weight-bold p-2 mt-2">Usted debe traer a colación argumentos que lleven a mostrar la importancia social de esa investigación. Debe convencer al posible lector que esta investigación es fundamental para el mundo social en que se desenvuelve, que si ello se realiza son muchas las ganancias sociales, al punto que es posible que la sociedad sea otra y que cambie de manera positiva.
               </p>
             
           </div>
@@ -170,7 +174,7 @@ function pant3_1() {
         <div class="flip-card-back4 shadow p-4">
           <div class="content borderDsh">
             
-              <p class="font_14 justificado font-weight-bold p-2 mt-5">Argumentos que muestren la importancia para la disciplina jurídica, es decir, se debe mostrar, que para una ciencia como el derecho esa investigación ofrece múltiples posibilidades, que puede solucionar muchos problemas jurídicos y que la disciplina se enriquecería teórica o prácticamente si se lleva a cabo. 
+              <p class="text-peq font_14 justificado font-weight-bold p-2 mt-5">Argumentos que muestren la importancia para la disciplina jurídica, es decir, se debe mostrar, que para una ciencia como el derecho esa investigación ofrece múltiples posibilidades, que puede solucionar muchos problemas jurídicos y que la disciplina se enriquecería teórica o prácticamente si se lleva a cabo. 
               </p>
             
           </div>
@@ -192,7 +196,7 @@ function pant3_1() {
         <div class="flip-card-back4 shadow p-4">
           <div class="content borderDsh">
             
-              <p class="font_14 justificado font-weight-bold p-2 mt-4">Argumentos que muestren qué le ofrecería esta investigación al equipo investigador: es decir, en qué los enriquecería a ellos, cómo el equipo puede crecer y en qué sentidos, si se lleva a cabo. Es arriesgarse a involucrarse, a sentir que lo hecho transforma la propia vida y que la investigación es una forma de vida. 
+              <p class="text-peq font_14 justificado font-weight-bold p-2 mt-4">Argumentos que muestren qué le ofrecería esta investigación al equipo investigador: es decir, en qué los enriquecería a ellos, cómo el equipo puede crecer y en qué sentidos, si se lleva a cabo. Es arriesgarse a involucrarse, a sentir que lo hecho transforma la propia vida y que la investigación es una forma de vida. 
               </p>
             
           </div>

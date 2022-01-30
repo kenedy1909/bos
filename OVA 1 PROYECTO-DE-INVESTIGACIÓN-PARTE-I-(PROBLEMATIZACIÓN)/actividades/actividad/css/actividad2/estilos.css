@@ -1,3 +1,29 @@
+@media only screen and (min-width:700px) and (max-width:900px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+
+	.imagen{
+		width: 90px !important; height: 90px !important; margin-top: 0% !important;
+	}
+
+    .texto_header{
+        font-size: 15px !important;
+        width: 50% !important;
+        
+    }
+
+    .secundario{
+        width: 30% !important;
+    }
+    
+    .terciario{
+        width: 60% !important;
+    }
+}
+
 .preguntas {
     display: flex;
     flex-wrap: wrap;
@@ -13,14 +39,14 @@
     color: inherit;
     margin: 10px;
     width: calc(57% - 20px);
-    height: auto !important;
+    height: auto !important; 
     border-bottom-right-radius: 42px;
     border-bottom-left-radius: 42px;
 }
 
 @media (max-width: 767px) {
     .pregunta-cuestionario {
-        width: 100%;
+        width: 70%;
         height: auto !important;
         margin: 10px 0;
     }

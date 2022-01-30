@@ -3,6 +3,11 @@ $( document ).ready(function() {
     console.log(tema);
     $('.ov-personaje').addClass('d-none');
     $(".menu1").removeClass('d-none');
+    
+    $(".menu1").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
