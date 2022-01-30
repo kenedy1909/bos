@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $( ".menu1").removeClass('d-none');
     $(".menu1").addClass('c-show');
     $(".menu2").removeClass('c-show');
-    start = 1;
+    star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",

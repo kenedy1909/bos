@@ -10,7 +10,7 @@ $( document ).ready(function() {
     $(".menu2").removeClass('c-show');
     $(".menu4").removeClass('c-show');
     
-    
+    star_uni = 3;
     
     $('#smartwizard').smartWizard({
         loader:"show",
