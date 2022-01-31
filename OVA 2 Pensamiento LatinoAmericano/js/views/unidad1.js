@@ -31,6 +31,16 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     slide_predeterminado();
@@ -77,6 +87,23 @@ function slide_link(num) {
     $('#smartwizard').smartWizard("goToStep", num - 1);
     controlSlides(num);
 }
+
+figura = document.getElementById("ctrflecha1");
+
+document.addEventListener("keydown",
+    function(event) {
+        switch (event.key) {
+            case "Left": // IE/Edge specific value
+            case "ArrowLeft":
+                slide(1);
+                break;
+            case "Right": // IE/Edge specific value
+            case "ArrowRight":
+                slide(1);
+                break;
+        }
+    }
+);
 
 function controlSlides(num) {
     switch (parseInt(num)) {
@@ -1558,7 +1585,7 @@ function scroll_horizontal(num) {
             $('.scroll-flecha-2').addClass('d-block');
             break;
         case 3:
-            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/Capitalismo1.png" width="80%" height="80%">`;
+            var pantalla = `<img class="img-60 m-auto" src="assets/img/img_ova/Capitalismo1.png">`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<p class="text-justify pl-5 pr-3 pt-0">No existe una igualdad en el marco del capitalismo, porque se ve al hombre como sujeto incorpóreo donde lo único que importa es la lógica de la acumulación que solo propone una solución individual a las contradicciones sistémicas. </p>');
             $('.scroll-flecha-0').removeClass('d-none');

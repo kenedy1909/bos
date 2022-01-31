@@ -75,7 +75,7 @@ function calificar() {
         $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;margin-top: 10px;">');
         $('.mensaje').text("¡Puedes hacerlo mejor!");
         $('.puntaje').text(Math.round(puntaje) + "%");
-        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -25px;" onclick="reiniciar()">cerrar</button>');
+        $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -25px;" onclick="reiniciar()">Volver a intentar</button>');
     }
 }
 

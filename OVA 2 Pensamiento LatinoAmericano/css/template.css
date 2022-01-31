@@ -932,7 +932,8 @@ card flip*/
 }
 
 .imgactividad {
-    width: 120px;
+    width: 100px;
+    height: 100px;
     z-index: 100;
 }
 
@@ -941,25 +942,23 @@ card flip*/
 }
 
 .titulo_sub {
-    height: 85px;
+    height: 72px;
     border-bottom: solid 4px #00953E;
-    padding-top: 40px;
-    padding-left: 25px;
+    padding-top: 42px;
+    padding-left: 24px;
     text-align: center;
+    margin-left: -14px;
 }
 
 .titulo_sub p {
-    font-size: 20px;
+    font-size: 18px;
     color: #00953E;
 }
 
 .banner_activi {
     background: #DEEBF7;
-    margin-left: 10px;
-    border-radius: 30px;
-    border-bottom: gray 2px solid;
-    border-right: gray 2px solid;
-    padding: 25px 1px 25px 25px;
+    border-radius: 15px;
+    height: 80px;
 }
 
 .copiacirculo {
