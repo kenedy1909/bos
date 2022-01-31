@@ -46,7 +46,15 @@ $( document ).ready(function() {
         slide();
         
     });
-
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+    });
+    
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+        
+    }
 
     $(".btn-unidad1-1").on("click", function () {
         $(".divcircle").hide();
