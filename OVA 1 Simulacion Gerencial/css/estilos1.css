@@ -1372,6 +1372,14 @@ p, button{
 	.circle-num span{
 		top: -3px;
 	}
+	.tiempo{
+		width: 77%;
+		display: inline-block;
+	}
+	.reloj{
+		position: relative;
+		top: -13px;
+	}
 	
 }
 
