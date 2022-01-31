@@ -1304,3 +1304,85 @@ p, button{
 .h-final{
 	height: 530px !important;
 }
+.tiempo{
+	display: inline-block;
+}
+
+@media screen and (max-width: 1150px) {
+	.tiempo{
+		width: 77%;
+		display: inline-block;
+	}
+	.reloj{
+		position: relative;
+		top: -13px;
+	}
+	
+}
+
+.lineaCurva img{
+	
+    width: 65%;
+    position: relative;
+    top: 34px;
+    left: 72px;
+    z-index: 1;
+
+}
+.circle-num{
+	height: 36px;
+}
+.circle-num span{
+	top: -2px;
+}
+@media screen and (max-width: 1366px) {
+	.lineaCurva img{	
+		width: 65%;
+		position: relative;
+		top: 44px;
+		left: 90px;
+		z-index: 1;
+	
+	}
+	
+}
+@media screen and (max-width: 1300px) {
+	.lineaCurva img{
+		
+		width: 65%;
+		position: relative;
+		top: 39px;
+		left: 81px;
+		z-index: 1;
+	
+	}
+	
+}
+@media screen and (max-width: 1270px) {
+	.lineaCurva img{
+		width: 65%;
+		position: relative;
+		top: 36px;
+		left: 80px;
+		z-index: 1;
+	}
+	
+}
+
+@media screen and (max-width: 1160px) {
+	.lineaCurva img{
+		width: 65%;
+		position: relative;
+		top: 32px;
+		left: 72px;
+		z-index: 1;
+	}
+	.circle-num{
+		height: 33px;
+	}
+	.circle-num span{
+		top: -3px;
+	}
+	
+}
+
