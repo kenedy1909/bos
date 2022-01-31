@@ -305,12 +305,23 @@ p, button{
 }
 
 .text-img-activi{
-  border-bottom: solid 3px #ad1d73;
-  width: 50%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 45px;
+	border-bottom: solid 3px #ad1d73;
+    width: 55%;
+    height: 86px;
+    margin-left: -4%;
+    padding-top: 45px;
+    padding-left: 38px;
+  
+  
 }
+
+.text-img-activi2 {
+    border-bottom: solid 3px #ad1d73;
+    width: 55%;
+    height: 86px;
+    margin-left: -4%;
+    padding-top: 45px;
+    padding-left: 32px;
 
 .content-img-actividad{
   z-index: 100;
