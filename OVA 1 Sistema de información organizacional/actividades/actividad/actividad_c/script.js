@@ -14,9 +14,9 @@ const palabras = [
     pista: 'Las ________ son el objeto de estudio de la ciencia de la administración '
   },
   {
-    pos: [15, 3],
-    sentido: 1,
-    palabra: 'los sistemas',
+    pos: [1, 7],
+    sentido: 0,
+    palabra: 'lossistemas',
     pista: 'Son concebidos como una totalidad compuesta por múltiples componentes, cuyas propiedades no son atribuibles a la adición de partes o elementos independientes de sus partes o nuevos componentes.'
   },
   {
@@ -124,8 +124,9 @@ new Vue({
     // Se fija si la palabra ingresada es correcta y de ser así, modifica el arreglo de palabras completas
     corregir () {
       const solucion = palabras[this.selected].palabra
-      const answer = this.answer.toLowerCase()
-      if (answer === solucion) {
+      let answer = this.answer.toLowerCase();
+      let answerCorrect= answer.replace(/ /g, "");
+      if (answerCorrect === solucion) {
         this.completed[this.selected] = true
         this.selected = undefined
       }
