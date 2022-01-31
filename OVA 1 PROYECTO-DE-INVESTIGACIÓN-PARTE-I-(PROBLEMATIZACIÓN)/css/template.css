@@ -5,16 +5,38 @@
   }
 
   .texto_activi {
-    color:#ad1d73; font-size: 18px !important; margin-top: -4%;
+    color:#ad1d73; font-size: 18px !important; margin-top: -4% !important;
   }
 
   .text-peq {
     font-size: 12px !important;
   }
 
+  .text-peq14 {
+    font-size: 14px !important;
+  }
+
+  .menosmargin-peq {
+    top: 30px !important;
+  }
+
   .ml-img2 {
-    margin-left: 23%;
+    margin-left: 23% !important; 
   } 
+
+  .text-img-activi{
+    
+    margin-left: -7% !important;
+    padding-left: 25px !important;
+    
+  }
+
+  .text-img-activi2 {
+    
+    margin-left: -7% !important;
+    
+    padding-left: 20px !important;
+  }
 
 
   .btn-text {
@@ -951,11 +973,23 @@ card flip*/
 }
 /*actividades*/
 .text-img-activi{
-  border-bottom: solid 4px rgb(142 29 102);
-  width: 60%;
-  height: 86px;
-  margin: 0px;
-  padding-top: 30px;
+	border-bottom: solid 3px #ad1d73;
+    width: 55%;
+    height: 86px;
+    margin-left: -4%;
+    padding-top: 45px;
+    padding-left: 38px;
+  
+  
+}
+
+.text-img-activi2 {
+    border-bottom: solid 3px #ad1d73;
+    width: 55%;
+    height: 86px;
+    margin-left: -4%;
+    padding-top: 45px;
+    padding-left: 32px;
 }
 
 

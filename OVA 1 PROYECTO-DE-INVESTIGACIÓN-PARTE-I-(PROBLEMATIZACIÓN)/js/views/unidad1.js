@@ -39,6 +39,16 @@ $( document ).ready(function() {
         slide();
         actualizarprogress();
     }); 
+
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+  });
+
+  function detenerMultimedia() {
+      $('body').addClass('p-0');
+      // console.log('holaaa');
+      
+  }
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {

@@ -40,6 +40,16 @@ $( document ).ready(function() {
         actualizarprogress();
     });
 
+    $(".modal").on('hidden.bs.modal', function () {
+      detenerMultimedia();
+  });
+
+  function detenerMultimedia() {
+      $('body').addClass('p-0');
+      // console.log('holaaa');
+      
+  }
+
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         
       console.log(e);
