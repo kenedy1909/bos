@@ -269,3 +269,26 @@ input {
     right: -65px;
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%);
 }
+
+.principal_modal {
+    height: 400px;
+    border-radius: 40px;
+    background: #97182F;
+}
+
+.cabeza {
+    background: #540F23;
+    height: 100px;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.circulo_modal {
+    height: 150px;
+    width: 150px;
+    background: gray;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    border: solid white;
+}

@@ -4,17 +4,17 @@ function init_recurso_1() {
     $('#modal-ahorcado').hide();
     var common = {
         msg: "vsdf",
-        valorRandom: function (minimo, maximo) {
+        valorRandom: function(minimo, maximo) {
             return Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
         },
-        valorDefinido: function (opcion) {
+        valorDefinido: function(opcion) {
             if (typeof opcion != 'undefined') {
                 return true;
             } else {
                 return false;
             }
         },
-        volverAJugar: function (obj, message) {
+        volverAJugar: function(obj, message) {
             var valor = prompt("Deseas volver a intentarlo?\n Si = 1,\n  No= 0", "1");
 
             if (valor >= 0 && valor <= 1) {
@@ -29,26 +29,26 @@ function init_recurso_1() {
                 this.volverAJugar();
             }
         },
-        mensajeJuego: function (messsage) {
+        mensajeJuego: function(messsage) {
             alert(messsage);
         }
     };
-    var Canvas = function (id_canvas) {
+    var Canvas = function(id_canvas) {
         this.canvas = document.getElementById(id_canvas);
         this.canvasWidth = document.getElementById(id_canvas).clientWidth; //obtengo altura del canvas
         this.canvasHeight = document.getElementById(id_canvas).clientHeight; //obtengo altura del canvas
         this.canvasArea = document.getElementById(id_canvas).getContext("2d"); //obtengo el contexto del canvas que es donde se puede pintar
         this.canvasLineasGrilla = document.getElementById(id_canvas).getAttribute("data-lineas-grilla"); //defino el ancho ente lineas que tendra la grilla
-        this.canvasCantidadLinea = function () { //defino el ancho de cada linea
+        this.canvasCantidadLinea = function() { //defino el ancho de cada linea
             return this.canvasWidth / this.canvasLineasGrilla;
         };
-        this.canvasLimiteX = function () { //limite de lineas de la grilla por el eje X
+        this.canvasLimiteX = function() { //limite de lineas de la grilla por el eje X
             return this.canvasWidth / this.canvasCantidadLinea();
         };
-        this.canvasLimiteY = function () { //limete de lineas de la grilla  por el eje Y
+        this.canvasLimiteY = function() { //limete de lineas de la grilla  por el eje Y
             return this.canvasHeight / this.canvasCantidadLinea();
         };
-        this.pintarGrilla = function () { //funcion para pintar la grilla
+        this.pintarGrilla = function() { //funcion para pintar la grilla
             var linea, punto
 
             for (linea = 0; linea <= this.canvasCantidadLinea(); linea++) {
@@ -71,7 +71,7 @@ function init_recurso_1() {
                 this.canvasArea.closePath();
             }
         };
-        this.pintarGrillaDiagonal = function () { //funcion para pintar la grilla
+        this.pintarGrillaDiagonal = function() { //funcion para pintar la grilla
             var linea, punto
 
             for (linea = 0; linea <= (this.canvasCantidadLinea() * 2); linea++) {
@@ -94,7 +94,7 @@ function init_recurso_1() {
                 this.canvasArea.closePath();
             }
         };
-        this.pintarLineasEjercicio = function () {
+        this.pintarLineasEjercicio = function() {
             this.canvasArea.strokeStyle = "#ad123c";
             this.canvasArea.moveTo(50, 150); //paso las coordenadas del punto de partida de la linea
             this.canvasArea.lineTo(200, 50); //paso las coordenadas del punto de destino de la linea
@@ -113,7 +113,7 @@ function init_recurso_1() {
             this.canvasArea.moveTo(50, 100);
             this.canvasArea.lineTo(200, 100);
         };
-        this.pintarCirculo = function (parametros) {
+        this.pintarCirculo = function(parametros) {
             this.canvasArea.strokeStyle = parametros.borderColor;
             this.canvasArea.arc(parametros.ejeX, parametros.ejeY, parametros.radio, parametros.radian_inicio, parametros.radian_fin, parametros.direccionContraReloj);
             if (parametros.backgroundColor != false) {
@@ -122,23 +122,23 @@ function init_recurso_1() {
             }
 
         };
-        this.pintarImg = function (parametros) {
+        this.pintarImg = function(parametros) {
             var img = new Image();
             img.src = parametros.src;
             var canvasArea = this.canvasArea;
-            img.onload = function () {
+            img.onload = function() {
                 parametros.imgOnload = true;
                 if (parametros.imgOnload) {
                     canvasArea.drawImage(img, parametros.ejeX, parametros.ejeY);
                 }
             }
         };
-        this.limpiarCanvas = function () {
+        this.limpiarCanvas = function() {
             this.canvasArea.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
         }
 
     }
-    var Ahorcado = function () {
+    var Ahorcado = function() {
         this.canvas_ahorcado = new Canvas('campo_ahorcado');
         this.intentos_maximos = 5;
         this.intento = 0;
@@ -148,7 +148,7 @@ function init_recurso_1() {
         this.underscoreOrLetter;
         this.palabraMostrar = "";
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-        this.palabrasMake = function () {
+        this.palabrasMake = function() {
 
             this.palabras[0] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
             this.palabras[1] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
@@ -163,7 +163,7 @@ function init_recurso_1() {
             return this.palabras;
 
         };
-        this.palabrasRandom = function () {
+        this.palabrasRandom = function() {
             var ind = common.valorRandom(0, 8);
             this.palabraSelect = this.palabras[ind];
         };
@@ -181,7 +181,7 @@ function init_recurso_1() {
         };
     }
 
-    Ahorcado.prototype.trazar = function () {
+    Ahorcado.prototype.trazar = function() {
         this.intento++;
         if (this.intento >= this.intentos_maximos) {
             this.vivo = false;
@@ -189,7 +189,7 @@ function init_recurso_1() {
         this.dibujarTodo();
     }
 
-    Ahorcado.prototype.dibujarPoste = function () {
+    Ahorcado.prototype.dibujarPoste = function() {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
         this.canvas_ahorcado.canvasArea.strokeStyle = "#420F05";
@@ -204,7 +204,7 @@ function init_recurso_1() {
 
     }
 
-    Ahorcado.prototype.dibujarCabeza = function () {
+    Ahorcado.prototype.dibujarCabeza = function() {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
         this.canvas_ahorcado.pintarCirculo(this.head.parametros_circulo_a);
@@ -215,7 +215,7 @@ function init_recurso_1() {
 
     }
 
-    Ahorcado.prototype.dibujarTorso = function () {
+    Ahorcado.prototype.dibujarTorso = function() {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
         this.canvas_ahorcado.canvasArea.moveTo(150, 180);
@@ -227,7 +227,7 @@ function init_recurso_1() {
 
     }
 
-    Ahorcado.prototype.dibujarBrazos = function () {
+    Ahorcado.prototype.dibujarBrazos = function() {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
         this.canvas_ahorcado.canvasArea.moveTo(120, 220);
@@ -239,7 +239,7 @@ function init_recurso_1() {
         //finalizo el path
     }
 
-    Ahorcado.prototype.dibujarPiernas = function () {
+    Ahorcado.prototype.dibujarPiernas = function() {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
         this.canvas_ahorcado.canvasArea.moveTo(120, 300);
@@ -251,7 +251,7 @@ function init_recurso_1() {
         //finalizo el path
     }
 
-    Ahorcado.prototype.dibujarOjos = function () {
+    Ahorcado.prototype.dibujarOjos = function() {
         //inicio el path para dibujar
         this.canvas_ahorcado.canvasArea.beginPath();
         //ojo izquierdo
@@ -271,12 +271,12 @@ function init_recurso_1() {
         //finalizo el path
     }
 
-    Ahorcado.prototype.escribirPista = function () {
+    Ahorcado.prototype.escribirPista = function() {
         var pistaPalabra = document.getElementById('pista_palabra');
         pistaPalabra.innerHTML = this.palabraSelect[1];
     };
 
-    Ahorcado.prototype.dibujarTodo = function () {
+    Ahorcado.prototype.dibujarTodo = function() {
         this.dibujarPoste();
         this.escribirPista();
         this.pintarAreaSubrayada();
@@ -298,7 +298,7 @@ function init_recurso_1() {
 
     }
 
-    Ahorcado.prototype.pintarAreaSubrayada = function () {
+    Ahorcado.prototype.pintarAreaSubrayada = function() {
         var container_palabra = document.getElementById("container_palabra");
         if (this.vivo) {
             this.palabraMostrar = "";
@@ -326,7 +326,7 @@ function init_recurso_1() {
 
     }
 
-    Ahorcado.prototype.pintarLetras = function () {
+    Ahorcado.prototype.pintarLetras = function() {
 
         var containerAbecedario = document.getElementById('container_abecedario');
         var letras = "";
@@ -337,14 +337,14 @@ function init_recurso_1() {
         //agrego a cada letra la funcionalidad de jugar
         var btn = document.getElementsByClassName("letra");
         for (var i = 0; i < btn.length; i++) {
-            btn[i].addEventListener('click', function () {
+            btn[i].addEventListener('click', function() {
                 ahorcado.jugar(this, btn);
             });
         }
 
     }
 
-    Ahorcado.prototype.iniciar = function () {
+    Ahorcado.prototype.iniciar = function() {
 
         this.palabrasMake();
         this.palabrasRandom();
@@ -354,7 +354,7 @@ function init_recurso_1() {
         this.dibujarTodo();
 
     };
-    Ahorcado.prototype.jugar = function (datos, btn) {
+    Ahorcado.prototype.jugar = function(datos, btn) {
         var opcion = datos.value;
         var flag = false;
         datos.setAttribute("disabled", "disabled");
@@ -365,17 +365,17 @@ function init_recurso_1() {
             }
         }
 
-       /* var modalID = "#calificacionModal";
-        var exito = false;
-        var mensaje = "Inténtalo nuevamente.";
-        if (puntaje == 100) {
-            exito = true;
-            mensaje = "¡Felicitaciones!"
-        }
-        registrarActividad(puntaje);
-        mostrarCalificacion(modalID, mensaje, exito, function () {
-            self.reset(form);
-        });*/
+        /* var modalID = "#calificacionModal";
+         var exito = false;
+         var mensaje = "Inténtalo nuevamente.";
+         if (puntaje == 100) {
+             exito = true;
+             mensaje = "¡Felicitaciones!"
+         }
+         registrarActividad(puntaje);
+         mostrarCalificacion(modalID, mensaje, exito, function () {
+             self.reset(form);
+         });*/
 
         if (!flag) {
             ahorcado.trazar();
@@ -383,14 +383,19 @@ function init_recurso_1() {
                 /*$('#texto-modal').html('Incorrecto, la respuesta no es una circunstancia que se puede dar en los movimientos de activos en la operación de un restaurante. <span class="intentalo">Inténtalo nuevamente</span>');
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
-                ahorcado.reiniciar();*/
+                ahorcado.reiniciar();
                 var modalID = "#calificacionModal";
                 var exito = false;
                 var mensaje = "Inténtalo nuevamente.";
                 // registrarActividad(puntaje);
                 mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
                     
-                });
+                });*/
+                $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;margin-top: 10%;margin-left: 1px;">');
+                $('.mensaje').text("Inténtalo nuevamente.");
+                $('.puntaje').text("0%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+                $("#calificacionModal").modal("show");
             }
         } else {
             ahorcado.dibujarTodo();
@@ -405,14 +410,19 @@ function init_recurso_1() {
                 var exito = true;
                 var mensaje = "¡Felicitaciones";
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
-                    
-                });
+                /* mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
+                     
+                 });*/
+                $('.img_res').html('<img src="img/bien.png" style="max-width: 80%; margin-top: 10%;margin-left: 1px;">');
+                $('.puntaje').text("100%");
+                $('.mensaje').text("¡Felicitaciones!");
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #420F0F;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
+                $("#calificacionModal").modal("show");
             }
         }
     };
 
-    Ahorcado.prototype.gano = function () {
+    Ahorcado.prototype.gano = function() {
 
         var flag = true;
         for (var i = 0; i < this.underscoreOrLetter.length; i++) {
@@ -425,7 +435,7 @@ function init_recurso_1() {
     }
 
 
-    Ahorcado.prototype.reiniciar = function () {
+    Ahorcado.prototype.reiniciar = function() {
         this.intento = 0;
         this.vivo = true;
         this.canvas_ahorcado.limpiarCanvas();
@@ -437,8 +447,12 @@ function init_recurso_1() {
     ahorcado.iniciar();
 
 
-    document.getElementById('reset').addEventListener('click', function () {
+    document.getElementById('reset').addEventListener('click', function() {
         location.reload();
     });
 
+}
+
+function reload() {
+    location.reload();
 }
