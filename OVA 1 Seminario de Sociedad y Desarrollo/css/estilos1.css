@@ -715,12 +715,24 @@ button {
     border-bottom: solid 1px #321fdb;
 }
 
-.text-img-activi {
-    border-bottom: solid 3px rgba(0, 91, 139);
-    width: 50%;
+.text-img-activi{
+	border-bottom: solid 3px #78201A;
+    width: 55%;
     height: 86px;
-    margin: 0px;
+    margin-left: -4%;
     padding-top: 45px;
+    padding-left: 38px;
+  
+  
+}
+
+.text-img-activi2 {
+    border-bottom: solid 3px #78201A;
+    width: 55%;
+    height: 86px;
+    margin-left: -4%;
+    padding-top: 45px;
+    padding-left: 32px;
 }
 
 .content-img-actividad {
