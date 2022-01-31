@@ -1051,7 +1051,7 @@ background: #d4d4d4;
   .controles #next{
     right: calc(((100vw - 1360px)/2) - 15px);
   }
-  .c-app{
+  .c-app, html{
     max-height: 720px!important;
   }
 }
@@ -1061,7 +1061,7 @@ background: #d4d4d4;
   .controles #next{
     right: calc(((100vw - 1360px)/2) - 15px);
   }
-  .c-app{
+  .c-app, html{
     max-height: 720px!important;
   }
 }
@@ -1071,7 +1071,7 @@ background: #d4d4d4;
   .controles #next{
     right: calc(((100vw - 1360px)/2) - 15px);
   }
-  .c-app{
+  .c-app, html{
     max-height: 720px!important;
   }
 }
