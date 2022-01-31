@@ -12,6 +12,7 @@ $( document ).ready(function() {
             var slide = $(currentItem).attr("data-flip-title");
         }
     });
+    $('.flipster__button').addClass('d-none');
 });
 
 $('.init-unidad').off('click').on('click', function(evt){
