@@ -25,6 +25,20 @@
     font-size: 0.7rem;
   }
 
+  .text-img-activi{
+    
+    margin-left: -7% !important;
+    padding-left: 25px !important;
+    
+  }
+
+  .text-img-activi2 {
+    
+    margin-left: -7% !important;
+    
+    padding-left: 20px !important;
+  }
+
   
 }
 
@@ -49,6 +63,8 @@
   .ml-img2 {
     margin-left: 35%;
   }
+
+  
 }
 
 .icons-menu{

@@ -17,16 +17,16 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
-        slide();
-        // EditarLocation(getPos());
-        moveBarPorcentaje(stepIndex);
-        console.log(e);
-        switch(stepIndex) {
-            default:
-            // code block
-        }
-    });
+    // $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+    //     slide();
+    //     // EditarLocation(getPos());
+    //     moveBarPorcentaje(stepIndex);
+    //     console.log(e);
+    //     switch(stepIndex) {
+    //         default:
+    //         // code block
+    //     }
+    // });
 
     slide_predeterminado();
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
@@ -46,7 +46,15 @@ $( document ).ready(function() {
         slide();
         
     });
-
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+    });
+    
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+        
+    }
 
     $(".btn-unidad1-1").on("click", function () {
         $(".divcircle").hide();
@@ -105,12 +113,12 @@ document.addEventListener("keydown",
         switch (event.key) {
             case "Left": // IE/Edge specific value
             case "ArrowLeft":
-                slide();
+                slide(1);
 
                 break;
             case "Right": // IE/Edge specific value
             case "ArrowRight":
-                slide();
+                slide(1);
                
 
                 break;

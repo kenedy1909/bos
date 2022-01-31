@@ -48,10 +48,10 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
-	if (page == 1 || page == 2 || page == 11 || page == 12) {
-		img.attr('class', 'hard');
-	}
+	img.attr('src', 'pages/' +  page + '.png');
+	// if (page === 1 || page === 2 || page === 11 || page === 12) {
+	// 	img.attr('class', 'hard');
+	// }
 
 	loadRegions(page, pageElement);
 
@@ -182,7 +182,7 @@ function loadLargePage(page, pageElement) {
 
 	// Loadnew page
 	
-	img.attr('src', 'pages/' +  page + '-large.jpg');
+	img.attr('src', 'pages/' +  page + '.png');
 }
 
 // Load small page
@@ -196,7 +196,7 @@ function loadSmallPage(page, pageElement) {
 	img.unbind('load');
 	// Loadnew page
 
-	img.attr('src', 'pages/' +  page + '.jpg');
+	img.attr('src', 'pages/' +  page + '.png');
 }
 
 // http://code.google.com/p/chromium/issues/detail?id=128488
@@ -343,7 +343,7 @@ function setPreview(view) {
 
 function largeMagazineWidth() {
 	
-	return 2000;
+	return 2200;
 
 }
 
