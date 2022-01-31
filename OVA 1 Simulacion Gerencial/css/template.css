@@ -1019,7 +1019,7 @@ background: #d4d4d4;
 @media only screen and (min-width:1280px) {
 
   .controles #next{
-    right: calc(((100vw - 1280px)/2) - 20px);
+    right: calc(((100vw - 1280px)/2) - 15px);
   }
 
 }
@@ -1027,21 +1027,21 @@ background: #d4d4d4;
 @media only screen and (min-width:1300px) {
 
   .controles #next{
-    right: calc(((100vw - 1300px)/2) - 20px);
+    right: calc(((100vw - 1300px)/2) - 15px);
   }
 
 }
 @media only screen and (min-width:1335px) {
 
   .controles #next{
-    right: calc(((100vw - 1335px)/2) - 20px);
+    right: calc(((100vw - 1335px)/2) - 15px);
   }
 
 }
 @media only screen and (min-width:1350px) {
 
   .controles #next{
-    right: calc(((100vw - 1350px)/2) - 20px);
+    right: calc(((100vw - 1350px)/2) - 15px);
   }
 
 }
@@ -1049,7 +1049,7 @@ background: #d4d4d4;
 @media only screen and (min-width:1360px) {
 
   .controles #next{
-    right: calc(((100vw - 1360px)/2) - 20px);
+    right: calc(((100vw - 1360px)/2) - 15px);
   }
 
 }
@@ -1057,7 +1057,7 @@ background: #d4d4d4;
 @media only screen and (min-width:1450px) {
 
   .controles #next{
-    right: calc(((100vw - 1360px)/2) - 20px);
+    right: calc(((100vw - 1360px)/2) - 15px);
   }
 
 }
@@ -1065,7 +1065,7 @@ background: #d4d4d4;
 @media only screen and (min-width:1600px) {
 
   .controles #next{
-    right: calc(((100vw - 1360px)/2) - 20px);
+    right: calc(((100vw - 1360px)/2) - 15px);
   }
 
 }
