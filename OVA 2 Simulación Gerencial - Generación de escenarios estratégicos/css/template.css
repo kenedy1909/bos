@@ -1037,3 +1037,170 @@ svg circle:nth-child(2){
 .w-50px{
   width: 50px;
 }
+
+/* @medias para el total de la pantalla */
+
+@media only screen and (min-width:993px) {
+
+  .controles #next{
+    right: calc(((100vw - 993px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1005px) {
+
+  .controles #next{
+    right: calc(((100vw - 1005px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1020px) {
+
+  .controles #next{
+    right: calc(((100vw - 1020px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1045px) {
+
+  .controles #next{
+    right: calc(((100vw - 1045px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1075px) {
+
+  .controles #next{
+    right: calc(((100vw - 1075px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1100px) {
+
+  .controles #next{
+    right: calc(((100vw - 1100px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1110px) {
+
+  .controles #next{
+    right: calc(((100vw - 1110px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1125px) {
+
+  .controles #next{
+    right: calc(((100vw - 1125px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1135px) {
+
+  .controles #next{
+    right: calc(((100vw - 1135px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1156px) {
+
+  .controles #next{
+    right: calc(((100vw - 1156px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1180px) {
+
+  .controles #next{
+    right: calc(((100vw - 1180px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1200px) {
+
+  .controles #next{
+    right: calc(((100vw - 1200px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1220px) {
+
+  .controles #next{
+    right: calc(((100vw - 1220px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1245px) {
+
+  .controles #next{
+    right: calc(((100vw - 1245px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1260px) {
+
+  .controles #next{
+    right: calc(((100vw - 1260px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1280px) {
+
+  .controles #next{
+    right: calc(((100vw - 1280px)/2) - 20px);
+  }
+
+}
+
+@media only screen and (min-width:1300px) {
+
+  .controles #next{
+    right: calc(((100vw - 1300px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1335px) {
+
+  .controles #next{
+    right: calc(((100vw - 1335px)/2) - 20px);
+  }
+
+}
+@media only screen and (min-width:1350px) {
+
+  .controles #next{
+    right: calc(((100vw - 1350px)/2) - 20px);
+  }
+
+}
+
+@media only screen and (min-width:1360px) {
+
+  .controles #next{
+    right: calc(((100vw - 1360px)/2) - 15px);
+  }
+  .c-app, html{
+    max-height: 720px!important;
+  }
+}
+
+@media only screen and (min-width:1450px) {
+
+  .controles #next{
+    right: calc(((100vw - 1360px)/2) - 15px);
+  }
+  .c-app, html{
+    max-height: 720px!important;
+  }
+}
+
+@media only screen and (min-width:1600px) {
+
+  .controles #next{
+    right: calc(((100vw - 1360px)/2) - 15px);
+  }
+  .c-app, html{
+    max-height: 720px!important;
+  }
+}

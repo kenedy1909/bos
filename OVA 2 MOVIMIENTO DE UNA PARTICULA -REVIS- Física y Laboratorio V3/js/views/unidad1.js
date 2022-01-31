@@ -1221,7 +1221,7 @@ function svg_img(num) {
                                       <div class="">
                                         <p class="p_black text-center">clic a la imagen</p>
                                         <div class="text-center" style='padding-right: 15px;'>
-                                           <img src="assets/img/img_ova/imagenejemploparticula.png" class="img-100" data-toggle="modal" data-target="#agran1">
+                                           <img src="assets/img/img_ova/imagenejemploparticula_imagenejemploparticula.svg" class="img-100" data-toggle="modal" data-target="#agran1">
                                         </div>
                                       </div>
                                     </div>

@@ -36,7 +36,9 @@
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 *,
@@ -50,6 +52,10 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 21, 0);
+  max-width: 1360px!important;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -57,7 +63,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 body {
-  margin: 0;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 15px;
@@ -9996,7 +10001,8 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
     z-index: 1030;
   }
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right) {
-    left: 0;
+    left: auto!important;
+    max-height: 720px;
   }
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-fixed.c-sidebar-right,*[dir="rtl"] .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right) {
     right: 0;
@@ -10464,7 +10470,7 @@ html:not([dir="rtl"]) .c-sidebar-right .c-sidebar-minimizer::before {
     opacity: 0;
   }
   .c-sidebar-minimized .c-sidebar-minimizer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: inherit;
   }
@@ -10861,10 +10867,12 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-show.c-sidebar-right, html:not([dir="
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right), html:not([dir="rtl"])
   .c-sidebar.c-sidebar-show:not(.c-sidebar-right) {
     margin-left: 0;
+    max-height: 720px;
   }
   *[dir="rtl"] .c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right), *[dir="rtl"]
   .c-sidebar.c-sidebar-show:not(.c-sidebar-right) {
     margin-right: 0;
+    max-height: 720px;
   }
 }
 
@@ -13249,8 +13257,9 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   flex: 1;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 0;
-  min-height: 100vh;
+  min-height: 100%!important;
+  min-height: 720px!important;
+  overflow: auto;
 }
 
 .c-sidebar.c-sidebar-unfoldable {

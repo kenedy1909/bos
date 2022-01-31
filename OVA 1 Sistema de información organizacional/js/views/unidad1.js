@@ -20,6 +20,16 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // EditarLocation(getPos());
+        actualizarprogress(stepIndex+1);
+        console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     $('#next').on('click', function () {
