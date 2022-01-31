@@ -1362,9 +1362,15 @@ p, button{
 	.lineaCurva img{
 		width: 65%;
 		position: relative;
-		top: 36px;
-		left: 80px;
+		top: 33px;
+		left: 74px;
 		z-index: 1;
+	}
+	.circle-num{
+		height: 33px;
+	}
+	.circle-num span{
+		top: -3px;
 	}
 	
 }
@@ -1382,6 +1388,15 @@ p, button{
 	}
 	.circle-num span{
 		top: -3px;
+	}
+
+	.tiempo{
+		width: 77%;
+		display: inline-block;
+	}
+	.reloj{
+		position: relative;
+		top: -13px;
 	}
 	
 }
