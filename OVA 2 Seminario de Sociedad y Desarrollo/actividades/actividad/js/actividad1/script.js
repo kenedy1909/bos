@@ -398,7 +398,7 @@ function init_recurso_1() {
                 $('.img_res').html('<img src="../../../assets/img/img_ova/mal.png" style="max-width: 80%; margin-top: 5%;">');
                 $('.mensaje').text("Inténtalo nuevamente.");
                 $('.puntaje').text("0%");
-                $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+                $('.btns_modal').html('<button style="font-size: 20px;color: #771E18;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
                 $("#calificacionModal").modal("show");
             } 
         } else {
@@ -417,10 +417,10 @@ function init_recurso_1() {
                 /*mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                     
                 });*/
-                $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%;">');
+                $('.img_res').html('<img src="../../../assets/img/img_ova/bien.png" style="max-width: 100%;margin-top: 0%;margin-left: -1%; padding:10px;">');
                 $('.puntaje').text("100%");
                 $('.mensaje').text("¡Felicitaciones!");
-                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" onclick="reload()" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" onclick="reload()" style="font-size: 20px;color: #771E18;font-weight: bold;margin-top: -15px;">cerrar</button>');
                 $("#calificacionModal").modal("show");
             }
         }
