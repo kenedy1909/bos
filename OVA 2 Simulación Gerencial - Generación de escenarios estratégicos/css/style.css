@@ -13260,6 +13260,7 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   flex-direction: column;
   min-height: 100%;
   max-height: 720px!important;
+  overflow: auto;
 }
 
 .c-sidebar.c-sidebar-unfoldable {

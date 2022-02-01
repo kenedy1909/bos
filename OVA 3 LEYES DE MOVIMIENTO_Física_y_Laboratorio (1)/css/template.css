@@ -110,7 +110,7 @@ iframe{
   background-size: contain;
   width: 380px;
   height: 100px;
-  padding: 30px 122px 20px 124px;
+  padding: 31px 122px 20px 100px;
 }
 
 .titulo-ova h3{
@@ -949,4 +949,32 @@ svg circle:nth-child(2){
 
 .lineaV {
   border-left: solid #1F3864 2px;
+}
+
+.flipster__button {
+  visibility: hidden;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }

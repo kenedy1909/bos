@@ -40,7 +40,8 @@
     -ms-flex-direction: row;
     flex-direction: row;
     min-height: 100%;
-    max-height: 720px!important;
+    padding: 0;
+    margin: 0;
 }
 
 *,
@@ -54,6 +55,10 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 21, 0);
+    max-width: 1360px!important;
+    margin: 0 auto;
+    display: block;
+    padding: 0;
 }
 
 article,
@@ -81,10 +86,6 @@ body {
     background-color: #ebedef;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    max-width: 1360px!important;
-    max-height: 720px!important;
-    margin: auto;
-    display: block;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {

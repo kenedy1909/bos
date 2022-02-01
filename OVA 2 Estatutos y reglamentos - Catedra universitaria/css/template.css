@@ -1259,24 +1259,30 @@ svg circle:nth-child(2) {
 
 @media only screen and (min-width:1360px) {
 
-  .controles #next{
-    right: calc(((100vw - 1360px)/2) - 20px);
+    .controles #next{
+      right: calc(((100vw - 1360px)/2) - 15px);
+    }
+    .c-app, html{
+      max-height: 720px!important;
+    }
   }
-
-}
-
-@media only screen and (min-width:1450px) {
-
-  .controles #next{
-    right: calc(((100vw - 1360px)/2) - 20px);
+  
+  @media only screen and (min-width:1450px) {
+  
+    .controles #next{
+      right: calc(((100vw - 1360px)/2) - 15px);
+    }
+    .c-app, html{
+      max-height: 720px!important;
+    }
   }
-
-}
-
-@media only screen and (min-width:1600px) {
-
-  .controles #next{
-    right: calc(((100vw - 1360px)/2) - 20px);
+  
+  @media only screen and (min-width:1600px) {
+  
+    .controles #next{
+      right: calc(((100vw - 1360px)/2) - 15px);
+    }
+    .c-app, html{
+      max-height: 720px!important;
+    }
   }
-
-}
