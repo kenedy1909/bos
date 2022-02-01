@@ -51,9 +51,9 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 21, 0);
   max-width: 1360px!important;
-  max-height: 720px!important;
-  margin: auto;
+  margin: 0 auto;
   display: block;
+  padding: 0;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
