@@ -1545,7 +1545,7 @@ function agrandar(num) {
             $('.text1').addClass('visible');
             $('.text1').removeClass('invisible');
 
-            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado1/index.html" frameborder="0"></iframe>`;
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado1/index.html" frameborder="0" style="min-height: 730px;"></iframe>`;
             $('.iframe').html(iframe);
             break;
         case 2:

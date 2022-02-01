@@ -318,7 +318,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 490px;
+  height: 510px;
   
   text-align: center;
 }
@@ -956,7 +956,7 @@ input[type=range]::-ms-fill-upper {
   border-radius: 20px;
 }
 .position-image{
-  height: 40px;
+  height: 15px;
   text-align: center;
   position: relative;
   top: -60px;
@@ -2177,7 +2177,7 @@ a.control_next {
 }
 
 .agrandado{
-  width: 70%;
+  width: 270px;
 }
 .cortico{
   width: 25%;
@@ -2198,9 +2198,9 @@ a.control_next {
   padding-top: 12px;
 }
 .texto-target{
-  width: 160px;
-  position: relative;
-  left: 80px;
+    width: 150px;
+    position: relative;
+    left: 60px;
 }
 .imagen22{
   width: 125%;
