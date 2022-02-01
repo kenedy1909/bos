@@ -1269,16 +1269,21 @@ input[type=range]::-ms-fill-upper {
   height: 20px;width: 20px;background: #174c7f;
 }
 .puntero_body{
-  width: 0;height: 0;
-  border-left: 20px solid #174c7f;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  transform: rotate(90deg);
+    width: 0;
+    height: 0;
+    border-left: 14px solid #174c7f;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transform: rotate(90deg);
+    left: 3px;
+    top: -4px;
+    position: relative;
 }
 .blue_aquaBane{
   background: #61C5FF;
   padding: 20px;
   border-radius: 30px;
+  height: 250px;
 }
 .baneActivi-video{
   background: #FFD966;

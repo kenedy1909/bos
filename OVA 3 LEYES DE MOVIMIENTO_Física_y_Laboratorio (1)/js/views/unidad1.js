@@ -3,6 +3,9 @@ $( document ).ready(function() {
     $( ".zoomContainer" ).remove();
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
+    $(".sub1").removeClass('tema_activo');
+    $(".sub1_1").addClass('tema_activo');
     $('.carousel').carousel('pause');
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -35,17 +38,17 @@ $( document ).ready(function() {
         actualizarprogress();
     });
     slide_link(tema);
-    
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        actualizarprogress();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
-    var knob = "";
-    var bar = "";
-    var container = "";
-    var dragging = "";
-    var diff = "";
-    var newTop = "";
-    var scrollOffset = "";
-    $(".teoria").on('click' , teorias);
+    
     /*
     $(".modal_scroll2").on('click', modal_scroll2);
     $(".modal_scroll3").on('click', modal_scroll3);
@@ -59,6 +62,7 @@ $( document ).ready(function() {
     $(".unidad1-6_paso3").on('mouseleave', unidad1_pantalla6_accion4);*/
 
     /*scroll();*/
+
     
 
 
@@ -408,12 +412,13 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Leyes de movimiento","La fuerza y las leyes de Newton");
             break;
         case 20:
-            
-            alert('antes');
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_1").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Leyes de movimiento","La fuerza y las leyes de Newton");
             break;
         case 21:
-            
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_21").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Leyes de movimiento","Análisis de los cuerpos en movimiento");
             break;
         case 22:
@@ -430,9 +435,14 @@ function controlSlides(num){
         case 24:
             paraIframe(0);
             /*pausevideo(1);*/
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_21").addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Leyes de movimiento","Análisis de los cuerpos en movimiento");
             break;
+
         case 25:
+            $(".sub1").removeClass('tema_activo');
+            $(".sub1_25").addClass('tema_activo');
             $( ".zoomContainer" ).remove();
             $('.zoom_img').elevateZoom({zoomWindowPosition: 11});
             setMigaja("Unidades de aprendizaje","1. Leyes de movimiento","Análisis de los cuerpos en equilibrio");
@@ -993,7 +1003,7 @@ function textBane_10(num){
 
             $('.bane10-2').addClass('visible');
             $('.bane10-2').removeClass('invisible');
-            scroll_(6);
+            /*scroll_(6);*/
             break;
         case 3:
             $('.textBane-10').removeClass('visible');
@@ -1001,7 +1011,7 @@ function textBane_10(num){
 
             $('.bane10-3').addClass('visible');
             $('.bane10-3').removeClass('invisible');
-            scroll_(7);
+            /*scroll_(7);*/
             break;
         case 4:
             $('.textBane-10').removeClass('visible');
