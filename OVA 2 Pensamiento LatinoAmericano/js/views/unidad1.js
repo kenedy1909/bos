@@ -119,16 +119,16 @@ function controlSlides(num) {
             // /*scroll();*/
             var pdf = `<div class="col-md-12">
                             <p class="p_white size_20">
-                                <a href="assets/PDF/pueblo,etniaonación.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>¿Etnia, pueblo o nación?.pdf</a>
+                                <a href="assets/PDF/pueblo,etniaonación.pdf" target="_blank"> <img src="assets/img/img_ova/pdfg.png" style="width: 55px;"> ¿Etnia, pueblo o nación?.pdf</a>
                             </p>
                             <p class="p_white size_20">
-                                <a href="assets/PDF/De las dualidades a las ecologias.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i>De las dualidades a las ecologías” De Sousa.pdf</a>
+                                <a href="assets/PDF/De las dualidades a las ecologias.pdf" target="_blank"> <img src="assets/img/img_ova/pdfg.png" style="width: 55px;"> De las dualidades a las ecologías” De Sousa.pdf</a>
                             </p>
                             <p class="p_white size_20">
-                                <a href="assets/PDF/El buen vivir como paradigma societal alternativo.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> buen vivir como paradigma societal alernativo.pdf </a>
+                                <a href="assets/PDF/El buen vivir como paradigma societal alternativo.pdf" target="_blank"> <img src="assets/img/img_ova/pdfg.png" style="width: 55px;">  buen vivir como paradigma societal alernativo.pdf </a>
                             </p>
                             <p class="p_white size_20">
-                                <a href="assets/PDF/.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x"></i> Actividad complementaria. Pdf </a>
+                                <a href="assets/PDF/.pdf" target="_blank"> <img src="assets/img/img_ova/pdfg.png" style="width: 55px;">  Actividad complementaria. Pdf </a>
                             </p>
                         </div>`;
             scroll_set(8);
