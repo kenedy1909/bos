@@ -99,7 +99,7 @@ html{
 .backdrop {
     bottom: 0;
     left: -100%;
-    overflow: auto;
+    overflow: hidden;
     padding: 15px;
     position: fixed;
     right: 100%;

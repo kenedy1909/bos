@@ -8,7 +8,7 @@
     }
 }
 
-.qwsa-form label {
+.qwsa-form label { 
     display: block; 
     width: 100%;
     text-align: center;
@@ -180,4 +180,38 @@ span.checked svg.svg2 {
 
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+/*encabezado*/
+
+.principal {
+    display: inline-block;
+}
+
+.secundario {
+    width: 35%;
+    /* display: inline-block; */
+}
+
+.terciario {
+    width: 65%;
+    /* display: inline-block; */
+}
+
+@media only screen and (min-width:700px) and (max-width:800px) {
+  
+	.controles #next{
+	  right: calc(((100vw - 1045px)/2) - 5px);
+	}
+
+
+	.img-activi{
+		width: 100px !important; height: 100px !important;
+	}
+
+    .text-peq {
+        font-size: 18px !important;
+    }
+
+    
 }

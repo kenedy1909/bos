@@ -13258,7 +13258,6 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   flex: 1;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 100%!important;
   min-height: 720px!important;
   overflow: auto;
 }

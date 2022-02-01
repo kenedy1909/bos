@@ -433,6 +433,15 @@ button {
     padding-left: 32px;
 }
 
+.text-img-activiInt {
+    border-bottom: solid 3px #78201A;
+    width: 50%;
+    height: 90px;
+    margin: 2px;
+    padding-top: 5px;
+    text-align: center;
+}
+
 .content-img-actividad {
     z-index: 100;
     padding-top: 32px;
