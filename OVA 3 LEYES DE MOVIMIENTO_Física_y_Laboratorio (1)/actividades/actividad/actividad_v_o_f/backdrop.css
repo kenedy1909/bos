@@ -189,10 +189,10 @@ html{
     outline: 0;
 }
 .btn-secundary{
-    background: #337ab7;
+        background: white;
     border: none;
-    border-radius: 0;
-    color: #fff;
+    border-radius: 10px;
+    color: #006092;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -211,45 +211,23 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-    height: 386px;
+    height: 90px;
     width: 300px;
 }
 .calificacion .modal-body.exito{
-    background: url('./img/bien.png') center no-repeat;
+    /*background: url('./img/bien.png') center no-repeat;*/
 }
 .calificacion .modal-body.parcial{
-    background: url('./img/mal.png') center no-repeat;
+    /*background: url('./img/mal.png') center no-repeat;*/
 }
 .calificacion .modal-body .mensaje{
-    background: #fff;
     border-radius: 8px;
+    color: white;
     font-size: 20px;
     line-height: normal;
     margin: 0 25px;
     padding: 5px;
     position: relative;
-}
-.calificacion .modal-body .mensaje:after{
-    bottom: -30px;
-    border-color: #fff transparent transparent;
-    border-style: solid;
-    border-width: 15px;
-    content: "";
-    left: calc(50% - 15px);
-    position: absolute;
-}
-.calificacion .modal-body .mensaje .texto-puntaje{
-    display: block;
-}
-.calificacion .modal-body .mensaje .puntaje{
-    font-size: 1.1em;
-    font-weight: bold;
-}
-.calificacion .modal-body.exito .mensaje .puntaje{
-    color: #8eb936;
-}
-.calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #ad123c;
 }
 @keyframes wobble {
     0% {
@@ -310,4 +288,79 @@ html{
     border-radius: 20px;
     -webkit-box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
     box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
+}
+
+/*modal califica*/
+.card .user {
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -70px auto 0;
+    overflow: hidden;
+    width: 120px;
+    background: #999999;
+    border: 3px solid white;
+}
+.card .content {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .user img {
+    background: none;
+    display: block;
+    margin: 5px auto;
+    max-width: 90%;
+    position: relative;
+}
+.card .cover {
+    height: 105px;
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+    background: #003442;
+}
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+}
+
+.x-modal{
+  background: #006092;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.x-modal-text{
+  display: block;
+  margin: auto;
+}
+.divcerrar {
+    position: relative;
+    top: -20px;
+    left: 92%;
+}
+
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-radius: 22px;
+    outline: 0;
+    /* background-color: transparent; */
+    border-color: rgba(0, 0, 21, 0.0);
+}
+.card-container, .front, .back {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    background: #006092;
 }
