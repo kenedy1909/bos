@@ -1,6 +1,6 @@
 body{
 	overflow:hidden;
-	background-color:#fcfcfc;
+	background-color:transparent;
 	margin:0;
 	padding:0;
 }
@@ -118,6 +118,10 @@ body{
 	background-image:-ms-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
 	background-image:-o-linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%);
 	background-image:linear-gradient(right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.15) 100%); */
+}
+
+.magazine .page-wrapper{
+	border-radius: 20px!important;
 }
 
 .magazine-viewport .zoom-in .even .gradient,
