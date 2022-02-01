@@ -564,3 +564,62 @@
 	width: 79px;
     height: 79px;
 }
+
+.imagen2{
+  height: 25px;
+  text-align: end;
+}
+
+.imagen2 img {
+  max-width: 22%; 
+   position: relative;  
+   top: -42px;
+   left: -55px;
+}
+
+
+@media screen and (max-width: 1366px) {
+  .imagen2 img {
+    max-width: 22%; 
+     position: relative;  
+     top: -43px;
+     left: -55px;
+  }
+	
+	
+}
+@media screen and (max-width: 1300px) {
+  .imagen2 img {
+    max-width: 22%; 
+     position: relative;  
+     top: -35px;
+     left: -55px;
+  }
+	
+}
+@media screen and (max-width: 1270px) {
+	.imagen2 img {
+    max-width: 22%; 
+     position: relative;  
+     top: -33px;
+     left: -55px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .imagen2 img {
+    max-width: 22%; 
+     position: relative;  
+     top: -21px;
+     left: -55px;
+  }
+}
+
+  @media screen and (max-width: 1150px) {
+    .imagen2 img {
+      max-width: 22%; 
+       position: relative;  
+       top: -21px;
+       left: -55px;
+    }
+  }

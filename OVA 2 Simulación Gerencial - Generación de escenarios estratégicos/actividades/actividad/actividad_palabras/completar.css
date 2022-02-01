@@ -318,3 +318,164 @@ label {
     left: 4%;
 	}
 	
+
+	
+/* @media screen and (max-width: 1366px) {
+	.imagen2 img {
+	  max-width: 22%; 
+	   position: relative;  
+	   top: -43px;
+	   left: -55px;
+	}
+	  
+	  
+}
+@media screen and (max-width: 1300px) {
+	.imagen2 img {
+	  max-width: 22%; 
+	   position: relative;  
+	   top: -35px;
+	   left: -55px;
+	}
+	  
+}
+@media screen and (max-width: 1270px) {
+	#op_0-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: -10px;
+	}
+	#op_1-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: -10px;
+	}
+	#op_2-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: 20px;
+	}
+	#op_4-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: -40px;
+	}
+}
+  
+@media screen and (max-width: 1160px) {
+	#op_0-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: -10px;
+	}
+	#op_1-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: -10px;
+	}
+	#op_2-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: 20px;
+	}
+	#op_4-options[aria-expanded="true"] {
+		animation-direction: normal;
+		animation-fill-mode: forwards;
+		box-shadow:
+			-0.05em -0.1em 0.2em 0 #fff inset,
+			-0.05em 0 0 #fff inset;
+		cursor: default;
+		pointer-events: none;
+		position: relative;
+		top: -40px;
+	}
+}
+  
+@media screen and (max-width: 1150px) {
+		#op_0-options[aria-expanded="true"] {
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			box-shadow:
+				-0.05em -0.1em 0.2em 0 #fff inset,
+				-0.05em 0 0 #fff inset;
+			cursor: default;
+			pointer-events: none;
+			position: relative;
+			top: -10px;
+		}
+		#op_1-options[aria-expanded="true"] {
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			box-shadow:
+				-0.05em -0.1em 0.2em 0 #fff inset,
+				-0.05em 0 0 #fff inset;
+			cursor: default;
+			pointer-events: none;
+			position: relative;
+			top: -10px;
+		}
+		#op_2-options[aria-expanded="true"] {
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			box-shadow:
+				-0.05em -0.1em 0.2em 0 #fff inset,
+				-0.05em 0 0 #fff inset;
+			cursor: default;
+			pointer-events: none;
+			position: relative;
+			top: 20px;
+		}
+		#op_4-options[aria-expanded="true"] {
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			box-shadow:
+				-0.05em -0.1em 0.2em 0 #fff inset,
+				-0.05em 0 0 #fff inset;
+			cursor: default;
+			pointer-events: none;
+			position: relative;
+			top: -40px;
+		}
+} */
