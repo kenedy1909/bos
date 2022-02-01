@@ -2208,3 +2208,13 @@ a.control_next {
     left: -25px;
     top: 25px;
 }
+
+.btn-youtub{
+  background-image: url('../assets/img/img_ova/btn-youtube.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  color: white;
+    height: 60px;
+    width: 150px;
+    padding: 16px 1px 1px 65px;
+}
