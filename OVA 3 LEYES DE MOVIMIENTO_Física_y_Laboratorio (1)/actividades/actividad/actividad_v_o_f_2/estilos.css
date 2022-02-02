@@ -87,6 +87,8 @@ table.tabla-actividad2 td,
     padding: 2px;
     vertical-align: middle;
     border-top: 1px solid #ddd;
+    font-size: 15px;
+        text-align: justify;
 }
 
 svg.svg-radio-elegant {
@@ -334,4 +336,11 @@ cursor: pointer;}
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+.A{
+    padding-left: 40px !important;
+}
+.B{
+    padding-left: 23px !important;
 }
