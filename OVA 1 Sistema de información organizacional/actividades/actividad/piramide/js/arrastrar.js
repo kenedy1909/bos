@@ -37,7 +37,7 @@ function calificar(){
 	    i3++;
 	});
 
-	var puntaje = 100;
+	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
 	  if (res1[i] != 'correcta1') {
 	  	puntaje = puntaje - 33.3;

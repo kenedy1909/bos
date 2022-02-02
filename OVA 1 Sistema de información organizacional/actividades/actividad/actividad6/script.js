@@ -409,6 +409,7 @@ function init_recurso_1() {
                     var exito = true;
                     var mensaje = "¡Felicitaciones";
                     $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png"); 
+                    $(".card .user img").css( "background-color", "transparent" );
                     // registrarActividad(puntaje);
                     mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                         
