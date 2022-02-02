@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+    $('.menu1').removeClass('d-none');
+    $('.menu1').addClass('c-show');
+    $('.sub1_1').addClass('tema_activo');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $('.menu3').removeClass('d-none');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',

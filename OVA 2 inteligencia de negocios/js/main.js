@@ -153,6 +153,8 @@ $('.link-menu-tema').off('click').on('click', function(evt){
     $("#content-ova").load("base/unidades/"+enlace+".html");
     evt.preventDefault();
     tema = $(this).data('id');
+    $(".sub1").removeClass('tema_activo');
+    $(".sub1_"+tema).addClass('tema_activo');
     console.log(tema);
 });
 function init(){
