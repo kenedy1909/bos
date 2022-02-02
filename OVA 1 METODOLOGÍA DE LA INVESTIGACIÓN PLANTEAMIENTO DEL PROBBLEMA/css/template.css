@@ -1,3 +1,74 @@
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+    .img_activi {
+      width: 100px; height: 100px;
+    }
+  
+    .texto_activi {
+      color:rgb(200 173 69); font-size: 18px !important; margin-top: -4% !important;
+    }
+  
+    .text-peq {
+      font-size: 12px !important;
+    }
+  
+    .text-peq14 {
+      font-size: 14px !important;
+    }
+  
+    .menosmargin-peq {
+      top: 30px !important;
+    }
+  
+    .ml-img2 {
+      margin-left: 23% !important; 
+    } 
+  
+    .text-img-activi{
+      
+      margin-left: -7% !important;
+      padding-left: 25px !important;
+      
+    }
+  
+    .text-img-activi2 {
+      
+      margin-left: -7% !important;
+      
+      padding-left: 20px !important;
+    }
+  
+  
+    .btn-text {
+      font-size: 0.7rem !important;
+    }
+  
+    .btn-evaluacion {
+      height: 70% !important;
+    }
+    
+  }
+  
+  @media screen and (min-width: 1200px) and (max-width: 1800px) {
+  
+  
+    .img-activi {
+      width: 116px; height: 116px;
+    }
+  
+    .texto_activi {
+      color: rgb(200 173 69); font-size: 20px !important;
+    }
+  
+    .ml-img {
+      margin-left: 16%;
+    }
+  
+    .ml-img2 {
+      margin-left: 35%;
+    }
+}
+
 .icons-menu {
     max-width: 100%;
 }
@@ -714,20 +785,16 @@ card flip*/
 
 .text-img-activi {
     border-bottom: solid 4px #994c91;
-    width: 50%;
-    height: 86px;
+    width: 55%;
+    height: 90px;
     margin: 0px;
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-left: 24px;
 }
 
 .img_activi {
     width: 116px;
     height: 116px;
-}
-
-.texto_activi {
-    font-size: 18px;
-    color: rgb(200 173 69);
 }
 
 .contenedor_indi {
@@ -738,7 +805,7 @@ card flip*/
 }
 
 .logo_copiar {
-    max-width: 40px;
+    max-width: 33px;
 }
 
 .contenedor_activi_1 {
@@ -1021,4 +1088,8 @@ card flip*/
 
 .img-100 {
     width: 100%;
+}
+
+.p_black {
+    color:rgb(0, 0, 0);
 }

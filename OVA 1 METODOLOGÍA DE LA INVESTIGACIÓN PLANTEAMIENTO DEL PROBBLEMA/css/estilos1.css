@@ -1408,7 +1408,7 @@ input[type=range]::-ms-fill-upper {
     width: 0%;
     height: 50px;
     box-shadow: #cfcfcf 2px 1px 8px 1px !important;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     font-weight: bold;
     text-align: center;
