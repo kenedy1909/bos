@@ -191,8 +191,8 @@ function slide() {
 }
 
 function slide_predeterminado() {
-    $(".nav-link").removeClass('done');
-    $(".nav-link").removeClass('active');
+    /* $(".nav-link").removeClass('done');
+     $(".nav-link").removeClass('active');*/
     controlSlides(1);
     /*window.location.href ="#unidad1-1";*/
     /*$url =$('.enlaces_ova')
@@ -202,8 +202,8 @@ function slide_predeterminado() {
 }
 
 function slide_link(num) {
-    $(".nav-link").removeClass('done');
-    $(".nav-link").removeClass('active');
+    /* $(".nav-link").removeClass('done');
+     $(".nav-link").removeClass('active');*/
     /*window.location.href ="#unidad1-"+num;*/
     /*location.assign("#unidad1-4");*/
     /*$url =$('.enlaces_ova')
@@ -751,7 +751,7 @@ function scroll_horizontal2(num) {
                                 <div class="banderita"></div>
                                 <div class="row banner_abluc">
                                     <div class="text_bluc">
-                                        <p class="font13 p_white">Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p>
+                                        <p class="font13 p_white" style="height: 177px;overflow: auto;">Como complemento a lo anterior, se podría decir, que el E-commerce, es una actividad económica que llegó para quedarse en los negocios del planeta entero. De hecho, hacer esta afirmación podría considerarse como irresponsable, al generalizarlo al mundo entero, sin embargo, como lo ha resaltado Bill Gates el fundador de Microsoft, “Si tu negocio no está en internet, tu negocio no existe”, lo que significa que la actividad comercial en internet, ya sea a través de plataformas propias, plataformas especializadas de uso compartido (Marketplace) o redes sociales, es ahora más que nunca, el escenario donde opera la actividad comercial del planeta entero. </p>
                                     </div>
                                     <div class="circle_bluc">
                                         <img src="assets/img/img_ova/ec1.png" class="img-70">
@@ -799,12 +799,12 @@ function scroll_horizontal2(num) {
                                 <div class="banderita"></div>
                                 <div class="row banner_abluc">
                                     <div style="width: 70%;">
-                                        <div class="text_bluc col-md-12" style="height: 125px;">
+                                        <div class="text_bluc col-md-12" style="height: 125px;width: 100%;">
                                             <p class="font13 p_white mt-4">Antes de comenzar a abordar los contenidos, tenga en cuenta que la última unidad de la presente OVA se dedicará a diseñar una propuesta de tienda online o E-commerce, por lo que es necesario conformar grupos de mínimo 2  y máximo 3 estudiantes. <br><br>
                                             Para conocer más acerca de la actividad final, seleccione el botón RECOMENDACIONES:</p>
                                         </div>
-                                        <div class="text-center">
-                                            <button class="btn bg-white color-text py-3 btn-lg" data-toggle="modal" data-target="#modalPant1">
+                                        <div class="text-center mt-2">
+                                            <button class="btn bg-white color-text py-2 btn-lg" data-toggle="modal" data-target="#modalPant1">
                                                 <b>RECOMENDACIONES</b>
                                             </button>
                                         </div>

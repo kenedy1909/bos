@@ -1318,6 +1318,7 @@ p, button{
 		top: -13px;
 	}
 	
+	
 }
 
 .lineaCurva img{
@@ -1406,6 +1407,68 @@ p, button{
 		position: relative;
 		top: -13px;
 	}
+
+	.lista{
+		overflow: auto;
+	}
+	.text-img-activi  b{
+		font-size: 19px !important;
+	}
+	
+	
 	
 }
 
+@media only screen and (min-width: 1366px){
+	#img-map2{
+		position: relative;
+		top: -13px;
+	}
+	#img-map3{
+		position: relative;
+		top: -31px;
+	}
+	#img-map4{
+		position: relative;
+		top: -45px;
+	}
+
+	#img-map5{
+		position: relative;
+		top: -64px;
+	}
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1220px){
+	#img-map1{
+		position: relative;
+   		top: 6px;
+		height: auto !important;
+    	width: 180% !important;
+	}
+	#img-map2{
+		position: relative;
+		top: 16px;
+		height: auto;
+   		width: 180% !important;
+	}
+	#img-map3{
+		position: relative;
+		top: 16px;
+		height: auto !important;
+    	width: 180% !important;
+	}
+	#img-map4{
+		position: relative;
+		top: 16px;
+		height: auto !important;
+    	width: 180% !important;
+	}
+	
+	#img-map5{
+		position: relative;
+		top: 23px;
+		height: auto !important;
+    	width: 180% !important;
+	}
+}

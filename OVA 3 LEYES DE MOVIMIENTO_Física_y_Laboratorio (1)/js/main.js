@@ -197,10 +197,10 @@ $('.link-menu-tema').off('click').on('click', function(evt){
     var link_item = $(this).find("a").attr('href');
     var enlace = link_item.replace('#','');
     tema = $(this).data('id');
-    
     $("#content-ova").load("base/unidades/"+enlace+".html");
+    $(".sub1").removeClass('tema_activo');
+    $(".sub1_"+tema).addClass('tema_activo');
     evt.preventDefault();
-    
     console.log(tema);
 });
 function init(){

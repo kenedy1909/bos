@@ -176,18 +176,18 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: #0075a8;
+    background: #003442;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     padding: 6px 30px;
 }
-.btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
+/*.btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
     background: #ffd200;
     border: none;
     outline: 0;
-}
+}*/
 .btn-secundary{
         background: white;
     border: none;

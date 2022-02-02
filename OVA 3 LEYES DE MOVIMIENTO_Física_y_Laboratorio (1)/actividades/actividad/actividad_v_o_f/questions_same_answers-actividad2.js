@@ -185,6 +185,9 @@ QuestionsSameAnswers.prototype.score =  function () {
     });
 }
 
+function reiniciar(){
+    location.reload();
+}
 QuestionsSameAnswers.prototype.prepare_files =  function () {
     /* Crea y carga los archivos necesarios para que el módulo funcione */
 

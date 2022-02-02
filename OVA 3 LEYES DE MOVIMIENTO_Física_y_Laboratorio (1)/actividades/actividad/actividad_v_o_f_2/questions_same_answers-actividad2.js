@@ -173,14 +173,20 @@ QuestionsSameAnswers.prototype.score =  function () {
     var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
+    $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $("#img-circulo").attr("src","../../../assets/img/img_template/bien.png");
     }
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
         self.reset(form);
     });
+}
+
+function reiniciar(){
+    location.reload();
 }
 
 QuestionsSameAnswers.prototype.prepare_files =  function () {
@@ -209,22 +215,19 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th style="text-align: center;">Ítem</th>\
+                    <th style="text-align: center;font-size: 20px;">Ítem</th>\
                     {% for answer in form.answers %}\
-                        <th class="title_table">{{ answer.answer_txt }}</th>\
+                        <th class="title_table" style="font-size: 20px;">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
                 </tr>\
             </thead>\
             <tbody>\
-                <tr>\
-                    <th style="font-size: 15px;"></th>\
-                </tr>\
                 {% for question in form.questions %}\
                 <tr>\
                     <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
-                        <td>\
+                        <td class="{{ answer.id }}">\
                             <label class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
                                 <span class="radiobtn"></span>\
