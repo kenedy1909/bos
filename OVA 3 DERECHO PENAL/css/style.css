@@ -10043,7 +10043,7 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
 }
 
 .c-sidebar.c-sidebar-overlaid {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1032;
