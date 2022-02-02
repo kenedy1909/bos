@@ -269,7 +269,7 @@ function pantalla3_2(num) {
 
                                     </div>
                                     <div class="col-md-6 text-center" data-toggle="modal" data-target="#modal3-votos">
-                                        <img src="assets/img/img_ova/votos.png" class="img-fluid cursor" style="margin-top:14px;">
+                                        <img src="assets/img/img_ova/votos.png" class="img-fluid cursor" style="margin-top:14px; width: 80%; height: 126px;">
 
                                     </div>
                                     <div class="col-md-12">

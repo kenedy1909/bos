@@ -1,5 +1,5 @@
 .titulo3 {
-    padding: 7px 25px 25px 25px;
+    padding: 11px 11px 25px 25px;
     height: 30px;
 }
 
@@ -21,14 +21,14 @@
 
 .banner3_1 {
     background: #65AFF0;
-    height: 100px;
+    height: 120px;
     border-radius: 20px;
     padding: 25px 25px 25px 25px;
 }
 
 .div_button {
     position: relative;
-    top: -9px;
+    top: -20px;
     text-align: center;
 }
 
@@ -98,7 +98,7 @@
 .div_textonum4,
 .div_textonum5,
 .div_textonum6 {
-    width: 10%;
+    width: 15%;
     padding: 60px 1px 1px 1px;
     text-align: center;
 }

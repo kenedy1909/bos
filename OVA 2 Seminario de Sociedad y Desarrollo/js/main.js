@@ -266,7 +266,7 @@ function ObtenerLocation(){
 }
 
 function setMigaja(bread1,bread2,bread3){
-    $(".breadcrumb ").html("");
+    $(".breadcrumb ").html(""); 
     $(".breadcrumb").append('<li class="breadcrumb-item">Menú</li><li class="breadcrumb-item">'+bread1+'</li>');
     if (bread2 != "") {
         $(".breadcrumb ").append('<li class="breadcrumb-item">'+bread2+'</li>');

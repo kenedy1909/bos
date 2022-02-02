@@ -2,9 +2,15 @@ $(document).ready(function() {
     $(".zoomContainer").remove();
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
-    setMigaja("Unidades de aprendizaje", "La ciencia: concepto y definición", ">");
 
-    star_uni = 1;
+    $(".menu1").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu4").removeClass('c-show');
+
+    
+
+    star_uni = 1; 
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
     $('#smartwizard').smartWizard({
@@ -24,6 +30,30 @@ $(document).ready(function() {
     $(".linkactividades").attr('href', urlsite + '/course/view.php?id=' + courseid);
 
 
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+1);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+    }
+
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -34,6 +64,7 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
     setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", ">");
     slide_predeterminado();
     console.log(tema);

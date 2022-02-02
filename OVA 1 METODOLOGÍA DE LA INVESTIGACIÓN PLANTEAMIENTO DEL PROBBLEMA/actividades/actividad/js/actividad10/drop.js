@@ -151,7 +151,7 @@ $('#add').on('click', function() {
     }
   }
   if (puntaje == 100 && num_p == 3) {
-    $('.img_res').html('<img src="../img/img10/bien.png" style="max-width: 90%;">');
+    $('.img_res').html('<img src="../img/img10/bien.png" style="max-width: 90%; margin-top: 5%;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
     $('.btns_modal').append('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;">cerrar</button>');
