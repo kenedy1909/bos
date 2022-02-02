@@ -272,7 +272,7 @@ function controlSlides(num){
                 
                 $('#slider4').css({ width: '100%', height: '370px' });
                 
-                $('#slider4 ul').css({ width: '90%'});
+                $('#slider4 ul').css({ width: '100%'});
                 
                 $('#slider4 ul li:last-child').prependTo('#slider4 ul');
 
@@ -320,7 +320,7 @@ function controlSlides(num){
                 
                 $('#slider5').css({ width: '100%', height: '300px' });
                 
-                $('#slider5 ul').css({ width: '90%'});
+                $('#slider5 ul').css({ width: '100%'});
                 
                 $('#slider5 ul li:last-child').prependTo('#slider5 ul');
 
@@ -918,14 +918,14 @@ function scroll_(num) {
             scroll();
             break;
         case 10:
-            dragging = "";
+            /*dragging = "";
             diff = "";
             newTop = "";
             scrollOffset = "";
             knob = document.querySelector('.custom-scrollbar__knob_diez');
             bar = document.querySelector('.custom-scrollbar__bar_diez');
             container = document.querySelector('.custom-scrollbar__inner_diez');
-            scroll();
+            scroll();*/
             break;
         case 11:
             dragging = "";
@@ -948,14 +948,14 @@ function scroll_(num) {
             scroll();
             break;
         case 13:
-            dragging = "";
+            /*dragging = "";
             diff = "";
             newTop = "";
             scrollOffset = "";
             knob = document.querySelector('.custom-scrollbar__knob_trece');
             bar = document.querySelector('.custom-scrollbar__bar_trece');
             container = document.querySelector('.custom-scrollbar__inner_trece');
-            scroll();
+            scroll();*/
             break;
         case 14:
             dragging = "";
