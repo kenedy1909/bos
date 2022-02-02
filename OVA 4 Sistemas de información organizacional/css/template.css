@@ -309,7 +309,7 @@
 .card .content {
     background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-    padding: 10px 20px 20px;
+    padding: 10px 44px 30px;
 }
 
 .card .content .main {
@@ -730,6 +730,16 @@ svg circle:nth-child(2) {
     color: #FFFFFF;
 }
 
+.caja-texto-b2 {
+    background-color: #242e9f;
+    margin-top: 10px;
+    padding: 20px;
+    width: 535px;
+    margin-left: -30px;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+
 .caja-texto-r {
     background-color: #f26b61;
     margin-top: 10px;
@@ -1017,4 +1027,30 @@ svg circle:nth-child(2) {
     background: #929292;
     padding-top: 1px;
     border-radius: 50%;
+}
+
+.imgactividad {
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+}
+
+.titulo_sub {
+    height: 72px;
+    border-bottom: solid 4px #78201A;
+    padding-top: 42px;
+    padding-left: 24px;
+    text-align: center;
+    margin-left: -14px;
+}
+
+.titulo_sub p {
+    font-size: 18px;
+    color: #78201A;
+}
+
+.banner_activi {
+    background: #DEEBF7;
+    border-radius: 15px;
+    height: 80px;
 }
