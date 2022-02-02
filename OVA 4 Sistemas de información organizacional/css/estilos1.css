@@ -1254,7 +1254,7 @@ a.control_next {
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 335px;
+    height: 240px;
     /*border-radius: 15px;*/
     /*border: 1px solid #78201A;*/
     perspective: 1000px;
@@ -1298,8 +1298,9 @@ a.control_next {
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
+    height: 225px;
     background-color: #78201A;
-    border-radius: 15px;
+    border-radius: 30px;
     padding-top: 25px;
 }
 
@@ -1309,16 +1310,27 @@ a.control_next {
 .flip-card-back {
     background-color: #78201A;
     color: white;
-    border-radius: 15px;
+    border-radius: 30px;
     padding-top: 25px;
     padding: 20px;
+    height: 226px;
     transform: rotateY(180deg);
-    height: 335px;
+}
+
+.flip-card-back p {
     overflow: auto;
+    height: 188px;
+    position: relative;
+    left: -5%;
+    width: 110%;
+    border: dashed 3px white;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 .caja-texto-y2 {
     padding: 45px 35px;
+    height: 340px;
     border-radius: 30px;
     background-color: #E0A546;
     margin-top: 20px;
