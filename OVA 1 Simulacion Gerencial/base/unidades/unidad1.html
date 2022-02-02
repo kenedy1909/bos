@@ -466,7 +466,7 @@
                               <img class="col-md-4" src="assets/img/img_ova/inversor.png">
                             </div> -->
                        </div>
-                       <div id="unidad1-7" class="tab-pane" role="tabpanel"  style="background-image: url(assets/img/img_ova/fondo_actividades.jpg); background-repeat: no-repeat; background-position: right bottom; background-size: 50%; background-color: white;">
+                       <div id="unidad1-7" class="tab-pane" role="tabpanel"  style="background-image: url(assets/img/img_ova/fondo_actividades-01.svg); background-repeat: no-repeat; background-position: right bottom; background-size: 50%; background-color: white;">
                           <div class="row px-3 m-4">
                             <div class="col-md-12 p-2">
                               <div class="row" >
@@ -495,7 +495,7 @@
                             <div class="col-md-12  ">
                               <div class="row">
                                 <div class="col-md-6 text-center ">
-                                    <button style="width: 100%; height: 22%; border-radius: 22px; white-space: break-spaces;" class="btn btn-danger btn-lg shadow" type="button" data-toggle="collapse"
+                                    <button onclick="mostrar();" style="width: 100%; height: 22%; border-radius: 22px; white-space: break-spaces;" class="btn btn-danger btn-lg shadow" type="button" data-toggle="collapse"
                                         data-target="#collapseTarjeta6" aria-expanded="false" aria-controls="collapseTarjeta6" ><img class="col-md-3" src="assets/img/img_ova/pdf-file.png"></button>
                                     <div class="collapse multi-collapse" id="collapseTarjeta6">
                                         <div class="card card-body justificado text-black" style=" background-color: #E7E6E6;height: 257px; border-radius: 0 0 36px 36px;">
@@ -504,26 +504,43 @@
                                             Realice la lectura del documento “Metodología para hacer prospectiva empresarial en la sociedad de la información y el conocimiento” <br>
 
                                             <div class="row">
-                                              <p class="col-md-6 subtitulito" style="top: 30px">
-                                                 <b> Clic aquí para ver PDF.</b>
+                                              <p class="col-md-6 subtitulito mt-2" style="top: 40px; left: 44px;">
+                                                 <b> Clic aquí para <br> ver PDF.</b>
                                               </p> <br><br> 
                                               <a class="col-md-6 "  target="_blank" href="assets/PDF/UNIDAD1/metodologia_para_hacer_prospectiva_quiro.pdf"><img  src="assets/img/img_template/pdf2.png" class="img50" style="    position: relative;top: 21px;"></a>
                                               
                                             </div>
                                           </div>
-                                            <div style="position: relative; left: 115%;top: -257px;padding: 20px;background-color: #E7E6E6;border-radius: 0 0 36px 36px; height: 345px;">
+                                            <!-- <div style="position: relative; left: 115%;top: -270px;padding: 20px;background-color: #E7E6E6;border-radius: 0 0 36px 36px; height: 353px;">
 
-                                              <p class="p_black justificado font13 mt-3">Es un documento que explica la importancia de la prospectiva en las organizaciones y la forma cómo la podemos aplicar en la empresa, sugiriendo unos puntos importantes para desarrollarlo dentro de la empresa, tales como:
+                                              <p class="p_black justificado ">Es un documento que explica la importancia de la prospectiva en las organizaciones y la forma cómo la podemos aplicar en la empresa, sugiriendo unos puntos importantes para desarrollarlo dentro de la empresa, tales como:
                                               </p>
-  
-                                              <ul class="font13">
-                                                <li>El paso a paso para lograr una buena aplicación desde la identificación del sector.</li>
-                                                <li>La asignación de actores para la prospectiva.</li>
-                                                <li>Los perfiles de selección de estos actores.</li>
-                                                <li>La definición de la población junto con el acompañamiento de expertos y la identificación final de variables claves para el desarrollo de esta.</li>
-                                              </ul>
-                                            </div>
+                                              <div>
+                                                <ul class="">
+                                                  <li>El paso a paso para lograr una buena aplicación desde la identificación del sector.</li>
+                                                  <li>La asignación de actores para la prospectiva.</li>
+                                                  <li>Los perfiles de selección de estos actores.</li>
+                                                  <li>La definición de la población junto con el acompañamiento de expertos y la identificación final de variables claves para el desarrollo de esta.</li>
+                                                </ul>
+                                              </div>
+                                            </div> -->
                                         </div>
+                                    </div>
+                                </div>
+
+                                  <div class="col-md-6 d-none contenidoU1-7">
+                                    <div class="lista" style="position: relative; left:0;top: 0;padding: 20px;background-color: #E7E6E6;border-radius: 0 0 36px 36px; height: 353px; color: black;">
+
+                                      <p class="p_black justificado ">Es un documento que explica la importancia de la prospectiva en las organizaciones y la forma cómo la podemos aplicar en la empresa, sugiriendo unos puntos importantes para desarrollarlo dentro de la empresa, tales como:
+                                      </p>
+                                      <div>
+                                        <ul class="">
+                                          <li>El paso a paso para lograr una buena aplicación desde la identificación del sector.</li>
+                                          <li>La asignación de actores para la prospectiva.</li>
+                                          <li>Los perfiles de selección de estos actores.</li>
+                                          <li>La definición de la población junto con el acompañamiento de expertos y la identificación final de variables claves para el desarrollo de esta.</li>
+                                        </ul>
+                                      </div>
                                     </div>
                                   </div>
                                   <!-- <div class="img-100"><img src="../../assets/img/img_ova/fondo_actividades.jpg" alt=""></div> -->
@@ -723,7 +740,7 @@
                                     <div class="col-12 pb-1 pt-2 px-2 my-3">
                                         <h3 class="text-black">Manejo de la herramienta MIC MAC</h3>
                                     </div>
-                                    <div class="col-12 py-2 px-2 mt-4">
+                                    <div class="col-12 py-2 px-2 ">
                                        <p class="text-black justificado"> El análisis estructural es una herramienta diseñada para vincular ideas. Permite describir el sistema gracias a una matriz que une todos sus componentes.  Mediante el análisis de estas relaciones, el método permite destacar las variables que son esenciales para la evolución del sistema. </p>
                                     </div>
                                     <div class="col-11 py-1 pr-5 pl-2 pr-5 bg-second mx-1 shadow">
@@ -734,27 +751,27 @@
                                         <p class="text-black">Se aplica al estudio cualitativo de sistemas extremadamente diferentes.</p>
                                     </div>
                                 </div>
-                                <div class="col-6 row py-2 pl-4 pb-5">
-                                    <div class="col-12 justify-content-start" style="height: 50px;">
+                                <div class="col-6  py-2 pl-4 pb-5">
+                                    <div class="col-12 justify-content-start mt-3" style="height: 50px;">
                                         <p class="text-black">
                                             El análisis estructural, que intenta sacar a la luz esta estructura, comprende tres etapas: <br>
                                             Deslice el circulo hacia la derecha para conócerlas:
                                         </p>
                                     </div>
-                                    <div class="col-12">
-                                      <div class="row">
+                                    <div class="col-12 mt-3">
+                                      <!-- <div class="row">
                                         <div class="col-md-12 offfset-md-1 d-flex justify-content-center py-2 color-text" style="position: relative; left: 55px;" id="img-scroll1">
                                           <h3>1</h3>
                                         </div>
                                         <div class="col-md-12 px-5 py-3">
-                                          <div class="inputDiv2 i3" style="width: 124%;"></div>
+                                          <div class="inputDiv2 i3" style="width: 100%;"></div>
                                           <div class="inputDiv2 i4" style="display: none;"></div>
                                         </div>
                                         <div class=" px-4 d-flex justify-content-center align-items-center text-black" id="info-scroll1">
-                                          <!-- <img src="assets/img/img_ova/scrol1.png" width="70%"> -->
+                                          <img src="assets/img/img_ova/scrol1.png" width="70%">
                                           <div class="row" style="width: 100%; position: relative; left: 10px;">
                                             <div class="col-md-6">
-                                              <!-- <div class="base"></div> -->
+                                              <div class="base"></div>
                                               <img src="assets/img/img_ova/onee.png"  style="width: 78%;" alt="">
                                             </div>
                                             <div class="col-md-6">
@@ -772,7 +789,79 @@
                                           </div>
                                           <p class="pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</p>
                                         </div>
+                                      </div> -->
+                                      
+
+                                          <label for="customRange2" id="numeroInput" class="ml-3 col-12 form-label" style="text-align: center; font-size: 23px; color: #e9464f;">1</label>
+                                          <input type="range" class="form-range rango" min="1" max="3"  step="1" value="0" id="customRange2">
+                                        
+                                    </div>
+                                    <div class="col-12 contenido inventario mt-4 ml-4 ">
+                                      <div class=" px-4 d-flex justify-content-center align-items-center text-black" id="info-scroll1">
+                                        <!-- <img src="assets/img/img_ova/scrol1.png" width="70%"> -->
+                                        <div class="row col-8" style="width: 100%; position: relative; left: 10px;">
+                                          <div class="col-md-6">
+                                            <!-- <div class="base"></div> -->
+                                            <img src="assets/img/img_ova/onee.png"  style="width: 78%;" alt="">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <img src="assets/img/img_ova/abaco.png" style="width: 94%;left: -36px;position: relative;" alt="">
+                                          </div>
+                                          <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+                                            Inventario
+                                          </div>
+                                          <div class="col-md-10" style="font-size: 12px; left: -10px;width: 176px;" >
+                                            de variables / factores
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                          
+                                        </div>
+                                        <div class="col-11 pl-3 text-justify">Esta etapa, que es la menos formal, es crucial para el resto del proceso.</div>
                                       </div>
+
+                                    </div>
+                                    <div class="col-12 contenido descripcion mt-4 ml-4 d-none ">
+                                      <div class=" px-4 d-flex justify-content-center align-items-center text-black" id="info-scroll1">
+                                      <div class="col-7 row" style="width: 130%; position: relative; left: 18px;">
+                                        <div class="col-md-6">
+                                        <!-- <div class="base"></div> -->
+                                        <img src="assets/img/img_ova/two.png"  style="width: 100%;" alt="">
+                                        </div>
+                                        <div class="col-md-6">
+                                        <img src="assets/img/img_ova/lista.png" style="width: 100%;left: -28px;top:5px; position: relative;" alt="">
+                                        </div>
+                                        <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+                                        Descripción
+                                        </div>
+                                        <div class="col-md-10" style="font-size: 11px; left: -10px; text-align: center; width: 150px;" >
+                                        de las relaciones entre variables.
+                                        </div>
+                                       </div>
+                                                        <div class="col-11 pl-3 text-justify">Durante esta segunda etapa, el punto es reconstituir y describir la red de relaciones entre las variables / factores.</div>
+                                    </div>
+                                    </div>
+                                    <div class="col-12 contenido identidicacion ml-4 mt-4 d-none">
+                                      <div class=" px-4 d-flex justify-content-center align-items-center text-black" id="info-scroll1">
+                                        <div class="row col-8" style="width: 48%; position: relative; left: 18px;">
+                                          <div class="col-md-6">
+                                          <!-- <div class="base"></div> -->
+                                          <img src="assets/img/img_ova/three.png"  style="width: 100%;" alt="">
+                                          </div>
+                                          <div class="col-md-6">
+                                          <img src="assets/img/img_ova/fingerprint.png" style="width: 100%;left: -28px;top:5px; position: relative;" alt="">
+                                          </div>
+                                          <div class="col-md-9" style="color: white; background-color: #393A71; text-align: center;">
+                                          Identificación
+                                          </div>
+                                          <div class="col-md-10" style="font-size: 12px; left: -10px; text-align: center; width=150px"; >
+                                          de variables esenciales
+                                          </div>
+                                      </div>
+                                      
+                                      
+                                      <div class="col-11 text-justify" style="font-size: 15px;position: relative;left: -24px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="col-12 my-2"></div>
@@ -845,7 +934,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="unidad1-15" class="tab-pane" role="tabpanel"  style="background-image: url(assets/img/img_ova/fondo_actividades.jpg); background-repeat: no-repeat; background-position: right bottom; background-size: 50%; background-color: white; height: 100%;">
+                        <div id="unidad1-15" class="tab-pane" role="tabpanel"  style="background-image: url(assets/img/img_ova/fondo_actividades-01.svg); background-repeat: no-repeat; background-position: right bottom; background-size: 50%; background-color: white; height: 100%;">
                             <div class="row m-4">
                                 <div class="col-md-12 row mb-2">
                                   <div class="col-md-1 p-0 zindex" style="width: 50px;top: 27px;">
@@ -993,23 +1082,23 @@
                                 <div class="col-6">
                                   <div class="row">
                                     <div class="col-2">
-                                      <div id="img-map1" class="mb-2 d-flex align-items-center justify-content-center" style="height: 14%; width: 100%;">
+                                      <div id="img-map1" class="mb-2 d-flex align-items-center justify-content-center" style="height: auto; width: 150%;">
                                         <img onclick="slideVertical(1)" src="assets/img/img_ova/mesa_trabajo_bn.png" height="70%" width="100%" class="my-2 imgMapHijaG" id="imgMapHijaG-1">
                                         <img onclick="slideVertical(1)" src="assets/img/img_ova/mesa_trabajo.png" height="70%" width="100%" class="my-2 imgMapHijaC d-none" id="imgMapHija-1">
                                       </div>
-                                      <div id="img-map2" class="mb-3 d-flex align-items-center justify-content-center"  style="height: 14%; width: 100%;">
+                                      <div id="img-map2" class="mb-1 d-flex align-items-center justify-content-center"  style="height: auto; width: 150%;">
                                         <img onclick="slideVertical(2)" src="assets/img/img_ova/relaciones_bn.png" height="70%" width="100%" class="my-3 imgMapHijaG" id="imgMapHijaG-2">
                                         <img onclick="slideVertical(2)" src="assets/img/img_ova/relaciones.png" height="70%" width="100%" class="my-3 imgMapHijaC d-none" id="imgMapHija-2">
                                       </div>
-                                      <div id="img-map3" class="mb-3 d-flex align-items-center justify-content-center"  style="height: 14%; width: 100%;">
+                                      <div id="img-map3" class="mb-1 d-flex align-items-center justify-content-center"  style="height: auto; width: 150%;">
                                         <img onclick="slideVertical(3)" src="assets/img/img_ova/objetivos_bn.png" height="70%" width="100%" class="my-3 imgMapHijaG" id="imgMapHijaG-3">
                                         <img onclick="slideVertical(3)" src="assets/img/img_ova/objetivos.png" height="70%" width="100%" class="my-3 imgMapHijaC d-none" id="imgMapHija-3">
                                       </div>
-                                      <div id="img-map4" class="mb-3 d-flex align-items-center justify-content-center"  style="height: 14%; width: 100%;">
+                                      <div id="img-map4" class="mb-3 d-flex align-items-center justify-content-center"  style="height: auto; width: 150%;">
                                         <img onclick="slideVertical(4)" src="assets/img/img_ova/similar_bn.png" height="70%" width="100%" class="my-3 imgMapHijaG" id="imgMapHijaG-4">
                                         <img onclick="slideVertical(4)" src="assets/img/img_ova/similar.png" height="70%" width="100%" class="my-3 imgMapHijaC d-none" id="imgMapHija-4">
                                       </div>
-                                      <div id="img-map5" class="mb-3 d-flex align-items-center justify-content-center"  style="height: 14%; width: 100%;">
+                                      <div id="img-map5" class="mb-3 d-flex align-items-center justify-content-center"  style="height: auto; width: 150%;">
                                         <img onclick="slideVertical(5)" src="assets/img/img_ova/recomendaciones_bn.png" height="70%" width="100%" class="my-2 imgMapHijaG" id="imgMapHijaG-5">
                                         <img onclick="slideVertical(5)" src="assets/img/img_ova/recomendaciones.png" height="70%" width="100%" class="my-2 imgMapHijaC d-none" id="imgMapHija-5">
                                       </div>
@@ -1142,10 +1231,10 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-4 d-flex justify-content-center align-items-center">
-                                  <img src="assets/img/img_ova/personaje.png" class="" style="width: 69%;">
+                                <div class="col-3 d-flex justify-content-center align-items-center">
+                                  <img src="assets/img/img_ova/personaje.png" class="" style="width: 100%;">
                                 </div>
-                                <div class="col-8 ">
+                                <div class="col-9 ">
                                   <div class="ml-1 ">
                                     <p class="justificado text-black">Ha llegado al final del contenido digital <b class="color-text">Enfoque prospectivo de la simulación.</b></p><br>
                                     <p class="justificado text-black">Continúe haciendo clic en evaluación para finalizar.</p>
@@ -1290,7 +1379,7 @@
                     </div>
                     <div class="col-md-12">
                       <p class="justificado p_black">El ábaco de Régnier se define como un diagnóstico estratégico que se utiliza como método de consultas a expertos en un sector. Fue concebido por el Doctor François Régnier. Con él, se interroga a los profesionales a la vez que se trataban sus respuestas. El análisis de las respuestas podría ser en tiempo real o mediante vía postal, partiendo de una escala de colores. (Cruzat, 2014). Visualiza la siguiente infografía para conocer más acerca de esta herramienta. Haga uso del scroll para visualizar toda la información:</p>
-                      <img  src="assets/img/img_ova/abaco1.png" class="col-md-10 ml-5 pl-5"" >
+                      <img  src="assets/img/img_ova/abaco-04.svg" class="col-md-10 ml-5 pl-5"" >
                     </div>
                     
                   </div>
@@ -1335,7 +1424,7 @@
                     </div>
                     <div class="col-md-12">
                       <p class="justificado p_black">Para definir el análisis de tendencias, (Cruzat, 2014) lo define como: </p>
-                      <img  src="assets/img/img_ova/tendencias.png" class="col-md-12" >
+                      <img  src="assets/img/img_ova/tendencia-05.svg" class="col-md-12" >
                     </div>
                     
                   </div>
@@ -1380,7 +1469,7 @@
                     </div>
                     <div class="col-md-12">
                       <p class="justificado p_black">En términos generales, el TSA visualiza el futuro como una serie de pasos o decisiones (nodos) causales, interrelacionados, que conducen hacia algún estado futuro. El tiempo entre los nodos se presenta en forma probabilística. Con estas estimaciones, es posible computar el tiempo requerido para alcanzar el sistema deseado teniendo en cuenta su probabilidad en función del tiempo. Haga uso del scroll para visualizar toda la información:</p>
-                      <img  src="assets/img/img_ova/Tecnologia.png" class="col-md-12" >
+                      <img  src="assets/img/img_ova/tecnologia-06.svg" class="col-md-12" >
                     </div>
                     
                   </div>
@@ -1450,7 +1539,7 @@
                                 <div class="col-md-10 p-0">
                                   <div class="bg-amarillo-o p-3" style="border: solid 3px red;border-radius: 30px;">
                                     <div class="d-flex">
-                                      <img class="img-40 m-auto" width="70%" src="assets/img/img_ova/analisis_1.png" style="position: relative;left: 6%;">
+                                      <img class="img-40 m-auto" width="70%" src="assets/img/img_ova/analisis_analisis_1.svg" style="position: relative;left: 6%;">
                                     </div>
                                   </div>
                                 </div>
@@ -1471,7 +1560,7 @@
                                 <div class="col-md-10 p-0">
                                   <div class="bg-amarillo-o p-3" style="border: solid 3px red;border-radius: 30px;">
                                     <div class="d-flex">
-                                      <img class="img-40 m-auto" width="70%" src="assets/img/img_ova/analisis_2.png" style="position: relative;left: -4%;">
+                                      <img class="img-40 m-auto" width="70%" src="assets/img/img_ova/analisis_analisis_2.svg" style="position: relative;left: -4%;">
                                     </div>
                                   </div>
                                 </div>
@@ -1492,7 +1581,7 @@
                                 <div class="col-md-10 p-0">
                                   <div class="bg-amarillo-o p-3" style="border: solid 3px red;border-radius: 30px;">
                                     <div class="d-flex">
-                                      <img class="img-40 m-auto" width="70%" src="assets/img/img_ova/analisis_3.png">
+                                      <img class="img-40 m-auto" width="70%" src="assets/img/img_ova/analisis_analisis_3.svg">
                                     </div>
                                   </div>
                                 </div>
@@ -1513,7 +1602,7 @@
                                 <div class="col-md-10 p-0">
                                   <div class="bg-amarillo-o p-3" style="border: solid 3px red;border-radius: 30px;">
                                     <div class="d-flex">
-                                      <img class="img-80 m-auto" width="70%" src="assets/img/img_ova/analisis_4.png" style="position: relative;left: -2%;">
+                                      <img class="img-80 m-auto" width="70%" src="assets/img/img_ova/analisis_analisis_4.svg" style="position: relative;left: -2%;">
                                     </div>
                                   </div>
                                 </div>

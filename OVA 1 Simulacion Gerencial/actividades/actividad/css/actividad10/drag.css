@@ -439,3 +439,30 @@ position: relative;
   left: 7px;
   top: 2px;
 }
+
+@media screen and (min-width: 500px) and (max-width: 800px){
+  .btn-calificar{
+    margin-left: -27px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1366px){
+  .btn-calificar{
+    margin-left: 32px;
+  }
+}
+/* @media  (max-width: 765px) {
+  .btn-calificar{
+    margin-left: -27px;
+  }
+}
+@media  (max-width: 900px) {
+  .btn-calificar{
+    margin-left: 0px;
+  }
+} */
+/* @media screen and (min-width: 1270px) {
+  .btn-calificar{
+    margin-left: 0px;
+  }
+}
+ */

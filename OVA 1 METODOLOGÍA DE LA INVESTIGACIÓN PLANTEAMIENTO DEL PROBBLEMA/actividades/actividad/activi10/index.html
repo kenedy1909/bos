@@ -29,25 +29,25 @@
 		    </div>
 		</div> -->
         <header>
-            <div class="" style="">
-                <div class="" style="width: 39%;display: inline-block;margin-top: -50px;">
-                    <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
-                        <div style="display: inline-block;width: 25%;"><img src="../img/img10/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
-                        <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
-                            <b class="" style="color: #994c91;">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px;background: #994c91;"></div>
-                            <i><p class="text-muted">ARRASTRAR Y SOLTAR</p></i>
+            <div class="row principal" style="">
+                <div class="col-md-4 secundario" style="">
+                    <div class="div-img">
+                      <img src="../img/img2/actividad_interactiva.png" alt="" style="margin-top: -30%;" class="imagen">
+                      <div class="text-center texto_header" style="">
+                        <b class="pl-1 pr-1" style="">ACTIVIDAD INTERACTIVA</b>
+                        <div class="linea_blue" style=""></div>
+                            <i><p class="text-center text-muted" style="font-size: 15px;">ARRASTRAR Y SOLTAR</p></i>
                         </div>
                     </div>
                 </div>
-                <div class="" style="display: inline-block;width: 60%;">
+                <div class="terciario">
                     <p class="info_actividad shadow" style="background: #E2C4DF;font-family: arial;font-size: 15px;">
                         Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según corresponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
                     </p>
                 </div>
             </div>
         </header>
-        <ul class="optciones col-md-7">
+        <ul class="optciones col-md-7 mt-4">
             <li>
                 <a draggable="true" href="" id="one" class="row">
                     <div style="" class="col-md-9">
@@ -89,11 +89,11 @@
                 </a>
             </li>
         </ul>
-        <div id="bin" class="col-md-4">
-            <img alt="" src="../img/img10/etico_2.png" style="max-width:300px" />
+        <div id="bin" class="col-md-4 mt-3 mb-4">
+            <img alt="" src="../img/img10/etico_2.png" style="max-width: 400px; margin-left: -35%;"/>
         </div>
     </div>
-    <div class="col-md-12 d-flex justify-content-center">
+    <div class="col-md-12 d-flex justify-content-center mt-5">
         <button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="">Calificar</button>
     </div>
 
@@ -108,7 +108,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content tranparente" style="">
-                <div style="" class="principal">
+                <div style="" class="principal_modal">
                     <div style="" class="cabeza">
 
                     </div>
@@ -117,16 +117,15 @@
 
                         </div>
                     </div>
-                    <div style="padding: 10px 70px;">
-                        <div style="color: white;">
-                            <p> Su puntaje es:
-                            <b class="puntaje" style="color: #FFC000;position: relative;font-weight: bold;font-size: 20px;"></b></p>
+                    <div style="padding: 10px; margin-left: 17%; margin-top: -37px;">
+                        <div style="color: white;font-size: 20px;display: flex;">
+                          <b> Su puntaje es:</b> <p class="puntaje" style="font-size: 30px;font-weight: bold;margin-left: 9px;margin-top: -5px; color: black;"></p>
                         </div>
-                        <div style="color: white;">
-                            <p class="mensaje"></p>
+                        <div style="color: white;font-size: 20px;">
+                          <p class="mensaje" style="text-align: left;"></p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center btns_modal">
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
 
 
                     </div>

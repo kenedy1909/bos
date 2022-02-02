@@ -1,6 +1,32 @@
 $( document ).ready(function() {
-    
-    
+    $("#customRange2").on("input change", function(){
+  
+        var pvp; 
+        var thisval = $(this).val();
+      
+        $("#numeroInput").html(thisval);
+        
+        /*-----------SISTEMA DE CASOS (CON IF/ELSE)-----------*/
+        
+        if (thisval == 1) {
+        
+          $('.contenido').addClass('d-none');
+          $('.inventario').removeClass('d-none');
+        
+        }else if (thisval == 2) {
+        
+            $('.contenido').addClass('d-none');
+            $('.descripcion').removeClass('d-none');
+        
+        }else if (thisval == 3) {
+        
+            $('.contenido').addClass('d-none');
+            $('.identidicacion').removeClass('d-none');
+        
+        }
+      
+      });
+ 
     // console.log(tema);
     $( ".zoomContainer" ).remove();
     $('#smartwizard').smartWizard({
@@ -287,7 +313,8 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+           
+            
             
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
@@ -1130,7 +1157,7 @@ function scroll_horizontal(num){
         </div>
         
         
-        <p class=" text-justify" style="font-size:12px;width: 260px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
+        <p class=" text-justify" style="font-size:15px;width: 349px;">Esta última etapa consiste en identificar las variables esenciales y los factores que son claves para las dinámicas globales del sistema. Las variables son descritas por un grupo de expertos, con experiencia y conocimiento del sistema del sector o de la empresa.</p>
         
                             `;
             $('#img-scroll1').html(img_scroll);
@@ -1689,5 +1716,11 @@ function mostrarAcordeon(num,accion) {
 
 }
 
+
+
+function mostrar() {
+    $('.contenidoU1-7').removeClass('d-none');
+    
+}
 
 
