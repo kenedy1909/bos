@@ -10025,7 +10025,7 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
 
 @media (min-width: 992px) {
   .c-sidebar.c-sidebar-fixed {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     z-index: 1030;
@@ -10500,7 +10500,7 @@ html:not([dir="rtl"]) .c-sidebar-right .c-sidebar-minimizer::before {
     opacity: 0;
   }
   .c-sidebar-minimized .c-sidebar-minimizer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: inherit;
   }
