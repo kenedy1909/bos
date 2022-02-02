@@ -468,7 +468,7 @@ button {
     padding: 20px 20px 20px 20px;
     border-radius: 20px;
     height: 180px;
-    width: 310px;
+    width: 350px;
     margin-left: 27px;
     overflow: auto;
 }
@@ -823,6 +823,15 @@ a.control_next {
     width: 0;
     height: 0;
     border-left: 40px solid #78201A;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    cursor: pointer;
+}
+
+.triag_cambiaslideleft {
+    width: 0;
+    height: 0;
+    border-right: 40px solid #78201A;
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     cursor: pointer;
