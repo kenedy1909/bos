@@ -1392,3 +1392,22 @@ function paraIframe(num) {
     }
 
 }
+
+function esc_tar(num) {
+    switch (num) {
+        case 1:
+            $('.img_esc1').addClass('d-none');
+            $('.img_esc2').removeClass('d-none');
+            $('.card01').removeClass('d-none');
+            $('.card02').addClass('d-none');
+            break;
+        case 2:
+            $('.img_esc1').removeClass('d-none');
+            $('.img_esc2').addClass('d-none');
+            $('.card01').addClass('d-none');
+            $('.card02').removeClass('d-none');
+            break;
+        default:
+            break;
+    }
+}

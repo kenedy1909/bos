@@ -15,55 +15,54 @@
 <body>
     <div class="backdrop in">
         <div class="row px-3">
-          <div class="col-md-12 p-2">
-            <div class="row border-bottom-actividad" style="margin-left: 1.5em; margin-right: 1.5em; margin-top: 1.5em;">
-              <div class="col-md-5 row d-flex">
-                 <img src="../img/img1/actividad_general.png" class="img-activi">
-                 <div>
-                     <div class="content-text-img-activi">
-                       <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
-                     </div>
-                     <p class="text-center">CUESTIONARIO</p>
-                 </div>
-              </div>
-              <div class="col-md-7 shadow content-tarjeta" style="background-color: #272e9f;">
-                  <p class="pb-2" style="font-size: 13px; color: #FFFFFF;">
+            <div class="col-md-12 p-2">
+                <div class="row border-bottom-actividad" style="margin-left: 1.5em; margin-right: 1.5em;">
+                    <div class="row" style="padding: 20px;">
+                        <div class="col-md-5 col-sm-5 row d-flex">
+                            <img src="../img/img1/actividad_interactiva.png" class="img-activi">
+                            <div style="margin-left: 7px;width: 52%;">
+                                <div class="content-text-img-activi" style="width: 96%;">
+                                    <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
+                                </div>
+                                <p class="text-center" style="width: 137px;"><i>CUESTIONARIO</i></p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-7 shadow content-tarjeta" style="background: #272e9f;margin-top: 28px;">
+                            <p class="pb-2" style="font-size: 14px; color: #FFFFFF;text-align: justify;"> Seleccione la respuesta correcta y presione la opción "Calificar" para obtener el puntaje de esta actividad.</p>
+                        </div>
+                    </div>
 
-                  Seleccione la respuesta correcta y presione la opción "Calificar" para obtener el puntaje de esta actividad.
-                  </p>
-              </div>
+                    <div class="col-md-12">
+                        <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
+                            <div class="preguntas">
 
-              <div class="col-md-12">
-                  <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
-                      <div class="preguntas">
+                                <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
+                                    <p class="texto-pregunta d-flex">
+                                        <spam style="width: -webkit-fill-available;">{{pregunta.texto}} </spam>
+                                        <spam class="img_questionario{{$index+1}}"></spam>
+                                    </p>
+                                    <div class="respuestas-cuestionario">
+                                        <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
+                                            <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)"> {{respuesta.texto}}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_triangulo_der">
+                                    <div class="triangulo_der" id="siguente" data-slide="2">
 
-                          <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                              <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available;">{{pregunta.texto}} </spam>
-                                  <spam class="img_questionario{{$index+1}}"></spam>
-                              </p>
-                              <div class="respuestas-cuestionario">
-                                  <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
-                                      <input name="radio{{$parent.$index}}" type="radio" ng-model="respuesta.input" ng-value="false" ng-click="seleccionar($parent.$index, respuesta)">
-                                      {{respuesta.texto}}
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="content_triangulo_der">
-                              <div class="triangulo_der" id="siguente"  data-slide="2">
-                                  
-                              </div>
-                          </div>
-
+                                    </div>
+                                </div>
 
 
-                      </div>
-                      <div class="btnCalificar">
-                          <button style="background-color: #ae1c16;" class="btn btn-primary" type="button" ng-click="calificar()">Calificar</button>
-                      </div>
-                  </div>
-              </div>
+
+                            </div>
+                            <div class="btnCalificar">
+                                <button style="background-color: #ae1c16;" class="btn btn-primary" type="button" ng-click="calificar()">Calificar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
 
     </div>
