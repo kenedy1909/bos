@@ -1345,6 +1345,14 @@ a.control_next {
     margin-left: -60px;
 }
 
+.caja-texto-y_2 {
+    padding: 45px 35px;
+    height: 180px;
+    border-radius: 30px;
+    background-color: rgb(255, 192, 155);
+    margin-top: 20px;
+}
+
 .inputDiv,
 .inputDiv2 {
     width: 100%;
@@ -1873,4 +1881,13 @@ u {
     color: #823434;
     border-radius: 12px;
     padding-top: 5px;
+}
+
+.btn_danger {
+    background: rgb(240, 37, 23);
+    height: 165px;
+    color: white;
+    border-radius: 15px;
+    max-width: 83px;
+    font-size: 50px;
 }
