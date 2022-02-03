@@ -9996,7 +9996,7 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
 
 @media (min-width: 992px) {
   .c-sidebar.c-sidebar-fixed {
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     z-index: 1030;
@@ -10014,7 +10014,7 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
 }
 
 .c-sidebar.c-sidebar-overlaid {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   z-index: 1032;
