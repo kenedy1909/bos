@@ -179,7 +179,7 @@ function calificar() {
             puntaje = puntaje + 33.33333333;
         }
     }
-    /*alert(Math.round(puntaje));*/
+    puntaje = Math.round(puntaje);
     if (puntaje == 100) {
         $('.img_res').html('<img src="./img/bien.png" style="max-width: 90%;margin-top:5%;">');
         $('.puntaje').text(puntaje + "%");

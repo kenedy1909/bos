@@ -218,6 +218,7 @@ function pintura(num) {
                 $('#dimensiones').removeClass('social' + i);
             }
             $('#dimensiones').addClass('social1');
+            $('.social1').addClass('ani');
             break;
         case 2:
             $('.target-float').addClass('inactive');
@@ -239,6 +240,7 @@ function pintura(num) {
                 $('#dimensiones').removeClass('social' + i);
             }
             $('#dimensiones').addClass('social2');
+            $('.social2').addClass('ani');
             break;
         case 3:
             $('.target-float').addClass('inactive');
@@ -260,6 +262,7 @@ function pintura(num) {
                 $('#dimensiones').removeClass('social' + i);
             }
             $('#dimensiones').addClass('social3');
+            $('.social3').addClass('ani');
             break;
         case 4:
             $('.target-float').addClass('inactive');
@@ -281,6 +284,7 @@ function pintura(num) {
                 $('#dimensiones').removeClass('social' + i);
             }
             $('#dimensiones').addClass('social4');
+            $('.social4').addClass('ani');
             break;
         case 5:
             $('.target-float').addClass('inactive');
@@ -302,6 +306,7 @@ function pintura(num) {
                 $('#dimensiones').removeClass('social' + i);
             }
             $('#dimensiones').addClass('social5');
+            $('.social5').addClass('ani');
             break;
         case 6:
             $('.btn-pintura').addClass('btn-pinturaInactive');
@@ -320,6 +325,7 @@ function pintura(num) {
                 $('#dimensiones').removeClass('social' + i);
             }
             $('#dimensiones').addClass('social6');
+            $('.social6').addClass('ani');
             break;
         default:
             break;

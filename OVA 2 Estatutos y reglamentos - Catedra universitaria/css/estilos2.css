@@ -86,9 +86,9 @@
 }
 
 .baneremociones {
-    width: 380px;
+    width: 340px;
     position: relative;
-    left: -62px;
+    left: -74px;
 }
 
 .banner2 {
@@ -175,6 +175,20 @@
     background-size: 100%;
 }
 
+@keyframes example {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.ani {
+    animation-name: example;
+    animation-duration: 1s;
+}
+
 .social0 {
     background-image: url('../assets/img/img_ova/social0.jpg');
 }
@@ -248,7 +262,7 @@
 }
 
 .flotante {
-    width: 50%;
+    width: 55%;
     background: #757EED;
     padding: 10px;
     border-radius: 15px;
