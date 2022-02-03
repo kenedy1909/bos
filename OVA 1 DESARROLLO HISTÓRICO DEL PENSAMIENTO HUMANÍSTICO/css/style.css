@@ -36,7 +36,9 @@
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 *,
@@ -49,7 +51,11 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 21, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 21, 0);  
+  max-width: 1360px!important;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -9990,13 +9996,14 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
 
 @media (min-width: 992px) {
   .c-sidebar.c-sidebar-fixed {
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     z-index: 1030;
   }
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right) {
-    left: 0;
+    left: auto!important;
+    max-height: 720px;
   }
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-fixed.c-sidebar-right,*[dir="rtl"] .c-sidebar.c-sidebar-fixed:not(.c-sidebar-right) {
     right: 0;
@@ -10007,7 +10014,7 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-xl.c-sidebar-right,*[dir="rtl"] .c-si
 }
 
 .c-sidebar.c-sidebar-overlaid {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   z-index: 1032;
@@ -10464,7 +10471,7 @@ html:not([dir="rtl"]) .c-sidebar-right .c-sidebar-minimizer::before {
     opacity: 0;
   }
   .c-sidebar-minimized .c-sidebar-minimizer {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: inherit;
   }
@@ -10860,7 +10867,8 @@ html:not([dir="rtl"]) .c-sidebar.c-sidebar-show.c-sidebar-right, html:not([dir="
 @media (min-width: 992px) {
   html:not([dir="rtl"]) .c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right), html:not([dir="rtl"])
   .c-sidebar.c-sidebar-show:not(.c-sidebar-right) {
-    margin-left: 0;
+    margin-left: 0;    
+    max-height: 720px;
   }
   *[dir="rtl"] .c-sidebar.c-sidebar-lg-show:not(.c-sidebar-right), *[dir="rtl"]
   .c-sidebar.c-sidebar-show:not(.c-sidebar-right) {
@@ -13241,18 +13249,6 @@ html:not([dir="rtl"]) .c-switch-label .c-switch-slider::after {
   animation-duration: 1s;
 }
 
-.c-wrapper {
-  transition: margin 0.3s;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1;
-  flex: 1;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-width: 0;
-  min-height: 100vh;
-}
-
 .c-sidebar.c-sidebar-unfoldable {
   transition: margin-left 0.3s, margin-right 0.3s, width 0.3s, z-index 0s ease 0s, -webkit-transform 0.3s;
   transition: transform 0.3s, margin-left 0.3s, margin-right 0.3s, width 0.3s, z-index 0s ease 0s;
@@ -13480,6 +13476,18 @@ html:not([dir="rtl"]) .list-inline {
 
 .c-wrapper.c-wrapper-fluid .c-header-fixed {
   margin: inherit;
+}
+
+.c-wrapper {
+  transition: margin 0.3s;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 720px!important;
+  overflow: auto;
 }
 
 .c-main {

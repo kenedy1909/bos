@@ -23,7 +23,7 @@ $( document ).ready(function() {
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         slide();
         // EditarLocation(getPos());
-        actualizarprogress(stepIndex+1);
+        // actualizarprogress(stepIndex+1);
         console.log(e);
         switch(stepIndex) {
             default:

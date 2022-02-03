@@ -211,7 +211,7 @@ function controlSlides(num) {
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
             slider_num = "#slider-3";
-            slider_all();
+            slider3();
 
 
             break;
@@ -248,7 +248,7 @@ function controlSlides(num) {
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-            slideCount = $('#slider-5 ul li').length();
+            slideCount = $('#slider-5 ul li').length;
             slideWidth = $('#slider-5 ul li').width();
             slideHeight = $('#slider-5 ul li').height();
             slider_num = "#slider-5";
@@ -617,7 +617,7 @@ function rec() {
                       <p class="justificado text-black text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
                     </div>
                     <div class="col-md-7">
-                       <p class="text-center p_black">clic a la imagen</p>
+                       <p class="text-center p_black ">Clic en la imagen para mejor visualización.</p>
                       <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
                     </div>
                   </div>
@@ -629,46 +629,51 @@ function rec() {
                 </div>`
         );
     } else if (rec_num == 2) {
-        $("#rec").html('<p class="text-center p_black">clic a la imagen</p><img src="assets/img/img_ova/infografia1.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-2">');
+        $("#rec").html('<p class="text-center p_black offset-md-2">Clic en la imagen para mejor visualización.</p><img src="assets/img/img_ova/infografia1.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-2">');
     } else if (rec_num == 3) {
         $("#rec").html(
             `
                     <p class="text-center p_black offset-md-4">clic en la flecha para ver mas</p>
-                    <div id="slider-2" style="" class="d-flex justify-content-end col-md-11 pr-5">
 
-                      <ul>
+                    <div class="col-md-1 pt-4" style="position: absolute; z-index: 1000; top: 230px;">
+                      <a class="control_prev"><div style="" class="triag_cambiaslideleft"></div></a>
+                    </div>
+                    
+                    <div id="slider-2" style="" class="d-flex justify-content-end col-md-10 pr-2">
+
+                      <ul style="width: 100% !important;">
                       <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-2.png" class="img-100">
+                      <img src="assets/img/img_ova/circulo-2.png" width= "100%;">
                   </li>
                   <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-3.png" class="img-100">
+                      <img src="assets/img/img_ova/circulo-3.png"width= "100%;">
                   </li>
                   <li style="background: none;">
-                      <img src="assets/img/img_ova/circulo-4.png" class="img-100">
+                      <img src="assets/img/img_ova/circulo-4.png"width= "100%;">
                   </li>
                   <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-5.png" class="img-100">
+                  <img src="assets/img/img_ova/circulo-5.png"width= "100%;">
               </li>
               <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-6.png" class="img-100">
+                  <img src="assets/img/img_ova/circulo-6.png"width= "100%;">
               </li>
               <li style="background: none;">
-                  <img src="assets/img/img_ova/circulo-7.png" class="img-100">
+                  <img src="assets/img/img_ova/circulo-7.png"width= "100%;">
               </li>
               <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-8.png" class="img-100">
+              <img src="assets/img/img_ova/circulo-8.png"width= "100%;">
           </li>
           <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-9.png" class="img-100">
+              <img src="assets/img/img_ova/circulo-9.png"width= "100%;">
           </li>
           <li style="background: none;">
-              <img src="assets/img/img_ova/circulo-1.png" class="img-100">
+              <img src="assets/img/img_ova/circulo-1.png"width= "100%;">
           </li>
                       </ul>  
                       
                     </div>
-                    <div class="col-md-1" style="padding-top: 100px;">
-                      <a href="#" class="control_next"><div style="" class="triag_cambiaslide"></div></a>
+                    <div class="col-md-1" style="position: absolute;right: 10px;top: 254px;">
+                      <a class="control_next"><div style="" class="triag_cambiaslide"></div></a>
                     </div>`
         );
         slideCount = $('#slider-2 ul li').length;
@@ -693,7 +698,7 @@ function rec() {
                   </ul>
                 </div>
                 <div class="col-md-2" style="padding-top: 100px;">
-                  <a href="#" class="control_next"><div style="" class="triag_cambiaslide"></div></a>
+                  <a class="control_next"><div style="" class="triag_cambiaslide"></div></a>
                 </div>`
         );
         slideCount = $('#slider ul li').length;
@@ -709,7 +714,7 @@ function rec() {
                 <p class="text-black text-justify text-12px"> <i><b>6.   Naturalización de la vida social</b></i> tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
               </div>
               <div class="col-md-7">
-              <p class="text-center p_black">clic a la imagen</p>
+              <p class="text-center p_black">Clic en la imagen para mejor visualización.</p>
                 <img src="assets/img/img_ova/comentario.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-6">
               </div>
             </div>`
@@ -725,7 +730,7 @@ function circlerec(num) {
               <p class="justificado text-black text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
             </div>
             <div class="col-md-7">
-               <p class="text-center p_black">clic a la imagen</p>
+               <p class="text-center p_black">Clic en la imagen para mejor visualización.</p>
               <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
             </div>`;
             $('.imprime').html(cont);
@@ -734,7 +739,7 @@ function circlerec(num) {
             break;
         case 2:
             var cont = `
-            <p class="text-center p_black">clic a la imagen</p>
+            <p class="text-center p_black offset-md-2">Clic en la imagen para mejor visualización.</p>
             <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-1-1" style="max-width: 107%;">`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
@@ -758,9 +763,9 @@ function slider() {
     var slideHeight = $('#slider ul li').height();*/
     var sliderUlWidth = slideCount * slideWidth;
 
-    $('#slider-2').css({ width: '102%', height: '100%' });
+    $('#slider-2').css({ width: '100%', height: '100%' });
 
-    $('#slider-2 ul').css({ width: '80%', marginLeft: -slideWidth });
+    $('#slider-2 ul').css({ width: '100%', marginLeft: -slideWidth });
 
     $('#slider-2 ul li:last-child').prependTo('#slider-2 ul');
 
@@ -836,6 +841,51 @@ function slider2() {
     });
 }
 
+function slider3() {
+
+    $('#checkbox').change(function() {
+        setInterval(function() {
+            moveRight();
+        }, 3000);
+    });
+
+    /*var slideCount = $('#slider ul li').length;
+    var slideWidth = $('#slider ul li').width();
+    var slideHeight = $('#slider ul li').height();*/
+    var sliderUlWidth = slideCount * slideWidth;
+
+    $('#slider-3').css({ width: '100%', height: '350px' });
+
+    $('#slider-3 ul').css({ width: '100%' });
+
+    $('#slider-3 ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider-3 ul').animate({
+            left: +slideWidth
+        }, 200, function() {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+        });
+    };
+
+    function moveRight() {
+        $('#slider-3 ul').animate({
+            left: -slideWidth
+        }, 200, function() {
+            $('#slider-3 ul li:first-child').appendTo('#slider-3 ul');
+            $('#slider-3 ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function() {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function() {
+        moveRight();
+    });
+}
+
 
 function slider_all() {
     $('#checkbox').change(function() {
@@ -885,50 +935,50 @@ alert();
 }
 
 function slider_5() {
+
+    console.log("hola");
+
     $('#checkbox').change(function() {
         setInterval(function() {
             moveRight();
         }, 3000);
     });
-    var sliderUlWidth = "";
+
     /*var slideCount = $('#slider ul li').length;
     var slideWidth = $('#slider ul li').width();
     var slideHeight = $('#slider ul li').height();*/
-    sliderUlWidth = slideCount * slideWidth;
+    var sliderUlWidth = slideCount * slideWidth;
 
-    $(slider_num).css({ width: '100%', height: '100%' });
+    $('#slider-5').css({ width: '100%', height: '100%' });
 
-    $(slider_num + ' ul').css({ width: '100%' });
+    $('#slider-5 ul').css({ width: '100%' });
 
-    $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
+    $('#slider-5 ul li:last-child').prependTo('#slider ul');
 
     function moveLeft() {
-        $(slider_num + ' ul').animate({
+        $('#slider-5 ul').animate({
             left: +slideWidth
         }, 200, function() {
-            $(slider_num + ' ul li:last-child').prependTo(slider_num + ' ul');
+            $('#slider ul li:last-child').prependTo('#slider ul');
         });
     };
 
     function moveRight() {
-        $(slider_num + ' ul').animate({
+        $('#slider-5 ul').animate({
             left: -slideWidth
         }, 200, function() {
-            $(slider_num + ' ul li:first-child').appendTo(slider_num + ' ul');
-            $(slider_num + ' ul').css('left', '');
+            $('#slider-5 ul li:first-child').appendTo('#slider-5 ul');
+            $('#slider-5 ul').css('left', '');
         });
     };
 
-    $('a.control_prev').off('click').on('click', moveLeft);
-    $('a.control_next').off('click').on('click', moveRight);
-    /*$('a.control_prev').click(function () {
+    $('a.control_prev').click(function() {
         moveLeft();
-    });*/
+    });
 
-    /*$('a.control_next').click(function () {
-alert();
+    $('a.control_next').click(function() {
         moveRight();
-    });*/
+    });
 }
 
 function slider_4() {
