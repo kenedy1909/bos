@@ -94,9 +94,13 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Fundamentos de las bases de datos");
             break;
         case 5:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_1').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Fundamentos de las bases de datos");
             break;
         case 6:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_6').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Tipología de las bases de datos");
             break;
         case 7:
@@ -109,15 +113,23 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Tipología de las bases de datos");
             break;
         case 10:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_6').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Tipología de las bases de datos");
             break;
         case 11:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_11').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Estructuración de bases de datos");
             break;
         case 12:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_11').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Estructuración de bases de datos");
             break;
         case 13:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_13').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Gobernanza de los datos");
             break;
         case 14:
@@ -127,9 +139,13 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Gobernanza de los datos");
             break;
         case 16:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_13').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Gobernanza de los datos");
             break;
         case 17:
+            $('.sub1').removeClass('tema_activo');
+            $('.sub1_17').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","1. Las bases de datos","Seguridad de la información");
             break;
         case 18:
