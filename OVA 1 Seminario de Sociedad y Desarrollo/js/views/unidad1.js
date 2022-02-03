@@ -53,6 +53,9 @@ $(document).ready(function() {
         }
         slideNum = stepIndex;
     });
+
+    $('#smartwizard').smartWizard("goToStep", 0);
+
     var knob = "";
     var bar = "";
     var container = "";
@@ -585,3 +588,7 @@ function paraIframe(num) {
 }
 
 
+function reiniciarUni() {
+    
+    $("#content-ova").load("base/unidades/unidad1.html");
+}
