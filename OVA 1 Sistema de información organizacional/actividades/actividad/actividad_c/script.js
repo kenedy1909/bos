@@ -163,6 +163,7 @@ new Vue({
         exito = true;
         mensaje = "¡Felicitaciones!"
         $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+        $(".card .user img").css( "background-color", "transparent" );
     }
     if (puntaje < 100) {
         $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");  

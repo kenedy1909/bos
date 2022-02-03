@@ -1336,6 +1336,15 @@ a.control_next {
     margin-top: 20px;
 }
 
+.caja-texto-y2-1 {
+    height: 100px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    margin-top: 5px;
+    padding: 10px 10px 10px 44px;
+    margin-left: -60px;
+}
+
 .inputDiv,
 .inputDiv2 {
     width: 100%;
@@ -1854,4 +1863,14 @@ u {
 
 .text-black {
     color: black!important;
+}
+
+.boton_bg {
+    background-color: #FFFFFF;
+    height: 60px;
+    font-size: 16px;
+    max-width: 107px;
+    color: #823434;
+    border-radius: 12px;
+    padding-top: 5px;
 }

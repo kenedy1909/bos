@@ -45,8 +45,8 @@
                             
                         </div>
                     </div> -->
-                    <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}" style="min-height: 450px;">
-                        <p class="texto-pregunta d-flex"><spam style="width: -webkit-fill-available; text-align: justify;"><b>{{pregunta.texto}} </b></spam>
+                    <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}" style="min-height: 450px; min-width: 640px; display: grid;">
+                        <p class="texto-pregunta d-flex" style="align-items: center;"><spam style="width: -webkit-fill-available; text-align: justify;position: relative;left: 52px;"><b>{{pregunta.texto}} </b></spam>
                             <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                         </p>
                         <div class="respuestas-cuestionario">
@@ -65,7 +65,7 @@
 
 
                 </div>
-                <div class="btnCalificar">
+                <div class="btnCalificar" style="position: relative; left: -14px;">
                     <button class="btn" style="background: #811111; color: #FFF;" type="button" ng-click="calificar()"><b>Calificar</b></button>
                 </div>
             </div>
@@ -123,7 +123,7 @@
                             <div class="content">
                                 <div class="modal-body">
                                     <div class="mensaje ">
-                                        Tu puntaje es: <span class="puntaje">40%</span>
+                                        Su puntaje es: <span class="puntaje">40%</span>
                                         <span class="texto-puntaje"></span>
                                     </div>
                                 </div>

@@ -15525,6 +15525,10 @@ html:not([dir="rtl"]) .float-left {
   width: 50% !important;
 }
 
+.w-70 {
+  width: 70% !important;
+}
+
 .w-75 {
   width: 75% !important;
 }

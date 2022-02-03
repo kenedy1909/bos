@@ -293,7 +293,7 @@ iframe {
     height: 105px;
     overflow: hidden;
     border-radius: 22px 22px 0 0;
-    background: var(--bg-color);
+    background: var(--bg-color-dark);
 }
 
 .card .user {

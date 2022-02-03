@@ -23,13 +23,14 @@ $( document ).ready(function() {
     // $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
     //     slide();
     //     // EditarLocation(getPos());
-    //     actualizarprogress(stepIndex+11);
+    //     // actualizarprogress(stepIndex+11);
     //     console.log(e);
     //     switch(stepIndex) {
     //         default:
     //         // code block
     //     }
     // });
+ 
     $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {

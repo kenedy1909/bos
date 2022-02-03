@@ -94,7 +94,7 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         puntaje = (puntaje / $scope.preguntas.length) * 100;
         puntaje = puntaje.toFixed(0);
         var exito = false;
-        var mensaje = "Inténtalo nuevamente."
+        var mensaje = "Inténtelo nuevamente."
         // if (puntaje == 100) {
         //     exito = true;
         //     mensaje = "¡Felicitaciones!"
@@ -102,7 +102,9 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         if (puntaje == 100) {
             exito = true;
             mensaje = "¡Felicitaciones!"
-            $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");  
+            $("#img-circulo").attr("src","../../../assets/img/img_ova/bien.png");
+            
+            $(".card .user img").css( "background-color", "transparent" );
         }
         if (puntaje < 100) {
             $("#img-circulo").attr("src","../../../assets/img/img_template/mal.png");  
