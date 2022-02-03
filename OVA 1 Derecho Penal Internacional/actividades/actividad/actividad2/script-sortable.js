@@ -67,7 +67,7 @@ var arrOrigenR1 = [
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><img src="./img/granada.png" style="width: 60%;"></div><div class="opcion_circulo_text">Cifras oficiales dan cuenta de más de 800.000 víctimas del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses.</div>\n'+
+        '<div class="opcion_circulo_content"><img src="./img/granada.png" style="width: 60%;"></div><div class="opcion_circulo_text">Cifras oficiales dan cuenta de más de 800.000 VÍCTIMAS del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses.</div>\n'+
         '</div>\n'
     }/*,
     {
