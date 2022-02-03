@@ -92,7 +92,7 @@ function updateLines() {
         var y1 = p1.offset().top - $(contenedor_actividad).offset().top + p1.outerHeight() / 2;
         var x2 = p2.offset().left - $(contenedor_actividad).offset().left;
         var y2 = p2.offset().top - $(contenedor_actividad).offset().top + p2.outerHeight() / 2;
-        var length = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)) + 12;
+        var length = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)) - 2;
         // var length = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)) - 2;
         var angle = 180 / 3.1415 * Math.acos((p2.offset().top - p1.offset().top) / length);
         if (x2 > x1) angle *= -1;
