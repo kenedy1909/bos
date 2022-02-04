@@ -1,7 +1,12 @@
 $( document ).ready(function() {
     $('.menu1').removeClass('d-none');
     $('.menu1').addClass('c-show');
+    $( ".ov-personaje").hide();
+    $('.sub1').removeClass('tema_activo');
     $('.sub1_1').addClass('tema_activo');
+    paso = false;
+    star_uni = 1;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -77,6 +82,10 @@ function slide_link(num){
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
+}
+
+function pag_1(){
+    $('#smartwizard').smartWizard("goToStep", 1);
 }
 
 function controlSlides(num){
