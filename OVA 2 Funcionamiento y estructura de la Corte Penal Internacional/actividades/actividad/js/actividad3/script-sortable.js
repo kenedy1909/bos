@@ -190,14 +190,19 @@ function calificarR1() {
     if(parseInt(puntajeR1) == 100) {
         mensajeR1 = 'Felicitaciones!';
         exitoR1 = true;
+        $('.circulo-naranja').css('background-color', 'transparent');
+        $("#img-circulo").attr("src","../img/img1/bien.png");
         mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
      } else {
         mensajeR1 = 'Sigue intentando!';
          if (widthR1 < 767) {
             exitoR1 = false;
+          
+            $("#img-circulo").attr("src","../img/img1/mal.png");
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          } else {
             exitoR1 = false;
+            $("#img-circulo").attr("src","../img/img1/mal.png");
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          }
 

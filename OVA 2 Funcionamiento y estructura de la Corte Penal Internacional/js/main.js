@@ -125,7 +125,7 @@ function actualizarprogress(num){
     /*alert(naveg);
     alert(done);
     alert(active);*/
-    total_porcentaje = parseInt(((num)*100)/20);
+    total_porcentaje = parseInt(((num)*100)/22);
     if(total_porcentaje <= 100){
         $(".number").html(total_porcentaje+'%');
 
