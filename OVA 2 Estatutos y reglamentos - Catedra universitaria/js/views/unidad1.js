@@ -154,16 +154,16 @@ document.addEventListener("keydown",
 );
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reglamento_administrativo_unaula.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reglamento_administrativo_unaula.pdf    <b class="text-cafe" style="margin-left: 375px;"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reforma_estatutos_unaula2020.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reforma_estatutos_unaula2020.pdf    <b class="text-cafe" style="margin-left: 400px;"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/cuestionario_reforma_estatutos.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> cuestionario_reforma_estatutos.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/cuestionario_reforma_estatutos.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> cuestionario_reforma_estatutos.pdf    <b class="text-cafe" style="margin-left: 396px;"><u>Ver</u></b></a>
                 </p>
                 <p class="p_white">
-                  <a class="p_white" href="assets/PDF/regimen_disciplinario.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> regimen_disciplinario.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/regimen_disciplinario.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> regimen_disciplinario.pdf    <b class="text-cafe" style="margin-left: 461px;"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
