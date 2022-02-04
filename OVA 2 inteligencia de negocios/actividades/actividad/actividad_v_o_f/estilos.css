@@ -29,6 +29,7 @@ table {
 
 .title_table {
     text-align: center;
+    font-size: 18px;
 }
 
 
@@ -87,6 +88,7 @@ table.tabla-actividad2 td,
     padding: 2px;
     vertical-align: middle;
     border-top: 1px solid #ddd;
+    font-size: 15px;
 }
 
 svg.svg-radio-elegant {
@@ -135,6 +137,7 @@ span.checked svg.svg2 {
     background-color: #1E2054;
     animation: fondo 10s linear infinite;
     overflow: hidden;
+        height: 477px;
 }
 
 @media (max-width: 767px) {
@@ -334,4 +337,47 @@ cursor: pointer;}
   height: 8px;
   border-radius: 50%;
   background: white;
+}
+
+.primero{
+    display: inline-block;
+    width: 46%;
+}
+
+.imagen_interactiva{
+    width: 100px;height: 100px;margin-top: -87px;
+}
+.secunda{
+    display: inline-block;width: 55%;
+}
+.text_inter{
+    font-size: 20px;display: inline-block;width: 200px;padding-top: 24px;
+}
+
+@media only screen and (min-width:900px)
+{
+    .primero{
+        width: 40%;
+        display: inline-block;
+    }
+    .imagen_interactiva{
+        width: 100px;height: 100px;margin-top: -54px;
+    }
+    .secunda{
+        display: inline-block;
+        width: 60%;
+    }
+    .text_inter{
+        font-size: 20px;
+        display: inline-block;
+        width: 200px;
+        padding-top: 8px;
+    }
+}
+
+.A{
+    padding-left: 40px !important;
+}
+.B{
+    padding-left: 23px !important;
 }

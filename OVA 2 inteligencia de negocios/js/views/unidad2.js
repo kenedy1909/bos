@@ -1,5 +1,11 @@
 $( document ).ready(function() {
+    $('.menu1').removeClass('c-show');
+    $('.sub1').removeClass('tema_activo');
+    
     $('.menu2').removeClass('d-none');
+    $('.menu2').addClass('c-show');
+    $('.sub2').removeClass('tema_activo');
+    $('.sub2_1').addClass('tema_activo');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -79,9 +85,13 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            $('.sub2').removeClass('tema_activo');
+            $('.sub2_1').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","2. La inteligencia de negocios","De los datos a la información");
             break;
         case 2:
+            $('.sub2').removeClass('tema_activo');
+            $('.sub2_2').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","2. La inteligencia de negocios","Visualización de información");
             break;
         case 3:

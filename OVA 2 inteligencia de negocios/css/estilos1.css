@@ -178,8 +178,22 @@
   background: #7F7F7F;
 }
 /*colores fin*/
-
+.scrol_activi{
+  height: 133px;overflow: auto;
+}
 
 .cursor{
   cursor: pointer;
+}
+.fijo1{
+  height: 557px;
+}
+@media only screen and (max-height:720px)
+{
+    .scrol_activi{
+      height: 117px;overflow: auto;
+    }
+    .fijo1{
+      height: 571px;
+    }
 }
