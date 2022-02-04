@@ -41,9 +41,12 @@ function calificarEmparejamiento(event) {
     console.log('Puntaje ' + puntaje);
     var exito = false;
     var mensaje = "Puedes hacerlo mejor"
+    $("#img-circulo").attr("src","../img/img1/mal.png");
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
+        $('.circulo-naranja').css('background-color', 'transparent');
+        $("#img-circulo").attr("src","../img/img1/bien.png");
     }
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, init_actividad_1);
 
