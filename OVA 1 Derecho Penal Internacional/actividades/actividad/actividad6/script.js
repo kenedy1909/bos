@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[1] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[2] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[3] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[4] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[5] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[6] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[7] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
-            this.palabras[8] = ['adolf-eichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[0] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[1] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[2] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[3] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[4] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[5] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[6] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[7] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
+            this.palabras[8] = ['adolfeichman', 'Secuestrado y juzgado por los crimenes cometidos durante la segunda Guerra Mundial, tomando como base el principio de jurisdicción pasiva'];
 
             return this.palabras;
 

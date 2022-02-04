@@ -16,6 +16,7 @@
     font-size: 18px;
     position: relative;
     left: -12px;
+    height: 166px;
 }
 
 #actividad-1 ul#grupoA li.list-group-item {
@@ -202,9 +203,9 @@
 }
 
 .texto_header{
-    font-size: 17px;
+    font-size: 22px;
     display: inline-block;
-    width: 50%;
+    width: 60%;
 }
 .texto_header b{
     color: #004c6d;
@@ -224,7 +225,7 @@
     height: 65px;
     background: #fffefe;
     border-radius: 50%;
-    top: 15px;
+    top: 50px;
     left: -44px;
     box-shadow: 1px 0px 11px -2px black;
     padding: 10px;
