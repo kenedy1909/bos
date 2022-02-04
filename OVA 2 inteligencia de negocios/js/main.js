@@ -1,6 +1,8 @@
 var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
+var star_uni = 0;
+var paso = true;
 /*if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 }else{
@@ -153,8 +155,14 @@ $('.link-menu-tema').off('click').on('click', function(evt){
     $("#content-ova").load("base/unidades/"+enlace+".html");
     evt.preventDefault();
     tema = $(this).data('id');
-    $(".sub1").removeClass('tema_activo');
-    $(".sub1_"+tema).addClass('tema_activo');
+    var numerador = 0;
+    if (enlace == "unidad1") {
+        numerador = 1;
+    }else if(enlace == "unidad1"){
+        numerador = 2;
+    }
+    $(".sub"+numerador).removeClass('tema_activo');
+    $(".sub"+numerador+"_"+tema).addClass('tema_activo');
     console.log(tema);
 });
 function init(){

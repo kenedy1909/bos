@@ -613,19 +613,20 @@ function rec() {
         $("#rec").html(
             `<div class="col-md-12">
                   <div class="col-md-12 row imprime">
-                    <div class="col-md-5 mt-5">
-                      <p class="justificado text-black text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
-                    </div>
-                    <div class="col-md-7 mt-5">
-                       <p class="text-center p_black ">Clic en la imagen para mejor visualización.</p>
-                      <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-12 d-flex justify-content-center">
-                  <div class="circulo_verde activo uno cursor" style="" onclick="circlerec(1);"></div>
-                  <div class="circulo_verde dos cursor" style="" onclick="circlerec(2);"></div>
+                  <div class="col-md-6 mt-5">
+                  <p class="justificado text-black text-14px text-peq">1. Presentar un <b>atributo global</b> y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración
+                      de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+              </div>
+              <div class="col-md-6 mt-5">
+                  <p class="text-center p_black">Clic en la imagen para mejor visualización.</p>
+                  <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-12 d-flex justify-content-center mt-4">
+          <div class="circulo_verde activo uno cursor" style="" onclick="circlerec(1);"></div>
+          <div class="circulo_verde dos cursor" style="" onclick="circlerec(2);"></div>
                 </div>`
         );
     } else if (rec_num == 2) {
@@ -706,14 +707,14 @@ function rec() {
         slideHeight = $('#slider ul li').height();
         slider2();
     } else if (rec_num == 5) {
-        $("#rec").html('<p class="justificado text-black p-4 pr-5 mr-4">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
+        $("#rec").html('<p class="justificado text-black p-4 pr-5 mr-4 mt-5">El desarrollo del conocimiento científico y el reconocimiento de la racionalidad como fundamento de lo humano crearon la idea del hombre como centro de la vida (antropocentrismo), y de allí surge el control de la naturaleza como premisa legítima. De igual forma las demandas energéticas propias del desarrollo industrial y de la modernización de las ciudades, trajo consigo una amplia actividad extractiva con fuerte impacto sobre la naturaleza. Todo esto basado en la oposición entre lo natural y por ende entre la naturaleza y el hombre.</p>');
     } else if (rec_num == 6) {
         $("#rec").html(
             `<div class="col-md-12 row mt-5">
-              <div class="col-md-5">
-                <p class="text-black text-justify text-12px"> <i><b>6.   Naturalización de la vida social</b></i> tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
+              <div class="col-md-6">
+                <p class="text-black text-justify text-14px text-peq"> <i><b>6.   Naturalización de la vida social</b></i> tras el desarrollo de la ciencia que permitió desentrañar las leyes de la naturaleza, lo que devino en el determinismo, esto es, la capacidad de predecir los eventos futuros gracias al reconocimiento de las leyes que gobiernan la naturaleza.  Este conocimiento se traslada al ámbito de la vida social, la formulación de la Teoría de la Evolución de Darwin afincó la idea de la selección natural como clave de la evolución</p>
               </div>
-              <div class="col-md-7">
+              <div class="col-md-6">
               <p class="text-center p_black">Clic en la imagen para mejor visualización.</p>
                 <img src="assets/img/img_ova/comentario.png" style="max-width: 100%;" data-toggle="modal" data-target="#modal-img-6">
               </div>
@@ -726,13 +727,14 @@ function circlerec(num) {
     switch (parseInt(num)) {
         case 1:
             var cont = `
-            <div class="col-md-5 mt-5">
-              <p class="justificado text-black text-12px">1. Presentar un <b>atributo global</b>  y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
-            </div>
-            <div class="col-md-7 mt-5">
-               <p class="text-center p_black">Clic en la imagen para mejor visualización.</p>
-              <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
-            </div>`;
+            <div class="col-md-6 mt-5">
+                  <p class="justificado text-black text-14px text-peq">1. Presentar un <b>atributo global</b> y a su vez <b>acumulativo</b>, que repercute en las ideologías ya establecidas, en nuevas técnicas y en el desarrollo de conocimientos, probablemente por la consideración
+                      de libertad del hombre que muestra en esta etapa un anhelo por adquirir conocimiento a través de sí mismo</p>
+              </div>
+              <div class="col-md-6 mt-5">
+                  <p class="text-center p_black">Clic en la imagen para mejor visualización.</p>
+                  <img src="assets/img/img_ova/comentario2.png" data-toggle="modal" data-target="#modal-img-1" style="max-width: 100%;">
+              </div>`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
             $('.uno').addClass('active');
@@ -740,7 +742,7 @@ function circlerec(num) {
         case 2:
             var cont = `
             <p class="text-center p_black offset-md-2 mt-5 mb-2">Clic en la imagen para mejor visualización.</p>
-            <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-1-1" style="max-width: 100%;">`;
+            <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-1-1" style="max-width: 90%;">`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
             $('.dos').addClass('active');
