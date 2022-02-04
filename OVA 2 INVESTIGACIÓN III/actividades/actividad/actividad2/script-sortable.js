@@ -56,19 +56,20 @@ var contenedorBR1 = ".contenedorB";
 var contenedorCR1 = ".contenedorC";
 var arrOrigenR1 = [
     {
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
+        '<div class="opcion_circulo_content"><img src="./img/verificacion_antecedentes.png" style="width: 60%; margin-top: -25px;"></div><div class="opcion_circulo_text">Esculcar cada elemento del objeto, situación o fenómeno y describirlo.</div>\n'+
+        '</div>\n'
+    },
+    {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
-        '<div class="opcion_circulo_content"><img src="./img/bunker (1).png" style="width: 60%;"></div><div class="opcion_circulo_text">Conflicto ocurrido en la República Federativa de Yugoslavia a partir de la muerte del general Josip Broz Tito en 1980.</div>\n'+
+        '<div class="opcion_circulo_content"><img src="./img/reflexion.png" style="width: 50%; margin-left: 10%;"></div><div class="opcion_circulo_text">Son los que hacemos cuando el tema ha sido poco estudiado y no existe mucha información sobre el.</div>\n'+
         '</div>\n'
     },
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
-        '<div class="opcion_circulo_content"><img src="./img/africa.png" style="width: 60%;"></div><div class="opcion_circulo_text">Conflicto ocurrido en 1994 en el continente africano con un alto grado de violencia entre dos grupos étnicos que habitan en la república de Ruanda.</div>\n'+
+        '<div class="opcion_circulo_content"><img src="./img/dato.png" style="width: 60%; margin-top: -22px;"></div><div class="opcion_circulo_text">Remite a saber las causas que originan un fenómeno.</div>\n'+
         '</div>\n'
-    },
-    {
-        code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
-        '<div class="opcion_circulo_content"><img src="./img/granada.png" style="width: 60%;"></div><div class="opcion_circulo_text">Cifras oficiales dan cuenta de más de 800.000 VÍCTIMAS del genocidio durante el año 1994, de las cuales, cerca de 600.000 ocurrieron en un lapso de tres meses.</div>\n'+
-        '</div>\n'
+        
     }/*,
     {
         code : '<div class="componente opcion_circulo" data-order-origen="contenedorD" >\n'+
@@ -106,17 +107,17 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">EVENTO 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">EVENTO 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">EVENTO 3</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Estudios exploratorios</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">EVENTO 1</h2>');
-    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">EVENTO 2</h2>');
-    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">EVENTO 3</h2>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Estudios exploratorios</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>');
     inicioREDIR1();
  }
 
