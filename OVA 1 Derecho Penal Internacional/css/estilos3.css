@@ -467,19 +467,31 @@ p, button{
   background-position: center;
 }
 
-.fondo-6{
-  /* background-image: url(../assets/img/img_ova/nazi.jpg); */
+/* .fondo-6{
+  background-image: url(../assets/img/img_ova/nazi.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  min-height: 400px;
+  min-height: 200px;
   background-position: center;
   border-radius: 30px;
   left: 10px;
   position: relative;
   z-index: 1;
-  /* -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2)); */
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
+} */
+.fondo-6{
+  background-image: url(../assets/img/img_ova/nazi.jpg);
+  background-size: 136%;
+  background-repeat: no-repeat;
+  min-height: 359px;
+  background-position: center;
+  border-radius: 30px;
+  left: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
+  width: 490px;
 }
-
 .fondo-7{
   background-image: url(../assets/img/img_ova/pinochet.jpg);
   background-size: 100%;
