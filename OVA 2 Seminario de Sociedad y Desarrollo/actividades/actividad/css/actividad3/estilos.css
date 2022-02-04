@@ -9,13 +9,13 @@
     max-width: 900px;
 }
 
-#actividad-1 .ficha-texto { 
+#actividad-1 .ficha-texto {
     vertical-align: middle;
     display: table-cell;
     z-index: 1008;
     font-size: 18px;
     position: relative;
-    left: -12px;
+    left: -26px;
 }
 
 #actividad-1 ul#grupoA li.list-group-item {

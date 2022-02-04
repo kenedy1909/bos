@@ -1312,3 +1312,18 @@ a.control_next {
 .color-mo {
     background: #757EED;
 }
+
+@media only screen and (max-width:1240px) {
+    .media1220 {
+        height: 59px;
+    }
+    .media_1220 {
+        width: 152px;
+    }
+    .media_1221 {
+        height: 59px;
+    }
+    .img_1220 {
+        width: 40% !important;
+    }
+}

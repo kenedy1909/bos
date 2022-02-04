@@ -67,14 +67,14 @@ window.onload = function () {
 
   function Imag() {
     var texto1 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/manualDeFunciones.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_0_0').prepend(texto1);
     var texto2 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/confidencialidad.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -83,14 +83,14 @@ window.onload = function () {
 
 // ------------------------ pregunta 2
     var texto3 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/leer.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_1_0').prepend(texto3);
     var texto4 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/testigo.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -99,14 +99,14 @@ window.onload = function () {
 // ------------------------ pregunta 3
 
     var texto5 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/icono_tribunal.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_2_0').prepend(texto5);
     var texto6 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/forma4.png" style="width: 100%;">
                   </div>
                 </div>`;
@@ -115,14 +115,14 @@ window.onload = function () {
 // ------------------------ pregunta 4
 
     var texto7 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/icono_tribunal.png" style="width: 100%;">
                   </div>
                 </div>`;
 
     $('.img_option_3_0').prepend(texto7);
     var texto8 = `<div style="width: 100%; position: relative; display: flex;  height: 58px;">
-                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:38%;">
+                  <div style="width: 80px; height: 80px; background: white; border-radius: 50%; padding: 12px; margin:auto; position: absolute; top: -34px; left:36%;">
                     <img src="./img/forma4.png" style="width: 100%;">
                   </div>
                 </div>`;

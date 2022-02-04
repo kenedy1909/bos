@@ -614,44 +614,44 @@ label {
     text-align: center;
   }
   
-  .content-text-img-activi-2{
+.content-text-img-activi-2 {
     border-bottom: solid 3px #78201A;
     width: 50%;
-    height: 86px;
+    height: 99px;
     margin: 2px;
-    padding-top: 5px;
+    padding-top: 15px;
     text-align: center;
-  }
+}
   
-  .content-tarjeta{
+.content-tarjeta{
     background: #FFC000;
     border-radius: 20px;
     padding: 15px;
   }
   
-  .max-w-30px{
+.max-w-30px{
       max-width: 30px;
-  }
+}
   
-  .content-text-activi{
+content-text-activi{
       background: #DAE3F3;
       border-radius: 20px;
       padding: 30px;
-  }
+}
   
-  .content-text-activi-2{
+.content-text-activi-2{
       border: solid 2px #79CAF3;
       border-radius: 20px;
       padding: 30px;
-  }
+}
   
-  .d-flex{
+.d-flex{
       display: flex;
-  }
+}
   
-  .text-center{
+.text-center{
       text-align: center;
-  }
+}
   
   .text-muted{
       color: #6c757d!important;

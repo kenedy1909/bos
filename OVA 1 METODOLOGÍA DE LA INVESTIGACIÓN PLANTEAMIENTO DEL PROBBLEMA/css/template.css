@@ -1,11 +1,11 @@
 @media screen and (min-width: 900px) and (max-width: 1200px) {
 
     .img_activi {
-      width: 100px; height: 100px;
+      width: 100px !important; height: 100px !important;
     }
   
     .texto_activi {
-      color:rgb(200 173 69); font-size: 18px !important; margin-top: -4% !important;
+      color:rgb(200 173 69); font-size: 17px !important; margin-top: -4% !important;
     }
   
     .text-peq {
@@ -14,6 +14,10 @@
   
     .text-peq14 {
       font-size: 14px !important;
+    }
+
+    .margin0 {
+        margin-top: 0rem !important;
     }
   
     .menosmargin-peq {
@@ -45,6 +49,16 @@
   
     .btn-evaluacion {
       height: 70% !important;
+    }
+
+    .banner_inicio {
+        
+        height: 240px !important;
+        
+    }
+
+    .img-U1 {
+        width: 145% !important;
     }
     
   }
