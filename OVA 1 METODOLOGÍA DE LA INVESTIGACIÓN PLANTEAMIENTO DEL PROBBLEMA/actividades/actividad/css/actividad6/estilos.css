@@ -1,3 +1,8 @@
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    
+
+}
+
 .preguntas {
     display: flex;
     flex-wrap: wrap;

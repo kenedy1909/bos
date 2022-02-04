@@ -53,6 +53,9 @@ $(document).ready(function() {
         }
         slideNum = stepIndex;
     });
+
+    $('#smartwizard').smartWizard("goToStep", 0);
+
     var knob = "";
     var bar = "";
     var container = "";
@@ -211,6 +214,7 @@ function controlSlides(num) {
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje", "1. Introducción al curso", "La importancia de la formación humanística");
             $('#iconInicial').removeClass('d-none');
+            $(".menu1").addClass('d-none');
             break;
         default:
             break;
@@ -230,6 +234,7 @@ function quitarflecha(num) {
     if (parseInt(num) == 6) {
         console.log("fuera_next_flecha");
         document.getElementById("next").style.display="none";
+        $(".menu1").addClass('d-none');
     } else {
         console.log("come__next_flecha");
         document.getElementById("next").style.display="block";
@@ -585,3 +590,7 @@ function paraIframe(num) {
 }
 
 
+function reiniciarUni() {
+    
+    $("#content-ova").load("base/unidades/unidad1.html");
+}

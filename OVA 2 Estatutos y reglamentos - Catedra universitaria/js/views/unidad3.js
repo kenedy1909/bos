@@ -60,7 +60,22 @@ $(document).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a class="p_white" href="assets/PDF/decreto_1268de1977.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> decreto_1268de1977.pdf    <b class="text-cafe"><u>Ver</u></b></a>
+                  <a class="p_white" href="assets/PDF/reglamento_administrativo_unaula.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reglamento_administrativo_unaula.pdf    <b class="text-cafe" style="margin-left: 360px;"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                  <a class="p_white" href="assets/PDF/reglamento_academico_2019.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reglamento_academico_2019.pdf    <b class="text-cafe" style="margin-left: 394px;"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                  <a class="p_white" href="assets/PDF/regimen_disciplinario.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> regimen_disciplinario.pdf    <b class="text-cafe" style="margin-left: 446px;"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                  <a class="p_white" href="assets/PDF/reforma_estatutos_unaula2020.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> reforma_estatutos_unaula2020.pdf    <b class="text-cafe" style="margin-left: 385px;"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                    <a class="p_white" href="assets/PDF/estatutos_unaula_2018.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> estatutos_unaula_2018.pdf<b class="text-cafe" style="margin-left: 440px;"><u>Ver</u></b></a>
+                </p>
+                <p class="p_white">
+                    <a class="p_white" href="assets/PDF/etica_moral_derecho.pdf" target="_blank"> <img class="menu_superior mr-3" src="assets/img/img_template/pdf.png" style="width: 30px;"> etica_moral_derecho.pdf<b class="text-cafe" style="margin-left: 455px;"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);

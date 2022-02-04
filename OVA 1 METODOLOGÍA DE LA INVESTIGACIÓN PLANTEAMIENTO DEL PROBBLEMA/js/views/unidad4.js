@@ -2,6 +2,11 @@ $(document).ready(function() {
     $(".ov-personaje").hide();
     $(".menu4").removeClass('d-none');
 
+    $(".menu4").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    $(".menu1").removeClass('c-show');
+
     tema = 1;
     /*slide_link4(tema);*/
     $('#smartwizard').smartWizard({
