@@ -1076,57 +1076,53 @@
                             <div class="row">
                                 <div class="col-md-4 p-3">
                                     <div class="position-relative py-4">
-                                        <img src="assets/img/img_ova/circulo.png" class="w-220px">
-                                        <div class="position-absolute rec rec-1 w-h-30px radius-50 bg-azul-c d-flex cursor btn-p1" data-rec="1">
-                                            <p class="m-auto p_white">1</p>
-                                        </div>
-                                        <div class="position-absolute rec rec-2 w-h-30px radius-50 bg-azul-c d-flex cursor btn-p2" data-rec="2">
-                                            <p class="m-auto p_white">2</p>
-                                        </div>
-                                        <div class="position-absolute rec rec-3 w-h-30px radius-50 bg-azul-c d-flex cursor btn-p3" data-rec="3">
-                                            <p class="m-auto p_white">3</p>
-                                        </div>
-                                        <div class="position-absolute rec rec-4 w-h-30px radius-50 bg-azul-c d-flex cursor btn-p4" data-rec="4">
-                                            <p class="m-auto p_white">4</p>
-                                        </div>
-                                        <div class="position-absolute rec rec-5 w-h-30px radius-50 bg-azul-c d-flex cursor btn-p5" data-rec="5">
-                                            <p class="m-auto p_white">5</p>
-                                        </div>
-                                        <img src="assets/img/img_ova/criterios1.png" class="position-absolute" style="max-width: 45%;left: 45px;top: 58px;">
+                                        <img src="assets/img/img_ova/circulo.png" style="width: 260px;">
+                                        <div class="position-absolute rec rec-1 d-flex cursor btn-p1" onclick="rec_cg(1);" data-rec="1"><b>1</b></div>
+                                        <div class="position-absolute rec rec-2 d-flex cursor btn-p2" onclick="rec_cg(2);" data-rec="2"><b>2</b></div>
+                                        <div class="position-absolute rec rec-3 d-flex cursor btn-p3" onclick="rec_cg(3);" data-rec="3"><b>3</b></div>
+                                        <div class="position-absolute rec rec-4 d-flex cursor btn-p4" onclick="rec_cg(4);" data-rec="4"><b>4</b></div>
+                                        <div class="position-absolute rec rec-5 d-flex cursor btn-p5" onclick="rec_cg(5);" data-rec="5"><b>5</b></div>
+                                        <img src="assets/img/img_ova/criterios1.png" class="position-absolute" style="max-width: 65%;left: 45px;top: 68px;">
                                     </div>
                                 </div>
                                 <div class="col-md-8">
-                                    <p class="caja-texto-y2 font13 p20 p20-1 display-none" style="background-color: #f8cbad;">
-                                        <b class="text-center">Posicionamiento en el mercado</b><br><br> Qué tan bien está posicionada la pasarela en el mercado? ¿Qué tan reconocida es? ¿Qué tan bien valorada está por los compradores en el mercado?
-                                    </p>
+                                    <div class="caja-texto-rosa  font13 p20 p20-1 display-none">
+                                        <p>
+                                            <b class="text-center">Posicionamiento en el mercado</b><br><br> Qué tan bien está posicionada la pasarela en el mercado? ¿Qué tan reconocida es? ¿Qué tan bien valorada está por los compradores en el mercado?
+                                        </p>
+                                    </div>
+                                    <div class="caja-texto-rosa  font13 p20 p20-2 display-none">
+                                        <p>
+                                            <b class="text-center">Respaldo institucional</b><br><br> Ha de tener muy buen respaldo institucional, especialmente por el sector financiero, quienes a su vez garanticen soporte, confiabilidad y condiciones
+                                            de seguridad a los usuarios. Es ideal que la pasarela cuente con un certificado de seguridad SSL y sistemas antifraude AVS (Address Verification System).
+                                        </p>
+                                    </div>
+                                    <div class="caja-texto-rosa  font13 p20 p20-3 display-none">
+                                        <p>
+                                            <b class="text-center">Experiencia de Usuario</b><br><br> Ha de ser una pasarela de fácil uso y navegación para los clientes, que permita realizar las transacciones de forma muy amena, y autonomía (intuitiva).
+                                        </p>
+                                    </div>
+                                    <div class="caja-texto-rosa  font13 p20 p20-4 display-none">
+                                        <p>
+                                            <b class="text-center">Compatible con la plataforma</b><br><br> Para evitar costos adicionales de desarrollo, es fundamental verificar que la pasarela que se va a integrar sea compatible con la plataforma de
+                                            E-commerce, ya que si esto no es así, probablemente tome más tiempo la implementación, sea más costosa la adquisición y no haya garantía de que las funcionalidades se integren de la manera adecuada con nuestra
+                                            tienda virtual.
+                                        </p>
+                                    </div>
+                                    <div class="caja-texto-rosa  font13 p20 p20-5 display-none">
+                                        <p>
+                                            <b class="text-center">Conocer las comisiones de las transacciones</b><br><br> Como se ha dicho hasta aquí, las pasarelas tienen un costo asociado que debe ser asumido por el comercio, estas cargas son generalmente
+                                            un porcentaje de la transacción, pero varían dependiendo del tipo de modelo de recaudo y el acuerdo al que se llegue con la pasarela de pago. Es importante que la empresa o comercio tenga claras las condiciones
+                                            y gastos escondidos” que implica utilizar la pasarela de pagos. <br> En términos generales las pasarelas suelen cobrar un porcentaje de comisión más un cargo fijo por cada transacción efectuada dentro de ellas,
+                                            a este cobro se debe adicionar el 19% del IVA y en algunos casos la cuota de inscripción a la pasarela. El porcentaje de comisión varía entre el 2,85% y el 3,49% dependiendo de la pasarela de pago, mientras
+                                            que el cargo fijo puede encontrarse entre 800 y 1.050 pesos y van a depender de los convenios que tengan las pasarelas con las entidades bancarias; adicionalmente, se deben tener en cuenta las retenciones que
+                                            existen por recibir pagos con tarjetas de crédito.
 
-                                    <p class="caja-texto-y2 font13 p20 p20-2 display-none" style="background-color: #f8cbad;">
-                                        <b class="text-center">Respaldo institucional</b><br><br> Ha de tener muy buen respaldo institucional, especialmente por el sector financiero, quienes a su vez garanticen soporte, confiabilidad y condiciones de
-                                        seguridad a los usuarios. Es ideal que la pasarela cuente con un certificado de seguridad SSL y sistemas antifraude AVS (Address Verification System).
-                                    </p>
-
-                                    <p class="caja-texto-y2 font13 p20 p20-3 display-none" style="background-color: #f8cbad;">
-                                        <b class="text-center">Experiencia de Usuario</b><br><br> Ha de ser una pasarela de fácil uso y navegación para los clientes, que permita realizar las transacciones de forma muy amena, y autonomía (intuitiva).
-                                    </p>
-
-                                    <p class="caja-texto-y2 font13 p20 p20-4 display-none" style="background-color: #f8cbad;">
-                                        <b class="text-center">Compatible con la plataforma</b><br><br> Para evitar costos adicionales de desarrollo, es fundamental verificar que la pasarela que se va a integrar sea compatible con la plataforma de E-commerce,
-                                        ya que si esto no es así, probablemente tome más tiempo la implementación, sea más costosa la adquisición y no haya garantía de que las funcionalidades se integren de la manera adecuada con nuestra tienda virtual.
-                                    </p>
-
-                                    <p class="caja-texto-y2 font13 p20 p20-5 display-none" style="background-color: #f8cbad;">
-                                        <b class="text-center">Conocer las comisiones de las transacciones</b><br><br> Como se ha dicho hasta aquí, las pasarelas tienen un costo asociado que debe ser asumido por el comercio, estas cargas son generalmente
-                                        un porcentaje de la transacción, pero varían dependiendo del tipo de modelo de recaudo y el acuerdo al que se llegue con la pasarela de pago. Es importante que la empresa o comercio tenga claras las condiciones
-                                        y gastos escondidos” que implica utilizar la pasarela de pagos. <br> En términos generales las pasarelas suelen cobrar un porcentaje de comisión más un cargo fijo por cada transacción efectuada dentro de ellas,
-                                        a este cobro se debe adicionar el 19% del IVA y en algunos casos la cuota de inscripción a la pasarela. El porcentaje de comisión varía entre el 2,85% y el 3,49% dependiendo de la pasarela de pago, mientras que
-                                        el cargo fijo puede encontrarse entre 800 y 1.050 pesos y van a depender de los convenios que tengan las pasarelas con las entidades bancarias; adicionalmente, se deben tener en cuenta las retenciones que existen
-                                        por recibir pagos con tarjetas de crédito.
-
-                                    </p>
-
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div style="height: 70px;"></div>
+                            <div style="height: 20px;"></div>
                         </div>
                         <div id="unidad1-21" class="tab-pane" role="tabpanel">
                             <div class="col-md-12">
