@@ -59,30 +59,6 @@ $(document).ready(function() {
         $(".pr3").show(300);
     })
 
-    $(".btn17-1").on("click", function() {
-        $(".p17").hide();
-        $(".p17-1").show();
-    })
-    $(".btn17-2").on("click", function() {
-        $(".p17").hide();
-        $(".p17-2").show();
-    })
-    $(".btn17-3").on("click", function() {
-        $(".p17").hide();
-        $(".p17-3").show();
-    })
-    $(".btn17-4").on("click", function() {
-        $(".p17").hide();
-        $(".p17-4").show();
-    })
-    $(".btn17-5").on("click", function() {
-        $(".p17").hide();
-        $(".p17-5").show();
-    })
-    $(".btn17-6").on("click", function() {
-        $(".p17").hide();
-        $(".p17-6").show();
-    })
 
     $(".btn-p1").on("click", function() {
         $(".p20").hide();
@@ -214,7 +190,138 @@ function slide_link(num) {
 }
 
 
+function crc(num) {
+    switch (num) {
+        case 1:
+            $(".btn-cr1").removeClass("btn-circle");
+            $(".btn-cr1").addClass("btn-circle1");
 
+            $(".btn-cr3").addClass("btn-circle");
+            $(".btn-cr3").removeClass("btn-circle1");
+
+            $(".btn-cr2").addClass("btn-circle");
+            $(".btn-cr2").removeClass("btn-circle1");
+
+            $(".btn-cr4").addClass("btn-circle");
+            $(".btn-cr4").removeClass("btn-circle1");
+
+            $(".btn-cr5").addClass("btn-circle");
+            $(".btn-cr5").removeClass("btn-circle1");
+
+            $(".btn-cr6").addClass("btn-circle");
+            $(".btn-cr6").removeClass("btn-circle1");
+            $(".p17").hide();
+            $(".p17-1").show();
+            break;
+        case 2:
+            $(".btn-cr2").removeClass("btn-circle");
+            $(".btn-cr2").addClass("btn-circle1");
+
+            $(".btn-cr1").addClass("btn-circle");
+            $(".btn-cr1").removeClass("btn-circle1");
+
+            $(".btn-cr3").addClass("btn-circle");
+            $(".btn-cr3").removeClass("btn-circle1");
+
+            $(".btn-cr4").addClass("btn-circle");
+            $(".btn-cr4").removeClass("btn-circle1");
+
+            $(".btn-cr5").addClass("btn-circle");
+            $(".btn-cr5").removeClass("btn-circle1");
+
+            $(".btn-cr6").addClass("btn-circle");
+            $(".btn-cr6").removeClass("btn-circle1");
+            $(".p17").hide();
+            $(".p17-2").show();
+            break;
+        case 3:
+            $(".btn-cr3").removeClass("btn-circle");
+            $(".btn-cr3").addClass("btn-circle1");
+
+            $(".btn-cr1").addClass("btn-circle");
+            $(".btn-cr1").removeClass("btn-circle1");
+
+            $(".btn-cr2").addClass("btn-circle");
+            $(".btn-cr2").removeClass("btn-circle1");
+
+            $(".btn-cr4").addClass("btn-circle");
+            $(".btn-cr4").removeClass("btn-circle1");
+
+            $(".btn-cr5").addClass("btn-circle");
+            $(".btn-cr5").removeClass("btn-circle1");
+
+            $(".btn-cr6").addClass("btn-circle");
+            $(".btn-cr6").removeClass("btn-circle1");
+            $(".p17").hide();
+            $(".p17-3").show();
+            break;
+        case 4:
+            $(".btn-cr4").removeClass("btn-circle");
+            $(".btn-cr4").addClass("btn-circle1");
+
+            $(".btn-cr1").addClass("btn-circle");
+            $(".btn-cr1").removeClass("btn-circle1");
+
+            $(".btn-cr2").addClass("btn-circle");
+            $(".btn-cr2").removeClass("btn-circle1");
+
+            $(".btn-cr3").addClass("btn-circle");
+            $(".btn-cr3").removeClass("btn-circle1");
+
+            $(".btn-cr5").addClass("btn-circle");
+            $(".btn-cr5").removeClass("btn-circle1");
+
+            $(".btn-cr6").addClass("btn-circle");
+            $(".btn-cr6").removeClass("btn-circle1");
+            $(".p17").hide();
+            $(".p17-4").show();
+            break;
+        case 5:
+            $(".btn-cr5").removeClass("btn-circle");
+            $(".btn-cr5").addClass("btn-circle1");
+
+            $(".btn-cr1").addClass("btn-circle");
+            $(".btn-cr1").removeClass("btn-circle1");
+
+            $(".btn-cr2").addClass("btn-circle");
+            $(".btn-cr2").removeClass("btn-circle1");
+
+            $(".btn-cr3").addClass("btn-circle");
+            $(".btn-cr3").removeClass("btn-circle1");
+
+            $(".btn-cr4").addClass("btn-circle");
+            $(".btn-cr4").removeClass("btn-circle1");
+
+            $(".btn-cr6").addClass("btn-circle");
+            $(".btn-cr6").removeClass("btn-circle1");
+            $(".p17").hide();
+            $(".p17-5").show();
+            break;
+        case 6:
+            $(".btn-cr6").removeClass("btn-circle");
+            $(".btn-cr6").addClass("btn-circle1");
+
+            $(".btn-cr1").addClass("btn-circle");
+            $(".btn-cr1").removeClass("btn-circle1");
+
+            $(".btn-cr2").addClass("btn-circle");
+            $(".btn-cr2").removeClass("btn-circle1");
+
+            $(".btn-cr3").addClass("btn-circle");
+            $(".btn-cr3").removeClass("btn-circle1");
+
+            $(".btn-cr4").addClass("btn-circle");
+            $(".btn-cr4").removeClass("btn-circle1");
+
+            $(".btn-cr5").addClass("btn-circle");
+            $(".btn-cr5").removeClass("btn-circle1");
+            $(".p17").hide();
+            $(".p17-6").show();
+            break;
+        default:
+            break;
+    }
+}
 
 
 function controlSlides(num) {
