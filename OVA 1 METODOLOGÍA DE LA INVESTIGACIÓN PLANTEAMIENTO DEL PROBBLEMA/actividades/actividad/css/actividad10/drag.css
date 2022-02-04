@@ -1,3 +1,48 @@
+@media screen and (min-width: 700px) and (max-width: 800px) {
+
+  .imagen {
+    width: 100px !important; height: 100px !important;
+  }
+
+  .texto_header {
+    font-size: 17px !important;
+  }
+
+  .text-peq {
+    font-size: 12px !important;
+  }
+
+  .text-peq14 {
+    font-size: 14px !important;
+  }
+
+  .margin0 {
+      margin-top: 0rem !important;
+  }
+
+  .menosmargin-peq {
+    top: 30px !important;
+  }
+
+  .ml-img2 {
+    margin-left: 23% !important; 
+  } 
+
+  .terciario {
+    width: 60% !important;
+  }
+
+  .imgACT {
+    width: 20% !important;
+  }
+
+  .textACT {
+    width: 80% !important;
+  }
+
+  
+}
+
 body{
   margin: 0px;
   padding: 0px;
