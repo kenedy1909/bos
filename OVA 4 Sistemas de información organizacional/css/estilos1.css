@@ -644,6 +644,7 @@ button {
     background: url('../assets/img/img_ova/tyc1.png');
     background-repeat: no-repeat;
     background-size: 100%;
+    margin-top: -105px;
     background-position: center;
 }
 
@@ -1304,12 +1305,30 @@ a.control_next {
     padding-top: 25px;
 }
 
+.flip-card-front1 {
+    height: 225px;
+    background-color: #811111;
+    border-radius: 30px;
+    padding-top: 25px;
+}
+
 
 /* Style the back side */
 
 .flip-card-back {
     background-color: #78201A;
     color: white;
+    border-radius: 30px;
+    padding-top: 25px;
+    padding: 20px;
+    height: 226px;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back1 {
+    background-color: white;
+    color: black;
+    border: 1px solid #78201A;
     border-radius: 30px;
     padding-top: 25px;
     padding: 20px;
@@ -1324,6 +1343,16 @@ a.control_next {
     left: -5%;
     width: 110%;
     border: dashed 3px white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.flip-card-back1 p {
+    overflow: auto;
+    height: 188px;
+    position: relative;
+    left: -5%;
+    width: 110%;
     border-radius: 20px;
     padding: 5px;
 }
@@ -1981,4 +2010,14 @@ u {
         height: 144px;
         overflow: auto;
     }
+}
+
+.img35 {
+    background: url('../assets/img/img_ova/img35.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 200px;
+    width: 557px;
+    margin-left: 120px;
+    background-position: center;
 }

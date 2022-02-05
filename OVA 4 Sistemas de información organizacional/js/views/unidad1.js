@@ -1033,13 +1033,13 @@ function scroll_horizontal3(num) {
             break;
         case 1:
             var imgScrollV = `<img width="30%" src="assets/img/img_ova/cat2.png">`;
-            var textScrollV = `<p class="justificado mt-3 text-black"><b>Government to Consumer (G2C):</b> esta relación comercial se da cuando un gobierno permite que los ciudadanos realicen sus trámites y los paguen a través de una plataforma, en el caso colombiano existe una estrategia que se llama Gobierno en Línea. Su gran ventaja es el ahorro del tiempo, eficiencias en trámites y la seguridad que puede brindar el respaldo electrónico. Es bastante común para el pago de impuestos.</p>`;
+            var textScrollV = `<p class="justificado mt-3 text-black" style="max-width: 300px;"><b>Government to Consumer (G2C):</b> esta relación comercial se da cuando un gobierno permite que los ciudadanos realicen sus trámites y los paguen a través de una plataforma, en el caso colombiano existe una estrategia que se llama Gobierno en Línea. Su gran ventaja es el ahorro del tiempo, eficiencias en trámites y la seguridad que puede brindar el respaldo electrónico. Es bastante común para el pago de impuestos.</p>`;
             $('#imgScrollV').html(imgScrollV);
             $('#textScrollV').html(textScrollV);
             break;
         case 2:
             var imgScrollV = `<img width="30%" src="assets/img/img_ova/cat5.png">`;
-            var textScrollV = `<p class="justificado mt-3 text-black"><b>Business to Government (B2G):</b> esta relación comercial se da cuando una empresa o las empresas en general le ofrecen productos o servicios al gobierno. Normalmente son plataformas a través de las cuales se realizan las contrataciones, compras públicas y licitaciones</p>`;
+            var textScrollV = `<p class="justificado mt-3 text-black" style="max-width: 300px;"><b>Business to Government (B2G):</b> esta relación comercial se da cuando una empresa o las empresas en general le ofrecen productos o servicios al gobierno. Normalmente son plataformas a través de las cuales se realizan las contrataciones, compras públicas y licitaciones</p>`;
             $('#imgScrollV').html(imgScrollV);
             $('#textScrollV').html(textScrollV);
             break;
@@ -1079,14 +1079,14 @@ function scroll_horizontal4(num) {
             break;
         case 1:
             $('#padreScrollH').removeClass('d-none');
-            var imgScrollH = `<img width="15%" src="assets/img/img_ova/est2.png" class="px-3 py-2 bg-white rounded-circle menos-marginT-25">`;
+            var imgScrollH = `<img width="25%" style="position: relative;left: 11%;" src="assets/img/img_ova/est2.png" class="px-3 py-2 menos-marginT-25">`;
             var textScrollH = `Los clientes deben conocer todo lo relacionado con el producto que están comprando, independientemente si se hace por internet o en canales tradicionales, es un derecho adquirido por Ley, estar informados sobre su precio, impuestos y costos adicionales que se puedan generar. Es así como el Estatuto del consumidor (Ley 1480 de 2011) se convierte en una herramienta que permite formalizar la relación de las empresas con sus clientes.`;
             $('#imgScrollH').html(imgScrollH);
             $('#textScrollH').html(textScrollH);
             break;
         case 2:
             $('#padreScrollH').removeClass('d-none');
-            var imgScrollH = `<img width="15%" src="assets/img/img_ova/est1.png" class="px-3 py-2 bg-white rounded-circle menos-marginT-25">`;
+            var imgScrollH = `<img width="25%" style="position: relative;left: 11%;" src="assets/img/img_ova/est1.png" class="px-3 py-2 menos-marginT-25">`;
             var textScrollH = `Su importancia radica en que a través de ella se promueve la protección que se brinda al consumidor, y cómo ampara el respeto a su dignidad e intereses económicos. Por lo tanto, es fundamental que las empresas, brinden a sus clientes información adecuada sobre los productos o servicios, dejando claros atributos, precio, garantías, y sobre todo que respete su libre decisión en la compra`;
             $('#imgScrollH').html(imgScrollH);
             $('#textScrollH').html(textScrollH);
@@ -1454,7 +1454,7 @@ function tiendaSeccion(num, accion) {
             $('.selectorTienda1').attr('onclick', "tiendaSeccion(1,'cerrar')");
         } else if (num == 2) {
             var contenido = `
-            <div class="bg-color-claro p-4 pt-5 border-rb-25 mt-5" style="transition: all 1s ease-out;">
+            <div class="bg-color-claro p-4 pt-5 border-rb-25" style="transition: all 1s ease-out;margin-top: 144px;">
                 <div class="w-100 text-center menos-marginT-150">
                 <img class="zindex" width="40%" src="assets/img/img_ova/tyc3.png">
                 </div>
@@ -1468,11 +1468,11 @@ function tiendaSeccion(num, accion) {
             $('.selectorTienda2').attr('onclick', "tiendaSeccion(2,'cerrar')");
         } else if (num == 3) {
             var contenido = `
-                            <div class="content custom-scrollbar14">
-                                <div class="custom-scrollbar__inner14 py-5">
-                                    <div class="bg-color-claro p-4 pt-5 border-rb-25 mt-5" style="transition: all 1s ease-out;">
+                            <div class="">
+                                <div class=" py-5" style="height: 460px;overflow: auto;padding: 10px; overflow-x: hidden;">
+                                    <div class="bg-color-claro p-4 pt-5 border-rb-25" style="margin-top: 10px;transition: all 1s ease-out;">
                                     <div class="w-100 text-center menos-marginT-100">
-                                    <img class="zindex" width="30%" src="assets/img/img_ova/tyc4.png">
+                                    <img class="zindex" width="45%" src="assets/img/img_ova/tyc4.png">
                                     </div>
                                     <p class="mt-2 text-justify" style="color: black;">
                                         Es fundamental que una tienda en línea cuente con los TyC dentro del sitio web, para que los clientes lo puedan conocer y recordar cada vez que sea necesario. Para estipular y definir adecuadamente los términos y condiciones del E-commerce, VendesFácil el servicio de Coordinadora Mercantil, que apoya a las mipymes colombianas en la creación de las tiendas en línea, propone una serie de recomendaciones o consejos para que los usuarios entiendan muy bien los requisitos o cláusulas que se deben incluir en el sitio de comercio electrónico.
@@ -1489,9 +1489,9 @@ function tiendaSeccion(num, accion) {
                                     </p>
                                     
                                     <div class="row d-flex justify-content-center my-2 ">
-                                        <a href="https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/" target="_blank" class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow">
+                                        <a href="https://www.vendesfacil.com/ecommerce/terminos-y-condiciones-tenlos-muy-presentes-para-tu-tienda-virtual/" target="_blank" class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow" style="height: 40px;">
                                         <img src="assets/img/img_ova/tyc5.png" width="30%" class="position-absolute" style="right: 0;">
-                                        <p class="text-white pr-5 h4"><b>ARTÍCULO</b></p>
+                                        <p class="text-white mt-1 pr-5 h4"><b>ARTÍCULO</b></p>
                                         </a>
                                     </div>
                                     
@@ -1499,16 +1499,11 @@ function tiendaSeccion(num, accion) {
                                         A continuación se describen las recomendaciones mas importantes para la elaboración de los términos y condiciones de una tienda virtual, <b>seleccione el botón para conocerlas: </b>
                                     </p>
                                     <div class="row d-flex justify-content-center my-2">
-                                        <a href="assets/img/img_ova/recomendacionesTiendaOnline.png" target="_blank" download class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow">
-                                        <img src="assets/img/img_ova/tyc6.png" width="30%" class="position-absolute" style="right: 0;">
-                                        <p class="text-white pr-5 h4"><b>DESCARGAR</b></p>
+                                        <a href="assets/img/img_ova/recomendacionesTiendaOnline.png" target="_blank" download class="col-7 btn btn-ova p-2 d-flex justify-content-center align-items-center zindex cursor shadow" style="height: 40px;">
+                                        <img src="assets/img/img_ova/tyc6.png" width="30%" class="position-absolute" style="right: -5px;">
+                                        <p class="text-white mt-1 pr-5 h4"><b>DESCARGAR</b></p>
                                         </a>
                                     </div>
-                                    </div>
-                                </div>
-                                <div class="custom-scrollbar__bar14">
-                                    <div class="custom-scrollbar__knob14 cursor">
-                                    <p class="text-center linea_scroll14">-</p>
                                     </div>
                                 </div>
                             </div>
