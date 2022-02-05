@@ -106,6 +106,27 @@ $('#porcentaje_unidad').on('shown.bs.popover', function () {
     /*$("#percent_unidad").percircle({percent: total_porcentaje ,animate: "true"});*/
 })
 
+function cambiarColorMenu(enlace) {
+
+    $('.linkMenu11').removeClass('colorAMenu');
+    $('.linkMenu12').removeClass('colorAMenu');
+    $('.linkMenu13').removeClass('colorAMenu');
+    
+
+    if (enlace == 11) {
+        $('.linkMenu11').addClass('colorAMenu');
+    }else if (enlace == 12) {
+        $('.linkMenu12').addClass('colorAMenu');
+    }else if (enlace == 13) {
+        $('.linkMenu13').addClass('colorAMenu');
+    }else{
+        $('.linkMenu11').removeClass('colorAMenu');
+        $('.linkMenu12').removeClass('colorAMenu');
+        $('.linkMenu13').removeClass('colorAMenu');
+       
+    }
+}
+
 $( "#terminarCurso" ).click(function(evt) {
     CompletarCurso();
     evt.preventDefault();
