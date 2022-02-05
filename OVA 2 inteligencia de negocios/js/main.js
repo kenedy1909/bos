@@ -158,8 +158,11 @@ $('.link-menu-tema').off('click').on('click', function(evt){
     var numerador = 0;
     if (enlace == "unidad1") {
         numerador = 1;
-    }else if(enlace == "unidad1"){
+    }else if(enlace == "unidad2"){
         numerador = 2;
+    }
+    else if(enlace == "unidad3"){
+        numerador = 3;
     }
     $(".sub"+numerador).removeClass('tema_activo');
     $(".sub"+numerador+"_"+tema).addClass('tema_activo');

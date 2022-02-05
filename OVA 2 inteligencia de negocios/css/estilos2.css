@@ -202,3 +202,29 @@
   border: dashed #00A983 5px;
 }
 /*border fin*/
+
+
+.indicador1{
+  width: 0;height: 0;border-left: 400px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(90deg);position: relative;top: 166px;left: -140px;z-index: 1;
+}
+.indicador2{
+  width: 0;height: 0;border-left: 316px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(96deg);position: relative;top: 124px;left: -144px;z-index: 1;
+}
+.indicador3{
+  width: 0;height: 0;border-left: 210px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(90deg);position: relative;top: 75px;left: -49px;z-index: 1;
+}
+.indicador4{
+  width: 0;height: 0;border-left: 160px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(90deg);position: relative;top: 60px;left: 65px;z-index: 1;
+}
+.indicador5{
+  width: 0;height: 0;border-left: 168px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(90deg);position: relative;top: 60px;left: 151px;z-index: 1;
+}
+.indicador6{
+  width: 0;height: 0;border-left: 250px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(90deg);position: relative;top: 78px;left: 180px;z-index: 1;
+}
+.indicador7{
+  width: 0;height: 0;border-left: 320px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(86deg);position: relative;top: 127px;left: 154px;z-index: 1;
+}
+.indicador8{
+  width: 0;height: 0;border-left: 403px solid #282f9f;border-top: 20px solid transparent;border-bottom: 20px solid transparent;transform: rotate(90deg);position: relative;top: 156px;left: 73px;z-index: 1;
+}

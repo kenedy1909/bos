@@ -1,5 +1,18 @@
 $( document ).ready(function() {
     $('.menu3').removeClass('d-none');
+    $('.menu3').addClass('c-show');
+
+    $('.sub1').removeClass('tema_activo');
+    $('.menu2').removeClass('c-show');
+    $('.sub2').removeClass('tema_activo');
+
+    $('.sub3').removeClass('tema_activo');
+    $('.sub3_1').addClass('tema_activo');
+
+
+    paso = false;
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -68,16 +81,22 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
-
+function pag_1(){
+    $('#smartwizard').smartWizard("goToStep", 1);
+}
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","El BigData");
             break;
         case 2:
+            $('.sub3').removeClass('tema_activo');
+            $('.sub3_1').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","El BigData");
             break;
         case 3:
+            $('.sub3').removeClass('tema_activo');
+            $('.sub3_3').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","La minería de datos");
             break;
         case 4:
