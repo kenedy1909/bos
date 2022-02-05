@@ -1,9 +1,14 @@
 $( document ).ready(function() {
     $('.menu1').removeClass('c-show');
+    $('.menu3').removeClass('c-show');
+    $('.menu4').removeClass('c-show');
     $('.sub1').removeClass('tema_activo');
+    $('.sub3').removeClass('tema_activo');
+    $('.sub4').removeClass('tema_activo');
     
     $('.menu2').removeClass('d-none');
     $('.menu2').addClass('c-show');
+
     $('.sub2').removeClass('tema_activo');
     $('.sub2_1').addClass('tema_activo');
 
@@ -34,6 +39,13 @@ $( document ).ready(function() {
         slide();
         /*actualizarprogress();*/
 
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
     });
     
     $('#prev').on('click', function () {

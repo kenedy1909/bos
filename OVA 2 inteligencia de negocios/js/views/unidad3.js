@@ -1,5 +1,22 @@
 $( document ).ready(function() {
     $('.menu3').removeClass('d-none');
+    $('.menu3').addClass('c-show');
+
+    $('.sub1').removeClass('tema_activo');
+    $('.menu1').removeClass('c-show');
+    $('.menu2').removeClass('c-show');
+    $('.menu4').removeClass('c-show');
+    $('.sub1').removeClass('tema_activo');
+    $('.sub2').removeClass('tema_activo');
+    $('.sub4').removeClass('tema_activo');
+
+    $('.sub3').removeClass('tema_activo');
+    $('.sub3_1').addClass('tema_activo');
+
+
+    paso = false;
+    star_uni = 3;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -28,6 +45,13 @@ $( document ).ready(function() {
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
     });
     var knob = "";
     var bar = "";
@@ -68,16 +92,22 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
-
+function pag_1(){
+    $('#smartwizard').smartWizard("goToStep", 1);
+}
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","El BigData");
             break;
         case 2:
+            $('.sub3').removeClass('tema_activo');
+            $('.sub3_1').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","El BigData");
             break;
         case 3:
+            $('.sub3').removeClass('tema_activo');
+            $('.sub3_3').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","3. Big Data y minería de datos","La minería de datos");
             break;
         case 4:

@@ -14,22 +14,22 @@
 </head>
 
 <body>
-  <div class="backdrop in">
+  <div class="backdrop in" style="overflow: hidden;">
     <div class="fondo">
-      <header>
+      <header style="padding: 0px;">
         <div class="d-flex">
             <div class="col-md-5" style="width: 45%;">
                 <div class="d-flex">
                   <img src="./img/actividad_interactiva.png" alt="" style="width: 116px; height: 116px;">
-                  <div class="text-center pt-3" style="font-size: 20px;">
-                    <b class="pl-1 pr-1" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
+                  <div class="text-center" style="font-size: 20px;width: 180px;padding-top: 16px;">
+                    <b class="" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
                     <div style="height: 5px; background: #811111;"></div>
-                    <p class="text-center text-muted">ORDENAMIENTO CON IMÁGENES</p>
+                    <p class="text-center text-muted" style="font-size: 16px;">ORDENAMIENTO CON IMÁGENES</p>
                   </div>
                 </div>
             </div>
             <div class="col-md-7 row" style="width: 55%;">
-                <p class="info_actividad shadow" style="color: black;">
+                <p class="info_actividad shadow" style="color: black;font-size: 15px;">
                     Haga clic sostenido para arrastrar los elementos y ordenarlos en los cajones según corresponda, al finalizar pulse la opción "Calificar" para conocer su puntuación.
                 </p>
             </div>
@@ -67,29 +67,39 @@
           </div>
         </div>
         <div class="text-center">
-          <button type="button" id="calificar" class="btn" style="background: #811111; color: white;">Calificar</button>
+          <button type="button" id="calificar" class="btn" style="background: #811111;color: white;font-weight: bold;font-size: 22px;">Calificar</button>
         </div>
       </div>
     </div>
   </div>
   <!-- Modal -->
-  <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body center-block">
-          <div class="mensaje text-center">
-            Tu puntaje es: <span class="puntaje">40%</span>
-            <span class="texto-puntaje"></span>
-          </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 25%; width: 70% !important; margin-left: 15%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
+                    </div>
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div style="" class="circulo_modal img_res">
+
+                        </div>
+                    </div>
+                    <div style="padding: 8px; margin-left: 5%;">
+                        <div style="color: white;font-size: 18px;display: flex;">
+                          Su puntaje es: <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 18px; padding-bottom: 5%;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-            intentar</button>
-          <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
     </div>
-  </div>
   <!-- Incluisión de scripts -->
   <script src="../js/jquery.min.js"></script>
   <script src="./jquery-ui.min.js"></script>

@@ -28,6 +28,22 @@ $( document ).ready(function() {
         slide();
     });
 
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides3(stepIndex);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+9+11);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+
     $(".libro").on('click' , libros);
     $(".info-morado").on('click' , morados);
     $(".teoria").on('click' , teorias);
@@ -71,6 +87,7 @@ function controlSlides3(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 11;
             break;
@@ -86,30 +103,37 @@ function controlSlides3(num){
                         </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             break;
         case 2:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             /*$("#content").html('');
             $("#img_cont").html('');*/
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             //$("#pregunta_cont").html('');
             /*$("#contenido2").html('');
             $("#img_2").html('');*/
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
+            cambiarColorMenu(13);
             break;
         default:
             break;
