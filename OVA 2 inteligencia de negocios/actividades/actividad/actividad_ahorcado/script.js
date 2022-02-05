@@ -384,10 +384,15 @@ function init_recurso_1() {
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
                 ahorcado.reiniciar();*/
-                var modalID = "#calificacionModal";
+                var modalID = "#exampleModal";
                 var exito = false;
                 var mensaje = "Inténtalo nuevamente.";
                 // registrarActividad(puntaje);
+                $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;margin-top: 10%;margin-left: 1px;">');
+                $('.mensaje').text("Inténtalo nuevamente.");
+                $('.puntaje').text("0%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #da2316;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+                $("#exampleModal").modal("show");
                 mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
                     
                 });
@@ -401,10 +406,15 @@ function init_recurso_1() {
                 for (var b = 0; b < btn.length; b++) {
                     btn[b].setAttribute("disabled", "disabled");
                 }*/
-                var modalID = "#calificacionModal";
+                var modalID = "#exampleModal";
                 var exito = true;
                 var mensaje = "¡Felicitaciones";
                 // registrarActividad(puntaje);
+                $('.img_res').html('<img src="img/bien.png" style="max-width: 80%; margin-top: 10%;margin-left: 1px;">');
+                $('.puntaje').text("100%");
+                $('.mensaje').text("¡Felicitaciones!");
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #da2316;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
+                $("#exampleModal").modal("show");
                 mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                     
                 });
@@ -441,4 +451,9 @@ function init_recurso_1() {
         location.reload();
     });
 
+}
+
+
+function reload(){
+    location.reload();
 }

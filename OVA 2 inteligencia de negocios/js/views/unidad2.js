@@ -6,6 +6,11 @@ $( document ).ready(function() {
     $('.menu2').addClass('c-show');
     $('.sub2').removeClass('tema_activo');
     $('.sub2_1').addClass('tema_activo');
+
+
+    paso = false;
+    star_uni = 2;
+    $('.js_uni').html('<script src="js/views/unidades.js"></script>');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -80,6 +85,9 @@ function slide_link(num){
     $(".nav-link").removeClass('active');
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
+}
+function pag_1(){
+    $('#smartwizard').smartWizard("goToStep", 1);
 }
 
 function controlSlides(num){
@@ -363,6 +371,6 @@ function funcionalidad_16(num) {
         $(".fun_16_border").addClass('border-dashed-3');
     }else if (num == 4) {
         $(".fun_16_info_4").removeClass('d-none');
-        $(".fun_16_border").addClass('border-dashed-4');
+        $('#smartwizard').smartWizard("next");    
     }
 }

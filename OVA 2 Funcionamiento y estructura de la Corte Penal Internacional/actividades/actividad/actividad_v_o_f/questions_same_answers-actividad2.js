@@ -172,9 +172,12 @@ QuestionsSameAnswers.prototype.score =  function () {
 
     var puntaje = ((points * 100)/total).toFixed(0);
     var modalID = "#calificacionModal";
+    $("#img-circulo").attr("src","../img/img1/mal.png");
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
+        $('.circulo-naranja').css('background-color', 'transparent');
+        $("#img-circulo").attr("src","../img/img1/bien.png");
         exito = true;
         mensaje = "¡Felicitaciones!"
     }
@@ -210,7 +213,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
                     <tr><th colspan="10" class="form-title">{{ form.title }}</th></tr>\
                 {% endif %}\
                 <tr>\
-                    <th><p style="color: white;"></p><b>Ítem</b></th>\
+                    <th style="text-align: center;"><p style="color: white;"></p><b>Ítem</b></th>\
                     {% for answer in form.answers %}\
                         <th class="title_table">{{ answer.answer_txt }}</th>\
                     {% endfor %}\
@@ -218,14 +221,14 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
             </thead>\
             <tbody>\
                 {% for question in form.questions %}\
-                <tr>\
+                <tr style="text-align: justify;">\
                     <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\
-                            <label class="checkcontainer">\
+                            <label style="display: flex; margin: auto; padding: inherit;" class="checkcontainer">\
                                 <input name="{{ question.id }}" type="radio" value="{{ answer.id }}">\
-                                <span class="radiobtn"></span>\
+                                <span style="margin: auto; position: inherit;" class="radiobtn"></span>\
                             </label>\
                         </td>\
                     {% endfor %}\
@@ -237,6 +240,6 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
     </div>\
     {% endfor %}\
     <div class="text-center">\
-        <button class="btn" style="background: #003442; color: #fff;" type="submit" >Calificar</button>\
+        <button class="btn" style="background-color: #811111; color: white;"type="submit" >Calificar</button>\
     </div>\
 </form>'

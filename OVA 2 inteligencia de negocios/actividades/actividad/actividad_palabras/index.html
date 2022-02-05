@@ -8,14 +8,14 @@
 <body>
 	<div class="row col-md-12" style="">
 	    <header>
-            <div class="" style="">
-                <div class="" style="width: 38%;display: inline-block;margin-top: -50px;">
+            <div class="" style="display: flex;padding-top: 15px;">
+                <div class="" style="width: 38%;display: flex;">
                     <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
-                      <div style="display: inline-block;width: 25%;"><img src="img/actividad_interactiva.png" alt="" style="width: 98px;/* display: inline-block; */height: 98px;"></div>
-                      <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
+                      <div style="display: inline-block;width: 34%;"><img src="img/actividad_interactiva.png" alt="" style="width: 98px;height: 98px;margin-top: -43px;"></div>
+                      <div class="text-center" style="font-size: 20px;display: inline-block;width: 164px;margin-top: 1px;height: 140px;position: relative;padding-top: 6px;">
                         <b class="" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
                         <div style="height: 5px;background: #811111;"></div>
-                        <i><p class="text-muted">COMPLETAR ESPACIOS</p></i>
+                        <i><p class="text-muted" style="font-size: 16px;">COMPLETAR ESPACIOS</p></i>
                       </div>
                     </div>
                 </div>
@@ -121,36 +121,35 @@
 		</div>
 	</form>
 	<div style="text-align: center;margin-top: 20px;">
-	      <button onclick="calificar();" style="background: #811111;color: white;font-size: 18px;border-radius: 10px; padding: 1em;" data-toggle="modal" data-target="#exampleModal">Calificar</button>
+	      <button onclick="calificar();" style="background: #811111;color: white;font-size: 22px;font-weight: bold;border-radius: 10px;padding: 10px;" data-toggle="modal" data-target="#exampleModal">Calificar</button>
 	</div>
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content tranparente" style="">
-	      <div style="" class="principal">
-	        <div style="" class="cabeza">
-	          
-	        </div>
-	        <div class="d-flex justify-content-center">
-	          <div style="" class="circulo_modal img_res">
-	            
-	          </div>
-	        </div>
-	        <div style="padding: 10px;">
-	          <div style="color: white;font-size: 15px;">
-	            Su puntaje es: <p class="puntaje"></p>
-	          </div>
-	          <div style="color: white;font-size: 15px;">
-	            <p class="mensaje"></p>
-	          </div>
-	        </div>
-	        <div class="row d-flex justify-content-center btns_modal">
-	          
-	          
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 25%; width: 70% !important; margin-left: 15%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
+                    </div>
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div style="" class="circulo_modal img_res">
+
+                        </div>
+                    </div>
+                    <div style="padding: 8px; margin-left: 5%;">
+                        <div style="color: white;font-size: 18px;display: flex;">
+                          Su puntaje es: <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 18px;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

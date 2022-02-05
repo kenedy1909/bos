@@ -58,7 +58,7 @@ label {
 	appearance: none;
 	z-index: 1;
 	background: #FBE4D4;
-	color: white;
+	color: black;
 }
 .select__button:focus, .select__option:focus {
 	outline: transparent;
@@ -128,6 +128,7 @@ label {
 		-0.05em 0 0 #fff inset;
 	cursor: default;
 	pointer-events: none;
+	top: -43px;
 }
 .select__button--fold4 {
 	animation-name: fold4;
@@ -212,10 +213,12 @@ label {
 .enunciado{
 	border: solid #4F737C;
     border-radius: 25px 25px 0px 0px;
-    padding: 12px 20px 10px 20px;
+    padding: 20px;
     height: 200px;
     background: #DA2316;
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .seleccionable{
@@ -263,4 +266,190 @@ label {
 
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+.calificacion .modal-content{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+.calificacion .modal-body{
+    background-size: cover;
+    height: 386px;
+    width: 300px;
+}
+.calificacion .modal-body.exito{
+    background: url('./img/bien.png') center no-repeat;
+}
+.calificacion .modal-body.parcial{
+    background: url('./img/mal.png') center no-repeat;
+}
+.calificacion .modal-body .mensaje{
+    background: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: normal;
+    margin: 0 25px;
+    padding: 5px;
+    position: relative;
+}
+.calificacion .modal-body .mensaje:after{
+    bottom: -30px;
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    content: "";
+    left: calc(50% - 15px);
+    position: absolute;
+}
+.calificacion .modal-body .mensaje .texto-puntaje{
+    display: block;
+}
+.calificacion .modal-body .mensaje .puntaje{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.calificacion .modal-body.exito .mensaje .puntaje{
+    color: #8eb936;
+}
+.calificacion .modal-body.parcial .mensaje .puntaje{
+    color: #ad123c;
+}
+@keyframes wobble {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+} 
+.calificacion .modal-footer {
+    border: none;
+    text-align: center;
+}
+
+.texto-actividad{
+    background: #ffdd37;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
+    box-shadow: -6px 5px 21px 2px rgb(0 0 0 / 50%);
+}
+
+
+/*ejercicio*/
+.circulo_icon{
+    position: relative;
+    width: 65px;
+    height: 65px;
+    background: #fffefe;
+    border-radius: 50%;
+    top: 15px;
+    left: -44px;
+}
+.img-100{
+  width:100% ;
+}
+
+
+.d-flex{
+    display: flex;
+}
+
+.tranparente{
+  background: transparent;
+  border: none;
+  box-shadow: none !important;
+}
+
+.principal_modal{
+  height: 355px;
+  border-radius: 40px;
+  background: #da2316;
+}
+
+.cabeza{
+  background: #ae1c12;
+  height: 100px;
+  border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 150px;
+  width: 150px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
+  border: solid white;
+}
+
+.enunciado p{
+	max-height: 115px;
+   overflow: auto;
+   margin-bottom: 0px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
