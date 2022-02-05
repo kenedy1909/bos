@@ -80,17 +80,17 @@ $( document ).ready(function() {
 });
 var pdf = `                 <div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/SentenciaC-578_02.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>  Sentencia C-578/02.pdf   Ver.</a>
+                                  <a href="assets/PDF/UNIDAD1/SentenciaC-578_02.pdf" target="_blank"> <img  src="assets/img/img_ova/pdf-gris.png"style="top: -5px;position: relative;"> Sentencia C-578/02.pdf   Ver.</a>
                               </p>
                             </div>
                             <div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>  Estatuto de Roma     Ver.</a>
+                                  <a href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf" target="_blank"> <img  src="assets/img/img_ova/pdf-gris.png"style="top: -5px;position: relative;"> Estatuto de Roma     Ver.</a>
                               </p>
                             </div>
                             <div class="col-md-12">   
                               <p class="p_white size_20">  
-                                  <a href="assets/PDF/UNIDAD1/reporte.PDF" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>  Reporte intermedio de la fiscalía  Ver.</a>
+                                  <a href="assets/PDF/UNIDAD1/reporte.PDF" target="_blank"> <img  src="assets/img/img_ova/pdf-gris.png"style="top: -5px;position: relative;"> Reporte intermedio de la fiscalía  Ver.</a>
                               </p>
                             </div>`;
 $('.pdfs').html(pdf);
@@ -729,12 +729,12 @@ function scroll_horizontal(num){
         case 2:
             var pantalla = `<div class="col-md-12 margin-top50">
                       <div class="row">
-                        <div class="col-md-3" style="display: inline-block;width: 45%;">
+                        <div class="col-md-3" style="display: inline-block;width: 45%; z-index:1";>
                           <div class="" style="display: inline-block;">
                             <img src="assets/img/img_ova/actividad_general.png" alt="" style="width: 100px;height: 100px;">
                           </div>
                         </div>
-                        <div class="text-center pt-0 col-md-8" style="font-size: 20px;display: inline-block;width: 60%;">
+                        <div class="text-center mt-4 pt-3 col-md-8" style="font-size: 20px;display: inline-block;width: 60%;">
                             <b class="" style="color: #771e18;">ACTIVIDAD #3</b>
                             <div style="height: 5px; background: #771e18;"></div>
                             
@@ -752,10 +752,10 @@ function scroll_horizontal(num){
                       <p class="p_black justificado font13">
                         Descargue el pdf dando clic en el botón
                       </p>
-                      <a target="_blank" href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf"><img  style="background-color: #771e18; padding: 10px; border-radius: 10px; margin-top: 10px;max-width: 15%;" class="col-md-1 offset-md-7" src="assets/img/img_ova/pdf-file.png"></a>
+                      <a target="_blank" style="position: relative; top: -41px; left: 81px;" href="assets/PDF/UNIDAD1/EstatutodeRoma.pdf" ><img  style="background-color: #771e18; padding: 10px; border-radius: 10px; margin-top: 10px;max-width: 15%;" class="col-md-1 offset-md-7" src="assets/img/img_ova/pdf-file.png"></a>
 
-                      <div class="row">
-                          <img class="col-md-2" src="assets/img/img_ova/reloj.png">
+                      <div class="row" style="position: relative;top: -30px;">
+                          <img class="col-md-2 mt-1" src="assets/img/img_ova/reloj.png">
                           <p style="color: #771e18; margin: 5px 0 0 -20px;" class="justificado p_black font13 font-weight-bold col-md-10">Lectura: 3 horas   |   Ensayo:  3 horas </p>
                       </div>
                          
@@ -765,7 +765,7 @@ function scroll_horizontal(num){
             $('.img-scroll').removeClass('d-none');
                       break;
         case 3:
-            var pantalla = `<div><img class="img-60 mt-3" src="assets/img/img_ova/img14.png"> <br> <div class="d-flex"><div class="m-auto"><button data-toggle="modal" data-target="#modal13" class="btn btn-ova "><u><b>Cuestiones de admisibilidad</b></u></button></div></div></div>`;
+            var pantalla = `<div class="mt-5"><img class="img-60 mt-5" src="assets/img/img_ova/img14.png"> <br> <div class="d-flex"><div class="m-auto"><button data-toggle="modal" data-target="#modal13" class="btn btn-ova "><u><b>Cuestiones de admisibilidad</b></u></button></div></div></div>`;
             $('#scroll-img').html(pantalla);
             $('#scroll-text').html('<b>Debe destacarse que los requisitos de admisibilidad están orientados a verificar que el estado que tenga jurisdicción para ejercer la acción penal sobre la conducta haya tenido la oportunidad de investigar y sancionar a los presuntos responsables, al respecto indica unas cuestiones de admisibilidad.Del análisis del mencionado artículo se puede encontrar que será admisible una cuestión no solo cuando el estado en cuestión no haya investigado a los responsables, sino también cuando habiendo adelantado la investigación, se demostrará que la misma no fue realizada de forma imparcial, estaba orientada a sustraer de la responsabilidad penal al individuo o que el estado no estaba realmente interesado en adelantar la investigación o no podía hacerlo. Haga clic en el siguiente botón para ampliar:</b>');
             $('.img-scroll').addClass('d-none');
