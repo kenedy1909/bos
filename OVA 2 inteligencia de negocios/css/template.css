@@ -934,3 +934,12 @@ svg circle:nth-child(2){
 .tema_activo{
   color: #811111 !important;
 }
+
+
+.pdfs .menu_superior {
+    width: 30px;
+    margin-bottom: 5px;
+}
+.text-cafe{
+  float: right;
+}
