@@ -36,6 +36,13 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
     var knob = "";
     var bar = "";
     var container = "";

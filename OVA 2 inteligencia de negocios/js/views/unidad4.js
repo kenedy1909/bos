@@ -1,5 +1,17 @@
 $( document ).ready(function() {
     $('.menu4').removeClass('d-none');
+    $('.menu4').addClass('c-show');
+
+    $('.sub1').removeClass('tema_activo');
+    $('.menu1').removeClass('c-show');
+    $('.menu2').removeClass('c-show');
+    $('.menu3').removeClass('c-show');
+    $('.sub1').removeClass('tema_activo');
+    $('.sub2').removeClass('tema_activo');
+    $('.sub3').removeClass('tema_activo');
+
+    $('.sub4').removeClass('tema_activo');
+    $('.sub4_1').addClass('tema_activo');
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -28,6 +40,13 @@ $( document ).ready(function() {
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
     });
     var knob = "";
     var bar = "";
@@ -92,10 +111,13 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
+            $('.sub4').removeClass('tema_activo');
+            $('.sub4_1').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Las tablas y gráficos dinámicos");
             break;
         case 2:
-
+            $('.sub4').removeClass('tema_activo');
+            $('.sub4_2').addClass('tema_activo');
             setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         case 3:

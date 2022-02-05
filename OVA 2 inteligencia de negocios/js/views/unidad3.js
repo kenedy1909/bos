@@ -3,8 +3,12 @@ $( document ).ready(function() {
     $('.menu3').addClass('c-show');
 
     $('.sub1').removeClass('tema_activo');
+    $('.menu1').removeClass('c-show');
     $('.menu2').removeClass('c-show');
+    $('.menu4').removeClass('c-show');
+    $('.sub1').removeClass('tema_activo');
     $('.sub2').removeClass('tema_activo');
+    $('.sub4').removeClass('tema_activo');
 
     $('.sub3').removeClass('tema_activo');
     $('.sub3_1').addClass('tema_activo');
@@ -41,6 +45,13 @@ $( document ).ready(function() {
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        switch(stepIndex) {
+            default:
+            // code block
+        }
     });
     var knob = "";
     var bar = "";
