@@ -95,9 +95,11 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Las tablas y gráficos dinámicos");
             break;
         case 2:
+
             setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         case 3:
+            $('#actividad_imagenes').html('<iframe src="actividades/actividad/actividad_imagenes/index.html" frameborder="0" style="min-height: 730px;"></iframe>');
             setMigaja("Unidades de aprendizaje","4. Procesamiento de datos - perspectiva práctica","Microsoft PowerBI");
             break;
         case 4:
