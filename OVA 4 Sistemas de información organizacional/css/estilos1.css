@@ -1370,6 +1370,14 @@ a.control_next {
     margin-top: 20px;
 }
 
+.caja-texto-rosita {
+    padding: 13px;
+    height: 410px;
+    color: black;
+    background-color: #ffc09b;
+    margin-top: 20px;
+}
+
 .inputDiv,
 .inputDiv2 {
     width: 100%;
@@ -1767,7 +1775,7 @@ a.animated-button.thar-two:before {
 }
 
 .inputDiv3 input[type=range]::-webkit-slider-thumb {
-    background: var(--bg-color-dark);
+    background: var(--bg-color-secondary-dark);
     transform: scaleX(-1);
     background-size: 100% 100%;
     width: 30px;
@@ -1778,7 +1786,7 @@ a.animated-button.thar-two:before {
 }
 
 .inputDiv3 input[type=range]::-moz-range-thumb {
-    background: var(--bg-color-dark);
+    background: var(--bg-color-secondary-dark);
     transform: scaleX(-1);
     background-size: 100% 100%;
     width: 45px;
@@ -1788,37 +1796,37 @@ a.animated-button.thar-two:before {
 }
 
 .inputDiv3 input[type=range]::-ms-thumb {
-    background: var(--bg-color-dark);
-    width: 20px;
-    height: 20px;
-    border: 3px solid var(--bg-color-dark);
+    background: var(--bg-color-secondary-dark);
+    width: 25px;
+    height: 25px;
+    border: 5px solid var(--bg-color-secondary-dark);
     border-radius: 50%;
     cursor: pointer;
 }
 
 .inputDiv3 input[type=range]::-webkit-slider-runnable-track {
-    background-color: var(--bg-color-dark);
+    background-color: var(--bg-color-secondary-dark);
     height: 3px;
 }
 
 .inputDiv3 input[type=range]::-moz-range-track {
-    background-color: var(--bg-color-dark);
+    background-color: var(--bg-color-secondary-dark);
     height: 3px;
 }
 
 .inputDiv3 input[type=range]::-ms-track {
-    background-color: var(--bg-color-dark);
+    background-color: var(--bg-color-secondary-dark);
     height: 3px;
     cursor: pointer;
 }
 
 .inputDiv3 input[type=range]::-ms-fill-lower {
-    background-color: var(--bg-color-dark);
+    background-color: var(--bg-color-secondary-dark);
     cursor: pointer;
 }
 
 .inputDiv3 input[type=range]::-ms-fill-upper {
-    background-color: var(--bg-color-dark);
+    background-color: var(--bg-color-secondary-dark);
     cursor: pointer;
 }
 
@@ -1834,7 +1842,17 @@ a.animated-button.thar-two:before {
 .desliza_verde {
     border-radius: 10px;
     width: 2%;
-    margin-top: 4%;
+    margin-top: -8px;
+}
+
+.caja-texto-azulclaro {
+    padding: 30px;
+    height: 294px;
+    width: 366px;
+    margin-left: 17px;
+    border-radius: 30px;
+    background-color: #dae3f3;
+    margin-top: 80px;
 }
 
 u {
