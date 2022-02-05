@@ -83,18 +83,18 @@
 }
 
 .triangulo-derecha{
-  border-top: solid 25px transparent;
-  border-left: solid 40px transparent;
-  border-bottom: solid 25px transparent;
-  width: 0px;
-  height: 0px;
+    border-top: solid 18px transparent;
+    border-left: solid 24px transparent;
+    border-bottom: solid 18px transparent;
+    width: 0px;
+    height: 0px;
 }
 .triangulo-izquierda{
-  border-top: solid 25px transparent;
-  border-right: solid 40px transparent;
-  border-bottom: solid 25px transparent;
-  width: 0px;
-  height: 0px;
+    border-top: solid 18px transparent;
+    border-right: solid 24px transparent;
+    border-bottom: solid 18px transparent;
+    width: 0px;
+    height: 0px;
 }
 
 .triangulo-arriba{
