@@ -27,6 +27,23 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides2(stepIndex);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+9);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+
     funcion_vanvas();
     slide_predeterminado2();
     slide_link2(tema);
@@ -64,6 +81,7 @@ function controlSlides2(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 8;
             break;
@@ -75,12 +93,15 @@ function controlSlides2(num){
                         </div>`;
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             var cont = `<div class="m-auto"><img src="assets/img/img_ova/saber-como.png" style="max-width: 70%;"><div>`;
             $('#circle_can').html(cont);
             $('#circle_can').removeClass('circulo_blanco_can');
@@ -88,6 +109,7 @@ function controlSlides2(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
@@ -95,6 +117,7 @@ function controlSlides2(num){
         case 5:
             principal2_5(1);
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 6:
             knob = '';
@@ -105,9 +128,11 @@ function controlSlides2(num){
             container = document.querySelector('.custom-scrollbar__inner2');
             scroll();
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 8:
             knob = '';
@@ -118,12 +143,15 @@ function controlSlides2(num){
             container = document.querySelector('.custom-scrollbar__inner3');
             scroll();
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
+            cambiarColorMenu(12);
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");

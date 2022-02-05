@@ -27,6 +27,23 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+1);
+        // quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+    
     /*setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento.");*/
     /*slide_predeterminado();*/
     slide_link(tema);
@@ -78,6 +95,7 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
@@ -94,17 +112,21 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");            
+            setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
+            cambiarColorMenu(11);            
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
+            cambiarColorMenu(11);
             
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
+            cambiarColorMenu(11);
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Exploración de la literatura como sustento");
+            cambiarColorMenu(11);
             dragging = "";
             diff = "";
             newTop = "";
