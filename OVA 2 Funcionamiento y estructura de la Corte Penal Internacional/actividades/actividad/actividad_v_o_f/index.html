@@ -13,21 +13,21 @@
 </head>
 
 <body>
-    <div class="backdrop in">
+    <div class="backdrop in" style="overflow: hidden;">
         <div class="fondo">
             <header style="padding: 0px;">
                 <div class="row">
-                    <div class="col-md-5" style="display: inline-block;width: 47s%;">
+                    <div class="col-md-5" style="display: inline-block;">
                         <div class="" style="display: inline-block;">
-                          <img src="img/actividad_interactiva.png" alt="" style="width: 100px;height: 100px;">
+                          <img src="img/actividad_interactiva.png" alt="" style="width: 100px;height: 100px; top: -34px; position: relative;">
                           <div class="text-center pt-0" style="font-size: 20px;display: inline-block;">
-                            <b class="" style="color: #006092;">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px; background: #006092;"></div>
-                            <p class="text-muted">FALSO/VERDADERO</p>
+                            <b class="" style="color: #771e18;">ACTIVIDAD <br> INTERACTIVA</b>
+                            <div style="height: 5px; background: #771e18;"></div>
+                            <p class="text-muted"><i>FALSO/VERDADERO</i></p>
                           </div>
                         </div>
                     </div>
-                    <div class="col-md-7 row" style="display: inline-block;width: 50%;">
+                    <div class="col-md-7 row" style="display: inline-block;width: 55%;">
                         <p class="info_actividad shadow" style="font-size: 20px; color: black;">
                             Seleccione falso o verdadero según corresponda, al finalizar pulse la opción "<b>Calificar</b>" para conocer su puntuación.
                         </p>
@@ -45,7 +45,7 @@
 
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <!-- <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body center-block">
@@ -61,7 +61,64 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    
+  <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="">
+              <div class="card-container manual-flip">
+                <div class="card">
+                    <div class="front">
+                        <div class="cover" style="overflow: visible;">
+                          <div class="row">
+                            <div class="col-lg-4">
+                            </div>
+                            <div class="col-lg-4 mt-2">
+                              
+                            </div>
+                            <div class="col-lg-4 m-0 p-0 d-flex flex-row-reverse bd-highlight">
+                                <div class="divcerrar">
+                                    <button type="button" class="btn btn-cerrar" style="background-color: transparent; color: white;" data-dismiss="modal" aria-label="Close">
+                                      <div class="m-0 p-0 x-modal">
+                                        <h4 class="text-white text-center x-modal-text"><b>X</b></h2>
+                                      </div>
+                                    </button>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="user">
+                          <div class="">
+                            <div class="radius-gray">
+                              <div class="circulo-naranja">
+                                <img class="" id="img-circulo" src="../../actividad/img/img1/bien.png" >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content">
+                            <div class="modal-body">
+                                <div class="mensaje" style="text-align: justify;">
+                                    Tu puntaje es: <span class="puntaje">40%</span>
+                                    <span class="texto-puntaje" style="position: relative; top: 10px;"></span>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal" onclick="reiniciar();">Volver a
+                                    intentar </button>
+                                <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal" onclick="reiniciar();">Cerrar</button>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
+</div>
     <!-- Incluisión de scripts -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>

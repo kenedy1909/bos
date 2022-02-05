@@ -1588,6 +1588,82 @@ input[type=range]::-ms-fill-upper {
   cursor: pointer;
 }
 
+
+/*-------------------------- pantalla 14 tercer deslizador --------------------------*/
+
+.inputDiv4 input[type='range'] {
+  display: inline-block;
+  width: 100%;
+}
+
+.inputDiv4 input[type='range']:focus {
+  outline: none;
+}
+
+.inputDiv4 input[type='range'],
+.inputDiv4 input[type='range']::-webkit-slider-runnable-track,
+.inputDiv4 input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.inputDiv4 input[type=range]::-webkit-slider-thumb {
+  background-color: var(--bg-color-amarillo2);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color-amarillo2);
+  border-radius: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.inputDiv4 input[type=range]::-moz-range-thumb {
+  background-color: var(--bg-color-amarillo2);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color-amarillo2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputDiv4 input[type=range]::-ms-thumb {
+  background-color: var(--bg-color-amarillo2);
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--bg-color-amarillo2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.inputDiv4 input[type=range]::-webkit-slider-runnable-track {
+  background-color: var(--bg-color-amarillo2);
+  height: 7px;
+}
+
+.inputDiv4 input[type=range]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+.inputDiv4 input[type=range]::-moz-range-track {
+  background-color: var(--bg-color-amarillo2);
+  height: 7px;
+}
+
+.inputDiv4 input[type=range]::-ms-track {
+  background-color: var(--bg-color-amarillo2);
+  height: 7px;
+  cursor: pointer;
+}
+
+.inputDiv4 input[type=range]::-ms-fill-lower {
+  background-color: var(--bg-color-amarillo2);
+  cursor: pointer;
+}
+
+.inputDiv4 input[type=range]::-ms-fill-upper {
+  background-color: var(--bg-color-amarillo2);
+  cursor: pointer;
+}
+
 .bg-amarillo{
 	background-color: #FF9900;
 }

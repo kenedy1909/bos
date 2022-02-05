@@ -59,27 +59,6 @@ $(document).ready(function() {
         $(".pr3").show(300);
     })
 
-
-    $(".btn-p1").on("click", function() {
-        $(".p20").hide();
-        $(".p20-1").show();
-    })
-    $(".btn-p2").on("click", function() {
-        $(".p20").hide();
-        $(".p20-2").show();
-    })
-    $(".btn-p3").on("click", function() {
-        $(".p20").hide();
-        $(".p20-3").show();
-    })
-    $(".btn-p4").on("click", function() {
-        $(".p20").hide();
-        $(".p20-4").show();
-    })
-    $(".btn-p5").on("click", function() {
-        $(".p20").hide();
-        $(".p20-5").show();
-    })
     $(".btn21-1").on("click", function() {
         $(".p21").hide();
         $(".p21-1").show();
@@ -189,6 +168,108 @@ function slide_link(num) {
     controlSlides(num);
 }
 
+
+function rec_cg(num) {
+    switch (num) {
+        case 1:
+            $(".btn-p1").removeClass("rec");
+            $(".btn-p1").addClass("rec0");
+
+            $(".btn-p2").addClass("rec");
+            $(".btn-p2").removeClass("rec0");
+
+            $(".btn-p3").addClass("rec");
+            $(".btn-p3").removeClass("rec0");
+
+            $(".btn-p4").addClass("rec");
+            $(".btn-p4").removeClass("rec0");
+
+            $(".btn-p5").addClass("rec");
+            $(".btn-p5").removeClass("rec0");
+
+            $(".p20").hide();
+            $(".p20-1").show();
+            break;
+        case 2:
+            $(".btn-p1").addClass("rec");
+            $(".btn-p1").removeClass("rec0");
+
+            $(".btn-p2").removeClass("rec");
+            $(".btn-p2").addClass("rec0");
+
+            $(".btn-p3").addClass("rec");
+            $(".btn-p3").removeClass("rec0");
+
+            $(".btn-p4").addClass("rec");
+            $(".btn-p4").removeClass("rec0");
+
+            $(".btn-p5").addClass("rec");
+            $(".btn-p5").removeClass("rec0");
+
+            $(".p20").hide();
+            $(".p20-2").show();
+            break;
+        case 3:
+            $(".btn-p1").addClass("rec");
+            $(".btn-p1").removeClass("rec0");
+
+            $(".btn-p2").addClass("rec");
+            $(".btn-p2").removeClass("rec0");
+
+            $(".btn-p3").removeClass("rec");
+            $(".btn-p3").addClass("rec0");
+
+            $(".btn-p4").addClass("rec");
+            $(".btn-p4").removeClass("rec0");
+
+            $(".btn-p5").addClass("rec");
+            $(".btn-p5").removeClass("rec0");
+
+            $(".p20").hide();
+            $(".p20-3").show();
+            break;
+        case 4:
+            $(".btn-p1").addClass("rec");
+            $(".btn-p1").removeClass("rec0");
+
+            $(".btn-p2").addClass("rec");
+            $(".btn-p2").removeClass("rec0");
+
+            $(".btn-p3").addClass("rec");
+            $(".btn-p3").removeClass("rec0");
+
+            $(".btn-p4").removeClass("rec");
+            $(".btn-p4").addClass("rec0");
+
+            $(".btn-p5").addClass("rec");
+            $(".btn-p5").removeClass("rec0");
+
+            $(".p20").hide();
+            $(".p20-4").show();
+            break;
+        case 5:
+            $(".btn-p1").addClass("rec");
+            $(".btn-p1").removeClass("rec0");
+
+            $(".btn-p2").addClass("rec");
+            $(".btn-p2").removeClass("rec0");
+
+            $(".btn-p3").addClass("rec");
+            $(".btn-p3").removeClass("rec0");
+
+            $(".btn-p4").addClass("rec");
+            $(".btn-p4").removeClass("rec0");
+
+            $(".btn-p5").removeClass("rec");
+            $(".btn-p5").addClass("rec0");
+
+            $(".p20").hide();
+            $(".p20-5").show();
+            break;
+        default:
+            break;
+    }
+}
 
 function crc(num) {
     switch (num) {
@@ -322,7 +403,6 @@ function crc(num) {
             break;
     }
 }
-
 
 function controlSlides(num) {
     switch (parseInt(num)) {

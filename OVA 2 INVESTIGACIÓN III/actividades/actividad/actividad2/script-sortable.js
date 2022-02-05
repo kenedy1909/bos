@@ -54,28 +54,28 @@ var btnCalificarR1 = "#calificar";
 var contenedorAR1 = ".contenedorA";
 var contenedorBR1 = ".contenedorB";
 var contenedorCR1 = ".contenedorC";
-var contenedorDR1 = ".contenedorD";
 var arrOrigenR1 = [
     {
-        code : '<div class="componente margen" data-order-origen="contenedorA" >\n'+
-        '<div class=""><div class=""><img  src="../../../assets/img/img_ova/icono3.png"></div></div>\n'+
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorC" >\n'+
+        '<div class="opcion_circulo_content"><img src="./img/verificacion_antecedentes.png" style="width: 60%; margin-top: -25px;"></div><div class="opcion_circulo_text">Esculcar cada elemento del objeto, situación o fenómeno y describirlo.</div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente margen" data-order-origen="contenedorB" >\n'+
-        '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono1.png"></div></div>\n'+
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorA" >\n'+
+        '<div class="opcion_circulo_content"><img src="./img/reflexion.png" style="width: 50%; margin-left: 10%;"></div><div class="opcion_circulo_text">Son los que hacemos cuando el tema ha sido poco estudiado y no existe mucha información sobre el.</div>\n'+
         '</div>\n'
     },
     {
-        code : '<div class="componente margen" data-order-origen="contenedorC" >\n'+
-        '<div class=""><div class=""><img src="../../../assets/img/img_ova/icono2.png"></div></div>\n'+
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorB" >\n'+
+        '<div class="opcion_circulo_content"><img src="./img/dato.png" style="width: 60%; margin-top: -22px;"></div><div class="opcion_circulo_text">Remite a saber las causas que originan un fenómeno.</div>\n'+
         '</div>\n'
-    },
+        
+    }/*,
     {
-        code : '<div class="componente margen" data-order-origen="contenedorD" >\n'+
-        '<div ><div class=""><img src="../../../assets/img/img_ova/icono4.png"></div></div>\n'+
+        code : '<div class="componente opcion_circulo" data-order-origen="contenedorD" >\n'+
+        '<div class="opcion_circulo_content"><div class="opcion_circulo_text">se recurre al CONTRAEJEMPLO para afirmar que es falsa</div></div>\n'+
         '</div>\n'
-    }
+    }*/
 ];
 var widthR1 = $(window).width();
 var incrementoR1 = 100/arrOrigenR1.length;
@@ -107,20 +107,18 @@ function cerrarPrecarga() {
  
 function reinitREDIR1() {
     jR1 = 0;
-    $(contenedorAR1).html('<h5 class="tituloContenedor tituloContenedorA">Está relacionada con la delimitación de los crímenes que pueden ser investigados por la Corte.</h5>');
-    $(contenedorBR1).html('<h5 class="tituloContenedor tituloContenedorA">Uno de los objetivos de crear la CPI como mecanismo permanente, es que se juzguen los individuos responsables de la comisión de delitos de carácter internacional</h5>');
-    $(contenedorCR1).html('<h5 class="tituloContenedor tituloContenedorA">La Corte tendrá competencia para ejercer sus atribuciones en el territorio de cualquier estado parte en el ER, y en el territorio de otros estados en virtud de acuerdo especial con ese esta</h5>');
-    $(contenedorDR1).html('<h5 class="tituloContenedor tituloContenedorA">La competencia de la Corte para conocer de hechos que puedan ser constitutivos de crímenes internacionales dependerá en primer lugar de la fecha en que el Estatuto haya entrado en vigor frente a cada Estado.</h5>');
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Estudios exploratorios</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>');
     inicioREDIR1();
  }
 
  function reinitREDIR2() {
     jR1 = 0;
-    $(contenedorAR1).html('<h5 class="tituloContenedor tituloContenedorA">Está relacionada con la delimitación de los crímenes que pueden ser investigados por la Corte.</h5>');
-    $(contenedorBR1).html('<h5 class="tituloContenedor tituloContenedorA">Uno de los objetivos de crear la CPI como mecanismo permanente, es que se juzguen los individuos responsables de la comisión de delitos de carácter internacional</h5>');
-    $(contenedorCR1).html('<h5 class="tituloContenedor tituloContenedorA">La Corte tendrá competencia para ejercer sus atribuciones en el territorio de cualquier estado parte en el ER, y en el territorio de otros estados en virtud de acuerdo especial con ese esta</h5>');
-    $(contenedorDR1).html('<h5 class="tituloContenedor tituloContenedorA">La competencia de la Corte para conocer de hechos que puedan ser constitutivos de crímenes internacionales dependerá en primer lugar de la fecha en que el Estatuto haya entrado en vigor frente a cada Estado.</h5>');
-    /*inicioREDIR1();*/
+    $(contenedorAR1).html('<h2 class="tituloContenedor tituloContenedorA">Estudios exploratorios</h2>');
+    $(contenedorBR1).html('<h2 class="tituloContenedor tituloContenedorB">Estudios explicativos</h2>');
+    $(contenedorCR1).html('<h2 class="tituloContenedor tituloContenedorC">Estudios descriptivos</h2>');
+    inicioREDIR1();
  }
 
 function shuffleOrigenR1() {
@@ -148,7 +146,7 @@ function calificarR1() {
     var contenidoAR1 = $(contenedorAR1).find('div'); 
     var contenidoBR1 = $(contenedorBR1).find('div');
     var contenidoCR1 = $(contenedorCR1).find('div');
-    var contenidoDR1 = $(contenedorDR1).find('div');
+    /*var contenidoDR1 = $(contenedorDR1).find('div');*/
 
     contenidoAR1.each(function(){
         if(($(this).attr('data-order-origen') != "contenedorA")){
@@ -177,36 +175,47 @@ function calificarR1() {
         }
     })
 
-    contenidoDR1.each(function(){
+    /*contenidoDR1.each(function(){
         if(($(this).attr('data-order-origen') != "contenedorD")){
             $(origenR1).append($(this).context.outerHTML);
             $(this).remove();
         } else {
             puntajeR1 = puntajeR1 + incrementoR1;
         }
-    })
-
+    })*/
+/*alert(puntajeR1);*/
 
     if(parseInt(puntajeR1) == 100) {
         mensajeR1 = 'Felicitaciones!';
         exitoR1 = true;
-        $('.circulo-naranja').css('background-color', 'transparent');
-        $("#img-circulo").attr("src","../img/img1/bien.png");
-        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
      } else {
         mensajeR1 = 'Sigue intentando!';
          if (widthR1 < 767) {
             exitoR1 = false;
-          
-            $("#img-circulo").attr("src","../img/img1/mal.png");
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          } else {
             exitoR1 = false;
-            $("#img-circulo").attr("src","../img/img1/mal.png");
             mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
          }
 
-     }  
+    }
+    if (parseInt(puntajeR1) == 100) {
+        exitoR1 = true;
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR2());
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; position:relative; top:6px;">');
+      $('.puntaje').text(parseInt(puntajeR1)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;">cerrar</button>');
+    }else{
+        exitoR1 = false;
+        mostrarCalificacion(modalIDR1, parseInt(puntajeR1)+'%', mensajeR1, exitoR1, reinitREDIR1());
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;  background-color: #FFC000;border-radius: 50%;padding:2px; position:relative; top:6px;">');
+      $('.mensaje').text("Inténtelo nuevamente.");
+      $('.puntaje').text(parseInt(puntajeR1)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+    }
+    $("#exampleModal").modal("show");
 }
 
 var activityDragR1 = function () {

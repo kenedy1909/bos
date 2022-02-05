@@ -88,12 +88,6 @@ function slide_link(num){
 
 function controlSlides(num){
     switch (parseInt(num)) {
-        case 0:
-            setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
-            cambiarColorMenu(12);
-            $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 16;
-            break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","De la investigación");
             cambiarColorMenu(12);
@@ -252,8 +246,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             cambiarColorMenu(22);
             $(".i5").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            var elementoPadre1 = document.querySelector(".inputDiv4.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv4.i6");
             var inputsRy = [];  
             var i = new Input2(2);
             i.crear(elementoPadre1);

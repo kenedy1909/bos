@@ -361,7 +361,7 @@
   width: 50px;
   position: relative;
   top: 35px;
-  left: -125px;
+  left: -120px;
 }
 
 .icon-arrow-size{
@@ -439,7 +439,7 @@
 #btn1ImgJuicio {
   top: -3%;
   left: 31%;
-  height: 100px;
+  height: 115px;
 }
 
 #btn2ImgJuicio {
@@ -448,7 +448,7 @@
 }
 
 #btn3ImgJuicio {
-  top: 35%;
+  top: 37%;
   left: 65%;
 }
 

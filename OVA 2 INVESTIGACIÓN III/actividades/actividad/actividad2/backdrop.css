@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'Barmeno';
-    src: url('../fonts/barmeno.woff2') format('woff2'),
-        url('../fonts/barmeno.woff') format('woff');
+    src: url('./../fonts/barmeno.woff2') format('woff2'),
+        url('./../fonts/barmeno.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family:'Barmeno';
-    src: url('../fonts/barmeno_medium.woff2') format('woff2'),
-        url('../fonts/barmeno_medium.woff') format('woff');
+    src: url('./../fonts/barmeno_medium.woff2') format('woff2'),
+        url('./../fonts/barmeno_medium.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Barmeno';
-    src: url('../fonts/barmeno_bold.woff2') format('woff2'),
-        url('../fonts/barmeno_bold.woff') format('woff');
+    src: url('./../fonts/barmeno_bold.woff2') format('woff2'),
+        url('./../fonts/barmeno_bold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
@@ -24,25 +24,25 @@
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: normal;
-    src: url('../fonts/PTS55F-webfont.woff') format('woff');
+    src: url('./../fonts/PTS55F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 400;
     font-style: italic;
-    src: url('../fonts/PTS56F-webfont.woff') format('woff');
+    src: url('./../fonts/PTS56F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 800;
     font-style: normal;
-    src: url('../fonts/PTS75F-webfont.woff') format('woff');
+    src: url('./../fonts/PTS75F-webfont.woff') format('woff');
 }
 @font-face {
     font-family: 'PT Sans';
     font-weight: 800;
     font-style: italic;
-    src: url('../fonts/PTS76F-webfont.woff') format('woff');
+    src: url('./../fonts/PTS76F-webfont.woff') format('woff');
 }
 a {
     color: #49a5aa;
@@ -114,7 +114,7 @@ html{
     }
 }
 .backdrop.actividad{
-    background: #ffffff;
+    background: #ffd200;
 }
 .backdrop.recurso{
     background: #49a5aa;
@@ -125,7 +125,6 @@ html{
 }
 .backdrop header{
     font-size: 1.3em;
-    padding: 20px 40px;
 }
 .backdrop.actividad header{
     background: rgba(255,210,0,.4);
@@ -169,7 +168,7 @@ html{
     overflow: auto;
 }
 .backdrop .fondo {
-    background-image: url(../img/logo-footer.png), url(../img/patron-fondo.png);
+    /*background-image: url(../../img/img3/logo-footer.png), url(../../img/img3/patron-fondo.png);*/
     background-color: #fff;
     position: relative;
     background-repeat: no-repeat, repeat;
@@ -177,34 +176,32 @@ html{
     padding-bottom: 65px;
 }
 .btn-primary{
-    background: white;
+    background: #0075a8;
     border: none;
     border-radius: 0;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     padding: 6px 30px;
-    border-radius: 20px;
-    
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: white;
+    background: #ffd200;
     border: none;
     outline: 0;
 }
 .btn-secundary{
-    background: white;
+    background: #337ab7;
     border: none;
-    border-radius: 20;
-    color: #811111;
+    border-radius: 0;
+    color: #fff;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
     padding: 6px 30px;
 }
 .btn-secundary:active, .btn-secundary:active:focus, .btn-secundary:focus, .btn-secundary:hover{
-    background: white;
+    background: #49a5aa;
     border: none;
-    color: #811111;
+    color: #fff;
     outline: 0;
 }
 .calificacion .modal-content{
@@ -214,26 +211,25 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-    /* height: 386px; */
+    height: 386px;
     width: 300px;
 }
-/* .calificacion .modal-body.exito{
-    background: url('../../img/img1/bien.png') center no-repeat;
+.calificacion .modal-body.exito{
+    background: url('./img/bien.png') center no-repeat;
 }
 .calificacion .modal-body.parcial{
-    background: url('../../img/img1/mal.png') center no-repeat;
-} */
+    background: url('./img/mal.png') center no-repeat;
+}
 .calificacion .modal-body .mensaje{
-    /* background: #fff; */
+    background: #fff;
     border-radius: 8px;
     font-size: 20px;
     line-height: normal;
     margin: 0 25px;
     padding: 5px;
     position: relative;
-    color: white;
 }
-/* .calificacion .modal-body .mensaje:after{
+.calificacion .modal-body .mensaje:after{
     bottom: -30px;
     border-color: #fff transparent transparent;
     border-style: solid;
@@ -241,20 +237,19 @@ html{
     content: "";
     left: calc(50% - 15px);
     position: absolute;
-} */
+}
 .calificacion .modal-body .mensaje .texto-puntaje{
     display: block;
 }
 .calificacion .modal-body .mensaje .puntaje{
     font-size: 1.1em;
     font-weight: bold;
-    
 }
 .calificacion .modal-body.exito .mensaje .puntaje{
-    color: #FFC000;
+    color: #8eb936;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #FFC000;
+    color: #ad123c;
 }
 @keyframes wobble {
     0% {
@@ -309,98 +304,26 @@ html{
     text-align: center;
 }
 
-
-
 .divcerrar {
-	position: relative;
-    top: -20px;
-    left: 94%;
-}
-
-
-.modal-content {
     position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    pointer-events: auto;
-    background-clip: padding-box;
-    border: 1px solid;
-    border-radius: 22px;
-    outline: 0;
-    /* background-color: transparent; */
-    border-color: rgba(0, 0, 21, 0.0);
-}
-.card-container, .front, .back {
-    width: 100%;
-    height: auto;
-    border-radius: 22px;
-    background: #771E18;
-}
-.card-container {
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
-}
-
-.card .user {
-    border-radius: 50%;
-    display: block;
-    height: 120px;
-    margin: -70px auto 0;
-    overflow: hidden;
-    width: 120px;
-    background: #999999;
-    border: 3px solid white;
-}
-.card .content {
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-    padding: 10px 20px 20px;
-}
-.card .user img {
-    background: none;
-    display: block;
-    margin: 5px auto;
-    max-width: 97%;
-    position: relative;
-    padding: 7px;
-    
-    
-    /* border: 5px solid yellow; */
-}
-.card .cover {
-    height: 105px;
-    overflow: hidden;
-    border-radius: 22px 22px 0 0;
-    background: #420F0F;
-}
-.modal-dialog {
-    max-width: 500px;
-    margin: 1.75rem auto;
-}
-
+    top: -16px;
+    left: 92%;
+    }
 .x-modal{
-    background: #771E18;
+    background: #811111;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
-  }
-  
-  .x-modal-text{
+}
+      
+.x-modal-text{
     display: block;
     margin: auto;
-  }
-  .circulo-naranja{
-    background-color: #FFC000;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+}
+      
+.x-modal-text b {
+    font-size: 30px;
     position: relative;
-    left: 7px;
-    top: 2px;
-  }
+   
+}

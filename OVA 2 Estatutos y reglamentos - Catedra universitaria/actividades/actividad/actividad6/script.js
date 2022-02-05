@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function() {
 
-            this.palabras[0] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[1] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[2] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[3] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[4] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[5] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[6] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[7] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
-            this.palabras[8] = ['codigo-de-etica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[0] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[1] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[2] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[3] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[4] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[5] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[6] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[7] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
+            this.palabras[8] = ['codigodeetica', 'Conjunto de principios funcionales los cuales están relacionados a la conducta profesional'];
 
             return this.palabras;
 
