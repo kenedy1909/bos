@@ -174,13 +174,28 @@ QuestionsSameAnswers.prototype.score =  function () {
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
-        exito = true;
-        mensaje = "¡Felicitaciones!"
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;position:relative; top:6px;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -44px;">cerrar</button>');
+    }else if (puntaje >= 75 && puntaje < 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; position:relative; top:6px;"">');
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -44px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 90%; background-color: #FFC000;border-radius: 50%;padding:2px; position:relative; top:6px;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: -44px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }
-    registrarActividad(puntaje);
-    mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
-        self.reset(form);
-    });
+    $("#exampleModal").modal("show");
+}
+
+function reload(){
+    location.reload();
 }
 
 QuestionsSameAnswers.prototype.prepare_files =  function () {

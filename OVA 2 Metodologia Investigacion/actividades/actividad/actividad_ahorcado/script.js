@@ -3,7 +3,7 @@ $(document).on('ready', init_recurso_1);
 function init_recurso_1() {
     $('#modal-ahorcado').hide();
     var common = {
-        msg: "vsdf",
+        msg: "vsdf", 
         valorRandom: function (minimo, maximo) {
             return Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
         },
@@ -383,13 +383,21 @@ function init_recurso_1() {
                 $('#modal-ahorcado').addClass("intentar");
                 $('#modal-ahorcado').modal("show");
                 ahorcado.reiniciar();*/
-                var modalID = "#calificacionModal";
+                /*var modalID = "#calificacionModal";
                 var exito = false;
-                var mensaje = "Inténtalo nuevamente.";
+                var mensaje = "Inténtalo nuevamente.";*/
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
-                    
-                });
+                /*mostrarCalificacion(modalID, '0%', mensaje, exito, function () {
+                
+                });*/
+                var puntaje = 0;
+                
+                $('.img_res').html('<img src="img/mal.png" style="max-width: 90%;">');
+                $('.mensaje').text("Inténtalo nuevamente.");
+                $('.puntaje').text(Math.round(puntaje)+"%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+                
+                $("#exampleModal").modal("show");
             }
         } else {
             ahorcado.dibujarTodo();
@@ -400,17 +408,26 @@ function init_recurso_1() {
                 for (var b = 0; b < btn.length; b++) {
                     btn[b].setAttribute("disabled", "disabled");
                 }*/
-                var modalID = "#calificacionModal";
+                /*var modalID = "#calificacionModal";
                 var exito = true;
-                var mensaje = "¡Felicitaciones";
+                var mensaje = "¡Felicitaciones";*/
                 // registrarActividad(puntaje);
-                mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
+                /*mostrarCalificacion(modalID, '100%', mensaje, exito, function () {
                     
-                });
+                });*/
+                    
+                var puntaje = 100;
+
+                $('.img_res').html('<img src="img/bien.png" style="max-width: 90%;margin-top: 5%;">');
+                $('.puntaje').text(puntaje+"%");
+                $('.mensaje').text("¡Felicitaciones!");
+                $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 15px;" onclick="reload()">cerrar</button>');
+                
+                $("#exampleModal").modal("show");
             }
         }
     };
-
+    
     Ahorcado.prototype.gano = function () {
 
         var flag = true;

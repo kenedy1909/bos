@@ -133,6 +133,7 @@ function controlSlides(num) {
         case 2:
             $('.pasos').removeClass('efectos');
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Método hipotético");
+            cambiarColorMenu(11);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -140,19 +141,22 @@ function controlSlides(num) {
         case 3:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            cambiarColorMenu(21);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            cambiarColorMenu(21);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 5:
             paraIframe(0);
-            setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Actividad");
+            setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición ", "Tipos de conocimiento");
+            cambiarColorMenu(21);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -166,7 +170,8 @@ function controlSlides(num) {
             scroll();
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición", "Función social de la universidad");
+            setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición", "Tipos de conocimiento");
+            cambiarColorMenu(21);
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
@@ -181,6 +186,7 @@ function controlSlides(num) {
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');
             $(".menu4").addClass('d-none');
+            $(".ov-personaje").show();
 
             tema = 1;
             break;
@@ -188,6 +194,7 @@ function controlSlides(num) {
             break;
     }
 }
+
 
 
 function scroll_p10() {

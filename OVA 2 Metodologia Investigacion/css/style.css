@@ -15557,6 +15557,14 @@ html:not([dir="rtl"]) .float-left {
   height: 100% !important;
 }
 
+.h-150 {
+  height: 150% !important;
+}
+
+.h-220px {
+  height: 220px !important;
+}
+
 .h-auto {
   height: auto !important;
 }
