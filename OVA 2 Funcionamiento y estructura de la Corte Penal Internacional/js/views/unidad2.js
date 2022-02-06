@@ -98,13 +98,13 @@ function controlSlides2(num){
         case 1:
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
-                                  <a href="assets/PDF/UNIDAD2/4. Srebrenica_El_camino_a_un_genocidio.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i>Srebenica: el camino a un genocidio.pdf</a>
+                                  <a href="assets/PDF/UNIDAD2/4. Srebrenica_El_camino_a_un_genocidio.pdf" target="_blank"> <img  src="assets/img/img_ova/pdf-gris.png"style="top: -5px;position: relative;">Srebenica: el camino a un genocidio.pdf</a>
                               </p>
                               <p class="p_white size_20">
-                              <a href="assets/PDF/UNIDAD2/Caso Almonacid Arellano y otros Vs. Chile.pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i> Caso Almonacid Arellano contra Chile.pdf</a>
+                              <a href="assets/PDF/UNIDAD2/Caso Almonacid Arellano y otros Vs. Chile.pdf" target="_blank"> <img  src="assets/img/img_ova/pdf-gris.png"style="top: -5px;position: relative;"> Caso Almonacid Arellano contra Chile.pdf</a>
                           </p>
                           <p class="p_white size_20">
-                          <a href="assets/PDF/UNIDAD2/5. Amicus Curiae Violencia Sexual (1).pdf" target="_blank"> <i class="fas fa-file-pdf fa-2x mr-2"></i> Amicus Curiae Violencia Sexual.pdf</a>
+                          <a href="assets/PDF/UNIDAD2/5. Amicus Curiae Violencia Sexual (1).pdf" target="_blank"> <img  src="assets/img/img_ova/pdf-gris.png"style="top: -5px;position: relative;"> Amicus Curiae Violencia Sexual.pdf</a>
                       </p>
                             </div>`;
             $('.pdfs').html(pdf);

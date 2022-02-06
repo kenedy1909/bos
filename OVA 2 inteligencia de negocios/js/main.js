@@ -160,9 +160,10 @@ $('.link-menu-tema').off('click').on('click', function(evt){
         numerador = 1;
     }else if(enlace == "unidad2"){
         numerador = 2;
-    }
-    else if(enlace == "unidad3"){
+    }else if(enlace == "unidad3"){
         numerador = 3;
+    }else if(enlace == "unidad4"){
+        numerador = 4;
     }
     $(".sub"+numerador).removeClass('tema_activo');
     $(".sub"+numerador+"_"+tema).addClass('tema_activo');

@@ -46,15 +46,14 @@
     flex-wrap: wrap;
     justify-content: center;
     z-index: 2;
+    width: 100%;
 }
 
 .redi1 .componente {
     cursor: pointer;
     line-height: 1.15;
     transition: transform 0.1s;
-    max-width: 200px;
-    width: calc(16% - 35px);
-    min-width: max-content;
+    width: 35%;
     min-height: max-content;
     margin: 10px;
     padding: 10px;
@@ -86,11 +85,11 @@
     border: 2px dashed #8bd146;*/
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .redi1 .componente img {
         max-width: 120px;
     }
-}
+}*/
 
 h2.tituloContenedor {
     position: absolute;
@@ -101,8 +100,8 @@ h2.tituloContenedor {
     margin: 0;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    min-height: 74px;
-    display: flex;
+    height: 94px;
+    overflow: auto;
     justify-content: center;
     align-items: center;
 }
@@ -146,7 +145,7 @@ h2.tituloContenedorE {
 .redi1 .contenedorC,
 .redi1 .contenedorD,
 .redi1 .contenedorE {
-    min-height: 380px;
+        height: 200px;
     transform: scale(1);
     transition: transform .3s;
     border-radius: 20px;
@@ -241,7 +240,7 @@ h2.tituloContenedorE {
 
 /*-- Fin Maquetación --*/
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .redi1 .listaComponentes .componente {
         min-width: max-content;
         font-size: 16px;
@@ -261,7 +260,7 @@ h2.tituloContenedorE {
     .componentesDestino__content {
         width: 100%;
     }
-}
+}*/
 
 
 /*-- Ajuste btn calificar --*/
@@ -350,4 +349,32 @@ h2.tituloContenedorE {
 }
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.container-draggable .componente{
+        width: 60% !important;
 }

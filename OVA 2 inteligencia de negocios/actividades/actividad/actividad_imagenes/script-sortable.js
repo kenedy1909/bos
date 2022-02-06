@@ -19,10 +19,10 @@ function shuffle(a) {
 //Funcion que la responsabilidad mostrar en un modal la calificación obtenida en la actividad
 function mostrarCalificacion(modalID, puntaje, mensaje, exito, resetcallback) {
     //console.log('se llamo el modal');
-    $(modalID).find('.texto-puntaje').text(mensaje);
-    $(modalID).find('.puntaje').text(puntaje);
+    /*$(modalID).find('.texto-puntaje').text(mensaje);
+    $(modalID).find('.puntaje').text(puntaje);*/
     //Si es exitoso se muestra el boton cerrar de lo contrario el boton intentar nuevamente.
-    $(modalID).find('.mensaje').removeClass('animated wobble');
+    /*$(modalID).find('.mensaje').removeClass('animated wobble');
     if (exito) {
         $(modalID).find('.modal-body').removeClass('parcial');
         $(modalID).find('.modal-body').addClass('exito');
@@ -33,6 +33,19 @@ function mostrarCalificacion(modalID, puntaje, mensaje, exito, resetcallback) {
         $(modalID).find('.modal-body').addClass('parcial');
         $(modalID).find('.calificacion-intentar').removeClass('hide').on('click', resetcallback);
         $(modalID).find('.calificacion-cerrar').addClass('hide');
+    }*/
+    if (exito) {
+          $('.img_res').html('<img src="img/bien.png" style="max-width: 80%; margin-top: 10%;margin-left: 1px;">');
+          $('.puntaje').text(puntaje);
+          $('.mensaje').text("¡Felicitaciones!");
+          $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 22px;color: #da2316;font-weight: bold;margin-top: -15px;width: 20%;">cerrar</button>');
+          $("#exampleModal").modal("show");
+    }else{
+          $('.img_res').html('<img src="img/mal.png" style="max-width: 80%;margin-top: 10%;margin-left: 1px;">');
+          $('.mensaje').text("Inténtalo nuevamente.");
+          $('.puntaje').text(puntaje);
+          $('.btns_modal').html('<button style="font-size: 20px;color: #da2316;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+          $("#exampleModal").modal("show");
     }
     setTimeout(function(){
         $(modalID).modal({

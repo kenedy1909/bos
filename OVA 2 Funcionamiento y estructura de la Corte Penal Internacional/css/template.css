@@ -27,11 +27,10 @@ iframe{
   left: -63px;
   z-index: 1;
 }
-.divcerrar{
+.divcerrar {
   position: relative;
-  top: -25px;
-  left: 20px;
-  
+  top: -16px;
+  left: 9px;
 }
 .img_closeds{
   width: 60px;
@@ -259,7 +258,8 @@ iframe{
   margin: -70px auto 0;
   overflow: hidden;
   width: 150px;
-  background: white;
+  background: #999999;
+  border: 4px solid white;
 }
 .card .user img{
   background: none;
