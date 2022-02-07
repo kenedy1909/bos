@@ -1,4 +1,9 @@
 $( document ).ready(function() {
+   
+
+
+
+   
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
@@ -116,6 +121,8 @@ document.addEventListener("keydown",
     }
 );
 
+
+
 function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
@@ -155,6 +162,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            
 
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
@@ -165,14 +173,14 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            
             break;
         case 7:
             
@@ -180,7 +188,7 @@ function controlSlides(num){
             
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
-
+            
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","3. El principio de la jurisdicción universal","Evolución y aplicación");
@@ -362,7 +370,13 @@ function eichmann(num) {
 
 function pinochet(num) {
     if (num == 1) {
-        $("#pinochet").html('');
+        var texto = `
+        <div class="d-flex centrar h-100">
+         
+          <audio src="assets/audios/pinochet1.mp3" id="audio1" class="audio1 audio" controls="controls" type="audio/mpeg" preload="preload"></audio>
+        </div>
+  `;
+        $("#pinochet").html(texto);
     }else if (num == 2) {
         var texto = `
                    
@@ -394,7 +408,12 @@ function pinochet(num) {
                                 <div class="m-auto">
                                 <button class="p_white bg-cafe-activi btn p-2 m-auto" > <a href="http://www.derechos.net/doc/pino/lores1.html" target="_blank"><b>DOCUMENTO</b> </a></button>
                                 </div>
-                          </div>
+                               
+                            </div>
+                            <div class="d-flex h-100 mt-3">
+                                <audio src="assets/audios/pinochet2.mp3" id="audio2" class="audio2 audio" controls="controls" type="audio/mpeg" preload="preload"></audio>
+                            </div>
+                                                
                           </div>
                         </div>
                    
@@ -402,18 +421,30 @@ function pinochet(num) {
         $("#pinochet").html(texto);
     }else if (num == 3) {
         var texto = `
-                          <div class="d-flex h-100">
-                            <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-actividad"><b>VER ACTIVIDAD</b></button>
-                          </div>
+                    <div class="d-flex centrar h-100">
+                        <audio src="assets/audios/pinochet3.mp3" id="audio3" class="audio3 audio" controls="controls" type="audio/mpeg" preload="preload"></audio>
+                    </div>
                     `;
         $("#pinochet").html(texto);
     }
     else if (num == 4) {
         var texto = `
-                          <div class="d-flex h-100">
-                            <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-actividad"><b>Audio</b></button>
-                            <audio src="../music/woman.mp3" controls="controls" type="audio/mpeg" preload="preload"></audio>
-                          </div>
+                    <div class="d-flex centrar h-100">
+                        <audio src="assets/audios/pinochet4.mp3" id="audio4" class="audio4 audio" controls="controls" type="audio/mpeg" preload="preload"></audio>
+                    </div>
+                    `;
+        $("#pinochet").html(texto);
+    }
+    else if (num == 5) {
+        var texto = `
+                    <div class="mt-1" style="position: relative;top: 30%;">
+                        <div class="d-flex centrar">
+                            <audio src="assets/audios/pinochet5.mp3" id="audio5" class="audio5 audio" controls="controls" type="audio/mpeg" preload="preload"></audio>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-actividad"><b>VER ACTIVIDAD</b></button>
+                        </div>
+                    </div>
                     `;
         $("#pinochet").html(texto);
     }
