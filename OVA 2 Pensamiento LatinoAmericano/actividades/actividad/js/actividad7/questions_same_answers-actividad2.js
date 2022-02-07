@@ -171,7 +171,7 @@ QuestionsSameAnswers.prototype.score = function() {
     };
 
     var puntaje = ((points * 100) / total).toFixed(0);
-    var modalID = "#exampleModal";
+    var modalID = "#calificacionModal";
     var exito = false;
     var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {

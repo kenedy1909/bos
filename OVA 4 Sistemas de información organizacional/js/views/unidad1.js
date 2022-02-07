@@ -33,6 +33,16 @@ $(document).ready(function() {
         slide();
     });
 
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
+
     $("[data-toggle='toggle']").click(function() {
         var selector = $(this).data("target");
         $(selector).toggleClass('in');
