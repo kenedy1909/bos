@@ -492,13 +492,27 @@ p, button{
   -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
   width: 490px;
 }
-.fondo-7{
+/* .fondo-7{
   background-image: url(../assets/img/img_ova/pinochet.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 400px;
   background-position: center;
   border-radius: 17%;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
+} */
+.fondo-7{
+  background-image: url(../assets/img/img_ova/pinochet.jpg);
+  background-size: 136%;
+  background-repeat: no-repeat;
+  min-height: 359px;
+  background-position: center;
+  border-radius: 30px;
+  left: 10px;
+  position: relative;
+  z-index: 1;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0,0,0,0.2));
+  width: 490px;
 }
 
 .circulo-cafe-1{
@@ -631,6 +645,11 @@ p, button{
   overflow: hidden;
 }
 
+.centrar{
+  justify-content: center;
+    align-items: center;
+}
+
 .eichmann{
   min-height: 500px; 
   position: relative;
@@ -638,6 +657,8 @@ p, button{
    top: -23px;
 
 }
+
+
 @media screen and (max-width: 1366px) {
   .eichmann{
     left: -78px;
