@@ -1,6 +1,5 @@
 // Arreglo de palabras indicando la posición de su inicio, su sentido (vertical u horizontal),
 // la palabra en cuestión y la pista que se presenta al usuario
-
 // 1 vertical
 // 0 horizontal
 var cont = 0;
@@ -45,7 +44,7 @@ const empty = {
     empty: true
 }
 
-new Vue({
+var app = new Vue({
     el: '#app',
     data() {
         return {
