@@ -255,7 +255,7 @@
     border-radius: 30px;
     position: relative;
     top: -43px;
-    height: 220px;
+    height: 235px;
 }
 
 .indicador1-1 {
@@ -408,7 +408,7 @@
     padding: 20px;
     border-radius: 30px;
     height: 222px;
-    width: 620px;
+    width: 100%;
 }
 
 .cuadro-blue {
@@ -467,7 +467,7 @@
     position: relative;
     margin: 0;
     padding: 0;
-    height: 700px;
+    height: 580px;
     list-style: none;
 }
 
@@ -478,7 +478,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 800px;
+    height: 580px;
     text-align: center;
 }
 
@@ -567,4 +567,22 @@ a.control_next {
     box-shadow: none;
     padding: 10px 20px 20px;
     border-radius: 0px 0px 30px 30px;
+}
+
+@media only screen and (min-width:1280px) {
+    .img_content1 {
+        margin-top: 5px !important;
+        width: 85% !important;
+    }
+    .img_content2 {
+        margin-top: 5px !important;
+        width: 85% !important;
+    }
+    .img_content3 {
+        margin-top: 5px !important;
+        width: 85% !important;
+    }
+    .img_content4 {
+        width: 70% !important;
+    }
 }

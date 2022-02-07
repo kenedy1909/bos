@@ -45,9 +45,14 @@ $( document ).ready(function() {
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         
         console.log(e);
-        controlSlides(stepIndex);
+        if (tema != 0) {
+            controlSlides(tema+1);
+            tema = 0;
+        } else {
+            controlSlides(stepIndex+1);
+        }
         // quitarflecha(stepIndex+1);
-        actualizarprogress(stepIndex+31+1);
+        // actualizarprogress(stepIndex+1);
         switch(stepIndex) {
             case 1:
                 break;
@@ -108,7 +113,7 @@ function hoverp42(argument) {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
-    actualizarprogress(stepIndex+31+1);
+    // actualizarprogress(stepIndex+31+1);
 }
 
 function slide_predeterminado(){
@@ -126,11 +131,13 @@ function slide_link(num){
 }
 
 function controlSlides(num){
+    actualizarprogress(num);
     slideCount = "";
     slideWidth = "";
     slideHeight = "";
     slider_num = "";
     switch (parseInt(num)) {
+        
         case 0:
             setMigaja("Unidades de aprendizaje","2. Subjetividad e identidad","Ser o tener");
             cambiarColorMenu(12);
