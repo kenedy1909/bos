@@ -281,3 +281,7 @@ function funcionalidad_19(num) {
         $(".fun_19_text_6").removeClass('d-none');
     }
 }
+
+$(".modal").on('hidden.bs.modal', function() {
+    $(".c-app").css("padding", "0px");
+});
