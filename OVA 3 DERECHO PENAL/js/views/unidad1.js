@@ -137,6 +137,17 @@ $( document ).ready(function() {
         $('.hoverTriangulo6').addClass('hidden');
     });
   /* ------------------- */
+
+
+    $(".modal").on('hidden.bs.modal', function() {
+      detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
 });
 var pdf = `<div class="col-md-12">
               <p class="p_white">
@@ -426,6 +437,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. La responsabilidad en el Derecho Penal Internacional","Responsabilidad del superior");
             $('.menu1').removeClass('d-none');
             $('.menu1').addClass('c-show');
+            document.getElementById("actividad17").contentDocument.location.reload(true);
             cambiarColorMenu(31);
             break;
         case 21:
