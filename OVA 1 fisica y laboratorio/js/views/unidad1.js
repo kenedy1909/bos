@@ -128,6 +128,7 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");
             break;
         case 8:
+            document.getElementById("actividad17").contentDocument.location.reload(true);
             $('.tema2').removeClass('team_activo');
             $('.tema1').addClass('team_activo');
             setMigaja("Unidades de aprendizaje","1. Conceptos fundamentales","Magnitudes físicas y análisis dimensional");

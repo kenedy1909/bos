@@ -630,7 +630,7 @@ function rec() {
                 </div>`
         );
     } else if (rec_num == 2) {
-        $("#rec").html('<p class="text-center p_black offset-md-2 mt-5">Clic en la imagen para mejor visualización.</p><img src="assets/img/img_ova/infografia1.png" style="max-width: 70%; margin-left: 10%;" data-toggle="modal" data-target="#modal-img-2">');
+        $("#rec").html('<p class="text-center p_black offset-md-2 mt-5">Clic en la imagen para mejor visualización.</p><img src="assets/img/img_ova/infografia1.svg" style="width: 80%; margin-left: 5%; margin-top: 5%;" data-toggle="modal" data-target="#modal-img-2">');
     } else if (rec_num == 3) {
         $("#rec").html(
             `
@@ -742,7 +742,7 @@ function circlerec(num) {
         case 2:
             var cont = `
             <p class="text-center p_black offset-md-2 mt-5 mb-2">Clic en la imagen para mejor visualización.</p>
-            <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-1-1" style="max-width: 90%;">`;
+            <img src="assets/img/img_ova/comentario3.png" data-toggle="modal" data-target="#modal-img-1-1" style="max-width: 90%; margin-left: 5%;">`;
             $('.imprime').html(cont);
             $('.circulo_verde').removeClass('active');
             $('.dos').addClass('active');
