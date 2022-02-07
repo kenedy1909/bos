@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-
+ 
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -140,6 +140,10 @@ function slide_link(num){
     $('#smartwizard').smartWizard("goToStep", num-1);
     controlSlides(num);
 }
+let video = document.getElementById("infografia-video"); 
+function pauseVid() { 
+  video.pause(); 
+} 
 
 function controlSlides(num){
     switch (parseInt(num)) {
@@ -149,6 +153,7 @@ function controlSlides(num){
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");  
+            pauseVid();
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1.Geometría plana","Conceptos y definiciones básicas");
@@ -1329,3 +1334,6 @@ function menuB(params) {
   $('.menu-b').addClass('menuSelect');
   $('.menu-a').removeClass('menuSelect');
 }
+
+
+
