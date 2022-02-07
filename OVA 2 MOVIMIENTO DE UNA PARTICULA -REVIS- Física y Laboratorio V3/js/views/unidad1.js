@@ -282,7 +282,7 @@ function controlSlides(num) {
 
                 $('#slider4').css({ width: '100%', height: '150px' });
 
-                $('#slider4 ul').css({ width: '90%' });
+                $('#slider4 ul').css({ width: '100%' });
 
                 $('#slider4 ul li:last-child').prependTo('#slider4 ul');
 
