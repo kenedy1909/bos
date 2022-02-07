@@ -44,6 +44,16 @@ $( document ).ready(function() {
     var newTop = "";
     var scrollOffset = "";
     
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
+    
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
