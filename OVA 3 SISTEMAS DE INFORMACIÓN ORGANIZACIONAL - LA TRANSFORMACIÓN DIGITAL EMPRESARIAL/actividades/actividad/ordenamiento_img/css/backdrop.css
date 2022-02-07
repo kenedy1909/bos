@@ -55,7 +55,7 @@ body {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
     color: #666;
-    height: 100%;
+    height: fit-content;
 }
 button.close{
     background: #ad123c;
@@ -107,10 +107,12 @@ html{
     -webkit-transition: all .8s;
     transition: all .8s;
     z-index: 1002;
+    height: fit-content;
 }
 @media (max-width: 767px) {
     .backdrop {
         padding: 5px;
+    height: fit-content;
     }
 }
 .backdrop.actividad{
@@ -174,7 +176,7 @@ html{
     position: relative;
     background-repeat: no-repeat, repeat;
     background-position: right 15px bottom 10px, top left;
-    padding-bottom: 65px;
+    /*padding-bottom: 65px;*/
 }
 .btn-primary{
     background: #0075a8;
