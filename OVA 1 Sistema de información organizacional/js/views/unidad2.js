@@ -20,27 +20,27 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    // $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
-    //     slide();
-    //     // EditarLocation(getPos());
-    //     // actualizarprogress(stepIndex+11);
-    //     console.log(e);
-    //     switch(stepIndex) {
-    //         default:
-    //         // code block
-    //     }
-    // });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // EditarLocation(getPos());
+        // actualizarprogress(stepIndex+11);
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
  
     $('#zoom_img1').elevateZoom({zoomWindowPosition: 10});
     $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
-        slide();
+        slide(0);
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
-        slide();
+        slide(0);
     });
     slide_predeterminado();
     var knob = "";
@@ -89,6 +89,21 @@ function slide(){
     actualizarprogress(stepIndex+1+10);
 }
 
+// function slide(num) {
+//     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
+//     controlSlides(stepIndex );
+//     // quitarflecha(stepIndex + 1);
+//     actualizarprogress(stepIndex + 1 + 10);
+//     if (num == 1) {
+//         controlSlides(stepIndex );
+//         actualizarprogress(stepIndex + 1 + 10);
+//     } else {
+//         controlSlides(stepIndex );
+//         // quitarflecha(stepIndex + 1);
+//         actualizarprogress(stepIndex + 1 + 10);
+//     }
+// }
+
 function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
@@ -105,11 +120,11 @@ function slide_link(num){
 
 function controlSlides(num){
     switch (parseInt(num)) {
-        case 0:
-            setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
-            $("#content-ova").load("base/unidades/unidad1.html");
-            tema = 10;
-            break;
+        // case 0:
+        //     setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
+        //     $("#content-ova").load("base/unidades/unidad1.html");
+        //     tema = 10;
+        //     break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Tribunales internacionalizados","El desarrollo del los conflictos armados");
             break;

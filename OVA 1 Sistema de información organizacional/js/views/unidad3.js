@@ -84,14 +84,23 @@ function slide_link3(num){
     $('#smartwizard').smartWizard("goToStep", num -1);
     controlSlides3(num);
 }
-
+$("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+    slide();
+    // EditarLocation(getPos());
+    // actualizarprogress(stepIndex+11);
+    // console.log(e);
+    switch(stepIndex) {
+        default:
+        // code block
+    }
+});
 function controlSlides3(num){
     switch (parseInt(num)) {
-        case 0:
-            setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
-            $("#content-ova").load("base/unidades/unidad2.html");
-            tema = 17;
-            break;
+        // case 0:
+        //     setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
+        //     $("#content-ova").load("base/unidades/unidad2.html");
+        //     tema = 17;
+        //     break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. El CRM y el ERP",">");
             break;
