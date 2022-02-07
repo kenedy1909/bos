@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <div class="backdrop in">
+    <div class="backdrop in" style="overflow: hidden;">
         <div class="fondo">
             <header>
                 <div class="" style="display: flex;">
                     <div class="" style="width: 45%;display: inline-block;">
                         <div class="" style="width: 90%;display: flex;">
                           <div style="display: inline-block;width: 50%;"><img src="../img/img9/actividad_interactiva.png" alt="" style="width: 120px;/* display: inline-block; */height: 120px;"></div>
-                          <div class="text-center" style="font-size: 20px;display: inline-block;width: 48%;margin-top: 1px;height: 140px;position: relative;top: 25px;">
-                            <b class="" style="color: #9f4c97;">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px;background: #9f4c97;"></div>
+                          <div class="text-center" style="font-size: 22px;display: inline-block;width: 48%;margin-top: 1px;height: 140px;position: relative;top: 25px;">
+                            <b class="" style="color: #9F4C97;">ACTIVIDAD INTERACTIVA</b>
+                            <div style="height: 5px;background: #9F4C97;"></div>
                             <i><p class="text-muted">AHORCADO</p></i>
                           </div>
                         </div>
                     </div>
-                    <div class="" style="display: inline-block;width: 55%;">
-                        <p class="info_actividad shadow" style="background: #DDEAF6; border-radius: 25px; padding: 1em; color: black; box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 15%) !important;">
+                    <div class="" style="display: inline-block;width: 60%;">
+                        <p class="info_actividad shadow text-justify" style="background: #DDEAF6; border-radius: 25px; padding: 1em; color: black; box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 15%) !important; font-size: 20px;">
                             Haga clic a las letras para formar la frase que corresponda con la definición y evite formar la figura de ahorcado.
                         </p>
                     </div>
@@ -39,7 +39,7 @@
             </header>
             <div class="contenido" id="recurso2">
                 <div class="definicion">
-                    <h2 class="pista_titulo">Definición:</h2>
+                    <h2 class="pista_titulo">PISTA:</h2>
                     <div id="pista_palabra"></div>
                 </div>
                 <div>
@@ -74,16 +74,35 @@
                     </div>
                 </div>
 
-                <div id="modal-ahorcado" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <div id="texto-modal"></div>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document" style="    margin-top: 25%;">
+                        <div class="modal-content tranparente" style="">
+                            <div style="" class="principal_modal">
+                                <div style="" class="cabeza">
+
+                                </div>
+                                <div class="d-flex justify-content-center" style="justify-content: center;">
+                                    <div style="" class="circulo_modal img_res">
+
+                                    </div>
+                                </div>
+                                <div style="padding: 10px; margin-left: 17%; margin-top: -37px;">
+                                    <div style="color: white;font-size: 20px;display: flex;">
+                                        Su puntaje es: <p class="puntaje" style="font-size: 30px;font-weight: bold;margin-left: 9px;margin-top: -5px; color: black;"></p>
+                                    </div>
+                                    <div style="color: white;font-size: 20px;">
+                                        <p class="mensaje" style="text-align: left;"></p>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                                </div>
                             </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

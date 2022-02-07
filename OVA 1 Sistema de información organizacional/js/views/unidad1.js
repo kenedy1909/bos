@@ -24,7 +24,7 @@ $( document ).ready(function() {
         slide();
         // EditarLocation(getPos());
         // actualizarprogress(stepIndex+1);
-        console.log(e);
+        // console.log(e);
         switch(stepIndex) {
             default:
             // code block
@@ -74,6 +74,21 @@ function slide(){
     controlSlides(stepIndex+1);
     actualizarprogress(stepIndex+1);
 }
+
+// function slide(num) {
+//     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
+//     // controlSlides(stepIndex + 1);
+//     // quitarflecha(stepIndex + 1);
+//     // actualizarprogress(stepIndex + 1);
+//     if (num == 1) {
+//         controlSlides(stepIndex + 1);
+//         actualizarprogress(stepIndex + 1);
+//     } else {
+//         controlSlides(stepIndex + 1);
+//         // quitarflecha(stepIndex + 1);
+//         actualizarprogress(stepIndex + 1);
+//     }
+// }
 
 function slide_predeterminado(){
     $(".nav-link").removeClass('done');

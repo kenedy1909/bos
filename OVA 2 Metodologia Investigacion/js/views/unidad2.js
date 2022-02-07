@@ -1,4 +1,13 @@
 $( document ).ready(function() {
+
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu2").addClass('c-show');
+    $(".menu1").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+
+    star_uni = 2;
     
     console.log(tema);
     
@@ -156,6 +165,9 @@ function controlSlides2(num){
         case 11:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
             /*$("#content-ova").load("base/unidades/unidad3.html");*/
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $( ".ov-personaje").show();
             tema = 1;
             break;
         default:
@@ -516,8 +528,8 @@ function contenido2_3(num) {
 function pantalla2_5(num){
     switch(parseInt(num)){
         case 1:
-            var text = `<div><p>Clarke, S.P., Sloane, D.M. y Aiken, L.H. (2002), Effects of hospital staffing and organizational climate on needlestick injuries to nurses, Am J Public Health, 92(7):1115·1119.</p><br>
-                        <p>En esta investigación con enfermeros(as) se encontró que el clima afecta la productividad y la calidad del servicio a nivel personal. EI estudio incluyó datos retrospectivos de 732 enfermeros(as) y prospectivos de 960.</div>`;
+            var text = `<div><p class="mt-4">Clarke, S.P., Sloane, D.M. y Aiken, L.H. (2002), Effects of hospital staffing and organizational climate on needlestick injuries to nurses, Am J Public Health, 92(7):1115·1119.</p><br>
+                        <p class="mt-2">En esta investigación con enfermeros(as) se encontró que el clima afecta la productividad y la calidad del servicio a nivel personal. EI estudio incluyó datos retrospectivos de 732 enfermeros(as) y prospectivos de 960.</div>`;
             $('.banner2_5').html(text);
             $('.tria1').css({ "visibility": "visible"});
             $('.tria2').css({ "visibility": "hidden"});
@@ -630,13 +642,13 @@ function principal2_5(num){
                               </div>
                               
                               <div class="col-md-12 mt-5 pantminis" style="height: 240px;">
-                                <b>Cita bibliográfica:</b>
-                                <p>Spurgeon, P.; Hicks, C. y Terry, R. (1983), "A preliminary investigation into sex differences in reported friendship determinants among a group of early adolescents", in The British Journal of Sodal Psychology, vol. 22. pp. 63-64.</p>
+                                <b class="p_black">Cita bibliográfica:</b>
+                                <p class="p_black">Spurgeon, P.; Hicks, C. y Terry, R. (1983), "A preliminary investigation into sex differences in reported friendship determinants among a group of early adolescents", in The British Journal of Sodal Psychology, vol. 22. pp. 63-64.</p>
                               </div>
 
                               <div class="row">
                                   <div class="col-md-4">
-                                    <p>De clic en los círculos para avanzar</p>
+                                    <p class="p_black" style="font-size: 14px; margin-top: -2%;">De clic en los círculos para avanzar</p>
                                   </div>
                                   <div class="col-md-4 d-flex justify-content-center">
                                     <div class="btn_circlewhite cursor btn2_1 btn_min" onclick="pantallasmin(1)"></div>
@@ -659,8 +671,8 @@ function principal2_5(num){
 function pantallasmin(num){
     switch(parseInt(num)){
         case 1:
-            var text = `<b>Cita bibliográfica:</b>
-                        <p>Spurgeon, P.; Hicks, C. y Terry, R. (1983), "A preliminary investigation into sex differences in reported friendship determinants among a group of early adolescents", in The British Journal of Sodal Psychology, vol. 22. pp. 63-64.</p>`;
+            var text = `<b class="p_black">Cita bibliográfica:</b>
+                        <p class="p_black">Spurgeon, P.; Hicks, C. y Terry, R. (1983), "A preliminary investigation into sex differences in reported friendship determinants among a group of early adolescents", in The British Journal of Sodal Psychology, vol. 22. pp. 63-64.</p>`;
             $('.pantminis').html(text);
             $('.btn_min').removeClass('btn_circlewhite');
             $('.btn_min').addClass('btn_circle');
@@ -668,8 +680,8 @@ function pantallasmin(num){
             $('.btn2_1').addClass('btn_circlewhite');
             break;
         case 2:
-            var text = `<b>Problema:</b>
-                        <p class="justificado">Determinar si hay diferentes tipos globales de correlación amistosa entre sexos y dentro de cada género, así como los concluyentes de dichos tipos globales.</p>`;
+            var text = `<b class="p_black">Problema:</b>
+                        <p class="justificado p_black">Determinar si hay diferentes tipos globales de correlación amistosa entre sexos y dentro de cada género, así como los concluyentes de dichos tipos globales.</p>`;
             $('.pantminis').html(text);
             $('.btn_min').removeClass('btn_circlewhite');
             $('.btn_min').addClass('btn_circle');
@@ -677,8 +689,8 @@ function pantallasmin(num){
             $('.btn2_2').addClass('btn_circlewhite');
             break;
         case 3:
-            var text = `<b>Sujetos:</b>
-                        <p class="justificado">26 adolescentes de 11 a 12 años de edad (15 de género femenino y 11 de género masculino) que cursan el último año de escuela básica.</p>`;
+            var text = `<b class="p_black">Sujetos:</b>
+                        <p class="justificado p_black">26 adolescentes de 11 a 12 años de edad (15 de género femenino y 11 de género masculino) que cursan el último año de escuela básica.</p>`;
             $('.pantminis').html(text);
             $('.btn_min').removeClass('btn_circlewhite');
             $('.btn_min').addClass('btn_circle');
@@ -686,8 +698,8 @@ function pantallasmin(num){
             $('.btn2_3').addClass('btn_circlewhite');
             break;
         case 4:
-            var text = `<b>Procedimientos:</b>
-                        <p class="justificado">Los sujetos contestaron un cuestionario para avalar un rango de determinantes de la amistad; el cuestionario estuvo basado en descubrimientos de investigación sobre las razones más importantes subyacentes en la formación y el mantenimiento de la amistad. Se incluyeron preguntas cerradas (con escala de cinco puntos) concernientes a razones ambientales, sociológicas y de personalidad, así como preguntas abiertas acerca de la naturaleza de la amistad y la relación amistosa. Asimismo, se les pidió que calificaran a su mejor amigo o amiga en cada pregunta, y a su segundo y tercer amigo o amiga.</p>`;
+            var text = `<b class="p_black">Procedimientos:</b>
+                        <p class="justificado p_black">Los sujetos contestaron un cuestionario para avalar un rango de determinantes de la amistad; el cuestionario estuvo basado en descubrimientos de investigación sobre las razones más importantes subyacentes en la formación y el mantenimiento de la amistad. Se incluyeron preguntas cerradas (con escala de cinco puntos) concernientes a razones ambientales, sociológicas y de personalidad, así como preguntas abiertas acerca de la naturaleza de la amistad y la relación amistosa. Asimismo, se les pidió que calificaran a su mejor amigo o amiga en cada pregunta, y a su segundo y tercer amigo o amiga.</p>`;
             $('.pantminis').html(text);
             $('.btn_min').removeClass('btn_circlewhite');
             $('.btn_min').addClass('btn_circle');
@@ -697,8 +709,8 @@ function pantallasmin(num){
         case 5:
             var text = `<div class="content custom-scrollbar10">
                             <div class="custom-scrollbar__inner10">
-                                <b>Resultados:</b>
-                                <p>En el caso de las mujeres, las razones para vincularse con su mejor amiga son cualitativamente diferentes de las razones para vincularse a su segunda o tercera mejores amigas. Los aspectos más importantes para la mejor amistad fueron, en orden: "jugar juntas", "sentarse juntas" y tener "la misma actitud positiva" hacia la escuela. Menos importante resultó "vivir cerca". Respecto de la segunda y tercera mejores amigas, los aspectos más relevantes fueron similares en ambos casos (por ejemplo, "actitud positiva" hacia la escuela, "agradar a la maestra y sentarse juntas"). En cambio, "visitar el hogar de la otra persona y viceversa" resulta menos importante. En contraste, el orden de aspectos importantes de la amistad entre los jóvenes es idéntico entre los tres niveles (mejor amigo, segundo y tercer lugares). <br>
+                                <b class="p_black">Resultados:</b>
+                                <p class="p_black">En el caso de las mujeres, las razones para vincularse con su mejor amiga son cualitativamente diferentes de las razones para vincularse a su segunda o tercera mejores amigas. Los aspectos más importantes para la mejor amistad fueron, en orden: "jugar juntas", "sentarse juntas" y tener "la misma actitud positiva" hacia la escuela. Menos importante resultó "vivir cerca". Respecto de la segunda y tercera mejores amigas, los aspectos más relevantes fueron similares en ambos casos (por ejemplo, "actitud positiva" hacia la escuela, "agradar a la maestra y sentarse juntas"). En cambio, "visitar el hogar de la otra persona y viceversa" resulta menos importante. En contraste, el orden de aspectos importantes de la amistad entre los jóvenes es idéntico entre los tres niveles (mejor amigo, segundo y tercer lugares). <br>
                                 Los aspectos más destacados fueron: "actitud negativa" hacia la escuela y “jugar y sentarse juntos". "Visitar el hogar del otro y viceversa" fue menos importante. Desde un punto de vista global, las percepciones de ambos géneros en relación con los determinantes importantes de la amistad son muy similares (r = + .82, p = 0.01). Las respuestas a las preguntas abiertas se clasificaron como situacionales, contractuales o psicológicamente internas. Los resultados demostraron un paso a través de las fases de la amistad. De las relaciones amistosas de las jóvenes, 97% están basadas en razones psicológicas internas, mientras que para los jóvenes se distribuyen entre razones psicológicas internas (54%) y contractuales (45%).</p>
                             </div>
                             <div class="custom-scrollbar__bar10">
@@ -724,13 +736,13 @@ function pantallasmin(num){
         case 6:
             var text = `<div class="row">
                           <div style="width: 90%;">
-                            <b>Conclusiones:</b>
-                            <p class="justificado">
+                            <b class="p_black">Conclusiones:</b>
+                            <p class="justificado p_black">
                               Esta investigación inicial revela que, para ambos sexos, los aspectos más importantes de la amistad adolescente son similares; pero que hay diferencias en la variación de niveles de amistad que pueden reflejar preferencias por actividades distintas o tasas de maduración entre ambos géneros.
                             </p>
                           </div>
                           <div style="width: 10%;text-align: end;">
-                            <img class="cursor" src="assets/img/img_ova/btn_closed.png" style="max-width: 60%;position: relative;left: 45px" onclick="principal2_5(1);">
+                            <img class="cursor" src="assets/img/img_ova/btn_closed_blue1.png" style="max-width: 60%;position: relative;left: 45px" onclick="principal2_5(1);">
                           </div>
                         </div>
                         
@@ -804,7 +816,7 @@ function pantalla9(num){
     switch (parseInt(num)) {
         case 1:
             var text = `<div class="p9_cont">
-                      <p class="justificado">Que ya existe teoría desarrollada en relación a nuestro tema.</p>
+                      <p class="justificado p_black">Que ya existe teoría desarrollada en relación a nuestro tema.</p>
                     </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -816,7 +828,7 @@ function pantalla9(num){
             break;
         case 2:
             var text = `<div class="p9_cont">
-                          <p class="justificado">Que existe evidencia y que se aplica a nuestro problema de investigación</p>
+                          <p class="justificado p_black">Que existe evidencia y que se aplica a nuestro problema de investigación</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -828,7 +840,7 @@ function pantalla9(num){
             break;
         case 3:
             var text = `<div class="p9_cont">
-                          <p class="justificado">Que hay una o varias teorías en relación a nuestro tema de investigación.</p>
+                          <p class="justificado p_black">Que hay una o varias teorías en relación a nuestro tema de investigación.</p>
                         </div>`;
             $('.indicap9').css({ "visibility": "hidden"
                     
@@ -855,7 +867,7 @@ function poner(num) {
     if (num == 3) {
         $(".custom-scrollbar__bar2").css('display','block');
         $(".custom-scrollbar2").css('height','250');
-    }
+    } 
 }
 function quitar(num) {
     $(".texto_efecto"+num).css({
@@ -867,7 +879,7 @@ function quitar(num) {
     if (num == 3) {
         $(".custom-scrollbar__bar2").css('display','none');
         $(".custom-scrollbar2").css('height','180px');
-    }
+    } 
 }
 
 

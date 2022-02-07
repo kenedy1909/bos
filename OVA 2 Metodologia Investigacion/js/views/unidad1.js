@@ -1,4 +1,11 @@
 $( document ).ready(function() {
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu3").removeClass('c-show');
+    
+    star_uni = 1; 
     
     console.log(tema);
     
@@ -149,6 +156,8 @@ function controlSlides(num){
         case 9:
             setMigaja("Unidades de aprendizaje","1. La pesquisa bibliográfica","Método de demostración por Inducción matemática");
             /*$("#content-ova").load("base/unidades/unidad2.html");*/
+            $(".menu1").addClass('d-none');
+            $( ".ov-personaje").show();
             tema = 1;
             break;
         default:
@@ -414,35 +423,35 @@ function conjuntos(num){
     if (num == 1) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Teorías</p></center>
+                      <center><p class="text-black py-3 p_black">Teorías</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 2) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Conceptualizaciones</p></center>
+                      <center><p class="text-black py-3 p_black">Conceptualizaciones</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 3) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Perspectivas</p></center>
+                      <center><p class="text-black py-3 p_black">Perspectivas</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 4) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Investigaciones</p></center>
+                      <center><p class="text-black py-3 p_black">Investigaciones</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
     }if (num == 5) {
         var conjunto = `
                     <div class="col-lg-12 col-md-12 card1 borde_oscuro py-5 menos-margin-50">
-                      <center><p class="text-black py-3">Antecedentes en general</p></center>
+                      <center><p class="text-black py-3 p_black">Antecedentes en general</p></center>
                     </div>
                     `;
         $("#info_unidad2").html(conjunto)
@@ -544,13 +553,13 @@ function cardImg(num,texto){
     if (texto == 1) {
         $(".text-2").addClass('hidden')
         var conjunto = `
-                        <img src="assets/img/img_ova/busqueda-de-conocimiento.png" class="w-50 mt-3 mb-auto" id="img-2">
+                        <img src="assets/img/img_ova/busqueda-de-conocimiento.png" class="w-50 mb-auto" id="img-2" style="margin-top: 30%;">
                         `;
         $("#card-img-big-2").html(conjunto)
     }else {
         $(".text-1").addClass('hidden')
         var conjunto = `
-                        <img src="assets/img/img_ova/contrato.png" class="w-50 my-3" id="img-1">
+                        <img src="assets/img/img_ova/contrato.png" class="w-50" id="img-1" style="margin-top: 30%;">
                     `;
         $("#card-img-big-1").html(conjunto)
     }
@@ -559,7 +568,7 @@ function cardImg(num,texto){
         var conjunto = `
                         <div class="row justify-content my-2 text-1" onclick="cardImg(1,1)">
                             <div class="col-12 text-white text-start">
-                                <p class=""> Una revisión exhaustiva de la bibliografía sobre el estado del arte de su situación problema, 
+                                <p class="justificado"> Una revisión exhaustiva de la bibliografía sobre el estado del arte de su situación problema, 
                                     se debe revisar toda la bibliografía de la manera más completa sin dejar autores o teorías 
                                     referentes a su tema/problema de investigación, para que usted se ubique dentro del contexto 
                                     del mismo y se dé cuenta de lo que se ha hecho y de lo que usted podría hacer.
@@ -571,9 +580,9 @@ function cardImg(num,texto){
     }if (num == 2) {
         $("#img-2").addClass('hidden')
         var conjunto = `
-                        <div class="row justify-content my-2 text-2 m-auto" onclick="cardImg(1,2)">
+                        <div class="row justify-content my-2 text-2 m-auto" onclick="cardImg(2,2)">
                             <div class="col-12 text-white text-start">
-                                <p class="p-small">La aplicación de una orientación teórica o de referencia, para que su investigación no pierda rigor científico.
+                                <p class="justificado">La aplicación de una orientación teórica o de referencia, para que su investigación no pierda rigor científico.
                                 </p>
                             </div>
                         </div>
@@ -622,7 +631,7 @@ function simbolosShadow(num){
         // $(".card3-padre-1").removeClass('bg-celeste')
         // $(".card3-padre-1").addClass('bg-white')
         var conjunto = `
-                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
+                        <div class="col-8 card4 text-center bg-white border-default px-5 pt-3" style="height: 70px;">
                             <p>¿El para qué?</p>
                         </div>
                         `;
@@ -632,7 +641,7 @@ function simbolosShadow(num){
         // $(".card3-padre-2").removeClass('bg-celeste')
         // $(".card3-padre-2").addClass('bg-white')
         var conjunto = `
-                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
+                        <div class="col-8 card4 text-center bg-white border-default px-5 pt-3" style="height: 70px;">
                             <p>¿El cómo?</p>
                         </div>
                         `;
@@ -642,7 +651,7 @@ function simbolosShadow(num){
         // $(".card3-padre-2").removeClass('bg-celeste')
         // $(".card3-padre-2").addClass('bg-white')
         var conjunto = `
-                        <div class="col-8 card4 text-center bg-white border-default px-5 py-3">
+                        <div class="col-8 card4 text-center bg-white border-default px-5 pt-3" style="height: 70px;">
                             <p>¿El cuándo ocurre un fenómeno?</p>
                         </div>
                         `;
@@ -653,18 +662,23 @@ function cardActividad(num){
     if (num == 1) {
         $(".card-actividad").removeClass('col-12')
         $(".card-actividad").addClass('col-4')
+        var img = `<img src="assets/img/img_ova/libros.png" style="margin-top: 40%;" width="80%">`;
+        $(".card-actividad").html(img)
         var conjunto = `
-                        <h6>Sugerencia de lectura:</h6>
-                        <p>Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura con el siguiente texto: <i><b>Lectura y escritura en la investigación. </b></i></p>
-                        <p><a href="assets/PDF/UNIDAD1/Lectura-y-escritura-en-la-investigación.pdf" target="_blank">Lectura-y-escritura-en-la-investigación.pdf</a>
+                        <h6 class="mt-2 p_black pl-5">Sugerencia de lectura:</h6>
+                        <p class="p_black mt-3 pl-5 justificado">Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura con el siguiente texto: <i><b>Lectura y escritura en la investigación. </b></i></p>
+                        <p class="p_black mt-3 pl-5 justificado">Realice la lectura dando clic <a href="assets/PDF/UNIDAD1/Lectura-y-escritura-en-la-investigación.pdf" target="_blank">aquí</a>
             `;
+        
         $("#card-actividad-text").html(conjunto)
     }if (num == 2) {
         $(".card-actividad-2").removeClass('col-12')
         $(".card-actividad-2").addClass('col-4')
+        var img = `<img src="assets/img/img_ova/libros.png" style="margin-top: 40%;" width="80%">`;
+        $(".card-actividad-2").html(img)
         var conjunto = `
-                        <h6>Sugerencia de lectura:</h6>
-                        <p>Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura; no es necesario que se limite a un referente bibliográfico en particular, la elección es personal.</p>
+                        <h6 class="mt-2 p_black pl-5">Sugerencia de lectura:</h6>
+                        <p class="p_black mt-3 pl-5 justificado">Para una mayor comprensión del tema visto, amplíe la idea de exploración de la literatura; no es necesario que se limite a un referente bibliográfico en particular, la elección es personal.</p>
             `;
         $("#card-actividad-text-2").html(conjunto)
     }
@@ -673,7 +687,7 @@ function fuentesBiblio(num,ventana){
     if (ventana==0) {
         $("#contenido-fuentes2").addClass('hidden')
         var conjunto = `<div class="row" id="contenido-fuentes1">
-                            <div class="col-4" onclick="fuentesBiblio(1,1)">
+                            <div class="col-4 cursor" onclick="fuentesBiblio(1,1)">
                                 <div class="d-flex justify-content-center">
                                     <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
                                         <img src="assets/img/img_ova/carpeta.png" class="w-50 p-2">
@@ -683,7 +697,7 @@ function fuentesBiblio(num,ventana){
                                     <h5>Fuentes primarias</h5>
                                 </div>
                             </div>
-                            <div class="col-4" onclick="fuentesBiblio(2,1)">
+                            <div class="col-4 cursor" onclick="fuentesBiblio(2,1)">
                                 <div class="d-flex justify-content-center">
                                     <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
                                         <img src="assets/img/img_ova/archivo.png" class="w-50 p-2">
@@ -693,7 +707,7 @@ function fuentesBiblio(num,ventana){
                                     <h5>Fuentes secundarias</h5>
                                 </div>
                             </div>
-                            <div class="col-4" onclick="fuentesBiblio(3,1)">
+                            <div class="col-4 cursor" onclick="fuentesBiblio(3,1)">
                                 <div class="d-flex justify-content-center">
                                     <div class="imgUnidad6 bg-celeste rounded-circle p-3 text-center w-50">
                                         <img src="assets/img/img_ova/dosier.png" class="w-50 p-2">
@@ -712,7 +726,7 @@ function fuentesBiblio(num,ventana){
             var conjunto = `
                             <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
                                 <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
+                                    <div class="row d-flex justify-content-center" style="margin-left: -20%;">
                                         <div class="col-12 bg-celeste height16"></div>
                                         <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
                                             <div class="d-flex justify-content-center">
@@ -729,7 +743,7 @@ function fuentesBiblio(num,ventana){
                                 <div class="col-12">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8 bg-white border-default p-5">
-                                            <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed.png" onclick="fuentesBiblio(1,0)">
+                                            <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed_blue1.png" onclick="fuentesBiblio(1,0)">
                                             <p class="justificado">Proporcionan datos de primera mano, son documentos que contienen resultados de estudios. 
                                                 Ejemplos: libros, artículos de revistas científicas y ponencias o trabajos presentados 
                                                 en congresos, simposios y otros eventos similares.</p>
@@ -744,7 +758,7 @@ function fuentesBiblio(num,ventana){
             var conjunto = `
                             <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
                                 <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
+                                    <div class="row d-flex justify-content-center" style="margin-left: -20%;">
                                         <div class="col-12 bg-celeste height16"></div>
                                         <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
                                             <div class="d-flex justify-content-center">
@@ -761,7 +775,7 @@ function fuentesBiblio(num,ventana){
                                 <div class="col-12">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8 bg-white border-default p-5">
-                                            <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed.png" onclick="fuentesBiblio(1,0)">
+                                            <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed_blue1.png" onclick="fuentesBiblio(1,0)">
                                             <p class="justificado">Son listas, compilaciones y resúmenes de referencias o fuentes primarias, es decir, reprocesos
                                              de información de primera mano. Las referencias se presentan alfabéticamente según la clasificación 
                                              que se utilice para ordenarlas: por autor, por tema, por fecha o por área de conocimiento.</p>
@@ -776,7 +790,7 @@ function fuentesBiblio(num,ventana){
             var conjunto = `
                             <div class="row mt-5" id="contenido-fuentes2" style="min-height:300px;">
                                 <div class="col-12">
-                                    <div class="row d-flex justify-content-center">
+                                    <div class="row d-flex justify-content-center" style="margin-left: -20%;">
                                         <div class="col-12 bg-celeste height16"></div>
                                         <div class="col-4 menos-margin-60" onclick="fuentesBiblio(1,0)">
                                             <div class="d-flex justify-content-center">
@@ -793,7 +807,7 @@ function fuentesBiblio(num,ventana){
                                 <div class="col-12">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8 bg-white border-default p-5">
-                                            <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed.png" onclick="fuentesBiblio(1,0)">
+                                            <img class="cursor cerrar16" src="assets/img/img_ova/btn_closed_blue1.png" onclick="fuentesBiblio(1,0)">
                                             <p class="justificado">Son documentos donde se registran referencias a otros documentos de características diversas. 
                                             Son útiles para detectar fuentes no documentales como organizaciones que realizan o financian estudios, 
                                             asociaciones científicas, entre otras. (Danhke, 1989).</p>

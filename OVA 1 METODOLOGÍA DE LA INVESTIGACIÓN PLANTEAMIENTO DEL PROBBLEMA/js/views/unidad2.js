@@ -3,14 +3,13 @@ $(document).ready(function() {
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
 
-    $(".menu2").addClass('c-show');
+    $(".menu2").addClass('c-show'); 
     $(".menu1").removeClass('c-show');
     $(".menu3").removeClass('c-show');
     $(".menu4").removeClass('c-show');
-
+    
     star_uni = 2;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
-
     console.log(tema);
     /*slide_link2(tema);*/
     $('#smartwizard').smartWizard({
@@ -38,6 +37,7 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+    setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
     slide_predeterminado2();
     slide_link2(tema);
     /*funcion_vanvas();
@@ -70,7 +70,7 @@ function slide_predeterminado2() {
 function slide_link2(num) {
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num - 1);
+    $('#smartwizard').smartWizard("goToStep", num-1);
 
 
     controlSlides2(num);
@@ -81,12 +81,13 @@ function controlSlides2(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            cambiarColorMenu(12);
             $("#content-ova").load("base/unidades/unidad1.html");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="none";
             break;
         case 1:
+          setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            cambiarColorMenu(12);
             var pdf = `<div class="col-md-12">
             <p class="p_white">
             <a class="p_white size_20" href="assets/PDF/UNIDAD2/Cómo_investigan_los_economistas.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> Cómo investigan los economistas    <b class="text-cafe"><u>Ver</u></b></a>
@@ -94,36 +95,33 @@ function controlSlides2(num) {
                             </div>`;
             $('.pdfs').html(pdf);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="none";
-            setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            cambiarColorMenu(12);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje", "2. Conjuntos", "Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            cambiarColorMenu(12);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
 
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje", "2. Conjuntos", "Definición, notación, determinación y clasificación de conjuntos");
+            setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+            cambiarColorMenu(12);
+    
             
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block";
 
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');
             $(".menu4").addClass('d-none');
+            $(".ov-personaje").show();
             tema = 1;
             break;
 
