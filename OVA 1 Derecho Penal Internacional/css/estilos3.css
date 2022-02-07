@@ -630,3 +630,43 @@ p, button{
 .scrollHidden{
   overflow: hidden;
 }
+
+.eichmann{
+  min-height: 500px; 
+  position: relative;
+   left: 10px;
+   top: -23px;
+
+}
+@media screen and (max-width: 1366px) {
+  .eichmann{
+    left: -78px;
+  }
+
+}
+@media screen and (max-width: 1300px) {
+  .eichmann{
+    left: -41px;
+  }
+
+}
+@media screen and (max-width: 1270px) {
+  .eichmann{
+    left: -21px;
+  }
+
+}
+@media screen and (max-width: 1220px) {
+  .eichmann{
+    left: 10px;
+  }
+
+}
+@media screen and (max-width: 1160px) {
+  .eichmann{
+    left: 32px;
+  }
+
+}
+
+

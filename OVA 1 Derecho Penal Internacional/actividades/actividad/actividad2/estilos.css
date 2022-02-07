@@ -145,7 +145,7 @@ h2.tituloContenedorE {
 .redi1 .contenedorC,
 .redi1 .contenedorD,
 .redi1 .contenedorE {
-    min-height: 240px;
+    min-height: 295px;
     transform: scale(1);
     transition: transform .3s;
     border-radius: 20px;
