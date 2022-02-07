@@ -164,7 +164,7 @@ html{
 .backdrop .contenido {
     display: block;
     margin: 0 auto;
-    padding: 15px;
+    padding: 10px;
     position: relative;
     overflow: auto;
 }
@@ -173,7 +173,7 @@ html{
     position: relative;
     background-repeat: no-repeat, repeat;
     background-position: right 15px bottom 10px, top left;
-    padding-bottom: 65px;
+    /*padding-bottom: 65px;*/
 }
 .btn-primary{
     background: #ae1c12;

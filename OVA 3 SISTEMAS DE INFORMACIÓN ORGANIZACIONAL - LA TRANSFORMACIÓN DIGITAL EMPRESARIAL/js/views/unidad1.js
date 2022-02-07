@@ -140,7 +140,7 @@ function controlSlides(num) {
                 var slideHeight = $('#slider2 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
 
-                $('#slider2').css({ width: '100%', height: '700' });
+                $('#slider2').css({ width: '100%', height: '580' });
 
                 $('#slider2 ul').css({ width: '90%' });
 
@@ -160,6 +160,7 @@ function controlSlides(num) {
                         left: -slideWidth
                     }, 200, function() {
                         $('#slider2 ul li:first-child').appendTo('#slider2 ul');
+                        /*$('#slider2 ul li:first-child').removeClass('d-none');*/
                         $('#slider2 ul').css('left', '');
                     });
                 };
