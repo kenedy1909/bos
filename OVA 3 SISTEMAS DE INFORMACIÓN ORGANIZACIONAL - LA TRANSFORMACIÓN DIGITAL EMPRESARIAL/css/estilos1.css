@@ -40,7 +40,7 @@
     padding-top: 4px;
     position: relative;
     top: -13px;
-    left: 25px;
+    /*left: 25px;*/
 }
 
 .contFijo-img {
@@ -68,7 +68,7 @@
     height: 4px;
     position: relative;
     top: -65px;
-    left: -112px;
+    left: -125px;
     transform: rotate(-20deg);
 }
 
@@ -77,7 +77,7 @@
     height: 4px;
     position: relative;
     top: -74px;
-    left: 98px;
+    left: 125px;
     transform: rotate(18deg);
 }
 
@@ -118,7 +118,7 @@
 .imagenTarget2 {
     width: 70px;
     position: relative;
-    left: 31px;
+    /*left: 31px;*/
     top: -11px;
 }
 
@@ -132,8 +132,7 @@
     text-align: center;
     padding-top: 4px;
     position: relative;
-    top: -80px;
-    left: 138px;
+    top: -13px;
 }
 
 .size_13 {
