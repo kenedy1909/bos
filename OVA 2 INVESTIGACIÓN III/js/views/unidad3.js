@@ -186,12 +186,14 @@ function controlSlides(num){
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","","");
+            $( ".ov-personaje").show();
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
-            // setMigaja("Unidades de aprendizaje","2. Conjuntos","Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)");
-            
-            break;
+                
         default:
-            break;
+        break;
     }
 }
 

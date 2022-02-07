@@ -45,9 +45,14 @@ $( document ).ready(function() {
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         
         console.log(e);
-        controlSlides(stepIndex+1);
+        if (tema != 0) {
+            controlSlides(tema+1);
+            tema = 0;
+        } else {
+            controlSlides(stepIndex+1);
+        }
         // quitarflecha(stepIndex+1);
-        actualizarprogress(stepIndex+1);
+        // actualizarprogress(stepIndex+1);
         switch(stepIndex) {
             case 1:
                 break;
@@ -124,7 +129,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
-    actualizarprogress(stepIndex+1);
+    // actualizarprogress(stepIndex+1);
 }
 
 function slide_predeterminado(){
@@ -155,6 +160,7 @@ function slide_link(num){
 
 
 function controlSlides(num){
+    actualizarprogress(num);
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Capitalismo y desarrollo");
@@ -293,6 +299,7 @@ function controlSlides(num){
         case 24:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
             cambiarColorMenu(21);
+            document.getElementById("actividad24").contentDocument.location.reload(true);
             break;
         case 25:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");

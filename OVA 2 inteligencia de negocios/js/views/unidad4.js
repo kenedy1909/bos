@@ -658,3 +658,7 @@ function enter_hover_1(num) {
         $(".info_funcionalidad_9_4").removeClass('d-none');
     }
 }*/
+
+$(".modal").on('hidden.bs.modal', function() {
+    $(".c-app").css("padding", "0px");
+});

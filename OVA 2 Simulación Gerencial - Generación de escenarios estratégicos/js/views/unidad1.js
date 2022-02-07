@@ -164,7 +164,7 @@ function controlSlides(num){
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");
-            
+            document.getElementById("actividad17").contentDocument.location.reload(true); 
             break;
         case 18:
             setMigaja("Unidades de aprendizaje","1. Generación de escenarios estratégicos", "Métodos y Herramientas de la Planeación estratégica");

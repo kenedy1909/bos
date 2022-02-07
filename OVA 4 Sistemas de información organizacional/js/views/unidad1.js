@@ -33,6 +33,16 @@ $(document).ready(function() {
         slide();
     });
 
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
+
     $("[data-toggle='toggle']").click(function() {
         var selector = $(this).data("target");
         $(selector).toggleClass('in');
@@ -625,12 +635,18 @@ function controlSlides(num) {
             }
             break;
         case 24:
-            star_uni = 1;
-            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             setMigaja("Unidades de aprendizaje", "1. Fundamentos del E-commerce", "Normatividad");
+
+
             break;
         case 25:
             setMigaja("Unidades de aprendizaje", "1. Fundamentos del E-commerce", "Normatividad");
+            break;
+        case 28:
+            setMigaja("Unidades de aprendizaje", "", "");
+            star_uni = 1;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            $(".menu1").addClass('d-none');
             break;
         default:
             break;
