@@ -49,7 +49,7 @@ $( document ).ready(function() {
       // console.log('holaaa');
       
   }
-    /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
+  setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
 
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         
@@ -111,8 +111,8 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
         case 1:
-            esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
+            esconderPersonaje();
             cambiarColorMenu(11);
             dragging = "";
             diff = "";
