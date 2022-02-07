@@ -408,6 +408,15 @@ function pinochet(num) {
                     `;
         $("#pinochet").html(texto);
     }
+    else if (num == 4) {
+        var texto = `
+                          <div class="d-flex h-100">
+                            <button class="p_white bg-cafe-activi btn p-2 m-auto" data-toggle="modal" data-target="#modal-actividad"><b>Audio</b></button>
+                            <audio src="../music/woman.mp3" controls="controls" type="audio/mpeg" preload="preload"></audio>
+                          </div>
+                    `;
+        $("#pinochet").html(texto);
+    }
 }
 
 function paraIframe(num){

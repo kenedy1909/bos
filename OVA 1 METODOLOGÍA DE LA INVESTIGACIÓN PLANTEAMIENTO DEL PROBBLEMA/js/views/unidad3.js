@@ -76,13 +76,15 @@ function controlSlides3(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
-            
+            cambiarColorMenu(13);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="none";
             $("#content-ova").load("base/unidades/unidad2.html");
             tema = 3;
             break;
         case 1:
+            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
                                   <a class="p_white size_20" href="assets/PDF/UNIDAD3/Elementos_fundamentales_para_plantear_un_problema.pdf" target="_blank"> <img class="img-circle menu_superior w-40px" src="assets/img/img_template/pdf-gris.png"> Elementos fundamentales para plantear un problema <b class="text-cafe"><u>Ver</u></b></a>
@@ -94,57 +96,55 @@ function controlSlides3(num) {
 
                             
             $('.pdfs').html(pdf);
-            setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 3:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 4:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 5:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 6:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 7:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block";
             break;
         case 8:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
+            cambiarColorMenu(13);
             
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block";
 
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');
             $(".menu4").addClass('d-none');
+            $(".ov-personaje").show();
             tema = 1;
             break;
         default:

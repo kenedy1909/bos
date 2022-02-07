@@ -517,3 +517,7 @@ function paraIframe(num){
     }
     
 }
+
+$(".modal").on('hidden.bs.modal', function() {
+    $(".c-app").css("padding", "0px");
+});

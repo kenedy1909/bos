@@ -335,3 +335,7 @@
   top: -60px;
   text-align: center;
 }
+
+.m-auto{
+	margin: auto;
+}

@@ -386,3 +386,7 @@ function funcionalidad_16(num) {
         $('#smartwizard').smartWizard("next");    
     }
 }
+
+$(".modal").on('hidden.bs.modal', function() {
+    $(".c-app").css("padding", "0px");
+});

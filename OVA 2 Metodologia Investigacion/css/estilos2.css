@@ -605,7 +605,7 @@ p, button{
   background: #9f4c97;
 }
 .contenido_decorado:hover{
-  height: 30em;
+  height: 17em;
   /*display: block;*/
 }
 
@@ -654,7 +654,7 @@ p, button{
   /* display: none; */
   height: 125px;
 }
-.custom-scrollbar__bar2{
+.custom-scrollbar__bar2 {
   position: absolute;
   top: 40px;
   bottom: 85px;
@@ -678,7 +678,7 @@ p, button{
   will-change: top;
 }
 
-.linea_scroll2, .linea_scroll3{
+.linea_scroll2, .linea_scroll3 {
   font-size: 50px;
     margin: 0px;
     position: relative;

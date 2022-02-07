@@ -219,10 +219,10 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="pr-5">
                                       <div class="">
-                                        <p class="p_black justificado text-center">Lo importante es que con esta revisión se vaya perfilando ya la forma como vamos a encarar los resultados encontrados, dado que podemos en cierta manera desde el Marco Teórico predecir estados futuros.</p>
+                                        <p class="p_black justificado pl-2" style="margin-top: -15%;">Lo importante es que con esta revisión se vaya perfilando ya la forma como vamos a encarar los resultados encontrados, dado que podemos en cierta manera desde el Marco Teórico predecir estados futuros.</p>
                                       </div>
                                       <div class="">
-                                        <div class=""><p class="">-</p></div>
+                                        <div class=""><p class=""></p></div>
                                       </div>
                                     </div>
                                   </div>

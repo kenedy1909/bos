@@ -221,15 +221,25 @@ function slide_link(num){
     controlSlides(num);
     
 }
+$("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+  slide();
+  // EditarLocation(getPos());
+  // actualizarprogress(stepIndex+11);
+  // console.log(e);
+  switch(stepIndex) {
+      default:
+      // code block
+  }
+});
 
 function controlSlides(num){
   // console.log((num-1)+" slide");
     switch (parseInt(num)) {
-        case 0:
-            setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
-            $("#content-ova").load("base/unidades/unidad3.html");
-            tema = 10;
-            break;
+        // case 0:
+        //     setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","");
+        //     $("#content-ova").load("base/unidades/unidad3.html");
+        //     tema = 10;
+        //     break;
         case 1:
           setMigaja("Unidades de aprendizaje","4. Diseño de un sistema de información","Fases del diseño de un sistema  ");
             break;

@@ -161,7 +161,7 @@ QuestionsSameAnswers.prototype.score =  function () {
         if (answer_id == current_answer){
             points += 1;
         }
-    };
+    }; 
 
     var total = 0;
 

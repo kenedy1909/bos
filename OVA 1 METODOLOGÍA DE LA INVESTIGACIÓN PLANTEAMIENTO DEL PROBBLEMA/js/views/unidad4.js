@@ -73,8 +73,7 @@ function controlSlides4(num) {
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="none";
+            cambiarColorMenu(14);
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
             break;
@@ -82,28 +81,28 @@ function controlSlides4(num) {
 
             $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            cambiarColorMenu(14);
+            
             break;
         case 2:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            cambiarColorMenu(14);
+            
             break;
         case 3:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block";
+            cambiarColorMenu(14);
+            
             break;
         case 4:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block";
+            cambiarColorMenu(14);
+            
             break;
         case 5:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
-            document.getElementById("next").style.display="none";
-            document.getElementById("prev").style.display="block";
+            cambiarColorMenu(14);
+            
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');

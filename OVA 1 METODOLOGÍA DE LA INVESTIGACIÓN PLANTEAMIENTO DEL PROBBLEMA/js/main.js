@@ -199,7 +199,7 @@ function cambiarColorMenu(enlace) {
     }else if (enlace == 13) {
         $('.linkMenu13').addClass('colorAMenu');
     }else if (enlace == 14) {
-        $('.linkMenu13').addClass('colorAMenu');
+        $('.linkMenu14').addClass('colorAMenu');
     }else{
         $('.linkMenu11').removeClass('colorAMenu');
         $('.linkMenu21').removeClass('colorAMenu');

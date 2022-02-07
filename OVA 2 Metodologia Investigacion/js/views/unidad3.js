@@ -1,4 +1,13 @@
 $( document ).ready(function() {
+
+    $( ".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
+
+    $(".menu3").addClass('c-show');
+    $(".menu2").removeClass('c-show');
+    $(".menu1").removeClass('c-show');
     
     console.log(tema);
     
@@ -239,14 +248,14 @@ function libros() {
     if (libros_num == 1) {
         var text = `
                     <ul>
-                        <li class="p_black justificado">Cuando se encuentre información que se considere contribuye o hace referencia a nuestro problema o tema de investigación, se deben extraer las ideas, opiniones, referencias que consideremos principales, igual que los datos y teorías.</li>
+                        <li class="p_black justificado mt-4">Cuando se encuentre información que se considere contribuye o hace referencia a nuestro problema o tema de investigación, se deben extraer las ideas, opiniones, referencias que consideremos principales, igual que los datos y teorías.</li>
                         <li class="p_black justificado">El desarrollo de nuestro marco teórico parte de la revisión de la literatura, de lo que se encuentre, de si existen o no teorías que la preceden, de que hayan estudio que mencionen el tema a profundidad o someramente, o que en su defecto existan solamente estudios no comprobados o empezados y no terminados; todo esto se debe poner en consideración a la hora de sentarnos a escribir nuestro marco teórico.</li>
                     </ul>
                    `;
         $("#marco").html(text);
     }else if (libros_num == 2) {
         var text = `
-                    <p class="p_black justificado"><b>A manera de conclusión:</b></p>
+                    <p class="p_black justificado mt-5"><b>A manera de conclusión:</b></p>
                     <ul>
                         <li class="p_black justificado">El marco teórico está integrado por los estudios que con anterioridad se han realizado, igualmente por las teorías o enfoques o antecedentes que se encuentren en relación con nuestro tema o problema de investigación.</li>
                         <li class="p_black justificado">Para el desarrollo del marco teórico es fundamental consultar toda la literatura concerniente a nuestro tema de investigación.</li>
@@ -325,7 +334,7 @@ function libros() {
         $("#marco").html(text);
         $(".info-morado").on('click' , morados);
     }else if (libros_num == 4) {
-        var text = `<p class="p_black justificado">Lo primordial a la hora de sentarnos a escribir nuestro marco teórico, es centrarnos en nuestro problema de investigación, dicho de otra forma, no irnos por las ramas o buscar información que no sea la concerniente y específica sobre nuestro tema, por lo que buscaremos única y exclusivamente sobre ello, esto ya que es probable que en la búsqueda de la literatura, se vayan encontrando temas que llamen nuestra atención, por lo que ahí en ese preciso momento, es donde usted debe centrarse en el tema que lo ocupa.</p>`;
+        var text = `<p class="p_black justificado mt-5">Lo primordial a la hora de sentarnos a escribir nuestro marco teórico, es centrarnos en nuestro problema de investigación, dicho de otra forma, no irnos por las ramas o buscar información que no sea la concerniente y específica sobre nuestro tema, por lo que buscaremos única y exclusivamente sobre ello, esto ya que es probable que en la búsqueda de la literatura, se vayan encontrando temas que llamen nuestra atención, por lo que ahí en ese preciso momento, es donde usted debe centrarse en el tema que lo ocupa.</p>`;
         $("#marco").html(text);
     }else if (libros_num == 5) {
         var text = `<iframe width="560" height="315" src="https://www.youtube.com/embed/A45_n99FpsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtubes  img-100 vid" style="margin-top: 25%;"></iframe>`;
@@ -481,7 +490,7 @@ function teorias() {
                             <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
-                            <p class="texto_act_general" style="">ACTIVIDAD # 7</p>
+                            <p class="texto_act_general" style="">ACTIVIDAD #7</p>
                             <div class="linea_general" style=""></div>
                           </div>
                           <div class="col-md-7 banner_general" style="">
@@ -503,10 +512,10 @@ function teorias() {
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
                                     <div class="row border_r p-0 mh-100 content-activi-l">
-                                        <div class="col-6 bg-color text-center border_r card-actividad-7 h-100 cursor d-flex" onclick="cardActividad(7)">
+                                        <div class="col-6 bg-color text-center border_r card-actividad-7 h-220px cursor d-flex" onclick="cardActividad(7)">
                                             <img src="assets/img/img_ova/libros.png" class="w-75 m-auto">
                                         </div>
-                                        <div class="col-8 justify-content p-4 h-100 card-actividad-text-7 d-none">
+                                        <div class="col-8 justify-content p-4 h-220px card-actividad-text-7 d-none">
                                             
                                         </div>
                                     </div>
@@ -544,7 +553,7 @@ function teorias() {
                             <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
-                            <p class="texto_act_general" style="">ACTIVIDAD # 8</p>
+                            <p class="texto_act_general" style="">ACTIVIDAD #8</p>
                             <div class="linea_general" style=""></div>
                           </div>
                           <div class="col-md-7 banner_general" style="">
@@ -566,10 +575,10 @@ function teorias() {
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
                                     <div class="row border_r p-0 mh-100 content-activi-l-8">
-                                        <div class="col-6 bg-color text-center border_r card-actividad-8 h-100 cursor d-flex" onclick="cardActividad(8)">
+                                        <div class="col-6 bg-color text-center border_r card-actividad-8 h-250px cursor d-flex" onclick="cardActividad(8)">
                                             <img src="assets/img/img_ova/libros.png" class="w-75 m-auto">
                                         </div>
-                                        <div class="col-8 justify-content p-4 h-100 card-actividad-text-8 d-none">
+                                        <div class="col-8 justify-content p-4 h-250px card-actividad-text-8 d-none">
                                             
                                         </div>
                                     </div>
@@ -616,7 +625,7 @@ function teorias() {
                             <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
-                            <p class="texto_act_general" style="">ACTIVIDAD # 9</p>
+                            <p class="texto_act_general" style="">ACTIVIDAD #9</p>
                             <div class="linea_general" style=""></div>
                           </div>
                           <div class="col-md-7 banner_general" style="">
@@ -638,10 +647,10 @@ function teorias() {
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
                                     <div class="row border_r p-0 mh-100 content-activi-l-9">
-                                        <div class="col-6 bg-color text-center border_r card-actividad-9 h-100 cursor d-flex" onclick="cardActividad(9)">
+                                        <div class="col-6 bg-color text-center border_r card-actividad-9 h-250px cursor d-flex" onclick="cardActividad(9)">
                                             <img src="assets/img/img_ova/libros.png" class="w-75 m-auto">
                                         </div>
-                                        <div class="col-8 justify-content p-4 h-100 card-actividad-text-9 d-none">
+                                        <div class="col-8 justify-content p-4 h-250px card-actividad-text-9 d-none">
                                             
                                         </div>
                                     </div>
@@ -660,13 +669,13 @@ function teorias() {
                             <div class="col-md-12 p-3">
                                 <div id="carouselExampleControls" class="carousel slide px-5" data-ride="carousel">
                                     <div class="carousel-item active">
-                                        <p class="p_black justificado d-block w-100" alt="First slide">En el marco contextual, se incorpora el escenario físico del objeto de estudio, como lo son las condiciones del entorno, las condiciones temporales y ambientales, en general se evalúa, describe e incorpora todo lo que hace parte del contexto de nuestra investigación y que sirve como referente, por ejemplo: la cultura, las costumbres, los aspectos históricos, económicos y sociales. Y estos aspectos, son definitorios en ciertas investigaciones, como, por ejemplo, en las investigaciones cualitativas, donde se trabaja con resultados en los que influye todo este tipo de características de corte general. Por lo que el marco contextual, es definitorio en un proyecto de investigación ya que dirige la mirada hacia ciertos aspectos, esto, dependiendo del tipo de investigación que se planea hacer y de los objetivos propuestos.</p>
+                                        <p class="p_black justificado d-block w-100 mt-2" alt="First slide">En el marco contextual, se incorpora el escenario físico del objeto de estudio, como lo son las condiciones del entorno, las condiciones temporales y ambientales, en general se evalúa, describe e incorpora todo lo que hace parte del contexto de nuestra investigación y que sirve como referente, por ejemplo: la cultura, las costumbres, los aspectos históricos, económicos y sociales. Y estos aspectos, son definitorios en ciertas investigaciones, como, por ejemplo, en las investigaciones cualitativas, donde se trabaja con resultados en los que influye todo este tipo de características de corte general. Por lo que el marco contextual, es definitorio en un proyecto de investigación ya que dirige la mirada hacia ciertos aspectos, esto, dependiendo del tipo de investigación que se planea hacer y de los objetivos propuestos.</p>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="p_black justificado d-block w-100" alt="Second slide">De igual forma, el marco contextual contribuye en la elaboración del marco teórico, ya que basándose en el marco contextual, delimita el tema orientando la búsqueda de la temática. Por lo que el marco contextual es un componente fundamental a la hora de desarrollar nuestro proyecto de investigación.</p>
+                                        <p class="p_black justificado d-block w-100 mt-5" alt="Second slide">De igual forma, el marco contextual contribuye en la elaboración del marco teórico, ya que basándose en el marco contextual, delimita el tema orientando la búsqueda de la temática. Por lo que el marco contextual es un componente fundamental a la hora de desarrollar nuestro proyecto de investigación.</p>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="p_black d-block w-100" alt="Third slide">
+                                        <div class="p_black d-block w-100 mt-3" alt="Third slide">
                                             <b>Características</b>
                                             <ul>
                                                 <li class="justificado">Demarca el espacio</li>
@@ -677,7 +686,7 @@ function teorias() {
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="p_black d-block w-100" alt="Fourth slide">
+                                        <div class="p_black d-block w-100 mt-4" alt="Fourth slide">
                                             <ul>
                                                 <li class="justificado">Da sentido a la investigación</li>
                                                 <p>En la medida en que ubica al investigador dentro de un entorno, realidad para a partir de allí desarrollar su investigación.</p>
@@ -687,7 +696,7 @@ function teorias() {
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="p_black justificado d-block w-100" alt="Fourth slide">A manera de conclusión, el marco contextual es fundamental en el proceso investigativo ya que ubica el objeto o problema de estudio para el desarrollo de los objetivos y de los demás elementos que conforman la investigación, por ejemplo, el marco teórico. De otra forma, se hace uso de este tanto en investigaciones cualitativas como cuantitativas.</p>
+                                        <p class="p_black justificado d-block w-100 mt-5" alt="Fourth slide">A manera de conclusión, el marco contextual es fundamental en el proceso investigativo ya que ubica el objeto o problema de estudio para el desarrollo de los objetivos y de los demás elementos que conforman la investigación, por ejemplo, el marco teórico. De otra forma, se hace uso de este tanto en investigaciones cualitativas como cuantitativas.</p>
                                     </div>
                                   </div>
                                   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -711,7 +720,7 @@ function teorias() {
                             <img src="assets/img/img_ova/actividad_general.png" class="" style="width: 100px">
                           </div>
                           <div class="col-md-3 text-center" style="padding-top: 40px;">
-                            <p class="texto_act_general" style="">ACTIVIDAD # 10</p>
+                            <p class="texto_act_general" style="font-size: 18px !important;">ACTIVIDAD #10</p>
                             <div class="linea_general" style=""></div>
                           </div>
                           <div class="col-md-7 banner_general" style="">
@@ -733,10 +742,10 @@ function teorias() {
                                 </div>
                                 <div class="col-12 d-flex justify-content-center">
                                     <div class="row border_r p-0 mh-100 content-activi-l-10">
-                                        <div class="col-6 bg-color text-center border_r card-actividad-10 h-100 cursor d-flex" onclick="cardActividad(10)">
+                                        <div class="col-6 bg-color text-center border_r card-actividad-10 h-250px cursor d-flex" onclick="cardActividad(10)">
                                             <img src="assets/img/img_ova/libros.png" class="w-75 m-auto">
                                         </div>
-                                        <div class="col-8 justify-content p-4 h-100 card-actividad-text-10 d-none">
+                                        <div class="col-8 justify-content p-4 h-250px card-actividad-text-10 d-none">
                                             
                                         </div>
                                     </div>
@@ -909,7 +918,7 @@ function videos() {
                     <div>
                         <p class="p_black justificado"><b>Video:</b> Dr. Roberto Hernández Sampieri. La revisión de la literatura. </p>
                         <p class="p_black justificado">Tiempo: 8 minutos autónomos.</p>
-                        <p class="p_black justificado">El video lo encuentra al dar clic aquí: <a href="https://www.youtube.com/watch?v=zrvZFEcQ_rg" target="_blank">https://www.youtube.com/watch?v=zrvZFEcQ_rg</a></p>
+                        <p class="p_black justificado">El video lo encuentra al dar clic <a href="https://www.youtube.com/watch?v=zrvZFEcQ_rg" target="_blank">aquí</a></p>
                     </div>
                     `;
         $(".video-1").html(texto);
@@ -919,7 +928,7 @@ function videos() {
                     <div>
                         <p class="p_black justificado"><b>Video:</b> Dra. Rosario Hernández.</p>
                         <p class="p_black justificado">Tiempo: 8 minutos autónomos.</p>
-                        <p class="p_black justificado">El video lo encuentra al dar clic aquí: <a href="https://www.youtube.com/watch?v=cG4UnZDH_d8" target="_blank">https://www.youtube.com/watch?v=cG4UnZDH_d8</a></p>
+                        <p class="p_black justificado">El video lo encuentra al dar clic <a href="https://www.youtube.com/watch?v=cG4UnZDH_d8" target="_blank">aquí</a></p>
                     </div>
                     `;
         $(".video-1").html('<p class="m-auto text-center w-fit"><img src="assets/img/img_ova/jugar.png" class="w-125px"></p>');

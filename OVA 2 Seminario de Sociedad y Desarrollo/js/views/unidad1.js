@@ -293,6 +293,7 @@ function controlSlides(num){
         case 24:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
             cambiarColorMenu(21);
+            document.getElementById("actividad24").contentDocument.location.reload(true);
             break;
         case 25:
             setMigaja("Unidades de aprendizaje","1. Visiones frente al desarrollo","Otras visiones frente al desarrollo");
