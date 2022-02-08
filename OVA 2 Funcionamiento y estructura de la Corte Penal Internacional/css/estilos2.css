@@ -66,3 +66,12 @@
   width: 300px;
   height: 550px;
 }
+
+
+;
+}
+
+.btn-carousel li{
+  height: 30px;
+  border-radius: 50%;
+}

@@ -1,12 +1,12 @@
 $(document).ready(function() {
 	var img1 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">1</h2>			
+				<div class="img_questionario d-flex" style="color: black;font-weight: bold;font-size: 28px;padding: 5px 16px;">1
+								
 				</div>
 				`;
 	var img2 = `
-				<div class="img_questionario d-flex">
-					<h2 style="color: #000; margin: auto; width: 90%;">2</h2>			
+				<div class="img_questionario d-flex" style="color: black;font-weight: bold;font-size: 28px;padding: 5px 16px;">2
+								
 				</div>
 				`;
 	$(".img_questionario1").html(img1);
@@ -31,10 +31,12 @@ function siguente(){
 		$("#atras").removeData('slide');*/
 	if (slide == 1) {
 		$("#siguente").data('slide', 2);
+		$(".imagen23").removeClass('invisible');
 		
 		/*$("#atras").data('slide', 3);*/
 	}else if (slide == 2) {
 		$("#siguente").data('slide', 1);
+		$(".imagen23").addClass('invisible');
 		$('.calificar').css({
 								'visibility': 'visible',
 								'color': '#FFF',

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>CodePen - Crucigrama</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./backdrop.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
@@ -17,8 +19,8 @@
         <div class="table-container" style="display:none;" v-show="true">
             <div class="d-flex principal" style="padding: 20px;">
                 <div class="col-md-5 col-sm-5 d-flex" style="width: 45%;">
-                    <img src="./img/actividad_interactiva.png" class="img-activi">
-                    <div>
+                    <img src="./img/actividad_interactiva.png" class="img-activi" style="display: flex;">
+                    <div style="margin: auto; width: 50%;">
                         <div class="content-text-img-activi-2" style="width: 100%;">
                             <b class="text-img-actividad">ACTIVIDAD INTERACTIVA</b>
                         </div>
@@ -79,7 +81,7 @@
         </div>
     </div>
 </div> -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content tranparente" style="box-shadow: none;">
                 <div style="" class="principalM">
@@ -107,9 +109,52 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered m-auto" role="document">
+        <div class="modal-content tranparente" style="    box-shadow: none;">
+          <div style="" class="principal2">
+            <div style="" class="cabeza">
+              
+            </div>
+            <div class="d-flex" style="justify-content: center;">
+              <div style="border: 3px solid white; display: flex;" class="circulo_modal img_res">
+                
+              </div>
+            </div>
+            <div style="padding: 10px; position: relative; top: -45px;">
+              <div style="color: white;font-size: 15px;">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 d-flex" style="text-align: initial;">
+                        <span class="m-auto">Su puntaje es: </span>
+                    </div>
+                    <div class="col-md-12 col-sm-12 d-flex" style="text-align: initial;">
+                        <b class="puntaje m-auto" style="color: #FFC000; font-size: 30px;position: relative; top: -10px; "></b>
+                    </div>
+                    <!-- <div class="col-md-5 col-sm-5"></div> -->
+                </div>
+              </div>
+              <div style="color: white;font-size: 15px;">
+                <div class="row" style="">
+                    <div class="col-md-12 col-sm-12 d-flex">
+                        <p class="mensaje m-auto" style="text-align: initial;"></p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row btns_modal" style="position: relative; top: -60px;justify-content: center;">
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- partial -->
-    <script src='https://unpkg.com/vue'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='../js/vue.min.js'></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/actividades.js"></script>
