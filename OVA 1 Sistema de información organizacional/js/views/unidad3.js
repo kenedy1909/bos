@@ -47,7 +47,7 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD 3 - EL CRM Y EL ERP/TEMA 1 - Los CRM/El CRM como herramienta para el servicio al cliente.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png">El CRM como herramienta para el servicio al cliente.pdf   <b class="text-cafe ml-4"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD 3 - EL CRM Y EL ERP/TEMA 1 - Los CRM/El CRM como herramienta para el servicio al cliente.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png">El CRM como herramienta para el servicio al cliente.pdf   <b class="text-cafe ml-4"style="position: relative;left: 100px;"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);
