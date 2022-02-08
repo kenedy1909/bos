@@ -1368,3 +1368,60 @@ function actividad8Selectores(num, accion) {
     }
 
 }
+
+function card(num) {
+    switch (num) {
+        case 1:
+            $('.card-header1').addClass('d-none');
+            $('.card-header2').addClass('d-none');
+            $('.card-header3').addClass('d-none');
+            $('.card-header4').addClass('d-none');
+
+            $('.card01').removeClass('d-none');
+            break;
+        case 2:
+            $('.card-header1').addClass('d-none');
+            $('.card-header2').addClass('d-none');
+            $('.card-header3').addClass('d-none');
+            $('.card-header4').addClass('d-none');
+
+            $('.card01').addClass('d-none');
+            $('.card02').removeClass('d-none');
+            break;
+        case 3:
+            $('.card-header1').addClass('d-none');
+            $('.card-header2').addClass('d-none');
+            $('.card-header3').addClass('d-none');
+            $('.card-header4').addClass('d-none');
+
+            $('.card01').addClass('d-none');
+            $('.card02').addClass('d-none');
+            $('.card03').removeClass('d-none');
+            break;
+        case 4:
+            $('.card-header1').addClass('d-none');
+            $('.card-header2').addClass('d-none');
+            $('.card-header3').addClass('d-none');
+            $('.card-header4').addClass('d-none');
+
+            $('.card01').addClass('d-none');
+            $('.card02').addClass('d-none');
+            $('.card03').addClass('d-none');
+            $('.card04').removeClass('d-none');
+            break;
+        case 5:
+            $('.card-header1').removeClass('d-none');
+            $('.card-header2').removeClass('d-none');
+            $('.card-header3').removeClass('d-none');
+            $('.card-header4').removeClass('d-none');
+
+            $('.card01').addClass('d-none');
+            $('.card02').addClass('d-none');
+            $('.card03').addClass('d-none');
+            $('.card04').addClass('d-none');
+
+            break;
+        default:
+            break;
+    }
+}
