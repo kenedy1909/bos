@@ -110,6 +110,19 @@ function slide_link(num){
 
 function controlSlides(num){
     switch (parseInt(num)) {
+      case 0:
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
+            esconderPersonaje();
+            cambiarColorMenu(11);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
+            var pdf = `<div class="col-md-12">
+                          <p class="p_white size_20" style= "margin-left: -20%;>
+                              <a href="assets/PDF/El_proceso_escolar_o_la_muerte_a_la_propensióna_investigar.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b> El proceso escolar o la muerte a la propensión a investigar.pdf </b>  <em>ver</em> </a>
+                              
+                          </p>
+                        </div>`;
+            break;
         case 1:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
             esconderPersonaje();
@@ -129,19 +142,26 @@ function controlSlides(num){
                           </p>
                         </div>`;
             $('.pdfs').html(pdf);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 2:
             esconderPersonaje();
             scroll_p11();
             $('.pasos').removeClass('efectos');
             setMigaja("Unidades de aprendizaje","Contextualización", ">");      
-            cambiarColorMenu(21);    
+            cambiarColorMenu(21);  
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";  
             break;
+            
         case 3:
             esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             cambiarColorMenu(31);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             var pdf = `<div class="col-md-12">
                           <p class="p_white size_20" style= "margin-left: -20%;>
                           <a href="assets/PDF/El_proceso_escolar_o_la_muerte_a_la_propensióna_investigar.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b> El proceso escolar o la muerte a la propensión a investigar.pdf </b>  <em>ver</em> </a>
@@ -154,11 +174,15 @@ function controlSlides(num){
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             cambiarColorMenu(31);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 5:
             esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             cambiarColorMenu(31);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             dragging = "";
             diff = "";
             newTop = "";
@@ -174,14 +198,16 @@ function controlSlides(num){
             cambiarColorMenu(31);
             tema = 1;
             $('.ov-personaje').removeClass('d-none');
-            
+            $(".menu1").addClass('d-none');
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             
             break;
 
         default:
             break;
     }
-}
+} 
 
 
 function scroll_p10(){

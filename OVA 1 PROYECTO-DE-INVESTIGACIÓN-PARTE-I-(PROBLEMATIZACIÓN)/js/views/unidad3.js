@@ -115,29 +115,38 @@ function controlSlides3(num){
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             $('#unidad3-3').html(`<iframe src="actividades/actividad/activi3/index.html" frameborder="0"></iframe>`);
             break;
         case 3:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
-            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
           
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
+            document.getElementById("actividad3-4").contentDocument.location.reload(true); 
             break;
         case 5:
           setMigaja("Unidades de aprendizaje");
-          
+          document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
           $('.ov-personaje').removeClass('d-none');
-              
+          $(".menu1").addClass('d-none');
+          $(".menu2").addClass('d-none');
+          $(".menu3").addClass('d-none');
 
               tema=1;
             break; 

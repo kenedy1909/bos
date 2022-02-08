@@ -86,13 +86,24 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe ml-4"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1. La Teoría General de Sistemas - TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> La Teoría General de Sistemas - TGS.pdf  <b class="text-cafe ml-4" style="position: relative;left: 357px;"><u>Ver</u></b></a>
                   </p><br>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2. Introducción a los Conceptos Básicos de la TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 2. Introducción a los Conceptos Básicos de la TGS.pdf.pdf  <b class="text-cafe ml-4"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2. Introducción a los Conceptos Básicos de la TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 2. Introducción a los Conceptos Básicos de la TGS.pdf.pdf  <b class="text-cafe ml-4" style="position: relative;left: 240px;"><u>Ver</u></b></a>
                   </p><br>
                   <p class="p_white">
-                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe ml-4"><u>Ver</u></b></a>
+                        <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 3. Componentes de la TGS.pdf  <b class="text-cafe ml-4"style="position: relative;left: 419px;"><u>Ver</u></b></a>
+                  </p><br>
+                  <p class="p_white">
+                        <a href="assets/PDF/UNIDAD 2 - LOS SISTEMAS DE INFO/TEMA 1 - Fundamentos de los SIO/1. Necesidad de los sistemas de información gerencial para la toma de decisiones en las organizaciones.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 4. Necesidad de los sistemas de información gerencial para la toma de decisiones en las organizaciones.PDF
+                        <b class="text-cafe ml-4" style="position: relative;left: 539px;"><u>Ver</u></b></a>
+                  </p><br>
+                  <p class="p_white">
+                        <a href="assets/PDF/UNIDAD 2 - LOS SISTEMAS DE INFO/TEMA 2 - Tipología/Introducción-a-la-gestión-de-sistemas-de-información-en-la-empresa.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 5. Introducción a la gestión de sistemas de información en la empresa.PDF
+                        <b class="text-cafe ml-4" style="position: relative;left: 128px;"><u>Ver</u></b></a>
+                  </p><br>
+                  <p class="p_white">
+                        <a href="assets/PDF/UNIDAD 3 - EL CRM Y EL ERP/TEMA 1 - Los CRM/El CRM como herramienta para el servicio al cliente.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 6. El CRM como herramienta para el servicio al cliente.pdf   <b class="text-cafe ml-4" style="position: relative;left: 241px;"><u>Ver</u></b></a>
                   </p>
                 </div>`;
 $('.pdfs').html(pdf);

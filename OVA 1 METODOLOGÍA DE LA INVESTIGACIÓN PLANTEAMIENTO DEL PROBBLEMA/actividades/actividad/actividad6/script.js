@@ -150,15 +150,15 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['falsacion', ''];
-            this.palabras[1] = ['falsacion', ''];
-            this.palabras[2] = ['falsacion', ''];
-            this.palabras[3] = ['falsacion', ''];
-            this.palabras[4] = ['falsacion', ''];
-            this.palabras[5] = ['falsacion', ''];
-            this.palabras[6] = ['falsacion', ''];
-            this.palabras[7] = ['falsacion', ''];
-            this.palabras[8] = ['falsacion', ''];
+            this.palabras[0] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[1] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[2] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[3] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[4] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[5] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[6] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[7] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
+            this.palabras[8] = ['falsacion', 'Un procedimiento experimental que desmiente o refuta un enunciado o teoría científica.'];
 
             return this.palabras;
 
@@ -296,7 +296,7 @@ function init_recurso_1() {
             this.dibujarOjos();
         }
 
-    }
+    } 
 
     Ahorcado.prototype.pintarAreaSubrayada = function () {
         var container_palabra = document.getElementById("container_palabra");

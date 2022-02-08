@@ -211,7 +211,7 @@ html{
 }
 .calificacion .modal-body{
     background-size: cover;
-     height: 386px; 
+    height: 386px;
     width: 300px;
 }
 .calificacion .modal-body.exito{
