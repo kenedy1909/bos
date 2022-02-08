@@ -1379,7 +1379,7 @@ a.control_next {
 
 .caja-texto-y23 {
     padding: 24px 18px;
-    height: 220px;
+    height: 260px;
     border-radius: 30px 30px 0px 0px;
     background-color: #ffc09b;
     margin-top: 5px;
@@ -1388,7 +1388,7 @@ a.control_next {
 
 .caja-texto-y21 {
     padding: 27px 22px;
-    height: 395px;
+    height: 420px;
     border-radius: 35px;
     background-color: #ffc09b;
     margin-top: 5px;
@@ -1413,7 +1413,7 @@ a.control_next {
 
 .caja-texto-rosita {
     padding: 13px;
-    height: 410px;
+    height: 440px;
     color: black;
     background-color: #ffc09b;
     margin-top: 20px;
@@ -1993,11 +1993,11 @@ u {
 
 @media only screen and (max-width:1240px) {
     .over_hg {
-        height: 100px;
+        height: 122px;
         overflow: auto;
     }
     .over_hg1 {
-        height: 150px;
+        height: 180px;
         overflow: auto;
     }
 }
