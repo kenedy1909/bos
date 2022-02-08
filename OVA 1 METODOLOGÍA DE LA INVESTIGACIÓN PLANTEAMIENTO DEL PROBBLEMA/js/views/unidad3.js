@@ -138,8 +138,8 @@ function controlSlides3(num) {
         case 8:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             cambiarColorMenu(13);
-            
-
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');
@@ -279,7 +279,7 @@ function pantalla3_2(num) {
                                     </div>
                                     <div class="col-md-12">
                                         <center>
-                                            <p style="font-size: 13px;"><i>Haga clic en la imagen</i></p>
+                                            <p style="font-size: 13px;"><i>Haga clic en las imágenes para mejor visualización.</i></p>
                                         </center>
                                     </div>
             </div>`;
