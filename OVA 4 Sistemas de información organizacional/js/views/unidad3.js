@@ -1,8 +1,11 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
     $(".menu1").removeClass('c-show');
+    $(".menu2").removeClass('d-none');
     $(".menu2").removeClass('c-show');
     $(".menu3").removeClass('d-none');
+    $(".menu3").addClass('c-show');
     $(".pedfs").addClass('d-none');
     console.log(tema);
 
@@ -740,7 +743,7 @@ function selectorP5(num) {
         $('.numSelector1').removeClass('text-white');
         $('.numSelector1').addClass('color-title');
 
-        var img = `<img src="assets/img/img_ova/evalu2.png" width="30%" class="menos-marginT-75">`;
+        var img = `<img src="assets/img/img_ova/evalu2.png" width="40%" class="menos-marginT-75">`;
         $('.imgSelector').html(img);
 
         var parrafo = `Identifique una necesidad en el mercado o problema no solucionado, cuya solución se pueda dar a través de la puesta en marcha de un E-commerce (tienda en internet).`;
@@ -753,7 +756,7 @@ function selectorP5(num) {
         $('.numSelector2').removeClass('text-white');
         $('.numSelector2').addClass('color-title');
 
-        var img = `<img src="assets/img/img_ova/evalu3.png" width="30%" class="menos-marginT-75">`;
+        var img = `<img src="assets/img/img_ova/evalu3.png" width="40%" class="menos-marginT-75">`;
         $('.imgSelector').html(img);
 
         var parrafo = `Defina el modelo de negocios de la tienda, asegurándose de incluir todos los elementos.`;
@@ -765,7 +768,7 @@ function selectorP5(num) {
         $('.numSelector3').removeClass('text-white');
         $('.numSelector3').addClass('color-title');
 
-        var img = `<img src="assets/img/img_ova/evalu4.png" width="30%" class="menos-marginT-75">`;
+        var img = `<img src="assets/img/img_ova/evalu4.png" width="40%" class="menos-marginT-75">`;
         $('.imgSelector').html(img);
 
         var parrafo = `De acuerdo al modelo de negocio, seleccione la plataforma en la cual realizará el diseño (Wordpress.com, Wix.com, app.site123.com, u otro), en este caso no será una tienda en redes sociales, sino tienda en sitio web propio (no se tiene que adquirir el dominio, recuerda que estas plataformas posibilitan la publicación del sitio web).`;
@@ -777,7 +780,7 @@ function selectorP5(num) {
         $('.numSelector4').removeClass('text-white');
         $('.numSelector4').addClass('color-title');
 
-        var img = `<img src="assets/img/img_ova/evalu5.png" width="30%" class="menos-marginT-75">`;
+        var img = `<img src="assets/img/img_ova/evalu5.png" width="40%" class="menos-marginT-75">`;
         $('.imgSelector').html(img);
 
         var parrafo = `Elabore el Catálogo de Productos (o servicios), incluye la selección de fotos, la definición de los atributos a cada uno (descripción de las características), precios y propuesta de promociones (si se desea).`;
@@ -789,7 +792,7 @@ function selectorP5(num) {
         $('.numSelector5').removeClass('text-white');
         $('.numSelector5').addClass('color-title');
 
-        var img = `<img src="assets/img/img_ova/evalu6.png" width="30%" class="menos-marginT-75">`;
+        var img = `<img src="assets/img/img_ova/evalu6.png" width="40%" class="menos-marginT-75">`;
         $('.imgSelector').html(img);
 
         var parrafo = `Defina los demás pasos, que apliquen, de acuerdo a la cadena de valor del E-commerce a crear.`;
@@ -801,7 +804,7 @@ function selectorP5(num) {
         $('.numSelector6').removeClass('text-white');
         $('.numSelector6').addClass('color-title');
 
-        var img = `<img src="assets/img/img_ova/evalu7.png" width="30%" class="menos-marginT-75">`;
+        var img = `<img src="assets/img/img_ova/evalu7.png" width="40%" class="menos-marginT-75">`;
         $('.imgSelector').html(img);
 
         var parrafo = `Realice un análisis de la normatividad y regulación legal que debe seguir para la operación de la tienda. Allí se debe incluir la propuesta de texto de Términos y Condiciones, que se debe publicar en la tienda.`;

@@ -1353,11 +1353,12 @@ p, button{
 
 /*Deslizador*/
 
-.inputDiv,.inputDiv2,.inputDiv3 {
+.inputDiv,.inputDiv2,.inputDiv3,.inputDiv4{
   width: 100%;
   display:block;
   color:var(--bg-color);
   position:relative;
+  margin-top: 15px;
 }
 
 .output{display:none; width:40px; text-align:center;}
@@ -1451,6 +1452,7 @@ input[type=range]::-ms-fill-upper {
 .inputDiv2 input[type='range']::-webkit-slider-runnable-track,
 .inputDiv2 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
+  margin-top: -14px!important;
 }
 
 .inputDiv2 input[type=range]::-webkit-slider-thumb {
@@ -1604,6 +1606,7 @@ input[type=range]::-ms-fill-upper {
 .inputDiv4 input[type='range']::-webkit-slider-runnable-track,
 .inputDiv4 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
+  margin-top: -14px!important;
 }
 
 .inputDiv4 input[type=range]::-webkit-slider-thumb {

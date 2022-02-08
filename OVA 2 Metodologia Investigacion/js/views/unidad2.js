@@ -129,13 +129,7 @@ function controlSlides2(num){
             cambiarColorMenu(12);
             break;
         case 6:
-            knob = '';
-            bar = '';
-            container = '';
-            knob = document.querySelector('.custom-scrollbar__knob2');
-            bar = document.querySelector('.custom-scrollbar__bar2');
-            container = document.querySelector('.custom-scrollbar__inner2');
-            scroll();
+            
             setMigaja("Unidades de aprendizaje","2. Fundamento Teórico","Proceso de revisión de la literatura");
             cambiarColorMenu(12);
             break;
@@ -865,8 +859,29 @@ function poner(num) {
         'z-index': '100'
     });
     if (num == 3) {
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob2');
+        bar = document.querySelector('.custom-scrollbar__bar2');
+        container = document.querySelector('.custom-scrollbar__inner2');
+        scroll(); 
         $(".custom-scrollbar__bar2").css('display','block');
         $(".custom-scrollbar2").css('height','250');
+    } 
+    if (num == 1) {
+        console.log("poner1");
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob1');
+        bar = document.querySelector('.custom-scrollbar__bar1');
+        container = document.querySelector('.custom-scrollbar__inner1');
+        scroll(); 
+        $(".custom-scrollbar__bar1").css('display','block');
+        $(".custom-scrollbar1").css('height','250');
     } 
 }
 function quitar(num) {
@@ -879,6 +894,11 @@ function quitar(num) {
     if (num == 3) {
         $(".custom-scrollbar__bar2").css('display','none');
         $(".custom-scrollbar2").css('height','180px');
+    } 
+
+    if (num == 1) {
+        $(".custom-scrollbar__bar1").css('display','none');
+        $(".custom-scrollbar1").css('height','180px');
     } 
 }
 

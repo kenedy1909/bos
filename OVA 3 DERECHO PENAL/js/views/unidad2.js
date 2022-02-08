@@ -230,8 +230,8 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             cambiarColorMenu(22);
             $(".i5").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            var elementoPadre1 = document.querySelector(".inputDiv4.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv4.i6");
             var inputsRy = [];  
             var i = new Input2(2);
             i.crear(elementoPadre1);
@@ -277,11 +277,13 @@ function controlSlides(num){
                 }, false)
               }(n));
             }  
+            
+            document.getElementById("actividad15").contentDocument.location.reload(true);
             break;
         case 15:
             $(".i5").html('')    
-            var elementoPadre1 = document.querySelector(".inputDiv2.i5");
-            var elementoPadre2 = document.querySelector(".inputDiv2.i6");
+            var elementoPadre1 = document.querySelector(".inputDiv4.i5");
+            var elementoPadre2 = document.querySelector(".inputDiv4.i6");
             var inputsRy = [];  
             var i = new Input2(2);
             i.crear(elementoPadre1);
@@ -303,10 +305,14 @@ function controlSlides(num){
             }  
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             cambiarColorMenu(22);
+            
+            document.getElementById("actividad15").contentDocument.location.reload(true);
             break;    
         case 16:
             setMigaja("Unidades de aprendizaje","2. Reglas de procedimiento y prueba","Del enjuiciamiento");
             cambiarColorMenu(22);
+            
+            document.getElementById("actividad15").contentDocument.location.reload(true);
             break;    
         default:
             break;
