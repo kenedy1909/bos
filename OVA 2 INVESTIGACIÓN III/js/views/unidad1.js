@@ -157,7 +157,7 @@ function controlSlides(num){
         case 6:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
             cambiarColorMenu(41);
-            
+            document.getElementById("actividad6").contentDocument.location.reload(true);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","","");
