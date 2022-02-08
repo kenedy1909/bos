@@ -9,7 +9,7 @@ $( document ).ready(function() {
     $(".menu3").removeClass('c-show');
     $(".menu4").removeClass('c-show');
     star_uni = 1;
-    // $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    
 
     $('#smartwizard').smartWizard({
         loader:"show",
@@ -201,7 +201,7 @@ function controlSlides(num){
             $(".menu1").addClass('d-none');
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
-            
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             break;
 
         default:
