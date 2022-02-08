@@ -3,6 +3,8 @@ $( document ).ready(function() {
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $(".menu2").removeClass('d-none');
+    $(".menu1").removeClass('c-show');
+    $(".menu2").addClass('c-show');
     star_uni = 2;
     paso = false;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
@@ -32,6 +34,25 @@ $( document ).ready(function() {
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
+    });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        if (tema != 0) {
+            controlSlides(tema+1);
+            tema = 0;
+        } else {
+            controlSlides(stepIndex+1);
+        }
+        // quitarflecha(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
 
     $(".int1").on("click", function () {
@@ -195,7 +216,7 @@ function hoverp42(argument) {
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
-    actualizarprogress(stepIndex+20+1);
+    /*actualizarprogress(stepIndex+20+1);*/
 }
 
 function slide_predeterminado(){
@@ -213,6 +234,7 @@ function slide_link(num){
 }
 
 function controlSlides(num){
+    actualizarprogress(num+20);
     slideCount = "";
     slideWidth = "";
     slideHeight = "";
@@ -220,43 +242,54 @@ function controlSlides(num){
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            cambiarColorMenu(12);
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            cambiarColorMenu(12);
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            cambiarColorMenu(12);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            cambiarColorMenu(12);
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            cambiarColorMenu(12);
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            cambiarColorMenu(12);
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de lectura y comunicación");
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             slideCount = $('#slider-3 ul li').length;
             slideWidth = $('#slider-3 ul li').width();
             slideHeight = $('#slider-3 ul li').height();
@@ -287,6 +320,7 @@ function controlSlides(num){
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             slideCount = $('#slider-4 ul li').length;
             slideWidth = $('#slider-4 ul li').width();
             slideHeight = $('#slider-4 ul li').height();
@@ -318,6 +352,7 @@ function controlSlides(num){
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             $(".i3").html('')    
             var elementoPadre1 = document.querySelector(".inputDiv2.i3");
             var elementoPadre2 = document.querySelector(".inputDiv2.i4");
@@ -343,18 +378,30 @@ function controlSlides(num){
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 15:
             
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
+            break;
+        case 18:
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
+            break;
+        case 19:
+            setMigaja("Unidades de aprendizaje","2. Desarrollo de la comunicación","Procesos de escritura");
+            cambiarColorMenu(22);
             break;
         
         default:

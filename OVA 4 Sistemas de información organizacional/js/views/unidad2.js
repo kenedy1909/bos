@@ -127,7 +127,12 @@ function controlSlides(num) {
             $("#img_2").html('');
             star_uni = 2;
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
             break;
+            break;
+        case 5:
+
         default:
             break;
     }
@@ -1355,20 +1360,15 @@ function actividad8Selectores(num, accion) {
         if (num == 1) {
             $('.activi8Select1').addClass('d-none');
             $('.activi8Card1').removeClass('d-none');
+            $('.activi8Select2').removeClass('d-none');
+            $('.activi8Card2').addClass('d-none');
         } else if (num == 2) {
             $('.activi8Select2').addClass('d-none');
             $('.activi8Card2').removeClass('d-none');
-        }
-    } else if (accion == 'cerrar') {
-        if (num == 1) {
             $('.activi8Select1').removeClass('d-none');
             $('.activi8Card1').addClass('d-none');
-        } else if (num == 2) {
-            $('.activi8Select2').removeClass('d-none');
-            $('.activi8Card2').addClass('d-none');
         }
     }
-
 }
 
 function card(num) {
