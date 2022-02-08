@@ -1930,7 +1930,7 @@ a.control_next {
 }
 
 .cont-cohete{
-    height: 440px;
+    height: 300px;
     width: 670px;
     border: solid #00465e 7px;
     border-radius: 50% 50% 1px 1px;
@@ -1943,6 +1943,7 @@ a.control_next {
   background: #FCD966;
   border: solid #00465e;
   position: relative;
+      z-index: 1;
 }
 .img-15{
   max-width: 15%;
@@ -1991,7 +1992,7 @@ a.control_next {
 }
 .contenidoCohete{
   position: relative;
-  top: -270px;
+      top: -318px;
   padding: 15px;
 }
 
