@@ -398,11 +398,11 @@ function pinochet(num) {
                             </div>
                           </div>
                           <div class="col-md-12 mt-2 mb-5">
-                              <div class="d-flex">
-                                  <div class="img-45 m-auto">
+                              <div class="d-flex mb-2 mt-1">
+                                  <div class="img-45 m-auto" style="position: relative;left: 20px;">
                                     <img src="assets/img/img_ova/reloj.png" class="img-50">
                                   </div>
-                                  <p class="p_black pl-3 m-auto">Tiempo sugerido: <b>40 minutos</b></p>
+                                  <p class="p_black pl-3 m-auto" style="width: 500px;">Tiempo sugerido: <b>40 minutos</b></p>
                               </div>
                               <div class="d-flex">
                                 <div class="m-auto">
