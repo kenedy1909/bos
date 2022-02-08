@@ -186,6 +186,7 @@ function controlSlides(num){
         case 2:
 
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
+            document.getElementById("actividad17").contentDocument.location.reload(true);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
@@ -680,20 +681,3 @@ function fun35(num){
 }
 
 figura = document.getElementById("ctrflecha");
-
-document.addEventListener("keydown",
-    function(event) {
-        switch (event.key) {
-            case "Left": // IE/Edge specific value
-            case "ArrowLeft":
-                slide();
-                actualizarprogress();
-                break;
-            case "Right": // IE/Edge specific value
-            case "ArrowRight":
-                slide();
-                actualizarprogress();
-                break;
-        }
-    }
-);

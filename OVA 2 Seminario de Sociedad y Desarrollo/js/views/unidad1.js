@@ -7,6 +7,7 @@ $( document ).ready(function() {
     $(".menu2").removeClass('c-show');
     star_uni = 1;
     $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -109,7 +110,7 @@ $( document ).ready(function() {
 
     /*scroll();*/
     slide_link(tema);
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+
 });
 var pdf = `<div class="col-md-12">
                   <p class="p_white">

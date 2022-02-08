@@ -103,7 +103,7 @@ function controlSlides(num){
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Importancia de la formación humanística");
-            
+            document.getElementById("actividad3").contentDocument.location.reload(true);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             
@@ -933,7 +933,7 @@ function poner(num) {
         knob = document.querySelector('.custom-scrollbar__knob21');
         bar = document.querySelector('.custom-scrollbar__bar21');
         container = document.querySelector('.custom-scrollbar__inner21');
-        scroll();
+        scroll(); 
     }
     if (num == 3) {
         dragging = "";

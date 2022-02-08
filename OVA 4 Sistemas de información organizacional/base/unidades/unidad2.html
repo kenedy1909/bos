@@ -311,20 +311,20 @@
                                 <div class="col-6 d-flex align-items-end pl-4">
                                     <h5 class="subtitulo">El modelo de negocio</h5>
                                 </div>
-                                <div class="col-6 d-none justify-content-end align-items-center" id="BtnCerrar">
+                                <div class="col-6 d-none justify-content-end align-items-center" id="BtnCerrar" style="position: relative; top: 60px;">
                                     <div class="col-12 my-3 d-flex justify-content-end zindex pr-5">
                                         <div class="divcerrarMt divcerrarMtp7">
                                             <button type="button" class="btn m-0 px-3 py-2 bg-color-dark rounded-circle menos-marginB-15 shadow hoverUniversalT btnX" onclick="cambioPantalla3(0)">
                                       <h2 class="text-white text-center x-modal-text"><b>X</b></h2>
                                   </button>
-                                            <button type="button" class="btn m-0 px-3 py-2 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi1" onclick="cambioPantalla3('activi1')">
-                                      <h2 class="text-white text-center x-modal-text"><b>Continuar</b></h2>
+                                            <button type="button" class="btn m-0 px-2 py-1 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi1" onclick="cambioPantalla3('activi1')">
+                                      <h3 class="text-white text-center x-modal-text"><b>Continuar</b></h3>
                                   </button>
-                                            <button type="button" class="btn m-0 px-3 py-2 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi2" onclick="cambioPantalla3('activi2')">
-                                      <h2 class="text-white text-center x-modal-text"><b>Continuar</b></h2>
+                                            <button type="button" class="btn m-0 px-2 py-1 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi2" onclick="cambioPantalla3('activi2')">
+                                      <h3 class="text-white text-center x-modal-text"><b>Continuar</b></h3>
                                   </button>
-                                            <button type="button" class="btn m-0 px-3 py-2 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi3" onclick="cambioPantalla3('activi3')">
-                                      <h2 class="text-white text-center x-modal-text"><b>Continuar</b></h2>
+                                            <button type="button" class="btn m-0 px-2 py-1 bg-color-dark border-10 menos-marginB-15 shadow hoverUniversalT d-none btnActivi3" onclick="cambioPantalla3('activi3')">
+                                      <h3 class="text-white text-center x-modal-text"><b>Continuar</b></h3>
                                   </button>
                                         </div>
                                     </div>
@@ -427,9 +427,9 @@
                                         <img src="assets/img/img_ova/canvas2.png" class="img-100">
                                     </div>
                                 </div>
-                                <div class="col-md-12 row d-flex justify-content-center" style="height: 215px;">
+                                <div class="col-md-12 row d-flex justify-content-center" style="min-height: 215px;">
                                     <div class="col-md-4 p-3 cursor">
-                                        <div class="flip-cardnew" style="">
+                                        <div class="flip-cardnew" style="min-height: 100px;">
                                             <div class="flip-cardnew-inner" style="border-radius: 50px;">
                                                 <div class="flip-cardnew-front">
                                                     <div class="d-flex justify-content-center">
@@ -452,7 +452,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 p-3 cursor">
-                                        <div class="flip-cardnew" style="">
+                                        <div class="flip-cardnew" style="min-height: 100px;">
                                             <div class="flip-cardnew-inner" style="border-radius: 50px;">
                                                 <div class="flip-cardnew-front">
                                                     <div class="d-flex justify-content-center">
@@ -473,7 +473,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 p-3 cursor">
-                                        <div class="flip-cardnew" style="">
+                                        <div class="flip-cardnew" style="min-height: 100px">
                                             <div class="flip-cardnew-inner" style="border-radius: 50px;">
                                                 <div class="flip-cardnew-front">
                                                     <div class="d-flex justify-content-center">
@@ -488,12 +488,16 @@
                                                     <div style="height: 150px; overflow: auto;">
                                                         <p class="font13">A continuación se relacionan algunos elementos que pueden ser considerados a la hora de construir una propuesta de valor:</p>
                                                         <div class="row col-md-12">
-                                                            <p class="col-md-6" style="font-size: 11px;padding: 0px;">
+                                                            <div class="col-md-6" style="font-size: 11px;padding: 0px;">
                                                                 Novedad <br> Personalización <br> Cumplimiento <br> Diseño <br> Marca/status <br>
-                                                            </p>
-                                                            <p class="col-md-6" style="font-size: 11px;padding-left: 23px;">
-                                                                Precio <br> Costos bajos <br> Accesibilidad <br> Disponibilidad <br> Comodidad <br>
-                                                            </p>
+                                                            </div>
+                                                            <div class="col-md-6" style="font-size: 11px;padding-left: 23px;">
+                                                                <p style=" margin-left: -5px;font-size: 11px;">Precio </p><br>
+                                                                <p style="font-size: 11px; margin-top: -18px; width: 63px;"> Costos bajos </p><br>
+                                                                <p style="font-size: 11px; margin-top: -19px; "> Accesibilidad </p><br>
+                                                                <p style="font-size: 11px;margin-top: -19px;"> Disponibilidad </p><br>
+                                                                <p style="font-size: 11px; margin-top: -17px;">Comodidad </p><br>
+                                                            </div>
                                                         </div>
 
                                                     </div>
@@ -512,8 +516,8 @@
                                         <p class="p_black font13"><b>Para ampliar la información respecto a la relación con los clientes utilice las flechas:</b></p>
                                     </div>
                                 </div>
-                                <div class="row mt-2" style="height: 270px;">
-                                    <div class="col-md-4">
+                                <div class="row" style="height: 270px;">
+                                    <div class="col-md-4" style="    margin-top: 60px;">
                                         <div class="puntero puntero1 punteroInactive cursor" onclick="punteros(1);">
                                             A
                                         </div>
@@ -536,38 +540,38 @@
                                                 <img src="assets/img/img_ova/rela1.png" class="img-30 img-globo">
                                             </div>
                                             <div class="mt-5">
-                                                <p class="font13">Cuando se habla de relación con los clientes, se habla en parte a una estrategia empresarial o a un propósito superior que despierta la intención de entablar puentes de relaciones entre la empresa y el cliente,
+                                                <p class="font13 p_black">Cuando se habla de relación con los clientes, se habla en parte a una estrategia empresarial o a un propósito superior que despierta la intención de entablar puentes de relaciones entre la empresa y el cliente,
                                                     por lo tanto una relación puede basarse en fundamentos como:</p>
-                                                <p class="font13 text-center"><b>Captación de clientes <br>
+                                                <p class="font13 text-center p_black"><b>Captación de clientes <br>
                                         Fidelización de clientes <br>
                                         Estimulación de las ventas</b></p>
                                             </div>
                                         </div>
-                                        <div class="globorosa gloRo2 d-none">
+                                        <div class="globorosa gloRo2 d-none mt-5">
                                             <div class="text-center" style="height: 30px;">
                                                 <img src="assets/img/img_ova/rela3.png" class="img-30 img-globo">
                                             </div>
                                             <div class="mt-5">
-                                                <p class="font13 text-center"><b class="p_black">Captación de clientes</b></p>
-                                                <p class="font13 text-center">Cuando las acciones que se realizan tiene como propósito incrementar la cantidad de clientes.</p>
+                                                <p class="font13 text-center p_black"><b class="p_black">Captación de clientes</b></p>
+                                                <p class="font13 text-center p_black">Cuando las acciones que se realizan tiene como propósito incrementar la cantidad de clientes.</p>
                                             </div>
                                         </div>
-                                        <div class="globorosa gloRo3 d-none">
+                                        <div class="globorosa gloRo3 d-none mt-5">
                                             <div class="text-center" style="height: 35px;">
                                                 <img src="assets/img/img_ova/rela2.png" class="img-30 img-globo">
                                             </div>
                                             <div class="mt-5">
-                                                <p class="font13 text-center"><b class="p_black">Fidelización de clientes</b></p>
-                                                <p class="font13 text-center">Cuando las acciones que se realizan tienen como propósito lograr mantener contentos y leales a los clientes actuales.</p>
+                                                <p class="font13 text-center p_black"><b class="p_black">Fidelización de clientes</b></p>
+                                                <p class="font13 text-center p_black">Cuando las acciones que se realizan tienen como propósito lograr mantener contentos y leales a los clientes actuales.</p>
                                             </div>
                                         </div>
-                                        <div class="globorosa gloRo4 d-none">
+                                        <div class="globorosa gloRo4 d-none mt-5">
                                             <div class="text-center" style="height: 35px;">
                                                 <img src="assets/img/img_ova/rela4.png" class="img-30 img-globo">
                                             </div>
                                             <div class="mt-5">
-                                                <p class="font13 text-center"><b class="p_black">Estimulación de las ventas:</b></p>
-                                                <p class="font13 text-center">Cuando las acciones que se realizan tienen como propósito incentivar a que los clientes (nuevos y antiguos) compren más.</p>
+                                                <p class="font13 text-center p_black"><b class="p_black">Estimulación de las ventas:</b></p>
+                                                <p class="font13 text-center p_black">Cuando las acciones que se realizan tienen como propósito incentivar a que los clientes (nuevos y antiguos) compren más.</p>
                                             </div>
                                         </div>
                                         <div class="globorosa gloRo5 d-none">
@@ -575,7 +579,7 @@
                                                 <img src="assets/img/img_ova/rela5.png" class="img-30 img-globo">
                                             </div>
                                             <div class="mt-5">
-                                                <p class="font13">Existen varios tipos de relaciones con clientes que pueden coexistir en las estrategias de relacionamiento que una empresa puede considerar con su segmento de clientes.</p>
+                                                <p class="font13 p_black">Existen varios tipos de relaciones con clientes que pueden coexistir en las estrategias de relacionamiento que una empresa puede considerar con su segmento de clientes.</p>
                                                 <p class="font13 p_black"><b>Seleccione el botón para conocerlas:</b></p>
                                                 <div class="text-center">
                                                     <a href="assets/img/img_ova/relacionamiento.png" target="_blank" download><button class="btn btn_vino">DESCARGAR</button></a>
@@ -583,7 +587,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-3">
+                                    <div class="col-md-3" style="    margin-top: 90px;">
                                         <div class="text-center">
                                             <img src="assets/img/img_ova/canvas3.png" class="img-100">
                                         </div>
@@ -607,7 +611,7 @@
                                     </p>
                                 </div>
 
-                                <div class="col-12 my-4  d-flex justify-content-center align-items-center" style="height: 350px;">
+                                <div class="col-12 my-4  d-flex justify-content-center align-items-center" style="height: 300px;">
                                     <div class="row d-flex justify-content-center align-items-center">
                                         <div class="col-9 d-none" id="carreteraSec1">
                                             <div class="border-45 bg-color-yellow-claro shadow p-4 pl-5 d-flex justify-content-center align-items-center">
@@ -647,7 +651,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-10 d-none" id="carreteraSec5">
+                                        <div class="col-12 d-none" id="carreteraSec5">
                                             <div class="border-45 bg-color-yellow-claro  shadow p-4 pl-5 text-center">
                                                 <div class="w-100">
                                                     <p class="p_black justificado mx-2">Tipologías de Canales: finalmente, Osterwalder (2011), plantea dos tipologías de canales a considerar, para un modelo de negocio:</p>
@@ -663,7 +667,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 fondoCanal1 d-flex justify-content-center align-items-center" style="height: 150px;">
+                                <div class="col-12 fondoCanal1 d-flex justify-content-center align-items-center" style="height: 50px;">
                                     <div class="col-2 mx-3 d-flex justify-content-center align-items-center">
                                         <div class="bg-color-yellow rounded-circle py-1 px-2 cursor hoverAmarillo border-yellow selectorCarretera1" onclick="carretera(1)">
                                             <p class="h4 p_black"><b>A</b></p>
@@ -1033,7 +1037,7 @@
                                 </div>
                             </div>
                             <div class="row mt-3 d-none" id="pantalla3_act1">
-                                <iframe src="actividades/actividad/anagrama/index.html" frameborder="0"></iframe>
+                                <iframe src="actividades/actividad/anagrama/index.html" frameborder="0" style="min-height: 1115px;"></iframe>
                             </div>
                             <div class="row mt-3 d-none" id="pantalla3_act2">
                                 <iframe src="actividades/actividad/arrastrar2/index.html" frameborder="0"></iframe>
@@ -1044,18 +1048,24 @@
                             <div style="height: 20px;"></div>
                         </div>
                         <div id="unidad2-4" class="tab-pane " role="tabpanel">
-                            <div class="row px-3">
-                                <div class="col-md-12 p-2">
-                                    <div class="row">
-                                        <div class="col-md-5 row">
-                                            <img src="assets/img/img_ova/actividad_general.png" style="width: 116px;   height: 116px;">
-                                            <div class="text-img-activi">
-                                                <b style="font-size: 20px; color: #78201A;">Actividad # 8</b>
-                                            </div>
+                            <div class="row">
+                                <div class="col-md-12 row pl-4">
+                                    <div class="col-md-4 d-flex p-0 zindex" style="width: 50px">
+                                        <img src="assets/img/img_ova/actividad_general.png" class="imgactividad">
+                                        <div class="titulo_sub">
+                                            <p><b>ACTIVIDAD #8</b></p>
                                         </div>
-                                        <div class="col-md-7 " style="background: #DEEBF7; border-radius: 20px;padding-top: 15px;padding-left: 30px;box-shadow: 1px 1px 6px 0px;">
-                                            <p><img src="assets/img/img_ova/copiar.png" style="max-width: 30px;"> <b class="p_black">Ejercicio práctico</b></p>
-                                            <p><img src="assets/img/img_ova/reloj.png" style="max-width: 30px;"> <b class="p_black">Tiempo sugerido: 4 horas</b></p>
+                                    </div>
+                                    <div class="col-md-7 d-flex banner_activi shadow">
+                                        <div class="m-auto" style="width: 100%;">
+                                            <div class="d-flex mb-2">
+                                                <img src="assets/img/img_ova/copiar.png" style="width: 27px;">
+                                                <p class="text-black pl-3">Ejercicio práctico</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="assets/img/img_ova/reloj.png" style="width: 27px;">
+                                                <p class="text-black pl-3">Tiempo sugerido: 4 horas</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1069,7 +1079,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="row mt-5 d-flex justify-content-center">
+                            <div class="row mt-3 d-flex justify-content-center">
                                 <div class="col-5 p-3">
                                     <div class="bg-color-dark py-4 text-center border-rt-25 cursor shadow activi8Select1" onclick="actividad8Selectores(1,'abrir')">
                                         <h2>1</h2>
@@ -1077,7 +1087,7 @@
                                             <div class="trianguloPantallaActivi menos-marginB-75 mt-2 cursor"></div>
                                         </div>
                                     </div>
-                                    <div class="bg-color-rosa border-rb-45 text-center p-4 activi8Card1 cursor shadow d-none" onclick="actividad8Selectores(1,'cerrar')">
+                                    <div class="bg-color-rosa border-rb-45 text-center p-4 activi8Card1 cursor shadow d-none">
                                         <img src="assets/img/img_ova/escribir.png" width="40%">
                                         <p class="text-white justificado">
                                             Elabore un ensayo de manera individual, de máximo 3 páginas en el cual analice cómo la pandemia retó a las empresas a re-diseñar o reestructurar el modelo de negocio, al obligarlas a habilitar canales de comercialización virtual.
@@ -1091,20 +1101,23 @@
                                             <div class="trianguloPantallaActivi menos-marginB-75 mt-2 cursor"></div>
                                         </div>
                                     </div>
-                                    <div class="bg-color-rosa border-rb-45 text-center p-4 activi8Card2 cursor shadow d-none" onclick="actividad8Selectores(2,'cerrar')">
+                                    <div class="bg-color-rosa border-rb-45 text-center p-4 activi8Card2 cursor shadow d-none" style="height: 300px;">
                                         <img src="assets/img/img_ova/pautas.png" width="40%">
-                                        <p class="text-white justificado">
-                                            Esto implica responder de manera implícita preguntas como:
-                                        </p>
-                                        <ol class="text-white">
-                                            <li>¿Cómo empresas con trayectoria y bien posicionadas en canales tradicionales, tuvieron que incursionar en canales virtuales? </li>
-                                            <li>¿Cuáles fueron los retos empresariales y gerenciales que tuvieron que enfrentar, desde el punto de vista del modelo de negocio? </li>
-                                            <li>¿Qué implicaciones tuvieron estos cambios en materia de transformación cultural en las empresas?</li>
-                                        </ol>
+                                        <div style="height: 150px; overflow: auto;">
+                                            <p class="text-white justificado">
+                                                Esto implica responder de manera implícita preguntas como:
+                                            </p>
+                                            <ol class="text-white" style="text-align: justify;">
+                                                <li>¿Cómo empresas con trayectoria y bien posicionadas en canales tradicionales, tuvieron que incursionar en canales virtuales? </li>
+                                                <li>¿Cuáles fueron los retos empresariales y gerenciales que tuvieron que enfrentar, desde el punto de vista del modelo de negocio? </li>
+                                                <li>¿Qué implicaciones tuvieron estos cambios en materia de transformación cultural en las empresas?</li>
+                                            </ol>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <div style="height: 400px;"></div>
+                            <div style="height: 150px;"></div>
                         </div>
                         <div id="unidad2-5" class="tab-pane " role="tabpanel">
                             <div class="row">
@@ -1123,7 +1136,9 @@
 
                                                                 </div>
                                                                 <div class="user">
-                                                                    <img class="img-circle" src="assets/img/img_ova/unidad1.png" />
+                                                                    <div class="gris_circle">
+                                                                        <img class="img-circle" src="assets/img/img_ova/unidad1.png" />
+                                                                    </div>
                                                                 </div>
                                                                 <div class="content text-center">
                                                                     <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 1</h3>
@@ -1144,7 +1159,9 @@
 
                                                                 </div>
                                                                 <div class="user">
-                                                                    <img class="img-circle" src="assets/img/img_ova/unidad2.png" />
+                                                                    <div class="gris_circle">
+                                                                        <img class="img-circle" src="assets/img/img_ova/unidad2.png" />
+                                                                    </div>
                                                                 </div>
                                                                 <div class="content text-center">
                                                                     <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 2</h3>
@@ -1165,7 +1182,9 @@
 
                                                                 </div>
                                                                 <div class="user">
-                                                                    <img class="img-circle" src="assets/img/img_ova/unidad3.png" />
+                                                                    <div class="gris_circle">
+                                                                        <img class="img-circle" src="assets/img/img_ova/unidad3.png" />
+                                                                    </div>
                                                                 </div>
                                                                 <div class="content text-center">
                                                                     <h3 class="text-center p_white">UNIDAD DE APRENDIZAJE 3</h3>
