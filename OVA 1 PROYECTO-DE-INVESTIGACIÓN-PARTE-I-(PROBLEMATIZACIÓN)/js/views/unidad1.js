@@ -26,7 +26,7 @@ $( document ).ready(function() {
         }
     });
     /*slide_predeterminado();*/
-    $(".linkactividades").attr('href',urlsite+'course/view.php?id='+courseid);
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
@@ -49,7 +49,7 @@ $( document ).ready(function() {
       // console.log('holaaa');
       
   }
-  setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
+  setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", "");
 
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         
@@ -111,7 +111,7 @@ function slide_link(num){
 function controlSlides(num){
     switch (parseInt(num)) {
       case 0:
-            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
+            setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente", "");
             esconderPersonaje();
             cambiarColorMenu(11);
             document.getElementById("next").style.display="block";
@@ -124,7 +124,7 @@ function controlSlides(num){
                         </div>`;
             break;
         case 1:
-            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", ">");
+            setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", "");
             esconderPersonaje();
             cambiarColorMenu(11);
             dragging = "";
@@ -149,7 +149,7 @@ function controlSlides(num){
             esconderPersonaje();
             scroll_p11();
             $('.pasos').removeClass('efectos');
-            setMigaja("Unidades de aprendizaje","Contextualización", ">");      
+            setMigaja("Unidades de aprendizaje","Contextualización", "");      
             cambiarColorMenu(21);  
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";  

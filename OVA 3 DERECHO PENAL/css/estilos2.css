@@ -490,7 +490,7 @@
 }
 
 .w1060px{
-  width: 1000px;
+  width:1020px;
 }
 
 .titulo-activity8{
@@ -511,4 +511,10 @@
 .border-imgJuicio{
   border: 3px solid brown;
   border-radius: 50%;
+}
+
+
+.parrafoGrande{
+  height: 100px;
+  overflow: auto;
 }
