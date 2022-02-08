@@ -104,7 +104,7 @@ function controlSlides4(num){
         case 1:
           var pdf = `<div class="col-md-12">
             <p class="p_white size_20">
-            <a href="assets/PDF/problematización.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Problematización.pdf </b> <em>ver</em></a>
+            <a href="assets/PDF/problematizacion.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Problematización.pdf </b> <em>ver</em></a>
             
             </p>
             </div>`;

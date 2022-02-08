@@ -115,14 +115,14 @@ $( document ).ready(function() {
     });
 
     
-    // $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
-    //     slide();
-    //     // console.log(e);
-    //     switch(stepIndex) {
-    //         default:
-    //         // code block
-    //     }
-    // });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
     
     /*slide_predeterminado();*/
 
@@ -229,7 +229,7 @@ function controlSlides(num){
              
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
+            setMigaja("Unidades de aprendizaje","","");
             $(".menu1").addClass('d-none');
             tema=1;
             break;
@@ -1284,18 +1284,3 @@ function funcionalidad_7(num) {
 }
 
 figura = document.getElementById("ctrflecha");
-
-document.addEventListener("keydown",
-    function(event) {
-        switch (event.key) {
-            case "Left": // IE/Edge specific value
-            case "ArrowLeft":
-                slide(1);
-                break;
-            case "Right": // IE/Edge specific value
-            case "ArrowRight":
-                slide(1);
-                break;
-        }
-    }
-);
