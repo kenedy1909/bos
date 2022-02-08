@@ -1393,7 +1393,7 @@ function teorias() {
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -160px;">
                                 <div class="bg-blanco radius-2 my-auto mx-3 px-3 py-4 d-flex justify-content-center align-items-center" style="width: 261px;height: 310px;">
-                                    <img src="assets/img/img_ova/imagen423.svg" style="width: 180px;">
+                                    <img src="assets/img/img_ova/imagen423.svg" style="width: 174px;margin-top: 17%;">
                                 </div>
                                 <div class="bg-blanco radius-2 my-auto mx-3 px-3 py-4 d-flex justify-content-center align-items-center" style="width: 261px;height: 310px;">
                                     <img src="assets/img/img_ova/imagen322.svg" style="width: 180px;">
