@@ -172,7 +172,7 @@ function controlSlides(num) {
         case 6:
             setMigaja("Unidades de aprendizaje", "1. La ciencia: concepto y definición", "Tipos de conocimiento");
             cambiarColorMenu(21);
-            
+            document.getElementById("actividad6").contentDocument.location.reload(true); 
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
@@ -964,7 +964,7 @@ function pant13(num) {
                                 <p style="font-size: 25px;">Es intrascendente: no van más allá de lo particular y contingente, es decir, no van más allá del hecho.</p>
                               </div>`;
             var img = `<div class="col-md-9">
-                          <img src="assets/img/img_ova/elemento8.png" style="max-width: 25%;">
+                          <img src="assets/img/img_ova/elemento8.png" style="max-width: 25%; margin-top: 2%;">
                         </div>`;
             $('.impbanner').html(contenido);
             $('.impimg').html(img);

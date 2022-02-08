@@ -76,6 +76,8 @@ function controlSlides4(num) {
             cambiarColorMenu(14);
             $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 1:
 
@@ -103,6 +105,8 @@ function controlSlides4(num) {
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
             cambiarColorMenu(14);
             
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');

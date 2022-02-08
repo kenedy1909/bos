@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     $('#smartwizard').smartWizard({
         loader: "show",
-        theme: 'arrows',
+        theme: 'arrows', 
         toolbarSettings: {
             showNextButton: false, // show/hide a Next button
             showPreviousButton: false, // show/hide a Previous button
@@ -168,7 +168,7 @@ function controlSlides(num) {
         case 6:
             setMigaja("Unidades de aprendizaje", "2. La sociedad moderna", "Formación de la sociedad moderna");
             cambiarColorMenu(12);
-            
+            document.getElementById("actividad2-6").contentDocument.location.reload(true);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
