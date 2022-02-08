@@ -129,23 +129,32 @@ function controlSlides2(num){
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="none";
             break;
         case 2:
           esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 3:
           mostrarPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
-            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
             break;
         case 4:
          
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
             $('.ov-personaje').removeClass('d-none');
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            document.getElementById("next").style.display="none";
+            document.getElementById("prev").style.display="block";
             
             
             
