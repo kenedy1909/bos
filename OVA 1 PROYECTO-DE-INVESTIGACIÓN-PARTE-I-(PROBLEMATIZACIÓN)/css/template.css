@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1230px) {
 
   .img-activi {
     width: 100px; height: 100px;
@@ -10,6 +10,10 @@
 
   .text-peq {
     font-size: 12px !important;
+  }
+
+  .text-peq1 {
+    font-size: 13px !important;
   }
 
   .text-peq14 {
@@ -391,9 +395,15 @@ iframe{
   background-image: url(../assets/img/img_ova/Investigación-III-03.png);
   background-repeat: no-repeat;
   background-size: 350px;
-  width: 410px;
+  width: 448px;
   height: 147px;
   padding: 44px 111px 0px 136px;
+}
+
+.text-titulo {
+  font-size: 15px;
+    text-align: center;
+    margin-left: -20%;
 }
 
 .c-body{

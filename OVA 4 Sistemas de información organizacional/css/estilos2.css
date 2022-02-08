@@ -857,6 +857,8 @@ button {
 
 .caja-texto-rosa {
     padding: 20px;
+    width: 98%;
+    margin-left: 5px;
     height: 150px;
     border-radius: 20px;
     background-color: #f8cbad;
