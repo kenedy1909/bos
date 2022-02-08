@@ -1,4 +1,4 @@
-@media only screen and (min-width:700px) and (max-width:900px) {
+@media only screen and (min-width:700px) and (max-width:800px) {
   
 	.controles #next{
 	  right: calc(((100vw - 1045px)/2) - 5px);
@@ -6,11 +6,11 @@
 
 
 	.imagen{
-		width: 90px !important; height: 90px !important; margin-top: 0% !important;
+		width: 100px !important; height: 100px !important; margin-top: -5% !important;
 	}
 
     .texto_header{
-        font-size: 15px !important;
+        font-size: 18px !important;
         width: 50% !important;
         
     }
@@ -194,14 +194,14 @@ input {
 }
 
 .imagen{
-    width: 100px;
-    height: 100px;
+    width: 116px;
+    height: 116px;
     display: inline-block;
-    margin-top: -10%;
+    margin-top: -18%;
 }
 
 .texto_header{
-    font-size: 17px;
+    font-size: 20px;
     display: inline-block;
     width: 60%;
 }
@@ -220,7 +220,7 @@ input {
 }
 
 .secundario{
-    width: 35%;display: inline-block;
+    width: 40%;display: inline-block;
 }
 
 .div-img{
@@ -228,5 +228,5 @@ input {
 }
 
 .terciario{
-    width: 65%;display: inline-block;
+    width: 60%; float: right;
 }
