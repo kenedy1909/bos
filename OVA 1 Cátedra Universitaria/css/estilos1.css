@@ -270,7 +270,31 @@ input[type=range]::-ms-fill-upper {
   background: #911d30; width: 57%;padding: 6px;border-radius: 10px;height: 53px;
 }
 .indica1{
-  width: 0;height: 0;border-left: 74px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 30%;
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;
+}
+.indica1-1{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 106px;
+}
+.indica1-2{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 100px;
+}
+.indica1-3{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 65px;
+}
+.indica1-4{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 75px;
+}
+.indica1-5{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 115px;
+}
+.indica1-6{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 85px;
+}
+.indica1-7{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 86px;top: -2px;position: relative;
+}
+.indica1-8{
+  width: 0;height: 0;border-left: 43px solid #911d30;border-top: 2px solid transparent;border-bottom: 35px solid transparent;margin-left: 90px;top: -2px;position: relative;
 }
 .size_13{
   font-size: 13px;
@@ -279,7 +303,22 @@ input[type=range]::-ms-fill-upper {
   background: #911d30;width: 40%;padding: 13px;border-radius: 20px;height: 137px;margin-top: 13%;margin-left: 15%;
 }
 .indica2{
-  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -35px;
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -45px;
+}
+.indica2-1{
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -38px;
+}
+.indica2-2{
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -34px;
+}
+.indica2-3{
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -37px;
+}
+.indica2-4{
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -45px;
+}
+.indica2-5{
+  width: 0;height: 0;border-right: 65px solid transparent;border-top: 1px solid transparent;border-left: 5px solid transparent;border-bottom: 33px solid #911d30;margin-left: -9px;position: relative;top: -40px;
 }
 .indica3{
       width: 0;
@@ -415,7 +454,7 @@ input[type=range]::-ms-fill-upper {
     height: 200px;
 }
 .tooltip_example4 {
-        width: 500px;
+    width: 480px;
     display: none;
     background: #FFFFFF;
     border-radius: 25px;
