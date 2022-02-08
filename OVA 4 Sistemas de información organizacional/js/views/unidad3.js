@@ -55,6 +55,15 @@ $(document).ready(function() {
     /*$(".t_1").on('click', cambiacontenido2(1));
     $(".t_2").on('click', cambiacontenido2(2));
     $(".t_3").on('click', cambiacontenido2(3));*/
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+
+        switch (stepIndex) {
+            default:
+            // code block
+        }
+    });
     slide_link(tema);
 
 });
