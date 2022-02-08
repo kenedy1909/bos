@@ -10,20 +10,22 @@
 <body>
     <div class="row col-md-12" style="">
         <header>
-            <div class="" style="">
-                <div class="" style="width: 38%;display: inline-block;margin-top: -50px;">
-                    <div class="" style="width: 100%;display: inline-block;padding-left: 10px;">
-                        <div style="display: inline-block;width: 25%;"><img src="img/actividad_interactiva.png" alt="" style="width: 98px; height: 98px; margin-top: -50px;"></div>
-                        <div class="text-center" style="font-size: 20px;display: inline-block;width: 45%;margin-top: 1px;height: 140px;position: relative;top: 25px;margin: 34px;">
-                            <b class="" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
-                            <div style="height: 5px;background: #811111;"></div>
-                            <p class="text-muted" style="font-size: 15px;"><i>COMPLETAR ESPACIOS</i></p>
+            <div class="" style="display: flex; margin-bottom: 15px;">
+                <div class="" style="width: 45%;display: flex;margin-right: 10px;">
+                    <div class="" style="width: 100%;display: flex;padding-left: 10px;">
+                        <div style="display: flex;width: 36%;"><img src="img/actividad_interactiva.png" alt="" style="width: 98px; height: 98px; margin: auto;"></div>
+                        <div class="text-center" style="font-size: 20px;display: flex;height: 140px;width: 50%; margin: auto;">
+                            <div style="margin: auto;">
+                                <b class="" style="color: #811111;">ACTIVIDAD INTERACTIVA</b>
+                                <div style="height: 5px;background: #811111;"></div>
+                                <p class="text-muted" style="font-size: 15px; margin: 0px;"><i>COMPLETAR ESPACIOS</i></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="" style="display: inline-block;width: 60%;">
+                <div class="" style="display: flex;width: 55%;">
 
-                    <p class="info_actividad shadow" style="background: #465FB3;font-family: arial;font-size: 15px;color: white; text-align: justify;">
+                    <p class="info_actividad shadow" style="background: #465FB3;font-family: arial;font-size: 15px;color: white; text-align: justify; margin: auto;">
                         En cada una de las escenas seleccione la frase que corresponde dando clic en la flecha, al finalizar pulse la casilla <b>"Calificar"</b> para conocer su puntuación.
                     </p>
                 </div>
@@ -32,7 +34,7 @@
     </div>
     <form>
         <div class="col-lg-12 row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="enunciado">
                     <div style="height: 152px; overflow: auto;">
                         <p style="font-size: 15px;margin-top: 20px;text-align: center;">La ___surge para dar solución basada en software para automatizar procesos comerciales basados en reglas que involucran tareas rutinarias, datos estructurados y resultados deterministas.</p>
@@ -48,7 +50,7 @@
 					</select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="enunciado">
                     <div style="height: 152px; overflow: auto;">
                         <p style="font-size: 15px;margin-top: 20px;text-align: center;">La _______ es convertir ciertos movimientos en movimientos automáticos o indeliberados</p>
@@ -65,7 +67,7 @@
 					</select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="enunciado">
                     <div style="height: 152px; overflow: auto;">
                         <p style="font-size: 15px;margin-top: 20px;text-align: center;">Una de las tecnologías que más va a marcar tendencia en 2021 es la ________</p>
@@ -85,7 +87,7 @@
 
         </div>
         <div class="col-lg-12 row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="enunciado">
                     <div style="height: 152px; overflow: auto;">
                         <p style="font-size: 15px;margin-top: 20px;text-align: center;">La _____ ______está transformando los trabajos administrativos y contables</p>
@@ -101,7 +103,7 @@
 					</select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="enunciado">
                     <div style="height: 152px; overflow: auto;">
                         <p style="font-size: 15px;margin-top: 20px;text-align: center;">El _____es un término que representa cuando varios dispositivos se conectan entre sí, para generar comunicaciones e interacciones a través de internet en tiempo real</p>
@@ -118,7 +120,7 @@
 					</select>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4">
                 <div class="enunciado">
                     <div style="height: 152px; overflow: auto;">
                         <p style="font-size: 15px;margin-top: 20px;text-align: center;">Las ___ ___pueden ser definidas, como comunidades conformadas por gran cantidad de personas y/o organizaciones que relacionan en torno a objetivos comunes</p>
@@ -137,7 +139,7 @@
             </div>
         </div>
     </form>
-    <div style="text-align: center;margin-top: 100px;">
+    <div style="text-align: center;">
         <button onclick="calificar();" style="background: #811111;color: white;font-size: 18px;border-radius: 10px;" data-toggle="modal" data-target="#exampleModal" class="btn">Calificar</button>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,26 +150,26 @@
               
             </div>
             <div class="d-flex" style="justify-content: center;">
-              <div style="border: 3px solid white;" class="circulo_modal img_res">
+              <div style="border: 3px solid white; display: flex;" class="circulo_modal img_res">
                 
               </div>
             </div>
             <div style="padding: 10px; position: relative; top: -45px;">
               <div style="color: white;font-size: 15px;">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3" style="text-align: initial;">
-                        Su puntaje es: 
+                    <div class="col-md-12 col-sm-12 d-flex" style="text-align: initial;">
+                        <span class="m-auto">Su puntaje es: </span>
                     </div>
-                    <div class="col-md-3 col-sm-3" style="text-align: initial;">
-                        <b class="puntaje" style="color: #FFC000; font-size: 30px;position: relative; top: -10px; "></b>
+                    <div class="col-md-12 col-sm-12 d-flex" style="text-align: initial;">
+                        <b class="puntaje m-auto" style="color: #FFC000; font-size: 30px;position: relative; top: -10px; "></b>
                     </div>
-                    <div class="col-md-5 col-sm-5"></div>
+                    <!-- <div class="col-md-5 col-sm-5"></div> -->
                 </div>
               </div>
               <div style="color: white;font-size: 15px;">
-                <div class="row" style="display: flex;">
-                    <div class="col-md-5">
-                        <p class="mensaje" style="text-align: initial;"></p>
+                <div class="row" style="">
+                    <div class="col-md-12 col-sm-12 d-flex">
+                        <p class="mensaje m-auto" style="text-align: initial;"></p>
                     </div>
                 </div>
               </div>

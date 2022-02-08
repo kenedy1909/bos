@@ -222,21 +222,21 @@ function calificar(){
 	}
 	if (puntaje == 100) {
 		
-	  $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin-top: 6%;">');
+	  $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
 	  $('.puntaje').text(puntaje+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #811111;font-weight: bold;margin-top: -15px;">cerrar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px;color: #811111;font-weight: bold;margin-top: 10px;">cerrar</button>');
 	}else if (puntaje >= 75 && puntaje < 100) {
 		
-	  $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin-top: 6%;">');
+	  $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
 	  $('.puntaje').text(Math.round(puntaje)+"%");
 	  $('.mensaje').text("¡Felicitaciones!");
-	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #811111;font-weight: bold;margin-top: -15px;">cerrar</button>');
+	  $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 15px;color: #811111;font-weight: bold;margin-top: 10px;">cerrar</button>');
 	}else{
-	  $('.img_res').html('<img src="img/mal.png" style="max-width: 80%; margin-top: 5%;">');
+	  $('.img_res').html('<img src="img/mal.png" style="max-width: 80%; margin: auto">');
 	  $('.mensaje').text("Inténtalo nuevamente.");
 	  $('.puntaje').text(Math.round(puntaje)+"%");
-	  $('.btns_modal').html('<button style="font-size: 20px;color: #811111;font-weight: bold;margin-top: -15px;" id="add" class="btn" onclick="reiniciar();">Volver a intentar</button>');
+	  $('.btns_modal').html('<button style="font-size: 15px;color: #811111;font-weight: bold;margin-top: 10px;" id="add" class="btn" onclick="reiniciar();">Volver a intentar</button>');
 	}
 }
 function reiniciar(){

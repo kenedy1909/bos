@@ -968,14 +968,14 @@ function scroll_(num) {
             scroll();
             break;
         case 15:
-            dragging = "";
+            /*dragging = "";
             diff = "";
             newTop = "";
             scrollOffset = "";
             knob = document.querySelector('.custom-scrollbar__knob_quince');
             bar = document.querySelector('.custom-scrollbar__bar_quince');
-            container = document.querySelector('.custom-scrollbar__inner_quince');
-            scroll();
+            container = document.querySelector('.custom-scrollbar__inner_quince');*/
+            /*scroll();*/
             break;
         default:
             break;
@@ -1252,7 +1252,7 @@ function carruseles(num){
                 var slideHeight = $('#slider7 ul li').height();
                 var sliderUlWidth = slideCount * slideWidth;
                 
-                $('#slider7').css({ width: '100%', height: '290px' });
+                $('#slider7').css({ width: '100%', height: '228px' });
                 
                 $('#slider7 ul').css({ width: '100%'});
                 
