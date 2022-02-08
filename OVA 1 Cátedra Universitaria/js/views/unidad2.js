@@ -128,7 +128,7 @@ function controlSlides2(num){
             $(".menu2").removeClass('d-none');
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
+            setMigaja("Unidades de aprendizaje","","");
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             tema = 1;
@@ -579,20 +579,3 @@ function instrucciones(num) {
 }
 
 figura = document.getElementById("ctrflecha");
-
-document.addEventListener("keydown",
-    function(event) {
-        switch (event.key) {
-            case "Left": // IE/Edge specific value
-            case "ArrowLeft":
-                slide();
-                actualizarprogress();
-                break;
-            case "Right": // IE/Edge specific value
-            case "ArrowRight":
-                slide();
-                actualizarprogress();
-                break;
-        }
-    }
-);
