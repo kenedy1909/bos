@@ -20,22 +20,22 @@
                 <div class="row">
                     <div class="col-md-4" style="display: inline-block;width: 37%;">
                         <div class="" style="display: inline-block;">
-                          <img src="img/actividad_general.png" alt="" style="width: 100px;height: 100px;">
+                          <img src="img/actividad_general.png" alt="" style="width: 100px;height: 100px;margin-top: -30px;">
                           <div class="text-center pt-0" style="font-size: 20px;display: inline-block;">
-                            <b class="">ACTIVIDAD # 4</b>
-                            <div style="height: 5px; background: #004c6d;"></div>
+                            <b class="" style="color: #174C7F;">ACTIVIDAD # 4</b>
+                            <div style="height: 5px; background: #174C7F;"></div>
                             <p class="text-muted"></p>
                           </div>
                         </div>
                     </div>
                     <div class="col-md-8 row" style="display: inline-block;width: 60%;">
                         
-                        <div class="info_actividad shadow">
+                        <div class="info_actividad shadow" style="padding: 10px 10px 1px 33px;">
                             <div class="">
-                               <p class="row"><img src="img/actividad.png" class="logo_copiar" style=""><b style="color: white;font-size: 15px;">Video</b></p> 
+                               <p class="row"><img src="img/actividad.png" class="logo_copiar" style="max-width: 21px;margin-right: 4%;"><b style="color: white;font-size: 15px;">Video</b></p> 
                             </div>
                             <div class="">
-                                <p class="row"><img src="img/reloj.png" style="max-width: 33px;"><b style="color: white;font-size: 15px;width: 70%;">Tiempo sugerido: 3 horas</b></p>
+                                <p class="row"><img src="img/reloj.png" style="max-width: 25px;margin-right: 3%;"><b style="color: white;font-size: 15px;width: 70%;">Tiempo sugerido: 3 horas</b></p>
                             </div>
                         </div>
                         
@@ -46,20 +46,20 @@
                 
             </header>
             <div class="col-md-12 mt-2 mb-2" style="margin-top: 10px;">
-                <div style="background: #FFD966;padding: 15px;border-radius: 20px;">
-                    <p class="justificado p_black size_13">Teniendo en cuenta lo aprendido, desarrolle los siguientes preguntas, de clic en las flechas para revisar las preguntas:</p>
+                <div style="background: #FFD966;padding: 15px;border-radius: 20px;margin-top: 6%;">
+                    <p class="justificado p_black" style="color: black;">Teniendo en cuenta lo aprendido, desarrolle los siguientes preguntas, de clic en las flechas para revisar las preguntas:</p>
                 </div>
             </div>
             <div class="contenido" ng-app="leccion3App" ng-controller="actividad1Ctrl">
                 <div class="preguntas">
                     
                     <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
-                        <div style="display: inline-flex;width: 40%;height: 106%">
+                        <div style="display: inline-flex;width: 40%;height: 184px;">
                             <p class="texto-pregunta"><spam style="width: -webkit-fill-available; text-align: center;"><b style="font-size: 13px;">{{pregunta.texto}} </b></spam>
                                 <spam class="img_questionario{{$index+1}}" style="height: 0px;"></spam>
                             </p>
                         </div>
-                        <div style="display: inline-flex;width: 56%;height: 106%">
+                        <div style="display: inline-flex;width: 56%;height: 184px;">
                             <div class="respuestas-cuestionario">
                                 <div class="radio" ng-repeat="respuesta in pregunta.respuestas" ng-class="{'correcta':validado&&pregunta.respuesta == respuesta && respuesta.correcta}">
                                     
@@ -70,11 +70,9 @@
 
                             </div>
                             <div style="text-align: center;">
-                                <img src="img/imagen23.png" style="max-width: 260px;    margin-top: 12px;">
+                                <img src="img/imagen23.svg" style="width: 260px;    margin-top: 12px;" class="imagen23">
                             </div>
                         </div>
-                        
-
                         
                     </div>
                     <!-- <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-5">
@@ -108,19 +106,30 @@
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+    <div class="modal fade" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 25%; width: 70% !important; margin-left: 15%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div style="" class="circulo_modal img_res">
+
+                        </div>
+                    </div>
+                    <div style="padding: 8px; margin-left: 5%;">
+                        <div style="color: white;font-size: 18px;display: flex;">
+                          Su puntaje es: <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 18px; padding-bottom: 5%;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                    </div>
                 </div>
             </div>
         </div>
