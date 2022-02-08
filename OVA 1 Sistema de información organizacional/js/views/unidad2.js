@@ -810,16 +810,16 @@ function circulos(num) {
                             <p class="p_black justificado">LAUDON Y LAUDON, 2016, resaltan las siguientes características de este tipo de sistemas de información:</p>
                             <div class="row pt-4 mr-3">
                               <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/1.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado m-auto pl-3">Cambian significativamente el desempeño de un negocio al medirse por uno o más indicadores clave.</p>
+                                <p class="p_black justificado m-auto pl-1">Cambian significativamente el desempeño de un negocio al medirse por uno o más indicadores clave.</p>
                               </div>
                               <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/2.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado m-auto pl-3">Contribuyen al logro de una meta estratégica.</p>
+                                <p class="p_black justificado m-auto pl-1">Contribuyen al logro de una meta estratégica.</p>
                               </div>
                               <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/3.png'); background-size: 100% 100%; background-repeat: no-repeat;"> 
-                                <p class="p_black justificado m-auto pl-3">Apoyan el proceso de innovación de productos dentro de la empresa.</p>
+                                <p class="p_black justificado m-auto pl-1">Apoyan el proceso de innovación de productos dentro de la empresa.</p>
                               </div>
                               <div class="col-md-3 d-flex pl-5 pr-3 py-3" style="background-image: url('assets/img/img_ova/4.png'); background-size: 100% 100%; background-repeat: no-repeat;">
-                                <p class="p_black justificado m-auto pl-3">Generan cambios en la forma de dirigir una compañía, como compite o interactúa con clientes y proveedores al facilitar información integral.</p>
+                                <p class="p_black justificado m-auto pl-1">Generan cambios en la forma de dirigir una compañía, como compite o interactúa con clientes y proveedores al facilitar información integral.</p>
                               </div>
                             </div>
                         </div>
@@ -898,7 +898,11 @@ function circulos(num) {
                               <div class="col-md-12 p-3"> 
                                 <p class="p_black justificado">Cuando se define un elemento o indicador para utilizarlo en un sistema biométrico, se debe asegurar que cumpla los siguientes principios:</p>
                               </div>
-                              <div class="col-md-12 p-3 row ml-3"> 
+                              <div class="col-md-12 p-3"> 
+                                <p class="p_black " style="text-align: center;"><b> Clic a la imagen </b></p>
+                              </div>
+                              <div  data-toggle="modal" data-target="#biometria">
+                              <div class="col-md-12 p-3 row ml-3" > 
                                   <div class="col-md-3 p-0 d-flex" style="min-height: 200px"> 
                                     <img src="assets/img/img_ova/Universalidad.png" class="img-100 mt-auto">
                                   </div>
@@ -911,6 +915,7 @@ function circulos(num) {
                                   <div class="col-md-3 p-0 d-flex" style="min-height: 200px"> 
                                     <img src="assets/img/img_ova/Cuantificación.png" class="img-100 mt-auto">
                                   </div>
+                              </div>
                               </div>
                             </div>
                         </div>
