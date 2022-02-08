@@ -3,6 +3,7 @@ $(document).ready(function() {
     // console.log(tema);
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
     $(".pedfs").addClass('d-none');
     $(".pedfs1").removeClass('d-none');
 
