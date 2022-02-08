@@ -32,7 +32,7 @@
     margin: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 17px;
     min-height: 250px;
 }
 
@@ -106,7 +106,7 @@ input {
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
-    border-left: 30px solid #000;
+    border-left: 30px solid #272e9f;
     border-bottom: 15px solid transparent;
     cursor: pointer;
 }
