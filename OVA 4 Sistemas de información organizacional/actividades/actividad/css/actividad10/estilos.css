@@ -51,7 +51,7 @@
     color: #fff;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    min-height: 80px;
+    height: 80px;
 }
 
 @media (max-width: 767px) {
@@ -82,14 +82,15 @@ input {
 }
 
 .img_questionario {
-    width: 110px;
+    width: 95px;
+    height: 95px;
     position: relative;
     top: -35px;
     right: -65px;
     background: #FFFFFF;
     border-radius: 50%;
-    padding: 6px;
-    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%)
+    padding: 15%;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%);
 }
 
 .d-flex {
