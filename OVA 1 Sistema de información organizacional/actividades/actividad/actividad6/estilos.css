@@ -57,6 +57,9 @@
 	#container_abecedario {
 		width: 100%;
 	}
+	#container_palabra {
+		width: 100%;
+	}
 }
 
 #container_abecedario input {
@@ -181,6 +184,9 @@
 	.letra-palabra {
 		font-size: 22px;
 		left: 5px;
+	}
+	#container_palabra {
+		width: 72%;
 	}
 }
 
@@ -311,3 +317,4 @@
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
 }
+
