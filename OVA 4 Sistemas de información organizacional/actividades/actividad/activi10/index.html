@@ -38,7 +38,7 @@
 
                                 <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
                                     <p class="texto-pregunta d-flex">
-                                        <spam style="width: -webkit-fill-available;">{{pregunta.texto}} </spam>
+                                        <spam style="height: 45px;width: -webkit-fill-available;overflow: auto;padding-right: 15px;margin: 15px 0;">{{pregunta.texto}} </spam>
                                         <spam class="img_questionario{{$index+1}}"></spam>
                                     </p>
                                     <div class="respuestas-cuestionario">
