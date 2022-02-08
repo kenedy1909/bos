@@ -765,7 +765,7 @@ function pant9(num){
     switch (parseInt(num)) {
         case 1:
             var texto = `
-              <p class="justificado my-auto" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L<sup>2</sup> y que eso en el sistema SI corresponda a m<sup>2</sup> y en el norteamericano a ft<sup>2</sup>.</p>`;
+              <p class="justificado my-auto p_black" style="font-size: 14px;">Se observa la tabla anterior, note por favor que en la fila del SI se han empleado las unidades de este sistema, ahora se establece que para referirse en general a cualquier unidad de longitud se usa L y para el tiempo T. Ahora se puede volver a la primera fila y se verá como las columnas son consistentes en la información que ofrecen. En el área, por ejemplo, se obtiene al multiplicar una longitud por otra de ahí que su dimensión sea L<sup>2</sup> y que eso en el sistema SI corresponda a m<sup>2</sup> y en el norteamericano a ft<sup>2</sup>.</p>`;
 
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
@@ -775,7 +775,7 @@ function pant9(num){
             $('.circulo1').addClass('activo');
             break;
         case 2:
-            var texto = `<p class="justificado my-auto" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m<sup>2</sup>/s<sup>2</sup>) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s<sup>2</sup>) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s<sup>2</sup> por m se obtiene kg m<sup>2</sup>/s<sup>2</sup> por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
+            var texto = `<p class="justificado my-auto p_black" style="font-size: 14px;">Este enfoque va a permitir comprobar si una formula en particular es dimensionalmente correcta o no. Ahora, se observa cómo se puede proceder, por ejemplo, se sabe que el trabajo realizado por una fuerza constante se mide J (1 Joule equivale a 1 kg m<sup>2</sup>/s<sup>2</sup>) y que el valor de este trabajo se puede calcular con la formula W = F d cos(a), la fuerza F se mide en N (Newtons y equivale a 1 kg m /s<sup>2</sup>) y la distancia d se mide en metros (m) y cos(a) no tiene unidades, por tanto, si se multiplica kg m /s<sup>2</sup> por m se obtiene kg m<sup>2</sup>/s<sup>2</sup> por lo que se concluye que la fórmula es dimensionalmente correcta.</p>`;
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -784,7 +784,7 @@ function pant9(num){
             $('.circulo2').addClass('activo');
             break;
         case 3:
-            var texto = `<p class="justificado my-auto" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv<sup>2</sup>, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)<sup>2</sup> finalmente kg m<sup>2</sup>/s<sup>2</sup> que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
+            var texto = `<p class="justificado my-auto p_black" style="font-size: 14px;">Otro ejemplo, se sabe que la energía cinética también se mide en J y se calcula como 0,5 mv<sup>2</sup>, entonces 0,5 no tiene unidades porque es una constante y queda kg (m/s)<sup>2</sup> finalmente kg m<sup>2</sup>/s<sup>2</sup> que son las unidades equivalentes del J por tanto también es dimensionalmente correcta. Pero si dicen que la velocidad v = d t las unidades resultantes usan SI serian ms cuando se sabe que debería ser m/s por tanto no es dimensionalmente correcta y no se podría usar para calcular la velocidad.</p>`;
             $('.bannerp-9').html(texto);
             $('.circulop_9').removeClass('activo');
             $('.circulop_9').addClass('inactivo');
@@ -1376,11 +1376,11 @@ function teorias() {
                         <div class="w-100 py-5 d-flex" style="min-height: 350px;">
                             <div class="bg-azul-o h-6px m-auto">
                                 <div class="d-flex justify-content-evenly position-relative px-4" style="top: -129px;">
-                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3" style=" min-height:258px;">
+                                    <div class="bg-blanco radius-2 my-auto mx-3 p-3" style=" min-height:258px; width: 50%;">
                                         <p class="p_black justificado">En primer lugar, se tiene la <b>multiplicación por un escalar.</b> Este tipo de operación se da cuando se multiplica un vector por un número escalar, el resultado es un nuevo vector con la misma dirección del vector original, pero con una magnitud modificada y la cual dependerá del valor del escalar, si el escalar es menor de 1, el vector se acorta, si es mayor de 1 se alarga, si es negativo además de lo anterior cambia el sentido del vector y si es 1 pues no cambia.</p>
                                     </div>
-                                    <div class="bg-blanco radius-2 my-auto d-flex mx-3 p-3" style=" min-height:258px;">
-                                        <img src="assets/img/img_ova/grafica 5.png" class="m-auto img-100" data-teoria="2">
+                                    <div class="bg-blanco radius-2 my-auto d-flex mx-3 p-3" style=" min-height:258px; width: 50%;">
+                                        <img src="assets/img/img_ova/grafica5.svg" class="m-auto img-100" data-teoria="2">
                                     </div>
                                 </div>
                             </div>
@@ -1452,20 +1452,20 @@ function teorias() {
                     </div>
                         <div class="bg-azul-o h-6px m-auto">
                             <div class="d-flex justify-content-evenly position-relative px-4" style="top: -130px;">
-                                <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                <div style="height: 284px;width: 33%;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <div class="d-flex">
                                         <img src="assets/img/img_ova/pensar.png" class="m-auto img-70" data-teoria="4">
                                     </div>
                                     <p class="p_black justificado">En el caso de dos vectores 𝐴&#8407 y 𝐵&#8407 la suma o resultante seria 𝑅&#8407.</p>
                                     <p class="p_black justificado">Pasa el curso por la imagen para ampliarla:</p>
                                 </div>
-                                <div style="min-height:260px;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex" data-toggle="modal" data-target="#sumaV-modal">
-                                    <img src="assets/img/img_ova/grafica 7.png" class="m-auto img-80" data-teoria="5" >
+                                <div style="height: 284px;width: 33%;" class="bg-blanco img-40 radius-2 my-auto mx-3 p-3 d-flex" data-toggle="modal" data-target="#sumaV-modal">
+                                    <img src="assets/img/img_ova/grafica7.svg" class="m-auto img-80" data-teoria="5" >
                                     
                                 </div>
-                                <div style="min-height:260px;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
+                                <div style="height: 284px;width: 33%;" class="bg-blanco img-30 radius-2 my-auto mx-3 p-3">
                                     <p class="p_black justificado">Se puede ampliar este procedimiento para calcular la suma de cualquier cantidad de vectores. Si es la suma vectorial de entonces, las componentes son:</p>
-                                    <img src="assets/img/img_ova/formula-r.png" class="m-auto img-100" data-teoria="5">
+                                    <img src="assets/img/img_ova/formulas.svg" class="mt-3 img-100" data-teoria="5">
                                 </div>
                             </div>
                         </div>
@@ -1543,7 +1543,7 @@ function agrandar(num) {
             $('.text1').addClass('visible');
             $('.text1').removeClass('invisible');
 
-            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado1/index.html" frameborder="0"></iframe>`;
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado1/index.html" frameborder="0" style="min-height: 780px;"></iframe>`;
             $('.iframe').html(iframe);
             break;
         case 2:
@@ -1558,7 +1558,7 @@ function agrandar(num) {
 
             $('.text2').addClass('visible');
             $('.text2').removeClass('invisible');
-            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado2/index.html" frameborder="0"></iframe>`;
+            var iframe = `<iframe src="actividades/actividad/actividad_ahorcado2/index.html" frameborder="0" style="min-height: 780px;"></iframe>`;
             $('.iframe').html(iframe);
             break;
         default:
