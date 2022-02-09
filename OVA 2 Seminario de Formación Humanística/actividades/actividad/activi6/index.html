@@ -6,23 +6,23 @@
 	<link rel="stylesheet" type="text/css" href="../css/actividad6/completar.css">
 </head>
 <body>
-	<div class="row px-3 mb-3" style="margin-top: 1.5em;">
-	    <div class="col-md-5 d-flex">
-       <img src="../img/img5/actividad_interactiva.png" class="img-activi">
-       <div>
-           <div class="content-text-img-activi-2 w-100">
-             <b class="text-img-actividad" style="">ACTIVIDAD INTERACTIVA</b>
-           </div>
-           <p class="text-center" style="font-size: 15px; font-family: arial;">COMPLETAR ESPACIOS</p>
-       </div>
-    </div>
-    <div class="col-md-7 shadow content-tarjeta">
-        <p class="pb-2 p_black pl-2 pt-2" style="font-size: 15px; font-family: arial;">En cada una de las escenas seleccione la opción correcta de las promesas de la modernidad dando clic en la flecha, al finalizar pulse la casilla "<b>Calificar</b>" para conocer su puntuación.</p>
-    </div>
+	<div class="d-flex px-3 mb-3" style="margin-top: 1.5em;">
+		<div style="width: 45%;padding-right: 10px;" class="d-flex">
+	       <img src="../img/img5/actividad_interactiva.png" class="img-activi">
+	       <div style="margin: auto;width: 50%;">
+	           <div class="content-text-img-activi-2 w-100">
+	             <b class="text-img-actividad" style="">ACTIVIDAD INTERACTIVA</b>
+	           </div>
+	           <p class="text-center" style="font-size: 15px; font-family: arial;">COMPLETAR ESPACIOS</p>
+	       </div>
+	    </div>
+	    <div style="width: 55%;" class="shadow content-tarjeta">
+	        <p class="pb-2 p_black pl-2 pt-2" style="font-size: 15px; font-family: arial;">En cada una de las escenas seleccione la opción correcta de las promesas de la modernidad dando clic en la flecha, al finalizar pulse la casilla "<b>Calificar</b>" para conocer su puntuación.</p>
+	    </div>
 	</div>
 	<form>
 		<div class="col-lg-12 row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<div class="enunciado">
 					<p style="font-size: 15px; text-align: center; margin-bottom: 0.5px;">Es un tipo mediante el cual se establece una conexión causal entre dos hechos, entendiendo, por tanto, que uno de los elementos es la causa del otro.</p>
 				</div>
@@ -36,7 +36,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<div class="enunciado">
 					<p style="font-size: 15px; text-align: center; margin-bottom: 0.5px;">Es un tipo de argumento mediante el cual se cita el punto de vista de un experto en un tema determinado y reconocido en un campo concreto.</p>
 				</div>
@@ -50,7 +50,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<div class="enunciado">
 					<p style="font-size: 15px; text-align: center; margin-bottom: 0.5px;">Es un tipo de argumento que se basa en la idea del placer, el cual justifica ideas y comportamientos.</p>
 				</div>
@@ -64,7 +64,7 @@
 					</select>
 				</div>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-sm-6">
 				<div class="enunciado">
 					<p style="font-size: 15px; text-align: center; margin-bottom: 0.5px;">Es un tipo de argumento que se basa en información verificable, y por tanto objetiva.</p>
 				</div>
@@ -80,7 +80,7 @@
 			</div>
 		</div>
 	</form>
-	<div style="text-align: center;margin-top: 120px;">
+	<div style="text-align: center;">
 	      <button onclick="calificar();" style="background:#8b6229;color: white;font-size: 18px;border-radius: 10px; cursor: pointer;" class="p-2" data-toggle="modal" data-target="#exampleModal">Calificar</button>
 	</div>
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

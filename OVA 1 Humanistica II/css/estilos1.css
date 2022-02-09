@@ -382,7 +382,12 @@ p, button{
     color: #00414c;
 }
 
-.custom-scrollbar3, .custom-scrollbar4, .custom-scrollbar5, .custom-scrollbar12, .custom-scrollbar13, .custom-scrollbar14{
+.custom-scrollbar12, .custom-scrollbar13, .custom-scrollbar14, .custom-scrollbar141, .custom-scrollbar142, .custom-scrollbar143 {
+    position: relative;
+    height: 450px;
+}
+
+.custom-scrollbar3, .custom-scrollbar4, .custom-scrollbar5 {
   position: relative;
   height: 400px;
 }
@@ -395,15 +400,15 @@ p, button{
 	position: relative;
 	height: 150px;
 }
-.custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14{
+.custom-scrollbar__bar12, .custom-scrollbar__bar13, .custom-scrollbar__bar14, .custom-scrollbar__bar141, .custom-scrollbar__bar142, .custom-scrollbar__bar143 {
 	position: absolute;
-    top: 22px;
+    top: 23px;
     bottom: 45px;
     background: #ffffff;
     width: 3px;
     right: -3px;
     border-radius: 4px;
-    height: 150px;
+    height: 180px;
 }
 .custom-scrollbar__bar15, .custom-scrollbar__bar16, .custom-scrollbar__bar17, .custom-scrollbar__bar18, .custom-scrollbar__bar19, .custom-scrollbar__bar20, .custom-scrollbar__bar21{
 	position: absolute;
@@ -456,7 +461,7 @@ p, button{
 	-webkit-overflow-scrolling: touch;
 
 }
-.custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14{
+.custom-scrollbar__inner12, .custom-scrollbar__inner13, .custom-scrollbar__inner14, .custom-scrollbar__inner141, .custom-scrollbar__inner142, .custom-scrollbar__inner143 {
 	height: 50%;
 	padding-right: 20px;
 	overflow-y: auto;
@@ -495,7 +500,7 @@ p, button{
   transform: translate(-50%, -50%);
   will-change: top;
 }
-.custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12, .custom-scrollbar__knob13, .custom-scrollbar__knob14, .custom-scrollbar__knob15, .custom-scrollbar__knob16, .custom-scrollbar__knob17, .custom-scrollbar__knob18, .custom-scrollbar__knob19, .custom-scrollbar__knob20, .custom-scrollbar__knob21{
+.custom-scrollbar__knob10, .custom-scrollbar__knob11, .custom-scrollbar__knob12, .custom-scrollbar__knob13, .custom-scrollbar__knob14, .custom-scrollbar__knob15, .custom-scrollbar__knob16, .custom-scrollbar__knob17, .custom-scrollbar__knob18, .custom-scrollbar__knob19, .custom-scrollbar__knob20, .custom-scrollbar__knob21, .custom-scrollbar__knob141, .custom-scrollbar__knob142, .custom-scrollbar__knob143 {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -513,7 +518,7 @@ p, button{
     top: -32px;
     color: #FFFFFF;
 }
-.linea_scroll10, .linea_scroll11, .linea_scroll12,.linea_scroll13, .linea_scroll14, .linea_scroll15, .linea_scroll16, .linea_scroll17, .linea_scroll18, .linea_scroll19, .linea_scroll20, .linea_scroll21 {
+.linea_scroll10, .linea_scroll11, .linea_scroll12,.linea_scroll13, .linea_scroll14, .linea_scroll15, .linea_scroll16, .linea_scroll17, .linea_scroll18, .linea_scroll19, .linea_scroll20, .linea_scroll21, .linea_scroll141, .linea_scroll142, .linea_scroll143 {
 	font-size: 50px;
     margin: 0px;
     position: relative;
@@ -1122,7 +1127,7 @@ input[type=range]::-ms-fill-upper {
 } 
 
 .banner_16{
-	min-height: 200px;
+	height: 270px;
     background: white;
     border-radius: 50px;
     padding: 50px 30px 26px 25px;
@@ -1201,7 +1206,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 .banner_17{
-	min-height: 150px;
+	height: 180px;
     background: white;
     border-radius: 50px;
     border: solid #1E4E79;
@@ -1368,4 +1373,12 @@ a.control_next {
 }
 .bg-azul-c{
   background: #ffc61b;
+}
+
+.textpdf {
+  color: black;
+}
+
+.textpdf:hover {
+  color: black;
 }

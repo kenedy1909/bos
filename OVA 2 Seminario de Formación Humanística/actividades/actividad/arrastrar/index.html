@@ -7,21 +7,23 @@
 </head>
 <body>
 	<div class="holder row">
-		<div class="row col-md-12" style="margin-top: 10px;">
-		    <div class="col-md-5" style="">
-		        <div class="col-lg-12 row" style="">
-		        	<div class="col-md-4" style="z-index: 100;">
+		<div class="d-flex col-md-12" style="margin-top: 10px;">
+		    <div class="" style="width: 45%;">
+		        <div class="d-flex" style="">
+		        	<div class="m-auto" style="z-index: 100;">
 		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
 		        	</div>
-		            <div class="text-center col-md-8" style="padding-top: 10px;">
-			            <b class="pl-1 pr-1" style="color: #E0A546;">ACTIVIDAD INTERACTIVA</b>
-			            <div class="linea_blue" style="background: #E0A546;height: 4px;"></div>
-			            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+		            <div class="text-center d-flex m-auto" style="padding-top: 10px; width: 50%;">
+		            	<div class="m-auto">
+				            <b class="pl-1 pr-1" style="color: #E0A546;">ACTIVIDAD INTERACTIVA</b>
+				            <div class="linea_blue" style="background: #E0A546;height: 4px;"></div>
+				            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+		            	</div>
 		          	</div>
 		        </div>
 		    </div>
-		    <div class="col-md-7 row" style="">
-		        <p class="info_actividad shadow" style="background: #ffd966;border-radius: 25px;padding: 15px 25px 15px 25px;width: 100%;">
+		    <div class="pr-2" style="width: 55%;">
+		        <p class="info_actividad shadow" style="background: #ffd966;border-radius: 25px;padding: 15px 25px 15px 25px;width: 100%; text-align: justify;">
 		            Haga clic sostenido sobre cada personaje  y arrástrelo hasta el recuadro de las características correspondientes. Al finalizar pulse la opción “Calificar” para conocer su puntuación
 		        </p>
 		    </div>
@@ -29,84 +31,91 @@
 
 		<div class="col-md-12 mt-2">
 			<div class="col-md-12 row" style="height: 200px;">
-				<div style="margin-top: 0.8rem;" class="col-md-3">
-					<div class="d-block">		
-						<p class="text-center"><img src="../../../assets/img/img_ova/N2.png" style="max-width: 30%;"></p>
-						
-							<div class="d-flex">
-						<div class="m-auto" style="width: fit-content;">
-								
-						<p style="height: 60px;" class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
-							Operaciones concretas
-
-						</p>
-						</div>
+				<div class="col-md-3 col-sm-3 d-flex">
+					<div class="d-block mx-auto mt-auto">
+						<p class="text-center"><img src="../../../assets/img/img_ova/N1.png" style="max-width: 20%;"></p>
+						<div class="d-flex">
+							<div class="m-auto" style="width: fit-content;">
+								<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3" style="display: flex; height: 60px;">
+									<span class="m-auto">Sensorio-motor</span>
+								</p>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 d-flex">
+					<div class="d-block mx-auto mt-auto">
+						<p class="text-center"><img src="../../../assets/img/img_ova/N3.png" style="max-width: 20%;"></p>
+						<div class="d-flex">
+							<div class="m-auto" style="width: fit-content;">
+								<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2" style="display: flex; height: 60px;">
+									<span class="m-auto">Preoperacional</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 d-flex">
+					<div class="d-block mx-auto mt-auto">
+						<p class="text-center"><img src="../../../assets/img/img_ova/N2.png" style="max-width: 30%;"></p>
+						<div class="d-flex">
+							<div class="m-auto" style="width: fit-content;">
+								<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1" style="display: flex; height: 60px;">
+									<span class="m-auto">Operaciones concretas</span>
+								</p>
+							</div>
+						</div>
 					</div>
 					
 				</div>
-				<div style="margin-top: 2.8rem;" class="col-md-3">
-					<div class="d-block">		
-						<p class="text-center"><img src="../../../assets/img/img_ova/N3.png" style="max-width: 20%;"></p>
-							<div class="d-flex">
-						<div class="m-auto" style="width: fit-content;">
-							
-						<p  class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
-							Preoperacional
-						</p>
-						</div>
+				<div class="col-md-3 col-sm-3 d-flex">
+					<div class="d-block mx-auto mt-auto">
+						<p class="text-center"><img src="../../../assets/img/img_ova/N4.png" style="max-width: 30%;"></p>
+						<div class="d-flex">
+							<div class="m-auto" style="width: fit-content;">
+								<p class="cuatro" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4" style="display: flex; height: 60px;">
+									<span class="m-auto">Operaciones formales</span>
+								</p>
 							</div>
+						</div>
 					</div>
 				</div>
-				<div style="margin-top: 4.8rem;" class="col-md-3">
-					<div class="d-block">		
-						<p class="text-center"><img src="../../../assets/img/img_ova/N1.png" style="max-width: 20%;"></p>
-							<div class="d-flex">
-						<div class="m-auto" style="width: fit-content;">
-						<p  class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
-							Sensorio-motor
-
-						</p>
-						</div>
-							</div>
-					</div>
-				</div>
-				<div style="" class="col-md-3">
-					<div class="d-block">
-						<p class="text-center"><img src="../../../assets/img/img_ova/N4.png" style="max-width: 25%;"></p>
-							<div class="d-flex">
-						<div class="m-auto" style="width: fit-content;">
-								
-						<p style="height: 60px;" class="cuatro" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">
-							Operaciones formales
-
-						</p>
-						</div>
-							</div>
-					</div>
-				</div>
-				
-				
 			</div>
 			<div class="col-md-12 col-sm-12 row mt-5">
-				<div class="col-md-3 col-sm-3" style="font-size: 13px;">
-					<div class="princio">
-						<div class="droptarget interno cont3" ondrop="drop(event)" ondragover="allowDrop(event)">Se inicia el proceso de una conducta direccionada al logro de metas, igualmente los objetos empiezan a concebirse como permanentes.</div>
+				<div class="col-md-3 col-sm-3 px-1" style="font-size: 13px;">
+					<div class="princio d-flex">
+						<div class="droptarget interno cont3" ondrop="drop(event)" ondragover="allowDrop(event)" style="text-align: justify;">
+							<div class="d-flex" style="width: 100%;">
+								<p class="m-auto">Se inicia el proceso de una conducta direccionada al logro de metas, igualmente los objetos empiezan a concebirse como permanentes.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3" style="font-size: 13px;">
-					<div class="princio">
-						<div class="interno cont4 droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" >En esta etapa se mencionan cuatro propiedades de pensamiento: lógica proposicional, razonamiento científico, razonamiento combinatorio y razonamiento de probabilidades y proporciones</div>
+				<div class="col-md-3 col-sm-3 px-1" style="font-size: 13px;">
+					<div class="princio d-flex">
+						<div class="droptarget interno cont4" ondrop="drop(event)" ondragover="allowDrop(event)" style="text-align: justify;" >
+							<div class="d-flex" style="width: 100%;">
+								<p class="m-auto">En esta etapa se mencionan cuatro propiedades de pensamiento: lógica proposicional, razonamiento científico, razonamiento combinatorio y razonamiento de probabilidades y proporciones</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3" style="font-size: 13px;">
-					<div class="princio">
-						<div class="interno cont2 droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">El inicio de adquisición del lenguaje y la comprensión numérica en esta etapa se vuelve protagónico al permitir la comunicación y el conteo </div>
+				<div class="col-md-3 col-sm-3 px-1" style="font-size: 13px;">
+					<div class="princio d-flex">
+						<div class="droptarget interno cont2" ondrop="drop(event)" ondragover="allowDrop(event)" style="text-align: justify;">
+							<div class="d-flex" style="width: 100%;">
+								<p class="m-auto">El inicio de adquisición del lenguaje y la comprensión numérica en esta etapa se vuelve protagónico al permitir la comunicación y el conteo </p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-3" style="font-size: 13px;">
-					<div class="princio">
-						<div class="interno cont1 droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">Es posible distinguir tres operaciones mentales dadas en esta etapa: seriación, clasificación y conservación.</div>
+				<div class="col-md-3 col-sm-3 px-1" style="font-size: 13px;">
+					<div class="princio d-flex">
+						<div class="droptarget interno cont1" ondrop="drop(event)" ondragover="allowDrop(event)" style="text-align: justify;">
+							<div class="d-flex" style="width: 100%;">
+								<p class="m-auto">Es posible distinguir tres operaciones mentales dadas en esta etapa: seriación, clasificación y conservación.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

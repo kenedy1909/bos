@@ -193,44 +193,75 @@ function controlSlides(num){
                     </p>`;
             $('.pdfs').html(pdf);
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Influencia del movimiento estudiantil de Córdoba (1918)");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Influencia del movimiento estudiantil de Córdoba (1918)");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Antecedentes históricos de la fundación de la Universidad Autónoma Latinoamericana","Principios ideológicos del Acta de Fundación");
             $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
              
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","","");
             $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
             tema=1;
             break;
         default:

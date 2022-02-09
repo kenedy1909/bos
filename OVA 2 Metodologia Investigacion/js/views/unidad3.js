@@ -122,6 +122,7 @@ function controlSlides3(num){
         case 3:
             setMigaja("Unidades de aprendizaje","3. . Marco conceptual, estado del arte, marco legal y contextual ","¿Qué tener en cuenta a la hora de construir el marco teórico?");
             cambiarColorMenu(13);
+            document.getElementById("actividad-anagrama").contentDocument.location.reload(true);
             /*$("#content").html('');
             $("#img_cont").html('');*/
             break;

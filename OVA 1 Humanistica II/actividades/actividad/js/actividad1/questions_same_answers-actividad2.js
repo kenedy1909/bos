@@ -186,18 +186,18 @@ QuestionsSameAnswers.prototype.score =  function () {
       $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
       $('.puntaje').text(puntaje+"%");
       $('.mensaje').text("¡Felicitaciones!");
-      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 15px;">cerrar</button>');
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: white;font-weight: bold;margin-top: 15px; background: #a48e39;">cerrar</button>');
     }else if (puntaje >= 75 && puntaje < 100) {
         
       $('.img_res').html('<img src="../img/img1/bien.png" style="max-width: 90%;margin-top: 5%;margin-left: -1%;">');
       $('.puntaje').text(Math.round(puntaje)+"%");
       $('.mensaje').text("¡Felicitaciones!");
-      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 15px;">cerrar</button>');
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: white;font-weight: bold;margin-top: 15px; background: #a48e39;">cerrar</button>');
     }else{
       $('.img_res').html('<img src="../img/img1/mal.png" style="max-width: 90%;">');
-      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.mensaje').text("Inténtelo nuevamente.");
       $('.puntaje').text(Math.round(puntaje)+"%");
-      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+      $('.btns_modal').html('<button style="font-size: 20px;color: white;font-weight: bold;margin-top: 15px; background: #a48e39;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
     }
     $("#exampleModal").modal("show");
 }

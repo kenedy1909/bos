@@ -1,0 +1,240 @@
+/*.var{
+	--bg-color-claro: #a9d18e;
+    --bg-color: #008F3E;
+    --bg-color-dark: #00441B;
+}*/
+/*@import '../../assets/fonts/filsonpro/stylesheet.css';*/
+:root {
+    --bg-color: #E0A546;
+    --bg-color-dark: #ab751d;
+}
+
+.droptarget {
+    float: left;
+    padding: 10px;
+    border: dashed var(--bg-color-dark);
+    border-radius: 20px;
+    min-height: 100px;
+    width: 100%; 
+}
+
+#opcion{
+	background: #65AFF0;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.interno{
+	border: solid var(--bg-color-dark);
+    min-height: 170px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 30px 10px 90px;
+    background: white;
+    color: black;
+    display: flex;
+}
+#dragtarget1, #dragtarget2, #dragtarget3, #dragtarget4, #dragtarget5, #dragtarget6, #dragtarget7, #dragtarget8, #dragtarget9, #dragtarget10, #dragtarget11, #dragtarget12, #dragtarget13, #dragtarget14, #dragtarget15, #dragtarget16, #dragtarget17, #dragtarget18, #dragtarget19, #dragtarget20{
+    cursor: pointer;
+    color: white;
+    height: fit-content;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    display: flex;
+    padding-bottom: .5rem!important;
+    padding-top: .5rem!important;
+}
+.opcion_content{
+    background: var(--bg-color);
+    display: flex;
+    border-radius: 10px;
+    min-height: 50px;
+}
+.text-content{
+    height: 220px;
+    width: 100%;
+}
+.text-content2{
+    overflow-y: auto;
+    width: 100%;
+}
+/*#dragtarget2{
+    cursor: pointer;
+    background: var(--bg-second-2);
+    color: black;
+    height: 60px;
+    width: 170px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+#dragtarget3{
+    cursor: pointer;
+    background: var(--bg-second-2);
+    color: black;
+    height: 60px;
+    width: 170px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-align: center;
+}
+#dragtarget4{
+    cursor: pointer;
+    background: var(--bg-second-2);
+    color: black;
+    height: 60px;
+    width: 170px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+#dragtarget5{
+    cursor: pointer;
+    background: var(--bg-second-2);
+    color: black;
+    height: 60px;
+    width: 170px;
+    border-radius: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+#dragtarget6{
+    cursor: pointer;
+}
+#dragtarget7{
+    cursor: pointer;
+}
+#dragtarget8{
+    cursor: pointer;
+}
+#dragtarget9{
+    cursor: pointer;
+}*/
+/*.img_cont{
+	max-width: 70%;
+}
+
+.optciones{
+	display: inline-block;
+    width: 60%;
+}
+
+.tranparente{
+	background: transparent;
+	border: none;
+}
+
+.principal{
+  height: 285px;
+  border-radius: 40px;
+  background: #ffffff;
+}
+
+.cabeza{
+  background: var(--bg-color);
+  height: 70px;
+  border-radius: 40px 40px 0px 0px;
+}*/
+/*.circulo_modal{
+	height: 125px;
+	width: 125px;
+	background: gray;
+	border-radius: 50%;
+	position: relative;
+	top: -60px;
+	text-align: center;
+}*/
+/*.circulo_modal{
+  height: 125px;
+  width: 125px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+}
+
+.boton_inc{
+	background: var(--bg-color-dark);
+	color: white;
+	border-radius: 30px;
+}
+.btnsModal{
+    background: var(--bg-color-dark);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}*/
+
+.img_cont{
+    max-width: 70%;
+}
+
+.optciones{
+    display: inline-block;
+    width: 60%;
+}
+
+.tranparente{
+    background: transparent;
+    border: none;
+}
+
+
+.principal_modal{
+  height: 355px;
+  border-radius: 40px;
+  background: #E0A546;
+}
+
+.cabeza{
+    background: #8B6229;
+    height: 100px;
+    border-radius: 40px 40px 0px 0px;
+}
+.circulo_modal{
+  height: 150px;
+  width: 150px;
+  background: gray;
+  border-radius: 50%;
+  position: relative;
+  top: -60px;
+  text-align: center;
+  border: solid white;
+}
+
+.boton_inc{
+    background: #ab751d;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.shadow{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

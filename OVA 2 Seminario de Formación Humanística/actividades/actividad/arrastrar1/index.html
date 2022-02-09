@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html class="h-100" style="overflow: hidden;">
+<head>
+	<title>drag and drop</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/arrastar.css">
+</head>
+<body class="d-flex flex-column h-100">
+	<div class="holder h-100 w-100">
+		<div class="d-flex col-md-12" style="margin-top: 10px;">
+		    <div class="" style="width: 45%;">
+		        <div class="d-flex" style="">
+		        	<div class="m-auto" style="z-index: 100;">
+		        		<img src="img/actividad_interactiva.png" alt="" style="width: 87px;" class="imagen">
+		        	</div>
+		            <div class="text-center d-flex m-auto" style="padding-top: 10px; width: 50%;">
+		            	<div class="m-auto">
+				            <b class="pl-1 pr-1" style="color: #E0A546;">ACTIVIDAD INTERACTIVA</b>
+				            <div class="linea_blue" style="background: #E0A546;height: 4px;"></div>
+				            <i><p class="text-center text-muted" style="font-size: 17px;">ARRASTRAR Y SOLTAR</p></i>
+		            	</div>
+		          	</div>
+		        </div>
+		    </div>
+		    <div class="pr-2" style="width: 55%;">
+		        <p class="info_actividad shadow" style="background: #ffd966;border-radius: 25px;padding: 15px 25px 15px 25px;width: 100%; text-align: justify;">
+		            Haga clic sostenido sobre cada personaje  y arrástrelo hasta el recuadro de las características correspondientes. Al finalizar pulse la opción “Calificar” para conocer su puntuación
+		        </p>
+		    </div>
+		</div>
+    	<div class="row">
+			<div class="col-md-12 col-sm-12 d-flex flex-column">
+				<div class="w-100 row pl-5">
+					<div class="col d-flex justify-content-center">
+						<div class="d-flex" style="width: 100%;">
+							<div class="d-flex mt-auto" style="width: 100%;">
+								<div class="text-center mt-3" style="width: 100%;">	
+									<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin-top: auto; margin-left: auto; margin-right: auto;margin-bottom: 0px; flex-direction: column;" draggable="true" id="dragtarget1">
+										<span class="d-flex flex-column">
+											<img src="../../../assets/img/img_ova/N1.png" style="width: 20%; margin: auto;">
+											<span class="opcion_content">
+												<b style="margin: auto;">Sensorio-motor</b>
+											</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center">
+						<div class="d-flex" style="width: 100%;">
+							<div class="d-flex mt-auto" style="width: 100%;">
+								<div class="text-center mt-3" style="width: 100%;">				
+									<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin-top: auto; margin-left: auto; margin-right: auto;margin-bottom: 0px; flex-direction: column;" draggable="true" id="dragtarget2">
+										<span class="d-flex flex-column">
+											<img src="../../../assets/img/img_ova/N3.png" style="width: 20%; margin: auto;">
+											<span class="opcion_content">
+												<b style="margin: auto;">Preoperacional</b>
+											</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center">
+						<div class="d-flex" style="width: 100%;">
+							<div class="d-flex mt-auto" style="width: 100%;">
+								<div class="text-center mt-3" style="width: 100%;">				
+									<p class="tres" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin-top: auto; margin-left: auto; margin-right: auto;margin-bottom: 0px; flex-direction: column;" draggable="true" id="dragtarget3">
+										<span class="d-flex flex-column">
+											<img src="../../../assets/img/img_ova/N2.png" style="width: 25%; margin: auto;">
+											<span class="opcion_content">
+												<b style="margin: auto;">Operaciones concretas</b>
+											</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex justify-content-center">
+						<div class="d-flex" style="width: 100%;">
+							<div class="d-flex mt-auto" style="width: 100%;">
+								<div class="text-center mt-3" style="width: 100%;">				
+									<p class="cuatro" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin-top: auto; margin-left: auto; margin-right: auto;margin-bottom: 0px; flex-direction: column;" draggable="true" id="dragtarget4">
+										<span class="d-flex flex-column">
+											<img src="../../../assets/img/img_ova/N4.png" style="width: 25%; margin: auto;">
+											<span class="opcion_content">
+												<b style="margin: auto;">Operaciones formales</b>
+											</span>
+										</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-100 row my-auto pl-4" style="overflow-y: auto; min-height: 260px;">
+					<div class="col-md-3 py-2 px-1 col-sm-3 justify-content-center">
+						<div class="position-relative d-flex" style="min-height: 240px;">
+							<div class="droptarget cont01" ondrop="drop(event, 1)" ondragover="allowDrop(event)" style="width: 90%; height: 92%; position: absolute;display: flex; top: 10px; left: 10px;">
+							</div>
+							<div class="interno p-3 text-center">
+								<p class="m-auto text01 text-justify p-2">Se inicia el proceso de una conducta direccionada al logro de metas, igualmente los objetos empiezan a concebirse como permanentes.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 py-2 px-1 col-sm-3 justify-content-center">
+						<div class="position-relative d-flex" style="min-height: 240px;">
+							<div class="droptarget cont02" ondrop="drop(event, 2)" ondragover="allowDrop(event)" style="width: 90%; height: 92%; position: absolute;display: flex; top: 10px; left: 10px;">
+							</div>
+							<div class="interno p-3 text-center">
+								<p class="m-auto text02 text-justify p-2">En esta etapa se mencionan cuatro propiedades de pensamiento: lógica proposicional, razonamiento científico, razonamiento combinatorio y razonamiento de probabilidades y proporciones</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 py-2 px-1 col-sm-3 justify-content-center">
+						<div class="position-relative d-flex" style="min-height: 240px;">
+							<div class="droptarget cont03" ondrop="drop(event, 3)" ondragover="allowDrop(event)" style="width: 90%; height: 92%; position: absolute;display: flex; top: 10px; left: 10px;">
+							</div>
+							<div class="interno p-3 text-center">
+								<p class="m-auto text03 text-justify p-2">El inicio de adquisición del lenguaje y la comprensión numérica en esta etapa se vuelve protagónico al permitir la comunicación y el conteo </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 py-2 px-1 col-sm-3 justify-content-center">
+						<div class="position-relative d-flex" style="min-height: 240px;">
+							<div class="droptarget cont04" ondrop="drop(event, 4)" ondragover="allowDrop(event)" style="width: 90%; height: 92%; position: absolute;display: flex; top: 10px; left: 10px;">
+							</div>
+							<div class="interno p-3 text-center">
+								<p class="m-auto text04 text-justify p-2">Es posible distinguir tres operaciones mentales dadas en esta etapa: seriación, clasificación y conservación.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+		<!-- <div id="carouselExampleInterval" class="carousel slide" data-interval="false">
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<div class="d-flex mt-3">
+					<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next" style="position: relative; width: 100%;">
+					    <button class="boton_inc btn" aria-hidden="true">SIGUENTE</button>
+					</a>
+		    	</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="row">
+					<div class="col-md-12 col-sm-12 d-flex flex-column">
+						<div class="w-100 row pl-5">
+							<div class="col d-flex justify-content-center">
+								<div class="d-block" style="width: 100%;">
+									<div class="d-flex" style="width: 100%;">
+										<div class="text-center mt-3" style="width: 100%;">	
+											<p class="cinco" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget5">
+												<b style="margin: auto;">Fase 2</b>
+												<img src="./img/Catalogo-3.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<div class="d-block" style="width: 100%;">
+									<div class="d-flex" style="width: 100%;">
+										<div class="text-center mt-3" style="width: 100%;">				
+											<p class="seis" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget6">
+												<b style="margin: auto;">Fase 1</b>
+												<img src="./img/capacidad.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<div class="d-block" style="width: 100%;">
+									<div class="d-flex" style="width: 100%;">
+										<div class="text-center mt-3" style="width: 100%;">				
+											<p class="siete" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget7">
+												<b style="margin: auto;">Fase 1</b>
+												<img src="./img/almacenamiento-de-datos.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col d-flex justify-content-center">
+								<div class="d-block" style="width: 100%;">
+									<div class="d-flex" style="width: 100%;">
+										<div class="text-center mt-3" style="width: 100%;">				
+											<p class="ocho" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget8">
+												<b style="margin: auto;">Fase 3</b>
+												<img src="./img/documento.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="w-100 row my-auto pl-5" style="overflow-y: auto;">
+							<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+								<div class="position-relative d-flex" style="min-height: 170px;">
+									<div class="droptarget cont05" ondrop="drop(event, 5)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+									</div>
+									<div class="interno p-3 text-center">
+										<p class="m-auto text05">P17 Calidad</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+								<div class="position-relative d-flex" style="min-height: 170px;">
+									<div class="droptarget cont06" ondrop="drop(event, 6)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+									</div>
+									<div class="interno p-3 text-center">
+										<p class="m-auto text06">P01 Vigilancia de la calidad de datos</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+								<div class="position-relative d-flex" style="min-height: 170px;">
+									<div class="droptarget cont07" ondrop="drop(event, 7)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+									</div>
+									<div class="interno p-3 text-center">
+										<p class="m-auto text07">P20 Cartas aeronáuticas electrónicas</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+								<div class="position-relative d-flex" style="min-height: 170px;">
+									<div class="droptarget cont08" ondrop="drop(event, 8)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+									</div>
+									<div class="interno p-3 text-center">
+										<p class="m-auto text08">P03 Vigilancia del cumplimiento de las normas AIRAC</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		    	</div>
+		    	<div class="d-flex mt-3">
+					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev" style="position: relative; width: 50%;">
+					    <button class="boton_inc btn" aria-hidden="true">ANTERIOR</button>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next" style="position: relative; width: 50%;">
+					    <button class="boton_inc btn" aria-hidden="true">SIGUENTE</button>
+					</a>
+		    	</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="row">
+			    	<div class="col-md-12 col-sm-12 d-flex flex-column">
+			    		<div class="w-100 row pl-5">
+			    			<div class="col d-flex justify-content-center">
+			    				<div class="d-block" style="width: 100%;">
+			    					<div class="d-flex" style="width: 100%;">
+			    						<div class="text-center mt-3" style="width: 100%;">	
+			    							<p class="nueve" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget9">
+			    								<b style="margin: auto;">Fase 2</b>
+			    								<img src="./img/Docs.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+			    							</p>
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="col d-flex justify-content-center">
+			    				<div class="d-block" style="width: 100%;">
+			    					<div class="d-flex" style="width: 100%;">
+			    						<div class="text-center mt-3" style="width: 100%;">				
+			    							<p class="diez" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget10">
+			    								<b style="margin: auto;">Fase 1</b>
+			    								<img src="./img/informacion-2.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+			    							</p>
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="col d-flex justify-content-center">
+			    				<div class="d-block" style="width: 100%;">
+			    					<div class="d-flex" style="width: 100%;">
+			    						<div class="text-center mt-3" style="width: 100%;">				
+			    							<p class="once" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget11">
+			    								<b style="margin: auto;">Fase 2</b>
+			    								<img src="./img/Estrategia.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+			    							</p>
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="col d-flex justify-content-center">
+			    				<div class="d-block" style="width: 100%;">
+			    					<div class="d-flex" style="width: 100%;">
+			    						<div class="text-center mt-3" style="width: 100%;">				
+			    							<p class="doce" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget12">
+			    								<b style="margin: auto;">Fase 3</b>
+			    								<img src="./img/digitalizacion.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+			    							</p>
+			    						</div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    		<div class="w-100 row my-auto pl-5" style="overflow-y: auto;">
+			    			<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+			    				<div class="position-relative d-flex" style="min-height: 170px;">
+			    					<div class="droptarget cont09" ondrop="drop(event, 9)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+			    					</div>
+			    					<div class="interno p-3 text-center">
+			    						<p class="m-auto text09">P08  Modelo conceptual de información aeronáutica</p>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+			    				<div class="position-relative d-flex" style="min-height: 170px;">
+			    					<div class="droptarget cont10" ondrop="drop(event, 10)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+			    					</div>
+			    					<div class="interno p-3 text-center">
+			    						<p class="m-auto text10">P07 Identificadores únicos</p>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+			    				<div class="position-relative d-flex" style="min-height: 170px;">
+			    					<div class="droptarget cont11" ondrop="drop(event, 11)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+			    					</div>
+			    					<div class="interno p-3 text-center">
+			    						<p class="m-auto text11">P04 Vigilancia de las diferencias entre los Estados con respecto a los Anexos 4 y 15</p>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+			    				<div class="position-relative d-flex" style="min-height: 170px;">
+			    					<div class="droptarget cont12" ondrop="drop(event, 12)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+			    					</div>
+			    					<div class="interno p-3 text-center">
+			    						<p class="m-auto text12">P18 Acuerdos con los originadores de datos</p>
+			    					</div>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+		    	</div>
+		    	<div class="d-flex mt-3">
+					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev" style="position: relative; width: 50%;">
+					    <button class="boton_inc btn" aria-hidden="true">ANTERIOR</button>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next" style="position: relative; width: 50%;">
+					    <button class="boton_inc btn" aria-hidden="true">SIGUENTE</button>
+					</a>
+		    	</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="row">
+		    		<div class="col-md-12 col-sm-12 d-flex flex-column">
+		    			<div class="w-100 row pl-5">
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">	
+		    								<p class="trece" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget13">
+		    									<b style="margin: auto;">Fase 2</b>
+		    									<img src="./img/control-de-calidad.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">				
+		    								<p class="catorce" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget14">
+		    									<b style="margin: auto;">Fase 3</b>
+		    									<img src="./img/avance.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">				
+		    								<p class="quince" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget15">
+		    									<b style="margin: auto;">Fase 3</b>
+		    									<img src="./img/avion.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">				
+		    								<p class="dieciseis" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget16">
+		    									<b style="margin: auto;">Fase 2</b>
+		    									<img src="./img/avion-3.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="w-100 row my-auto pl-5" style="overflow-y: auto;">
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont13" ondrop="drop(event, 13)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text13">P09 Intercambio de datos aeronáuticos</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont14" ondrop="drop(event, 14)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text14">P06 Base de datos de información aeronáutica integrada</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont15" ondrop="drop(event, 15)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text15">P15 Cartografía de aeródromos</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont16" ondrop="drop(event, 16)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text16">P16 Capacitación</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="d-flex mt-3">
+					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev" style="position: relative; width: 50%;">
+					    <button class="boton_inc btn" aria-hidden="true">ANTERIOR</button>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next" onclick="ocultar_fin(1)" style="position: relative; width: 50%;">
+					    <button class="boton_inc btn" aria-hidden="true">SIGUENTE</button>
+					</a>
+		    	</div>
+		    </div>
+		    <div class="carousel-item">
+		    	<div class="row">
+		    		<div class="col-md-12 col-sm-12 d-flex flex-column">
+		    			<div class="w-100 row pl-5">
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">	
+		    								<p class="diecisiete" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget17">
+		    									<b style="margin: auto;">Fase 2</b>
+		    									<img src="./img/consecutivo.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">				
+		    								<p class="dieciocho" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget18">
+		    									<b style="margin: auto;">Fase 3</b>
+		    									<img src="./img/humano-inteligente.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">				
+		    								<p class="diecinueve" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget19">
+		    									<b style="margin: auto;">Fase 2</b>
+		    									<img src="./img/cronograma.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col d-flex justify-content-center">
+		    					<div class="d-block" style="width: 100%;">
+		    						<div class="d-flex" style="width: 100%;">
+		    							<div class="text-center mt-3" style="width: 100%;">				
+		    								<p class="veinte" ondragstart="dragStart(event)" ondragend="dragEnd(event)" style="display: flex; margin: auto;" draggable="true" id="dragtarget20">
+		    									<b style="margin: auto;">Fase 3</b>
+		    									<img src="./img/informacion-3.png" style="position: absolute; width: 30%; right: -20px; top: -15px;">
+		    								</p>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="w-100 row my-auto pl-5" style="overflow-y: auto;">
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont17" ondrop="drop(event, 17)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text17">P12 Notificación de información aeronáutica</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont18" ondrop="drop(event, 18)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text18">P11 AIP electrónica</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont19" ondrop="drop(event, 19)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text19">P13 Terreno y P14 Obstáculos</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    				<div class="col-md-3 py-2 col-sm-3 justify-content-center">
+		    					<div class="position-relative d-flex" style="min-height: 170px;">
+		    						<div class="droptarget cont20" ondrop="drop(event, 20)" ondragover="allowDrop(event)" style="width: 90%; height: 90%; position: absolute;display: flex; top: 10px; left: 10px;">
+		    						</div>
+		    						<div class="interno p-3 text-center">
+		    							<p class="m-auto text20">P19 Interfuncionamiento con productos meteorológicos</p>
+		    						</div>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="d-flex mt-3">
+					<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev" onclick="ocultar_fin(2)" style="position: relative; width: 100%;">
+					    <button class="boton_inc btn" aria-hidden="true">ANTERIOR</button>
+					</a>
+		    	</div>
+		    </div>
+		  </div>
+		</div> -->
+		
+
+		<p id="demo" style="visibility: hidden; display: none;"></p>
+	</div>
+	<div class="w-100 d-flex justify-content-center mt-auto">
+		<button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="" onclick="calificar();">CALIFICAR</button>
+	</div>
+	<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content tranparente" style="box-shadow: none;">
+	      <div style="" class="principal">
+	        <div style="" class="cabeza">
+                <div style="margin: auto;" class="circulo_modal img_res"></div>
+            </div>
+            <div class="d-flex justify-content-center" style="justify-content: center;">
+            </div>
+            <div style="padding: 10px; margin-top: 60px;">
+                <div style="color: black;display: flex;">
+                    <p class="puntaje" style="margin: auto;" id="texto-modal"></p>
+                </div>
+                <div style="color: black;">
+                    <p class="mensaje"></p>
+                </div>
+            </div>
+	        <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+	            
+	            
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div> -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 25%; width: 70% !important; margin-left: 15%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
+                    </div>
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div style="" class="circulo_modal img_res d-flex">
+
+                        </div>
+                    </div>
+                    <div style="padding: 8px; margin-left: 5%;">
+                        <div style="color: white;font-size: 18px;display: flex;">
+                          Su puntaje es: <p class="puntaje" style="font-size: 20px;font-weight: bold;margin-left: 9px;margin-top: -5px;font-size: 25px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 18px; padding-bottom: 5%;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/arrastrar.js"></script>
+</body>
+</html>

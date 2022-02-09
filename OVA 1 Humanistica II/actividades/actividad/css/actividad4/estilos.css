@@ -15,7 +15,7 @@
     z-index: 1008;
     font-size: 18px;
     position: relative;
-    left: -12px;
+    left: -5px;
 }
 
 #actividad-1 ul#grupoA li.list-group-item {
@@ -196,15 +196,15 @@
     display: inline-block;max-width: 100%;
 }
 .imagen{
-    width: 116px;
-    height: 116px;
+    width: 130px;
+    height: 130px;
     display: inline-block;
 }
 
 .texto_header{
-    font-size: 17px;
+    font-size: 22px;
     display: inline-block;
-    width: 50%;
+    width: 70%;
 }
 .texto_header b{
     color: #004c6d;
@@ -257,4 +257,8 @@
   position: relative;
   top: -60px;
   text-align: center;
+}
+
+.d-flex{
+    display: flex;
 }

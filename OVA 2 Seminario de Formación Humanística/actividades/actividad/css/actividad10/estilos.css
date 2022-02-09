@@ -20,7 +20,7 @@
 
 @media (max-width: 767px) {
     .pregunta-cuestionario {
-        width: 100%;
+        width: 90%;
         height: auto !important;
         margin: 10px 0;
     }
