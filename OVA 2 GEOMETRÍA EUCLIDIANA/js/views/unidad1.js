@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+    $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
+    star_uni = 1;
+    paso = false;
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -25,6 +29,26 @@ $( document ).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
         /*actualizarprogress();*/
+    });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        if (tema != 0) {
+            controlSlides(tema);
+            tema = 0;
+        } else {
+            controlSlides(stepIndex+1);
+        }
+        // quitarflecha(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
     });
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
     /*slide_predeterminado();*/
@@ -66,7 +90,7 @@ $(function () {
 function slide(){
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex+1);
-        actualizarprogress(stepIndex+1);
+        /*actualizarprogress(stepIndex+1);*/
 }
 
 function slide_predeterminado(){
@@ -84,9 +108,13 @@ function slide_link(num){
 }
 
 function controlSlides(num){
+    actualizarprogress(num-1);
     switch (parseInt(num)) {
         case 1:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             dragging = "";
             diff = "";
             newTop = "";
@@ -97,17 +125,29 @@ function controlSlides(num){
             scroll();
             break;
         case 2:
-            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");            
+            setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");   
+            cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');         
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");
+            cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             dragging = "";
             diff = "";
             newTop = "";
@@ -119,22 +159,39 @@ function controlSlides(num){
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
+            cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Método de demostración por Inducción matemática");
-            tema = 1;
+            cambiarColorMenu(21);
+            $(".menu1").addClass('d-none');
+            actualizarprogress(num-1);
             break;
         default:
             break;
