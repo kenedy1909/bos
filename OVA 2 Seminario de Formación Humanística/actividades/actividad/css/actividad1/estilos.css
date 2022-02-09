@@ -148,7 +148,7 @@
 }
 
 .linea {
-	font-size: 50px;
+	font-size: 45px;
 	color: #49a5aa;
 	display: inline-block;
 	margin-left: 4px;
@@ -324,6 +324,7 @@
 .tranparente{
 	background: transparent;
 	border: none;
+	border-radius: 40px !important;
 }
 
 

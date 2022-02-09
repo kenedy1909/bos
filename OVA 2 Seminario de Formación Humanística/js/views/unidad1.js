@@ -276,6 +276,15 @@ function controlSlides(num){
         case 15:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob11');
+            bar = document.querySelector('.custom-scrollbar__bar11');
+            container = document.querySelector('.custom-scrollbar__inner11');    
+            scroll();
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
