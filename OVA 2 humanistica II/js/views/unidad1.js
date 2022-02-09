@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    star_uni = 1;
     $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
     $('#smartwizard').smartWizard({
         loader: "show",
@@ -21,15 +22,23 @@ $(document).ready(function() {
     $('#next').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
 
     });
 
     $('#prev').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
     });
+
+    $(".modal").on('hidden.bs.modal', function() {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+        // console.log('holaaa');
+
+    }
 
     /*slide_predeterminado();*/
     $(".opcion-circular").on('click', opciones_circulares);
@@ -39,6 +48,15 @@ $(document).ready(function() {
     $(".opcion_nube").on('click', nubes);
     $(".element").on('click', elementos);
     console.log(tema);
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+
+        switch (stepIndex) {
+            default:
+            // code block
+        }
+    });
     slide_link(tema);
 });
 
@@ -70,19 +88,29 @@ $(function() {
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
     controlSlides(stepIndex + 1);
+    actualizarprogress(stepIndex + 1);
 }
 
 function slide_predeterminado() {
-    $(".nav-link").removeClass('done');
-    $(".nav-link").removeClass('active');
+    /* $(".nav-link").removeClass('done');
+     $(".nav-link").removeClass('active');*/
     controlSlides(1);
+    /*window.location.href ="#unidad1-1";*/
+    /*$url =$('.enlaces_ova')
+    $url.attr('href',"#unidad1-1");
+    $url[0].click()*/
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
 function slide_link(num) {
-    $(".nav-link").removeClass('done');
-    $(".nav-link").removeClass('active');
-    $('#smartwizard').smartWizard("goToStep", num - 1);
+    /* $(".nav-link").removeClass('done');
+     $(".nav-link").removeClass('active');*/
+    /*window.location.href ="#unidad1-"+num;*/
+    /*location.assign("#unidad1-4");*/
+    /*$url =$('.enlaces_ova')
+    $url.attr('href',"#unidad1-3");
+    $url[0].click()*/
+    $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
 }
 
@@ -95,101 +123,102 @@ function controlSlides(num) {
             setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
             break;
         case 3:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 4:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Vertientes de la filosofía moral");
             limpiar_pantalla(4);
             break;
         case 5:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Vertientes de la filosofía moral");
             break;
         case 6:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 7:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 8:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Dilemas éticos");
             break;
         case 9:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Dilemas éticos");
             break;
         case 10:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Dilemas éticos");
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 12:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 13:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 14:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 15:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Ética en el profesional contable");
             break;
         case 16:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Ética en el profesional contable");
             break;
         case 17:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 18:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 19:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 20:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 21:
-            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Aspectos éticos en la formación del sujeto moral");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 22:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 23:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "El cuidado de sí");
             break;
         case 24:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             $('#video_2').attr('src', $('#video_2').attr('src'));
             break;
         case 25:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 26:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "El cuidado de sí");
             $('#video_2').attr('src', $('#video_2').attr('src'));
             break;
         case 27:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "El cuidado de sí");
             break;
         case 28:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "Actividad");
             break;
         case 29:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "El cuidado de sí");
             break;
         case 30:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "El cuidado de sí");
             break;
         case 31:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "1. Desarrollo del juicio y criterio profesional", "El cuidado de sí");
             break;
         case 32:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
+            setMigaja("Unidades de aprendizaje", "", "");;
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
+            $(".menu1").addClass('d-none');
             break;
         case 33:
-            setMigaja("Unidades de aprendizaje", "1. Necesidad de la formación Humanística", "El cuidado de sí");
-            /*$("#content-ova").load("base/unidades/unidad2.html");*/
+
             tema = 1;
             break;
         default:

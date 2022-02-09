@@ -4,7 +4,9 @@ function dragStart(event) {
 }
 
 function dragEnd(event) {
+	console.log(event);
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
+	
 }
 
 function allowDrop(event) {
@@ -15,6 +17,9 @@ function drop(event) {
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
+	let padre = document.getElementById(data).parentElement;
+	console.log(padre)
+	padre.setAttribute("ondrop", "return false;");
 }
 
 function calificar(){

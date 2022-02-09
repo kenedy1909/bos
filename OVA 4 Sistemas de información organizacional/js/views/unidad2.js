@@ -861,11 +861,17 @@ function cambioPantalla3(num) {
         $('#pantalla3_p').removeClass('d-none');
         $('#pantalla3_p').addClass('d-flex');
 
+        let height = $('#pantalla3_p').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-flex');
         $('#BtnCerrar').addClass('d-none');
     } else if (num == 1) {
         $('#pantalla3_1').removeClass('d-none');
         $('#pantalla3_1').addClass('d-flex');
+
+        let height = $('#pantalla3_1').height();
+        $(".tab-content").height(height + 180);
 
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
@@ -874,11 +880,17 @@ function cambioPantalla3(num) {
         $('#pantalla3_2').removeClass('d-none');
         $('#pantalla3_2').addClass('d-flex');
 
+        let height = $('#pantalla3_2').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 3) {
         $('#pantalla3_3').removeClass('d-none');
         $('#pantalla3_3').addClass('d-flex');
+
+        let height = $('#pantalla3_3').height();
+        $(".tab-content").height(height + 180);
 
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
@@ -890,17 +902,26 @@ function cambioPantalla3(num) {
         $('#pantalla3_4').removeClass('d-none');
         $('#pantalla3_4').addClass('d-flex');
 
+        let height = $('#pantalla3_4').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 5) {
         $('#pantalla3_5').removeClass('d-none');
         $('#pantalla3_5').addClass('d-flex');
 
+        let height = $('#pantalla3_5').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 6) {
         $('#pantalla3_6').removeClass('d-none');
         $('#pantalla3_6').addClass('d-flex');
+
+        let height = $('#pantalla3_6').height();
+        $(".tab-content").height(height + 180);
 
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
@@ -912,17 +933,26 @@ function cambioPantalla3(num) {
         $('#pantalla3_7').removeClass('d-none');
         $('#pantalla3_7').addClass('d-flex');
 
+        let height = $('#pantalla3_7').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 8) {
         $('#pantalla3_8').removeClass('d-none');
         $('#pantalla3_8').addClass('d-flex');
 
+        let height = $('#pantalla3_8').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 9) {
         $('#pantalla3_9').removeClass('d-none');
         $('#pantalla3_9').addClass('d-flex');
+
+        let height = $('#pantalla3_9').height();
+        $(".tab-content").height(height + 180);
 
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
@@ -934,17 +964,26 @@ function cambioPantalla3(num) {
         $('#pantalla3_act1').removeClass('d-none');
         $('#pantalla3_act1').addClass('d-flex');
 
+        let height = $('#pantalla3_act1').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 'activi2') {
         $('#pantalla3_act2').removeClass('d-none');
         $('#pantalla3_act2').addClass('d-flex');
 
+        let height = $('#pantalla3_act2').height();
+        $(".tab-content").height(height + 180);
+
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');
     } else if (num == 'activi3') {
         $('#pantalla3_act3').removeClass('d-none');
         $('#pantalla3_act3').addClass('d-flex');
+
+        let height = $('#pantalla3_act3').height();
+        $(".tab-content").height(height + 180);
 
         $('#BtnCerrar').removeClass('d-none');
         $('#BtnCerrar').addClass('d-flex');

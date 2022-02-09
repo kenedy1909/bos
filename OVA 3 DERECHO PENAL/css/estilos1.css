@@ -1361,6 +1361,10 @@ p, button{
   margin-top: 15px;
 }
 
+.inputDiv{
+  margin-top: 40px!important;
+}
+
 .output{display:none; width:40px; text-align:center;}
 
 input[type='range'] {
