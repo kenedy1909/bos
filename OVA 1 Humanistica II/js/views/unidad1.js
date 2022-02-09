@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     $(".menu1").addClass('c-show');
@@ -21,7 +21,7 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
+   
     
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
