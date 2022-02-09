@@ -914,6 +914,9 @@ a.control_next {
     .textos8-2, .textos8-4 {
         left: 300px !important;
     }
+    .content_text1{
+        left: -6px !important;
+    }
 }
 @media only screen and (min-width:1280px) {
     .btninicio, .pantalla1, .pantalla2, .pantalla3, .pantalla4, .pantalla5 {

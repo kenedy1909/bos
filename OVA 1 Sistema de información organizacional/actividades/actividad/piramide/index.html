@@ -32,8 +32,8 @@
 		<div class="col-md-12 row" style="padding: 1px 1px 1px 30px">
 			<div class="col-md-5 row d-flex justify-content-center" style="">
 				<div class="col-md-6" style="">
-					<p class="correcta3" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
-						Nivel operativo: <br>
+					<p class="correcta3" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
+						<b> Nivel operativo: </b><br>
 						. Registro de ventas y promociones <br>
 						. Registro de inventarios, maquinaría y tiempos <br>
 						. Cuentas por pagar, registros de gastos e ingresos <br>
@@ -41,8 +41,8 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="correcta1" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
-						Nivel estratégico: <br> 
+					<p class="correcta1" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
+						<b> Nivel estratégico:</b> <br> 
 						. Diseño de puestos <br>
 						. Presupuestos <br>
 						. Decisiones de capacidad <br>
@@ -51,8 +51,8 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
-						Nivel operativo: <br>
+					<p class="falso" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
+						<b> Nivel operativo: </b><br>
 						. Control de ventas <br>
 						. Programas de producción Estados de flujo de caja <br>
 						. Seguimiento a empleados 
@@ -60,8 +60,8 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">
-						Nivel estratégico: <br>
+					<p class="verdadero" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">
+						<b> Nivel estratégico: </b><br>
 						. Control de ventas <br>
 						. Programas de producción Estados de flujo de caja <br>
 						. Seguimiento a empleados
@@ -69,8 +69,8 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget5">
-						Nivel táctico: <br>
+					<p class="falso" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget5">
+						<b> Nivel táctico: </b><br>
 						. Registro de ventas y promociones <br>
 						. Registro de inventarios, maquinaría y tiempos <br>
 						. Cuentas por pagar, registros de gastos e ingresos
@@ -78,8 +78,8 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="correcta2" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget6">
-						Nivel táctico: <br>
+					<p class="correcta2" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget6">
+						<b> Nivel táctico: </b><br>
 						. Control de ventas <br>
 						. Programas de producción Estados de flujo de caja <br>
 						. Seguimiento a empleados
@@ -90,14 +90,14 @@
 			</div>
 			<div class="col-md-7">
 				<div class="col-md-12 d-flex justify-content-center">
-					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="col-md-12 dashed cont1">
+					<div class="droptarget">
+						<div class="col-md-12 dashed cont1" ondrop="drop(event)" ondragover="allowDrop(event)">
 							
 						</div>
-						<div class="col-md-12 dashed cont2">
+						<div class="col-md-12 dashed cont2" ondrop="drop(event)" ondragover="allowDrop(event)">
 							
 						</div>
-						<div class="col-md-12 dashed cont3">
+						<div class="col-md-12 dashed cont3" ondrop="drop(event)" ondragover="allowDrop(event)">
 							
 						</div>
 					</div>

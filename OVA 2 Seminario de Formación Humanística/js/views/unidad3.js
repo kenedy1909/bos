@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    $(".linkactividades").attr('href',urlsite+'course/view.php?id='+courseid);
+    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
     
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');

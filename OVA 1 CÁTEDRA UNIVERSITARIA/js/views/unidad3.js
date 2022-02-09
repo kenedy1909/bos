@@ -159,6 +159,9 @@ function controlSlides(num){
             $(".menu1").removeClass('c-show');
             $(".menu2").removeClass('c-show');
             $(".menu3").addClass('c-show');
+            
+            document.getElementById("actividad17").contentDocument.location.reload(true);
+
             break;
         case 1:
             paraIframe(0);
@@ -188,8 +191,11 @@ function controlSlides(num){
             $(".menu1").removeClass('c-show');
             $(".menu2").removeClass('c-show');
             $(".menu3").addClass('c-show');
+            
+            document.getElementById("actividad17").contentDocument.location.reload(true);
             break;
         case 2:
+            document.getElementById("actividad17").contentDocument.location.reload(true);
 
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             document.getElementById("actividad17").contentDocument.location.reload(true);
