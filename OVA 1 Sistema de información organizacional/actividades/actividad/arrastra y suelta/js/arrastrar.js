@@ -37,10 +37,13 @@ function calificar(){
 		  puntaje = puntaje + 20;
 		}
   }
-	let dato =res1.filter(element => element == 'falso');
-	if(dato == 'falso'){
+	let dato =res1.filter(element => element == 'falso inactivo');
+	if(dato == 'falso inactivo'){
 		puntaje = 0;
 		console.log(puntaje);
+	}
+	if(res1.length > 5){
+		puntaje = 0;
 	}
 
 
@@ -60,7 +63,7 @@ function calificar(){
 
 		// console.log(puntaje);
 
-	if (puntaje >= 75) {
+	if (puntaje > 80) {
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto">');
 	    $('.puntaje').text("100%");
 	    $('.mensaje').text("¡Felicitaciones!");
