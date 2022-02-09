@@ -58,7 +58,7 @@ body {
     height: 100%;
 }
 button.close{
-    background: #ad123c;
+    background: #fff;
     border-radius: 50%;
     color: #fff;
     height: 30px;
@@ -74,7 +74,7 @@ button.close{
     z-index: 1000;
 }
 button.close:focus, button.close:hover{
-    background: #ffd200;
+    background: #79CAF3;
     opacity: 1;
 }
 button.cerrar-leccion{
@@ -88,10 +88,10 @@ h1, h2, h3, h4, h5{
     font-weight: 600;
 }
 h1{
-    color: #ad123c;
+    color: #fff;
 }
 h3{
-    color: #FFD200;
+    color: #79CAF3;
 }
 html{ 
     height: 100%; 
@@ -143,7 +143,7 @@ html{
     font-weight: 600;
 }
 .backdrop.actividad header h1{
-    text-shadow: 4px 3px 0 #ffd200;
+    text-shadow: 4px 3px 0 #79CAF3;
 }
 .backdrop.recurso header h1{
     text-shadow: 4px 3px 0 #49a5aa;
@@ -156,7 +156,7 @@ html{
     padding: 2px 25px;
 }
 .backdrop.actividad header h2{
-    color: #ffd200;
+    color: #79CAF3;
 }
 .backdrop.recurso header h2{
     color: #49a5aa;
@@ -186,15 +186,15 @@ html{
     border-radius: 20px;
 }
 .btn-primary:active, .btn-primary:active:focus, .btn-primary:focus, .btn-primary:hover{
-    background: #ffd200;
+    background: #79CAF3;
     border: none;
     outline: 0;
 }
 .btn-secundary{
-    background: #ffd200;
+    background: #79CAF3;
     border: none;
     border-radius: 0;
-    color: #ad123c;
+    color: #fff;
     font-family: 'Barmeno', sans-serif;
     font-size: 1.15em;
     font-weight: 600;
@@ -251,7 +251,7 @@ html{
     color: #8eb936;
 }
 .calificacion .modal-body.parcial .mensaje .puntaje{
-    color: #ad123c;
+    color: #000;
 }
 @keyframes wobble {
     0% {

@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
     star_uni = 1;
     $('.zoom_img').elevateZoom({ zoomWindowPosition: 10 });
     $('#smartwizard').smartWizard({
