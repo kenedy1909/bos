@@ -156,6 +156,9 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             // $("#content-ova").load("base/unidades/unidad2.html");
             tema = 7;
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 1:
             paraIframe(0);
@@ -182,29 +185,53 @@ function controlSlides(num){
                         <a href="assets/PDF/UNIDAD 1/Reforma-estatutos-UNAULA-2020.pdf" target="_blank"> <img class="img-circle menu_superior w-30p" src="assets/img/img_template/pdf.png">Reforma estatutos UNAULA 2020<b class="text-cafe"><u>Ver</u></b></a>
                     </p>`;
             $('.pdfs').html(pdf);
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 2:
 
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","");
             document.getElementById("actividad17").contentDocument.location.reload(true);
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","3. El cogobierno en la Universidad Autónoma","Principios que lo regulan");
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             tema = 1;
             break;
         default:

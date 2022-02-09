@@ -168,6 +168,8 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","");
             cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             /*dragging = "";
             diff = "";
             newTop = "";
@@ -180,6 +182,8 @@ function controlSlides(num){
         case 1:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","");
             cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             /*dragging = "";
             diff = "";
             newTop = "";
@@ -192,11 +196,15 @@ function controlSlides(num){
         case 2:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo neurofisiológico");            
             cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo neurofisiológico");
             
             cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
@@ -224,37 +232,55 @@ function controlSlides(num){
             }
             scroll_horizontal2(0);
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo cognitivo: inteligencia y creatividad");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
         case 12:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
@@ -268,30 +294,53 @@ function controlSlides(num){
             container = document.querySelector('.custom-scrollbar__inner11');    
             scroll();
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 14:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
+            
+            dragging = "";
+            diff = "";
+            newTop = "";
+            scrollOffset = "";
+            knob = document.querySelector('.custom-scrollbar__knob11');
+            bar = document.querySelector('.custom-scrollbar__bar11');
+            container = document.querySelector('.custom-scrollbar__inner11');    
+            scroll();
             break;
         case 16:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 17:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo psicológico, afectivo y social.");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 18: 
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo moral, ético y de valores");
             cambiarColorMenu(41);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 19: 
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo moral, ético y de valores");
             cambiarColorMenu(41);
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 20: 
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo moral, ético y de valores");

@@ -90,6 +90,9 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 10;
             break;
@@ -101,36 +104,56 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior",">");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Normas constitucionales y legales");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","2. Normatividad Constitucional y Legal de la Educación Superior","Autonomía universitaria ");
             $(".menu1").removeClass('d-none');
             $(".menu2").removeClass('d-none');
+            $(".menu2").addClass('c-show');
+            $(".menu1").removeClass('c-show');
+            $(".menu3").addClass('d-none');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","","");
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu2").removeClass('c-show');
             tema = 1;
             break;
         default:
