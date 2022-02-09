@@ -32,6 +32,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget2{
     border: #282f9f solid;
@@ -42,6 +44,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget3{
     border: #282f9f solid;
@@ -52,6 +56,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget4{
     border: #282f9f solid;
@@ -62,6 +68,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget5{
     border: #282f9f solid;
@@ -72,6 +80,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget6{
     border: #282f9f solid;
@@ -82,6 +92,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget7{
     border: #282f9f solid;
@@ -92,6 +104,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget8{
     border: #282f9f solid;
@@ -102,6 +116,8 @@
         font-size: 13px;
     height: 163px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 #dragtarget9{
     border: #282f9f solid;
@@ -112,6 +128,8 @@
         font-size: 13px;
     height: 100px;
     overflow: auto;
+        text-align: justify;
+    overflow-x: hidden;
 }
 .img_cont{
 	max-width: 70%;
