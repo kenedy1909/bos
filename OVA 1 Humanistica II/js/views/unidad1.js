@@ -98,14 +98,14 @@ function controlSlides(num){
         case 2:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Importancia de la formación humanística");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";            
+            
+                        
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Importancia de la formación humanística");
             document.getElementById("actividad3").contentDocument.location.reload(true);
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             
             break;
         case 4:
@@ -115,14 +115,14 @@ function controlSlides(num){
                         });
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             dragging = "";
             diff = "";
             newTop = "";
@@ -135,23 +135,23 @@ function controlSlides(num){
         case 6:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 7:
             
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 8:
             var contenido = `<p class="color-text m-auto"><i>Clic en el ícono para visualizar información</i></p>`;
             $('.imprime_heare').html(contenido);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 9:
             $('.p_9c').html('<p><i>Clic en cada círculo para visualizar la información</i></p>');
@@ -160,101 +160,61 @@ function controlSlides(num){
                 });
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 11:
-            sumaslide++;
-            if (sumaslide < 2) {
-                var slideCount = $('#slider ul li').length;
-                var slideWidth = $('#slider ul li').width();
-                var slideHeight = $('#slider ul li').height();
-                var sliderUlWidth = slideCount * slideWidth;
-                
-                $('#slider').css({ width: '100%', height: '430px' });
-                
-                $('#slider ul').css({ width: '90%'});
-                
-                $('#slider ul li:last-child').prependTo('#slider ul');
-
-                function moveLeft() {
-                    $('#slider ul').animate({
-                        left: + slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:last-child').prependTo('#slider2 ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
-
-                function moveRight() {
-                    $('#slider ul').animate({
-                        left: - slideWidth
-                    }, 200, function () {
-                        $('#slider ul li:first-child').appendTo('#slider ul');
-                        $('#slider ul').css('left', '');
-                    });
-                };
-
-                $('a.control_prev').click(function (e) {
-                    moveLeft();
-                    e.preventDefault();
-                });
-
-                $('a.control_next').click(function (e) {
-                    moveRight();
-                    e.preventDefault();
-                });
-            }
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             break;
-        case 12:
+        case 12: 
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
-            
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
             break;
         case 13:
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            
+            
+            break;
+        case 14:
             $('.wite_ban_13').css({ "background": "transparent"
                     
                 });
             $('.pant13').html('');
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
-            break;
-        case 14:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 15:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 16:
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Función social de la universidad");
+            
+            
+            
+            break;
+        case 17:
             $('.pantallas16').html('');
             /*$('.16_imprime').html('<p style="float: right;">Clic para ampliar la información</p>');*/
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             /*$("#content-ova").load("base/unidades/unidad2.html");
             tema = 1;*/
             break;
-        case 17:
+        case 18:
             var img = `
             <img src="assets/img/img_ova/imagen5.png">
 
@@ -269,78 +229,78 @@ function controlSlides(num){
             $('.banner_17').css({'visibility': 'hidden'});
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
-            break;
-        case 18:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 19:
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            
+            
+            break;
+        case 20:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
-        case 20:
+        case 21:
             $('.pant20').html(text);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
-        case 21:
+        case 22:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
-        case 22:
+        case 23:
             $('.imp_21delete').html('');
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
-            break;
-        case 23:
-            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
             break;
         case 24:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 25:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 26:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 27:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
             break;
         case 28:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
             
-            document.getElementById("next").style.display="block";
-            document.getElementById("prev").style.display="block";
+            
+            
+            break;
+        case 29:
+            setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
+            
+            
+            
             break;
         default:
             break;
@@ -408,6 +368,39 @@ function scroll_p14(){
     knob = document.querySelector('.custom-scrollbar__knob14');
     bar = document.querySelector('.custom-scrollbar__bar14');
     container = document.querySelector('.custom-scrollbar__inner14');
+    scroll();
+}
+
+function scroll_p141(){
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob141');
+        bar = document.querySelector('.custom-scrollbar__bar141');
+        container = document.querySelector('.custom-scrollbar__inner141');
+        scroll();    
+}
+
+function scroll_p142() {
+        dragging = "";
+        diff = "";
+        newTop = "";
+        scrollOffset = "";
+        knob = document.querySelector('.custom-scrollbar__knob142');
+        bar = document.querySelector('.custom-scrollbar__bar142');
+        container = document.querySelector('.custom-scrollbar__inner142');
+        scroll();
+}
+
+function scroll_p143() {
+    dragging = "";
+    diff = "";
+    newTop = "";
+    scrollOffset = "";
+    knob = document.querySelector('.custom-scrollbar__knob143');
+    bar = document.querySelector('.custom-scrollbar__bar143');
+    container = document.querySelector('.custom-scrollbar__inner143');
     scroll();
 }
 
@@ -638,8 +631,10 @@ function imprime(num) {
 function pantalla6(num){
     switch (parseInt(num)){
         case 1:
-            var texto = `<p style="font-size: 12px;" class="justificado text-black pb-2">El origen de la palabra democracia viene del griego y su significado es “gobierno del pueblo” o “gobierno popular” (Rodríguez, 2010.), comprendiendo que la palabra hace referencia a un sistema político</p>`;
+            var texto = `<p style="font-size: 13px;" class="justificado text-black pb-2 mt-2">El origen de la palabra democracia viene del griego y su significado es “gobierno del pueblo” o “gobierno popular” (Rodríguez, 2010.), comprendiendo que la palabra hace referencia a un sistema político</p>`;
+            
             $('.banne_white').html(texto);
+            $('.content_2').addClass('invisible');
             $('.triangulo_yellow').css({ "visibility": "visible"});
             $('.tria_blue1').css({ "visibility": "hidden"});
             $('.tria_blue2').css({ "visibility": "hidden"});
@@ -647,6 +642,8 @@ function pantalla6(num){
             break;
         case 2:
             var texto = `<p style="font-size: 13px;" class="justificado text-black m-auto">Era la figura de función política permanente, los pertenecientes a este grupo se elegían cada año por los ciudadanos que contaran con edad mayor a treinta. Entre sus funciones se encontraba preparar las sesiones de la asamblea y el correspondiente orden del día; en aquel tiempo, todo caso debía ser evaluado inicialmente por este consejo para luego ser atendido por la asamblea, así mismo, eran encargados de validar el cumplimiento de los requisitos por parte de quienes integrarían los grupos del gobierno.</p>`;
+            
+            $('.content_1').addClass('invisible');
             $('.boder_white_baner').html(texto);
             $('.triangulo_yellow').css({ "visibility": "hidden"});
             $('.tria_blue1').css({ "visibility": "visible"});
@@ -655,6 +652,7 @@ function pantalla6(num){
             break;
         case 3:
             var texto = `<p style="font-size: 13px;" class="justificado text-black m-auto">Este grupo era la concentración real del poder político y a su vez el más reconocido, ya que, en él todas las personas con pleno derecho para ejercer participación, tenían potestad de votar en los diversos temas expuestos que previamente habían sido validados por el consejo. Aunque el número de personas que podían asistir y dar su voto era alto, la asistencia real no lo era, lo cual no se distancia mucho de la situación en la actualidad.</p>`;
+            $('.content_1').addClass('invisible');
             $('.boder_white_baner').html(texto);
             $('.triangulo_yellow').css({ "visibility": "hidden"});
             $('.tria_blue1').css({ "visibility": "hidden"});
