@@ -535,7 +535,7 @@ function scroll_slide(num) {
                                 <div class="pt-3 mt-4">
                                   <h3 class="text-color-activi-o"><b>Fase 7: el mantenimiento del Sistema</b></h3><br>
                                   <div class="pt-3 custom-scrollbar20" style="height:500px">
-                                    <div class="row custom-scrollbar__inner20 padding_scroll" style="padding: 0px 70px 1px 25px;">
+                                    <div class="row custom-scrollbar__inner20 padding_scroll" style="padding: 0px 70px 1px 25px;     overflow-y: initial;">
                                       
                                       <p class="justificado text-black">Esta es la fase que más tiempo toma, además es la más costosa para la organización, incluso más costosa que el mismo diseño y desarrollo. Se puede decir que la fase de mantenimiento existirá mientras el sistema tenga vida. Implica la dedicación de capacidad profesional o del área a cargo de los sistemas (TICs, Informática, sistemas, etc), durante todo el tiempo de vida del software, pues requiere hacer correcciones, modificaciones o incluso actualizaciones de acuerdos con los cambios de la tecnología y de los cambios en los de la empresa, esto también se conoce como soporte técnico al sistema.</p>
                                       

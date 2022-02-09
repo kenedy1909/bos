@@ -135,9 +135,11 @@ angular.module("leccion3App", []).controller("actividad1Ctrl", function($scope, 
         puntaje = puntaje.toFixed(0);
         var exito = false;
         var mensaje = "Inténtalo nuevamente."
+        $("#img-circulo").attr("src","../../../assets/img/img_ova/mal-mal.png"); 
         if (puntaje == 100) {
             exito = true;
             mensaje = "¡Felicitaciones!"
+            $("#img-circulo").attr("src","../../../assets/img/img_ova/bien-bien.png"); 
         }
         registrarActividad(puntaje);
         mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, $scope.reset);
