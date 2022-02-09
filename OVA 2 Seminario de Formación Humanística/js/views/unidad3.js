@@ -125,6 +125,12 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura "," La ética humanística");
             cambiarColorMenu(13);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             /*$("#content-ova").load("base/unidades/unidad1.html");
             tema = 5;*/
             break;
@@ -132,15 +138,33 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura "," La ética humanística");
             /*setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");*/
             cambiarColorMenu(13);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             cambiarColorMenu(23);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             scroll_set(5);
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             cambiarColorMenu(23);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             $("#content").html('');
             $("#img_cont").html('');
             scroll_set(5);
@@ -149,6 +173,12 @@ function controlSlides(num){
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura humanística");
             /*setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");*/
             cambiarColorMenu(23);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
@@ -157,18 +187,39 @@ function controlSlides(num){
         case 5:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             cambiarColorMenu(33);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             cambiarColorMenu(33);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             cambiarColorMenu(33);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").removeClass('c-show');
+            $(".menu3").addClass('c-show');
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Cultura y educación");
             cambiarColorMenu(33);
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
             break;
         /*case 9:
             setMigaja("Unidades de aprendizaje","> 3. Ética y cultura ","Formación de la sociedad moderna");
