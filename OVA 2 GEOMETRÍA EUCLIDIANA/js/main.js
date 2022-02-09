@@ -1,6 +1,8 @@
 var scorm = pipwerks.SCORM;
 var tema = 0;
 var active = 0;
+var star_uni = 0;
+var paso = true;
 if (typeof parent.scormplayerdata == 'undefined') {
     var courseid = 1;
 }else{
@@ -113,6 +115,32 @@ $('#porcentaje_unidad').on('shown.bs.popover', function () {
 
     /*$("#percent_unidad").percircle({percent: total_porcentaje ,animate: "true"});*/
 })
+function cambiarColorMenu(enlace) {
+
+    $('.linkMenu11').removeClass('colorAMenu');
+    $('.linkMenu21').removeClass('colorAMenu');
+    $('.linkMenu12').removeClass('colorAMenu');
+    $('.linkMenu22').removeClass('colorAMenu');
+    $('.linkMenu32').removeClass('colorAMenu');
+
+    if (enlace == 11) {
+        $('.linkMenu11').addClass('colorAMenu');
+    }else if (enlace == 21) {
+        $('.linkMenu21').addClass('colorAMenu');
+    }else if (enlace == 12) {
+        $('.linkMenu12').addClass('colorAMenu');
+    }else if (enlace == 22) {
+        $('.linkMenu22').addClass('colorAMenu');
+    }else if (enlace == 32) {
+        $('.linkMenu32').addClass('colorAMenu');
+    }else{
+        $('.linkMenu11').removeClass('colorAMenu');
+        $('.linkMenu21').removeClass('colorAMenu');
+        $('.linkMenu12').removeClass('colorAMenu');
+        $('.linkMenu22').removeClass('colorAMenu');
+        $('.linkMenu32').removeClass('colorAMenu');
+    }
+}
 
 $( "#terminarCurso" ).click(function(evt) {
     CompletarCurso();

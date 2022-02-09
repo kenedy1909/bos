@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu1").removeClass('c-show');
+    $(".menu2").addClass('c-show');
+    star_uni = 2;
+    paso = false;
     $('#smartwizard').smartWizard({
         loader:"show",
         theme:'arrows',
@@ -26,6 +32,25 @@ $( document ).ready(function() {
         slide();
         
     });
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        if (tema != 0) {
+            controlSlides(tema);
+            tema = 0;
+        } else {
+            controlSlides(stepIndex+1);
+        }
+        // quitarflecha(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
     /*slide_predeterminado();*/
     /*funcion_vanvas();
     funcion_canvas2();*/
@@ -52,7 +77,7 @@ $('.pdfs').html(pdf);
 function slide(){
     var stepIndex = $('#smartwizard').smartWizard("getStepIndex");
     controlSlides(stepIndex);
-    actualizarprogress(stepIndex+11);
+    /*actualizarprogress(stepIndex+11);*/
 }
 
 function slide_predeterminado(){
@@ -71,57 +96,126 @@ function slide_link(num){
 }
 
 function controlSlides(num){
+    actualizarprogress(num+10);
     switch (parseInt(num)) {
         case 0:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            cambiarColorMenu(12);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             $("#content-ova").load("base/unidades/unidad1.html");
             tema = 11;
             break;
         case 1:
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            cambiarColorMenu(12);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 2:
 
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            cambiarColorMenu(12);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Definición, notación, determinación y clasificación de conjuntos");
+            cambiarColorMenu(12);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             $("#content").html('');
             $("#img_cont").html('');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)");
+            cambiarColorMenu(22);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             //$("#pregunta_cont").html('');
             $("#contenido2").html('');
             $("#img_2").html('');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Relaciones, operaciones entre conjuntos y sus propiedades. (representación gráfica)");
+            cambiarColorMenu(22);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 8:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 9:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 10:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 11:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 12:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu1").removeClass('c-show');
+            $(".menu2").addClass('c-show');
             break;
         case 13:
             setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            cambiarColorMenu(32);
+            $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
             break;
         default:
             break;
