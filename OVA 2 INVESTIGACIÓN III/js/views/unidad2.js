@@ -120,6 +120,8 @@ function controlSlides(num){
             $( ".ov-personaje").show();
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","","");

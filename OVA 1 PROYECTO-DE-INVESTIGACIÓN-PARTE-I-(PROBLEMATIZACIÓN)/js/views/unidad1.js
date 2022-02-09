@@ -199,6 +199,9 @@ function controlSlides(num){
             tema = 1;
             $('.ov-personaje').removeClass('d-none');
             $(".menu1").addClass('d-none');
+            $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
             $('.js_uni').html('<script src="js/views/unidades.js"></script>');

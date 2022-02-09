@@ -37,7 +37,16 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
-    setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+      slide();
+      // console.log(e);
+      switch(stepIndex) {
+          default:
+          // code block
+      }
+  });
+  
     slide_predeterminado2();
     slide_link2(tema);
     /*funcion_vanvas();
@@ -56,7 +65,7 @@ $(function() {
 
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides2(stepIndex);
+    controlSlides2(stepIndex+1);
     actualizarprogress(stepIndex+7);
 }
 
@@ -82,7 +91,7 @@ function controlSlides2(num) {
         case 0:
             setMigaja("Unidades de aprendizaje", "2. Acercamiento epistemológico a la economía como ciencia ", "El método en la economía");
             cambiarColorMenu(12);
-            $("#content-ova").load("base/unidades/unidad1.html");
+            // $("#content-ova").load("base/unidades/unidad1.html");
             
             break;
         case 1:

@@ -50,43 +50,53 @@
 		<div class="col-md-12 mt-5">
 			<div class="col-md-12 row d-flex justify-content-center" style="height: 200px;">
 				<div style="position: relative;top: 20%; left: -5%;">
-					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">Entrevistas</p>
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event, 1)" draggable="true" id="dragtarget1">Entrevistas</p>
 				</div>
 				<div style="position: relative;left: -3%;">
-					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">recopilación</p>
+					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event, 2)" draggable="true" id="dragtarget2">recopilación</p>
 				</div>
 				<div style="position: relative;left: -1%;">
-					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">Libros</p>
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event, 3)" draggable="true" id="dragtarget3">Libros</p>
 				</div>
 				<div style="position: relative;left: 0%;">
-					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">Artículos</p>
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event, 4)" draggable="true" id="dragtarget4">Artículos</p>
 				</div>
 				<div style="position: relative;top: 20%; left: -3%;">
-					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget5">Fecha de publicación</p>
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event, 5)" draggable="true" id="dragtarget5">Fecha de publicación</p>
 				</div>
 				<div style="position: relative;left: -2%;">
-					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget6">Consulta</p>
+					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event, 6)" draggable="true" id="dragtarget6">Consulta</p>
 				</div>
 				<div style="position: relative;">
-					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget7">Inicio de la revisión</p>
+					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event, 7)" draggable="true" id="dragtarget7">Inicio de la revisión</p>
 				</div>
 				<div style="position: relative; left: -20%">
-					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget8" style="position: relative;left: 5px;">Consulta de la literatura</p>
+					<p class="dos" ondragstart="dragStart(event)" ondragend="dragEnd(event, 8)" draggable="true" id="dragtarget8" style="position: relative;left: 5px;">Consulta de la literatura</p>
 				</div>
 				<div style="position: relative;">
-					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget9">Título y subtítulo</p>
+					<p class="uno" ondragstart="dragStart(event)" ondragend="dragEnd(event, 9)" draggable="true" id="dragtarget9">Título y subtítulo</p>
 				</div>
 				
 			</div>
 			<div class="col-md-12 row">
-				<div class="col-md-6 d-flex justify-content-center">
-					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div class="col-md-6 py-2 px-1 col-sm-3 justify-content-center">
+					<div class="position-relative d-flex" style="min-height: 240px;">
+						<div class="content-dropT">
+							<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						</div>
 						<div class="interno cont1">Información a recopilar y de dónde</div>
 					</div>
+					
+						
 				</div>
-				<div class="col-md-6 d-flex justify-content-center">
-					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+					
+				<div class="col-md-6 py-2 px-1 col-sm-3 justify-content-center">
+					<div class="position-relative d-flex" style="min-height: 240px;">
+						<div class="content-dropT">
+							<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+						</div>
 						<div class="interno cont2">Proceso de revisión de la literatura</div>
+					
 					</div>
 				</div>
 			</div>
