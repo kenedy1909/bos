@@ -3,8 +3,10 @@ function dragStart(event) {
     document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
-function dragEnd(event) {
+function dragEnd(event, num) {
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
+	$('#dragtarget'+num).addClass("inactivo");
+
 }
 
 function allowDrop(event) {
@@ -15,12 +17,15 @@ function drop(event) {
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
+	/*let padre = document.getElementById(data).parentElement;
+	padre = $(padre).find('p');*/
 }
 
 function calificar(){
 	var i = 0;
 	var res1 = [];
 	$('.cont1>p').each(function (){
+		console.log(res1[i]);
 	    res1[i] = $(this).attr('class');
 	    i++;
 	});
@@ -28,7 +33,7 @@ function calificar(){
 	var puntaje=0;
 	for (var i = 0; i < res1.length; i++){
 		
-		if (res1[i] == 'verdadero'){
+		if (res1[i] == 'verdadero inactivo'){
 		  puntaje = puntaje + 20;
 		}
   }
