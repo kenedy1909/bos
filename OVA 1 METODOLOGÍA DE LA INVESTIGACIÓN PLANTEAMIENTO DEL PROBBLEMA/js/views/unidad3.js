@@ -39,6 +39,16 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+    
     slide_predeterminado3();
     console.log(tema);
     slide_link3(tema);
@@ -50,7 +60,7 @@ $(function() {
 
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides3(stepIndex); 
+    controlSlides3(stepIndex+1); 
     actualizarprogress(stepIndex+11);
 }
 
@@ -79,7 +89,7 @@ function controlSlides3(num) {
             cambiarColorMenu(13);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="none";
-            $("#content-ova").load("base/unidades/unidad2.html");
+            // $("#content-ova").load("base/unidades/unidad2.html");
             tema = 3;
             break;
         case 1:
@@ -134,7 +144,7 @@ function controlSlides3(num) {
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             cambiarColorMenu(13);
             
-            break;
+            break; 
         case 8:
             setMigaja("Unidades de aprendizaje", "3. Definición del problema ", "El problema en la investigación");
             cambiarColorMenu(13);

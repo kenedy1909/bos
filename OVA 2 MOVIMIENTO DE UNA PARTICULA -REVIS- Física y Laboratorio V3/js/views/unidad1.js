@@ -26,12 +26,12 @@ $(document).ready(function() {
 
     $('.zoom_img').elevateZoom({ zoomWindowPosition: 20 });
     $('.zoom_img2').elevateZoom({ zoomWindowPosition: 15 });
-    $('#next').on('click', function() {
+    $('#next').off('click').on('click', function() {
         $('#smartwizard').smartWizard("next");
         slide();
     });
 
-    $('#prev').on('click', function() {
+    $('#prev').off('click').on('click', function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });

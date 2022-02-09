@@ -144,9 +144,11 @@ function controlSlides3(num){
           document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
           $('.ov-personaje').removeClass('d-none');
+          mostrarPersonaje();
           $(".menu1").addClass('d-none');
           $(".menu2").addClass('d-none');
           $(".menu3").addClass('d-none');
+          $(".menu4").addClass('d-none');
 
               tema=1;
             break; 

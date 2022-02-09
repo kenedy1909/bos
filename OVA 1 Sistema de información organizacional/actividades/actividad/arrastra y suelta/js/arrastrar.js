@@ -3,9 +3,17 @@ function dragStart(event) {
     document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
+
 function dragEnd(event, num) {
+	let ubicar;
+	let lugar;
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
-	$('#dragtarget'+num).addClass("inactivo");
+	ubicar = $("#dragtarget"+num).parent('.droptarget');
+	    lugar = $(ubicar).attr('class');
+    	if (lugar != undefined) {
+			$('#dragtarget'+num).addClass("inactivo");
+    	}
+
 
 }
 
@@ -37,10 +45,13 @@ function calificar(){
 		  puntaje = puntaje + 20;
 		}
   }
-	let dato =res1.filter(element => element == 'falso');
-	if(dato == 'falso'){
+	let dato =res1.filter(element => element == 'falso inactivo');
+	if(dato == 'falso inactivo'){
 		puntaje = 0;
 		console.log(puntaje);
+	}
+	if(res1.length > 5){
+		puntaje = 0;
 	}
 
 
@@ -60,7 +71,7 @@ function calificar(){
 
 		// console.log(puntaje);
 
-	if (puntaje >= 75) {
+	if (puntaje > 80) {
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto">');
 	    $('.puntaje').text("100%");
 	    $('.mensaje').text("¡Felicitaciones!");

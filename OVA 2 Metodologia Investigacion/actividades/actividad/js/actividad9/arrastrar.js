@@ -3,8 +3,17 @@ function dragStart(event) {
     document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
-function dragEnd(event) {
+function dragEnd(event, num) {
+	let ubicar;
+	let lugar;
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
+	ubicar = $("#dragtarget"+num).parent('.droptarget');
+	    lugar = $(ubicar).attr('class');
+    	if (lugar != undefined) {
+			$('#dragtarget'+num).addClass("inactivo");
+    	}
+
+
 }
 
 function allowDrop(event) {
@@ -33,12 +42,12 @@ function calificar(){
 	});
 	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'uno'){
+	  if (res1[i] == 'uno inactivo'){
 	    puntaje = puntaje + 11.1;
 	  }
 	}
 	for (var i = 0; i < res2.length; i++){
-	  if (res2[i] == 'dos'){
+	  if (res2[i] == 'dos inactivo'){
 	    puntaje = puntaje + 11.1;
 	  }
 	}
