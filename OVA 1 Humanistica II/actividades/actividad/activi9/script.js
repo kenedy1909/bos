@@ -389,7 +389,7 @@ function init_recurso_1() {
             ahorcado.dibujarTodo();
             ahorcado.dibujarTodo();
             if (this.gano()) {
-                $('#texto-modal').html('Su puntaje es <b> 100%.<b/><br> ¡Felicitaciones!');
+                $('#texto-modal').html('Su puntaje es <b> 100%.<b/> <br><br> <p style="font-weight: normal;">¡Felicitaciones!</p>');
                
                 $('#modal-ahorcado').removeClass("intentar");
                 $('#modal-ahorcado').modal("show");
