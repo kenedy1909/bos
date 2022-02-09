@@ -56,13 +56,13 @@ $( document ).ready(function() {
 });
 var pdf = `<div class="col-md-12">
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1.LaTeoriaGeneraldeSistemas-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 1.LaTeoriaGeneraldeSistemas-TGS.pdf   <b class="text-cafe ml-4" style="position: relative;left: 250px;"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/1.LaTeoriaGeneraldeSistemas-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 1.LaTeoriaGeneraldeSistemas-TGS.pdf   <b class="text-cafe ml-4" style="position: relative;left: 250px;"><u>Ver</u></b></a>
                 </p><br>
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf   <b class="text-cafe ml-4" style="position: relative;left: 135px;"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 2-Introducción-a-los-Conceptos-Básicos-de-la-TGS.pdf   <b class="text-cafe ml-4" style="position: relative;left: 135px;"><u>Ver</u></b></a>
                 </p><br>
                 <p class="p_white">
-                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px" src="assets/img/img_template/pdf.png"> 3-Componentes-de-la-TGS.pdf   <b class="text-cafe ml-4" style="position: relative;left: 296px;"><u>Ver</u></b></a>
+                    <a href="assets/PDF/UNIDAD1-LA-TGS/TEMA1-ConceptosGenerales/3-Componentes-de-la-TGS.pdf" target="_blank"> <img class="img-circle menu_superior mr-2 w-40px img-5" src="assets/img/img_template/pdf.png"> 3-Componentes-de-la-TGS.pdf   <b class="text-cafe ml-4" style="position: relative;left: 296px;"><u>Ver</u></b></a>
                 </p>
             </div>`;
 $('.pdfs').html(pdf);

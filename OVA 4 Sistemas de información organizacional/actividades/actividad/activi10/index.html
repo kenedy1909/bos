@@ -38,7 +38,7 @@
 
                                 <div class="pregunta-cuestionario" ng-repeat="pregunta in preguntas" id="cuestionario-{{$index+1}}">
                                     <p class="texto-pregunta d-flex">
-                                        <spam style="width: -webkit-fill-available;">{{pregunta.texto}} </spam>
+                                        <spam style="height: 45px;width: -webkit-fill-available;overflow: auto;padding-right: 15px;margin: 15px 0;">{{pregunta.texto}} </spam>
                                         <spam class="img_questionario{{$index+1}}"></spam>
                                     </p>
                                     <div class="respuestas-cuestionario">
@@ -67,7 +67,7 @@
 
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+    <!-- <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body center-block">
@@ -82,6 +82,45 @@
                     <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+        </div>
+    </div> -->
+
+    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content" style="position: relative; top: 250px;">
+                <div class="">
+                  <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover" style="overflow: visible;">
+                              
+                            </div>
+                            <div class="user">
+                              <div class="">
+                                <div class="radius-gray">
+                                    <img class="" id="img-circulo" src="../../../assets/img/img_ova/bien.png" >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="content">
+                                <div class="modal-body">
+                                    <div class="mensaje " style="text-align: justify;">
+                                        Tu puntaje es: <span class="puntaje">40%</span>
+                                        <span class="texto-puntaje"></span>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secundary calificacion-intentar" style="border-radius: 9px;" data-dismiss="modal">Volver a
+                                        intentar</button>
+                                    <button type="button" class="btn btn-secundary calificacion-cerrar" style="border-radius: 9px;" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
     <!-- Incluisión de scripts -->

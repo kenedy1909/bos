@@ -623,12 +623,12 @@ p, button{
   width: fit-content;
 }
 
-.custom-scrollbar2, .custom-scrollbar3 {
+.custom-scrollbar2, .custom-scrollbar3, .custom-scrollbar1 {
   /*position: relative;*/
   height: 180px;
 }
 
-.custom-scrollbar__inner2, .custom-scrollbar__inner3 {
+.custom-scrollbar__inner2, .custom-scrollbar__inner3, .custom-scrollbar__inner1 {
   height: 100%;
   width: calc(100% + 40px);
   padding-right: 75px;
@@ -639,22 +639,22 @@ p, button{
 /*.custom-scrollbar__inner2 div {
   margin-bottom: 16px;
 }*/
-.custom-scrollbar__inner2, .custom-scrollbar__inner3 img {
+.custom-scrollbar__inner2, .custom-scrollbar__inner3, .custom-scrollbar__inner1 img {
   max-width: 100%;
 }
 
 .custom-scrollbar__bar3 {
   position: absolute;
-  top: 11px;
+  top: 40px;
   bottom: 85px;
   background: #FFFFFF;
   width: 3px;
-  right: 0px;
+  right: 15px;
   border-radius: 4px;
   /* display: none; */
   height: 125px;
 }
-.custom-scrollbar__bar2 {
+.custom-scrollbar__bar2, .custom-scrollbar__bar1 {
   position: absolute;
   top: 40px;
   bottom: 85px;
@@ -666,7 +666,7 @@ p, button{
   height: 125px;
 }
 
-.custom-scrollbar__knob2, .custom-scrollbar__knob3 {
+.custom-scrollbar__knob2, .custom-scrollbar__knob3, .custom-scrollbar__knob1 {
   position: absolute;
   top: 0;
   left: 50%;
@@ -678,7 +678,7 @@ p, button{
   will-change: top;
 }
 
-.linea_scroll2, .linea_scroll3 {
+.linea_scroll2, .linea_scroll3, .linea_scroll1 {
   font-size: 50px;
     margin: 0px;
     position: relative;

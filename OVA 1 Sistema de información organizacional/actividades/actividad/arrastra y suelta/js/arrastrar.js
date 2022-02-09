@@ -35,7 +35,7 @@ function calificar(){
 		if (puntaje  == 100 && res1.length >= 3) {
 			puntaje = 75;
 		}else{
-			puntaje = 25;
+			puntaje = 0;
 		}
 	}
 
