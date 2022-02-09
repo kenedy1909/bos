@@ -29,6 +29,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget2{
     border: #282f9f solid;
@@ -36,6 +39,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget3{
     border: #282f9f solid;
@@ -43,6 +49,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget4{
     border: #282f9f solid;
@@ -50,6 +59,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget5{
     border: #282f9f solid;
@@ -57,6 +69,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget6{
     border: #282f9f solid;
@@ -64,6 +79,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget7{
     border: #282f9f solid;
@@ -71,6 +89,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 #dragtarget8{
     border: #282f9f solid;
@@ -78,6 +99,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 163px;
+    overflow: auto;
 }
 #dragtarget9{
     border: #282f9f solid;
@@ -85,6 +109,9 @@
     padding: 5px;
     margin-right: 10px;
     cursor: pointer;
+        font-size: 13px;
+    height: 100px;
+    overflow: auto;
 }
 .img_cont{
 	max-width: 70%;
@@ -129,7 +156,32 @@
 	font-size: 22px;
 }
 .dashed{
-    border-radius: 20px;
+        border-radius: 20px;
     border: dashed #282F9F;
-    min-height: 125px;
+    height: 125px;
+    padding: 10px;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
