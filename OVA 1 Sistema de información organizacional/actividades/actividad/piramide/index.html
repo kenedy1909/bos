@@ -32,7 +32,7 @@
 		<div class="col-md-12 row" style="padding: 1px 1px 1px 30px">
 			<div class="col-md-5 row d-flex justify-content-center" style="">
 				<div class="col-md-6" style="">
-					<p class="correcta3" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
+					<p class="correcta3" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">
 						Nivel operativo: <br>
 						. Registro de ventas y promociones <br>
 						. Registro de inventarios, maquinaría y tiempos <br>
@@ -41,7 +41,7 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="correcta1" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
+					<p class="correcta1" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">
 						Nivel estratégico: <br> 
 						. Diseño de puestos <br>
 						. Presupuestos <br>
@@ -51,7 +51,7 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
+					<p class="falso" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget3">
 						Nivel operativo: <br>
 						. Control de ventas <br>
 						. Programas de producción Estados de flujo de caja <br>
@@ -60,7 +60,7 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">
+					<p class="verdadero" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget4">
 						Nivel estratégico: <br>
 						. Control de ventas <br>
 						. Programas de producción Estados de flujo de caja <br>
@@ -69,7 +69,7 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget5">
+					<p class="falso" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget5">
 						Nivel táctico: <br>
 						. Registro de ventas y promociones <br>
 						. Registro de inventarios, maquinaría y tiempos <br>
@@ -78,7 +78,7 @@
 					</p>
 				</div>
 				<div class="col-md-6" style="">
-					<p class="correcta2" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget6">
+					<p class="correcta2" ondragstart="dragStart(event)" ondrop="return false;" ondragover="return false;" ondragend="dragEnd(event)" draggable="true" id="dragtarget6">
 						Nivel táctico: <br>
 						. Control de ventas <br>
 						. Programas de producción Estados de flujo de caja <br>
@@ -90,14 +90,14 @@
 			</div>
 			<div class="col-md-7">
 				<div class="col-md-12 d-flex justify-content-center">
-					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="col-md-12 dashed cont1">
+					<div class="droptarget">
+						<div class="col-md-12 dashed cont1" ondrop="drop(event)" ondragover="allowDrop(event)">
 							
 						</div>
-						<div class="col-md-12 dashed cont2">
+						<div class="col-md-12 dashed cont2" ondrop="drop(event)" ondragover="allowDrop(event)">
 							
 						</div>
-						<div class="col-md-12 dashed cont3">
+						<div class="col-md-12 dashed cont3" ondrop="drop(event)" ondragover="allowDrop(event)">
 							
 						</div>
 					</div>
