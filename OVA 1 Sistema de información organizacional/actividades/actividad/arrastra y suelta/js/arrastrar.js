@@ -25,19 +25,35 @@ function calificar(){
 	    i++;
 	});
 
-	var puntaje = 100;
+	var puntaje=0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'falso'){
-	    puntaje = puntaje - 50;
-	  }
-	}
-	if (res1.length < 5 ) {
-		if (puntaje  == 100 && res1.length >= 3) {
-			puntaje = 75;
-		}else{
-			puntaje = 0;
+		
+		if (res1[i] == 'verdadero'){
+		  puntaje = puntaje + 20;
 		}
+  }
+	let dato =res1.filter(element => element == 'falso');
+	if(dato == 'falso'){
+		puntaje = 0;
+		console.log(puntaje);
 	}
+
+
+	// if (res1.length < 5 ) {
+	// 	if (puntaje  == 100 && res1.length >= 3) {
+	// 		puntaje = 75;
+	// 	}else{
+	// 		puntaje = 0;
+	// 	}
+	// }
+
+	// for (var i = 0; i < res1.length; i++){
+	// 	if (res1[i] == 'verdadero'){
+	// 	  puntaje = puntaje + 20;
+	// 	}
+	//   }
+
+		// console.log(puntaje);
 
 	if (puntaje >= 75) {
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto">');
