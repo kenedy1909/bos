@@ -9,12 +9,16 @@ function dragEnd(event) {
 
 function allowDrop(event) {
     event.preventDefault();
+
 }
 
 function drop(event) {
     event.preventDefault();
     var data = event.dataTransfer.getData("Text");
     event.target.appendChild(document.getElementById(data));
+
+    let padre = document.getElementById(data).closest('.droptarget');
+	padre.setAttribute("ondrop", "return false;");
 }
 
 function calificar(){
