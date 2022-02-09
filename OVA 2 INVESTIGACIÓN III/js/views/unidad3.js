@@ -190,6 +190,7 @@ function controlSlides(num){
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
             $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             break;
                 
         default:

@@ -1,5 +1,8 @@
 $(document).ready(function() {
     $(".ov-personaje").hide();
+    $(".menu1").removeClass('d-none');
+    $(".menu2").removeClass('d-none');
+    $(".menu3").removeClass('d-none');
     $(".menu4").removeClass('d-none');
 
     $(".menu4").addClass('c-show');
@@ -34,6 +37,16 @@ $(document).ready(function() {
         $('#smartwizard').smartWizard("prev");
         slide();
     });
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        slide();
+        // console.log(e);
+        switch(stepIndex) {
+            default:
+            // code block
+        }
+    });
+
     slide_predeterminado4();
     console.log(tema);
     slide_link4(tema);
@@ -46,7 +59,7 @@ $(function() {
 
 function slide() {
     var stepIndex = parseInt($('#smartwizard').smartWizard("getStepIndex"));
-    controlSlides4(stepIndex);
+    controlSlides4(stepIndex+1);
     actualizarprogress(stepIndex+19);
 }
 
@@ -74,7 +87,7 @@ function controlSlides4(num) {
         case 0:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
             cambiarColorMenu(14);
-            $("#content-ova").load("base/unidades/unidad3.html");
+            // $("#content-ova").load("base/unidades/unidad3.html");
             tema = 7;
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="none";
@@ -84,7 +97,9 @@ function controlSlides4(num) {
             $('.pdfs').html('');
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
             cambiarColorMenu(14);
-            
+            document.getElementById("next").style.display="block";
+            document.getElementById("prev").style.display="block";
+            console.log("4unidad");
             break;
         case 2:
             setMigaja("Unidades de aprendizaje 4", "Definición del problema ", "Los objetivos");
