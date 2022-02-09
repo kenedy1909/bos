@@ -31,19 +31,12 @@ $(document).ready(function() {
 
 
     $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
-        
-        console.log(e);
-        controlSlides(stepIndex+1);
-        // quitarflecha(stepIndex+1);
-        actualizarprogress(stepIndex+1);
+        slide();
+        // console.log(e);
         switch(stepIndex) {
-            case 1:
-                break;
             default:
-                break;
             // code block
         }
-        slideNum = stepIndex;
     });
 
     $(".modal").on('hidden.bs.modal', function () {
