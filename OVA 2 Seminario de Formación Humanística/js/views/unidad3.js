@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    $(".linkactividades").attr('href',urlsite+'course/view.php?id='+courseid);
     
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
@@ -23,7 +24,6 @@ $( document ).ready(function() {
             easing:'' // Transition animation easing. Not supported without a jQuery easing plugin
         }
     });
-    $(".linkactividades").attr('href',urlsite+'/course/view.php?id='+courseid);
 
     
     slide_predeterminado();
