@@ -17,8 +17,8 @@
     margin: 15px;
     padding: 10px;
     border: 4px solid #E0A546;
-    border-radius: 50px;
-    height: 200px;
+    border-radius: 20px;
+    /*height: 200px;*/
     width: 100%;
 }
 
@@ -30,12 +30,12 @@
 }
 .interno{
 	border: dashed #ab751d;
-    height: 170px;
+    height: 190px;
     overflow: auto;
     overflow-x: hidden;
     width: 100%;
-    border-radius: 50px;
-    padding: 25px 25px 25px 25px;
+    border-radius: 20px;
+    padding: 5px;
 }
 #dragtarget1{
     cursor: pointer;
@@ -168,8 +168,8 @@
   background-color: #a8bbbf;
 }
 
-.droptarget p{
+/*.droptarget p{
     height: 60px !important;
     width: 100% !important;
     padding: 10px !important;
-}
+}*/

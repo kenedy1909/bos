@@ -1,9 +1,7 @@
 $( document ).ready(function() {
-    /*slide_predeterminado();*/
-    // console.log(tema);
     $(".menu1").removeClass('d-none');
     $(".menu1").addClass('c-show');
-    
+
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
     star_uni = 1;
@@ -128,13 +126,11 @@ $( document ).ready(function() {
     var diff = "";
     var newTop = "";
     var scrollOffset = "";
-    $(".modal_scroll2").on('click', modal_scroll2);
+    /*$(".modal_scroll2").on('click', modal_scroll2);
     $(".modal_scroll3").on('click', modal_scroll3);
-    $(".modal_scroll4").on('click', modal_scroll4);
+    $(".modal_scroll4").on('click', modal_scroll4);*/
 
     $(".circle-verde").on('click' , circles);
-
-    /*scroll();*/
     slide_link(tema);
 
 });
@@ -156,21 +152,12 @@ function slide_predeterminado(){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
     controlSlides(1);
-    /*window.location.href ="#unidad1-1";*/
-    /*$url =$('.enlaces_ova')
-    $url.attr('href',"#unidad1-1");
-    $url[0].click()*/
     $('#smartwizard').smartWizard("goToStep", 1);
 }
 
 function slide_link(num){
     $(".nav-link").removeClass('done');
     $(".nav-link").removeClass('active');
-    /*window.location.href ="#unidad1-"+num;*/
-    /*location.assign("#unidad1-4");*/
-    /*$url =$('.enlaces_ova')
-    $url.attr('href',"#unidad1-3");
-    $url[0].click()*/
     $('#smartwizard').smartWizard("goToStep", num);
     controlSlides(num);
 }
@@ -181,26 +168,26 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","");
             cambiarColorMenu(11);
-            dragging = "";
+            /*dragging = "";
             diff = "";
             newTop = "";
             scrollOffset = "";
             knob = document.querySelector('.custom-scrollbar__knob8');
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
-            scroll();
+            scroll();*/
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","");
             cambiarColorMenu(11);
-            dragging = "";
+            /*dragging = "";
             diff = "";
             newTop = "";
             scrollOffset = "";
             knob = document.querySelector('.custom-scrollbar__knob8');
             bar = document.querySelector('.custom-scrollbar__bar8');
             container = document.querySelector('.custom-scrollbar__inner8');
-            scroll();
+            scroll();*/
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1.Dimensiones básicas del desarrollo humano","Desarrollo neurofisiológico");            
@@ -234,7 +221,8 @@ function controlSlides(num){
                   inputsRy[n].actualizar2();
                 }, false)
               }(n));
-            }  
+            }
+            scroll_horizontal2(0);
             cambiarColorMenu(21);
             break;
         case 5:
@@ -316,7 +304,7 @@ function controlSlides(num){
     }
 }
 
-function modal_scroll2(){
+/*function modal_scroll2(){
     dragging = "";
     diff = "";
     newTop = "";
@@ -345,9 +333,9 @@ function modal_scroll4(){
     bar = document.querySelector('.custom-scrollbar__bar5');
     container = document.querySelector('.custom-scrollbar__inner5');
     scroll();
-}
+}*/
 
-function funcion_vanvas() {
+/*function funcion_vanvas() {
     var canvas = new fabric.Canvas('id_canvas');
     var imgElement = 'assets/img/uno.png';
     var imgElement2 = 'assets/img/dos.png'; 
@@ -417,7 +405,7 @@ function funcion_vanvas() {
           console.log('hover a circle');
         });
     });
-}
+}*/
 
 function Input(num) {
     //<input type="range" value="35" min="0" max="100" autocomplete="off" step="1">
@@ -472,38 +460,19 @@ function Input(num) {
 
   function scroll_horizontal2(num){
     $(".zoomContainer" ).remove();
+    $(".fun1_content1, .fun1_content2, .fun1_content3, .fun1_content4").addClass('d-none');
     switch (parseInt(num)) {
         case 0:
-            var info_scroll = `
-                            <div class="col-md-8 margin-bottom50">
-                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Sensorio-motor </b>(del nacimiento a los dos años de vida): se hace uso de los sentidos para relacionarse con el entorno, lo cual da la posibilidad de hacer representaciones mentales; se inicia el proceso de una conducta direccionada al logro de metas, igualmente los objetos empiezan a concebirse como permanentes, pues al inicio, se considera que todo objeto que no se percibe, no existe. La imitación y el juego toman un papel protagónico en este periodo. (Linares, s.f.)</p>
-                              </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            $(".fun1_content1").removeClass('d-none');
             break;
         case 1:
-            var info_scroll = `
-                            <div class="col-md-8 offset-md-2 margin-bottom50">
-                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Preoperacional  </b>(dos a siete años): los símbolos empiezan a ser asimilados y empleados para hacer representaciones del mundo, se facilita el juego simulado, utilizando objetos para fingir funciones que no le corresponden (por ejemplo, jugar con una escoba como si fuera un caballo). El inicio de adquisición del lenguaje y la comprensión numérica en esta etapa se vuelve protagónico al permitir la comunicación y el conteo. (Linares, s.f.)</p>
-                              </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            $(".fun1_content2").removeClass('d-none');
             break;
         case 2:
-            var info_scroll = `
-                            <div class="col-md-9 offset-md-1 margin-bottom50">
-                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Operaciones concretas </b>(siete a once años): es la época de la primaria y se inicia un proceso de uso frecuente de la lógica para examinar hechos y objetos del entorno, en esta etapa se desarrolla la capacidad de hacer análisis mentalmente. El pensamiento empieza a adquirir una connotación flexible o adaptable y se disminuye el pensamiento egocéntrico y la opinión no se fundamenta en las apariencias; se presenta ahora la capacidad de contemplar diversas características sobre un aspecto. Es posible distinguir tres operaciones mentales dadas en esta etapa: seriación (ordenar en progresión lógica), clasificación (clasificar por semejanzas o relaciones de pertenencia) y conservación (comprender la permanencia de un objeto a pesar de las variables) (Linares, s.f.)</p>
-                              </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            $(".fun1_content3").removeClass('d-none');
             break;
         case 3:
-            var info_scroll = `
-                            <div class="col-md-11 offset-md-1 margin-bottom50">
-                                <p class="caja-texto-b justificado p_white font13"><b style=" color: #ffd966;">Operaciones formales  </b>(once años en adelante): coincide aproximadamente con el inicio del periodo conocido como la adolescencia. El pensamiento y la lógica adquieren un componente abstracto, donde ya no solo se contempla lo considerado como real, sino que toma gran importancia aquello que se percibe como una posibilidad, quizás no se haya tenido relación personal con algo, pero es posible imaginarlo, de esta manera se da también la capacidad de plantear hipótesis. En esta etapa se mencionan cuatro propiedades de pensamiento: lógica proposicional (realizar una inferencia lógica a partir de la relación entre dos hipótesis), razonamiento científico (generar y probar hipótesis de manera lógica y sistemática), razonamiento combinatorio (pensar en múltiples causas), razonamiento de probabilidades y proporciones (Linares, s.f.)</p>
-                              </div>
-                            `;
-            $('#info-scroll').html(info_scroll);
+            $(".fun1_content4").removeClass('d-none');
             break;
         default:
             break;
