@@ -2,6 +2,7 @@ $( document ).ready(function() {
     
     $( ".ov-personaje").hide();
     $(".menu1").removeClass('d-none');
+    $(".menu1").addClass('c-show');
     $('.linkUnidades').removeClass('colorUniLink');
 
     console.log(tema);
@@ -33,6 +34,31 @@ $( document ).ready(function() {
         slide();
         
     });
+
+    $(".modal").on('hidden.bs.modal', function () {
+        detenerMultimedia();
+    });
+
+    function detenerMultimedia() {
+        $('body').addClass('p-0');
+    }
+
+    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+        
+        console.log(e);
+        controlSlides(stepIndex+1);
+        quitarflecha(stepIndex+1);
+        actualizarprogress(stepIndex+1);
+        switch(stepIndex) {
+            case 1:
+                break;
+            default:
+                break;
+            // code block
+        }
+        slideNum = stepIndex;
+    });
+
     /*setMigaja("Unidades de aprendizaje","1. Inducción Matemática","Cuantificadores, sus negaciones y el contraejemplo");*/
 
     slide_predeterminado();
@@ -292,7 +318,7 @@ function controlSlides(num){
             break;
         case 28:
             setMigaja("Unidades de aprendizaje","1. Necesidad de la formación Humanística", "Formación humanística en el contador");
-            
+            console.log("final");
             
             
             break;
@@ -1108,7 +1134,7 @@ function img_17(num){
     switch (parseInt(num)) {
         
         case 1:
-            var text = `<p class="justificado text-black">
+            var text = `<p class="justificado text-black mt-2">
                           Producto de las corrientes dominantes, la educación contable concentra sus esfuerzos en dotar al estudiante de competencias y conocimientos que le permitan insertarse al mundo laboral, por desgracia, el excesivo enfoque en esta visión pragmática y poco humanizadora del contable, desemboca precisamente en la crisis de confianza frente a la formación de un sujeto ético y moral, que visione el efecto de sus actuaciones en protección del interés público y de la fe pública que le ha sido encomendada.
                         </p>`;
             $('.banner_17').html(text);
@@ -1126,7 +1152,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 3:
-            var text = `<p class="justificado text-black">
+            var text = `<p class="justificado text-black mt-3">
                           En desarrollos más recientes, aumenta la preocupación en la educación contable por el sujeto (contador público), en un esfuerzo por humanizar las prácticas, reconociendo el alto valor y riesgo social que implica el ejercicio irresponsable y contrario a los cánones establecidos tanto por la normativa propia de la profesión como por la posibilidad de seguir construyendo el proyecto de vida personal de quien la ejerce.
                         </p>`;
             $('.banner_17').html(text);
@@ -1135,7 +1161,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 4:
-            var text = `<p class="justificado text-black">
+            var text = `<p class="justificado text-black mt-4">
                           De acuerdo con Gracia (2019) en términos profesionales y académicos, la ética puede observarse a través de la Accountability (en su sentido de rendición de cuentas), pero más allá en su manera del held accountable (es decir «responsabilizado» por sus acciones).
                         </p>`;
             $('.banner_17').html(text);
@@ -1144,7 +1170,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 5:
-            var text = `<p class="justificado text-black">
+            var text = `<p class="justificado text-black mt-2">
                           Reflexionar la ética en relación con lo significado como «rendición de cuentas» y la «responsabilidad» (individual y social), es tal vez, el paso necesario e indispensable para contar con juicios que enclaven en el corazón de las prácticas contables la responsabilidad por la consecuencia de las acciones. Precisamente, se consideraría esta una manera acertada de comprender la ética, dispuesta en permanente relación de convivencia con los hechos y la práctica.
                         </p>`;
             $('.banner_17').html(text);
@@ -1153,7 +1179,7 @@ function img_17(num){
             $('.armada').append(img);
             break;
         case 6:
-            var text = `<p class="justificado text-black">
+            var text = `<p class="justificado text-black mt-4">
                           Dussel (2016) reafirma este contenido al decir «la ética, esa dimensión humana esencial en primer lugar es ‘una práctica’. Lo ético es inherente a la existencia humana en su actuación cotidiana. Tanto singular como comunitariamente toda acción es Ética y lo Ético del acto indica justamente que es práctico» (p. 17).
                         </p>`;
             $('.banner_17').html(text);
@@ -1237,7 +1263,7 @@ function quitarflecha(stepIndex) {
         document.getElementById("prev").style.display="block";
     }
 
-    if (stepIndex == 28) {
+    if (stepIndex == 29) {
         console.log("fuera_next_flecha");
         document.getElementById("next").style.display="none";
     } else {

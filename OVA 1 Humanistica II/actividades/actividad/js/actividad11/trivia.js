@@ -131,7 +131,7 @@ function calificar(){
     $('.img_res').html('<img src="../img/img11/bien.png" style="max-width: 90%; margin: auto;">');
     $('.puntaje').text(puntaje+"%");
     $('.mensaje').text("¡Felicitaciones!");
-    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;background: #C8AD45; color:white;">cerrar</button>');
+    $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="margin-right: 5px;background: #C8AD45; color:white; ">cerrar</button>');
   }else{
     $('.img_res').html('<img src="../img/img11/mal.png" style="max-width: 90%; margin: auto;">');
     $('.mensaje').text("¡Puedes hacerlo mejor!");

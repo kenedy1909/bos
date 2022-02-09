@@ -1127,7 +1127,7 @@ input[type=range]::-ms-fill-upper {
 } 
 
 .banner_16{
-	min-height: 200px;
+	height: 270px;
     background: white;
     border-radius: 50px;
     padding: 50px 30px 26px 25px;
@@ -1206,7 +1206,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 .banner_17{
-	min-height: 150px;
+	height: 180px;
     background: white;
     border-radius: 50px;
     border: solid #1E4E79;
@@ -1373,4 +1373,12 @@ a.control_next {
 }
 .bg-azul-c{
   background: #ffc61b;
+}
+
+.textpdf {
+  color: black;
+}
+
+.textpdf:hover {
+  color: black;
 }

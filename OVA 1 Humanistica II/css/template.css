@@ -16,6 +16,11 @@
 .size_20{
   font-size: 20px;
 }
+
+.size_18{
+  font-size: 18px;
+}
+
 iframe{
     width: 100%;
     overflow: hidden; 
@@ -878,3 +883,4 @@ card flip*/
 .colorUniLink{
   color: #FFE14E!important;
 }
+
