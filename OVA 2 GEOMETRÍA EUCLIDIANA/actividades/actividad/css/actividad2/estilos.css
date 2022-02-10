@@ -20,7 +20,7 @@
 
 @media (max-width: 767px) {
     .pregunta-cuestionario {
-        width: 100%;
+        width: 90%;
         height: auto !important;
         margin: 10px 0;
     }
@@ -46,7 +46,7 @@
     background: #003442;
     /*border-radius: 10px;*/
     font-size: 15px;
-    /*margin: 10px;*/
+    margin: 0px !important;
     padding: 5px 15px;
     color: #fff;
     border-top-right-radius: 10px;
@@ -83,7 +83,7 @@ input {
 
 .img_questionario {
     width: 110px;
-    position: relative;
+    position: absolute;
     top: -35px;
     right: -65px;
     background: #FFFFFF;
@@ -144,4 +144,10 @@ input {
 }
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+.pregunta_q{
+    width: 80% !important;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
 }

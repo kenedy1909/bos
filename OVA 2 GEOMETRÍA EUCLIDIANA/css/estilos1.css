@@ -41,25 +41,25 @@
 	padding: 0px;
 	border-radius: 45px;
 	border: solid rgba(0, 117, 168, 1);
-	min-height: 600px;
+	min-height: 530px;
 }
 
 .card_top{
 	margin: 0px;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	padding-top: 0.5rem;
-	min-height: 300px;
+	min-height: 260px;
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 }
 
 .card1_bottom{
 	margin: 0px;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	padding-bottom: 0.5rem;
-	min-height: 300px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 0.2rem;
+	min-height: 270px;
 	border-bottom-right-radius: 42px;
 	border-bottom-left-radius: 42px;
 	background-color: rgba(0, 117, 168, 1);
@@ -69,13 +69,13 @@
 	padding: 0px;
 	border-radius: 45px;
 	border: solid rgba(51, 153, 255, 1);
-	min-height: 600px;
+	min-height: 530px;
 }
 
 .card2_bottom{
 	margin: 0px;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	padding-bottom: 0.5rem;
 	min-height: 300px;
 	border-bottom-right-radius: 42px;
@@ -86,13 +86,13 @@
 	padding: 0px;
 	border-radius: 45px;
 	border: solid rgba(51, 189, 255, 1);
-	min-height: 600px;
+	min-height: 530px;
 }
 
 .card3_bottom{
 	margin: 0px;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	padding-bottom: 0.5rem;
 	min-height: 300px;
 	border-bottom-right-radius: 42px;
@@ -740,4 +740,22 @@ p, button{
 
 .radius_modal_90{
   border-radius: 90px;
+}
+
+.rombo_blanco{
+	width: 20px;
+	height: 20px;
+	transform: rotate(45deg);
+	background: white;
+	border: solid #9cc4d1 1px;
+	box-shadow: black 1px 5px 15px -4px;
+	margin: auto;
+}
+
+.bg-azul-1{
+	background: #083a47;
+}
+
+.bg-azul-2{
+	background: #00688c;
 }
