@@ -1144,7 +1144,7 @@ function contenido2_3(num) {
                                 </p>
                             </div>
                         </div>`;
-            $('#circle_can').html(cont);
+            $('#circle_can').html(cont); 
             $(".btns_1").addClass('bg-azu');
 
             break;
