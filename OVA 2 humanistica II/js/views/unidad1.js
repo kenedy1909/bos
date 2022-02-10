@@ -622,6 +622,9 @@ function limpiar_pantalla(pantallita) {
                     <div class="col-md-12 col-sm-12">
                         <h3 class="text-amarillo-o">Vertientes de la filosofía moral</h3>
                     </div>
+                    <div class="col-md-12 col-sm-12">
+                        <p class="p_black text-center p-3"><i>Por favor dar clic en los botones de la parte inferior para ver la información</i></p>
+                    </div>
                     <div class="col-md-12 col-sm-12 d-flex justify-content-center">
                         <div class="fondo-2 d-flex align-items-end flex-column px-3 pt-3">
                             <p id="info-1" class="p_black justificado"></p>
@@ -639,9 +642,6 @@ function limpiar_pantalla(pantallita) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12">
-                        <p class="p_black text-center p-3"><i>Por favor dar clic en los botones de la parte inferior para ver la información</i></p>
                     </div>
                     `;
         $("#pantalla_vertientes").html(texto);
