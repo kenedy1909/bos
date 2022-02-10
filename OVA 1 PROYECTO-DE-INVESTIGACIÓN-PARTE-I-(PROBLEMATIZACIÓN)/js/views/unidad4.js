@@ -98,6 +98,10 @@ function controlSlides4(num){
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             cambiarColorMenu(14);
             $("#content-ova").load("base/unidades/unidad3.html");
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             
             tema = 4;
             break;
@@ -112,19 +116,38 @@ function controlSlides4(num){
             paraIframe(0);
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             cambiarColorMenu(14);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
+            
             break;
         case 2:
 
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             cambiarColorMenu(14);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
+            
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             cambiarColorMenu(14);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
+            
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");
             cambiarColorMenu(14);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","4. Diseño de los objetivos de una investigación ",">");

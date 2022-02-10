@@ -308,6 +308,91 @@
 
                           
                           <div class="col-md-12 px-5 py-3">
+                            <style type="text/css" media="screen">
+                                .inputDiv,.inputDiv2 {
+                                    width: 100%;
+                                    display:block;
+                                    color:#aaa;
+                                    position:relative;
+                                  }
+                                  .output{display:none; width:40px; text-align:center;}
+                                  
+                                  input[type='range'] {
+                                    display: inline-block !important;
+                                    width: 100% !important;
+                                  }
+                                  
+                                  input[type='range']:focus {
+                                    outline: none !important;
+                                  }
+                                  
+                                  input[type='range'],
+                                  input[type='range']::-webkit-slider-runnable-track,
+                                  input[type='range']::-webkit-slider-thumb {
+                                    -webkit-appearance: none !important;
+                                  }
+                                  
+                                  input[type=range]::-webkit-slider-thumb {
+                                    background-color: var(--bg-color-dark) !important;
+                                    width: 30px !important;
+                                    height: 30px !important;
+                                    border: 3px solid var(--bg-color-dark) !important;
+                                    border-radius: 50% !important;
+                                    margin-top: -15px !important;
+                                    cursor: pointer !important;
+                                    position: inherit !important;
+                                  }
+                                  
+                                  input[type=range]::-moz-range-thumb {
+                                    background-color: var(--bg-color-dark) !important;
+                                    width: 25px !important;
+                                    height: 25px !important;
+                                    border: 3px solid var(--bg-color-dark) !important;
+                                    border-radius: 50% !important;
+                                    cursor: pointer !important;
+                                    position: inherit !important;
+                                  }
+                                  
+                                  input[type=range]::-ms-thumb {
+                                    background-color: var(--bg-color-dark) !important;
+                                    width: 30px !important;
+                                    height: 30px !important;
+                                    border: 3px solid var(--bg-color-dark) !important;
+                                    border-radius: 50% !important;
+                                    cursor: pointer !important;
+                                    position: inherit !important;
+                                  }
+                                  
+                                  input[type=range]::-webkit-slider-runnable-track {
+                                    background-color: var(--bg-color-dark) !important;
+                                    height: 3px !important;
+                                  }
+                                  
+                                  input[type=range]:focus::-webkit-slider-runnable-track {
+                                    outline: none !important;
+                                  }
+                                  
+                                  input[type=range]::-moz-range-track {
+                                    background-color: var(--bg-color-dark) !important;
+                                    height: 3px !important;
+                                  }
+                                  
+                                  input[type=range]::-ms-track {
+                                    background-color: var(--bg-color-dark) !important;
+                                    height: 3px !important;
+                                    cursor: pointer !important;
+                                  }
+                                  
+                                  input[type=range]::-ms-fill-lower {
+                                    background-color: var(--bg-color-dark) !important;
+                                    cursor: pointer !important;
+                                  }
+                                  
+                                  input[type=range]::-ms-fill-upper {
+                                    background-color: var(--bg-color-dark) !important;
+                                    cursor: pointer !important;
+                                  }
+                            </style>
                             <div class="inputDiv i1"></div>
                             <div class="inputDiv i2" style="display: none;"></div>
                           </div>
@@ -628,7 +713,7 @@
                             </div>
                             <div class="globo display-none mt-4">
                               <p class="p_black col-md-10 offset-2 font-italic">Clic en la imagen para ver el texto</p>
-                              <img class="col-md-11 cursor" src="assets/img/img_ova/globopas.png" style="margin-top:-5%;" data-toggle="modal" data-target="#modal-p14">
+                              <img class="col-md-11 cursor" src="assets/img/img_ova/globopas.svg" style="margin-top:-5%;" data-toggle="modal" data-target="#modal-p14">
                             </div>
                            
                           </div>
@@ -1104,7 +1189,7 @@
                   </div>
                   <div class="content">
                     <div>
-                      <img class="img-100" src="assets/img/img_ova/globopas.png">
+                      <img class="img-100" src="assets/img/img_ova/globopas.svg">
                     </div>
                   </div>
               </div> <!-- end front panel -->

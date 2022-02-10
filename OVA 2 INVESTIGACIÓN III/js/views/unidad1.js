@@ -137,27 +137,45 @@ function controlSlides(num){
         case 1:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","");
             cambiarColorMenu(11);
+            $( ".ov-personaje").hide();
+            $(".menu1").removeClass('d-none');
+            $(".menu1").addClass('c-show');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","El marco teórico conceptual");            
             cambiarColorMenu(11);
+            $(".menu1").removeClass('d-none');
+            $( ".ov-personaje").hide();        $(".menu1").addClass('c-show');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Comprensión del marco teórico");
             cambiarColorMenu(21);
+            $(".menu1").removeClass('d-none');
+            $( ".ov-personaje").hide();        $(".menu1").addClass('c-show');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Inicio del marco teórico referencial");
             cambiarColorMenu(31);
+            $(".menu1").removeClass('d-none');
+            $( ".ov-personaje").hide();        $(".menu1").addClass('c-show');
             break;
         case 5:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
             cambiarColorMenu(41);
+            $(".menu1").removeClass('d-none');
+            $( ".ov-personaje").hide();        
+            $(".menu1").addClass('c-show');
             break;
         case 6:
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico","Los conceptos y teorías propios del trabajo que usted realiza");
             cambiarColorMenu(41);
+            $(".menu1").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu1").addClass('c-show');
             document.getElementById("actividad6").contentDocument.location.reload(true);
+            $(".menu1").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu1").addClass('c-show');
             break;
         case 7:
             setMigaja("Unidades de aprendizaje","","");
