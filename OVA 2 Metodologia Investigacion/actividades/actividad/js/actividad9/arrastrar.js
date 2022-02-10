@@ -31,7 +31,9 @@ function calificar(){
 	var i2 = 0;
 	var res1 = [];
 	var res2 = [];
+		console.log(res1 + ' res1');
 	$('.cont1>p').each(function (){
+		console.log(res1[i] + ' res1');
 	    res1[i] = $(this).attr('class');
 	    i++;
 	});

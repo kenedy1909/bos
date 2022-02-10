@@ -727,6 +727,9 @@ function scroll_horizontal(num){
             $('.img-scroll').addClass('d-none');
             break;
         case 2:
+           
+            let height = $('.tab-content').height();
+            $(".tab-content").height(height + 50);
             var pantalla = `<div class="col-md-12 margin-top50">
                       <div class="row">
                         <div class="col-md-3" style="display: inline-block;width: 45%; z-index:1";>

@@ -221,6 +221,7 @@
 
 .content-opcion-info3 {
     top: -4px;
+    min-height: 277px;
     width: 500px;
     left: -230px;
 }
@@ -231,14 +232,15 @@
 }
 
 .content-opcion-info5 {
-    top: 60px;
+    top: 14px;
     left: 0px;
 }
 
 .btn-opcion-info {
     position: relative;
-    top: 70px;
-    left: -210px;
+    top: 10px;
+    left: -145px;
+    height: 37px;
     color: #FFFFFF;
     background-color: #028B79;
     border-radius: 1em;
@@ -367,6 +369,7 @@
 .img-activi {
     width: 116px;
     height: 116px;
+    z-index: 1;
 }
 
 .img-fluid2 {

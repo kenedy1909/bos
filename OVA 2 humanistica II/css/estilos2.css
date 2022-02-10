@@ -429,6 +429,7 @@ p, button{
 
 .text-img-actividad {
     font-size: 20px;
+    margin-left: 22px;
     color: #A48E39;
 }
 
@@ -442,10 +443,10 @@ p, button{
 }
 
 .content-text-img-activi-2 {
-    border-bottom: solid 3px #A48E39;
-    width: 50%;
-    height: 60px;
-    margin: 0px;
+    border-bottom: solid 4px #A48E39;
+    width: 60%;
+    height: 52px;
+    margin-top: 16px;
     padding-top: 20px;
     text-align: center;
 }
@@ -453,7 +454,8 @@ p, button{
 .content-tarjeta {
     background: #C8AD45;
     border-radius: 20px;
-    padding: 15px;
+    padding: 10px 10px;
+    color: black;
 }
 
 .max-w-30px {
