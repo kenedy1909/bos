@@ -150,14 +150,14 @@ function init_recurso_1() {
         this.abecedario = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', '\u00F1', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
         this.palabrasMake = function () {
 
-            this.palabras[0] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[1] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[2] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[4] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[5] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[6] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[7] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
-            this.palabras[8] = ['crimenesinternacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[0] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[1] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[2] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[4] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[5] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[6] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[7] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
+            this.palabras[8] = ['crimenes-internacionales', 'La noción de estos  fue configurándose en el derecho internacional de forma lenta'];
 
             return this.palabras;
 

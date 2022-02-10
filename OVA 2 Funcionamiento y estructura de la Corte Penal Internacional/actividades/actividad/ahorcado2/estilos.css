@@ -148,7 +148,7 @@
 }
 
 .linea {
-	font-size: 50px;
+	font-size: 35px;
 	color: #994c91;
 	display: inline-block;
 	margin-left: 4px;
@@ -167,9 +167,9 @@
 	color: #994c91;
 	position: relative;
 	display: inline-block;
-	font-size: 35px;
+	font-size: 30px;
 	width: 0;
-	left: 10px;
+	left: 6px;
 	padding-bottom: 5px;
 }
 
