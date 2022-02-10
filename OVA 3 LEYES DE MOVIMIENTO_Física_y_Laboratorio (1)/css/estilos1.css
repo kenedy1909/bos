@@ -916,7 +916,7 @@ input[type=range]::-ms-fill-upper {
 
 .cont-arco{
   height: 130px;
-  width: 245px;
+  width: 200px;
   border: solid #00384b 6px;
   border-radius: 50%;
 }
@@ -954,6 +954,7 @@ input[type=range]::-ms-fill-upper {
   background: #fff;
   padding: 15px;
   border-radius: 20px;
+      width: 70%;
 }
 .position-image{
   height: 15px;
@@ -2224,4 +2225,9 @@ a.control_next {
     height: 60px;
     width: 150px;
     padding: 16px 1px 1px 65px;
+}
+
+.banwhite p {
+    height: 47px;
+    overflow: auto;
 }
