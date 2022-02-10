@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    <div class="backdrop in">
+    <div class="backdrop in" style="overflow: hidden;">
         <div class="fondo">
             <header>
                 <div class="row" style="display: flex; margin-top: 10px;">
                     <div class="col-md-4" style="display: flex;width: 45%;">
                         <div class="" style="display: flex;margin: auto;">
                           <img src="../img/img1/actividad_interactiva.png" alt="" style="width: 100px;height: 100px;">
-                          <div class="text-center pt-0" style="font-size: 20px;display: inline-block;">
+                          <div class="text-center pt-0" style="font-size: 20px;display: inline-block; color: #a08a3b;">
                             <b class="">ACTIVIDAD <br> INTERACTIVA</b>
                             <div style="height: 5px; background: #a08a3b;"></div>
                             <p class="text-muted">FALSO/VERDADERO</p>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="col-md-8 row" style="display: inline-block;width: 55%;">
-                        <p class="info_actividad shadow" style="font-size: 20px; color: black;">
+                        <p class="info_actividad shadow text-justify" style="font-size: 20px; color: black;">
                             Selecciona falso o verdadero, al finalizar pulsa la opción <b>"Calificar"</b> para conocer tu puntuación.
                         </p>
                     </div>
@@ -44,23 +44,34 @@
 
     </div>
     <!-- Modal -->
-    <div class="modal calificacion" id="calificacionModal" tabindex="-1" role="dialog" aria-labelledby="calificacionModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body center-block">
-                    <div class="mensaje text-center">
-                        Tu puntaje es: <span class="puntaje">40%</span>
-                        <span class="texto-puntaje"></span>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin-top: 25%; width: 70% !important; margin-left: 15%;">
+            <div class="modal-content tranparente" style="">
+                <div style="" class="principal_modal">
+                    <div style="" class="cabeza">
+
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secundary calificacion-intentar" data-dismiss="modal">Volver a
-                        intentar</button>
-                    <button type="button" class="btn btn-secundary calificacion-cerrar" data-dismiss="modal">Cerrar</button>
+                    <div class="d-flex justify-content-center" style="justify-content: center;height: 80px;">
+                        <div style="" class="circulo_modal img_res d-flex">
+
+                        </div>
+                    </div>
+                    <div style="padding: 8px; margin-left: 10%; margin-top: 4%;">
+                        <div style="color: white;font-size: 25px;display: flex;">
+                          Su puntaje es: <p class="puntaje" style="font-size: 40px; font-weight: bold;margin-left: 9px;margin-top: 0px;font-size: 25px;"></p>
+                        </div>
+                        <div style="color: white;font-size: 20px; padding-bottom: 2%;">
+                            <p class="mensaje" style="text-align: left;"></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center btns_modal" style="justify-content: center;">
+
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+</div>
     <!-- Incluisión de scripts -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>

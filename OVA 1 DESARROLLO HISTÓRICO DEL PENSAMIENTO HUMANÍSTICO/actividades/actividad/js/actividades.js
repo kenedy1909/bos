@@ -24,15 +24,17 @@ function mostrarCalificacion(modalID, puntaje, mensaje, exito, resetcallback) {
     //Si es exitoso se muestra el boton cerrar de lo contrario el boton intentar nuevamente.
     $(modalID).find('.mensaje').removeClass('animated wobble');
     if (exito) {
-        $(modalID).find('.modal-body').removeClass('parcial');
-        $(modalID).find('.modal-body').addClass('exito');
-        $(modalID).find('.calificacion-intentar').addClass('hide');
-        $(modalID).find('.calificacion-cerrar').removeClass('hide');
+                $('.img_res').html('<img src="../img/img7/bien.png" style="max-width: 90%; margin: auto">');
+                $('.mensaje').text("¡Felicitaciones!");
+                $('.puntaje').text("100%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+                $('#exampleModal').modal('show');
     } else {
-        $(modalID).find('.modal-body').removeClass('exito');
-        $(modalID).find('.modal-body').addClass('parcial');
-        $(modalID).find('.calificacion-intentar').removeClass('hide').on('click', resetcallback);
-        $(modalID).find('.calificacion-cerrar').addClass('hide');
+               $('.img_res').html('<img src="../img/img7/mal.png" style="max-width: 80%; margin: auto">');
+                $('.mensaje').text("¡Puedes hacerlo mejor!");
+                $('.puntaje').text("25%");
+                $('.btns_modal').html('<button style="font-size: 20px;color: #8b6229;font-weight: bold;margin-top: -15px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reiniciar()">Volver a intentar</button>');
+                $('#exampleModal').modal('show');
     }
     setTimeout(function(){
         $(modalID).modal({

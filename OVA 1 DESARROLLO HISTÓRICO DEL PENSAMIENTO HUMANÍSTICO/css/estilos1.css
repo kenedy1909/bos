@@ -1319,9 +1319,9 @@ input[type=range]::-ms-fill-upper {
 
 .pergamino{
 	background-image: url(../assets/img/img_ova/pergaminoo.png);
-	min-height: 280px;
+	/* min-height: 280px; */
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100% 315px;
 }
 .btnredondo{
 	background: #833C0B;
@@ -1333,9 +1333,9 @@ input[type=range]::-ms-fill-upper {
 
 .roma{
 	background-image: url(../assets/img/img_ova/roma.png);
-	min-height: 280px;
+	/* min-height: 280px; */
 	background-repeat: no-repeat;
-	background-size: 170%;
+	background-size: 170% 350px;
 }
 
 #slider {
@@ -1884,6 +1884,7 @@ section {
 	font-size: 13px;
 	padding: 15px 15px 15px 15px;
 	border-radius: 30px;
+  height: 250px;
 }
 .senal{
 	width: 0;height: 0;

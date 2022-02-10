@@ -3,13 +3,22 @@ function dragStart(event) {
     document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
-function dragEnd(event) {
+function dragEnd(event, num) {
+	let ubicar;
+	let lugar;
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
+	ubicar = $("#dragtarget"+num).parent('.droptarget');
+	    lugar = $(ubicar).attr('class');
+    	if (lugar != undefined) {
+			$('#dragtarget'+num).addClass("inactivo");
+    	}
+
+
 }
 
 function allowDrop(event) {
     event.preventDefault();
-}
+} 
 
 function drop(event) {
     event.preventDefault();
@@ -21,15 +30,25 @@ function calificar(){
 	var i = 0;
 	var res1 = [];
 	$('.cont1>p').each(function (){
+		console.log(res1[i]);
 	    res1[i] = $(this).attr('class');
 	    i++;
 	});
 
-	var puntaje = 100;
+	var puntaje=0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] == 'falso'){
-	    puntaje = puntaje - 44.4;
-	  }
+		
+		if (res1[i] == 'verdadero inactivo'){
+		  puntaje = puntaje + 20;
+		}
+  }
+	let dato =res1.filter(element => element == 'falso inactivo');
+	if(dato == 'falso inactivo'){
+		puntaje = 0;
+		console.log(puntaje);
+	}
+	if(res1.length > 5){
+		puntaje = 0;
 	}
 
 	if (puntaje >= 75) {

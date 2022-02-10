@@ -1,4 +1,4 @@
-.droptarget {
+/* .droptarget {
     float: left;
     margin: 15px;
     padding: 10px;
@@ -19,7 +19,43 @@
     min-height: 170px;
     border-radius: 50px;
     padding: 25px 25px 25px 25px;
+} */
+
+.content-dropT {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
+
+.droptarget {
+    float: left;
+    padding: 10px;
+    border: dashed #833d0c;
+    border-radius: 50px;
+    margin: auto;
+    width: 98%;
+    height: 86%;
+    margin-top: 3%;
+}
+
+#opcion{
+	border: #833D0C solid;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.interno{
+	border: solid #833d0c;
+    min-height: 170px;
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px 30px 10px 90px;
+    background: white;
+    color: black;
+    display: flex;
+}
+
 #dragtarget1{
 	border: #833D0C solid;
     border-radius: 10px;
@@ -117,4 +153,12 @@
 }
 .shadow{
     box-shadow: 0 0.5rem 1rem rgb(0 0 21 / 50%) !important;
+}
+
+.inactivo {
+    pointer-events: none !important;
+}
+
+.d-flex {
+    display:flex;
 }
