@@ -150,10 +150,12 @@
 }
 
 .ficha-texto p {
-    display: list-item;
-    text-align: left;
+        display: list-item;
+    text-align: justify;
     margin: 0;
-    font-size: 14px;
+    height: 60px;
+    font-size: 15px;
+    overflow: auto;
 }
 
 /*encabezado*/
@@ -235,4 +237,28 @@
 
 .d-flex{
     display: flex;
+}
+
+/* custom scrollbar */
+.modal-dialog-scrollable .modal-content{
+    overflow: inherit;
+    padding-bottom: 18px;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
 }
