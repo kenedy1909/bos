@@ -3,9 +3,17 @@ function dragStart(event) {
     document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
+
 function dragEnd(event, num) {
+	let ubicar;
+	let lugar;
     document.getElementById("demo").innerHTML = "Finished dragging the p element.";
-	$('#dragtarget'+num).addClass("inactivo");
+	ubicar = $("#dragtarget"+num).parent('.droptarget');
+	    lugar = $(ubicar).attr('class');
+    	if (lugar != undefined) {
+			$('#dragtarget'+num).addClass("inactivo");
+    	}
+
 
 }
 
