@@ -101,11 +101,18 @@ function controlSlides3(num){
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
             $("#content-ova").load("base/unidades/unidad2.html");
-            
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             tema = 3;
             break;
         case 1:
           esconderPersonaje();
+          $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             var pdf = `<div class="col-md-12">
                               <p class="p_white size_20">
                               <a href="assets/PDF/Texto_investigacion_salcedo_ova.pdf" target="_blank"> <img class="img-circle menu_superior w-50px" src="assets/img/img_template/pdf-gris.png"> <b>Texto investigación salcedo ova.pdf </b> <em>ver</em></a>
@@ -120,6 +127,10 @@ function controlSlides3(num){
             break;
         case 2:
           esconderPersonaje();
+          $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
             document.getElementById("next").style.display="block";
@@ -128,13 +139,21 @@ function controlSlides3(num){
             break;
         case 3:
           esconderPersonaje();
+          $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
             break;
         case 4:
-          
+          esconderPersonaje();
+          $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu3").addClass('c-show');
             setMigaja("Unidades de aprendizaje","3. La justificación de un proyecto de investigación ",">");
             cambiarColorMenu(13);
             document.getElementById("actividad3-4").contentDocument.location.reload(true); 

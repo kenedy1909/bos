@@ -108,12 +108,20 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","2. Elementos generales para la comprensión del Marco Teórico","");
             cambiarColorMenu(12);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu2").addClass('c-show');
             
             tema = 10;
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","2. Elementos generales para la comprensión del Marco Teórico","");
             cambiarColorMenu(12);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu2").addClass('c-show');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","","");

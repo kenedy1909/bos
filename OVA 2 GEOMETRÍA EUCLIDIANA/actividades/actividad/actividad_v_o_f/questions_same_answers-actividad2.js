@@ -172,7 +172,7 @@ QuestionsSameAnswers.prototype.score =  function () {
     var puntaje = ((points * 100)/total).toFixed(0);
     var modalID = "#calificacionModal";
     var exito = false;
-    var mensaje = "Inténtalo nuevamente.";
+    /*var mensaje = "Inténtalo nuevamente.";
     if (puntaje == 100) {
         exito = true;
         mensaje = "¡Felicitaciones!"
@@ -180,7 +180,26 @@ QuestionsSameAnswers.prototype.score =  function () {
     registrarActividad(puntaje);
     mostrarCalificacion(modalID, puntaje + '%', mensaje, exito, function () {
         self.reset(form);
-    });
+    });*/
+    if (puntaje == 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
+      $('.puntaje').text(puntaje+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 10px;">cerrar</button>');
+    }else if (puntaje >= 75 && puntaje < 100) {
+        
+      $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.mensaje').text("¡Felicitaciones!");
+      $('.btns_modal').html('<button type="button" class="btn" data-dismiss="modal" style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 10px;">cerrar</button>');
+    }else{
+      $('.img_res').html('<img src="img/mal.png" style="max-width: 80%; margin: auto;">');
+      $('.mensaje').text("Inténtalo nuevamente.");
+      $('.puntaje').text(Math.round(puntaje)+"%");
+      $('.btns_modal').html('<button style="font-size: 20px;color: #420F0F;font-weight: bold;margin-top: 10px;" id="add" class="btn calificacion-intentar" data-dismiss="modal" onclick="reload()">Volver a intentar</button>');
+    }
+    $("#calificacionModal").modal("show");
 }
 
 QuestionsSameAnswers.prototype.prepare_files =  function () {
@@ -218,7 +237,7 @@ var TEMPLATE = '<form id="{{ id }}" method="post" class="qwsa-form">\
             <tbody>\
                 {% for question in form.questions %}\
                 <tr>\
-                    <td>{{ question.question_txt }}  <img src="{{question.img }}"></td>\
+                    <td class="v_f_content"><p class="v_f_text">{{ question.question_txt }}</p>  <img class="v_f_img" src="{{question.img }}"></td>\
                     {% set conta=1 %}\
                     {% for answer in form.answers %}\
                         <td>\

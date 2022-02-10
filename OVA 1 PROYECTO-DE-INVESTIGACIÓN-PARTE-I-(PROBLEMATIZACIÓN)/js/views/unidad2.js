@@ -116,7 +116,10 @@ function controlSlides2(num){
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
             $("#content-ova").load("base/unidades/unidad1.html");
-            
+            $(".menu1").removeClass('d-none');
+          $(".menu2").removeClass('d-none');
+
+          $(".menu2").addClass('c-show');
             tema = 5;
             break;
         case 1:
@@ -131,6 +134,10 @@ function controlSlides2(num){
             cambiarColorMenu(12);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="none";
+            $(".menu1").removeClass('d-none');
+          $(".menu2").removeClass('d-none');
+
+          $(".menu2").addClass('c-show');
             break;
         case 2:
           esconderPersonaje();
@@ -138,18 +145,27 @@ function controlSlides2(num){
             cambiarColorMenu(12);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            $(".menu1").removeClass('d-none');
+          $(".menu2").removeClass('d-none');
+
+          $(".menu2").addClass('c-show');
             break;
         case 3:
-          mostrarPersonaje();
+          esconderPersonaje();
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
             document.getElementById("next").style.display="block";
             document.getElementById("prev").style.display="block";
+            $(".menu1").removeClass('d-none');
+          $(".menu2").removeClass('d-none');
+
+          $(".menu2").addClass('c-show');
             break;
         case 4:
          
             setMigaja("Unidades de aprendizaje","2. Formulación de preguntas de investigación socio jurídicas ",">");
             cambiarColorMenu(12);
+            mostrarPersonaje();
             $('.ov-personaje').removeClass('d-none');
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
@@ -157,6 +173,7 @@ function controlSlides2(num){
             $(".menu4").addClass('d-none');
             document.getElementById("next").style.display="none";
             document.getElementById("prev").style.display="block";
+            
             
             
             

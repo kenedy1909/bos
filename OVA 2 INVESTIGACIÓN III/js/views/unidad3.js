@@ -171,18 +171,38 @@ function controlSlides(num){
         case 0:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Tipos de recolección de información");
             cambiarColorMenu(13);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu3").addClass('c-show');
             break;
         case 1:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Instrumentos de recolección de la información");
             cambiarColorMenu(23);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu3").addClass('c-show');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Instrumentos de recolección de la información");
             cambiarColorMenu(23);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu3").addClass('c-show');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","3. Técnicas de recolección de información","Instrumentos de recolección de la información");
             cambiarColorMenu(23);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu3").addClass('c-show');
             break;
         case 4:
             setMigaja("Unidades de aprendizaje","","");

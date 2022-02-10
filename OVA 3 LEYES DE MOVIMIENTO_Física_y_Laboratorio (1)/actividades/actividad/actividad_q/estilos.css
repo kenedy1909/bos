@@ -18,13 +18,13 @@
     border-bottom-left-radius: 44px;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .pregunta-cuestionario {
         width: 100%;
         height: auto !important;
         margin: 10px 0;
     }
-}
+}*/
 
 .respuestas-cuestionario {
     background: rgba(255, 255, 255, .8); */
@@ -52,12 +52,12 @@
         text-align: justify;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .texto-pregunta {
         margin: 5px;
         font-size: 18px;
     }
-}
+}*/
 
 .btnCalificar {
     margin: 30px auto 0;

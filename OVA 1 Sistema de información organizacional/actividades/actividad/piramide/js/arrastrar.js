@@ -44,22 +44,22 @@ function calificar(){
 
 	var puntaje = 0;
 	for (var i = 0; i < res1.length; i++){
-	  if (res1[i] != 'correcta1') {
+	  if (res1[i] == 'correcta1') {
 	  	puntaje = puntaje + 33.3;
 	  }
 	}
 	for (var i = 0; i < res2.length; i++){
-	  if (res2[i] != 'correcta2') {
+	  if (res2[i] == 'correcta2') {
 	  	puntaje = puntaje + 33.3;
 	  }
 	}
 	for (var i = 0; i < res3.length; i++){
-	  if (res3[i] != 'correcta3') {
+	  if (res3[i] == 'correcta3') {
 	  	puntaje = puntaje + 33.3;
 	  }
 	}
 
-	
+	// puntaje=Math.round(puntaje);
 
 	if (puntaje >= 75) {
 	    $('.img_res').html('<img src="img/bien.png" style="max-width: 90%; margin: auto;">');
