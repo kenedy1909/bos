@@ -1136,7 +1136,7 @@ function contenido2_3(num) {
     switch(parseInt(num)){
         case 1:
             var cont = `<div class="p-2">
-                            <div class="text-center"><img src="assets/img/img_ova/hablar.png" style="max-width: 30%;" class="mt-2"></div>
+                            <div class="text-center pt-2"><img src="assets/img/img_ova/hablar.png" style="max-width: 35%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Tradición oral:</b> Son expresiones culturales que sirven para transmitir contenidos fundamentales que debían ser conservados. Estos contenidos determinaban las formas de comportamiento, las normas de vinculación social, referentes religiosos y demás elementos importantes que generan cohesión cultural.
