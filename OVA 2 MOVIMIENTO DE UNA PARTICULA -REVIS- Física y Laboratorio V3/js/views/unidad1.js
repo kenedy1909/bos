@@ -690,14 +690,26 @@ function mesas(num) {
 function banners(num) {
     switch (parseInt(num)) {
         case 1:
+            $('.siguiente').addClass('visible');
+            $('.siguiente').removeClass('invisible');
+
+            $('.siguiente1').addClass('invisible');
+            $('.siguiente1').removeClass('visible');
+
+            $('.anterior').addClass('invisible');
+            $('.anterior').removeClass('visible');
+
+            $('.anterior1').removeClass('invisible');
+            $('.anterior1').addClass('visible');
+
             $('.formulas_flecha').addClass('invisible');
             $('.formulas_flecha').removeClass('visible');
 
-            $('.siguiente').addClass('triangulo_inactive');
-            $('.siguiente').removeClass('triangulo_active');
+            $('.anterior').addClass('triangulo_inactive');
+            $('.anterior').removeClass('triangulo_active');
 
-            $('.siguiente1').addClass('triangulo_active');
-            $('.siguiente1').removeClass('triangulo_inactive');
+            $('.anterior1').addClass('triangulo_active');
+            $('.anterior1').removeClass('triangulo_inactive');
 
             $('.banflechascafe').addClass('invisible');
             $('.banflechascafe').removeClass('visible');
@@ -712,14 +724,26 @@ function banners(num) {
             $('.tria_desplega1').addClass('visible');
             break;
         case 2:
+            $('.siguiente').addClass('visible');
+            $('.siguiente').removeClass('invisible');
+
+            $('.siguiente2').addClass('invisible');
+            $('.siguiente2').removeClass('visible');
+
+            $('.anterior').addClass('invisible');
+            $('.anterior').removeClass('visible');
+
+            $('.anterior2').removeClass('invisible');
+            $('.anterior2').addClass('visible');
+
             $('.formulas_flecha').addClass('invisible');
             $('.formulas_flecha').removeClass('visible');
 
-            $('.siguiente').addClass('triangulo_inactive');
-            $('.siguiente').removeClass('triangulo_active');
+            $('.anterior').addClass('triangulo_inactive');
+            $('.anterior').removeClass('triangulo_active');
 
-            $('.siguiente2').addClass('triangulo_active');
-            $('.siguiente2').removeClass('triangulo_inactive');
+            $('.anterior2').addClass('triangulo_active');
+            $('.anterior2').removeClass('triangulo_inactive');
 
 
             $('.banflechascafe').addClass('invisible');
@@ -1209,7 +1233,7 @@ function svg_img(num) {
         case 2:
             $("#svg-info").html(`
                                 <div class="radius-2 img-100" style="background-color: #ffe699;padding: 5px;">
-                                  <div class="img-100 d-flex" style="opacity: initial;height: 20px;">
+                                  <div class="img-100 d-flex" style="opacity: initial;height: 0px;">
                                     <button type="button" class="btn position-relative ml-auto cerrar-svg" data-dismiss="modal" aria-label="Close" style="right: -30px; top: -20px;">
                                       <div class="m-0 p-0 x-modal-azul" style="background: #1f4e79; width: 30px; height: 30px;">
                                         <h3 class="text-white text-center x-modal-text"><b>X</b></h3>
@@ -1219,7 +1243,6 @@ function svg_img(num) {
                                   <div class="m-3 img-100" style="opacity: initial;">
                                     <div class="" style="height: 270px;">
                                       <div class="">
-                                        <p class="p_black text-center">clic a la imagen</p>
                                         <div class="text-center" style='padding-right: 15px;'>
                                            <img src="assets/img/img_ova/imagenejemploparticula_imagenejemploparticula.svg" class="img-100" data-toggle="modal" data-target="#agran1">
                                         </div>
