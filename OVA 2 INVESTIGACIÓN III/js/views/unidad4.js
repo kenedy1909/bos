@@ -116,16 +116,34 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
             cambiarColorMenu(14);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu4").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu4").addClass('c-show');
             break;
         case 2:
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
             cambiarColorMenu(14);
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu4").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu4").addClass('c-show');
             break;
         case 3:
             setMigaja("Unidades de aprendizaje","4. Diseño Metodológico ","Algunos enfoques ");
             cambiarColorMenu(14);
             $("#content").html('');
             $("#img_cont").html('');
+            $(".menu1").removeClass('d-none');
+            $(".menu2").removeClass('d-none');
+            $(".menu3").removeClass('d-none');
+            $(".menu4").removeClass('d-none');
+            $( ".ov-personaje").hide();
+            $(".menu4").addClass('c-show');
             break;
         case 4:
             // $("#content-ova").load("base/unidades/unidad4.html");

@@ -2,7 +2,7 @@ $( document ).ready(function() {
     $( ".ov-personaje").hide();
     $( ".menu1").removeClass('d-none');
     console.log(tema);
-
+    star_uni = 1;
     //aparece en los otros ovas
     // $('.js_uni').html('<script src="js/views/unidades.js"></script>');
 
@@ -428,6 +428,7 @@ function controlSlides(num){
         case 20:
             setMigaja("Unidades de aprendizaje","1. Introducción al humanismo", "Aspectos relevantes de la formación humanística ");
             cambiarColorMenu(21);
+            $('.js_uni').html('<script src="js/views/unidades.js"></script>');
             tema = 1;
             break;
 
@@ -1136,7 +1137,7 @@ function contenido2_3(num) {
     switch(parseInt(num)){
         case 1:
             var cont = `<div class="p-2">
-                            <div class="text-center"><img src="assets/img/img_ova/hablar.png" style="max-width: 30%;" class="mt-2"></div>
+                            <div class="text-center pt-2"><img src="assets/img/img_ova/hablar.png" style="max-width: 35%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Tradición oral:</b> Son expresiones culturales que sirven para transmitir contenidos fundamentales que debían ser conservados. Estos contenidos determinaban las formas de comportamiento, las normas de vinculación social, referentes religiosos y demás elementos importantes que generan cohesión cultural.
@@ -1144,7 +1145,7 @@ function contenido2_3(num) {
                                 </p>
                             </div>
                         </div>`;
-            $('#circle_can').html(cont);
+            $('#circle_can').html(cont); 
             $(".btns_1").addClass('bg-azu');
 
             break;
@@ -1164,7 +1165,7 @@ function contenido2_3(num) {
             break;
         case 3:
             var cont = `<div class="p-2 mt-3">
-                            <div class="text-center"><img src="assets/img/img_ova/religion.png" style="max-width: 30%;" class="mt-2"></div>
+                            <div class="text-center"><img src="assets/img/img_ova/religion.png" style="max-width: 40%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Rituales religiosos:</b> Son un conjunto de prácticas que tienen en principio intervenir en la voluntad del dios. Esto, con la finalidad de cambiar el curso de la naturaleza, en beneficio de la misma comunidad.
@@ -1177,7 +1178,7 @@ function contenido2_3(num) {
             break;
         case 4:
             var cont = `<div class="p-2 mt-3">
-                            <div class="text-center"><img src="assets/img/img_ova/red.png" style="max-width: 30%;" class="mt-2"></div>
+                            <div class="text-center"><img src="assets/img/img_ova/red.png" style="max-width: 40%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Organización social tribal:</b> Implica las diferentes jerarquías que existieron en las comunidades primitivas, en las cuales, los cazadores, sacerdotes o recolectores cumplían una función específica.
@@ -1189,7 +1190,7 @@ function contenido2_3(num) {
             break;
         case 5:
             var cont = `<div>
-                            <div class="text-center"><img src="assets/img/img_ova/ecosistema.png" style="max-width: 20%;" class="mt-2"></div>
+                            <div class="text-center"><img src="assets/img/img_ova/ecosistema.png" style="max-width: 23%;" class="mt-2"></div>
                             <div class="pt-2 px-4">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Manipulación del medio:</b> A medida que los pueblos se van adaptado a las circunstancias naturales, van creando herramientas que les permiten manipular las condiciones de vida, por ejemplo, ya no se ven en la necesidad de cazar y recolectar alimento para un momento concreto, sino que ven la posibilidad de generar un asiento que les permite cosecharlo, facilitando así un lugar estable de vida, el cual será el inicio de las ciudades que permiten el florecimiento de la cultura.
@@ -1202,7 +1203,7 @@ function contenido2_3(num) {
             break;
         case 6:
             var cont = `<div class="p-2">
-                            <div class="text-center"><img src="assets/img/img_ova/Seminario-Humanistico-I-02.png" style="max-width: 68%;" class="mt-3"></div>
+                            <div class="text-center"><img src="assets/img/img_ova/Seminario-Humanistico-I-02.png" style="max-width: 72%;" class="mt-3"></div>
                             <div class="pt-2 px-4 mt-2">
                                 <p class="justificado px-2" style="font-size: 12px;">
                                     <b>Identidad colectiva:</b> Es el conjunto de representaciones simbólicas compartidas por una comunidad que determinan la imagen que tienen de sí mismos. Dichas representaciones se manifiestan por medio de acciones, rituales, tradiciones o imaginarios sociales.
@@ -1240,8 +1241,8 @@ function generalidades(num){
         case 2:
             var pantalla = `
             <div class="col-md-12 row">
-                <div style="height: 4px;background: #dd9d37;width: 80%;position: relative;top: 60px;"></div>
-                <div><img src="assets/img/img_ova/escritura(2).png" style="max-width: 15%;float: right;"></div>
+                <div style="height: 4px;background: #dd9d37;width: 60%;position: relative;top: 60px;"></div>
+                <div><img src="assets/img/img_ova/escritura(2).png" style="max-width: 18%;margin-left: 60%;"></div>
             </div>
             <div style="padding: 5px 1px 1px 1px; margin-top: 10px;">
                 <p class="justificado" style="font-size: 12px;">El campo de la literatura igualmente fue de suma importancia, ya que, por medio de las odas, epopeyas, o diferentes tipos de composiciones poéticas, transmitía de generación en generación las características de sus antepasados, las cuales eran entendidas como modelos de virtud dignos de imitar.</p><br>
@@ -1257,7 +1258,7 @@ function generalidades(num){
             var pantalla = `
             <div class="col-md-12 row">
                 <div style="height: 4px;background: #dd9d37;width: 100%;position: relative;top: 30px;"></div>
-                <div class="d-flex"><img src="assets/img/img_ova/poesia.png" style="max-width: 20%;float: right;position: relative;" class="mx-auto"></div>
+                <div class="d-flex"><img src="assets/img/img_ova/poesia.png" style="max-width: 35%;float: right;position: relative; margin-top: -10%;" class="mx-auto"></div>
             </div>
             <div style="padding: 5px 1px 1px 1px;">
                 <p class="justificado" style="font-size: 12px;">Además, es importante resaltar el valor de los poetas líricos, quienes en sus composiciones exaltaban la esencia del valor en la batalla, la condición fugaz de la existencia humana, la vida exenta de lujos como vía para alcanzar la libertad, ideas de patriotismo o exaltación a los dioses.</p><br>
@@ -1271,8 +1272,9 @@ function generalidades(num){
         case 4:
             var pantalla = `
             <div class="col-md-12 row">
-                <div style="height: 4px;background: #dd9d37;width: 100%;position: relative;top: 30px;"></div>
-                <div class="d-flex"><img src="assets/img/img_ova/democracia.png" style="max-width: 20%;float: right;position: relative;" class="mx-auto"></div>
+                <div style="height: 4px;background: #dd9d37;width: 35%;position: relative;top: 30px;"></div>
+                <div style="height: 4px;background: #dd9d37;width: 40%;position: relative;top: 30px; margin-left:65%;"></div>
+                <div class="d-flex"><img src="assets/img/img_ova/democracia.png" style="max-width: 25%;float: right;position: relative; margin-top: -5%;" class="mx-auto"></div>
             </div>
             <div style="padding: 5px 1px 1px 1px;">
                 <p class="justificado" style="font-size: 12px;">Entre los aportes fundamentales de la cultura griega al desarrollo posterior del concepto del humanismo, se encuentra la <b style="background: #833c0b;color: white;border-radius: 5px;">idea de democracia</b> la cual era entendida en un sentido participativo, esto implicaba que los ciudadanos, (hombres libres, en igualdad derechos y del uso de la palabra) decidían de manera directa el curso que tomarían las decisiones públicas.s</p><br>
@@ -1287,8 +1289,9 @@ function generalidades(num){
         case 5:
             var pantalla = `
             <div class="col-md-12 row">
-                <div style="height: 4px;background: #dd9d37;width: 100%;position: relative;top: 30px;"></div>
-                <div class="d-flex"><img src="assets/img/img_ova/griego(1).png" style="max-width: 20%;float: right;position: relative;" class="mx-auto"></div>
+            <div style="height: 4px;background: #dd9d37;width: 35%;position: relative;top: 30px;"></div>
+            <div style="height: 4px;background: #dd9d37;width: 40%;position: relative;top: 30px; margin-left:65%;"></div>
+                <div class="d-flex"><img src="assets/img/img_ova/griego(1).png" style="max-width: 25%;float: right;position: relative; margin-top: -5%;" class="mx-auto"></div>
             </div>
             <div style="padding: 5px 1px 1px 1px;">
                 <p class="justificado" style="font-size: 12px;">En ese sentido, el arte, en relación con la filosofía y la escultura fueron un componente elemental para el desarrollo y transmisión de los contenidos considerados esenciales para la cultura griega, delimitando las dimensiones comportamentales del ser humano.</p><br>
@@ -1302,9 +1305,10 @@ function generalidades(num){
         case 6:
             var pantalla = `
             <div class="col-md-12 row">
-                <div style="height: 4px;background: #dd9d37;width: 90%;position: relative;top: 30px;"></div>
+            <div style="height: 4px;background: #dd9d37;width: 35%;position: relative;top: 30px;"></div>
+            <div style="height: 4px;background: #dd9d37;width: 40%;position: relative;top: 30px; margin-left:55%;"></div>
                 <div class="d-flex">
-                    <div style="width: 90%;" class="d-flex"><img src="assets/img/img_ova/platon.png" style="max-width: 20%;float: right;position: relative;" class="mx-auto"></div>
+                    <div style="width: 90%;" class="d-flex"><img src="assets/img/img_ova/platon.png" style="max-width: 25%;float: right;position: relative; margin-top: -5%;" class="mx-auto"></div>
                     <div class="cursor" style="height: 30px;width: 30px;background: #dd9d37;text-align: center;border-radius: 50%;color: white;font-weight: bold;position: relative;top: 13px;padding: 3px;" onclick="inicio();">X</div>
                 </div>
             </div>
@@ -1418,25 +1422,25 @@ function p15(num){
                 </div>
                 <div class="d-flex" style="margin-top:-65px">
                     <div style="background: #833c0b;height: 4px; width: 90%;"></div>
-                    <div class="cursor" style="background: #833c0b;height: 30px;width: 30px;color: #ffffff;text-align: center;padding: 3px;font-weight: bold;border-radius: 50%;position: relative;top: -15px;" onclick="inicio();">x</div>
+                    <div class="cursor botonX3" style="background: #833c0b;height: 30px;width: 30px;color: #ffffff;text-align: center;padding: 3px;font-weight: bold;border-radius: 50%;position: relative;top: -15px;" onclick="inicio();">x</div>
                 </div>
                 <div style="z-index: 1000;">
-                  <a class="control_next" style="float: right;position: relative;top: 100px;z-index: 1000;"><div style="" class="triag_cambiaslide"></div></a>
+                  <a class="control_next" style="float: right;position: relative;top: 100px;z-index: 1000;" id="flechaslider"><div style="" class="triag_cambiaslide"></div></a>
                 </div>
                 <div id="slider" style="" class="d-flex justify-content-center">
                   <ul>
                     <li>
                         <div>
-                            <p class="justificado" style="font-size: 12px;">Cabe resaltar que numerosos elementos culturales del contexto romano guardan una estrecha relación con la cultura griega, lo cual se da debido al constante contacto de orden bélico que generaba un vínculo por medio de la esclavitud, pues en dichas contiendas muchos griegos eran llevados a Roma como esclavos, y eran encargados de servir de preceptores a los ciudadanos romanos, y con esto, paulatinamente se va dando un sincretismo de orden cultural.</p>
-                            <p class="justificado" style="font-size: 12px;">Un ejemplo concreto de lo anterior es el caso de <b style="background: #833c0b;color: white;border-radius: 5px;">Livio Andrónico</b>, quien fue un esclavo romano de origen griego, a quien se le encargó realizar una traducción de las obras de Homero, y con ello, permitir que los ciudadanos que hacían uso del latín como lengua materna pudieran conocer las hazañas de los grandes héroes griegos, generando un empalme de dioses y aportes culturales.</p>
+                            <p class="justificado" style="font-size: 13px;">Cabe resaltar que numerosos elementos culturales del contexto romano guardan una estrecha relación con la cultura griega, lo cual se da debido al constante contacto de orden bélico que generaba un vínculo por medio de la esclavitud, pues en dichas contiendas muchos griegos eran llevados a Roma como esclavos, y eran encargados de servir de preceptores a los ciudadanos romanos, y con esto, paulatinamente se va dando un sincretismo de orden cultural.</p>
+                            <p class="justificado" style="font-size: 13px;">Un ejemplo concreto de lo anterior es el caso de <b style="background: #833c0b;color: white;border-radius: 5px;">Livio Andrónico</b>, quien fue un esclavo romano de origen griego, a quien se le encargó realizar una traducción de las obras de Homero, y con ello, permitir que los ciudadanos que hacían uso del latín como lengua materna pudieran conocer las hazañas de los grandes héroes griegos, generando un empalme de dioses y aportes culturales.</p>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <p class="justificado" style="font-size: 12px;">Otro punto importante de sincretismo cultural lo ofrece el campo de la filosofía, ya que al gozar de tanta fama y prestigio las escuelas de filosofía de Grecia, era importante para los ciudadanos romanos viajar hasta ese territorio para instruirse en las teorías y saberes que los griegos poseían. Ello generó que gran parte de los filósofos romanos conocieran a profundidad las teorías de Platón y Aristóteles, entre otros importantes filósofos del contexto griego.  </p><br>
+                            <p class="justificado" style="font-size: 13px;">Otro punto importante de sincretismo cultural lo ofrece el campo de la filosofía, ya que al gozar de tanta fama y prestigio las escuelas de filosofía de Grecia, era importante para los ciudadanos romanos viajar hasta ese territorio para instruirse en las teorías y saberes que los griegos poseían. Ello generó que gran parte de los filósofos romanos conocieran a profundidad las teorías de Platón y Aristóteles, entre otros importantes filósofos del contexto griego.  </p><br>
                             <div class="row">
                                 <div style="width: 60%;">
-                                    <i><p class="justificado" style="font-size: 12px;">Clic en el botón para ver resumen de la cultura griega y romana</p></i>
+                                    <i><p class="justificado" style="font-size: 13px;">Clic en el botón para ver resumen de la cultura griega y romana</p></i>
                                 </div>
                                 <div style="width: 40%;">
                                     <button data-toggle="modal" data-target="#modaltable2" class="btn" style="background: #963900;color: white;font-weight: bold;"><img src="assets/img/img_ova/buscar.png" style="max-width: 10%;position: absolute;margin-left: -45px;" >En síntesis</button>
@@ -1447,15 +1451,15 @@ function p15(num){
                     </li>
                     <li>
                         <div>
-                            <p class="justificado" style="font-size: 12px;">En el contexto romano, los aportes también fueron significativos, nuevas formas de gobierno basadas en la república, el uso de la epístola como medio de expresión pedagógica, la profundización y continuación de elementos griegos por medio del sincretismo cultural y nuevas formas de reflexión filosófica ayudaron a dar continuidad a un pensamiento centrado en la condición racional humana. </p><br>
-                            <p class="justificado" style="font-size: 12px;"><b style="background: #833c0b;color: white;border-radius: 5px;">Autores como Séneca</b>, quien, por medio de reflexiones sobre la brevedad de la vida, las características del sabio, la condición moral del ser humano y el uso del tiempo libre, delimitaban cada vez más un ambiente que sirve en épocas posteriores a la consolidación de una visión de lo humano. No se pueden dejar de lado los aportes realizados por Cicerón, Quinto Horacio Flaco, e incluso el mismo Marco Aurelio, quienes, desde diferentes campos de conocimiento y expresión artística, hicieron contribuciones relevantes sobre ideas como el orden, la razón, el libre albedrío, las virtudes del ciudadano, el cultivo del intelecto y el disfrute de la vida.</p>
+                            <p class="justificado" style="font-size: 13px;">En el contexto romano, los aportes también fueron significativos, nuevas formas de gobierno basadas en la república, el uso de la epístola como medio de expresión pedagógica, la profundización y continuación de elementos griegos por medio del sincretismo cultural y nuevas formas de reflexión filosófica ayudaron a dar continuidad a un pensamiento centrado en la condición racional humana. </p><br>
+                            <p class="justificado" style="font-size: 13px;"><b style="background: #833c0b;color: white;border-radius: 5px;">Autores como Séneca</b>, quien, por medio de reflexiones sobre la brevedad de la vida, las características del sabio, la condición moral del ser humano y el uso del tiempo libre, delimitaban cada vez más un ambiente que sirve en épocas posteriores a la consolidación de una visión de lo humano. No se pueden dejar de lado los aportes realizados por Cicerón, Quinto Horacio Flaco, e incluso el mismo Marco Aurelio, quienes, desde diferentes campos de conocimiento y expresión artística, hicieron contribuciones relevantes sobre ideas como el orden, la razón, el libre albedrío, las virtudes del ciudadano, el cultivo del intelecto y el disfrute de la vida.</p>
 
                         </div>
                     </li>
                   </ul>
                 </div>
             </div>`;
-
+            
             $('.p1-5').html(pantalla);
             carrusel();
             break;
@@ -1904,7 +1908,7 @@ function cambiatargeta(num){
         case 1:
             var pantalla = `
             <div class="d-flex justify-content-center">
-                <div class="targetaverde" style="">Abarcar el tema de educación a profundidad no sería posible, pues compromete diversos escenarios que desviarían el propósito; sin embargo, se buscará realizar un acercamiento desde el punto de vista que implica la educación superior o universitaria; en este sentido, como lo menciona el autor Esquivel (2004), educar contempla elementos como la vida misma, el pensamiento del ser humano y la cultura que le rodea, todo orientado hacía un fin superior, que es aportar al desarrollo del ser.</div>
+                <div class="targetaverde" style=""><p class="mt-3" style="font-size: 13px">Abarcar el tema de educación a profundidad no sería posible, pues compromete diversos escenarios que desviarían el propósito; sin embargo, se buscará realizar un acercamiento desde el punto de vista que implica la educación superior o universitaria; en este sentido, como lo menciona el autor Esquivel (2004), educar contempla elementos como la vida misma, el pensamiento del ser humano y la cultura que le rodea, todo orientado hacía un fin superior, que es aportar al desarrollo del ser.</p></div>
             </div>
             <div class="d-flex justify-content-center">
                 <div class="senal" style=""></div>

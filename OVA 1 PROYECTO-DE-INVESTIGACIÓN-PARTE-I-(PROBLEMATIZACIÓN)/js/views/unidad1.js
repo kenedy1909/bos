@@ -30,14 +30,14 @@ $( document ).ready(function() {
     $('#next').on('click', function () {
         $('#smartwizard').smartWizard("next");
         slide();
-        actualizarprogress();
+        // actualizarprogress();
 
     });
     
     $('#prev').on('click', function () {
         $('#smartwizard').smartWizard("prev");
         slide();
-        actualizarprogress();
+        // actualizarprogress();
     }); 
 
     $(".modal").on('hidden.bs.modal', function () {
@@ -51,21 +51,25 @@ $( document ).ready(function() {
   }
   setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", "");
 
-    $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
+  $("#smartwizard").on("showStep", function(e, anchorObject, stepIndex, stepDirection) {
         
-      console.log(e);
-      controlSlides(stepIndex+0);
-      // quitarflecha(stepIndex+1);
-      actualizarprogress(stepIndex+1);
-      switch(stepIndex) {
-          case 1:
-              break;
-          default:
-              break;
-          // code block
-      }
-      slideNum = stepIndex;
-  });
+    console.log(e);
+    if (tema != 0) {
+        controlSlides(tema+1);
+        tema = 0;
+    } else {
+        controlSlides(stepIndex);
+    }
+    // quitarflecha(stepIndex+1);
+    switch(stepIndex) {
+        case 1:
+            break;
+        default:
+            break;
+        // code block
+    }
+    slideNum = stepIndex;
+});
     
     
 
@@ -109,8 +113,11 @@ function slide_link(num){
 }
 
 function controlSlides(num){
+  actualizarprogress(num+0);
     switch (parseInt(num)) {
       case 0:
+        $(".menu1").removeClass('d-none');
+          $(".menu1").addClass('c-show');
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente", "");
             esconderPersonaje();
             cambiarColorMenu(11);
@@ -124,6 +131,8 @@ function controlSlides(num){
                         </div>`;
             break;
         case 1:
+          $(".menu1").removeClass('d-none');
+          $(".menu1").addClass('c-show');
             setMigaja("Unidades de aprendizaje","1. Construcción del marco teórico", "");
             esconderPersonaje();
             cambiarColorMenu(11);
@@ -146,6 +155,8 @@ function controlSlides(num){
             document.getElementById("prev").style.display="block";
             break;
         case 2:
+          $(".menu1").removeClass('d-none');
+          $(".menu1").addClass('c-show');
             esconderPersonaje();
             scroll_p11();
             $('.pasos').removeClass('efectos');
@@ -156,6 +167,8 @@ function controlSlides(num){
             break;
             
         case 3:
+          $(".menu1").removeClass('d-none');
+          $(".menu1").addClass('c-show');
             esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
@@ -170,6 +183,8 @@ function controlSlides(num){
             $('.pdfs').html(pdf);
             break;
         case 4:
+          $(".menu1").removeClass('d-none');
+          $(".menu1").addClass('c-show');
             esconderPersonaje();
             scroll_p11();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
@@ -178,6 +193,8 @@ function controlSlides(num){
             document.getElementById("prev").style.display="block";
             break;
         case 5:
+          $(".menu1").removeClass('d-none');
+          $(".menu1").addClass('c-show');
             esconderPersonaje();
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             cambiarColorMenu(31);
@@ -193,7 +210,7 @@ function controlSlides(num){
             scroll();
             break;
         case 6:
-           mostrarPersonaje();
+           mostrarPersonaje(); 
             setMigaja("Unidades de aprendizaje","1. Problematizar el contexto social jurídicamente ", "El problema de investigación");
             cambiarColorMenu(31);
             tema = 1;

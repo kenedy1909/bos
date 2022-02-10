@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../css/actividad13/arrastar.css">
 </head>
-<body>
+<body style="overflow: hidden;">
 	<div class="holder row">
 		<div class="row col-md-12" style="display: flex; margin-top: 10px;">
 		    <div class="col-md-5" style="width: 45%;display: flex;">
@@ -23,51 +23,55 @@
 		        </div>
 		    </div>
 		    <div class="col-md-7 row" style="width: 55%;">
-		        <p class="info_actividad shadow" style="background: #FFC000;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%; color: black; font-size: 14px;">
+		        <p class="info_actividad shadow text-justify" style="background: #FFC000;border-radius: 25px;padding: 25px 25px 25px 25px;width: 100%; color: black; font-size: 14px;">
 		            Haga clic sostenido sobre cada recomendación de medios éticos y arrástrelo hacia el documento del lado derecho según correponda. Al finalizar pulse la opción <b>"Calificar"</b> para obtener el puntaje de esta actividad.
 		        </p>
 		    </div>
 		</div>
 
-		<div class="col-md-12">
+		<div class="col-md-12 mt-4">
 			<div class="col-md-12 row d-flex justify-content-center" style="height: 200px;">
 				<div class="col-md-4" style="">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1" style="text-align: center; height: 84%;">Condición humana en la prehistoria</p>
+					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event, 1)" draggable="true" id="dragtarget1" style="text-align: center; height: 84%;">Condición humana en la prehistoria</p>
 				</div>
 				<div class="col-md-4" style="">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2" style="text-align: center; height: 84%;">El renacimiento</p>
+					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event, 2)" draggable="true" id="dragtarget2" style="text-align: center; height: 84%;">El renacimiento</p>
 				</div>
 				<div class="col-md-4" style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget3" style="text-align: center; height: 84%;">La época oscurentista</p>
+					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event, 3)" draggable="true" id="dragtarget3" style="text-align: center; height: 84%;">La época oscurentista</p>
 				</div>
 				<div class="col-md-4" style="">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget4" style="text-align: center; height: 84%;">Antecedentes grecorromanos</p>
+					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event, 4)" draggable="true" id="dragtarget4" style="text-align: center; height: 84%;">Antecedentes grecorromanos</p>
 				</div>
 				<div class="col-md-4" style="">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget5" style="text-align: center; height: 84%;">La época contemporánea</p>
+					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event, 5)" draggable="true" id="dragtarget5" style="text-align: center; height: 84%;">La época contemporánea</p>
 				</div>
 				<div class="col-md-4" style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget6" style="text-align: center; height: 84%;">Arte y cultura precolombina</p>
+					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event, 6)" draggable="true" id="dragtarget6" style="text-align: center; height: 84%;">Arte y cultura precolombina</p>
 				</div>
 				<div class="col-md-4">
-					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget7" style="text-align: center; height: 84%;">Época medieval</p>
+					<p class="verdadero" ondragstart="dragStart(event)" ondragend="dragEnd(event, 7)" draggable="true" id="dragtarget7" style="text-align: center; height: 84%;">Época medieval</p>
 				</div>
 				<div class="col-md-4">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget8" style="text-align: center; height: 84%;">La época renacentista</p>
+					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event, 8)" draggable="true" id="dragtarget8" style="text-align: center; height: 84%;">La época renacentista</p>
 				</div>
 				<div  class="col-md-4"style="">
-					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget9" style="text-align: center; height: 84%;">La religión como base del universo</p>
+					<p class="falso" ondragstart="dragStart(event)" ondragend="dragEnd(event, 9)" draggable="true" id="dragtarget9" style="text-align: center; height: 84%;">La religión como base del universo</p>
 				</div>
 				
 			</div>
-			<div class="col-md-12 mt-3">
-				<div class="col-md-12 d-flex justify-content-center">
-					<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-						<div class="interno cont1 text-center">Aspectos relevantes del humanismo </div>
+			
+			<div class="col-md-12 mt-3 justify-content-center">
+				<div class="position-relative d-flex" style="min-height: 270px;">
+					<div class="content-dropT">
+						<div class="droptarget cont1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 					</div>
+					<div class="interno text-center mt-3">Aspectos relevantes del humanismo </div>
 				</div>
 				
+					
 			</div>
+
 		</div>
 		
 
@@ -77,7 +81,14 @@
 		<button id="add" class="boton_inc btn" data-toggle="modal" data-target="#exampleModal" style="" onclick="calificar();">Calificar</button>
 	</div>
 	
-	
+	<!-- <div class="col-md-12 mt-3">
+		<div class="col-md-12 d-flex justify-content-center">
+			<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<div class="interno cont1 text-center">Aspectos relevantes del humanismo </div>
+			</div>
+		</div>
+		
+	</div> -->
 
 	
 	
@@ -97,14 +108,14 @@
 	      			
 	      		</div>
 	      	</div>
-	      	<div style="padding: 15px;">
-	      		<div style="color: white;">
-	      			Su puntaje es: <p class="puntaje"></p>
-	      		</div>
-	      		<div style="color: white;">
-	      			<p class="mensaje"></p>
-	      		</div>
-	      	</div>
+	      	<div style="padding: 8px; margin-left: 10%; margin-top: 0%;">
+				<div style="color: white;font-size: 25px;display: flex;">
+				  Su puntaje es: <p class="puntaje" style="font-size: 40px; font-weight: bold;margin-left: 9px;margin-top: 0px;font-size: 25px;"></p>
+				</div>
+				<div style="color: white;font-size: 20px; padding-bottom: 2%;">
+					<p class="mensaje" style="text-align: left;"></p>
+				</div>
+			</div>
 	      	<div class="row d-flex justify-content-center btns_modal">
 	      		
 	      		

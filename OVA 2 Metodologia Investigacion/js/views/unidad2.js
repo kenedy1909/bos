@@ -157,10 +157,12 @@ function controlSlides2(num){
             cambiarColorMenu(12);
             break;
         case 11:
-            setMigaja("Unidades de aprendizaje","2. Conjuntos","Número de elementos de la unión entre conjuntos");
+            setMigaja("Unidades de aprendizaje","","");
             /*$("#content-ova").load("base/unidades/unidad3.html");*/
             $(".menu1").addClass('d-none');
             $(".menu2").addClass('d-none');
+            $(".menu3").addClass('d-none');
+            $(".menu4").addClass('d-none');
             $( ".ov-personaje").show();
             tema = 1;
             break;
